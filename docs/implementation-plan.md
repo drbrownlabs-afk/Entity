@@ -9,3 +9,6 @@
 7. Expose a minimal authorized MCP tool surface; document security and run end-to-end tests.
 
 Acceptance: restart preserves history, state and relations; simulator changes propagate into the viewer; one adapter can be replaced without rewriting the core; two worlds reuse the same Entity API.
+
+
+> **Nota de vigencia (2026-11-06):** este es el plan inicial histórico. Para la secuencia actual de fases, objetivos, criterios de aceptación y revisión humana, consultar `PLANS.md`, `GOALS.md` y `docs/PHASE-BOARD.md`. No ejecutar automáticamente esta lista como plan vigente.
