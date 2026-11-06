@@ -1,0 +1,16 @@
+# ENTITY development environment. Scorpio runs from its upstream Compose configuration.
+services:
+  entity-api:
+    build: ./services/entity-api
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      ENTITY_SQLITE_PATH: /data/entity.sqlite3
+      SCORPIO_BASE_URL: http://host.docker.internal:9090
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - entity-data:/data
+    restart: unless-stopped
+volumes:
+  entity-data:
