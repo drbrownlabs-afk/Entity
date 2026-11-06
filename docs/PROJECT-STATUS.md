@@ -17,6 +17,11 @@
 - Demo web centro comercial con mundo 3D y CCTV virtual sincronizados.
 - CI/tests reproducibles y despliegue real.
 
+## Fase 00 en curso (2026-11-06)
+- Inspección estática de API, tests, dependencias, Docker y script de Scorpio registrada en docs/audits/PHASE-00-2026-11-06.md.
+- Se añadió httpx a requirements y workflow CI; no se han confirmado pruebas ejecutadas ni arranque real.
+- Mantener fase 01 sin iniciar.
+
 ## Próxima prioridad
 Contratos y servicios funcionales mínimos Core/Edge, con tests; después conexión Orbbec y salida de pantalla.
 
