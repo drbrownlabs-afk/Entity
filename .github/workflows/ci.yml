@@ -1,0 +1,28 @@
+name: ENTITY API smoke tests
+on:
+  push:
+    paths:
+      - "services/entity-api/**"
+      - ".github/workflows/ci.yml"
+  pull_request:
+    paths:
+      - "services/entity-api/**"
+      - ".github/workflows/ci.yml"
+  workflow_dispatch:
+jobs:
+  api-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: services/entity-api/requirements.txt
+      - name: Install API dependencies
+        run: python -m pip install -r services/entity-api/requirements.txt
+      - name: Compile Python sources
+        run: python -m compileall -q services/entity-api/app services/entity-api/tests
+      - name: Execute API tests
+        working-directory: services/entity-api
+        run: python -m unittest discover -s tests -v
