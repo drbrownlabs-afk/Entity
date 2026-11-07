@@ -73,6 +73,11 @@ jobs:
         run: bash scripts/demo-edge.sh
       - name: Demonstrate observation to virtual output
         run: bash scripts/demo-output.sh
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+      - name: Integrated clean world, restart and backup restoration
+        run: bash scripts/demo-entity.sh
       - name: Demonstrate grounded agent tools
         run: bash scripts/demo-agent.sh
       - name: Ensure FFmpeg for local RTSP publisher
@@ -90,6 +95,7 @@ jobs:
           name: edge-report
           include-hidden-files: true
           path: |
+            .runtime/release-demo/latest.json
             .runtime/edge-demo/*report.json
             .runtime/output-demo/*report.json
             .runtime/output-demo/screen.html
@@ -133,3 +139,34 @@ jobs:
             .runtime/experience-*.png
             .runtime/experience-*.json
             apps/web/dist
+
+  delivery:
+    needs: [api-tests, edge-tests, experience-tests]
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install locked web build tools
+        run: npm --prefix apps/web ci
+      - name: Create audited source and autonomous web packages
+        run: python scripts/package-release.py
+      - name: Test source package from a different clean directory
+        run: |
+          mkdir -p "${RUNNER_TEMP}/entity-unpacked"
+          tar -xzf .runtime/delivery/entity-source.tar.gz -C "${RUNNER_TEMP}/entity-unpacked"
+          cd "${RUNNER_TEMP}/entity-unpacked/Entity"
+          bash scripts/setup-demo.sh
+          bash scripts/demo-entity.sh
+      - name: Retain transportable packages and checksums
+        uses: actions/upload-artifact@v6
+        with:
+          name: entity-delivery
+          include-hidden-files: true
+          path: .runtime/delivery/

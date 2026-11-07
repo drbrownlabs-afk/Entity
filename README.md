@@ -4,7 +4,7 @@ Sistema modular de inteligencia espacial e IA situada. El núcleo propio represe
 
 ## Estado
 
-**Fase 07 EN VALIDACIÓN. [Abrir ENTITY Experience](https://drbrownlabs-afk.github.io/Entity/).** La experiencia pública es autónoma y simulada; el Core sigue siendo un servicio de desarrollo local. Se ha incorporado una API inicial con persistencia local y un contenedor Docker. Scorpio es infraestructura externa NGSI-LD; su integración de datos con la API está pendiente. Core local 0.2.0 validado con migraciones, memoria y capacidades declaradas; Scorpio y el sistema completo siguen pendientes.
+**Fase 08 EN VALIDACIÓN. [Abrir ENTITY Experience](https://drbrownlabs-afk.github.io/Entity/).** La experiencia pública es autónoma y simulada; el Core sigue siendo un servicio de desarrollo local. Se ha incorporado una API inicial con persistencia local y un contenedor Docker. Scorpio es infraestructura externa NGSI-LD; su integración de datos con la API está pendiente. Core local 0.2.0 validado con migraciones, memoria y capacidades declaradas; Scorpio y el sistema completo siguen pendientes.
 
 ## Arranque local de desarrollo
 
@@ -35,3 +35,7 @@ Fase 06 EN VALIDACIÓN: `bash scripts/setup-integrations.sh` y `bash scripts/dem
 [Demo pública](https://drbrownlabs-afk.github.io/Entity/) · [Pruebas, uso y límites](docs/phases/PHASE-07.md). Siete tiendas, visitantes anónimos, navegación 3D y cuatro cámaras CCTV virtuales sincronizadas, consultas y acciones simuladas verificables. Funciona sin Python ni Core. Conexión al Core opcional mediante URL configurable, identificada por separado.
 
 Desarrollo: `bash scripts/setup-experience.sh` y `bash scripts/demo-experience.sh` (Node 24). GitHub Actions construye y publica `gh-pages`, y comprueba la URL pública con navegadores de escritorio y móvil. EN VALIDACIÓN; no se ha iniciado Fase 08.
+
+## Entrega integral — Fase 08
+
+[Guía del operador](docs/DELIVERY-RUNBOOK.md) · [Pruebas y publicación](docs/phases/PHASE-08.md) · [Pendientes priorizados](docs/DELIVERY-BACKLOG.md). Preparación portable: `bash scripts/setup-demo.sh`; demostración completa sin hardware: `bash scripts/demo-entity.sh`. CI prueba la fuente empaquetada desde otra carpeta y conserva entity-delivery con fuente, web estática y manifest/checksums. Aceptación humana pendiente. La autorización de Fase 08 sustituye el límite histórico de no iniciarla que aparece en informes anteriores.
