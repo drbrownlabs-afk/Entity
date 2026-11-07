@@ -1,0 +1,1389 @@
+{
+  "scene": "https://superspl.at/scene/a972d838",
+  "source": "Original SSOG; side-route native voxel walk from previously measured aisle viewpoint. No invented resource anchors",
+  "views": [
+    {
+      "id": "side-walk-0",
+      "action": {
+        "move": "1,0",
+        "ms": 800
+      },
+      "camera": {
+        "position": [
+          -0.8719602227210999,
+          -0.390000581741333,
+          -23.549999237060547
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fov": 90
+      },
+      "diagnostics": {
+        "sceneUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/lod-meta.json",
+        "collisionUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json",
+        "loaded": true,
+        "walkAllowed": true,
+        "annotations": [
+          {
+            "position": [
+              -0.4324827070899584,
+              -1.1356615558262035,
+              -5.352859958159687
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.2909014225006104,
+                  -0.6327518224716187,
+                  -6.878935813903809
+                ],
+                "target": [
+                  -1.063821250294442,
+                  -0.7785310259698787,
+                  -6.064088128799655
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.1870577758066334,
+              -1.2140478639523282,
+              0.06964437653360278
+            ],
+            "title": "8-Person Conference Table",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.698869466781616,
+                  -0.7564377784729004,
+                  -2.1411778926849365
+                ],
+                "target": [
+                  -1.5667378200804414,
+                  -0.82848103010642,
+                  -1.1903667760348111
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.9970835412267196,
+              -0.8033600527595,
+              -10.693077551494174
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  1.8311508893966675,
+                  -0.5394223928451538,
+                  -6.283419609069824
+                ],
+                "target": [
+                  1.887405199081167,
+                  -0.5492254865430951,
+                  -9.172446737881645
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              0.09792180086598856,
+              -0.17678632222835267,
+              2.586294204317113
+            ],
+            "title": "Fito Wall",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.5200188159942627,
+                  -0.7118004560470581,
+                  -2.3654165267944336
+                ],
+                "target": [
+                  -1.0462618929210763,
+                  -0.7242954121367714,
+                  0.12006608542043518
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "title": "Espera de visitantes",
+            "text": "Grupo de sillas claras visible a la izquierda del recorrido. Ancla de grupo, no posición individual de asiento.",
+            "position": [
+              -4.751476330788986,
+              -0.63474085001273,
+              -16.002127587705036
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "WAITING-AREA",
+              "kind": "WaitingArea",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/rear-hall.jpg",
+              "screen": [
+                0.3,
+                0.6
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false
+            }
+          },
+          {
+            "title": "Booths de descanso",
+            "text": "Grupo de booths curvos de madera y verde. No reservables; cantidad individual pendiente de inventario completo.",
+            "position": [
+              -3.426234714858262,
+              -0.9248632498038959,
+              -19.5901388836479
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "REST-AREA",
+              "kind": "Zone",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/walk-2.jpg",
+              "screen": [
+                0.5,
+                0.85
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false,
+              "individual_count_verified": false
+            }
+          }
+        ],
+        "mode": "walk",
+        "source": "original-public-SSOG",
+        "substitute": false
+      },
+      "picks": [
+        {
+          "screen": [
+            0.25,
+            0.55
+          ],
+          "position": [
+            -2.5177776568713472,
+            -0.5143191017017212,
+            -26.8448902050752
+          ]
+        },
+        {
+          "screen": [
+            0.5,
+            0.7
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.75,
+            0.55
+          ],
+          "position": null
+        }
+      ],
+      "image": "side-walk-0.jpg"
+    },
+    {
+      "id": "side-walk-1",
+      "action": {
+        "move": "0,1",
+        "ms": 1600
+      },
+      "camera": {
+        "position": [
+          -0.870509922504425,
+          -0.35004526376724243,
+          -24.76607322692871
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fov": 90
+      },
+      "diagnostics": {
+        "sceneUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/lod-meta.json",
+        "collisionUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json",
+        "loaded": true,
+        "walkAllowed": true,
+        "annotations": [
+          {
+            "position": [
+              -0.4324827070899584,
+              -1.1356615558262035,
+              -5.352859958159687
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.2909014225006104,
+                  -0.6327518224716187,
+                  -6.878935813903809
+                ],
+                "target": [
+                  -1.063821250294442,
+                  -0.7785310259698787,
+                  -6.064088128799655
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.1870577758066334,
+              -1.2140478639523282,
+              0.06964437653360278
+            ],
+            "title": "8-Person Conference Table",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.698869466781616,
+                  -0.7564377784729004,
+                  -2.1411778926849365
+                ],
+                "target": [
+                  -1.5667378200804414,
+                  -0.82848103010642,
+                  -1.1903667760348111
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.9970835412267196,
+              -0.8033600527595,
+              -10.693077551494174
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  1.8311508893966675,
+                  -0.5394223928451538,
+                  -6.283419609069824
+                ],
+                "target": [
+                  1.887405199081167,
+                  -0.5492254865430951,
+                  -9.172446737881645
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              0.09792180086598856,
+              -0.17678632222835267,
+              2.586294204317113
+            ],
+            "title": "Fito Wall",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.5200188159942627,
+                  -0.7118004560470581,
+                  -2.3654165267944336
+                ],
+                "target": [
+                  -1.0462618929210763,
+                  -0.7242954121367714,
+                  0.12006608542043518
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "title": "Espera de visitantes",
+            "text": "Grupo de sillas claras visible a la izquierda del recorrido. Ancla de grupo, no posición individual de asiento.",
+            "position": [
+              -4.751476330788986,
+              -0.63474085001273,
+              -16.002127587705036
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "WAITING-AREA",
+              "kind": "WaitingArea",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/rear-hall.jpg",
+              "screen": [
+                0.3,
+                0.6
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false
+            }
+          },
+          {
+            "title": "Booths de descanso",
+            "text": "Grupo de booths curvos de madera y verde. No reservables; cantidad individual pendiente de inventario completo.",
+            "position": [
+              -3.426234714858262,
+              -0.9248632498038959,
+              -19.5901388836479
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "REST-AREA",
+              "kind": "Zone",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/walk-2.jpg",
+              "screen": [
+                0.5,
+                0.85
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false,
+              "individual_count_verified": false
+            }
+          }
+        ],
+        "mode": "walk",
+        "source": "original-public-SSOG",
+        "substitute": false
+      },
+      "picks": [
+        {
+          "screen": [
+            0.25,
+            0.55
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.5,
+            0.7
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.75,
+            0.55
+          ],
+          "position": [
+            -0.031114992097132654,
+            -0.41334559072488236,
+            -26.67818693551482
+          ]
+        }
+      ],
+      "image": "side-walk-1.jpg"
+    },
+    {
+      "id": "side-walk-2",
+      "action": {
+        "move": "1,0",
+        "ms": 800
+      },
+      "camera": {
+        "position": [
+          0.3436284065246582,
+          -0.32655298709869385,
+          -25.000015258789062
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fov": 90
+      },
+      "diagnostics": {
+        "sceneUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/lod-meta.json",
+        "collisionUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json",
+        "loaded": true,
+        "walkAllowed": true,
+        "annotations": [
+          {
+            "position": [
+              -0.4324827070899584,
+              -1.1356615558262035,
+              -5.352859958159687
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.2909014225006104,
+                  -0.6327518224716187,
+                  -6.878935813903809
+                ],
+                "target": [
+                  -1.063821250294442,
+                  -0.7785310259698787,
+                  -6.064088128799655
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.1870577758066334,
+              -1.2140478639523282,
+              0.06964437653360278
+            ],
+            "title": "8-Person Conference Table",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.698869466781616,
+                  -0.7564377784729004,
+                  -2.1411778926849365
+                ],
+                "target": [
+                  -1.5667378200804414,
+                  -0.82848103010642,
+                  -1.1903667760348111
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.9970835412267196,
+              -0.8033600527595,
+              -10.693077551494174
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  1.8311508893966675,
+                  -0.5394223928451538,
+                  -6.283419609069824
+                ],
+                "target": [
+                  1.887405199081167,
+                  -0.5492254865430951,
+                  -9.172446737881645
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              0.09792180086598856,
+              -0.17678632222835267,
+              2.586294204317113
+            ],
+            "title": "Fito Wall",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.5200188159942627,
+                  -0.7118004560470581,
+                  -2.3654165267944336
+                ],
+                "target": [
+                  -1.0462618929210763,
+                  -0.7242954121367714,
+                  0.12006608542043518
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "title": "Espera de visitantes",
+            "text": "Grupo de sillas claras visible a la izquierda del recorrido. Ancla de grupo, no posición individual de asiento.",
+            "position": [
+              -4.751476330788986,
+              -0.63474085001273,
+              -16.002127587705036
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "WAITING-AREA",
+              "kind": "WaitingArea",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/rear-hall.jpg",
+              "screen": [
+                0.3,
+                0.6
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false
+            }
+          },
+          {
+            "title": "Booths de descanso",
+            "text": "Grupo de booths curvos de madera y verde. No reservables; cantidad individual pendiente de inventario completo.",
+            "position": [
+              -3.426234714858262,
+              -0.9248632498038959,
+              -19.5901388836479
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "REST-AREA",
+              "kind": "Zone",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/walk-2.jpg",
+              "screen": [
+                0.5,
+                0.85
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false,
+              "individual_count_verified": false
+            }
+          }
+        ],
+        "mode": "walk",
+        "source": "original-public-SSOG",
+        "substitute": false
+      },
+      "picks": [
+        {
+          "screen": [
+            0.25,
+            0.55
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.5,
+            0.7
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.75,
+            0.55
+          ],
+          "position": null
+        }
+      ],
+      "image": "side-walk-2.jpg"
+    },
+    {
+      "id": "side-walk-3",
+      "action": {
+        "move": "0,1",
+        "ms": 1800
+      },
+      "camera": {
+        "position": [
+          0.5974473357200623,
+          -0.3999686539173126,
+          -26.720361709594727
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fov": 90
+      },
+      "diagnostics": {
+        "sceneUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/lod-meta.json",
+        "collisionUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json",
+        "loaded": true,
+        "walkAllowed": true,
+        "annotations": [
+          {
+            "position": [
+              -0.4324827070899584,
+              -1.1356615558262035,
+              -5.352859958159687
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.2909014225006104,
+                  -0.6327518224716187,
+                  -6.878935813903809
+                ],
+                "target": [
+                  -1.063821250294442,
+                  -0.7785310259698787,
+                  -6.064088128799655
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.1870577758066334,
+              -1.2140478639523282,
+              0.06964437653360278
+            ],
+            "title": "8-Person Conference Table",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.698869466781616,
+                  -0.7564377784729004,
+                  -2.1411778926849365
+                ],
+                "target": [
+                  -1.5667378200804414,
+                  -0.82848103010642,
+                  -1.1903667760348111
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.9970835412267196,
+              -0.8033600527595,
+              -10.693077551494174
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  1.8311508893966675,
+                  -0.5394223928451538,
+                  -6.283419609069824
+                ],
+                "target": [
+                  1.887405199081167,
+                  -0.5492254865430951,
+                  -9.172446737881645
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              0.09792180086598856,
+              -0.17678632222835267,
+              2.586294204317113
+            ],
+            "title": "Fito Wall",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.5200188159942627,
+                  -0.7118004560470581,
+                  -2.3654165267944336
+                ],
+                "target": [
+                  -1.0462618929210763,
+                  -0.7242954121367714,
+                  0.12006608542043518
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "title": "Espera de visitantes",
+            "text": "Grupo de sillas claras visible a la izquierda del recorrido. Ancla de grupo, no posición individual de asiento.",
+            "position": [
+              -4.751476330788986,
+              -0.63474085001273,
+              -16.002127587705036
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "WAITING-AREA",
+              "kind": "WaitingArea",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/rear-hall.jpg",
+              "screen": [
+                0.3,
+                0.6
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false
+            }
+          },
+          {
+            "title": "Booths de descanso",
+            "text": "Grupo de booths curvos de madera y verde. No reservables; cantidad individual pendiente de inventario completo.",
+            "position": [
+              -3.426234714858262,
+              -0.9248632498038959,
+              -19.5901388836479
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "REST-AREA",
+              "kind": "Zone",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/walk-2.jpg",
+              "screen": [
+                0.5,
+                0.85
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false,
+              "individual_count_verified": false
+            }
+          }
+        ],
+        "mode": "walk",
+        "source": "original-public-SSOG",
+        "substitute": false
+      },
+      "picks": [
+        {
+          "screen": [
+            0.25,
+            0.55
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.5,
+            0.7
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.75,
+            0.55
+          ],
+          "position": null
+        }
+      ],
+      "image": "side-walk-3.jpg"
+    },
+    {
+      "id": "side-walk-4",
+      "action": {
+        "move": "0,1",
+        "ms": 1800
+      },
+      "camera": {
+        "position": [
+          0.6000000238418579,
+          -0.4000000059604645,
+          -26.950000762939453
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fov": 90
+      },
+      "diagnostics": {
+        "sceneUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/lod-meta.json",
+        "collisionUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json",
+        "loaded": true,
+        "walkAllowed": true,
+        "annotations": [
+          {
+            "position": [
+              -0.4324827070899584,
+              -1.1356615558262035,
+              -5.352859958159687
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.2909014225006104,
+                  -0.6327518224716187,
+                  -6.878935813903809
+                ],
+                "target": [
+                  -1.063821250294442,
+                  -0.7785310259698787,
+                  -6.064088128799655
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.1870577758066334,
+              -1.2140478639523282,
+              0.06964437653360278
+            ],
+            "title": "8-Person Conference Table",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.698869466781616,
+                  -0.7564377784729004,
+                  -2.1411778926849365
+                ],
+                "target": [
+                  -1.5667378200804414,
+                  -0.82848103010642,
+                  -1.1903667760348111
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.9970835412267196,
+              -0.8033600527595,
+              -10.693077551494174
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  1.8311508893966675,
+                  -0.5394223928451538,
+                  -6.283419609069824
+                ],
+                "target": [
+                  1.887405199081167,
+                  -0.5492254865430951,
+                  -9.172446737881645
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              0.09792180086598856,
+              -0.17678632222835267,
+              2.586294204317113
+            ],
+            "title": "Fito Wall",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.5200188159942627,
+                  -0.7118004560470581,
+                  -2.3654165267944336
+                ],
+                "target": [
+                  -1.0462618929210763,
+                  -0.7242954121367714,
+                  0.12006608542043518
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "title": "Espera de visitantes",
+            "text": "Grupo de sillas claras visible a la izquierda del recorrido. Ancla de grupo, no posición individual de asiento.",
+            "position": [
+              -4.751476330788986,
+              -0.63474085001273,
+              -16.002127587705036
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "WAITING-AREA",
+              "kind": "WaitingArea",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/rear-hall.jpg",
+              "screen": [
+                0.3,
+                0.6
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false
+            }
+          },
+          {
+            "title": "Booths de descanso",
+            "text": "Grupo de booths curvos de madera y verde. No reservables; cantidad individual pendiente de inventario completo.",
+            "position": [
+              -3.426234714858262,
+              -0.9248632498038959,
+              -19.5901388836479
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "REST-AREA",
+              "kind": "Zone",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/walk-2.jpg",
+              "screen": [
+                0.5,
+                0.85
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false,
+              "individual_count_verified": false
+            }
+          }
+        ],
+        "mode": "walk",
+        "source": "original-public-SSOG",
+        "substitute": false
+      },
+      "picks": [
+        {
+          "screen": [
+            0.25,
+            0.55
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.5,
+            0.7
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.75,
+            0.55
+          ],
+          "position": null
+        }
+      ],
+      "image": "side-walk-4.jpg"
+    },
+    {
+      "id": "side-walk-5",
+      "action": {
+        "move": "-1,0",
+        "ms": 800
+      },
+      "camera": {
+        "position": [
+          0.6000000238418579,
+          -0.3499999940395355,
+          -26.950063705444336
+        ],
+        "rotation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fov": 90
+      },
+      "diagnostics": {
+        "sceneUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/lod-meta.json",
+        "collisionUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json",
+        "loaded": true,
+        "walkAllowed": true,
+        "annotations": [
+          {
+            "position": [
+              -0.4324827070899584,
+              -1.1356615558262035,
+              -5.352859958159687
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.2909014225006104,
+                  -0.6327518224716187,
+                  -6.878935813903809
+                ],
+                "target": [
+                  -1.063821250294442,
+                  -0.7785310259698787,
+                  -6.064088128799655
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.1870577758066334,
+              -1.2140478639523282,
+              0.06964437653360278
+            ],
+            "title": "8-Person Conference Table",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.698869466781616,
+                  -0.7564377784729004,
+                  -2.1411778926849365
+                ],
+                "target": [
+                  -1.5667378200804414,
+                  -0.82848103010642,
+                  -1.1903667760348111
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              1.9970835412267196,
+              -0.8033600527595,
+              -10.693077551494174
+            ],
+            "title": "6-Person Office Bench System",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  1.8311508893966675,
+                  -0.5394223928451538,
+                  -6.283419609069824
+                ],
+                "target": [
+                  1.887405199081167,
+                  -0.5492254865430951,
+                  -9.172446737881645
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "position": [
+              0.09792180086598856,
+              -0.17678632222835267,
+              2.586294204317113
+            ],
+            "title": "Fito Wall",
+            "text": "",
+            "extras": {},
+            "camera": {
+              "initial": {
+                "position": [
+                  -2.5200188159942627,
+                  -0.7118004560470581,
+                  -2.3654165267944336
+                ],
+                "target": [
+                  -1.0462618929210763,
+                  -0.7242954121367714,
+                  0.12006608542043518
+                ],
+                "fov": 85
+              }
+            }
+          },
+          {
+            "title": "Espera de visitantes",
+            "text": "Grupo de sillas claras visible a la izquierda del recorrido. Ancla de grupo, no posición individual de asiento.",
+            "position": [
+              -4.751476330788986,
+              -0.63474085001273,
+              -16.002127587705036
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "WAITING-AREA",
+              "kind": "WaitingArea",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/rear-hall.jpg",
+              "screen": [
+                0.3,
+                0.6
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false
+            }
+          },
+          {
+            "title": "Booths de descanso",
+            "text": "Grupo de booths curvos de madera y verde. No reservables; cantidad individual pendiente de inventario completo.",
+            "position": [
+              -3.426234714858262,
+              -0.9248632498038959,
+              -19.5901388836479
+            ],
+            "camera": {
+              "initial": {
+                "position": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -12.386368751525879
+                ],
+                "target": [
+                  -3.4262733459472656,
+                  -0.37242391705513,
+                  -17.38636875152588
+                ],
+                "fov": 85
+              }
+            },
+            "extras": {
+              "entity_id": "REST-AREA",
+              "kind": "Zone",
+              "source": "native-splat-depth-pick",
+              "evidence": "docs/evidence/phase09/survey/walk-2.jpg",
+              "screen": [
+                0.5,
+                0.85
+              ],
+              "confidence": "visual-group-verified",
+              "reservable": false,
+              "individual_count_verified": false
+            }
+          }
+        ],
+        "mode": "walk",
+        "source": "original-public-SSOG",
+        "substitute": false
+      },
+      "picks": [
+        {
+          "screen": [
+            0.25,
+            0.55
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.5,
+            0.7
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.75,
+            0.55
+          ],
+          "position": null
+        }
+      ],
+      "image": "side-walk-5.jpg"
+    }
+  ],
+  "status": "captured-awaiting-semantic-review"
+}
