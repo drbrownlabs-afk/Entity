@@ -22,3 +22,11 @@
 
 ## Reporte para operador no programador
 Cada actualización debe contestar: ¿qué funciona hoy?, ¿qué se probó?, ¿qué falta?, ¿qué decisión se necesita?, ¿cuál es el siguiente experimento? Incluir enlaces a commit/PR y comandos sencillos cuando existan.
+
+
+## Fase 09 — Nuevo alcance autorizado (2026-11-07)
+| Fase | Nombre | Estado | Evidencia / siguiente paso |
+|---|---|---|---|
+| 09 | Synthetic Office: simulación integral de inteligencia espacial | NO INICIADA (PLAN AUTORIZADO) | Plan y gates 09.1–09.9 en docs/phases/PHASE-09.md; progreso en docs/PHASE-09-PROGRESS.md. Autorización excepcional para completar 09.1–09.9 autónomamente sin revisión humana entre subfases; revisión humana al final. |
+
+Nota: el tablero anterior puede estar desactualizado frente a ramas de Codex aún no fusionadas. Verificar ramas, commits y CI antes de cambiar estados históricos.
