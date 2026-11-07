@@ -55,10 +55,13 @@ test_kiosk_ready_and_host_authority (test_office_delivery.DeliveryTests.test_kio
 test_personal_reply_changes_the_same_reception_world (test_office_delivery.DeliveryTests.test_personal_reply_changes_the_same_reception_world) ... ok
 test_remote_reply_does_not_establish_physical_presence (test_office_delivery.DeliveryTests.test_remote_reply_does_not_establish_physical_presence) ... ok
 test_reservations_change_availability_without_inventing_occupancy (test_office_delivery.DeliveryTests.test_reservations_change_availability_without_inventing_occupancy) ... ok
+test_other_camera_empty_or_disconnected_does_not_erase_observed_person (test_office_occupancy.CameraOccupancyTests.test_other_camera_empty_or_disconnected_does_not_erase_observed_person) ... ok
 test_assigned_operator_cannot_escape_via_queries_actions_or_capabilities (test_office_scopes.ResourceScopeTests.test_assigned_operator_cannot_escape_via_queries_actions_or_capabilities) ... ok
 test_operator_without_resource_assignment_has_no_implicit_camera_access (test_office_scopes.ResourceScopeTests.test_operator_without_resource_assignment_has_no_implicit_camera_access) ... ok
 test_full_day_pause_resume_replay_and_memory (test_office_simulation.DailySimulationTests.test_full_day_pause_resume_replay_and_memory) ... ok
 test_hvac_impact_follows_zone_links_and_resolution_is_audited (test_office_simulation.DailySimulationTests.test_hvac_impact_follows_zone_links_and_resolution_is_audited) ... ok
+test_different_resource_ids_and_site_configuration_use_existing_service (test_office_site_config.DifferentSiteTests.test_different_resource_ids_and_site_configuration_use_existing_service) ... ok
+test_core_clock_reconstruction_restart_and_anonymous_identity_are_separate (test_office_spatial.SpatialClockTests.test_core_clock_reconstruction_restart_and_anonymous_identity_are_separate) ... ok
 test_failure_timeout_mismatch_permissions_and_html_escape (test_output.OutputTests.test_failure_timeout_mismatch_permissions_and_html_escape) ... ok
 test_manual_override_and_idempotency_persistence (test_output.OutputTests.test_manual_override_and_idempotency_persistence) ... ok
 test_presence_rule_screen_readback_and_no_duplicate (test_output.OutputTests.test_presence_rule_screen_readback_and_no_duplicate) ... ok
@@ -69,6 +72,6 @@ test_storage_isolation_and_reply (test_personal_app.PersonalStorageTests.test_st
 test_persistence_after_process_restart (test_restart.RestartTests.test_persistence_after_process_restart) ... ok
 
 ----------------------------------------------------------------------
-Ran 67 tests in 53.544s
+Ran 70 tests in 43.591s
 
 OK

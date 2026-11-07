@@ -274,3 +274,11 @@ def event_detail(site:str,run:str,event_id:UUID,actor=Depends(principal)):
         if not unrestricted(actor) and not keys:raise HTTPException(403,'Event outside assigned resource scope')
         if not unrestricted(actor):return {'id':row['id'],'seq':row['seq'],'type':row['type'],'at':row['at'],'entities':keys,'immutable':True}
         return {**dict(row),'entities':keys,'payload':json.loads(row['payload']),'evidence':json.loads(row['evidence']),'immutable':True}
+
+
+from .spatial import Routes as SpatialRoutes
+@router.post('/sites/{site}/runs/{run}/spatial-routes')
+def spatial_routes(site:str,run:str,body:SpatialRoutes,actor=Depends(principal)):
+    from app.main import database
+    from .spatial import register
+    with database(write=True) as db:return register(db,site,run,actor,body)

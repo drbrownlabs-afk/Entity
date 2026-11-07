@@ -61,3 +61,8 @@ AssetsMicrosoftRocketboxMIT:6GLB conidle/walk/seated/sit-down/stand-up/conversat
 
 ## Backlog acordado tras Fase 09 — 2026-11-07 (ChatGPT)
 Documento de diseño creado: `docs/POST-PHASE-09-SPATIAL-INFERENCE-REGISTRATION.md`, commit `1aeb4abc69a76bd1ba418325ec150328a8ae0648`. Contiene decisiones completas sobre calibración automática/semi-automática de cámaras al gemelo (AprilTag, ChArUco, COLMAP, Orbbec RGB-D/ICP, sincronización temporal), inferencia contextual multievidencia, ReID/MC-MOT, hipótesis versionadas, incertidumbre, privacidad, pruebas adversas y plan incremental. **No implementado; comenzar solo tras terminar y validar Fase 09.** Codex debe leerlo al planificar la fase siguiente. Esta actualización es documental; pruebas no ejecutadas.
+
+## 2026-11-07 — Codex, recuperación y siguientes pruebas
+81b21ba sí estaba publicado;67tests yCI42405312827/PR42405316680Success confirmados. Integrado backlogposterior aFase09 (a501b32), sin iniciar esa ampliación. Preservados cambios deChatGPT. Nuevos70testsPASS y3diariosPASS traspriorizar respuesta autenticada sobrepersonaje deguion. Ensayoonboardingotra sede conIDs/timezonedistintos, persistencia eaislamiento; configuraciónkiosco/espera/organización deja de estar acoplada aIDs deSyntheticOffice.
+
+Nuevo contrato de rutasdeCore conreloj único/historia/aislamientoWhat-if. Corrección ocupaciónmulticámara: vacío/desconectada noerase evidencia deotra cámara; solapa anónimos seexpresa comorango, identidad solo trasverificación. Modeloshumanos yCCTV consumen lamisma poseCore. Seañade prueba remota sobreelSSOG real conpickerSDK, no sustitución visual; suresultado aún pendiente, no presumirverificaciónespacial. Capturaslaterales/suelo reales obtenidas trascorregirscriptdeinspección6ce1477.

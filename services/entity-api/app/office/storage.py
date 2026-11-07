@@ -67,6 +67,8 @@ def world(db,site,run,branch='main',at=None):
         for e in db.execute('SELECT payload FROM office_events WHERE site=? AND run=? AND branch=? AND seq>? AND at<=? ORDER BY seq',(*params,seq,clock)):
             for key,patch in json.loads(e['payload']).get('changes',{}).items():items[key]={**items.get(key,{}),**patch}
     latest=db.execute('SELECT COALESCE(MAX(seq),0) FROM office_events WHERE site=? AND run=? AND branch=?'+(' AND at<=?' if at else ''),(*params,clock) if at else params).fetchone()[0]
+    from .spatial import project
+    project(db,site,run,clock,items,branch)
     # Freshness is derived, never erase the last evidence or claim silence means absence.
     for item in items.values():
         if item.get('observed_at'):
@@ -79,7 +81,9 @@ def world(db,site,run,branch='main',at=None):
         if item.get('kind')=='Track' and item.get('person_id') and clock>item.get('association_until',''):
             item['last_associated_person_id']=item.pop('person_id')
             item['identity_status']='association_expired'
-    return {'site_id':site,'run_id':run,'branch':branch,'clock':clock,'revision':latest,'entities':items,'historical':at is not None}
+    from .occupancy import project as project_occupancy
+    project_occupancy(items,clock)
+    return {'timezone':db.execute('SELECT timezone FROM office_sites WHERE id=?',(site,)).fetchone()[0],'site_id':site,'run_id':run,'branch':branch,'clock':clock,'revision':latest,'entities':items,'historical':at is not None}
 
 
 def emit(db,site,run,branch,at,kind,actor,changes,details=None,evidence=None,command_id=None):

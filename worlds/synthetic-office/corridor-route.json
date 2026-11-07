@@ -1,0 +1,33 @@
+{
+  "id": "original-corridor-v1",
+  "scene_url": "https://superspl.at/scene/a972d838",
+  "coordinate_frame": "supersplat-original",
+  "metric_scale_verified": false,
+  "calibration_evidence": "docs/evidence/phase09/survey/survey-lateral.json; floor-0/1/2.jpg, native voxel walk camera trace",
+  "floor_points": [
+    {
+      "position": [
+        -3.426332202989322,
+        -3.503004744909882,
+        -12.386475500620133
+      ],
+      "evidence": "docs/evidence/phase09/survey/floor-0.jpg; native-depth-center"
+    },
+    {
+      "position": [
+        -3.4261445526792698,
+        -3.3434625951705357,
+        -15.98698548565364
+      ],
+      "evidence": "docs/evidence/phase09/survey/floor-1.jpg; native-depth-center"
+    },
+    {
+      "position": [
+        -3.426325845156714,
+        -3.177073082795637,
+        -17.43794883088543
+      ],
+      "evidence": "docs/evidence/phase09/survey/floor-2.jpg; native-depth-center"
+    }
+  ]
+}

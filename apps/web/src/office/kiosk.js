@@ -12,7 +12,7 @@ form.onsubmit=async event=>{
   const answer=await request('/v1/office/auth/login',{username:form.elements.username.value,password:form.elements.password.value});
   form.elements.password.value='';token=answer.token;site=answer.site_id;run=new URLSearchParams(location.search).get('run')||'day-01';
   if(answer.role!=='kiosk'&&answer.role!=='admin')throw Error('Cuenta de terminal requerida');
-  mountReception(document.querySelector('#reception'),body=>request('/v1/sites/'+encodeURIComponent(site)+'/runs/'+encodeURIComponent(run)+'/commands',body));
+  mountReception(document.querySelector('#reception'),body=>request('/v1/sites/'+encodeURIComponent(site)+'/runs/'+encodeURIComponent(run)+'/commands',body),{kioskId:answer.person_id||'KIOSK-01'});
   form.hidden=true;output.textContent='Terminal conectado al mismo ENTITY Core · datos de simulación persistentes.';
  }catch(error){token='';output.textContent=error.message;}
 };

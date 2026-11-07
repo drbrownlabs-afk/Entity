@@ -1,11 +1,11 @@
 // Kiosk and operator reception are interfaces to the same declared Núcleo capability.
-export function mountReception(container,send){
+export function mountReception(container,send,{kioskId='KIOSK-01'}={}){
  let conversation=null;
  container.innerHTML='<h3>ENTITY · recepción inteligente</h3><p>Invitación y verificación autorizada. Sin teléfono obligatorio. Datos ficticios del ensayo; no reconocimiento facial.</p><form id="reception-start"><label>Referencia de invitación<input name="invitation" required autocomplete="off"></label><button>Consultar reunión</button></form><form id="reception-check" hidden><label>Código de verificación<input name="code" type="password" required autocomplete="off"></label><button>Verificar y registrar llegada</button></form><div class="reception-controls"><button id="reception-status" type="button">Consultar respuesta</button><button id="reception-speak" type="button">Escuchar respuesta</button><button id="reception-voice" type="button">Entrada por voz</button><button id="reception-clear" type="button">Finalizar sesión privada</button></div><p id="reception-reply" role="status" aria-live="polite">Bienvenido. Introduce tu referencia de invitación.</p>';
  const output=container.querySelector('#reception-reply'),start=container.querySelector('#reception-start'),check=container.querySelector('#reception-check');
  const show=message=>{output.textContent=message;};
  async function turn(action,inputs={}){
-  const result=await send({id:crypto.randomUUID(),operation:'reception.interact',target:'KIOSK-01',inputs:{conversation_id:conversation,action,...inputs}});
+  const result=await send({id:crypto.randomUUID(),operation:'reception.interact',target:kioskId,inputs:{conversation_id:conversation,action,...inputs}});
   if(result.status!=='verified')throw Error('Acción sin confirmación: '+result.status);
   const reply=result.details.reply;show(reply.message||reply.status);check.hidden=reply.status!=='verification_required';return reply;
  }

@@ -63,3 +63,16 @@ class DailySimulationTests(unittest.TestCase):
         self.assertTrue(any(x['kind']=='Task' and x.get('status')=='resolved' for x in items.values()))
         causes=self.client.post(root+'/queries',headers=self.headers,json={'kind':'causes','entity_id':'HVAC-D'}).json()
         self.assertTrue(causes['evidence'])
+
+    def test_authenticated_personal_reply_supersedes_scripted_character(self):
+        root=self.install('participant')
+        from app.office.auth import create_account
+        with main.database(write=True) as db:create_account(db,'remote-carlos',PASSWORD,'office','member','PERSON-CARLOS')
+        result=self.client.post(root+'/simulation/advance',headers=self.headers,json={'to':'2026-11-07T15:50:01-05:00'});self.assertEqual(result.status_code,200,result.text)
+        headers=self.auth('remote-carlos')
+        message=self.client.get('/v1/office/app/inbox',headers=headers).json()[0]
+        result=self.client.post('/v1/office/app/inbox/'+message['id']+'/reply',headers=headers,json={'response':'ready'});self.assertEqual(result.status_code,200,result.text)
+        result=self.client.post(root+'/simulation/advance',headers=self.headers,json={'to':'2026-11-07T18:30:00-05:00'});self.assertEqual(result.status_code,200,result.text)
+        state=self.client.get(root+'/world',headers=self.headers).json()
+        self.assertEqual(state['entities']['C-DANIEL-participant']['last_reply_origin'],'authenticated-personal-client')
+        self.assertEqual(state['entities']['C-DANIEL-participant']['status'],'host_ready')

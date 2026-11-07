@@ -3,7 +3,7 @@ import json
 from .storage import identity,encode,now,emit,utc
 from .service import upsert_resource,site_create
 
-TOPOLOGY_VERSION=3
+TOPOLOGY_VERSION=4
 EMPLOYEES={
  'Entity':[('CARLOS','Carlos','Director de producto'),('ANA','Ana','Ingeniera espacial'),('DIEGO','Diego','Desarrollador'),('VALERIA','Valeria','Diseñadora'),('TOMAS','Tomás','Operaciones'),('ELENA','Elena','Investigadora')],
  'Inmerso':[('MARTIN','Martín','Director creativo'),('PAULA','Paula','Productora'),('ANDRES','Andrés','Artista 3D'),('LUCIA','Lucía','Diseñadora'),('NICOLAS','Nicolás','Desarrollador XR'),('CAMILA','Camila','Coordinadora')],
@@ -66,7 +66,7 @@ def provision(db,site,original,clock,run_id='day-01'):
     put('PERSON-LUIS','Person',name='Luis',roles=['member'],fictitious=True,profile_level='member',membership_status='active',membership_until='2027-12-31T00:00:00+00:00',presence='unknown',position=None)
     put('RECEPTION','Reception',name='Recepción inteligente · dos sillas negras',position=None,reservable=False,spatial_mapping='pending-visual-inspection',human_receptionist=False)
     put('WAITING-AREA','WaitingArea',name='Espera de visitantes',capacity=4,position=None,reservable=False,spatial_mapping='pending-visual-inspection')
-    put('KIOSK-01','Kiosk',name='ENTITY · recepción',zone_id='RECEPTION',virtual=True,interfaces=['screen','touch','voice'],connectivity='connected',privacy='private-session',position=None)
+    put('KIOSK-01','Kiosk',name='ENTITY · recepción',zone_id='RECEPTION',virtual=True,interfaces=['screen','touch','voice'],waiting_area='WAITING-AREA',operator_org_id='ORG-COWORK',connectivity='connected',privacy='private-session',position=None)
     put('ACCESS-01','AccessPoint',name='Acceso autorizado de ensayo',zone_id='annotation-1',position=None,virtual=True,spatial_mapping='not-calibrated')
     a=original['settings']['annotations'][1]
     put('MEETING-AREA-01','EventSpace',name='Mesa negra · reuniones',capacity=8,capacity_source='authored-title; seat-count-review-pending',zone_id='annotation-1',annotation_index=1,position=a['position'],enclosed_room=False,reservable=True,commercial=True)

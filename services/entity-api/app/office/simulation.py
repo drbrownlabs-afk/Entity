@@ -23,8 +23,9 @@ def install_day(db,site,run,actor):
     for key in ['A','B','C','D3','E3','PERSON-CARLOS','KIOSK-01']:
         if key not in state['entities']:raise HTTPException(409,'Migrate the A-E topology first')
     from zoneinfo import ZoneInfo
-    day=datetime.fromisoformat(r['clock']).astimezone(ZoneInfo('America/Guayaquil')).date().isoformat()
-    def at(time):return utc(day+'T'+time+'-05:00')
+    zone=ZoneInfo(db.execute('SELECT timezone FROM office_sites WHERE id=?',(site,)).fetchone()[0])
+    day=datetime.fromisoformat(r['clock']).astimezone(zone).date().isoformat()
+    def at(time):return utc(datetime.fromisoformat(day+'T'+time).replace(tzinfo=zone).isoformat())
     if r['clock']>at('08:00:00'):raise HTTPException(409,'Install the daily script on a new run starting at08:00')
     def add(time,key,action,payload):
         db.execute('INSERT INTO office_schedule(site,run,id,at,action,payload) VALUES(?,?,?,?,?,?)',(site,run,key,at(time),action,encode(payload)))
@@ -141,7 +142,11 @@ def advance(db,site,run,actor,to):
             code='SYNTHETIC-'+str(r['seed'])+'-'+run
             issue_credential(db,site,payload['invitation_id'],payload['person_id'],code,(datetime.fromisoformat(stamp)+timedelta(hours=2)).isoformat())
             result=execute({'id':cid,'operation':'reception.interact','target':'KIOSK-01','inputs':{'conversation_id':payload['conversation_id'],'action':'check_in','verification_code':code}})
-        elif action=='host_reply':result=execute({'id':cid,'operation':'intercom.reply','target':'INTERCOM-A','inputs':payload},'PERSON-CARLOS')
+        elif action=='host_reply':
+            conversation=world(db,site,run)['entities'].get(payload['conversation_id'],{})
+            if conversation.get('last_reply_origin') not in [None,'synthetic-character'] or conversation.get('status') not in ['awaiting_host','waiting_host']:
+                result=emit(db,site,run,'main',stamp,'simulation.synthetic_reply_superseded',actor['actor'],{}, {'conversation_id':payload['conversation_id'],'reason':'authenticated participant input takes precedence; no synthetic reply delivered'})
+            else:result=execute({'id':cid,'operation':'intercom.reply','target':'INTERCOM-A','inputs':payload},'PERSON-CARLOS')
         else:raise HTTPException(422,'Unknown daily script action')
         db.execute("UPDATE office_schedule SET status='done',result=? WHERE site=? AND run=? AND id=?",(encode(result),site,run,row['id']))
         outcomes.append({'id':row['id'],'at':stamp,'status':result.get('status','recorded')})
