@@ -1,6 +1,6 @@
 {
-  "tested_commit": "75f2baa5c993d76e1d5be97e4e68dcb9846e2801",
-  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42421431819",
+  "tested_commit": "1f7eb06fef9c113d1fcb34d069b13b2022b725a1",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42421539075",
   "scene": "https://superspl.at/scene/a972d838",
   "source": "Original SSOG, elevated/oblique inspection viewpoints derived from authored and measured cameras. Camera transforms are NOT semantic resource coordinates or verified walking routes",
   "views": [
