@@ -72,7 +72,7 @@
             "managers": [
               {
                 "splats": 0,
-                "pending": true
+                "pending": false
               }
             ]
           },
@@ -88,7 +88,7 @@
             "managers": [
               {
                 "splats": 0,
-                "pending": true
+                "pending": false
               }
             ]
           },
@@ -104,7 +104,7 @@
             "managers": [
               {
                 "splats": 0,
-                "pending": true
+                "pending": false
               }
             ]
           },
@@ -120,7 +120,7 @@
             "managers": [
               {
                 "splats": 0,
-                "pending": true
+                "pending": false
               }
             ]
           }
