@@ -17,8 +17,6 @@ sha = git('rev-parse', 'HEAD').decode().strip()
 output = root / '.runtime/delivery'
 output.mkdir(parents=True, exist_ok=True)
 dist = root / 'apps/web/dist'
-if not (dist / 'index.html').is_file():
-    raise SystemExit('Build Experience first: bash scripts/setup-experience.sh')
 # Rebuild with the locked local toolchain; never attach a potentially stale dist to a new SHA.
 subprocess.run(['npm', '--prefix', 'apps/web', 'run', 'build'], cwd=root, check=True)
 source = output / 'entity-source.tar.gz'
