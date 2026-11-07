@@ -62,3 +62,9 @@ Main 5ce2519 autoriza Fase 04 tras revisión Fase 03. Output virtual EN VALIDACI
 CI Fase 04 verificado Success por web: run 42325368629, commit 520475f, api-tests y edge-tests. Corrección final upload-artifact v6 en progreso de validación. Las advertencias históricas de CI desconocido se sustituyen por esta observación real, no por suposiciones de YAML.
 
 CI final Fase 04 Success sin anotaciones en run 42325648659, commit b715116da5a7645896aa011367aa448bad7123b6; evidencia docs/evidence/phase04-ci.json. Rama codex/phase-04-output publicada/verificada, sin PR nuevo por bloqueo API ni merge. Todo código y workflow validado; cierre posterior solo documental. Pendiente revisión humana Fase 04 y aplicar configuración de red si se necesita gh/API; ningún comando Git/CI manual requerido.
+
+
+## Estado vigente — Fase 05
+Continuación autorizada por operador; EN VALIDACIÓN, sin autoaprobación previa. 29/29 Core y 4/4 Edge; SDK oficial OpenAI integrado, consultas fundamentadas y acciones virtuales autorizadas, trazas/idempotencia persistentes. Demo HTTP con controlled-fixture aprobada; no inferencia remota real sin clave. Migración aditiva esquema 5, Docker/persistencia aprobados, backup previo. Rama codex/phase-05-situated-ai conserva fases anteriores. Ver docs/phases/PHASE-05.md; prioridad vigente revisión humana Fase 05, Fase 06 NO INICIADA. Las entradas anteriores son historia y no sustituyen este estado vigente.
+
+Fase 05 publicada: f77f816c04b312842e54767375028da7b50f35f3, rama codex/phase-05-situated-ai. CI remoto run 42326524584 Success, sin anotaciones; evidencia phase05-ci.json. Proveedor real no probado; controlled-fixture y SDK con transporte controlado sí. PR REST falla Forbidden, sin PR nuevo/merge, sin operaciones Git manuales pendientes del operador. Revisión humana y validación opcional real siguen pendientes.

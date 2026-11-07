@@ -150,3 +150,12 @@ Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin
 - Pruebas iniciales: 28 Core aprobadas, demo HTTP real (proveedor controlado) consulta recepción con referencias, acción virtual verified, trace e idempotencia pasadas. SDK oficial probado con HTTPX MockTransport para tool call y timeout, sin confundir con inferencia remota. Resultado final y CI se registran al cierre.
 - Política: no se usa prosa libre del modelo como hecho; respuesta deriva de evidencia Core. Acción no incluida o distinta del envelope explícito rechazada; modelo no concede permisos. Estado desconocido se declara como ausencia de registro. Errores/timeout no ejecutan acciones; fallos Output se conservan como fallos.
 - Límites: proveedor real no validado sin clave, respuestas naturales restringidas/scope explícito, permisos globales heredados y Core local no endurecido. Fase 05 EN VALIDACIÓN; Fase 06 no iniciada. Próximo paso publicación y CI real.
+
+
+### 2026-11-07 UTC — cierre y publicación Fase 05
+- Publicado f77f816c04b312842e54767375028da7b50f35f3 en codex/phase-05-situated-ai. CI remoto por push https://github.com/drbrownlabs-afk/Entity/actions/runs/42326524584 observado Success para ese SHA completo, sin anotaciones; evidencia JSON versionada. CI incluye demo-agent y todas las regresiones/Docker/Edge/Output.
+- Suite final 29/29 Core (4.801 s), 4/4 Edge (.145 s), ninguna omitida; demo HTTP controlada aprobada dos veces. Test adicional proveedor real sin clave falla cerrado; no efectos. Modelo/proveedor/política/pregunta/refreshed evidence incluidos en traza. No inferencia OpenAI real ejecutada ni coste supuesto.
+- Persistencia: comparación con backup previo, 14 entidades/7 estados/7 relaciones/29 eventos/5 memorias/5 capacidades intactos y tablas vacías heredadas preservadas; integrity_check ok, foreign keys vacías, esquema 5.
+- Actualizados master spec, decision log, project status, phase board, CLOUD-ENVIRONMENT, PHASE-05.md y artefactos de evidencia. Cierre posterior solo docs, sin cambios funcionales tras CI.
+- PR REST intentado para Fase 05: Forbidden; sin PR nuevo ni merge, publicación Git y lectura CI web operativas. No se traslada Git al usuario. Config cloud start_skill guardada esquema 5/límite Fase 06; requisito personal opcional ENTITY_LLM_API_KEY/api.openai.com y variables guardados en borrador, no runtime publicado.
+- Estado: Fase 05 EN VALIDACIÓN, Fase 06 NO INICIADA. Próximo paso revisión humana; proveedor real requiere configuración y prueba aparte si se desea activarlo.

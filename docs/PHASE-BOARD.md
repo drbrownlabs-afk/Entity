@@ -8,7 +8,7 @@
 | 02 | Contratos y conectores | APROBADA | Aceptación explícita del operador al iniciar Fase 03. Registry, REST/simulación, permisos, auditoría e idempotencia; 19 pruebas aprobadas. Ver docs/phases/PHASE-02.md; aceptada por operador |
 | 03 | ENTITY Edge y percepción | EN VALIDACIÓN | OpenCV/Norfair, vídeo y fixture, zonas, Core, outbox y recuperación HTTP probados. 20 tests Core + 4 Edge. Orbbec diferida no bloqueante; PR #1 Draft y CI Success comprobados. Revisión del operador habilita Fase 04. Ver docs/phases/PHASE-03.md |
 | 04 | ENTITY Output virtual primero | EN VALIDACIÓN | Presencia→regla→capacidad declarada→escena verificada; manual/fallo/timeout probados. 23 Core + 4 Edge tests; CI remoto Success run 42325648659. Ver docs/phases/PHASE-04.md |
-| 05 | IA situada | NO INICIADA | Herramientas y acciones pendientes |
+| 05 | IA situada | EN VALIDACIÓN | SDK oficial OpenAI + sustituto controlado; evidencia, permisos, trazas y Output verificado. 29 Core + 4 Edge tests; CI remoto Success run 42326524584. Proveedor remoto no probado sin clave. Ver docs/phases/PHASE-05.md |
 | 06 | Sistemas externos | NO INICIADA | RTSP/ONVIF, MQTT, reservas pendientes |
 | 07 | ENTITY Experience | NO INICIADA | Demo centro comercial aún sin verificación |
 | 08 | Validación integral | NO INICIADA | Depende de pruebas de fases anteriores |
