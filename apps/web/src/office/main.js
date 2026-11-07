@@ -16,7 +16,10 @@ if(surveyPose!==null){
   const position=values.position.slice(index*3,index*3+3);
   settings.cameras=[{initial:{position,target:values.target.slice(index*3,index*3+3),fov:85}}];
   // Camera-only inspection direction; never a semantic resource anchor.
-  if(new URLSearchParams(location.search).get('survey_direction')==='hall')settings.cameras[0].initial.target=[position[0],position[1],position[2]-5];
+  const direction=new URLSearchParams(location.search).get('survey_direction');
+  if(direction==='hall')settings.cameras[0].initial.target=[position[0],position[1],position[2]-5];
+  if(direction==='left')settings.cameras[0].initial.target=[position[0]-5,position[1],position[2]];
+  if(direction==='back')settings.cameras[0].initial.target=[position[0],position[1],position[2]+5];
  }
 }
 const routePose=new URLSearchParams(location.search).get('survey_route_pose');
