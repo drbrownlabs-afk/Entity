@@ -1,4 +1,6 @@
 {
+  "tested_commit": "d6ba0448e2ede71718100c625f25af00b63c50ec",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42420870917",
   "source": "Original published Synthetic Office SSOG through official SuperSplat viewer package",
   "checks": [
     {
@@ -228,7 +230,7 @@
             "managers": [
               {
                 "splats": 624025,
-                "pending": false
+                "pending": true
               }
             ]
           }
