@@ -11,6 +11,7 @@
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {
+    "@playcanvas/supersplat-viewer": "1.42.1",
     "playcanvas": "2.23.3"
   },
   "devDependencies": {

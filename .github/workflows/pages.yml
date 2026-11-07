@@ -1,7 +1,7 @@
 name: Publish ENTITY Experience
 on:
   push:
-    branches: [main, codex/phase-07-experience]
+    branches: [main, codex/phase-07-experience, codex/phase-09-autonomous-plan]
     paths: ["apps/web/**", "worlds/shopping-mall/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 permissions:
