@@ -69,9 +69,12 @@ jobs:
         run: bash scripts/demo-edge.sh
       - name: Demonstrate observation to virtual output
         run: bash scripts/demo-output.sh
-      - name: Preserve numerical report only
+      - name: Preserve demonstration reports
         if: always()
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v6
         with:
           name: edge-report
-          path: .runtime/edge-demo/*report.json
+          path: |
+            .runtime/edge-demo/*report.json
+            .runtime/output-demo/report.json
+            .runtime/output-demo/screen.html

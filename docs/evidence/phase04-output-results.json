@@ -1,0 +1,14 @@
+{
+  "presence_to_welcome": "passed",
+  "absence_to_idle": "passed",
+  "manual_override": "passed",
+  "declared_capability": "bfcfaca5-2d17-4242-9d05-43c4d8971afe",
+  "restart_idempotency": "passed",
+  "simulated": true,
+  "faults": {
+    "fail": "failed",
+    "timeout": "timed_out",
+    "mismatch": "verification_failed"
+  },
+  "output_events": 7
+}

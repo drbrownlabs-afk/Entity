@@ -2,7 +2,7 @@
 
 La máquina actual es válida para desarrollar, ejecutar Docker y depurar. GitHub conserva código, configuración y resultados; las bases de datos y procesos siguen siendo locales.
 
-Cada tarea cloud ya está aislada. Utilizar `/workspace/Entity`; no crear worktrees salvo petición explícita. Leer AGENTS.md y la memoria compartida antes de modificar el proyecto. Fase 02 aceptada; Fase 03 EN VALIDACIÓN; no iniciar Fase 04 sin aprobación.
+Cada tarea cloud ya está aislada. Utilizar `/workspace/Entity`; no crear worktrees salvo petición explícita. Leer AGENTS.md y la memoria compartida antes de modificar el proyecto. Fase 04 autorizada y EN VALIDACIÓN; no iniciar Fase 05 sin aprobación.
 
 ## Instalación
 
@@ -39,6 +39,8 @@ El smoke escribe registros sintéticos con identificadores únicos en el volumen
 
 Scorpio no se inicia ni se valida en esta base. La evidencia de base está en `docs/audits/PHASE-00-2026-11-06.md`; la entrega actual y sus límites en `docs/phases/PHASE-01.md`. El borrador de configuración del entorno contiene install_script y start_skill; su guardado no equivale a publicación de una instantánea. Este documento y el script permiten consultar los mismos pasos desde GitHub, independientemente de ese borrador.
 
-Integraciones Fase 02: docs/phases/PHASE-02.md; esquema actual 3. Sin configuración privada de tokens, rutas nuevas rechazan acceso.
+Integraciones Fase 02: docs/phases/PHASE-02.md; esquema actual 4. Sin configuración privada de tokens, rutas nuevas rechazan acceso.
 
 Edge: bash scripts/setup-edge.sh; bash scripts/demo-edge.sh. Entorno separado .runtime/edge-venv. Core no requiere librerías de visión. Ver docs/phases/PHASE-03.md.
+
+Output: bash scripts/demo-output.sh. Utiliza Core propio efímero y datos locales .runtime/output-demo; no hardware. Ver docs/phases/PHASE-04.md.

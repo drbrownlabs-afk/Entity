@@ -23,3 +23,5 @@ Documentación: `docs/architecture.md`, `docs/implementation-plan.md`, `AGENTS.m
 Fase 01 EN VALIDACIÓN: resultados y límites en `docs/phases/PHASE-01.md`. Fase 02 no iniciada.
 
 Demo Edge Fase 03 (EN VALIDACIÓN): `bash scripts/setup-edge.sh` y `bash scripts/demo-edge.sh` tras preparar Core. Vídeo preentrenado, tracking y observaciones en Core; detalles en docs/phases/PHASE-03.md. Fase 02 aceptada por operador; Fase 04 no iniciada.
+
+Fase 04 Output virtual EN VALIDACIÓN: `bash scripts/demo-output.sh`, con Core/Edge preparados. Pantalla virtual, reglas, control manual y fallos probados; ver docs/phases/PHASE-04.md. CI remoto comprobado por web; diagnóstico en docs/audits/GITHUB-ACTIONS-RECOVERY.md.
