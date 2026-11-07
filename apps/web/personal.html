@@ -38,7 +38,7 @@ async function loadWorld(){
  }
  if(selectedEntity&&!personalWorld.entities[selectedEntity])selectedEntity=null;
  let details=$('personal-details');if(!details){details=el('section','panel');details.id='personal-details';list.after(details);}
- if(!$('personal-query').querySelector('form'))mountQuery($('personal-query'),{getWorld:()=>personalWorld,getSelection:()=>selectedEntity||actor.person_id||'site',send:body=>request('/v1/sites/'+encodeURIComponent(actor.site_id)+'/runs/'+encodeURIComponent($('run').value)+'/agent/requests',{method:'POST',body:JSON.stringify(body)}),onError:error=>notice(error.message,true),onSelect:id=>selectEntity(id)});
+ mountQuery($('personal-query'),{getWorld:()=>personalWorld,getSelection:()=>selectedEntity||actor.person_id||'site',send:body=>request('/v1/sites/'+encodeURIComponent(actor.site_id)+'/runs/'+encodeURIComponent($('run').value)+'/agent/requests',{method:'POST',body:JSON.stringify(body)}),onError:error=>notice(error.message,true),onSelect:id=>selectEntity(id)});
  if(selectedEntity){const entity=personalWorld.entities[selectedEntity];const title=details.querySelector('h2');if(title)title.textContent=entity.name||entity.id;const facts=details.querySelector('[data-personal-facts]');if(facts)facts.textContent=JSON.stringify(entity,null,2);}
 }
 async function selectEntity(id){

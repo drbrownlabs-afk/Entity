@@ -39,6 +39,9 @@ def install_day(db,site,run,actor):
         changes[key]=item
         stream=upsert_resource(db,site,'STREAM-'+key,'Stream',{'camera_id':key,'type':'synthetic-observations','video_recorded':False});changes[stream['id']]=stream
         db.execute('INSERT OR IGNORE INTO office_bindings VALUES(?,?,?,?,?)',(site,key,'simulated','1.0','{}'))
+    sensor=upsert_resource(db,site,'SENSOR-MEETING','Sensor',{'name':'Ambiente simulado · mesa de reuniones','virtual':True,'zone_id':'annotation-1','position':None,'physical_device_verified':False,'spatial_mapping':'logical-zone-only'})
+    changes[sensor['id']]=sensor
+    db.execute('INSERT OR IGNORE INTO office_bindings VALUES(?,?,?,?,?)',(site,sensor['id'],'simulated','1.0','{}'))
     changes['PERSON-DANIEL']=upsert_resource(db,site,'PERSON-DANIEL','Person',{'name':'Daniel','profile_level':'visitor','fictitious':True,'known_fields':['name','invitation'],'presence':'unknown'})
     emit(db,site,run,'main',r['clock'],'simulation.configured',actor['actor'],changes,{'daily_script':'coworking-v2','geometry_claimed':False})
     book='B-LUIS-'+run;morning='M-MORNING-'+run;meeting='M-1600-'+run;invite='I-DANIEL-'+run;conversation='C-DANIEL-'+run
@@ -49,6 +52,9 @@ def install_day(db,site,run,actor):
     guests=[{'id':'I-UNKNOWN-'+str(i)+'-'+run} for i in range(3)]+[{'id':invite,'name':'Daniel'}]
     cmd('08:00:00','book-daniel','booking.create','MEETING-AREA-01',booking_id='B-1600-'+run,person_id='PERSON-CARLOS',starts_at=at('16:00:00'),ends_at=at('17:00:00'),party_size=5,meeting_id=meeting,expected_guests=guests)
     for group in ['D','E']:cmd('08:00:00','power-on-'+group,'device.setPower','HVAC-'+group,on=True)
+    for group in ['D','E']:
+        for name,value,unit in [('temperature',23,'C'),('humidity',48,'percent'),('illuminance',450,'lux'),('co2',650,'ppm')]:
+            add('08:01:00','baseline-'+group+'-'+name,'sensor',{'source_id':'SENSOR-'+group,'name':name,'value':value,'unit':unit})
     luis=[{'local_track_id':'luis-badge-session','zone_id':'ZONE-D','position':[.4,.6]}]
     observe('09:15:00','luis-anonymous','CAM-05',luis)
     badge('09:15:05','luis-identify','CAM-05','luis-badge-session','PERSON-LUIS')
@@ -61,7 +67,7 @@ def install_day(db,site,run,actor):
     observe('10:30:00','morning-occupancy','CAM-02',tracks)
     for i,p in enumerate(people):badge('10:30:00','morning-badge-'+str(i),'CAM-02',p,p)
     cmd('10:30:00','morning-start','meeting.start',morning,participants=people)
-    add('10:35:00','co2-meeting','sensor',{'source_id':'SENSOR-D','name':'co2','value':1300,'unit':'ppm'})
+    add('10:35:00','co2-meeting','sensor',{'source_id':'SENSOR-MEETING','name':'co2','value':1300,'unit':'ppm'})
     add('11:20:00','extension-conflict','expected_conflict',{'operation':'booking.extend','target':'B-MORNING-'+run,'inputs':{'ends_at':at('12:00:00')}})
     cmd('11:21:00','alternative','booking.reassign','B-FOLLOWING-'+run,resource_id='B')
     cmd('11:21:01','morning-extended','booking.extend','B-MORNING-'+run,ends_at=at('12:00:00'))

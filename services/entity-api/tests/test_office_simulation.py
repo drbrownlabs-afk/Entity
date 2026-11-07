@@ -76,3 +76,18 @@ class DailySimulationTests(unittest.TestCase):
         state=self.client.get(root+'/world',headers=self.headers).json()
         self.assertEqual(state['entities']['C-DANIEL-participant']['last_reply_origin'],'authenticated-personal-client')
         self.assertEqual(state['entities']['C-DANIEL-participant']['status'],'host_ready')
+
+    def test_meeting_co2_is_not_misattributed_to_public_desks(self):
+        root=self.install('sensor-scope')
+        response=self.client.post(root+'/simulation/advance',headers=self.headers,json={'to':'2026-11-07T10:35:00-05:00'})
+        self.assertEqual(response.status_code,200,response.text)
+        items=self.client.get(root+'/world',headers=self.headers).json()['entities']
+        measurement=items['annotation-1']['environment']['co2']
+        self.assertEqual(measurement['source_id'],'SENSOR-MEETING')
+        self.assertEqual(measurement['value'],1300)
+        for zone in ['ZONE-D','ZONE-E']:
+            self.assertEqual(items[zone]['environment']['co2']['value'],650)
+            self.assertEqual(items[zone]['environment']['humidity']['unit'],'percent')
+            self.assertEqual(items[zone]['environment']['illuminance']['unit'],'lux')
+        main.initialize()
+        self.assertEqual(items,self.client.get(root+'/world',headers=self.headers).json()['entities'])

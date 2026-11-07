@@ -40,13 +40,19 @@ try{
   await form.getByRole('button',{name:'Ejecutar con autorización'}).click();
   await host.waitForFunction(()=>document.querySelector('#status').textContent==='Core: verified');
   await host.locator('[data-entity="'+bookingId+'"]').waitFor({state:'visible'});
+  await host.locator('#personal-query [name=kind]').selectOption('graph');
+  await host.locator('#personal-query [name=entity_id]').selectOption('PERSON-CARLOS');
+  await host.locator('#personal-query button').filter({hasText:'Consultar ENTITY'}).click();
+  await host.waitForFunction(()=>document.querySelector('#personal-query #office-answer').textContent.includes('evidencias'));
+  const answer=await host.locator('#personal-query #office-answer').innerText();
+  if(answer.includes('PERSON-LUIS')||answer.includes('CAM-01'))throw Error('Scoped personal query exposed another person/camera');
   await page.getByRole('button',{name:'Consultar respuesta',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('#reception-reply').textContent.includes('confirmó que está listo'));
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Kiosk viewport overflow');
   if(errors.length)throw Error(errors.join('; '));
   await page.screenshot({path:'docs/evidence/phase09/kiosk-'+width+'.png',fullPage:true});
   await host.screenshot({path:'docs/evidence/phase09/personal-'+width+'.png',fullPage:true});
-  report.checks.push({width,verified_invitation:true,private_host_reply:true,scoped_mobile_booking:true,original_viewer_receives_scoped_world:true,private_cameras_in_projection:projection.camera_ids.length,kiosk_reflects_core:true,token_in_local_storage:await page.evaluate(()=>Object.keys(localStorage).some(k=>/token|password/i.test(k))),page_errors:errors,voice_screen_controls:true,voice_microphone_executed:false});
+  report.checks.push({width,verified_invitation:true,private_host_reply:true,scoped_mobile_booking:true,original_viewer_receives_scoped_world:true,shared_scoped_query_verified:true,private_cameras_in_projection:projection.camera_ids.length,kiosk_reflects_core:true,token_in_local_storage:await page.evaluate(()=>Object.keys(localStorage).some(k=>/token|password/i.test(k))),page_errors:errors,voice_screen_controls:true,voice_microphone_executed:false});
   await context.close();
  }
  report.status='passed';

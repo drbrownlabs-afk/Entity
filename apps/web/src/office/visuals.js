@@ -79,7 +79,11 @@ export function installVisuals(viewer,original){
   const camera=entry.entity.camera,picker=new pc.Picker(app,160,90);
   const rect=camera.rect.clone();
   try{
-   app.renderNextFrame=true;await new Promise(resolve=>app.once('postrender',resolve));
+   await new Promise((resolve,reject)=>{
+    const finish=()=>{clearTimeout(timer);resolve();};
+    const timer=setTimeout(()=>{app.off('postrender',finish);reject(Error('Camera render did not complete within 10 seconds'));},10000);
+    app.once('postrender',finish);app.renderNextFrame=true;
+   });
    camera.rect=new pc.Vec4(0,0,1,1);picker.prepare(camera,app.scene);camera.rect=rect;
    const tracks=[];
    for(const [personId,entity]of avatars){
@@ -87,9 +91,12 @@ export function installVisuals(viewer,original){
     if(!entity.enabled||!pose)continue;
     const center=entity.getPosition().clone().add(new pc.Vec3(0,.9,0));
     const depth=center.clone().sub(entry.entity.getPosition()).dot(entry.entity.forward);
-    const screen=camera.camera.worldToScreen(center,160,90);
+    // Picker uses its complete 160×90 target; worldToScreen otherwise applies the CCTV tile rect.
+    camera.rect=new pc.Vec4(0,0,1,1);
+    const screen=camera.camera.worldToScreen(center,160,90);camera.rect=rect;
     if(depth<=0||screen.x<0||screen.x>=160||screen.y<0||screen.y>=90)continue;
-    const hits=await picker.getSelectionAsync(Math.max(0,screen.x-3),Math.max(0,screen.y-8),7,17);
+    let timer;
+    const hits=await Promise.race([picker.getSelectionAsync(Math.max(0,screen.x-3),Math.max(0,screen.y-8),7,17),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Camera visibility readback timed out')),10000);})]).finally(()=>clearTimeout(timer));
     const owned=hits.some(hit=>{let node=hit.node;while(node){if(node===entity)return true;node=node.parent;}return false;});
     if(owned){
      const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(id+':'+personId));
