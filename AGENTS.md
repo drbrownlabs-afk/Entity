@@ -35,3 +35,11 @@ El operador autoriza **una sola tarea continua 09.1–09.9**, con verificación 
 
 ## Addendum Núcleo — Fase 09 (2026-11-07)
 Leer y aplicar `docs/phases/PHASE-09-NUCLEO-ADDENDUM.md` como decisión arquitectónica complementaria durante la ejecución autónoma de 09.1–09.9. Núcleo (nombre propio) normaliza capacidades de conectores/adaptadores; ENTITY Core conserva entidades, estados, relaciones, eventos y memoria. No detener ni reiniciar la fase, ni ampliar alcance a normalización universal o autodetección de cualquier API. Integrar progresivamente, conservar implementaciones válidas y probar intercambio de adaptadores.
+
+
+## Corrección operativa vinculante — Fase 09 (2026-11-07)
+La escena Synthetic Office ORIGINAL ya está integrada y renderizada desde su SSOG publicado (evidencia `baf37b3` y `docs/evidence/phase09/original-integration.json`). **No exigir, perseguir ni esperar el export Vite ZIP, descarga autenticada, SSOG local o sesión de navegador como prerequisito**. El operador ya posee Vite, pero NO se solicita ni se necesita para continuar; únicamente consultar una exportación si el operador lo pide explícitamente más adelante. Un bloqueo de descarga/exportación NO bloquea 09.1–09.9. Seguir usando los recursos originales remotos y los voxels; verificar las rutas, anclas y colisiones restantes con evidencia real. No sustituir la escena.
+
+La asignación espacial vinculante está en `docs/phases/PHASE-09.md` («Zonificación operativa confirmada»). Dos conjuntos contiguos de seis puestos son **dos oficinas privadas**, no doce escritorios individuales públicos; la mesa negra junto a la pared es la reunión; dos sillas negras aisladas son recepción provisional; otro grupo de sillas es espera; el resto son puestos individuales reservables. La posición geométrica exacta de cada grupo sin ancla validada queda pendiente de inspección, nunca inventada. Corregir inventario/bootstrap y probar reservas/roles acorde con esta topología.
+
+Continuar autónomamente desde el checkpoint de 09.1, cerrar gates con pruebas y seguir 09.2–09.9 sin detenerse por Vite ni pedir nueva aprobación entre subfases. El checkpoint no es finalización de fase. Mantener evidencias, commits y publicación GitHub según las reglas existentes.
