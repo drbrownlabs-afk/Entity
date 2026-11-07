@@ -1,0 +1,75 @@
+[
+  {
+    "title": "Espera de visitantes",
+    "text": "Grupo de sillas claras visible a la izquierda del recorrido. Ancla de grupo, no posición individual de asiento.",
+    "position": [
+      -4.751476330788986,
+      -0.63474085001273,
+      -16.002127587705036
+    ],
+    "camera": {
+      "initial": {
+        "position": [
+          -3.4262733459472656,
+          -0.37242391705513,
+          -12.386368751525879
+        ],
+        "target": [
+          -3.4262733459472656,
+          -0.37242391705513,
+          -17.38636875152588
+        ],
+        "fov": 85
+      }
+    },
+    "extras": {
+      "entity_id": "WAITING-AREA",
+      "kind": "WaitingArea",
+      "source": "native-splat-depth-pick",
+      "evidence": "docs/evidence/phase09/survey/rear-hall.jpg",
+      "screen": [
+        0.3,
+        0.6
+      ],
+      "confidence": "visual-group-verified",
+      "reservable": false
+    }
+  },
+  {
+    "title": "Booths de descanso",
+    "text": "Grupo de booths curvos de madera y verde. No reservables; cantidad individual pendiente de inventario completo.",
+    "position": [
+      -3.426234714858262,
+      -0.9248632498038959,
+      -19.5901388836479
+    ],
+    "camera": {
+      "initial": {
+        "position": [
+          -3.4262733459472656,
+          -0.37242391705513,
+          -12.386368751525879
+        ],
+        "target": [
+          -3.4262733459472656,
+          -0.37242391705513,
+          -17.38636875152588
+        ],
+        "fov": 85
+      }
+    },
+    "extras": {
+      "entity_id": "REST-AREA",
+      "kind": "Zone",
+      "source": "native-splat-depth-pick",
+      "evidence": "docs/evidence/phase09/survey/walk-2.jpg",
+      "screen": [
+        0.5,
+        0.85
+      ],
+      "confidence": "visual-group-verified",
+      "reservable": false,
+      "individual_count_verified": false
+    }
+  }
+]

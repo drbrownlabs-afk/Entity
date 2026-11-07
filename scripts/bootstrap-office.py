@@ -12,10 +12,11 @@ from app.office.service import site_create,upsert_resource,create_run
 from app.office.auth import create_account
 main.initialize()
 original=json.loads(Path(args.settings).read_text())
-from app.office.provision import provision
+from app.office.provision import provision,apply_semantics
 credentials={}
 with main.database(write=True) as db:
     changed=provision(db,site,original,args.day+'T08:00:00-05:00')
+    apply_semantics(db,site,json.loads((root/'worlds/synthetic-office/semantic-annotations.json').read_text()))
     for username,role,person in [('admin','admin',None),('jose','operator','PERSON-JOSE'),('entity-kiosk','kiosk','KIOSK-01'),('carlos','member','PERSON-CARLOS'),('luis','member','PERSON-LUIS'),('mateo','maintenance','PERSON-MATEO')]:
         username=username if site=='synthetic-office' else site+':'+username
         if db.execute('SELECT 1 FROM office_accounts WHERE username=?',(username,)).fetchone():continue

@@ -105,3 +105,25 @@ def provision(db,site,original,clock,run_id='day-01'):
     config['topology_version']=TOPOLOGY_VERSION
     db.execute('UPDATE office_sites SET config=? WHERE id=?',(encode(config),site))
     return True
+
+def apply_semantics(db,site,annotations):
+    """Add reviewed native SuperSplat annotations without changing operational state/history."""
+    import hashlib
+    from .storage import get_run
+    digest=hashlib.sha256(encode(annotations).encode()).hexdigest()
+    row=db.execute('SELECT config FROM office_sites WHERE id=?',(site,)).fetchone()
+    if not row:return False
+    config=json.loads(row[0])
+    if config.get('semantic_revision')==digest:return False
+    changes={}
+    for index,annotation in enumerate(annotations,4):
+        extra=annotation['extras'];key=extra['entity_id'];kind=extra['kind']
+        old=db.execute('SELECT attributes FROM office_resources WHERE site=? AND id=?',(site,key)).fetchone()
+        attrs={**(json.loads(old[0]) if old else {}),'name':annotation['title'],'position':annotation['position'],'annotation_index':index,
+               'coordinate_frame':'supersplat-original','spatial_mapping':'visual-group-verified; individual seats not calibrated','spatial_provenance':extra,'reservable':False}
+        changes[key]=upsert_resource(db,site,key,kind,attrs)
+    for run in db.execute('SELECT id,clock FROM office_runs WHERE site=?',(site,)).fetchall():
+        emit(db,site,run['id'],'main',run['clock'],'spatial.mapping.updated','authorized-scene-survey',changes,{'source':'reviewed-original-splat-depth','semantic_revision':digest})
+    config['semantic_revision']=digest
+    db.execute('UPDATE office_sites SET config=? WHERE id=?',(encode(config),site))
+    return True

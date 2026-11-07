@@ -2,11 +2,13 @@ import {createViewer} from '@playcanvas/supersplat-viewer/viewer';
 import '@playcanvas/supersplat-viewer/viewer.css';
 import original from '../../../../worlds/synthetic-office/original-viewer-settings.json';
 import './office.css';
+import semanticAnnotations from '../../../../worlds/synthetic-office/semantic-annotations.json';
 import inspectionCameras from '../../../../worlds/synthetic-office/inspection-cameras.json';
 
-document.querySelector('#office-app').innerHTML='<header><a href="./">ENTITY</a><span>SYNTHETIC OFFICE / ARCHIVO ORIGINAL</span><b>argenzio · CC BY-NC 4.0</b></header><main><section class="tools"><span id="status" role="status">Cargando SSOG original…</span><button id="frame">Dollhouse</button><button id="reset">Interior</button><button id="walk">Caminar con colisiones</button></section><div id="scene"></div><section class="move"><button data-move="0,1">↑</button><button data-move="-1,0">←</button><button data-move="0,-1">↓</button><button data-move="1,0">→</button><span>Controles táctiles · geometría y voxels originales</span></section><section><h2>Inventario de anotaciones originales</h2><div id="annotations"></div><pre id="selection"></pre><p>Estas anotaciones proceden del archivo publicado por el autor. No se han inventado salas ni sustituido el edificio por una escena de prueba.</p><a href="https://superspl.at/scene/a972d838" target="_blank" rel="noopener">Abrir la publicación original ↗</a></section></main>';
+document.querySelector('#office-app').innerHTML='<header><a href="./">ENTITY</a><span>SYNTHETIC OFFICE / ARCHIVO ORIGINAL</span><b>argenzio · CC BY-NC 4.0</b></header><main><section class="tools"><span id="status" role="status">Cargando SSOG original…</span><button id="frame">Dollhouse</button><button id="reset">Interior</button><button id="walk">Caminar con colisiones</button></section><div id="scene"></div><section class="move"><button data-move="0,1">↑</button><button data-move="-1,0">←</button><button data-move="0,-1">↓</button><button data-move="1,0">→</button><span>Controles táctiles · geometría y voxels originales</span></section><section><h2>Inventario espacial</h2><div id="annotations"></div><pre id="selection"></pre><p>A/B y reunión conservan sus anotaciones originales. Espera y descanso se identificaron en la escena; los puntos aún no calibrados permanecen pendientes.</p><a href="https://superspl.at/scene/a972d838" target="_blank" rel="noopener">Abrir la publicación original ↗</a></section></main>';
 const settings=structuredClone(original.settings);
 settings.startMode='orbit';
+settings.annotations.push(...structuredClone(semanticAnnotations));
 const surveyPose=new URLSearchParams(location.search).get('survey_pose');
 if(surveyPose!==null){
  const index=Number(surveyPose),values=original.settings.animTracks[0].keyframes.values;
@@ -29,9 +31,9 @@ const collisionUrl=base?new URL('scene.voxel.json',base).href:original.collision
 const output=document.querySelector('#status');
 function inspect(index){
   window.dispatchEvent(new CustomEvent('office-annotation-selected',{detail:index}));
-  document.querySelector('#selection').textContent=JSON.stringify({annotation_index:index,...original.settings.annotations[index]},null,2);
+  document.querySelector('#selection').textContent=JSON.stringify({annotation_index:index,...settings.annotations[index]},null,2);
 }
-original.settings.annotations.forEach((annotation,index)=>{
+settings.annotations.forEach((annotation,index)=>{
   const button=document.createElement('button');
   button.textContent=annotation.title;
   button.onclick=()=>{if(viewer?.state.loaded)viewer.selectAnnotation(index);inspect(index);};
