@@ -59,3 +59,7 @@ El operador confirma recepción DIGITAL (función Core/API para check-in, visita
 
 ## Decisión de recepción inteligente presencial — 2026-11-07
 Recepción inteligente: kiosco/pantalla física de voz y táctil en sector de DOS SILLAS NEGRAS aisladas; sin recepcionista humano y sin teléfono obligatorio. El kiosco es interfaz del MISMO Núcleo y grafo ENTITY, no chatbot independiente. Verifica citas e identidad por mecanismos autorizados, hace check-in auditable, notifica anfitrión y orienta al visitante. No asumir reconocimiento facial ni inventar coordenadas. Esta decisión sustituye «recepción digital sin ubicación física obligatoria».
+
+
+## Intercomunicación contextual — 2026-11-07
+Añadir red de intercomunicación inteligente ENTITY: recepción y ambientes A/B/C con terminales de voz o dispositivos de comunicación, todos clientes del mismo Núcleo/grafo, no asistentes independientes. Caso: Daniel hace check-in para reunión de las 16:00; ENTITY contacta a Carlos (anfitrión) por intercom del Ambiente A: «Carlos, Daniel está aquí para la reunión. ¿Estás listo?». Carlos responde «Sí, dile que pase» o «en cinco minutos»; ENTITY registra respuesta/evento, actualiza visita, informa a Daniel por kiosco y orienta/gestiona espera. Resolver destinatario, canal y permisos desde relaciones tipadas, presencia y estado; no asumir ubicación ni difundir datos personales en altavoz público. Distinguir mensajes ambientales de comunicaciones privadas; tener fallback si no responde. Simulación sincronizada con personajes, tiempo y grafo.
