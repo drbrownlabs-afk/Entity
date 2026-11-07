@@ -1,3 +1,4 @@
+import {ShaderChunks} from 'playcanvas';
 import {createViewer} from '@playcanvas/supersplat-viewer/viewer';
 import '@playcanvas/supersplat-viewer/viewer.css';
 import original from '../../../../worlds/synthetic-office/original-viewer-settings.json';
@@ -64,7 +65,12 @@ try{
   viewer=await createViewer({container:document.querySelector('#scene'),settings,contentUrl,collisionUrl,renderer:'webgl',ui:true,reticle:true,budget:Math.max(.25,Math.min(4,Number(new URLSearchParams(location.search).get('budget'))||1)),framesInFlight:1});
   viewer.state.animationPaused=true;
   if(new URLSearchParams(location.search).get('survey_direction')==='topdown'){
-   // Non-destructive, camera-specific near-plane cut. Original splats and voxels stay intact.
+   // Official chunk extension: the default splat shader clamps depth to the near plane
+   // instead of clipping. Respect that plane for this inspection camera without editing assets.
+   const chunks=ShaderChunks.get(viewer.app.graphicsDevice,'glsl'),center=chunks.get('gsplatCenterVS');
+   const marker='vec4 centerProj = matrix_projection * centerView;';
+   if(!center?.includes(marker))throw Error('Official splat projection changed; inspect camera clipping before proceeding.');
+   chunks.set('gsplatCenterVS',center.replace(marker,'if (-centerView.z < camera_params.z) return false;\n'+marker));
    viewer.state.controlsHidden=true;viewer.state.showAnnotations=false;
    viewer.app.on('update',()=>{const c=viewer.app.root.findComponents('camera')[0];if(c.entity.forward.y<-.9)c.nearClip=Math.max(.01,(c.entity.getPosition().y-.5)/(-c.entity.forward.y));});
   }
@@ -133,7 +139,7 @@ if(new URLSearchParams(location.search).has('survey')){
     frame:()=>viewer.frameScene(),
     seek:time=>{viewer.state.animationPaused=true;viewer.seek(time);},
     annotation:index=>viewer.selectAnnotation(index),
-    camera:()=>{const c=viewer.app.root.findComponents('camera')[0];return {position:c.entity.getPosition().toArray(),rotation:c.entity.getRotation().toArray(),fov:c.fov};},
+    camera:()=>{const c=viewer.app.root.findComponents('camera')[0];return {position:c.entity.getPosition().toArray(),rotation:c.entity.getRotation().toArray(),fov:c.fov,near_clip:c.nearClip,far_clip:c.farClip};},
     pick:async(x,y)=>{const v=await picker?.pick(x,y);return v?.toArray()||null;}
   };
 }

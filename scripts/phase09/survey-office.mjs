@@ -5,7 +5,7 @@ const browser=await chromium.launch({args:['--no-sandbox','--use-angle=swiftshad
 const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,scene:'https://superspl.at/scene/a972d838',source:'Original SSOG, elevated/oblique inspection viewpoints derived from authored and measured cameras. Camera transforms are NOT semantic resource coordinates or verified walking routes',views:[]};
 const save=()=>fs.writeFileSync(root+'/survey-plan-view.json',JSON.stringify(report,null,2));
 try{
- for(const [id,params,samples]of [['original-plan-cut','survey_route_pose=2&survey_direction=topdown',[[.35,.35],[.5,.5],[.65,.65]]]]){
+ for(const [id,params,samples]of [['original-plan-near-clipped','survey_route_pose=2&survey_direction=topdown',[[.35,.35],[.5,.5],[.65,.65]]]]){
   const page=await browser.newPage({viewport:{width:1100,height:2200}});
   await page.goto('http://127.0.0.1:4175/office.html?budget=0.5&survey=1&'+params,{waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});await page.waitForTimeout(1000);

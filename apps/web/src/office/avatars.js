@@ -26,6 +26,13 @@ export async function inspectAvatar(url){
   const initial=bones.map(b=>b.getLocalRotation().clone());
   app.update(.3);
   const changed=bones.filter((b,i)=>!b.getLocalRotation().equals(initial[i])).length;
-  return {root_pose_preserved:entity.getPosition().equals(new pc.Vec3(10,20,30)),clips:asset.resource.animations.map(a=>a.resource.name||a.name),bones:bones.length,animated_bones_changed:changed,mesh_instances:entity.findComponents('render').reduce((n,r)=>n+r.meshInstances.length,0),finite_transforms:bones.every(b=>[...b.getWorldTransform().data].every(Number.isFinite))};
+  const evaluated=bones.map(b=>b.getLocalRotation().clone());
+  const animation=entity.findComponent('anim');const at=animation.baseLayer.activeStateCurrentTime;
+  animation.speed=0;animation.baseLayer.activeStateCurrentTime=at;animation.update(0);
+  const seekMatches=evaluated.every((rotation,i)=>bones[i].getLocalRotation().equals(rotation,1e-5));
+  animation.baseLayer.activeStateCurrentTime=at+.3;animation.update(0);
+  const seekChanges=bones.filter((b,i)=>!b.getLocalRotation().equals(evaluated[i],1e-5)).length;
+  const joints=bones.filter(b=>/Hand|UpperArm|Forearm|Clavicle/i.test(b.name)).slice(0,16).map(b=>({name:b.name,position:b.getPosition().toArray()}));
+  return {paused_seek_matches_evaluated_pose:seekMatches,paused_seek_changes_bones:seekChanges,joints,root_pose_preserved:entity.getPosition().equals(new pc.Vec3(10,20,30)),clips:asset.resource.animations.map(a=>a.resource.name||a.name),bones:bones.length,animated_bones_changed:changed,mesh_instances:entity.findComponents('render').reduce((n,r)=>n+r.meshInstances.length,0),finite_transforms:bones.every(b=>[...b.getWorldTransform().data].every(Number.isFinite))};
  }finally{app.destroy();}
 }

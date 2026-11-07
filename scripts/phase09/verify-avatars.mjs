@@ -7,7 +7,7 @@ try{
  const manifest=JSON.parse(fs.readFileSync('apps/web/public/avatars/manifest.json','utf8'));
  for(const asset of manifest.assets){
   const observed=await page.evaluate(async file=>{const {inspectAvatar}=await import('/src/office/avatars.js');return inspectAvatar('/avatars/'+file);},asset.file);
-  if(!observed.root_pose_preserved||!observed.finite_transforms||observed.bones<50||observed.animated_bones_changed<1||observed.clips.length!==6)throw Error('Invalid skinned animation '+asset.id+': '+JSON.stringify(observed));
+  if(!observed.paused_seek_matches_evaluated_pose||observed.paused_seek_changes_bones<1||!observed.root_pose_preserved||!observed.finite_transforms||observed.bones<50||observed.animated_bones_changed<1||observed.clips.length!==6)throw Error('Invalid skinned animation '+asset.id+': '+JSON.stringify(observed));
   report.checks.push({id:asset.id,...observed});
  }
  report.status='passed';
