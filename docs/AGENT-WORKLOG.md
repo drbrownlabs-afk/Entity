@@ -54,3 +54,17 @@ Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin
 - Decisiones de arquitectura: ninguna; se conservan instrucciones nuevas de main.
 - Estado final: entrega publicada para revisión en rama; Fase 00 EN VALIDACIÓN. Fase 01 NO INICIADA.
 - Próxima acción: revisión final humana de evidencia publicada; habilitar acceso API GitHub para que Codex cree PR y consulte CI, sin operaciones Git manuales del operador.
+
+### 2026-11-07 00:44 UTC — Codex / Fase 01 Core local
+- Objetivo: implementar, probar, documentar y publicar Fase 01 autorizada; no avanzar Fase 02.
+- Rama / PR / commit: codex/phase-01-core, base 566e883; sin cambios nuevos en main al fetch. Publicación y estado PR/CI se registran en la entrada de entrega siguiente.
+- Archivos modificados: API main.py, schemas.py, migrate.py, migraciones SQL 001/002; tests/test_core.py y test_restart.py; scripts/smoke-docker.py; contrato OpenAPI packages/contracts/core/v1; workflow CI; README raíz/API; master spec, decision log, phase board, project status, CLOUD-ENVIRONMENT.md, docs/phases/PHASE-01.md y esta bitácora.
+- Implementación real: capacidades declaradas persistentes, notas de memoria, eventos con fuente/versión, /ready; migraciones atómicas para bases nuevas y Fase 00; escrituras serializadas para coherencia de historial. No invocación, conectores, Scorpio integrado ni PostgreSQL. Contratos Core distintos de los contratos futuros de Fase 02.
+- Pruebas: `cd services/entity-api && ../../.venv/bin/python -m unittest discover -s tests -v`: 15/15 aprobadas, 0 omitidas, última suite 1.812 s. Incluye reinicio de dos procesos, concurrencia, rollback de cambios asociados a eventos, migraciones y contrato OpenAPI. Build Docker con override CA correcto; `sh scripts/start-local.sh` recreó contenedor saludable; `python3 scripts/smoke-docker.py` pasó tras reinicio con memoria/capacidad y 5 eventos.
+- Persistencia anterior: backup SQLite consistente en volumen local previo al upgrade; comparación después confirma 4 entidades, 2 estados, 2 relaciones y 4 eventos antiguos intactos. integrity_check=ok y foreign_key_check vacío.
+- Otros checks: curl /ready=200 con esquema 2; pip check local y contenedor correctos; compileall y git diff --check correctos.
+- Fallos corregidos: importación Field eliminada por error causó errores de import/arranque; restaurada y suite repetida. Posible carrera de estado anterior detectada por inspección; corregida con BEGIN IMMEDIATE y test concurrente aprobado. Comandos de escritura inicialmente desde directorio incorrecto se corrigieron; sin pérdida de datos.
+- Advertencias/límites: TestClient/httpx deprecado, caché pip no escribible; sin fallos asociados. Sin carga prolongada, producción, PostgreSQL/PostGIS, Scorpio ni hardware. SQLite sigue local; permisos de capacidades son declarativos, fuente no autenticada. Ver docs/phases/PHASE-01.md.
+- Configuración cloud: start_skill actualizado y guardado en borrador para Fase 01, /ready y límite Fase 02. install_script conservado; mismas dependencias y pasos de build/tests ejecutados. Guardar borrador no publica snapshot.
+- Decisiones: documentadas en DECISION-LOG y master spec; SQLite por necesidad actual, migraciones forward-only, contratos versión 1.0 y capacidades solo declarativas.
+- Estado: EN VALIDACIÓN; no autoaprobación de Fase 00/01. Próxima acción: publicación GitHub, verificar archivos remotos y revisión humana; Fase 02 NO INICIADA.

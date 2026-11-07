@@ -32,21 +32,29 @@ def healthy():
 
 if __name__ == '__main__':
     healthy()
-    prefix = 'phase00-smoke-' + uuid4().hex
+    prefix = 'phase01-smoke-' + uuid4().hex
     room, floor = prefix + '-room', prefix + '-floor'
     request('/v1/entities', {'id': room, 'type': 'Room', 'attributes': {'synthetic': True}})
     request('/v1/entities', {'id': floor, 'type': 'Floor'})
     request('/v1/relations', {'source_id': room, 'target_id': floor, 'type': 'locatedIn'})
     for value in (True, False):
         request(f'/v1/entities/{room}/state', {'key': 'occupied', 'value': value}, 'PUT')
+    request(f'/v1/entities/{room}/memories', {'content': 'Synthetic note', 'source': 'smoke:synthetic'})
+    request(f'/v1/entities/{room}/capabilities', {'operation': 'display.show', 'description': 'Show', 'required_permission': 'display:write'})
+    request(f'/v1/entities/{room}/events', {'type': 'inspection.completed', 'source': 'smoke:synthetic', 'payload': {'simulated': True}})
+    memories = request(f'/v1/entities/{room}/memories')
+    capabilities = request(f'/v1/entities/{room}/capabilities')
     before = request(f'/v1/entities/{room}')
     events = request(f'/v1/entities/{room}/events')
-    assert len(events) == 2 and len(before['relations']) == 1
+    assert len(events) == 5 and len(before['relations']) == 1
     subprocess.run(['docker', 'compose', '-f', 'compose.yaml', 'restart', 'entity-api'],
                    cwd=Path(__file__).resolve().parents[1], check=True)
     healthy()
     assert request(f'/v1/entities/{room}') == before
     assert request(f'/v1/entities/{room}/events') == events
     assert request(f'/v1/entities/{floor}')['id'] == floor
-    print('PASS: health, entities, attributes, state, relation and events survive container restart.')
+    assert request(f'/v1/entities/{room}/memories') == memories
+    assert request(f'/v1/entities/{room}/capabilities') == capabilities
+    assert request('/ready')['database_schema_version'] == 2
+    print('PASS: health/ready, entities, state, relations, 5 events, memory and capability survive container restart.')
     print('Synthetic records retained in development volume:', prefix)

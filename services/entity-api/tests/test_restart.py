@@ -53,12 +53,20 @@ class RestartTests(unittest.TestCase):
                             request('/v1/relations', {'source_id': 'room', 'target_id': 'floor', 'type': 'locatedIn'})
                             for value in (True, False):
                                 request('/v1/entities/room/state', {'key': 'occupied', 'value': value}, 'PUT')
+                            request('/v1/entities/room/memories', {'content': 'Synthetic note', 'source': 'test'})
+                            request('/v1/entities/room/capabilities', {'operation': 'display.show', 'description': 'Show', 'required_permission': 'display:write'})
+                            request('/v1/entities/room/events', {'type': 'inspection.completed', 'source': 'test', 'payload': {'simulated': True}})
+                            memories = request('/v1/entities/room/memories')
+                            capabilities = request('/v1/entities/room/capabilities')
                             before = request('/v1/entities/room')
                             events = request('/v1/entities/room/events')
                         else:
                             self.assertEqual(request('/v1/entities/room'), before)
                             self.assertEqual(request('/v1/entities/room/events'), events)
                             self.assertEqual(len(request('/v1/entities')), 2)
+                            self.assertEqual(request('/v1/entities/room/memories'), memories)
+                            self.assertEqual(request('/v1/entities/room/capabilities'), capabilities)
+                            self.assertEqual(request('/ready')['database_schema_version'], 2)
                     finally:
                         proc.terminate()
                         try:

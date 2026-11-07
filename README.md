@@ -4,7 +4,7 @@ Sistema modular de inteligencia espacial e IA situada. El núcleo propio represe
 
 ## Estado
 
-**Implementación en desarrollo, no desplegada.** Se ha incorporado una API inicial con persistencia local y un contenedor Docker. Scorpio es infraestructura externa NGSI-LD; su integración de datos con la API está pendiente. La API mínima se verifica por separado; Scorpio y el sistema completo siguen pendientes.
+**Implementación en desarrollo, no desplegada.** Se ha incorporado una API inicial con persistencia local y un contenedor Docker. Scorpio es infraestructura externa NGSI-LD; su integración de datos con la API está pendiente. Core local 0.2.0 validado con migraciones, memoria y capacidades declaradas; Scorpio y el sistema completo siguen pendientes.
 
 ## Arranque local de desarrollo
 
@@ -19,3 +19,5 @@ El script construye la API, la inicia y espera una respuesta de salud. Para prob
 **Importante:** el API actual utiliza SQLite como almacenamiento provisional. PostgreSQL/PostGIS, proyección NGSI-LD, autorización de capacidades, simulación espacial y visor todavía requieren implementación. No exponer el servicio directamente a Internet.
 
 Documentación: `docs/architecture.md`, `docs/implementation-plan.md`, `AGENTS.md`.
+
+Fase 01 EN VALIDACIÓN: resultados y límites en `docs/phases/PHASE-01.md`. Fase 02 no iniciada.

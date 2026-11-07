@@ -1,8 +1,8 @@
-# Entorno cloud — base reproducible de Fase 00
+# Entorno cloud — base reproducible y Core de Fase 01
 
 La máquina actual es válida para desarrollar, ejecutar Docker y depurar. GitHub conserva código, configuración y resultados; las bases de datos y procesos siguen siendo locales.
 
-Cada tarea cloud ya está aislada. Utilizar `/workspace/Entity`; no crear worktrees salvo petición explícita. Leer AGENTS.md y la memoria compartida antes de modificar el proyecto. Fase 00 EN VALIDACIÓN; no iniciar Fase 01 sin autorización.
+Cada tarea cloud ya está aislada. Utilizar `/workspace/Entity`; no crear worktrees salvo petición explícita. Leer AGENTS.md y la memoria compartida antes de modificar el proyecto. Fase 01 autorizada y EN VALIDACIÓN; no iniciar Fase 02 sin aprobación.
 
 ## Instalación
 
@@ -21,6 +21,7 @@ Los archivos y dependencias pueden conservarse en una instantánea; los procesos
 cd /workspace/Entity
 docker compose -f compose.yaml up -d --wait --wait-timeout 60
 curl --fail --silent http://127.0.0.1:8000/health
+curl --fail --silent http://127.0.0.1:8000/ready
 ```
 
 Respuesta esperada: `{"status":"ok","service":"entity-api"}`. Health comprueba vida del servicio, no integridad completa de la base. No se ofrece enlace de preview cloud.
@@ -36,4 +37,4 @@ python3 scripts/smoke-docker.py
 
 El smoke escribe registros sintéticos con identificadores únicos en el volumen de desarrollo, reinicia entity-api y compara datos e historial. Los conserva; no ejecutarlo contra producción. `docker compose down` conserva el volumen; no usar `down -v` sin autorización de borrado.
 
-Scorpio no se inicia ni se valida en esta base. La evidencia real, advertencias y límites están en `docs/audits/PHASE-00-2026-11-06.md`. El borrador de configuración del entorno contiene install_script y start_skill; su guardado no equivale a publicación de una instantánea. Este documento y el script permiten consultar los mismos pasos desde GitHub, independientemente de ese borrador.
+Scorpio no se inicia ni se valida en esta base. La evidencia de base está en `docs/audits/PHASE-00-2026-11-06.md`; la entrega actual y sus límites en `docs/phases/PHASE-01.md`. El borrador de configuración del entorno contiene install_script y start_skill; su guardado no equivale a publicación de una instantánea. Este documento y el script permiten consultar los mismos pasos desde GitHub, independientemente de ese borrador.

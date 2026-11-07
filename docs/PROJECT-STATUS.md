@@ -27,8 +27,15 @@
 - Cambios de main incorporados por merge documental, sin alterar API/tests/configuración ya probados. Script cloud probado y pasos de arranque también versionados en scripts/setup-cloud.sh y docs/CLOUD-ENVIRONMENT.md.
 - Creación automática de PR bloqueada: `gh pr create` devuelve Forbidden en api.github.com/graphql. Consulta de Actions bloqueada en api.github.com; CI remoto no confirmado. Rama publicada, sin PR ni merge a main.
 
+## Fase 01 — EN VALIDACIÓN
+- Operador autorizó continuar Fase 01; no se marca Fase 00 como APROBADA automáticamente.
+- API 0.2.0: migraciones SQLite 001/002, memorias explícitas, capacidades declaradas, eventos con fuente/versión y /ready. Contrato OpenAPI versionado en packages/contracts/core/v1.
+- 15/15 pruebas ejecutadas/aprobadas; persistencia verificada en dos procesos y reinicio Docker. Datos antiguos del volumen conservados y comparados con backup. Escrituras concurrentes e integridad transaccional verificadas.
+- Se mantiene SQLite local por alcance/necesidad; sin PostgreSQL/PostGIS ni proyección Scorpio. Sin ejecución/autorización de capacidades ni conectores: Fase 02 NO INICIADA.
+- Entrega en codex/phase-01-core sobre 566e883; evidencia detallada en docs/phases/PHASE-01.md. Estado de publicación/PR/CI en última entrada de bitácora.
+
 ## Próxima prioridad
-Revisión humana de Fase 00 en rama publicada; desbloquear API GitHub para crear PR y consultar CI desde Codex. Fase 01 sigue NO INICIADA. No hay aprobación automática.
+Revisión humana de Fase 01 y límites documentados; no avanzar Fase 02 sin aprobación. No hay aprobación automática.
 
 ## Regla de actualización
 Cada tarea Codex debe registrar fecha UTC, branch/commit/PR, objetivo, archivos, funcionalidades realmente implementadas, tests ejecutados y sus resultados, limitaciones y próximo paso. No convertir intención en hecho. Revisar diffs y CI antes de declarar completado.

@@ -1,4 +1,4 @@
-# Entity API — first vertical slice
+# Entity API — Core local 0.2.0
 
 Minimal FastAPI implementation of persistent entities, state, explicit typed relations and event history. The state-change operation automatically appends a historical event.
 
@@ -33,3 +33,12 @@ In this managed cloud environment, the build needs the platform CA. Mount the
 system CA bundle as BuildKit secret `proxy_ca` (see the cloud setup instructions).
 The certificate is never copied into the image. Normal hosts use their default CA.
 Scorpio is optional external infrastructure and is not started or validated here.
+
+## Phase 01
+
+Versioned Core records, explicit memories, declaration-only capabilities and atomic SQLite
+migrations are documented in `../../docs/phases/PHASE-01.md` (from repository root:
+`docs/phases/PHASE-01.md`). The new `/ready` checks schema availability. Back up existing
+SQLite files before upgrading; migration is forward-only and rejects future schema versions.
+The Docker smoke now verifies five events, a memory and a capability after restarting.
+The published OpenAPI contract is `packages/contracts/core/v1/openapi.json`.

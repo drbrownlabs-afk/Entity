@@ -34,3 +34,7 @@ No implementar ahora inferencia geométrica profunda, relaciones latentes/geodé
 
 ## Regla de continuidad
 Antes de cada desarrollo o cambio de ENTITY OS, revisar este documento, docs/EDGE-INTEGRATION-SPEC.md, docs/implementation-plan.md y AGENTS.md. Registrar decisiones nuevas y cambios de alcance en docs/DECISION-LOG.md, y cambios técnicos en Git con commits verificables. No borrar decisiones previas: anotar sustituciones y motivos.
+
+
+## Incremento Fase 01 — 2026-11-06 Ecuador / 2026-11-07 UTC
+Core local 0.2.0 añade migraciones SQLite atómicas, contratos v1/registro 1.0, memorias explícitas con fuente, eventos con procedencia y capacidades declaradas persistentes. SQLite se mantiene para el demostrador local: no hay aún necesidad espacial o distribuida que justifique PostgreSQL/PostGIS en esta entrega; no cambia la arquitectura objetivo. Una declaración registra operación, metadatos y permiso requerido; no ejecuta ni autoriza acciones. Fuente declarada no equivale a identidad autenticada. Conectores e invocación quedan en Fase 02. Scorpio sigue externo y sin proyección implementada. Evidencia y límites: docs/phases/PHASE-01.md. Estado EN VALIDACIÓN, revisión humana pendiente.
