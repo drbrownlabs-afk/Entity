@@ -43,12 +43,20 @@ test_scenario_isolation_and_apply_revalidation (test_office.OfficeTests.test_sce
 test_sensor_projection_and_duplicate (test_office.OfficeTests.test_sensor_projection_and_duplicate) ... ok
 test_site_and_legacy_access_fail_closed (test_office.OfficeTests.test_site_and_legacy_access_fail_closed) ... ok
 test_visitors_wait_for_host_and_meeting_occupancy (test_office.OfficeTests.test_visitors_wait_for_host_and_meeting_occupancy) ... ok
+test_absent_host_never_notified_as_present (test_office_delivery.DeliveryTests.test_absent_host_never_notified_as_present) ... ok
+test_additive_migration_with_legacy_booking (test_office_delivery.DeliveryTests.test_additive_migration_with_legacy_booking) ... ok
+test_exact_commercial_inventory_and_graph (test_office_delivery.DeliveryTests.test_exact_commercial_inventory_and_graph) ... ok
+test_intercom_timeout_and_cancelled_meeting (test_office_delivery.DeliveryTests.test_intercom_timeout_and_cancelled_meeting) ... ok
+test_intercom_wait_and_no_presence_fallback (test_office_delivery.DeliveryTests.test_intercom_wait_and_no_presence_fallback) ... ok
+test_kiosk_ready_and_host_authority (test_office_delivery.DeliveryTests.test_kiosk_ready_and_host_authority) ... ok
+test_personal_reply_changes_the_same_reception_world (test_office_delivery.DeliveryTests.test_personal_reply_changes_the_same_reception_world) ... ok
 test_failure_timeout_mismatch_permissions_and_html_escape (test_output.OutputTests.test_failure_timeout_mismatch_permissions_and_html_escape) ... ok
 test_manual_override_and_idempotency_persistence (test_output.OutputTests.test_manual_override_and_idempotency_persistence) ... ok
 test_presence_rule_screen_readback_and_no_duplicate (test_output.OutputTests.test_presence_rule_screen_readback_and_no_duplicate) ... ok
+test_storage_isolation_and_reply (test_personal_app.PersonalStorageTests.test_storage_isolation_and_reply) ... ok
 test_persistence_after_process_restart (test_restart.RestartTests.test_persistence_after_process_restart) ... ok
 
 ----------------------------------------------------------------------
-Ran 47 tests in 20.507s
+Ran 55 tests in 35.234s
 
 OK

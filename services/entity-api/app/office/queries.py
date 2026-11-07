@@ -9,7 +9,10 @@ def query(db,site,run,body):
     at=body.get('at');branch=body.get('branch','main');kind=body['kind'];key=body.get('entity_id')
     state=world(db,site,run,branch,at);items=state['entities'];evidence=[];answer=None
     if key and key not in items:raise HTTPException(404,'Entity absent from selected time/site')
-    if kind=='location':
+    if kind=='graph':
+        from .graph import subgraph
+        answer=subgraph(items,key,state['clock'])
+    elif kind=='location':
         item=items[key]
         if item.get('kind') not in ['Person','Track','Visit']:raise HTTPException(422,'Location query requires person, track or visit')
         confirmed=item.get('freshness')=='fresh' and (item.get('presence')=='confirmed' or item.get('active') is True)

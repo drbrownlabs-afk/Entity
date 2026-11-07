@@ -21,6 +21,8 @@ def setup(db):
         status TEXT NOT NULL, response TEXT, created_at TEXT NOT NULL,
         responded_at TEXT
     )""")
+    db.execute("""CREATE TABLE IF NOT EXISTS office_personal_links(
+        message_id TEXT PRIMARY KEY,site TEXT NOT NULL,run TEXT NOT NULL,conversation TEXT NOT NULL,terminal TEXT NOT NULL)""")
     db.execute("""CREATE INDEX IF NOT EXISTS idx_personal_messages_inbox
         ON office_personal_messages(site,recipient,created_at)""")
 
@@ -73,7 +75,15 @@ def reply(message_id:str,body:Reply,actor=Depends(principal)):
                        (message_id,actor["site"],actor["actor"])).fetchone()
         if row is None: raise HTTPException(404,"Message not found")
         if row["status"]!="pending": raise HTTPException(409,"Already answered")
-        when=timestamp()
+        link=db.execute("SELECT * FROM office_personal_links WHERE message_id=? AND site=?",(message_id,actor["site"])).fetchone()
+        if link:
+            from .service import command
+            from .storage import identity,get_run
+            response=command(db,actor["site"],link["run"],actor,{"id":identity("personal-reply",message_id),"operation":"intercom.reply","target":link["terminal"],
+                "inputs":{"conversation_id":link["conversation"],"response":"wait" if body.response=="five_minutes" else "ready","minutes":5}})
+            if response["status"]!="verified":raise HTTPException(503,"Communication was not verified")
+            when=get_run(db,actor["site"],link["run"])["clock"]
+        else:when=timestamp()
         db.execute("""UPDATE office_personal_messages SET status='answered',
                       response=?,responded_at=? WHERE id=?""",(body.response,when,message_id))
         return {"id":message_id,"status":"answered","response":body.response,

@@ -18,3 +18,9 @@ def test_personal_message_schema_and_isolation():
     db.execute("UPDATE office_personal_messages SET status=?,response=?,responded_at=? WHERE id=?",
                ("answered","ready",timestamp(),"m1"))
     assert db.execute("SELECT response FROM office_personal_messages WHERE id='m1'").fetchone()[0]=="ready"
+
+
+import unittest
+class PersonalStorageTests(unittest.TestCase):
+    def test_storage_isolation_and_reply(self):
+        test_personal_message_schema_and_isolation()

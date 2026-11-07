@@ -37,6 +37,8 @@ def initialize(db):
     CREATE TABLE IF NOT EXISTS office_capabilities(id TEXT PRIMARY KEY,site TEXT NOT NULL,resource TEXT NOT NULL,operation TEXT NOT NULL,descriptor TEXT NOT NULL,adapter TEXT NOT NULL,UNIQUE(site,resource,operation));
     CREATE TABLE IF NOT EXISTS office_bindings(site TEXT NOT NULL,source TEXT NOT NULL,adapter TEXT NOT NULL,version TEXT NOT NULL,config TEXT NOT NULL,PRIMARY KEY(site,source));
     CREATE TABLE IF NOT EXISTS office_inbox(site TEXT NOT NULL,run TEXT NOT NULL,id TEXT NOT NULL,body TEXT NOT NULL,result TEXT NOT NULL,PRIMARY KEY(site,run,id));
+    CREATE TABLE IF NOT EXISTS office_credentials(site TEXT NOT NULL,invitation TEXT NOT NULL,person TEXT,salt TEXT NOT NULL,code_hash TEXT NOT NULL,expires_at TEXT NOT NULL,source TEXT NOT NULL,used_by TEXT,PRIMARY KEY(site,invitation));
+    INSERT OR IGNORE INTO office_schema VALUES(2);
     CREATE TABLE IF NOT EXISTS office_rejections(id TEXT PRIMARY KEY,site TEXT NOT NULL,source TEXT NOT NULL,at TEXT NOT NULL,reason TEXT NOT NULL);
     ''')
 
@@ -71,6 +73,13 @@ def world(db,site,run,branch='main',at=None):
 
 def emit(db,site,run,branch,at,kind,actor,changes,details=None,evidence=None,command_id=None):
     at=utc(at);event_id=str(uuid4());cmd=command_id or event_id
+    from .graph import derive,active
+    changes={k:dict(v) for k,v in changes.items()}
+    for key,patch in changes.items():
+        old=db.execute('SELECT body FROM office_state WHERE site=? AND run=? AND branch=? AND entity=?',(site,run,branch,key)).fetchone()
+        merged={**(json.loads(old[0]) if old else {}),**patch}
+        links=derive(merged,at)
+        if links:patch['relations']=links
     payload={'changes':changes,**(details or {})}
     row=db.execute('INSERT INTO office_events(id,site,run,branch,at,recorded_at,type,actor,entities,payload,evidence,command_id) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)',
       (event_id,site,run,branch,at,now(),kind,actor,encode(list(changes)),encode(payload),encode(evidence or []),cmd))
@@ -81,6 +90,10 @@ def emit(db,site,run,branch,at,kind,actor,changes,details=None,evidence=None,com
         if branch=='main':
             resource=db.execute('SELECT core_id FROM office_resources WHERE site=? AND id=?',(site,key)).fetchone()
             if resource:
+                for link in merged.get('relations',[]):
+                    other=db.execute('SELECT core_id FROM office_resources WHERE site=? AND id=?',(site,link['target'])).fetchone()
+                    if other and active(link,at):
+                        db.execute('INSERT OR IGNORE INTO relations VALUES(?,?,?,?,?)',(identity(site,key,link['type'],link['target']),resource[0],other[0],link['type'],at))
                 db.execute('INSERT INTO entity_state VALUES(?,?,?,?) ON CONFLICT(entity_id,key) DO UPDATE SET value=excluded.value,updated_at=excluded.updated_at',(resource[0],'office.current',encode(merged),at))
                 from app.main import append_event
                 append_event(db,resource[0],kind,{'office_event_id':event_id,'run_id':run,'effective_at':at,'details':details or {}},'office-domain')

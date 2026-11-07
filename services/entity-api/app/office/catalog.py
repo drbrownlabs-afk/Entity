@@ -4,6 +4,7 @@ from .storage import identity,encode
 from .inputs import INPUTS
 
 OPERATIONS={
+ 'reception.interact':('kiosk','action','communication'),'intercom.reply':('reply','action','communication'),'intercom.timeout':('operate','action','communication'),
  'entity.upsert':('manage','action','resource'), 'relation.add':('manage','action','resource'),
  'membership.set':('manage','action','membership'), 'account.create':('manage','action','identity'),
  'booking.create':('book','action','booking'),'booking.cancel':('book','action','booking'),'booking.reassign':('book','action','booking'),'booking.extend':('book','action','booking'),
@@ -26,6 +27,7 @@ OPERATIONS={
 def declare(db,site,resource):
     kind=db.execute('SELECT kind FROM office_resources WHERE site=? AND id=?',(site,resource)).fetchone()[0]
     kinds={
+      'reception.interact':{'Kiosk'},'intercom.reply':{'Intercom'},'intercom.timeout':{'Intercom'},
       'entity.upsert':{'Site'},'relation.add':{'Site'},'account.create':{'Site'},'clock.advance':{'Site'},'visit.register':{'Site'},'task.create':{'Site'},
       'membership.set':{'Person'},'identity.associate':{'Track'},'notification.send':{'Person'},
       'booking.create':{'Desk','Room','Office','EventSpace'},'booking.getAvailability':{'Desk','Room','Office','EventSpace'},

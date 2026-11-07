@@ -1,4 +1,5 @@
 """Typed public inputs for declared capabilities; no arbitrary vendor payloads in Core."""
+from typing import Literal
 from pydantic import create_model,Field,AwareDatetime
 from app.schemas import CoreRecord,NonBlank
 
@@ -7,6 +8,9 @@ Empty=typed('NoInputs')
 S=NonBlank
 T=AwareDatetime
 INPUTS={
+ 'reception.interact':typed('ReceptionInteract',conversation_id=(S,...),action=(Literal['start','check_in','status'],...),invitation_id=(str|None,None),verification_code=(str|None,Field(default=None,max_length=128))),
+ 'intercom.reply':typed('IntercomReply',conversation_id=(S,...),response=(Literal['ready','wait','unavailable'],...),minutes=(int,Field(default=5,ge=1,le=30))),
+ 'intercom.timeout':typed('IntercomTimeout',conversation_id=(S,...)),
  'entity.upsert':typed('ResourceUpsert',id=(S,...),kind=(S,...),attributes=(dict,Field(default_factory=dict))),
  'relation.add':typed('RelationAdd',source=(S,...),target=(S,...),type=(S,...),valid_to=(T|None,None)),
  'membership.set':typed('MembershipChange',status=(S,...),until=(T,...)),

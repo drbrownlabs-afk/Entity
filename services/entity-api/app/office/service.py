@@ -8,7 +8,7 @@ from .storage import encode,identity,utc,now,world,emit,get_run
 from .auth import scoped,create_account
 from .catalog import declare,OPERATIONS
 
-KINDS={'Organization','Site','Company','Team','Membership','Contract','Plan','Building','Floor','Zone','Office','Desk','Room','Reception','WaitingArea','EventSpace','Person','Camera','Stream','AccessPoint','Sensor','HVAC','Light','Equipment','InventoryItem','Shift','Meeting','Booking','Invitation','Visit','Notification','Task','Incident','CheckIn','Alert','Track'}
+KINDS={'Kiosk','Intercom','Conversation','Organization','Site','Company','Team','Membership','Contract','Plan','Building','Floor','Zone','Office','Desk','Room','Reception','WaitingArea','EventSpace','Person','Camera','Stream','AccessPoint','Sensor','HVAC','Light','Equipment','InventoryItem','Shift','Meeting','Booking','Invitation','Visit','Notification','Task','Incident','CheckIn','Alert','Track'}
 RESERVABLE={'Desk','Room','Office','EventSpace'}
 
 
@@ -75,7 +75,7 @@ def command(db,site,run,actor,body):
         if config.get('available') is False:raise HTTPException(503,'Adapter unavailable')
         if binding['adapter']=='rest-test':adapter=RestTestAdapter(config['url'])
         elif binding['adapter']!='simulated':raise HTTPException(503,'Adapter unavailable')
-    items=state['entities'];changes={};details={'operation':op,'target':target,'inputs':({k:v for k,v in data.items() if k!='password'})};evidence=[];event_type=op
+    items=state['entities'];changes={};details={'operation':op,'target':target,'inputs':({k:v for k,v in data.items() if k not in ['password','verification_code']})};evidence=[];event_type=op
     def get(key):
         if key in items:return items[key]
         resource(db,site,key)
@@ -97,16 +97,23 @@ def command(db,site,run,actor,body):
         return [x for x in items.values() if x.get('kind')=='Booking' and (x.get('resource_id')==resource_id or x.get('resource_id') in items.get(resource_id,{}).get('member_resources',[]) or resource_id in items.get(x.get('resource_id'),{}).get('member_resources',[])) and x.get('id')!=exclude and x.get('status') not in ['cancelled','no_show','completed'] and x['starts_at']<end and start<x['ends_at']]
     def available(resource_id,start,end,exclude=None):
         room=require_kind(resource_id,RESERVABLE)
+        if room.get('reservable') is False or room.get('deprecated'):raise HTTPException(403,'Resource is internal or withdrawn from commercial booking')
         if room.get('closed') or overlap(resource_id,start,end,exclude):raise HTTPException(409,'Resource unavailable or booking conflict')
         return room
     db.execute('SAVEPOINT office_domain_validation')
     try:
-        if op=='entity.upsert':
+        if op in ['reception.interact','intercom.reply','intercom.timeout']:
+            from .interactions import plan
+            changes,extra,evidence=plan(db,site,run,actor,items,clock,op,target,data,cid,get,add)
+            details.update(extra)
+        elif op=='entity.upsert':
             kind=data['kind'];attrs=data.get('attributes',{});key=data['id']
             if set(attrs)&{'id','kind','core_id','site_id','observed_at','freshness','presence','occupancy','access','membership_status','membership_until','status'}:raise HTTPException(403,'Derived state uses domain operations, not metadata writes')
             if kind in {'Booking','Visit','Notification','Task','Incident','CheckIn','Alert','Track'}:raise HTTPException(422,'Use domain operation for derived entity')
             entry=upsert_resource(db,site,key,kind,attrs);changes[key]={**get(key),**entry}
         elif op=='relation.add':
+            from .graph import TYPES
+            if data['type'] not in TYPES:raise HTTPException(422,'Unknown typed relationship')
             a=get(data['source']);get(data['target']);relations=a.get('relations',[])
             relation={'type':data['type'],'target':data['target'],'valid_from':clock,'valid_to':data.get('valid_to')}
             if not any(r['type']==relation['type'] and r['target']==relation['target'] and r.get('valid_to') is None for r in relations):relations=relations+[relation]
@@ -124,6 +131,9 @@ def command(db,site,run,actor,body):
             member_allowed(data['person_id']);start,end=utc(data['starts_at']),utc(data['ends_at'])
             if end<=start:raise HTTPException(422,'Booking end must follow start')
             room=available(target,start,end)
+            person=get(data['person_id'])
+            from .graph import connected
+            if room.get('private') and room.get('organization_id') and not connected(items,data['person_id'],'belongsTo',room['organization_id'],clock):raise HTTPException(403,'Private office belongs to another organization')
             if int(data.get('party_size',1))<1 or int(data.get('party_size',1))>room.get('capacity',1):raise HTTPException(422,'Capacity exceeded')
             key=data['booking_id'];add(key,'Booking',{'resource_id':target,'person_id':data['person_id'],'starts_at':start,'ends_at':end,'status':'reserved','party_size':int(data.get('party_size',1))})
             if data.get('meeting_id'):
@@ -269,10 +279,10 @@ def command(db,site,run,actor,body):
         elif op=='booking.getAvailability':
             require_kind(target,RESERVABLE);start,end=utc(data['starts_at']),utc(data['ends_at'])
             if end<=start:raise HTTPException(422,'Invalid interval')
-            details['available']=not get(target).get('closed') and not overlap(target,start,end)
+            details['available']=get(target).get('reservable') is not False and not get(target).get('deprecated') and not get(target).get('closed') and not overlap(target,start,end)
         else:raise HTTPException(422,'Observation capabilities use the observation endpoint')
     except (KeyError,TypeError,ValueError) as exc:raise HTTPException(422,'Invalid inputs for '+op+': '+str(exc))
-    adapter_inputs={k:v for k,v in data.items() if k!='password'}
+    adapter_inputs={k:v for k,v in data.items() if k not in ['password','verification_code']}
     if binding:
         adapter_inputs['_behavior']=json.loads(binding['config']).get('behavior')
     if op=='access.requestEntry' and not details.get('allowed'):

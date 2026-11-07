@@ -6,7 +6,7 @@ from fastapi.responses import StreamingResponse
 from pydantic import Field
 from app.schemas import CoreRecord,NonBlank
 from app.connectors import Observation,AuditedRoute
-from .auth import principal,scoped,login
+from .auth import principal,scoped,login,authenticate
 from .storage import encode,utc,world,emit,get_run,identity
 from .service import create_run,command,resource
 from .observations import ingest
@@ -140,6 +140,10 @@ async def stream(site:str,run:str,request:Request,after:int=0,actor=Depends(prin
     async def generate():
         cursor=after
         while not await request.is_disconnected():
+            try:scoped(site,authenticate(request.headers.get('authorization')),'read')
+            except HTTPException:
+                yield 'event: auth-expired\ndata: {}\n\n'
+                return
             with database() as db:rows=db.execute("SELECT seq,id,type,at,entities FROM office_events WHERE site=? AND run=? AND branch='main' AND seq>? ORDER BY seq LIMIT 100",(site,run,cursor)).fetchall()
             for row in rows:
                 cursor=row['seq'];yield f'id: {cursor}\nevent: world-change\ndata: {encode(dict(row))}\n\n'

@@ -7,11 +7,12 @@ from datetime import datetime,timedelta,timezone
 from fastapi import Header,HTTPException
 
 ROLES={
- 'admin':{'read','manage','book','receive','access','operate','simulate','query','observe'},
+ 'admin':{'kiosk','reply','read','manage','book','receive','access','operate','simulate','query','observe'},
+ 'kiosk':{'kiosk'},
  'reception':{'read','book','receive','access','query'},
  'security':{'read','access','receive','query'},
  'maintenance':{'read','operate','query'},
- 'member':{'read','book','query'},
+ 'member':{'reply','read','book','query'},
  'viewer':{'read','query'},
  'connector':{'observe'},
 }
