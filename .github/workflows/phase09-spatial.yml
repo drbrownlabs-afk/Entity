@@ -2,7 +2,7 @@ name: Verify original office Core and animated camera geometry
 on:
   push:
     branches: [codex/phase-09-autonomous-plan]
-    paths: ['scripts/phase09/demo-spatial-core.py','scripts/phase09/verify-spatial-core.mjs','.github/workflows/phase09-spatial.yml','worlds/synthetic-office/corridor-route.json']
+    paths: ['scripts/phase09/demo-spatial-core.py','scripts/phase09/verify-spatial-core.mjs','.github/workflows/phase09-spatial.yml','worlds/synthetic-office/corridor-route.json','apps/web/src/office/avatars.js','apps/web/src/office/visuals.js']
   workflow_dispatch:
 permissions:
   contents: write
@@ -25,7 +25,7 @@ jobs:
           npm --prefix apps/web run build
           cd apps/web && npx playwright install --with-deps chromium
       - name: Exercise original geometry and real Core without substituted scene
-        run: .venv/bin/python scripts/phase09/demo-spatial-core.py
+        run: timeout 480s .venv/bin/python scripts/phase09/demo-spatial-core.py
       - name: Preserve actual geometric integration evidence
         if: always()
         run: |

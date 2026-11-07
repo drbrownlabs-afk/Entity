@@ -46,6 +46,7 @@ test_visitors_wait_for_host_and_meeting_occupancy (test_office.OfficeTests.test_
 test_guided_facts_trace_permission_and_action (test_office_agent.OfficeAgentTests.test_guided_facts_trace_permission_and_action) ... ok
 test_official_sdk_tool_and_no_silent_real_provider_fallback (test_office_agent.OfficeAgentTests.test_official_sdk_tool_and_no_silent_real_provider_fallback) ... ok
 test_absent_host_never_notified_as_present (test_office_delivery.DeliveryTests.test_absent_host_never_notified_as_present) ... ok
+test_access_respects_ready_visit_destination_and_private_organization (test_office_delivery.DeliveryTests.test_access_respects_ready_visit_destination_and_private_organization) ... ok
 test_additive_migration_with_legacy_booking (test_office_delivery.DeliveryTests.test_additive_migration_with_legacy_booking) ... ok
 test_exact_commercial_inventory_and_graph (test_office_delivery.DeliveryTests.test_exact_commercial_inventory_and_graph) ... ok
 test_hypothetical_occupancy_never_becomes_an_official_measurement (test_office_delivery.DeliveryTests.test_hypothetical_occupancy_never_becomes_an_official_measurement) ... ok
@@ -73,6 +74,6 @@ test_storage_isolation_and_reply (test_personal_app.PersonalStorageTests.test_st
 test_persistence_after_process_restart (test_restart.RestartTests.test_persistence_after_process_restart) ... ok
 
 ----------------------------------------------------------------------
-Ran 71 tests in 46.653s
+Ran 72 tests in 48.835s
 
 OK

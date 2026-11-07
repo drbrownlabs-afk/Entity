@@ -1,3 +1,4 @@
+import {mountQuery} from './query-form.js';
 import {mountCapabilities} from './capability-form.js';
 import {mountReception} from './reception.js';
 // Operational screens consume persistent Core APIs. No frontend business fixtures.
@@ -91,21 +92,7 @@ function render(){
  renderQuery();
  renderTimeline();
 }
-function renderQuery(){
- const element=host.querySelector('#office-query');
- element.innerHTML='<h3>Consulta con evidencia</h3><form><label>Pregunta<input name="question" placeholder="Consulta del espacio seleccionado"></label><label><input name="natural" type="checkbox">Interpretar texto con LLM configurado</label><select name="kind">'+Object.entries({graph:'Grafo de relaciones',entity:'Ficha de entidad',location:'Ubicación confirmada',agenda:'Agenda y reservas',events:'Historia de eventos',camera_observations:'Observaciones de una cámara',cameras_for_person:'Cámaras que observaron a la persona',causes:'Evidencias causales',impact:'Recursos y personas afectados',diff:'Cambios desde otro instante',metrics:'Métricas'}).map(([key,label])=>'<option value="'+key+'">'+label+'</option>').join('')+'</select><label>Entidad<input name="entity_id" value="'+esc(selected)+'"></label><label>Desde<input name="from" type="datetime-local"></label><label>Hasta<input name="to" type="datetime-local"></label><button>Consultar Core</button></form><div id="office-answer"></div>';
- element.querySelector('form').onsubmit=async event=>{
-  event.preventDefault();const form=element.querySelector('form');const body={kind:form.elements.kind.value,entity_id:form.elements.entity_id.value||null};body.branch=branch;if(at)body.at=at;
-  for(const name of ['from','to'])if(form.elements[name].value)body[name]=new Date(form.elements[name].value).toISOString();
-  try{const formQuestion=form.elements.question.value||('Consulta guiada: '+body.kind+' · '+body.entity_id);
-   const envelope={id:crypto.randomUUID(),question:formQuestion,...(!form.elements.natural.checked?{query:body}:{})};
-   const trace=await request(prefix()+'/agent/requests',envelope);
-   if(trace.status!=='verified')throw Error('IA/Core: '+trace.status+' '+JSON.stringify(trace.error||{}));
-   const result=trace.result;const answer=element.querySelector('#office-answer');answer.replaceChildren();const title=document.createElement('p');title.textContent='Core · '+trace.provider+' · '+result.as_of+' · '+result.evidence.length+' evidencias';answer.append(title);
-   const data=document.createElement('pre');data.textContent=JSON.stringify(result.result,null,2);answer.append(data);
-  }catch(error){status(error.message);}
- };
-}
+function renderQuery(){mountQuery(host.querySelector('#office-query'),{getWorld:()=>world,getSelection:()=>selected,getBranch:()=>branch,getAt:()=>at,send:body=>request(prefix()+'/agent/requests',body),onError:error=>status(error.message),onSelect:choose});}
 window.officeCoreDiagnostics=()=>({connected:!!token,site,run,world,selected,mode,branch});
 
 

@@ -27,6 +27,10 @@ try{
   await host.locator('#connect').click();
   await host.getByRole('button',{name:'Estoy listo',exact:true}).first().click();
   await host.waitForFunction(()=>document.querySelector('#status').textContent.includes('Respuesta registrada'));
+  const scene=host.frameLocator('#personal-scene');
+  await scene.locator('#scene').waitFor({state:'visible'});
+  const projection=await host.locator('#personal-scene').evaluate(async frame=>{for(let i=0;i<100;i++){const s=frame.contentWindow.officeProjectionDiagnostics?.();if(s?.clock)return s;await new Promise(r=>setTimeout(r,100));}throw Error('Personal scene never received the Core projection');});
+  if(projection.camera_ids.length||projection.entity_ids.includes('PERSON-LUIS'))throw Error('Personal 3D received another person or private camera');
   await host.locator('[data-entity="A"]').click();
   await host.locator('#personal-details select[aria-label="Capacidad autorizada"]').selectOption({label:'Crear reserva'});
   const form=host.locator('#personal-details form');
@@ -42,7 +46,7 @@ try{
   if(errors.length)throw Error(errors.join('; '));
   await page.screenshot({path:'docs/evidence/phase09/kiosk-'+width+'.png',fullPage:true});
   await host.screenshot({path:'docs/evidence/phase09/personal-'+width+'.png',fullPage:true});
-  report.checks.push({width,verified_invitation:true,private_host_reply:true,scoped_mobile_booking:true,kiosk_reflects_core:true,token_in_local_storage:await page.evaluate(()=>Object.keys(localStorage).some(k=>/token|password/i.test(k))),page_errors:errors,voice_screen_controls:true,voice_microphone_executed:false});
+  report.checks.push({width,verified_invitation:true,private_host_reply:true,scoped_mobile_booking:true,original_viewer_receives_scoped_world:true,private_cameras_in_projection:projection.camera_ids.length,kiosk_reflects_core:true,token_in_local_storage:await page.evaluate(()=>Object.keys(localStorage).some(k=>/token|password/i.test(k))),page_errors:errors,voice_screen_controls:true,voice_microphone_executed:false});
   await context.close();
  }
  report.status='passed';

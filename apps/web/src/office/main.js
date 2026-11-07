@@ -79,7 +79,28 @@ window.officeDiagnostics=()=>({
 });
 
 window.addEventListener('office-select-annotation',event=>{if(viewer?.state.loaded)viewer.selectAnnotation(event.detail);});
-import('./operations.js');
+let projectedWorld=null;
+const personalProjection=new URLSearchParams(location.search).get('projection')==='personal';
+if(!personalProjection)import('./operations.js');
+else{
+ document.querySelector('#office-app header').hidden=true;
+ const cameraButton=document.createElement('button');cameraButton.textContent='Mis cámaras autorizadas';cameraButton.hidden=true;
+ let projectedSecurity=false;cameraButton.onclick=()=>{projectedSecurity=!projectedSecurity;window.dispatchEvent(new CustomEvent('office-mode-changed',{detail:projectedSecurity?'Seguridad':'Operaciones'}));};
+ document.querySelector('.tools').append(cameraButton);
+ window.addEventListener('message',event=>{
+  if(event.origin!==location.origin||event.source!==window.parent)return;
+  if(event.data?.type==='entity-authorized-world'){
+   projectedWorld=event.data.world;cameraButton.hidden=!Object.values(projectedWorld?.entities||{}).some(e=>e.kind==='Camera');
+   if(event.data.world)window.dispatchEvent(new CustomEvent('office-world-changed',{detail:event.data.world}));
+   else window.dispatchEvent(new CustomEvent('office-world-cleared'));
+  }
+  if(event.data?.type==='entity-select-resource'){const i=projectedWorld?.entities?.[event.data.id]?.annotation_index;if(Number.isInteger(i)&&viewer.state.selectedAnnotation!==i)viewer.selectAnnotation(i);}
+ });
+ window.addEventListener('office-annotation-selected',event=>window.parent.postMessage({type:'entity-annotation-selection',index:event.detail},location.origin));
+ window.addEventListener('office-select-entity',event=>window.parent.postMessage({type:'entity-resource-selection',id:event.detail},location.origin));
+ window.officeProjectionDiagnostics=()=>({clock:projectedWorld?.clock||null,entity_ids:Object.keys(projectedWorld?.entities||{}),camera_ids:Object.values(projectedWorld?.entities||{}).filter(e=>e.kind==='Camera').map(e=>e.id)});
+ window.parent.postMessage({type:'entity-projection-ready'},location.origin);
+}
 
 // Read-only scene survey, enabled only for reproducible inspection runs.
 if(new URLSearchParams(location.search).has('survey')){
@@ -95,4 +116,4 @@ if(new URLSearchParams(location.search).has('survey')){
 }
 
 const {installVisuals}=await import('./visuals.js');
-if(viewer)installVisuals(viewer,original);
+if(viewer){installVisuals(viewer,original);if(projectedWorld)window.dispatchEvent(new CustomEvent('office-world-changed',{detail:projectedWorld}));}

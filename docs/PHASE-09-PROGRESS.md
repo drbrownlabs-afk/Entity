@@ -98,3 +98,8 @@ Recepción remota distingue respuesta deapp autenticada vs personaje sintético;
 
 ## Reanudación yregresión ampliada —2026-11-07
 81b21ba remoto/CI42405312827 yPR42405316680Success confirmados.70testsPASS43.591s más3diariosPASS trasmanejo de respuesta real queprevalece sobreguion. Nuevoscontratos de rutas/reconstrucción, rangodeocupación conmulticámara yensayo desede distinta configurada, sinrecrearCore. Survey4ebc2bb contiene capturaslaterales ysuelo originales (scriptcorregido6ce1477). Preparada pruebaCore+SSOG+GLB+pickerSDKreal; resultado geométrico pendiente.09.2/09.3 permanecen sinverificar hastaque pase yse revisevisualmente.
+
+## Continuación ejecutada —2026-11-07, Codex
+72pruebasPASS48.835s trascorregir acceso limitado adestino/intervalo dereunión yorganización privada. SixRocketboxGLB QArealPASS conraízdeCore preservada yanimaciónen hijo; cincoinstantesCore/rendererPASS diagnóstico local. La pruebaSSOGd200a6b detectó divergencia yse corrigió95e5c2b; rerun realpendiente, no cerrar09.2/09.3.
+Cliente personal reutiliza elMISMO office.html enproyección autorizada, sintransmitir tokens alvisor; consultas/formularioscompartidos, selección vinculada, mismasAPIs. E2E1280/390PASS: recepción→respuestapersonal→reservaA, proyecciónsinLuis/cámarasprivadas, reinicio/backup. Micrófono/Androidfísico/PushHTTPS siguen pendientes, no equivalenapruebaChromeemulada.
+Recorrido voxel adicional7647cc7 se detieneante boothverde: se conserva laevidencia dedetención, no seafirma haber atravesadomobiliario. C/D/E/recepción requieren completar calibración visual; ningún puntose asigna poraproximación. Pages añadeverificación deloffice.html público, resultado traspublicaciónpendiente. ContinúaEN CURSO, ninguna aprobación humana inferida.

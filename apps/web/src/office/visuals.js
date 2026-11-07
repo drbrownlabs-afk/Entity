@@ -102,8 +102,11 @@ export function installVisuals(viewer,original){
  }
  window.addEventListener('office-world-changed',e=>receive(e.detail));
  window.addEventListener('office-world-cleared',()=>{world=null;for(const entity of avatars.values())entity.enabled=false;layout();});
- window.addEventListener('office-mode-changed',e=>{security=e.detail==='Seguridad';app.autoRender=security||!viewer.state.loaded;panel.hidden=!security;layout();});
+ window.addEventListener('office-mode-changed',e=>{security=e.detail==='Seguridad';panel.hidden=!security;layout();});
  window.addEventListener('resize',layout);
+ // Warm secondary camera resident sets without unbounded rendering on a paused world.
+ let warmUntil=0;window.addEventListener('office-mode-changed',()=>{warmUntil=performance.now()+10000;});
+ setInterval(()=>{if(security&&performance.now()<warmUntil&&!document.hidden)app.renderNextFrame=true;},500);
  window.officeLoadAvatar=loadAvatar;window.officeCaptureCamera=capture;
  window.officeVisualDiagnostics=()=>({cameraRenderState:[...cameras].filter(([,c])=>c.entity.enabled).map(([id,c])=>({id,layers:c.entity.camera.layers,managers:[...(app.renderer.gsplatDirector?.camerasMap.get(c.entity.camera.camera)?.layersMap.values()||[])].map(m=>({splats:m.gsplatManager?.world.currentState?.splats?.numSplats||0,pending:m.gsplatManager?.hasPendingSort}))})),cameraViews:cameras.size,activeCameras:[...cameras.values()].filter(c=>c.entity.enabled).length,visibleCameraIds:visibleIds,worldClock:world?.clock||null,
   avatarsLoaded:avatars.size,avatarsPlaced:[...avatars.values()].filter(e=>e.enabled).map(e=>({id:e.name,position:e.getPosition().toArray()})),singleApplication:[...cameras.values()].every(c=>c.entity.parent===app.root),

@@ -3,6 +3,7 @@
   "checks": [
     {
       "id": "Female_Adult_01",
+      "root_pose_preserved": true,
       "clips": [
         "idle",
         "seated",
@@ -18,6 +19,7 @@
     },
     {
       "id": "Female_Adult_02",
+      "root_pose_preserved": true,
       "clips": [
         "idle",
         "seated",
@@ -33,6 +35,7 @@
     },
     {
       "id": "Female_Adult_03",
+      "root_pose_preserved": true,
       "clips": [
         "idle",
         "seated",
@@ -48,6 +51,7 @@
     },
     {
       "id": "Male_Adult_01",
+      "root_pose_preserved": true,
       "clips": [
         "idle",
         "seated",
@@ -63,6 +67,7 @@
     },
     {
       "id": "Male_Adult_02",
+      "root_pose_preserved": true,
       "clips": [
         "idle",
         "seated",
@@ -78,6 +83,7 @@
     },
     {
       "id": "Male_Adult_03",
+      "root_pose_preserved": true,
       "clips": [
         "idle",
         "seated",

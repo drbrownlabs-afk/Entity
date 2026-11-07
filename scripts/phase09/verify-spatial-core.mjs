@@ -5,6 +5,8 @@ const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||u
 const report={scene:'https://superspl.at/scene/a972d838',source:'Original SSOG + Core routes measured from original floor + Rocketbox + PlayCanvas picker; simulated people, no physical camera or facial identity claim',checks:[]};
 let token,lastPage;
 const failures=[];
+const save=()=>fs.writeFileSync('docs/evidence/phase09/spatial-core.json',JSON.stringify(report,null,2));
+report.status='running';save();
 const prefix='/v1/sites/synthetic-office/runs/day-01';
 async function request(path,body){
  const result=await fetch(api+path,{method:body?'POST':'GET',headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},body:body?JSON.stringify(body):undefined});
@@ -46,6 +48,7 @@ try{
   const placed=observed.avatarsPlaced.find(p=>p.id==='PERSON-LUIS');
   report.pose_check={second,expected,observed:placed,world_clock:world.clock,renderer_clock:observed.worldClock};
   if(!placed||expected.some((v,i)=>Math.abs(v-placed.position[i])>.0001))throw Error('Renderer pose diverged from Core: '+JSON.stringify(report.pose_check));
+  report.stage='capture at '+second+' seconds';report.visual=observed;save();
   for(const camera of ['CAM-ROUTE-1','CAM-ROUTE-2']){
    const snapshot=await page.evaluate(async id=>window.officeCaptureCamera(id),camera);
    if(snapshot.payload.tracks.some(t=>t.local_track_id.includes('LUIS')||t.person_id))throw Error('Visual source fabricated identity');
@@ -58,7 +61,7 @@ try{
     await request(prefix+'/observations',{observation_id:crypto.randomUUID(),site_id:'synthetic-office',source_id:camera,observed_at:at,type:'edge.presence',payload:next.payload,provenance:next.provenance});
     identified=true;
    }
-   report.checks.push({second,camera,visible:snapshot.payload.tracks.length,core_position:expected,rendered_position:placed.position,identity_from_image:false});
+   report.checks.push({second,camera,visible:snapshot.payload.tracks.length,core_position:expected,rendered_position:placed.position,identity_from_image:false});save();
   }
  }
  if(!identified)throw Error('No actual rendered person was selected by the camera picker');

@@ -55,6 +55,10 @@ jobs:
           SITE_URL: https://drbrownlabs-afk.github.io/Entity/
           SOURCE_SHA: ${{ github.sha }}
         run: node scripts/check-public.mjs "$SITE_URL" "$SOURCE_SHA"
+      - name: Verify original Synthetic Office at its public Pages URL
+        env:
+          OFFICE_WEB: https://drbrownlabs-afk.github.io/Entity
+        run: node scripts/phase09/verify-original-office.mjs
       - name: Persist public verification evidence
         if: always()
         uses: actions/upload-artifact@v6
@@ -64,3 +68,5 @@ jobs:
           path: |
             .runtime/pages-*.png
             .runtime/pages-verification.json
+            docs/evidence/phase09/original-integration.json
+            docs/evidence/phase09/integrated-*.png

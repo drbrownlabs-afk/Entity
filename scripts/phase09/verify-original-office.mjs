@@ -7,7 +7,7 @@ try{
   const context=await browser.newContext({viewport:{width,height:1000},hasTouch:width<600,isMobile:width<600});
   const page=await context.newPage();const failures=[];
   page.on('pageerror',e=>failures.push(e.message));
-  await page.goto('http://127.0.0.1:4175/office.html?budget=0.25',{waitUntil:'domcontentloaded'});
+  await page.goto((process.env.OFFICE_WEB||'http://127.0.0.1:4175')+'/office.html?budget=0.25',{waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});
   const initial=await page.evaluate(()=>window.officeDiagnostics());
   if(initial.substitute||!initial.sceneUrl.includes('a972d838')||initial.annotations.length!==6)throw Error('Wrong scene or original/verified semantic annotations missing');
