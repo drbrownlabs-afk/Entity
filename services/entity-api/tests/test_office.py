@@ -172,3 +172,38 @@ class OfficeTests(unittest.TestCase):
         self.assertEqual(self.client.get('/v1/office/me',headers=first).status_code,401)
         self.assertEqual(self.client.get('/v1/office/me',headers=second).status_code,200)
         self.assertEqual(self.client.post('/v1/office/auth/logout').status_code,401)
+
+    def test_declared_read_capabilities_return_core_evidence_without_fabricating_measurements(self):
+        self.obs(source='sensor')
+        read=self.cmd('sensor.read','sensor')
+        self.assertEqual(read['value']['measurement']['value'],25)
+        self.assertFalse(read['value']['device_contacted'])
+        read=self.cmd('sensor.read','sensor',{'name':'temperature','value':999,'unit':'C'})
+        self.assertEqual(read['value']['measurement']['value'],25)
+        self.cmd('entity.upsert',inputs={'id':'virtual-stream','kind':'Stream','attributes':{'camera_id':'camera','type':'virtual-render','video_recorded':False}})
+        self.obs([{'local_track_id':'anonymous','zone_id':'zone','position':[.3,.4]}])
+        read=self.cmd('camera.getObservations','camera')
+        self.assertTrue(read['value']['evidence']);self.assertTrue(read['value']['result'])
+        self.cmd('camera.setStatus','camera',{'status':'disconnected'})
+        read=self.cmd('camera.getStream','camera')
+        self.assertFalse(read['value']['available']);self.assertFalse(read['value']['video_connection_opened'])
+        self.assertEqual(read['value']['streams'][0]['id'],'virtual-stream')
+
+    def test_read_only_camera_grant_does_not_require_write_or_enable_actions(self):
+        with main.database(write=True) as db:
+            create_account(db,'reader',PASSWORD,'office','operator')
+            db.execute('INSERT INTO office_grants VALUES(?,?,?,?)',('office','reader','camera','read'))
+        before=self.state()
+        with main.database(write=True) as db:
+            db.execute('DELETE FROM office_schema WHERE version=4')
+            row=db.execute("SELECT id,descriptor FROM office_capabilities WHERE site='office' AND resource='camera' AND operation='camera.getObservations'").fetchone()
+            old=json.loads(row['descriptor']);old['permission']='observe'
+            db.execute('UPDATE office_capabilities SET descriptor=? WHERE id=?',(json.dumps(old),row['id']))
+        main.initialize();self.assertEqual(before,self.state())
+        reader=self.auth('reader')
+        caps=self.client.get('/v1/sites/office/capabilities?resource_id=camera',headers=reader).json()
+        self.assertTrue(any(x['canonical_id']=='camera.getObservations' for x in caps))
+        self.cmd('camera.getStream','camera',headers=reader)
+        self.cmd('camera.getObservations','camera',headers=reader)
+        self.cmd('camera.setStatus','camera',{'status':'disconnected'},headers=reader,code=403)
+        self.cmd('sensor.read','sensor',headers=reader,code=403)

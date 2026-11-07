@@ -38,7 +38,7 @@ INPUTS={
  'equipment.fail':Empty,'equipment.repair':Empty,'zone.close':Empty,'zone.open':Empty,
  'camera.setStatus':typed('CameraStatus',status=(S,...)),
  'clock.advance':typed('AdvanceClock',to=(T,...)),
- 'sensor.read':typed('SensorRead',name=(S,...),value=(float,...),unit=(S,...)),
+ 'sensor.read':typed('SensorRead',name=(str|None,None),value=(float|None,None),unit=(str|None,None)),
  'camera.getObservations':Empty,'camera.getStream':Empty,'resource.getObject':Empty,
  'booking.getAvailability':typed('Availability',starts_at=(T,...),ends_at=(T,...)),
 }

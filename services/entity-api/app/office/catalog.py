@@ -21,7 +21,7 @@ OPERATIONS={
  'zone.close':('operate','action','operations'), 'zone.open':('operate','action','operations'),
  'camera.setStatus':('access','action','cctv'),
  'clock.advance':('simulate','action','simulation'),
- 'sensor.read':('observe','read','sensor'),'camera.getObservations':('observe','read','cctv'),'camera.getStream':('read','read','cctv'),
+ 'sensor.read':('read','read','sensor'),'camera.getObservations':('read','read','cctv'),'camera.getStream':('read','read','cctv'),
  'resource.getObject':('read','read','resource'),'booking.getAvailability':('read','read','booking'),
 }
 
@@ -46,4 +46,4 @@ def declare(db,site,resource):
         descriptor=CapabilityDescriptor(capability_id=cid,canonical_id=operation,resource_id=resource,category=category,modality=modality,
           input_schema=INPUTS[operation].model_json_schema(),output_schema=NormalizedResult.model_json_schema(),units=({'temperature':'C','co2':'ppm','power':'W'} if operation=='sensor.read' else {}),semantics='ENTITY coworking '+operation,
           permission=permission,provenance={'source':'office-domain-catalog','simulated_provider':True})
-        db.execute('INSERT OR IGNORE INTO office_capabilities VALUES(?,?,?,?,?,?)',(cid,site,resource,operation,descriptor.model_dump_json(),'simulated'))
+        db.execute('INSERT INTO office_capabilities VALUES(?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET descriptor=excluded.descriptor',(cid,site,resource,operation,descriptor.model_dump_json(),'simulated'))

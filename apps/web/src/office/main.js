@@ -30,6 +30,13 @@ if(routePose!==null){
   settings.cameras=[{initial:{position,target:down?[position[0],position[1]-5,position[2]+.0001]:new URLSearchParams(location.search).get('survey_direction')==='hall'?[position[0],position[1],position[2]-5]:[position[0]+5,position[1],position[2]],fov:85}}];
  }
 }
+// Inspection camera transforms only; these never define entity positions or routes.
+if(new URLSearchParams(location.search).has('survey')){
+ const direction=new URLSearchParams(location.search).get('survey_direction');
+ const camera=settings.cameras[0].initial;
+ if(direction==='overview-right'){camera.position=[...camera.position];camera.position[1]+=1.2;camera.target=[camera.position[0]+5,camera.position[1]-3,camera.position[2]];}
+ if(direction==='front-down'){camera.target=[camera.position[0]-3,camera.position[1]-2,camera.position[2]+2];}
+}
 let viewer;
 const base=import.meta.env.VITE_OFFICE_ASSET_BASE;
 const contentUrl=base?new URL('lod-meta.json',base).href:original.contentUrl;

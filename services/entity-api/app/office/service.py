@@ -72,7 +72,7 @@ def command(db,site,run,actor,body):
     if body.get('capability_version','1.0')!=descriptor.version:raise HTTPException(409,'Capability version mismatch')
     binding=db.execute('SELECT * FROM office_bindings WHERE site=? AND source=?',(site,target)).fetchone()
     adapter=SimulatedAdapter()
-    if binding:
+    if binding and descriptor.modality!='read':
         if binding['version']!='1.0':raise HTTPException(409,'Adapter version mismatch')
         config=json.loads(binding['config'])
         if config.get('available') is False:raise HTTPException(503,'Adapter unavailable')
@@ -299,7 +299,30 @@ def command(db,site,run,actor,body):
             if next_clock<clock:raise HTTPException(409,'Clock cannot rewind; use historical query or new run')
             if (datetime.fromisoformat(next_clock)-datetime.fromisoformat(clock)).total_seconds()>86400:raise HTTPException(422,'Advance limited to one day')
             db.execute('UPDATE office_runs SET clock=? WHERE site=? AND id=?',(next_clock,site,run));clock=next_clock
-        elif op=='resource.getObject':details['resource']=get(target)
+        elif op=='resource.getObject':
+            from .access import projection
+            details['resource']=projection(state,actor)['entities'][target]
+        elif op=='sensor.read':
+            sensor=require_kind(target,{'Sensor','HVAC','Equipment'})
+            measurement=sensor.get('measurement');name=data.get('name')
+            if name and measurement and measurement.get('name')!=name:measurement=None
+            details['read']={'measurement':measurement,'available':measurement is not None,'observed_at':sensor.get('observed_at'),'freshness':sensor.get('freshness','unknown'),'mode':'cached-core-observation','device_contacted':False}
+            if sensor.get('last_observation_id'):
+                evidence=[sensor['last_observation_id']]
+                record=db.execute('SELECT body FROM office_inbox WHERE site=? AND run=? AND id=?',(site,run,sensor['last_observation_id'])).fetchone()
+                if record:details['read']['measurement_provenance']=json.loads(record[0]).get('provenance',{})
+        elif op=='camera.getObservations':
+            require_kind(target,{'Camera'})
+            from .access import projection
+            from .queries import query
+            details['read']=query(db,site,run,{'kind':'camera_observations','entity_id':target,'branch':branch},visible_state=projection(state,actor))
+            evidence=details['read']['evidence']
+        elif op=='camera.getStream':
+            camera=require_kind(target,{'Camera'})
+            # A stream description is not a new video connection or a detection.
+            streams=[{'id':x['id'],'camera_id':target,'type':x.get('type'),'video_recorded':x.get('video_recorded',False)} for x in items.values() if x.get('kind')=='Stream' and x.get('camera_id')==target]
+            details['read']={'streams':streams,'available':bool(streams) and camera.get('connectivity')=='connected','connectivity':camera.get('connectivity','unknown'),'mode':'cached-stream-metadata','video_connection_opened':False}
+
         elif op=='booking.getAvailability':
             require_kind(target,RESERVABLE);start,end=utc(data['starts_at']),utc(data['ends_at'])
             if end<=start:raise HTTPException(422,'Invalid interval')
@@ -309,7 +332,9 @@ def command(db,site,run,actor,body):
     adapter_inputs={k:v for k,v in data.items() if k not in ['password','verification_code']}
     if binding:
         adapter_inputs['_behavior']=json.loads(binding['config']).get('behavior')
-    if op=='access.requestEntry' and not details.get('allowed'):
+    if descriptor.modality=='read':
+        result={'status':'verified','value':details.get('read',details.get('resource',{k:v for k,v in details.items() if k not in ['operation','target','inputs']})),'simulated':bool(get(target).get('virtual') or details.get('read',{}).get('measurement_provenance',{}).get('simulated')),'provenance':{'source':'core-memory','device_contacted':False},'idempotency_key':cid}
+    elif op=='access.requestEntry' and not details.get('allowed'):
         result={'status':'denied','simulated':True,'provenance':{'source':'core-authorization-policy'},'idempotency_key':cid}
     else:
         result=execute_adapter(descriptor,adapter_inputs,cid,adapter)

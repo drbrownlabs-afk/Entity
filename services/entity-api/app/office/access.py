@@ -61,6 +61,10 @@ def authorize_command(items,actor,operation,target,data):
     if operation=='intercom.reply':return # addressed-host check is stricter and runs in domain policy
     if data.get('person_id') and data['person_id'] in items and not permitted(items[data['person_id']],actor,items):raise HTTPException(403,'Person outside assigned resource scope')
     item=items.get(target,{})
+    from .catalog import OPERATIONS
+    if OPERATIONS[operation][1]=='read':
+        if not permitted(item,actor,items):raise HTTPException(403,'Read outside assigned resource scope')
+        return
     if actor['role']=='member':
         if operation.startswith('booking.') and permitted(item,actor,items):return
         raise HTTPException(403,'Command outside member scope')

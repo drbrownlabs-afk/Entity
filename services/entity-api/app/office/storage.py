@@ -44,6 +44,10 @@ def initialize(db):
     INSERT OR IGNORE INTO office_schema VALUES(2);
     CREATE TABLE IF NOT EXISTS office_rejections(id TEXT PRIMARY KEY,site TEXT NOT NULL,source TEXT NOT NULL,at TEXT NOT NULL,reason TEXT NOT NULL);
     ''')
+    if not db.execute('SELECT 1 FROM office_schema WHERE version=4').fetchone():
+        from .catalog import declare
+        for entry in db.execute("SELECT site,id FROM office_resources WHERE kind IN ('Camera','Sensor','HVAC','Equipment')").fetchall():declare(db,entry['site'],entry['id'])
+        db.execute('INSERT INTO office_schema VALUES(4)')
 
 
 def get_run(db,site,run):
