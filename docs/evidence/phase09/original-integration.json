@@ -61,10 +61,17 @@
       "cctv": {
         "cameraViews": 4,
         "activeCameras": 4,
+        "visibleCameraIds": [
+          "CAM-01",
+          "CAM-02",
+          "CAM-03",
+          "CAM-04"
+        ],
         "worldClock": null,
         "avatarsLoaded": 0,
         "avatarsPlaced": [],
         "singleApplication": true,
+        "errors": [],
         "source": "original SSOG authored viewpoints; Core disconnected"
       }
     },
@@ -128,10 +135,15 @@
       "cctv": {
         "cameraViews": 4,
         "activeCameras": 2,
+        "visibleCameraIds": [
+          "CAM-01",
+          "CAM-02"
+        ],
         "worldClock": null,
         "avatarsLoaded": 0,
         "avatarsPlaced": [],
         "singleApplication": true,
+        "errors": [],
         "source": "original SSOG authored viewpoints; Core disconnected"
       }
     }
