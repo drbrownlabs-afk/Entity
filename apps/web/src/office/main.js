@@ -42,6 +42,7 @@ if(new URLSearchParams(location.search).has('survey')){
  }
  const camera=settings.cameras[0].initial;
  if(direction==='overview-right'){camera.position=[...camera.position];camera.position[1]+=1.2;camera.target=[camera.position[0]+5,camera.position[1]-3,camera.position[2]];}
+ if(direction==='topdown'){const a=original.settings.annotations[2].position,b=inspectionCameras.poses.at(-1),front=original.settings.annotations[3].position;const center=[a[0],-1.85,(front[2]+b[2])/2];camera.position=[center[0],center[1]+20,center[2]];camera.target=[center[0],center[1],center[2]+.0001];camera.fov=90;}
  if(direction==='front-down'){camera.target=[camera.position[0]-3,camera.position[1]-2,camera.position[2]+2];}
 }
 let viewer;
@@ -62,6 +63,11 @@ settings.annotations.forEach((annotation,index)=>{
 try{
   viewer=await createViewer({container:document.querySelector('#scene'),settings,contentUrl,collisionUrl,renderer:'webgl',ui:true,reticle:true,budget:Math.max(.25,Math.min(4,Number(new URLSearchParams(location.search).get('budget'))||1)),framesInFlight:1});
   viewer.state.animationPaused=true;
+  if(new URLSearchParams(location.search).get('survey_direction')==='topdown'){
+   // Non-destructive, camera-specific near-plane cut. Original splats and voxels stay intact.
+   viewer.state.controlsHidden=true;viewer.state.showAnnotations=false;
+   viewer.app.on('update',()=>{const c=viewer.app.root.findComponents('camera')[0];if(c.entity.forward.y<-.9)c.nearClip=Math.max(.01,(c.entity.getPosition().y-.5)/(-c.entity.forward.y));});
+  }
   viewer.events.on('loaded:changed',loaded=>{if(loaded){output.textContent='SSOG original cargado · navegación oficial SuperSplat';viewer.resetCamera();}});
   viewer.events.on('selectedAnnotation:changed',index=>{if(index!==null)inspect(index);});
   viewer.events.on('error:changed',error=>{if(error)output.textContent='Error al cargar recurso original: '+String(error);});

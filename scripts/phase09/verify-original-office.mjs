@@ -1,6 +1,7 @@
 import {chromium} from '../../apps/web/node_modules/@playwright/test/index.mjs';
 import fs from 'node:fs';
 const browser=await chromium.launch({args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
+const expectedAnnotations=4+JSON.parse(fs.readFileSync('worlds/synthetic-office/semantic-annotations.json','utf8')).length;
 const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,source:'Original published Synthetic Office SSOG through official SuperSplat viewer package',checks:[]};
 try{
  for(const width of [1440,390]){
@@ -10,7 +11,7 @@ try{
   await page.goto((process.env.OFFICE_WEB||'http://127.0.0.1:4175')+'/office.html?budget=0.25',{waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});
   const initial=await page.evaluate(()=>window.officeDiagnostics());
-  if(initial.substitute||!initial.sceneUrl.includes('a972d838')||initial.annotations.length!==6)throw Error('Wrong scene or original/verified semantic annotations missing');
+  if(initial.substitute||!initial.sceneUrl.includes('a972d838')||initial.annotations.length!==expectedAnnotations)throw Error('Wrong scene or original/verified semantic annotations missing');
   await page.locator('#annotations button').nth(1).click();
   await page.waitForTimeout(1000);
   const text=await page.locator('#selection').innerText();

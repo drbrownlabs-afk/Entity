@@ -73,5 +73,44 @@
       "reservable": false,
       "individual_count_verified": false
     }
+  },
+  {
+    "title": "Recepción inteligente · dos sillas negras",
+    "text": "Sector de las dos sillas negras, comprobado en dos vistas del archivo original. Ancla de referencia del sector; no afirma posición exacta de una pantalla física.",
+    "position": [
+      -5.788876393261972,
+      -1.0731165959404187,
+      -8.894881576083774
+    ],
+    "camera": {
+      "initial": {
+        "position": [
+          -0.4324827194213867,
+          0.06433844566345215,
+          -5.352859973907471
+        ],
+        "target": [
+          -4.54594087600708,
+          -0.38141191005706787,
+          -6.841612815856934
+        ],
+        "fov": 100
+      }
+    },
+    "extras": {
+      "entity_id": "RECEPTION",
+      "kind": "Reception",
+      "source": "two-view-original-splat-depth-picks",
+      "evidence": "docs/evidence/phase09/survey/survey-seat-picks.json; reception-a-picks.jpg and reception-b-picks.jpg",
+      "confidence": "sector-verified; exact-kiosk-mount-not-measured",
+      "screen": [
+        0.6,
+        0.6
+      ],
+      "seating_capacity": 2,
+      "capacity_source": "visual-count; two original black chairs",
+      "reservable": false,
+      "human_receptionist": false
+    }
   }
 ]
