@@ -5,7 +5,7 @@ const credentials=JSON.parse(fs.readFileSync(process.env.OFFICE_CREDENTIALS,'utf
 const code=process.env.OFFICE_TEST_CODE;
 let lastPage,lastHost;
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox']});
-const report={source:'Actual local Core HTTP and built kiosk/personal clients; original site inventory; no substituted 3D scene',checks:[]};
+const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,source:'Actual local Core HTTP and built kiosk/personal clients; original site inventory; no substituted 3D scene',checks:[]};
 try{
  for(const width of [1280,390]){
   const context=await browser.newContext({viewport:{width,height:900},isMobile:width<600,hasTouch:width<600});

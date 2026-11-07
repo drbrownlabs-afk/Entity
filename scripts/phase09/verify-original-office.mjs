@@ -1,7 +1,7 @@
 import {chromium} from '../../apps/web/node_modules/@playwright/test/index.mjs';
 import fs from 'node:fs';
 const browser=await chromium.launch({args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
-const report={source:'Original published Synthetic Office SSOG through official SuperSplat viewer package',checks:[]};
+const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,source:'Original published Synthetic Office SSOG through official SuperSplat viewer package',checks:[]};
 try{
  for(const width of [1440,390]){
   const context=await browser.newContext({viewport:{width,height:1000},hasTouch:width<600,isMobile:width<600});

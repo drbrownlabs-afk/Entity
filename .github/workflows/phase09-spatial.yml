@@ -26,12 +26,21 @@ jobs:
           cd apps/web && npx playwright install --with-deps chromium
       - name: Exercise original geometry and real Core without substituted scene
         run: timeout 480s .venv/bin/python scripts/phase09/demo-spatial-core.py
+      - name: Retain full evidence independently of branch publication
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: original-spatial-evidence
+          path: |
+            docs/evidence/phase09/spatial-core*
+            docs/evidence/phase09/spatial-runs
       - name: Preserve actual geometric integration evidence
         if: always()
         run: |
           git config user.name 'ENTITY spatial verification'
           git config user.email 'scene@users.noreply.github.com'
           git add docs/evidence/phase09/spatial-core.json
+          git add docs/evidence/phase09/spatial-runs || true
           git add docs/evidence/phase09/spatial-core*.png || true
           git diff --cached --quiet && exit 0
           git commit -m 'Record actual original SSOG Core and animated camera integration [skip ci]'

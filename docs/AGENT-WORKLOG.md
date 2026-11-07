@@ -291,3 +291,6 @@ Encontradas capacidades anunciadas sensor.read/camera.getObservations/camera.get
 
 ### 2026-11-07 — Codex, disparadores ycola CI/Pages
 CI yPages omitían cambios en worlds/synthetic-office; CI omitía compose.office.yaml. Corregidos disparadores para que cambios de configuración original también se prueben/publiquen. Concurrencia porworkflow/rama cancela CI anterior sustituido; Pages prioriza la última revisión en lugar de acumular despliegues obsoletos mientras se depura. No afecta historial Git ni fases previas. Verificación pública sigue exigiendo SHA desplegado coincidente y comprobación del SSOG original.
+
+### 2026-11-07 — Codex, procedencia de pruebas remotas
+Los informes de navegador incluyen ahora SHA probado y URL del run, para distinguir pruebas de revisiones sucesivas mientras se integra la rama. La prueba espacial archiva un JSON por ejecución y publica además artefacto independiente de poder hacer push de evidencias; no se pierde el fallo si coincide con otro commit. No cambia resultados ni criterios de aceptación.

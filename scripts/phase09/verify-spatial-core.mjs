@@ -2,7 +2,7 @@ import {chromium} from '../../apps/web/node_modules/@playwright/test/index.mjs';
 import fs from 'node:fs';
 const api=process.env.OFFICE_API,web=process.env.OFFICE_WEB,credentials=JSON.parse(fs.readFileSync(process.env.OFFICE_CREDENTIALS,'utf8'));
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
-const report={scene:'https://superspl.at/scene/a972d838',source:'Original SSOG + Core routes measured from original floor + Rocketbox + PlayCanvas picker; simulated people, no physical camera or facial identity claim',checks:[]};
+const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,scene:'https://superspl.at/scene/a972d838',source:'Original SSOG + Core routes measured from original floor + Rocketbox + PlayCanvas picker; simulated people, no physical camera or facial identity claim',checks:[]};
 let token,lastPage;
 const failures=[];
 const save=()=>fs.writeFileSync('docs/evidence/phase09/spatial-core.json',JSON.stringify(report,null,2));
@@ -85,4 +85,4 @@ try{
  if(lastPage&&!lastPage.isClosed())await lastPage.screenshot({path:'docs/evidence/phase09/spatial-core-failed.png',fullPage:true,timeout:30000}).catch(()=>{});
  throw error;
 }
-finally{fs.writeFileSync('docs/evidence/phase09/spatial-core.json',JSON.stringify(report,null,2));await browser.close();}
+finally{if(process.env.GITHUB_RUN_ID){fs.mkdirSync('docs/evidence/phase09/spatial-runs',{recursive:true});fs.writeFileSync('docs/evidence/phase09/spatial-runs/'+process.env.GITHUB_RUN_ID+'.json',JSON.stringify(report,null,2));}fs.writeFileSync('docs/evidence/phase09/spatial-core.json',JSON.stringify(report,null,2));await browser.close();}
