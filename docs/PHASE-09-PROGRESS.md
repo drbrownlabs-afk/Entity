@@ -5,7 +5,7 @@ El acceso HTTP del ejecutor obtuvo403; el operador confirma la escena disponible
 
 | Subfase | Estado | Pruebas/evidencia | Commit/PR | Siguiente |
 |---|---|---|---|---|
-| 09.1 | EN CURSO | HTTP local403; investigación oficial y navegador remoto autorizados | merge2d73e1d | Identificar recursos reales de escena; no inventar inventario |
+| 09.1 | EN CURSO | HTTP200 en Chromium remoto, escena original/collision/SSOG localizados; receptor Vite/SSOG listo | merge2d73e1d | Integrar assets originales y anotaciones; validar colisiones, no declarar gate completo |
 | 09.2 | PENDIENTE | — | — | Implementar y ejecutar gate 09.2 |
 | 09.3 | PENDIENTE | — | — | Implementar y ejecutar gate 09.3 |
 | 09.4 | PENDIENTE | — | — | Implementar y ejecutar gate 09.4 |

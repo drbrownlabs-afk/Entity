@@ -226,3 +226,7 @@ Implementación51d9ab670ef1d0fd2c7ceaf55602bdce046a9bae; followup9f35abb711413f6
 
 ## 2026-11-07 — Fase09 inicio de implementación
 Rama codex/phase-09-autonomous-plan sincronizada14c33fe, addendum Núcleo leído. Merge943ff31 preserva código00–08 y auditoría; conflicto PHASE-BOARD resuelto conservando ambos historiales, commit2d73e1d. LecturaHTTP del ejecutor403 no evidencia fallo de escena: operador confirma disponible. Investigación oficial SuperSplat/splat-transform/WebMCP y workflow Chromium autorizado para solicitudes/recursos reales. No inventar espacios ni marcar09.1 validada. Se desarrollan simultáneamente módulos independientes de Core/Núcleo, todavía no se declaran probados.
+
+
+## 2026-11-07 — Synthetic Office acceso real recuperado
+Run42389897089 Success; commit225b804 obtiene HTTP200 y captura original en Chromium anónimo autorizado. No atribuimos CONNECT403 local a inexistencia ni a login. Recursos SSOG originales y voxels identificados en d28zzqy0iyovbz.cloudfront.net/a972d838/v1; autor argenzio/licencia CC BY-NC4.0. Escena real vista, anotación original 6-Person Office Bench System. Se investiga menú Download/Vite y configuración iframe; no sesión autenticada del operador disponible (sin herramientas CUA, DISPLAY/X11). Receptor seguro de ZIPVite/SSOG/directorio implementado para archivos oficiales compartidos;3tests de seguridad de archivo aprobados, sin generar escena sustituta. Gate09.1 aún pendiente de integración local y colisiones/anotaciones.
