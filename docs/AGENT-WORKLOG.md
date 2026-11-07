@@ -187,3 +187,10 @@ Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin
 - PR REST intentado: Forbidden en api.github.com/repos/drbrownlabs-afk/Entity/pulls. Sin PR nuevo/merge, PR #1 no se duplica; no operaciones Git manuales del operador. CI se dispara por push y se observa por web pública como en fases previas.
 - start_skill esquema 5 actualizado en borrador para instalación/demo de integraciones y límite Fase 07, sin afirmar publicación de snapshot. Servicios de demo limpiados; solo API Docker previa sigue funcionando.
 - Cierre documental explicita límites de IDs opacos/reservas, compatibilidad física no demostrada y semántica de eventos no visuales. Fase 06 EN VALIDACIÓN; Fase 07 NO INICIADA.
+
+
+### 2026-11-07 UTC — cierre Fase 06 verificado
+- Código 12e05af070d84d7c9835e5f8070461a5e1e108ef en codex/phase-06-integrations. CI final https://github.com/drbrownlabs-afk/Entity/actions/runs/42328459031 Success, 1m32s (api-tests 31s/edge-tests 1m28s), sin anotaciones, SHA completo confirmado. 29 Core + 7 Edge y demo integral incluidas. Evidencia JSON versionada, fallo inicial y runs previos conservados.
+- Core/DB/API sin cambios frente a fc769b0; fases anteriores ancestros verificados y árbol remoto descargado idéntico. Ajuste final solo diagnóstico de error tras cleanup comprobado; cierre posterior exclusivamente documental, sin repetir tests ya verificados.
+- Reporte, matriz/licencias/roadmap y memoria compartida actualizados. PR API Forbidden, no PR nuevo ni merge; PR #1 no se duplica. No comandos Git manuales del operador. start_skill guardado en borrador, no snapshot publicado.
+- Estado: Fase 06 EN VALIDACIÓN; Fase 07 NO INICIADA. Próximo paso revisión humana; hardware/ONVIF/VMS ajenos y perfiles de producción se mantienen fuera de la evidencia demostrada.

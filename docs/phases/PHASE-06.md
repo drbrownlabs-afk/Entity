@@ -79,3 +79,13 @@ RTSP sigue sin re-ID, identidad entre cámaras o precisión calibrada. Reservas/
 Primer run https://github.com/drbrownlabs-afk/Entity/actions/runs/42327761645 (8084b84): Failure en la demo de integración; api-tests pasó. Logs completos de ese job requieren login y no se atribuye su causa exacta a una hipótesis no comprobada. Se añadió instalación de FFmpeg desde apt oficial si falta y diagnóstico por etapa de excepción; el proveedor de demo se fija a controlled para impedir tráfico LLM accidental.
 
 Run posterior https://github.com/drbrownlabs-afk/Entity/actions/runs/42328049603 (cc78f084a60ed625b61997713469a728e01ccac1): Success, 1m41s, api-tests 34s y edge-tests 1m37s, sin anotaciones. Incluye la demo RTSP/MQTT/REST y todas las regresiones/vídeo/Output/agente/Docker. Se conserva el fallo inicial como evidencia. Ajuste final de salud MQTT: al desconectar se limpian connected y subscribed, con test dirigido aprobado; nueva ejecución CI se comprueba tras publicar.
+
+
+## Entrega final y CI observado
+Código final publicado: https://github.com/drbrownlabs-afk/Entity/commit/12e05af070d84d7c9835e5f8070461a5e1e108ef, rama codex/phase-06-integrations. CI final https://github.com/drbrownlabs-afk/Entity/actions/runs/42328459031 — Status Success, 1m32s; api-tests 31s, edge-tests 1m28s, sin anotaciones. Incluye todas las regresiones y demo RTSP/MQTT/REST. Evidencia en docs/evidence/phase06-ci-final.json. El run intermedio de salud MQTT 42328269592 también Success; el fallo inicial se conserva, no se oculta.
+
+La corrección final de diagnóstico permite leer el log de fixture incluso después de cerrar los procesos; comprobada aisladamente en su rama de error, además de compileall y CI. No se modificó la funcionalidad del protocolo para obtener verde.
+
+Fetch Git independiente confirma árbol/SHA publicados; ancestros de fases anteriores conservados y diff de services/entity-api respecto a fc769b0 vacío. Cierre posterior exclusivamente documental; tests corresponden al código exacto de 12e05af. PR REST intentado: Forbidden en api.github.com/repos/drbrownlabs-afk/Entity/pulls; rama publicada sin PR nuevo ni merge. No se duplicó PR #1, no se requieren comandos Git/CI del operador. start_skill guardado en borrador, sin afirmar aplicación/publicación de snapshot.
+
+Pendiente revisión humana de Fase 06 y futura validación física autorizada según matriz. Fase 07 NO INICIADA.

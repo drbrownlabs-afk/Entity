@@ -72,3 +72,5 @@ Fase 05 publicada: f77f816c04b312842e54767375028da7b50f35f3, rama codex/phase-05
 
 ## Estado vigente — Fase 06
 EN VALIDACIÓN, autorizada por operador sin autoaprobar fases previas. 29 Core + 7 Edge tests y demo RTSP TCP/MQTT/REST reales locales aprobados; payloads sensores/reservas ficticios, sin CCTV externo ni ONVIF físico. Misma Camera/endpoints/estado con fuente virtual y RTSP. Duplicados, broker restart y recuperación de Outbox/Core correctos; eventos no visuales consultables por Core/agente. Core sin cambios ni migración (esquema 5); fases anteriores conservadas. Ver matriz completa docs/phases/PHASE-06.md. Prioridad vigente revisión humana de esta fase; Fase 07 NO INICIADA.
+
+Fase 06 código 12e05af070d84d7c9835e5f8070461a5e1e108ef publicado y CI final 42328459031 Success sin advertencias (1m32s); evidencia phase06-ci-final.json. Core intacto, árbol remoto verificado y fases anteriores preservadas. PR API continúa Forbidden, sin PR nuevo/merge; Git y CI web funcionan. Cierre posterior solo documental. Revisión humana pendiente; Fase 07 no iniciada.
