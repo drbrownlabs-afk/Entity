@@ -46,3 +46,7 @@ El operador aclara que las DOS anotaciones originales `6-Person Office Bench Sys
 
 ## Nueva decisión vinculante — 2026-11-07: 12 puestos y recepción digital
 El operador selecciona recepción digital (servicio sin ubicación física obligatoria). Inventario comercial: oficinas privadas A/B de seis posiciones cada una y reserva íntegra; C = seis posiciones de STAFF en conjunto identificable por mueble separador frontal, no reservable; D1–D6 y E1–E6 = ÚNICOS 12 puestos individuales reservables; mesa negra = reuniones; booths de descanso y pasillos no reservables. Esta decisión sustituye el supuesto previo de 18 puestos públicos y la ampliación automática a F/G. Se requiere inspección visual para localizar C/D/E y corregir bootstrap, APIs, permisos, reservas y UI. Estado de implementación: PENDIENTE; no declarar completado por esta actualización documental. SSOG original suficiente, Vite no requerido. Continuar ejecución autónoma 09.1–09.9.
+
+
+## Decisión de recepción inteligente presencial — 2026-11-07
+Recepción digital SÍ tiene punto físico: pantalla/kiosco en dos sillas negras aisladas, sin recepcionista. Voz/táctil, sin teléfono obligatorio. Mismo grafo ENTITY; cita 16:00, identidad, check-in, aviso al anfitrión, orientación. Implementación y pruebas E2E pendientes.
