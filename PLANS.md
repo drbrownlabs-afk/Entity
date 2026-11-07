@@ -74,3 +74,7 @@ Salida: aceptación humana explícita, fallos documentados y backlog financiable
 - Mantener docs/PROJECT-STATUS.md, docs/AGENT-WORKLOG.md y docs/PHASE-BOARD.md; decisiones nuevas en docs/DECISION-LOG.md.
 - Una fase 'APROBADA' requiere demostración funcional y aprobación humana; pruebas no ejecutadas => EN VALIDACIÓN o BLOQUEADA.
 - Priorizar pequeño ciclo end-to-end verificable sobre arquitectura ornamental.
+
+
+## Fase 09 — ENTITY Spatial Intelligence / Synthetic Office (autorización especial 2026-11-07)
+Nueva tarea integral de simulación de centro de trabajo, continuación de ENTITY Experience. Plan funcional, subfases 09.1–09.9, gates, evidencia y protocolo de continuidad: [docs/phases/PHASE-09.md](docs/phases/PHASE-09.md). **Excepción explícita a la regla general de aprobación por fase:** el operador autorizó completar consecutivamente todas las subfases 09.1–09.9 con autorrevisión, corrección y avance automático sin pausas humanas intermedias. Cada gate puede quedar VERIFICADO AUTOMÁTICAMENTE; solo la Fase 09 integral espera revisión humana al final. No altera las autorizaciones históricas de 00–08 ni supone que 07/08 están fusionadas. Evidencia en docs/PHASE-09-PROGRESS.md.
