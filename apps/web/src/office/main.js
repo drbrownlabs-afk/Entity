@@ -6,6 +6,16 @@ import './office.css';
 document.querySelector('#office-app').innerHTML='<header><a href="./">ENTITY</a><span>SYNTHETIC OFFICE / ARCHIVO ORIGINAL</span><b>argenzio · CC BY-NC 4.0</b></header><main><section class="tools"><span id="status" role="status">Cargando SSOG original…</span><button id="frame">Dollhouse</button><button id="reset">Interior</button><button id="walk">Caminar con colisiones</button></section><div id="scene"></div><section class="move"><button data-move="0,1">↑</button><button data-move="-1,0">←</button><button data-move="0,-1">↓</button><button data-move="1,0">→</button><span>Controles táctiles · geometría y voxels originales</span></section><section><h2>Inventario de anotaciones originales</h2><div id="annotations"></div><pre id="selection"></pre><p>Estas anotaciones proceden del archivo publicado por el autor. No se han inventado salas ni sustituido el edificio por una escena de prueba.</p><a href="https://superspl.at/scene/a972d838" target="_blank" rel="noopener">Abrir la publicación original ↗</a></section></main>';
 const settings=structuredClone(original.settings);
 settings.startMode='orbit';
+const surveyPose=new URLSearchParams(location.search).get('survey_pose');
+if(surveyPose!==null){
+ const index=Number(surveyPose),values=original.settings.animTracks[0].keyframes.values;
+ if(Number.isInteger(index)&&index>=0&&index<3){
+  const position=values.position.slice(index*3,index*3+3);
+  settings.cameras=[{initial:{position,target:values.target.slice(index*3,index*3+3),fov:85}}];
+  // Camera-only inspection direction; never a semantic resource anchor.
+  if(new URLSearchParams(location.search).get('survey_direction')==='hall')settings.cameras[0].initial.target=[position[0],position[1],position[2]-5];
+ }
+}
 let viewer;
 const base=import.meta.env.VITE_OFFICE_ASSET_BASE;
 const contentUrl=base?new URL('lod-meta.json',base).href:original.contentUrl;
@@ -61,16 +71,7 @@ import('./operations.js');
 if(new URLSearchParams(location.search).has('survey')){
   let picker;
   viewer?.events.on('picker:ready',value=>{picker=value;});
-  let forcedPose=null;
-  viewer.app.on('update',()=>{
-    if(!forcedPose)return;
-    const camera=viewer.app.root.findComponents('camera')[0];
-    camera.entity.setPosition(...forcedPose.position);camera.entity.lookAt(...forcedPose.target);
-    viewer.app.renderNextFrame=true;
-  });
   window.officeSurvey={
-    pose:value=>{forcedPose=value;viewer.state.inputEnabled=!value;},
-
     frame:()=>viewer.frameScene(),
     seek:time=>{viewer.state.animationPaused=true;viewer.seek(time);},
     annotation:index=>viewer.selectAnnotation(index),
