@@ -50,3 +50,7 @@ El operador selecciona recepción digital (servicio sin ubicación física oblig
 
 ## Decisión de recepción inteligente presencial — 2026-11-07
 Recepción digital SÍ tiene punto físico: pantalla/kiosco en dos sillas negras aisladas, sin recepcionista. Voz/táctil, sin teléfono obligatorio. Mismo grafo ENTITY; cita 16:00, identidad, check-in, aviso al anfitrión, orientación. Implementación y pruebas E2E pendientes.
+
+
+## Intercomunicación contextual — 2026-11-07
+Nuevo alcance: intercom ENTITY en recepción y ambientes A/B/C, conectado al mismo Núcleo y grafo. Caso de aceptación: visitante Daniel llega a reunión 16:00, ENTITY avisa a Carlos por intercom, recibe confirmación o demora, responde al visitante y registra eventos. Validar routing por relaciones, estado/presencia, privacidad y fallback. Implementación pendiente.
