@@ -2,13 +2,13 @@ name: Publish ENTITY Experience
 on:
   push:
     branches: [main, codex/phase-07-experience, codex/phase-09-autonomous-plan]
-    paths: ["apps/web/**", "worlds/shopping-mall/**", ".github/workflows/pages.yml"]
+    paths: ["apps/web/**", "worlds/shopping-mall/**", "worlds/synthetic-office/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 permissions:
   contents: read
 concurrency:
   group: entity-pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   publish:
     runs-on: ubuntu-24.04

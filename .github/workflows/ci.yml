@@ -6,8 +6,10 @@ on:
       - "services/entity-edge/**"
       - "apps/web/**"
       - "worlds/shopping-mall/**"
+      - "worlds/synthetic-office/**"
       - "scripts/**"
       - "compose.yaml"
+      - "compose.office.yaml"
       - "packages/contracts/**"
       - ".github/workflows/ci.yml"
   pull_request:
@@ -16,13 +18,18 @@ on:
       - "services/entity-edge/**"
       - "apps/web/**"
       - "worlds/shopping-mall/**"
+      - "worlds/synthetic-office/**"
       - "scripts/**"
       - "compose.yaml"
+      - "compose.office.yaml"
       - "packages/contracts/**"
       - ".github/workflows/ci.yml"
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: entity-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   api-tests:
