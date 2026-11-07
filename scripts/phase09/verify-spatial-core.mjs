@@ -3,6 +3,10 @@ import fs from 'node:fs';
 const api=process.env.OFFICE_API,web=process.env.OFFICE_WEB,credentials=JSON.parse(fs.readFileSync(process.env.OFFICE_CREDENTIALS,'utf8'));
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,scene:'https://superspl.at/scene/a972d838',source:'Original SSOG + Core routes measured from original floor + Rocketbox + PlayCanvas picker; simulated people, no physical camera or facial identity claim',checks:[]};
+const calibration=JSON.parse(fs.readFileSync('docs/evidence/phase09/voxel-ground.json','utf8'));
+const route=JSON.parse(fs.readFileSync('worlds/synthetic-office/corridor-route.json','utf8'));
+if(route.floor_source!=='original-official-voxel-ray'||calibration.route_clearance.some(p=>p.blocked)||JSON.stringify(route.floor_points)!==JSON.stringify(calibration.route_candidate))throw Error('Current original voxel ground/capsule validation does not match adopted route');
+report.physical_ground={source:calibration.collision_url,floor_clearance:calibration.floor_clearance,clear_capsule_samples:calibration.route_clearance.length,metric_scale_verified:false};
 let token,lastPage;
 const failures=[];
 const save=()=>fs.writeFileSync('docs/evidence/phase09/spatial-core.json',JSON.stringify(report,null,2));
@@ -62,6 +66,11 @@ try{
     identified=true;
    }
    report.checks.push({second,camera,visible:snapshot.payload.tracks.length,core_position:expected,rendered_position:placed.position,identity_from_image:false});save();
+  }
+  if(second===5){
+   await page.locator('[data-camera="CAM-ROUTE-1"]').click();await page.locator('#office-camera-expand').click();
+   await page.locator('#scene').screenshot({path:'docs/evidence/phase09/spatial-person-floor.png',timeout:120000});
+   await page.locator('#office-camera-expand').click();
   }
  }
  if(!identified)throw Error('No actual rendered person was selected by the camera picker');

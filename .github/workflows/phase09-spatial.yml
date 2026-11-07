@@ -34,9 +34,10 @@ jobs:
           name: original-spatial-evidence
           path: |
             docs/evidence/phase09/spatial-core*
+            docs/evidence/phase09/spatial-person-floor.png
             docs/evidence/phase09/voxel-ground.json
             docs/evidence/phase09/spatial-runs
       - name: Preserve actual geometric integration evidence
         if: always()
         run: |
-          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/spatial-core*' 'docs/evidence/phase09/spatial-runs/*.json' 'docs/evidence/phase09/voxel-ground.json'
+          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/spatial-core*' 'docs/evidence/phase09/spatial-runs/*.json' 'docs/evidence/phase09/voxel-ground.json' 'docs/evidence/phase09/spatial-person-floor.png'

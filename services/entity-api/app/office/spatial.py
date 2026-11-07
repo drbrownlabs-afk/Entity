@@ -66,3 +66,37 @@ def project(db,site,run,clock,items,branch='main'):
             person['spatial_pose']={'position':position,'yaw':math.degrees(math.atan2(dx,dz)),'animation':'walk','animation_time':(stamp-first).total_seconds(),
                 'coordinate_frame':motion['coordinate_frame'],'validated':True,'pose_kind':'simulated-route-reconstruction','physical_identity_claimed':False,
                 'zone_id':motion['zone_id'],'route_id':config['id'],'evidence':[a['evidence'],b['evidence']],'calibration_evidence':motion['calibration_evidence']}
+
+class RelativeWaypoint(CoreRecord):
+    offset_seconds:float=Field(ge=0,le=86400)
+    position:tuple[float,float,float]
+    evidence:NonBlank
+
+class DailyMotion(CoreRecord):
+    person_id:NonBlank
+    avatar_id:NonBlank
+    zone_id:NonBlank
+    starts_local:str=Field(pattern=r'^(?:[01]\d|2[0-3]):[0-5]\d:[0-5]\d$')
+    waypoints:list[RelativeWaypoint]=Field(min_length=2,max_length=1000)
+    calibration_evidence:NonBlank
+
+class DailyProfile(CoreRecord):
+    id:NonBlank
+    coordinate_frame:NonBlank
+    motions:list[DailyMotion]=Field(min_length=1,max_length=100)
+
+def install_daily_profile(db,site,run,actor,profile):
+    """Reuse calibrated site data on each new run, using the one Core/site clock."""
+    from datetime import timedelta
+    from zoneinfo import ZoneInfo
+    from .storage import get_run
+    profile=DailyProfile.model_validate(profile)
+    clock=datetime.fromisoformat(get_run(db,site,run)['clock'])
+    zone=ZoneInfo(db.execute('SELECT timezone FROM office_sites WHERE id=?',(site,)).fetchone()[0])
+    day=clock.astimezone(zone).date().isoformat();motions=[]
+    for motion in profile.motions:
+        start=datetime.fromisoformat(day+'T'+motion.starts_local).replace(tzinfo=zone)
+        if start<clock:raise HTTPException(409,'Install calibrated daily routes before their first waypoint on a new run')
+        motions.append({'person_id':motion.person_id,'avatar_id':motion.avatar_id,'zone_id':motion.zone_id,'coordinate_frame':profile.coordinate_frame,
+            'calibration_evidence':motion.calibration_evidence,'waypoints':[{'at':(start+timedelta(seconds=p.offset_seconds)).isoformat(),'position':p.position,'evidence':p.evidence} for p in motion.waypoints]})
+    return register(db,site,run,actor,Routes.model_validate({'id':profile.id,'motions':motions}))

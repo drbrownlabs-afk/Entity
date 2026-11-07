@@ -1,0 +1,42 @@
+{
+  "id": "original-corridor-v2",
+  "coordinate_frame": "supersplat-original",
+  "motions": [
+    {
+      "person_id": "PERSON-LUIS",
+      "avatar_id": "Male_Adult_01",
+      "zone_id": "CIRCULATION-01",
+      "starts_local": "09:15:00",
+      "calibration_evidence": "docs/evidence/phase09/voxel-ground.json; original official collider, 22 clear human-capsule samples",
+      "waypoints": [
+        {
+          "offset_seconds": 0,
+          "position": [
+            -3.4262733459472656,
+            -1.7000000000000004,
+            -12.386368751525879
+          ],
+          "evidence": "docs/evidence/phase09/voxel-ground.json; original-voxel-ray-0"
+        },
+        {
+          "offset_seconds": 5,
+          "position": [
+            -3.4262733459472656,
+            -1.7500000000000004,
+            -15.987741470336914
+          ],
+          "evidence": "docs/evidence/phase09/voxel-ground.json; original-voxel-ray-1"
+        },
+        {
+          "offset_seconds": 10,
+          "position": [
+            -3.4262733459472656,
+            -1.8000000000000003,
+            -17.43784523010254
+          ],
+          "evidence": "docs/evidence/phase09/voxel-ground.json; original-voxel-ray-2"
+        }
+      ]
+    }
+  ]
+}

@@ -33,9 +33,12 @@ def install_day(db,site,run,actor):
     def observe(time,key,camera,tracks):add(time,key,'camera',{'source_id':camera,'tracks':tracks})
     def badge(time,key,camera,local_id,person):add(time,key,'badge',{'camera':camera,'local_id':local_id,'person_id':person})
     # Additional virtual cameras are logical simulation sources, with no invented physical pose.
+    configuration=json.loads(db.execute('SELECT config FROM office_sites WHERE id=?',(site,)).fetchone()[0])
+    spatial_profile=configuration.get('daily_spatial_profile')
+    route_zones=sorted({m['zone_id'] for m in spatial_profile['motions']}) if spatial_profile else []
     changes={}
     for key,zones in [('CAM-05',['ZONE-D','ZONE-E']),('CAM-06',['ZONE-D','ZONE-E']),('CAM-RECEPTION',['RECEPTION','WAITING-AREA'])]:
-        item=upsert_resource(db,site,key,'Camera',{'name':key+' · fuente sintética','virtual':True,'covered_zones':zones,'connectivity':'connected','position':None,'spatial_mapping':'not-calibrated','coverage_mode':'synthetic-fixture-not-geometric-visibility'})
+        item=upsert_resource(db,site,key,'Camera',{'name':key+' · fuente sintética','virtual':True,'covered_zones':zones+route_zones,'connectivity':'connected','position':None,'spatial_mapping':'not-calibrated','coverage_mode':'synthetic-fixture-not-geometric-visibility'})
         changes[key]=item
         stream=upsert_resource(db,site,'STREAM-'+key,'Stream',{'camera_id':key,'type':'synthetic-observations','video_recorded':False});changes[stream['id']]=stream
         db.execute('INSERT OR IGNORE INTO office_bindings VALUES(?,?,?,?,?)',(site,key,'simulated','1.0','{}'))
@@ -44,6 +47,9 @@ def install_day(db,site,run,actor):
     db.execute('INSERT OR IGNORE INTO office_bindings VALUES(?,?,?,?,?)',(site,sensor['id'],'simulated','1.0','{}'))
     changes['PERSON-DANIEL']=upsert_resource(db,site,'PERSON-DANIEL','Person',{'name':'Daniel','profile_level':'visitor','fictitious':True,'known_fields':['name','invitation'],'presence':'unknown'})
     emit(db,site,run,'main',r['clock'],'simulation.configured',actor['actor'],changes,{'daily_script':'coworking-v2','geometry_claimed':False})
+    if spatial_profile:
+        from .spatial import install_daily_profile
+        install_daily_profile(db,site,run,actor,spatial_profile)
     book='B-LUIS-'+run;morning='M-MORNING-'+run;meeting='M-1600-'+run;invite='I-DANIEL-'+run;conversation='C-DANIEL-'+run
     cmd('08:00:00','book-luis','booking.create','D3',booking_id=book,person_id='PERSON-LUIS',starts_at=at('09:15:00'),ends_at=at('18:00:00'))
     cmd('08:00:00','book-no-show','booking.create','D4',booking_id='B-NOSHOW-'+run,person_id='PERSON-LUIS',starts_at=at('09:00:00'),ends_at=at('10:00:00'))
@@ -55,10 +61,12 @@ def install_day(db,site,run,actor):
     for group in ['D','E']:
         for name,value,unit in [('temperature',23,'C'),('humidity',48,'percent'),('illuminance',450,'lux'),('co2',650,'ppm')]:
             add('08:01:00','baseline-'+group+'-'+name,'sensor',{'source_id':'SENSOR-'+group,'name':name,'value':value,'unit':unit})
-    luis=[{'local_track_id':'luis-badge-session','zone_id':'ZONE-D','position':[.4,.6]}]
+    corridor_zone=next((m['zone_id'] for m in spatial_profile['motions'] if m['person_id']=='PERSON-LUIS'),'ZONE-D') if spatial_profile else 'ZONE-D'
+    luis=[{'local_track_id':'luis-badge-session','zone_id':corridor_zone,'position':[.4,.6]}]
     observe('09:15:00','luis-anonymous','CAM-05',luis)
     badge('09:15:05','luis-identify','CAM-05','luis-badge-session','PERSON-LUIS')
     cmd('09:15:10','luis-book-checkin','booking.checkin',book)
+    luis=[{**p,'zone_id':'ZONE-D'} for p in luis]
     observe('09:16:00','luis-camera-two','CAM-06',luis)
     badge('09:16:05','luis-authorized-handoff','CAM-06','luis-badge-session','PERSON-LUIS')
     cmd('09:20:00','no-show','booking.no_show','B-NOSHOW-'+run)

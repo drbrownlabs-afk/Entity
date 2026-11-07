@@ -91,3 +91,18 @@ class DailySimulationTests(unittest.TestCase):
             self.assertEqual(items[zone]['environment']['illuminance']['unit'],'lux')
         main.initialize()
         self.assertEqual(items,self.client.get(root+'/world',headers=self.headers).json()['entities'])
+
+    def test_calibrated_profile_is_reused_by_real_daily_runs_without_a_second_clock(self):
+        from app.office.storage import encode
+        profile={'id':'contract-profile-not-a-scene','coordinate_frame':'contract-test-only','motions':[{'person_id':'luis','avatar_id':'Male_Adult_01','zone_id':'zone','starts_local':'09:15:00','calibration_evidence':'contract only; no spatial validation',
+            'waypoints':[{'offset_seconds':0,'position':[0,0,0],'evidence':'contract-a'},{'offset_seconds':10,'position':[0,0,2],'evidence':'contract-b'}]}]}
+        with main.database(write=True) as db:
+            configuration=json.loads(db.execute("SELECT config FROM office_sites WHERE id='office'").fetchone()[0]);configuration['daily_spatial_profile']=profile
+            db.execute("UPDATE office_sites SET config=? WHERE id='office'",(encode(configuration),))
+        for run in ['profile-day','profile-replay']:
+            root=self.install(run)
+            response=self.client.post(root+'/simulation/advance',headers=self.headers,json={'to':'2026-11-07T09:15:05-05:00'});self.assertEqual(response.status_code,200,response.text)
+            state=self.client.get(root+'/world',headers=self.headers).json()
+            self.assertEqual(state['entities']['luis']['spatial_pose']['position'],[0,0,1])
+            self.assertNotEqual(state['entities']['luis'].get('presence'),'confirmed')
+            main.initialize();self.assertEqual(state,self.client.get(root+'/world',headers=self.headers).json())
