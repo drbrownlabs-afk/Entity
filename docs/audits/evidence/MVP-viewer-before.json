@@ -1,0 +1,10 @@
+{
+  "duplicate_track_ids_accepted": true,
+  "real_core_export_provenance": {
+    "connector_id": "experience",
+    "model_version": "shared-edge-fixture-v1",
+    "simulated": true
+  },
+  "remote_scene_leaks_to_local": true,
+  "note": "Direct viewer state adapter probe; UI export disabled in Core mode; no physical measurements"
+}

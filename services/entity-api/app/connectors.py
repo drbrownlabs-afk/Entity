@@ -90,13 +90,13 @@ def authorize(permission):
         # Credentials and grants are server-owned; never trust actor/permissions in a request body.
         try:
             entries = json.loads(os.getenv('ENTITY_CONNECTOR_TOKENS', '[]'))
-            if not isinstance(entries, list) or any(not isinstance(e, dict) or not isinstance(e.get('token'), str) or not isinstance(e.get('actor'), str) or not isinstance(e.get('permissions'), list) for e in entries):
+            if not isinstance(entries, list) or any(not isinstance(e, dict) or not isinstance(e.get('token'), str) or not e['token'].isascii() or not isinstance(e.get('actor'), str) or not isinstance(e.get('permissions'), list) for e in entries):
                 raise ValueError('Invalid authentication configuration')
         except ValueError:
             raise HTTPException(503, 'Integration authentication unavailable')
         token = authorization[7:] if authorization and authorization.startswith('Bearer ') else ''
         for entry in entries:
-            if token and hmac.compare_digest(token, entry['token']):
+            if token and token.isascii() and hmac.compare_digest(token, entry['token']):
                 if permission in entry['permissions']:
                     return entry['actor']
                 audit(entry['actor'], permission, 'denied')

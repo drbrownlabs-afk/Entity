@@ -22,3 +22,7 @@
 
 ## Reporte para operador no programador
 Cada actualización debe contestar: ¿qué funciona hoy?, ¿qué se probó?, ¿qué falta?, ¿qué decisión se necesita?, ¿cuál es el siguiente experimento? Incluir enlaces a commit/PR y comandos sencillos cuando existan.
+
+
+## Auditoría transversal del MVP — 2026-11-07
+Fases00–08 revisadas mediante código y sondas adversas nuevas. Se conservan estados históricos y no se aprueba ninguna fase. Fase08 permanece EN VALIDACIÓN; la auditoría encuentra bloqueos de preparación para piloto y discrepancias no cubiertas por los recorridos anteriores. Ver docs/audits/MVP-INDEPENDENT-2026-11-07.md (A01–A10 abiertos; F01–F04 corregidos en rama de auditoría). Un CI verde comprueba regresiones y no acredita coherencia/seguridad de todos los componentes.

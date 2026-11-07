@@ -16,6 +16,9 @@ from uuid import uuid4
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.exceptions import RequestValidationError
+from fastapi.exception_handlers import request_validation_exception_handler
+from fastapi.responses import JSONResponse
 from pydantic import Field
 
 from app.migrate import migrate
@@ -34,6 +37,15 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="ENTITY OS", version="0.2.0", lifespan=lifespan)
+@app.exception_handler(RequestValidationError)
+async def validation_error(request, exc):
+    if any(error["type"] == "finite_json" for error in exc.errors()):
+        # The invalid NaN input itself cannot be serialized in a standards-compliant error.
+        return JSONResponse(status_code=422, content={"detail": [
+            {key: error[key] for key in ("type", "loc", "msg")} for error in exc.errors()]})
+    return await request_validation_exception_handler(request, exc)
+
+
 # Optional explicit browser origins; no wildcard, cookies or renderer dependency.
 allowed_origins = [value.strip() for value in os.getenv("ENTITY_ALLOWED_ORIGINS", "").split(",") if value.strip()]
 if allowed_origins:

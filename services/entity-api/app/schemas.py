@@ -1,6 +1,8 @@
 """Core v1 declaration contracts. Connector execution belongs to Phase 02."""
 from typing import Any, Literal
-from pydantic import BaseModel, ConfigDict, Field, StringConstraints, field_validator
+from pydantic import BaseModel, ConfigDict, Field, StringConstraints, field_validator, model_validator
+from pydantic_core import PydanticCustomError
+import math
 from typing import Annotated
 
 NonBlank = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1, max_length=512)]
@@ -9,6 +11,21 @@ NonBlank = Annotated[str, StringConstraints(strip_whitespace=True, min_length=1,
 class CoreRecord(BaseModel):
     model_config = ConfigDict(extra="forbid")
     schema_version: Literal["1.0"] = "1.0"
+
+    @model_validator(mode="before")
+    @classmethod
+    def finite_json_numbers(cls, value):
+        # Any/dict fields otherwise allow NaN/Infinity to commit before JSONResponse fails.
+        pending = [value]
+        while pending:
+            item = pending.pop()
+            if isinstance(item, float) and not math.isfinite(item):
+                raise PydanticCustomError("finite_json", "JSON numbers must be finite")
+            if isinstance(item, dict):
+                pending.extend(item.values())
+            elif isinstance(item, (list, tuple)):
+                pending.extend(item)
+        return value
 
 
 class EventCreate(CoreRecord):

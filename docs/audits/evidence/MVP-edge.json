@@ -1,0 +1,12 @@
+{
+  "transport": "HTTPX MockTransport; isolated actual Outbox SQLite, not a physical source",
+  "permanent_422_queue": {
+    "seen": [
+      "permanently-rejected",
+      "permanently-rejected"
+    ],
+    "pending": 2,
+    "valid_next_attempted": false,
+    "finding": "Permanent bad head blocks subsequent valid observations; retries retain data but do not restore delivery"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "duplicate_track_ids_accepted": false,
+  "real_core_export_provenance": {
+    "blocked": "No se exportan snapshots Core como observaciones simuladas"
+  },
+  "remote_scene_leaks_to_local": true,
+  "note": "Direct viewer state adapter probe; UI export disabled in Core mode; no physical measurements"
+}
