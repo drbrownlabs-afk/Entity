@@ -41,3 +41,16 @@ Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin
 - Decisiones de arquitectura: ninguna nueva; se mantiene SQLite provisional y Scorpio externo. Solo mantenimiento de Fase 00.
 - Estado final: entrega técnica local completada, fase EN VALIDACIÓN, no APROBADA.
 - Próxima acción: revisión humana de evidencia/cambios, publicar código y observar CI; revisar/guardar configuración y publicar entorno. Fase 01 NO INICIADA.
+
+
+### 2026-11-07 00:28 UTC — Codex / publicación Fase 00
+- Objetivo: conservar y publicar entrega probada, evidencia y configuración; mantener Fase 00 EN VALIDACIÓN.
+- Rama / PR / commit: rama remota codex/phase-00-validation; implementación 8f3815cb9e437e5d07768c4d9cbb48f49af466c7 publicada; main d21623b incorporado mediante merge documental. Sin PR ni merge a main.
+- Archivos modificados: docs/AGENT-WORKLOG.md, PROJECT-STATUS.md, PHASE-BOARD.md, audits/PHASE-00-2026-11-06.md, CLOUD-ENVIRONMENT.md y scripts/setup-cloud.sh (copia exacta del script ya ejecutado).
+- Implementación real: API/tests/Docker sin cambios funcionales; GitHub conserva rama y commit original. Configuración cloud reproducible también versionada, separada del borrador de plataforma.
+- Comandos/resultados: git fetch origin main y merge sin conflictos; git push origin HEAD:refs/heads/codex/phase-00-validation correcto; fetch HTTPS en repositorio bare independiente y rev-parse/cat-file confirman commit publicado; diff confirma implementación probada intacta. Validación documental con git diff --check y comparación exacta de script.
+- Pruebas: NO repetidas, conforme instrucción; resultados previamente ejecutados se conservan: 4/4 unittest, 2 smoke Docker con persistencia de entidades/atributos/estados/relaciones/eventos, health y dependencias correctos.
+- Fallos / limitaciones: gh api Actions devuelve Forbidden; gh pr create devuelve Forbidden en api.github.com/graphql. Publicación Git funciona, API GitHub no utilizable. CI remoto desconocido, sin PR creado. Advertencia TestClient/httpx, Scorpio/hardware/producción y publicación de snapshot cloud siguen con los límites de auditoría.
+- Decisiones de arquitectura: ninguna; se conservan instrucciones nuevas de main.
+- Estado final: entrega publicada para revisión en rama; Fase 00 EN VALIDACIÓN. Fase 01 NO INICIADA.
+- Próxima acción: revisión final humana de evidencia publicada; habilitar acceso API GitHub para que Codex cree PR y consulte CI, sin operaciones Git manuales del operador.

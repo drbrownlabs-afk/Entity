@@ -3,8 +3,8 @@
 
 | Fase | Nombre | Estado | Evidencia / siguiente paso |
 |---|---|---|---|
-| 00 | Auditoría y base reproducible | EN VALIDACIÓN | API/health, 4 tests y persistencia tras reinicio de proceso y Docker aprobados localmente; CI remoto y revisión humana pendientes. Ver docs/audits/PHASE-00-2026-11-06.md |
-| 01 | ENTITY Core | NO INICIADA | API SQLite parcial existente, sin verificación; migraciones y pruebas pendientes |
+| 00 | Auditoría y base reproducible | EN VALIDACIÓN | API/health, 4 tests y persistencia tras reinicio de proceso y Docker aprobados localmente; implementación 8f3815c publicada en codex/phase-00-validation. API GitHub bloquea PR/consulta CI; revisión humana pendiente. Ver docs/audits/PHASE-00-2026-11-06.md |
+| 01 | ENTITY Core | NO INICIADA | API SQLite parcial validada como base en Fase 00; alcance Core completo, migraciones y pruebas de Fase 01 pendientes |
 | 02 | Contratos y conectores | NO INICIADA | Diseños en docs; implementación pendiente |
 | 03 | ENTITY Edge y percepción | NO INICIADA | Orbbec física disponible, SDK/modelo por confirmar |
 | 04 | Laboratorio físico y Output | NO INICIADA | TV y 3 proyectores disponibles; actuadores por adquirir |

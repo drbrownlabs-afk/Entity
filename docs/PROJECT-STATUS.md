@@ -23,10 +23,12 @@
 - Fallo inicial de confianza CA corregido con secreto de build y TLS activo; advertencia httpx/TestClient pendiente de futura actualización.
 - API local queda iniciada. Evidencia y comandos: docs/audits/PHASE-00-2026-11-06.md.
 - install_script y start_skill guardados en borrador del entorno; no publicado ni restaurado en nueva tarea.
-- Cambios en rama local work; sin push/PR/merge ni CI remoto confirmado.
+- Implementación 8f3815cb9e437e5d07768c4d9cbb48f49af466c7 publicada en GitHub, rama `codex/phase-00-validation`; descargada de nuevo mediante Git independiente y SHA confirmado.
+- Cambios de main incorporados por merge documental, sin alterar API/tests/configuración ya probados. Script cloud probado y pasos de arranque también versionados en scripts/setup-cloud.sh y docs/CLOUD-ENVIRONMENT.md.
+- Creación automática de PR bloqueada: `gh pr create` devuelve Forbidden en api.github.com/graphql. Consulta de Actions bloqueada en api.github.com; CI remoto no confirmado. Rama publicada, sin PR ni merge a main.
 
 ## Próxima prioridad
-Revisión humana de Fase 00 y evidencia; publicación del código y comprobación de CI remoto. Fase 01 sigue NO INICIADA. No hay aprobación automática.
+Revisión humana de Fase 00 en rama publicada; desbloquear API GitHub para crear PR y consultar CI desde Codex. Fase 01 sigue NO INICIADA. No hay aprobación automática.
 
 ## Regla de actualización
 Cada tarea Codex debe registrar fecha UTC, branch/commit/PR, objetivo, archivos, funcionalidades realmente implementadas, tests ejecutados y sus resultados, limitaciones y próximo paso. No convertir intención en hecho. Revisar diffs y CI antes de declarar completado.
