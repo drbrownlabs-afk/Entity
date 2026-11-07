@@ -16,6 +16,7 @@ norfair==2.3.0
 numpy==1.26.4
 opencv-python-headless==4.11.0.86
 packaging==26.3
+paho-mqtt==2.1.0
 pillow==13.0.0
 Pygments==2.21.0
 pyparsing==3.3.3

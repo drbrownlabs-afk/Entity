@@ -71,6 +71,8 @@ jobs:
         run: bash scripts/demo-output.sh
       - name: Demonstrate grounded agent tools
         run: bash scripts/demo-agent.sh
+      - name: Demonstrate RTSP MQTT and REST integration
+        run: bash scripts/demo-integrations.sh
       - name: Preserve demonstration reports
         if: always()
         uses: actions/upload-artifact@v6
@@ -80,3 +82,4 @@ jobs:
             .runtime/edge-demo/*report.json
             .runtime/output-demo/*report.json
             .runtime/output-demo/screen.html
+            .runtime/integrations-demo/report.json
