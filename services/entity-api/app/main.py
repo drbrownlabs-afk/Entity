@@ -187,7 +187,7 @@ def ready():
             version = db.execute("PRAGMA user_version").fetchone()[0]
             db.execute("SELECT id FROM capabilities LIMIT 1")
             db.execute("SELECT id FROM memories LIMIT 1")
-            if version != 4:
+            if version != 5:
                 raise sqlite3.DatabaseError("Unexpected schema version")
     except sqlite3.Error:
         raise HTTPException(503, "Database is not ready")
@@ -261,3 +261,6 @@ app.include_router(integration_router)
 
 from app.output import router as output_router
 app.include_router(output_router)
+
+from app.agent import router as agent_router
+app.include_router(agent_router)

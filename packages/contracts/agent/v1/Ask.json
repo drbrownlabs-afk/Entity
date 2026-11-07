@@ -1,0 +1,77 @@
+{
+  "$defs": {
+    "SceneAction": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "capability_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "title": "Capability Id",
+          "type": "string"
+        },
+        "scene": {
+          "maxLength": 512,
+          "minLength": 1,
+          "title": "Scene",
+          "type": "string"
+        }
+      },
+      "required": [
+        "capability_id",
+        "scene"
+      ],
+      "title": "SceneAction",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "request_id": {
+      "format": "uuid",
+      "title": "Request Id",
+      "type": "string"
+    },
+    "entity_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Entity Id",
+      "type": "string"
+    },
+    "question": {
+      "maxLength": 2000,
+      "minLength": 1,
+      "title": "Question",
+      "type": "string"
+    },
+    "action": {
+      "anyOf": [
+        {
+          "$ref": "#/$defs/SceneAction"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "request_id",
+    "entity_id",
+    "question"
+  ],
+  "title": "Ask",
+  "type": "object"
+}

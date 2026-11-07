@@ -66,7 +66,7 @@ class RestartTests(unittest.TestCase):
                             self.assertEqual(len(request('/v1/entities')), 2)
                             self.assertEqual(request('/v1/entities/room/memories'), memories)
                             self.assertEqual(request('/v1/entities/room/capabilities'), capabilities)
-                            self.assertEqual(request('/ready')['database_schema_version'], 4)
+                            self.assertEqual(request('/ready')['database_schema_version'], 5)
                     finally:
                         proc.terminate()
                         try:

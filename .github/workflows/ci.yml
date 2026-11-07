@@ -69,6 +69,8 @@ jobs:
         run: bash scripts/demo-edge.sh
       - name: Demonstrate observation to virtual output
         run: bash scripts/demo-output.sh
+      - name: Demonstrate grounded agent tools
+        run: bash scripts/demo-agent.sh
       - name: Preserve demonstration reports
         if: always()
         uses: actions/upload-artifact@v6
@@ -76,5 +78,5 @@ jobs:
           name: edge-report
           path: |
             .runtime/edge-demo/*report.json
-            .runtime/output-demo/report.json
+            .runtime/output-demo/*report.json
             .runtime/output-demo/screen.html

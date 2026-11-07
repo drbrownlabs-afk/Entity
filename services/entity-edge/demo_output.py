@@ -14,8 +14,8 @@ root=Path(__file__).resolve().parents[2]
 work=root/'.runtime/output-demo';work.mkdir(parents=True,exist_ok=True)
 token=secrets.token_urlsafe(32)
 with socket.socket() as sock:sock.bind(('127.0.0.1',0));port=sock.getsockname()[1]
-env=dict(os.environ,ENTITY_SQLITE_PATH=str(work/'core.sqlite3'),ENTITY_CONNECTOR_TOKENS=json.dumps([
-    {'token':token,'actor':'virtual-lab','permissions':['registry:write','observe:write','output:write','audit:read']}]))
+env=dict(os.environ,ENTITY_AGENT_PROVIDER='controlled',ENTITY_SQLITE_PATH=str(work/'core.sqlite3'),ENTITY_CONNECTOR_TOKENS=json.dumps([
+    {'token':token,'actor':'virtual-lab','permissions':['registry:write','observe:write','output:write','audit:read','agent:read']}]))
 log=open(work/'server.log','a')
 proc=None
 
@@ -69,6 +69,22 @@ try:
             assert result['status']==status;outcomes[behavior]=status
         stop(proc);proc=start()
         assert send('POST','/v1/output/commands',command)==expected
+        if os.getenv('ENTITY_DEMO_AGENT') == '1':
+            query={'request_id':str(uuid4()),'entity_id':camera,'question':'¿Qué ocurre en recepción?'}
+            answer=send('POST','/v1/agent/requests',query)
+            assert answer['status']=='ok' and answer['evidence']['state']['edge.presence']['tracks']
+            send('PUT',f'/v1/output/displays/{screen}',{'manual':True})
+            command_ai={'request_id':str(uuid4()),'entity_id':screen,'question':'Cambia el contenido simulado',
+                        'action':{'capability_id':cap,'scene':'situated-ai-demo'}}
+            action=send('POST','/v1/agent/requests',command_ai)
+            assert action['action_result']['status']=='verified'
+            assert action['evidence']['state']['display.scene']=='situated-ai-demo'
+            assert send('POST','/v1/agent/requests',command_ai)==action
+            assert client.get('/v1/agent/requests/'+action['request_id']).json()==action
+            ai_report={'provider':answer['provider'],'query':'passed','action':'verified','trace':'passed',
+                       'idempotency':'passed','answer':answer['answer'],'references':answer['references'],'simulated':True}
+            (work/'agent-report.json').write_text(json.dumps(ai_report,indent=2)+'\n')
+            print(json.dumps(ai_report))
         events=client.get(f'/v1/entities/{screen}/events').json()
         assert any(e['payload'].get('status')=='suppressed' for e in events if e['type']=='output.result')
         report={'presence_to_welcome':'passed','absence_to_idle':'passed','manual_override':'passed',
