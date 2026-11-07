@@ -187,7 +187,7 @@ def ready():
             version = db.execute("PRAGMA user_version").fetchone()[0]
             db.execute("SELECT id FROM capabilities LIMIT 1")
             db.execute("SELECT id FROM memories LIMIT 1")
-            if version != 2:
+            if version != 3:
                 raise sqlite3.DatabaseError("Unexpected schema version")
     except sqlite3.Error:
         raise HTTPException(503, "Database is not ready")
@@ -254,3 +254,7 @@ def list_capabilities(entity_id: str):
         require_entity(db, entity_id)
         return [{**dict(row), "parameters": json.loads(row["parameters"])}
                 for row in db.execute("SELECT * FROM capabilities WHERE entity_id=? ORDER BY operation", (entity_id,))]
+
+
+from app.connectors import router as integration_router
+app.include_router(integration_router)

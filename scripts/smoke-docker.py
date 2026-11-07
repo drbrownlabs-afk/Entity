@@ -55,6 +55,6 @@ if __name__ == '__main__':
     assert request(f'/v1/entities/{floor}')['id'] == floor
     assert request(f'/v1/entities/{room}/memories') == memories
     assert request(f'/v1/entities/{room}/capabilities') == capabilities
-    assert request('/ready')['database_schema_version'] == 2
+    assert request('/ready')['database_schema_version'] == 3
     print('PASS: health/ready, entities, state, relations, 5 events, memory and capability survive container restart.')
     print('Synthetic records retained in development volume:', prefix)

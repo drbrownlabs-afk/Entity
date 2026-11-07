@@ -79,3 +79,15 @@ Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin
 - Bloqueo: gh pr create devuelve Forbidden en api.github.com/graphql. gh api Actions para la rama devuelve Forbidden. No se puede confirmar CI remoto ni crear PR con este acceso API; publicación Git completada. No se trasladan tareas Git al operador.
 - Estado final: Fase 01 EN VALIDACIÓN, evidencia publicada para revisión humana; Fase 02 NO INICIADA. Limitaciones funcionales y decisiones en phases/PHASE-01.md y DECISION-LOG.md.
 - Próxima acción: revisión humana de Fase 01; acceso API GitHub para que Codex complete PR y consulta CI cuando sea posible. No avanzar Fase 02 sin aprobación.
+
+### 2026-11-07 UTC — Codex / Fase 02
+- Objetivo: contratos/conectores, preservando fases previas y sin Fase 03.
+- Rama/base: codex/phase-02-connectors sobre 348e15d; fetch main sin integración funcional nueva.
+- Archivos: app/connectors.py, migración 003, migrate.py/main.py; test_connectors.py; ajustes de versión en tests anteriores y smoke; contratos integrations/v1; CI triggers; master spec, decision log, status, board, CLOUD-ENVIRONMENT y phases/PHASE-02.md.
+- Real: registry manual, ingreso REST y simulación común, autorización Bearer server-side, auditoría, deduplicación de observaciones y acciones simuladas verificadas/idempotentes. Sin nuevos paquetes, vendor SDK o hardware.
+- Pruebas ejecutadas: unittest discover desde services/entity-api, 19/19 aprobadas, ninguna omitida; incluye HTTP real entre dos procesos, repetición durable, conflictos 409, 401/403, contrato inválido y conector deshabilitado 503 sin cambio de estado. Regresiones de migraciones/Core aprobadas; contrato previo preservado. Build Docker, scripts/start-local.sh y smoke-docker.py aprobados con volumen migrado a esquema 3. compileall y diff --check correctos.
+- Integración/CI: se actualizó expectativa de esquema 2 a 3 y la comparación del contrato anterior para admitir rutas aditivas; CI activa por todos los contratos. No se desactivó ninguna prueba previa. Auditoría exitosa movida a misma transacción; header exige Bearer. Advertencia TestClient/httpx permanece.
+- Configuración: start_skill actualizado en borrador para esquema 3 y límite Fase 03; no publicación de snapshot. Credenciales de tests ficticias/temporales; runtime Docker sin tokens deja integraciones cerradas.
+- Límites: autenticación solo integraciones, permisos globales, REST sin dispositivo externo, acciones exclusivamente simuladas; salud es registry-only. Esquemas perfil mínimo, sin MQTT, paginación, Edge o percepción. Detalle en phases/PHASE-02.md.
+- Decisiones: master spec y DECISION-LOG actualizados. Estado EN VALIDACIÓN; Fase 03 NO INICIADA.
+- Próximo paso: publicación/verificación remota y revisión humana. Sin autoaprobación ni merge automático.

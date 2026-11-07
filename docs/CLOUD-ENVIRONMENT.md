@@ -2,7 +2,7 @@
 
 La máquina actual es válida para desarrollar, ejecutar Docker y depurar. GitHub conserva código, configuración y resultados; las bases de datos y procesos siguen siendo locales.
 
-Cada tarea cloud ya está aislada. Utilizar `/workspace/Entity`; no crear worktrees salvo petición explícita. Leer AGENTS.md y la memoria compartida antes de modificar el proyecto. Fase 01 autorizada y EN VALIDACIÓN; no iniciar Fase 02 sin aprobación.
+Cada tarea cloud ya está aislada. Utilizar `/workspace/Entity`; no crear worktrees salvo petición explícita. Leer AGENTS.md y la memoria compartida antes de modificar el proyecto. Fase 02 autorizada y EN VALIDACIÓN; no iniciar Fase 03 sin aprobación.
 
 ## Instalación
 
@@ -38,3 +38,5 @@ python3 scripts/smoke-docker.py
 El smoke escribe registros sintéticos con identificadores únicos en el volumen de desarrollo, reinicia entity-api y compara datos e historial. Los conserva; no ejecutarlo contra producción. `docker compose down` conserva el volumen; no usar `down -v` sin autorización de borrado.
 
 Scorpio no se inicia ni se valida en esta base. La evidencia de base está en `docs/audits/PHASE-00-2026-11-06.md`; la entrega actual y sus límites en `docs/phases/PHASE-01.md`. El borrador de configuración del entorno contiene install_script y start_skill; su guardado no equivale a publicación de una instantánea. Este documento y el script permiten consultar los mismos pasos desde GitHub, independientemente de ese borrador.
+
+Integraciones Fase 02: docs/phases/PHASE-02.md; esquema actual 3. Sin configuración privada de tokens, rutas nuevas rechazan acceso.

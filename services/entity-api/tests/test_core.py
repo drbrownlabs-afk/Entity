@@ -42,7 +42,7 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(self.client.get('/v1/entities/display/capabilities').json()[0]['parameters'], capability['parameters'])
         self.assertEqual(len(self.client.get('/v1/entities/display/memories').json()), 1)
         self.assertEqual(self.client.post(f'/v1/entities/display/capabilities/{cid}/invoke', json={}).status_code, 404)
-        self.assertEqual(self.client.get('/ready').json()['database_schema_version'], 2)
+        self.assertEqual(self.client.get('/ready').json()['database_schema_version'], 3)
         schema = self.client.get('/openapi.json').json()
         for name in ('EventCreate', 'MemoryCreate', 'CapabilityCreate'):
             self.assertEqual(schema['components']['schemas'][name]['properties']['schema_version']['const'], '1.0')
@@ -70,7 +70,12 @@ class CoreTests(unittest.TestCase):
 
     def test_versioned_openapi_matches_published_contract(self):
         contract = Path(__file__).resolve().parents[3] / 'packages/contracts/core/v1/openapi.json'
-        self.assertEqual(self.client.get('/openapi.json').json(), json.loads(contract.read_text()))
+        actual = self.client.get('/openapi.json').json()
+        original = json.loads(contract.read_text())
+        for path, value in original['paths'].items():
+            self.assertEqual(actual['paths'][path], value)
+        for name, value in original['components']['schemas'].items():
+            self.assertEqual(actual['components']['schemas'][name], value)
 
     def test_concurrent_state_changes_keep_consistent_history(self):
         def update(value):
@@ -154,4 +159,4 @@ class MigrationTests(unittest.TestCase):
         with ThreadPoolExecutor(max_workers=4) as pool:
             list(pool.map(lambda _: main.initialize(), range(8)))
         with sqlite3.connect(main.DB_PATH) as db:
-            self.assertEqual(db.execute('PRAGMA user_version').fetchone()[0], 2)
+            self.assertEqual(db.execute('PRAGMA user_version').fetchone()[0], 3)

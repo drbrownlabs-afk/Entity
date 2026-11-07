@@ -1,0 +1,122 @@
+{
+  "$defs": {
+    "Provenance": {
+      "additionalProperties": false,
+      "properties": {
+        "schema_version": {
+          "const": "1.0",
+          "default": "1.0",
+          "title": "Schema Version",
+          "type": "string"
+        },
+        "connector_id": {
+          "maxLength": 512,
+          "minLength": 1,
+          "title": "Connector Id",
+          "type": "string"
+        },
+        "model_version": {
+          "maxLength": 512,
+          "minLength": 1,
+          "title": "Model Version",
+          "type": "string"
+        },
+        "simulated": {
+          "title": "Simulated",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "connector_id",
+        "model_version",
+        "simulated"
+      ],
+      "title": "Provenance",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "observation_id": {
+      "format": "uuid",
+      "title": "Observation Id",
+      "type": "string"
+    },
+    "site_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Site Id",
+      "type": "string"
+    },
+    "source_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Source Id",
+      "type": "string"
+    },
+    "observed_at": {
+      "format": "date-time",
+      "title": "Observed At",
+      "type": "string"
+    },
+    "type": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Type",
+      "type": "string"
+    },
+    "payload": {
+      "additionalProperties": true,
+      "title": "Payload",
+      "type": "object"
+    },
+    "provenance": {
+      "$ref": "#/$defs/Provenance"
+    },
+    "confidence": {
+      "anyOf": [
+        {
+          "maximum": 1,
+          "minimum": 0,
+          "type": "number"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Confidence"
+    },
+    "zone_id": {
+      "anyOf": [
+        {
+          "maxLength": 512,
+          "minLength": 1,
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Zone Id"
+    }
+  },
+  "required": [
+    "observation_id",
+    "site_id",
+    "source_id",
+    "observed_at",
+    "type",
+    "payload",
+    "provenance"
+  ],
+  "title": "Observation",
+  "type": "object"
+}

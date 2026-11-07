@@ -38,3 +38,7 @@ Antes de cada desarrollo o cambio de ENTITY OS, revisar este documento, docs/EDG
 
 ## Incremento Fase 01 — 2026-11-06 Ecuador / 2026-11-07 UTC
 Core local 0.2.0 añade migraciones SQLite atómicas, contratos v1/registro 1.0, memorias explícitas con fuente, eventos con procedencia y capacidades declaradas persistentes. SQLite se mantiene para el demostrador local: no hay aún necesidad espacial o distribuida que justifique PostgreSQL/PostGIS en esta entrega; no cambia la arquitectura objetivo. Una declaración registra operación, metadatos y permiso requerido; no ejecuta ni autoriza acciones. Fuente declarada no equivale a identidad autenticada. Conectores e invocación quedan en Fase 02. Scorpio sigue externo y sin proyección implementada. Evidencia y límites: docs/phases/PHASE-01.md. Estado EN VALIDACIÓN, revisión humana pendiente.
+
+
+## Fase 02 — 2026-11-06 Ecuador / 2026-11-07 UTC
+Perfil local v1 de Manifest/Observation/Capability/Invocation, registry manual persistente y entrada REST para fuentes reales/simuladas. Simulador set_state verifica por lectura SQLite; no hardware. Autorización Bearer por permisos server-side solo para integraciones; Core antiguo sigue local sin autenticación. Migración aditiva 003, deduplicación e idempotencia durables; no MQTT ni Edge. Contratos y límites en docs/phases/PHASE-02.md. EN VALIDACIÓN; Fase 03 no iniciada.

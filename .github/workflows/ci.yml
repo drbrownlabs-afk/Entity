@@ -5,14 +5,14 @@ on:
       - "services/entity-api/**"
       - "scripts/**"
       - "compose.yaml"
-      - "packages/contracts/core/**"
+      - "packages/contracts/**"
       - ".github/workflows/ci.yml"
   pull_request:
     paths:
       - "services/entity-api/**"
       - "scripts/**"
       - "compose.yaml"
-      - "packages/contracts/core/**"
+      - "packages/contracts/**"
       - ".github/workflows/ci.yml"
   workflow_dispatch:
 jobs:

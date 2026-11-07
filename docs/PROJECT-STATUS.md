@@ -40,3 +40,7 @@ Revisión humana de Fase 01 y límites documentados; no avanzar Fase 02 sin apro
 
 ## Regla de actualización
 Cada tarea Codex debe registrar fecha UTC, branch/commit/PR, objetivo, archivos, funcionalidades realmente implementadas, tests ejecutados y sus resultados, limitaciones y próximo paso. No convertir intención en hecho. Revisar diffs y CI antes de declarar completado.
+
+
+## Actualización vigente Fase 02
+Continuación autorizada por operador: EN VALIDACIÓN. Registry y contratos v1, REST real/simulación, autorización básica de integraciones, auditoría, deduplicación e invocación simulada verificadas. 19 tests aprobados y smoke Docker/regresión aprobados. Esquema 3, sin nuevas dependencias; fases anteriores conservadas en historia y pruebas. Ver docs/phases/PHASE-02.md. La prioridad vigente es revisión Fase 02, sin iniciar Fase 03; las entradas anteriores describen sus entregas históricas.

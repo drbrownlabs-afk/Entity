@@ -5,7 +5,7 @@
 |---|---|---|---|
 | 00 | Auditoría y base reproducible | EN VALIDACIÓN | API/health, 4 tests y persistencia tras reinicio de proceso y Docker aprobados localmente; implementación 8f3815c publicada en codex/phase-00-validation. API GitHub bloquea PR/consulta CI; revisión humana pendiente. Ver docs/audits/PHASE-00-2026-11-06.md |
 | 01 | ENTITY Core | EN VALIDACIÓN | Continuación autorizada por operador; Core local, migraciones, memoria y capacidades declaradas; 15/15 tests y reinicios aprobados. Publicado 001d2f8 en codex/phase-01-core; PR/consulta CI bloqueados por API GitHub. Ver docs/phases/PHASE-01.md; revisión humana pendiente |
-| 02 | Contratos y conectores | NO INICIADA | Diseños en docs; implementación pendiente |
+| 02 | Contratos y conectores | EN VALIDACIÓN | Registry, REST/simulación, permisos, auditoría e idempotencia; 19 pruebas aprobadas. Ver docs/phases/PHASE-02.md; revisión humana pendiente |
 | 03 | ENTITY Edge y percepción | NO INICIADA | Orbbec física disponible, SDK/modelo por confirmar |
 | 04 | Laboratorio físico y Output | NO INICIADA | TV y 3 proyectores disponibles; actuadores por adquirir |
 | 05 | IA situada | NO INICIADA | Herramientas y acciones pendientes |
