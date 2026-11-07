@@ -162,6 +162,13 @@ jobs:
           cp .runtime/delivery/manifest.json "${RUNNER_TEMP}/first-manifest.json"
           python scripts/package-release.py
           cmp "${RUNNER_TEMP}/first-manifest.json" .runtime/delivery/manifest.json
+      - name: Install browser for delivered static package
+        working-directory: apps/web
+        run: npx playwright install --with-deps chromium
+      - name: Verify ZIP on desktop and touch without Core
+        run: |
+          python -m zipfile -e .runtime/delivery/entity-experience.zip "${RUNNER_TEMP}/entity-static"
+          node apps/web/scripts/check-bundle.mjs "${RUNNER_TEMP}/entity-static" .runtime/delivery/static-verification.json
       - name: Test source package from a different clean directory
         run: |
           mkdir -p "${RUNNER_TEMP}/entity-unpacked"
