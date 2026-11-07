@@ -4,7 +4,7 @@ const api=process.env.OFFICE_API,web=process.env.OFFICE_WEB;
 const credentials=JSON.parse(fs.readFileSync(process.env.OFFICE_CREDENTIALS,'utf8'));
 const code=process.env.OFFICE_TEST_CODE;
 let lastPage,lastHost;
-const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox']});
+const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,source:'Actual local Core HTTP and built kiosk/personal clients; original site inventory; no substituted 3D scene',checks:[]};
 try{
  for(const width of [1280,390]){

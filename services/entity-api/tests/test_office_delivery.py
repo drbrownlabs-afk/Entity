@@ -164,5 +164,18 @@ class DeliveryTests(unittest.TestCase):
         denied=self.cmd('access.requestEntry','test-private-door',{'person_id':'PERSON-CARLOS'})
         self.assertEqual(denied['status'],'denied')
         self.assertIn('organization',denied['details']['reason'])
+        self.assertTrue(denied['event']['evidence'])
+        alert=next(x for x in self.state()['entities'].values() if x.get('kind')=='Alert' and x.get('person_id')=='PERSON-CARLOS')
+        self.assertTrue(any(r['target']=='PERSON-CARLOS' and r['type']=='concernsPerson' for r in alert['relations']))
         self.cmd('zone.close','annotation-1')
         self.assertFalse(self.cmd('access.checkAuthorization','test-meeting-door',{'visit_id':visit,'escorted':True})['details']['allowed'])
+
+    def test_ready_visitors_still_consume_waiting_capacity_until_escorted(self):
+        self.setup_reception();self.check_in()
+        self.cmd('intercom.reply','INTERCOM-A',{'conversation_id':self.conversation,'response':'ready'},headers=self.auth('carlos-host'))
+        self.cmd('entity.upsert',inputs={'id':'WAITING-AREA','kind':'WaitingArea','attributes':{'capacity':1}})
+        # A new verified invitation cannot use the same seat just because the host replied.
+        self.cmd('entity.upsert',inputs={'id':'I-OTHER','kind':'Invitation','attributes':{'meeting_id':'M-1600','name':'Visita de prueba autorizada'}})
+        with main.database(write=True) as db:issue_credential(db,'office','I-OTHER','luis','other-authorized-code','2026-11-07T18:00:00-05:00')
+        self.cmd('reception.interact','KIOSK-01',{'action':'start','conversation_id':'C-OTHER','invitation_id':'I-OTHER'},headers=self.kiosk)
+        self.cmd('reception.interact','KIOSK-01',{'action':'check_in','conversation_id':'C-OTHER','verification_code':'other-authorized-code'},headers=self.kiosk,code=409)

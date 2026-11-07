@@ -32,7 +32,9 @@
         0.6
       ],
       "confidence": "visual-group-verified",
-      "reservable": false
+      "reservable": false,
+      "seating_capacity": 3,
+      "capacity_source": "visual-count; docs/evidence/phase09/survey/wall-from-a.jpg and wall-from-b.jpg"
     }
   },
   {

@@ -49,12 +49,13 @@ def plan(db,site,run,actor,items,clock,op,target,data,cid,get,add):
             person=get(credential['person']) if credential['person'] else None
             waiting=get(kiosk.get('waiting_area'))
             if waiting.get('kind')!='WaitingArea':raise HTTPException(422,'Configure kiosk waiting area')
-            count=sum(x.get('kind')=='Visit' and x.get('waiting_area')==waiting['id'] and x.get('status')=='waiting' for x in items.values())
+            count=sum(x.get('kind')=='Visit' and x.get('waiting_area')==waiting['id'] and x.get('status') in {'waiting','host_ready'} for x in items.values())
             if count>=waiting.get('capacity',1):raise HTTPException(409,'Waiting area full')
             visit_id='visit-'+identity(site,key)
             visit=add(visit_id,'Visit',{'meeting_id':meeting['id'],'invitation_id':invitation['id'],'person_id':person['id'] if person else None,
                 'status':'waiting','identity_status':'verified-invitation','verification_source':credential['source'],'registered_at':clock,'waiting_area':waiting['id'],'access':'waiting_only'})
             changes[visit_id]=visit
+            if person:changes[person['id']]={'presence':'confirmed','zone_id':kiosk.get('zone_id'),'observed_at':clock,'ttl_seconds':120,'identity_evidence':'authorized-invitation-kiosk-checkin','observation_source':kiosk['id'],'simulated':bool(kiosk.get('virtual'))}
             db.execute('UPDATE office_credentials SET used_by=? WHERE site=? AND invitation=?',(key,site,invitation['id']))
             host=get(meeting['host_id']);organization_ids=targets(items,host['id'],'belongsTo',clock)
             candidates=[]

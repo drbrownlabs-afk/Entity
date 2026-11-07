@@ -198,7 +198,7 @@ def command(db,site,run,actor,body):
             if meeting['status']=='cancelled':raise HTTPException(409,'Meeting cancelled')
             if visit['status']!='provisional':raise HTTPException(409,'Visit already checked in or closed')
             waiting=require_kind(data['waiting_area'],{'WaitingArea'})
-            waiting_count=sum(x.get('kind')=='Visit' and x.get('status')=='waiting' and x.get('waiting_area')==data['waiting_area'] for x in items.values())
+            waiting_count=sum(x.get('kind')=='Visit' and x.get('status') in {'waiting','host_ready'} and x.get('waiting_area')==data['waiting_area'] for x in items.values())
             if waiting_count>=waiting.get('capacity',1) and visit.get('status')!='waiting':raise HTTPException(409,'Waiting area full')
             changes[target]={'status':'waiting','waiting_area':data['waiting_area'],'registered_at':clock,'access':'waiting_only','registered_by':actor['actor']}
         elif op=='identity.associate':
@@ -215,7 +215,7 @@ def command(db,site,run,actor,body):
             door=require_kind(target,{'AccessPoint'});person_id=data.get('person_id');visit_id=data.get('visit_id')
             allowed=False;reason='No valid identity or visit evidence'
             if person_id:
-                p=member_allowed(person_id);allowed=p.get('presence')=='confirmed' and p.get('freshness')=='fresh';reason='active membership and confirmed fresh check-in' if allowed else 'Arrival not currently confirmed'
+                p=member_allowed(person_id);observed=p.get('last_observation_id') or items.get(p.get('track_id'),{}).get('observation_id');evidence=[observed] if observed else [];allowed=p.get('presence')=='confirmed' and p.get('freshness')=='fresh';reason='active membership and confirmed fresh check-in' if allowed else 'Arrival not currently confirmed'
             elif visit_id:
                 visit=require_kind(visit_id,{'Visit'});meeting=require_kind(visit['meeting_id'],{'Meeting'});host=get(meeting['host_id'])
                 meeting_resource=get(meeting['resource_id'])
@@ -236,7 +236,7 @@ def command(db,site,run,actor,body):
                     if visit_id:changes[visit_id]={'status':'escorted','access':'granted','zone_id':door.get('zone_id')}
                     if person_id:changes[person_id]={'zone_id':door.get('zone_id'),'observed_at':clock}
                 else:
-                    add('alert-'+cid,'Alert',{'type':'access.denied','access_point':target,'subject':person_id or visit_id,'reason':reason,'status':'open'})
+                    add('alert-'+cid,'Alert',{'type':'access.denied','access_point':target,'subject':person_id or visit_id,'person_id':person_id,'visit_id':visit_id,'zone_id':door.get('zone_id'),'reason':reason,'status':'open'})
                     details['denied']=True
         elif op=='notification.send':
             require_kind(target,{'Person'})

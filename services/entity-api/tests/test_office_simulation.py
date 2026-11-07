@@ -36,6 +36,8 @@ class DailySimulationTests(unittest.TestCase):
         self.assertEqual(before['entities']['B-LUIS-full-day']['resource_id'],'E3')
         self.assertEqual(before['entities']['HVAC-D']['status'],'off')
         self.assertEqual(before['entities']['M-1600-full-day']['status'],'completed')
+        self.assertEqual(len(before['entities']['M-1600-full-day']['participants']),5)
+        self.assertTrue(any(x.get('kind')=='Visit' and x.get('person_id')=='PERSON-DANIEL' and x.get('status')=='departed' for x in before['entities'].values()))
         self.assertTrue(any(x.get('type')=='access.denied' for x in before['entities'].values()))
         main.initialize()
         self.assertEqual(before,self.client.get(root+'/world',headers=self.headers).json())

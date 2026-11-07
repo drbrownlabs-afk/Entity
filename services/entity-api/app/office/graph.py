@@ -3,12 +3,13 @@ from datetime import datetime
 from fastapi import HTTPException
 
 FIELD_LINKS={
+ 'visit_id':'registeredVisit','access_point':'atAccessPoint',
  'operator_org_id':'managedBy','organization_id':'belongsTo','team_id':'memberOf','zone_id':'locatedIn','parent_resource':'partOf',
  'resource_id':'usesResource','person_id':'concernsPerson','host_id':'hostedBy','booking_id':'scheduledBy',
  'meeting_id':'attendsMeeting','camera_id':'observedBy','track_id':'representedBy','assignee':'assignedTo',
  'environment_id':'locatedIn','waiting_area':'waitsIn','recipient':'addressedTo','conversation_id':'partOfConversation',
 }
-TYPES={'managedBy','belongsTo','memberOf','locatedIn','partOf','usesResource','concernsPerson','hostedBy','scheduledBy','attendsMeeting','observedBy','representedBy','assignedTo','waitsIn','addressedTo','partOfConversation','occupies','employedBy','uses','covers','streamOf','measures','serves','communicatesThrough','reservedBy','invitedTo','reportsTo','affectedBy'}
+TYPES={'registeredVisit','atAccessPoint','managedBy','belongsTo','memberOf','locatedIn','partOf','usesResource','concernsPerson','hostedBy','scheduledBy','attendsMeeting','observedBy','representedBy','assignedTo','waitsIn','addressedTo','partOfConversation','occupies','employedBy','uses','covers','streamOf','measures','serves','communicatesThrough','reservedBy','invitedTo','reportsTo','affectedBy'}
 def active(edge,at):
     return edge.get('valid_from','0000')<=at and (not edge.get('valid_to') or at<edge['valid_to'])
 def derive(item,at):

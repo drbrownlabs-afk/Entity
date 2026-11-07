@@ -148,6 +148,9 @@ jobs:
             .runtime/experience-*.png
             .runtime/experience-*.json
             apps/web/dist
+            docs/evidence/phase09/reception-http-*.json
+            docs/evidence/phase09/kiosk-*.png
+            docs/evidence/phase09/personal-*.png
 
   delivery:
     needs: [api-tests, edge-tests, experience-tests]

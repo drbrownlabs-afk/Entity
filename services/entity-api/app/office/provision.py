@@ -65,7 +65,7 @@ def provision(db,site,original,clock,run_id='day-01'):
             link(group+str(number),'locatedIn','ZONE-'+group)
     put('PERSON-LUIS','Person',name='Luis',roles=['member'],fictitious=True,profile_level='member',membership_status='active',membership_until='2027-12-31T00:00:00+00:00',presence='unknown',position=None)
     put('RECEPTION','Reception',name='Recepción inteligente · dos sillas negras',position=None,reservable=False,spatial_mapping='pending-visual-inspection',human_receptionist=False)
-    put('WAITING-AREA','WaitingArea',name='Espera de visitantes',capacity=4,position=None,reservable=False,spatial_mapping='pending-visual-inspection')
+    put('WAITING-AREA','WaitingArea',name='Espera de visitantes',capacity=3,seating_capacity=3,capacity_source='visual-count; wall-from-a/b original survey',position=None,reservable=False,spatial_mapping='pending-visual-inspection')
     put('KIOSK-01','Kiosk',name='ENTITY · recepción',zone_id='RECEPTION',virtual=True,interfaces=['screen','touch','voice'],waiting_area='WAITING-AREA',operator_org_id='ORG-COWORK',connectivity='connected',privacy='private-session',position=None)
     put('ACCESS-01','AccessPoint',name='Acceso autorizado de ensayo',zone_id='annotation-1',position=None,virtual=True,spatial_mapping='not-calibrated')
     a=original['settings']['annotations'][1]
@@ -121,6 +121,7 @@ def apply_semantics(db,site,annotations):
         old=db.execute('SELECT attributes FROM office_resources WHERE site=? AND id=?',(site,key)).fetchone()
         attrs={**(json.loads(old[0]) if old else {}),'name':annotation['title'],'position':annotation['position'],'annotation_index':index,
                'coordinate_frame':'supersplat-original','spatial_mapping':'visual-group-verified; individual seats not calibrated','spatial_provenance':extra,'reservable':False}
+        if extra.get('seating_capacity') is not None:attrs.update(seating_capacity=extra['seating_capacity'],capacity=extra['seating_capacity'],capacity_source=extra['capacity_source'])
         changes[key]=upsert_resource(db,site,key,kind,attrs)
     for run in db.execute('SELECT id,clock FROM office_runs WHERE site=?',(site,)).fetchall():
         emit(db,site,run['id'],'main',run['clock'],'spatial.mapping.updated','authorized-scene-survey',changes,{'source':'reviewed-original-splat-depth','semantic_revision':digest})

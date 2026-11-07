@@ -9,7 +9,7 @@ for(const job of jobs){
  const item={name:job.name,status:job.status,conclusion:job.conclusion,failed_steps:job.steps.filter(s=>s.conclusion==='failure').map(s=>s.name)};
  if(item.failed_steps.length){
   const log=await(await get('/actions/jobs/'+job.id+'/logs')).text();
-  item.failure_summary=log.split('\n').filter(line=>/AssertionError|Error:|FAILED|FAIL:|ERROR:|Expected:|Received:|TimeoutError|waiting for|Process completed with exit/i.test(line)&&!(/password|credential|secret|Bearer|token/i.test(line))).slice(-25).map(line=>line.replace(/[A-Za-z0-9_\-]{28,}/g,'[redacted]').slice(0,500));
+  item.failure_summary=log.split('\n').filter(line=>/AssertionError|Error:|FAILED|FAIL:|ERROR:|Expected:|Received:|Timeout|waiting|verify-reception|Process completed with exit/i.test(line)&&!(/password|credential|secret|Bearer|token/i.test(line))).slice(-25).map(line=>line.replace(/[A-Za-z0-9_\-]{20,}/g,'[redacted]').slice(0,500));
  }
  report.jobs.push(item);
 }

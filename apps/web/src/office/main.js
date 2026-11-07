@@ -33,6 +33,8 @@ if(routePose!==null){
 // Inspection camera transforms only; these never define entity positions or routes.
 if(new URLSearchParams(location.search).has('survey')){
  const direction=new URLSearchParams(location.search).get('survey_direction');
+ const between=new URLSearchParams(location.search).get('survey_midpoint');
+ if(between!==null){const index=Number(between),a=inspectionCameras.poses[index],b=inspectionCameras.poses[index+1];if(a&&b)settings.cameras[0].initial.position=a.map((value,i)=>(value+b[i])/2);}
  const eye=new URLSearchParams(location.search).get('survey_annotation_eye');
  if(eye!==null){
   const index=Number(eye),annotation=original.settings.annotations[index],values=original.settings.animTracks[0].keyframes.values;
