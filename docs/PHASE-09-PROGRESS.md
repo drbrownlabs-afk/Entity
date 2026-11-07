@@ -67,3 +67,13 @@ Se añadió una primera vertical funcional para la participación real de Carlos
 
 ## Checkpoint ejecutado: inventario y recepción/intercom
 Baseline47Core/6Node PASS. Migración A–E implementada:12puestos D/E públicos, A/B privados completos con propiedad organizacional, C y puestos internos no reservables. Grafo temporal derivado de campos explícitos y relaciones tipadas, reflejado en Core. Kiosco por pantalla/voz opcional del navegador, verificación autorizada, intercom privado por relaciones+presencia, espera/fallback y app personal conectados al mismo estado persistente.55tests PASS en backend-regression.txt; build de4entradas PASS. Prueba integral de navegador y ciclo diario siguen pendientes. Inspección de original produce evidencia survey; aún no permite dar por verificado el inventario geométrico completo. Estado global EN CURSO, sin gates espaciales autoaprobados.
+
+
+## ENTITY Mobile — permisos diferenciados (2026-11-07)
+Código en rama `codex/phase-09-autonomous-plan`:
+- `app/office/access.py`: proyección server-side del mundo por rol e identidad. Miembros sin vínculo de persona fallan cerrado; cámaras, streams y otros miembros quedan excluidos.
+- `app/office/api.py`: la API existente de mundo aplica proyección; consultas de miembros limitadas a entidad propia, ubicación autorizada y agenda propia; logs operativos, stream, capacidades y comparaciones de escenarios quedan reservados a operadores.
+- `apps/web/personal.html`: pantalla móvil lee las simulaciones y muestra entidades autorizadas del mismo estado del Núcleo.
+- `tests/test_personal_access.py`: pruebas unitarias de aislamiento básico.
+
+**No está terminado ni desplegado:** aún no hay reproducción 3D responsive dentro de personal.html, visor de cámaras autorizado, creación/cancelación de reservas desde la app, consulta conversacional/voz, Web Push, integración automática de llegada/respuesta con el grafo ni pruebas E2E ejecutadas. Debe completarse antes de la demo comercial. Revisar todos los endpoints de lectura y permisos finos por recurso, empresa y rol (el acceso de operador actualmente es amplio), no confiar solo en la proyección de mundo. Ejecutar tests y verificar migraciones, sesión y controles de privacidad. La UI actual es un primer cliente del mundo compartido, no paridad funcional con escritorio.
