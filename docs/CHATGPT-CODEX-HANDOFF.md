@@ -57,3 +57,7 @@ CI recuperado: faltaba crear .runtime/phase09 encheckoutlimpio; d3b28f7, Actions
 CoreDockerOffice8010saludable/reiniciopersistente, Coreanterior8000conservado; docker-office.json. Separa respuesta personal autenticada de respuesta sintética yde presencia física: apppersonal puede responder sinatribuirle posición, espera→listo sincroniza inbox yCore. Se preservan implementaciónoriginal yscopesdeChatGPT ampliados congrants porrecurso/consultas/eventos/streams.
 
 AssetsMicrosoftRocketboxMIT:6GLB conidle/walk/seated/sit-down/stand-up/conversation, preparaciónoriginal verificadaconPlayCanvas (avatar-assets.json). CCTV4vistas(2móvil) mismaapp/SSOG, evidenciacapturasremotas. Anotaciones propias deespera/descanso derivadas depicks revisados ycompatibles conSuperSplat, noescena alternativa. Gateespacial/personajescompletos pendiente, asícomoPushHTTPS yAndroidfísico; no cerrarFase09.
+
+
+## Backlog acordado tras Fase 09 — 2026-11-07 (ChatGPT)
+Documento de diseño creado: `docs/POST-PHASE-09-SPATIAL-INFERENCE-REGISTRATION.md`, commit `1aeb4abc69a76bd1ba418325ec150328a8ae0648`. Contiene decisiones completas sobre calibración automática/semi-automática de cámaras al gemelo (AprilTag, ChArUco, COLMAP, Orbbec RGB-D/ICP, sincronización temporal), inferencia contextual multievidencia, ReID/MC-MOT, hipótesis versionadas, incertidumbre, privacidad, pruebas adversas y plan incremental. **No implementado; comenzar solo tras terminar y validar Fase 09.** Codex debe leerlo al planificar la fase siguiente. Esta actualización es documental; pruebas no ejecutadas.
