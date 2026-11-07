@@ -1,0 +1,298 @@
+{
+  "tested_commit": "00d7e66b3668cc89480c17770310c2da40dd7f18",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42421037449",
+  "scene": "https://superspl.at/scene/a972d838",
+  "source": "Original SSOG + Core routes measured from original floor + Rocketbox + PlayCanvas picker; simulated people, no physical camera or facial identity claim",
+  "checks": [
+    {
+      "second": 0,
+      "camera": "CAM-ROUTE-1",
+      "visible": 0,
+      "core_position": [
+        -3.426332202989322,
+        -3.503004744909882,
+        -12.386475500620133
+      ],
+      "rendered_position": [
+        -3.4263322353363037,
+        -3.503004789352417,
+        -12.386475563049316
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 0,
+      "camera": "CAM-ROUTE-2",
+      "visible": 1,
+      "core_position": [
+        -3.426332202989322,
+        -3.503004744909882,
+        -12.386475500620133
+      ],
+      "rendered_position": [
+        -3.4263322353363037,
+        -3.503004789352417,
+        -12.386475563049316
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 1,
+      "camera": "CAM-ROUTE-1",
+      "visible": 0,
+      "core_position": [
+        -3.4262946729273116,
+        -3.4710963149620127,
+        -13.106577497626834
+      ],
+      "rendered_position": [
+        -3.4262945652008057,
+        -3.4710962772369385,
+        -13.10657787322998
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 1,
+      "camera": "CAM-ROUTE-2",
+      "visible": 1,
+      "core_position": [
+        -3.4262946729273116,
+        -3.4710963149620127,
+        -13.106577497626834
+      ],
+      "rendered_position": [
+        -3.4262945652008057,
+        -3.4710962772369385,
+        -13.10657787322998
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 5,
+      "camera": "CAM-ROUTE-1",
+      "visible": 1,
+      "core_position": [
+        -3.4261445526792698,
+        -3.3434625951705357,
+        -15.98698548565364
+      ],
+      "rendered_position": [
+        -3.426144599914551,
+        -3.3434627056121826,
+        -15.986985206604004
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 5,
+      "camera": "CAM-ROUTE-2",
+      "visible": 0,
+      "core_position": [
+        -3.4261445526792698,
+        -3.3434625951705357,
+        -15.98698548565364
+      ],
+      "rendered_position": [
+        -3.426144599914551,
+        -3.3434627056121826,
+        -15.986985206604004
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 9,
+      "camera": "CAM-ROUTE-1",
+      "visible": 1,
+      "core_position": [
+        -3.426289586661225,
+        -3.2103509852706167,
+        -17.14775616183907
+      ],
+      "rendered_position": [
+        -3.4262895584106445,
+        -3.21035099029541,
+        -17.147756576538086
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 9,
+      "camera": "CAM-ROUTE-2",
+      "visible": 0,
+      "core_position": [
+        -3.426289586661225,
+        -3.2103509852706167,
+        -17.14775616183907
+      ],
+      "rendered_position": [
+        -3.4262895584106445,
+        -3.21035099029541,
+        -17.147756576538086
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 10,
+      "camera": "CAM-ROUTE-1",
+      "visible": 1,
+      "core_position": [
+        -3.426325845156714,
+        -3.177073082795637,
+        -17.43794883088543
+      ],
+      "rendered_position": [
+        -3.426325798034668,
+        -3.1770730018615723,
+        -17.43794822692871
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 10,
+      "camera": "CAM-ROUTE-2",
+      "visible": 0,
+      "core_position": [
+        -3.426325845156714,
+        -3.177073082795637,
+        -17.43794883088543
+      ],
+      "rendered_position": [
+        -3.426325798034668,
+        -3.1770730018615723,
+        -17.43794822692871
+      ],
+      "identity_from_image": false
+    }
+  ],
+  "status": "passed",
+  "pose_check": {
+    "second": 10,
+    "expected": [
+      -3.426325845156714,
+      -3.177073082795637,
+      -17.43794883088543
+    ],
+    "observed": {
+      "id": "PERSON-LUIS",
+      "position": [
+        -3.426325798034668,
+        -3.1770730018615723,
+        -17.43794822692871
+      ]
+    },
+    "world_clock": "2026-11-07T14:15:10+00:00",
+    "renderer_clock": "2026-11-07T14:15:10+00:00"
+  },
+  "stage": "capture at 10 seconds",
+  "visual": {
+    "cameraRenderState": [
+      {
+        "id": "CAM-01",
+        "layers": [
+          0,
+          1,
+          2,
+          4,
+          3
+        ],
+        "managers": [
+          {
+            "splats": 624025,
+            "pending": false
+          }
+        ]
+      },
+      {
+        "id": "CAM-02",
+        "layers": [
+          0,
+          1,
+          2,
+          4,
+          3
+        ],
+        "managers": [
+          {
+            "splats": 624025,
+            "pending": false
+          }
+        ]
+      },
+      {
+        "id": "CAM-ROUTE-1",
+        "layers": [
+          0,
+          1,
+          2,
+          4,
+          3
+        ],
+        "managers": [
+          {
+            "splats": 624025,
+            "pending": false
+          }
+        ]
+      },
+      {
+        "id": "CAM-ROUTE-2",
+        "layers": [
+          0,
+          1,
+          2,
+          4,
+          3
+        ],
+        "managers": [
+          {
+            "splats": 624025,
+            "pending": false
+          }
+        ]
+      }
+    ],
+    "cameraViews": 6,
+    "activeCameras": 4,
+    "visibleCameraIds": [
+      "CAM-ROUTE-1",
+      "CAM-ROUTE-2",
+      "CAM-01",
+      "CAM-02"
+    ],
+    "worldClock": "2026-11-07T14:15:10+00:00",
+    "avatarsLoaded": 1,
+    "avatarsPlaced": [
+      {
+        "id": "PERSON-LUIS",
+        "position": [
+          -3.426325798034668,
+          -3.1770730018615723,
+          -17.43794822692871
+        ]
+      }
+    ],
+    "singleApplication": true,
+    "errors": [],
+    "source": "original SSOG and authorized Core projection"
+  },
+  "cameras_with_recorded_person": [
+    "CAM-ROUTE-2",
+    "CAM-ROUTE-1"
+  ],
+  "pause": [
+    {
+      "id": "PERSON-LUIS",
+      "position": [
+        -3.426325798034668,
+        -3.1770730018615723,
+        -17.43794822692871
+      ]
+    }
+  ],
+  "historical_pose": [
+    -3.4263322353363037,
+    -3.503004789352417,
+    -12.386475563049316
+  ]
+}
