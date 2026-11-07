@@ -24,7 +24,10 @@
         "Verify persistent original-office reception and private mobile reply over real HTTP"
       ],
       "failure_summary": [
+        "2026-11-07T22:43:30.9600945Z page.waitForFunction: Timeout 30000ms exceeded.",
+        "2026-11-07T22:43:30.9601861Z     at /home/runner/work/Entity/Entity/scripts/phase09/verify-reception.mjs:57:14 {",
         "2026-11-07T22:43:30.9602587Z   name: 'TimeoutError'",
+        "2026-11-07T22:43:31.1965814Z     subprocess.run(['node','scripts/phase09/verify-reception.mjs'],cwd=ROOT,env=browser_env,check=True)",
         "2026-11-07T22:43:31.2271972Z subprocess.CalledProcessError: Command '['node', 'scripts/phase09/verify-reception.mjs']' returned non-zero exit status 1.",
         "2026-11-07T22:43:31.2491109Z ##[error]Process completed with exit code 1."
       ]
