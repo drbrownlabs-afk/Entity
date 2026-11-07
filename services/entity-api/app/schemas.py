@@ -20,7 +20,7 @@ class EventCreate(CoreRecord):
     @field_validator("type")
     @classmethod
     def reject_internal_event_types(cls, value):
-        if value in {"state.changed", "memory.recorded", "capability.declared"}:
+        if value in {"state.changed", "memory.recorded", "capability.declared", "output.result"}:
             raise ValueError("Event type is reserved for Core operations")
         return value
 

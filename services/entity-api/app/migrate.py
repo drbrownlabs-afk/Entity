@@ -1,7 +1,7 @@
 """Forward-only, atomic SQLite migrations, including legacy Phase 00 databases."""
 from pathlib import Path
 
-SCHEMA_VERSION = 3
+SCHEMA_VERSION = 4
 
 
 def migrate(db):

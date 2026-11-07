@@ -159,7 +159,10 @@ def ingest(observation: Observation, actor=Depends(authorize('observe:write'))):
                      {**json.loads(body), 'received_at': received}, observation.provenance.connector_id)
         if observation.type == 'edge.presence':
             from app.edge_projection import project
-            project(db, observation)
+            projected = project(db, observation)
+            if projected:
+                from app.output import evaluate
+                evaluate(db, observation)
         audit(actor, 'observation', 'recorded', db)
     return {'duplicate': False, 'received_at': received}
 

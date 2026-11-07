@@ -42,7 +42,7 @@ class CoreTests(unittest.TestCase):
         self.assertEqual(self.client.get('/v1/entities/display/capabilities').json()[0]['parameters'], capability['parameters'])
         self.assertEqual(len(self.client.get('/v1/entities/display/memories').json()), 1)
         self.assertEqual(self.client.post(f'/v1/entities/display/capabilities/{cid}/invoke', json={}).status_code, 404)
-        self.assertEqual(self.client.get('/ready').json()['database_schema_version'], 3)
+        self.assertEqual(self.client.get('/ready').json()['database_schema_version'], 4)
         schema = self.client.get('/openapi.json').json()
         for name in ('EventCreate', 'MemoryCreate', 'CapabilityCreate'):
             self.assertEqual(schema['components']['schemas'][name]['properties']['schema_version']['const'], '1.0')
@@ -159,4 +159,4 @@ class MigrationTests(unittest.TestCase):
         with ThreadPoolExecutor(max_workers=4) as pool:
             list(pool.map(lambda _: main.initialize(), range(8)))
         with sqlite3.connect(main.DB_PATH) as db:
-            self.assertEqual(db.execute('PRAGMA user_version').fetchone()[0], 3)
+            self.assertEqual(db.execute('PRAGMA user_version').fetchone()[0], 4)

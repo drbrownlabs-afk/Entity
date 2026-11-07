@@ -40,7 +40,7 @@ def project(db, observation):
     previous=db.execute("SELECT value FROM entity_state WHERE entity_id=? AND key='edge.presence'",(camera,)).fetchone()
     prior=json.loads(previous[0]) if previous else {'tracks':[]}
     if previous and datetime.fromisoformat(prior['observed_at']) >= observation.observed_at:
-        return  # retain late observation/event as history; do not rewind current world state
+        return False  # retain late event; do not rewind or actuate
     stamp=observation.observed_at.astimezone(timezone.utc).isoformat()
     simulated=observation.provenance.simulated
     def entity(identity,kind,attributes):
@@ -66,3 +66,5 @@ def project(db, observation):
             db.execute('INSERT INTO relations VALUES(?,?,?,?,?)',(str(uuid4()),pid,zid,'observedIn',stamp))
             counts[track.zone_id]=counts.get(track.zone_id,0)+1
     state(camera,'edge.presence',{**snapshot.model_dump(),'observed_at':stamp,'counts':counts,'simulated':simulated})
+
+    return True
