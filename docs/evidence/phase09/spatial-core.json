@@ -17,28 +17,172 @@
         -12.386475563049316
       ],
       "identity_from_image": false
+    },
+    {
+      "second": 0,
+      "camera": "CAM-ROUTE-2",
+      "visible": 1,
+      "core_position": [
+        -3.426332202989322,
+        -3.503004744909882,
+        -12.386475500620133
+      ],
+      "rendered_position": [
+        -3.4263322353363037,
+        -3.503004789352417,
+        -12.386475563049316
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 1,
+      "camera": "CAM-ROUTE-1",
+      "visible": 0,
+      "core_position": [
+        -3.4262946729273116,
+        -3.4710963149620127,
+        -13.106577497626834
+      ],
+      "rendered_position": [
+        -3.4262945652008057,
+        -3.4710962772369385,
+        -13.10657787322998
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 1,
+      "camera": "CAM-ROUTE-2",
+      "visible": 1,
+      "core_position": [
+        -3.4262946729273116,
+        -3.4710963149620127,
+        -13.106577497626834
+      ],
+      "rendered_position": [
+        -3.4262945652008057,
+        -3.4710962772369385,
+        -13.10657787322998
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 5,
+      "camera": "CAM-ROUTE-1",
+      "visible": 1,
+      "core_position": [
+        -3.4261445526792698,
+        -3.3434625951705357,
+        -15.98698548565364
+      ],
+      "rendered_position": [
+        -3.426144599914551,
+        -3.3434627056121826,
+        -15.986985206604004
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 5,
+      "camera": "CAM-ROUTE-2",
+      "visible": 0,
+      "core_position": [
+        -3.4261445526792698,
+        -3.3434625951705357,
+        -15.98698548565364
+      ],
+      "rendered_position": [
+        -3.426144599914551,
+        -3.3434627056121826,
+        -15.986985206604004
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 9,
+      "camera": "CAM-ROUTE-1",
+      "visible": 1,
+      "core_position": [
+        -3.426289586661225,
+        -3.2103509852706167,
+        -17.14775616183907
+      ],
+      "rendered_position": [
+        -3.4262895584106445,
+        -3.21035099029541,
+        -17.147756576538086
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 9,
+      "camera": "CAM-ROUTE-2",
+      "visible": 0,
+      "core_position": [
+        -3.426289586661225,
+        -3.2103509852706167,
+        -17.14775616183907
+      ],
+      "rendered_position": [
+        -3.4262895584106445,
+        -3.21035099029541,
+        -17.147756576538086
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 10,
+      "camera": "CAM-ROUTE-1",
+      "visible": 1,
+      "core_position": [
+        -3.426325845156714,
+        -3.177073082795637,
+        -17.43794883088543
+      ],
+      "rendered_position": [
+        -3.426325798034668,
+        -3.1770730018615723,
+        -17.43794822692871
+      ],
+      "identity_from_image": false
+    },
+    {
+      "second": 10,
+      "camera": "CAM-ROUTE-2",
+      "visible": 0,
+      "core_position": [
+        -3.426325845156714,
+        -3.177073082795637,
+        -17.43794883088543
+      ],
+      "rendered_position": [
+        -3.426325798034668,
+        -3.1770730018615723,
+        -17.43794822692871
+      ],
+      "identity_from_image": false
     }
   ],
-  "status": "failed",
+  "status": "passed",
   "pose_check": {
-    "second": 0,
+    "second": 10,
     "expected": [
-      -3.426332202989322,
-      -3.503004744909882,
-      -12.386475500620133
+      -3.426325845156714,
+      -3.177073082795637,
+      -17.43794883088543
     ],
     "observed": {
       "id": "PERSON-LUIS",
       "position": [
-        -3.4263322353363037,
-        -3.503004789352417,
-        -12.386475563049316
+        -3.426325798034668,
+        -3.1770730018615723,
+        -17.43794822692871
       ]
     },
-    "world_clock": "2026-11-07T14:15:00+00:00",
-    "renderer_clock": "2026-11-07T14:15:00+00:00"
+    "world_clock": "2026-11-07T14:15:10+00:00",
+    "renderer_clock": "2026-11-07T14:15:10+00:00"
   },
-  "stage": "capture at 0 seconds",
+  "stage": "capture at 10 seconds",
   "visual": {
     "cameraRenderState": [
       {
@@ -52,7 +196,7 @@
         ],
         "managers": [
           {
-            "splats": 0,
+            "splats": 624025,
             "pending": false
           }
         ]
@@ -68,7 +212,7 @@
         ],
         "managers": [
           {
-            "splats": 0,
+            "splats": 624025,
             "pending": false
           }
         ]
@@ -84,7 +228,7 @@
         ],
         "managers": [
           {
-            "splats": 0,
+            "splats": 624025,
             "pending": false
           }
         ]
@@ -100,7 +244,7 @@
         ],
         "managers": [
           {
-            "splats": 0,
+            "splats": 624025,
             "pending": false
           }
         ]
@@ -114,15 +258,15 @@
       "CAM-01",
       "CAM-02"
     ],
-    "worldClock": "2026-11-07T14:15:00+00:00",
+    "worldClock": "2026-11-07T14:15:10+00:00",
     "avatarsLoaded": 1,
     "avatarsPlaced": [
       {
         "id": "PERSON-LUIS",
         "position": [
-          -3.4263322353363037,
-          -3.503004789352417,
-          -12.386475563049316
+          -3.426325798034668,
+          -3.1770730018615723,
+          -17.43794822692871
         ]
       }
     ],
@@ -130,6 +274,23 @@
     "errors": [],
     "source": "original SSOG and authorized Core projection"
   },
-  "error": "Error: page.evaluate: Error: Camera visibility readback timed out\n    at http://127.0.0.1:60615/assets/visuals-DzIe_787.js:1:8729",
-  "page_errors": []
+  "cameras_with_recorded_person": [
+    "CAM-ROUTE-2",
+    "CAM-ROUTE-1"
+  ],
+  "pause": [
+    {
+      "id": "PERSON-LUIS",
+      "position": [
+        -3.426325798034668,
+        -3.1770730018615723,
+        -17.43794822692871
+      ]
+    }
+  ],
+  "historical_pose": [
+    -3.4263322353363037,
+    -3.503004789352417,
+    -12.386475563049316
+  ]
 }
