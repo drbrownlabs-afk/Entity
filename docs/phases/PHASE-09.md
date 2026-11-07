@@ -1,5 +1,5 @@
 # FASE 09 — ENTITY Spatial Intelligence: Synthetic Office
-Estado: PLAN AUTORIZADO PARA EJECUCIÓN AUTÓNOMA 09.1–09.9; implementación no iniciada por este documento.
+Estado: EN CURSO — ejecución autónoma 09.1–09.9 autorizada. SSOG original y viewer integrados; gates espaciales e integración integral pendientes. Ver docs/PHASE-09-PROGRESS.md.
 Escenario: https://superspl.at/scene/a972d838
 Continuidad: fases 00–08, ENTITY Core/Edge/Experience, contratos existentes. No borrar ni reemplazar el centro comercial anterior.
 
@@ -31,8 +31,25 @@ Demostración integral de un centro de trabajo computable: Gaussian Splat realis
 10. Publicación estática puede funcionar en modo autónomo claramente rotulado; no afirmar persistencia compartida del Core cuando solo exista estado local. Mantener la opción de conexión al Core real.
 
 ## Subfases y puertas de calidad (gate automático)
+## Zonificación operativa confirmada por el operador — 2026-11-07
+
+Esta descripción es la fuente de verdad FUNCIONAL para el modelo de coworking de Synthetic Office. La escena visual original no se remodela; la segmentación semántica y los IDs se superponen a ella. Los nombres de anotaciones de SuperSplat son anclas de referencia, NO prueba automática de correspondencia exacta con todos los ambientes.
+
+1. **Mesa negra junto a la pared:** única **área/mesa de reuniones** reservable (no inventar una habitación cerrada). La anotación original `8-Person Conference Table` es candidata a ancla; verificar correspondencia visual antes de asignar coordenadas. Capacidad según asientos realmente comprobados, no asumir automáticamente ocho por el título.
+2. **Conjunto de mesa y seis sillas junto a la reunión:** **Oficina privada 01**, seis posiciones internas. Reservable/gestionable como ambiente privado para equipo/empresa; sus seis puestos NO se publican como seis puestos individuales de coworking.
+3. **Conjunto contiguo al anterior, también de seis posiciones:** **Oficina privada 02**, con la misma política de espacio privado, membresía/permisos y ocupación. Distinguir las dos oficinas con IDs propios y anclas independientes verificadas; las dos anotaciones `6-Person Office Bench System` son candidatas, pero no asignar cuál es 01/02 solo por orden de índice sin inspección visual.
+4. **Resto de conjuntos de trabajo:** **coworking de puestos individuales**; cada silla/puesto es recurso individual reservable. El número total se determina al inspeccionar la escena y debe ser configurable, no inventado ni codificado como cifra fija.
+5. **Sector de dos sillas negras aisladas:** **recepción provisional**; check-in, staff, visitantes y atención. Se rediseñará más adelante, por lo que no modificar geometría ahora. No confundir recepción con espera.
+6. **Otro sector con varias sillas:** **área de espera** para visitantes, separada de recepción. No convertirlo en oficina, reunión ni puestos individuales reservables.
+
+**Criterio espacial:** inventariar en el visor real, validar visualmente proximidad y correspondencia de anclas, guardar IDs estables, tipo, capacidad, relaciones, política de reserva y procedencia. Donde falten coordenadas verificadas, usar `spatial_mapping: pending` y `position: null`; no reutilizar coordenadas de una anotación como si identificaran cada silla. El mapping geométrico no puede inventarse; la topología operativa sí queda decidida. La configuración debe admitir correcciones futuras sin recrear entidades históricas.
+
+**Deuda de implementación identificada:** `scripts/bootstrap-office.py` crea actualmente puestos individuales para ambos `Office Bench` y no modela oficinas privadas/recepción conforme a esta decisión; corregirlo con migración/compatibilidad de datos existentes, sin destruir sitios persistentes, y añadir pruebas que aseguren que los puestos de oficina privada no aparecen como reservas públicas. La espera existente sin ancla se conserva como pendiente de localización. Verificar las reglas de permisos, reservas, aforo y ocupación de ambos tipos de recurso.
+
+**Dependencias:** el SSOG original remoto ya se carga, con cuatro anotaciones y navegación voxel. No exigir Vite ZIP ni exportación autenticada ni copia local completa para continuar o cerrar gates; el operador ya tiene Vite pero es material opcional y no solicitado. Validar rutas/colisiones y UX sobre la escena disponible. Si la exportación no está accesible, registrarlo como dato no bloqueante y proseguir. No desviar la ejecución a autenticación o descarga.
+
 ### 09.1 — Espacio computable
-Implementar Synthetic Office, calidad web, dollhouse/interior, colisiones voxelizadas, navegación, cámaras y anotaciones SuperSplat. Inventariar escritorios, mesas, salas reales, pasillos, accesos, zonas, sensores y equipos con IDs estables.
+Implementar Synthetic Office, calidad web, dollhouse/interior, colisiones voxelizadas, navegación, cámaras y anotaciones SuperSplat. Inventariar las oficinas privadas, puestos individuales, mesa de reuniones, recepción provisional, espera, pasillos, accesos, zonas, sensores y equipos con IDs estables, según zonificación operativa confirmada.
 Gate: escena carga, se navega sin atravesar paredes/suelo en rutas principales; IDs seleccionables y ubicados correctamente; capturas/evidencia de cámara y anclajes; no regresión viewer anterior.
 
 ### 09.2 — Mundo simulado compartido
