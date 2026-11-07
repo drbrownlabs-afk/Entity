@@ -22,7 +22,10 @@ if(surveyPose!==null){
 const routePose=new URLSearchParams(location.search).get('survey_route_pose');
 if(routePose!==null){
  const position=inspectionCameras.poses[Number(routePose)];
- if(position)settings.cameras=[{initial:{position,target:[position[0]+5,position[1],position[2]],fov:85}}];
+ if(position){
+  const down=new URLSearchParams(location.search).get('survey_direction')==='down';
+  settings.cameras=[{initial:{position,target:down?[position[0],position[1]-5,position[2]+.0001]:[position[0]+5,position[1],position[2]],fov:85}}];
+ }
 }
 let viewer;
 const base=import.meta.env.VITE_OFFICE_ASSET_BASE;
