@@ -78,6 +78,8 @@ def initialize():
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     with database() as db:
         migrate(db)
+        from app.office.storage import initialize as initialize_office
+        initialize_office(db)
 
 
 class EntityCreate(CoreRecord):
@@ -282,3 +284,24 @@ app.include_router(output_router)
 
 from app.agent import router as agent_router
 app.include_router(agent_router)
+
+
+from app.office.api import router as office_router
+app.include_router(office_router)
+
+@app.middleware("http")
+async def office_legacy_boundary(request, call_next):
+    # Once a coworking site exists, legacy generic routes are administrative only.
+    path=request.url.path
+    legacy=path.startswith(("/v1/entities", "/v1/relations", "/v1/integrations", "/v1/output", "/v1/agent"))
+    if legacy and request.method!="OPTIONS":
+        try:
+            with database() as db:
+                active=db.execute("SELECT EXISTS(SELECT 1 FROM office_sites)").fetchone()[0]
+            if active or os.getenv("ENTITY_REQUIRE_AUTH")=="1":
+                from app.office.auth import authenticate
+                actor=authenticate(request.headers.get("Authorization"))
+                return JSONResponse(status_code=403,content={"detail":"Use site-scoped coworking APIs; legacy routes cannot mutate or expose office state"})
+        except HTTPException as error:return JSONResponse(status_code=error.status_code,content={"detail":error.detail})
+        except sqlite3.Error:return JSONResponse(status_code=503,content={"detail":"Database not ready"})
+    return await call_next(request)

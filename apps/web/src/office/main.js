@@ -12,6 +12,7 @@ const contentUrl=base?new URL('lod-meta.json',base).href:original.contentUrl;
 const collisionUrl=base?new URL('scene.voxel.json',base).href:original.collisionUrl;
 const output=document.querySelector('#status');
 function inspect(index){
+  window.dispatchEvent(new CustomEvent('office-annotation-selected',{detail:index}));
   document.querySelector('#selection').textContent=JSON.stringify({annotation_index:index,...original.settings.annotations[index]},null,2);
 }
 original.settings.annotations.forEach((annotation,index)=>{
@@ -52,3 +53,6 @@ window.officeDiagnostics=()=>({
   walkAllowed:viewer?.state.walkAllowed||false,annotations:viewer?.annotations||[],
   mode:viewer?.state.cameraMode,source:'original-public-SSOG',substitute:false
 });
+
+window.addEventListener('office-select-annotation',event=>{if(viewer?.state.loaded)viewer.selectAnnotation(event.detail);});
+import('./operations.js');

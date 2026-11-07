@@ -1,1 +1,50 @@
-{"id":"synthetic-office","source_url":"https://superspl.at/scene/a972d838","asset":"https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/lod-meta.json","collision_asset":"https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json","collision_binary":"https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.bin","annotations":[],"author":"argenzio","license":"CC BY-NC 4.0","validation":"original-viewer-loaded-remote; local-integration-pending","note":"Real scene/resources observed via authorized Chromium. No room inventory or coordinates invented."}
+{
+  "id": "synthetic-office",
+  "source_url": "https://superspl.at/scene/a972d838",
+  "asset": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/lod-meta.json",
+  "collision_asset": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json",
+  "collision_binary": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.bin",
+  "annotations": [
+    {
+      "index": 0,
+      "title": "6-Person Office Bench System",
+      "position": [
+        -0.4324827070899584,
+        -1.1356615558262035,
+        -5.352859958159687
+      ]
+    },
+    {
+      "index": 1,
+      "title": "8-Person Conference Table",
+      "position": [
+        1.1870577758066334,
+        -1.2140478639523282,
+        0.06964437653360278
+      ]
+    },
+    {
+      "index": 2,
+      "title": "6-Person Office Bench System",
+      "position": [
+        1.9970835412267196,
+        -0.8033600527595,
+        -10.693077551494174
+      ]
+    },
+    {
+      "index": 3,
+      "title": "Fito Wall",
+      "position": [
+        0.09792180086598856,
+        -0.17678632222835267,
+        2.586294204317113
+      ]
+    }
+  ],
+  "author": "argenzio",
+  "license": "CC BY-NC 4.0",
+  "validation": "original-SSOG-rendered-desktop-mobile; native-voxel-walk-enabled; full-spatial-gate-pending",
+  "note": "Real scene/resources observed via authorized Chromium. No room inventory or coordinates invented.",
+  "evidence": "docs/evidence/phase09/original-integration.json"
+}

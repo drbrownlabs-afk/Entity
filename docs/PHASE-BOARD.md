@@ -27,7 +27,7 @@ Cada actualización debe contestar: ¿qué funciona hoy?, ¿qué se probó?, ¿q
 ## Fase 09 — Nuevo alcance autorizado (2026-11-07)
 | Fase | Nombre | Estado | Evidencia / siguiente paso |
 |---|---|---|---|
-| 09 | Synthetic Office: simulación integral de inteligencia espacial | EN CURSO | Plan y gates 09.1–09.9 en docs/phases/PHASE-09.md; progreso en docs/PHASE-09-PROGRESS.md. Autorización excepcional para completar 09.1–09.9 autónomamente sin revisión humana entre subfases; revisión humana al final. |
+| 09 | Synthetic Office: simulación integral de inteligencia espacial | EN CURSO | SSOG original integrado con evidencia1440/390px (baf37b3); backend parcial47tests PASS. Export Vite autenticado pendiente, receptor listo. Gates completos todavía pendientes; progreso en docs/PHASE-09-PROGRESS.md. Autorización excepcional para completar 09.1–09.9 autónomamente sin revisión humana entre subfases; revisión humana al final. |
 
 Nota: el tablero anterior puede estar desactualizado frente a ramas de Codex aún no fusionadas. Verificar ramas, commits y CI antes de cambiar estados históricos.
 ## Auditoría transversal del MVP — 2026-11-07

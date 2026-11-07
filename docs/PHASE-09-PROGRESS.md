@@ -5,7 +5,7 @@ El acceso HTTP del ejecutor obtuvo403; el operador confirma la escena disponible
 
 | Subfase | Estado | Pruebas/evidencia | Commit/PR | Siguiente |
 |---|---|---|---|---|
-| 09.1 | EN CURSO | HTTP200 en Chromium remoto, escena original/collision/SSOG localizados; receptor Vite/SSOG listo | merge2d73e1d | Integrar assets originales y anotaciones; validar colisiones, no declarar gate completo |
+| 09.1 | EN CURSO | HTTP200 en Chromium remoto, escena original/collision/SSOG localizados; receptor Vite/SSOG listo | merge2d73e1d | SSOG original integrado, anotaciones y modo walk verificados en baf37b3; faltan recorridos espaciales completos y export Vite autenticado |
 | 09.2 | PENDIENTE | — | — | Implementar y ejecutar gate 09.2 |
 | 09.3 | PENDIENTE | — | — | Implementar y ejecutar gate 09.3 |
 | 09.4 | PENDIENTE | — | — | Implementar y ejecutar gate 09.4 |
@@ -17,3 +17,11 @@ El acceso HTTP del ejecutor obtuvo403; el operador confirma la escena disponible
 
 ## Regla de registro
 En cada gate, añadir fecha, comandos exactos, resultado PASS/FAIL/NO EJECUTADO, capturas/logs sin secretos, problemas y correcciones, SHA, estado GitHub, dependencias y próxima acción. Nunca inventar pruebas. Al reiniciar Codex, leer este documento y retomar el primer gate no verificado.
+
+## Checkpoint de implementación y acceso — 2026-11-07
+
+- Original SSOG: `baf37b3`, informe `docs/evidence/phase09/original-integration.json`, escritorio1440/táctil emulado390 PASS; 4 anotaciones originales, walk nativo habilitado, sin escena sustituta. No equivale a validación de todos los recorridos/colisiones ni de teléfono físico.
+- Receptor oficial Vite/SSOG: 3/3 tests de archivo PASS. Escritorio interactivo sin herramienta disponible y sin sesión autenticada utilizable; no se ha descargado un export Vite autenticado. CONNECT403 corresponde al proxy, no prueba fallo de autenticación. Directorio de entrada vacío. Protocolo en PHASE-09-ASSET-INTAKE.md.
+- Checkpoint parcial de backend/API: módulos Office y Núcleo, permisos por sede/rol, reservas concurrentes, visitantes/host, observaciones anónimas con deduplicación, sensores, incidencias, tareas, memoria temporal y ramas what-if implementados. `PYTHONPATH=services/entity-api .venv/bin/python -m unittest discover -s services/entity-api/tests -v`: 47/47 PASS (14 Office y33 regresión); salida conservada en `docs/evidence/phase09/backend-regression.txt` (incluye advertencia de deprecación Starlette/httpx). Tests de API/SQLite y transporte controlado, no validación espacial ni hardware.
+- Interfaz operativa enlazada al Core por API configurable, sin token persistido en navegador; compilación Vite comprobada. Su E2E con Core HTTP sigue pendiente. Bootstrap toma posiciones del archivo original; no afirma calibración individual de puestos, equipos o accesos.
+- La tabla conserva los gates 09.2–09.9 PENDIENTES: existe implementación parcial, pero todavía no se han verificado integralmente ni se autoriza confundir tests unitarios con cierre de subfase. Pendientes personajes/recorridos originales, CCTV sincronizado completo, escenario diario, adaptadores de prueba y entrega integral. Ninguna aprobación solicitada ni concedida.

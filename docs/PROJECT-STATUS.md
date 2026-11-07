@@ -95,3 +95,9 @@ Base701da12, rama codex/mvp-independent-audit. Tubería de observaciones/proyecc
 
 
 Auditoría MVP cierre publicado: implementación51d9ab6, sonda/evidencia9f35abb, rama codex/mvp-independent-audit. CI final42377822190 Success2m38s, sin anotaciones observadas, cuatro jobs; 33Core/7Edge/6Node/3navegador y delivery limpio aprobados. Evidencias adversas separadas en docs/audits/evidence (incluida escena Core distinta de visor); diez hallazgos A01–A10 siguen abiertos, cuatro parches F01–F04 verificados. Datos sintéticos, sin hardware/LLM remoto; no cambio de schema/IDs históricos. No Pages desde rama de auditoría, web pública anterior; sin PR nuevo por Forbidden REST, sin merge a main. Cinco prioridades de piloto y límites en MVP-INDEPENDENT-2026-11-07.md. Fase08 EN VALIDACIÓN; CI verde no constituye aceptación del MVP integrado.
+
+
+## Fase09 — Checkpoint parcial, EN CURSO (2026-11-07)
+SSOG original a972d838 integrado mediante visor oficial, sin reemplazo de edificio: baf37b3 contiene evidencia escritorio1440/táctil emulado390, cuatro anotaciones originales y walk voxel nativo habilitado. Validación completa de rutas y cámaras pendiente. Download Vite autenticado no obtenido: no herramienta de escritorio interactivo ni sesión utilizable en el ejecutor; CONNECT403 local previo es del proxy, no prueba de autenticación. Receptor de originales Vite/SSOG listo y3tests de archivo aprobados.
+
+Backend Office/Núcleo parcial persistente y UI conectable preservados en checkpoint de rama: 47tests API/SQLite aprobados (14Office+33anteriores), compilación web ejecutada. No E2E completo de Office, hardware, avatares animados ni cierre de gates09.1–09.9. No se declara piloto ni Fase09 terminados. Ver docs/PHASE-09-PROGRESS.md y docs/phases/PHASE-09-ASSET-INTAKE.md; PR#2/rama codex/phase-09-autonomous-plan, sin merge a main.

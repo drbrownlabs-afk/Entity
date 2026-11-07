@@ -1,0 +1,54 @@
+/workspace/Entity/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_action_permission_idempotency_and_restart (test_agent.AgentTests.test_action_permission_idempotency_and_restart) ... ok
+test_foreign_scope_trace_and_failed_output (test_agent.AgentTests.test_foreign_scope_trace_and_failed_output) ... ok
+test_grounded_query_memory_and_no_evidence (test_agent.AgentTests.test_grounded_query_memory_and_no_evidence) ... ok
+test_model_cannot_escalate_or_invent_actions (test_agent.AgentTests.test_model_cannot_escalate_or_invent_actions) ... ok
+test_official_sdk_tool_call_and_timeout (test_agent.AgentTests.test_official_sdk_tool_call_and_timeout) ... ok
+test_real_provider_missing_key_fails_closed (test_agent.AgentTests.test_real_provider_missing_key_fails_closed) ... ok
+test_errors_do_not_write_partial_data (test_api.EntityApiTests.test_errors_do_not_write_partial_data) ... ok
+test_health (test_api.EntityApiTests.test_health) ... ok
+test_state_event_memory_and_relations (test_api.EntityApiTests.test_state_event_memory_and_relations) ... ok
+test_non_ascii_bearer_does_not_crash_authentication (test_audit_regressions.AuditRegressions.test_non_ascii_bearer_does_not_crash_authentication) ... ok
+test_non_ascii_configured_token_fails_as_configuration_error (test_audit_regressions.AuditRegressions.test_non_ascii_configured_token_fails_as_configuration_error) ... ok
+test_nonfinite_attributes_and_events_are_not_persisted (test_audit_regressions.AuditRegressions.test_nonfinite_attributes_and_events_are_not_persisted) ... ok
+test_nonfinite_nested_json_rejected_before_state_commit (test_audit_regressions.AuditRegressions.test_nonfinite_nested_json_rejected_before_state_commit) ... ok
+test_interchange_deduplication_and_restart (test_connectors.ConnectorTests.test_interchange_deduplication_and_restart) ... ok
+test_permissions_failure_and_contract (test_connectors.ConnectorTests.test_permissions_failure_and_contract) ... ok
+test_real_rest_transport_and_process_restart (test_connectors.ConnectorTests.test_real_rest_transport_and_process_restart) ... ok
+test_verified_action_idempotency_and_audit (test_connectors.ConnectorTests.test_verified_action_idempotency_and_audit) ... ok
+test_capability_and_event_are_atomic (test_core.CoreTests.test_capability_and_event_are_atomic) ... ok
+test_concurrent_state_changes_keep_consistent_history (test_core.CoreTests.test_concurrent_state_changes_keep_consistent_history) ... ok
+test_declarations_memory_events_and_contracts (test_core.CoreTests.test_declarations_memory_events_and_contracts) ... ok
+test_invalid_and_missing_records_have_no_side_effects (test_core.CoreTests.test_invalid_and_missing_records_have_no_side_effects) ... ok
+test_memory_and_event_are_atomic (test_core.CoreTests.test_memory_and_event_are_atomic) ... ok
+test_readiness_detects_missing_schema (test_core.CoreTests.test_readiness_detects_missing_schema) ... ok
+test_versioned_openapi_matches_published_contract (test_core.CoreTests.test_versioned_openapi_matches_published_contract) ... ok
+test_concurrent_initialization (test_core.MigrationTests.test_concurrent_initialization) ... ok
+test_failed_migration_rolls_back (test_core.MigrationTests.test_failed_migration_rolls_back) ... ok
+test_future_schema_is_rejected_without_changes (test_core.MigrationTests.test_future_schema_is_rejected_without_changes) ... ok
+test_upgrade_legacy_preserves_all_records (test_core.MigrationTests.test_upgrade_legacy_preserves_all_records) ... ok
+test_projection_late_event_dedup_and_loss (test_edge_projection.EdgeProjectionTests.test_projection_late_event_dedup_and_loss) ... ok
+test_adapter_failure_rolls_back_domain_and_is_idempotent (test_office.OfficeTests.test_adapter_failure_rolls_back_domain_and_is_idempotent) ... ok
+test_anonymous_and_identity_expiry (test_office.OfficeTests.test_anonymous_and_identity_expiry) ... ok
+test_booking_concurrency_and_ownership (test_office.OfficeTests.test_booking_concurrency_and_ownership) ... ok
+test_cancelled_meeting_and_duplicate_visit_checkin (test_office.OfficeTests.test_cancelled_meeting_and_duplicate_visit_checkin) ... ok
+test_connector_scope_and_schema_validation (test_office.OfficeTests.test_connector_scope_and_schema_validation) ... ok
+test_future_late_and_camera_disconnect (test_office.OfficeTests.test_future_late_and_camera_disconnect) ... ok
+test_hvac_task_and_history (test_office.OfficeTests.test_hvac_task_and_history) ... ok
+test_idempotency_and_conflict (test_office.OfficeTests.test_idempotency_and_conflict) ... ok
+test_no_show_and_extension_conflicts (test_office.OfficeTests.test_no_show_and_extension_conflicts) ... ok
+test_normalized_adapters_and_timeout (test_office.OfficeTests.test_normalized_adapters_and_timeout) ... ok
+test_scenario_isolation_and_apply_revalidation (test_office.OfficeTests.test_scenario_isolation_and_apply_revalidation) ... ok
+test_sensor_projection_and_duplicate (test_office.OfficeTests.test_sensor_projection_and_duplicate) ... ok
+test_site_and_legacy_access_fail_closed (test_office.OfficeTests.test_site_and_legacy_access_fail_closed) ... ok
+test_visitors_wait_for_host_and_meeting_occupancy (test_office.OfficeTests.test_visitors_wait_for_host_and_meeting_occupancy) ... ok
+test_failure_timeout_mismatch_permissions_and_html_escape (test_output.OutputTests.test_failure_timeout_mismatch_permissions_and_html_escape) ... ok
+test_manual_override_and_idempotency_persistence (test_output.OutputTests.test_manual_override_and_idempotency_persistence) ... ok
+test_presence_rule_screen_readback_and_no_duplicate (test_output.OutputTests.test_presence_rule_screen_readback_and_no_duplicate) ... ok
+test_persistence_after_process_restart (test_restart.RestartTests.test_persistence_after_process_restart) ... ok
+
+----------------------------------------------------------------------
+Ran 47 tests in 20.507s
+
+OK
