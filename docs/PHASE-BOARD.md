@@ -26,3 +26,5 @@ Cada actualización debe contestar: ¿qué funciona hoy?, ¿qué se probó?, ¿q
 
 ## Auditoría transversal del MVP — 2026-11-07
 Fases00–08 revisadas mediante código y sondas adversas nuevas. Se conservan estados históricos y no se aprueba ninguna fase. Fase08 permanece EN VALIDACIÓN; la auditoría encuentra bloqueos de preparación para piloto y discrepancias no cubiertas por los recorridos anteriores. Ver docs/audits/MVP-INDEPENDENT-2026-11-07.md (A01–A10 abiertos; F01–F04 corregidos en rama de auditoría). Un CI verde comprueba regresiones y no acredita coherencia/seguridad de todos los componentes.
+
+Auditoría publicada en codex/mvp-independent-audit (51d9ab6/9f35abb), CI42377822190 Success. 33Core/7Edge/6Node/3navegador y entrega limpia verificados; A01–A10 abiertos y F01–F04 corregidos. Las discrepancias de autorización, IDs, tiempo, cola, contexto y Core/Experience impiden declarar listo un piloto integrado. Revisión humana pendiente; sin cambio automático de aprobaciones históricas.

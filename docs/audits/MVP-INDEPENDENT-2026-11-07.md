@@ -35,6 +35,8 @@ Se corrigieron cuatro defectos acotados. Se dejaron los cambios de permisos, ide
 
 Flujo visual real implementado: vídeo → OpenCV/HOG/Norfair → coordenadas/zonas → JSON Observation → Outbox → REST Core → proyección → regla → Output virtual. Flujo no visual: MQTT/REST → perfil → Observation → evento Core. Este último no actualiza automáticamente una temperatura consultable como estado.
 
+El vídeo de regresión vtest.avi es una grabación pública de OpenCV procesada por un detector real; no es una cámara del piloto ni una evaluación de precisión. Los nuevos sondeos de esta auditoría usan datos sintéticos.
+
 El fixture JSON se comparte entre Edge y Experience, pero sus consumidores **no comparten el mundo completo**: Edge añade tracker/sesiones y zonas left/right; el visor usa visitantes con desfases y zonas corridor-north/south, tiendas y HVAC propios. Compartir muestras y contrato no equivale a que sus IDs/entidades/relojes representen una misma instancia del mundo. En el modo local esto es una demostración claramente etiquetada; no acredita sincronización Core↔Experience.
 
 ## 2. Consistencia de contratos y arquitectura
@@ -80,7 +82,7 @@ El controlled-fixture elige report_world_state o set_scene según el envelope; n
 
 Probado positivo por estas sondas: UUID/cuerpo idéntico no duplica evento; UUID con cuerpo distinto devuelve409; snapshot incompleto devuelve422 sin evento parcial; mensaje atrasado se conserva sin rebobinar la presencia; SQLite integrity_check=ok; Output y acción de agente rechazan falta de autorización/ámbito de entidad. La entrega previa verifica restart y backup/restore; la regresión de esta rama vuelve a comprobar las rutas afectadas.
 
-La transacción Core incluye ingestión/proyección/regla virtual, pero no resuelve tiempo físico ni silencios. Conservar un snapshot tras reiniciar conserva evidencia, **no confirma que una persona siga presente**. El estado no tiene caducidad visible; falta separar último dato, validez temporal, salud y confianza. Un futuro remoto erróneo puede imponer el orden durante años. La Outbox conserva cuerpos y errores, pero un mensaje venenoso impide que los siguientes reparen estado. No se ampliaron descarte/cuarentena ni relojes por ser decisiones de diseño con posible pérdida de información.
+La transacción Core incluye ingestión/proyección/regla virtual, pero no resuelve tiempo físico ni silencios. Conservar un snapshot tras reiniciar conserva evidencia, **no confirma que una persona siga presente**. El estado no tiene caducidad visible; falta separar último dato, validez temporal, salud y confianza. Un futuro remoto erróneo puede imponer el orden durante años. La Outbox conserva cuerpos y errores, pero un mensaje venenoso impide que los siguientes reparen estado. No se ampliaron descarte/cuarentena ni relojes por ser decisiones de diseño con posible pérdida de información. En la sonda de cola se verificó además que el segundo cuerpo satisface Observation y Snapshot publicados y el primero es rechazado por Snapshot; el transporte controlado no sustituye esa validación.
 
 Los eventos de zona Edge van dentro de payload.transitions; Core registra observation.received y proyección, no una memoria autobiográfica/semántica por track. El visor tiene40 eventos efímeros locales con otros nombres (`capability.result`, zone.entered/exited), no un espejo de eventos/memorias Core. La lista/cámaras se actualiza desde un estado local único, pero eso no demuestra coherencia entre servicios, como muestra A07.
 
@@ -124,6 +126,18 @@ npm --prefix apps/web run build
 PLAYWRIGHT_CHROMIUM_EXECUTABLE=/usr/bin/chromium npm run test:browser
 ```
 
+Rendimiento de la regresión local: [16.54 FPS a390×844 en Chromium/SwiftShader](evidence/MVP-performance.json), render por software en servidor, no teléfono físico. Build JS ~2.02 MB /517.5 KB gzip. El umbral de humo de8 FPS del test no es objetivo de fluidez ni SLA de piloto.
+
 Resultados locales:33 tests Core (29 previos +4 nuevos),6 Node (4 previos +2 nuevos), compilación y3 pruebas de navegador aprobadas. Sonda de navegador adicional completada y **detectó** desincronización; 18 sondas Core posteriores incluyen fallos abiertos deliberadamente reportados, no18 garantías aprobadas. El primer intento de sondeo NaN dejó en evidencia un reset de conexión tras500; se repitió con conexiones HTTP separadas para conservar el informe completo, sin cambiar el Core antes de registrar el fallo. Una invocación inicial de los scripts auxiliares usó un directorio incorrecto; se corrigió la ruta de ejecución. No se ocultaron esos fallos cambiando expectativas de producto.
 
-Publicación/CI final de esta rama se registra al cierre. El CI verde validará regresiones/correcciones; no convierte A01–A10 en resueltos ni aprueba las fases.
+## Publicación y verificación final
+
+- Correcciones y auditoría: [51d9ab670ef1d0fd2c7ceaf55602bdce046a9bae](https://github.com/drbrownlabs-afk/Entity/commit/51d9ab670ef1d0fd2c7ceaf55602bdce046a9bae). Sonda de cola con cuerpos completos y evidencia: [9f35abb711413f656afff798cd854ab520858845](https://github.com/drbrownlabs-afk/Entity/commit/9f35abb711413f656afff798cd854ab520858845). [Diff sobre la entrega base](https://github.com/drbrownlabs-afk/Entity/compare/701da12...9f35abb).
+- [CI final42377822190](https://github.com/drbrownlabs-afk/Entity/actions/runs/42377822190): Success, 2m38s, cuatro jobs. api-tests35s, edge-tests1m29s, experience-tests1m07s, delivery1m03s; sin anotaciones observadas. [Resumen preservado](evidence/MVP-ci-final.json).
+- Regresión remota aprobada:33 Core,7 Edge,6 Node,3 navegador, Docker/persistencia y demos anteriores, más reconstrucción de paquetes e instalación desde extracción limpia. Artefactos edge-report3.57KB, experience-evidence827KB y entity-delivery1.12MB disponibles en esa ejecución.
+- Las sondas adversas adicionales se ejecutaron como experimentos separados con evidencia versionada; su finalización no convierte discrepancias en criterios aprobados. El CI verde confirma regresiones/correcciones, **no** resuelve A01–A10 ni certifica un piloto.
+- Fuente9f35abb descargada nuevamente desde GitHub a repositorio independiente: árbol5360c093db36429ae85fc711d608038be80ef580 y ancestro701da12 confirmados. Cierre documental posterior no cambia ese código probado.
+- Rama `codex/mvp-independent-audit` publicada, sin merge a main. Consulta REST para gestionar PR devuelve Forbidden desde api.github.com; Git y páginas públicas de Actions funcionan. No se creó un PR nuevo ni se piden operaciones Git manuales al operador.
+- Los parches del visor están en la rama auditada; **no se desplegaron a Pages** desde esta rama. La web pública sigue en la versión anterior documentada1f1a3b3, sin simular que un commit publicado equivale a un servicio desplegado. No se publicó Core ni se modificaron equipos físicos.
+
+Fase08 se mantiene **EN VALIDACIÓN**, con revisión humana pendiente. Esta auditoría no autoriza nuevas funcionalidades ni declara preparación para producción.
