@@ -73,3 +73,7 @@ El operador fija recepción digital sin estación física obligatoria; A/B = ofi
 
 ## Decisión de recepción inteligente presencial — 2026-11-07
 Se sustituye «recepción digital sin ubicación física» por kiosco inteligente físico en zona de dos sillas negras, sin recepcionista. Misma IA situada/Núcleo, check-in por voz/pantalla, identidad verificada, reservas, relaciones, eventos y escalamiento a Cowork.
+
+
+## Intercomunicación contextual — 2026-11-07
+Se aprueba intercomunicación inteligente bidireccional en la simulación: ENTITY puede contactar proactivamente a empleados/anfitriones por dispositivo de ambiente o canal personal según contexto, recibir respuesta y actuar. Caso Daniel–Carlos–reunión 16:00. Compartir Núcleo, grafo, reloj, estado y eventos; respetar privacidad.
