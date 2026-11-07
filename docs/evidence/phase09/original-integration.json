@@ -59,6 +59,72 @@
       "errors": [],
       "substitute": false,
       "cctv": {
+        "cameraRenderState": [
+          {
+            "id": "CAM-01",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 0,
+                "pending": true
+              }
+            ]
+          },
+          {
+            "id": "CAM-02",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 0,
+                "pending": true
+              }
+            ]
+          },
+          {
+            "id": "CAM-03",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 0,
+                "pending": true
+              }
+            ]
+          },
+          {
+            "id": "CAM-04",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 0,
+                "pending": true
+              }
+            ]
+          }
+        ],
         "cameraViews": 4,
         "activeCameras": 4,
         "visibleCameraIds": [
@@ -133,6 +199,40 @@
       "errors": [],
       "substitute": false,
       "cctv": {
+        "cameraRenderState": [
+          {
+            "id": "CAM-01",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 0,
+                "pending": false
+              }
+            ]
+          },
+          {
+            "id": "CAM-02",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 0,
+                "pending": false
+              }
+            ]
+          }
+        ],
         "cameraViews": 4,
         "activeCameras": 2,
         "visibleCameraIds": [
