@@ -167,3 +167,21 @@ Aplicar `docs/phases/PHASE-09-NUCLEO-ADDENDUM.md` durante toda la ejecución. N�
 **Confirmación directa del operador, prevalece sobre formulaciones anteriores:** las DOS anotaciones originales `6-Person Office Bench System` identifican precisamente las DOS oficinas privadas, cada una con seis sillas/puestos. No es necesario redescubrir cuáles son las oficinas privadas mediante proximidad ni dejar esa correspondencia pendiente. Conservar la identidad de cada anotación y crear un recurso `PrivateOffice`/oficina privada por cada una, con seis posiciones internas y reservas/permisos de ambiente privado. El orden de numeración puede ser estable por ID de anotación, sin inferir geometría adicional.
 
 **La inspección visual completa sigue siendo obligatoria para el RESTO de mesas**, incluidas las mesas de seis sillas SIN anotaciones: esos grupos son puestos individuales de coworking y no oficinas privadas. La mesa negra de reunión, recepción provisional (dos sillas negras) y área de espera (otro grupo de sillas) mantienen sus funciones. Esta aclaración sustituye cualquier instrucción previa que diga que no puede saberse si los dos `Office Bench` anotados son las oficinas privadas. No confundir «anotaciones incompletas para inventario general» con «anotaciones incorrectas para oficinas privadas».
+
+
+## Configuración operativa definitiva A–E y recepción digital — 2026-11-07
+Esta decisión posterior del operador **sustituye** cualquier asignación anterior que estableciera C1–C6 como puestos comerciales o permitiera ampliar automáticamente los ambientes comerciales.
+
+| Recurso | Clasificación | Política |
+|---|---|---|
+| A | Oficina privada, seis posiciones; primer `Office Bench` original | Reservar el ambiente completo, no seis puestos públicos |
+| B | Oficina privada, seis posiciones; segundo `Office Bench` original | Reservar el ambiente completo, no seis puestos públicos |
+| C | Ambiente de staff, conjunto con MUEBLE SEPARADOR AL FRENTE | Uso interno, sin reservas comerciales; localizar visualmente por el separador |
+| D | Coworking individual | D1, D2, D3, D4, D5, D6 reservables individualmente |
+| E | Coworking individual | E1, E2, E3, E4, E5, E6 reservables individualmente |
+| Mesa negra junto a pared | Reuniones | Reserva de la mesa completa |
+| Booths, aproximadamente cuatro | Descanso/encuentro informal | Inventariables, no agendables; confirmar cantidad visualmente |
+| Pasillos | Circulación | No agendables |
+| Recepción digital | Servicio operativo ENTITY, no puesto físico obligatorio | Check-in, registro de visitantes, notificaciones, autorización de acceso según política y escalamiento al staff |
+
+**Límite comercial explícito:** exactamente DOCE puestos individuales D1–D6 y E1–E6. Las seis posiciones de C son de staff, no puestos públicos; A/B son ambientes privados completos. No generar 18 puestos individuales. La inspección SSOG debe identificar la ubicación de C por el mueble separador al frente y distinguir D/E, sin inventar coordenadas. Otros muebles visibles se pueden inventariar, pero NO activar nuevas reservas ni ambientes F/G sin nueva decisión del operador. Conservar las anotaciones originales A/B y los IDs públicos estables. Recepción digital es una capacidad operativa de Core/Núcleo con trazabilidad y permisos, no un avatar, mostrador ni un mockup visual; puede delegar a staff excepciones y atención presencial. Corregir bootstrap, catálogo de recursos, permisos, UI, reservas y pruebas de aceptación para este esquema, preservando registros existentes mediante migración segura. No afirmar implementado hasta ejecutar y verificar cambios.
