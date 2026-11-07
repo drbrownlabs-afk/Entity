@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "original_office_api": "http://127.0.0.1:8010",
+  "legacy_core_health": "passed on8000, service preserved",
+  "container_restart_state_equal": true,
+  "event_log_equal": true,
+  "entity_count": 88,
+  "events": 3,
+  "world_sha256": "9065ddf8bd0571b38250ea9af31c28690a146288e82ec598d5e0b8a5998ab195",
+  "credentials_logged": false
+}

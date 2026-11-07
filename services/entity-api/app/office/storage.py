@@ -72,6 +72,10 @@ def world(db,site,run,branch='main',at=None):
         if item.get('observed_at'):
             age=(datetime.fromisoformat(clock)-datetime.fromisoformat(item['observed_at'])).total_seconds()
             item['freshness']='fresh' if 0<=age<=item.get('ttl_seconds',30) else 'stale'
+        for reading in item.get('environment',{}).values():
+            if isinstance(reading,dict) and reading.get('observed_at'):
+                reading_age=(datetime.fromisoformat(clock)-datetime.fromisoformat(reading['observed_at'])).total_seconds()
+                reading['freshness']='fresh' if 0<=reading_age<=120 else 'stale'
         if item.get('kind')=='Track' and item.get('person_id') and clock>item.get('association_until',''):
             item['last_associated_person_id']=item.pop('person_id')
             item['identity_status']='association_expired'

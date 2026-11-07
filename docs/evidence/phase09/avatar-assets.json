@@ -1,0 +1,96 @@
+{
+  "source": "Original Microsoft Rocketbox human GLBs, actual PlayCanvas animation/skinning; asset test only, not office spatial validation",
+  "checks": [
+    {
+      "id": "Female_Adult_01",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "bones": 240,
+      "animated_bones_changed": 231,
+      "mesh_instances": 3,
+      "finite_transforms": true
+    },
+    {
+      "id": "Female_Adult_02",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "bones": 240,
+      "animated_bones_changed": 231,
+      "mesh_instances": 3,
+      "finite_transforms": true
+    },
+    {
+      "id": "Female_Adult_03",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "bones": 240,
+      "animated_bones_changed": 228,
+      "mesh_instances": 3,
+      "finite_transforms": true
+    },
+    {
+      "id": "Male_Adult_01",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "bones": 240,
+      "animated_bones_changed": 228,
+      "mesh_instances": 3,
+      "finite_transforms": true
+    },
+    {
+      "id": "Male_Adult_02",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "bones": 240,
+      "animated_bones_changed": 231,
+      "mesh_instances": 3,
+      "finite_transforms": true
+    },
+    {
+      "id": "Male_Adult_03",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "bones": 240,
+      "animated_bones_changed": 237,
+      "mesh_instances": 3,
+      "finite_transforms": true
+    }
+  ],
+  "status": "passed"
+}

@@ -2,8 +2,9 @@ import {mountReception} from './reception.js';
 // Operational screens consume persistent Core APIs. No frontend business fixtures.
 const host=document.createElement('section');
 host.id='office-operations';
-host.innerHTML='<h2>Operaciones del coworking · ENTITY Core</h2><form id="office-login"><label>Servidor<input name="api" type="url" value="http://127.0.0.1:8000"></label><label>Usuario<input name="username" autocomplete="username"></label><label>Contraseña<input name="password" type="password" autocomplete="current-password"></label><button>Conectar</button></form><p id="office-core-status" role="status">Sin conexión al Core: no se inventarán reservas, permisos ni resultados.</p><div id="office-workspace" hidden><nav id="office-modes"></nav><label>Ejecución<select id="office-run"></select></label><button id="office-refresh">Actualizar</button><label>Reconstrucción histórica<input id="office-time" type="datetime-local"></label><button id="office-reconstruct">Consultar ese instante</button><button id="office-present">Presente</button><p id="office-world-status"></p><div class="office-columns"><div id="office-entities"></div><div><h3 id="office-selection">Entidad</h3><div id="office-facts"></div><div id="office-actions"></div></div></div><section id="office-query"></section></div>';
+host.innerHTML='<h2>Operaciones del coworking · ENTITY Core</h2><form id="office-login"><label>Servidor<input name="api" type="url" value="http://127.0.0.1:8010"></label><label>Usuario<input name="username" autocomplete="username"></label><label>Contraseña<input name="password" type="password" autocomplete="current-password"></label><button>Conectar</button></form><p id="office-core-status" role="status">Sin conexión al Core: no se inventarán reservas, permisos ni resultados.</p><div id="office-workspace" hidden><nav id="office-modes"></nav><label>Ejecución<select id="office-run"></select></label><button id="office-refresh">Actualizar</button><label>Reconstrucción histórica<input id="office-time" type="datetime-local"></label><button id="office-reconstruct">Consultar ese instante</button><button id="office-present">Presente</button><p id="office-world-status"></p><div class="office-columns"><div id="office-entities"></div><div><h3 id="office-selection">Entidad</h3><div id="office-facts"></div><div id="office-actions"></div></div></div><section id="office-query"></section></div>';
 document.querySelector('main').append(host);
+let selectedEventDetails=null;
 let token,site,run,world,capabilities=[],selected='site',mode='Operaciones',at=null,branch='main',streamController=null,receptionPanel=null;
 const status=message=>{host.querySelector('#office-core-status').textContent=message;};
 const esc=value=>String(value??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -23,7 +24,7 @@ const filters={Seguridad:['Camera','Stream','Track','AccessPoint','Alert'],Reser
 for(const name of Object.keys(filters)){const button=document.createElement('button');button.textContent=name;button.onclick=()=>{mode=name;window.dispatchEvent(new CustomEvent('office-mode-changed',{detail:name}));render();};host.querySelector('#office-modes').append(button);}
 function choose(id){selected=id;const entity=world.entities[id];if(entity?.annotation_index!==undefined)window.dispatchEvent(new CustomEvent('office-select-annotation',{detail:entity.annotation_index}));render();}
 window.addEventListener('office-select-entity',event=>{if(world?.entities[event.detail]){selected=event.detail;render();}});
-window.addEventListener('office-annotation-selected',event=>{if(!world)return;const entity=Object.values(world.entities).find(e=>e.kind==='Zone'&&e.annotation_index===event.detail);if(entity){selected=entity.id;render();}});
+window.addEventListener('office-annotation-selected',event=>{if(!world)return;if(world.entities[selected]?.kind!=='Zone'&&world.entities[selected]?.annotation_index===event.detail)return;const entity=Object.values(world.entities).find(e=>e.kind==='Zone'&&e.annotation_index===event.detail);if(entity){selected=entity.id;render();}});
 const labels={organization_id:'Organización',home_environment:'Ambiente',profile_level:'Perfil',name:'Nombre',kind:'Tipo',id:'ID',membership_status:'Membresía',presence:'Presencia',freshness:'Vigencia',zone_id:'Zona',observed_at:'Última observación',status:'Estado',capacity:'Capacidad',starts_at:'Inicio',ends_at:'Fin',host_id:'Anfitrión',person_id:'Persona',resource_id:'Recurso',assignee:'Asignación',description:'Descripción',resolution:'Resolución',identity_status:'Identidad',access:'Acceso',waiting_area:'Espera',provenance:'Procedencia',relations:'Relaciones',simulated:'Simulado'};
 const operationNames={'booking.create':'Crear reserva','booking.extend':'Extender reserva','booking.cancel':'Cancelar reserva','booking.reassign':'Reasignar reserva','booking.checkin':'Registrar llegada a reserva','booking.no_show':'Registrar no-show','access.checkAuthorization':'Comprobar autorización','access.requestEntry':'Solicitar acceso','visit.register':'Registrar visita provisional','visit.checkin':'Registrar visitante en espera','identity.associate':'Asociar identidad con evidencia','notification.send':'Notificar','meeting.start':'Iniciar reunión','meeting.end':'Finalizar reunión','task.create':'Crear tarea','task.assign':'Asignar tarea','task.resolve':'Resolver tarea','device.setPower':'Encender/apagar equipo','presence.checkout':'Registrar salida','equipment.fail':'Registrar avería','equipment.repair':'Registrar reparación','membership.set':'Actualizar membresía','camera.setStatus':'Conectar/desconectar cámara','zone.assumeOccupancy':'Suponer ocupación (solo what-if)','zone.close':'Cerrar zona','zone.open':'Abrir zona','intercom.reply':'Responder por intercom','intercom.timeout':'Registrar falta de respuesta','clock.advance':'Avanzar reloj simulado','entity.upsert':'Gestionar recurso','relation.add':'Añadir relación','account.create':'Crear cuenta'};
 function facts(item){return '<dl>'+Object.entries(item).map(([key,value])=>'<dt>'+esc(labels[key]||key)+'</dt><dd>'+esc(typeof value==='object'?JSON.stringify(value):value)+'</dd>').join('')+'</dl>';}
@@ -104,16 +105,40 @@ function render(){
   }catch(error){status(error.message);}
  };
  renderQuery();
+ renderTimeline();
 }
 function renderQuery(){
  const element=host.querySelector('#office-query');
- element.innerHTML='<h3>Consulta con evidencia</h3><form><select name="kind">'+Object.entries({graph:'Grafo de relaciones',entity:'Ficha de entidad',location:'Ubicación confirmada',agenda:'Agenda y reservas',events:'Historia de eventos',camera_observations:'Observaciones de una cámara',cameras_for_person:'Cámaras que observaron a la persona',causes:'Evidencias causales',impact:'Recursos y personas afectados',diff:'Cambios desde otro instante',metrics:'Métricas'}).map(([key,label])=>'<option value="'+key+'">'+label+'</option>').join('')+'</select><label>Entidad<input name="entity_id" value="'+esc(selected)+'"></label><label>Desde<input name="from" type="datetime-local"></label><label>Hasta<input name="to" type="datetime-local"></label><button>Consultar Core</button></form><div id="office-answer"></div>';
+ element.innerHTML='<h3>Consulta con evidencia</h3><form><label>Pregunta<input name="question" placeholder="Consulta del espacio seleccionado"></label><label><input name="natural" type="checkbox">Interpretar texto con LLM configurado</label><select name="kind">'+Object.entries({graph:'Grafo de relaciones',entity:'Ficha de entidad',location:'Ubicación confirmada',agenda:'Agenda y reservas',events:'Historia de eventos',camera_observations:'Observaciones de una cámara',cameras_for_person:'Cámaras que observaron a la persona',causes:'Evidencias causales',impact:'Recursos y personas afectados',diff:'Cambios desde otro instante',metrics:'Métricas'}).map(([key,label])=>'<option value="'+key+'">'+label+'</option>').join('')+'</select><label>Entidad<input name="entity_id" value="'+esc(selected)+'"></label><label>Desde<input name="from" type="datetime-local"></label><label>Hasta<input name="to" type="datetime-local"></label><button>Consultar Core</button></form><div id="office-answer"></div>';
  element.querySelector('form').onsubmit=async event=>{
   event.preventDefault();const form=element.querySelector('form');const body={kind:form.elements.kind.value,entity_id:form.elements.entity_id.value||null};body.branch=branch;if(at)body.at=at;
   for(const name of ['from','to'])if(form.elements[name].value)body[name]=new Date(form.elements[name].value).toISOString();
-  try{const result=await request(prefix()+'/queries',body);const answer=element.querySelector('#office-answer');answer.replaceChildren();const title=document.createElement('p');title.textContent='Core · '+result.as_of+' · '+result.evidence.length+' evidencias';answer.append(title);
+  try{const formQuestion=form.elements.question.value||('Consulta guiada: '+body.kind+' · '+body.entity_id);
+   const envelope={id:crypto.randomUUID(),question:formQuestion,...(!form.elements.natural.checked?{query:body}:{})};
+   const trace=await request(prefix()+'/agent/requests',envelope);
+   if(trace.status!=='verified')throw Error('IA/Core: '+trace.status+' '+JSON.stringify(trace.error||{}));
+   const result=trace.result;const answer=element.querySelector('#office-answer');answer.replaceChildren();const title=document.createElement('p');title.textContent='Core · '+trace.provider+' · '+result.as_of+' · '+result.evidence.length+' evidencias';answer.append(title);
    const data=document.createElement('pre');data.textContent=JSON.stringify(result.result,null,2);answer.append(data);
   }catch(error){status(error.message);}
  };
 }
 window.officeCoreDiagnostics=()=>({connected:!!token,site,run,world,selected,mode,branch});
+
+
+async function renderTimeline(){
+ let element=host.querySelector('#office-timeline');
+ if(!element){element=document.createElement('section');element.id='office-timeline';host.querySelector('#office-workspace').append(element);}
+ element.hidden=mode!=='Memoria';if(element.hidden)return;
+ try{
+  const records=await request(prefix()+'/events?limit=1000&branch='+encodeURIComponent(branch));
+  element.innerHTML='<h3>Memoria persistente · eventos inmutables</h3><label>Recorrer eventos<input id="office-scrub" type="range" min="0" max="'+Math.max(0,records.length-1)+'" value="'+Math.max(0,records.length-1)+'"></label><p>Reconstrucción del Core. No se ofrece vídeo grabado; la imagen de fondo es el escaneo original.</p><div id="office-event-list"></div><div id="office-event-detail"></div>';
+  if(selectedEventDetails)element.querySelector('#office-event-detail').textContent=JSON.stringify(selectedEventDetails,null,2);
+  const list=element.querySelector('#office-event-list');
+  for(const event of records){
+   const button=document.createElement('button');button.textContent=event.at+' · '+event.type;button.dataset.event=event.id;
+   button.onclick=async()=>{try{const detail=await request(prefix()+'/events/'+event.id);selectedEventDetails=detail;at=event.at;await refresh();}catch(e){status(e.message);}};
+   list.append(button);
+  }
+  element.querySelector('#office-scrub').onchange=async event=>{const entry=records[Number(event.target.value)];if(entry){at=entry.at;await refresh();}};
+ }catch(error){status(error.message);}
+}

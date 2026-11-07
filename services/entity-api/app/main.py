@@ -309,3 +309,6 @@ async def office_legacy_boundary(request, call_next):
         except HTTPException as error:return JSONResponse(status_code=error.status_code,content={"detail":error.detail})
         except sqlite3.Error:return JSONResponse(status_code=503,content={"detail":"Database not ready"})
     return await call_next(request)
+
+from app.office.agent import router as office_agent_router
+app.include_router(office_agent_router)

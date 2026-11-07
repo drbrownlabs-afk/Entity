@@ -1,0 +1,99 @@
+{
+  "source": "https://github.com/microsoft/Microsoft-Rocketbox",
+  "source_commit": "0943055db6ec570bcef9f2c8b41c9e5467c808f9",
+  "license": "MIT; Copyright2020Microsoft",
+  "preparation": "Blender4.3.2 FBX to GLB, original rig-compatible Rocketbox motion takes,512px textures; no building or collision editing",
+  "assets": [
+    {
+      "id": "Female_Adult_01",
+      "file": "Female_Adult_01.glb",
+      "bytes": 2417284,
+      "sha256": "29e20effaf6283bce3c2a37b3fd6a710e18ea2ba87e83cfd3330268497a9c638",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "source": "Assets/Avatars/Adults/Female_Adult_01/Export/Female_Adult_01.fbx"
+    },
+    {
+      "id": "Female_Adult_02",
+      "file": "Female_Adult_02.glb",
+      "bytes": 2290564,
+      "sha256": "8ee9670052fd938d894b2adec9258c49efed09e5f87a057f78b4bfda983475cc",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "source": "Assets/Avatars/Adults/Female_Adult_02/Export/Female_Adult_02.fbx"
+    },
+    {
+      "id": "Female_Adult_03",
+      "file": "Female_Adult_03.glb",
+      "bytes": 2595192,
+      "sha256": "995d0819475c8cf1d74fe8fef684e8e685b0030743e7aeb284a3f83cbdac8fd6",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "source": "Assets/Avatars/Adults/Female_Adult_03/Export/Female_Adult_03.fbx"
+    },
+    {
+      "id": "Male_Adult_01",
+      "file": "Male_Adult_01.glb",
+      "bytes": 2329672,
+      "sha256": "e9a97b15223673d1d5eccb8c17e50d43132b8a737cc29fca9da473bcf84be3d4",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "source": "Assets/Avatars/Adults/Male_Adult_01/Export/Male_Adult_01.fbx"
+    },
+    {
+      "id": "Male_Adult_02",
+      "file": "Male_Adult_02.glb",
+      "bytes": 2327476,
+      "sha256": "37f04f2d62068cbc663ecc4b90473a30bc47db5b3905b474d0a3995a1e74fcb8",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "source": "Assets/Avatars/Adults/Male_Adult_02/Export/Male_Adult_02.fbx"
+    },
+    {
+      "id": "Male_Adult_03",
+      "file": "Male_Adult_03.glb",
+      "bytes": 2179660,
+      "sha256": "864e7becc9c9d33f81e4f960f862c83766823853faac37b715ab50be321f8dda",
+      "clips": [
+        "idle",
+        "seated",
+        "conversation",
+        "walk",
+        "sit-down",
+        "stand-up"
+      ],
+      "source": "Assets/Avatars/Adults/Male_Adult_03/Export/Male_Adult_03.fbx"
+    }
+  ],
+  "spatial_placement_validated": false
+}

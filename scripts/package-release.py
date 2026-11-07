@@ -24,7 +24,7 @@ with source.open('wb') as raw, gzip.GzipFile(filename='', mode='wb', fileobj=raw
     compressed.write(git('archive', '--format=tar', '--prefix=Entity/', sha))
 static = output / 'entity-experience.zip'
 with zipfile.ZipFile(static, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
-    files = [*[dist / name for name in ['index.html','office.html','personal.html','kiosk.html'] if (dist / name).exists()], *sorted((dist / 'assets').glob('*'))]
+    files = [*[dist / name for name in ['index.html','office.html','personal.html','kiosk.html'] if (dist / name).exists()], *sorted((dist / 'assets').glob('*')), *[p for p in sorted((dist / 'avatars').rglob('*')) if p.is_file()]]
     for file in files:
         if not file.is_file():
             raise SystemExit('Unexpected static asset directory')

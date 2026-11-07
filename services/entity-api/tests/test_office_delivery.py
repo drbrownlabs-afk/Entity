@@ -135,3 +135,16 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(before,self.state())
         r=self.client.post(self.root+'/scenarios/occupancy-what-if/apply',headers=self.headers,json={'id':str(uuid4())})
         self.assertEqual(r.status_code,403,r.text);self.assertEqual(before,self.state())
+
+    def test_remote_reply_does_not_establish_physical_presence(self):
+        self.setup_reception();self.check_in()
+        self.advance('2026-11-07T15:51:00-05:00')
+        host=self.auth('carlos-host')
+        message=self.client.get('/v1/office/app/inbox',headers=host).json()[0]
+        result=self.client.post('/v1/office/app/inbox/'+message['id']+'/reply',headers=host,json={'response':'five_minutes'})
+        self.assertEqual(result.status_code,200,result.text);self.assertEqual(result.json()['status'],'waiting')
+        self.assertEqual(self.state()['entities']['PERSON-CARLOS']['freshness'],'stale')
+        result=self.client.post('/v1/office/app/inbox/'+message['id']+'/reply',headers=host,json={'response':'ready'})
+        self.assertEqual(result.status_code,200,result.text)
+        self.assertEqual(self.state()['entities']['PERSON-CARLOS']['freshness'],'stale')
+        self.assertEqual(self.state()['entities'][self.conversation]['status'],'host_ready')

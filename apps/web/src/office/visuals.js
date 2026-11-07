@@ -1,4 +1,5 @@
 import * as pc from 'playcanvas';
+import {createAvatar} from './avatars.js';
 
 // Cameras and avatars belong to the official viewer's existing PlayCanvas application.
 // No second scene, simulation clock, renderer or invented furniture is introduced here.
@@ -18,11 +19,11 @@ export function installVisuals(viewer,original){
   const count=innerWidth<650?2:4;
   cameras.forEach((entity,index)=>{
    const id='CAM-'+String(index+1).padStart(2,'0'),state=world?.entities[id];
-   entity.enabled=security&&index<count&&state?.connectivity!=='disconnected';
+   entity.enabled=security&&index<count&&(!world||!!state)&&state?.connectivity!=='disconnected';
    const column=index%2,row=Math.floor(index/2);
    entity.camera.rect=new pc.Vec4(.56+column*.21,.53-row*.24,.20,.22);
    const button=panel.querySelector('[data-camera="'+index+'"]');
-   button.hidden=index>=count;button.classList.toggle('selected',selectedCamera===index);
+   button.hidden=index>=count||(!!world&&!state);button.classList.toggle('selected',selectedCamera===index);
    button.title=state?.connectivity==='disconnected'?'Desconectada: sin nueva observación':'Vista virtual del mismo mundo; cobertura física no certificada';
    button.style.left=(56+column*21)+'%';button.style.bottom=(53-row*24)+'%';
   });app.renderNextFrame=true;
@@ -52,14 +53,11 @@ export function installVisuals(viewer,original){
  window.addEventListener('resize',layout);
  async function loadAvatar(personId,url){
   if(avatars.has(personId))return avatars.get(personId);
-  const asset=await new Promise((resolve,reject)=>app.assets.loadFromUrl(url,'container',(error,value)=>error?reject(error):resolve(value)));
-  const entity=asset.resource.instantiateRenderEntity();entity.name=personId;entity.enabled=false;
-  entity.addComponent('anim',{activate:true});
-  for(const animation of asset.resource.animations)entity.anim.assignAnimation(animation.name,animation.resource);
+  const {entity}=await createAvatar(app,url);entity.name=personId;entity.enabled=false;
   app.root.addChild(entity);avatars.set(personId,entity);
   if(world)receive(world);return entity;
  }
  // Opt-in loader; no avatar is spawned without a verified pose from Core.
  window.officeLoadAvatar=loadAvatar;
- window.officeVisualDiagnostics=()=>({cameraViews:cameras.length,activeCameras:cameras.filter(c=>c.enabled).length,worldClock:world?.clock||null,avatarsLoaded:avatars.size,avatarsPlaced:[...avatars.values()].filter(e=>e.enabled).map(e=>e.name),singleApplication:cameras.every(c=>c.parent===app.root),source:'original SSOG and same Core world'});
+ window.officeVisualDiagnostics=()=>({cameraViews:cameras.length,activeCameras:cameras.filter(c=>c.enabled).length,worldClock:world?.clock||null,avatarsLoaded:avatars.size,avatarsPlaced:[...avatars.values()].filter(e=>e.enabled).map(e=>e.name),singleApplication:cameras.every(c=>c.parent===app.root),source:world?'original SSOG and authorized Core projection':'original SSOG authored viewpoints; Core disconnected'});
 }

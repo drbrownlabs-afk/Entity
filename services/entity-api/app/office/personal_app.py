@@ -74,17 +74,17 @@ def reply(message_id:str,body:Reply,actor=Depends(principal)):
         row=db.execute("SELECT * FROM office_personal_messages WHERE id=? AND site=? AND recipient=?",
                        (message_id,actor["site"],actor["actor"])).fetchone()
         if row is None: raise HTTPException(404,"Message not found")
-        if row["status"]!="pending": raise HTTPException(409,"Already answered")
+        if row["status"] not in ["pending","waiting"]: raise HTTPException(409,"Already answered")
         link=db.execute("SELECT * FROM office_personal_links WHERE message_id=? AND site=?",(message_id,actor["site"])).fetchone()
         if link:
             from .service import command
             from .storage import identity,get_run
-            response=command(db,actor["site"],link["run"],actor,{"id":identity("personal-reply",message_id),"operation":"intercom.reply","target":link["terminal"],
+            response=command(db,actor["site"],link["run"],{**actor,"channel":"personal-web"},{"id":identity("personal-reply",message_id,body.response),"operation":"intercom.reply","target":link["terminal"],
                 "inputs":{"conversation_id":link["conversation"],"response":"wait" if body.response=="five_minutes" else "ready","minutes":5}})
             if response["status"]!="verified":raise HTTPException(503,"Communication was not verified")
             when=get_run(db,actor["site"],link["run"])["clock"]
         else:when=timestamp()
-        db.execute("""UPDATE office_personal_messages SET status='answered',
-                      response=?,responded_at=? WHERE id=?""",(body.response,when,message_id))
-        return {"id":message_id,"status":"answered","response":body.response,
+        db.execute("""UPDATE office_personal_messages SET status=?,
+                      response=?,responded_at=? WHERE id=?""",("waiting" if body.response=="five_minutes" and link else "answered",body.response,when,message_id))
+        return {"id":message_id,"status":"waiting" if body.response=="five_minutes" and link else "answered","response":body.response,
                 "responded_at":when,"visitor":row["visitor"]}

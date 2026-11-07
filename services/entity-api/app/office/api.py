@@ -260,3 +260,17 @@ def provision_invitation_credential(site:str,run:str,body:InvitationCredential,a
         issue_credential(db,site,body.invitation_id,body.person_id,body.code,expires)
         event=emit(db,site,run,'main',state['clock'],'invitation.credential_issued',actor['actor'],{}, {'invitation_id':body.invitation_id,'person_id':body.person_id,'expires_at':expires,'simulated':True})
         return {'issued':True,'event_id':event['id'],'simulated':True}
+
+
+@router.get('/sites/{site}/runs/{run}/events/{event_id}')
+def event_detail(site:str,run:str,event_id:UUID,actor=Depends(principal)):
+    from app.main import database
+    scoped(site,actor,'read')
+    with database() as db:
+        row=db.execute('SELECT * FROM office_events WHERE site=? AND run=? AND id=?',(site,run,str(event_id))).fetchone()
+        if not row:raise HTTPException(404,'Event not found')
+        visible=projection(world(db,site,run,row['branch']),actor)['entities']
+        keys=[key for key in json.loads(row['entities']) if key in visible]
+        if not unrestricted(actor) and not keys:raise HTTPException(403,'Event outside assigned resource scope')
+        if not unrestricted(actor):return {'id':row['id'],'seq':row['seq'],'type':row['type'],'at':row['at'],'entities':keys,'immutable':True}
+        return {**dict(row),'entities':keys,'payload':json.loads(row['payload']),'evidence':json.loads(row['evidence']),'immutable':True}

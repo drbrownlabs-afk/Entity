@@ -11,8 +11,8 @@ El acceso HTTP del ejecutor obtuvo403; el operador confirma la escena disponible
 | 09.4 | VERIFICADA AUTOMÁTICAMENTE | Disponibilidad/ocupación independientes, concurrencia, no-show, conflicto/reasignación y eventos;64tests | Lote de jornada | Integración visual completa en09.9 pendiente |
 | 09.5 | VERIFICADA AUTOMÁTICAMENTE | HVACD afecta soloD, ticket/personas/reservas, reparación y sensor;64tests | Lote de jornada | Fuentes sintéticas; hardware no probado |
 | 09.6 | PENDIENTE | — | — | Implementar y ejecutar gate 09.6 |
-| 09.7 | PENDIENTE | — | — | Implementar y ejecutar gate 09.7 |
-| 09.8 | PENDIENTE | — | — | Implementar y ejecutar gate 09.8 |
+| 09.7 | VERIFICADA AUTOMÁTICAMENTE | Core query/evidencia/TTL/permisos/acciones/trazas, SDKOpenAI con transporte controlado ytimeout;67tests | Lote de agente | Proveedor remoto real no probado sin clave |
+| 09.8 | VERIFICADA AUTOMÁTICAMENTE | Cierre/HVAC/sobreocupación aislados, comparación y aplicación revalidada;67tests | Lote de escenarios | Efectos visuales completos dependen de09.2/09.9 |
 | 09.9 | PENDIENTE | — | — | Implementar y ejecutar gate 09.9 |
 
 ## Regla de registro
@@ -85,3 +85,13 @@ Código en rama `codex/phase-09-autonomous-plan`:
 - Inventario/reservas/confort operan sinrenderer. CAM05/06/RECEPTION del guion son fuentes sintéticas SIN pose física calibrada; no son prueba deCCTVproyectado.
 - Survey original acotado produjo authored-middle/rear/rear-hall yprofundidades medidas. Faltan semánticaC/D/E/recepción/rutas.09.1 no verificada.
 - Cambios posteriores deinterfaz/activos yCI se verifican antes decierre; verhandoff. Vite no es dependencia.
+
+
+## Ampliación verificada —67tests yCoreDocker (Codex,2026-11-07)
+67unittestPASS53.544s,6assetsRocketbox cargados enPlayCanvas con6clips cadauno, huesos animados cambian ymatrices finitas (avatar-assets.json). PreparaciónBlender deassets humanos originalesMIT; ningúnedificio/voxel reconstruido. Aún no colocados en09.2 por falta derutas/anclas completas; no confundir QA deanimación condemoespacial.
+
+OfficeDocker construido ysaludable en8010, Coreanterior8000conservado. Reiniciocontenedor mantiene88entidades/3eventos exactos enprueba inicial (docker-office.json). CoreHTTP/kiosk/personal conreinicio/backup yaPASS. CI falló encheckout limpio porcarpeta de log ausente, diagnosticado conAPIautorizada deActions; corregido d3b28f7. CI42404091061 yPR42404097987Success.
+
+CCTV ahora usa4cámaras enuna solaappPlayCanvas (2activas en390px), SSOGoriginal yningúnrenderer paralelo; evidencia a98b717/f59651e. SinCore conectado son vistas autorales públicas, no observaciones reales. Una proyecciónCore conectada solo habilita cámaras autorizadas. Rutas nativas/voxels recorrieronpasillo hasta zonadebooths; ydelcámara estable, pero no se certifican todasparedes/mobiliario.
+
+Recepción remota distingue respuesta deapp autenticada vs personaje sintético; responder no confirma presencia física. Espera→listo actualiza inbox/Conversation/Visit enmismomundo. PushHTTPS/Android/micrófono reales aúnnoejecutados. Espera ydescanso reciben anotacionesSuperSplat deprofundidad medida yrevisiónvisual; C/D/E/recepción aúnpendientes decalibración completa.

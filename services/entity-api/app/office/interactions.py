@@ -85,7 +85,7 @@ def plan(db,site,run,actor,items,clock,op,target,data,cid,get,add):
         host=get(conversation['host_id']);meeting=get(conversation['meeting_id'])
         if op=='intercom.reply':
             if actor.get('person')!=host['id']:raise HTTPException(403,'Only the addressed host may respond')
-            if host.get('freshness')!='fresh' or host.get('presence')!='confirmed' or host.get('zone_id')!=terminal.get('zone_id'):raise HTTPException(409,'Host presence at terminal not confirmed')
+            if actor.get('channel')!='personal-web' and (host.get('freshness')!='fresh' or host.get('presence')!='confirmed' or host.get('zone_id')!=terminal.get('zone_id')):raise HTTPException(409,'Host presence at terminal not confirmed')
             if meeting['status']=='cancelled' or clock>=meeting['ends_at']:raise HTTPException(409,'Meeting no longer available')
             answer=data['response']
             if answer=='ready':
@@ -96,12 +96,20 @@ def plan(db,site,run,actor,items,clock,op,target,data,cid,get,add):
                 message(conversation,host.get('name','El anfitrión')+' solicita '+str(data.get('minutes',5))+' minutos. Puedes esperar aquí.',status='waiting_host',retry_at=retry)
                 change(conversation['visit_id'],status='waiting',access='waiting_only')
             else:message(conversation,'El anfitrión indicó que no está disponible. Cowork te ayudará.',status='staff_fallback')
-            details['host_response']={'response':answer,'person_id':host['id'],'at':clock,'simulated':True}
+            details['host_response']={'response':answer,'person_id':host['id'],'at':clock,
+                'response_origin':'authenticated-personal-client' if actor.get('channel')=='personal-web' else 'synthetic-character' if actor['actor'].startswith('synthetic-character:') else 'authenticated-intercom-client',
+                'physical_presence_inferred_from_reply':False,'world_is_simulated':True}
         elif op=='intercom.timeout':
             if datetime.fromisoformat(clock)-datetime.fromisoformat(conversation['contacted_at'])<timedelta(seconds=60):raise HTTPException(409,'Response window has not elapsed')
             message(conversation,'Sin respuesta confirmada del anfitrión. Cowork recibirá la solicitud.',status='staff_fallback')
         if changes[conversation['id']]['status']=='staff_fallback':
             task=add('task-'+cid,'Task',{'description':'Atender visita sin respuesta disponible del anfitrión','organization_id':'ORG-COWORK','conversation_id':conversation['id'],'status':'open'});changes[task['id']]=task
+        from .personal_app import setup as setup_personal
+        setup_personal(db)
+        response_status=changes[conversation['id']]['status']
+        db.execute("UPDATE office_personal_messages SET status=?,response=?,responded_at=? WHERE id IN(SELECT message_id FROM office_personal_links WHERE site=? AND run=? AND conversation=?)",
+            ('answered' if response_status=='host_ready' else 'waiting' if response_status=='waiting_host' else 'expired',
+             'ready' if response_status=='host_ready' else 'five_minutes' if response_status=='waiting_host' else None,clock,site,run,conversation['id']))
         details['reply']={**changes[conversation['id']],'id':conversation['id']}
         evidence=[conversation['id'],meeting['id']]
     return changes,details,evidence
