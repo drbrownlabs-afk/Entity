@@ -52,3 +52,9 @@ Próxima acción: revisión humana de Fase 04. No iniciar Fase 05 sin autorizaci
 
 ## Publicación y CI observado
 Implementación: https://github.com/drbrownlabs-afk/Entity/commit/520475fbfee95abc5440bea2a2edc627ffe8f573, rama codex/phase-04-output. CI remoto nuevo ejecutado por push y verificado Success: https://github.com/drbrownlabs-afk/Entity/actions/runs/42325368629 (51 s, ambos jobs). Se corrige adicionalmente upload-artifact a v6 tras warning real del primer run. Detalles del diagnóstico de API, PR #1 y conclusión final en GITHUB-ACTIONS-RECOVERY.md y bitácora. No se ha fusionado PR #1 ni se duplica su trabajo.
+
+
+## Cierre de validación remota
+CI final Success sin anotaciones: https://github.com/drbrownlabs-afk/Entity/actions/runs/42325648659 (b715116da5a7645896aa011367aa448bad7123b6). Ambos jobs, con Output/Edge/Core, ejecutados. Se conserva evidencia JSON en docs/evidence/phase04-ci.json. Publicación verificada por fetch Git independiente y árbol idéntico; main 5ce2519 y commits de fases previas son ancestros. Cierre posterior solo documental, sin modificar código/workflow validado.
+
+Backup anterior comparado fila a fila después de migrar: 12 entidades, 6 estados, 6 relaciones, 24 eventos, 4 memorias y 4 capacidades conservados; tablas de integración previas vacías conservadas. integrity_check=ok y foreign_key_check vacío, esquema 4. La API gh sigue restringida en el runtime, aunque el workflow remoto está verificado y operativo. No se ha fusionado a main ni iniciado Fase 05.

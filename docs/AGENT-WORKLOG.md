@@ -134,3 +134,10 @@ Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin
 - Se corrige suposición inicial upload-artifact@v5 Node24: warning remoto demuestra Node20; action.yml v6 consultado y confirma node24, se actualiza a v6. Resultado final se comprueba tras nuevo push. Runners fijados y checkout/setup-python ya sin warnings anteriores.
 - Docs compartidas/master/decision-log/tablero actualizados. Fase 04 EN VALIDACIÓN; revisión Fase 03 autoriza este trabajo, sin declarar hardware probado ni Fase 05 iniciada.
 - API: api.github.com denegado por proxy CONNECT 403 sin llegar a GitHub; ampliación guardada en borrador no aplicada. No se afirma token inválido/scopes conocidos. Método web autorizado permite leer PR y runs; CI remoto operativo. PR #1 Draft permanece sin duplicar/merge.
+
+
+### 2026-11-07 UTC — cierre Fase 04 y CI verificado
+- Código 520475f y corrección de CI/documentación b715116 publicados. Último CI observado https://github.com/drbrownlabs-afk/Entity/actions/runs/42325648659 Status Success, SHA completo b715116da5a7645896aa011367aa448bad7123b6, sin anotaciones de warnings; dos jobs completos. Evidencia JSON versionada. Cierre posterior solo docs, sin nuevo cambio que requiera repetir tests.
+- Comparación del volumen con backup previo: 12 entidades, 6 estados, 6 relaciones, 24 eventos, 4 memorias y 4 capacidades anteriores idénticos; tablas vacías de integración intactas. SQLite integrity_check=ok, foreign_key_check vacío y esquema 4.
+- GitHub comprobado por fetch independiente: árbol completo coincide; fases anteriores y main 5ce2519 preservados como ancestros. PR #1 Draft se mantiene sin duplicado/merge. REST POST de PR Fase 04 también falla Forbidden; API bloqueada por proxy CONNECT, no diagnóstico de scopes inválidos. Settings públicos 404 por sesión anónima.
+- Cambio de red api.github.com y start_skill esquema 4 guardados en borrador, sin afirmar aplicación/publicación de runtime. CI sí operativo y verificado mediante push+web. Nada de hardware validado, Fase 04 EN VALIDACIÓN; Fase 05 NO INICIADA. Próximo paso revisión humana.

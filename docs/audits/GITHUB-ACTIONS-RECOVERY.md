@@ -28,3 +28,9 @@ Se usa push autorizado a codex/phase-04-output para disparar CI y la página Act
 Push de implementación 520475fbfee95abc5440bea2a2edc627ffe8f573 disparó https://github.com/drbrownlabs-afk/Entity/actions/runs/42325368629 — Status Success, 51 s; api-tests 30 s, edge-tests 47 s. Commit completo confirmado por enlace de la página. Incluye demo Output además de detector/vídeo, tests y Docker. No se infiere verde por ausencia de runs.
 
 Esa ejecución mostró que upload-artifact@v5 aún emitía warning Node20 (la suposición inicial de que v5 lo resolvería no era correcta). Se consultó action.yml oficial de v6: using node24, tag b7c566a772e6b6bfb58ed0dc250532a479d7789f. Corregido workflow a v6; resultado del siguiente run se registra en bitácora. Añadidos reporte/salida HTML de Output a artefactos sin credenciales.
+
+
+## Conclusión final observada
+Último workflow corregido: https://github.com/drbrownlabs-afk/Entity/actions/runs/42325648659 — Status Success, commit completo b715116da5a7645896aa011367aa448bad7123b6; sin sección de anotaciones/warnings en la página final. Observación guardada en docs/evidence/phase04-ci.json. Los dos jobs (API y Edge, con demo Output) completaron el run. No se repitieron tests por el cierre exclusivamente documental posterior.
+
+Settings administrativos de Actions por sesión web pública devuelven 404; no se alteraron configuraciones internas ni se presumieron scopes. POST REST /repos/drbrownlabs-afk/Entity/pulls para Fase 04 también devuelve Forbidden por ruta API. PR #1 existente se conserva Draft y no se duplica; rama Fase 04 publicada, sin nuevo PR ni merge. Acceso API de gh sigue pendiente de aplicar el dominio guardado en ajustes del entorno; ejecutar/observar CI ya funciona mediante push y web autorizados. No requiere que el operador ejecute comandos Git/CI.

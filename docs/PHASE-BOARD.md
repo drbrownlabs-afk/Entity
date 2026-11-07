@@ -7,7 +7,7 @@
 | 01 | ENTITY Core | EN VALIDACIÓN | Continuación autorizada por operador; Core local, migraciones, memoria y capacidades declaradas; 15/15 tests y reinicios aprobados. Publicado 001d2f8 en codex/phase-01-core; CI remoto Success comprobado por web; API limitada por proxy. Ver docs/phases/PHASE-01.md; revisión humana pendiente |
 | 02 | Contratos y conectores | APROBADA | Aceptación explícita del operador al iniciar Fase 03. Registry, REST/simulación, permisos, auditoría e idempotencia; 19 pruebas aprobadas. Ver docs/phases/PHASE-02.md; aceptada por operador |
 | 03 | ENTITY Edge y percepción | EN VALIDACIÓN | OpenCV/Norfair, vídeo y fixture, zonas, Core, outbox y recuperación HTTP probados. 20 tests Core + 4 Edge. Orbbec diferida no bloqueante; PR #1 Draft y CI Success comprobados. Revisión del operador habilita Fase 04. Ver docs/phases/PHASE-03.md |
-| 04 | ENTITY Output virtual primero | EN VALIDACIÓN | Presencia→regla→capacidad declarada→escena verificada; manual/fallo/timeout probados. 23 Core + 4 Edge tests. Ver docs/phases/PHASE-04.md |
+| 04 | ENTITY Output virtual primero | EN VALIDACIÓN | Presencia→regla→capacidad declarada→escena verificada; manual/fallo/timeout probados. 23 Core + 4 Edge tests; CI remoto Success run 42325648659. Ver docs/phases/PHASE-04.md |
 | 05 | IA situada | NO INICIADA | Herramientas y acciones pendientes |
 | 06 | Sistemas externos | NO INICIADA | RTSP/ONVIF, MQTT, reservas pendientes |
 | 07 | ENTITY Experience | NO INICIADA | Demo centro comercial aún sin verificación |
