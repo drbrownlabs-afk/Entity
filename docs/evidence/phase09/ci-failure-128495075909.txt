@@ -1,0 +1,103 @@
+Actual authorized job log excerpt.
+https://github.com/drbrownlabs-afk/Entity/actions/runs/42403148372/job/128495075909
+
+2026-11-07T18:49:39.4682622Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.2 MiB
+2026-11-07T18:49:39.4703122Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.2 MiB
+2026-11-07T18:49:39.4723480Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.2 MiB
+2026-11-07T18:49:39.5323019Z FFmpeg (playwright ffmpeg v1013) downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1013
+2026-11-07T18:49:39.5327232Z Downloading Chrome Headless Shell 158.0.8127.18 (playwright chromium-headless-shell v1254) from https://cdn.playwright.dev/builds/cft/158.0.8127.18/linux64/chrome-headless-shell-linux64.zip
+2026-11-07T18:49:39.9162799Z |                                                                                |   0% of 125.9 MiB
+2026-11-07T18:49:40.0173109Z |■■■■■■■■                                                                        |  10% of 125.9 MiB
+2026-11-07T18:49:40.0885760Z |■■■■■■■■■■■■■■■■                                                                |  20% of 125.9 MiB
+2026-11-07T18:49:40.1632839Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 125.9 MiB
+2026-11-07T18:49:40.2182377Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 125.9 MiB
+2026-11-07T18:49:40.2643143Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 125.9 MiB
+2026-11-07T18:49:40.3221066Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 125.9 MiB
+2026-11-07T18:49:40.3637205Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 125.9 MiB
+2026-11-07T18:49:40.4202910Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 125.9 MiB
+2026-11-07T18:49:40.4598145Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 125.9 MiB
+2026-11-07T18:49:40.4979821Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 125.9 MiB
+2026-11-07T18:49:42.7276808Z Chrome Headless Shell 158.0.8127.18 (playwright chromium-headless-shell v1254) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1254
+2026-11-07T18:49:42.7639951Z ##[group]Run npm run test:browser
+2026-11-07T18:49:42.7640272Z npm run test:browser
+2026-11-07T18:49:42.7663352Z shell: /usr/bin/bash -e {0}
+2026-11-07T18:49:42.7663606Z env:
+2026-11-07T18:49:42.7663878Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:49:42.7664326Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-07T18:49:42.7664758Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:49:42.7665201Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:49:42.7665576Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:49:42.7665989Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-07T18:49:42.7666308Z ##[endgroup]
+2026-11-07T18:49:42.8725081Z 
+2026-11-07T18:49:42.8725507Z > entity-experience@0.7.0 test:browser
+2026-11-07T18:49:42.8725921Z > playwright test
+2026-11-07T18:49:42.8726086Z 
+2026-11-07T18:49:45.0646315Z 
+2026-11-07T18:49:45.0646989Z Running 3 tests using 1 worker
+2026-11-07T18:50:05.1115828Z ···
+2026-11-07T18:50:05.1120116Z   3 passed (21.7s)
+2026-11-07T18:50:05.1391566Z ##[group]Run .venv/bin/python scripts/phase09/demo-reception-http.py
+2026-11-07T18:50:05.1393848Z .venv/bin/python scripts/phase09/demo-reception-http.py
+2026-11-07T18:50:05.1424437Z shell: /usr/bin/bash -e {0}
+2026-11-07T18:50:05.1424862Z env:
+2026-11-07T18:50:05.1425312Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:50:05.1426463Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-07T18:50:05.1427234Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:50:05.1427919Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:50:05.1428793Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:50:05.1429683Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-07T18:50:05.1430520Z ##[endgroup]
+2026-11-07T18:50:07.3433067Z Traceback (most recent call last):
+2026-11-07T18:50:07.3434195Z   File "/home/runner/work/Entity/Entity/scripts/phase09/demo-reception-http.py", line 16, in <module>
+2026-11-07T18:50:07.3434888Z     log=open(ROOT/'.runtime/phase09/http-demo.log','w')
+2026-11-07T18:50:07.3435300Z         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-11-07T18:50:07.3435980Z FileNotFoundError: [Errno 2] No such file or directory: '/home/runner/work/Entity/Entity/.runtime/phase09/http-demo.log'
+2026-11-07T18:50:07.3604652Z ##[error]Process completed with exit code 1.
+2026-11-07T18:50:07.3675887Z ##[group]Run actions/upload-artifact@v6
+2026-11-07T18:50:07.3676278Z with:
+2026-11-07T18:50:07.3676482Z   name: experience-evidence
+2026-11-07T18:50:07.3676741Z   include-hidden-files: true
+2026-11-07T18:50:07.3677115Z   path: .runtime/experience-*.png
+.runtime/experience-*.json
+apps/web/dist
+
+2026-11-07T18:50:07.3677507Z   if-no-files-found: warn
+2026-11-07T18:50:07.3677740Z   compression-level: 6
+2026-11-07T18:50:07.3677956Z   overwrite: false
+2026-11-07T18:50:07.3678159Z env:
+2026-11-07T18:50:07.3678415Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:50:07.3678848Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib/pkgconfig
+2026-11-07T18:50:07.3679270Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:50:07.3679656Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:50:07.3680037Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.16/x64
+2026-11-07T18:50:07.3680463Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.16/x64/lib
+2026-11-07T18:50:07.3680782Z ##[endgroup]
+2026-11-07T18:50:07.5347787Z Multiple search paths detected. Calculating the least common ancestor of all paths
+2026-11-07T18:50:07.5350400Z The least common ancestor is /home/runner/work/Entity/Entity. This will be the root directory of the artifact
+2026-11-07T18:50:07.5351584Z With the provided path, there will be 21 files uploaded
+2026-11-07T18:50:07.5356655Z Artifact name is valid!
+2026-11-07T18:50:07.5357499Z Root directory input is valid!
+2026-11-07T18:50:07.7275818Z Beginning upload of artifact content to blob storage
+2026-11-07T18:50:07.9211769Z Uploaded bytes 1180555
+2026-11-07T18:50:07.9317389Z Finished uploading artifact content to blob storage!
+2026-11-07T18:50:07.9318706Z SHA256 digest of uploaded artifact zip is 71c6e87718c21c2eefac131e66807e946ca2fe5c4fcbc1393b38fb00bf4f073f
+2026-11-07T18:50:07.9320442Z Finalizing artifact upload
+2026-11-07T18:50:08.3604881Z Artifact experience-evidence.zip successfully finalized. Artifact ID 13585623688
+2026-11-07T18:50:08.3607014Z Artifact experience-evidence has been successfully uploaded! Final size is 1180555 bytes. Artifact ID is 13585623688
+2026-11-07T18:50:08.3608905Z Artifact download URL: https://github.com/drbrownlabs-afk/Entity/actions/runs/42403148372/artifacts/13585623688
+2026-11-07T18:50:08.3824180Z Post job cleanup.
+2026-11-07T18:50:08.4714121Z [command]/usr/bin/git version
+2026-11-07T18:50:08.4762516Z git version 2.56.0
+2026-11-07T18:50:08.4833448Z Temporarily overriding HOME='/home/runner/work/_temp/e049fb30-38ee-4bf8-a352-6118f209c162' before making global git config changes
+2026-11-07T18:50:08.4835018Z Adding repository directory to the temporary git global config as a safe directory
+2026-11-07T18:50:08.4838421Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/Entity/Entity
+2026-11-07T18:50:08.4881660Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2026-11-07T18:50:08.4921124Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2026-11-07T18:50:08.5201739Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2026-11-07T18:50:08.5237833Z http.https://github.com/.extraheader
+2026-11-07T18:50:08.5251336Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2026-11-07T18:50:08.5289975Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2026-11-07T18:50:08.5574406Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+2026-11-07T18:50:08.5625437Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+2026-11-07T18:50:08.6056449Z Cleaning up orphan processes
