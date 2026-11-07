@@ -54,3 +54,13 @@ Recepción digital SÍ tiene punto físico: pantalla/kiosco en dos sillas negras
 
 ## Intercomunicación contextual — 2026-11-07
 Nuevo alcance: intercom ENTITY en recepción y ambientes A/B/C, conectado al mismo Núcleo y grafo. Caso de aceptación: visitante Daniel llega a reunión 16:00, ENTITY avisa a Carlos por intercom, recibe confirmación o demora, responde al visitante y registra eventos. Validar routing por relaciones, estado/presencia, privacidad y fallback. Implementación pendiente.
+
+
+## Implementación inicial de ENTITY App (2026-11-07)
+Se añadió una primera vertical funcional para la participación real de Carlos en Synthetic Office:
+- `apps/web/personal.html`: interfaz móvil con autenticación, bandeja de mensajes y respuestas «Estoy listo» / «En cinco minutos», más disparador de llegada para administrador.
+- `services/entity-api/app/office/personal_app.py`: API autenticada `/v1/office/app/me`, `/inbox`, `/inbox/{id}/reply` y `/sites/{site}/demo-arrival`. Persistencia SQLite por sitio y usuario, respuestas de un solo uso y control de permiso `simulate` para crear eventos de demostración.
+- `apps/web/vite.config.js`: entrada de build `personal.html`.
+- `services/entity-api/tests/test_personal_app.py`: prueba básica de persistencia/aislamiento.
+
+**Estado y límites:** código publicado, todavía sin ejecución de tests en este entorno ni despliegue. La bandeja se actualiza manualmente o al volver a la pestaña; NO hay todavía Web Push, service worker, suscripción real del teléfono, sesión persistida, disparador automático desde la llegada del avatar ni escritura de respuesta al estado compartido de la simulación. No presentar el prototipo como una notificación Android operativa. Próximo paso de Codex: enlazar evento de llegada y reunión del grafo a notificación dirigida al anfitrión, respuesta a comando/evento del Núcleo, push HTTPS opt-in y pruebas E2E en móvil. No detener el resto de Fase 09 por este incremento.
