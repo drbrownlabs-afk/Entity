@@ -52,3 +52,16 @@ No afirmar que las cámaras están calibradas ni que ReID/contextual están impl
 
 ## Instrucción de coordinación ChatGPT/Codex
 Leer este documento al cerrar Fase 09 y planificar la fase siguiente con gates medibles; no ejecutar antes de su cierre. Registrar cada cambio, commit, pruebas y pendientes en docs/CHATGPT-CODEX-HANDOFF.md. Este documento captura las decisiones conceptuales de la conversación y no acredita código entregado.
+
+## Extensión acordada — cámaras móviles registradas en el gemelo (2026-11-07)
+Caso: guardia de seguridad utiliza ENTITY Mobile y su cámara de teléfono para aportar cobertura temporal en zonas sin CCTV fijo. Las cámaras existentes de un edificio se registran al gemelo sin sustituirlas; las cámaras móviles comparten el mismo marco geométrico, pero su pose cambia con cada instante.
+
+**Arquitectura:** entidad MobileCamera/Device, operador y sesión autorizada; pose T_world_phone(t), orientación, intrínsecos, timestamp, precisión/covarianza, tracking_state, coverage/frustum, stream opcional, evidencia/procedencia. Registrar cada observación en el Núcleo y asociarla al estado compartido sin crear otro mundo. Diferenciar cobertura geométrica estimada de observación efectiva y de presencia confirmada. Video/embeddings solo bajo permisos, política de retención y consentimiento/base jurídica pertinente.
+
+**Registro inicial:** localizar contra AprilTags con pose global conocida o contra mapa visual/SfM derivado de reconstrucción (COLMAP, correspondencias). ARCore/ARKit/VIO/SLAM ofrecen seguimiento local, pero sus coordenadas no coinciden automáticamente con el gemelo: resolver y verificar T_world_ARsession. No asumir que ARCore Geospatial VPS funciona en interiores privados. Se puede probar ARCore Cloud Anchors o ARKit ARWorldMap, con evaluación de conectividad, persistencia, soporte de dispositivo y privacidad.
+
+**Seguimiento continuo:** teléfono estima pose con VIO; ENTITY transforma poses al marco del edificio, evalúa error y deriva, relocaliza periódicamente con anclas/mapa, detecta tracking perdido y degrada explícitamente la certeza. Sin profundidad, los píxeles son rayos, no puntos 3D; usar superficies conocidas, depth o triangulación para situar observaciones. Sincronizar timestamps vídeo/pose/observación y latencias; transporte WebRTC opcional para stream de baja latencia, nunca requisito para que Core reciba eventos.
+
+**Escenario E2E posterior a Fase09:** guardia abre cobertura móvil, se autentica y autoriza, apunta a un marcador o zona conocida, ENTITY verifica pose y dibuja frustum en gemelo, transmite eventos/stream permitido, el guardia recorre pasillo sin cámaras fijas, el Núcleo actualiza cobertura temporal y evidencia, José ve la fuente móvil y el estado de localización; pérdida de tracking/conectividad suspende inferencias espaciales precisas sin falsificar ubicación. Validar móvil físico Android y, opcionalmente, iOS. No declarar implementado antes de prueba real.
+
+**Referencias:** https://developers.google.com/ar/develop/anchors ; https://developers.google.com/ar/develop/java/cloud-anchors/developer-guide ; https://developer.apple.com/documentation/arkit/arworldmap .
