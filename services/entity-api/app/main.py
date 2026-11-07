@@ -8,7 +8,7 @@ from __future__ import annotations
 import json
 import os
 import sqlite3
-from contextlib import contextmanager
+from contextlib import asynccontextmanager, contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -18,7 +18,13 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 DB_PATH = Path(os.getenv("ENTITY_SQLITE_PATH", "entity-dev.sqlite3"))
-app = FastAPI(title="ENTITY OS", version="0.1.0")
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    initialize()
+    yield
+
+
+app = FastAPI(title="ENTITY OS", version="0.1.0", lifespan=lifespan)
 
 
 def now() -> str:
@@ -37,7 +43,6 @@ def database():
         conn.close()
 
 
-@app.on_event("startup")
 def initialize():
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     with database() as db:

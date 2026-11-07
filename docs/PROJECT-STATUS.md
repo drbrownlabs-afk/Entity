@@ -2,10 +2,10 @@
 
 Última revisión manual: 2026-11-06. Este archivo se actualiza después de cada tarea de implementación. NO reemplaza inspección de código, CI ni commits.
 
-## Implementado en repositorio (sin verificación de ejecución)
+## Implementado y verificado localmente en Fase 00
 - Esqueleto del monorepo, README, AGENTS.md, arquitectura y plan.
 - API FastAPI inicial con SQLite provisional y rutas de entidades, estado, relaciones y eventos.
-- Docker/Compose y script de inicio inicial; compatibilidad y ejecución no verificadas.
+- Docker/Compose y arranque mínimo API con healthcheck ejecutados; dependencias fijadas y verificadas.
 - Especificación maestra, integración Edge y decisiones.
 
 ## Pendiente de implementación/verificación
@@ -15,15 +15,18 @@
 - Autorización, MCP, acciones verificadas y buffer offline.
 - Laboratorio con hardware físico y prueba extremo a extremo.
 - Demo web centro comercial con mundo 3D y CCTV virtual sincronizados.
-- CI/tests reproducibles y despliegue real.
+- Ejecución remota de CI y despliegue real (las pruebas locales ya se ejecutaron).
 
-## Fase 00 en curso (2026-11-06)
-- Inspección estática de API, tests, dependencias, Docker y script de Scorpio registrada en docs/audits/PHASE-00-2026-11-06.md.
-- Se añadió httpx a requirements y workflow CI; no se han confirmado pruebas ejecutadas ni arranque real.
-- Mantener fase 01 sin iniciar.
+## Fase 00 — EN VALIDACIÓN (2026-11-06 Ecuador / 2026-11-07 UTC)
+- 4/4 unittest aprobados; HTTP health, validaciones de error e integridad, reinicio de proceso real.
+- Docker construido y API saludable; dos smoke tests confirman persistencia de entidades, atributos, estados, relaciones y eventos tras reinicio del contenedor.
+- Fallo inicial de confianza CA corregido con secreto de build y TLS activo; advertencia httpx/TestClient pendiente de futura actualización.
+- API local queda iniciada. Evidencia y comandos: docs/audits/PHASE-00-2026-11-06.md.
+- install_script y start_skill guardados en borrador del entorno; no publicado ni restaurado en nueva tarea.
+- Cambios en rama local work; sin push/PR/merge ni CI remoto confirmado.
 
 ## Próxima prioridad
-Contratos y servicios funcionales mínimos Core/Edge, con tests; después conexión Orbbec y salida de pantalla.
+Revisión humana de Fase 00 y evidencia; publicación del código y comprobación de CI remoto. Fase 01 sigue NO INICIADA. No hay aprobación automática.
 
 ## Regla de actualización
 Cada tarea Codex debe registrar fecha UTC, branch/commit/PR, objetivo, archivos, funcionalidades realmente implementadas, tests ejecutados y sus resultados, limitaciones y próximo paso. No convertir intención en hecho. Revisar diffs y CI antes de declarar completado.

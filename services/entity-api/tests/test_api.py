@@ -1,4 +1,3 @@
-import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -11,11 +10,33 @@ class EntityApiTests(unittest.TestCase):
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         main.DB_PATH = Path(self.temp.name) / "test.sqlite3"
-        main.initialize()
         self.client = TestClient(main.app)
+        self.client.__enter__()
 
     def tearDown(self):
+        self.client.__exit__(None, None, None)
         self.temp.cleanup()
+
+    def test_health(self):
+        self.assertEqual(self.client.get("/health").json(),
+                         {"status": "ok", "service": "entity-api"})
+
+    def test_errors_do_not_write_partial_data(self):
+        entity = {"id": "room", "type": "Room"}
+        self.assertEqual(self.client.post("/v1/entities", json=entity).status_code, 201)
+        self.assertEqual(self.client.post("/v1/entities", json=entity).status_code, 409)
+        for path in ("/v1/entities/missing", "/v1/entities/missing/events"):
+            self.assertEqual(self.client.get(path).status_code, 404)
+        self.assertEqual(self.client.put("/v1/entities/missing/state",
+                         json={"key": "occupied", "value": True}).status_code, 404)
+        for source, target in (("room", "missing"), ("missing", "room")):
+            self.assertEqual(self.client.post("/v1/relations", json={
+                "source_id": source, "target_id": target, "type": "locatedIn"
+            }).status_code, 404)
+        self.assertEqual(self.client.get("/v1/entities/room").json()["relations"], [])
+        self.assertEqual(self.client.get("/v1/entities/room/events").json(), [])
+        self.assertEqual(self.client.post("/v1/entities", json={"id": "", "type": "Room"}).status_code, 422)
+        self.assertEqual(len(self.client.get("/v1/entities").json()), 1)
 
     def test_state_event_memory_and_relations(self):
         a = {"id": "room-a", "type": "Room", "attributes": {"floor": 2}}

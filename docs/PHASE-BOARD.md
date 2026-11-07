@@ -3,7 +3,7 @@
 
 | Fase | Nombre | Estado | Evidencia / siguiente paso |
 |---|---|---|---|
-| 00 | Auditoría y base reproducible | EN CURSO | Auditoría estática y CI añadidos; tests y arranque pendientes de ejecución. Ver docs/audits/PHASE-00-2026-11-06.md |
+| 00 | Auditoría y base reproducible | EN VALIDACIÓN | API/health, 4 tests y persistencia tras reinicio de proceso y Docker aprobados localmente; CI remoto y revisión humana pendientes. Ver docs/audits/PHASE-00-2026-11-06.md |
 | 01 | ENTITY Core | NO INICIADA | API SQLite parcial existente, sin verificación; migraciones y pruebas pendientes |
 | 02 | Contratos y conectores | NO INICIADA | Diseños en docs; implementación pendiente |
 | 03 | ENTITY Edge y percepción | NO INICIADA | Orbbec física disponible, SDK/modelo por confirmar |
