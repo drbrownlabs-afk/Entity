@@ -21,6 +21,13 @@ try{
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Viewport overflow');
   report.checks.push({width,loaded:current.loaded,walkAllowed:current.walkAllowed,mode:current.mode,annotations:current.annotations.map(a=>({title:a.title,position:a.position})),errors:failures,substitute:current.substitute});
   await page.screenshot({path:'docs/evidence/phase09/integrated-original-'+width+'.png',fullPage:true,timeout:120000});
+  await page.waitForFunction(()=>window.officeVisualDiagnostics?.().cameraViews===4,undefined,{timeout:30000});
+  await page.evaluate(()=>window.dispatchEvent(new CustomEvent('office-mode-changed',{detail:'Seguridad'})));
+  await page.waitForTimeout(1000);
+  const visual=await page.evaluate(()=>window.officeVisualDiagnostics());
+  if(!visual.singleApplication||visual.activeCameras!==(width<650?2:4))throw Error('CCTV diverged from the official scene application');
+  report.checks[report.checks.length-1].cctv=visual;
+  await page.screenshot({path:'docs/evidence/phase09/integrated-cctv-'+width+'.png',fullPage:true,timeout:120000});
   await context.close();
  }
  report.status='passed';
