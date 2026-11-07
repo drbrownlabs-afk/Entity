@@ -28,3 +28,7 @@ Reproducir fallo -> identificar capa (device/adapter/perception/observation/Core
 
 ## Colaboración
 GitHub es la fuente compartida de documentos, código, commits, PR y CI. Memorias privadas de ChatGPT/Codex no están sincronizadas automáticamente. Si Codex tiene cambios locales o PR sin fusionar, especificar su ubicación y estado. Evitar editar la misma rama en paralelo; preferir PRs por fase.
+
+
+## Responsabilidad de publicación autónoma (decisión del operador, 2026-11-06)
+Codex se encarga de principio a fin de la tarea autorizada: desarrollo, depuración, pruebas, commits, publicación en GitHub y actualización de memoria compartida. El operador no debe crear PR, hacer push, fusionar ramas ni gestionar Git manualmente. Cuando el flujo requiera PR, Codex lo crea y proporciona su URL; solo fusiona si cuenta con autorización y cumple las protecciones de la rama. Si no dispone de permisos de publicación, informa del bloqueo concreto y solicita autorización, sin trasladar operaciones Git al operador. No declarar trabajo visible en el repositorio mientras solo exista en workspace local. El cierre de una tarea incluye evidencia publicada (SHA, rama, estado de PR/merge, resultados de pruebas). La aprobación de fase sigue siendo humana.
