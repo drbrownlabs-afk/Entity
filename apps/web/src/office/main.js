@@ -56,3 +56,16 @@ window.officeDiagnostics=()=>({
 
 window.addEventListener('office-select-annotation',event=>{if(viewer?.state.loaded)viewer.selectAnnotation(event.detail);});
 import('./operations.js');
+
+// Read-only scene survey, enabled only for reproducible inspection runs.
+if(new URLSearchParams(location.search).has('survey')){
+  let picker;
+  viewer?.events.on('picker:ready',value=>{picker=value;});
+  window.officeSurvey={
+    frame:()=>viewer.frameScene(),
+    seek:time=>{viewer.state.animationPaused=true;viewer.seek(time);},
+    annotation:index=>viewer.selectAnnotation(index),
+    camera:()=>{const c=viewer.app.root.findComponents('camera')[0];return {position:c.entity.getPosition().toArray(),rotation:c.entity.getRotation().toArray(),fov:c.fov};},
+    pick:async(x,y)=>{const v=await picker?.pick(x,y);return v?.toArray()||null;}
+  };
+}
