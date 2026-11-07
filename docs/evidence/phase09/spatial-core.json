@@ -1,6 +1,6 @@
 {
-  "tested_commit": "a44e0316e4d7062d018757467a1ea2457a030729",
-  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42422165055",
+  "tested_commit": "c6497c551808a6fcf705ae194b4d15a9bf23ede4",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42423099259",
   "scene": "https://superspl.at/scene/a972d838",
   "source": "Original SSOG + Core routes measured from original floor + Rocketbox + PlayCanvas picker; simulated people, no physical camera or facial identity claim",
   "checks": [
@@ -282,6 +282,7 @@
     "errors": [],
     "source": "original SSOG and authorized Core projection"
   },
+  "observation_saved_from_ui": true,
   "cameras_with_recorded_person": [
     "CAM-ROUTE-2",
     "CAM-ROUTE-1"
