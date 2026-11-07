@@ -21,3 +21,5 @@ El script construye la API, la inicia y espera una respuesta de salud. Para prob
 Documentación: `docs/architecture.md`, `docs/implementation-plan.md`, `AGENTS.md`.
 
 Fase 01 EN VALIDACIÓN: resultados y límites en `docs/phases/PHASE-01.md`. Fase 02 no iniciada.
+
+Demo Edge Fase 03 (EN VALIDACIÓN): `bash scripts/setup-edge.sh` y `bash scripts/demo-edge.sh` tras preparar Core. Vídeo preentrenado, tracking y observaciones en Core; detalles en docs/phases/PHASE-03.md. Fase 02 aceptada por operador; Fase 04 no iniciada.

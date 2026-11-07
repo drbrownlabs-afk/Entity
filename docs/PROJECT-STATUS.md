@@ -48,3 +48,7 @@ Continuación autorizada por operador: EN VALIDACIÓN. Registry y contratos v1, 
 
 ## Publicación comprobada
 Implementación: https://github.com/drbrownlabs-afk/Entity/commit/0506df4b0bcb108430f58005a4c35c7002870ca5 . Rama codex/phase-02-connectors publicada y descargada en repositorio bare independiente: árbol completo idéntico. PR intentado con gh pr create: Forbidden en api.github.com/graphql. Consulta gh api Actions para esta rama: Forbidden. No hay PR ni merge a main; CI remoto desconocido, pruebas locales válidas. No se requieren operaciones Git manuales del operador. Fase 02 EN VALIDACIÓN; Fase 03 NO INICIADA.
+
+
+## Estado vigente — Fase 03
+Fase 02 APROBADA por operador. Fase 03 EN VALIDACIÓN: Edge OpenCV HOG/Norfair, vídeo y fixture, zonas/tracks, observaciones con procedencia, entidades/estado Core y cola durable. 20/20 tests Core, 4/4 Edge y demo HTTP real aprobados. 60 frames vídeo → 181 muestras y 68 transiciones, no personas únicas. Fallo/reinicio Core y ACK perdido sin duplicados. Fases 00–02 preservadas; main 1e6b29f integrado sin conflictos. Ver docs/phases/PHASE-03.md. Orbbec y físico diferidos según plan actualizado. Fase 04 NO INICIADA; prioridad vigente revisión humana de Fase 03, reemplaza prioridades históricas anteriores.

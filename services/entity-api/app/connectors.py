@@ -157,6 +157,9 @@ def ingest(observation: Observation, actor=Depends(authorize('observe:write'))):
         db.execute('INSERT INTO observations VALUES(?,?,?)', (str(observation.observation_id), body, received))
         append_event(db, observation.source_id, 'observation.received',
                      {**json.loads(body), 'received_at': received}, observation.provenance.connector_id)
+        if observation.type == 'edge.presence':
+            from app.edge_projection import project
+            project(db, observation)
         audit(actor, 'observation', 'recorded', db)
     return {'duplicate': False, 'received_at': received}
 

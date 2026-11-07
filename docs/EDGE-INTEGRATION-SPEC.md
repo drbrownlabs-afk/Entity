@@ -38,3 +38,7 @@ Smart plugs de control local, lámparas, ventiladores pequeños, TV y 3 proyecto
 
 ## Demo VC
 Centro comercial pequeño (ala), simulación web 3D + 4 CCTV virtuales desde mismo reloj/estado; observaciones sintéticas compatibles con contrato, entidades y memoria navegables, preguntas y acciones que alteran estado. Etiquetar simulación; no depender del Core desplegado para presentar.
+
+
+## Fase 03 — 2026-11-06 Ecuador / 2026-11-07 UTC
+Fase 02 aceptada explícitamente por operador; merge main 1e6b29f/cabd969 conservando fases anteriores. Selección práctica OpenCV HOG/SVM preentrenado y captura + Norfair (asociación/Kalman); alternativas revisadas documentalmente YOLO y Frigate, no comparadas en precisión. Adaptadores delgados Edge, fixture determinista, zonas normalizadas y Outbox SQLite hacia Observation v1. Proyección Core genérica edge.presence crea PersonTrack/Zone y estado por cámara sin vendor API. Sesiones no son identidad; snapshots tardíos no rebobinan estado. Hardware Orbbec diferido no bloqueante; no prueba física. Evidencia, licencias y restricciones: docs/phases/PHASE-03.md. Fase 03 EN VALIDACIÓN, Fase 04 no iniciada.

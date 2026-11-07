@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - "services/entity-api/**"
+      - "services/entity-edge/**"
       - "scripts/**"
       - "compose.yaml"
       - "packages/contracts/**"
@@ -10,6 +11,7 @@ on:
   pull_request:
     paths:
       - "services/entity-api/**"
+      - "services/entity-edge/**"
       - "scripts/**"
       - "compose.yaml"
       - "packages/contracts/**"
@@ -44,3 +46,27 @@ jobs:
       - name: Stop CI services
         if: always()
         run: docker compose down
+
+  edge-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Core for local demo process
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install -r services/entity-api/requirements.lock
+      - name: Install Edge and verify public video checksum
+        run: bash scripts/setup-edge.sh
+      - name: Test tracking, zones and recovery
+        run: PYTHONPATH=services/entity-edge .runtime/edge-venv/bin/python -m unittest discover -s services/entity-edge/tests -v
+      - name: Demonstrate real detector and REST recovery
+        run: bash scripts/demo-edge.sh
+      - name: Preserve numerical report only
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: edge-report
+          path: .runtime/edge-demo/*report.json
