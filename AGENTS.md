@@ -31,3 +31,7 @@ In parallel, diagnose and restore GitHub Actions validation. A Forbidden error i
 
 ## Autorización especial: Fase 09 completa (2026-11-07)
 El operador autoriza **una sola tarea continua 09.1–09.9**, con verificación automática al cerrar CADA subfase, corrección de fallos y avance inmediato a la siguiente **sin pedir aprobación humana entre 09.x**. Esta autorización EXCEPCIONA para la Fase 09 las reglas generales de detenerse al final de cada fase/subfase, sin modificar los límites de las fases 00–08. Leer `docs/phases/PHASE-09.md` antes de trabajar. Registrar pruebas, resultados y checkpoints en `docs/PHASE-09-PROGRESS.md`; subfase = VERIFICADA AUTOMÁTICAMENTE, nunca APROBADA por humano. Solo la Fase 09 integral pasa a EN VALIDACIÓN para revisión final del operador. Resolver fallos antes de avanzar, sin esconder bloqueos. Conservar publicación autónoma y no fusionar ramas protegidas sin autorización. Si se interrumpe una sesión, dejar checkpoint reanudable y continuar desde el último gate válido al retomarla.
+
+
+## Addendum Núcleo — Fase 09 (2026-11-07)
+Leer y aplicar `docs/phases/PHASE-09-NUCLEO-ADDENDUM.md` como decisión arquitectónica complementaria durante la ejecución autónoma de 09.1–09.9. Núcleo (nombre propio) normaliza capacidades de conectores/adaptadores; ENTITY Core conserva entidades, estados, relaciones, eventos y memoria. No detener ni reiniciar la fase, ni ampliar alcance a normalización universal o autodetección de cualquier API. Integrar progresivamente, conservar implementaciones válidas y probar intercambio de adaptadores.
