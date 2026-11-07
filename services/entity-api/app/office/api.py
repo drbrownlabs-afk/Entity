@@ -6,7 +6,7 @@ from fastapi.responses import StreamingResponse
 from pydantic import Field
 from app.schemas import CoreRecord,NonBlank
 from app.connectors import Observation,AuditedRoute
-from .auth import principal,scoped,login,authenticate
+from .auth import principal,scoped,login,authenticate,authenticate
 from .storage import encode,utc,world,emit,get_run,identity
 from .service import create_run,command,resource
 from .observations import ingest
@@ -186,6 +186,7 @@ def fork(site:str,run:str,body:Fork,actor=Depends(principal)):
 def compare(site:str,run:str,branch:str,actor=Depends(principal)):
     from app.main import database
     scoped(site,actor,'read')
+    if not operator(actor):raise HTTPException(403,'Scenario comparison requires operator role')
     with database() as db:
         state=world(db,site,run,branch)
         base=db.execute('SELECT * FROM office_branches WHERE site=? AND run=? AND id=?',(site,run,branch)).fetchone()
