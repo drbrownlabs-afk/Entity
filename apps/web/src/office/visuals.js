@@ -4,8 +4,11 @@ import {createAvatar} from './avatars.js';
 const models=new Set(['Male_Adult_01','Male_Adult_02','Male_Adult_03','Female_Adult_01','Female_Adult_02','Female_Adult_03']);
 export function installVisuals(viewer,original){
  const app=viewer.app,mainCamera=app.root.findComponents('camera')[0],cameras=new Map(),avatars=new Map(),loading=new Map(),errors=[];
- let world=null,security=false,selectedCamera=null,visibleIds=[];
+ let world=null,security=false,selectedCamera=null,expandedCamera=null,visibleIds=[];
  const panel=document.createElement('div');panel.id='office-cctv';panel.hidden=true;document.querySelector('#scene').append(panel);
+ const expand=document.createElement('button');expand.id='office-camera-expand';expand.textContent='Ampliar cámara';expand.style.cssText='right:12px;bottom:12px;left:auto;font-size:12px';panel.append(expand);
+ expand.onclick=()=>{expandedCamera=expandedCamera?null:(selectedCamera||visibleIds[0]);expand.textContent=expandedCamera?'Volver a la cuadrícula':'Ampliar cámara';layout();};
+ const caption=document.createElement('span');caption.id='office-camera-caption';caption.style.cssText='position:absolute;left:12px;top:12px;background:#101b22bb;padding:5px;pointer-events:none';panel.append(caption);
  function ensureCamera(id,pose){
   if(!Array.isArray(pose.position)||!Array.isArray(pose.target)||[...pose.position,...pose.target].some(v=>!Number.isFinite(v)))return;
   let item=cameras.get(id);
@@ -24,14 +27,19 @@ export function installVisuals(viewer,original){
   const allowed=[...cameras.keys()].filter(id=>!world||world.entities[id]);
   const preferred=world?allowed.filter(id=>world.entities[id]?.capture_simulated_people):[];
   const ordered=[...(selectedCamera?[selectedCamera]:[]),...preferred,...allowed].filter((id,i,a)=>a.indexOf(id)===i);
-  visibleIds=ordered.slice(0,innerWidth<650?2:4);
+  if(expandedCamera&&!allowed.includes(expandedCamera))expandedCamera=null;
+  visibleIds=expandedCamera?[expandedCamera]:ordered.slice(0,innerWidth<650?2:4);
+  caption.textContent=world?(world.historical?'Reconstrucción · sin vídeo grabado · ':'CCTV virtual · ')+world.clock:'Vistas del escaneo original · Core desconectado';
   for(const [id,{entity,button}]of cameras){
    const slot=visibleIds.indexOf(id),state=world?.entities[id],column=slot%2,row=Math.floor(slot/2);
    entity.enabled=security&&slot>=0&&state?.connectivity!=='disconnected';
    const dimensions=app.graphicsDevice.clientRect;
    const height=.20*dimensions.width/(16/9)/dimensions.height;
    const bottom=.94-height-row*(height+.025);
-   if(slot>=0)entity.camera.rect=new pc.Vec4(.56+column*.21,bottom,.20,height);
+   if(slot>=0){
+    if(expandedCamera){const width=Math.min(.92,.84*dimensions.height*(16/9)/dimensions.width),h=width*dimensions.width/(16/9)/dimensions.height;entity.camera.rect=new pc.Vec4((1-width)/2,(1-h)/2,width,h);}
+    else entity.camera.rect=new pc.Vec4(.56+column*.21,bottom,.20,height);
+   }
    button.hidden=!security||slot<0;button.classList.toggle('selected',selectedCamera===id);
    button.title=state?.connectivity==='disconnected'?'Desconectada':'Vista virtual del mismo mundo; no es vídeo de una cámara física';
    button.style.left=(56+column*21)+'%';button.style.bottom=(bottom*100)+'%';
@@ -96,7 +104,7 @@ export function installVisuals(viewer,original){
     const screen=camera.camera.worldToScreen(center,160,90);camera.rect=rect;
     if(depth<=0||screen.x<0||screen.x>=160||screen.y<0||screen.y>=90)continue;
     let timer;
-    const hits=await Promise.race([picker.getSelectionAsync(Math.max(0,screen.x-3),Math.max(0,screen.y-8),7,17),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Camera visibility readback timed out')),10000);})]).finally(()=>clearTimeout(timer));
+    const hits=app.graphicsDevice.isWebGL2?picker.getSelection(Math.max(0,screen.x-3),Math.max(0,screen.y-8),7,17):await Promise.race([picker.getSelectionAsync(Math.max(0,screen.x-3),Math.max(0,screen.y-8),7,17),new Promise((_,reject)=>{timer=setTimeout(()=>reject(Error('Camera visibility readback timed out')),10000);})]).finally(()=>clearTimeout(timer));
     const owned=hits.some(hit=>{let node=hit.node;while(node){if(node===entity)return true;node=node.parent;}return false;});
     if(owned){
      const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(id+':'+personId));
@@ -115,7 +123,7 @@ export function installVisuals(viewer,original){
  let warmUntil=0;window.addEventListener('office-mode-changed',()=>{warmUntil=performance.now()+10000;});
  setInterval(()=>{if(security&&performance.now()<warmUntil&&!document.hidden)app.renderNextFrame=true;},500);
  window.officeLoadAvatar=loadAvatar;window.officeCaptureCamera=capture;
- window.officeVisualDiagnostics=()=>({cameraRenderState:[...cameras].filter(([,c])=>c.entity.enabled).map(([id,c])=>({id,layers:c.entity.camera.layers,managers:[...(app.renderer.gsplatDirector?.camerasMap.get(c.entity.camera.camera)?.layersMap.values()||[])].map(m=>({splats:m.gsplatManager?.world.currentState?.splats?.numSplats||0,pending:m.gsplatManager?.hasPendingSort}))})),cameraViews:cameras.size,activeCameras:[...cameras.values()].filter(c=>c.entity.enabled).length,visibleCameraIds:visibleIds,worldClock:world?.clock||null,
+ window.officeVisualDiagnostics=()=>({cameraRenderState:[...cameras].filter(([,c])=>c.entity.enabled).map(([id,c])=>({id,layers:c.entity.camera.layers,managers:[...(app.renderer.gsplatDirector?.camerasMap.get(c.entity.camera.camera)?.layersMap.values()||[])].map(m=>({splats:m.gsplatManager?.world.currentState?.totalActiveSplats??null,pending:m.gsplatManager?.hasPendingSort}))})),cameraViews:cameras.size,activeCameras:[...cameras.values()].filter(c=>c.entity.enabled).length,visibleCameraIds:visibleIds,worldClock:world?.clock||null,
   avatarsLoaded:avatars.size,avatarsPlaced:[...avatars.values()].filter(e=>e.enabled).map(e=>({id:e.name,position:e.getPosition().toArray()})),singleApplication:[...cameras.values()].every(c=>c.entity.parent===app.root),
   errors,source:world?'original SSOG and authorized Core projection':'original SSOG authored viewpoints; Core disconnected'});
 }
