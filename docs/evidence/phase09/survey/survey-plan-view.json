@@ -1,11 +1,11 @@
 {
-  "tested_commit": "69f16994816dd8f5aa72bce84894db5895621349",
-  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42423401395",
+  "tested_commit": "49391acaffe43ce75ee9198f6ff6a5648979aff6",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42423665913",
   "scene": "https://superspl.at/scene/a972d838",
   "source": "Original SSOG, elevated/oblique inspection viewpoints derived from authored and measured cameras. Camera transforms are NOT semantic resource coordinates or verified walking routes",
   "views": [
     {
-      "id": "original-plan-cut",
+      "id": "original-plan-near-clipped",
       "camera": {
         "position": [
           1.9970835447311401,
@@ -18,7 +18,9 @@
           0,
           0.707108548959285
         ],
-        "fov": 90
+        "fov": 90,
+        "near_clip": 17.649999618750897,
+        "far_clip": 69.76162339216137
       },
       "picks": [
         {
@@ -26,14 +28,22 @@
             0.35,
             0.35
           ],
-          "position": null
+          "position": [
+            -3.933885900567367,
+            -1.6198733176673885,
+            -15.256567888818033
+          ]
         },
         {
           "screen": [
             0.5,
             0.5
           ],
-          "position": null
+          "position": [
+            1.9970836042690763,
+            -0.8080384732186643,
+            -10.48194718449566
+          ]
         },
         {
           "screen": [
@@ -43,7 +53,7 @@
           "position": null
         }
       ],
-      "image": "original-plan-cut.jpg"
+      "image": "original-plan-near-clipped.jpg"
     }
   ],
   "status": "captured-awaiting-semantic-review"
