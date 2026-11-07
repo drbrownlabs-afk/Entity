@@ -6,7 +6,7 @@ Scene: https://superspl.at/scene/a972d838 . Original scene only; no replacement 
 
 The managed desktop reports enabled/unknown, but no interactive control tool, DISPLAY, or X11 socket is exposed in this session. No authenticated operator browser session is available here. No password/cookies are requested in chat. The remote browser inspection is anonymous; it does not claim to use the operator's login. Official Download menu and original viewer configuration are inspected separately.
 
-For an authenticated official export supplied through shared storage, prioritize the complete Vite project ZIP and Streamed SOG with all chunk folders. Put received originals under `.runtime/incoming/synthetic-office/` or supply the uploaded file identifier; do not commit credentials or browser profiles.
+An authenticated Vite ZIP or local SSOG archive is OPTIONAL reference material only. The original public streamed SSOG is already integrated and tested; do not prioritize exports or wait for shared storage. The operator already has Vite, but it is not requested for Phase 09. Put received originals under `.runtime/incoming/synthetic-office/` or supply the uploaded file identifier; do not commit credentials or browser profiles.
 
 Intake command:
 
@@ -19,7 +19,7 @@ Imports are immutable hashed copies under `.runtime/assets/synthetic-office/`. T
 
 ## Rechecked access and exact validation limits
 
-On 2026-11-07, managed environment status again reported desktop enabled with state unknown, but the available tool catalogue exposes no desktop JavaScript/browser-control or open-in-desktop tool. DISPLAY is unset and /tmp/.X11-unix is absent. An interactive authenticated download could not be attempted; this does not imply that the operator's authenticated Download menu is unavailable. No authenticated Vite export has been obtained. The incoming directory is currently empty.
+On 2026-11-07, managed environment status again reported desktop enabled with state unknown, but the available tool catalogue exposes no desktop JavaScript/browser-control or open-in-desktop tool. DISPLAY is unset and /tmp/.X11-unix is absent. An interactive authenticated download could not be attempted; this does not imply that the operator's authenticated Download menu is unavailable. No authenticated Vite export has been obtained. The incoming directory was empty at this checkpoint; this is not a blocker.
 
 The enforced network allowlist omits superspl.at and d28zzqy0iyovbz.cloudfront.net. The prior proxy CONNECT403 is an environment access denial before application authentication, not evidence of an expired SuperSplat session. The authorized Actions browser is a separate anonymous session and successfully loaded the original published SSOG.
 
@@ -27,10 +27,14 @@ Actual original asset integration is recorded in commit baf37b3 and `docs/eviden
 
 ### Receiving the official exports
 
-Priority: (1) the complete official Vite ZIP, (2) the complete SSOG directory/archive with its referenced chunks, plus original voxel collision files if supplied. Keep directory structure unchanged. No password, cookie jar, browser profile or login token is needed. An individual lod-meta.json is not a complete SSOG download. PLY remains an optional original source, not a substitute office.
+Optional, only if the operator explicitly supplies assets later: a complete Vite ZIP or complete SSOG directory/archive with original chunks and voxel collision files. These are NOT prerequisites for any Phase 09 gate. Keep directory structure unchanged. No password, cookie jar, browser profile or login token is needed. An individual lod-meta.json is not a complete SSOG download. PLY remains an optional original source, not a substitute office.
 
 Shared files can be placed in `.runtime/incoming/synthetic-office/` or attached through the available shared-storage channel. The agent imports the supplied originals using the commands above, reviews the Vite manifest without executing its scripts, and checks the SSOG references before switching the asset base. The existing integration remains intact.
 
 The current viewer accepts an absolute `VITE_OFFICE_ASSET_BASE` URL ending in `/`; its root must contain `lod-meta.json`, the original chunk directories and `scene.voxel.json` with its corresponding binary. This configuration is only for a complete compatible original SSOG export. If the official Vite export uses a different layout, inspect its settings and preserve those references rather than renaming or manufacturing assets. The imported directory and its receipt stay outside Git; no export has yet been claimed verified.
 
 Command re-executed: `python -m unittest discover -s scripts/tests -p test_scene_intake.py -v` — 3/3 passed. These tests validate safe intake only, not the office scene itself.
+
+
+## Binding operator correction (2026-11-07)
+Do not spend additional Phase 09 execution time obtaining a Vite ZIP, logging into SuperSplat, working around a proxy, or seeking a local copy of an already-rendering SSOG. The existing remote original scene, four annotations, and voxel walk mode are sufficient to proceed with implementation and the remaining scene-specific tests. Export intake tooling remains available only for a future explicit request. Continue Phase 09.1–09.9 according to `docs/phases/PHASE-09.md`.
