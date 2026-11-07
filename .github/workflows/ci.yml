@@ -157,6 +157,11 @@ jobs:
         run: npm --prefix apps/web ci
       - name: Create audited source and autonomous web packages
         run: python scripts/package-release.py
+      - name: Confirm package checksums are reproducible
+        run: |
+          cp .runtime/delivery/manifest.json "${RUNNER_TEMP}/first-manifest.json"
+          python scripts/package-release.py
+          cmp "${RUNNER_TEMP}/first-manifest.json" .runtime/delivery/manifest.json
       - name: Test source package from a different clean directory
         run: |
           mkdir -p "${RUNNER_TEMP}/entity-unpacked"

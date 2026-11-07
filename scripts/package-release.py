@@ -31,8 +31,10 @@ with zipfile.ZipFile(static, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
         info = zipfile.ZipInfo(file.relative_to(dist).as_posix())
         info.compress_type = zipfile.ZIP_DEFLATED
         archive.writestr(info, file.read_bytes())
-    archive.writestr('BUILD.json', json.dumps({'source_commit': sha, 'mode': 'standalone-simulated'}, indent=2))
-    archive.writestr('.nojekyll', '')
+    for name, content in [('BUILD.json', json.dumps({'source_commit': sha, 'mode': 'standalone-simulated'}, indent=2)), ('.nojekyll', '')]:
+        info = zipfile.ZipInfo(name)
+        info.compress_type = zipfile.ZIP_DEFLATED
+        archive.writestr(info, content)
 manifest = {'schema_version': '1.0', 'source_commit': sha,
             'source_tree': git('rev-parse', 'HEAD^{tree}').decode().strip(),
             'runtime': {'python': '3.12', 'node': '24', 'docker': 'optional for protocol/container checks'},
