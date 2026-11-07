@@ -1,3 +1,4 @@
+import {mountCapabilities} from './capability-form.js';
 import {mountReception} from './reception.js';
 // Operational screens consume persistent Core APIs. No frontend business fixtures.
 const host=document.createElement('section');
@@ -5,6 +6,7 @@ host.id='office-operations';
 host.innerHTML='<h2>Operaciones del coworking · ENTITY Core</h2><form id="office-login"><label>Servidor<input name="api" type="url" value="http://127.0.0.1:8010"></label><label>Usuario<input name="username" autocomplete="username"></label><label>Contraseña<input name="password" type="password" autocomplete="current-password"></label><button>Conectar</button></form><p id="office-core-status" role="status">Sin conexión al Core: no se inventarán reservas, permisos ni resultados.</p><div id="office-workspace" hidden><nav id="office-modes"></nav><label>Ejecución<select id="office-run"></select></label><button id="office-refresh">Actualizar</button><label>Reconstrucción histórica<input id="office-time" type="datetime-local"></label><button id="office-reconstruct">Consultar ese instante</button><button id="office-present">Presente</button><p id="office-world-status"></p><div class="office-columns"><div id="office-entities"></div><div><h3 id="office-selection">Entidad</h3><div id="office-facts"></div><div id="office-actions"></div></div></div><section id="office-query"></section></div>';
 document.querySelector('main').append(host);
 let selectedEventDetails=null;
+let currentActor=null;
 let token,site,run,world,capabilities=[],selected='site',mode='Operaciones',at=null,branch='main',streamController=null,receptionPanel=null;
 const status=message=>{host.querySelector('#office-core-status').textContent=message;};
 const esc=value=>String(value??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
@@ -13,8 +15,8 @@ const prefix=()=>'/v1/sites/'+encodeURIComponent(site)+'/runs/'+encodeURICompone
 async function refresh(){const params=new URLSearchParams({branch});if(at)params.set('at',at);world=await request(prefix()+'/world?'+params);window.dispatchEvent(new CustomEvent('office-world-changed',{detail:world}));render();}
 host.querySelector('#office-login').onsubmit=async event=>{
  event.preventDefault();
- try{const answer=await request('/v1/office/auth/login',{username:host.querySelector('[name=username]').value,password:host.querySelector('[name=password]').value});token=answer.token;site=answer.site_id;host.querySelector('[name=password]').value='';const runs=await request('/v1/sites/'+encodeURIComponent(site)+'/runs');host.querySelector('#office-run').innerHTML=runs.map(r=>'<option value="'+esc(r.id)+'">'+esc(r.id)+'</option>').join('');run=host.querySelector('#office-run').value;branch='main';capabilities=await request('/v1/sites/'+encodeURIComponent(site)+'/capabilities');host.querySelector('#office-workspace').hidden=false;await refresh();subscribe();status('Conectado: '+answer.actor+' · '+answer.role+' · '+site+'. Estado y operaciones persistentes en Core.');}
- catch(error){token=null;status(error.message);}
+ try{const answer=await request('/v1/office/auth/login',{username:host.querySelector('[name=username]').value,password:host.querySelector('[name=password]').value});currentActor=answer;token=answer.token;site=answer.site_id;host.querySelector('[name=password]').value='';const runs=await request('/v1/sites/'+encodeURIComponent(site)+'/runs');host.querySelector('#office-run').innerHTML=runs.map(r=>'<option value="'+esc(r.id)+'">'+esc(r.id)+'</option>').join('');run=host.querySelector('#office-run').value;branch='main';capabilities=await request('/v1/sites/'+encodeURIComponent(site)+'/capabilities');host.querySelector('#office-workspace').hidden=false;await refresh();subscribe();status('Conectado: '+answer.actor+' · '+answer.role+' · '+site+'. Estado y operaciones persistentes en Core.');}
+ catch(error){token=null;world=null;host.querySelector('#office-workspace').hidden=true;window.dispatchEvent(new CustomEvent('office-world-cleared'));status(error.message);}
 };
 host.querySelector('#office-run').onchange=async event=>{run=event.target.value;await refresh().catch(e=>status(e.message));subscribe();};
 host.querySelector('#office-refresh').onclick=()=>refresh().catch(e=>status(e.message));
@@ -26,7 +28,6 @@ function choose(id){selected=id;const entity=world.entities[id];if(entity?.annot
 window.addEventListener('office-select-entity',event=>{if(world?.entities[event.detail]){selected=event.detail;render();}});
 window.addEventListener('office-annotation-selected',event=>{if(!world)return;if(world.entities[selected]?.kind!=='Zone'&&world.entities[selected]?.annotation_index===event.detail)return;const entity=Object.values(world.entities).find(e=>e.kind==='Zone'&&e.annotation_index===event.detail);if(entity){selected=entity.id;render();}});
 const labels={organization_id:'Organización',home_environment:'Ambiente',profile_level:'Perfil',name:'Nombre',kind:'Tipo',id:'ID',membership_status:'Membresía',presence:'Presencia',freshness:'Vigencia',zone_id:'Zona',observed_at:'Última observación',status:'Estado',capacity:'Capacidad',starts_at:'Inicio',ends_at:'Fin',host_id:'Anfitrión',person_id:'Persona',resource_id:'Recurso',assignee:'Asignación',description:'Descripción',resolution:'Resolución',identity_status:'Identidad',access:'Acceso',waiting_area:'Espera',provenance:'Procedencia',relations:'Relaciones',simulated:'Simulado'};
-const operationNames={'booking.create':'Crear reserva','booking.extend':'Extender reserva','booking.cancel':'Cancelar reserva','booking.reassign':'Reasignar reserva','booking.checkin':'Registrar llegada a reserva','booking.no_show':'Registrar no-show','access.checkAuthorization':'Comprobar autorización','access.requestEntry':'Solicitar acceso','visit.register':'Registrar visita provisional','visit.checkin':'Registrar visitante en espera','identity.associate':'Asociar identidad con evidencia','notification.send':'Notificar','meeting.start':'Iniciar reunión','meeting.end':'Finalizar reunión','task.create':'Crear tarea','task.assign':'Asignar tarea','task.resolve':'Resolver tarea','device.setPower':'Encender/apagar equipo','presence.checkout':'Registrar salida','equipment.fail':'Registrar avería','equipment.repair':'Registrar reparación','membership.set':'Actualizar membresía','camera.setStatus':'Conectar/desconectar cámara','zone.assumeOccupancy':'Suponer ocupación (solo what-if)','zone.close':'Cerrar zona','zone.open':'Abrir zona','intercom.reply':'Responder por intercom','intercom.timeout':'Registrar falta de respuesta','clock.advance':'Avanzar reloj simulado','entity.upsert':'Gestionar recurso','relation.add':'Añadir relación','account.create':'Crear cuenta'};
 function facts(item){return '<dl>'+Object.entries(item).map(([key,value])=>'<dt>'+esc(labels[key]||key)+'</dt><dd>'+esc(typeof value==='object'?JSON.stringify(value):value)+'</dd>').join('')+'</dl>';}
 async function subscribe(){
  streamController?.abort();const controller=new AbortController();streamController=controller;let delay=500;
@@ -82,28 +83,11 @@ function render(){
   controls.querySelector('#office-compare').onclick=async()=>{try{const result=await request(prefix()+'/scenarios/'+encodeURIComponent(branch)+'/comparison');controls.querySelector('pre').textContent=JSON.stringify(result,null,2);}catch(e){status(e.message);}};
   controls.querySelector('#office-apply').onclick=async()=>{try{if(branch==='main')throw Error('Primero crea un escenario aislado');const result=await request(prefix()+'/scenarios/'+encodeURIComponent(branch)+'/apply',{id:crypto.randomUUID()});branch='main';await refresh();status('Propuesta aplicada por Core: '+result.status);}catch(e){status(e.message);}};
  }
- const actions=capabilities.filter(c=>c.resource_id===selected&&operationNames[c.canonical_id]&&!(item?.reservable===false&&c.canonical_id==='booking.create'));
  const panel=host.querySelector('#office-actions');
- panel.innerHTML='<h3>Capacidades declaradas</h3><select id="office-operation">'+actions.map(c=>'<option value="'+esc(c.capability_id)+'">'+esc(operationNames[c.canonical_id])+'</option>').join('')+'</select><form id="office-command"><div id="office-fields"></div><button '+(world.historical||(mode==='Escenarios'&&branch==='main')?'disabled':'')+'>Ejecutar con autorización</button></form>';
- const build=()=>{
-  const descriptor=actions.find(c=>c.capability_id===panel.querySelector('select').value);const form=panel.querySelector('#office-fields');form.innerHTML='';
-  if(!descriptor)return;
-  for(const [key,schema]of Object.entries(descriptor.input_schema.properties||{})){
-   if(key==='schema_version')continue;
-   const label=document.createElement('label');label.textContent=labels[key]||schema.title||key;let input;
-   if(schema.type==='boolean'){input=document.createElement('input');input.type='checkbox';}
-   else if(schema.type==='object'||schema.type==='array'){input=document.createElement('textarea');input.value=schema.type==='array'?'[]':'{}';}
-   else{input=document.createElement('input');input.type=schema.format==='date-time'?'datetime-local':schema.type==='integer'||schema.type==='number'?'number':key==='password'?'password':'text';input.value=schema.default??'';if(input.type==='number')input.step=schema.type==='integer'?'1':'any';}
-   input.name=key;input.dataset.schema=JSON.stringify(schema);if(descriptor.input_schema.required?.includes(key))input.required=true;label.append(input);form.append(label);
-  }
- };
- panel.querySelector('#office-operation').onchange=build;build();
- panel.querySelector('form').onsubmit=async event=>{
-  event.preventDefault();try{const descriptor=actions.find(c=>c.capability_id===panel.querySelector('select').value);if(!descriptor)throw Error('Selecciona una capacidad');const inputs={};
-   for(const input of panel.querySelectorAll('[name]')){const schema=JSON.parse(input.dataset.schema);if(input.type==='checkbox')inputs[input.name]=input.checked;else if(input.value!=='')inputs[input.name]=schema.type==='object'||schema.type==='array'?JSON.parse(input.value):schema.format==='date-time'?new Date(input.value).toISOString():input.type==='number'?Number(input.value):input.value;}
-   const result=await request(prefix()+'/commands',{id:crypto.randomUUID(),operation:descriptor.canonical_id,target:selected,inputs,branch,expected_revision:world.revision});await refresh();status('Resultado Core: '+result.status+' · evento '+result.event.id);
-  }catch(error){status(error.message);}
- };
+ if(item)mountCapabilities(panel,{descriptors:capabilities,entity:item,getWorld:()=>world,actor:currentActor,send:body=>request(prefix()+'/commands',body),
+  disabled:world.historical||(mode==='Escenarios'&&branch==='main'),onComplete:async result=>{await refresh();status('Core: '+result.status+' · evento '+result.event.id);},onError:error=>status(error.message)});
+ else panel.replaceChildren();
+
  renderQuery();
  renderTimeline();
 }

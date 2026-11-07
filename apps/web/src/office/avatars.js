@@ -1,6 +1,9 @@
 import * as pc from 'playcanvas';
 
 export async function createAvatar(app,url){
+ // SuperSplat uses AppBase with a deliberately small set of systems.
+ // Reuse that application and register the official animation system once.
+ if(!app.systems.anim)app.systems.add(new pc.AnimComponentSystem(app));
  const asset=await new Promise((resolve,reject)=>app.assets.loadFromUrl(url,'container',(error,value)=>error?reject(error):resolve(value)));
  const entity=asset.resource.instantiateRenderEntity();
  entity.addComponent('anim',{activate:true});

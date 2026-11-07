@@ -3,7 +3,8 @@ import fs from 'node:fs';
 const api=process.env.OFFICE_API,web=process.env.OFFICE_WEB,credentials=JSON.parse(fs.readFileSync(process.env.OFFICE_CREDENTIALS,'utf8'));
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 const report={scene:'https://superspl.at/scene/a972d838',source:'Original SSOG + Core routes measured from original floor + Rocketbox + PlayCanvas picker; simulated people, no physical camera or facial identity claim',checks:[]};
-let token;
+let token,lastPage;
+const failures=[];
 const prefix='/v1/sites/synthetic-office/runs/day-01';
 async function request(path,body){
  const result=await fetch(api+path,{method:body?'POST':'GET',headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},body:body?JSON.stringify(body):undefined});
@@ -11,12 +12,16 @@ async function request(path,body){
 }
 try{
  token=(await request('/v1/office/auth/login',{username:'admin',password:credentials.admin.password})).token;
- const page=await browser.newPage({viewport:{width:1440,height:1000}});
+ const page=await browser.newPage({viewport:{width:1440,height:1000}});lastPage=page;page.on('pageerror',error=>failures.push(error.message));
  await page.goto(web+'/office.html?budget=.25&survey=1&survey_route_pose=0&survey_direction=hall',{waitUntil:'domcontentloaded'});
- await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});
+ if(!process.env.OFFICE_STATE_ONLY)await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});
  await page.locator('#office-login [name=api]').fill(api);await page.locator('#office-login [name=username]').fill('admin');await page.locator('#office-login [name=password]').fill(credentials.admin.password);
  await page.locator('#office-login button').click();
- await page.waitForFunction(()=>window.officeCoreDiagnostics?.().connected&&window.officeVisualDiagnostics?.().avatarsPlaced.length===1,undefined,{timeout:90000});
+ try{await page.waitForFunction(()=>window.officeCoreDiagnostics?.().connected&&window.officeVisualDiagnostics?.().avatarsPlaced.length===1,undefined,{timeout:process.env.OFFICE_STATE_ONLY?15000:90000});}
+ catch(error){report.state=await page.evaluate(()=>({status:document.querySelector('#office-core-status')?.textContent,core:window.officeCoreDiagnostics?.(),visual:window.officeVisualDiagnostics?.()}));throw error;}
+ if(process.env.OFFICE_STATE_ONLY){report.status='state-only; original scene NOT verified';await page.close();}
+ else{
+
  await page.evaluate(()=>window.dispatchEvent(new CustomEvent('office-mode-changed',{detail:'Seguridad'})));
  const initial=await request(prefix+'/world');let identified=false;
  for(const second of [0,1,5,9,10]){
@@ -56,5 +61,10 @@ try{
  const replay=await page.evaluate(()=>window.officeVisualDiagnostics().avatarsPlaced[0].position);
  if(initial.entities['PERSON-LUIS'].spatial_pose.position.some((v,i)=>Math.abs(v-replay[i])>.0001))throw Error('Historical pose reconstruction diverged');
  report.historical_pose=replay;report.status='passed';await page.close();
-}catch(error){report.status='failed';report.error=String(error);throw error;}
+ }
+}catch(error){
+ report.status='failed';report.error=String(error);report.page_errors=failures;
+ if(lastPage&&!lastPage.isClosed())await lastPage.screenshot({path:'docs/evidence/phase09/spatial-core-failed.png',fullPage:true,timeout:30000}).catch(()=>{});
+ throw error;
+}
 finally{fs.writeFileSync('docs/evidence/phase09/spatial-core.json',JSON.stringify(report,null,2));await browser.close();}

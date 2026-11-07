@@ -3,8 +3,8 @@
   "checks": [
     {
       "actual_process_restart": "passed",
-      "events_preserved": 16,
-      "entity_count": 100
+      "events_preserved": 18,
+      "entity_count": 103
     },
     {
       "sqlite_online_backup_integrity": "passed"

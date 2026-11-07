@@ -11,7 +11,7 @@ export function installVisuals(viewer,original){
   let item=cameras.get(id);
   if(!item){
    const entity=new pc.Entity('ENTITY CCTV '+id);
-   entity.addComponent('camera',{fov:pose.fov||85,priority:mainCamera.priority+cameras.size+1,layers:[...mainCamera.layers],clearColorBuffer:true,clearDepthBuffer:true,clearColor:new pc.Color(.08,.1,.12)});
+   entity.addComponent('camera',{fov:pose.fov||85,aspectRatioMode:pc.ASPECT_MANUAL,aspectRatio:16/9,priority:mainCamera.priority+cameras.size+1,layers:[...mainCamera.layers],clearColorBuffer:true,clearDepthBuffer:true,clearColor:new pc.Color(.08,.1,.12)});
    entity.enabled=false;app.root.addChild(entity);
    const button=document.createElement('button');button.textContent=id;button.dataset.camera=id;panel.append(button);
    button.onclick=()=>{selectedCamera=id;window.dispatchEvent(new CustomEvent('office-select-entity',{detail:id}));layout();};
@@ -28,10 +28,13 @@ export function installVisuals(viewer,original){
   for(const [id,{entity,button}]of cameras){
    const slot=visibleIds.indexOf(id),state=world?.entities[id],column=slot%2,row=Math.floor(slot/2);
    entity.enabled=security&&slot>=0&&state?.connectivity!=='disconnected';
-   if(slot>=0)entity.camera.rect=new pc.Vec4(.56+column*.21,.53-row*.24,.20,.22);
+   const dimensions=app.graphicsDevice.clientRect;
+   const height=.20*dimensions.width/(16/9)/dimensions.height;
+   const bottom=.94-height-row*(height+.025);
+   if(slot>=0)entity.camera.rect=new pc.Vec4(.56+column*.21,bottom,.20,height);
    button.hidden=!security||slot<0;button.classList.toggle('selected',selectedCamera===id);
    button.title=state?.connectivity==='disconnected'?'Desconectada':'Vista virtual del mismo mundo; no es vídeo de una cámara física';
-   button.style.left=(56+column*21)+'%';button.style.bottom=(53-row*24)+'%';
+   button.style.left=(56+column*21)+'%';button.style.bottom=(bottom*100)+'%';
   }
   app.renderNextFrame=true;
  }
@@ -70,12 +73,12 @@ export function installVisuals(viewer,original){
   if(!world)throw Error('Core must be connected; authored public views are not observations');
   const source=world.entities[id],entry=cameras.get(id);
   if(!source||!entry||source.connectivity==='disconnected')throw Error('Authorized calibrated camera unavailable');
-  const camera=entry.entity.camera,rect=camera.rect.clone(),aspect=camera.aspectRatio;
-  const picker=new pc.Picker(app,160,96);
+  const captureEntity=new pc.Entity('Scoped virtual camera observation');
+  captureEntity.addComponent('camera',{fov:entry.entity.camera.fov,aspectRatioMode:pc.ASPECT_MANUAL,aspectRatio:16/9,layers:[...entry.entity.camera.layers],enabled:false});
+  captureEntity.setPosition(entry.entity.getPosition());captureEntity.setRotation(entry.entity.getRotation());app.root.addChild(captureEntity);
+  const camera=captureEntity.camera,picker=new pc.Picker(app,160,90);
   try{
-   camera.rect=new pc.Vec4(0,0,1,1);camera.aspectRatio=160/96;
-   app.renderNextFrame=true;
-   await new Promise(resolve=>app.once('postrender',resolve));
+   app.renderNextFrame=true;await new Promise(resolve=>app.once('postrender',resolve));
    picker.prepare(camera,app.scene);
    const tracks=[];
    for(const [personId,entity]of avatars){
@@ -83,18 +86,18 @@ export function installVisuals(viewer,original){
     if(!entity.enabled||!pose)continue;
     const center=entity.getPosition().clone().add(new pc.Vec3(0,.9,0));
     const depth=center.clone().sub(entry.entity.getPosition()).dot(entry.entity.forward);
-    const screen=camera.camera.worldToScreen(center,160,96);
-    if(depth<=0||screen.x<0||screen.x>=160||screen.y<0||screen.y>=96)continue;
+    const screen=camera.camera.worldToScreen(center,160,90);
+    if(depth<=0||screen.x<0||screen.x>=160||screen.y<0||screen.y>=90)continue;
     const hits=await picker.getSelectionAsync(Math.max(0,screen.x-3),Math.max(0,screen.y-8),7,17);
     const owned=hits.some(hit=>{let node=hit.node;while(node){if(node===entity)return true;node=node.parent;}return false;});
     if(owned){
      const bytes=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(id+':'+personId));
      const local='anon-'+[...new Uint8Array(bytes)].slice(0,8).map(n=>n.toString(16).padStart(2,'0')).join('');
-     tracks.push({local_track_id:local,zone_id:pose.zone_id,position:[screen.x/160,screen.y/96]});
+     tracks.push({local_track_id:local,zone_id:pose.zone_id,position:[screen.x/160,screen.y/90]});
     }
    }
    return {source_id:id,clock:world.clock,payload:{source_status:'connected',tracks,transitions:[]},provenance:{connector_id:'simulated',model_version:'playcanvas-picker-visibility-v1',simulated:true}};
-  }finally{camera.rect=rect;camera.aspectRatio=aspect;picker.destroy();app.renderNextFrame=true;}
+  }finally{picker.destroy();captureEntity.destroy();app.renderNextFrame=true;}
  }
  window.addEventListener('office-world-changed',e=>receive(e.detail));
  window.addEventListener('office-world-cleared',()=>{world=null;for(const entity of avatars.values())entity.enabled=false;layout();});
