@@ -336,3 +336,6 @@ Vista superior de inspección mostró blobs exteriores, no un plano utilizable. 
 
 ### 2026-11-07 — Codex, vista superior original efectiva
 Captura original-plan-near-clipped.jpg muestra por fin el interior original desde arriba, tras respetar el plano de cámara con ShaderChunks. Sin modificación del SSOG ni voxels. La imagen corta el extremo posterior por encuadre; no se deduce un inventario completo de esa toma. Se amplía el encuadre posterior y se registran rayos reales de cámara con intersección en los voxels oficiales, contrastando profundidad splat y superficie física antes de asignar IDs de puesto. Resultado siguiente pendiente. Esta vista de inspección todavía no sustituye el botón Dollhouse del producto.
+
+### 2026-11-07 — Codex, conexión coherente de clientes
+Office/personal/kiosco comparten URL de API configurable y recuerdan solo esa dirección pública, nunca tokens/contraseñas. Corrige personal.html servido en127.0.0.1 que antes apuntaba al puerto del frontend. Pages sin backend configurado pide API en vez de presentar su propio origen comoCore. URL con credenciales embebidas rechazada. Compose permite explícitamente los puertos de preview4173/4175 que antes faltaban en CORS, además de5173 yPages; sin wildcard. Build PASS; verificación con contenedor actualizado pendiente.

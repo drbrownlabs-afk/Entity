@@ -1,6 +1,8 @@
 import './office.css';
+import {configuredApi,rememberApi} from './api-config.js';
 import {mountReception} from './reception.js';
 const form=document.querySelector('#terminal-login'),output=document.querySelector('#terminal-status');
+form.elements.api.value=configuredApi();
 let token='',site='',run='',base='';
 async function request(path,body){
  const response=await fetch(base+path,{method:body?'POST':'GET',headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},body:body?JSON.stringify(body):undefined});
@@ -8,7 +10,7 @@ async function request(path,body){
 }
 form.onsubmit=async event=>{
  event.preventDefault();try{
-  base=form.elements.api.value.replace(/\/$/,'');
+  base=rememberApi(form.elements.api.value);
   const answer=await request('/v1/office/auth/login',{username:form.elements.username.value,password:form.elements.password.value});
   form.elements.password.value='';token=answer.token;site=answer.site_id;run=new URLSearchParams(location.search).get('run')||'day-01';
   if(answer.role!=='kiosk'&&answer.role!=='admin')throw Error('Cuenta de terminal requerida');
