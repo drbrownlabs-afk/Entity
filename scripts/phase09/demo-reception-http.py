@@ -1,9 +1,10 @@
 """Real process / HTTP / browser / restart / backup test of persistent reception."""
-import json,os,socket,subprocess,sys,time,tempfile,sqlite3,shutil
+import json,os,socket,subprocess,sys,time,tempfile,sqlite3,shutil,signal
 from pathlib import Path
 from uuid import uuid4
 import httpx
 ROOT=Path(__file__).resolve().parents[2]
+(ROOT/'.runtime/phase09').mkdir(parents=True,exist_ok=True)
 def port():
     with socket.socket() as s:s.bind(('127.0.0.1',0));return s.getsockname()[1]
 report={'transport':'actual HTTP; separate uvicorn process, production Vite preview','checks':[]}
@@ -23,7 +24,13 @@ with tempfile.TemporaryDirectory(prefix='entity-office-') as temp:
             time.sleep(.1)
         raise RuntimeError('API did not start')
     process=server()
-    preview=subprocess.Popen(['npm','--prefix','apps/web','run','preview','--','--port',str(web_port)],cwd=ROOT,stdout=log,stderr=log)
+    preview=subprocess.Popen(['npm','--prefix','apps/web','run','preview','--','--port',str(web_port)],cwd=ROOT,stdout=log,stderr=log,start_new_session=True)
+    for _ in range(100):
+        try:
+            if httpx.get(web+'/kiosk.html').status_code==200:break
+        except httpx.HTTPError:pass
+        time.sleep(.1)
+    else:raise RuntimeError('Built kiosk did not become ready')
     try:
         with httpx.Client(base_url=api,timeout=20) as client:
             answer=client.post('/v1/office/auth/login',json={'username':'admin','password':credentials['admin']['password']});answer.raise_for_status()
@@ -53,5 +60,8 @@ with tempfile.TemporaryDirectory(prefix='entity-office-') as temp:
         report['status']='passed'
     except Exception as error:report['status']='failed';report['error']=str(error);raise
     finally:
-        process.terminate();process.wait(10);preview.terminate();preview.wait(10);log.close()
+        process.terminate();process.wait(10)
+        try:os.killpg(preview.pid,signal.SIGTERM)
+        except ProcessLookupError:pass
+        preview.wait(10);log.close()
         (ROOT/'docs/evidence/phase09/reception-http-process.json').write_text(json.dumps(report,indent=2)+'\n')
