@@ -43,7 +43,7 @@ if(new URLSearchParams(location.search).has('survey')){
  }
  const camera=settings.cameras[0].initial;
  if(direction==='overview-right'){camera.position=[...camera.position];camera.position[1]+=1.2;camera.target=[camera.position[0]+5,camera.position[1]-3,camera.position[2]];}
- if(direction==='topdown'){const a=original.settings.annotations[2].position,b=inspectionCameras.poses.at(-1),front=original.settings.annotations[3].position;const center=[a[0],-1.85,(front[2]+b[2])/2];camera.position=[center[0],center[1]+20,center[2]];camera.target=[center[0],center[1],center[2]+.0001];camera.fov=90;}
+ if(direction==='topdown'){const a=original.settings.annotations[2].position,b=inspectionCameras.poses.at(-1),front=original.settings.annotations[3].position;const center=[a[0],-1.85,(front[2]+b[2])/2];const far=new URLSearchParams(location.search).get('survey_plan')==='far';if(far)center[2]=b[2];camera.position=[center[0],center[1]+(far?12:20),center[2]];camera.target=[center[0],center[1],center[2]+.0001];camera.fov=90;}
  if(direction==='front-down'){camera.target=[camera.position[0]-3,camera.position[1]-2,camera.position[2]+2];}
 }
 let viewer;
@@ -140,6 +140,7 @@ if(new URLSearchParams(location.search).has('survey')){
     seek:time=>{viewer.state.animationPaused=true;viewer.seek(time);},
     annotation:index=>viewer.selectAnnotation(index),
     camera:()=>{const c=viewer.app.root.findComponents('camera')[0];return {position:c.entity.getPosition().toArray(),rotation:c.entity.getRotation().toArray(),fov:c.fov,near_clip:c.nearClip,far_clip:c.farClip};},
+    ray:(x,y)=>{const c=viewer.app.root.findComponents('camera')[0],r=viewer.app.graphicsDevice.clientRect;const a=c.screenToWorld(x*r.width,y*r.height,c.nearClip),b=c.screenToWorld(x*r.width,y*r.height,c.farClip);const d=b.clone().sub(a);const length=d.length();d.normalize();return {origin:a.toArray(),direction:d.toArray(),length};},
     pick:async(x,y)=>{const v=await picker?.pick(x,y);return v?.toArray()||null;}
   };
 }
