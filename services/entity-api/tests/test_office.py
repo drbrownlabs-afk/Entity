@@ -162,3 +162,13 @@ class OfficeTests(unittest.TestCase):
         self.cmd('booking.create','room',{'booking_id':'new','person_id':'luis','starts_at':'2026-11-07T16:15:00-05:00','ends_at':'2026-11-07T17:00:00-05:00'})
         self.cmd('booking.create','room',{'booking_id':'next','person_id':'luis','starts_at':'2026-11-07T17:00:00-05:00','ends_at':'2026-11-07T18:00:00-05:00'})
         self.cmd('booking.extend','new',{'ends_at':'2026-11-07T17:30:00-05:00'},code=409)
+
+    def test_logout_revokes_only_current_session_and_survives_restart(self):
+        first=self.auth('luis');second=self.auth('luis')
+        response=self.client.post('/v1/office/auth/logout',headers=first)
+        self.assertEqual(response.status_code,200,response.text)
+        self.assertTrue(response.json()['revoked'])
+        main.initialize()
+        self.assertEqual(self.client.get('/v1/office/me',headers=first).status_code,401)
+        self.assertEqual(self.client.get('/v1/office/me',headers=second).status_code,200)
+        self.assertEqual(self.client.post('/v1/office/auth/logout').status_code,401)

@@ -2,6 +2,14 @@
 
 Última revisión manual: 2026-11-06. Este archivo se actualiza después de cada tarea de implementación. NO reemplaza inspección de código, CI ni commits.
 
+## Estado actual comprobado — Fase 09, 2026-11-07
+
+La rama codex/phase-09-autonomous-plan conserva las fases anteriores y las aportaciones de ChatGPT. Hay 74 pruebas backend aprobadas (50.075 s), seis modelos humanos con animación verificada y recepción HTTP real probada en 1280 y390 px: invitación, respuesta de Carlos, reserva íntegra de A, consulta del grafo autorizada y cierre de sesión revocado en servidor. La imagen Docker actual está saludable en8010; tras reinicio mantiene89 entidades y5 eventos, y el Core anterior de8000 sigue saludable. Ver docs/evidence/phase09.
+
+Synthetic Office sigue siendo el SSOG original. CCTV renderiza cuatro vistas originales y la prueba espacial confirma cinco poses coincidentes entre Core y personaje. La lectura de visibilidad falló por un error de viewport corregido en c32c633; su nueva comprobación está en curso. No se declara aún superado el gate de seguimiento por dos cámaras. C/D/E, puestos individuales y recepción requieren terminar la calibración visual; no se han rellenado con coordenadas supuestas. Móvil utiliza el mismo visor con la proyección filtrada por el servidor. No se han probado Android físico, micrófono real, Web Push ni un proveedor LLM remoto.
+
+Estado global EN CURSO, PR#2 sin fusionar; 09.4/09.5/09.7/09.8 tienen verificaciones funcionales, pero09.1/09.2/09.3/09.6/09.9 conservan pendientes integrales. Vite/descarga SSOG no son bloqueantes; la URL pública se verifica en el workflow Pages. No se inicia el backlog posterior ni se aprueba automáticamente ninguna fase.
+
 ## Implementado y verificado localmente en Fase 00
 - Esqueleto del monorepo, README, AGENTS.md, arquitectura y plan.
 - API FastAPI inicial con SQLite provisional y rutas de entidades, estado, relaciones y eventos.

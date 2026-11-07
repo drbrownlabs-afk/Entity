@@ -37,6 +37,7 @@ test_connector_scope_and_schema_validation (test_office.OfficeTests.test_connect
 test_future_late_and_camera_disconnect (test_office.OfficeTests.test_future_late_and_camera_disconnect) ... ok
 test_hvac_task_and_history (test_office.OfficeTests.test_hvac_task_and_history) ... ok
 test_idempotency_and_conflict (test_office.OfficeTests.test_idempotency_and_conflict) ... ok
+test_logout_revokes_only_current_session_and_survives_restart (test_office.OfficeTests.test_logout_revokes_only_current_session_and_survives_restart) ... ok
 test_no_show_and_extension_conflicts (test_office.OfficeTests.test_no_show_and_extension_conflicts) ... ok
 test_normalized_adapters_and_timeout (test_office.OfficeTests.test_normalized_adapters_and_timeout) ... ok
 test_scenario_isolation_and_apply_revalidation (test_office.OfficeTests.test_scenario_isolation_and_apply_revalidation) ... ok
@@ -62,6 +63,7 @@ test_operator_without_resource_assignment_has_no_implicit_camera_access (test_of
 test_authenticated_personal_reply_supersedes_scripted_character (test_office_simulation.DailySimulationTests.test_authenticated_personal_reply_supersedes_scripted_character) ... ok
 test_full_day_pause_resume_replay_and_memory (test_office_simulation.DailySimulationTests.test_full_day_pause_resume_replay_and_memory) ... ok
 test_hvac_impact_follows_zone_links_and_resolution_is_audited (test_office_simulation.DailySimulationTests.test_hvac_impact_follows_zone_links_and_resolution_is_audited) ... ok
+test_meeting_co2_is_not_misattributed_to_public_desks (test_office_simulation.DailySimulationTests.test_meeting_co2_is_not_misattributed_to_public_desks) ... ok
 test_different_resource_ids_and_site_configuration_use_existing_service (test_office_site_config.DifferentSiteTests.test_different_resource_ids_and_site_configuration_use_existing_service) ... ok
 test_core_clock_reconstruction_restart_and_anonymous_identity_are_separate (test_office_spatial.SpatialClockTests.test_core_clock_reconstruction_restart_and_anonymous_identity_are_separate) ... ok
 test_failure_timeout_mismatch_permissions_and_html_escape (test_output.OutputTests.test_failure_timeout_mismatch_permissions_and_html_escape) ... ok
@@ -74,6 +76,6 @@ test_storage_isolation_and_reply (test_personal_app.PersonalStorageTests.test_st
 test_persistence_after_process_restart (test_restart.RestartTests.test_persistence_after_process_restart) ... ok
 
 ----------------------------------------------------------------------
-Ran 72 tests in 48.835s
+Ran 74 tests in 50.075s
 
 OK

@@ -3,6 +3,7 @@
   "checks": [
     {
       "width": 1280,
+      "server_session_revoked": true,
       "verified_invitation": true,
       "private_host_reply": true,
       "scoped_mobile_booking": true,
@@ -17,6 +18,7 @@
     },
     {
       "width": 390,
+      "server_session_revoked": true,
       "verified_invitation": true,
       "private_host_reply": true,
       "scoped_mobile_booking": true,

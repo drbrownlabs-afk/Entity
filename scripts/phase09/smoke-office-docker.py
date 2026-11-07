@@ -6,6 +6,12 @@ import httpx
 root=Path(__file__).resolve().parents[2];base='http://127.0.0.1:8010'
 credentials=json.loads((root/'.runtime/office/access.json').read_text())
 with httpx.Client(base_url=base,timeout=20) as client:
+    for _ in range(100):
+        try:
+            if client.get('/ready').status_code==200:break
+        except httpx.HTTPError:pass
+        time.sleep(.2)
+    else:raise RuntimeError('Docker Office initial readiness did not recover')
     response=client.post('/v1/office/auth/login',json={'username':'admin','password':credentials['admin']['password']});response.raise_for_status()
     headers={'Authorization':'Bearer '+response.json()['token']};prefix='/v1/sites/synthetic-office/runs/day-01'
     key='technical-smoke-'+str(uuid4())

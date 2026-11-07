@@ -52,7 +52,10 @@ try{
   if(errors.length)throw Error(errors.join('; '));
   await page.screenshot({path:'docs/evidence/phase09/kiosk-'+width+'.png',fullPage:true});
   await host.screenshot({path:'docs/evidence/phase09/personal-'+width+'.png',fullPage:true});
-  report.checks.push({width,verified_invitation:true,private_host_reply:true,scoped_mobile_booking:true,original_viewer_receives_scoped_world:true,shared_scoped_query_verified:true,private_cameras_in_projection:projection.camera_ids.length,kiosk_reflects_core:true,token_in_local_storage:await page.evaluate(()=>Object.keys(localStorage).some(k=>/token|password/i.test(k))),page_errors:errors,voice_screen_controls:true,voice_microphone_executed:false});
+  await host.locator('#logout').click();
+  await host.waitForFunction(()=>document.querySelector('#status').textContent.includes('revocada en Core'));
+  await host.waitForFunction(()=>document.querySelector('#personal-scene').contentWindow.officeProjectionDiagnostics().clock===null);
+  report.checks.push({width,server_session_revoked:true,verified_invitation:true,private_host_reply:true,scoped_mobile_booking:true,original_viewer_receives_scoped_world:true,shared_scoped_query_verified:true,private_cameras_in_projection:projection.camera_ids.length,kiosk_reflects_core:true,token_in_local_storage:await page.evaluate(()=>Object.keys(localStorage).some(k=>/token|password/i.test(k))),page_errors:errors,voice_screen_controls:true,voice_microphone_executed:false});
   await context.close();
  }
  report.status='passed';

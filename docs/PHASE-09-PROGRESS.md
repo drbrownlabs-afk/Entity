@@ -6,14 +6,14 @@ El acceso HTTP del ejecutor obtuvo403; el operador confirma la escena disponible
 | Subfase | Estado | Pruebas/evidencia | Commit/PR | Siguiente |
 |---|---|---|---|---|
 | 09.1 | EN CURSO | HTTP200 en Chromium remoto, escena original/collision/SSOG localizados; SSOG original remoto integrado; Vite opcional, no bloqueante | merge2d73e1d | SSOG original, anotaciones y modo walk ya verificados en baf37b3; faltan recorridos espaciales completos y zonificación operativa; Vite NO es dependencia |
-| 09.2 | PENDIENTE | — | — | Implementar y ejecutar gate 09.2 |
-| 09.3 | PENDIENTE | — | — | Implementar y ejecutar gate 09.3 |
+| 09.2 | EN CURSO | Cinco poses Core/GLB coincidentes sobre SSOG original; raíz de animación corregida | 95e5c2b,08f2295 | Completar rutas de jornada, pausa y replay espacial |
+| 09.3 | EN CURSO | Cuatro CCTV originales visibles; prueba de lectura falló por viewport, corrección publicada | c32c633 | Verificar capturas anónimas en dos cámaras y recuperación histórica |
 | 09.4 | VERIFICADA AUTOMÁTICAMENTE | Disponibilidad/ocupación independientes, concurrencia, no-show, conflicto/reasignación y eventos;64tests | Lote de jornada | Integración visual completa en09.9 pendiente |
 | 09.5 | VERIFICADA AUTOMÁTICAMENTE | HVACD afecta soloD, ticket/personas/reservas, reparación y sensor;64tests | Lote de jornada | Fuentes sintéticas; hardware no probado |
-| 09.6 | PENDIENTE | — | — | Implementar y ejecutar gate 09.6 |
+| 09.6 | EN CURSO | Reinicio de proceso HTTP, backup SQLite y Docker conservan estado/eventos; scrubbing implementado | reception-http-process.json, docker-office.json | Completar reconstrucción gráfica y filtros con evidencia SSOG |
 | 09.7 | VERIFICADA AUTOMÁTICAMENTE | Core query/evidencia/TTL/permisos/acciones/trazas, SDKOpenAI con transporte controlado ytimeout;67tests | Lote de agente | Proveedor remoto real no probado sin clave |
 | 09.8 | VERIFICADA AUTOMÁTICAMENTE | Cierre/HVAC/sobreocupación aislados, comparación y aplicación revalidada;67tests | Lote de escenarios | Efectos visuales completos dependen de09.2/09.9 |
-| 09.9 | PENDIENTE | — | — | Implementar y ejecutar gate 09.9 |
+| 09.9 | EN CURSO | UI compartida Office/personal, consultas y capacidades; E2E1280/390 PASS, CI general verde | cf79f98,c32c633 | Flujo espacial completo, Pages actual y dispositivos físicos |
 
 ## Regla de registro
 En cada gate, añadir fecha, comandos exactos, resultado PASS/FAIL/NO EJECUTADO, capturas/logs sin secretos, problemas y correcciones, SHA, estado GitHub, dependencias y próxima acción. Nunca inventar pruebas. Al reiniciar Codex, leer este documento y retomar el primer gate no verificado.

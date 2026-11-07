@@ -6,7 +6,7 @@ from fastapi.responses import StreamingResponse
 from pydantic import Field
 from app.schemas import CoreRecord,NonBlank
 from app.connectors import Observation,AuditedRoute
-from .auth import principal,scoped,login,authenticate,authenticate
+from .auth import principal,scoped,login,authenticate
 from .storage import encode,utc,world,emit,get_run,identity
 from .service import create_run,command,resource
 from .observations import ingest
@@ -52,6 +52,13 @@ class Apply(CoreRecord):
 def sign_in(body:Login):
     from app.main import database
     with database(write=True) as db:return login(db,body.username,body.password)
+
+@router.post('/office/auth/logout')
+def sign_out(authorization:str=Header(...),actor=Depends(principal)):
+    from app.main import database
+    digest=hashlib.sha256(authorization[7:].encode()).hexdigest()
+    with database(write=True) as db:db.execute('DELETE FROM office_sessions WHERE token_hash=?',(digest,))
+    return {'revoked':True}
 
 @router.get('/office/me')
 def me(actor=Depends(principal)):return {k:v for k,v in actor.items() if k!='permissions'}
