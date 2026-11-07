@@ -1,5 +1,5 @@
 # ENTITY OS — Tablero de fases
-Última actualización: 2026-11-06. Este tablero registra aceptación, no promesas.
+Última actualización: 2026-11-07. Este tablero registra aceptación, no promesas.
 
 | Fase | Nombre | Estado | Evidencia / siguiente paso |
 |---|---|---|---|
@@ -10,7 +10,7 @@
 | 04 | ENTITY Output virtual primero | EN VALIDACIÓN | Presencia→regla→capacidad declarada→escena verificada; manual/fallo/timeout probados. 23 Core + 4 Edge tests; CI remoto Success run 42325648659. Ver docs/phases/PHASE-04.md |
 | 05 | IA situada | EN VALIDACIÓN | SDK oficial OpenAI + sustituto controlado; evidencia, permisos, trazas y Output verificado. 29 Core + 4 Edge tests; CI remoto Success run 42326524584. Proveedor remoto no probado sin clave. Ver docs/phases/PHASE-05.md |
 | 06 | Sistemas externos | EN VALIDACIÓN | RTSP real local + MQTT y REST fixtures, cambio de fuente sin Core, dedup/reinicio/consulta. 29 Core + 7 Edge; CI remoto Success run 42328459031. Matriz y límites en docs/phases/PHASE-06.md |
-| 07 | ENTITY Experience | NO INICIADA | Demo centro comercial aún sin verificación |
+| 07 | ENTITY Experience | EN VALIDACIÓN | PlayCanvas autónomo, fixture Edge compartido, 7 tiendas y 5 cámaras sincronizadas; acciones/consultas y Core opcional real probados. Pages inicial desplegado; verificación pública/CI y límites en docs/phases/PHASE-07.md. Revisión humana pendiente |
 | 08 | Validación integral | NO INICIADA | Depende de pruebas de fases anteriores |
 
 ## Criterios de cambio de estado

@@ -4,6 +4,8 @@ on:
     paths:
       - "services/entity-api/**"
       - "services/entity-edge/**"
+      - "apps/web/**"
+      - "worlds/shopping-mall/**"
       - "scripts/**"
       - "compose.yaml"
       - "packages/contracts/**"
@@ -12,6 +14,8 @@ on:
     paths:
       - "services/entity-api/**"
       - "services/entity-edge/**"
+      - "apps/web/**"
+      - "worlds/shopping-mall/**"
       - "scripts/**"
       - "compose.yaml"
       - "packages/contracts/**"
@@ -89,3 +93,41 @@ jobs:
             .runtime/output-demo/*report.json
             .runtime/output-demo/screen.html
             .runtime/integrations-demo/report.json
+
+  experience-tests:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install Core for browser API fixture
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install -r services/entity-api/requirements.lock
+      - name: Install and build autonomous experience
+        run: bash scripts/setup-experience.sh
+      - name: Test shared world and action readback
+        working-directory: apps/web
+        run: npm test
+      - name: Install browser from official Playwright distribution
+        working-directory: apps/web
+        run: npx playwright install --with-deps chromium
+      - name: Test real WebGL views and mobile layout
+        working-directory: apps/web
+        run: npm run test:browser
+      - name: Check actual viewer export against Core
+        run: .venv/bin/python scripts/test-experience-contract.py
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: experience-evidence
+          path: |
+            .runtime/experience-*.png
+            .runtime/experience-*.json
+            apps/web/dist

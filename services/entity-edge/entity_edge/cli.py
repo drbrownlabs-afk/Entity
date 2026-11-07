@@ -30,7 +30,7 @@ def run():
         client.put('/v1/integrations/connectors/edge-demo',json={'connector_id':'edge-demo','version':'1',
             'protocols':['simulation','rest'],'input_event_types':['edge.presence']}).raise_for_status()
         outbox.flush(client)
-        source=VideoSource(args.video) if args.video else [ [(x,.7)] if x is not None else [] for x in [.1,.15,.2,.25,.3,.35,.4,.45,.5,.55,.6,.65,.7,.75,.8,None,None,None,None,.2] ]
+        source=VideoSource(args.video) if args.video else json.loads((Path(__file__).resolve().parents[3]/'worlds/shopping-mall/fixture.json').read_text())['frames']
         fps = source.capture.get(5) if args.video else 10
         if fps <= 0:fps = 10
         for n,frame in enumerate(source):

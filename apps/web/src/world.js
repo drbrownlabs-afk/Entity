@@ -1,0 +1,25 @@
+import fixture from '../../../worlds/shopping-mall/fixture.json' with { type: 'json' };
+export { fixture };
+export const stores = ['ATLAS · Books','LUMA · Design','VERDE · Market','FORMA · Studio','NOVA · Tech','ORIGEN · Café','KIN · Active'].map((name,i)=>({id:`store-${i+1}`,name,open:true,x:i<4?-4:4,z:i<4?-9+i*6:-6+(i-4)*6,color:['#49b6c8','#dea967','#72b998','#a18bc6','#70a2df','#c79269','#b7c367'][i]}));
+export class Experience {
+  constructor(){this.mode='local';this.remote=null;this.tick=-1;this.revision=0;this.scene='welcome';this.hvac='comfort';this.stores=structuredClone(stores);this.events=[];this.eventSequence=0;this.listeners=[];this.visitors=[];this.setTick(0);}
+  subscribe(fn){this.listeners.push(fn);return()=>{this.listeners=this.listeners.filter(x=>x!==fn);};}
+  emit(type,payload,simulated=true){this.events.unshift({id:`event-${++this.eventSequence}`,tick:this.tick,type,payload,simulated});this.events=this.events.slice(0,40);}
+  notify(){for(const fn of this.listeners)fn(this.snapshot());}
+  setTick(tick){if(this.mode!=='local')throw Error('Desconecta Core antes de reproducir el fixture');if(!Number.isInteger(tick)||tick<0)throw Error('Invalid tick');if(this.tick===tick)return;const old=this.visitors;this.tick=tick;this.revision++;
+    this.visitors=Array.from({length:6},(_,i)=>{const point=fixture.frames[(tick+i*3)%fixture.frames.length][0];return point?{id:`visitor-${i+1}`,x:(i%2?1:-1)*.8,z:(point[0]-.5)*24,zone:point[0]<.5?'corridor-north':'corridor-south',image:point}:null;}).filter(Boolean);
+    for(const person of old)if(!this.visitors.some(p=>p.id===person.id&&p.zone===person.zone))this.emit('zone.exited',{entity_id:person.id,zone:person.zone});
+    for(const person of this.visitors)if(!old.some(p=>p.id===person.id&&p.zone===person.zone))this.emit('zone.entered',{entity_id:person.id,zone:person.zone});
+    this.notify();}
+  dispatch(action){if(this.mode!=='local')throw Error('En modo Core usa la acción API autorizada');const value=action.value;let actual;
+    if(action.type==='scene'&&['welcome','alert'].includes(value)){this.scene=value;actual=this.scene;}
+    else if(action.type==='hvac'&&['comfort','eco'].includes(value)){this.hvac=value;actual=this.hvac;}
+    else if(action.type==='store'&&typeof value==='boolean'){const target=this.stores.find(s=>s.id===action.id);if(!target)throw Error('Unknown store');target.open=value;actual=target.open;}
+    else throw Error('Unsupported action');
+    this.revision++;this.emit('capability.result',{...action,status:actual===value?'verified':'failed',actor:'local-demo-operator'});this.notify();return this.events[0];}
+  snapshot(){return structuredClone({schema_version:'1.0',simulated:this.mode==='local'?true:this.remote?.simulated??null,mode:this.mode,remote:this.remote,tick:this.tick,revision:this.revision,time_seconds:this.tick*fixture.step_seconds,scene:this.scene,hvac:this.hvac,stores:this.stores,visitors:this.visitors,events:this.events});}
+  applyCore(entity){if(!entity?.id||!entity.state)throw Error('Respuesta Core inválida');const snapshot=entity.state['edge.presence'];if(snapshot&&(!Array.isArray(snapshot.tracks)||snapshot.tracks.length>1000||snapshot.tracks.some(t=>!Array.isArray(t.position)||t.position.length!==2||t.position.some(v=>!Number.isFinite(v)||v<0||v>1))))throw Error('Coordenadas Core inválidas');this.mode='core';this.remote={entity_id:entity.id,observed_at:snapshot?.observed_at||null,simulated:snapshot?.simulated??null};this.revision++;this.visitors=(snapshot?.tracks||[]).map((t,i)=>({id:t.local_track_id,x:(i%2?1:-1)*.8,z:(t.position[0]-.5)*24,zone:t.zone_id||'sin-zona',image:t.position}));if(entity.state['display.scene'])this.scene=entity.state['display.scene'];this.events=[];this.emit('core.snapshot',{entity_id:entity.id},snapshot?.simulated??null);this.notify();}
+  local(){this.mode='local';this.remote=null;const tick=this.tick;this.tick=-1;this.setTick(Math.max(tick,0));}
+  query(question){const q=question.toLowerCase();const evidence=this.snapshot();let answer;if(/tienda|abiert/.test(q))answer=`${this.stores.filter(s=>s.open).length} de 7 tiendas abiertas en la simulación.`;else if(/clima|hvac/.test(q))answer=`HVAC simulado: ${this.hvac}.`;else if(/escena|contenido/.test(q))answer=`Escena virtual: ${this.scene}.`;else if(/ocurre|recepci|visit|persona|presen/.test(q))answer=`${this.visitors.length} visitantes sintéticos presentes; revisión ${this.revision}.`;else answer='Sin evidencia para esa consulta local. Consulta visitantes, tiendas, HVAC o escena.';return {answer,revision:evidence.revision,source:'local-simulation',entity_ids:this.visitors.map(v=>v.id)};}
+  observation(){return {schema_version:'1.0',observation_id:crypto.randomUUID(),site_id:'mall-demo',source_id:'experience-camera',observed_at:new Date().toISOString(),type:'edge.presence',provenance:{connector_id:'experience',model_version:'shared-edge-fixture-v1',simulated:true},payload:{source_status:'connected',frame_index:this.tick,media_time_seconds:this.tick*fixture.step_seconds,tracks:this.visitors.map(p=>({local_track_id:p.id,zone_id:p.zone,position:p.image})),transitions:[]}};}
+}

@@ -15,6 +15,7 @@ from typing import Any
 from uuid import uuid4
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import Field
 
 from app.migrate import migrate
@@ -33,6 +34,11 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(title="ENTITY OS", version="0.2.0", lifespan=lifespan)
+# Optional explicit browser origins; no wildcard, cookies or renderer dependency.
+allowed_origins = [value.strip() for value in os.getenv("ENTITY_ALLOWED_ORIGINS", "").split(",") if value.strip()]
+if allowed_origins:
+    app.add_middleware(CORSMiddleware, allow_origins=allowed_origins, allow_credentials=False,
+                       allow_methods=["GET", "POST", "PUT"], allow_headers=["Authorization", "Content-Type"])
 
 
 def now() -> str:
