@@ -2,8 +2,44 @@
   "transport": "HTTPX MockTransport; isolated actual Outbox SQLite, not a physical source",
   "permanent_422_queue": {
     "seen": [
-      "permanently-rejected",
-      "permanently-rejected"
+      "00000000-0000-4000-8000-000000000001",
+      "00000000-0000-4000-8000-000000000001"
+    ],
+    "queued_bodies": [
+      {
+        "schema_version": "1.0",
+        "observation_id": "00000000-0000-4000-8000-000000000001",
+        "site_id": "audit-site",
+        "source_id": "audit-camera",
+        "observed_at": "2026-11-07T00:00:00Z",
+        "type": "edge.presence",
+        "payload": {
+          "tracks": "invalid"
+        },
+        "provenance": {
+          "connector_id": "audit",
+          "model_version": "audit-profile",
+          "simulated": true
+        }
+      },
+      {
+        "schema_version": "1.0",
+        "observation_id": "00000000-0000-4000-8000-000000000002",
+        "site_id": "audit-site",
+        "source_id": "audit-camera",
+        "observed_at": "2026-11-07T00:00:00Z",
+        "type": "edge.presence",
+        "payload": {
+          "tracks": [],
+          "transitions": [],
+          "source_status": "connected"
+        },
+        "provenance": {
+          "connector_id": "audit",
+          "model_version": "audit-profile",
+          "simulated": true
+        }
+      }
     ],
     "pending": 2,
     "valid_next_attempted": false,
