@@ -62,3 +62,12 @@ Se corrigió un filtro inicial que consultaba age de la detección de Norfair y 
 Zonas son imagen, no plano físico. En grabaciones una lectura fallida se trata como EOF y no se distingue automáticamente corrupción de fin; fuentes en vivo tienen reintento limitado. No se valida RTSP/Orbbec física, GPU, carga sostenida, seguridad multiusuario ni recuperación ante corte eléctrico. Timestamps del cliente son confiados; reloj muy adelantado podría impedir actualizar hasta corregir el origen. SQLite local, listas sin paginación y permisos globales siguen siendo límites heredados.
 
 No se avanzó Fase 04. Hardware real es subentrega diferida no bloqueante según PLANS.md actualizado. Próximo paso: revisión humana de esta evidencia.
+
+
+## Entrega GitHub verificada
+Implementación publicada: https://github.com/drbrownlabs-afk/Entity/commit/8baea3d95f185bc1df682ab0c74cae56310f0e88
+Rama: codex/phase-03-edge. Fetch HTTPS a repositorio bare independiente confirmó SHA y árbol completo idénticos. merge-base confirmó ancestros 8f3815c, 001d2f8, 0506df4, cabd969 y 1e6b29f; trabajo previo preservado.
+
+Build Docker con CA, start-local y smoke-docker ejecutados con la proyección nueva: correctos, volumen conservado y persistencia tras reinicio aprobada. compileall, pip check Edge y diff --check correctos. Descarga adicional desde URL fijada por commit confirmó el mismo checksum del vídeo. install_script/start_skill actualizados y guardados en borrador cloud (instalación Core+Edge y límite Fase 04); no se afirma publicación del snapshot.
+
+PR intentado con gh pr create --repo drbrownlabs-afk/Entity --base main --head codex/phase-03-edge y body-file: Forbidden en api.github.com/graphql. Consulta gh api de Actions para la rama: Forbidden. Sin PR ni merge a main; CI remoto desconocido. No hay operación Git pendiente del operador. Requiere acceso API utilizable para que Codex pueda crear PR/consultar Actions; no se ha inferido la causa exacta del Forbidden. Fase 03 EN VALIDACIÓN, revisión humana pendiente; Fase 04 no iniciada.

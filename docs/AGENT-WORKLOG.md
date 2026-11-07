@@ -111,3 +111,10 @@ Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin
 - CI: job Edge instala componentes y vídeo checksum, tests y demo real; reportes numéricos sin vídeo/token. Resultado remoto/PR pendiente de consulta real al publicar.
 - Decisiones: master/Edge specs y DECISION-LOG actualizados; Orbbec diferido no bloqueante por plan actualizado. Estado Fase 03 EN VALIDACIÓN; Fase 04 NO INICIADA.
 - Próxima acción: publicar y comprobar GitHub; revisión humana de evidencia.
+
+
+### 2026-11-07 UTC — publicación Fase 03
+- Implementación publicada 8baea3d95f185bc1df682ab0c74cae56310f0e88 en codex/phase-03-edge; fetch independiente confirma árbol completo. Verificados ancestros de fases 00–02 y main cabd969/1e6b29f. Sin pérdidas ni reescritura de commits.
+- PR y Actions consultados realmente: Forbidden en api.github.com/graphql y API Actions. Sin PR/merge a main; CI remoto desconocido. No se pide Git manual al operador.
+- install_script y start_skill cloud guardados en borrador para Core+Edge/Fase 03; no snapshot publicado. URL del vídeo fijada por commit descargada adicionalmente, checksum correcto.
+- Archivos de cierre: PHASE-03.md, PROJECT-STATUS.md y esta bitácora. Sin cambios funcionales después de 20+4 tests aprobados, demo y Docker. Fase 03 EN VALIDACIÓN; Fase 04 no iniciada. Siguiente paso revisión humana y acceso API para completar PR cuando esté disponible.
