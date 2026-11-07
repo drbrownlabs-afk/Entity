@@ -38,3 +38,7 @@ En cada gate, añadir fecha, comandos exactos, resultado PASS/FAIL/NO EJECUTADO,
 
 ## Hallazgo de cobertura espacial — 2026-11-07
 El operador confirma MÁS conjuntos de mesas de seis sillas en la escena que los dos `Office Bench` anotados. El bootstrap actual itera solo cuatro anotaciones y por tanto **subrepresenta la escena**. Corrección obligatoria antes de cerrar 09.1: inspección visual integral del SSOG, inventario de mobiliario y grupos NO anotados, diferenciación por adyacencia de dos oficinas privadas junto a mesa negra y resto de puestos individuales; recepción y espera independientes. Registrar capturas y anclas verificables; no inferir coordenadas ni cantidades no observadas. No convertir dos anotaciones en dos oficinas privadas sin comprobar su ubicación. No depender de Vite. Esta modificación documental NO afirma que el inventario visual ni el bootstrap estén ya corregidos.
+
+
+## Confirmación de correspondencia — 2026-11-07
+El operador aclara que las DOS anotaciones originales `6-Person Office Bench System` **son exactamente las dos oficinas privadas** de seis posiciones. Queda resuelta la incertidumbre introducida anteriormente sobre su identificación. El resto de mesas de seis sillas, no anotadas, deben descubrirse por inspección visual e inventariarse como coworking de puestos individuales. El código actual del bootstrap sigue pendiente de corregir: hoy publica los puestos de ambas oficinas privadas como recursos individuales. Mantener 09.1 EN CURSO hasta implementación y pruebas; Vite no es dependencia.
