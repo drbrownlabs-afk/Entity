@@ -3,5 +3,6 @@
   "source": "Original SSOG + Core routes measured from original floor + Rocketbox + PlayCanvas picker; simulated people, no physical camera or facial identity claim",
   "checks": [],
   "status": "failed",
-  "error": "TimeoutError: page.waitForFunction: Timeout 90000ms exceeded."
+  "error": "Error: Renderer pose diverged from Core",
+  "page_errors": []
 }
