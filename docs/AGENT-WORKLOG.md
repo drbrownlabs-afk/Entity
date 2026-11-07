@@ -180,3 +180,10 @@ Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin
 - Run 42328049603 para cc78f084a60ed625b61997713469a728e01ccac1: Success, 1m41s, api-tests 34s/edge-tests 1m37s, sin anotaciones. Incluye integración real local RTSP/MQTT/REST. Se conserva primer fallo run 42327761645; no se inventa causa exacta con logs privados. FFmpeg ahora garantizado desde apt oficial si falta en runner.
 - Salud de cliente MQTT corregida: connected=False al desconectar y flag subscribed limpio; test dirigido de los 3 casos de adaptadores aprobado (.019 s). Diagnóstico público de vídeo solo muestra logs de este laboratorio ficticio, sin headers/tokens. No se cambió Core ni protocolos propios.
 - Documentación de matriz/roadmap/licencias y límites añadida. Esquema Core sigue 5, historial de fases anteriores conservado. Resultado de CI final se registrará tras el siguiente push. Fase 06 EN VALIDACIÓN, no Fase 07.
+
+
+### 2026-11-07 UTC — publicación/verificación Fase 06
+- Rama codex/phase-06-integrations publicada hasta 1c1332f0743372d0d8b326c379cf7017c49462cb. Fetch independiente confirma SHA/árbol idénticos, fases previas preservadas como ancestros; diff de services/entity-api respecto a fc769b0 vacío. Core sin cambios, sin migración/DDL nuevos.
+- PR REST intentado: Forbidden en api.github.com/repos/drbrownlabs-afk/Entity/pulls. Sin PR nuevo/merge, PR #1 no se duplica; no operaciones Git manuales del operador. CI se dispara por push y se observa por web pública como en fases previas.
+- start_skill esquema 5 actualizado en borrador para instalación/demo de integraciones y límite Fase 07, sin afirmar publicación de snapshot. Servicios de demo limpiados; solo API Docker previa sigue funcionando.
+- Cierre documental explicita límites de IDs opacos/reservas, compatibilidad física no demostrada y semántica de eventos no visuales. Fase 06 EN VALIDACIÓN; Fase 07 NO INICIADA.
