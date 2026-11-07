@@ -21,7 +21,7 @@ original.settings.annotations.forEach((annotation,index)=>{
   document.querySelector('#annotations').append(button);
 });
 try{
-  viewer=await createViewer({container:document.querySelector('#scene'),settings,contentUrl,collisionUrl,renderer:'webgl',ui:true,reticle:true});
+  viewer=await createViewer({container:document.querySelector('#scene'),settings,contentUrl,collisionUrl,renderer:'webgl',ui:true,reticle:true,budget:Math.max(.25,Math.min(4,Number(new URLSearchParams(location.search).get('budget'))||1)),framesInFlight:1});
   viewer.state.animationPaused=true;
   viewer.events.on('loaded:changed',loaded=>{if(loaded){output.textContent='SSOG original cargado · navegación oficial SuperSplat';viewer.resetCamera();}});
   viewer.events.on('selectedAnnotation:changed',index=>{if(index!==null)inspect(index);});
