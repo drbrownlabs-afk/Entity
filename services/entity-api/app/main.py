@@ -8,17 +8,31 @@ from __future__ import annotations
 import json
 import os
 import sqlite3
-from contextlib import contextmanager
+from contextlib import asynccontextmanager, contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from uuid import uuid4
 
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
+from pydantic import Field
+
+from app.migrate import migrate
+from app.schemas import (
+    CapabilityCreate, EventCreate, MemoryCreate, CoreRecord, NonBlank,
+    EventRecord, MemoryRecord, MemoryCreated, CapabilityRecord, CapabilityCreated,
+)
 
 DB_PATH = Path(os.getenv("ENTITY_SQLITE_PATH", "entity-dev.sqlite3"))
-app = FastAPI(title="ENTITY OS", version="0.1.0")
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    initialize()
+    yield
+
+
+app = FastAPI(title="ENTITY OS", version="0.2.0", lifespan=lifespan)
 
 
 def now() -> str:
@@ -26,63 +40,43 @@ def now() -> str:
 
 
 @contextmanager
-def database():
+def database(*, write=False):
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     conn.execute("PRAGMA foreign_keys=ON")
     try:
+        if write:
+            conn.execute("BEGIN IMMEDIATE")
         yield conn
         conn.commit()
+    except Exception:
+        conn.rollback()
+        raise
     finally:
         conn.close()
 
 
-@app.on_event("startup")
 def initialize():
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     with database() as db:
-        db.executescript("""
-        CREATE TABLE IF NOT EXISTS entities (
-            id TEXT PRIMARY KEY, type TEXT NOT NULL,
-            attributes TEXT NOT NULL, created_at TEXT NOT NULL
-        );
-        CREATE TABLE IF NOT EXISTS entity_state (
-            entity_id TEXT NOT NULL, key TEXT NOT NULL,
-            value TEXT NOT NULL, updated_at TEXT NOT NULL,
-            PRIMARY KEY(entity_id, key),
-            FOREIGN KEY(entity_id) REFERENCES entities(id)
-        );
-        CREATE TABLE IF NOT EXISTS relations (
-            id TEXT PRIMARY KEY, source_id TEXT NOT NULL,
-            target_id TEXT NOT NULL, type TEXT NOT NULL,
-            created_at TEXT NOT NULL,
-            FOREIGN KEY(source_id) REFERENCES entities(id),
-            FOREIGN KEY(target_id) REFERENCES entities(id)
-        );
-        CREATE TABLE IF NOT EXISTS events (
-            id TEXT PRIMARY KEY, entity_id TEXT NOT NULL,
-            type TEXT NOT NULL, payload TEXT NOT NULL,
-            occurred_at TEXT NOT NULL,
-            FOREIGN KEY(entity_id) REFERENCES entities(id)
-        );
-        """)
+        migrate(db)
 
 
-class EntityCreate(BaseModel):
-    id: str = Field(min_length=1)
-    type: str = Field(min_length=1)
+class EntityCreate(CoreRecord):
+    id: NonBlank
+    type: NonBlank
     attributes: dict[str, Any] = Field(default_factory=dict)
 
 
-class StateUpdate(BaseModel):
-    key: str = Field(min_length=1)
+class StateUpdate(CoreRecord):
+    key: NonBlank
     value: Any
 
 
-class RelationCreate(BaseModel):
-    source_id: str
-    target_id: str
-    type: str = Field(min_length=1)
+class RelationCreate(CoreRecord):
+    source_id: NonBlank
+    target_id: NonBlank
+    type: NonBlank
 
 
 def require_entity(db: sqlite3.Connection, entity_id: str):
@@ -97,7 +91,7 @@ def health():
 
 @app.post("/v1/entities", status_code=201)
 def create_entity(entity: EntityCreate):
-    with database() as db:
+    with database(write=True) as db:
         try:
             db.execute(
                 "INSERT INTO entities VALUES (?,?,?,?)",
@@ -139,9 +133,9 @@ def get_entity(entity_id: str):
 
 @app.put("/v1/entities/{entity_id}/state")
 def update_state(entity_id: str, change: StateUpdate):
-    timestamp = now()
-    with database() as db:
+    with database(write=True) as db:
         require_entity(db, entity_id)
+        timestamp = now()
         old = db.execute(
             "SELECT value FROM entity_state WHERE entity_id=? AND key=?",
             (entity_id, change.key),
@@ -156,7 +150,7 @@ def update_state(entity_id: str, change: StateUpdate):
         event_id = str(uuid4())
         payload = {"key": change.key, "previous": previous, "value": change.value}
         db.execute(
-            "INSERT INTO events VALUES(?,?,?,?,?)",
+            "INSERT INTO events(id,entity_id,type,payload,occurred_at) VALUES(?,?,?,?,?)",
             (event_id, entity_id, "state.changed", json.dumps(payload), timestamp),
         )
     return {"entity_id": entity_id, "event_id": event_id, "state": {change.key: change.value}}
@@ -164,7 +158,7 @@ def update_state(entity_id: str, change: StateUpdate):
 
 @app.post("/v1/relations", status_code=201)
 def create_relation(relation: RelationCreate):
-    with database() as db:
+    with database(write=True) as db:
         require_entity(db, relation.source_id)
         require_entity(db, relation.target_id)
         relation_id = str(uuid4())
@@ -175,7 +169,7 @@ def create_relation(relation: RelationCreate):
     return {"id": relation_id, **relation.model_dump()}
 
 
-@app.get("/v1/entities/{entity_id}/events")
+@app.get("/v1/entities/{entity_id}/events", response_model=list[EventRecord])
 def get_events(entity_id: str):
     with database() as db:
         require_entity(db, entity_id)
@@ -184,3 +178,83 @@ def get_events(entity_id: str):
             (entity_id,),
         ).fetchall()
         return [{**dict(r), "payload": json.loads(r["payload"])} for r in rows]
+
+
+@app.get("/ready")
+def ready():
+    try:
+        with database() as db:
+            version = db.execute("PRAGMA user_version").fetchone()[0]
+            db.execute("SELECT id FROM capabilities LIMIT 1")
+            db.execute("SELECT id FROM memories LIMIT 1")
+            if version != 3:
+                raise sqlite3.DatabaseError("Unexpected schema version")
+    except sqlite3.Error:
+        raise HTTPException(503, "Database is not ready")
+    return {"status": "ready", "database_schema_version": version, "api_version": "v1"}
+
+
+def append_event(db, entity_id, event_type, payload, source="entity-api"):
+    event = {"id": str(uuid4()), "entity_id": entity_id, "type": event_type,
+             "payload": payload, "occurred_at": now(), "source": source,
+             "schema_version": "1.0"}
+    db.execute("INSERT INTO events(id,entity_id,type,payload,occurred_at,source,schema_version) "
+               "VALUES(?,?,?,?,?,?,?)", (event["id"], entity_id, event_type,
+               json.dumps(payload), event["occurred_at"], source, "1.0"))
+    return event
+
+
+@app.post("/v1/entities/{entity_id}/events", status_code=201, response_model=EventRecord)
+def record_event(entity_id: str, event: EventCreate):
+    with database(write=True) as db:
+        require_entity(db, entity_id)
+        return append_event(db, entity_id, event.type, event.payload, event.source)
+
+
+@app.post("/v1/entities/{entity_id}/memories", status_code=201, response_model=MemoryCreated)
+def record_memory(entity_id: str, memory: MemoryCreate):
+    with database(write=True) as db:
+        require_entity(db, entity_id)
+        record = {"id": str(uuid4()), "entity_id": entity_id,
+                  **memory.model_dump(), "created_at": now()}
+        db.execute("INSERT INTO memories VALUES(?,?,?,?,?,?)", (
+            record["id"], entity_id, memory.content, memory.source, record["created_at"], memory.schema_version))
+        event = append_event(db, entity_id, "memory.recorded", {"memory_id": record["id"]}, memory.source)
+        return {**record, "event_id": event["id"]}
+
+
+@app.get("/v1/entities/{entity_id}/memories", response_model=list[MemoryRecord])
+def list_memories(entity_id: str):
+    with database() as db:
+        require_entity(db, entity_id)
+        return [dict(row) for row in db.execute(
+            "SELECT * FROM memories WHERE entity_id=? ORDER BY created_at,id", (entity_id,))]
+
+
+@app.post("/v1/entities/{entity_id}/capabilities", status_code=201, response_model=CapabilityCreated)
+def declare_capability(entity_id: str, capability: CapabilityCreate):
+    with database(write=True) as db:
+        require_entity(db, entity_id)
+        record = {"id": str(uuid4()), "entity_id": entity_id,
+                  **capability.model_dump(), "created_at": now()}
+        try:
+            db.execute("INSERT INTO capabilities VALUES(?,?,?,?,?,?,?,?)", (
+                record["id"], entity_id, capability.operation, capability.description,
+                json.dumps(capability.parameters), capability.required_permission,
+                capability.schema_version, record["created_at"]))
+        except sqlite3.IntegrityError:
+            raise HTTPException(409, "Capability operation already declared for entity")
+        event = append_event(db, entity_id, "capability.declared", {"capability_id": record["id"]})
+        return {**record, "event_id": event["id"]}
+
+
+@app.get("/v1/entities/{entity_id}/capabilities", response_model=list[CapabilityRecord])
+def list_capabilities(entity_id: str):
+    with database() as db:
+        require_entity(db, entity_id)
+        return [{**dict(row), "parameters": json.loads(row["parameters"])}
+                for row in db.execute("SELECT * FROM capabilities WHERE entity_id=? ORDER BY operation", (entity_id,))]
+
+
+from app.connectors import router as integration_router
+app.include_router(integration_router)

@@ -1,0 +1,71 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "capability_id": {
+      "format": "uuid",
+      "title": "Capability Id",
+      "type": "string"
+    },
+    "target_entity_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Target Entity Id",
+      "type": "string"
+    },
+    "connector_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Connector Id",
+      "type": "string"
+    },
+    "operation": {
+      "const": "simulation.set_state",
+      "title": "Operation",
+      "type": "string"
+    },
+    "input_schema": {
+      "const": "state-key-value-v1",
+      "default": "state-key-value-v1",
+      "title": "Input Schema",
+      "type": "string"
+    },
+    "required_permission": {
+      "const": "simulate:write",
+      "default": "simulate:write",
+      "title": "Required Permission",
+      "type": "string"
+    },
+    "timeout": {
+      "const": 5,
+      "default": 5,
+      "title": "Timeout",
+      "type": "integer"
+    },
+    "verification_method": {
+      "const": "sqlite-readback",
+      "default": "sqlite-readback",
+      "title": "Verification Method",
+      "type": "string"
+    },
+    "idempotency_policy": {
+      "const": "request-id",
+      "default": "request-id",
+      "title": "Idempotency Policy",
+      "type": "string"
+    }
+  },
+  "required": [
+    "capability_id",
+    "target_entity_id",
+    "connector_id",
+    "operation"
+  ],
+  "title": "Capability",
+  "type": "object"
+}
