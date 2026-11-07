@@ -41,7 +41,16 @@
         }
       ],
       "errors": [],
-      "substitute": false
+      "substitute": false,
+      "cctv": {
+        "cameraViews": 4,
+        "activeCameras": 4,
+        "worldClock": null,
+        "avatarsLoaded": 0,
+        "avatarsPlaced": [],
+        "singleApplication": true,
+        "source": "original SSOG and same Core world"
+      }
     },
     {
       "width": 390,
@@ -83,7 +92,16 @@
         }
       ],
       "errors": [],
-      "substitute": false
+      "substitute": false,
+      "cctv": {
+        "cameraViews": 4,
+        "activeCameras": 2,
+        "worldClock": null,
+        "avatarsLoaded": 0,
+        "avatarsPlaced": [],
+        "singleApplication": true,
+        "source": "original SSOG and same Core world"
+      }
     }
   ],
   "status": "passed"
