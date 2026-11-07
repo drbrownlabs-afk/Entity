@@ -74,3 +74,14 @@ Antes de actualizar el contenedor se creó una copia SQLite consistente mediante
 - No se probaron PostgreSQL/PostGIS, Scorpio, hardware, carga prolongada, fallos eléctricos, backup remoto ni despliegue productivo. No hay autenticación; mantener enlace de puertos en loopback. Lecturas de listados sin paginación, límite a revisar antes de producción.
 - Se entrega en rama `codex/phase-01-core`, sobre `566e883`, sin fusión a main ni autoaprobación. Los resultados de CI remoto y PR se registran en la bitácora con su observación real.
 - Próximo paso: revisión humana de la Fase 01 y de la decisión de mantener SQLite local. No iniciar Fase 02 sin aprobación.
+
+
+## Entrega GitHub comprobada
+
+- Implementación publicada: https://github.com/drbrownlabs-afk/Entity/commit/001d2f810cab0e427a1d179ff558b8bc5fa3bc4a
+- Rama: https://github.com/drbrownlabs-afk/Entity/tree/codex/phase-01-core
+- `git push -u origin codex/phase-01-core`: correcto. Fetch HTTPS a repositorio bare independiente, comparación de SHA y árbol completo: idénticos. Archivos Core, SQL, contrato, tests y memoria compartida comprobados individualmente.
+- `gh pr create --repo drbrownlabs-afk/Entity --base main --head codex/phase-01-core ... --body-file /tmp/entity-phase01-pr.md`: Forbidden en api.github.com/graphql. No se creó PR ni se fusionó a main. La rama incluye la base Fase 00 aún no fusionada.
+- `gh api 'repos/drbrownlabs-afk/Entity/actions/runs?branch=codex%2Fphase-01-core'`: Forbidden. Resultado CI remoto desconocido; no se afirma que no se haya ejecutado.
+- El bloqueo es de API GitHub; Git de lectura/escritura funciona. No se requieren operaciones Git manuales del operador; Codex puede continuar PR/consulta CI cuando disponga de acceso API permitido y autorizado.
+- Fase 01 EN VALIDACIÓN; Fase 02 NO INICIADA. API Docker permanece saludable. start_skill del entorno actualizado y guardado en borrador; revisión/publicación del snapshot sigue independiente de los commits GitHub.

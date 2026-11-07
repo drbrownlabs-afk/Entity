@@ -68,3 +68,14 @@ Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin
 - Configuración cloud: start_skill actualizado y guardado en borrador para Fase 01, /ready y límite Fase 02. install_script conservado; mismas dependencias y pasos de build/tests ejecutados. Guardar borrador no publica snapshot.
 - Decisiones: documentadas en DECISION-LOG y master spec; SQLite por necesidad actual, migraciones forward-only, contratos versión 1.0 y capacidades solo declarativas.
 - Estado: EN VALIDACIÓN; no autoaprobación de Fase 00/01. Próxima acción: publicación GitHub, verificar archivos remotos y revisión humana; Fase 02 NO INICIADA.
+
+
+### 2026-11-07 00:46 UTC — Codex / entrega publicada Fase 01
+- Objetivo: confirmar que implementación y evidencia están disponibles en GitHub.
+- Rama / commit: codex/phase-01-core; implementación 001d2f810cab0e427a1d179ff558b8bc5fa3bc4a, publicada mediante git push -u origin codex/phase-01-core. Sin PR ni merge a main.
+- Verificación: fetch HTTPS a repositorio bare independiente; SHA y árbol completo coinciden. Confirmados individualmente main.py, schemas.py, migraciones SQL, test_core.py, contrato OpenAPI y documentos compartidos.
+- Archivos de cierre: PROJECT-STATUS.md, PHASE-BOARD.md, phases/PHASE-01.md y esta bitácora actualizados con enlaces y observaciones reales.
+- Pruebas: se conservan las 15/15 pruebas y smoke Docker aprobados; no repetidos después de cambios solo documentales. Contenedor observado healthy tras publicación.
+- Bloqueo: gh pr create devuelve Forbidden en api.github.com/graphql. gh api Actions para la rama devuelve Forbidden. No se puede confirmar CI remoto ni crear PR con este acceso API; publicación Git completada. No se trasladan tareas Git al operador.
+- Estado final: Fase 01 EN VALIDACIÓN, evidencia publicada para revisión humana; Fase 02 NO INICIADA. Limitaciones funcionales y decisiones en phases/PHASE-01.md y DECISION-LOG.md.
+- Próxima acción: revisión humana de Fase 01; acceso API GitHub para que Codex complete PR y consulta CI cuando sea posible. No avanzar Fase 02 sin aprobación.
