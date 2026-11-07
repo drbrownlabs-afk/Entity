@@ -1,0 +1,48 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "camera_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Camera Id",
+      "type": "string"
+    },
+    "capability_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Capability Id",
+      "type": "string"
+    },
+    "active_scene": {
+      "default": "welcome",
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Active Scene",
+      "type": "string"
+    },
+    "idle_scene": {
+      "default": "idle",
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Idle Scene",
+      "type": "string"
+    },
+    "enabled": {
+      "default": true,
+      "title": "Enabled",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "camera_id",
+    "capability_id"
+  ],
+  "title": "Rule",
+  "type": "object"
+}

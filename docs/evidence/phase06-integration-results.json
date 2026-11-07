@@ -1,0 +1,14 @@
+{
+  "ip_video": "rtsp-real-local-protocol",
+  "video_samples": 95,
+  "same_camera_contract": "passed",
+  "mqtt_qos1_dedup": "passed",
+  "broker_restart": "passed",
+  "core_restart_outbox": "passed",
+  "measurement_events": 2,
+  "rest_reservation_events": 2,
+  "reservation_revision": "passed",
+  "agent_evidence": "passed",
+  "physical_devices_tested": false,
+  "sensor_and_business_data": "simulated-fixtures"
+}

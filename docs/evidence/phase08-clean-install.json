@@ -1,0 +1,52 @@
+{
+  "source_commit": "9c601af499364c5acaf782572c43f0b555f3f916",
+  "method": "New source tar extraction under /tmp; new Core/Edge venvs and npm ci, no shared node_modules or copied venv",
+  "setup_command": "bash scripts/setup-demo.sh",
+  "demo_command": "bash scripts/demo-entity.sh",
+  "setup_exit_code": 0,
+  "report": {
+    "schema_version": "1.0",
+    "mode": "synthetic-fixture-real-http",
+    "provider": "controlled-fixture",
+    "hardware_tested": false,
+    "checks": {
+      "fresh_schema_5": "passed",
+      "health": "passed",
+      "viewer_to_observation_to_state": "passed",
+      "presence_to_verified_output": "passed",
+      "tracks_and_zones_entityized": "passed",
+      "typed_zone_relationship": "passed",
+      "query_with_state_memory_and_context": "passed",
+      "read_only_actor_cannot_act": "passed",
+      "authorized_action_verified": "passed",
+      "trace_recorded": "passed",
+      "core_disconnection_retains_outbox": "passed",
+      "edge_restart_retains_outbox": "passed",
+      "persistent_state_events_memory_relations_capabilities": "passed",
+      "agent_action_idempotent_after_restart": "passed",
+      "outbox_recovery_no_duplicate_events": "passed",
+      "source_disconnection_visible": "passed",
+      "source_reconnection_restores_presence": "passed",
+      "restored_database_integrity": "passed",
+      "backup_restore_preserves_world_and_history": "passed",
+      "backup_restore_preserves_agent_trace": "passed"
+    },
+    "status": "passed",
+    "startup_seconds": [
+      0.487,
+      0.47,
+      0.471
+    ],
+    "ingestion_latency_ms": {
+      "samples": 20,
+      "median": 5.93,
+      "p95": 11.26,
+      "maximum": 11.45,
+      "scope": "local HTTP + SQLite + virtual Output; no load/SLA claim"
+    },
+    "observation_count": 22,
+    "answer": "Estado registrado: {\"edge.presence\": {\"frame_index\": 19, \"media_time_seconds\": 1.9000000000000001, \"tracks\": [{\"local_track_id\": \"visitor-1\", \"zone_id\": \"corridor-north\", \"position\": [0.2, 0.7]}, {\"local_track_id\": \"visitor-2\", \"zone_id\": \"corridor-north\", \"position\": [0.2, 0.7]}, {\"local_track_id\": \"visitor-3\", \"zone_id\": \"corridor-north\", \"position\": [0.35, 0.7]}, {\"local_track_id\": \"visitor-4\", \"zone_id\": \"corridor-south\", \"position\": [0.5, 0.7]}, {\"local_track_id\": \"visitor-5\", \"zone_id\": \"corridor-south\", \"position\": [0.65, 0.7]}, {\"local_track_id\": \"visitor-6\", \"zone_id\": \"corridor-south\", \"position\": [0.8, 0.7]}], \"transitions\": [], \"source_status\": \"connected\", \"observed_at\": \"2026-11-07T03:16:34.107092+00:00\", \"counts\": {\"corridor-north\": 3, \"corridor-south\": 3}, \"simulated\": true}}",
+    "run_directory": ".runtime/release-demo/run-xaq7jgvj"
+  },
+  "note": "Later packaging metadata/browser changes are covered by final CI; integrated scenario unchanged"
+}

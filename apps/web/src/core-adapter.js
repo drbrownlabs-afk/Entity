@@ -1,0 +1,6 @@
+export class CoreAdapter {
+  constructor(baseUrl,token,fetcher=fetch){const url=new URL(baseUrl);if(!['http:','https:'].includes(url.protocol)||url.username||url.password)throw Error('URL de API inválida');this.base=url.href.replace(/\/$/,'');this.token=token;this.fetcher=(...args)=>fetcher(...args);}
+  async request(path,body){let response;try{response=await this.fetcher(this.base+path,{method:body?'POST':'GET',credentials:'omit',headers:{'Content-Type':'application/json',...(this.token?{Authorization:'Bearer '+this.token}:{})},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(8000)});}catch{throw Error('No se pudo conectar al Core. Comprueba HTTPS, URL y CORS; no se usaron respuestas simuladas.');}if(!response.ok)throw Error(`Core respondió HTTP ${response.status}; no se sustituyó por una respuesta simulada.`);return response.json();}
+  async entity(id){const result=await this.request('/v1/entities/'+encodeURIComponent(id));if(result.id!==id)throw Error('La API devolvió otra entidad');return result;}
+  ask(id,question,action){return this.request('/v1/agent/requests',{schema_version:'1.0',request_id:crypto.randomUUID(),entity_id:id,question,...(action?{action}:{})});}
+}

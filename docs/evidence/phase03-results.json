@@ -1,0 +1,38 @@
+{
+  "core_tests": {
+    "passed": 20,
+    "skipped": 0,
+    "seconds": 4.006
+  },
+  "edge_tests": {
+    "passed": 4,
+    "skipped": 0,
+    "seconds": 0.103
+  },
+  "source": "OpenCV vtest.avi, pinned SHA-256 in PHASE-03.md",
+  "detector": "OpenCV 4.11.0 HOG default people SVM",
+  "tracker": "Norfair 2.3.0",
+  "docker_smoke": "passed",
+  "simulation": {
+    "frames": 20,
+    "detections": 16,
+    "tracked_samples": 16,
+    "transitions": 6,
+    "pending": 0
+  },
+  "video": {
+    "frames": 60,
+    "detections": 181,
+    "tracked_samples": 181,
+    "transitions": 68,
+    "pending": 0
+  },
+  "recovery": {
+    "recovery": "passed",
+    "ack_loss_dedup": "passed",
+    "core_restart_persistence": "passed",
+    "person_tracks": 42,
+    "video_events": 124,
+    "note": "Counts are cumulative over two executions in same local directory; track entities are not unique people."
+  }
+}

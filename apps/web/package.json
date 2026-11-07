@@ -1,0 +1,20 @@
+{
+  "name": "entity-experience",
+  "private": true,
+  "version": "0.7.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "test": "node --test tests/world.test.js",
+    "test:browser": "playwright test",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "playcanvas": "2.23.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.65.0",
+    "vite": "8.3.6"
+  }
+}

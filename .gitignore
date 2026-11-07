@@ -13,3 +13,6 @@ coverage/
 .pytest_cache/
 *.sqlite3
 .runtime/
+
+apps/web/test-results/
+apps/web/playwright-report/

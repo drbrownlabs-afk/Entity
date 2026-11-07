@@ -2,10 +2,10 @@
 
 Última revisión manual: 2026-11-06. Este archivo se actualiza después de cada tarea de implementación. NO reemplaza inspección de código, CI ni commits.
 
-## Implementado en repositorio (sin verificación de ejecución)
+## Implementado y verificado localmente en Fase 00
 - Esqueleto del monorepo, README, AGENTS.md, arquitectura y plan.
 - API FastAPI inicial con SQLite provisional y rutas de entidades, estado, relaciones y eventos.
-- Docker/Compose y script de inicio inicial; compatibilidad y ejecución no verificadas.
+- Docker/Compose y arranque mínimo API con healthcheck ejecutados; dependencias fijadas y verificadas.
 - Especificación maestra, integración Edge y decisiones.
 
 ## Pendiente de implementación/verificación
@@ -15,15 +15,83 @@
 - Autorización, MCP, acciones verificadas y buffer offline.
 - Laboratorio con hardware físico y prueba extremo a extremo.
 - Demo web centro comercial con mundo 3D y CCTV virtual sincronizados.
-- CI/tests reproducibles y despliegue real.
+- Ejecución remota de CI y despliegue real (las pruebas locales ya se ejecutaron).
 
-## Fase 00 en curso (2026-11-06)
-- Inspección estática de API, tests, dependencias, Docker y script de Scorpio registrada en docs/audits/PHASE-00-2026-11-06.md.
-- Se añadió httpx a requirements y workflow CI; no se han confirmado pruebas ejecutadas ni arranque real.
-- Mantener fase 01 sin iniciar.
+## Fase 00 — EN VALIDACIÓN (2026-11-06 Ecuador / 2026-11-07 UTC)
+- 4/4 unittest aprobados; HTTP health, validaciones de error e integridad, reinicio de proceso real.
+- Docker construido y API saludable; dos smoke tests confirman persistencia de entidades, atributos, estados, relaciones y eventos tras reinicio del contenedor.
+- Fallo inicial de confianza CA corregido con secreto de build y TLS activo; advertencia httpx/TestClient pendiente de futura actualización.
+- API local queda iniciada. Evidencia y comandos: docs/audits/PHASE-00-2026-11-06.md.
+- install_script y start_skill guardados en borrador del entorno; no publicado ni restaurado en nueva tarea.
+- Implementación 8f3815cb9e437e5d07768c4d9cbb48f49af466c7 publicada en GitHub, rama `codex/phase-00-validation`; descargada de nuevo mediante Git independiente y SHA confirmado.
+- Cambios de main incorporados por merge documental, sin alterar API/tests/configuración ya probados. Script cloud probado y pasos de arranque también versionados en scripts/setup-cloud.sh y docs/CLOUD-ENVIRONMENT.md.
+- Creación automática de PR bloqueada: `gh pr create` devuelve Forbidden en api.github.com/graphql. Consulta de Actions bloqueada en api.github.com; CI remoto no confirmado. Rama publicada, sin PR ni merge a main.
+
+## Fase 01 — EN VALIDACIÓN
+- Operador autorizó continuar Fase 01; no se marca Fase 00 como APROBADA automáticamente.
+- API 0.2.0: migraciones SQLite 001/002, memorias explícitas, capacidades declaradas, eventos con fuente/versión y /ready. Contrato OpenAPI versionado en packages/contracts/core/v1.
+- 15/15 pruebas ejecutadas/aprobadas; persistencia verificada en dos procesos y reinicio Docker. Datos antiguos del volumen conservados y comparados con backup. Escrituras concurrentes e integridad transaccional verificadas.
+- Se mantiene SQLite local por alcance/necesidad; sin PostgreSQL/PostGIS ni proyección Scorpio. Sin ejecución/autorización de capacidades ni conectores: Fase 02 NO INICIADA.
+- Implementación publicada en codex/phase-01-core: 001d2f810cab0e427a1d179ff558b8bc5fa3bc4a, sobre 566e883. Descarga Git independiente confirma SHA y árbol completo. Evidencia en docs/phases/PHASE-01.md.
+- PR no creado: gh pr create devuelve Forbidden en api.github.com/graphql; consulta Actions también Forbidden. Sin merge a main; CI remoto desconocido. API local continúa saludable.
 
 ## Próxima prioridad
-Contratos y servicios funcionales mínimos Core/Edge, con tests; después conexión Orbbec y salida de pantalla.
+Revisión humana de Fase 01 y límites documentados; no avanzar Fase 02 sin aprobación. No hay aprobación automática.
 
 ## Regla de actualización
 Cada tarea Codex debe registrar fecha UTC, branch/commit/PR, objetivo, archivos, funcionalidades realmente implementadas, tests ejecutados y sus resultados, limitaciones y próximo paso. No convertir intención en hecho. Revisar diffs y CI antes de declarar completado.
+
+
+## Actualización vigente Fase 02
+Continuación autorizada por operador: EN VALIDACIÓN. Registry y contratos v1, REST real/simulación, autorización básica de integraciones, auditoría, deduplicación e invocación simulada verificadas. 19 tests aprobados y smoke Docker/regresión aprobados. Esquema 3, sin nuevas dependencias; fases anteriores conservadas en historia y pruebas. Ver docs/phases/PHASE-02.md. La prioridad vigente es revisión Fase 02, sin iniciar Fase 03; las entradas anteriores describen sus entregas históricas.
+
+
+## Publicación comprobada
+Implementación: https://github.com/drbrownlabs-afk/Entity/commit/0506df4b0bcb108430f58005a4c35c7002870ca5 . Rama codex/phase-02-connectors publicada y descargada en repositorio bare independiente: árbol completo idéntico. PR intentado con gh pr create: Forbidden en api.github.com/graphql. Consulta gh api Actions para esta rama: Forbidden. No hay PR ni merge a main; CI remoto desconocido, pruebas locales válidas. No se requieren operaciones Git manuales del operador. Fase 02 EN VALIDACIÓN; Fase 03 NO INICIADA.
+
+
+## Estado vigente — Fase 03
+Fase 02 APROBADA por operador. Fase 03 EN VALIDACIÓN: Edge OpenCV HOG/Norfair, vídeo y fixture, zonas/tracks, observaciones con procedencia, entidades/estado Core y cola durable. 20/20 tests Core, 4/4 Edge y demo HTTP real aprobados. 60 frames vídeo → 181 muestras y 68 transiciones, no personas únicas. Fallo/reinicio Core y ACK perdido sin duplicados. Fases 00–02 preservadas; main 1e6b29f integrado sin conflictos. Ver docs/phases/PHASE-03.md. Orbbec y físico diferidos según plan actualizado. Fase 04 NO INICIADA; prioridad vigente revisión humana de Fase 03, reemplaza prioridades históricas anteriores.
+
+Publicación Fase 03 comprobada: 8baea3d95f185bc1df682ab0c74cae56310f0e88, rama codex/phase-03-edge; fetch independiente y ancestros verificados. PR/Actions siguen bloqueados por Forbidden API; sin PR/merge, CI remoto desconocido. La evidencia local es válida. install_script/start_skill guardados en borrador, sin afirmar snapshot publicado.
+
+
+## Estado vigente — Fase 04 y CI
+Main 5ce2519 autoriza Fase 04 tras revisión Fase 03. Output virtual EN VALIDACIÓN: circuito completo y control manual, capacidad declarada, fallos/timeout/readback divergente, 23 tests Core + 4 Edge y demo HTTP aprobados. Esquema 4, migración aditiva, backup previo y smoke Docker correctos. Fase 05 NO INICIADA. PR #1 Fase 03 existente Draft, sin duplicación/merge. CI remoto histórico confirmado Success por web; las afirmaciones anteriores de CI desconocido eran límites de observación API y quedan actualizadas. La API está bloqueada por red en CONNECT antes de GitHub, dominio añadido al borrador pendiente de aplicación. Resultado del nuevo run Fase 04 en informe Actions/bitácora al cierre.
+
+CI Fase 04 verificado Success por web: run 42325368629, commit 520475f, api-tests y edge-tests. Corrección final upload-artifact v6 en progreso de validación. Las advertencias históricas de CI desconocido se sustituyen por esta observación real, no por suposiciones de YAML.
+
+CI final Fase 04 Success sin anotaciones en run 42325648659, commit b715116da5a7645896aa011367aa448bad7123b6; evidencia docs/evidence/phase04-ci.json. Rama codex/phase-04-output publicada/verificada, sin PR nuevo por bloqueo API ni merge. Todo código y workflow validado; cierre posterior solo documental. Pendiente revisión humana Fase 04 y aplicar configuración de red si se necesita gh/API; ningún comando Git/CI manual requerido.
+
+
+## Estado vigente — Fase 05
+Continuación autorizada por operador; EN VALIDACIÓN, sin autoaprobación previa. 29/29 Core y 4/4 Edge; SDK oficial OpenAI integrado, consultas fundamentadas y acciones virtuales autorizadas, trazas/idempotencia persistentes. Demo HTTP con controlled-fixture aprobada; no inferencia remota real sin clave. Migración aditiva esquema 5, Docker/persistencia aprobados, backup previo. Rama codex/phase-05-situated-ai conserva fases anteriores. Ver docs/phases/PHASE-05.md; prioridad vigente revisión humana Fase 05, Fase 06 NO INICIADA. Las entradas anteriores son historia y no sustituyen este estado vigente.
+
+Fase 05 publicada: f77f816c04b312842e54767375028da7b50f35f3, rama codex/phase-05-situated-ai. CI remoto run 42326524584 Success, sin anotaciones; evidencia phase05-ci.json. Proveedor real no probado; controlled-fixture y SDK con transporte controlado sí. PR REST falla Forbidden, sin PR nuevo/merge, sin operaciones Git manuales pendientes del operador. Revisión humana y validación opcional real siguen pendientes.
+
+
+## Estado vigente — Fase 06
+EN VALIDACIÓN, autorizada por operador sin autoaprobar fases previas. 29 Core + 7 Edge tests y demo RTSP TCP/MQTT/REST reales locales aprobados; payloads sensores/reservas ficticios, sin CCTV externo ni ONVIF físico. Misma Camera/endpoints/estado con fuente virtual y RTSP. Duplicados, broker restart y recuperación de Outbox/Core correctos; eventos no visuales consultables por Core/agente. Core sin cambios ni migración (esquema 5); fases anteriores conservadas. Ver matriz completa docs/phases/PHASE-06.md. Prioridad vigente revisión humana de esta fase; Fase 07 NO INICIADA.
+
+Fase 06 código 12e05af070d84d7c9835e5f8070461a5e1e108ef publicado y CI final 42328459031 Success sin advertencias (1m32s); evidencia phase06-ci-final.json. Core intacto, árbol remoto verificado y fases anteriores preservadas. PR API continúa Forbidden, sin PR nuevo/merge; Git y CI web funcionan. Cierre posterior solo documental. Revisión humana pendiente; Fase 07 no iniciada.
+
+
+## Estado vigente — Fase 07
+Continuación autorizada y ampliación Pages: EN VALIDACIÓN. Experience PlayCanvas estática autónoma con fixture Edge compartido, 7 tiendas, 5 cámaras sincronizadas, entidades, eventos, consultas y acciones locales verificadas. API Core opcional real con CORS explícito, sin resultados falsificados. 29 Core + 4 estado + 3 navegador aprobados y exportación → Core → Output/dedup comprobada; evidencia de Edge y CI/publicación se añade al cierre. Pages inicial Success run 42330844212. Rama codex/phase-07-experience, sin merge a main. Ver docs/phases/PHASE-07.md. Las prioridades anteriores son históricas: vigente revisión humana de Fase 07; Fase 08 NO INICIADA.
+
+Fase 07 publicación final: código 56d05f4 y revisión desplegada 1f1a3b3dd174cfe7c01b379cc887164347fcf93e, rama codex/phase-07-experience (sin merge). URL https://drbrownlabs-afk.github.io/Entity/ funcional y verificada con Chromium escritorio/móvil desde runner autorizado: run 42331518986 Success, sin advertencias, capturas/JSON en pages-verification (303 KB). CI final 42331518937 Success sin anotaciones, tres jobs; 29 Core + 7 Edge + 4 Node + 3 navegador y exportación→Core→Output aprobados, regresión Docker/persistencia/demos anteriores correcta. Git remoto descargado independientemente, historia previa conservada. Pages activo sin intervención del propietario. PR REST sigue Forbidden por entorno, sin PR nuevo/merge; no impide URL ni publicación Git. Limitaciones: móvil físico/Safari no probado, geometría ilustrativa/CCTV virtual, Core HTTPS público no desplegado, consulta local determinista sin LLM. EN VALIDACIÓN, no Fase 08. Evidencias phase07-ci-final.json y phase07-pages.json.
+
+
+## Estado vigente — Fase 08
+Autorizada por operador, EN VALIDACIÓN de entrega. Escenario integrado con nuevo Core HTTP y estado real de Experience: 20/20 comprobaciones locales aprobadas, memoria/relaciones/consulta, permisos, acción virtual verificada, reinicios/Outbox/dedup y backup/restore. Core sin cambios ni migración (schema5). Paquetes auditables y runbook/backlog implementados; instalación limpia y CI final aprobados, con evidencias y artefactos publicados. Rama codex/phase-08-delivery preserva main 5ce2519 y todas las fases anteriores. Sitio Pages de Fase07 conservado. Prioridad vigente revisión de entrega integral, no prioridades históricas ni autoaprobación de fases.
+
+
+## Cierre vigente Fase 08 — 2026-11-07 UTC
+Recuperado el entorno tras fallo de arranque, sin reiniciar fase ni repetir tests. CI final 42333312084 de 3978a9f02b9db4972738af6481c26ee8b498da03 confirmado Success (2m49s), cuatro jobs, sin anotaciones observadas: 29 Core/7 Edge/4 Node/3 navegador y 20 comprobaciones de circuito completo, cortes/reinicio/dedup/backup-restore, protocolo/vídeo y Docker/persistencia anteriores. Delivery aprobó instalación de fuente empaquetada en ruta limpia, repetibilidad de manifiestos y ZIP en escritorio/táctil con acciones offline después de cargar. Artefactos entity-delivery (951 KB, fuente+web+manifest+reporte), experience-evidence y edge-report disponibles en el run. Documentación y evidencia final publicadas en codex/phase-08-delivery; sin merge a main. Consulta REST de PR por rama sigue Forbidden; Git y Actions web funcionan, sin tarea Git manual del operador. Demo Pages conservada sin cambios. Pendiente revisión humana, hardware/LLM remoto/teléfonos físicos/producción según backlog. EN VALIDACIÓN; ninguna aprobación automática. Referencia completa docs/phases/PHASE-08.md.
+
+
+## Estado vigente — Auditoría integral del MVP
+Base701da12, rama codex/mvp-independent-audit. Tubería de observaciones/proyección/Output virtual funcional y Experience autónomo; plataforma integrada presenta bloqueos de piloto: A01–A10 en docs/audits/MVP-INDEPENDENT-2026-11-07.md. Sondeos adversos nuevos, no repetición exclusiva de tests: HTTP real detecta escritura anónima200 y fuente sin ámbito, ID cross-camera colisionado, snapshot2099 que congela presencia, memoria/temperatura sin respuesta contextual; Outbox bloqueada por422; Chromium confirma Core scene distinta de visor pese a acción verified. Cuatro parches pequeños verificados (JSON no finito, Bearer Unicode, tracks duplicados, exportación de Core mal etiquetada) y regresión local33 Core/6 Node/3 navegador aprobada. No se corrigen contratos/IDs/permisos globales ni sincronización completa de manera improvisada. CI final42377822190 Success y evidencia publicada; sin merge ni aprobación de fase. Fase08 EN VALIDACIÓN; no usar resultados verdes como garantía de piloto/producción.
+
+
+Auditoría MVP cierre publicado: implementación51d9ab6, sonda/evidencia9f35abb, rama codex/mvp-independent-audit. CI final42377822190 Success2m38s, sin anotaciones observadas, cuatro jobs; 33Core/7Edge/6Node/3navegador y delivery limpio aprobados. Evidencias adversas separadas en docs/audits/evidence (incluida escena Core distinta de visor); diez hallazgos A01–A10 siguen abiertos, cuatro parches F01–F04 verificados. Datos sintéticos, sin hardware/LLM remoto; no cambio de schema/IDs históricos. No Pages desde rama de auditoría, web pública anterior; sin PR nuevo por Forbidden REST, sin merge a main. Cinco prioridades de piloto y límites en MVP-INDEPENDENT-2026-11-07.md. Fase08 EN VALIDACIÓN; CI verde no constituye aceptación del MVP integrado.

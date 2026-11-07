@@ -3,26 +3,182 @@ on:
   push:
     paths:
       - "services/entity-api/**"
+      - "services/entity-edge/**"
+      - "apps/web/**"
+      - "worlds/shopping-mall/**"
+      - "scripts/**"
+      - "compose.yaml"
+      - "packages/contracts/**"
       - ".github/workflows/ci.yml"
   pull_request:
     paths:
       - "services/entity-api/**"
+      - "services/entity-edge/**"
+      - "apps/web/**"
+      - "worlds/shopping-mall/**"
+      - "scripts/**"
+      - "compose.yaml"
+      - "packages/contracts/**"
       - ".github/workflows/ci.yml"
   workflow_dispatch:
+permissions:
+  contents: read
+
 jobs:
   api-tests:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
           cache: pip
-          cache-dependency-path: services/entity-api/requirements.txt
+          cache-dependency-path: services/entity-api/requirements.lock
       - name: Install API dependencies
-        run: python -m pip install -r services/entity-api/requirements.txt
+        run: python -m pip install -r services/entity-api/requirements.lock
       - name: Compile Python sources
         run: python -m compileall -q services/entity-api/app services/entity-api/tests
       - name: Execute API tests
         working-directory: services/entity-api
         run: python -m unittest discover -s tests -v
+      - name: Check installed dependencies
+        run: python -m pip check
+      - name: Start API container
+        run: sh scripts/start-local.sh
+      - name: Verify HTTP and persistence across container restart
+        run: python scripts/smoke-docker.py
+      - name: Container diagnostics
+        if: failure()
+        run: docker compose logs --no-color
+      - name: Stop CI services
+        if: always()
+        run: docker compose down
+
+  edge-tests:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install Core for local demo process
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install -r services/entity-api/requirements.lock
+      - name: Install Edge and verify public video checksum
+        run: bash scripts/setup-edge.sh
+      - name: Test tracking, zones and recovery
+        run: PYTHONPATH=services/entity-edge .runtime/edge-venv/bin/python -m unittest discover -s services/entity-edge/tests -v
+      - name: Demonstrate real detector and REST recovery
+        run: bash scripts/demo-edge.sh
+      - name: Demonstrate observation to virtual output
+        run: bash scripts/demo-output.sh
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+      - name: Integrated clean world, restart and backup restoration
+        run: bash scripts/demo-entity.sh
+      - name: Demonstrate grounded agent tools
+        run: bash scripts/demo-agent.sh
+      - name: Ensure FFmpeg for local RTSP publisher
+        run: |
+          if ! command -v ffmpeg >/dev/null; then
+            sudo apt-get update
+            sudo apt-get install -y ffmpeg
+          fi
+      - name: Demonstrate RTSP MQTT and REST integration
+        run: bash scripts/demo-integrations.sh
+      - name: Preserve demonstration reports
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: edge-report
+          include-hidden-files: true
+          path: |
+            .runtime/release-demo/latest.json
+            .runtime/edge-demo/*report.json
+            .runtime/output-demo/*report.json
+            .runtime/output-demo/screen.html
+            .runtime/integrations-demo/report.json
+
+  experience-tests:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install Core for browser API fixture
+        run: |
+          python -m venv .venv
+          .venv/bin/python -m pip install -r services/entity-api/requirements.lock
+      - name: Install and build autonomous experience
+        run: bash scripts/setup-experience.sh
+      - name: Test shared world and action readback
+        working-directory: apps/web
+        run: npm test
+      - name: Install browser from official Playwright distribution
+        working-directory: apps/web
+        run: npx playwright install --with-deps chromium
+      - name: Test real WebGL views and mobile layout
+        working-directory: apps/web
+        run: npm run test:browser
+      - name: Check actual viewer export against Core
+        run: .venv/bin/python scripts/test-experience-contract.py
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: experience-evidence
+          include-hidden-files: true
+          path: |
+            .runtime/experience-*.png
+            .runtime/experience-*.json
+            apps/web/dist
+
+  delivery:
+    needs: [api-tests, edge-tests, experience-tests]
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "24"
+          cache: npm
+          cache-dependency-path: apps/web/package-lock.json
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - name: Install locked web build tools
+        run: npm --prefix apps/web ci
+      - name: Create audited source and autonomous web packages
+        run: python scripts/package-release.py
+      - name: Confirm package checksums are reproducible
+        run: |
+          cp .runtime/delivery/manifest.json "${RUNNER_TEMP}/first-manifest.json"
+          python scripts/package-release.py
+          cmp "${RUNNER_TEMP}/first-manifest.json" .runtime/delivery/manifest.json
+      - name: Install browser for delivered static package
+        working-directory: apps/web
+        run: npx playwright install --with-deps chromium
+      - name: Verify ZIP on desktop and touch without Core
+        run: |
+          python -m zipfile -e .runtime/delivery/entity-experience.zip "${RUNNER_TEMP}/entity-static"
+          node apps/web/scripts/check-bundle.mjs "${RUNNER_TEMP}/entity-static" .runtime/delivery/static-verification.json
+      - name: Test source package from a different clean directory
+        run: |
+          mkdir -p "${RUNNER_TEMP}/entity-unpacked"
+          tar -xzf .runtime/delivery/entity-source.tar.gz -C "${RUNNER_TEMP}/entity-unpacked"
+          cd "${RUNNER_TEMP}/entity-unpacked/Entity"
+          bash scripts/setup-demo.sh
+          bash scripts/demo-entity.sh
+      - name: Retain transportable packages and checksums
+        uses: actions/upload-artifact@v6
+        with:
+          name: entity-delivery
+          include-hidden-files: true
+          path: .runtime/delivery/

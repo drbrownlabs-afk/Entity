@@ -1,0 +1,25 @@
+{
+  "schema_version": "1.0",
+  "source_commit": "3978a9f02b9db4972738af6481c26ee8b498da03",
+  "source_tree": "c9291cd3c9aa1b094f7105a0a3d3e7afe703c215",
+  "runtime": {
+    "python": "3.12",
+    "node": "24",
+    "docker": "optional for protocol/container checks"
+  },
+  "files": {
+    "entity-source.tar.gz": {
+      "bytes": 457363,
+      "sha256": "6cf8bd4411ec060b670dc33b81caba3561a7a52b13020d4537d3097ce4e16a1c"
+    },
+    "entity-experience.zip": {
+      "bytes": 515533,
+      "sha256": "3ee91befc24fb64ae0b6bc48f085bbf45476b66eb6fc8d9d1e9ba0d328b4e82c"
+    }
+  },
+  "limitations": [
+    "No physical hardware or remote LLM verified",
+    "Source requires dependency download; archive is not an offline installer",
+    "Static zip requires a web host; source Core is local development only"
+  ]
+}

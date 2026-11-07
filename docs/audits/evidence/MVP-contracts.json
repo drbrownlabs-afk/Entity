@@ -1,0 +1,27 @@
+{
+  "checked_exported_models": {
+    "packages/contracts/integrations/v1/Manifest.json": true,
+    "packages/contracts/integrations/v1/Observation.json": true,
+    "packages/contracts/integrations/v1/Capability.json": true,
+    "packages/contracts/integrations/v1/Invocation.json": true,
+    "packages/contracts/output/v1/Rule.json": true,
+    "packages/contracts/output/v1/Command.json": true,
+    "packages/contracts/output/v1/DisplayConfig.json": true,
+    "packages/contracts/agent/v1/Ask.json": true
+  },
+  "core_openapi_stored_paths": 9,
+  "live_paths": 19,
+  "added_paths": [
+    "/v1/agent/requests",
+    "/v1/agent/requests/{request_id}",
+    "/v1/integrations/audit",
+    "/v1/integrations/connectors/{connector_id}",
+    "/v1/integrations/connectors/{connector_id}/health",
+    "/v1/integrations/invocations",
+    "/v1/integrations/observations",
+    "/v1/output/commands",
+    "/v1/output/displays/{entity_id}",
+    "/v1/output/rules/{rule_id}"
+  ],
+  "note": "Core OpenAPI snapshot covers historical Phase01; additions are not automatically incompatibilities"
+}

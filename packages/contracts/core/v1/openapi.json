@@ -1,0 +1,994 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "ENTITY OS",
+    "version": "0.2.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/entities": {
+      "get": {
+        "summary": "List Entities",
+        "operationId": "list_entities_v1_entities_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Create Entity",
+        "operationId": "create_entity_v1_entities_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntityCreate"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/entities/{entity_id}": {
+      "get": {
+        "summary": "Get Entity",
+        "operationId": "get_entity_v1_entities__entity_id__get",
+        "parameters": [
+          {
+            "name": "entity_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Entity Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/entities/{entity_id}/state": {
+      "put": {
+        "summary": "Update State",
+        "operationId": "update_state_v1_entities__entity_id__state_put",
+        "parameters": [
+          {
+            "name": "entity_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Entity Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/StateUpdate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/relations": {
+      "post": {
+        "summary": "Create Relation",
+        "operationId": "create_relation_v1_relations_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RelationCreate"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/entities/{entity_id}/events": {
+      "get": {
+        "summary": "Get Events",
+        "operationId": "get_events_v1_entities__entity_id__events_get",
+        "parameters": [
+          {
+            "name": "entity_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Entity Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EventRecord"
+                  },
+                  "title": "Response Get Events V1 Entities  Entity Id  Events Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Record Event",
+        "operationId": "record_event_v1_entities__entity_id__events_post",
+        "parameters": [
+          {
+            "name": "entity_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Entity Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EventCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EventRecord"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/ready": {
+      "get": {
+        "summary": "Ready",
+        "operationId": "ready_ready_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/entities/{entity_id}/memories": {
+      "post": {
+        "summary": "Record Memory",
+        "operationId": "record_memory_v1_entities__entity_id__memories_post",
+        "parameters": [
+          {
+            "name": "entity_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Entity Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MemoryCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/MemoryCreated"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "List Memories",
+        "operationId": "list_memories_v1_entities__entity_id__memories_get",
+        "parameters": [
+          {
+            "name": "entity_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Entity Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/MemoryRecord"
+                  },
+                  "title": "Response List Memories V1 Entities  Entity Id  Memories Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/v1/entities/{entity_id}/capabilities": {
+      "post": {
+        "summary": "Declare Capability",
+        "operationId": "declare_capability_v1_entities__entity_id__capabilities_post",
+        "parameters": [
+          {
+            "name": "entity_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Entity Id"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CapabilityCreate"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CapabilityCreated"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "List Capabilities",
+        "operationId": "list_capabilities_v1_entities__entity_id__capabilities_get",
+        "parameters": [
+          {
+            "name": "entity_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Entity Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CapabilityRecord"
+                  },
+                  "title": "Response List Capabilities V1 Entities  Entity Id  Capabilities Get"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CapabilityCreate": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "operation": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Operation"
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Description"
+          },
+          "parameters": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Parameters"
+          },
+          "required_permission": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Required Permission"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "operation",
+          "description",
+          "required_permission"
+        ],
+        "title": "CapabilityCreate"
+      },
+      "CapabilityCreated": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "operation": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Operation"
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Description"
+          },
+          "parameters": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Parameters"
+          },
+          "required_permission": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Required Permission"
+          },
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "entity_id": {
+            "type": "string",
+            "title": "Entity Id"
+          },
+          "created_at": {
+            "type": "string",
+            "title": "Created At"
+          },
+          "event_id": {
+            "type": "string",
+            "title": "Event Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "operation",
+          "description",
+          "required_permission",
+          "id",
+          "entity_id",
+          "created_at",
+          "event_id"
+        ],
+        "title": "CapabilityCreated"
+      },
+      "CapabilityRecord": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "operation": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Operation"
+          },
+          "description": {
+            "type": "string",
+            "maxLength": 2000,
+            "minLength": 1,
+            "title": "Description"
+          },
+          "parameters": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Parameters"
+          },
+          "required_permission": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Required Permission"
+          },
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "entity_id": {
+            "type": "string",
+            "title": "Entity Id"
+          },
+          "created_at": {
+            "type": "string",
+            "title": "Created At"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "operation",
+          "description",
+          "required_permission",
+          "id",
+          "entity_id",
+          "created_at"
+        ],
+        "title": "CapabilityRecord"
+      },
+      "EntityCreate": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "id": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Id"
+          },
+          "type": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Type"
+          },
+          "attributes": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Attributes"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "type"
+        ],
+        "title": "EntityCreate"
+      },
+      "EventCreate": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "type": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Type"
+          },
+          "payload": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Payload"
+          },
+          "source": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Source"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "type",
+          "source"
+        ],
+        "title": "EventCreate"
+      },
+      "EventRecord": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "entity_id": {
+            "type": "string",
+            "title": "Entity Id"
+          },
+          "type": {
+            "type": "string",
+            "title": "Type"
+          },
+          "payload": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Payload"
+          },
+          "occurred_at": {
+            "type": "string",
+            "title": "Occurred At"
+          },
+          "source": {
+            "type": "string",
+            "title": "Source"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "entity_id",
+          "type",
+          "payload",
+          "occurred_at",
+          "source"
+        ],
+        "title": "EventRecord"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "MemoryCreate": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "content": {
+            "type": "string",
+            "maxLength": 10000,
+            "minLength": 1,
+            "title": "Content"
+          },
+          "source": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Source"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "content",
+          "source"
+        ],
+        "title": "MemoryCreate"
+      },
+      "MemoryCreated": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "content": {
+            "type": "string",
+            "maxLength": 10000,
+            "minLength": 1,
+            "title": "Content"
+          },
+          "source": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Source"
+          },
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "entity_id": {
+            "type": "string",
+            "title": "Entity Id"
+          },
+          "created_at": {
+            "type": "string",
+            "title": "Created At"
+          },
+          "event_id": {
+            "type": "string",
+            "title": "Event Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "content",
+          "source",
+          "id",
+          "entity_id",
+          "created_at",
+          "event_id"
+        ],
+        "title": "MemoryCreated"
+      },
+      "MemoryRecord": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "content": {
+            "type": "string",
+            "maxLength": 10000,
+            "minLength": 1,
+            "title": "Content"
+          },
+          "source": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Source"
+          },
+          "id": {
+            "type": "string",
+            "title": "Id"
+          },
+          "entity_id": {
+            "type": "string",
+            "title": "Entity Id"
+          },
+          "created_at": {
+            "type": "string",
+            "title": "Created At"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "content",
+          "source",
+          "id",
+          "entity_id",
+          "created_at"
+        ],
+        "title": "MemoryRecord"
+      },
+      "RelationCreate": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "source_id": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Source Id"
+          },
+          "target_id": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Target Id"
+          },
+          "type": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Type"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "source_id",
+          "target_id",
+          "type"
+        ],
+        "title": "RelationCreate"
+      },
+      "StateUpdate": {
+        "properties": {
+          "schema_version": {
+            "type": "string",
+            "const": "1.0",
+            "title": "Schema Version",
+            "default": "1.0"
+          },
+          "key": {
+            "type": "string",
+            "maxLength": 512,
+            "minLength": 1,
+            "title": "Key"
+          },
+          "value": {
+            "title": "Value"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "key",
+          "value"
+        ],
+        "title": "StateUpdate"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          },
+          "input": {
+            "title": "Input"
+          },
+          "ctx": {
+            "type": "object",
+            "title": "Context"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

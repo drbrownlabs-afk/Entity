@@ -1,0 +1,165 @@
+{
+  "transport": "real HTTP loopback uvicorn; temporary SQLite; all data synthetic; controlled provider only",
+  "checks": [
+    {
+      "case": "exact_duplicate_does_not_reemit",
+      "observed": true,
+      "desired": true,
+      "meets_desired": true,
+      "evidence": {}
+    },
+    {
+      "case": "late_observation_retained_without_rewind",
+      "observed": true,
+      "desired": true,
+      "meets_desired": true,
+      "evidence": {}
+    },
+    {
+      "case": "reused_observation_id_different_body_rejected",
+      "observed": 409,
+      "desired": 409,
+      "meets_desired": true,
+      "evidence": {}
+    },
+    {
+      "case": "incomplete_snapshot_rejected_atomically",
+      "observed": true,
+      "desired": true,
+      "meets_desired": true,
+      "evidence": {}
+    },
+    {
+      "case": "anonymous_output_command_denied",
+      "observed": 401,
+      "desired": 401,
+      "meets_desired": true,
+      "evidence": {}
+    },
+    {
+      "case": "agent_action_cross_entity_denied",
+      "observed": 403,
+      "desired": 403,
+      "meets_desired": true,
+      "evidence": {}
+    },
+    {
+      "case": "simulation_capability_must_be_declared",
+      "observed": 200,
+      "desired": 404,
+      "meets_desired": false,
+      "evidence": {
+        "registered_core_capability": false
+      }
+    },
+    {
+      "case": "anonymous_core_write",
+      "observed": 200,
+      "desired": 401,
+      "meets_desired": false,
+      "evidence": {
+        "core_scene": "unauthenticated-forgery",
+        "actual_virtual_scene_contains_welcome": true
+      }
+    },
+    {
+      "case": "memory_only_answer_uses_recorded_memory",
+      "observed": false,
+      "desired": true,
+      "meets_desired": false,
+      "evidence": {
+        "answer": "No hay estado registrado para esta entidad.",
+        "memory_evidence": 1
+      }
+    },
+    {
+      "case": "question_changes_answer",
+      "observed": false,
+      "desired": true,
+      "meets_desired": false,
+      "evidence": {
+        "provider": "controlled-fixture",
+        "answer_a": "Estado registrado: {\"edge.presence\": {\"frame_index\": null, \"media_time_seconds\": null, \"tracks\": [{\"local_track_id\": \"person-1\", \"zone_id\": \"north\", \"position\": [0.2, 0.7]}], \"transitions\": [], \"source_status\": \"connected\", \"observed_at\": \"2026-11-07T13:30:23.398758+00:00\", \"counts\": {\"north\": 1}, \"simulated\": true}}",
+        "answer_b": "Estado registrado: {\"edge.presence\": {\"frame_index\": null, \"media_time_seconds\": null, \"tracks\": [{\"local_track_id\": \"person-1\", \"zone_id\": \"north\", \"position\": [0.2, 0.7]}], \"transitions\": [], \"source_status\": \"connected\", \"observed_at\": \"2026-11-07T13:30:23.398758+00:00\", \"counts\": {\"north\": 1}, \"simulated\": true}}"
+      }
+    },
+    {
+      "case": "sensor_projects_current_state",
+      "observed": false,
+      "desired": true,
+      "meets_desired": false,
+      "evidence": {
+        "event_count": 1,
+        "answer": "No hay estado registrado para esta entidad."
+      }
+    },
+    {
+      "case": "observe_token_scoped_to_connector_source_site",
+      "observed": 200,
+      "desired": 403,
+      "meets_desired": false,
+      "evidence": {}
+    },
+    {
+      "case": "future_event_does_not_freeze_camera",
+      "observed": true,
+      "desired": false,
+      "meets_desired": false,
+      "evidence": {
+        "stored_time": "2099-01-01T00:00:00+00:00",
+        "tracks": 1
+      }
+    },
+    {
+      "case": "restart_expires_unconfirmed_presence",
+      "observed": true,
+      "desired": false,
+      "meets_desired": false,
+      "evidence": {
+        "observation": "No TTL/heartbeat; source no longer transmitting"
+      }
+    },
+    {
+      "case": "camera_track_id_isolation",
+      "observed": 1,
+      "desired": 2,
+      "meets_desired": false,
+      "evidence": {
+        "people": [
+          {
+            "id": "track:1f838c96-68d1-513f-8599-c38e4cd3de6a",
+            "type": "PersonTrack",
+            "attributes": {
+              "camera_id": "a:b",
+              "local_track_id": "c",
+              "simulated": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "case": "nonfinite_json_does_not_poison_persistence",
+      "observed": 422,
+      "desired": 422,
+      "meets_desired": true,
+      "evidence": {
+        "subsequent_read_status": 200
+      }
+    },
+    {
+      "case": "malformed_bearer_fails_closed_cleanly",
+      "observed": 401,
+      "desired": 401,
+      "meets_desired": true,
+      "evidence": {}
+    },
+    {
+      "case": "integrity_check",
+      "observed": "ok",
+      "desired": "ok",
+      "meets_desired": true,
+      "evidence": {}
+    }
+  ]
+}

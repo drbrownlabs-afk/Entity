@@ -1,0 +1,6 @@
+{
+  "scope": "Heuristic scan of current tracked text, selected private-key/OpenAI/GitHub token patterns; no external secret validation or full-history certification",
+  "matches": [],
+  "compose_loopback": true,
+  "database_mode_example": "0o600"
+}
