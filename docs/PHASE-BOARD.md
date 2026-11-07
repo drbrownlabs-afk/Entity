@@ -10,7 +10,7 @@
 | 04 | ENTITY Output virtual primero | EN VALIDACIÓN | Presencia→regla→capacidad declarada→escena verificada; manual/fallo/timeout probados. 23 Core + 4 Edge tests; CI remoto Success run 42325648659. Ver docs/phases/PHASE-04.md |
 | 05 | IA situada | EN VALIDACIÓN | SDK oficial OpenAI + sustituto controlado; evidencia, permisos, trazas y Output verificado. 29 Core + 4 Edge tests; CI remoto Success run 42326524584. Proveedor remoto no probado sin clave. Ver docs/phases/PHASE-05.md |
 | 06 | Sistemas externos | EN VALIDACIÓN | RTSP real local + MQTT y REST fixtures, cambio de fuente sin Core, dedup/reinicio/consulta. 29 Core + 7 Edge; CI remoto Success run 42328459031. Matriz y límites en docs/phases/PHASE-06.md |
-| 07 | ENTITY Experience | EN VALIDACIÓN | PlayCanvas autónomo, fixture Edge compartido, 7 tiendas y 5 cámaras sincronizadas; acciones/consultas y Core opcional real probados. Pages inicial desplegado; verificación pública/CI y límites en docs/phases/PHASE-07.md. Revisión humana pendiente |
+| 07 | ENTITY Experience | EN VALIDACIÓN | PlayCanvas autónomo, fixture Edge compartido, 7 tiendas y 5 cámaras sincronizadas; acciones/consultas y Core opcional real probados. URL pública verificada escritorio/móvil, CI final Success 42331518937 y Pages 42331518986; 29 Core + 7 Edge + 4 Node + 3 navegador aprobados. Límites en docs/phases/PHASE-07.md. Revisión humana pendiente |
 | 08 | Validación integral | NO INICIADA | Depende de pruebas de fases anteriores |
 
 ## Criterios de cambio de estado

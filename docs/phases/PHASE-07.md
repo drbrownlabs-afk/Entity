@@ -4,7 +4,7 @@ Estado: EN VALIDACIÓN. Fecha: 2026-11-07 UTC. Rama `codex/phase-07-experience`;
 
 ## Cómo verla
 
-URL prevista/publicación Pages: https://drbrownlabs-afk.github.io/Entity/ . El estado efectivo del despliegue y su prueba pública se añaden al cierre en este informe y en la bitácora. El sitio funciona autónomamente con archivos estáticos, sin Python, cuentas ni backend. Se puede pausar, avanzar, mover la línea temporal, elegir acceso/vista o tocar una tienda para acercarse, cambiar escena/HVAC/apertura y consultar visitantes, tiendas, HVAC o escena. Las cuatro CCTV son cámaras virtuales del mismo mundo, no vídeo real. Exportar Observation v1 descarga los tracks visibles con procedencia simulada.
+URL pública verificada: https://drbrownlabs-afk.github.io/Entity/ . Publicación y prueba pública de escritorio/móvil aprobadas por Actions; ver cierre más abajo. El sitio funciona autónomamente con archivos estáticos, sin Python, cuentas ni backend. Se puede pausar, avanzar, mover la línea temporal, elegir acceso/vista o tocar una tienda para acercarse, cambiar escena/HVAC/apertura y consultar visitantes, tiendas, HVAC o escena. Las cuatro CCTV son cámaras virtuales del mismo mundo, no vídeo real. Exportar Observation v1 descarga los tracks visibles con procedencia simulada.
 
 En desarrollo: `bash scripts/setup-experience.sh` y `bash scripts/demo-experience.sh`. Node 24/npm con lockfile. Compilación estática en `apps/web/dist`, base relativa compatible con `/Entity/`. Ningún recurso externo ni servidor Python es necesario para ejecutar ese directorio en un alojamiento web.
 
@@ -43,3 +43,14 @@ Pages usa Settings → Pages → Deploy from a branch → `gh-pages` / `(root)`,
 ## Pendientes de revisión
 
 Revisión humana de Fase 07; pruebas en teléfonos/GPU/Safari físicos; órbita/recorrido libre si se requiere además de vistas y enfoque actuales; calibración métrica/3D real; Core HTTPS público opcional y autenticación de despliegue antes de uso productivo. No se ha implementado vídeo físico, LLM remoto ni control hardware en esta experiencia. Sin Fase 08.
+
+## Publicación final comprobada
+
+- Código: https://github.com/drbrownlabs-afk/Entity/commit/56d05f43348cbc85bd6c9144b1d3e52c8e3748a6 . Corrección de evidencia/workflow y versión publicada: https://github.com/drbrownlabs-afk/Entity/commit/1f1a3b3dd174cfe7c01b379cc887164347fcf93e . Rama `codex/phase-07-experience`, sin merge a main.
+- Pages y prueba obligatoria de URL real: https://github.com/drbrownlabs-afk/Entity/actions/runs/42331518986 — Success, 52s, sin anotaciones. Artefacto pages-verification, 303 KB, contiene informe JSON y capturas. Comando del runner: `node scripts/check-public.mjs https://drbrownlabs-afk.github.io/Entity/ 1f1a3b3dd174cfe7c01b379cc887164347fcf93e`. Comprueba versión exacta servida, dos tamaños, WebGL/cinco cámaras/revisión, escena y consulta, cero llamadas API y errores. No es solo una compilación exitosa.
+- Rama estática `gh-pages` e2a9cb3ada77c225496333bb326bc6e31f982cb7 contiene exclusivamente .nojekyll, index.html, assets y deployment.json con ese SHA de origen; descargada por Git. No Python, tokens ni backend en el sitio.
+- Primer CI completo 42331389339 Success (1m32s), api-tests/edge-tests/experience-tests. CI final https://github.com/drbrownlabs-afk/Entity/actions/runs/42331518937 Success (1m42s), los tres jobs aprobados, sin anotaciones. Artefacto experience-evidence 827 KB y edge-report publicados. Docker/reinicio, detector/vídeo/recuperación, Output, agente y RTSP/MQTT/REST de fases anteriores pasaron también en ese run.
+- Fetch independiente de GitHub confirma 1f1a3b3, árbol 1f12e2303bee81ed0b8d73eb7f1399b489c2494a y ancestro de Fase 06. Main 5ce2519 sigue incorporado.
+- PR REST intentado: POST api.github.com/repos/drbrownlabs-afk/Entity/pulls Forbidden por restricción del entorno; no PR nuevo ni merge. No se pide Git manual al operador. Pages está activo y no necesita intervención del propietario.
+
+El cierre documental posterior no modifica la versión de aplicación ya desplegada ni exige repetir pruebas. Fase 07 EN VALIDACIÓN hasta revisión humana.

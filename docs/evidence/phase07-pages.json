@@ -1,0 +1,18 @@
+{
+  "source": "GitHub public Actions run summary; actual public tests executed by authorized runner, not local proxy",
+  "site": "https://drbrownlabs-afk.github.io/Entity/",
+  "source_commit": "1f1a3b3dd174cfe7c01b379cc887164347fcf93e",
+  "run": {
+    "url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42331518986",
+    "commits": [
+      "1f1a3b3dd174cfe7c01b379cc887164347fcf93e"
+    ],
+    "status": "Success",
+    "summary": "Summary\nPreserve Phase 07 public verification artifacts and runner summary\nPreserve Phase 07 public verification artifacts and runner summary\n#2\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nTriggered via push\nNovember 7, 2026 02:54\ndrbrownlabs-afk\npushed\n1f1a3b3\ncodex/phase-07-experience\nStatus\nSuccess\nTotal duration\n52s\nArtifacts\n1\npages.yml\non: push\npublish\n48s\npublish\nOh hello! Nice to see you.\nMade with \u2764\ufe0f by\nhumans.txt\nFit to window\nZoom out\nZoom in\nArtifacts\nProduced during runtime\nName\nSize\nDigest\npages-verification\n303 KB\nsha256:120e275c366ab11018cfeefc119d338914500b6592c50b87be42964c1df0f5f1\nYou can\u2019t perform that action at this time."
+  },
+  "artifact": "pages-verification",
+  "artifact_size": "303 KB",
+  "artifact_sha256": "120e275c366ab11018cfeefc119d338914500b6592c50b87be42964c1df0f5f1",
+  "mandatory_checks_script": "apps/web/scripts/check-public.mjs",
+  "local_proxy": "CONNECT 403 for github.io; not bypassed"
+}

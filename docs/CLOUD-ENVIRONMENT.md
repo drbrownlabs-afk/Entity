@@ -48,3 +48,6 @@ Output: bash scripts/demo-output.sh. Utiliza Core propio efímero y datos locale
 IA situada: bash scripts/demo-agent.sh (proveedor controlado explícito). Ver docs/phases/PHASE-05.md para opción de proveedor real y privacidad de contexto.
 
 Instalaciones: bash scripts/setup-integrations.sh; bash scripts/demo-integrations.sh (FFmpeg/Docker requeridos). Solo servicios locales efímeros, reportes/bases en .runtime/integrations-demo. Ver PHASE-06.md.
+
+
+Experience Fase 07: `bash scripts/setup-experience.sh` instala dependencias npm fijadas (Node24) y compila; `bash scripts/demo-experience.sh` inicia Vite local. El directorio apps/web/dist puede alojarse estáticamente sin Python. `npm --prefix apps/web test` prueba estado; Playwright requiere Chromium oficial (localmente se utilizó PLAYWRIGHT_CHROMIUM_EXECUTABLE=/usr/bin/chromium) y .venv Core solo para la prueba opcional de conexión. El backend público opcional necesita HTTPS y ENTITY_ALLOWED_ORIGINS=https://drbrownlabs-afk.github.io. La política de red local puede bloquear github.io/API; los runners autorizados comprueban la URL pública, sin eludir el proxy. install_script/start_skill incluyen ahora Experience en borrador, sin afirmar publicación de snapshot. Ver PHASE-07.md y Actions para evidencia real.
