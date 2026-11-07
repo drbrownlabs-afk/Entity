@@ -5,7 +5,6 @@ const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||u
 const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,scene:'https://superspl.at/scene/a972d838',source:'Original SSOG + Core routes measured from original floor + Rocketbox + PlayCanvas picker; simulated people, no physical camera or facial identity claim',checks:[]};
 const calibration=JSON.parse(fs.readFileSync('docs/evidence/phase09/voxel-ground.json','utf8'));
 const route=JSON.parse(fs.readFileSync('worlds/synthetic-office/corridor-route.json','utf8'));
-if(route.floor_source!=='original-official-voxel-ray'||calibration.route_clearance.some(p=>p.blocked)||JSON.stringify(route.floor_points)!==JSON.stringify(calibration.route_candidate))throw Error('Current original voxel ground/capsule validation does not match adopted route');
 report.physical_ground={source:calibration.collision_url,floor_clearance:calibration.floor_clearance,clear_capsule_samples:calibration.route_clearance.length,metric_scale_verified:false};
 let token,lastPage;
 const failures=[];
@@ -17,6 +16,7 @@ async function request(path,body){
  const value=await result.json();if(!result.ok)throw Error('Core '+result.status+': '+JSON.stringify(value));return value;
 }
 try{
+ if(route.floor_source!=='original-official-voxel-ray'||calibration.route_clearance.some(p=>p.blocked)||JSON.stringify(route.floor_points)!==JSON.stringify(calibration.route_candidate))throw Error('Current original voxel ground/capsule validation does not match adopted route');
  token=(await request('/v1/office/auth/login',{username:'admin',password:credentials.admin.password})).token;
  const page=await browser.newPage({viewport:{width:1440,height:1000}});lastPage=page;page.on('pageerror',error=>failures.push(error.message));
  await page.goto(web+'/office.html?budget=.25&survey=1&survey_route_pose=0&survey_direction=hall',{waitUntil:'domcontentloaded'});
