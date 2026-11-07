@@ -61,7 +61,16 @@ import('./operations.js');
 if(new URLSearchParams(location.search).has('survey')){
   let picker;
   viewer?.events.on('picker:ready',value=>{picker=value;});
+  let forcedPose=null;
+  viewer.app.on('update',()=>{
+    if(!forcedPose)return;
+    const camera=viewer.app.root.findComponents('camera')[0];
+    camera.entity.setPosition(...forcedPose.position);camera.entity.lookAt(...forcedPose.target);
+    viewer.app.renderNextFrame=true;
+  });
   window.officeSurvey={
+    pose:value=>{forcedPose=value;viewer.state.inputEnabled=!value;},
+
     frame:()=>viewer.frameScene(),
     seek:time=>{viewer.state.animationPaused=true;viewer.seek(time);},
     annotation:index=>viewer.selectAnnotation(index),

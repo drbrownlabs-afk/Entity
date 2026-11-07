@@ -7,9 +7,13 @@ try{
  const page=await browser.newPage({viewport:{width:1200,height:900}});
  await page.goto('http://127.0.0.1:4175/office.html?budget=0.5&survey=1');
  await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});
- const shots=[['whole',null],...Array.from({length:7},(_,i)=>['tour-'+i,i]),['private-A','a0'],['private-B','a2']];
+ const original=JSON.parse(fs.readFileSync('worlds/synthetic-office/original-viewer-settings.json','utf8'));
+ const values=original.settings.animTracks[0].keyframes.values;
+ const poses=[0,1,2].map(i=>({position:values.position.slice(i*3,i*3+3),target:values.target.slice(i*3,i*3+3)}));
+ const shots=[...poses.map((p,i)=>['authored-'+i,p]),['rear-return',{position:poses[2].position,target:poses[0].position}],['above-private',{position:[-3,5,-8],target:original.settings.annotations[2].position}]];
+
  for(const [id,time]of shots){
-  await page.evaluate(t=>{if(t===null)window.officeSurvey.frame();else if(typeof t==='string')window.officeSurvey.annotation(Number(t.slice(1)));else window.officeSurvey.seek(t);},time);
+  await page.evaluate(pose=>window.officeSurvey.pose(pose),time);
   await page.waitForTimeout(3500);
   const camera=await page.evaluate(()=>window.officeSurvey.camera());
   const picks=[];
