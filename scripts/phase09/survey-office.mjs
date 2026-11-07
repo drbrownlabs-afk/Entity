@@ -3,9 +3,9 @@ import fs from 'node:fs';
 const root='docs/evidence/phase09/survey';fs.mkdirSync(root,{recursive:true});
 const browser=await chromium.launch({args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 const report={scene:'https://superspl.at/scene/a972d838',source:'Original SSOG, elevated/oblique inspection viewpoints derived from authored and measured cameras. Camera transforms are NOT semantic resource coordinates or verified walking routes',views:[]};
-const save=()=>fs.writeFileSync(root+'/survey-oblique.json',JSON.stringify(report,null,2));
+const save=()=>fs.writeFileSync(root+'/survey-inventory-detail.json',JSON.stringify(report,null,2));
 try{
- for(const [id,params]of [['oblique-0','survey_route_pose=0&survey_direction=overview-right'],['oblique-1','survey_route_pose=1&survey_direction=overview-right'],['oblique-3','survey_route_pose=3&survey_direction=overview-right'],['oblique-4','survey_route_pose=4&survey_direction=overview-right'],['front-down','survey_pose=0&survey_direction=front-down']]){
+ for(const [id,params]of [['oblique-2','survey_route_pose=2&survey_direction=overview-right'],['wall-from-a','survey_annotation_eye=0'],['wall-from-b','survey_annotation_eye=2']]){
   const page=await browser.newPage({viewport:{width:1400,height:950}});
   await page.goto('http://127.0.0.1:4175/office.html?budget=0.5&survey=1&'+params,{waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});await page.waitForTimeout(1000);

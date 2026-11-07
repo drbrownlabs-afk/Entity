@@ -294,3 +294,7 @@ CI yPages omitían cambios en worlds/synthetic-office; CI omitía compose.office
 
 ### 2026-11-07 — Codex, procedencia de pruebas remotas
 Los informes de navegador incluyen ahora SHA probado y URL del run, para distinguir pruebas de revisiones sucesivas mientras se integra la rama. La prueba espacial archiva un JSON por ejecución y publica además artefacto independiente de poder hacer push de evidencias; no se pierde el fallo si coincide con otro commit. No cambia resultados ni criterios de aceptación.
+
+### 2026-11-07 — Codex, primer gate gráfico completo ejecutado
+Evidencia6888d9f: SSOG original+LuisRocketbox+Core+dos cámaras PASS. Tracks anónimos reales del picker: CAM-ROUTE-2 ve aLuis a0/1s; CAM-ROUTE-1 a5/9/10s. Identidad solo tras verificación sintética explícita; ambas cámaras recuperadas de historial. Cinco poses iguales, pausa inmóvil y reconstrucción inicial correctas. Imagen spatial-core.png e informe espacial conservados. No acredita aún rutas de todos los personajes, puestos o jornada espacial completa.
+Regresión actual76testsPASS51.292s trascapacidaddelectura/migración. Survey oblicuo muestra grupos adicionales yse amplían vistas detalladas, sinasignar coordenadas aproximadas.
