@@ -168,6 +168,7 @@ class OfficeTests(unittest.TestCase):
         response=self.client.post('/v1/office/auth/logout',headers=first)
         self.assertEqual(response.status_code,200,response.text)
         self.assertTrue(response.json()['revoked'])
+        self.assertIn('no-store',response.headers['cache-control'])
         main.initialize()
         self.assertEqual(self.client.get('/v1/office/me',headers=first).status_code,401)
         self.assertEqual(self.client.get('/v1/office/me',headers=second).status_code,200)

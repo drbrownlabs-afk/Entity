@@ -1,3 +1,4 @@
+import {saveRenderedObservation} from './camera-observations.js';
 import {mountQuery} from './query-form.js';
 import {mountCapabilities} from './capability-form.js';
 import {mountReception} from './reception.js';
@@ -7,27 +8,33 @@ host.id='office-operations';
 host.innerHTML='<h2>Operaciones del coworking · ENTITY Core</h2><form id="office-login"><label>Servidor<input name="api" type="url" value="http://127.0.0.1:8010"></label><label>Usuario<input name="username" autocomplete="username"></label><label>Contraseña<input name="password" type="password" autocomplete="current-password"></label><button>Conectar</button></form><p id="office-core-status" role="status">Sin conexión al Core: no se inventarán reservas, permisos ni resultados.</p><div id="office-workspace" hidden><nav id="office-modes"></nav><label>Ejecución<select id="office-run"></select></label><button id="office-refresh">Actualizar</button><button id="office-disconnect">Cerrar sesión</button><label>Reconstrucción histórica<input id="office-time" type="datetime-local"></label><button id="office-reconstruct">Consultar ese instante</button><button id="office-present">Presente</button><p id="office-world-status"></p><div class="office-columns"><div id="office-entities"></div><div><h3 id="office-selection">Entidad</h3><div id="office-facts"></div><div id="office-actions"></div></div></div><section id="office-query"></section></div>';
 document.querySelector('main').append(host);
 let selectedEventDetails=null;
-let currentActor=null;
+let currentActor=null,sessionEpoch=0;
 let token,site,run,world,capabilities=[],selected='site',mode='Operaciones',at=null,branch='main',streamController=null,receptionPanel=null;
 const status=message=>{host.querySelector('#office-core-status').textContent=message;};
 const esc=value=>String(value??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-async function request(path,body){const base=host.querySelector('[name=api]').value.replace(/\/$/,'');const response=await fetch(base+path,{method:body?'POST':'GET',headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(10000)});const value=await response.json();if(!response.ok)throw Error('Core HTTP '+response.status+': '+JSON.stringify(value.detail));return value;}
+async function request(path,body,bearer=token){const epoch=sessionEpoch;const base=host.querySelector('[name=api]').value.replace(/\/$/,'');const response=await fetch(base+path,{method:body?'POST':'GET',headers:{'Content-Type':'application/json',...(bearer?{Authorization:'Bearer '+bearer}:{})},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(10000)});const value=await response.json();if(epoch!==sessionEpoch)throw Error('Respuesta descartada: la sesión cambió.');if(!response.ok)throw Error('Core HTTP '+response.status+': '+JSON.stringify(value.detail));return value;}
 const prefix=()=>'/v1/sites/'+encodeURIComponent(site)+'/runs/'+encodeURIComponent(run);
-async function refresh(){const params=new URLSearchParams({branch});if(at)params.set('at',at);world=await request(prefix()+'/world?'+params);window.dispatchEvent(new CustomEvent('office-world-changed',{detail:world}));render();}
+async function refresh(){const context=JSON.stringify([site,run,branch,at]);const params=new URLSearchParams({branch});if(at)params.set('at',at);const incoming=await request(prefix()+'/world?'+params);if(context!==JSON.stringify([site,run,branch,at]))return;world=incoming;window.dispatchEvent(new CustomEvent('office-world-changed',{detail:world}));render();}
 host.querySelector('#office-login').onsubmit=async event=>{
- event.preventDefault();
- try{const answer=await request('/v1/office/auth/login',{username:host.querySelector('[name=username]').value,password:host.querySelector('[name=password]').value});currentActor=answer;token=answer.token;site=answer.site_id;host.querySelector('[name=password]').value='';const runs=await request('/v1/sites/'+encodeURIComponent(site)+'/runs');host.querySelector('#office-run').innerHTML=runs.map(r=>'<option value="'+esc(r.id)+'">'+esc(r.id)+'</option>').join('');run=host.querySelector('#office-run').value;branch='main';capabilities=await request('/v1/sites/'+encodeURIComponent(site)+'/capabilities');host.querySelector('#office-workspace').hidden=false;await refresh();subscribe();status('Conectado: '+answer.actor+' · '+answer.role+' · '+site+'. Estado y operaciones persistentes en Core.');}
- catch(error){token=null;world=null;host.querySelector('#office-workspace').hidden=true;window.dispatchEvent(new CustomEvent('office-world-cleared'));status(error.message);}
+ event.preventDefault();const epoch=++sessionEpoch;streamController?.abort();token=null;world=null;currentActor=null;at=null;host.querySelector('#office-workspace').hidden=true;window.dispatchEvent(new CustomEvent('office-world-cleared'));
+ try{const answer=await request('/v1/office/auth/login',{username:host.querySelector('[name=username]').value,password:host.querySelector('[name=password]').value});currentActor=answer;token=answer.token;site=answer.site_id;host.querySelector('[name=password]').value='';const runs=await request('/v1/sites/'+encodeURIComponent(site)+'/runs');host.querySelector('#office-run').innerHTML=runs.map(r=>'<option value="'+esc(r.id)+'">'+esc(r.id)+'</option>').join('');run=host.querySelector('#office-run').value;branch='main';capabilities=await request('/v1/sites/'+encodeURIComponent(site)+'/capabilities');host.querySelector('#office-workspace').hidden=false;await refresh();window.dispatchEvent(new CustomEvent('office-observer-enabled',{detail:answer.role==='admin'}));subscribe();status('Conectado: '+answer.actor+' · '+answer.role+' · '+site+'. Estado y operaciones persistentes en Core.');}
+ catch(error){if(epoch!==sessionEpoch)return;token=null;world=null;host.querySelector('#office-workspace').hidden=true;window.dispatchEvent(new CustomEvent('office-world-cleared'));status(error.message);}
 };
 host.querySelector('#office-run').onchange=async event=>{run=event.target.value;await refresh().catch(e=>status(e.message));subscribe();};
 host.querySelector('#office-disconnect').onclick=async()=>{
- let revoked=false;try{await request('/v1/office/auth/logout',{});revoked=true;}catch{}
- streamController?.abort();token=null;world=null;host.querySelector('#office-workspace').hidden=true;window.dispatchEvent(new CustomEvent('office-world-cleared'));
- status(revoked?'Sesión revocada en Core.':'Sesión local cerrada; Core no confirmó la revocación.');
+ const previous=token,epoch=++sessionEpoch;streamController?.abort();token=null;world=null;currentActor=null;host.querySelector('#office-workspace').hidden=true;window.dispatchEvent(new CustomEvent('office-world-cleared'));
+ let revoked=false;try{await request('/v1/office/auth/logout',{},previous);revoked=true;}catch{}
+ if(epoch===sessionEpoch)status(revoked?'Sesión revocada en Core.':'Sesión local cerrada; Core no confirmó la revocación.');
 };
 host.querySelector('#office-refresh').onclick=()=>refresh().catch(e=>status(e.message));
 host.querySelector('#office-reconstruct').onclick=()=>{const value=host.querySelector('#office-time').value;if(value){at=new Date(value).toISOString();refresh().catch(e=>status(e.message));}};
 host.querySelector('#office-present').onclick=()=>{at=null;refresh().catch(e=>status(e.message));};
+window.addEventListener('office-capture-request',async event=>{
+ try{if(!world||world.historical||branch!=='main')throw Error('Solo se registran observaciones en el mundo oficial presente.');
+  const snapshot=await window.officeCaptureCamera(event.detail);
+  await saveRenderedObservation(snapshot,{site,send:body=>request(prefix()+'/observations',body)});await refresh();status('Observación virtual guardada en Core: '+snapshot.payload.tracks.length+' tracks anónimos · '+snapshot.source_id);
+ }catch(error){status(error.message);}finally{window.dispatchEvent(new CustomEvent('office-capture-completed'));}
+});
 const filters={Seguridad:['Camera','Stream','Track','AccessPoint','Alert'],Reservas:['Booking','Meeting','Desk','Office','EventSpace'],Recepción:['Visit','Invitation','Person','Meeting','Notification','CheckIn','Conversation','Kiosk','Intercom'],Mantenimiento:['HVAC','Sensor','Equipment','Task','Incident'],Flujos:['Zone','Track'],Memoria:[],IA:[],Escenarios:[],Operaciones:[]};
 for(const name of Object.keys(filters)){const button=document.createElement('button');button.textContent=name;button.onclick=()=>{mode=name;window.dispatchEvent(new CustomEvent('office-mode-changed',{detail:name}));render();};host.querySelector('#office-modes').append(button);}
 function choose(id){selected=id;const entity=world.entities[id];if(entity?.annotation_index!==undefined)window.dispatchEvent(new CustomEvent('office-select-annotation',{detail:entity.annotation_index}));render();}
@@ -106,7 +113,7 @@ async function renderTimeline(){
  if(!element){element=document.createElement('section');element.id='office-timeline';host.querySelector('#office-workspace').append(element);}
  element.hidden=mode!=='Memoria';if(element.hidden)return;
  try{
-  const records=await request(prefix()+'/events?limit=1000&branch='+encodeURIComponent(branch));
+  const context=JSON.stringify([site,run,branch,at]);const records=await request(prefix()+'/events?limit=1000&branch='+encodeURIComponent(branch));if(mode!=='Memoria'||context!==JSON.stringify([site,run,branch,at]))return;
   element.innerHTML='<h3>Memoria persistente · eventos inmutables</h3><label>Recorrer eventos<input id="office-scrub" type="range" min="0" max="'+Math.max(0,records.length-1)+'" value="'+Math.max(0,records.length-1)+'"></label><p>Reconstrucción del Core. No se ofrece vídeo grabado; la imagen de fondo es el escaneo original.</p><div id="office-event-list"></div><div id="office-event-detail"></div>';
   if(selectedEventDetails)element.querySelector('#office-event-detail').textContent=JSON.stringify(selectedEventDetails,null,2);
   const list=element.querySelector('#office-event-list');

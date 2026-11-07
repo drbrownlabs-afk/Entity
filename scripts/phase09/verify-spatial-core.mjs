@@ -68,7 +68,10 @@ try{
    report.checks.push({second,camera,visible:snapshot.payload.tracks.length,core_position:expected,rendered_position:placed.position,identity_from_image:false});save();
   }
   if(second===5){
-   await page.locator('[data-camera="CAM-ROUTE-1"]').click();await page.locator('#office-camera-expand').click();
+   await page.locator('[data-camera="CAM-ROUTE-1"]').click();
+   await page.locator('#office-camera-record').click();await page.waitForFunction(()=>document.querySelector('#office-core-status').textContent.includes('Observación virtual guardada en Core'));
+   report.observation_saved_from_ui=true;
+   await page.locator('#office-camera-expand').click();
    await page.locator('#scene').screenshot({path:'docs/evidence/phase09/spatial-person-floor.png',timeout:120000});
    await page.locator('#office-camera-expand').click();
   }

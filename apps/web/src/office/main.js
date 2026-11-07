@@ -108,8 +108,11 @@ else{
    if(event.data.world)window.dispatchEvent(new CustomEvent('office-world-changed',{detail:event.data.world}));
    else window.dispatchEvent(new CustomEvent('office-world-cleared'));
   }
+  if(event.data?.type==='entity-observer-capable')window.dispatchEvent(new CustomEvent('office-observer-enabled',{detail:event.data.enabled===true}));
+  if(event.data?.type==='entity-camera-saved')window.dispatchEvent(new CustomEvent('office-capture-completed'));
   if(event.data?.type==='entity-select-resource'){const i=projectedWorld?.entities?.[event.data.id]?.annotation_index;if(Number.isInteger(i)&&viewer.state.selectedAnnotation!==i)viewer.selectAnnotation(i);}
  });
+ window.addEventListener('office-capture-request',async event=>{try{const snapshot=await window.officeCaptureCamera(event.detail);window.parent.postMessage({type:'entity-camera-snapshot',snapshot},location.origin);}catch(error){document.querySelector('#status').textContent=error.message;window.dispatchEvent(new CustomEvent('office-capture-completed'));}});
  window.addEventListener('office-annotation-selected',event=>window.parent.postMessage({type:'entity-annotation-selection',index:event.detail},location.origin));
  window.addEventListener('office-select-entity',event=>window.parent.postMessage({type:'entity-resource-selection',id:event.detail},location.origin));
  window.officeProjectionDiagnostics=()=>({clock:projectedWorld?.clock||null,entity_ids:Object.keys(projectedWorld?.entities||{}),camera_ids:Object.values(projectedWorld?.entities||{}).filter(e=>e.kind==='Camera').map(e=>e.id)});

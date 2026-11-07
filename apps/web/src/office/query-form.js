@@ -16,9 +16,11 @@ export function mountQuery(element,{getWorld,getSelection,getBranch=()=> 'main',
   event.preventDefault();submit.disabled=true;
   try{
    if(natural.checked&&(getAt()||getBranch()!=='main'))throw Error('Para consultar un instante histórico o un escenario, utiliza la consulta guiada con su contexto explícito.');
+   const context=()=>{const w=getWorld();return JSON.stringify([w?.site_id,w?.run_id,w?.branch,w?.historical,getAt()]);};const requestedContext=context();
    const query={kind:kind.value,entity_id:entity.value||null,branch:getBranch()};if(getAt())query.at=getAt();
    for(const [name,input]of Object.entries(dates))if(input.value)query[name]=new Date(input.value).toISOString();
    const trace=await send({id:crypto.randomUUID(),question:question.value||('Consulta guiada: '+labels[kind.value]),...(!natural.checked?{query}:{})});
+   if(context()!==requestedContext)return;
    if(trace.status!=='verified')throw Error('ENTITY: '+trace.status+' '+JSON.stringify(trace.error||{}));
    const result=trace.result;answer.replaceChildren(node('p',(trace.provider==='guided'?'Consulta guiada':trace.provider)+' · '+result.as_of+' · '+result.evidence.length+' evidencias'));
    const references=new Set();const visit=value=>{if(typeof value==='string'&&getWorld().entities[value])references.add(value);else if(Array.isArray(value))value.forEach(visit);else if(value&&typeof value==='object')Object.values(value).forEach(visit);};visit(result.result);

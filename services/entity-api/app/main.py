@@ -308,7 +308,10 @@ async def office_legacy_boundary(request, call_next):
                 return JSONResponse(status_code=403,content={"detail":"Use site-scoped coworking APIs; legacy routes cannot mutate or expose office state"})
         except HTTPException as error:return JSONResponse(status_code=error.status_code,content={"detail":error.detail})
         except sqlite3.Error:return JSONResponse(status_code=503,content={"detail":"Database not ready"})
-    return await call_next(request)
+    response=await call_next(request)
+    if path.startswith(("/v1/office/","/v1/sites")):
+        response.headers["Cache-Control"]="private, no-store"
+    return response
 
 from app.office.agent import router as office_agent_router
 app.include_router(office_agent_router)

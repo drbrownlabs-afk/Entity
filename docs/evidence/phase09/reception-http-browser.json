@@ -1,9 +1,12 @@
 {
+  "tested_commit": null,
+  "run_url": null,
   "source": "Actual local Core HTTP and built kiosk/personal clients; original site inventory; no substituted 3D scene",
   "checks": [
     {
       "width": 1280,
       "server_session_revoked": true,
+      "stale_world_response_after_logout_discarded": true,
       "verified_invitation": true,
       "private_host_reply": true,
       "scoped_mobile_booking": true,
@@ -19,6 +22,7 @@
     {
       "width": 390,
       "server_session_revoked": true,
+      "stale_world_response_after_logout_discarded": true,
       "verified_invitation": true,
       "private_host_reply": true,
       "scoped_mobile_booking": true,

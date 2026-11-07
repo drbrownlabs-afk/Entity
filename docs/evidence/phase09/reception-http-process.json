@@ -4,7 +4,7 @@
     {
       "actual_process_restart": "passed",
       "events_preserved": 18,
-      "entity_count": 103
+      "entity_count": 108
     },
     {
       "sqlite_online_backup_integrity": "passed"

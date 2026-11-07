@@ -4,10 +4,14 @@ import {createAvatar} from './avatars.js';
 const models=new Set(['Male_Adult_01','Male_Adult_02','Male_Adult_03','Female_Adult_01','Female_Adult_02','Female_Adult_03']);
 export function installVisuals(viewer,original){
  const app=viewer.app,mainCamera=app.root.findComponents('camera')[0],cameras=new Map(),avatars=new Map(),loading=new Map(),errors=[];
- let world=null,security=false,selectedCamera=null,expandedCamera=null,visibleIds=[];
+ let world=null,security=false,selectedCamera=null,expandedCamera=null,observerEnabled=false,visibleIds=[];
  const panel=document.createElement('div');panel.id='office-cctv';panel.hidden=true;document.querySelector('#scene').append(panel);
  const expand=document.createElement('button');expand.id='office-camera-expand';expand.textContent='Ampliar cámara';expand.style.cssText='right:12px;bottom:12px;left:auto;font-size:12px';panel.append(expand);
  expand.onclick=()=>{expandedCamera=expandedCamera?null:(selectedCamera||visibleIds[0]);expand.textContent=expandedCamera?'Volver a la cuadrícula':'Ampliar cámara';layout();};
+ const record=document.createElement('button');record.id='office-camera-record';record.textContent='Registrar observación simulada';record.hidden=true;record.style.cssText='left:12px;bottom:12px;right:auto;font-size:12px';panel.append(record);
+ record.onclick=()=>{record.disabled=true;window.dispatchEvent(new CustomEvent('office-capture-request',{detail:selectedCamera||visibleIds[0]}));};
+ window.addEventListener('office-observer-enabled',event=>{observerEnabled=event.detail===true;layout();});
+ window.addEventListener('office-capture-completed',()=>{record.disabled=false;});
  const caption=document.createElement('span');caption.id='office-camera-caption';caption.style.cssText='position:absolute;left:12px;top:12px;background:#101b22bb;padding:5px;pointer-events:none';panel.append(caption);
  function ensureCamera(id,pose){
   if(!Array.isArray(pose.position)||!Array.isArray(pose.target)||[...pose.position,...pose.target].some(v=>!Number.isFinite(v)))return;
@@ -29,6 +33,7 @@ export function installVisuals(viewer,original){
   const ordered=[...(selectedCamera?[selectedCamera]:[]),...preferred,...allowed].filter((id,i,a)=>a.indexOf(id)===i);
   if(expandedCamera&&!allowed.includes(expandedCamera))expandedCamera=null;
   visibleIds=expandedCamera?[expandedCamera]:ordered.slice(0,innerWidth<650?2:4);
+  record.hidden=!observerEnabled||!world||world.historical||world.branch!=='main'||!world.entities[selectedCamera||visibleIds[0]]?.capture_simulated_people;
   caption.textContent=world?(world.historical?'Reconstrucción · sin vídeo grabado · ':'CCTV virtual · ')+world.clock:'Vistas del escaneo original · Core desconectado';
   for(const [id,{entity,button}]of cameras){
    const slot=visibleIds.indexOf(id),state=world?.entities[id],column=slot%2,row=Math.floor(slot/2);
@@ -79,9 +84,15 @@ export function installVisuals(viewer,original){
   app.renderNextFrame=true;
  }
  async function capture(id){
-  if(world?.historical)throw Error('Historical reconstruction cannot generate live observations');
+  if(world?.historical||world?.branch!=='main')throw Error('Historical or hypothetical reconstruction cannot generate official live observations');
   if(!world)throw Error('Core must be connected; authored public views are not observations');
-  const source=world.entities[id],entry=cameras.get(id);
+  const sample=world;
+  // Camera observations/events do not move actors; compare physical fields, not unrelated revisions.
+  const frame=state=>JSON.stringify({clock:state?.clock,branch:state?.branch,historical:state?.historical,camera:state?.entities[id]&&['position','target','fov','connectivity'].map(k=>state.entities[id][k]),poses:Object.values(state?.entities||{}).filter(p=>p.spatial_pose).map(p=>[p.id,p.spatial_pose])});
+  const fingerprint=frame(sample);
+  const ensureCurrent=()=>{if(frame(world)!==fingerprint)throw Error('El mundo cambió durante la captura; vuelve a intentarlo.');};
+  if(Object.values(sample.entities).some(p=>p.spatial_pose&&models.has(p.avatar_id)&&!avatars.has(p.id)))throw Error('Los personajes aún se están cargando; no se publicará una falsa ausencia.');
+  const source=sample.entities[id],entry=cameras.get(id);
   if(!source||!entry||source.connectivity==='disconnected')throw Error('Authorized calibrated camera unavailable');
   // Reuse the rendered source camera: an unrendered clone has no resident splat depth.
   const camera=entry.entity.camera,picker=new pc.Picker(app,160,90);
@@ -92,10 +103,10 @@ export function installVisuals(viewer,original){
     const timer=setTimeout(()=>{app.off('postrender',finish);reject(Error('Camera render did not complete within 10 seconds'));},10000);
     app.once('postrender',finish);app.renderNextFrame=true;
    });
-   camera.rect=new pc.Vec4(0,0,1,1);picker.prepare(camera,app.scene);camera.rect=rect;
+   ensureCurrent();camera.rect=new pc.Vec4(0,0,1,1);picker.prepare(camera,app.scene);camera.rect=rect;
    const tracks=[];
    for(const [personId,entity]of avatars){
-    const pose=world.entities[personId]?.spatial_pose;
+    const pose=sample.entities[personId]?.spatial_pose;
     if(!entity.enabled||!pose)continue;
     const center=entity.getPosition().clone().add(new pc.Vec3(0,.9,0));
     const depth=center.clone().sub(entry.entity.getPosition()).dot(entry.entity.forward);
@@ -112,11 +123,12 @@ export function installVisuals(viewer,original){
      tracks.push({local_track_id:local,zone_id:pose.zone_id,position:[screen.x/160,screen.y/90]});
     }
    }
-   return {source_id:id,clock:world.clock,payload:{source_status:'connected',tracks,transitions:[]},provenance:{connector_id:'simulated',model_version:'playcanvas-picker-visibility-v1',simulated:true}};
+   ensureCurrent();
+   return {source_id:id,clock:sample.clock,payload:{source_status:'connected',tracks,transitions:[]},provenance:{connector_id:'simulated',model_version:'playcanvas-picker-visibility-v1',simulated:true}};
   }finally{camera.rect=rect;picker.destroy();app.renderNextFrame=true;}
  }
  window.addEventListener('office-world-changed',e=>receive(e.detail));
- window.addEventListener('office-world-cleared',()=>{world=null;for(const entity of avatars.values())entity.enabled=false;layout();});
+ window.addEventListener('office-world-cleared',()=>{world=null;observerEnabled=false;for(const entity of avatars.values())entity.enabled=false;layout();});
  window.addEventListener('office-mode-changed',e=>{security=e.detail==='Seguridad';panel.hidden=!security;layout();});
  window.addEventListener('resize',layout);
  // Warm secondary camera resident sets without unbounded rendering on a paused world.
