@@ -11,6 +11,7 @@ from .storage import encode,utc,world,emit,get_run,identity
 from .service import create_run,command,resource
 from .observations import ingest
 from .queries import query
+from .access import projection,operator,require_visible
 
 router=APIRouter(prefix='/v1',tags=['coworking'],route_class=AuditedRoute)
 
@@ -79,7 +80,7 @@ def run_create(site:str,body:RunCreate,actor=Depends(principal)):
 def get_world(site:str,run:str,branch:str='main',at:str|None=None,actor=Depends(principal)):
     from app.main import database
     scoped(site,actor,'read')
-    with database() as db:return world(db,site,run,branch,at)
+    with database() as db:return projection(world(db,site,run,branch,at),actor)
 
 @router.post('/sites/{site}/runs/{run}/commands')
 def execute_command(site:str,run:str,body:Command,actor=Depends(principal)):
@@ -99,13 +100,26 @@ def ask(site:str,run:str,body:Query,actor=Depends(principal)):
     scoped(site,actor,'query')
     data=body.model_dump(by_alias=True,exclude_none=True)
     try:
-        with database() as db:return query(db,site,run,data)
+        with database() as db:
+            if not operator(actor):
+                if data['kind'] not in {'entity','agenda','location'}:raise HTTPException(403,'Query outside personal scope')
+                if data['kind']=='agenda' and data.get('entity_id')!=actor.get('person'):raise HTTPException(403,'Personal agenda requires own person')
+                if data['kind'] in {'entity','location'}:
+                    require_visible(world(db,site,run,data.get('branch','main'),data.get('at')),actor,data.get('entity_id'))
+                    if not data.get('entity_id'):raise HTTPException(403,'Entity ID required')
+                result=query(db,site,run,data)
+                if data['kind']=='agenda':result['result']=[x for x in result['result'] if x.get('person_id')==actor.get('person') or x.get('host_id')==actor.get('person') or actor.get('person') in x.get('participants',[])]
+                if data['kind']=='entity':result['result']=projection({'entities':{data['entity_id']:result['result']}},actor)['entities'].get(data['entity_id'])
+                result['evidence']=[]
+                return result
+            return query(db,site,run,data)
     except (KeyError,TypeError,ValueError):raise HTTPException(422,'Required query parameters missing or invalid')
 
 @router.get('/sites/{site}/capabilities')
 def capabilities(site:str,resource_id:str|None=None,actor=Depends(principal)):
     from app.main import database
     scoped(site,actor,'read')
+    if not operator(actor):raise HTTPException(403,'Operational capabilities require operator role')
     with database() as db:return [json.loads(r[0]) for r in db.execute('SELECT descriptor FROM office_capabilities WHERE site=?'+(' AND resource=?' if resource_id else ''),(site,resource_id) if resource_id else (site,))]
 
 @router.put('/sites/{site}/bindings')
@@ -128,6 +142,7 @@ def bind(site:str,body:Binding,actor=Depends(principal)):
 def events(site:str,run:str,after:int=0,limit:int=QueryParam(default=100,ge=1,le=1000),branch:str='main',actor=Depends(principal)):
     from app.main import database
     scoped(site,actor,'read')
+    if not operator(actor):raise HTTPException(403,'Operational event log requires operator role')
     with database() as db:
         get_run(db,site,run)
         return [{**dict(r),'entities':json.loads(r['entities']),'payload':json.loads(r['payload']),'evidence':json.loads(r['evidence'])} for r in db.execute('SELECT * FROM office_events WHERE site=? AND run=? AND branch=? AND seq>? ORDER BY seq LIMIT ?',(site,run,branch,after,limit))]
@@ -136,6 +151,7 @@ def events(site:str,run:str,after:int=0,limit:int=QueryParam(default=100,ge=1,le
 async def stream(site:str,run:str,request:Request,after:int=0,actor=Depends(principal)):
     from app.main import database
     scoped(site,actor,'read')
+    if not operator(actor):raise HTTPException(403,'Operational event stream requires operator role')
     with database() as db:get_run(db,site,run)
     async def generate():
         cursor=after
