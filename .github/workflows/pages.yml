@@ -60,6 +60,7 @@ jobs:
         uses: actions/upload-artifact@v6
         with:
           name: pages-verification
+          include-hidden-files: true
           path: |
             .runtime/pages-*.png
             .runtime/pages-verification.json
