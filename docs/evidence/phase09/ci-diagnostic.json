@@ -1,0 +1,39 @@
+{
+  "inspected_run": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42421775240",
+  "tested_commit": "e5c91ad41aeff8f565fd7711fb06befafd0ae82c",
+  "status": "completed",
+  "conclusion": "failure",
+  "jobs": [
+    {
+      "name": "edge-tests",
+      "status": "completed",
+      "conclusion": "success",
+      "failed_steps": []
+    },
+    {
+      "name": "api-tests",
+      "status": "completed",
+      "conclusion": "success",
+      "failed_steps": []
+    },
+    {
+      "name": "experience-tests",
+      "status": "completed",
+      "conclusion": "failure",
+      "failed_steps": [
+        "Verify persistent original-office reception and private mobile reply over real HTTP"
+      ],
+      "failure_summary": [
+        "2026-11-07T22:43:30.9602587Z   name: 'TimeoutError'",
+        "2026-11-07T22:43:31.2271972Z subprocess.CalledProcessError: Command '['node', 'scripts/phase09/verify-reception.mjs']' returned non-zero exit status 1.",
+        "2026-11-07T22:43:31.2491109Z ##[error]Process completed with exit code 1."
+      ]
+    },
+    {
+      "name": "delivery",
+      "status": "completed",
+      "conclusion": "skipped",
+      "failed_steps": []
+    }
+  ]
+}
