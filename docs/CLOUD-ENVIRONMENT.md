@@ -2,7 +2,7 @@
 
 La máquina actual es válida para desarrollar, ejecutar Docker y depurar. GitHub conserva código, configuración y resultados; las bases de datos y procesos siguen siendo locales.
 
-Cada tarea cloud ya está aislada. Utilizar `/workspace/Entity`; no crear worktrees salvo petición explícita. Leer AGENTS.md y la memoria compartida antes de modificar el proyecto. Fase 05 autorizada y EN VALIDACIÓN; no iniciar Fase 06 sin aprobación.
+Cada tarea cloud ya está aislada. Utilizar `/workspace/Entity`; no crear worktrees salvo petición explícita. Leer AGENTS.md y la memoria compartida antes de modificar el proyecto. Fase 06 autorizada y EN VALIDACIÓN; no iniciar Fase 07 sin aprobación.
 
 ## Instalación
 
@@ -46,3 +46,5 @@ Edge: bash scripts/setup-edge.sh; bash scripts/demo-edge.sh. Entorno separado .r
 Output: bash scripts/demo-output.sh. Utiliza Core propio efímero y datos locales .runtime/output-demo; no hardware. Ver docs/phases/PHASE-04.md.
 
 IA situada: bash scripts/demo-agent.sh (proveedor controlado explícito). Ver docs/phases/PHASE-05.md para opción de proveedor real y privacidad de contexto.
+
+Instalaciones: bash scripts/setup-integrations.sh; bash scripts/demo-integrations.sh (FFmpeg/Docker requeridos). Solo servicios locales efímeros, reportes/bases en .runtime/integrations-demo. Ver PHASE-06.md.

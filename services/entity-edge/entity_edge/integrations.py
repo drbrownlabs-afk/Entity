@@ -63,13 +63,17 @@ class MqttSensor:
         self.client.on_message=self._message
         self.subscribed=threading.Event()
         self.client.on_subscribe=lambda *args:self.subscribed.set()
-        self.client.on_disconnect=lambda *args:self.subscribed.clear()
+        self.client.on_disconnect=self._disconnect
         self.path,self.topic,self.source_id,self.connector_id=outbox_path,topic,source_id,connector_id
         self.simulated=simulated;self.error=None;self.connected=False;self.received=0
 
     def _connect(self,client,userdata,flags,reason,properties):
         self.connected=not reason.is_failure
         if self.connected:client.subscribe(self.topic,qos=1)
+
+    def _disconnect(self,*args):
+        self.connected=False
+        self.subscribed.clear()
 
     def _message(self,client,userdata,message):
         if message.topic!=self.topic:return

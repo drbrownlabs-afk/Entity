@@ -25,6 +25,11 @@ stage='prerequisites'
 def diagnose(kind,error,tb):
     location=traceback.extract_tb(tb)[-1]
     print(f'::error title=Phase06 integration::{stage}: {kind.__name__} at {location.name}:{location.lineno}',flush=True)
+    if stage.startswith('video_'):
+        log.flush()
+        tail='\n'.join((work/'services.log').read_text(errors='replace').splitlines()[-20:])[-1800:]
+        tail=tail.replace('%','%25').replace('\r','%0D').replace('\n','%0A')
+        print('::error title=Phase06 fixture video diagnostic::'+tail,flush=True)
     sys.__excepthook__(kind,error,tb)
 sys.excepthook=diagnose
 MEDIAMTX='bluenviron/mediamtx:1.12.3@sha256:3634a1eed1288b93e8d22ed74694eae96d483fcf676cac5d0c91830ad1b86b3d'

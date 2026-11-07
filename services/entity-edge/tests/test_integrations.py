@@ -45,3 +45,5 @@ class IntegrationTests(unittest.TestCase):
             box=Outbox(path);self.assertEqual(box.pending(),1);box.close();self.assertEqual(client.acks,[(1,1)])
             message.payload=b'bad';sensor._message(client,None,message)
             self.assertEqual(client.acks,[(1,1)]);self.assertEqual(sensor.error,'invalid_sensor_message')
+            sensor.connected=True;sensor.subscribed.set();sensor._disconnect()
+            self.assertFalse(sensor.connected);self.assertFalse(sensor.subscribed.is_set())

@@ -168,3 +168,15 @@ Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin
 - Fallo diagnosticado: Docker reasignó puerto publicado automáticamente tras reiniciar (reproducción aislada: 32771→32772); demo pasó a asignación explícita estable. GOP H264 reducido para no esperar 25 s por primer keyframe. Demo afectada repetida y aprobada.
 - Resultados demo: 107 muestras vídeo RTSP, mismo contrato/cámara passed, mqtt_qos1_dedup/broker_restart/core_restart_outbox/reservation_revision/agent_evidence passed; 2 eventos sensores y 2 reservas. Datos de sensores/reservas ficticios, protocolos reales locales; no hardware ajeno ni ONVIF físico probado. Estado Fase 06 EN VALIDACIÓN.
 - Compatibilidad física, credenciales, SDKs de fabricante y seguridad de producción pendientes según matriz de Fase 06; Fase 07 NO INICIADA. Resultados tests/CI y publicación se registran al cierre.
+
+
+### 2026-11-07 UTC — Fase 06 CI y regresión
+- Suite local final: 29/29 Core (4.583 s), 7/7 Edge (.106 s), ninguna omitida; setup-integrations/pip check/compileall/diff --check correctos. Segunda demo correcta: 95 muestras vídeo (variación por instante de entrada al stream), eventos/dedup/restarts/consulta correctos. Proveedor agente fijado controlled explícitamente para no realizar llamadas externas accidentales.
+- Primer push 8084b84: CI remoto run 42327761645 Failure en paso Demonstrate RTSP MQTT and REST integration (api-tests correcto). Logs de job exigen login, fallo no se oculta ni se atribuye a causa no demostrada. Se añadió comprobación/instalación de FFmpeg en runner y anotación pública por etapa/excepción; push cc78f08 solicita nueva ejecución. Resultado se registrará al observarlo.
+- Fase 06 EN VALIDACIÓN, sin avanzar Fase 07.
+
+
+### 2026-11-07 UTC — Fase 06 corrección CI comprobada
+- Run 42328049603 para cc78f084a60ed625b61997713469a728e01ccac1: Success, 1m41s, api-tests 34s/edge-tests 1m37s, sin anotaciones. Incluye integración real local RTSP/MQTT/REST. Se conserva primer fallo run 42327761645; no se inventa causa exacta con logs privados. FFmpeg ahora garantizado desde apt oficial si falta en runner.
+- Salud de cliente MQTT corregida: connected=False al desconectar y flag subscribed limpio; test dirigido de los 3 casos de adaptadores aprobado (.019 s). Diagnóstico público de vídeo solo muestra logs de este laboratorio ficticio, sin headers/tokens. No se cambió Core ni protocolos propios.
+- Documentación de matriz/roadmap/licencias y límites añadida. Esquema Core sigue 5, historial de fases anteriores conservado. Resultado de CI final se registrará tras el siguiente push. Fase 06 EN VALIDACIÓN, no Fase 07.

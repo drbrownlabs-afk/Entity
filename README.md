@@ -27,3 +27,5 @@ Demo Edge Fase 03 (EN VALIDACIÓN): `bash scripts/setup-edge.sh` y `bash scripts
 Fase 04 Output virtual EN VALIDACIÓN: `bash scripts/demo-output.sh`, con Core/Edge preparados. Pantalla virtual, reglas, control manual y fallos probados; ver docs/phases/PHASE-04.md. CI remoto comprobado por web; diagnóstico en docs/audits/GITHUB-ACTIONS-RECOVERY.md.
 
 Fase 05 IA situada EN VALIDACIÓN: `bash scripts/demo-agent.sh` con Core/Edge preparados. SDK OpenAI integrado y proveedor controlado reproducible, evidencia y acciones virtuales con permisos; inferencia remota pendiente de clave. Ver docs/phases/PHASE-05.md. Fase 06 no iniciada.
+
+Fase 06 EN VALIDACIÓN: `bash scripts/setup-integrations.sh` y `bash scripts/demo-integrations.sh`. RTSP/MQTT reales locales, reservas ficticias y recuperación sin cambiar Core; matriz en docs/phases/PHASE-06.md. Fase 07 no iniciada.
