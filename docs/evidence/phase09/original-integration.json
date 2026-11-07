@@ -1,6 +1,90 @@
 {
   "source": "Original published Synthetic Office SSOG through official SuperSplat viewer package",
-  "checks": [],
-  "status": "failed",
-  "error": "TimeoutError: page.screenshot: Timeout 30000ms exceeded.\nCall log:\n  - taking page screenshot\n  - waiting for fonts to load...\n  - fonts loaded\n"
+  "checks": [
+    {
+      "width": 1440,
+      "loaded": true,
+      "walkAllowed": true,
+      "mode": "walk",
+      "annotations": [
+        {
+          "title": "6-Person Office Bench System",
+          "position": [
+            -0.4324827070899584,
+            -1.1356615558262035,
+            -5.352859958159687
+          ]
+        },
+        {
+          "title": "8-Person Conference Table",
+          "position": [
+            1.1870577758066334,
+            -1.2140478639523282,
+            0.06964437653360278
+          ]
+        },
+        {
+          "title": "6-Person Office Bench System",
+          "position": [
+            1.9970835412267196,
+            -0.8033600527595,
+            -10.693077551494174
+          ]
+        },
+        {
+          "title": "Fito Wall",
+          "position": [
+            0.09792180086598856,
+            -0.17678632222835267,
+            2.586294204317113
+          ]
+        }
+      ],
+      "errors": [],
+      "substitute": false
+    },
+    {
+      "width": 390,
+      "loaded": true,
+      "walkAllowed": true,
+      "mode": "walk",
+      "annotations": [
+        {
+          "title": "6-Person Office Bench System",
+          "position": [
+            -0.4324827070899584,
+            -1.1356615558262035,
+            -5.352859958159687
+          ]
+        },
+        {
+          "title": "8-Person Conference Table",
+          "position": [
+            1.1870577758066334,
+            -1.2140478639523282,
+            0.06964437653360278
+          ]
+        },
+        {
+          "title": "6-Person Office Bench System",
+          "position": [
+            1.9970835412267196,
+            -0.8033600527595,
+            -10.693077551494174
+          ]
+        },
+        {
+          "title": "Fito Wall",
+          "position": [
+            0.09792180086598856,
+            -0.17678632222835267,
+            2.586294204317113
+          ]
+        }
+      ],
+      "errors": [],
+      "substitute": false
+    }
+  ],
+  "status": "passed"
 }
