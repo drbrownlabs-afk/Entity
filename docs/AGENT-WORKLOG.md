@@ -91,3 +91,9 @@ Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin
 - Límites: autenticación solo integraciones, permisos globales, REST sin dispositivo externo, acciones exclusivamente simuladas; salud es registry-only. Esquemas perfil mínimo, sin MQTT, paginación, Edge o percepción. Detalle en phases/PHASE-02.md.
 - Decisiones: master spec y DECISION-LOG actualizados. Estado EN VALIDACIÓN; Fase 03 NO INICIADA.
 - Próximo paso: publicación/verificación remota y revisión humana. Sin autoaprobación ni merge automático.
+
+
+### 2026-11-07 UTC — entrega GitHub Fase 02
+- Publicado 0506df4b0bcb108430f58005a4c35c7002870ca5 en codex/phase-02-connectors; fetch independiente confirma árbol completo idéntico. Código, contratos, configuración, tests y memoria compartida disponibles en GitHub.
+- gh pr create y gh api Actions intentados: Forbidden; sin PR/merge ni CI remoto confirmado. No se pide Git manual al operador.
+- Cierre documental en PHASE-02.md/PROJECT-STATUS.md y esta entrada; sin cambios funcionales posteriores a las 19 pruebas aprobadas. Estado EN VALIDACIÓN; siguiente paso revisión humana. Fase 03 NO INICIADA.

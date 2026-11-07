@@ -34,3 +34,7 @@ Build y arranque Docker ejecutados con migración del volumen existente; smoke d
 REST es una entrada real HTTP probada; la acción es exclusivamente simulada. MQTT, descubrimiento automático, percepción, buffers Edge y reconexión a sensores físicos no implementados. Auditoría/observaciones no tienen paginación ni retención. No hay borrado ni downgrade; hacer backup antes de upgrades. Pruebas no equivalen a carga/producción ni verificación física.
 
 Entrega en codex/phase-02-connectors sobre 348e15d, conservando íntegros los commits de fases anteriores. Pendiente revisión humana; no avanzar Fase 03. Estado de publicación/PR/CI en bitácora.
+
+
+## Publicación comprobada
+Implementación: https://github.com/drbrownlabs-afk/Entity/commit/0506df4b0bcb108430f58005a4c35c7002870ca5 . Rama codex/phase-02-connectors publicada y descargada en repositorio bare independiente: árbol completo idéntico. PR intentado con gh pr create: Forbidden en api.github.com/graphql. Consulta gh api Actions para esta rama: Forbidden. No hay PR ni merge a main; CI remoto desconocido, pruebas locales válidas. No se requieren operaciones Git manuales del operador. Fase 02 EN VALIDACIÓN; Fase 03 NO INICIADA.
