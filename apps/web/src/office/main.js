@@ -79,3 +79,6 @@ if(new URLSearchParams(location.search).has('survey')){
     pick:async(x,y)=>{const v=await picker?.pick(x,y);return v?.toArray()||null;}
   };
 }
+
+const {installVisuals}=await import('./visuals.js');
+if(viewer)installVisuals(viewer,original);

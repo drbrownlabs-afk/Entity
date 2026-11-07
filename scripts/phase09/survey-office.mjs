@@ -18,6 +18,23 @@ try{
   }
   await page.close();
  }
+ const walk=await browser.newPage({viewport:{width:1000,height:800}});
+ await walk.goto('http://127.0.0.1:4175/office.html?budget=0.25&survey=1&survey_pose=2&survey_direction=hall',{waitUntil:'domcontentloaded'});
+ await walk.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});
+ await walk.locator('#walk').click();
+ report.walk={source:'native official movement and ORIGINAL voxel collision, no camera teleport',steps:[]};save();
+ for(let step=0;step<5;step++){
+  if(step){
+   const forward=walk.locator('[data-move="0,1"]');await forward.scrollIntoViewIfNeeded();const box=await forward.boundingBox();
+   await walk.mouse.move(box.x+box.width/2,box.y+box.height/2);await walk.mouse.down();await walk.waitForTimeout(1500);await walk.mouse.up();
+  }
+  const camera=await walk.evaluate(()=>window.officeSurvey.camera());const diagnostics=await walk.evaluate(()=>window.officeDiagnostics());
+  const record={step,camera,walkAllowed:diagnostics.walkAllowed,mode:diagnostics.mode,image:'walk-'+step+'.jpg'};
+  report.walk.steps.push(record);save();
+  await walk.locator('#scene').screenshot({path:root+'/'+record.image,type:'jpeg',quality:80,timeout:60000});
+  record.ground_candidate=await walk.evaluate(()=>window.officeSurvey.pick(.5,.85));save();
+ }
+ await walk.close();
  report.status='captured-awaiting-semantic-review';
 }catch(error){report.status='failed';report.error=String(error);throw error;}
 finally{save();await browser.close();}
