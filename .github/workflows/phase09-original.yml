@@ -22,13 +22,15 @@ jobs:
         run: |
           npm --prefix apps/web run preview -- --port 4175 > /tmp/office-preview.log 2>&1 &
           node scripts/phase09/verify-original-office.mjs
+      - name: Retain original scene evidence independently of branch publication
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: original-office-evidence
+          path: |
+            docs/evidence/phase09/original-integration.json
+            docs/evidence/phase09/integrated-*.png
       - name: Persist observed evidence
         if: always()
         run: |
-          git config user.name 'ENTITY integration verification'
-          git config user.email 'scene@users.noreply.github.com'
-          git add docs/evidence/phase09/original-integration.json
-          git add docs/evidence/phase09/integrated-original-*.png docs/evidence/phase09/integrated-cctv-*.png || true
-          git commit -m 'Record original SSOG scene and collision integration evidence [skip ci]'
-          git pull --rebase origin codex/phase-09-autonomous-plan
-          git push origin HEAD:codex/phase-09-autonomous-plan
+          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/original-integration.json' 'docs/evidence/phase09/integrated-*.png'
