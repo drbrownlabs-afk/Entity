@@ -9,13 +9,15 @@ if os.environ.get('GITHUB_ACTIONS')!='true' or Path(os.environ.get('GITHUB_WORKS
     raise SystemExit('Evidence publication requires the isolated GitHub Actions checkout')
 branch='codex/phase-09-autonomous-plan'
 def git(*args,check=True):return subprocess.run(['git',*args],cwd=root,check=check,capture_output=True,text=True)
+changed=set(git('diff','HEAD','--name-only').stdout.splitlines())|set(git('ls-files','--others','--exclude-standard').stdout.splitlines())
 paths=[]
 for pattern in sys.argv[1:]:
     for file in root.glob(pattern):
         if not file.is_file():continue
         rel=file.relative_to(root)
         if not str(rel).startswith('docs/evidence/phase09/'):raise SystemExit('Only Phase09 evidence may be published')
-        paths.append(rel)
+        if str(rel) in changed:paths.append(rel)
+if not paths:raise SystemExit('No changed evidence files to publish')
 with tempfile.TemporaryDirectory(prefix='entity-ci-evidence-') as folder:
     saved=Path(folder)
     for rel in paths:
