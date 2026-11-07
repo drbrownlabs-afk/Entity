@@ -286,6 +286,10 @@ from app.agent import router as agent_router
 app.include_router(agent_router)
 
 
+
+from app.office.personal_app import router as personal_app_router
+app.include_router(personal_app_router)
+
 from app.office.api import router as office_router
 app.include_router(office_router)
 
