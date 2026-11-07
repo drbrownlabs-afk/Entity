@@ -69,3 +69,7 @@ Decisión explícita del operador: el SSOG original ya integrado es suficiente p
 
 ## Fase 09 — decisión posterior de producto: recepción digital y 12 puestos (2026-11-07)
 El operador fija recepción digital sin estación física obligatoria; A/B = oficinas privadas completas con seis posiciones, correspondientes a las dos anotaciones originales `6-Person Office Bench System`; C = área staff (mesa con mueble separador frontal), no reservable; D/E = coworking individual con D1–D6 y E1–E6, doce puestos públicos en total. Mesa negra = reuniones; booths = descanso no agendable; pasillos = circulación. Esta decisión sustituye la clasificación anterior de C como seis puestos comerciales y la ampliación automática de oferta a F/G. Requiere actualización de código y validación visual sin inventar coordenadas; no depende de Vite.
+
+
+## Decisión de recepción inteligente presencial — 2026-11-07
+Se sustituye «recepción digital sin ubicación física» por kiosco inteligente físico en zona de dos sillas negras, sin recepcionista. Misma IA situada/Núcleo, check-in por voz/pantalla, identidad verificada, reservas, relaciones, eventos y escalamiento a Cowork.
