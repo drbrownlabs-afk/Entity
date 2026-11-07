@@ -1,0 +1,50 @@
+{
+  "tested_commit": "69f16994816dd8f5aa72bce84894db5895621349",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42423401395",
+  "scene": "https://superspl.at/scene/a972d838",
+  "source": "Original SSOG, elevated/oblique inspection viewpoints derived from authored and measured cameras. Camera transforms are NOT semantic resource coordinates or verified walking routes",
+  "views": [
+    {
+      "id": "original-plan-cut",
+      "camera": {
+        "position": [
+          1.9970835447311401,
+          18.149999618530273,
+          -10.481852531433105
+        ],
+        "rotation": [
+          -0.7071050134093907,
+          0,
+          0,
+          0.707108548959285
+        ],
+        "fov": 90
+      },
+      "picks": [
+        {
+          "screen": [
+            0.35,
+            0.35
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.5,
+            0.5
+          ],
+          "position": null
+        },
+        {
+          "screen": [
+            0.65,
+            0.65
+          ],
+          "position": null
+        }
+      ],
+      "image": "original-plan-cut.jpg"
+    }
+  ],
+  "status": "captured-awaiting-semantic-review"
+}
