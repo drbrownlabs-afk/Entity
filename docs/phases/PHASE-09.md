@@ -129,3 +129,7 @@ La simulación diaria debe incorporar además de los eventos existentes una agen
 **Estados y entidades:** Meeting, Booking, Invitation/ExpectedGuest (sin exigir identidad personal), Visit, Person/AnonymousPresence, Host, Staff, Room, WaitingArea, Camera, AccessPoint, CheckIn, Notification, Event, Observation. Relacionar por IDs y tiempo, sin asumir que un track anónimo equivale a una persona identificada. Distinguir invitado esperado, visitante presente, identidad confirmada y autorización concedida.
 **UI:** agenda por hora; ficha de reunión y sala; recepción con cola de visitantes esperados/no esperados; panel de staff para verificar motivo, check-in, espera, notificar anfitrión y autorizar acompañamiento; gemelo digital y CCTV sincronizados; estado de Carlos y tres visitantes; timeline e IA situada.
 **Gate:** pruebas de llegada antes del anfitrión, invitación sin nombre, visitantes no autorizados, anfitrión retrasado, sala ocupada/no ocupada, reunión cancelada, check-in duplicado, notificación fallida y replay/reinicio. No sustituir pruebas por un guion visual. Reutilizar la secuencia de eventos diaria 08:00–18:30 y añadir esta trama de 15:45–17:00; mantener los demás casos. Aplica a 09.2, 09.3, 09.4, 09.6, 09.7 y 09.9.
+
+
+## Addendum vigente: Núcleo
+Aplicar `docs/phases/PHASE-09-NUCLEO-ADDENDUM.md` durante toda la ejecución. Núcleo es la capa de normalización de capacidades y adaptadores, distinta de ENTITY Core. La integración es incremental y no detiene ni reinicia las subfases 09.1–09.9.
