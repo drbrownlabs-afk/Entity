@@ -16,10 +16,14 @@ from app.office.provision import provision
 credentials={}
 with main.database(write=True) as db:
     changed=provision(db,site,original,args.day+'T08:00:00-05:00')
-    for username,role,person in [('admin','admin',None),('entity-kiosk','kiosk','KIOSK-01'),('carlos','member','PERSON-CARLOS'),('luis','member','PERSON-LUIS'),('mateo','maintenance','PERSON-MATEO')]:
+    for username,role,person in [('admin','admin',None),('jose','operator','PERSON-JOSE'),('entity-kiosk','kiosk','KIOSK-01'),('carlos','member','PERSON-CARLOS'),('luis','member','PERSON-LUIS'),('mateo','maintenance','PERSON-MATEO')]:
         username=username if site=='synthetic-office' else site+':'+username
         if db.execute('SELECT 1 FROM office_accounts WHERE username=?',(username,)).fetchone():continue
         password=secrets.token_urlsafe(18);create_account(db,username,password,site,role,person);credentials[username]={'password':password,'role':role}
+    jose='jose' if site=='synthetic-office' else site+':jose'
+    for target in ['ZONE-D','ZONE-E','CAM-05','CAM-06','MEETING-AREA-01','PERSON-LUIS','PERSON-JOSE','WAITING-AREA','RECEPTION']:
+        for permission in ['read','write']:
+            db.execute('INSERT OR IGNORE INTO office_grants VALUES(?,?,?,?)',(site,jose,target,permission))
     if not db.execute('SELECT 1 FROM office_runs WHERE site=? AND id=?',(site,'day-01')).fetchone():
         create_run(db,site,'day-01',args.day+'T08:00:00-05:00')
 private=Path(args.database).resolve().parent/'access.json';private.parent.mkdir(parents=True,exist_ok=True)

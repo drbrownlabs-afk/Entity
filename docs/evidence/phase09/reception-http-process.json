@@ -1,0 +1,14 @@
+{
+  "transport": "actual HTTP; separate uvicorn process, production Vite preview",
+  "checks": [
+    {
+      "actual_process_restart": "passed",
+      "events_preserved": 16,
+      "entity_count": 100
+    },
+    {
+      "sqlite_online_backup_integrity": "passed"
+    }
+  ],
+  "status": "passed"
+}

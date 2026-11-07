@@ -115,3 +115,23 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(result.status_code,200,result.text)
         self.assertEqual(self.state()['entities'][self.conversation]['status'],'host_ready')
         self.assertEqual(self.client.post('/v1/office/app/inbox/'+messages[0]['id']+'/reply',headers=host,json={'response':'ready'}).status_code,409)
+
+    def test_reservations_change_availability_without_inventing_occupancy(self):
+        interval={'starts_at':'2026-11-07T21:00:00Z','ends_at':'2026-11-07T22:00:00Z'}
+        before=self.cmd('booking.getAvailability','D1',interval)
+        self.assertTrue(before['details']['available'])
+        self.cmd('booking.create','D1',{'booking_id':'B-D1','person_id':'PERSON-LUIS',**interval})
+        self.assertFalse(self.cmd('booking.getAvailability','D1',interval)['details']['available'])
+        self.assertNotIn('occupancy',self.state()['entities']['ZONE-D'])
+        self.assertEqual(self.state()['entities']['PERSON-LUIS']['presence'],'unknown')
+        self.cmd('booking.cancel','B-D1')
+        self.assertTrue(self.cmd('booking.getAvailability','D1',interval)['details']['available'])
+    def test_hypothetical_occupancy_never_becomes_an_official_measurement(self):
+        before=self.state()
+        r=self.client.post(self.root+'/scenarios',headers=self.headers,json={'id':'occupancy-what-if','expected_revision':before['revision']});self.assertEqual(r.status_code,201,r.text)
+        self.cmd('zone.assumeOccupancy','ZONE-D',{'count':50},branch='occupancy-what-if')
+        hypothetical=self.state(branch='occupancy-what-if')
+        self.assertEqual(hypothetical['entities']['ZONE-D']['assumed_occupancy'],50)
+        self.assertEqual(before,self.state())
+        r=self.client.post(self.root+'/scenarios/occupancy-what-if/apply',headers=self.headers,json={'id':str(uuid4())})
+        self.assertEqual(r.status_code,403,r.text);self.assertEqual(before,self.state())

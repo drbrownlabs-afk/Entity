@@ -9,6 +9,7 @@ from fastapi import Header,HTTPException
 ROLES={
  'admin':{'kiosk','reply','read','manage','book','receive','access','operate','simulate','query','observe'},
  'kiosk':{'kiosk'},
+ 'operator':{'read','book','receive','access','operate','query'},
  'reception':{'read','book','receive','access','query'},
  'security':{'read','access','receive','query'},
  'maintenance':{'read','operate','query'},
@@ -36,8 +37,9 @@ def authenticate(authorization):
     if not token or not token.isascii():raise HTTPException(401,'Bearer required')
     with database() as db:
         row=db.execute('SELECT a.*,s.expires_at FROM office_sessions s JOIN office_accounts a ON a.username=s.username WHERE s.token_hash=? AND a.enabled=1',(hashlib.sha256(token.encode()).hexdigest(),)).fetchone()
+        grants=[dict(r) for r in db.execute('SELECT resource,permission FROM office_grants WHERE site=? AND username=?',(row['site'],row['username']))] if row else []
     if not row or row['expires_at']<=datetime.now(timezone.utc).isoformat():raise HTTPException(401,'Session missing or expired')
-    return {'actor':row['username'],'site':row['site'],'role':row['role'],'person':row['person'],'permissions':ROLES[row['role']]}
+    return {'actor':row['username'],'site':row['site'],'role':row['role'],'person':row['person'],'permissions':ROLES[row['role']],'grants':grants}
 
 def scoped(site,actor,permission):
     if actor['site']!=site:raise HTTPException(403,'Site scope denied')

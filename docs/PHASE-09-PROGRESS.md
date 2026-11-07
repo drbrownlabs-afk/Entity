@@ -8,8 +8,8 @@ El acceso HTTP del ejecutor obtuvo403; el operador confirma la escena disponible
 | 09.1 | EN CURSO | HTTP200 en Chromium remoto, escena original/collision/SSOG localizados; SSOG original remoto integrado; Vite opcional, no bloqueante | merge2d73e1d | SSOG original, anotaciones y modo walk ya verificados en baf37b3; faltan recorridos espaciales completos y zonificación operativa; Vite NO es dependencia |
 | 09.2 | PENDIENTE | — | — | Implementar y ejecutar gate 09.2 |
 | 09.3 | PENDIENTE | — | — | Implementar y ejecutar gate 09.3 |
-| 09.4 | PENDIENTE | — | — | Implementar y ejecutar gate 09.4 |
-| 09.5 | PENDIENTE | — | — | Implementar y ejecutar gate 09.5 |
+| 09.4 | VERIFICADA AUTOMÁTICAMENTE | Disponibilidad/ocupación independientes, concurrencia, no-show, conflicto/reasignación y eventos;64tests | Lote de jornada | Integración visual completa en09.9 pendiente |
+| 09.5 | VERIFICADA AUTOMÁTICAMENTE | HVACD afecta soloD, ticket/personas/reservas, reparación y sensor;64tests | Lote de jornada | Fuentes sintéticas; hardware no probado |
 | 09.6 | PENDIENTE | — | — | Implementar y ejecutar gate 09.6 |
 | 09.7 | PENDIENTE | — | — | Implementar y ejecutar gate 09.7 |
 | 09.8 | PENDIENTE | — | — | Implementar y ejecutar gate 09.8 |
@@ -77,3 +77,11 @@ Código en rama `codex/phase-09-autonomous-plan`:
 - `tests/test_personal_access.py`: pruebas unitarias de aislamiento básico.
 
 **No está terminado ni desplegado:** aún no hay reproducción 3D responsive dentro de personal.html, visor de cámaras autorizado, creación/cancelación de reservas desde la app, consulta conversacional/voz, Web Push, integración automática de llegada/respuesta con el grafo ni pruebas E2E ejecutadas. Debe completarse antes de la demo comercial. Revisar todos los endpoints de lectura y permisos finos por recurso, empresa y rol (el acceso de operador actualmente es amplio), no confiar solo en la proyección de mundo. Ejecutar tests y verificar migraciones, sesión y controles de privacidad. La UI actual es un primer cliente del mundo compartido, no paridad funcional con escritorio.
+
+## Gates funcionales ejecutados — jornada yrecepción (Codex,2026-11-07)
+- Comando: PYTHONPATH=services/entity-api .venv/bin/python -m unittest discover -s services/entity-api/tests -v —64PASS; salida backend-regression.txt.
+- Comando: PLAYWRIGHT_CHROMIUM_EXECUTABLE=/usr/bin/chromium npm --prefix apps/web run test:browser —3PASS; mall conservado.
+- Comandos: npm --prefix apps/web run build; CHROMIUM_PATH=/usr/bin/chromium .venv/bin/python scripts/phase09/demo-reception-http.py —PASS. reception-http-browser.json/process.json ycapturas1280/390: kiosk→Core→personal→Core→kiosk, reinicio ybackup. Micrófono/Androidreal NO EJECUTADOS; Pushpendiente.
+- Inventario/reservas/confort operan sinrenderer. CAM05/06/RECEPTION del guion son fuentes sintéticas SIN pose física calibrada; no son prueba deCCTVproyectado.
+- Survey original acotado produjo authored-middle/rear/rear-hall yprofundidades medidas. Faltan semánticaC/D/E/recepción/rutas.09.1 no verificada.
+- Cambios posteriores deinterfaz/activos yCI se verifican antes decierre; verhandoff. Vite no es dependencia.

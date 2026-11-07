@@ -128,6 +128,8 @@ jobs:
       - name: Test real WebGL views and mobile layout
         working-directory: apps/web
         run: npm run test:browser
+      - name: Verify persistent original-office reception and private mobile reply over real HTTP
+        run: .venv/bin/python scripts/phase09/demo-reception-http.py
       - name: Check actual viewer export against Core
         run: .venv/bin/python scripts/test-experience-contract.py
       - uses: actions/upload-artifact@v6

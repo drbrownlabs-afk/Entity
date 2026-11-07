@@ -43,3 +43,10 @@ ENTITY Spatial Intelligence es una sola plataforma con un solo Núcleo, grafo y 
 
 ## Convención de actualizaciones
 Añadir una entrada cronológica por lote con autor (ChatGPT/Codex), SHA, archivos, resultado, comandos de test y pendientes. Si una validación no se ejecutó, escribir explícitamente «no ejecutada». Ante trabajo concurrente, leer último SHA y resolver diferencias antes de escribir.
+
+## 2026-11-07 — Codex: integración ejecutada, no atribuida a ChatGPT
+Leídos e integrados64ee2b1 y todos los incrementos previos de ChatGPT sin reemplazar la app personal. Codex publicó31ebc19: inventarioA–E, grafo, kiosco/intercom y enlace inbox→comando/eventoCore. Lote siguiente: jornada persistente, repetición aislada, permisos por recurso (José explícitamente asignado aD/E y cámaras virtuales autorizadas), historial, consultas y canales filtrados en servidor. Continúan representación3D nativa y preparaciónRocketbox; no se afirma que personajes/rutas estén completos.
+
+Codex ejecutó64CorePASS,3Playwright mallPASS ybuild4entradasPASS. Chromium real1280/390 conuvicorn separado: check-inDaniel, respuestaCarlos desdepersonal.html yrecepción reflejada enCorePASS; reinicio conserva16eventos/99entidades ybackup íntegroPASS. Evidencias reception-http-*.json, kiosk/personal*.png ybackend-regression.txt. Micrófono,Androidfísico yWebPush NO EJECUTADOS. Apppersonal sigue sinPush; polling/consulta no son notificaciónAndroid.
+
+Corregidos: puestos privados ofrecidos individualmente; replay heredaba reservas; permisos por rol sin recursos explícitos; escenarios podían exponer contenido completo; pruebas pytest-style no recogidas por unittest (ahora wrappers ejecutados). EsquemaOffice aditivo, IDs/historial conservados yproyecciónCore porrun. Pendientes: anclasC/D/E/recepción verificadas, rutas/personajes/CCTV geométricamente sincronizados, PushHTTPS/Androidreal yentrega integral. Fase09 EN CURSO, no aprobada.

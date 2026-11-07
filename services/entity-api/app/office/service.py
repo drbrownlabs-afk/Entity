@@ -42,6 +42,7 @@ def create_run(db,site,run,clock,seed=1):
     db.execute('INSERT INTO office_runs VALUES(?,?,?,?)',(site,run,clock,seed))
     changes={}
     for row in db.execute('SELECT * FROM office_resources WHERE site=?',(site,)):
+        if row['kind'] in {'Booking','Meeting','Invitation','Visit','Notification','Task','Incident','CheckIn','Alert','Track','Conversation'}:continue
         changes[row['id']]={'id':row['id'],'core_id':row['core_id'],'kind':row['kind'],**json.loads(row['attributes'])}
     emit(db,site,run,'main',clock,'run.created','system',changes,{'seed':seed})
     return world(db,site,run)
@@ -56,7 +57,9 @@ def command(db,site,run,actor,body):
     try:data=INPUTS[op].model_validate(data).model_dump(mode='json',exclude_none=True,exclude={'schema_version'})
     except ValidationError as exc:raise HTTPException(422,exc.errors(include_input=False,include_context=False))
     state=world(db,site,run,branch);clock=state['clock']
-    if branch!='main' and op not in ['zone.close','zone.open','equipment.fail','equipment.repair','resource.getObject']:raise HTTPException(422,'Scenario supports explicit zone/equipment impact operations')
+    from .access import authorize_command
+    authorize_command(state['entities'],actor,op,target,data)
+    if branch!='main' and op not in ['zone.assumeOccupancy','zone.close','zone.open','equipment.fail','equipment.repair','resource.getObject']:raise HTTPException(422,'Scenario supports explicit zone/equipment impact operations')
     fingerprint=hashlib.sha256(encode(body).encode()).hexdigest()
     old=db.execute('SELECT * FROM office_commands WHERE site=? AND run=? AND branch=? AND id=?',(site,run,branch,cid)).fetchone()
     if old:
@@ -86,7 +89,7 @@ def command(db,site,run,actor,body):
         return item
     def add(key,kind,attrs):
         if key in items:raise HTTPException(409,'Entity already exists')
-        entry=upsert_resource(db,site,key,kind,attrs) if branch=='main' else {'id':key,'kind':kind,**attrs}
+        entry=upsert_resource(db,site,key,kind,{**attrs,'run_id':run}) if branch=='main' else {'id':key,'kind':kind,**attrs}
         changes[key]=entry;return entry
     def member_allowed(person):
         p=require_kind(person,{'Person'})
@@ -106,6 +109,16 @@ def command(db,site,run,actor,body):
             from .interactions import plan
             changes,extra,evidence=plan(db,site,run,actor,items,clock,op,target,data,cid,get,add)
             details.update(extra)
+        elif op=='zone.assumeOccupancy':
+            require_kind(target,{'Zone'})
+            if branch=='main':raise HTTPException(403,'An assumption is not an official observation or executable action')
+            changes[target]={'assumed_occupancy':data['count'],'hypothetical':True}
+        elif op=='device.setPower':
+            require_kind(target,{'HVAC','Light','Equipment'})
+            changes[target]={'status':'operational' if data['on'] else 'off','power_on':data['on']}
+        elif op=='presence.checkout':
+            require_kind(target,{'Person'})
+            changes[target]={'presence':'departed','zone_id':None,'observed_at':clock,'ttl_seconds':30}
         elif op=='entity.upsert':
             kind=data['kind'];attrs=data.get('attributes',{});key=data['id']
             if set(attrs)&{'id','kind','core_id','site_id','observed_at','freshness','presence','occupancy','access','membership_status','membership_until','status'}:raise HTTPException(403,'Derived state uses domain operations, not metadata writes')
@@ -151,6 +164,8 @@ def command(db,site,run,actor,body):
                 if booking.get('meeting_id'):changes[booking['meeting_id']]={'status':'cancelled'}
             elif op=='booking.reassign':
                 room=available(data['resource_id'],booking['starts_at'],booking['ends_at'],target)
+                from .graph import connected
+                if room.get('private') and room.get('organization_id') and not connected(items,booking['person_id'],'belongsTo',room['organization_id'],clock):raise HTTPException(403,'Private office belongs to another organization')
                 if booking.get('party_size',1)>room.get('capacity',1):raise HTTPException(409,'Alternative capacity insufficient')
                 changes[target]={'resource_id':data['resource_id']}
                 if booking.get('meeting_id'):changes[booking['meeting_id']]={'resource_id':data['resource_id']}
@@ -292,6 +307,7 @@ def command(db,site,run,actor,body):
     if result['status'] not in ['verified','denied']:
         db.execute('ROLLBACK TO office_domain_validation')
         changes={}
+        clock=state['clock']
         event_type='action.result'
     db.execute('RELEASE office_domain_validation')
     details.update(capability_id=descriptor.capability_id,capability_version=descriptor.version,actor_person_id=actor.get('person'),

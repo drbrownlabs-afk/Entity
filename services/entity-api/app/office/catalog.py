@@ -4,6 +4,8 @@ from .storage import identity,encode
 from .inputs import INPUTS
 
 OPERATIONS={
+ 'zone.assumeOccupancy':('operate','action','simulation'),
+ 'device.setPower':('operate','action','device'),'presence.checkout':('receive','action','identity'),
  'reception.interact':('kiosk','action','communication'),'intercom.reply':('reply','action','communication'),'intercom.timeout':('operate','action','communication'),
  'entity.upsert':('manage','action','resource'), 'relation.add':('manage','action','resource'),
  'membership.set':('manage','action','membership'), 'account.create':('manage','action','identity'),
@@ -27,14 +29,14 @@ OPERATIONS={
 def declare(db,site,resource):
     kind=db.execute('SELECT kind FROM office_resources WHERE site=? AND id=?',(site,resource)).fetchone()[0]
     kinds={
-      'reception.interact':{'Kiosk'},'intercom.reply':{'Intercom'},'intercom.timeout':{'Intercom'},
+      'device.setPower':{'HVAC','Light','Equipment'},'presence.checkout':{'Person'},'reception.interact':{'Kiosk'},'intercom.reply':{'Intercom'},'intercom.timeout':{'Intercom'},
       'entity.upsert':{'Site'},'relation.add':{'Site'},'account.create':{'Site'},'clock.advance':{'Site'},'visit.register':{'Site'},'task.create':{'Site'},
       'membership.set':{'Person'},'identity.associate':{'Track'},'notification.send':{'Person'},
       'booking.create':{'Desk','Room','Office','EventSpace'},'booking.getAvailability':{'Desk','Room','Office','EventSpace'},
       'access.checkAuthorization':{'AccessPoint'},'access.requestEntry':{'AccessPoint'},
       'visit.link':{'Visit'},'visit.checkin':{'Visit'},'camera.setStatus':{'Camera'},
       'sensor.read':{'Sensor','HVAC','Equipment'},'camera.getObservations':{'Camera'},'camera.getStream':{'Camera'},
-      'zone.close':{'Zone'},'zone.open':{'Zone'},'equipment.fail':{'HVAC','Equipment','Light'},'equipment.repair':{'HVAC','Equipment','Light'},
+      'zone.assumeOccupancy':{'Zone'},'zone.close':{'Zone'},'zone.open':{'Zone'},'equipment.fail':{'HVAC','Equipment','Light'},'equipment.repair':{'HVAC','Equipment','Light'},
       'task.assign':{'Task'},'task.resolve':{'Task'},'meeting.start':{'Meeting'},'meeting.end':{'Meeting'}
     }
     for operation,(permission,modality,category) in OPERATIONS.items():

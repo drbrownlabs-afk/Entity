@@ -18,5 +18,6 @@ $('connect').onclick=async()=>{try{base=$('api').value.trim().replace(/\/$/,'');
 $('refresh').onclick=()=>refresh().catch(e=>notice(e.message,true));
 $('trigger').onclick=async()=>{try{await request('/v1/office/app/sites/'+encodeURIComponent(actor.site_id)+'/demo-arrival',{method:'POST',body:JSON.stringify({recipient:actor.actor,visitor:'Daniel',meeting_at:'16:00',meeting_title:'reunión con Entity'})});notice('Llegada simulada.');await refresh()}catch(e){notice(e.message,true)}};
 $('logout').onclick=()=>{token='';actor=null;$('home').classList.add('hidden');$('login').classList.remove('hidden');notice('Sesión local cerrada.');};
+setInterval(()=>{if(token&&!document.hidden){refresh().catch(e=>notice('Sin actualización: '+e.message,true));loadWorld().catch(()=>{});}},3000);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden&&token)refresh().catch(()=>{})});
 </script></body></html>

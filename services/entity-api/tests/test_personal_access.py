@@ -21,3 +21,10 @@ def test_unlinked_member_fails_closed():
 def test_admin_sees_operational_world():
     state={"entities":{"cam":{"id":"cam","kind":"Camera"}}}
     assert "cam" in projection(state,{"role":"admin","person":"jose"})["entities"]
+
+
+import unittest
+class PersonalAccessTests(unittest.TestCase):
+    def test_member_read_scope(self):test_member_cannot_see_cameras_or_other_people()
+    def test_unlinked_fails_closed(self):test_unlinked_member_fails_closed()
+    def test_admin_read_scope(self):test_admin_sees_operational_world()

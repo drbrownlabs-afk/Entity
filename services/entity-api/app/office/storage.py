@@ -37,6 +37,9 @@ def initialize(db):
     CREATE TABLE IF NOT EXISTS office_capabilities(id TEXT PRIMARY KEY,site TEXT NOT NULL,resource TEXT NOT NULL,operation TEXT NOT NULL,descriptor TEXT NOT NULL,adapter TEXT NOT NULL,UNIQUE(site,resource,operation));
     CREATE TABLE IF NOT EXISTS office_bindings(site TEXT NOT NULL,source TEXT NOT NULL,adapter TEXT NOT NULL,version TEXT NOT NULL,config TEXT NOT NULL,PRIMARY KEY(site,source));
     CREATE TABLE IF NOT EXISTS office_inbox(site TEXT NOT NULL,run TEXT NOT NULL,id TEXT NOT NULL,body TEXT NOT NULL,result TEXT NOT NULL,PRIMARY KEY(site,run,id));
+    CREATE TABLE IF NOT EXISTS office_scenario_owners(site TEXT NOT NULL,run TEXT NOT NULL,branch TEXT NOT NULL,actor TEXT NOT NULL,PRIMARY KEY(site,run,branch));
+    CREATE TABLE IF NOT EXISTS office_grants(site TEXT NOT NULL,username TEXT NOT NULL,resource TEXT NOT NULL,permission TEXT NOT NULL,PRIMARY KEY(site,username,resource,permission));
+    INSERT OR IGNORE INTO office_schema VALUES(3);
     CREATE TABLE IF NOT EXISTS office_credentials(site TEXT NOT NULL,invitation TEXT NOT NULL,person TEXT,salt TEXT NOT NULL,code_hash TEXT NOT NULL,expires_at TEXT NOT NULL,source TEXT NOT NULL,used_by TEXT,PRIMARY KEY(site,invitation));
     INSERT OR IGNORE INTO office_schema VALUES(2);
     CREATE TABLE IF NOT EXISTS office_rejections(id TEXT PRIMARY KEY,site TEXT NOT NULL,source TEXT NOT NULL,at TEXT NOT NULL,reason TEXT NOT NULL);
@@ -58,6 +61,7 @@ def world(db,site,run,branch='main',at=None):
         items={r['entity']:json.loads(r['body']) for r in db.execute('SELECT entity,body FROM office_state WHERE site=? AND run=? AND branch=?',params)}
     else:
         clock=utc(at)
+        if clock>get_run(db,site,run)['clock']:raise HTTPException(422,'Historical reconstruction cannot claim a future observation')
         base=db.execute('SELECT * FROM office_snapshots WHERE site=? AND run=? AND branch=? AND at<=? ORDER BY seq DESC LIMIT 1',(*params,clock)).fetchone()
         items=json.loads(base['body']) if base else {};seq=base['seq'] if base else 0
         for e in db.execute('SELECT payload FROM office_events WHERE site=? AND run=? AND branch=? AND seq>? AND at<=? ORDER BY seq',(*params,seq,clock)):
@@ -68,6 +72,9 @@ def world(db,site,run,branch='main',at=None):
         if item.get('observed_at'):
             age=(datetime.fromisoformat(clock)-datetime.fromisoformat(item['observed_at'])).total_seconds()
             item['freshness']='fresh' if 0<=age<=item.get('ttl_seconds',30) else 'stale'
+        if item.get('kind')=='Track' and item.get('person_id') and clock>item.get('association_until',''):
+            item['last_associated_person_id']=item.pop('person_id')
+            item['identity_status']='association_expired'
     return {'site_id':site,'run_id':run,'branch':branch,'clock':clock,'revision':latest,'entities':items,'historical':at is not None}
 
 
@@ -94,7 +101,7 @@ def emit(db,site,run,branch,at,kind,actor,changes,details=None,evidence=None,com
                     other=db.execute('SELECT core_id FROM office_resources WHERE site=? AND id=?',(site,link['target'])).fetchone()
                     if other and active(link,at):
                         db.execute('INSERT OR IGNORE INTO relations VALUES(?,?,?,?,?)',(identity(site,key,link['type'],link['target']),resource[0],other[0],link['type'],at))
-                db.execute('INSERT INTO entity_state VALUES(?,?,?,?) ON CONFLICT(entity_id,key) DO UPDATE SET value=excluded.value,updated_at=excluded.updated_at',(resource[0],'office.current',encode(merged),at))
+                db.execute('INSERT INTO entity_state VALUES(?,?,?,?) ON CONFLICT(entity_id,key) DO UPDATE SET value=excluded.value,updated_at=excluded.updated_at',(resource[0],'office.run.'+run,encode(merged),at))
                 from app.main import append_event
                 append_event(db,resource[0],kind,{'office_event_id':event_id,'run_id':run,'effective_at':at,'details':details or {}},'office-domain')
     if row.lastrowid%25==0 and at==get_run(db,site,run)['clock']:

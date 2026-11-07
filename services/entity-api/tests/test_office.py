@@ -24,6 +24,8 @@ class OfficeTests(unittest.TestCase):
             for key in ['luis','carlos','sofia','technician']:
                 upsert_resource(db,'office',key,'Person',{'name':key.title(),'roles':['staff'] if key in ['sofia','technician'] else ['member'],'membership_status':'active','membership_until':'2027-01-01T00:00:00+00:00'})
             for username,role,person in [('admin','admin',None),('sofia','reception','sofia'),('luis','member','luis'),('technician','maintenance','technician'),('connector','connector','camera')]:create_account(db,username,PASSWORD,'office',role,person)
+            for username in ['sofia']:
+                for permission in ['read','write']:db.execute('INSERT INTO office_grants VALUES(?,?,?,?)',('office',username,'site',permission))
             create_account(db,'outsider',PASSWORD,'other','admin')
             for source in ['camera','sensor']:
                 db.execute('INSERT INTO office_bindings VALUES(?,?,?,?,?)',('office',source,'simulated','1.0','{}'))

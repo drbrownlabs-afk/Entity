@@ -46,17 +46,26 @@ test_visitors_wait_for_host_and_meeting_occupancy (test_office.OfficeTests.test_
 test_absent_host_never_notified_as_present (test_office_delivery.DeliveryTests.test_absent_host_never_notified_as_present) ... ok
 test_additive_migration_with_legacy_booking (test_office_delivery.DeliveryTests.test_additive_migration_with_legacy_booking) ... ok
 test_exact_commercial_inventory_and_graph (test_office_delivery.DeliveryTests.test_exact_commercial_inventory_and_graph) ... ok
+test_hypothetical_occupancy_never_becomes_an_official_measurement (test_office_delivery.DeliveryTests.test_hypothetical_occupancy_never_becomes_an_official_measurement) ... ok
 test_intercom_timeout_and_cancelled_meeting (test_office_delivery.DeliveryTests.test_intercom_timeout_and_cancelled_meeting) ... ok
 test_intercom_wait_and_no_presence_fallback (test_office_delivery.DeliveryTests.test_intercom_wait_and_no_presence_fallback) ... ok
 test_kiosk_ready_and_host_authority (test_office_delivery.DeliveryTests.test_kiosk_ready_and_host_authority) ... ok
 test_personal_reply_changes_the_same_reception_world (test_office_delivery.DeliveryTests.test_personal_reply_changes_the_same_reception_world) ... ok
+test_reservations_change_availability_without_inventing_occupancy (test_office_delivery.DeliveryTests.test_reservations_change_availability_without_inventing_occupancy) ... ok
+test_assigned_operator_cannot_escape_via_queries_actions_or_capabilities (test_office_scopes.ResourceScopeTests.test_assigned_operator_cannot_escape_via_queries_actions_or_capabilities) ... ok
+test_operator_without_resource_assignment_has_no_implicit_camera_access (test_office_scopes.ResourceScopeTests.test_operator_without_resource_assignment_has_no_implicit_camera_access) ... ok
+test_full_day_pause_resume_replay_and_memory (test_office_simulation.DailySimulationTests.test_full_day_pause_resume_replay_and_memory) ... ok
+test_hvac_impact_follows_zone_links_and_resolution_is_audited (test_office_simulation.DailySimulationTests.test_hvac_impact_follows_zone_links_and_resolution_is_audited) ... ok
 test_failure_timeout_mismatch_permissions_and_html_escape (test_output.OutputTests.test_failure_timeout_mismatch_permissions_and_html_escape) ... ok
 test_manual_override_and_idempotency_persistence (test_output.OutputTests.test_manual_override_and_idempotency_persistence) ... ok
 test_presence_rule_screen_readback_and_no_duplicate (test_output.OutputTests.test_presence_rule_screen_readback_and_no_duplicate) ... ok
+test_admin_read_scope (test_personal_access.PersonalAccessTests.test_admin_read_scope) ... ok
+test_member_read_scope (test_personal_access.PersonalAccessTests.test_member_read_scope) ... ok
+test_unlinked_fails_closed (test_personal_access.PersonalAccessTests.test_unlinked_fails_closed) ... ok
 test_storage_isolation_and_reply (test_personal_app.PersonalStorageTests.test_storage_isolation_and_reply) ... ok
 test_persistence_after_process_restart (test_restart.RestartTests.test_persistence_after_process_restart) ... ok
 
 ----------------------------------------------------------------------
-Ran 55 tests in 35.234s
+Ran 64 tests in 59.141s
 
 OK

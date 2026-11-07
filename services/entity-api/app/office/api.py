@@ -11,7 +11,7 @@ from .storage import encode,utc,world,emit,get_run,identity
 from .service import create_run,command,resource
 from .observations import ingest
 from .queries import query
-from .access import projection,operator,require_visible
+from .access import projection,operator,require_visible,unrestricted
 
 router=APIRouter(prefix='/v1',tags=['coworking'],route_class=AuditedRoute)
 
@@ -101,26 +101,24 @@ def ask(site:str,run:str,body:Query,actor=Depends(principal)):
     data=body.model_dump(by_alias=True,exclude_none=True)
     try:
         with database() as db:
+            state=world(db,site,run,data.get('branch','main'),data.get('at'))
+            visible=projection(state,actor)
+            require_visible(state,actor,data.get('entity_id'))
             if not operator(actor):
-                if data['kind'] not in {'entity','agenda','location'}:raise HTTPException(403,'Query outside personal scope')
+                if data['kind'] not in {'entity','agenda','location','events','graph'}:raise HTTPException(403,'Query outside personal scope')
                 if data['kind']=='agenda' and data.get('entity_id')!=actor.get('person'):raise HTTPException(403,'Personal agenda requires own person')
-                if data['kind'] in {'entity','location'}:
-                    require_visible(world(db,site,run,data.get('branch','main'),data.get('at')),actor,data.get('entity_id'))
-                    if not data.get('entity_id'):raise HTTPException(403,'Entity ID required')
-                result=query(db,site,run,data)
-                if data['kind']=='agenda':result['result']=[x for x in result['result'] if x.get('person_id')==actor.get('person') or x.get('host_id')==actor.get('person') or actor.get('person') in x.get('participants',[])]
-                if data['kind']=='entity':result['result']=projection({'entities':{data['entity_id']:result['result']}},actor)['entities'].get(data['entity_id'])
-                result['evidence']=[]
-                return result
-            return query(db,site,run,data)
+                if not data.get('entity_id'):raise HTTPException(403,'Entity ID required')
+            return query(db,site,run,data,None if unrestricted(actor) else visible)
     except (KeyError,TypeError,ValueError):raise HTTPException(422,'Required query parameters missing or invalid')
 
 @router.get('/sites/{site}/capabilities')
 def capabilities(site:str,resource_id:str|None=None,actor=Depends(principal)):
     from app.main import database
     scoped(site,actor,'read')
-    if not operator(actor):raise HTTPException(403,'Operational capabilities require operator role')
-    with database() as db:return [json.loads(r[0]) for r in db.execute('SELECT descriptor FROM office_capabilities WHERE site=?'+(' AND resource=?' if resource_id else ''),(site,resource_id) if resource_id else (site,))]
+    with database() as db:
+        resources={r['id']:{'id':r['id'],'kind':r['kind'],**json.loads(r['attributes'])} for r in db.execute('SELECT * FROM office_resources WHERE site=?',(site,))}
+        allowed=projection({'entities':resources},actor)['entities']
+        return [descriptor for r in db.execute('SELECT descriptor FROM office_capabilities WHERE site=?'+(' AND resource=?' if resource_id else ''),(site,resource_id) if resource_id else (site,)) if (descriptor:=json.loads(r[0]))['resource_id'] in allowed and descriptor['permission'] in actor['permissions']]
 
 @router.put('/sites/{site}/bindings')
 def bind(site:str,body:Binding,actor=Depends(principal)):
@@ -142,27 +140,33 @@ def bind(site:str,body:Binding,actor=Depends(principal)):
 def events(site:str,run:str,after:int=0,limit:int=QueryParam(default=100,ge=1,le=1000),branch:str='main',actor=Depends(principal)):
     from app.main import database
     scoped(site,actor,'read')
-    if not operator(actor):raise HTTPException(403,'Operational event log requires operator role')
     with database() as db:
-        get_run(db,site,run)
-        return [{**dict(r),'entities':json.loads(r['entities']),'payload':json.loads(r['payload']),'evidence':json.loads(r['evidence'])} for r in db.execute('SELECT * FROM office_events WHERE site=? AND run=? AND branch=? AND seq>? ORDER BY seq LIMIT ?',(site,run,branch,after,limit))]
+        allowed=projection(world(db,site,run,branch),actor)['entities']
+        rows=[{**dict(r),'entities':json.loads(r['entities']),'payload':json.loads(r['payload']),'evidence':json.loads(r['evidence'])} for r in db.execute('SELECT * FROM office_events WHERE site=? AND run=? AND branch=? AND seq>? ORDER BY seq LIMIT ?',(site,run,branch,after,limit))]
+        if unrestricted(actor):return rows
+        return [{**{k:r[k] for k in ['seq','id','at','type']},'entities':[k for k in r['entities'] if k in allowed]} for r in rows if set(r['entities'])&set(allowed)]
 
 @router.get('/sites/{site}/runs/{run}/stream')
 async def stream(site:str,run:str,request:Request,after:int=0,actor=Depends(principal)):
     from app.main import database
     scoped(site,actor,'read')
-    if not operator(actor):raise HTTPException(403,'Operational event stream requires operator role')
     with database() as db:get_run(db,site,run)
     async def generate():
         cursor=after
         while not await request.is_disconnected():
-            try:scoped(site,authenticate(request.headers.get('authorization')),'read')
+            try:
+                current_actor=authenticate(request.headers.get('authorization'));scoped(site,current_actor,'read')
             except HTTPException:
                 yield 'event: auth-expired\ndata: {}\n\n'
                 return
-            with database() as db:rows=db.execute("SELECT seq,id,type,at,entities FROM office_events WHERE site=? AND run=? AND branch='main' AND seq>? ORDER BY seq LIMIT 100",(site,run,cursor)).fetchall()
+            with database() as db:
+                rows=db.execute("SELECT seq,id,type,at,entities FROM office_events WHERE site=? AND run=? AND branch='main' AND seq>? ORDER BY seq LIMIT 100",(site,run,cursor)).fetchall()
+                allowed=projection(world(db,site,run),current_actor)['entities']
             for row in rows:
-                cursor=row['seq'];yield f'id: {cursor}\nevent: world-change\ndata: {encode(dict(row))}\n\n'
+                cursor=row['seq']
+                row=dict(row);row['entities']=[k for k in json.loads(row['entities']) if k in allowed]
+                if not unrestricted(current_actor) and not row['entities'] and row['type']!='clock.advance':continue
+                yield f'id: {cursor}\nevent: world-change\ndata: {encode(dict(row))}\n\n'
             if not rows:yield ': heartbeat\n\n'
             await asyncio.sleep(.5)
     return StreamingResponse(generate(),media_type='text/event-stream',headers={'Cache-Control':'no-cache'})
@@ -179,7 +183,8 @@ def fork(site:str,run:str,body:Fork,actor=Depends(principal)):
             db.execute('INSERT INTO office_branches VALUES(?,?,?,?,?,?)',(site,run,body.id,state['revision'],state['clock'],encode(state['entities'])))
             for key,item in state['entities'].items():db.execute('INSERT INTO office_state VALUES(?,?,?,?,?)',(site,run,body.id,key,encode(item)))
             db.execute('INSERT INTO office_snapshots VALUES(?,?,?,?,?,?)',(site,run,body.id,0,state['clock'],encode(state['entities'])))
-            return world(db,site,run,body.id)
+            db.execute('INSERT INTO office_scenario_owners VALUES(?,?,?,?)',(site,run,body.id,actor['actor']))
+            return projection(world(db,site,run,body.id),actor)
     except sqlite3.IntegrityError:raise HTTPException(409,'Scenario already exists')
 
 @router.get('/sites/{site}/runs/{run}/scenarios/{branch}/comparison')
@@ -188,7 +193,9 @@ def compare(site:str,run:str,branch:str,actor=Depends(principal)):
     scoped(site,actor,'read')
     if not operator(actor):raise HTTPException(403,'Scenario comparison requires operator role')
     with database() as db:
-        state=world(db,site,run,branch)
+        owner=db.execute('SELECT actor FROM office_scenario_owners WHERE site=? AND run=? AND branch=?',(site,run,branch)).fetchone()
+        if not unrestricted(actor) and (not owner or owner[0]!=actor['actor']):raise HTTPException(403,'Scenario belongs to another actor')
+        state=projection(world(db,site,run,branch),actor)
         base=db.execute('SELECT * FROM office_branches WHERE site=? AND run=? AND id=?',(site,run,branch)).fetchone()
         if not base:raise HTTPException(404,'Scenario missing')
         initial=json.loads(base['base_state'])
@@ -199,6 +206,8 @@ def apply(site:str,run:str,branch:str,body:Apply,actor=Depends(principal)):
     from app.main import database
     scoped(site,actor,'operate')
     with database(write=True) as db:
+        owner=db.execute('SELECT actor FROM office_scenario_owners WHERE site=? AND run=? AND branch=?',(site,run,branch)).fetchone()
+        if not unrestricted(actor) and (not owner or owner[0]!=actor['actor']):raise HTTPException(403,'Scenario belongs to another actor')
         old=db.execute("SELECT actor,fingerprint,result FROM office_commands WHERE site=? AND run=? AND branch='main' AND id=?",(site,run,str(body.id))).fetchone()
         if old:
             if old['actor']!=actor['actor'] or old['fingerprint']!=hashlib.sha256(branch.encode()).hexdigest():raise HTTPException(409,'Scenario application ID conflict')
@@ -213,3 +222,41 @@ def apply(site:str,run:str,branch:str,body:Apply,actor=Depends(principal)):
         response={'status':'verified','scenario':branch,'results':results}
         db.execute('INSERT INTO office_commands VALUES(?,?,?,?,?,?,?)',(site,run,'main',str(body.id),actor['actor'],hashlib.sha256(branch.encode()).hexdigest(),encode(response)))
         return response
+
+
+class SimulationAdvance(CoreRecord):
+    to:NonBlank
+
+@router.post('/sites/{site}/runs/{run}/simulation/install')
+def install_simulation(site:str,run:str,actor=Depends(principal)):
+    from app.main import database
+    from .simulation import install_day
+    with database(write=True) as db:return install_day(db,site,run,actor)
+
+@router.post('/sites/{site}/runs/{run}/simulation/advance')
+def advance_simulation(site:str,run:str,body:SimulationAdvance,actor=Depends(principal)):
+    from app.main import database
+    from .simulation import advance
+    with database(write=True) as db:return advance(db,site,run,actor,body.to)
+
+class InvitationCredential(CoreRecord):
+    invitation_id:NonBlank
+    person_id:NonBlank
+    code:str=Field(min_length=8,max_length=128)
+    expires_at:NonBlank
+
+@router.post('/sites/{site}/runs/{run}/invitation-credentials')
+def provision_invitation_credential(site:str,run:str,body:InvitationCredential,actor=Depends(principal)):
+    from app.main import database
+    from .interactions import issue_credential
+    scoped(site,actor,'manage')
+    with database(write=True) as db:
+        state=world(db,site,run)
+        invitation=state['entities'].get(body.invitation_id,{})
+        person=state['entities'].get(body.person_id,{})
+        if invitation.get('kind')!='Invitation' or person.get('kind')!='Person':raise HTTPException(422,'Existing invitation and person required in this run')
+        expires=utc(body.expires_at)
+        if expires<=state['clock']:raise HTTPException(422,'Credential expiry must be in the future')
+        issue_credential(db,site,body.invitation_id,body.person_id,body.code,expires)
+        event=emit(db,site,run,'main',state['clock'],'invitation.credential_issued',actor['actor'],{}, {'invitation_id':body.invitation_id,'person_id':body.person_id,'expires_at':expires,'simulated':True})
+        return {'issued':True,'event_id':event['id'],'simulated':True}

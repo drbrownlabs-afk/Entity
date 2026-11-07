@@ -9,7 +9,7 @@ const status=message=>{host.querySelector('#office-core-status').textContent=mes
 const esc=value=>String(value??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 async function request(path,body){const base=host.querySelector('[name=api]').value.replace(/\/$/,'');const response=await fetch(base+path,{method:body?'POST':'GET',headers:{'Content-Type':'application/json',...(token?{Authorization:'Bearer '+token}:{})},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(10000)});const value=await response.json();if(!response.ok)throw Error('Core HTTP '+response.status+': '+JSON.stringify(value.detail));return value;}
 const prefix=()=>'/v1/sites/'+encodeURIComponent(site)+'/runs/'+encodeURIComponent(run);
-async function refresh(){const params=new URLSearchParams({branch});if(at)params.set('at',at);world=await request(prefix()+'/world?'+params);render();}
+async function refresh(){const params=new URLSearchParams({branch});if(at)params.set('at',at);world=await request(prefix()+'/world?'+params);window.dispatchEvent(new CustomEvent('office-world-changed',{detail:world}));render();}
 host.querySelector('#office-login').onsubmit=async event=>{
  event.preventDefault();
  try{const answer=await request('/v1/office/auth/login',{username:host.querySelector('[name=username]').value,password:host.querySelector('[name=password]').value});token=answer.token;site=answer.site_id;host.querySelector('[name=password]').value='';const runs=await request('/v1/sites/'+encodeURIComponent(site)+'/runs');host.querySelector('#office-run').innerHTML=runs.map(r=>'<option value="'+esc(r.id)+'">'+esc(r.id)+'</option>').join('');run=host.querySelector('#office-run').value;branch='main';capabilities=await request('/v1/sites/'+encodeURIComponent(site)+'/capabilities');host.querySelector('#office-workspace').hidden=false;await refresh();subscribe();status('Conectado: '+answer.actor+' · '+answer.role+' · '+site+'. Estado y operaciones persistentes en Core.');}
@@ -20,25 +20,51 @@ host.querySelector('#office-refresh').onclick=()=>refresh().catch(e=>status(e.me
 host.querySelector('#office-reconstruct').onclick=()=>{const value=host.querySelector('#office-time').value;if(value){at=new Date(value).toISOString();refresh().catch(e=>status(e.message));}};
 host.querySelector('#office-present').onclick=()=>{at=null;refresh().catch(e=>status(e.message));};
 const filters={Seguridad:['Camera','Stream','Track','AccessPoint','Alert'],Reservas:['Booking','Meeting','Desk','Office','EventSpace'],Recepción:['Visit','Invitation','Person','Meeting','Notification','CheckIn','Conversation','Kiosk','Intercom'],Mantenimiento:['HVAC','Sensor','Equipment','Task','Incident'],Flujos:['Zone','Track'],Memoria:[],IA:[],Escenarios:[],Operaciones:[]};
-for(const name of Object.keys(filters)){const button=document.createElement('button');button.textContent=name;button.onclick=()=>{mode=name;render();};host.querySelector('#office-modes').append(button);}
+for(const name of Object.keys(filters)){const button=document.createElement('button');button.textContent=name;button.onclick=()=>{mode=name;window.dispatchEvent(new CustomEvent('office-mode-changed',{detail:name}));render();};host.querySelector('#office-modes').append(button);}
 function choose(id){selected=id;const entity=world.entities[id];if(entity?.annotation_index!==undefined)window.dispatchEvent(new CustomEvent('office-select-annotation',{detail:entity.annotation_index}));render();}
+window.addEventListener('office-select-entity',event=>{if(world?.entities[event.detail]){selected=event.detail;render();}});
 window.addEventListener('office-annotation-selected',event=>{if(!world)return;const entity=Object.values(world.entities).find(e=>e.kind==='Zone'&&e.annotation_index===event.detail);if(entity){selected=entity.id;render();}});
 const labels={organization_id:'Organización',home_environment:'Ambiente',profile_level:'Perfil',name:'Nombre',kind:'Tipo',id:'ID',membership_status:'Membresía',presence:'Presencia',freshness:'Vigencia',zone_id:'Zona',observed_at:'Última observación',status:'Estado',capacity:'Capacidad',starts_at:'Inicio',ends_at:'Fin',host_id:'Anfitrión',person_id:'Persona',resource_id:'Recurso',assignee:'Asignación',description:'Descripción',resolution:'Resolución',identity_status:'Identidad',access:'Acceso',waiting_area:'Espera',provenance:'Procedencia',relations:'Relaciones',simulated:'Simulado'};
-const operationNames={'booking.create':'Crear reserva','booking.extend':'Extender reserva','booking.cancel':'Cancelar reserva','booking.reassign':'Reasignar reserva','booking.checkin':'Registrar llegada a reserva','booking.no_show':'Registrar no-show','access.checkAuthorization':'Comprobar autorización','access.requestEntry':'Solicitar acceso','visit.register':'Registrar visita provisional','visit.checkin':'Registrar visitante en espera','identity.associate':'Asociar identidad con evidencia','notification.send':'Notificar','meeting.start':'Iniciar reunión','meeting.end':'Finalizar reunión','task.create':'Crear tarea','task.assign':'Asignar tarea','task.resolve':'Resolver tarea','equipment.fail':'Registrar avería','equipment.repair':'Registrar reparación','membership.set':'Actualizar membresía','camera.setStatus':'Conectar/desconectar cámara','zone.close':'Cerrar zona','zone.open':'Abrir zona','intercom.reply':'Responder por intercom','intercom.timeout':'Registrar falta de respuesta','clock.advance':'Avanzar reloj simulado','entity.upsert':'Gestionar recurso','relation.add':'Añadir relación','account.create':'Crear cuenta'};
+const operationNames={'booking.create':'Crear reserva','booking.extend':'Extender reserva','booking.cancel':'Cancelar reserva','booking.reassign':'Reasignar reserva','booking.checkin':'Registrar llegada a reserva','booking.no_show':'Registrar no-show','access.checkAuthorization':'Comprobar autorización','access.requestEntry':'Solicitar acceso','visit.register':'Registrar visita provisional','visit.checkin':'Registrar visitante en espera','identity.associate':'Asociar identidad con evidencia','notification.send':'Notificar','meeting.start':'Iniciar reunión','meeting.end':'Finalizar reunión','task.create':'Crear tarea','task.assign':'Asignar tarea','task.resolve':'Resolver tarea','device.setPower':'Encender/apagar equipo','presence.checkout':'Registrar salida','equipment.fail':'Registrar avería','equipment.repair':'Registrar reparación','membership.set':'Actualizar membresía','camera.setStatus':'Conectar/desconectar cámara','zone.assumeOccupancy':'Suponer ocupación (solo what-if)','zone.close':'Cerrar zona','zone.open':'Abrir zona','intercom.reply':'Responder por intercom','intercom.timeout':'Registrar falta de respuesta','clock.advance':'Avanzar reloj simulado','entity.upsert':'Gestionar recurso','relation.add':'Añadir relación','account.create':'Crear cuenta'};
 function facts(item){return '<dl>'+Object.entries(item).map(([key,value])=>'<dt>'+esc(labels[key]||key)+'</dt><dd>'+esc(typeof value==='object'?JSON.stringify(value):value)+'</dd>').join('')+'</dl>';}
 async function subscribe(){
- streamController?.abort();streamController=new AbortController();
- try{
-  const base=host.querySelector('[name=api]').value.replace(/\/$/,'');
-  const response=await fetch(base+prefix()+'/stream?after='+world.revision,{headers:{Authorization:'Bearer '+token},signal:streamController.signal});
-  if(!response.ok)throw Error('SSE HTTP '+response.status);
-  const reader=response.body.getReader(),decoder=new TextDecoder();let buffer='';
-  while(true){const next=await reader.read();if(next.done)break;buffer+=decoder.decode(next.value,{stream:true});let end;while((end=buffer.indexOf('\n\n'))>=0){const event=buffer.slice(0,end);buffer=buffer.slice(end+2);if(event.includes('event: world-change')&&branch==='main'&&!at)await refresh();}}
- }catch(error){if(error.name!=='AbortError')status('Canal en vivo interrumpido; utiliza Actualizar para reconciliar. '+error.message);}
+ streamController?.abort();const controller=new AbortController();streamController=controller;let delay=500;
+ while(!controller.signal.aborted&&token){
+  try{
+   await refresh();
+   const base=host.querySelector('[name=api]').value.replace(/\/$/,'');
+   const response=await fetch(base+prefix()+'/stream?after='+world.revision,{headers:{Authorization:'Bearer '+token},signal:controller.signal});
+   if(response.status===401||response.status===403){status('Sesión o permiso del canal expirado. Vuelve a conectar.');token=null;break;}
+   if(!response.ok)throw Error('SSE HTTP '+response.status);
+   const reader=response.body.getReader(),decoder=new TextDecoder();let buffer='';delay=500;
+   while(!controller.signal.aborted){
+    const next=await reader.read();if(next.done)throw Error('Canal cerrado');
+    buffer+=decoder.decode(next.value,{stream:true});let end;
+    while((end=buffer.indexOf(String.fromCharCode(10,10)))>=0){
+     const event=buffer.slice(0,end);buffer=buffer.slice(end+2);
+     if(event.includes('event: auth-expired')){token=null;controller.abort();status('Sesión expirada. Vuelve a conectar.');break;}
+     if(event.includes('event: world-change')&&branch==='main'&&!at)await refresh();
+    }
+   }
+  }catch(error){
+   if(controller.signal.aborted)break;
+   status('Reconectando con Core; el último estado no se presenta como recién observado. '+error.message);
+   await new Promise(resolve=>{const timer=setTimeout(resolve,delay);controller.signal.addEventListener('abort',()=>{clearTimeout(timer);resolve();},{once:true});});
+   delay=Math.min(8000,delay*2);
+  }
+ }
 }
+
 function render(){
  if(!world)return;
  host.querySelector('#office-world-status').textContent=world.clock+' · revisión '+world.revision+' · '+(world.historical?'reconstrucción, acciones deshabilitadas':'presente');
+ let daily=host.querySelector('#office-day-controls');
+ if(!daily){
+  daily=document.createElement('section');daily.id='office-day-controls';daily.innerHTML='<h3>Reloj compartido · jornada reproducible</h3><button id="office-install-day">Preparar jornada08:00–18:30</button><label>Avanzar a (hora de Ecuador)<input id="office-advance-time" type="time" value="09:16"></label><button id="office-advance-day">Ejecutar hitos hasta esa hora</button><p>Sin reproducción automática: el mundo permanece pausado entre avances. El historial nunca se rebobina.</p>';
+  host.querySelector('#office-workspace').prepend(daily);
+  daily.querySelector('#office-install-day').onclick=async()=>{try{const result=await request(prefix()+'/simulation/install',{});await refresh();status('Jornada: '+JSON.stringify(result));}catch(e){status(e.message);}};
+  daily.querySelector('#office-advance-day').onclick=async()=>{try{const clock=new Date(new Date(world.clock).getTime()-5*3600000).toISOString().slice(0,10);const to=clock+'T'+daily.querySelector('input').value+':00-05:00';const result=await request(prefix()+'/simulation/advance',{to});await refresh();status('Core ejecutó '+result.steps.length+' hitos; quedan '+result.pending+'.');}catch(e){status(e.message);}};
+ }
  const items=Object.values(world.entities).filter(item=>!filters[mode].length||filters[mode].includes(item.kind));
  host.querySelector('#office-entities').innerHTML=items.map(item=>'<button data-entity="'+esc(item.id)+'"><b>'+esc(item.name||item.id)+'</b><small>'+esc(item.kind)+' · '+esc(item.status||item.freshness||'registrado')+'</small></button>').join('');
  for(const button of host.querySelectorAll('[data-entity]'))button.onclick=()=>choose(button.dataset.entity);

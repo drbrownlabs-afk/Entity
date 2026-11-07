@@ -1,0 +1,26 @@
+{
+  "source": "Actual local Core HTTP and built kiosk/personal clients; original site inventory; no substituted 3D scene",
+  "checks": [
+    {
+      "width": 1280,
+      "verified_invitation": true,
+      "private_host_reply": true,
+      "kiosk_reflects_core": true,
+      "token_in_local_storage": false,
+      "page_errors": [],
+      "voice_screen_controls": true,
+      "voice_microphone_executed": false
+    },
+    {
+      "width": 390,
+      "verified_invitation": true,
+      "private_host_reply": true,
+      "kiosk_reflects_core": true,
+      "token_in_local_storage": false,
+      "page_errors": [],
+      "voice_screen_controls": true,
+      "voice_microphone_executed": false
+    }
+  ],
+  "status": "passed"
+}

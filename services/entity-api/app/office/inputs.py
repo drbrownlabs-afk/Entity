@@ -8,6 +8,9 @@ Empty=typed('NoInputs')
 S=NonBlank
 T=AwareDatetime
 INPUTS={
+ 'zone.assumeOccupancy':typed('HypotheticalOccupancy',count=(int,Field(ge=0,le=1000))),
+ 'device.setPower':typed('DevicePower',on=(bool,...)),
+ 'presence.checkout':Empty,
  'reception.interact':typed('ReceptionInteract',conversation_id=(S,...),action=(Literal['start','check_in','status'],...),invitation_id=(str|None,None),verification_code=(str|None,Field(default=None,max_length=128))),
  'intercom.reply':typed('IntercomReply',conversation_id=(S,...),response=(Literal['ready','wait','unavailable'],...),minutes=(int,Field(default=5,ge=1,le=30))),
  'intercom.timeout':typed('IntercomTimeout',conversation_id=(S,...)),

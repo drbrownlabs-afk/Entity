@@ -3,7 +3,7 @@ import json
 from .storage import identity,encode,now,emit,utc
 from .service import upsert_resource,site_create
 
-TOPOLOGY_VERSION=2
+TOPOLOGY_VERSION=3
 EMPLOYEES={
  'Entity':[('CARLOS','Carlos','Director de producto'),('ANA','Ana','Ingeniera espacial'),('DIEGO','Diego','Desarrollador'),('VALERIA','Valeria','Diseñadora'),('TOMAS','Tomás','Operaciones'),('ELENA','Elena','Investigadora')],
  'Inmerso':[('MARTIN','Martín','Director creativo'),('PAULA','Paula','Productora'),('ANDRES','Andrés','Artista 3D'),('LUCIA','Lucía','Diseñadora'),('NICOLAS','Nicolás','Desarrollador XR'),('CAMILA','Camila','Coordinadora')],
@@ -61,7 +61,7 @@ def provision(db,site,original,clock,run_id='day-01'):
     for group in ['D','E']:
         put('ZONE-'+group,'Zone',name='Ambiente '+group+' · puestos independientes',position=None,reservable=False,spatial_mapping='pending-visual-inspection')
         for number in range(1,7):
-            put(group+str(number),'Desk',name='Puesto '+group+str(number),capacity=1,zone_id='ZONE-'+group,reservable=True,commercial=True,position=None,spatial_mapping='individual-seat-not-calibrated')
+            put(group+str(number),'Desk',name='Puesto '+group+str(number),capacity=1,zone_id='ZONE-'+group,reservable=True,commercial=True,public=True,position=None,spatial_mapping='individual-seat-not-calibrated')
             link(group+str(number),'locatedIn','ZONE-'+group)
     put('PERSON-LUIS','Person',name='Luis',roles=['member'],fictitious=True,profile_level='member',membership_status='active',membership_until='2027-12-31T00:00:00+00:00',presence='unknown',position=None)
     put('RECEPTION','Reception',name='Recepción inteligente · dos sillas negras',position=None,reservable=False,spatial_mapping='pending-visual-inspection',human_receptionist=False)
@@ -79,6 +79,8 @@ def provision(db,site,original,clock,run_id='day-01'):
         terminal='INTERCOM-'+environment
         put(terminal,'Intercom',name='ENTITY · ambiente '+environment,zone_id=entries[environment]['zone_id'],environment_id=environment,virtual=True,connectivity='connected',privacy='private-addressed',position=None)
         link(terminal,'locatedIn',environment);link(entries[environment]['organization_id'],'communicatesThrough',terminal)
+    put('PERSON-JOSE','Person',name='José',roles=['staff'],fictitious=True,profile_level='employee',job_title='Operador de Cowork',organization_id='ORG-COWORK',home_environment='C',presence='unknown',position=None)
+    link('PERSON-JOSE','belongsTo','ORG-COWORK');link('PERSON-JOSE','assignedTo','C')
     link('KIOSK-01','locatedIn','RECEPTION')
     # Existing legacy objects retain their IDs, bookings and event history. They are withdrawn
     # from sale rather than silently reassigned to a different desk or organization.
