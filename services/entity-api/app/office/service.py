@@ -218,8 +218,17 @@ def command(db,site,run,actor,body):
                 p=member_allowed(person_id);allowed=p.get('presence')=='confirmed' and p.get('freshness')=='fresh';reason='active membership and confirmed fresh check-in' if allowed else 'Arrival not currently confirmed'
             elif visit_id:
                 visit=require_kind(visit_id,{'Visit'});meeting=require_kind(visit['meeting_id'],{'Meeting'});host=get(meeting['host_id'])
-                allowed=visit.get('status')=='waiting' and meeting['status']!='cancelled' and host.get('presence')=='confirmed' and host.get('freshness')=='fresh' and bool(data.get('escorted'))
-                reason='registered visit, host check-in and authorized escort' if allowed else 'Host arrival/escort/visit policy not satisfied'
+                meeting_resource=get(meeting['resource_id'])
+                destinations={meeting_resource['id'],meeting_resource.get('zone_id')}-{None}
+                in_window=datetime.fromisoformat(meeting['starts_at'])-timedelta(minutes=15)<=datetime.fromisoformat(clock)<datetime.fromisoformat(meeting['ends_at'])
+                allowed=visit.get('status') in {'waiting','host_ready'} and meeting['status'] not in {'cancelled','completed'} and host.get('presence')=='confirmed' and host.get('freshness')=='fresh' and bool(data.get('escorted')) and door.get('zone_id') in destinations and in_window
+                reason='registered meeting-scoped visit, current host check-in and authorized escort' if allowed else 'Host arrival, escort, meeting destination or time policy not satisfied'
+            destination=items.get(door.get('zone_id'),{})
+            private=[x for x in items.values() if x.get('kind')=='Office' and x.get('private') and (x['id']==door.get('zone_id') or x.get('zone_id')==door.get('zone_id'))]
+            if allowed and (door.get('closed') or destination.get('closed')):
+                allowed=False;reason='Destination is closed'
+            if allowed and person_id and any(x.get('organization_id')!=p.get('organization_id') for x in private):
+                allowed=False;reason='Private environment belongs to another organization'
             details.update(allowed=allowed,reason=reason)
             if op=='access.requestEntry':
                 if allowed:

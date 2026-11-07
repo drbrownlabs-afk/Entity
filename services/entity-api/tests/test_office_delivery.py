@@ -148,3 +148,21 @@ class DeliveryTests(unittest.TestCase):
         self.assertEqual(result.status_code,200,result.text)
         self.assertEqual(self.state()['entities']['PERSON-CARLOS']['freshness'],'stale')
         self.assertEqual(self.state()['entities'][self.conversation]['status'],'host_ready')
+
+    def test_access_respects_ready_visit_destination_and_private_organization(self):
+        self.setup_reception();self.check_in()
+        self.cmd('intercom.reply','INTERCOM-A',{'conversation_id':self.conversation,'response':'ready'},headers=self.auth('carlos-host'))
+        visit=self.state()['entities'][self.conversation]['visit_id']
+        self.cmd('entity.upsert',inputs={'id':'test-meeting-door','kind':'AccessPoint','attributes':{'zone_id':'annotation-1'}})
+        self.cmd('entity.upsert',inputs={'id':'test-other-door','kind':'AccessPoint','attributes':{'zone_id':'annotation-0'}})
+        good=self.cmd('access.checkAuthorization','test-meeting-door',{'visit_id':visit,'escorted':True})
+        self.assertTrue(good['details']['allowed'])
+        denied=self.cmd('access.requestEntry','test-other-door',{'visit_id':visit,'escorted':True})
+        self.assertEqual(denied['status'],'denied')
+        self.assertEqual(self.state()['entities'][visit]['status'],'host_ready')
+        self.cmd('entity.upsert',inputs={'id':'test-private-door','kind':'AccessPoint','attributes':{'zone_id':'annotation-2'}})
+        denied=self.cmd('access.requestEntry','test-private-door',{'person_id':'PERSON-CARLOS'})
+        self.assertEqual(denied['status'],'denied')
+        self.assertIn('organization',denied['details']['reason'])
+        self.cmd('zone.close','annotation-1')
+        self.assertFalse(self.cmd('access.checkAuthorization','test-meeting-door',{'visit_id':visit,'escorted':True})['details']['allowed'])

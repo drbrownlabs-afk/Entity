@@ -19,10 +19,23 @@ try{
  await page.locator('#office-login button').click();
  try{await page.waitForFunction(()=>window.officeCoreDiagnostics?.().connected&&window.officeVisualDiagnostics?.().avatarsPlaced.length===1,undefined,{timeout:process.env.OFFICE_STATE_ONLY?15000:90000});}
  catch(error){report.state=await page.evaluate(()=>({status:document.querySelector('#office-core-status')?.textContent,core:window.officeCoreDiagnostics?.(),visual:window.officeVisualDiagnostics?.()}));throw error;}
- if(process.env.OFFICE_STATE_ONLY){report.status='state-only; original scene NOT verified';await page.close();}
+ if(process.env.OFFICE_STATE_ONLY){
+ for(const second of [0,1,5,9,10]){
+  const at=new Date(Date.parse('2026-11-07T14:15:00Z')+second*1000).toISOString();
+  await request(prefix+'/commands',{id:crypto.randomUUID(),operation:'clock.advance',target:'site',inputs:{to:at}});
+  await page.waitForFunction(clock=>Date.parse(window.officeVisualDiagnostics?.().worldClock)===Date.parse(clock),at,{timeout:30000});
+  await page.waitForTimeout(200);
+  const expected=(await request(prefix+'/world')).entities['PERSON-LUIS'].spatial_pose.position;
+  const observed=await page.evaluate(()=>window.officeVisualDiagnostics().avatarsPlaced[0]?.position);
+  report.checks.push({second,expected,observed});
+  if(!observed||expected.some((v,i)=>Math.abs(v-observed[i])>.0001))throw Error('Core motion integration diverged: '+JSON.stringify(report.checks.at(-1)));
+ }
+ report.status='state-only; original scene NOT verified';await page.close();
+}
  else{
 
  await page.evaluate(()=>window.dispatchEvent(new CustomEvent('office-mode-changed',{detail:'Seguridad'})));
+ await page.waitForTimeout(5000);
  const initial=await request(prefix+'/world');let identified=false;
  for(const second of [0,1,5,9,10]){
   const at=new Date(Date.parse('2026-11-07T14:15:00Z')+second*1000).toISOString();
@@ -31,7 +44,8 @@ try{
   const world=await request(prefix+'/world');const expected=world.entities['PERSON-LUIS'].spatial_pose.position;
   const observed=await page.evaluate(()=>window.officeVisualDiagnostics());
   const placed=observed.avatarsPlaced.find(p=>p.id==='PERSON-LUIS');
-  if(!placed||expected.some((v,i)=>Math.abs(v-placed.position[i])>.0001))throw Error('Renderer pose diverged from Core');
+  report.pose_check={second,expected,observed:placed,world_clock:world.clock,renderer_clock:observed.worldClock};
+  if(!placed||expected.some((v,i)=>Math.abs(v-placed.position[i])>.0001))throw Error('Renderer pose diverged from Core: '+JSON.stringify(report.pose_check));
   for(const camera of ['CAM-ROUTE-1','CAM-ROUTE-2']){
    const snapshot=await page.evaluate(async id=>window.officeCaptureCamera(id),camera);
    if(snapshot.payload.tracks.some(t=>t.local_track_id.includes('LUIS')||t.person_id))throw Error('Visual source fabricated identity');
@@ -64,6 +78,7 @@ try{
  }
 }catch(error){
  report.status='failed';report.error=String(error);report.page_errors=failures;
+ if(lastPage&&!lastPage.isClosed())report.visual=await lastPage.evaluate(()=>window.officeVisualDiagnostics?.()).catch(()=>null);
  if(lastPage&&!lastPage.isClosed())await lastPage.screenshot({path:'docs/evidence/phase09/spatial-core-failed.png',fullPage:true,timeout:30000}).catch(()=>{});
  throw error;
 }

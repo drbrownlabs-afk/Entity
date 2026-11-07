@@ -60,10 +60,12 @@ export function installVisuals(viewer,original){
    if(!entity){if(models.has(person.avatar_id))loadAvatar(person.id,new URL('avatars/'+person.avatar_id+'.glb',document.baseURI).href).catch(()=>{});continue;}
    entity.enabled=true;entity.setPosition(...pose.position);
    if(Number.isFinite(pose.yaw))entity.setEulerAngles(0,pose.yaw,0);
-   if(entity.anim?.baseLayer){
-    const name=pose.animation||'idle';if(entity.anim.baseLayer.activeState!==name)entity.anim.baseLayer.play(name);
-    entity.anim.speed=0;
-    entity.anim.baseLayer.activeStateCurrentTime=Number(pose.animation_time)||0;
+   const animation=entity.findComponent('anim');
+   if(animation?.baseLayer){
+    const name=pose.animation||'idle';if(animation.baseLayer.activeState!==name)animation.baseLayer.play(name);
+    animation.speed=0;
+    animation.baseLayer.activeStateCurrentTime=Number(pose.animation_time)||0;
+    animation.update(0);
    }
   }
   app.renderNextFrame=true;
@@ -73,13 +75,12 @@ export function installVisuals(viewer,original){
   if(!world)throw Error('Core must be connected; authored public views are not observations');
   const source=world.entities[id],entry=cameras.get(id);
   if(!source||!entry||source.connectivity==='disconnected')throw Error('Authorized calibrated camera unavailable');
-  const captureEntity=new pc.Entity('Scoped virtual camera observation');
-  captureEntity.addComponent('camera',{fov:entry.entity.camera.fov,aspectRatioMode:pc.ASPECT_MANUAL,aspectRatio:16/9,layers:[...entry.entity.camera.layers],enabled:false});
-  captureEntity.setPosition(entry.entity.getPosition());captureEntity.setRotation(entry.entity.getRotation());app.root.addChild(captureEntity);
-  const camera=captureEntity.camera,picker=new pc.Picker(app,160,90);
+  // Reuse the rendered source camera: an unrendered clone has no resident splat depth.
+  const camera=entry.entity.camera,picker=new pc.Picker(app,160,90);
+  const rect=camera.rect.clone();
   try{
    app.renderNextFrame=true;await new Promise(resolve=>app.once('postrender',resolve));
-   picker.prepare(camera,app.scene);
+   camera.rect=new pc.Vec4(0,0,1,1);picker.prepare(camera,app.scene);camera.rect=rect;
    const tracks=[];
    for(const [personId,entity]of avatars){
     const pose=world.entities[personId]?.spatial_pose;
@@ -97,14 +98,14 @@ export function installVisuals(viewer,original){
     }
    }
    return {source_id:id,clock:world.clock,payload:{source_status:'connected',tracks,transitions:[]},provenance:{connector_id:'simulated',model_version:'playcanvas-picker-visibility-v1',simulated:true}};
-  }finally{picker.destroy();captureEntity.destroy();app.renderNextFrame=true;}
+  }finally{camera.rect=rect;picker.destroy();app.renderNextFrame=true;}
  }
  window.addEventListener('office-world-changed',e=>receive(e.detail));
  window.addEventListener('office-world-cleared',()=>{world=null;for(const entity of avatars.values())entity.enabled=false;layout();});
- window.addEventListener('office-mode-changed',e=>{security=e.detail==='Seguridad';panel.hidden=!security;layout();});
+ window.addEventListener('office-mode-changed',e=>{security=e.detail==='Seguridad';app.autoRender=security||!viewer.state.loaded;panel.hidden=!security;layout();});
  window.addEventListener('resize',layout);
  window.officeLoadAvatar=loadAvatar;window.officeCaptureCamera=capture;
- window.officeVisualDiagnostics=()=>({cameraViews:cameras.size,activeCameras:[...cameras.values()].filter(c=>c.entity.enabled).length,visibleCameraIds:visibleIds,worldClock:world?.clock||null,
+ window.officeVisualDiagnostics=()=>({cameraRenderState:[...cameras].filter(([,c])=>c.entity.enabled).map(([id,c])=>({id,layers:c.entity.camera.layers,managers:[...(app.renderer.gsplatDirector?.camerasMap.get(c.entity.camera.camera)?.layersMap.values()||[])].map(m=>({splats:m.gsplatManager?.world.currentState?.splats?.numSplats||0,pending:m.gsplatManager?.hasPendingSort}))})),cameraViews:cameras.size,activeCameras:[...cameras.values()].filter(c=>c.entity.enabled).length,visibleCameraIds:visibleIds,worldClock:world?.clock||null,
   avatarsLoaded:avatars.size,avatarsPlaced:[...avatars.values()].filter(e=>e.enabled).map(e=>({id:e.name,position:e.getPosition().toArray()})),singleApplication:[...cameras.values()].every(c=>c.entity.parent===app.root),
   errors,source:world?'original SSOG and authorized Core projection':'original SSOG authored viewpoints; Core disconnected'});
 }

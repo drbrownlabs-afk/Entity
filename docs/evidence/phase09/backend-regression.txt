@@ -58,6 +58,7 @@ test_reservations_change_availability_without_inventing_occupancy (test_office_d
 test_other_camera_empty_or_disconnected_does_not_erase_observed_person (test_office_occupancy.CameraOccupancyTests.test_other_camera_empty_or_disconnected_does_not_erase_observed_person) ... ok
 test_assigned_operator_cannot_escape_via_queries_actions_or_capabilities (test_office_scopes.ResourceScopeTests.test_assigned_operator_cannot_escape_via_queries_actions_or_capabilities) ... ok
 test_operator_without_resource_assignment_has_no_implicit_camera_access (test_office_scopes.ResourceScopeTests.test_operator_without_resource_assignment_has_no_implicit_camera_access) ... ok
+test_authenticated_personal_reply_supersedes_scripted_character (test_office_simulation.DailySimulationTests.test_authenticated_personal_reply_supersedes_scripted_character) ... ok
 test_full_day_pause_resume_replay_and_memory (test_office_simulation.DailySimulationTests.test_full_day_pause_resume_replay_and_memory) ... ok
 test_hvac_impact_follows_zone_links_and_resolution_is_audited (test_office_simulation.DailySimulationTests.test_hvac_impact_follows_zone_links_and_resolution_is_audited) ... ok
 test_different_resource_ids_and_site_configuration_use_existing_service (test_office_site_config.DifferentSiteTests.test_different_resource_ids_and_site_configuration_use_existing_service) ... ok
@@ -72,6 +73,6 @@ test_storage_isolation_and_reply (test_personal_app.PersonalStorageTests.test_st
 test_persistence_after_process_restart (test_restart.RestartTests.test_persistence_after_process_restart) ... ok
 
 ----------------------------------------------------------------------
-Ran 70 tests in 43.591s
+Ran 71 tests in 46.653s
 
 OK
