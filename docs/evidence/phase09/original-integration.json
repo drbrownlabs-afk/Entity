@@ -1,6 +1,6 @@
 {
-  "tested_commit": "c6497c551808a6fcf705ae194b4d15a9bf23ede4",
-  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42423099183",
+  "tested_commit": "69f16994816dd8f5aa72bce84894db5895621349",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42423403492",
   "source": "Original published Synthetic Office SSOG through official SuperSplat viewer package",
   "checks": [
     {
@@ -55,6 +55,14 @@
             -3.426234714858262,
             -0.9248632498038959,
             -19.5901388836479
+          ]
+        },
+        {
+          "title": "Recepción inteligente · dos sillas negras",
+          "position": [
+            -5.788876393261972,
+            -1.0731165959404187,
+            -8.894881576083774
           ]
         }
       ],
@@ -195,6 +203,14 @@
             -3.426234714858262,
             -0.9248632498038959,
             -19.5901388836479
+          ]
+        },
+        {
+          "title": "Recepción inteligente · dos sillas negras",
+          "position": [
+            -5.788876393261972,
+            -1.0731165959404187,
+            -8.894881576083774
           ]
         }
       ],
