@@ -24,6 +24,7 @@ jobs:
           npm --prefix apps/web ci
           npm --prefix apps/web run build
           cd apps/web && npx playwright install --with-deps chromium
+      - run: node scripts/phase09/calibrate-floor.mjs
       - name: Exercise original geometry and real Core without substituted scene
         run: timeout 480s .venv/bin/python scripts/phase09/demo-spatial-core.py
       - name: Retain full evidence independently of branch publication
@@ -33,8 +34,9 @@ jobs:
           name: original-spatial-evidence
           path: |
             docs/evidence/phase09/spatial-core*
+            docs/evidence/phase09/voxel-ground.json
             docs/evidence/phase09/spatial-runs
       - name: Preserve actual geometric integration evidence
         if: always()
         run: |
-          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/spatial-core*' 'docs/evidence/phase09/spatial-runs/*.json'
+          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/spatial-core*' 'docs/evidence/phase09/spatial-runs/*.json' 'docs/evidence/phase09/voxel-ground.json'

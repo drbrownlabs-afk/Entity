@@ -20,6 +20,8 @@ for(const [index,position]of cameras.entries()){
  if(!hit)throw Error('No original voxel ground below native walk camera '+index);
  report.points.push({index,native_camera:position,ground:{x:hit.x,y:hit.y,z:hit.z},eye_to_ground:position[1]-hit.y});
 }
+report.floor_clearance=collision.voxelResolution;
+report.route_candidate=report.points.slice(0,3).map(p=>({position:[p.ground.x,p.ground.y+report.floor_clearance,p.ground.z],evidence:'docs/evidence/phase09/voxel-ground.json; original-voxel-ray-'+p.index}));
 for(let segment=0;segment<2;segment++){
  const a=report.points[segment].ground,b=report.points[segment+1].ground;
  for(let step=0;step<=10;step++){
@@ -27,8 +29,9 @@ for(let segment=0;segment<2;segment++){
   const ground=collision.queryRay(x,cameras[segment][1],z,0,-1,0,10);
   const push={x:0,y:0,z:0};
   // Human-height capsule; 2*(halfHeight+radius)=1.8. Clearance is explicit, not a resource coordinate.
-  const blocked=ground?collision.queryCapsule(x,ground.y+.92,z,.7,.2,push):true;
-  report.route_clearance.push({segment,t,ground:ground?{x:ground.x,y:ground.y,z:ground.z}:null,blocked,push});
+  const footY=a.y+(b.y-a.y)*t+report.floor_clearance;
+  const blocked=ground?collision.queryCapsule(x,footY+.9,z,.7,.2,push):true;
+  report.route_clearance.push({segment,t,foot_position:[x,footY,z],ground:ground?{x:ground.x,y:ground.y,z:ground.z}:null,blocked,push});
  }
 }
 report.status='measured; visual review required';
