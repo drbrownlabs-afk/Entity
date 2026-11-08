@@ -22,6 +22,12 @@ Las imágenes siguientes son renders reales de este maestro, con filtrado OIDN y
 
 [Original Cycles sin filtrar](evidence/phase04-revision/renders/garden-detail.png) · hora 12:00 · [1440, 960] · hasta 96 muestras.
 
+## Mamparas: reflexión a ángulo oblicuo
+
+![Mamparas: reflexión a ángulo oblicuo](evidence/phase04-revision/renders/denoised/glass-detail.png)
+
+[Original Cycles sin filtrar](evidence/phase04-revision/renders/glass-detail.png) · hora 12:00 · [1440, 960] · hasta 96 muestras.
+
 ## Objetivos visuales proporcionados por el operador
 
 | Lounge | Puestos | Recepción |

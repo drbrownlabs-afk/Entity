@@ -44,6 +44,28 @@
       },
       "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
       "raw_mean_srgb": 0.09790132939815521
+    },
+    {
+      "name": "glass-detail",
+      "raw": "glass-detail.png",
+      "raw_sha256": "7589e75d721116381456b872d7bdbe24399d95be742cd12ac35745acdd4c6953",
+      "filtered": "denoised/glass-detail.png",
+      "filtered_sha256": "d9d85d496287d2ccdedf93f45e4f11b582b4883995e14d7196f23e6d104169b5",
+      "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "guides": {
+        "albedo": {
+          "path": ".runtime/revision-guides/review/glass-detail-Albedo.pfm",
+          "sha256": "d7244e40b19519525815ae00b133cbdac7a89a2add8fbb226eb214c1afcc127e",
+          "source_exr_sha256": "0c20cc0ecc55061d6a80093a4cf9486cee17b954c677d7094893fe24ddb2780b"
+        },
+        "normal": {
+          "path": ".runtime/revision-guides/review/glass-detail-Normal.pfm",
+          "sha256": "9e4031fab672cdb457602bbd6d416581efca96a42b6eb348cd47abe34ec24e5a",
+          "source_exr_sha256": "1b1043d66583312040648d3e3f72c8bdf4ae5144666cbcc3acf936e9adc4b2f5"
+        }
+      },
+      "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
+      "raw_mean_srgb": 0.40211787819862366
     }
   ],
   "no_reference_photo_edits": true,
