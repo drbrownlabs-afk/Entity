@@ -128,3 +128,7 @@ Nueva tarea integral de simulación de centro de trabajo, continuación de ENTIT
 
 
 **Especificación ejecutable vinculante de Fase 10:** [docs/phases/PHASE-10.md](docs/phases/PHASE-10.md). Sus subfases 10.1–10.9, gates, bucle implementar→probar→corregir→registrar→continuar y escenario E2E prevalecen sobre el resumen temático anterior. No iniciar hasta validar Fase 09.
+
+
+## Fase 11 — IA situada sobre mundo operativo (PLANIFICADA; NO INICIADA)
+Tras validar la Fase 10, probar inferencia real y conversación sobre observaciones, ReID visual+contextual, trayectorias y memoria de ENTITY Core. Las fases 05/09.7 son preparación técnica, no validación de esta capacidad sobre mundo espacial completo. Evaluar **Sign in with ChatGPT + Codex app-server OAuth** como vía principal de autenticación respaldada por suscripción; API convencional/local como alternativas, sin asumir permisos ni cuotas ilimitadas. No requiere OpenClaw ni multiagentes. Especificación ejecutable, gates 11.1–11.8 y pruebas: [docs/phases/PHASE-11.md](docs/phases/PHASE-11.md). No comenzar hasta cerrar 09 y 10.
