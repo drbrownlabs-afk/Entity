@@ -3,11 +3,12 @@ import fs from 'node:fs';
 const root='docs/evidence/phase09/survey';fs.mkdirSync(root,{recursive:true});
 const browser=await chromium.launch({args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,scene:'https://superspl.at/scene/a972d838',source:'Original SSOG, elevated/oblique inspection viewpoints derived from authored and measured cameras. Camera transforms are NOT semantic resource coordinates or verified walking routes',views:[]};
-const save=()=>fs.writeFileSync(root+'/survey-plan-far.json',JSON.stringify(report,null,2));
+const save=()=>fs.writeFileSync(root+'/survey-cd-calibration.json',JSON.stringify(report,null,2));
 try{
  const {loadVoxelCollision}=await import('../../apps/web/node_modules/@playcanvas/supersplat-viewer/dist/calibration-runtime.mjs');
  const settings=JSON.parse(fs.readFileSync('worlds/synthetic-office/original-viewer-settings.json','utf8'));const collision=await loadVoxelCollision(settings.collisionUrl);
- for(const [id,params,samples]of [['original-plan-far','survey_route_pose=2&survey_direction=topdown&survey_plan=far',[[.35,.35],[.5,.5],[.65,.65]]]]){
+ const grid=[.3,.4,.5,.6,.7].flatMap(x=>[.25,.375,.5,.625,.75].map(y=>[x,y]));
+ for(const [id,params,samples]of [['table-c-detail','survey_route_pose=2&survey_direction=topdown&survey_table=C',grid],['table-d-detail','survey_route_pose=2&survey_direction=topdown&survey_table=D',grid]]){
   const page=await browser.newPage({viewport:{width:1100,height:2200}});
   await page.goto('http://127.0.0.1:4175/office.html?budget=0.5&survey=1&'+params,{waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});await page.waitForTimeout(1000);

@@ -401,3 +401,7 @@ LiveDemo116entidades/21eventos conservados trasreinicioDockerreal yrelojpausado0
 
 ### 2026-11-08 — Codex, alcance de calibración y comprobación de publicación
 Commit documental c518910 confirmado en rama remota yHTTP200 enGitHub; informe yarchivos presentes. Servicios8000/8010 yfrontend4175 comprobados al cierre del lote. Se explicita en el informe que las pruebas deposes/colisiones usan unidades delarchivooriginal: metric_scale_verified=false, no certificación demetros deun edificio real. No cambian laspruebas ni laescena ni seaprueba laFase09.
+
+
+## 2026-11-08 — Codex, contrato espacial leído y causa de demo vacía
+Integrados73c0079/bd17062/48412c2/c7bf20d y leído completo PHASE-09-SPATIAL-INTERFACE-CONTRACT.md: cuatro grupos A/B privados y C/D públicos, sin E ni Cstaff; sustituye inventario anterior. Auditoría breve: main.js monta ui:true/reticle/inventario y carga operations.js; este solo emite office-world-changed después de login aAPI, sin backendHTTPSPagesconfigurado. visuals.js oculta avatares sin spatial_pose validada y activaCCTVsolo enmodoSeguridad. No había fuente de mundo para la página pública; importarmódulos/cargarSSOGnoequivaleaintegración. Se prepara inspección original C/D para calibrar anclas/asientos; las identidades están resueltas, no se vuelve apedirconfirmación del inventario. Implementaciónnativa ydemoautónoma se integran sobre contratos/jornadadeCore existentes, no se empieza otroedificio.

@@ -47,7 +47,7 @@ if(new URLSearchParams(location.search).has('survey')){
  }
  const camera=settings.cameras[0].initial;
  if(direction==='overview-right'){camera.position=[...camera.position];camera.position[1]+=1.2;camera.target=[camera.position[0]+5,camera.position[1]-3,camera.position[2]];}
- if(direction==='topdown'){const a=original.settings.annotations[2].position,b=inspectionCameras.poses.at(-1),front=original.settings.annotations[3].position;const center=[a[0],-1.85,(front[2]+b[2])/2];const far=new URLSearchParams(location.search).get('survey_plan')==='far';if(far)center[2]=b[2];camera.position=[center[0],center[1]+(far?12:20),center[2]];camera.target=[center[0],center[1],center[2]+.0001];camera.fov=90;}
+ if(direction==='topdown'){const a=original.settings.annotations[2].position,b=inspectionCameras.poses.at(-1),front=original.settings.annotations[3].position;const center=[a[0],-1.85,(front[2]+b[2])/2];const far=new URLSearchParams(location.search).get('survey_plan')==='far';if(far)center[2]=b[2];const table=new URLSearchParams(location.search).get('survey_table');if(table==='C')center[2]=-16.980792730339846;if(table==='D')center[2]=-23.550090487058384;camera.position=[center[0],center[1]+(table?8:far?12:20),center[2]];camera.target=[center[0],center[1],center[2]+.0001];camera.fov=table?60:90;}
  if(direction==='front-down'){camera.target=[camera.position[0]-3,camera.position[1]-2,camera.position[2]+2];}
 }
 let viewer;
