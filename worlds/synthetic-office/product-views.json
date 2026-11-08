@@ -38,9 +38,9 @@
     "camera": {
       "initial": {
         "position": [
-          24,
-          26,
-          -6
+          8,
+          30,
+          11
         ],
         "target": [
           -1,

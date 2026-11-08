@@ -17,7 +17,7 @@ try{
   for(const id of stateOnly?[]:['A','B','C','D','PERSON-CARLOS','PERSON-LUIS'])if(!initial.markers.includes(id))throw Error('Original/Core entity is not visible: '+id);
   const check={width,original_loaded:initial.loaded,native_renderer_ui:false,visible_people:initial.visual.avatarsPlaced,core_connected:false,mode:initial.mode};report.checks.push(check);
   await page.screenshot({path:stateOnly?'.runtime/phase09/native-state-'+width+'.png':'docs/evidence/phase09/native-dollhouse-'+width+'.png',timeout:120000});
-  const select=async id=>stateOnly?page.evaluate(id=>window.officeSpatialApp.select(id),id):page.locator('#world-markers [data-entity="'+id+'"]').click();
+  const select=async id=>stateOnly?page.evaluate(id=>window.officeSpatialApp.select(id),id):(width<700?page.locator('#world-markers [data-entity="'+id+'"]').tap():page.locator('#world-markers [data-entity="'+id+'"]').click());
   await select('PERSON-CARLOS');
   await page.waitForFunction(()=>document.querySelector('#context-body h1')?.textContent==='Carlos');
   await page.locator('[data-tab="Relaciones"]').click();await page.waitForFunction(()=>document.querySelector('#context-body').textContent.includes('belongsTo'));
@@ -29,7 +29,8 @@ try{
   if(!stateOnly)await page.waitForFunction(()=>window.officeSpatialApp.diagnostics().visual.cameraRenderState.some(c=>c.managers.some(m=>m.splats>0&&!m.pending)),undefined,{timeout:90000});
   if(!(await page.locator('#context-body').innerText()).includes('SIMULADA'))throw Error('Virtual camera not labelled simulated');
   if(await page.evaluate(()=>window.officeSpatialApp.diagnostics().visual.activeCameras)!==1)throw Error('Selected feed not rendered in the same application');
-  check.camera_feed=true;
+  check.camera_feed=true;check.resident_original_feed=!stateOnly;
+  if(!stateOnly){await page.locator('#context-actions button').filter({hasText:'Capturar evidencia de sesión'}).click();await page.waitForFunction(()=>Object.values(window.officeSpatialApp.getWorld().entities).some(x=>x.kind==='Track'&&x.scope==='demo-session-not-Core'),undefined,{timeout:30000});check.rendered_normalized_session_observation=true;}
   await page.screenshot({path:stateOnly?'.runtime/phase09/native-state-feed-'+width+'.png':'docs/evidence/phase09/native-feed-'+width+'.png',timeout:120000});
   await page.locator('#return-world').click();await page.locator('#close-context').click();
   await select('A');await page.waitForFunction(()=>document.querySelector('#context-body').textContent.includes('oficina se reserva'));

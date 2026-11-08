@@ -44,6 +44,6 @@ manifest = {'schema_version': '1.0', 'source_commit': sha,
                             'Source requires dependency download; archive is not an offline installer',
                             'Static zip requires a web host; source Core is local development only',
                             'Office streams the original remote SSOG/voxels; it is not an offline scene package',
-                            'Office, personal and kiosk operations require the same authenticated Core API; static hosting alone supplies no operational world']}
+                            'Live persistent operations, personal and kiosk require authenticated Core; public Office uses explicit Core-generated replay with session-only synthetic actions']}
 (output / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
 print(json.dumps(manifest, indent=2))

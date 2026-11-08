@@ -1,6 +1,8 @@
 import Ajv2020 from 'ajv/dist/2020.js';
 import addFormats from 'ajv-formats';
+import observationSchema from '../../../../packages/contracts/integrations/v1/Observation.json' with {type:'json'};
 const ajv=addFormats(new Ajv2020({strict:false,allErrors:true}));
+const validateObservation=ajv.compile(observationSchema);
 const clone=value=>structuredClone(value);
 const date=value=>Date.parse(value);
 export function relations(world,id){
@@ -53,6 +55,7 @@ export class ReplayWorld {
   this.session.push(event);const result={status:'simulated',event,core_persisted:false};this.receipts.set(body.id,{fingerprint,result});return result;
  }
  async observe(observation){
+  if(!validateObservation(observation))throw Error('Observación v1 inválida: '+ajv.errorsText(validateObservation.errors));
   if(observation.provenance?.simulated!==true||observation.site_id!==this.trace.initial.site_id||date(observation.observed_at)!==date(this.clock))throw Error('Observación fuera del mundo o instante actual');
   const state=this.read(),camera=state.entities[observation.source_id];if(camera?.kind!=='Camera')throw Error('Cámara no declarada');
   const changes={};
@@ -69,5 +72,5 @@ export class CoreWorld {
  read(){return this.state;}
  command(body){return this.request(this.prefix()+'/commands',body);}
  observe(body){return this.request(this.prefix()+'/observations',body);}
- events(){return this.request(this.prefix()+'/events?limit=1000');}
+ events(id){return this.request(this.prefix()+'/events?limit=1000'+(id?'&entity_id='+encodeURIComponent(id):''));}
 }

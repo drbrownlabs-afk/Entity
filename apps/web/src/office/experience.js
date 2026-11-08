@@ -31,6 +31,7 @@ function location(item,seen=new Set()){
  if(!item||seen.has(item.id))return null;seen.add(item.id);
  if(item.spatial_pose?.validated)return item.spatial_pose.position;
  if(Array.isArray(item.position))return item.position;
+ if(item.kind==='Person')return null; // Organizational membership is not a measured physical pose.
  for(const key of ['resource_id','parent_resource','zone_id','organization_id']){const p=location(current.entities[item[key]],seen);if(p)return p;}
  const occupies=item.relations?.find(e=>e.type==='occupies'&&!e.valid_to);return occupies?location(current.entities[occupies.target],seen):null;
 }
