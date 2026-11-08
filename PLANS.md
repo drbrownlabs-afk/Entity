@@ -78,3 +78,50 @@ Salida: aceptación humana explícita, fallos documentados y backlog financiable
 
 ## Fase 09 — ENTITY Spatial Intelligence / Synthetic Office (autorización especial 2026-11-07)
 Nueva tarea integral de simulación de centro de trabajo, continuación de ENTITY Experience. Plan funcional, subfases 09.1–09.9, gates, evidencia y protocolo de continuidad: [docs/phases/PHASE-09.md](docs/phases/PHASE-09.md). **Excepción explícita a la regla general de aprobación por fase:** el operador autorizó completar consecutivamente todas las subfases 09.1–09.9 con autorrevisión, corrección y avance automático sin pausas humanas intermedias. Cada gate puede quedar VERIFICADO AUTOMÁTICAMENTE; solo la Fase 09 integral espera revisión humana al final. No altera las autorizaciones históricas de 00–08 ni supone que 07/08 están fusionadas. Evidencia en docs/PHASE-09-PROGRESS.md.
+
+
+## Fase 10 — ENTITY Camera Gateway, registro espacial y continuidad multicámara (PLANIFICADA; NO INICIADA)
+
+**Dependencia:** terminar los gates 09.1–09.9 y validar integralmente la Fase 09. No ampliar ni interrumpir el trabajo actual de Codex. Fase 09 entrega el SSOG/gemelo digital, interfaz gráfica compartida, CCTV virtual, simulación, Core y servicios operativos funcionales. Fase 10 reutiliza todo ello, sin duplicar mundos, renderers, APIs, trackers locales ni estados.
+
+**Objetivo verificable prioritario:** una persona detectada en CAM-01, luego CAM-02 y después CAM-05 mantiene una identidad **global de seguimiento** y una trayectoria temporal/espacial coherente en ENTITY, incluso al perder cobertura temporalmente, **solo cuando lo sostengan conjuntamente la evidencia visual y el modelo del mundo**. Debe rechazar coincidencias visuales físicamente imposibles y mantener hipótesis inciertas sin inventar identidad civil.
+
+### 10.1 Camera Gateway — descubrimiento, enrolamiento y operación
+- Crear módulo autónomo de conexión de fuentes, agnóstico de marca y sin SDK específico en Core. Reutilizar Edge Fase 03, contratos Fase 02 y adaptadores Fase 06.
+- Entradas: descubrimiento LAN ONVIF cuando esté disponible; RTSP directo; NVR/DVR/VMS mediante streams, SDK o API; APIs de fabricantes mediante plugins; USB/UVC; archivos/streams de prueba; móvil/WebRTC opcional. ONVIF no garantiza acceso a todos los NVR/cámaras; requerir credenciales y permisos. Fuentes analógicas necesitan digitalizador/DVR compatible.
+- Wizard: descubrir o añadir manualmente → credenciales seguras → prueba de stream y metadatos → enrolar Camera/Stream → salud, latencia, timestamp, reconexión, backoff, outbox e idempotencia → política de permisos/retención. No prometer universalidad sin compatibilidad probada.
+- Separar gateway de captura/transporte del pipeline de percepción y del Core. Distribución edge/cloud configurable; datos estructurados preferentes cuando el video crudo no sea necesario. Soportar desconexión y reemplazo de cámara sin borrar observaciones históricas.
+
+### 10.2 Registro cámara–gemelo y sincronización
+- Definir marco métrico compartido, intrínsecos/distorsión, T_world_camera, orientación, FOV, cobertura, calidad/error e incertidumbre, versiones y detección de cámara desplazada.
+- Reutilizar SSOG original y geometría/poses disponibles; AprilTag/ChArUco/PnP, COLMAP/SfM y correspondencias, ajuste manual verificable; RGB-D/ICP opcional, NO requisito. Sin profundidad, un píxel define un rayo: usar plano de suelo/otras restricciones geométricas con incertidumbre.
+- Calibración temporal independiente: timestamps de captura, offset, jitter, latencia, NTP/PTP cuando aplique; preservar orden y procedencia.
+- Wizard de calibración con frustum sobre el gemelo y verificación independiente. No inventar escala ni coordenadas a partir de una imagen renderizada.
+
+### 10.3 Detección, tracking local y ReID/MC-MOT
+- Reutilizar OpenCV/Norfair y evaluar detectores, trackers y ReID existentes; no entrenar ni reimplementar algoritmos genéricos sin justificación.
+- Track local por cámara/sesión separado de identidad global de seguimiento y de identidad civil. Embeddings de apariencia, ropa/silueta, timestamps y calidad; asociación multicámara con cámaras solapadas o disjuntas.
+- Gestionar oclusiones, ropa similar, cruces, trayectorias simultáneas, fragmentación, entradas/salidas y cámaras offline.
+
+### 10.4 Inferencia contextual fundada en el modelo del mundo
+- Evaluar candidatos ReID con tiempo de transición, distancia, velocidad físicamente posible, dirección, puertas/pasillos/escaleras, topología navegable, cobertura y estado de accesos; consultar memoria de tracks, eventos y estados.
+- Rechazar hipótesis físicamente imposibles incluso con apariencia similar; si la geometría/tiempo es incierta, no afirmar asociación. Reservas, declaraciones o respuestas de app NO son evidencia de presencia física.
+- Mantener hipótesis versionadas, alternativas, evidencia y procedencia; distinción observada/inferida/confirmada/desconocida. Permitir corrección/reasociación sin borrar observaciones originales.
+
+### 10.5 Proyección al Core y experiencia 3D
+- Un solo modelo del mundo: Camera, Stream, Observation, TrackLocal, TrackGlobal, AssociationHypothesis, Calibration, Zone, Route, Event y relaciones/estado/memoria; contratos versionados y permisos por sitio/rol.
+- Representar sobre el gemelo digital cámaras, frustums, zonas, observaciones, tramos observados y trayectorias inferidas diferenciados. Visor, CCTV, historial y app consultan el mismo Core.
+- Mantener captura y ReID independientes del renderer; el demo debe seguir funcionando con video grabado/sintético y backend sin PlayCanvas.
+
+### 10.6 Gates de aceptación y evidencia
+1. Gateway descubre/enrola una fuente de red compatible y una fuente manual/archivo; valida reconexión, cambio de fuente, salud, timestamps, credenciales y fallos sin modificar Core.
+2. Dos o más cámaras registradas sobre un mismo gemelo con frustums y errores medidos; una cámara movida pierde calibración válida hasta relocalizarse.
+3. Caso principal CAM-01 → CAM-02 → CAM-05 con mismo TrackGlobal y trayectoria temporal/espacial, evidencia rastreable y visualización sincronizada.
+4. Prueba adversa: dos personas visualmente parecidas y transición físicamente imposible; rechazar fusión errónea. Pruebas de oclusión, desconexión, reloj desfasado y observaciones tardías.
+5. Recuperación tras reinicio conserva eventos, observaciones, asociaciones y versiones; permisos impiden exposición de streams/embeddings a usuarios no autorizados.
+6. Validación reproducible con fuentes sintéticas/grabadas y, por separado, cámara IP real cuando exista acceso autorizado. Orbbec es hardware de laboratorio opcional, nunca requisito de producto ni instalación del cliente.
+7. Evidencias: logs, capturas del SSOG original, métricas de asociación (ID switches, falsas asociaciones, continuidad, latencia), tests E2E, matriz de protocolos probados y limitaciones. No afirmar universalidad ni exactitud sin medir.
+
+**Fuera de Fase 10:** OpenClaw, orquestación multiagente, campos latentes/geodésicos avanzados, efecto mariposa, 4DGS live, biometría como requisito, recrear el gemelo digital o agregar funciones comerciales no relacionadas. IA situada existente puede consultar evidencia del Core sin introducir nuevo framework de agentes.
+
+**Referencias:** docs/POST-PHASE-09-SPATIAL-INFERENCE-REGISTRATION.md; docs/phases/PHASE-03.md; docs/phases/PHASE-06.md; docs/phases/PHASE-09.md; docs/PHASE-09-PROGRESS.md. Esta sección es planificación, NO acredita implementación ni pruebas.
