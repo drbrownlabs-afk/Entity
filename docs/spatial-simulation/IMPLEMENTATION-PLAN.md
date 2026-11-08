@@ -107,11 +107,25 @@ Materiales PBR realistas: terrazzo, vidrio, aluminio/metal negro, madera, tapice
 
 **Gate 05 (solo después de aprobación humana de la fase 04):** ejecución real en navegador, recorrido completo de la planta en C, incluyendo lounge, cabinas, baños y lockers, puertas con colisiones, luces con cambios visibles, TVs y selección con IDs correctos; capturas y logs.
 
+## Fase 06 — Personajes humanos Mixamo, animaciones NPC y seguimiento multicámara
+
+**Meta:** sustituir los dummies/maniquíes genéricos por **12 personajes humanos de Adobe Mixamo** seleccionados de las capturas del operador: **Megan, Kate, Louise, Suzie, Elizabeth, Sophie, Josh, Brian, David, Adam, James y Roth**. Mínimo aceptable: diez, objetivo doce. Ropa cotidiana y aspecto de usuarios de coworking. Excluir monstruos, zombis, criaturas fantásticas, militares y personajes caricaturescos. Verificar disponibilidad real de cada personaje; no sustituir modelos sin consultar.
+
+**Fuente y licencias:** https://www.mixamo.com/ . Buscar allí mismo los personajes y las animaciones. Documentar nombre, procedencia, rig, formato y condiciones de uso. No subir archivos originales de Mixamo a repositorios públicos sin verificar autorización; respetar restricciones de uso para entrenamiento ML. Si faltan credenciales o descargas, entregar listado exacto de recursos necesarios, sin afirmar que se obtuvieron.
+
+**Animaciones para NPCs:** seleccionar clips Mixamo de idle/de pie, caminar (**In Place** cuando controle desplazamiento el navegador), girar, sentarse, permanecer sentado, levantarse, hablar/gesticular y caminar hacia atrás cuando esté disponible. Importar/retargetear en Blender, comprobar compatibilidad por rig, definir nombres y transiciones de estados y preparar GLB animados para PlayCanvas. NPCs deben caminar por rutas, detenerse, girar, sentarse y levantarse con colisiones y sin atravesar puertas ni mobiliario.
+
+**Identidad persistente:** cada personaje tiene ID único y posición/estado persistentes. Separar ground truth de simulación de observaciones de cámaras virtuales; no exponer IDs internos al sistema de percepción. Incluir personajes de apariencia parecida, cruces y oclusiones para probar reidentificación multicámara, sin usar colores artificiales únicos como atajo. No confundir animación con implementación efectiva de seguimiento.
+
+**Control:** personajes seleccionables; clic → ficha → asumir control → mover → liberar → elegir otro, manteniendo identidad y posición. Controlador desacoplado del origen de movimientos; no duplicar base de datos ni Core.
+
+**Gate 06:** al menos diez personajes humanos funcionales (objetivo doce), animaciones NPC verificadas, transiciones y navegación, colisiones, IDs únicos y prueba de cambio de control entre al menos tres. Documentar pruebas y limitaciones. **Esta fase no está autorizada todavía: requiere aprobación posterior del operador.**
+
 ## Fase 07 — Integración y aceptación
 
 **Meta:** un solo escenario Blender + PlayCanvas completo, ejecutable y reproducible. Inventario y manifest de dispositivos, fichas y correspondencias estables; conexión de lectura a ENTITY por adaptador existente cuando el contrato auditado lo permita, sin cambiar código original. Mantener simulación local operable aunque Core no esté disponible y distinguir claramente estados simulados de estados confirmados por Core.
 
-**Gate 07:** desde instalación limpia, escena navegable, salas, cafetería, ala social, cabinas, baños y lockers terminados, cuatro TVs, control individual de cada luz y circuito, puertas, tres personajes controlables, fichas, materiales premium y ninguna modificación a backend/frontend/fuentes. Documentar comandos, pruebas, capturas, commits, limitaciones y pendientes.
+**Gate 07:** desde instalación limpia, escena navegable, salas, cafetería, ala social, cabinas, baños y lockers terminados, cuatro TVs, control individual de cada luz y circuito, puertas, al menos diez personajes humanos Mixamo (objetivo doce) con animaciones NPC y control, fichas, materiales premium y ninguna modificación a backend/frontend/fuentes. Documentar comandos, pruebas, capturas, commits, limitaciones y pendientes.
 
 ## Política de autonomía y punto de revisión
 
