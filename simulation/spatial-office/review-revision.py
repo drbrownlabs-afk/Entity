@@ -16,6 +16,7 @@ lines=[f'# {title}','', '**Maestro:** [office-phase04-revision.blend](../../simu
  f'**Gate:** {gate["checks"]} comprobaciones / 21 recorridos. **71 luces en 17 circuitos**, luz de trabajo a 3200 K y acentos a 2700 K; 135 piezas de vidrio con reflexión/transmisión. Arquitectura y posiciones heredadas conservadas. [Plano con baño/cabinas](evidence/phase04-revision/layout-with-ids.svg) · [Informe](PHASE-04-REVISION-REPORT.md).', '',
  'Las imágenes siguientes son renders reales de este maestro, con filtrado OIDN y pases de albedo/normales. Las referencias del operador son objetivos visuales; nunca sustituyen capturas. Aceptación humana pendiente.']
 if draft:lines += ['', '**Borradores de 900 × 600 / hasta 24 muestras. Las capturas de revisión de mayor resolución están pendientes.**']
+elif len(set(raw)&set(filtered))<23:lines += ['', '**Galería en actualización: se añaden las capturas conforme terminan. La entrega visual completa sigue en proceso.**']
 for name in names:
     if name not in raw or name not in filtered:continue
     r=raw[name];f=filtered[name]

@@ -1,4 +1,4 @@
-# Pruebas de acabado — candidato en proceso
+# Revisión arquitectónica — Fase04-R1
 
 **Maestro:** [office-phase04-revision.blend](../../simulation/spatial-office/output/office-phase04-revision.blend).
 
@@ -8,25 +8,13 @@ Cuatro mesas y catorce sillas de comedor, más cuatro taburetes; sillas blancas 
 
 Las imágenes siguientes son renders reales de este maestro, con filtrado OIDN y pases de albedo/normales. Las referencias del operador son objetivos visuales; nunca sustituyen capturas. Aceptación humana pendiente.
 
-**Borradores de 900 × 600 / hasta 24 muestras. Las capturas de revisión de mayor resolución están pendientes.**
+**Galería en actualización: se añaden las capturas conforme terminan. La entrega visual completa sigue en proceso.**
 
 ## Jardín vertical: cobertura completa
 
-![Jardín vertical: cobertura completa](evidence/phase04-revision/draft/denoised/vertical-garden.png)
+![Jardín vertical: cobertura completa](evidence/phase04-revision/renders/denoised/vertical-garden.png)
 
-[Original Cycles sin filtrar](evidence/phase04-revision/draft/vertical-garden.png) · hora 12:00 · [900, 600] · hasta 24 muestras.
-
-## Jardín vertical a escala cercana
-
-![Jardín vertical a escala cercana](evidence/phase04-revision/draft/denoised/garden-detail.png)
-
-[Original Cycles sin filtrar](evidence/phase04-revision/draft/garden-detail.png) · hora 12:00 · [900, 600] · hasta 24 muestras.
-
-## Puestos: vidrio, equipos y jardineras
-
-![Puestos: vidrio, equipos y jardineras](evidence/phase04-revision/draft/denoised/office.png)
-
-[Original Cycles sin filtrar](evidence/phase04-revision/draft/office.png) · hora 12:00 · [900, 600] · hasta 24 muestras.
+[Original Cycles sin filtrar](evidence/phase04-revision/renders/vertical-garden.png) · hora 12:00 · [1440, 960] · hasta 96 muestras.
 
 ## Objetivos visuales proporcionados por el operador
 

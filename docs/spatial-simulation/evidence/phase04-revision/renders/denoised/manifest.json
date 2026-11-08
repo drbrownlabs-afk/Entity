@@ -1,0 +1,29 @@
+{
+  "executable_sha256": "84eb33133f22284a9448e8d7e91d84cda30be30a2840bec61ca72a33bc567341",
+  "images": [
+    {
+      "name": "vertical-garden",
+      "raw": "vertical-garden.png",
+      "raw_sha256": "09f745c09c7e783d16d601bd6a8bebf3162d846d665780c5165b25e5e2fbd9a3",
+      "filtered": "denoised/vertical-garden.png",
+      "filtered_sha256": "24a2ce02f0c86dd6f42240077cfac96a48989db58d7e29ea8dfabfb69b7dc468",
+      "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "guides": {
+        "albedo": {
+          "path": ".runtime/revision-guides/review/vertical-garden-Albedo.pfm",
+          "sha256": "f8207a222f93bf142b684b00d9db4d42fae42ecc123a59ca944e6295d45ed0eb",
+          "source_exr_sha256": "7ff5ecc9457e98d54117561f257be39190758027652d93e4ad3cb11d755463eb"
+        },
+        "normal": {
+          "path": ".runtime/revision-guides/review/vertical-garden-Normal.pfm",
+          "sha256": "caec3c0fd33f647c6bfb1f65df89d13a753de49fb2ba45270c50d4ece8f59b92",
+          "source_exr_sha256": "89ad712b861381de4a819ee5fa33189901a42febc8d844917cf37ef728aab6d2"
+        }
+      },
+      "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
+      "raw_mean_srgb": 0.2886745035648346
+    }
+  ],
+  "no_reference_photo_edits": true,
+  "no_generated_geometry_or_relit_pixels": true
+}

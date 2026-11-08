@@ -1,0 +1,12 @@
+{
+  "branch": "codex/spatial-simulation",
+  "published_implementation_commit": "8e434f756f06725b0dcf9c8cde7e266c7528bf3c",
+  "remote_verified_equal": true,
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "checks": 678,
+  "routes": 21,
+  "final_review_renders": "in progress",
+  "human_approval": false,
+  "PlayCanvas_started": false,
+  "merged_to_main": false
+}
