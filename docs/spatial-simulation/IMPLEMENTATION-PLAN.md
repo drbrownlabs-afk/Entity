@@ -42,8 +42,8 @@ IDs existentes del handoff: A, B, C, D, MEETING-AREA-01, RECEPTION, WAITING-AREA
 - **Salas A/B/C/D:** cada agrupación de mesas es un recinto propio, delimitado por mamparas de vidrio transparentes de piso a techo, perfilería negra delgada, puerta hacia pasillo. Mantener mesas originales y sus puestos. Las mamparas rodean la agrupación, no atraviesan mesas, sillas ni columnas.
 - **Sala E:** nueva agrupación de mesas y mamparas de la misma familia; situar donde la geometría reconstruida permita circulación. Registrar nueva ubicación y criterio.
 - **Reuniones:** la **mesa negra junto al muro vegetal** es la sala de reuniones, no espera; conservarla y cerrar el recinto con acceso funcional.
-- **Recepción:** sector de dos sillas negras identificado como RECEPTION; añadir mostrador y mobiliario apropiado.
-- **Espera:** WAITING-AREA independiente, ampliar con sofás, butacas y mesas auxiliares.
+- **Recepción:** **corrección visual aprobada por el usuario:** el sector con **sillas blancas** es RECEPCIÓN; mantenerlo como recepción y añadir mostrador y mobiliario apropiado. El mapeo semántico anterior de sillas negras a RECEPTION es incorrecto; comprobar el emplazamiento sobre las imágenes actuales y registrar el cambio sin modificar los archivos de handoff.
+- **Espera:** **corrección visual aprobada por el usuario:** el sector de **sillas negras** es la ZONA DE ESPERA; sustituir esas sillas negras por sofás cómodos, butacas y mesas auxiliares. Las sillas blancas corresponden a recepción. Mantener IDs originales como referencias históricas y documentar la nueva correspondencia espacial.
 - **Cafetería y recreación:** retirar los pods/booths del **nuevo diseño**, no de los datos fuente. Sustituirlos por mesas de cafetería, sillas, barra equipada, máquina de café, almacenamiento, vegetación y espacio social. Mantener ambiente visual premium.
 - **Pasillos y accesos:** circulación continua, puertas de seguridad y entradas a cada recinto.
 - **Audiovisual:** cuatro televisores independientes, colocados con buena visibilidad en zonas comunes, recepción, cafetería y circulación; ID individual, pantalla con material apto para contenido dinámico.
@@ -74,17 +74,45 @@ Materiales PBR realistas: terrazzo, vidrio, aluminio/metal negro, madera, tapice
 
 **Gate 04:** ejecución real en navegador, recorrido completo, puertas con colisiones, luces con cambios visibles, TVs y selección con IDs correctos; capturas y logs.
 
-## Fase 05 — Personajes riggeados y posesión
+## Fase 05 — Ampliación arquitectónica: tercera ala y planta en C
+
+**Meta:** completar una **planta en C**, no una L: cuerpo longitudinal principal + ala de cafetería ya iniciada + **nueva ala social y de servicios**. No rehacer ni desplazar indiscriminadamente el trabajo aprobado en las fases anteriores. Continuar desde el archivo maestro y las transformaciones actuales, adaptando el diseño a su geometría real. El esquema previo en L deja de ser la configuración final.
+
+**Programa espacial de la nueva ala:**
+- **Sala social / lounge:** zona diferenciada de la cafetería; sofás modulares y sillones, mesas bajas, vegetación, pantalla, iluminación cálida por luminaria y circuito propio. No convertirla en segunda cafetería. Zona operativa con ID propio, capacidad/ocupación y recorridos accesibles.
+- **Cabinas acústicas para llamadas:** dos unidades compactas, independientes y accesibles, con puerta de vidrio, aislamiento visual/acústico representado, escritorio o repisa, ventilación e iluminación propias. Puertas y luminarias con IDs y estados individuales. La simulación acústica avanzada no es requisito.
+- **Bloque de baños:** volumen arquitectónico y puertas funcionales, interiores esquemáticos opcionales; sin cámaras virtuales dentro de baños ni visualización de personas en su interior. Puede modelarse ocupación solo mediante eventos de puerta/sensores simulados y siempre como estimación si no hay sensor directo. No representar vigilancia visual de áreas privadas.
+- **Lockers / casilleros:** indispensables y **adyacentes al bloque de baños** en la nueva ala, con armarios modulares individualizables, puertas y capacidad de asignar IDs/estados de uso cuando se habiliten. No confundir lockers con el área de espera.
+- **Impresión / servicios:** una pequeña estación de impresora y almacenamiento junto a los lockers, si cabe sin comprometer circulación; prioridad menor que baños y lockers.
+- **Circulación y accesos:** conexión física clara desde el cuerpo principal a ambas alas, corredores sin intersecciones con muebles, entradas funcionales, rutas de evacuación plausibles y geometría coherente en planta en C. Añadir puertas individuales y sus colisionadores.
+- **Corrección pendiente del cuerpo principal:** en el sector de **sillas negras** colocar **sofás de espera**; el sector de **sillas blancas** es **recepción**. La mesa negra grande junto al muro vegetal sigue siendo la **sala de reuniones**.
+- **Dispositivos y semántica:** extender `device-manifest.json` e inventario de simulación con zonas nuevas, puertas, lockers si son operables, iluminación por luminaria y circuito, pantalla del lounge. No crear entidades directamente en Core; IDs estables bajo namespace de simulación.
+- **Calidad:** mantener el estilo de las imágenes recientes del proyecto (madera cálida, vidrio, perfilería negra, mobiliario contemporáneo); suficiente realismo operacional, sin perseguir fotorrealismo. Evitar duplicar innecesariamente assets o afectar rendimiento web.
+
+**Referencias visuales de consulta, una por tipología (no implican reutilización automática de activos ni licencias):**
+1. **Lounge / sala social:** https://www.coalesse.com/inspiration/gallery/ — sección *Social Connection Lounge*: sofás, butacas y mesas bajas.
+2. **Cabina de llamadas:** https://en.ofinto.ch/focus-call/ — pod acústico con vidrio, repisa, ventilación e iluminación.
+3. **Lockers y corredor de servicios:** https://www.sophiaspeerdesigns.net/coworking-space — secciones *Locker Room* y *Corridor*.
+4. **Baños:** modelar acceso, puertas, tabiques y volumen de servicios de forma sobria; no hace falta recrear detalles íntimos.
+5. **Referencia principal del propio proyecto:** las cinco capturas recientes suministradas por el usuario; mantener continuidad de materiales y escala.
+
+**Gate 05:** plano general actualizado demuestra **C completa** con nueva ala; imágenes interior/exterior de lounge, dos cabinas, baños y lockers juntos; acceso desde corredor, puertas con colisión, luces conmutables individualmente, inventario/IDs y escena Blender/PlayCanvas actualizadas. Inspección visual y prueba funcional del recorrido. **No iniciar personajes antes de terminar y validar internamente esta fase.**
+
+## Fase 06 — Personajes riggeados y posesión
 
 **Meta:** personajes dummy/maniquí con variaciones de complexión, altura y color; rig compatible, idle, caminar, girar, sentarse si hay animación adecuada. Incluir José, Carlos, Visitante y variantes. Todos seleccionables y controlables; clic -> ficha -> asumir control -> mover -> liberar -> elegir otro, conservando identidad y posición. Mantener controlador desacoplado para sustitución futura por otro origen de movimientos. Sin segunda base de datos.
 
-**Gate 05:** demostración real de cambio de control entre al menos tres personajes, colisiones, rig y animaciones, sin IDs duplicados.
+**Gate 06:** demostración real de cambio de control entre al menos tres personajes, colisiones, rig y animaciones, sin IDs duplicados.
 
-## Fase 06 — Integración y aceptación
+## Fase 07 — Integración y aceptación
 
 **Meta:** un solo escenario Blender + PlayCanvas completo, ejecutable y reproducible. Inventario y manifest de dispositivos, fichas y correspondencias estables; conexión de lectura a ENTITY por adaptador existente cuando el contrato auditado lo permita, sin cambiar código original. Mantener simulación local operable aunque Core no esté disponible y distinguir claramente estados simulados de estados confirmados por Core.
 
-**Gate 06:** desde instalación limpia, escena navegable, salas y cafetería terminadas, cuatro TVs, control individual de cada luz y circuito, puertas, tres personajes controlables, fichas, materiales premium y ninguna modificación a backend/frontend/fuentes. Documentar comandos, pruebas, capturas, commits, limitaciones y pendientes.
+**Gate 07:** desde instalación limpia, escena navegable, salas, cafetería, ala social, cabinas, baños y lockers terminados, cuatro TVs, control individual de cada luz y circuito, puertas, tres personajes controlables, fichas, materiales premium y ninguna modificación a backend/frontend/fuentes. Documentar comandos, pruebas, capturas, commits, limitaciones y pendientes.
+
+## Política de autonomía y punto de revisión
+
+El agente puede avanzar de manera autónoma desde la fase actual (fase 02) hasta **terminar la fase 05**, incluidas las fases 03 y 04, sin solicitar autorización humana entre fases. Ejecutar y registrar todos los gates internamente, reparar fallos y conservar evidencia. **Detenerse antes de comenzar la fase 06 de personajes**, presentando archivo Blender, vista PlayCanvas, plano en C, capturas, puertas, luces y problemas pendientes para una única revisión del operador. No confundir esta autorización con permiso para modificar backend/frontend/Gaussian o fusionar ramas. Si existe un bloqueo real que requiere decisión externa, solicitarla con detalle concreto.
 
 ## Entregables
 
