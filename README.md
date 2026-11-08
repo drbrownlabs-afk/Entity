@@ -39,3 +39,6 @@ Desarrollo: `bash scripts/setup-experience.sh` y `bash scripts/demo-experience.s
 ## Entrega integral — Fase 08
 
 [Guía del operador](docs/DELIVERY-RUNBOOK.md) · [Pruebas y publicación](docs/phases/PHASE-08.md) · [Pendientes priorizados](docs/DELIVERY-BACKLOG.md). Preparación portable: `bash scripts/setup-demo.sh`; demostración completa sin hardware: `bash scripts/demo-entity.sh`. CI prueba la fuente empaquetada desde otra carpeta y conserva entity-delivery con fuente, web estática y manifest/checksums. Aceptación humana pendiente. La autorización de Fase 08 sustituye el límite histórico de no iniciarla que aparece en informes anteriores.
+
+
+Fase09, Synthetic Office original: [arranque y demostración reproducibles](docs/PHASE-09-RUNBOOK.md). Operaciones requieren el mismo Core autenticado; el visor estático no sustituye el backend.

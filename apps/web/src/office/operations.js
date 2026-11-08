@@ -10,7 +10,7 @@ host.id='office-operations';
 host.innerHTML='<h2>Operaciones del coworking · ENTITY Core</h2><form id="office-login"><label>Servidor<input name="api" type="url" value="http://127.0.0.1:8010"></label><label>Usuario<input name="username" autocomplete="username"></label><label>Contraseña<input name="password" type="password" autocomplete="current-password"></label><button>Conectar</button></form><p id="office-core-status" role="status">Sin conexión al Core: no se inventarán reservas, permisos ni resultados.</p><div id="office-workspace" hidden><nav id="office-modes"></nav><label>Ejecución<select id="office-run"></select></label><button id="office-refresh">Actualizar</button><button id="office-disconnect">Cerrar sesión</button><label>Reconstrucción histórica<input id="office-time" type="datetime-local"></label><button id="office-reconstruct">Consultar ese instante</button><button id="office-present">Presente</button><p id="office-world-status"></p><div class="office-columns"><div id="office-entities"></div><div><h3 id="office-selection">Entidad</h3><div id="office-facts"></div><div id="office-actions"></div></div></div><section id="office-query"></section></div>';
 document.querySelector('main').append(host);
 host.querySelector('[name=api]').value=configuredApi();
-let selectedEventDetails=null;
+let selectedEventDetails=null,memoryKey='',memoryFilters={},memoryEpoch=0;
 let currentActor=null,sessionEpoch=0;
 let token,site,run,world,capabilities=[],selected='site',mode='Operaciones',at=null,branch='main',streamController=null,receptionPanel=null;
 const status=message=>{host.querySelector('#office-core-status').textContent=message;};
@@ -123,16 +123,25 @@ async function renderTimeline(){
  let element=host.querySelector('#office-timeline');
  if(!element){element=document.createElement('section');element.id='office-timeline';host.querySelector('#office-workspace').append(element);}
  element.hidden=mode!=='Memoria';if(element.hidden)return;
+ const key=JSON.stringify([site,run,branch]);if(memoryKey!==key){memoryKey=key;memoryFilters={};selectedEventDetails=null;}
+ const epoch=++memoryEpoch,context=JSON.stringify([site,run,branch,at]);
+ const options=kind=>'<option value="">Todos</option>'+Object.values(world.entities).filter(x=>!kind||['Zone','WaitingArea','Office','EventSpace'].includes(x.kind)).map(x=>'<option value="'+esc(x.id)+'">'+esc(x.name||x.id)+'</option>').join('');
+ if(element.dataset.context!==key){
+  element.dataset.context=key;element.innerHTML='<h3>Memoria persistente</h3><form id="office-memory-filters"><label>Entidad<select name="entity_id">'+options()+'</select></label><label>Zona<select name="zone_id">'+options(true)+'</select></label><label>Tipo de evento<input name="event_type" placeholder="observation.received"></label><label>Desde (hora de sede)<input name="start" type="datetime-local"></label><label>Hasta (hora de sede)<input name="end" type="datetime-local"></label><button>Filtrar historial</button><button type="button" id="office-memory-reset">Quitar filtros</button></form><p id="office-memory-summary"></p><label>Recorrer eventos<input id="office-scrub" type="range" min="0" value="0"></label><p>Estado y relaciones reconstruidos por Core. El fondo es el escaneo original; no existe vídeo histórico grabado.</p><div id="office-event-list"></div><details><summary>Evidencia del evento seleccionado</summary><pre id="office-event-detail"></pre></details><button id="office-memory-next">Siguientes1000 eventos</button>';
+  const form=element.querySelector('form');
+  form.onsubmit=event=>{event.preventDefault();try{memoryFilters=Object.fromEntries([...new FormData(form)].filter(([,v])=>v));for(const field of ['start','end'])if(memoryFilters[field])memoryFilters[field]=siteDateTimeToUtc(memoryFilters[field],world.timezone);renderTimeline();}catch(error){status(error.message);}};
+  element.querySelector('#office-memory-reset').onclick=()=>{form.reset();memoryFilters={};renderTimeline();};
+ }
  try{
-  const context=JSON.stringify([site,run,branch,at]);const records=await request(prefix()+'/events?limit=1000&branch='+encodeURIComponent(branch));if(mode!=='Memoria'||context!==JSON.stringify([site,run,branch,at]))return;
-  element.innerHTML='<h3>Memoria persistente · eventos inmutables</h3><label>Recorrer eventos<input id="office-scrub" type="range" min="0" max="'+Math.max(0,records.length-1)+'" value="'+Math.max(0,records.length-1)+'"></label><p>Reconstrucción del Core. No se ofrece vídeo grabado; la imagen de fondo es el escaneo original.</p><div id="office-event-list"></div><div id="office-event-detail"></div>';
-  if(selectedEventDetails)element.querySelector('#office-event-detail').textContent=JSON.stringify(selectedEventDetails,null,2);
-  const list=element.querySelector('#office-event-list');
-  for(const event of records){
-   const button=document.createElement('button');button.textContent=event.at+' · '+event.type;button.dataset.event=event.id;
-   button.onclick=async()=>{try{const detail=await request(prefix()+'/events/'+event.id);selectedEventDetails=detail;at=event.at;await refresh();}catch(e){status(e.message);}};
-   list.append(button);
-  }
-  element.querySelector('#office-scrub').onchange=async event=>{const entry=records[Number(event.target.value)];if(entry){at=entry.at;await refresh();}};
- }catch(error){status(error.message);}
+  const params=new URLSearchParams({limit:'1000',branch,...memoryFilters});const records=await request(prefix()+'/events?'+params);
+  if(epoch!==memoryEpoch||mode!=='Memoria'||context!==JSON.stringify([site,run,branch,at]))return;
+  const summary=element.querySelector('#office-memory-summary');summary.textContent=records.length+' eventos recuperados · '+world.timezone+' · filtros por relaciones históricas, sin trasladar al pasado la ubicación actual.';
+  const next=element.querySelector('#office-memory-next');next.hidden=records.length<1000;next.onclick=()=>{memoryFilters.after=String(records.at(-1).seq);renderTimeline();};
+  element.querySelector('#office-event-detail').textContent=selectedEventDetails?JSON.stringify(selectedEventDetails,null,2):'Selecciona un evento para consultar su procedencia.';
+  const select=async entry=>{try{const detail=await request(prefix()+'/events/'+entry.id);if(key!==JSON.stringify([site,run,branch]))return;selectedEventDetails=detail;at=entry.at;await refresh();}catch(e){status(e.message);}};
+  const list=element.querySelector('#office-event-list');list.replaceChildren();
+  for(const event of records){const button=document.createElement('button');button.textContent=siteWallTime(event.at,world.timezone)+' · '+event.type;button.dataset.event=event.id;button.onclick=()=>select(event);list.append(button);}
+  const scrub=element.querySelector('#office-scrub');scrub.max=String(Math.max(0,records.length-1));scrub.disabled=!records.length;scrub.value=String(Math.max(0,records.findLastIndex(event=>event.at<=world.clock)));
+  scrub.onchange=event=>{const entry=records[Number(event.target.value)];if(entry)select(entry);};
+ }catch(error){if(epoch===memoryEpoch)status(error.message);}
 }

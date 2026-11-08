@@ -5,3 +5,5 @@ test('Ecuador date does not roll forward with UTC midnight',()=>{assert.equal(si
 test('a second site uses its declared timezone',()=>{assert.equal(siteDateTimeToUtc('2026-11-07T08:00','Europe/Madrid'),'2026-11-07T07:00:00.000Z');});
 test('a nonexistent spring civil time is not silently moved',()=>{assert.throws(()=>siteDateTimeToUtc('2026-03-29T02:30','Europe/Madrid'),/no existe/);});
 test('an ambiguous fall civil time requires an unambiguous instant',()=>{assert.throws(()=>siteDateTimeToUtc('2026-10-25T02:30','Europe/Madrid'),/ambigua/);});
+
+test('an invalid calendar date is rejected rather than normalized',()=>{assert.throws(()=>siteDateTimeToUtc('2026-02-30T08:00','America/Guayaquil'),/inválidas/);});

@@ -60,6 +60,8 @@ test_personal_reply_changes_the_same_reception_world (test_office_delivery.Deliv
 test_ready_visitors_still_consume_waiting_capacity_until_escorted (test_office_delivery.DeliveryTests.test_ready_visitors_still_consume_waiting_capacity_until_escorted) ... ok
 test_remote_reply_does_not_establish_physical_presence (test_office_delivery.DeliveryTests.test_remote_reply_does_not_establish_physical_presence) ... ok
 test_reservations_change_availability_without_inventing_occupancy (test_office_delivery.DeliveryTests.test_reservations_change_availability_without_inventing_occupancy) ... ok
+test_event_zone_filter_preserves_past_location_and_pagination (test_office_memory.MemoryTests.test_event_zone_filter_preserves_past_location_and_pagination) ... ok
+test_filters_never_grant_other_site_or_private_resource_access (test_office_memory.MemoryTests.test_filters_never_grant_other_site_or_private_resource_access) ... ok
 test_other_camera_empty_or_disconnected_does_not_erase_observed_person (test_office_occupancy.CameraOccupancyTests.test_other_camera_empty_or_disconnected_does_not_erase_observed_person) ... ok
 test_all_clients_share_play_pause_and_restart_does_not_apply_offline_time (test_office_playback.PlaybackTests.test_all_clients_share_play_pause_and_restart_does_not_apply_offline_time) ... ok
 test_provider_failure_rolls_back_tick_and_pauses_instead_of_repeating_actions (test_office_playback.PlaybackTests.test_provider_failure_rolls_back_tick_and_pauses_instead_of_repeating_actions) ... ok
@@ -83,6 +85,6 @@ test_storage_isolation_and_reply (test_personal_app.PersonalStorageTests.test_st
 test_persistence_after_process_restart (test_restart.RestartTests.test_persistence_after_process_restart) ... ok
 
 ----------------------------------------------------------------------
-Ran 81 tests in 59.139s
+Ran 83 tests in 60.502s
 
 OK

@@ -10,6 +10,7 @@ on:
       - "scripts/**"
       - "compose.yaml"
       - "compose.office.yaml"
+      - "compose.build-ca.yaml"
       - "packages/contracts/**"
       - ".github/workflows/ci.yml"
   pull_request:
@@ -22,6 +23,7 @@ on:
       - "scripts/**"
       - "compose.yaml"
       - "compose.office.yaml"
+      - "compose.build-ca.yaml"
       - "packages/contracts/**"
       - ".github/workflows/ci.yml"
   workflow_dispatch:
@@ -151,6 +153,7 @@ jobs:
             docs/evidence/phase09/reception-http-*.json
             docs/evidence/phase09/kiosk-*.png
             docs/evidence/phase09/personal-*.png
+            docs/evidence/phase09/memory-*.png
 
   delivery:
     needs: [api-tests, edge-tests, experience-tests]
@@ -188,6 +191,9 @@ jobs:
           cd "${RUNNER_TEMP}/entity-unpacked/Entity"
           bash scripts/setup-demo.sh
           bash scripts/demo-entity.sh
+          .venv/bin/python scripts/phase09/demo-reception-http.py
+          cp docs/evidence/phase09/reception-http-browser.json "$GITHUB_WORKSPACE/.runtime/delivery/clean-office-browser.json"
+          cp docs/evidence/phase09/reception-http-process.json "$GITHUB_WORKSPACE/.runtime/delivery/clean-office-process.json"
       - name: Retain transportable packages and checksums
         uses: actions/upload-artifact@v6
         with:

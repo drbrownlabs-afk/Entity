@@ -4,8 +4,8 @@
   "legacy_core_health": "passed on8000, service preserved",
   "container_restart_state_equal": true,
   "event_log_equal": true,
-  "entity_count": 97,
-  "events": 12,
-  "world_sha256": "6b52e4f103e0b587ce783debc55b7700ddb17d0c6d04784be2d0459977c450be",
+  "entity_count": 98,
+  "events": 14,
+  "world_sha256": "c0f93b6f82e4257f6e79fcca9fcd5b92b9e7d7e654f4fb2d8070954ef0136f98",
   "credentials_logged": false
 }

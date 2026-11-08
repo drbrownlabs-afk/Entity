@@ -53,11 +53,15 @@ try{
   await page.screenshot({path:'docs/evidence/phase09/kiosk-'+width+'.png',fullPage:true});
   await host.screenshot({path:'docs/evidence/phase09/personal-'+width+'.png',fullPage:true});
   if(width===390){
+   const operator=await context.newPage();await operator.goto(web+'/office.html?budget=.25');
+   await operator.locator('#office-login [name=api]').fill(api);await operator.locator('#office-login [name=username]').fill('jose');await operator.locator('#office-login [name=password]').fill(credentials.jose.password);
+   await operator.locator('#office-login button').click();await operator.waitForFunction(()=>window.officeCoreDiagnostics?.().world?.run_id==='day-01');
    const login=await fetch(api+'/v1/office/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:'admin',password:credentials.admin.password})}).then(r=>r.json());
    const call=async(path,body)=>{const r=await fetch(api+path,{method:body?'POST':'GET',headers:{'Content-Type':'application/json',Authorization:'Bearer '+login.token},body:body?JSON.stringify(body):undefined});const value=await r.json();if(!r.ok)throw Error('Replay check HTTP '+r.status);return value;};
    const replay='browser-shared-replay',root='/v1/sites/synthetic-office/runs/'+replay;
    await call('/v1/sites/synthetic-office/runs/day-01/simulation/replay',{id:replay,clock:'2026-11-07T08:00:00-05:00',seed:1});
    await host.waitForFunction(id=>document.querySelector('#personal-scene').contentWindow.officeProjectionDiagnostics()?.run_id===id,replay,{timeout:15000});
+   await operator.waitForFunction(id=>window.officeCoreDiagnostics?.().world?.run_id===id,replay,{timeout:15000});
    await page.waitForFunction(()=>document.querySelector('#terminal-status').textContent.includes('nueva jornada activa'),null,{timeout:15000});
    await page.locator('#reception-start').waitFor({state:'visible'});
    if(await host.getByRole('button',{name:'Estoy listo',exact:true}).count())throw Error('Old-run message survived active replay');
@@ -65,7 +69,14 @@ try{
    await host.waitForFunction(()=>document.querySelector('#personal-scene').contentWindow.officeProjectionDiagnostics()?.clock>'2026-11-07T13:00:00+00:00',null,{timeout:15000});
    await call(root+'/simulation/control',{action:'pause'});const frozen=await call(root+'/world');
    await new Promise(resolve=>setTimeout(resolve,400));if((await call(root+'/world')).clock!==frozen.clock)throw Error('Paused replay clock advanced');
-   report.checks.push({active_run_shared_between_kiosk_and_personal:true,previous_run_messages_hidden:true,server_owned_play_pause:true,replay_history_preserved:true});
+   await operator.locator('#office-modes button').filter({hasText:'Memoria'}).click();
+   await operator.locator('#office-memory-filters [name=entity_id]').selectOption('D1');await operator.locator('#office-memory-filters [name=zone_id]').selectOption('ZONE-D');await operator.locator('#office-memory-filters [name=event_type]').fill('run.created');
+   await operator.locator('#office-memory-filters button').filter({hasText:'Filtrar historial'}).click();
+   await operator.waitForFunction(()=>document.querySelector('#office-memory-summary').textContent.startsWith('1 eventos'));
+   await operator.locator('#office-event-list button').first().click();await operator.waitForFunction(()=>window.officeCoreDiagnostics().world.historical===true);
+   if((await operator.locator('#office-event-detail').innerText()).includes('PERSON-CARLOS'))throw Error('Operator event reconstruction leaked another organization');
+   await operator.screenshot({path:'docs/evidence/phase09/memory-390.png',fullPage:true});
+   report.checks.push({assigned_operator_follows_active_run_via_sse:true,temporal_entity_zone_type_filters:true,filtered_event_reconstructs_history:true,active_run_shared_between_kiosk_and_personal:true,previous_run_messages_hidden:true,server_owned_play_pause:true,replay_history_preserved:true});
   }
   let release,entered;const gate=new Promise(resolve=>{release=resolve;}),held=new Promise(resolve=>{entered=resolve;});
   await host.route(api+'/v1/sites/**/runs/**/world',async route=>{const response=await route.fetch();entered();await gate;await route.fulfill({response}).catch(()=>{});});

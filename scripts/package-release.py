@@ -31,7 +31,7 @@ with zipfile.ZipFile(static, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
         info = zipfile.ZipInfo(file.relative_to(dist).as_posix())
         info.compress_type = zipfile.ZIP_DEFLATED
         archive.writestr(info, file.read_bytes())
-    for name, content in [('BUILD.json', json.dumps({'source_commit': sha, 'mode': 'standalone-simulated'}, indent=2)), ('.nojekyll', '')]:
+    for name, content in [('BUILD.json', json.dumps({'source_commit': sha, 'modes': {'index.html':'standalone-simulated; shared Edge fixture', 'office.html':'original remote SSOG; authenticated Core required for operations', 'personal.html':'authenticated Core required', 'kiosk.html':'authenticated Core required'}}, indent=2)), ('.nojekyll', '')]:
         info = zipfile.ZipInfo(name)
         info.compress_type = zipfile.ZIP_DEFLATED
         archive.writestr(info, content)
@@ -42,6 +42,8 @@ manifest = {'schema_version': '1.0', 'source_commit': sha,
                       for p in [source, static]},
             'limitations': ['No physical hardware or remote LLM verified',
                             'Source requires dependency download; archive is not an offline installer',
-                            'Static zip requires a web host; source Core is local development only']}
+                            'Static zip requires a web host; source Core is local development only',
+                            'Office streams the original remote SSOG/voxels; it is not an offline scene package',
+                            'Office, personal and kiosk operations require the same authenticated Core API; static hosting alone supplies no operational world']}
 (output / 'manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
 print(json.dumps(manifest, indent=2))

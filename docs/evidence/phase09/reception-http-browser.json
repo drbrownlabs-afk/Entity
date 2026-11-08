@@ -20,6 +20,9 @@
       "voice_microphone_executed": false
     },
     {
+      "assigned_operator_follows_active_run_via_sse": true,
+      "temporal_entity_zone_type_filters": true,
+      "filtered_event_reconstructs_history": true,
       "active_run_shared_between_kiosk_and_personal": true,
       "previous_run_messages_hidden": true,
       "server_owned_play_pause": true,

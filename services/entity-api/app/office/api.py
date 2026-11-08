@@ -151,14 +151,16 @@ def bind(site:str,body:Binding,actor=Depends(principal)):
     return body
 
 @router.get('/sites/{site}/runs/{run}/events')
-def events(site:str,run:str,after:int=0,limit:int=QueryParam(default=100,ge=1,le=1000),branch:str='main',actor=Depends(principal)):
+def events(site:str,run:str,after:int=QueryParam(default=0,ge=0),limit:int=QueryParam(default=100,ge=1,le=1000),branch:str='main',entity_id:str|None=None,zone_id:str|None=None,event_type:str|None=None,start:str|None=None,end:str|None=None,actor=Depends(principal)):
     from app.main import database
+    from .memory import events as list_events
     scoped(site,actor,'read')
     with database() as db:
-        allowed=projection(world(db,site,run,branch),actor)['entities']
-        rows=[{**dict(r),'entities':json.loads(r['entities']),'payload':json.loads(r['payload']),'evidence':json.loads(r['evidence'])} for r in db.execute('SELECT * FROM office_events WHERE site=? AND run=? AND branch=? AND seq>? ORDER BY seq LIMIT ?',(site,run,branch,after,limit))]
-        if unrestricted(actor):return rows
-        return [{**{k:r[k] for k in ['seq','id','at','type']},'entities':[k for k in r['entities'] if k in allowed]} for r in rows if set(r['entities'])&set(allowed)]
+        state=world(db,site,run,branch)
+        for key in [entity_id,zone_id]:
+            if key:require_visible(state,actor,key)
+        allowed=projection(state,actor)['entities']
+        return list_events(db,site,run,branch,after,limit,None if unrestricted(actor) else allowed,entity_id,zone_id,event_type,start,end)
 
 @router.get('/sites/{site}/runs/{run}/stream')
 async def stream(site:str,run:str,request:Request,after:int=0,actor=Depends(principal)):
@@ -179,7 +181,7 @@ async def stream(site:str,run:str,request:Request,after:int=0,actor=Depends(prin
             for row in rows:
                 cursor=row['seq']
                 row=dict(row);row['entities']=[k for k in json.loads(row['entities']) if k in allowed]
-                if not unrestricted(current_actor) and not row['entities'] and row['type']!='clock.advance':continue
+                if not unrestricted(current_actor) and not row['entities'] and row['type'] not in {'clock.advance','site.active_run_changed'}:continue
                 yield f'id: {cursor}\nevent: world-change\ndata: {encode(dict(row))}\n\n'
             if not rows:yield ': heartbeat\n\n'
             await asyncio.sleep(.5)

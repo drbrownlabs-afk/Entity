@@ -6,3 +6,4 @@
 
 #office-event-list{display:grid;gap:6px;max-height:240px;overflow:auto}#office-event-detail{white-space:pre-wrap;overflow-wrap:anywhere;max-height:280px;overflow:auto;color:#a4ceca}
 .capability-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.capability-fields label{display:grid;gap:6px}
+#office-memory-filters{display:flex;gap:10px;flex-wrap:wrap;align-items:end}#office-memory-filters label{display:grid;gap:5px;max-width:100%}#office-memory-filters input,#office-memory-filters select{max-width:100%;padding:8px;background:#152630;color:#dce7e7;border:1px solid #45616a}#office-event-list{display:grid;gap:6px;max-height:420px;overflow:auto}#office-event-list button{text-align:left;font-size:12px}#office-scrub{width:100%}
