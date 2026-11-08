@@ -12,7 +12,8 @@ const settings=structuredClone(original.settings);
 settings.startMode='orbit';
 settings.annotations.push(...structuredClone(semanticAnnotations));
 const overviewIndex=settings.annotations.length;settings.annotations.push(...structuredClone(viewBookmarks));
-let clippedOverview=false;
+let clippedOverview=false,overviewAnnotations=true;
+function leaveOverview(){if(clippedOverview&&viewer)viewer.state.showAnnotations=overviewAnnotations;clippedOverview=false;}
 const surveyPose=new URLSearchParams(location.search).get('survey_pose');
 if(surveyPose!==null){
  const index=Number(surveyPose),values=original.settings.animTracks[0].keyframes.values;
@@ -55,7 +56,7 @@ const contentUrl=base?new URL('lod-meta.json',base).href:original.contentUrl;
 const collisionUrl=base?new URL('scene.voxel.json',base).href:original.collisionUrl;
 const output=document.querySelector('#status');
 function inspect(index){
-  if(settings.annotations[index]?.extras?.view_only)return;clippedOverview=false;
+  if(settings.annotations[index]?.extras?.view_only)return;leaveOverview();
   window.dispatchEvent(new CustomEvent('office-annotation-selected',{detail:index}));
   document.querySelector('#selection').textContent=JSON.stringify({annotation_index:index,...settings.annotations[index]},null,2);
 }
@@ -83,11 +84,11 @@ try{
   viewer.events.on('selectedAnnotation:changed',index=>{if(index!==null)inspect(index);});
   viewer.events.on('error:changed',error=>{if(error)output.textContent='Error al cargar recurso original: '+String(error);});
 }catch(error){output.textContent='No se pudo cargar el recurso original: '+error.message;}
-document.querySelector('#frame').onclick=()=>{if(viewer?.state.loaded){clippedOverview=true;viewer.selectAnnotation(overviewIndex);viewer.events.fire('inputEvent','cancel');output.textContent='Vista superior del SSOG original · recorte de cámara; navega con órbita y zoom';}};
-document.querySelector('#reset').onclick=()=>{if(viewer?.state.loaded){clippedOverview=false;viewer.resetCamera();}};
+document.querySelector('#frame').onclick=()=>{if(viewer?.state.loaded){if(!clippedOverview)overviewAnnotations=viewer.state.showAnnotations;clippedOverview=true;viewer.state.showAnnotations=false;const scene=document.querySelector('#scene');viewer.selectAnnotation(overviewIndex+(scene.clientWidth>scene.clientHeight?1:0));scene.querySelector('.sse-controlsHintClose')?.click();output.textContent='Vista general · arrastra para girar y utiliza el zoom para explorar';}};
+document.querySelector('#reset').onclick=()=>{if(viewer?.state.loaded){leaveOverview();viewer.resetCamera();}};
 document.querySelector('#walk').onclick=()=>{
   if(viewer?.state.loaded){
-    clippedOverview=false;viewer.toggleWalk();
+    leaveOverview();viewer.toggleWalk();
     output.textContent=viewer.state.walkAllowed?'Caminar · colisiones voxelizadas originales activas':'Colisiones aún no disponibles: no se declara navegación validada';
   }
 };
