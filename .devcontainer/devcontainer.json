@@ -1,0 +1,25 @@
+{
+  "name": "ENTITY — OpenClaw Demo",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+  "forwardPorts": [
+    18789
+  ],
+  "portsAttributes": {
+    "18789": {
+      "label": "OpenClaw Gateway (local only)",
+      "onAutoForward": "ignore"
+    }
+  },
+  "postCreateCommand": "bash integrations/openclaw/scripts/setup-codespace.sh",
+  "remoteUser": "node",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next"
+      ]
+    }
+  }
+}
