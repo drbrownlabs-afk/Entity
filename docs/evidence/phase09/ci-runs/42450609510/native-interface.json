@@ -1,0 +1,132 @@
+{
+  "tested_commit": "67fef48fc75a49399cc480774b6dfe54348d0158",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42450609510",
+  "source": "Native ENTITY spatial interface, ORIGINAL published SSOG, actual Core-generated trace and normalized synthetic session actions",
+  "public_url": "http://127.0.0.1:4175",
+  "checks": [
+    {
+      "width": 1440,
+      "original_loaded": true,
+      "native_renderer_ui": false,
+      "visible_people": [
+        {
+          "id": "PERSON-CARLOS",
+          "position": [
+            -3.4262733459472656,
+            -1.774999976158142,
+            -16.712793350219727
+          ]
+        },
+        {
+          "id": "PERSON-LUIS",
+          "position": [
+            -3.4262733459472656,
+            -1.715000033378601,
+            -13.466780662536621
+          ]
+        }
+      ],
+      "core_connected": false,
+      "mode": "synthetic-replay",
+      "person_graph": true,
+      "camera_feed": true,
+      "view_roundtrip_keeps_selection": true,
+      "shared_clock_pause": true,
+      "session_booking": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "original_loaded": true,
+      "native_renderer_ui": false,
+      "visible_people": [
+        {
+          "id": "PERSON-CARLOS",
+          "position": [
+            -3.4262733459472656,
+            -1.774999976158142,
+            -16.712793350219727
+          ]
+        },
+        {
+          "id": "PERSON-LUIS",
+          "position": [
+            -3.4262733459472656,
+            -1.715000033378601,
+            -13.466780662536621
+          ]
+        }
+      ],
+      "core_connected": false,
+      "mode": "synthetic-replay",
+      "person_graph": true
+    }
+  ],
+  "status": "failed",
+  "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#world-markers [data-entity=\"CAM-ROUTE-1\"]')\n    - locator resolved to <button data-entity=\"CAM-ROUTE-1\" class=\"spatial-marker camera\">…</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button data-entity=\"PERSON-LUIS\" class=\"spatial-marker person\">…</button> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button data-entity=\"PERSON-LUIS\" class=\"spatial-marker person\">…</button> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    56 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button data-entity=\"PERSON-LUIS\" class=\"spatial-marker person\">…</button> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n",
+  "last_state": {
+    "status": "Fuentes y personajes SIMULADOS · Lugar original",
+    "app": {
+      "loaded": true,
+      "view": "dollhouse",
+      "feed": false,
+      "selected": null,
+      "mode": "synthetic-replay",
+      "coreConnected": false,
+      "clock": "2026-11-07T14:15:03.000Z",
+      "markers": [
+        "A",
+        "B",
+        "C",
+        "CAM-01",
+        "CAM-02",
+        "CAM-03",
+        "CAM-04",
+        "CAM-ROUTE-1",
+        "CAM-ROUTE-2",
+        "D",
+        "MEETING-AREA-01",
+        "PERSON-CARLOS",
+        "PERSON-LUIS"
+      ],
+      "visual": {
+        "cameraRenderState": [],
+        "cameraViews": 6,
+        "activeCameras": 0,
+        "visibleCameraIds": [
+          "CAM-ROUTE-1",
+          "CAM-ROUTE-2"
+        ],
+        "worldClock": "2026-11-07T14:15:03.000Z",
+        "avatarsLoaded": 2,
+        "avatarsPlaced": [
+          {
+            "id": "PERSON-CARLOS",
+            "position": [
+              -3.4262733459472656,
+              -1.774999976158142,
+              -16.712793350219727
+            ]
+          },
+          {
+            "id": "PERSON-LUIS",
+            "position": [
+              -3.4262733459472656,
+              -1.715000033378601,
+              -13.466780662536621
+            ]
+          }
+        ],
+        "singleApplication": true,
+        "errors": [],
+        "source": "original SSOG and authorized Core projection"
+      },
+      "nativeUi": false,
+      "cameraPosition": [
+        -22,
+        18,
+        9
+      ]
+    }
+  }
+}
