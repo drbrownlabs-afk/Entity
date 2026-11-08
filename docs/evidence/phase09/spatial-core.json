@@ -1,6 +1,6 @@
 {
-  "tested_commit": "e72a7821fd8d36f88043182ba5b1c10067afba84",
-  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42443600314",
+  "tested_commit": "c0afef671f0e8940f086a9e91290478fad95595f",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42444521608",
   "scene": "https://superspl.at/scene/a972d838",
   "source": "Original SSOG + Core routes measured from original floor + Rocketbox + PlayCanvas picker; simulated people, no physical camera or facial identity claim",
   "checks": [
