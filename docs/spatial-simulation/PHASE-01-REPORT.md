@@ -4,6 +4,8 @@ Fecha: 2026-11-08, Ecuador (UTC−5). Rama `codex/spatial-simulation`.
 Base: `a037bb8fcf9e90e510e364edf00452611a8faed8`. No merge a `main`.
 Estado: **EN VALIDACIÓN; aceptación humana pendiente.** Las fases 02–06 no se han iniciado.
 
+Implementación y evidencias publicadas en [`90ea770`](https://github.com/drbrownlabs-afk/Entity/commit/90ea7700b0f8656c9ae4b3bc005aa971ae5cd065), push confirmado en `codex/spatial-simulation`; sin merge ni PR nuevo. Este informe y la bitácora añaden después la constancia documental de publicación. No se afirma CI remoto.
+
 ## Qué funciona
 
 - [Maestro Blender comprimido](../../simulation/spatial-office/output/office-phase01.blend): 1.139 objetos catalogados y 14 cámaras. Incluye suelo, techo, paredes/revestimientos, diez columnas cilíndricas estimadas, ventanales/perfiles, mesas A–D, reunión negra junto al muro vegetal, sillas, computadoras, almacenamiento, vegetación, recepción/espera y dos booths representativos.

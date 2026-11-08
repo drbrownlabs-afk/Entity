@@ -13,3 +13,10 @@
 - No ejecutado: suites/servicios backend y frontend anteriores, PlayCanvas nuevo, GLB nuevo, dispositivos operables, personajes, hardware y CI remoto. No se atribuyen pruebas históricas a este lote.
 - Decisiones: [DECISION-LOG.md](DECISION-LOG.md). Registros nuevos en esta carpeta para cumplir el aislamiento sin reescribir la memoria histórica.
 - Estado: EN VALIDACIÓN, aceptación humana pendiente. Fases 02–06 NO INICIADAS por el control de revisión de `AGENTS.md`. Próxima acción: revisar maestro/capturas e informe y aceptar Fase 01 antes de construir mamparas, Sala E y cafetería.
+
+### Entrega GitHub comprobada — 2026-11-08
+
+- Implementación y evidencias: [`90ea7700b0f8656c9ae4b3bc005aa971ae5cd065`](https://github.com/drbrownlabs-afk/Entity/commit/90ea7700b0f8656c9ae4b3bc005aa971ae5cd065).
+- `git push -u origin HEAD:codex/spatial-simulation` terminó con código 0 y publicó `a037bb8..90ea770` en la rama autorizada. Sin merge ni PR nuevo. No se afirma ejecución de CI remoto.
+- Comprobación previa al commit: 45 archivos añadidos exclusivamente bajo rutas autorizadas, ninguno supera 5 MB; `git diff --cached --check` PASS. Árbol limpio tras publicar.
+- Este apunte documental se guarda después de confirmar la publicación; no cambia el maestro, hashes, resultados ni aprobación pendiente.
