@@ -23,7 +23,7 @@ class ObservedInventoryTests(unittest.TestCase):
         self.assertEqual({x['id'] for x in state.values() if x.get('kind')=='Desk' and x.get('commercial') is True},{f'{group}{n}' for group in 'CD' for n in range(1,7)})
         for observed in INVENTORY:
             item=state[observed['id']];self.assertIsNone(item['position']);self.assertFalse(item['reservable'])
-            self.assertTrue(any(r['type']=='partOf' and r['target']=='site' for r in item['relations']))
+            self.assertTrue(any(r['type']=='partOf' and r['target']==observed['attributes']['parent_resource'] for r in item['relations']))
             self.cmd('booking.create',item['id'],{'booking_id':'invalid-'+item['id'],'person_id':'PERSON-LUIS','starts_at':'2026-11-07T16:00:00-05:00','ends_at':'2026-11-07T17:00:00-05:00','party_size':1},code=404)
         before=self.client.get(self.root+'/events',headers=self.headers).json()
         with main.database(write=True) as db:self.assertFalse(apply_observed_inventory(db,'office',INVENTORY))
