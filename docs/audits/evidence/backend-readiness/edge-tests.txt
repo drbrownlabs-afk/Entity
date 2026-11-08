@@ -1,0 +1,12 @@
+test_mqtt_callback_durability_and_poison_message (test_integrations.IntegrationTests.test_mqtt_callback_durability_and_poison_message) ... ok
+test_profiles_privacy_stable_ids_and_validation (test_integrations.IntegrationTests.test_profiles_privacy_stable_ids_and_validation) ... ok
+test_rest_http_error_and_atomic_validation (test_integrations.IntegrationTests.test_rest_http_error_and_atomic_validation) ... ok
+test_durable_outbox_failure_recovery_same_body (test_pipeline.EdgeTests.test_durable_outbox_failure_recovery_same_body) ... ok
+test_invalid_source_and_zone (test_pipeline.EdgeTests.test_invalid_source_and_zone) ... ok
+test_stream_disconnect_reopens_via_capture_adapter (test_pipeline.EdgeTests.test_stream_disconnect_reopens_via_capture_adapter) ... ok
+test_tracking_zone_crossing_loss_and_new_session (test_pipeline.EdgeTests.test_tracking_zone_crossing_loss_and_new_session) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.091s
+
+OK

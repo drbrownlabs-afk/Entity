@@ -52,3 +52,7 @@ No ejecutar Fase 10 en paralelo ni cambiar estado de 09 por la incorporación de
 | 11 | Camera Gateway, registro espacial y continuidad multicámara | NO INICIADA / DIFERIDA | Después de 09 y 10; especificación preservada docs/phases/PHASE-11.md; hardware no disponible no bloquea 10 |
 
 La fila antigua que denominaba Fase 10 a cámaras y el texto que excluía OpenClaw de esa fase quedan **sustituidos** por esta decisión. La antigua Fase 11 de IA conversacional genérica se reemplaza por la integración OpenClaw de Fase 10; conservar trazabilidad en el historial Git. Esta actualización es exclusivamente documental, sin gates ejecutados.
+
+
+## 2026-11-08 — Codex: auditoría backend para laboratorio nativo
+Por instrucción posterior del operador se suspende desarrollo frontend Gaussian Splatting/personajes/NPCs; se conserva todo el WIP sin mezclarlo con la fuente auditada40850d1. Worktree/rama codex/backend-readiness-audit; sin merge/main ni cambio de servicios/bases de trabajo. Informe docs/audits/ENTITY-BACKEND-READINESS.md y evidencias adjuntas:86CorePASS61.252s,7EdgePASS,18sondasHTTPlegacy con defectos reproducidos, Outbox422 bloqueada y sondaOffice referencia zona inexistente200. No correcciones implementadas ni fases aprobadas. Recomendación: iniciar modelado/clientelectura Blender+PlayCanvas reutilizando Office; antes de integración interactiva cerrar transporteEdge por sede/run, integridadreferencial y contratoGT/poses separado de observaciones. No hardware/LLMremoto/rendernuevo ejecutados. Publicación en rama de auditoría; trabajo anterior intacto.

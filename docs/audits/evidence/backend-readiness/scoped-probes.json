@@ -1,0 +1,139 @@
+[
+  {
+    "case": "anonymous_world",
+    "status": 401,
+    "response": {
+      "detail": "Session missing or expired"
+    }
+  },
+  {
+    "case": "cross_site_admin",
+    "status": 403,
+    "response": {
+      "detail": "Site scope denied"
+    }
+  },
+  {
+    "case": "member_admin_write",
+    "status": 403,
+    "response": {
+      "detail": "Permission denied"
+    }
+  },
+  {
+    "case": "legacy_blocked_after_site_exists",
+    "status": 403,
+    "response": {
+      "detail": "Use site-scoped coworking APIs; legacy routes cannot mutate or expose office state"
+    }
+  },
+  {
+    "case": "source_connector_impersonation",
+    "status": 403,
+    "response": {
+      "detail": "Connector is bound to another source"
+    }
+  },
+  {
+    "case": "admin_reserved_identity_attributes",
+    "status": 403,
+    "response": {
+      "detail": "Derived state uses domain operations, not metadata writes"
+    }
+  },
+  {
+    "case": "admin_dangling_reference",
+    "status": 200,
+    "response": {
+      "schema_version": "1.0",
+      "status": "verified",
+      "value": {
+        "id": "new-device",
+        "kind": "Light",
+        "attributes": {
+          "zone_id": "missing-zone"
+        }
+      },
+      "simulated": true,
+      "provenance": {
+        "adapter": "simulated",
+        "capability_version": "1.0"
+      },
+      "idempotency_key": "36ff5d02-8d92-4549-b579-35ba25d93987",
+      "event": {
+        "id": "bed59ecd-1497-4188-b157-4dda1fe1fe5d",
+        "sequence": 2,
+        "type": "entity.upsert",
+        "at": "2026-11-07T20:45:00+00:00",
+        "entities": [
+          "new-device"
+        ],
+        "evidence": []
+      },
+      "details": {
+        "operation": "entity.upsert",
+        "target": "site",
+        "inputs": {
+          "id": "new-device",
+          "kind": "Light",
+          "attributes": {
+            "zone_id": "missing-zone"
+          }
+        },
+        "capability_id": "33c3e652-2e56-57b9-b2e2-6acc2acf33a2",
+        "capability_version": "1.0",
+        "actor_person_id": null,
+        "authorization": {
+          "permission": "manage",
+          "site_id": "office",
+          "role": "admin"
+        },
+        "outcome": {
+          "status": "verified",
+          "simulated": true,
+          "provenance": {
+            "adapter": "simulated",
+            "capability_version": "1.0"
+          }
+        }
+      },
+      "revision": 2
+    }
+  },
+  {
+    "case": "projection_after_reserved_fields",
+    "new_object": null,
+    "carlos": {
+      "core_id": "06637a46-754b-5ee9-9118-a0de0732dcef",
+      "id": "carlos",
+      "kind": "Person",
+      "membership_status": "active",
+      "membership_until": "2027-01-01T00:00:00+00:00",
+      "name": "Carlos",
+      "roles": [
+        "member"
+      ]
+    },
+    "new_device": {
+      "core_id": "b910c671-2928-5ca3-8a01-88b11a67d1a6",
+      "id": "new-device",
+      "kind": "Light",
+      "relations": [
+        {
+          "field": "zone_id",
+          "provenance": "explicit-domain-field",
+          "target": "missing-zone",
+          "type": "locatedIn",
+          "valid_from": "2026-11-07T20:45:00+00:00",
+          "valid_to": null
+        }
+      ],
+      "zone_id": "missing-zone"
+    }
+  },
+  {
+    "case": "sqlite_integrity",
+    "integrity_check": "ok",
+    "foreign_key_check": []
+  }
+]
