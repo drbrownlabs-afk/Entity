@@ -22,6 +22,28 @@
       },
       "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
       "raw_mean_srgb": 0.2886745035648346
+    },
+    {
+      "name": "garden-detail",
+      "raw": "garden-detail.png",
+      "raw_sha256": "459497875094005704d61df1a1ec23bb223759e2c1c7fdbe984d6ddb006634b8",
+      "filtered": "denoised/garden-detail.png",
+      "filtered_sha256": "82213ff65b59a170c7368ca6374155b2d76e391147c73a10af1fba5dc7571c63",
+      "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "guides": {
+        "albedo": {
+          "path": ".runtime/revision-guides/review/garden-detail-Albedo.pfm",
+          "sha256": "794fd2cdb224f3dfeab9eef6268cf9ac943ae5ad994c1ec3275c39082d9d66de",
+          "source_exr_sha256": "95279d8946453000b9c3f884ce07f330641f84c7ca088844d3d4a2634d78c8c2"
+        },
+        "normal": {
+          "path": ".runtime/revision-guides/review/garden-detail-Normal.pfm",
+          "sha256": "b69d41dcb386bed63c129e16449c7103e09dde774d8eb5e4048030d4546954e6",
+          "source_exr_sha256": "9d808a12791ad77476d55d77abf5cca28694cd8eca49787a962cbbd696d54e45"
+        }
+      },
+      "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
+      "raw_mean_srgb": 0.09790132939815521
     }
   ],
   "no_reference_photo_edits": true,

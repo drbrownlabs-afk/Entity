@@ -16,6 +16,12 @@ Las imágenes siguientes son renders reales de este maestro, con filtrado OIDN y
 
 [Original Cycles sin filtrar](evidence/phase04-revision/renders/vertical-garden.png) · hora 12:00 · [1440, 960] · hasta 96 muestras.
 
+## Jardín vertical a escala cercana
+
+![Jardín vertical a escala cercana](evidence/phase04-revision/renders/denoised/garden-detail.png)
+
+[Original Cycles sin filtrar](evidence/phase04-revision/renders/garden-detail.png) · hora 12:00 · [1440, 960] · hasta 96 muestras.
+
 ## Objetivos visuales proporcionados por el operador
 
 | Lounge | Puestos | Recepción |
