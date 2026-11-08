@@ -18,3 +18,7 @@ Se mantiene bajo la carpeta autorizada para conservar intactos los documentos y 
 ## Corrección del operador posterior a la entrega inicial
 
 La planta rectangular queda sustituida por una reconstrucción en L en el maestro `office-cafe-L.blend`. Revisión de Fase 01 reabierta por topología; cafetería de Fase 02 implementada como incremento expresamente solicitado (mesas normales, barra, equipamiento y retirada de pods solo en el diseño nuevo). El resto de Fase 02 permanece pendiente. Referencias visuales recibidas: 1212/1211. Ver [CAFE-L-CORRECTION.md](CAFE-L-CORRECTION.md); no se concede aprobación humana automática.
+
+## Precisión del operador — mesa adicional al fondo
+
+El operador recuerda que solicitó una mesa/agrupación de trabajo adicional al fondo. Corresponde a **Sala E, Fase 02**, ya prevista en IMPLEMENTATION-PLAN.md: nueva agrupación de mesas con mamparas de la misma familia y circulación viable. La ubicación al fondo queda como restricción explícita del operador para ese incremento; registrar posición estimada y comprobar acceso/separación de cafetería, mobiliario y columnas antes de validar el gate. Las dos mesas redondas de la cafetería **no sustituyen** esta agrupación adicional. Inspección del inventario actual: A–D conservadas; Sala E todavía no modelada. Esta revisión documental no acredita implementación ni pruebas geométricas de E.

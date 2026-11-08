@@ -30,3 +30,12 @@
 - Archivos: nuevos scripts, parámetros, maestro/inventario, dos referencias provistas por operador con hashes, renders/logs, informe y actualizaciones en documentación específica del escenario. Backend, frontend previo y Gaussian sin cambios.
 - Limitaciones: extensión dimensionada como diseño, no levantamiento medido; lenguaje visual inspirado en referencias, sin prometer equivalencia fotográfica. Iluminación todavía de referencia; mamparas, puertas, Sala E, cuatro TVs y navegación pertenecen a gates posteriores. No se acepta automáticamente Fase01/Gate02 ni se prueban dispositivos físicos o runtime.
 - Próximo paso: revisar la planta corregida y continuar el incremento de cerramientos funcionales pendiente, conservando la nueva topología.
+
+## 2026-11-08 — Codex / revisión de mesa adicional al fondo
+
+- Solicitud: comprobar si la mesa adicional solicitada pertenece a Fase01 y conservar su ubicación al fondo.
+- Rama/base: codex/spatial-simulation, `0586de5132d878147de8285a7d7ebd72c0bd23e3`.
+- Revisión ejecutada: búsqueda de Fase01/Fase02/Sala E en IMPLEMENTATION-PLAN.md y lectura de ambos inventarios generados. La nueva agrupación Sala E está prevista en Fase02; no existe en el modelo actual. Las dos mesas de cafetería son un incremento distinto.
+- Cambio: PHASE-BOARD.md registra ubicación al fondo y mantiene E pendiente, con circulación y separación de cafetería como comprobaciones futuras. No se modifican plan fuente, geometría, backend, frontend ni Gaussian.
+- Validación: inspección documental/inventarios; sin tests de ejecución adicionales por cambio solo documental. No se presenta la mesa como implementada.
+- Próximo paso: modelar la agrupación E al fondo con namespace de simulación y validar acceso, mamparas y ausencia de intersecciones dentro de Fase02.
