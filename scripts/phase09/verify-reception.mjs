@@ -63,7 +63,7 @@ try{
   await page.screenshot({path:'docs/evidence/phase09/kiosk-'+width+'.png',fullPage:true});
   await host.screenshot({path:'docs/evidence/phase09/personal-'+width+'.png',fullPage:true});
   if(width===390){
-   const operator=await context.newPage();await operator.goto(web+'/office.html?budget=.25');
+   const operator=await context.newPage();await operator.goto(web+'/office.html?diagnostic=1&budget=.25');
    await operator.locator('#office-login [name=api]').fill(api);await operator.locator('#office-login [name=username]').fill('jose');await operator.locator('#office-login [name=password]').fill(credentials.jose.password);
    await operator.locator('#office-login button').click();await operator.waitForFunction(()=>window.officeCoreDiagnostics?.().world?.run_id==='day-01');
    const login=await fetch(api+'/v1/office/auth/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({username:'admin',password:credentials.admin.password})}).then(r=>r.json());

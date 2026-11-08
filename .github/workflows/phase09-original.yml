@@ -2,7 +2,7 @@ name: Verify original Synthetic Office integration
 on:
   push:
     branches: [codex/phase-09-autonomous-plan]
-    paths: ['apps/web/src/office/**', 'worlds/synthetic-office/view-bookmarks.json', 'apps/web/office.html', 'scripts/phase09/verify-original-office.mjs', '.github/workflows/phase09-original.yml']
+    paths: ['apps/web/src/office/**', 'worlds/synthetic-office/**', 'apps/web/public/office/**', 'scripts/phase09/verify-spatial-interface.mjs', 'apps/web/office.html', 'scripts/phase09/verify-original-office.mjs', '.github/workflows/phase09-original.yml']
   workflow_dispatch:
 concurrency:
   group: phase09-original-${{ github.ref }}
@@ -12,7 +12,7 @@ permissions:
 jobs:
   original:
     runs-on: ubuntu-24.04
-    timeout-minutes: 12
+    timeout-minutes: 18
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v6
@@ -31,10 +31,10 @@ jobs:
         with:
           name: original-office-evidence
           path: |
-            docs/evidence/phase09/original-integration.json
-            docs/evidence/phase09/integrated-*.png
+            docs/evidence/phase09/native-interface.json
+            docs/evidence/phase09/native-*.png
             docs/evidence/phase09/original-dollhouse-*.png
       - name: Persist observed evidence
         if: always()
         run: |
-          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/original-integration.json' 'docs/evidence/phase09/integrated-*.png' 'docs/evidence/phase09/original-dollhouse-*.png'
+          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/native-interface.json' 'docs/evidence/phase09/native-*.png' 'docs/evidence/phase09/original-dollhouse-*.png'

@@ -12,12 +12,13 @@ from app.office.service import site_create,upsert_resource,create_run
 from app.office.auth import create_account
 main.initialize()
 original=json.loads(Path(args.settings).read_text())
-from app.office.provision import provision,apply_semantics,apply_observed_inventory
+from app.office.provision import provision,apply_semantics,apply_observed_inventory,apply_calibrated_resources
 credentials={}
 with main.database(write=True) as db:
     changed=provision(db,site,original,args.day+'T08:00:00-05:00')
     apply_semantics(db,site,json.loads((root/'worlds/synthetic-office/semantic-annotations.json').read_text()))
     apply_observed_inventory(db,site,json.loads((root/'worlds/synthetic-office/observed-inventory.json').read_text()))
+    apply_calibrated_resources(db,site,json.loads((root/'worlds/synthetic-office/calibrated-resources.json').read_text()))
     # Calibrated site data, reused by daily runs; Core has no scene/vendor import.
     from app.office.spatial import DailyProfile
     from app.office.storage import emit
@@ -49,7 +50,7 @@ with main.database(write=True) as db:
         if db.execute('SELECT 1 FROM office_accounts WHERE username=?',(username,)).fetchone():continue
         password=secrets.token_urlsafe(18);create_account(db,username,password,site,role,person);credentials[username]={'password':password,'role':role}
     jose='jose' if site=='synthetic-office' else site+':jose'
-    for target in ['ZONE-D','ZONE-E','CAM-05','CAM-06','MEETING-AREA-01','PERSON-LUIS','PERSON-JOSE','WAITING-AREA','RECEPTION']:
+    for target in ['ZONE-C','ZONE-D','CAM-05','CAM-06','MEETING-AREA-01','PERSON-LUIS','PERSON-JOSE','WAITING-AREA','RECEPTION']:
         for permission in ['read','write']:
             db.execute('INSERT OR IGNORE INTO office_grants VALUES(?,?,?,?)',(site,jose,target,permission))
     if not db.execute('SELECT 1 FROM office_runs WHERE site=? AND id=?',(site,'day-01')).fetchone():

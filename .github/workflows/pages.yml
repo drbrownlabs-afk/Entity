@@ -68,6 +68,6 @@ jobs:
           path: |
             .runtime/pages-*.png
             .runtime/pages-verification.json
-            docs/evidence/phase09/original-integration.json
-            docs/evidence/phase09/integrated-*.png
+            docs/evidence/phase09/native-interface.json
+            docs/evidence/phase09/native-*.png
             docs/evidence/phase09/original-dollhouse-*.png

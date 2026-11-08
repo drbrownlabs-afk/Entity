@@ -19,7 +19,7 @@ try{
  if(route.floor_source!=='original-official-voxel-ray'||calibration.route_clearance.some(p=>p.blocked)||JSON.stringify(route.floor_points)!==JSON.stringify(calibration.route_candidate))throw Error('Current original voxel ground/capsule validation does not match adopted route');
  token=(await request('/v1/office/auth/login',{username:'admin',password:credentials.admin.password})).token;
  const page=await browser.newPage({viewport:{width:1440,height:1000}});lastPage=page;page.on('pageerror',error=>failures.push(error.message));
- await page.goto(web+'/office.html?budget=.25&survey=1&survey_route_pose=0&survey_direction=hall',{waitUntil:'domcontentloaded'});
+ await page.goto(web+'/office.html?diagnostic=1&budget=.25&survey=1&survey_route_pose=0&survey_direction=hall',{waitUntil:'domcontentloaded'});
  if(!process.env.OFFICE_STATE_ONLY)await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});
  await page.locator('#office-login [name=api]').fill(api);await page.locator('#office-login [name=username]').fill('admin');await page.locator('#office-login [name=password]').fill(credentials.admin.password);
  await page.locator('#office-login button').click();

@@ -33,7 +33,7 @@ class DailySimulationTests(unittest.TestCase):
                 self.assertEqual(items['C-DANIEL-full-day']['status'],'host_ready')
         before=self.client.get(root+'/world',headers=self.headers).json()
         self.assertEqual(r.json()['pending'],0)
-        self.assertEqual(before['entities']['B-LUIS-full-day']['resource_id'],'E3')
+        self.assertEqual(before['entities']['B-LUIS-full-day']['resource_id'],'C3')
         self.assertEqual(before['entities']['HVAC-D']['status'],'off')
         self.assertEqual(before['entities']['M-1600-full-day']['status'],'completed')
         self.assertEqual(len(before['entities']['M-1600-full-day']['participants']),5)
@@ -47,9 +47,9 @@ class DailySimulationTests(unittest.TestCase):
         replay=self.install('replay')
         response=self.client.post(replay+'/simulation/advance',headers=self.headers,json={'to':'2026-11-07T18:30:00-05:00'});self.assertEqual(response.status_code,200,response.text)
         again=self.client.get(replay+'/world',headers=self.headers).json()
-        for key in ['PERSON-LUIS','PERSON-CARLOS','HVAC-D','HVAC-E']:
+        for key in ['PERSON-LUIS','PERSON-CARLOS','HVAC-D','HVAC-C']:
             self.assertEqual(before['entities'][key]['status' if key.startswith('HVAC') else 'presence'],again['entities'][key]['status' if key.startswith('HVAC') else 'presence'])
-        self.assertEqual(again['entities']['B-LUIS-replay']['resource_id'],'E3')
+        self.assertEqual(again['entities']['B-LUIS-replay']['resource_id'],'C3')
 
     def test_hvac_impact_follows_zone_links_and_resolution_is_audited(self):
         root=self.install('impact-day')
@@ -58,7 +58,7 @@ class DailySimulationTests(unittest.TestCase):
         incident=next(x for x in items.values() if x['kind']=='Incident')
         self.assertIn('PERSON-LUIS',incident['affected'])
         self.assertIn('B-LUIS-impact-day',incident['affected'])
-        self.assertNotIn('E3',incident['affected'])
+        self.assertNotIn('C3',incident['affected'])
         r=self.client.post(root+'/simulation/advance',headers=self.headers,json={'to':'2026-11-07T14:11:00-05:00'});self.assertEqual(r.status_code,200,r.text)
         items=self.client.get(root+'/world',headers=self.headers).json()['entities']
         self.assertEqual(items[incident['id']]['status'],'resolved')
@@ -87,7 +87,7 @@ class DailySimulationTests(unittest.TestCase):
         measurement=items['annotation-1']['environment']['co2']
         self.assertEqual(measurement['source_id'],'SENSOR-MEETING')
         self.assertEqual(measurement['value'],1300)
-        for zone in ['ZONE-D','ZONE-E']:
+        for zone in ['ZONE-D','ZONE-C']:
             self.assertEqual(items[zone]['environment']['co2']['value'],650)
             self.assertEqual(items[zone]['environment']['humidity']['unit'],'percent')
             self.assertEqual(items[zone]['environment']['illuminance']['unit'],'lux')

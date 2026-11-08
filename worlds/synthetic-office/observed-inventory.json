@@ -1,26 +1,48 @@
 [
   {
-    "id":"OBSERVED-WORKGROUP-01","kind":"InventoryItem",
-    "attributes":{
-      "name":"Conjunto no anotado observado 01",
-      "description":"Mesa de seis posiciones entre la segunda oficina privada y el conjunto del extremo de los booths. Observada en el SSOG original; correspondencia C/D/E sin confirmar.",
-      "parent_resource":"site","capacity_observed":6,"reservable":false,"commercial":false,"not_additional_capacity":true,
-      "position":null,"resource_mapping":null,"spatial_mapping":"observed-group; operational environment and individual anchors unresolved",
-      "source":"visual-inspection-original-SSOG","confidence":"group-visible; semantic-mapping-unresolved",
-      "evidence":["docs/evidence/phase09/survey/original-plan-near-clipped.jpg","docs/evidence/phase09/survey/original-plan-far.jpg"],
-      "location_in_reference_image":"Tercer conjunto de trabajo contando desde la mesa negra de reuniones hacia los booths; mesa horizontal en el centro de original-plan-near-clipped.jpg."
+    "id": "OBSERVED-WORKGROUP-01",
+    "kind": "InventoryItem",
+    "attributes": {
+      "name": "Inventario observado · grupo C",
+      "description": "Seis sillas verificadas en el grupo C del archivo original; correspondencia confirmada por el operador.",
+      "parent_resource": "C",
+      "capacity_observed": 6,
+      "reservable": false,
+      "commercial": false,
+      "not_additional_capacity": true,
+      "position": null,
+      "resource_mapping": "C",
+      "spatial_mapping": "operator-confirmed A/B/C/D; original chair anchors calibrated separately",
+      "source": "visual-inspection-original-SSOG",
+      "confidence": "group-role-confirmed; six visible seats",
+      "evidence": [
+        "docs/evidence/phase09/survey/original-plan-near-clipped.jpg",
+        "docs/evidence/phase09/survey/original-plan-far.jpg"
+      ],
+      "location_in_reference_image": "Tercer conjunto de trabajo contando desde la mesa negra de reuniones hacia los booths; mesa horizontal en el centro de original-plan-near-clipped.jpg."
     }
   },
   {
-    "id":"OBSERVED-WORKGROUP-02","kind":"InventoryItem",
-    "attributes":{
-      "name":"Conjunto no anotado observado 02",
-      "description":"Mesa de seis posiciones del extremo de los booths, con un elemento separador oscuro visible al costado. La característica es una observación, no confirmación de que sea C.",
-      "parent_resource":"site","capacity_observed":6,"reservable":false,"commercial":false,"not_additional_capacity":true,
-      "position":null,"resource_mapping":null,"spatial_mapping":"observed-group; operational environment and individual anchors unresolved",
-      "source":"visual-inspection-original-SSOG","confidence":"group-visible; semantic-mapping-unresolved",
-      "evidence":["docs/evidence/phase09/survey/original-plan-near-clipped.jpg","docs/evidence/phase09/survey/original-plan-far.jpg"],
-      "location_in_reference_image":"Cuarto conjunto de trabajo contando desde reuniones; mesa más cercana a los booths, centrada en original-plan-far.jpg."
+    "id": "OBSERVED-WORKGROUP-02",
+    "kind": "InventoryItem",
+    "attributes": {
+      "name": "Inventario observado · grupo D",
+      "description": "Seis sillas verificadas en el grupo D del archivo original; correspondencia confirmada por el operador.",
+      "parent_resource": "D",
+      "capacity_observed": 6,
+      "reservable": false,
+      "commercial": false,
+      "not_additional_capacity": true,
+      "position": null,
+      "resource_mapping": "D",
+      "spatial_mapping": "operator-confirmed A/B/C/D; original chair anchors calibrated separately",
+      "source": "visual-inspection-original-SSOG",
+      "confidence": "group-role-confirmed; six visible seats",
+      "evidence": [
+        "docs/evidence/phase09/survey/original-plan-near-clipped.jpg",
+        "docs/evidence/phase09/survey/original-plan-far.jpg"
+      ],
+      "location_in_reference_image": "Cuarto conjunto de trabajo contando desde reuniones; mesa más cercana a los booths, centrada en original-plan-far.jpg."
     }
   }
 ]

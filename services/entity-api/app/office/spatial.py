@@ -63,7 +63,7 @@ def project(db,site,run,clock,items,branch='main'):
             position=[x+(y-x)*t for x,y in zip(a['position'],b['position'])]
             dx,dz=b['position'][0]-a['position'][0],b['position'][2]-a['position'][2]
             person['avatar_id']=motion['avatar_id']
-            person['spatial_pose']={'position':position,'yaw':math.degrees(math.atan2(dx,dz)),'animation':'walk','animation_time':(stamp-first).total_seconds(),
+            person['spatial_pose']={'position':position,'yaw':math.degrees(math.atan2(dx,dz)),'animation':'walk' if any(abs(y-x)>1e-9 for x,y in zip(a['position'],b['position'])) else 'idle','animation_time':(stamp-first).total_seconds(),
                 'coordinate_frame':motion['coordinate_frame'],'validated':True,'pose_kind':'simulated-route-reconstruction','physical_identity_claimed':False,
                 'zone_id':motion['zone_id'],'route_id':config['id'],'evidence':[a['evidence'],b['evidence']],'calibration_evidence':motion['calibration_evidence']}
 

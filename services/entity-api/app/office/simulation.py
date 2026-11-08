@@ -20,8 +20,8 @@ def install_day(db,site,run,actor):
     scoped(site,actor,'simulate');setup(db)
     r=get_run(db,site,run);state=world(db,site,run)
     if db.execute('SELECT 1 FROM office_simulation WHERE site=? AND run=?',(site,run)).fetchone():return {'installed':False,'reason':'Existing schedule preserved'}
-    for key in ['A','B','C','D3','E3','PERSON-CARLOS','KIOSK-01']:
-        if key not in state['entities']:raise HTTPException(409,'Migrate the A-E topology first')
+    for key in ['A','B','C','D3','C3','PERSON-CARLOS','KIOSK-01']:
+        if key not in state['entities']:raise HTTPException(409,'Migrate the A-D topology first')
     from zoneinfo import ZoneInfo
     zone=ZoneInfo(db.execute('SELECT timezone FROM office_sites WHERE id=?',(site,)).fetchone()[0])
     day=datetime.fromisoformat(r['clock']).astimezone(zone).date().isoformat()
@@ -37,7 +37,7 @@ def install_day(db,site,run,actor):
     spatial_profile=configuration.get('daily_spatial_profile')
     route_zones=sorted({m['zone_id'] for m in spatial_profile['motions']}) if spatial_profile else []
     changes={}
-    for key,zones in [('CAM-05',['ZONE-D','ZONE-E']),('CAM-06',['ZONE-D','ZONE-E']),('CAM-RECEPTION',['RECEPTION','WAITING-AREA'])]:
+    for key,zones in [('CAM-05',['ZONE-C','ZONE-D']),('CAM-06',['ZONE-C','ZONE-D']),('CAM-RECEPTION',['RECEPTION','WAITING-AREA'])]:
         item=upsert_resource(db,site,key,'Camera',{'name':key+' · fuente sintética','virtual':True,'covered_zones':zones+route_zones,'connectivity':'connected','position':None,'spatial_mapping':'not-calibrated','coverage_mode':'synthetic-fixture-not-geometric-visibility'})
         changes[key]=item
         stream=upsert_resource(db,site,'STREAM-'+key,'Stream',{'camera_id':key,'type':'synthetic-observations','video_recorded':False});changes[stream['id']]=stream
@@ -57,8 +57,8 @@ def install_day(db,site,run,actor):
     cmd('08:00:00','book-following','booking.create','MEETING-AREA-01',booking_id='B-FOLLOWING-'+run,person_id='PERSON-MARTIN',starts_at=at('11:30:00'),ends_at=at('12:30:00'),party_size=6)
     guests=[{'id':'I-UNKNOWN-'+str(i)+'-'+run} for i in range(3)]+[{'id':invite,'name':'Daniel'}]
     cmd('08:00:00','book-daniel','booking.create','MEETING-AREA-01',booking_id='B-1600-'+run,person_id='PERSON-CARLOS',starts_at=at('16:00:00'),ends_at=at('17:00:00'),party_size=5,meeting_id=meeting,expected_guests=guests)
-    for group in ['D','E']:cmd('08:00:00','power-on-'+group,'device.setPower','HVAC-'+group,on=True)
-    for group in ['D','E']:
+    for group in ['C','D']:cmd('08:00:00','power-on-'+group,'device.setPower','HVAC-'+group,on=True)
+    for group in ['C','D']:
         for name,value,unit in [('temperature',23,'C'),('humidity',48,'percent'),('illuminance',450,'lux'),('co2',650,'ppm')]:
             add('08:01:00','baseline-'+group+'-'+name,'sensor',{'source_id':'SENSOR-'+group,'name':name,'value':value,'unit':unit})
     corridor_zone=next((m['zone_id'] for m in spatial_profile['motions'] if m['person_id']=='PERSON-LUIS'),'ZONE-D') if spatial_profile else 'ZONE-D'
@@ -86,7 +86,7 @@ def install_day(db,site,run,actor):
     badge('14:00:00','luis-afternoon-badge','CAM-05','luis-badge-session','PERSON-LUIS')
     cmd('14:00:01','hvac-failure','equipment.fail','HVAC-D')
     add('14:00:02','heat','sensor',{'source_id':'SENSOR-D','name':'temperature','value':30,'unit':'C'})
-    cmd('14:01:00','reassign-luis','booking.reassign',book,resource_id='E3')
+    cmd('14:01:00','reassign-luis','booking.reassign',book,resource_id='C3')
     task='task-'+identity('schedule',site,run,'hvac-failure')
     cmd('14:01:01','assign-technician','task.assign',task,person_id='PERSON-MATEO')
     cmd('14:10:00','repair','equipment.repair','HVAC-D')
@@ -119,7 +119,7 @@ def install_day(db,site,run,actor):
     observe('17:00:01','afternoon-empty','CAM-02',[])
     for camera in ['CAM-05','CAM-06','CAM-RECEPTION']:observe('18:30:00','empty-'+camera,camera,[])
     for person in ['PERSON-LUIS','PERSON-CARLOS']:cmd('18:30:00','departure-'+person,'presence.checkout',person)
-    for group in ['D','E']:cmd('18:30:00','power-off-'+group,'device.setPower','HVAC-'+group,on=False)
+    for group in ['C','D']:cmd('18:30:00','power-off-'+group,'device.setPower','HVAC-'+group,on=False)
     db.execute('INSERT INTO office_simulation(site,run,paused) VALUES(?,?,1)',(site,run))
     return {'installed':True,'milestones':db.execute('SELECT COUNT(*) FROM office_schedule WHERE site=? AND run=?',(site,run)).fetchone()[0],'script':'coworking-v2','geometry_validated':False}
 

@@ -43,6 +43,7 @@ def create_run(db,site,run,clock,seed=1):
     changes={}
     for row in db.execute('SELECT * FROM office_resources WHERE site=?',(site,)):
         if row['kind'] in {'Booking','Meeting','Invitation','Visit','Notification','Task','Incident','CheckIn','Alert','Track','Conversation'}:continue
+        if json.loads(row['attributes']).get('deprecated'):continue
         changes[row['id']]={'id':row['id'],'core_id':row['core_id'],'kind':row['kind'],**json.loads(row['attributes'])}
     config=json.loads(db.execute('SELECT config FROM office_sites WHERE id=?',(site,)).fetchone()[0])
     if not config.get('active_run_id'):

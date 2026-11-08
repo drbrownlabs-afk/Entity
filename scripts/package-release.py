@@ -24,14 +24,14 @@ with source.open('wb') as raw, gzip.GzipFile(filename='', mode='wb', fileobj=raw
     compressed.write(git('archive', '--format=tar', '--prefix=Entity/', sha))
 static = output / 'entity-experience.zip'
 with zipfile.ZipFile(static, 'w', compression=zipfile.ZIP_DEFLATED) as archive:
-    files = [*[dist / name for name in ['index.html','office.html','personal.html','kiosk.html'] if (dist / name).exists()], *sorted((dist / 'assets').glob('*')), *[p for p in sorted((dist / 'avatars').rglob('*')) if p.is_file()]]
+    files = [*[dist / name for name in ['index.html','office.html','personal.html','kiosk.html'] if (dist / name).exists()], *sorted((dist / 'assets').glob('*')), *[p for p in sorted((dist / 'avatars').rglob('*')) if p.is_file()], *[p for p in [dist/'office/demo-trace.json'] if p.is_file()]]
     for file in files:
         if not file.is_file():
             raise SystemExit('Unexpected static asset directory')
         info = zipfile.ZipInfo(file.relative_to(dist).as_posix())
         info.compress_type = zipfile.ZIP_DEFLATED
         archive.writestr(info, file.read_bytes())
-    for name, content in [('BUILD.json', json.dumps({'source_commit': sha, 'modes': {'index.html':'standalone-simulated; shared Edge fixture', 'office.html':'original remote SSOG; authenticated Core required for operations', 'personal.html':'authenticated Core required', 'kiosk.html':'authenticated Core required'}}, indent=2)), ('.nojekyll', '')]:
+    for name, content in [('BUILD.json', json.dumps({'source_commit': sha, 'modes': {'index.html':'standalone-simulated; shared Edge fixture', 'office.html':'original remote SSOG; explicit synthetic Core replay and session actions; optional authenticated Core', 'personal.html':'authenticated Core required', 'kiosk.html':'authenticated Core required'}}, indent=2)), ('.nojekyll', '')]:
         info = zipfile.ZipInfo(name)
         info.compress_type = zipfile.ZIP_DEFLATED
         archive.writestr(info, content)

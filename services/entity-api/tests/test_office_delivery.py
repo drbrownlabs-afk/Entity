@@ -32,14 +32,14 @@ class DeliveryTests(unittest.TestCase):
         self.cmd('entity.upsert',inputs={'id':'PERSON-DANIEL','kind':'Person','attributes':{'name':'Daniel','profile_level':'visitor','fictitious':True}})
     def test_exact_commercial_inventory_and_graph(self):
         items=self.state()['entities']
-        self.assertEqual(sorted(x['id'] for x in items.values() if x['kind']=='Desk' and x.get('commercial') and x.get('reservable')),[f'{g}{i}' for g in 'DE' for i in range(1,7)])
+        self.assertEqual(sorted(x['id'] for x in items.values() if x['kind']=='Desk' and x.get('commercial') and x.get('reservable')),[f'{g}{i}' for g in 'CD' for i in range(1,7)])
         for key in ['A','B']:
             self.assertEqual(items[key]['kind'],'Office');self.assertEqual(items[key]['capacity'],6)
         self.assertFalse(items['C']['reservable'])
         self.assertIsNone(items['D1']['position']);self.assertIsNone(items['C']['position'])
         self.booking('internal',person='PERSON-CARLOS',resource='A')
         self.cmd('booking.create','B',{'booking_id':'wrong','person_id':'PERSON-CARLOS','starts_at':'2026-11-07T21:00:00Z','ends_at':'2026-11-07T22:00:00Z'},code=403)
-        for key in ['C','A-INTERNAL-1','C-INTERNAL-1']:
+        for key in ['C','D','A-INTERNAL-1','B-INTERNAL-1']:
             self.cmd('booking.create',key,{'booking_id':'no-'+key,'person_id':'PERSON-CARLOS','starts_at':'2026-11-07T21:00:00Z','ends_at':'2026-11-07T22:00:00Z'},code=403)
         answer=self.client.post(self.root+'/queries',headers=self.headers,json={'kind':'graph','entity_id':'PERSON-CARLOS'}).json()
         self.assertTrue(any(e['type']=='belongsTo' and e['target']=='ORG-ENTITY' for e in answer['result']['edges']))

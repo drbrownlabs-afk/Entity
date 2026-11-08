@@ -1,0 +1,4 @@
+[
+ {"title":"Dollhouse ENTITY","text":"Vista orbital del lugar original","position":[0,-1.2,-12],"camera":{"initial":{"position":[-22,18,9],"target":[0,-1.2,-12],"fov":55}},"extras":{"view_only":true,"coordinate_claim":"camera viewpoint only; not a resource position"}},
+ {"title":"Dollhouse ENTITY móvil","text":"Vista orbital del lugar original","position":[0,-1.2,-12],"camera":{"initial":{"position":[-22,18,9],"target":[0,-1.2,-12],"fov":75}},"extras":{"view_only":true,"coordinate_claim":"camera viewpoint only; not a resource position"}}
+]

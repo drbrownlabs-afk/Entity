@@ -1,0 +1,422 @@
+{
+  "schema_version": "1.0",
+  "source_commit": "e90054309080486da040cbc9e508cb9a5985675e",
+  "resources": [
+    {
+      "id": "C",
+      "kind": "Office",
+      "attributes": {
+        "position": [
+          1.2176624745523115,
+          -0.6000000000000001,
+          -15.730862450113671
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "group table surface",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+          "view": "table-c-seats",
+          "screen": [
+            0.4,
+            0.7
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "ZONE-C",
+      "kind": "Zone",
+      "attributes": {
+        "position": [
+          1.2176624745523115,
+          -0.6000000000000001,
+          -15.730862450113671
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "group reference",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+          "view": "table-c-seats",
+          "screen": [
+            0.4,
+            0.7
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "C1",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          -0.012094953384002904,
+          -1.1000000000000019,
+          -16.846622482376624
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+          "view": "table-c-seats",
+          "screen": [
+            0.26,
+            0.52
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "C2",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          1.201783722560563,
+          -1.1,
+          -16.846622482376624
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+          "view": "table-c-seats",
+          "screen": [
+            0.405,
+            0.52
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "C3",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          2.2482308569955327,
+          -1.0999999999999979,
+          -16.846622482376628
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+          "view": "table-c-seats",
+          "screen": [
+            0.53,
+            0.52
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "C4",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          0.11348578813253829,
+          -1.0999999999999979,
+          -14.664887640069987
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+          "view": "table-c-seats",
+          "screen": [
+            0.275,
+            0.845
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "C5",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          1.201786714167286,
+          -1.1000000000000003,
+          -14.664887640069987
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+          "view": "table-c-seats",
+          "screen": [
+            0.405,
+            0.845
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "C6",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          2.3319453681264473,
+          -1.1000000000000005,
+          -14.664887640069987
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+          "view": "table-c-seats",
+          "screen": [
+            0.54,
+            0.845
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "D",
+      "kind": "Office",
+      "attributes": {
+        "position": [
+          1.9970835447311401,
+          -0.7499999999999987,
+          -22.751555700764428
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "group table surface",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+          "view": "table-d-seats",
+          "screen": [
+            0.5,
+            0.625
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "ZONE-D",
+      "kind": "Zone",
+      "attributes": {
+        "position": [
+          1.9970835447311401,
+          -0.7499999999999987,
+          -22.751555700764428
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "group reference",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+          "view": "table-d-seats",
+          "screen": [
+            0.5,
+            0.625
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "D1",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          0.9087789657886103,
+          -1.0999999999999988,
+          -23.180963424327686
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+          "view": "table-d-seats",
+          "screen": [
+            0.37,
+            0.555
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "D2",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          0.9087813590757892,
+          -1.0999999999999994,
+          -21.905486710796293
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+          "view": "table-d-seats",
+          "screen": [
+            0.37,
+            0.745
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "D3",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          0.9087836263907754,
+          -1.0999999999999992,
+          -20.697145525282888
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+          "view": "table-d-seats",
+          "screen": [
+            0.37,
+            0.925
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "D4",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          3.1439888739722046,
+          -1.1000000000000003,
+          -23.04670245346654
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+          "view": "table-d-seats",
+          "screen": [
+            0.637,
+            0.575
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "D5",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          3.136076941047852,
+          -1.0500000000000005,
+          -21.916828807743638
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+          "view": "table-d-seats",
+          "screen": [
+            0.637,
+            0.745
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    },
+    {
+      "id": "D6",
+      "kind": "Desk",
+      "attributes": {
+        "position": [
+          3.1439842279052175,
+          -1.0999999999999996,
+          -20.697145525282888
+        ],
+        "coordinate_frame": "supersplat-original",
+        "spatial_mapping": "visual-and-original-voxel-verified",
+        "anchor_kind": "chair surface; not a seated-person pose",
+        "spatial_provenance": {
+          "source": "original SSOG + official original collider",
+          "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+          "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+          "view": "table-d-seats",
+          "screen": [
+            0.637,
+            0.925
+          ],
+          "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+          "metric_scale_verified": false
+        }
+      }
+    }
+  ]
+}
