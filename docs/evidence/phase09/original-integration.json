@@ -1,15 +1,15 @@
 {
-  "tested_commit": "e72a7821fd8d36f88043182ba5b1c10067afba84",
-  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42443600323",
+  "tested_commit": "c0afef671f0e8940f086a9e91290478fad95595f",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42444521616",
   "source": "Original published Synthetic Office SSOG through official SuperSplat viewer package",
   "checks": [
     {
       "width": 1440,
       "dollhouse_camera_verified": {
         "position": [
-          1.9927663803100586,
-          18.13355827331543,
-          -10.47234058380127
+          1.99277925491333,
+          18.13360595703125,
+          -10.472363471984863
         ],
         "forward": [
           0.002499992196849788,
@@ -21,9 +21,9 @@
           0.002499992196849788,
           -2.2204459925314038e-16
         ],
-        "fov": 89.9955457564165,
+        "fov": 89.99555906337912,
         "horizontal_fov": true,
-        "near_clip": 17.633613378099344
+        "near_clip": 17.633661061964176
       },
       "loaded": true,
       "walkAllowed": true,
@@ -186,8 +186,157 @@
         "errors": [],
         "source": "original SSOG authored viewpoints; Core disconnected"
       }
+    },
+    {
+      "width": 390,
+      "dollhouse_camera_verified": {
+        "position": [
+          1.9927663803100586,
+          18.13355827331543,
+          -10.47234058380127
+        ],
+        "forward": [
+          0.002499992196849788,
+          -0.999996875014625,
+          0
+        ],
+        "up": [
+          0.999996875014625,
+          0.002499992196849788,
+          2.2204459925314038e-16
+        ],
+        "fov": 89.9955457564165,
+        "horizontal_fov": true,
+        "near_clip": 17.633613378099344
+      },
+      "loaded": true,
+      "walkAllowed": true,
+      "mode": "walk",
+      "annotations": [
+        {
+          "title": "6-Person Office Bench System",
+          "position": [
+            -0.4324827070899584,
+            -1.1356615558262035,
+            -5.352859958159687
+          ]
+        },
+        {
+          "title": "8-Person Conference Table",
+          "position": [
+            1.1870577758066334,
+            -1.2140478639523282,
+            0.06964437653360278
+          ]
+        },
+        {
+          "title": "6-Person Office Bench System",
+          "position": [
+            1.9970835412267196,
+            -0.8033600527595,
+            -10.693077551494174
+          ]
+        },
+        {
+          "title": "Fito Wall",
+          "position": [
+            0.09792180086598856,
+            -0.17678632222835267,
+            2.586294204317113
+          ]
+        },
+        {
+          "title": "Espera de visitantes",
+          "position": [
+            -4.751476330788986,
+            -0.63474085001273,
+            -16.002127587705036
+          ]
+        },
+        {
+          "title": "Booths de descanso",
+          "position": [
+            -3.426234714858262,
+            -0.9248632498038959,
+            -19.5901388836479
+          ]
+        },
+        {
+          "title": "Recepción inteligente · dos sillas negras",
+          "position": [
+            -5.788876393261972,
+            -1.0731165959404187,
+            -8.894881576083774
+          ]
+        },
+        {
+          "title": "Vista superior del archivo original",
+          "position": [
+            1.9970835447311401,
+            -1.85,
+            -10.48
+          ]
+        },
+        {
+          "title": "Vista superior panorámica",
+          "position": [
+            1.9970835447311401,
+            -1.85,
+            -10.48
+          ]
+        }
+      ],
+      "errors": [],
+      "substitute": false,
+      "cctv": {
+        "cameraRenderState": [
+          {
+            "id": "CAM-01",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 624025,
+                "pending": false
+              }
+            ]
+          },
+          {
+            "id": "CAM-02",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 624025,
+                "pending": false
+              }
+            ]
+          }
+        ],
+        "cameraViews": 4,
+        "activeCameras": 2,
+        "visibleCameraIds": [
+          "CAM-01",
+          "CAM-02"
+        ],
+        "worldClock": null,
+        "avatarsLoaded": 0,
+        "avatarsPlaced": [],
+        "singleApplication": true,
+        "errors": [],
+        "source": "original SSOG authored viewpoints; Core disconnected"
+      }
     }
   ],
-  "status": "failed",
-  "error": "TimeoutError: page.waitForFunction: Timeout 90000ms exceeded."
+  "status": "passed"
 }
