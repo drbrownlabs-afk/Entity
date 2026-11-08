@@ -2,7 +2,7 @@ name: Verify original Synthetic Office integration
 on:
   push:
     branches: [codex/phase-09-autonomous-plan]
-    paths: ['apps/web/src/office/**', 'apps/web/office.html', 'scripts/phase09/verify-original-office.mjs', '.github/workflows/phase09-original.yml']
+    paths: ['apps/web/src/office/**', 'worlds/synthetic-office/view-bookmarks.json', 'apps/web/office.html', 'scripts/phase09/verify-original-office.mjs', '.github/workflows/phase09-original.yml']
   workflow_dispatch:
 permissions:
   contents: write
@@ -30,7 +30,8 @@ jobs:
           path: |
             docs/evidence/phase09/original-integration.json
             docs/evidence/phase09/integrated-*.png
+            docs/evidence/phase09/original-dollhouse-*.png
       - name: Persist observed evidence
         if: always()
         run: |
-          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/original-integration.json' 'docs/evidence/phase09/integrated-*.png'
+          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/original-integration.json' 'docs/evidence/phase09/integrated-*.png' 'docs/evidence/phase09/original-dollhouse-*.png'

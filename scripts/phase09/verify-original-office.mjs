@@ -1,7 +1,7 @@
 import {chromium} from '../../apps/web/node_modules/@playwright/test/index.mjs';
 import fs from 'node:fs';
 const browser=await chromium.launch({args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
-const expectedAnnotations=4+JSON.parse(fs.readFileSync('worlds/synthetic-office/semantic-annotations.json','utf8')).length;
+const expectedAnnotations=4+JSON.parse(fs.readFileSync('worlds/synthetic-office/semantic-annotations.json','utf8')).length+JSON.parse(fs.readFileSync('worlds/synthetic-office/view-bookmarks.json','utf8')).length;
 const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,source:'Original published Synthetic Office SSOG through official SuperSplat viewer package',checks:[]};
 try{
  for(const width of [1440,390]){
@@ -12,6 +12,9 @@ try{
   await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});
   const initial=await page.evaluate(()=>window.officeDiagnostics());
   if(initial.substitute||!initial.sceneUrl.includes('a972d838')||initial.annotations.length!==expectedAnnotations)throw Error('Wrong scene or original/verified semantic annotations missing');
+  await page.locator('#frame').click();await page.waitForTimeout(1800);
+  await page.screenshot({path:'docs/evidence/phase09/original-dollhouse-'+width+'.png',timeout:120000});
+  await page.locator('#reset').click();await page.waitForTimeout(1000);
   await page.locator('#annotations button').nth(1).click();
   await page.waitForTimeout(1000);
   const text=await page.locator('#selection').innerText();

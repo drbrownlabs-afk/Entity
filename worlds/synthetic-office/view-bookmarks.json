@@ -1,0 +1,9 @@
+[
+  {
+    "title":"Vista superior del archivo original",
+    "text":"Encuadre de inspección verificado; no es una entidad ni un ambiente adicional. Recorte de cámara por encima del mobiliario, sin editar SSOG ni voxels.",
+    "position":[1.9970835447311401,-1.85,-10.48],
+    "camera":{"initial":{"position":[1.9970835447311401,18.15,-10.48],"target":[1.9970835447311401,-1.85,-10.4799],"fov":90}},
+    "extras":{"view_only":true,"evidence":"docs/evidence/phase09/survey/original-plan-near-clipped.jpg","clip_plane_y":0.5,"resource_position":false}
+  }
+]

@@ -4,12 +4,15 @@ import '@playcanvas/supersplat-viewer/viewer.css';
 import original from '../../../../worlds/synthetic-office/original-viewer-settings.json';
 import './office.css';
 import semanticAnnotations from '../../../../worlds/synthetic-office/semantic-annotations.json';
+import viewBookmarks from '../../../../worlds/synthetic-office/view-bookmarks.json';
 import inspectionCameras from '../../../../worlds/synthetic-office/inspection-cameras.json';
 
 document.querySelector('#office-app').innerHTML='<header><a href="./">ENTITY</a><span>SYNTHETIC OFFICE / ARCHIVO ORIGINAL</span><b>argenzio · CC BY-NC 4.0</b></header><main><section class="tools"><span id="status" role="status">Cargando SSOG original…</span><button id="frame">Dollhouse</button><button id="reset">Interior</button><button id="walk">Caminar con colisiones</button></section><div id="scene"></div><section class="move"><button data-move="0,1">↑</button><button data-move="-1,0">←</button><button data-move="0,-1">↓</button><button data-move="1,0">→</button><span>Controles táctiles · geometría y voxels originales</span></section><section><h2>Inventario espacial</h2><div id="annotations"></div><pre id="selection"></pre><p>A/B y reunión conservan sus anotaciones originales. Espera y descanso se identificaron en la escena; los puntos aún no calibrados permanecen pendientes.</p><a href="https://superspl.at/scene/a972d838" target="_blank" rel="noopener">Abrir la publicación original ↗</a></section></main>';
 const settings=structuredClone(original.settings);
 settings.startMode='orbit';
 settings.annotations.push(...structuredClone(semanticAnnotations));
+const overviewIndex=settings.annotations.length;settings.annotations.push(...structuredClone(viewBookmarks));
+let clippedOverview=false;
 const surveyPose=new URLSearchParams(location.search).get('survey_pose');
 if(surveyPose!==null){
  const index=Number(surveyPose),values=original.settings.animTracks[0].keyframes.values;
@@ -52,11 +55,12 @@ const contentUrl=base?new URL('lod-meta.json',base).href:original.contentUrl;
 const collisionUrl=base?new URL('scene.voxel.json',base).href:original.collisionUrl;
 const output=document.querySelector('#status');
 function inspect(index){
+  if(settings.annotations[index]?.extras?.view_only)return;clippedOverview=false;
   window.dispatchEvent(new CustomEvent('office-annotation-selected',{detail:index}));
   document.querySelector('#selection').textContent=JSON.stringify({annotation_index:index,...settings.annotations[index]},null,2);
 }
 settings.annotations.forEach((annotation,index)=>{
-  const button=document.createElement('button');
+  if(annotation.extras?.view_only)return;const button=document.createElement('button');
   button.textContent=annotation.title;
   button.onclick=()=>{if(viewer?.state.loaded)viewer.selectAnnotation(index);inspect(index);};
   document.querySelector('#annotations').append(button);
@@ -64,25 +68,26 @@ settings.annotations.forEach((annotation,index)=>{
 try{
   viewer=await createViewer({container:document.querySelector('#scene'),settings,contentUrl,collisionUrl,renderer:'webgl',ui:true,reticle:true,budget:Math.max(.25,Math.min(4,Number(new URLSearchParams(location.search).get('budget'))||1)),framesInFlight:1});
   viewer.state.animationPaused=true;
-  if(new URLSearchParams(location.search).get('survey_direction')==='topdown'){
+  { // Public view bookmark and inspection share the official camera/chunk path.
    // Official chunk extension: the default splat shader clamps depth to the near plane
    // instead of clipping. Respect that plane for this inspection camera without editing assets.
    const chunks=ShaderChunks.get(viewer.app.graphicsDevice,'glsl'),center=chunks.get('gsplatCenterVS');
    const marker='vec4 centerProj = matrix_projection * centerView;';
    if(!center?.includes(marker))throw Error('Official splat projection changed; inspect camera clipping before proceeding.');
    chunks.set('gsplatCenterVS',center.replace(marker,'if (-centerView.z < camera_params.z) return false;\n'+marker));
-   viewer.state.controlsHidden=true;viewer.state.showAnnotations=false;
-   viewer.app.on('update',()=>{const c=viewer.app.root.findComponents('camera')[0];if(c.entity.forward.y<-.9)c.nearClip=Math.max(.01,(c.entity.getPosition().y-.5)/(-c.entity.forward.y));});
+   const inspectionPlan=new URLSearchParams(location.search).get('survey_direction')==='topdown';
+   if(inspectionPlan){viewer.state.controlsHidden=true;viewer.state.showAnnotations=false;}
+   viewer.app.on('update',()=>{const c=viewer.app.root.findComponents('camera')[0];c.nearClip=(clippedOverview||inspectionPlan)&&c.entity.forward.y<-.1?Math.max(.01,(c.entity.getPosition().y-.5)/(-c.entity.forward.y)):.01;});
   }
   viewer.events.on('loaded:changed',loaded=>{if(loaded){output.textContent='SSOG original cargado · navegación oficial SuperSplat';viewer.resetCamera();}});
   viewer.events.on('selectedAnnotation:changed',index=>{if(index!==null)inspect(index);});
   viewer.events.on('error:changed',error=>{if(error)output.textContent='Error al cargar recurso original: '+String(error);});
 }catch(error){output.textContent='No se pudo cargar el recurso original: '+error.message;}
-document.querySelector('#frame').onclick=()=>{if(viewer?.state.loaded)viewer.frameScene();};
-document.querySelector('#reset').onclick=()=>{if(viewer?.state.loaded)viewer.resetCamera();};
+document.querySelector('#frame').onclick=()=>{if(viewer?.state.loaded){clippedOverview=true;viewer.selectAnnotation(overviewIndex);output.textContent='Vista superior del SSOG original · recorte de cámara; navega con órbita y zoom';}};
+document.querySelector('#reset').onclick=()=>{if(viewer?.state.loaded){clippedOverview=false;viewer.resetCamera();}};
 document.querySelector('#walk').onclick=()=>{
   if(viewer?.state.loaded){
-    viewer.toggleWalk();
+    clippedOverview=false;viewer.toggleWalk();
     output.textContent=viewer.state.walkAllowed?'Caminar · colisiones voxelizadas originales activas':'Colisiones aún no disponibles: no se declara navegación validada';
   }
 };
