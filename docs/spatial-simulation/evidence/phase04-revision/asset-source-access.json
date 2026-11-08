@@ -1,0 +1,36 @@
+[
+  {
+    "name": "model-index",
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/model-index.json",
+    "status": 200,
+    "bytes": 44480
+  },
+  {
+    "name": "sheen-chair",
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/SheenChair/README.md",
+    "status": 200,
+    "bytes": 4250
+  },
+  {
+    "name": "sofa",
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/main/Models/SheenWoodLeatherSofa/README.md",
+    "status": 200,
+    "bytes": 4864
+  },
+  {
+    "name": "environments",
+    "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Environments/master/README.md",
+    "status": 200,
+    "bytes": 1401
+  },
+  {
+    "name": "polyhaven",
+    "url": "https://api.polyhaven.com/assets?t=models",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "name": "ambientcg",
+    "url": "https://ambientcg.com/api/v2/full_json?id=WoodFloor051",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

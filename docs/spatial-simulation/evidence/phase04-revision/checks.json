@@ -1,0 +1,3544 @@
+{
+  "checks": [
+    {
+      "name": "reopens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "master-current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original-phase04-preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "protected-sources-preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "build-inputs-current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "original-phases-gates-remain-valid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "stable-ids-unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-white-visitor-chair-group",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two-sofas-replace-white-group",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four-dining-tables",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "fourteen-dining-chair-groups",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "bar-four-stools-preserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two-lounge-sofas-and-chair",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "professional-pouf-flowers-plants",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-asset-fireflies",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-unexpected-deletions",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "inherited-poses-preserved",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "screen-content:sim:p2:TV:1:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "screen-packed-UV:sim:p2:TV:1:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "screen-content:sim:p2:TV:2:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "screen-packed-UV:sim:p2:TV:2:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "screen-content:sim:p2:TV:3:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "screen-packed-UV:sim:p2:TV:3:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "screen-content:sim:p2:TV:4:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "screen-packed-UV:sim:p2:TV:4:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "screen-content:sim:p3:lounge:TV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "screen-packed-UV:sim:p3:lounge:TV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "screen-content:sim:r1:meeting:TV:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "screen-packed-UV:sim:r1:meeting:TV:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "six-independent-screens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "meeting-TV-large",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "WC-identified-and-equipped",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "WC-roof-opaque",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-camera-inside-WC",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two-booths-in-place",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "clock-controller-opt-in",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "PBR-floor-maps-packed",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "physical-sky",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "glazing-audit-current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all-architecture-glass-clear-and-reflective",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "WC-stays-opaque",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-spherical-greenwall-reference",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "continuous-small-leaf-vertical-garden",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "thin-leaves-preserve-alpha-mask",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "workstation-backs-and-keycaps",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-independent:sim:p2:door:MEETING-AREA-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:MEETING-AREA-01:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:MEETING-AREA-01:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:MEETING-AREA-01:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:MEETING-AREA-01:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:MEETING-AREA-01:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:MEETING-AREA-01:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:MEETING-AREA-01:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:MEETING-AREA-01:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:MEETING-AREA-01:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:MEETING-AREA-01:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:MEETING-AREA-01:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p2:door:A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:A:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:A:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:A:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:A:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:A:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:A:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:A:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:A:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:A:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:A:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:A:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p2:door:B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:B:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:B:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:B:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:B:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:B:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:B:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:B:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:B:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:B:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:B:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:B:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p2:door:C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:C:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:C:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:C:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:C:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:C:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:C:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:C:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:C:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:C:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:C:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:C:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p2:door:D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:D:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:D:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:D:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:D:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:D:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:D:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:D:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:D:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:D:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:D:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:D:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p2:door:sim:ROOM-E",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:sim:ROOM-E:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:sim:ROOM-E:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:sim:ROOM-E:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:sim:ROOM-E:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:sim:ROOM-E:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:sim:ROOM-E:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:sim:ROOM-E:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:sim:ROOM-E:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:sim:ROOM-E:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:sim:ROOM-E:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:sim:ROOM-E:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p2:door:security",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:security:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:security:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:security:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:security:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:security:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:security:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:security:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:security:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:security:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:security:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p2:door:security:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:security:raised",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:security:raised:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:security:raised:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:security:raised:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:security:raised:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:security:raised:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:security:raised:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:security:raised:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:security:raised:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:security:raised:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:security:raised:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:security:raised:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:sim:CALL-01:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-01:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-01:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-01:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-01:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-01:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-01:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-01:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-01:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-01:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-01:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-01:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:sim:CALL-02:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-02:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-02:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-02:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-02:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-02:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-02:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-02:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-02:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-02:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-02:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:sim:CALL-02:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:WC:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:WC:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:WC:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:WC:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:WC:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:WC:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:WC:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:WC:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:WC:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:WC:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:WC:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:WC:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:locker:0:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:0:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:0:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:0:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:0:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:0:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:0:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:0:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:0:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:0:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:0:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:0:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:locker:0:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:1:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:1:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:1:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:1:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:1:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:1:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:1:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:1:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:1:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:1:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:1:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:locker:0:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:2:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:2:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:2:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:2:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:2:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:2:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:2:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:2:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:2:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:2:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:2:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:locker:0:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:3:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:3:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:3:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:3:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:3:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:3:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:3:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:3:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:3:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:3:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:0:3:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:locker:1:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:0:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:0:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:0:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:0:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:0:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:0:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:0:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:0:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:0:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:0:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:0:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:locker:1:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:1:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:1:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:1:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:1:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:1:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:1:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:1:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:1:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:1:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:1:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:1:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:locker:1:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:2:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:2:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:2:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:2:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:2:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:2:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:2:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:2:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:2:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:2:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:2:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-independent:sim:p3:locker:1:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:3:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:3:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:3:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:3:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:3:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:3:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:3:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:3:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:3:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:3:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-collider-sync:sim:p3:locker:1:3:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "dining-no-chair-table-interpenetration",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "partitions-clear-refined-furniture",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "route-start-free",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "route:reception",
+      "passed": true,
+      "detail": {
+        "target": [
+          -4.7,
+          -16
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:waiting",
+      "passed": true,
+      "detail": {
+        "target": [
+          -4.8,
+          -9
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:cafe-social",
+      "passed": true,
+      "detail": {
+        "target": [
+          -3.2,
+          -22.65
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:cafe-bar",
+      "passed": true,
+      "detail": {
+        "target": [
+          -8.0,
+          -22.3
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:lounge",
+      "passed": true,
+      "detail": {
+        "target": [
+          -10,
+          -2.1
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:call-01",
+      "passed": true,
+      "detail": {
+        "target": [
+          -11,
+          0.35
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:call-02",
+      "passed": true,
+      "detail": {
+        "target": [
+          -9,
+          0.35
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:WC-access",
+      "passed": true,
+      "detail": {
+        "target": [
+          -6.8,
+          0.0
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:lockers",
+      "passed": true,
+      "detail": {
+        "target": [
+          -4.2,
+          1.0
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:print",
+      "passed": true,
+      "detail": {
+        "target": [
+          -4.2,
+          -1.0
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:white-sector-sofas",
+      "passed": true,
+      "detail": {
+        "target": [
+          -4.75,
+          -15.15
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:bistro-access",
+      "passed": true,
+      "detail": {
+        "target": [
+          -8.0,
+          -18.85
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:dining-1",
+      "passed": true,
+      "detail": {
+        "target": [
+          -3.2,
+          -20.2
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:dining-2",
+      "passed": true,
+      "detail": {
+        "target": [
+          -3.2,
+          -22.65
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:dining-3",
+      "passed": true,
+      "detail": {
+        "target": [
+          -3.2,
+          -25.1
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:MEETING-AREA-01",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -1.45
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:A",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -6.6000000000000005
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:B",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -10.95
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:C",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -17.5
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:D",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -21.95
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "route:sim:ROOM-E",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -27.4
+        ],
+        "free": true,
+        "reachable": 20031
+      }
+    },
+    {
+      "name": "closed-security-still-blocks-rear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "71-lights-17-circuits",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "warm-task-and-accent-design",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "concealed-and-vertical-warm-LEDs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "30-detailed-computers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p3:lamp:0:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p3:lamp:0:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p3:lamp:1:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p3:lamp:1:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p3:lamp:2:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p3:lamp:2:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p3:sim:CALL-01:lamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p3:sim:CALL-01:lamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p3:sim:CALL-02:lamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p3:sim:CALL-02:lamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p3:WC:lamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p3:WC:lamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:accent:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:accent:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:accent:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:accent:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:accent:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:accent:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:accent:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:accent:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:accent:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:accent:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:accent:5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:accent:5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:accent:6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:accent:6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:A:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:A:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:A:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:A:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:A:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:A:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:A:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:A:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:B:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:B:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:B:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:B:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:B:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:B:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:B:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:B:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:C:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:C:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:C:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:C:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:C:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:C:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:C:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:C:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:D:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:D:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:D:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:D:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:D:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:D:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:D:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:D:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:sim:ROOM-E:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:sim:ROOM-E:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:sim:ROOM-E:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:sim:ROOM-E:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:sim:ROOM-E:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:sim:ROOM-E:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:sim:ROOM-E:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:sim:ROOM-E:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:MEETING-AREA-01:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:MEETING-AREA-01:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:MEETING-AREA-01:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:MEETING-AREA-01:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:MEETING-AREA-01:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:MEETING-AREA-01:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:MEETING-AREA-01:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:MEETING-AREA-01:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:RECEPTION:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:RECEPTION:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:RECEPTION:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:RECEPTION:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:WAITING-AREA:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:WAITING-AREA:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:WAITING-AREA:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:WAITING-AREA:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:sim:CAFE-01:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:sim:CAFE-01:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:sim:CAFE-01:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:sim:CAFE-01:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:sim:RECREATION:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:sim:RECREATION:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:sim:RECREATION:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:sim:RECREATION:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:CIRCULATION-01:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:CIRCULATION-01:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:CIRCULATION-01:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:CIRCULATION-01:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:CIRCULATION-01:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:CIRCULATION-01:2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:CIRCULATION-01:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:CIRCULATION-01:3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:CIRCULATION-01:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:CIRCULATION-01:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:CIRCULATION-01:5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:CIRCULATION-01:5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:sim:LOUNGE:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:sim:LOUNGE:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:sim:LOUNGE:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:sim:LOUNGE:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:p4:light:sim:PRINT:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:p4:light:sim:PRINT:0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:lounge:floorlamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:lounge:floorlamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:lounge:tablelamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:lounge:tablelamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:waiting:lamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:waiting:lamp:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:lounge:uplight:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:lounge:uplight:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:lounge:cove:back:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:lounge:cove:back:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:lounge:cove:side:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:lounge:cove:side:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:waiting:cove:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:waiting:cove:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:dining:cove:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:dining:cove:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:meeting:greenwall:cove:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:meeting:greenwall:cove:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:reception:toe-light:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:reception:toe-light:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:lounge:vertical:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:lounge:vertical:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:work:planter-glow:A:0:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:work:planter-glow:A:0:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:work:planter-glow:A:1:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:work:planter-glow:A:1:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:work:planter-glow:B:0:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:work:planter-glow:B:0:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:work:planter-glow:B:1:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:work:planter-glow:B:1:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:work:planter-glow:C:0:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:work:planter-glow:C:0:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-off:sim:r1:work:planter-glow:C:1:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "light-dim:sim:r1:work:planter-glow:C:1:light",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:CIRCULATION-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:MEETING-AREA-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:RECEPTION",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:WAITING-AREA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:sim:CAFE-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:sim:CALL-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:sim:CALL-02",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:sim:LOCKERS",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:sim:LOUNGE",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:sim:PRINT",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:sim:RECREATION",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:sim:ROOM-E",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "circuit-off:sim:WC",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sky-clock:8",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sky-clock:12",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sky-clock:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "sky-clock:20",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reverse-clock",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "embedded-controls-hour",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "embedded-controls-circuit",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reopen-paused-no-test-mutations",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": true,
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "human_approval": false
+}

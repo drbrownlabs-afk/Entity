@@ -1,0 +1,5002 @@
+{
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "panes": [
+    {
+      "id": "sim:cafe:display-glazing",
+      "type": "DisplayGlazing",
+      "environment_id": "sim:CAFE-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.3799999952316284,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.699999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:cafe:rear-glass-wing",
+      "type": "Window",
+      "environment_id": "sim:CAFE-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.029999999329447746,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          26.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:0",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.2000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:1",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.149999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:10",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:11",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.649999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:2",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          3.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:3",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.849999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:4",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:5",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.550000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:6",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.899999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:7",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:8",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          17.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p1:window:9",
+      "type": "Window",
+      "environment_id": "CIRCULATION-01",
+      "material": "Window glazing reference",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:door-transom:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.599999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5750000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:east:0:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.78125
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:east:1:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.643750190734863
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:east:2:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.506249904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:east:3:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          3.3687500953674316
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:front:0:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.9399999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.799999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:front:1:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.799999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:front:2:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.799999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:front:3:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.4200000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.799999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:front:4:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.5399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.799999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:rear:0:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.9399999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          7.349999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:rear:1:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          7.349999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:rear:2:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          7.349999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:rear:3:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.4200000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          7.349999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:rear:4:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.5399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          7.349999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:west-after:0:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.508333206176758
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:west-after:1:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.425000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:west-after:2:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          3.3416666984558105
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:A:west-before:0:glass",
+      "type": "Partition",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          7.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:door-transom:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.949999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5750000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:east:0:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.168749809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:east:1:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          11.106249809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:east:2:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.043749809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:east:3:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.981249809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:front:0:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.9399999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.449999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:front:1:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.449999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:front:2:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.449999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:front:3:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.4200000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.449999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:front:4:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.5399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.449999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:rear:0:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.9399999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.699999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:rear:1:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.699999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:rear:2:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.699999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:rear:3:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.4200000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.699999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:rear:4:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.5399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.699999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:west-after:0:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          9.912500381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:west-after:1:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.9375
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:B:west-before:0:glass",
+      "type": "Partition",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:door-transom:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          17.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5750000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:east:0:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          17.643749237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:east:1:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          16.431249618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:east:2:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.21875
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:east:3:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          14.006250381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:front:0:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.9399999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          13.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:front:1:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          13.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:front:2:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          13.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:front:3:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.4200000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          13.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:front:4:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.5399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          13.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:rear:0:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.9399999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          18.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:rear:1:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          18.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:rear:2:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          18.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:rear:3:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.4200000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          18.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:rear:4:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.5399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          18.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:west-after:0:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          16.358333587646484
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:west-after:1:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.175000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:west-after:2:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          13.991666793823242
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:C:west-before:0:glass",
+      "type": "Partition",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          18.149999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:cafe-rear-retained",
+      "type": "Window",
+      "environment_id": "sim:CAFE-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -3.924999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          26.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:door-transom:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5750000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:east:0:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.643749237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:east:1:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.331249237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:east:2:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.018749237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:east:3:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.706249237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:front:0:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.9399999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.049999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:front:1:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.049999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:front:2:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.049999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:front:3:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.4200000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.049999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:front:4:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.5399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.049999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:rear:0:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.9399999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:rear:1:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:rear:2:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:rear:3:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.4200000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:rear:4:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.5399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:west-after:0:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.8125
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:west-after:1:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.637500762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:west-before:0:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.850000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:D:west-before:1:glass",
+      "type": "Partition",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:door:A:leaf",
+      "type": "DoorLeaf",
+      "environment_id": "A",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.599999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.16999995708465576
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:door:B:leaf",
+      "type": "DoorLeaf",
+      "environment_id": "B",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.949999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.16999995708465576
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:door:C:leaf",
+      "type": "DoorLeaf",
+      "environment_id": "C",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          17.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.16999995708465576
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:door:D:leaf",
+      "type": "DoorLeaf",
+      "environment_id": "D",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.16999995708465576
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:door:MEETING-AREA-01:leaf",
+      "type": "DoorLeaf",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.4500000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.16999995708465576
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:door:security:leaf",
+      "type": "DoorLeaf",
+      "environment_id": "CIRCULATION-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.174999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.949999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.16999995708465576
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:door:sim:ROOM-E:leaf",
+      "type": "DoorLeaf",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          27.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.16999995708465576
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:E-rear-window",
+      "type": "Window",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.350000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:E-side-window",
+      "type": "Window",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.289999961853027
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          27.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:door-transom:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.4500000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5750000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:east:0:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.533750057220459
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:east:1:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.4012500047683716
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:east:2:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.731249988079071
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:east:3:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.8637499809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:rear:0:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.9399999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0999999046325684
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:rear:1:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0999999046325684
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:rear:2:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0999999046325684
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:rear:3:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.4200000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0999999046325684
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:rear:4:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.5399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0999999046325684
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:west-after:0:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.3449999988079071
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:west-after:1:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.7649999856948853
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:west-after:2:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.875
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:MEETING-AREA-01:west-before:0:glass",
+      "type": "Partition",
+      "environment_id": "MEETING-AREA-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.049999952316284
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:door-transom:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          27.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5750000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:east:0:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          27.549999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:east:1:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          26.25
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:east:2:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:rear:0:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.9399999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:rear:1:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.18000000715255737
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:rear:2:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:rear:3:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.4200000762939453
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:rear:4:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          3.5399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:west-after:0:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          26.212499618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:west-after:1:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.9375
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p2:sim:ROOM-E:west-before:0:glass",
+      "type": "Partition",
+      "environment_id": "sim:ROOM-E",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.02500000037252903,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          28.075000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p3:security:raised:header",
+      "type": "Partition",
+      "environment_id": "CIRCULATION-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -3.450000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.949999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p3:security:raised:leaf",
+      "type": "DoorLeaf",
+      "environment_id": "CIRCULATION-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -3.450000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.949999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p3:security:raised:static",
+      "type": "Partition",
+      "environment_id": "CIRCULATION-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          12.949999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p3:sim:CALL-01:door:leaf",
+      "type": "DoorLeaf",
+      "environment_id": "sim:CALL-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.350000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.3500000238418579
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p3:sim:CALL-01:front-static",
+      "type": "Partition",
+      "environment_id": "sim:CALL-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.625
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.20000000298023224
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p3:sim:CALL-01:transom",
+      "type": "Partition",
+      "environment_id": "sim:CALL-01",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.350000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p3:sim:CALL-02:door:leaf",
+      "type": "DoorLeaf",
+      "environment_id": "sim:CALL-02",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.350000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.3500000238418579
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p3:sim:CALL-02:front-static",
+      "type": "Partition",
+      "environment_id": "sim:CALL-02",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.625
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.20000000298023224
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p3:sim:CALL-02:transom",
+      "type": "Partition",
+      "environment_id": "sim:CALL-02",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.350000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "sim:p3:wing-front-glass",
+      "type": "Window",
+      "environment_id": "sim:LOUNGE",
+      "material": "Phase02 clear partitions",
+      "IOR": 1.5199999809265137,
+      "roughness": 0.009999999776482582,
+      "transmission": 1.0,
+      "alpha": 1.0,
+      "minimum_dimension_relative": 0.03500000014901161,
+      "world_matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -2.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "count": 135,
+  "note": "Architecture glass, including door leaves, transoms and cafe display. Opaque WC walls remain excluded. Values are design parameters, not measured glass specifications."
+}

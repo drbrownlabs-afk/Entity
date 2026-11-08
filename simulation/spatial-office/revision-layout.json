@@ -1,0 +1,23 @@
+{
+  "revision": "phase04-r1-operator-furniture",
+  "authorization": "Latest operator request: more dining furniture; replace white waiting-area chairs with sofas; enrich lounge realistically; large meeting TV; make bathroom identifiable. No Phase05 authorization.",
+  "source_master": "office-phase04.blend",
+  "output_master": "office-phase04-revision.blend",
+  "source_master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+  "dining": [
+    {"id":"dining:01", "center":[-4.7,-20.2], "radius":0.58, "chairs":4},
+    {"id":"dining:02", "center":[-4.7,-22.65], "radius":0.58, "chairs":4},
+    {"id":"dining:03", "center":[-4.7,-25.1], "radius":0.58, "chairs":4},
+    {"id":"dining:04", "center":[-9.3,-18.95], "radius":0.38, "chairs":2}
+  ],
+  "waiting_sofas": [
+    {"id":"waiting:sofa:01", "center":[-5.65,-15.15], "width":1.65},
+    {"id":"waiting:sofa:02", "center":[-5.65,-17.05], "width":1.65}
+  ],
+  "semantic_override": "The white visitor chairs were labeled RECEPTION in Phase04. The operator now calls this the waiting area and explicitly removes those chairs. Replace their actual geometry with sofas tagged WAITING-AREA; retain reception counter/kiosk and all original reference anchors. Previous black-chair sector sofas remain.",
+  "meeting_tv": {"center":[3.99,0.25,0.0], "width":2.35, "height":1.32, "environment_id":"MEETING-AREA-01"},
+  "WC_bounds": [-7.9,-5.2,0.3,2.5],
+  "WC_privacy": "Opaque walls and roof. No surveillance, camera entity or person inside. Static architectural inspection cameras stay outside, including the open-door view.",
+  "booths": "Both existing phone booths retained in place; improve signs and visible furnishings, without changing their doors or footprints.",
+  "units": "Source +Y up, relative dimensions; proposed furniture, not certified metric, acoustic or accessibility measurements."
+}

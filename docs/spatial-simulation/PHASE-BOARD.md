@@ -1,3 +1,5 @@
+**Estado actual R1:** maestro `office-phase04-revision.blend`; 678 comprobaciones y 21 rutas verificadas. Jardín vertical continuo, luz cálida y vidrio reflectivo. Renders de revisión en ejecución; aceptación humana pendiente. [Galería](REVIEW-PHASE04-REVISION.md).
+
 # Tablero del laboratorio espacial
 
 Base: `a037bb8fcf9e90e510e364edf00452611a8faed8`, rama `codex/spatial-simulation`.
@@ -44,3 +46,19 @@ Esta entrada sustituye los estados anteriores «Fase02 pendiente» y «solo cafe
 | 07 — integración/aceptación | PENDIENTE | Según plan vigente |
 
 Esta secuencia sustituye la numeración antigua de seis fases y la pausa que antes se aplicaba entre 02–04. No equivale a aprobación humana. La excepción de autonomía se toma del plan actualizado por el operador, preservado en la rama; no se extiende a modificar Core/frontend/Gaussian o fusionar ramas.
+
+## Fase04-R1 · refinamiento solicitado
+
+- Modelo/materiales/mobiliario: implementados en maestro separado.
+- Gate geométrico/controles: 656 PASS, 21 rutas.
+- Capturas finales/comparación con1290/1288/1286: EN CURSO.
+- Aceptación premium humana: PENDIENTE.
+- PlayCanvas05/Mixamo06: NO INICIADOS.
+
+### Actualización posterior — luz cálida y vidrio
+
+Maestro R1 actual: e1dc0225fd957c55d38c06ca785667b70d50e544744d68d0477796aac0058e03. Gate 676 PASS / 21 rutas. 71 luminarias/17 circuitos (3200 K trabajo, 2700 K acentos), 135 piezas de vidrio con reflexión/transmisión, treinta equipos detallados. [Revisión](REVIEW-PHASE04-REVISION.md). Capturas finales EN CURSO; no aceptación humana ni PlayCanvas. La entrega base y los archivos originales siguen intactos.
+
+### Candidato con jardín vertical completo
+
+Última petición: cobertura vegetal continua como el Gaussian. Vista original front-return.jpg inspeccionada; fuente intacta. Maestro R1 ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f, 678 PASS / 21 rutas, 2170 grupos vegetales pequeños instanciados, 71 luminarias/17 circuitos y 135 piezas de vidrio. [Galería](REVIEW-PHASE04-REVISION.md) y [plano](evidence/phase04-revision/layout-with-ids.svg). Borradores actuales disponibles; renders de revisión en ejecución. No aceptación humana ni inicio de PlayCanvas.

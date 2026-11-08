@@ -1,0 +1,14 @@
+{
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "source_master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+  "dining_tables": 4,
+  "dining_chairs": 14,
+  "bar_stools_retained": 4,
+  "white_visitor_chairs_removed": true,
+  "new_objects": 2816,
+  "professional_instances": 2206,
+  "luminaires": 71,
+  "circuits": 17,
+  "televisions": 6,
+  "human_approval": false
+}

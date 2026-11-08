@@ -1,0 +1,4 @@
+FILTERED lounge
+FILTERED computer-detail
+FILTERED lighting-corner
+FILTERED office

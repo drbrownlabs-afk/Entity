@@ -1,0 +1,8 @@
+{
+  "path": "docs/evidence/phase09/survey/front-return.jpg",
+  "sha256": "f190d6aab3a8ba0f6e94dce4aa4f1addc3bcfcc7a5054de91c066ce12c293f51",
+  "role": "Original Gaussian reference, inspected directly; complete fine-leaf vertical garden",
+  "scene_master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "wall_clusters": 2170,
+  "original_changed": false
+}

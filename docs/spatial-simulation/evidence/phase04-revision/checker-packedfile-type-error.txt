@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/Entity/simulation/spatial-office/check-revision.py", line 66, in <module>
+    check('PBR-floor-maps-packed',sum(n.type=='TEX_IMAGE' and n.image and n.image.packed_file for n in bpy.data.materials['R1 2K terrazzo PBR'].node_tree.nodes)==3)
+                                  ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: unsupported operand type(s) for +: 'int' and 'PackedFile'
+
+Error: script failed, file: 'simulation/spatial-office/check-revision.py', exiting.
+Blender 4.3.2
+Read blend: "/workspace/Entity/simulation/spatial-office/output/office-phase04-revision.blend"
+
+Blender quit

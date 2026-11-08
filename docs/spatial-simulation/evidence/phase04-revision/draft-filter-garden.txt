@@ -1,0 +1,3 @@
+FILTERED vertical-garden
+FILTERED office
+FILTERED garden-detail

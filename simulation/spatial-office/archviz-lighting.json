@@ -1,0 +1,11 @@
+{
+  "revision": "operator-warm-light-design",
+  "reference": "1290 lounge: warm wall/ceiling coves and indirect corner lighting; 1288 office: warm pendants and glass reflections; 1286 reception: concealed wall wash and toe lighting",
+  "task": {"nominal_kelvin":3200,"design_rgb_linear":[1.0,0.70,0.46],"daylight_minimum":0.40,"emitter_radiance":16},
+  "accent": {"nominal_kelvin":2700,"design_rgb_linear":[1.0,0.48,0.18],"daylight_minimum":0.72,"emitter_radiance":3},
+  "decor": {"nominal_kelvin":2700,"design_rgb_linear":[1.0,0.55,0.25],"daylight_minimum":0.60,"emitter_radiance":6},
+  "sky_strength_day":0.14,
+  "photographic_context_strength_day":0.9,
+  "exposure":0.3,
+  "note":"Design palette and nominal CCT, not measured spectra. Daylight remains separate. All sources and visible emitters switch/dim together; no artificial illumination baked into surfaces."
+}

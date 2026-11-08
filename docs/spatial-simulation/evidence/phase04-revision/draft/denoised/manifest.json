@@ -1,0 +1,73 @@
+{
+  "executable_sha256": "84eb33133f22284a9448e8d7e91d84cda30be30a2840bec61ca72a33bc567341",
+  "images": [
+    {
+      "name": "vertical-garden",
+      "raw": "vertical-garden.png",
+      "raw_sha256": "fa4284c54a51f4557ffcfa5194305d2162543342548ec5b79f65e6e7a5bf1194",
+      "filtered": "denoised/vertical-garden.png",
+      "filtered_sha256": "0750798a2452f3b01c11bd1b5c176a215ccce0448ac0fbb412ced0c88c9287ea",
+      "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "guides": {
+        "albedo": {
+          "path": ".runtime/revision-guides/draft/vertical-garden-Albedo.pfm",
+          "sha256": "4395b45e68b158ab15bcba3a4d789561302a0e9d330c7f81461f2e4b3f8ae945",
+          "source_exr_sha256": "9a87a023acdb76d535359059cf4348a0ef300f68dce738a1c48fb23c29968c75"
+        },
+        "normal": {
+          "path": ".runtime/revision-guides/draft/vertical-garden-Normal.pfm",
+          "sha256": "110694559ff76ca59a614e38d5489c4093daa1e64b3391680d32b49ad896e48a",
+          "source_exr_sha256": "75abe492e1304c55679bc8e1d73a5ef16272c98ebedc2b93864f6db2f3ecf2b1"
+        }
+      },
+      "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
+      "raw_mean_srgb": 0.24710261821746826
+    },
+    {
+      "name": "office",
+      "raw": "office.png",
+      "raw_sha256": "3ac41b3116a1df6f0f8d4df851c0f1d295e68b86ea7c370b9cce1d6c2d17cb2c",
+      "filtered": "denoised/office.png",
+      "filtered_sha256": "d67e9bb85f3b5668ef07db8d6beebc27c6152cb8b1f1e372a362e3b01988d36f",
+      "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "guides": {
+        "albedo": {
+          "path": ".runtime/revision-guides/draft/office-Albedo.pfm",
+          "sha256": "0ee2eccb5ede309114da5b3a4885ac4f2a7959470e87977c779cb0b37d373873",
+          "source_exr_sha256": "66501fe21d8c87422a64aa5ec4fe4f3da271fd7a8c099bedd2d2a5b7fd333a89"
+        },
+        "normal": {
+          "path": ".runtime/revision-guides/draft/office-Normal.pfm",
+          "sha256": "6e17aca660deb807cb5581ff3e6741afb064600827ec925a0a96cedb4d2629c3",
+          "source_exr_sha256": "2318b33653f9c20bd94fad19bbeddc0421d4d3a0055bf3b0328c8ebd87002c30"
+        }
+      },
+      "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
+      "raw_mean_srgb": 0.32927191257476807
+    },
+    {
+      "name": "garden-detail",
+      "raw": "garden-detail.png",
+      "raw_sha256": "7876909bab4f70d799eab39ae9a2327c24f020db492e1ced77e570713b16cc95",
+      "filtered": "denoised/garden-detail.png",
+      "filtered_sha256": "f1a48082f3f479a70b9fbc53216e50cdfc2af84f8684cf1d0b5b9ddd1719d804",
+      "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "guides": {
+        "albedo": {
+          "path": ".runtime/revision-guides/draft/garden-detail-Albedo.pfm",
+          "sha256": "c0610cf47a06743d839f96f59d6f2317a5a0d39aca9970485b376cdbcf5c2b9f",
+          "source_exr_sha256": "e321346673a22a926374202dbd66ae34b28d9ea0a3b4c1832dbd4e8a1e569be0"
+        },
+        "normal": {
+          "path": ".runtime/revision-guides/draft/garden-detail-Normal.pfm",
+          "sha256": "72882d17b45970c8c208ce3262be876ae8032b5cf440556c4b9e0a5db2e61440",
+          "source_exr_sha256": "9ce3f5d28bb5de2f21db4e659e8a5772d93671248e149bfcaf412882c153c916"
+        }
+      },
+      "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
+      "raw_mean_srgb": 0.07977144420146942
+    }
+  ],
+  "no_reference_photo_edits": true,
+  "no_generated_geometry_or_relit_pixels": true
+}

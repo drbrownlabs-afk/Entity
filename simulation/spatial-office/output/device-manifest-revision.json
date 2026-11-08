@@ -1,0 +1,4563 @@
+{
+  "schema_version": "1.0",
+  "source": "simulation only; no Core registration",
+  "initial_clock": {
+    "hour": 12.0,
+    "speed": 60,
+    "playing": false
+  },
+  "solar_configuration": {
+    "latitude": null,
+    "longitude": null,
+    "date": "2026-11-08",
+    "timezone": "UTC",
+    "north_rotation_degrees": 0,
+    "mode": "design-reference-until-location-supplied",
+    "note": "No geographic location or true north is asserted for the building. Optional observer coordinates enable Astral; otherwise this explicit artistic trajectory is used."
+  },
+  "solar_fallback": "explicit design-reference trajectory until observer supplied",
+  "luminaires": [
+    {
+      "id": "sim:p3:lamp:0:light",
+      "type": "luminaire",
+      "environment_id": "sim:LOUNGE",
+      "fixture_id": "sim:p3:lamp:0:fixture",
+      "emitter_id": "sim:p4:lens:0",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          3.200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.4600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -10.600000381469727,
+        1.4600000381469727,
+        -3.200000047683716
+      ],
+      "nominal_power_blender": 140,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p3:lamp:1:light",
+      "type": "luminaire",
+      "environment_id": "sim:LOUNGE",
+      "fixture_id": "sim:p3:lamp:1:fixture",
+      "emitter_id": "sim:p4:lens:1",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.4600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -8.0,
+        1.4600000381469727,
+        -2.0
+      ],
+      "nominal_power_blender": 140,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p3:lamp:2:light",
+      "type": "luminaire",
+      "environment_id": "sim:LOCKERS",
+      "fixture_id": "sim:p3:lamp:2:fixture",
+      "emitter_id": "sim:p4:lens:2",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.699999988079071
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.4600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -4.300000190734863,
+        1.4600000381469727,
+        0.699999988079071
+      ],
+      "nominal_power_blender": 140,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p3:sim:CALL-01:lamp:light",
+      "type": "luminaire",
+      "environment_id": "sim:CALL-01",
+      "fixture_id": "sim:p3:sim:CALL-01:lamp:fixture",
+      "emitter_id": "sim:p4:lens:3",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.050000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.2000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.059999942779541
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -11.050000190734863,
+        1.059999942779541,
+        1.2000000476837158
+      ],
+      "nominal_power_blender": 75,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p3:sim:CALL-02:lamp:light",
+      "type": "luminaire",
+      "environment_id": "sim:CALL-02",
+      "fixture_id": "sim:p3:sim:CALL-02:lamp:fixture",
+      "emitter_id": "sim:p4:lens:4",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.050000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.2000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.059999942779541
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -9.050000190734863,
+        1.059999942779541,
+        1.2000000476837158
+      ],
+      "nominal_power_blender": 75,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p3:WC:lamp:light",
+      "type": "luminaire",
+      "environment_id": "sim:WC",
+      "fixture_id": "sim:p3:WC:lamp:fixture",
+      "emitter_id": "sim:p4:lens:5",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6.550000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.4600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -6.550000190734863,
+        1.4600000381469727,
+        1.5
+      ],
+      "nominal_power_blender": 80,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:accent:0",
+      "type": "luminaire",
+      "environment_id": "sim:CAFE-01",
+      "fixture_id": "sim:cafe:back-shelf-light:0",
+      "emitter_id": "sim:cafe:back-shelf-light:0",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.449999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.3850000202655792
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -11.449999809265137,
+        0.3850000202655792,
+        -24.299999237060547
+      ],
+      "nominal_power_blender": 50,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:p4:accent:1",
+      "type": "luminaire",
+      "environment_id": "sim:CAFE-01",
+      "fixture_id": "sim:cafe:back-shelf-light:1",
+      "emitter_id": "sim:cafe:back-shelf-light:1",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.449999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.3850000202655792
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -11.449999809265137,
+        0.3850000202655792,
+        -22.700000762939453
+      ],
+      "nominal_power_blender": 50,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:p4:accent:2",
+      "type": "luminaire",
+      "environment_id": "sim:CAFE-01",
+      "fixture_id": "sim:cafe:back-shelf-light:2",
+      "emitter_id": "sim:cafe:back-shelf-light:2",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.449999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.3850000202655792
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -11.449999809265137,
+        0.3850000202655792,
+        -21.100000381469727
+      ],
+      "nominal_power_blender": 50,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:p4:accent:3",
+      "type": "luminaire",
+      "environment_id": "sim:CAFE-01",
+      "fixture_id": "sim:cafe:bar-light",
+      "emitter_id": "sim:cafe:bar-light",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.234999656677246
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.5449999570846558
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -9.234999656677246,
+        -0.5449999570846558,
+        -22.299999237060547
+      ],
+      "nominal_power_blender": 50,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:p4:accent:4",
+      "type": "luminaire",
+      "environment_id": "sim:CAFE-01",
+      "fixture_id": "sim:cafe:bar-plinth-light",
+      "emitter_id": "sim:cafe:bar-plinth-light",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.239999771118164
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.4950000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -9.239999771118164,
+        -1.4950000047683716,
+        -22.299999237060547
+      ],
+      "nominal_power_blender": 50,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:p4:accent:5",
+      "type": "luminaire",
+      "environment_id": "sim:CAFE-01",
+      "fixture_id": "sim:cafe:hanging-light:0",
+      "emitter_id": "sim:cafe:hanging-light:0",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5850000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -9.600000381469727,
+        0.5850000381469727,
+        -23.700000762939453
+      ],
+      "nominal_power_blender": 50,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:p4:accent:6",
+      "type": "luminaire",
+      "environment_id": "sim:CAFE-01",
+      "fixture_id": "sim:cafe:hanging-light:1",
+      "emitter_id": "sim:cafe:hanging-light:1",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5850000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -9.600000381469727,
+        0.5850000381469727,
+        -21.0
+      ],
+      "nominal_power_blender": 50,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:p4:light:A:0",
+      "type": "luminaire",
+      "environment_id": "A",
+      "fixture_id": "sim:p4:fixture:A:0",
+      "emitter_id": "sim:p4:lens:13",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        -4.099999904632568
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:A:1",
+      "type": "luminaire",
+      "environment_id": "A",
+      "fixture_id": "sim:p4:fixture:A:1",
+      "emitter_id": "sim:p4:lens:14",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        -4.099999904632568
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:A:2",
+      "type": "luminaire",
+      "environment_id": "A",
+      "fixture_id": "sim:p4:fixture:A:2",
+      "emitter_id": "sim:p4:lens:15",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        -6.0
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:A:3",
+      "type": "luminaire",
+      "environment_id": "A",
+      "fixture_id": "sim:p4:fixture:A:3",
+      "emitter_id": "sim:p4:lens:16",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        -6.0
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:B:0",
+      "type": "luminaire",
+      "environment_id": "B",
+      "fixture_id": "sim:p4:fixture:B:0",
+      "emitter_id": "sim:p4:lens:17",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          9.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        -9.5
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:B:1",
+      "type": "luminaire",
+      "environment_id": "B",
+      "fixture_id": "sim:p4:fixture:B:1",
+      "emitter_id": "sim:p4:lens:18",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          9.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        -9.5
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:B:2",
+      "type": "luminaire",
+      "environment_id": "B",
+      "fixture_id": "sim:p4:fixture:B:2",
+      "emitter_id": "sim:p4:lens:19",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          11.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        -11.600000381469727
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:B:3",
+      "type": "luminaire",
+      "environment_id": "B",
+      "fixture_id": "sim:p4:fixture:B:3",
+      "emitter_id": "sim:p4:lens:20",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          11.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        -11.600000381469727
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:C:0",
+      "type": "luminaire",
+      "environment_id": "C",
+      "fixture_id": "sim:p4:fixture:C:0",
+      "emitter_id": "sim:p4:lens:21",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          14.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        -14.600000381469727
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:C:1",
+      "type": "luminaire",
+      "environment_id": "C",
+      "fixture_id": "sim:p4:fixture:C:1",
+      "emitter_id": "sim:p4:lens:22",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          14.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        -14.600000381469727
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:C:2",
+      "type": "luminaire",
+      "environment_id": "C",
+      "fixture_id": "sim:p4:fixture:C:2",
+      "emitter_id": "sim:p4:lens:23",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          17.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        -17.100000381469727
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:C:3",
+      "type": "luminaire",
+      "environment_id": "C",
+      "fixture_id": "sim:p4:fixture:C:3",
+      "emitter_id": "sim:p4:lens:24",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          17.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        -17.100000381469727
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:D:0",
+      "type": "luminaire",
+      "environment_id": "D",
+      "fixture_id": "sim:p4:fixture:D:0",
+      "emitter_id": "sim:p4:lens:25",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        -20.5
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:D:1",
+      "type": "luminaire",
+      "environment_id": "D",
+      "fixture_id": "sim:p4:fixture:D:1",
+      "emitter_id": "sim:p4:lens:26",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        -20.5
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:D:2",
+      "type": "luminaire",
+      "environment_id": "D",
+      "fixture_id": "sim:p4:fixture:D:2",
+      "emitter_id": "sim:p4:lens:27",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        -23.0
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:D:3",
+      "type": "luminaire",
+      "environment_id": "D",
+      "fixture_id": "sim:p4:fixture:D:3",
+      "emitter_id": "sim:p4:lens:28",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        -23.0
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:sim:ROOM-E:0",
+      "type": "luminaire",
+      "environment_id": "sim:ROOM-E",
+      "fixture_id": "sim:p4:fixture:sim:ROOM-E:0",
+      "emitter_id": "sim:p4:lens:29",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        -25.399999618530273
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:sim:ROOM-E:1",
+      "type": "luminaire",
+      "environment_id": "sim:ROOM-E",
+      "fixture_id": "sim:p4:fixture:sim:ROOM-E:1",
+      "emitter_id": "sim:p4:lens:30",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        -25.399999618530273
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:sim:ROOM-E:2",
+      "type": "luminaire",
+      "environment_id": "sim:ROOM-E",
+      "fixture_id": "sim:p4:fixture:sim:ROOM-E:2",
+      "emitter_id": "sim:p4:lens:31",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          27.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        -27.0
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:sim:ROOM-E:3",
+      "type": "luminaire",
+      "environment_id": "sim:ROOM-E",
+      "fixture_id": "sim:p4:fixture:sim:ROOM-E:3",
+      "emitter_id": "sim:p4:lens:32",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          27.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        -27.0
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:MEETING-AREA-01:0",
+      "type": "luminaire",
+      "environment_id": "MEETING-AREA-01",
+      "fixture_id": "sim:p4:fixture:MEETING-AREA-01:0",
+      "emitter_id": "sim:p4:lens:33",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.800000011920929
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        -0.800000011920929
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:MEETING-AREA-01:1",
+      "type": "luminaire",
+      "environment_id": "MEETING-AREA-01",
+      "fixture_id": "sim:p4:fixture:MEETING-AREA-01:1",
+      "emitter_id": "sim:p4:lens:34",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.800000011920929
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        -0.800000011920929
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:MEETING-AREA-01:2",
+      "type": "luminaire",
+      "environment_id": "MEETING-AREA-01",
+      "fixture_id": "sim:p4:fixture:MEETING-AREA-01:2",
+      "emitter_id": "sim:p4:lens:35",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.10000000149011612,
+        1.5,
+        1.0
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:MEETING-AREA-01:3",
+      "type": "luminaire",
+      "environment_id": "MEETING-AREA-01",
+      "fixture_id": "sim:p4:fixture:MEETING-AREA-01:3",
+      "emitter_id": "sim:p4:lens:36",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.700000047683716,
+        1.5,
+        1.0
+      ],
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:RECEPTION:0",
+      "type": "luminaire",
+      "environment_id": "RECEPTION",
+      "fixture_id": "sim:p4:fixture:RECEPTION:0",
+      "emitter_id": "sim:p4:lens:37",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.599999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -4.599999904632568,
+        1.5,
+        -15.100000381469727
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:RECEPTION:1",
+      "type": "luminaire",
+      "environment_id": "RECEPTION",
+      "fixture_id": "sim:p4:fixture:RECEPTION:1",
+      "emitter_id": "sim:p4:lens:38",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.599999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          16.799999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -4.599999904632568,
+        1.5,
+        -16.799999237060547
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:WAITING-AREA:0",
+      "type": "luminaire",
+      "environment_id": "WAITING-AREA",
+      "fixture_id": "sim:p4:fixture:WAITING-AREA:0",
+      "emitter_id": "sim:p4:lens:39",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.800000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -4.800000190734863,
+        1.5,
+        -8.300000190734863
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:WAITING-AREA:1",
+      "type": "luminaire",
+      "environment_id": "WAITING-AREA",
+      "fixture_id": "sim:p4:fixture:WAITING-AREA:1",
+      "emitter_id": "sim:p4:lens:40",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.800000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -4.800000190734863,
+        1.5,
+        -10.0
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:sim:CAFE-01:0",
+      "type": "luminaire",
+      "environment_id": "sim:CAFE-01",
+      "fixture_id": "sim:p4:fixture:sim:CAFE-01:0",
+      "emitter_id": "sim:p4:lens:41",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -10.399999618530273,
+        1.5,
+        -20.0
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:sim:CAFE-01:1",
+      "type": "luminaire",
+      "environment_id": "sim:CAFE-01",
+      "fixture_id": "sim:p4:fixture:sim:CAFE-01:1",
+      "emitter_id": "sim:p4:lens:42",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -10.399999618530273,
+        1.5,
+        -24.5
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:sim:RECREATION:0",
+      "type": "luminaire",
+      "environment_id": "sim:RECREATION",
+      "fixture_id": "sim:p4:fixture:sim:RECREATION:0",
+      "emitter_id": "sim:p4:lens:43",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -4.300000190734863,
+        1.5,
+        -20.5
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:sim:RECREATION:1",
+      "type": "luminaire",
+      "environment_id": "sim:RECREATION",
+      "fixture_id": "sim:p4:fixture:sim:RECREATION:1",
+      "emitter_id": "sim:p4:lens:44",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -4.300000190734863,
+        1.5,
+        -24.0
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:0",
+      "type": "luminaire",
+      "environment_id": "CIRCULATION-01",
+      "fixture_id": "sim:p4:fixture:CIRCULATION-01:0",
+      "emitter_id": "sim:p4:lens:45",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -2.200000047683716,
+        1.5,
+        -0.0
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:1",
+      "type": "luminaire",
+      "environment_id": "CIRCULATION-01",
+      "fixture_id": "sim:p4:fixture:CIRCULATION-01:1",
+      "emitter_id": "sim:p4:lens:46",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -2.200000047683716,
+        1.5,
+        -5.0
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:2",
+      "type": "luminaire",
+      "environment_id": "CIRCULATION-01",
+      "fixture_id": "sim:p4:fixture:CIRCULATION-01:2",
+      "emitter_id": "sim:p4:lens:47",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -2.200000047683716,
+        1.5,
+        -10.0
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:3",
+      "type": "luminaire",
+      "environment_id": "CIRCULATION-01",
+      "fixture_id": "sim:p4:fixture:CIRCULATION-01:3",
+      "emitter_id": "sim:p4:lens:48",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -2.200000047683716,
+        1.5,
+        -15.0
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:4",
+      "type": "luminaire",
+      "environment_id": "CIRCULATION-01",
+      "fixture_id": "sim:p4:fixture:CIRCULATION-01:4",
+      "emitter_id": "sim:p4:lens:49",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -2.200000047683716,
+        1.5,
+        -20.0
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:5",
+      "type": "luminaire",
+      "environment_id": "CIRCULATION-01",
+      "fixture_id": "sim:p4:fixture:CIRCULATION-01:5",
+      "emitter_id": "sim:p4:lens:50",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -2.200000047683716,
+        1.5,
+        -25.0
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:sim:LOUNGE:0",
+      "type": "luminaire",
+      "environment_id": "sim:LOUNGE",
+      "fixture_id": "sim:p4:fixture:sim:LOUNGE:0",
+      "emitter_id": "sim:p4:lens:51",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -10.5,
+        1.5,
+        -4.400000095367432
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:sim:LOUNGE:1",
+      "type": "luminaire",
+      "environment_id": "sim:LOUNGE",
+      "fixture_id": "sim:p4:fixture:sim:LOUNGE:1",
+      "emitter_id": "sim:p4:lens:52",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.2000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -10.5,
+        1.5,
+        -1.2000000476837158
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:p4:light:sim:PRINT:0",
+      "type": "luminaire",
+      "environment_id": "sim:PRINT",
+      "fixture_id": "sim:p4:fixture:sim:PRINT:0",
+      "emitter_id": "sim:p4:lens:53",
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.199999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.7999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -4.199999809265137,
+        1.5,
+        -1.7999999523162842
+      ],
+      "nominal_power_blender": 90,
+      "nominal_temperature_kelvin": 3200,
+      "color_rgb": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "design_role": "task",
+      "daylight_minimum": 0.4
+    },
+    {
+      "id": "sim:r1:lounge:floorlamp:light",
+      "type": "luminaire",
+      "environment_id": "sim:LOUNGE",
+      "fixture_id": "sim:r1:lounge:floorlamp:shade",
+      "emitter_id": "sim:r1:lounge:floorlamp:lens",
+      "nominal_power_blender": 65,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.520000457763672
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.150000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.07000000029802322
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -11.520000457763672,
+        -0.07000000029802322,
+        -4.150000095367432
+      ],
+      "design_role": "decor",
+      "daylight_minimum": 0.6
+    },
+    {
+      "id": "sim:r1:lounge:tablelamp:light",
+      "type": "luminaire",
+      "environment_id": "sim:LOUNGE",
+      "fixture_id": "sim:r1:lounge:tablelamp:shade",
+      "emitter_id": "sim:r1:lounge:tablelamp:lens",
+      "nominal_power_blender": 25,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -7.699999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.130000114440918
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -7.699999809265137,
+        -0.6200000047683716,
+        -5.130000114440918
+      ],
+      "design_role": "decor",
+      "daylight_minimum": 0.6
+    },
+    {
+      "id": "sim:r1:waiting:lamp:light",
+      "type": "luminaire",
+      "environment_id": "WAITING-AREA",
+      "fixture_id": "sim:r1:waiting:lamp:shade",
+      "emitter_id": "sim:r1:waiting:lamp:lens",
+      "nominal_power_blender": 40,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.900000095367432
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          16.149999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.11999999731779099
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -5.900000095367432,
+        -0.11999999731779099,
+        -16.149999618530273
+      ],
+      "design_role": "decor",
+      "daylight_minimum": 0.6
+    },
+    {
+      "id": "sim:r1:lounge:uplight:light",
+      "type": "luminaire",
+      "environment_id": "sim:LOUNGE",
+      "fixture_id": "sim:r1:lounge:uplight:shade",
+      "emitter_id": "sim:r1:lounge:uplight:lens",
+      "nominal_power_blender": 50,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.25
+        ],
+        [
+          0.0,
+          -1.0,
+          8.742277657347586e-08,
+          5.46999979019165
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          -1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -8.25,
+        -1.5499999523162842,
+        -5.46999979019165
+      ],
+      "design_role": "decor",
+      "daylight_minimum": 0.6
+    },
+    {
+      "id": "sim:r1:lounge:cove:back:light",
+      "type": "luminaire",
+      "environment_id": "sim:LOUNGE",
+      "fixture_id": "sim:r1:lounge:cove:back:channel",
+      "emitter_id": "sim:r1:lounge:cove:back:emitter",
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.225000381469727
+        ],
+        [
+          0.0,
+          -1.0,
+          8.742277657347586e-08,
+          5.650000095367432
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -9.225000381469727,
+        1.5499999523162842,
+        -5.650000095367432
+      ],
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:r1:lounge:cove:side:light",
+      "type": "luminaire",
+      "environment_id": "sim:LOUNGE",
+      "fixture_id": "sim:r1:lounge:cove:side:channel",
+      "emitter_id": "sim:r1:lounge:cove:side:emitter",
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          -4.371138828673793e-08,
+          1.0,
+          -8.742277657347586e-08,
+          -11.890000343322754
+        ],
+        [
+          1.0,
+          4.371138828673793e-08,
+          -3.821371353845884e-15,
+          2.950000047683716
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -11.890000343322754,
+        1.5499999523162842,
+        -2.950000047683716
+      ],
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:r1:waiting:cove:light",
+      "type": "luminaire",
+      "environment_id": "WAITING-AREA",
+      "fixture_id": "sim:r1:waiting:cove:channel",
+      "emitter_id": "sim:r1:waiting:cove:emitter",
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          -4.371138828673793e-08,
+          1.0,
+          -8.742277657347586e-08,
+          -6.369999885559082
+        ],
+        [
+          1.0,
+          4.371138828673793e-08,
+          -3.821371353845884e-15,
+          16.0
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -6.369999885559082,
+        1.5499999523162842,
+        -16.0
+      ],
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:r1:dining:cove:light",
+      "type": "luminaire",
+      "environment_id": "sim:RECREATION",
+      "fixture_id": "sim:r1:dining:cove:channel",
+      "emitter_id": "sim:r1:dining:cove:emitter",
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          -4.371138828673793e-08,
+          1.0,
+          -8.742277657347586e-08,
+          -6.199999809265137
+        ],
+        [
+          1.0,
+          4.371138828673793e-08,
+          -3.821371353845884e-15,
+          22.450000762939453
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -6.199999809265137,
+        1.5499999523162842,
+        -22.450000762939453
+      ],
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:r1:meeting:greenwall:cove:light",
+      "type": "luminaire",
+      "environment_id": "MEETING-AREA-01",
+      "fixture_id": "sim:r1:meeting:greenwall:cove:channel",
+      "emitter_id": "sim:r1:meeting:greenwall:cove:emitter",
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -2.1600000858306885
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -0.05000000074505806,
+        1.5499999523162842,
+        2.1600000858306885
+      ],
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:r1:reception:toe-light:light",
+      "type": "luminaire",
+      "environment_id": "RECEPTION",
+      "fixture_id": "sim:r1:reception:toe-light:channel",
+      "emitter_id": "sim:r1:reception:toe-light:emitter",
+      "nominal_power_blender": 110,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          -4.371138828673793e-08,
+          1.0,
+          -8.742277657347586e-08,
+          -3.319999933242798
+        ],
+        [
+          1.0,
+          4.371138828673793e-08,
+          -3.821371353845884e-15,
+          16.100000381469727
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          -1.4199999570846558
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -3.319999933242798,
+        -1.4199999570846558,
+        -16.100000381469727
+      ],
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:r1:lounge:vertical:light",
+      "type": "luminaire",
+      "environment_id": "sim:LOUNGE",
+      "fixture_id": "sim:r1:lounge:vertical:channel",
+      "emitter_id": "sim:r1:lounge:vertical:emitter",
+      "nominal_power_blender": 60,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          -1.0,
+          -11.899999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.46999979019165
+        ],
+        [
+          1.0,
+          0.0,
+          -4.371138828673793e-08,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        -11.899999618530273,
+        0.019999999552965164,
+        -5.46999979019165
+      ],
+      "design_role": "accent",
+      "daylight_minimum": 0.72
+    },
+    {
+      "id": "sim:r1:work:planter-glow:A:0:light",
+      "type": "luminaire",
+      "environment_id": "A",
+      "fixture_id": "sim:p1:A:planter:0",
+      "emitter_id": "sim:r1:work:planter-glow:A:0:emitter",
+      "nominal_power_blender": 45,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.3499999940395355
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          3.3500001430511475
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.3499999940395355,
+        0.5799999833106995,
+        -3.3500001430511475
+      ],
+      "design_role": "decor",
+      "daylight_minimum": 0.6
+    },
+    {
+      "id": "sim:r1:work:planter-glow:A:1:light",
+      "type": "luminaire",
+      "environment_id": "A",
+      "fixture_id": "sim:p1:A:planter:1",
+      "emitter_id": "sim:r1:work:planter-glow:A:1:emitter",
+      "nominal_power_blender": 45,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.850000023841858
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          3.3500001430511475
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        1.850000023841858,
+        0.5799999833106995,
+        -3.3500001430511475
+      ],
+      "design_role": "decor",
+      "daylight_minimum": 0.6
+    },
+    {
+      "id": "sim:r1:work:planter-glow:B:0:light",
+      "type": "luminaire",
+      "environment_id": "B",
+      "fixture_id": "sim:p1:B:planter:0",
+      "emitter_id": "sim:r1:work:planter-glow:B:0:emitter",
+      "nominal_power_blender": 45,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0499999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        1.0499999523162842,
+        0.5799999833106995,
+        -8.950000762939453
+      ],
+      "design_role": "decor",
+      "daylight_minimum": 0.6
+    },
+    {
+      "id": "sim:r1:work:planter-glow:B:1:light",
+      "type": "luminaire",
+      "environment_id": "B",
+      "fixture_id": "sim:p1:B:planter:1",
+      "emitter_id": "sim:r1:work:planter-glow:B:1:emitter",
+      "nominal_power_blender": 45,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.549999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        2.549999952316284,
+        0.5799999833106995,
+        -8.950000762939453
+      ],
+      "design_role": "decor",
+      "daylight_minimum": 0.6
+    },
+    {
+      "id": "sim:r1:work:planter-glow:C:0:light",
+      "type": "luminaire",
+      "environment_id": "C",
+      "fixture_id": "sim:p1:C:planter:0",
+      "emitter_id": "sim:r1:work:planter-glow:C:0:emitter",
+      "nominal_power_blender": 45,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.4000000059604645
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          13.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        0.4000000059604645,
+        0.5799999833106995,
+        -13.950000762939453
+      ],
+      "design_role": "decor",
+      "daylight_minimum": 0.6
+    },
+    {
+      "id": "sim:r1:work:planter-glow:C:1:light",
+      "type": "luminaire",
+      "environment_id": "C",
+      "fixture_id": "sim:p1:C:planter:1",
+      "emitter_id": "sim:r1:work:planter-glow:C:1:emitter",
+      "nominal_power_blender": 45,
+      "nominal_temperature_kelvin": 2700,
+      "color_rgb": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "dimmable": true,
+      "initial_state": {
+        "on": true,
+        "level": 1,
+        "mode": "auto"
+      },
+      "light_type": "AREA",
+      "physical_device_confirmed": false,
+      "transform_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.899999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          13.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position_source": [
+        1.899999976158142,
+        0.5799999833106995,
+        -13.950000762939453
+      ],
+      "design_role": "decor",
+      "daylight_minimum": 0.6
+    }
+  ],
+  "circuits": {
+    "A": [
+      "sim:p4:light:A:0",
+      "sim:p4:light:A:1",
+      "sim:p4:light:A:2",
+      "sim:p4:light:A:3",
+      "sim:r1:work:planter-glow:A:0:light",
+      "sim:r1:work:planter-glow:A:1:light"
+    ],
+    "B": [
+      "sim:p4:light:B:0",
+      "sim:p4:light:B:1",
+      "sim:p4:light:B:2",
+      "sim:p4:light:B:3",
+      "sim:r1:work:planter-glow:B:0:light",
+      "sim:r1:work:planter-glow:B:1:light"
+    ],
+    "C": [
+      "sim:p4:light:C:0",
+      "sim:p4:light:C:1",
+      "sim:p4:light:C:2",
+      "sim:p4:light:C:3",
+      "sim:r1:work:planter-glow:C:0:light",
+      "sim:r1:work:planter-glow:C:1:light"
+    ],
+    "CIRCULATION-01": [
+      "sim:p4:light:CIRCULATION-01:0",
+      "sim:p4:light:CIRCULATION-01:1",
+      "sim:p4:light:CIRCULATION-01:2",
+      "sim:p4:light:CIRCULATION-01:3",
+      "sim:p4:light:CIRCULATION-01:4",
+      "sim:p4:light:CIRCULATION-01:5"
+    ],
+    "D": [
+      "sim:p4:light:D:0",
+      "sim:p4:light:D:1",
+      "sim:p4:light:D:2",
+      "sim:p4:light:D:3"
+    ],
+    "MEETING-AREA-01": [
+      "sim:p4:light:MEETING-AREA-01:0",
+      "sim:p4:light:MEETING-AREA-01:1",
+      "sim:p4:light:MEETING-AREA-01:2",
+      "sim:p4:light:MEETING-AREA-01:3",
+      "sim:r1:meeting:greenwall:cove:light"
+    ],
+    "RECEPTION": [
+      "sim:p4:light:RECEPTION:0",
+      "sim:p4:light:RECEPTION:1",
+      "sim:r1:reception:toe-light:light"
+    ],
+    "WAITING-AREA": [
+      "sim:p4:light:WAITING-AREA:0",
+      "sim:p4:light:WAITING-AREA:1",
+      "sim:r1:waiting:lamp:light",
+      "sim:r1:waiting:cove:light"
+    ],
+    "sim:CAFE-01": [
+      "sim:p4:accent:0",
+      "sim:p4:accent:1",
+      "sim:p4:accent:2",
+      "sim:p4:accent:3",
+      "sim:p4:accent:4",
+      "sim:p4:accent:5",
+      "sim:p4:accent:6",
+      "sim:p4:light:sim:CAFE-01:0",
+      "sim:p4:light:sim:CAFE-01:1"
+    ],
+    "sim:CALL-01": [
+      "sim:p3:sim:CALL-01:lamp:light"
+    ],
+    "sim:CALL-02": [
+      "sim:p3:sim:CALL-02:lamp:light"
+    ],
+    "sim:LOCKERS": [
+      "sim:p3:lamp:2:light"
+    ],
+    "sim:LOUNGE": [
+      "sim:p3:lamp:0:light",
+      "sim:p3:lamp:1:light",
+      "sim:p4:light:sim:LOUNGE:0",
+      "sim:p4:light:sim:LOUNGE:1",
+      "sim:r1:lounge:floorlamp:light",
+      "sim:r1:lounge:tablelamp:light",
+      "sim:r1:lounge:uplight:light",
+      "sim:r1:lounge:cove:back:light",
+      "sim:r1:lounge:cove:side:light",
+      "sim:r1:lounge:vertical:light"
+    ],
+    "sim:PRINT": [
+      "sim:p4:light:sim:PRINT:0"
+    ],
+    "sim:RECREATION": [
+      "sim:p4:light:sim:RECREATION:0",
+      "sim:p4:light:sim:RECREATION:1",
+      "sim:r1:dining:cove:light"
+    ],
+    "sim:ROOM-E": [
+      "sim:p4:light:sim:ROOM-E:0",
+      "sim:p4:light:sim:ROOM-E:1",
+      "sim:p4:light:sim:ROOM-E:2",
+      "sim:p4:light:sim:ROOM-E:3"
+    ],
+    "sim:WC": [
+      "sim:p3:WC:lamp:light"
+    ]
+  },
+  "doors": [
+    {
+      "id": "sim:p2:door:MEETING-AREA-01",
+      "environment_id": "MEETING-AREA-01",
+      "hinge_source": [
+        -1.5,
+        -1.85,
+        -2.0
+      ],
+      "width": 1.1,
+      "leaf_id": "sim:p2:door:MEETING-AREA-01:leaf",
+      "collider_id": "sim:p2:door:MEETING-AREA-01:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p2:door:A",
+      "environment_id": "A",
+      "hinge_source": [
+        -1.5,
+        -1.85,
+        -7.15
+      ],
+      "width": 1.1,
+      "leaf_id": "sim:p2:door:A:leaf",
+      "collider_id": "sim:p2:door:A:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p2:door:B",
+      "environment_id": "B",
+      "hinge_source": [
+        -1.5,
+        -1.85,
+        -11.5
+      ],
+      "width": 1.1,
+      "leaf_id": "sim:p2:door:B:leaf",
+      "collider_id": "sim:p2:door:B:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p2:door:C",
+      "environment_id": "C",
+      "hinge_source": [
+        -1.5,
+        -1.85,
+        -18.05
+      ],
+      "width": 1.1,
+      "leaf_id": "sim:p2:door:C:leaf",
+      "collider_id": "sim:p2:door:C:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p2:door:D",
+      "environment_id": "D",
+      "hinge_source": [
+        -1.5,
+        -1.85,
+        -22.5
+      ],
+      "width": 1.1,
+      "leaf_id": "sim:p2:door:D:leaf",
+      "collider_id": "sim:p2:door:D:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p2:door:sim:ROOM-E",
+      "environment_id": "sim:ROOM-E",
+      "hinge_source": [
+        -1.5,
+        -1.85,
+        -27.95
+      ],
+      "width": 1.1,
+      "leaf_id": "sim:p2:door:sim:ROOM-E:leaf",
+      "collider_id": "sim:p2:door:sim:ROOM-E:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p2:door:security",
+      "environment_id": "CIRCULATION-01",
+      "hinge_source": [
+        -2.85,
+        -1.85,
+        -12.95
+      ],
+      "width": 1.35,
+      "leaf_id": "sim:p2:door:security:leaf",
+      "collider_id": "sim:p2:door:security:collider",
+      "open_angle": -1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:security:raised",
+      "environment_id": "CIRCULATION-01",
+      "hinge_source": [
+        -4.0,
+        -1.55,
+        -12.95
+      ],
+      "width": 1.1,
+      "leaf_id": "sim:p3:security:raised:leaf",
+      "collider_id": "sim:p3:security:raised:collider",
+      "open_angle": -1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:sim:CALL-01:door",
+      "environment_id": "sim:CALL-01",
+      "hinge_source": [
+        -11.75,
+        -1.55,
+        -0.1
+      ],
+      "width": 0.8,
+      "leaf_id": "sim:p3:sim:CALL-01:door:leaf",
+      "collider_id": "sim:p3:sim:CALL-01:door:collider",
+      "open_angle": -1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:sim:CALL-02:door",
+      "environment_id": "sim:CALL-02",
+      "hinge_source": [
+        -9.75,
+        -1.55,
+        -0.1
+      ],
+      "width": 0.8,
+      "leaf_id": "sim:p3:sim:CALL-02:door:leaf",
+      "collider_id": "sim:p3:sim:CALL-02:door:collider",
+      "open_angle": -1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:WC:door",
+      "environment_id": "sim:WC",
+      "hinge_source": [
+        -7.8,
+        -1.55,
+        0.3
+      ],
+      "width": 1.1,
+      "leaf_id": "sim:p3:WC:door:leaf",
+      "collider_id": "sim:p3:WC:door:collider",
+      "open_angle": -1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:0:0:door",
+      "environment_id": "sim:LOCKERS",
+      "hinge_source": [
+        -4.9,
+        -1.55,
+        1.51
+      ],
+      "width": 0.3,
+      "leaf_id": "sim:p3:locker:0:0:door:leaf",
+      "collider_id": "sim:p3:locker:0:0:door:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:0:1:door",
+      "environment_id": "sim:LOCKERS",
+      "hinge_source": [
+        -4.57,
+        -1.55,
+        1.51
+      ],
+      "width": 0.3,
+      "leaf_id": "sim:p3:locker:0:1:door:leaf",
+      "collider_id": "sim:p3:locker:0:1:door:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:0:2:door",
+      "environment_id": "sim:LOCKERS",
+      "hinge_source": [
+        -4.24,
+        -1.55,
+        1.51
+      ],
+      "width": 0.3,
+      "leaf_id": "sim:p3:locker:0:2:door:leaf",
+      "collider_id": "sim:p3:locker:0:2:door:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:0:3:door",
+      "environment_id": "sim:LOCKERS",
+      "hinge_source": [
+        -3.91,
+        -1.55,
+        1.51
+      ],
+      "width": 0.3,
+      "leaf_id": "sim:p3:locker:0:3:door:leaf",
+      "collider_id": "sim:p3:locker:0:3:door:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:1:0:door",
+      "environment_id": "sim:LOCKERS",
+      "hinge_source": [
+        -4.9,
+        -0.65,
+        1.51
+      ],
+      "width": 0.3,
+      "leaf_id": "sim:p3:locker:1:0:door:leaf",
+      "collider_id": "sim:p3:locker:1:0:door:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:1:1:door",
+      "environment_id": "sim:LOCKERS",
+      "hinge_source": [
+        -4.57,
+        -0.65,
+        1.51
+      ],
+      "width": 0.3,
+      "leaf_id": "sim:p3:locker:1:1:door:leaf",
+      "collider_id": "sim:p3:locker:1:1:door:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:1:2:door",
+      "environment_id": "sim:LOCKERS",
+      "hinge_source": [
+        -4.24,
+        -0.65,
+        1.51
+      ],
+      "width": 0.3,
+      "leaf_id": "sim:p3:locker:1:2:door:leaf",
+      "collider_id": "sim:p3:locker:1:2:door:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:1:3:door",
+      "environment_id": "sim:LOCKERS",
+      "hinge_source": [
+        -3.91,
+        -0.65,
+        1.51
+      ],
+      "width": 0.3,
+      "leaf_id": "sim:p3:locker:1:3:door:leaf",
+      "collider_id": "sim:p3:locker:1:3:door:collider",
+      "open_angle": 1.5707963267948966,
+      "simulated": true
+    }
+  ],
+  "lockers": [
+    {
+      "id": "sim:p3:locker:0:0",
+      "door_id": "sim:p3:locker:0:0:door",
+      "assigned_to": null,
+      "use_state": "unassigned",
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:0:1",
+      "door_id": "sim:p3:locker:0:1:door",
+      "assigned_to": null,
+      "use_state": "unassigned",
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:0:2",
+      "door_id": "sim:p3:locker:0:2:door",
+      "assigned_to": null,
+      "use_state": "unassigned",
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:0:3",
+      "door_id": "sim:p3:locker:0:3:door",
+      "assigned_to": null,
+      "use_state": "unassigned",
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:1:0",
+      "door_id": "sim:p3:locker:1:0:door",
+      "assigned_to": null,
+      "use_state": "unassigned",
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:1:1",
+      "door_id": "sim:p3:locker:1:1:door",
+      "assigned_to": null,
+      "use_state": "unassigned",
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:1:2",
+      "door_id": "sim:p3:locker:1:2:door",
+      "assigned_to": null,
+      "use_state": "unassigned",
+      "simulated": true
+    },
+    {
+      "id": "sim:p3:locker:1:3",
+      "door_id": "sim:p3:locker:1:3:door",
+      "assigned_to": null,
+      "use_state": "unassigned",
+      "simulated": true
+    }
+  ],
+  "televisions": [
+    {
+      "id": "sim:p2:TV:1:body",
+      "screen_id": "sim:p2:TV:1:screen",
+      "environment_id": "RECEPTION",
+      "material": "R1 branded screen 1",
+      "state": "archviz-reference-1"
+    },
+    {
+      "id": "sim:p2:TV:2:body",
+      "screen_id": "sim:p2:TV:2:screen",
+      "environment_id": "WAITING-AREA",
+      "material": "R1 branded screen 2",
+      "state": "archviz-reference-2"
+    },
+    {
+      "id": "sim:p2:TV:3:body",
+      "screen_id": "sim:p2:TV:3:screen",
+      "environment_id": "sim:CAFE-01",
+      "material": "R1 branded screen 3",
+      "state": "archviz-reference-3"
+    },
+    {
+      "id": "sim:p2:TV:4:body",
+      "screen_id": "sim:p2:TV:4:screen",
+      "environment_id": "CIRCULATION-01",
+      "material": "R1 branded screen 4",
+      "state": "archviz-reference-4"
+    },
+    {
+      "id": "sim:p3:lounge:TV",
+      "screen_id": "sim:p3:lounge:screen",
+      "environment_id": "sim:LOUNGE",
+      "material": "R1 branded screen 5",
+      "state": "archviz-reference-5"
+    },
+    {
+      "id": "sim:r1:meeting:TV:body",
+      "screen_id": "sim:r1:meeting:TV:screen",
+      "environment_id": "MEETING-AREA-01",
+      "material": "R1 meeting TV screen",
+      "state": "meeting-reference-12h"
+    }
+  ],
+  "zone_aliases": {
+    "sim:RECREATION": "cafe social tables, separate circuit",
+    "sim:LOUNGE": "front wing social lounge; not second cafe"
+  },
+  "commands": {
+    "light.set": {
+      "parameters": [
+        "id",
+        "on:boolean",
+        "level:0..1",
+        "mode:auto|manual"
+      ]
+    },
+    "circuit.set": {
+      "parameters": [
+        "environment_id",
+        "on",
+        "level",
+        "mode"
+      ]
+    },
+    "door.command": {
+      "operations": [
+        "open",
+        "close",
+        "lock",
+        "unlock"
+      ],
+      "implementation": "doors.py, local simulated preview"
+    },
+    "clock.set": {
+      "hour": "finite 0..24, wraps"
+    },
+    "clock.play": {
+      "speeds": [
+        -360,
+        -60,
+        -10,
+        -1,
+        1,
+        10,
+        60,
+        360
+      ]
+    },
+    "clock.pause": {}
+  },
+  "event_envelope": {
+    "schema_version": "1.0",
+    "source": "simulated-local-preview",
+    "device_id": "stable ID",
+    "operation": "command",
+    "state": "queried from actual local state",
+    "real_observation": false
+  },
+  "transfer_proposal": {
+    "status": "proposal pending operator approval after Phase04; no final GLB or PlayCanvas implementation",
+    "solar": "Same hour/observer/orientation parameters; interpolate sky, exposure and sun; no sensor events from clock",
+    "lights": "Area lights in Blender require tested punctual-light equivalents in PlayCanvas; individual mutable emitters remain separate. Compare against approved references before accepting any visual loss.",
+    "baking": "Never bake mutable artificial illumination into an immutable room lightmap. Any environment/probe variants must exclude switchable light contribution."
+  },
+  "source_master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+  "input_hashes": {
+    "simulation/spatial-office/build-revision.py": "a02486a08719d7a643bfcffb62377e4a6a02e9c3e2710cdd4e4a4fd52d30876b",
+    "simulation/spatial-office/revision-layout.json": "7a0f8247d257705dcfe2a85f6a77d2d613002974ed4baa857e740d23eb7261d2",
+    "simulation/spatial-office/furnishings.py": "cf7a1cc3b1d7401a8de400075d728a8c48066411697ebd4a80640e198728cea0",
+    "simulation/spatial-office/archviz_assets.py": "2bbde98d047d88f658e4d80bcdb4b2225c4b89150f741066114db6b44d773a66",
+    "simulation/spatial-office/archviz_environment.py": "ae8e21b847c19b0ffd5c09ee502f9081cb1ba44257f49f411e51395d3e4b3bde",
+    "simulation/spatial-office/archviz-lighting.json": "ac00c2c5a199ae1a1a6bda60ffcb7482d766030d35a9e225daa10f938884beed",
+    "simulation/spatial-office/environment.py": "b7500444670f08729d7a5502bbe5fd107f74148678678b5ac41bcf3d059ccb76",
+    "simulation/spatial-office/create-revision-assets.py": "0589e8996c9012f852dc6af86b948b3c03f2fd57a96c17bfdba64b93ec345f70",
+    "simulation/spatial-office/refine-workstations.py": "1cc1649422f93bba66c91b0343fabdb6390553e0f4754cab72e41af6fc102748",
+    "simulation/spatial-office/assets/archviz/SheenChair.glb": "f0af2a2b102d28d540236306ae19f8fb36842df76bd38cf76f063f9bd2853399",
+    "simulation/spatial-office/assets/archviz/SpecularSilkPouf-LICENSE-README.md": "363595a7e09ec439719dcdbbfa02186050a06d5277fd9048bc23c1e35d2a088f",
+    "simulation/spatial-office/assets/archviz/GlamVelvetSofa.glb": "67202c74a1a33377771f162dc7fad612a6c9bd51ee15124c488e9851d9ac5266",
+    "simulation/spatial-office/assets/archviz/DiffuseTransmissionPlant.glb": "1748be8847e24bdd5cb6c5ac2bfd0afe8f11efc4f85091148550555e47c7ee83",
+    "simulation/spatial-office/assets/archviz/GlamVelvetSofa-LICENSE-README.md": "3c96b73fb52169fc1b79873dd70b4b783c3b04204f3033fe949247077fd59652",
+    "simulation/spatial-office/assets/archviz/HDRI-ATTRIBUTION-README.md": "3d8713b60415fbaac3281b361b6a5642e04402f59f88bed871786f64919ab0e6",
+    "simulation/spatial-office/assets/archviz/GlassVaseFlowers.glb": "faa2e19329961652b585cc62132ef50b1d95dca8a6a2fd63409158e680563761",
+    "simulation/spatial-office/assets/archviz/provenance.json": "6837dc9090719e21090c8194f5d8835e20f5d900d072185d1b3b532112c1a585",
+    "simulation/spatial-office/assets/archviz/SheenWoodLeatherSofa-LICENSE-README.md": "9b935a1afd709a187df9ab2ee4556d252ff58df324538fa23e4166439f9d529d",
+    "simulation/spatial-office/assets/archviz/SpecularSilkPouf.glb": "a028bc6a7ac8981044fba414c1de633ac775b53602ad386f8ece74aec81d1006",
+    "simulation/spatial-office/assets/archviz/DiffuseTransmissionPlant-LICENSE-README.md": "3108a77ae8ca657843f8adea6c5dac8e380b18eb535ec9bfa596f29eb9a2639b",
+    "simulation/spatial-office/assets/archviz/ASSETS-NOTICE.md": "035d08f269b6ab52e3bfac31a5b0aaa0e11f1c9ac53c9260acd3abe3540cf051",
+    "simulation/spatial-office/assets/archviz/potsdamer_platz_1k.hdr": "7afe4c2f9700ee78c7477c53fa355463d7dda1fdede401432d6b5f9ff0a95696",
+    "simulation/spatial-office/assets/archviz/SheenChair-LICENSE-README.md": "7bbb705e0532711b80a512161da64ab0f2a719412121daf24b8177bdbdbaca7a",
+    "simulation/spatial-office/assets/archviz/GlassVaseFlowers-LICENSE-README.md": "fc5962a2796263c4ccf18beb515e1b49cf23f830fbd942e8fc172e2497874b81",
+    "simulation/spatial-office/assets/archviz/SheenWoodLeatherSofa.glb": "5349e042ad41e695e89f1110230c4ee0c75b2bc62ef830c7016be6ecf665bfb6",
+    "simulation/spatial-office/output/revision-assets/meeting-screen.png": "ccef851cd1e05e4eebd292fadc839e8ced5c8ca134ce35a610fbb5cf77cc0b37",
+    "simulation/spatial-office/output/revision-assets/rug-normal.png": "ff2e18c120ac85871b6d61c6136d5d5e17beaf598b9432f298d4e33f9e389ebe",
+    "simulation/spatial-office/output/revision-assets/lounge-art.png": "62a0dd155d0d51023f2d7de8ba89f92690725807534413226b9ea5ef544a45bd",
+    "simulation/spatial-office/output/revision-assets/workstation-screen.png": "efeabaa4b863135d5de05c917cdc3fb00fae79b950857657ba7ba86ecb7e8c4d",
+    "simulation/spatial-office/output/revision-assets/screen-2.png": "65503c4ae9444347d0b6bbdb647710960c201b456566668466e2edcad47d08b3",
+    "simulation/spatial-office/output/revision-assets/terrazzo-normal.png": "fab7a5e0492a54377f994639360f6b9715e15096bd7c11bdf91a6e74a0f74d3b",
+    "simulation/spatial-office/output/revision-assets/rug-basecolor.png": "6c0fc9524b79d79990d9942dffc606de966ad418bb71b3ba4375fc0776ac9640",
+    "simulation/spatial-office/output/revision-assets/terrazzo-roughness.png": "b44707b3213d71c0822baf3de85685d689cac78b576f1b3b05bba593c67a3842",
+    "simulation/spatial-office/output/revision-assets/screen-4.png": "3f2655acfc97aaea246e02bffbd3717159da099e86d6bf80f3615517f03ec1fe",
+    "simulation/spatial-office/output/revision-assets/screen-1.png": "eb14bea25dd1fbc260c96fa316743c9b9f8f205d82c90231a9f5b99577c921ba",
+    "simulation/spatial-office/output/revision-assets/screen-5.png": "5b4bac3b336750e2a7fd812cb00c93ceb3c1edba0d04cbd8e00aa391b33cab28",
+    "simulation/spatial-office/output/revision-assets/screen-3.png": "d16bb6a86fa4edde2bcd3c6737d3a5db1da6159cebef5641748382e9c91e2b7b",
+    "simulation/spatial-office/output/revision-assets/terrazzo-basecolor.png": "3ab34bbe99b14d2a1ca88cee7a9120e43449da7b079a5b8e1f127386be833e86",
+    "simulation/spatial-office/output/revision-assets/sofa-linen-albedo.png": "4e4af46ad17b28e6b8e0801ef1e31bfe2074931782fee87e521bb77aa2b278ec",
+    "simulation/spatial-office/output/revision-assets/keyboard-legends.png": "75b3e00c342dd1fc08e9ea5b112d2d67d490c9c1e0e06aa469e39bf784f40938"
+  },
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "revision": "phase04-r1",
+  "emitter_radiance_policy": "Per-role camera-visible radiance and daylight minimum in archviz-lighting.json. Independent of nominal Blender watts. Sources and emitters both reach zero on OFF.",
+  "lighting_design": {
+    "revision": "operator-warm-light-design",
+    "reference": "1290 lounge: warm wall/ceiling coves and indirect corner lighting; 1288 office: warm pendants and glass reflections; 1286 reception: concealed wall wash and toe lighting",
+    "task": {
+      "nominal_kelvin": 3200,
+      "design_rgb_linear": [
+        1.0,
+        0.7,
+        0.46
+      ],
+      "daylight_minimum": 0.4,
+      "emitter_radiance": 16
+    },
+    "accent": {
+      "nominal_kelvin": 2700,
+      "design_rgb_linear": [
+        1.0,
+        0.48,
+        0.18
+      ],
+      "daylight_minimum": 0.72,
+      "emitter_radiance": 3
+    },
+    "decor": {
+      "nominal_kelvin": 2700,
+      "design_rgb_linear": [
+        1.0,
+        0.55,
+        0.25
+      ],
+      "daylight_minimum": 0.6,
+      "emitter_radiance": 6
+    },
+    "sky_strength_day": 0.14,
+    "photographic_context_strength_day": 0.9,
+    "exposure": 0.3,
+    "note": "Design palette and nominal CCT, not measured spectra. Daylight remains separate. All sources and visible emitters switch/dim together; no artificial illumination baked into surfaces."
+  },
+  "glazing_design": {
+    "IOR": 1.52,
+    "roughness": 0.01,
+    "transmission": 1,
+    "alpha": 1,
+    "specular_IOR_level": 0.55,
+    "metallic": 0,
+    "clear_coating_weight": 0.1,
+    "edge_absorption_density_relative": 0.12,
+    "reflection": "Fresnel reflection of actual modeled fixtures/furniture and generic CC0 environment; transparency preserved",
+    "architectural_materials": [
+      "Phase02 clear partitions",
+      "Window glazing reference"
+    ]
+  }
+}

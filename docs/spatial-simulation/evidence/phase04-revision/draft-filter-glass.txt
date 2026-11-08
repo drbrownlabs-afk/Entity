@@ -1,0 +1,3 @@
+FILTERED glass-detail
+FILTERED lounge
+FILTERED office

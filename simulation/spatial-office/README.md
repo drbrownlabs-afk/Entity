@@ -1,3 +1,5 @@
+**Revisión actual del operador:** [office-phase04-revision.blend](output/office-phase04-revision.blend) · [galería de revisión](../../docs/spatial-simulation/REVIEW-PHASE04-REVISION.md) · [informe](../../docs/spatial-simulation/PHASE-04-REVISION-REPORT.md). Arquitectura conservada; luz cálida y vidrio/PBR revisados. PlayCanvas pendiente de aprobación.
+
 # Synthetic Office — reconstrucción editable, Fase 01
 
 **Versión vigente para revisión: [office-phase04.blend](output/office-phase04.blend)**, planta C completa, E al fondo, controles de luz/tiempo locales. [Galería y pasos para el operador](../../docs/spatial-simulation/REVIEW-PHASE04.md). El plan actualizado requiere aprobación antes de PlayCanvas; los maestros de fases anteriores son históricos.

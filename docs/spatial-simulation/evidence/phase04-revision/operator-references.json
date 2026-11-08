@@ -1,0 +1,17 @@
+[
+  {
+    "path": "docs/spatial-simulation/references/1290-lounge-target.jpg",
+    "sha256": "cfbda5da281c67492185583fa7b590db9cca427e4950227e4178adfb52b40140",
+    "role": "Operator-supplied minimum quality target; reference only, never rendered evidence"
+  },
+  {
+    "path": "docs/spatial-simulation/references/1288-office-target.jpg",
+    "sha256": "f98eeb68d03df3e48f7f102f749ce60bce631e40ec1a7e4161c04ebafe9e61f2",
+    "role": "Operator-supplied minimum quality target; reference only, never rendered evidence"
+  },
+  {
+    "path": "docs/spatial-simulation/references/1286-reception-target.jpg",
+    "sha256": "907441dfd047fae5feec8823f99074438a7593c8761197d02276ba50b0a35890",
+    "role": "Operator-supplied minimum quality target; reference only, never rendered evidence"
+  }
+]

@@ -1,0 +1,1214 @@
+[
+  {
+    "name": "vertical-garden",
+    "path": "vertical-garden.png",
+    "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+    "sha256": "fa4284c54a51f4557ffcfa5194305d2162543342548ec5b79f65e6e7a5bf1194",
+    "camera_source_position": [
+      -0.05000000074505806,
+      0.20000000298023224,
+      -2.799999952316284
+    ],
+    "hour": 12,
+    "lighting_case": null,
+    "resolution": [
+      900,
+      600
+    ],
+    "samples_max": 24,
+    "noise_threshold": 0.07000000029802322,
+    "color_management": {
+      "view_transform": "AgX",
+      "look": "None",
+      "exposure": 0.30000001192092896
+    },
+    "WC_door": "closed",
+    "WC_roof_opaque": true,
+    "draft": true,
+    "state": {
+      "clock": {
+        "hour": 12.0,
+        "speed": 60,
+        "playing": false
+      },
+      "lights": {
+        "sim:p3:lamp:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:lamp:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:lamp:2:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:sim:CALL-01:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:sim:CALL-02:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:WC:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:4": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:5": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:6": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:4": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:5": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:RECEPTION:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:RECEPTION:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:CAFE-01:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:CAFE-01:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:LOUNGE:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:LOUNGE:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:PRINT:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:RECREATION:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:RECREATION:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:WAITING-AREA:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:WAITING-AREA:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:dining:cove:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:cove:back:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:cove:side:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:floorlamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:tablelamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:uplight:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:vertical:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:meeting:greenwall:cove:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:reception:toe-light:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:waiting:cove:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:waiting:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:A:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:A:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:B:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:B:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:C:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:C:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        }
+      },
+      "source": "local visual simulation; not Core or observations"
+    },
+    "denoising_guides": {
+      "albedo": {
+        "path": ".runtime/revision-guides/draft/vertical-garden-Albedo.pfm",
+        "sha256": "4395b45e68b158ab15bcba3a4d789561302a0e9d330c7f81461f2e4b3f8ae945",
+        "source_exr_sha256": "9a87a023acdb76d535359059cf4348a0ef300f68dce738a1c48fb23c29968c75"
+      },
+      "normal": {
+        "path": ".runtime/revision-guides/draft/vertical-garden-Normal.pfm",
+        "sha256": "110694559ff76ca59a614e38d5489c4093daa1e64b3391680d32b49ad896e48a",
+        "source_exr_sha256": "75abe492e1304c55679bc8e1d73a5ef16272c98ebedc2b93864f6db2f3ecf2b1"
+      }
+    }
+  },
+  {
+    "name": "office",
+    "path": "office.png",
+    "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+    "sha256": "3ac41b3116a1df6f0f8d4df851c0f1d295e68b86ea7c370b9cce1d6c2d17cb2c",
+    "camera_source_position": [
+      -0.6000000238418579,
+      -0.15000000596046448,
+      -6.849999904632568
+    ],
+    "hour": 12,
+    "lighting_case": null,
+    "resolution": [
+      900,
+      600
+    ],
+    "samples_max": 24,
+    "noise_threshold": 0.07000000029802322,
+    "color_management": {
+      "view_transform": "AgX",
+      "look": "None",
+      "exposure": 0.30000001192092896
+    },
+    "WC_door": "closed",
+    "WC_roof_opaque": true,
+    "draft": true,
+    "state": {
+      "clock": {
+        "hour": 12.0,
+        "speed": 60,
+        "playing": false
+      },
+      "lights": {
+        "sim:p3:lamp:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:lamp:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:lamp:2:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:sim:CALL-01:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:sim:CALL-02:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:WC:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:4": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:5": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:6": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:4": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:5": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:RECEPTION:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:RECEPTION:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:CAFE-01:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:CAFE-01:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:LOUNGE:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:LOUNGE:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:PRINT:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:RECREATION:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:RECREATION:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:WAITING-AREA:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:WAITING-AREA:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:dining:cove:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:cove:back:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:cove:side:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:floorlamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:tablelamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:uplight:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:vertical:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:meeting:greenwall:cove:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:reception:toe-light:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:waiting:cove:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:waiting:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:A:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:A:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:B:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:B:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:C:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:C:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        }
+      },
+      "source": "local visual simulation; not Core or observations"
+    },
+    "denoising_guides": {
+      "albedo": {
+        "path": ".runtime/revision-guides/draft/office-Albedo.pfm",
+        "sha256": "0ee2eccb5ede309114da5b3a4885ac4f2a7959470e87977c779cb0b37d373873",
+        "source_exr_sha256": "66501fe21d8c87422a64aa5ec4fe4f3da271fd7a8c099bedd2d2a5b7fd333a89"
+      },
+      "normal": {
+        "path": ".runtime/revision-guides/draft/office-Normal.pfm",
+        "sha256": "6e17aca660deb807cb5581ff3e6741afb064600827ec925a0a96cedb4d2629c3",
+        "source_exr_sha256": "2318b33653f9c20bd94fad19bbeddc0421d4d3a0055bf3b0328c8ebd87002c30"
+      }
+    }
+  },
+  {
+    "name": "garden-detail",
+    "path": "garden-detail.png",
+    "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+    "sha256": "7876909bab4f70d799eab39ae9a2327c24f020db492e1ced77e570713b16cc95",
+    "camera_source_position": [
+      -0.30000001192092896,
+      -0.20000000298023224,
+      0.949999988079071
+    ],
+    "hour": 12,
+    "lighting_case": null,
+    "resolution": [
+      900,
+      600
+    ],
+    "samples_max": 24,
+    "noise_threshold": 0.07000000029802322,
+    "color_management": {
+      "view_transform": "AgX",
+      "look": "None",
+      "exposure": 0.30000001192092896
+    },
+    "WC_door": "closed",
+    "WC_roof_opaque": true,
+    "draft": true,
+    "state": {
+      "clock": {
+        "hour": 12.0,
+        "speed": 60,
+        "playing": false
+      },
+      "lights": {
+        "sim:p3:lamp:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:lamp:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:lamp:2:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:sim:CALL-01:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:sim:CALL-02:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p3:WC:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:4": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:5": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:accent:6": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:A:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:B:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:C:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:4": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:CIRCULATION-01:5": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:D:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:MEETING-AREA-01:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:RECEPTION:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:RECEPTION:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:CAFE-01:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:CAFE-01:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:LOUNGE:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:LOUNGE:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:PRINT:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:RECREATION:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:RECREATION:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:2": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:sim:ROOM-E:3": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:WAITING-AREA:0": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:p4:light:WAITING-AREA:1": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:dining:cove:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:cove:back:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:cove:side:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:floorlamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:tablelamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:uplight:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:lounge:vertical:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:meeting:greenwall:cove:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:reception:toe-light:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:waiting:cove:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:waiting:lamp:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:A:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:A:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:B:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:B:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:C:0:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        },
+        "sim:r1:work:planter-glow:C:1:light": {
+          "on": true,
+          "level": 1.0,
+          "mode": "auto"
+        }
+      },
+      "source": "local visual simulation; not Core or observations"
+    },
+    "denoising_guides": {
+      "albedo": {
+        "path": ".runtime/revision-guides/draft/garden-detail-Albedo.pfm",
+        "sha256": "c0610cf47a06743d839f96f59d6f2317a5a0d39aca9970485b376cdbcf5c2b9f",
+        "source_exr_sha256": "e321346673a22a926374202dbd66ae34b28d9ea0a3b4c1832dbd4e8a1e569be0"
+      },
+      "normal": {
+        "path": ".runtime/revision-guides/draft/garden-detail-Normal.pfm",
+        "sha256": "72882d17b45970c8c208ce3262be876ae8032b5cf440556c4b9e0a5db2e61440",
+        "source_exr_sha256": "9ce3f5d28bb5de2f21db4e659e8a5772d93671248e149bfcaf412882c153c916"
+      }
+    }
+  }
+]

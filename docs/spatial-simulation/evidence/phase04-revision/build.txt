@@ -1,0 +1,50 @@
+17:56:47 | INFO: Data are loaded, start creating Blender stuff
+17:56:47 | INFO: Blender create Mesh node Fringe
+17:56:48 | INFO: Blender create Mesh node Frame
+17:56:48 | INFO: Blender create Mesh node Frame_Fabric
+17:56:48 | INFO: Blender create Mesh node Paisley
+17:56:48 | INFO: Blender create Mesh node Stripes
+17:56:48 | INFO: Blender create Mesh node Brown
+17:56:48 | INFO: glTF import finished in 0.31s
+PROFESSIONAL_ASSET SheenWoodLeatherSofa dimensions_blender [2.725804567337036, 0.9231829047203064, 1.1173040866851807] mesh_objects 6
+17:56:48 | INFO: Data are loaded, start creating Blender stuff
+17:56:48 | INFO: Blender create Mesh node GlamVelvetSofa_legs
+17:56:48 | INFO: Blender create Mesh node GlamVelvetSofa_fabric
+17:56:48 | INFO: Blender create Mesh node GlamVelvetSofa_feet
+17:56:48 | INFO: glTF import finished in 0.19s
+PROFESSIONAL_ASSET GlamVelvetSofa dimensions_blender [2.188443183898926, 1.0228285789489746, 0.7875415086746216] mesh_objects 3
+17:56:48 | INFO: Data are loaded, start creating Blender stuff
+17:56:48 | INFO: Blender create Mesh node SheenChair_fabric
+17:56:48 | INFO: Blender create Mesh node SheenChair_wood
+17:56:48 | INFO: Blender create Mesh node SheenChair_metal
+17:56:48 | INFO: Blender create Mesh node SheenChair_label
+17:56:49 | INFO: glTF import finished in 0.23s
+PROFESSIONAL_ASSET SheenChair dimensions_blender [0.826557993888855, 0.5702654719352722, 0.6862471103668213] mesh_objects 4
+17:56:49 | INFO: Data are loaded, start creating Blender stuff
+17:56:49 | INFO: Blender create Mesh node SpecularSilkPouf
+17:56:49 | INFO: glTF import finished in 0.25s
+PROFESSIONAL_ASSET SpecularSilkPouf dimensions_blender [0.6099333763122559, 0.6100491881370544, 0.19777673482894897] mesh_objects 1
+17:56:49 | INFO: Data are loaded, start creating Blender stuff
+17:56:49 | INFO: Blender create Mesh node Flowers
+17:56:49 | INFO: Blender create Mesh node GlassAlpha
+17:56:49 | INFO: Blender create Mesh node GlassTransmission
+17:56:49 | INFO: glTF import finished in 0.21s
+PROFESSIONAL_ASSET GlassVaseFlowers dimensions_blender [0.21727445721626282, 0.1424931138753891, 0.20321935415267944] mesh_objects 4
+17:56:50 | INFO: Data are loaded, start creating Blender stuff
+17:56:50 | INFO: Blender create Mesh node pot
+17:56:50 | INFO: Blender create Mesh node leaves
+17:56:50 | INFO: Blender create Mesh node dirt
+17:56:50 | INFO: Blender create Mesh node firefly1
+17:56:50 | INFO: Blender create Mesh node firefly1_wing_right
+17:56:50 | INFO: Blender create Mesh node firefly1_wing_left
+17:56:50 | INFO: Blender create Mesh node firefly2
+17:56:50 | INFO: Blender create Mesh node firefly2_wing_left
+17:56:50 | INFO: Blender create Mesh node firefly2_wing_right
+17:56:50 | INFO: glTF import finished in 0.31s
+PROFESSIONAL_ASSET DiffuseTransmissionPlant dimensions_blender [0.7011570334434509, 0.6573866009712219, 0.8411787748336792] mesh_objects 3
+Info: Saved "office-phase04-revision.blend"
+REVISION_BUILT 579 objects; 97 professional asset instances; 64 lights
+Blender 4.3.2
+Read blend: "/workspace/Entity/simulation/spatial-office/output/office-phase04.blend"
+
+Blender quit
