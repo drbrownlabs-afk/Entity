@@ -2,18 +2,20 @@ import {chromium} from '../../apps/web/node_modules/@playwright/test/index.mjs';
 import fs from 'node:fs';
 const browser=await chromium.launch({args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});
 const expectedAnnotations=4+JSON.parse(fs.readFileSync('worlds/synthetic-office/semantic-annotations.json','utf8')).length+JSON.parse(fs.readFileSync('worlds/synthetic-office/view-bookmarks.json','utf8')).length;
+let lastPage;
 const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,source:'Original published Synthetic Office SSOG through official SuperSplat viewer package',checks:[]};
 try{
  for(const width of [1440,390]){
   const context=await browser.newContext({viewport:{width,height:1000},hasTouch:width<600,isMobile:width<600});
-  const page=await context.newPage();const failures=[];
+  const page=await context.newPage();lastPage=page;const failures=[];
   page.on('pageerror',e=>failures.push(e.message));
   await page.goto((process.env.OFFICE_WEB||'http://127.0.0.1:4175')+'/office.html?budget=0.25',{waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});
   const initial=await page.evaluate(()=>window.officeDiagnostics());
   if(initial.substitute||!initial.sceneUrl.includes('a972d838')||initial.annotations.length!==expectedAnnotations)throw Error('Wrong scene or original/verified semantic annotations missing');
   await page.locator('#frame').click();
-  await page.waitForFunction(width=>{const s=window.officeDiagnostics();return s.overview&&Math.abs(s.camera.position[1]-18.15)<.03&&s.camera.forward[1]<-.99&&s.camera.near_clip>17&&Math.abs(s.camera.up[width>600?0:2])>.99;},width,{timeout:90000});
+  const axis=await page.locator('#scene').evaluate(scene=>scene.clientWidth>scene.clientHeight?0:2);
+  await page.waitForFunction(axis=>{const s=window.officeDiagnostics();return s.overview&&Math.abs(s.camera.position[1]-18.15)<.03&&s.camera.forward[1]<-.99&&s.camera.near_clip>17&&Math.abs(s.camera.up[axis])>.99;},axis,{timeout:90000});
   const dollhouse=await page.evaluate(()=>window.officeDiagnostics().camera);
   await page.screenshot({path:'docs/evidence/phase09/original-dollhouse-'+width+'.png',timeout:120000});
   await page.locator('#reset').click();await page.waitForTimeout(1000);
@@ -37,5 +39,5 @@ try{
   await context.close();
  }
  report.status='passed';
-}catch(error){report.status='failed';report.error=String(error);throw error;}
+}catch(error){report.status='failed';report.error=String(error);if(lastPage&&!lastPage.isClosed()){report.last_camera=await lastPage.evaluate(()=>window.officeDiagnostics?.()).catch(()=>null);await lastPage.screenshot({path:'docs/evidence/phase09/original-view-failure.png',timeout:30000}).catch(()=>{});}throw error;}
 finally{fs.writeFileSync('docs/evidence/phase09/original-integration.json',JSON.stringify(report,null,2));await browser.close();}

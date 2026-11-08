@@ -54,7 +54,7 @@ async function selectEntity(id){
  const facts=el('pre','');facts.dataset.personalFacts='true';facts.style.whiteSpace='pre-wrap';facts.textContent=JSON.stringify(entity,null,2);details.append(facts);
  const holder=el('div','');details.append(holder);
  const descriptors=await request('/v1/sites/'+encodeURIComponent(actor.site_id)+'/capabilities?resource_id='+encodeURIComponent(id));
- if(!personalWorld||personalWorld.run_id!==context||selectedEntity!==id)return;mountCapabilities(holder,{descriptors,entity,getWorld:()=>personalWorld,actor:{person_id:actor.person_id},
+ if(!personalWorld||personalWorld.run_id!==context||selectedEntity!==id)return;mountCapabilities(holder,{descriptors,entity,getWorld:()=>personalWorld,actor,
   send:body=>request('/v1/sites/'+encodeURIComponent(actor.site_id)+'/runs/'+encodeURIComponent(personalWorld.run_id)+'/commands',{method:'POST',body:JSON.stringify(body)}),
   onComplete:async result=>{notice('Core: '+result.status);await loadWorld();await selectEntity(id);},onError:error=>notice(error.message,true)});
 }

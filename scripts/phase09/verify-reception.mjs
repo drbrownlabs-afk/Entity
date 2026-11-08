@@ -8,7 +8,7 @@ const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||u
 const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GITHUB_RUN_ID?'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID:null,source:'Actual local Core HTTP and built kiosk/personal clients; original site inventory; no substituted 3D scene',checks:[]};
 try{
  for(const width of [1280,390]){
-  const context=await browser.newContext({viewport:{width,height:900},isMobile:width<600,hasTouch:width<600});
+  const context=await browser.newContext({viewport:{width,height:900},timezoneId:width<600?'Asia/Tokyo':'UTC',isMobile:width<600,hasTouch:width<600});
   const page=await context.newPage();lastPage=page;
   const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(web+'/kiosk.html');
@@ -35,9 +35,11 @@ try{
   await host.locator('#personal-details select[aria-label="Capacidad autorizada"]').selectOption({label:'Crear reserva'});
   const form=host.locator('#personal-details form');
   const bookingId=await form.locator('[name=booking_id]').inputValue();
-  await form.locator('[name=starts_at]').fill(width===1280?'2026-11-07T22:00':'2026-11-07T23:00');
-  await form.locator('[name=ends_at]').fill(width===1280?'2026-11-07T23:00':'2026-11-08T00:00');
+  await form.locator('[name=starts_at]').fill(width===1280?'2026-11-07T17:00':'2026-11-07T18:00');
+  await form.locator('[name=ends_at]').fill(width===1280?'2026-11-07T18:00':'2026-11-07T19:00');
+  const bookingRequest=host.waitForRequest(r=>r.url().endsWith('/commands')&&r.postDataJSON()?.operation==='booking.create');
   await form.getByRole('button',{name:'Ejecutar con autorización'}).click();
+  const sent=(await bookingRequest).postDataJSON();if(sent.inputs.starts_at!==(width===1280?'2026-11-07T22:00:00.000Z':'2026-11-07T23:00:00.000Z'))throw Error('Booking used browser timezone instead of site civil time');
   await host.waitForFunction(()=>document.querySelector('#status').textContent==='Core: verified');
   await host.locator('[data-entity="'+bookingId+'"]').waitFor({state:'visible'});
   await host.locator('#personal-query [name=kind]').selectOption('graph');
@@ -46,6 +48,14 @@ try{
   await host.waitForFunction(()=>document.querySelector('#personal-query #office-answer').textContent.includes('evidencias'));
   const answer=await host.locator('#personal-query #office-answer').innerText();
   if(answer.includes('PERSON-LUIS')||answer.includes('CAM-01'))throw Error('Scoped personal query exposed another person/camera');
+  await host.locator('#personal-query [name=kind]').selectOption('agenda');
+  await host.locator('#personal-query [name=from]').fill('2026-11-07T17:00');await host.locator('#personal-query [name=to]').fill('2026-11-07T19:00');
+  const agendaRequest=host.waitForRequest(r=>r.url().endsWith('/agent/requests')&&r.postDataJSON()?.query?.kind==='agenda');
+  await host.locator('#personal-query button').filter({hasText:'Consultar ENTITY'}).click();
+  if((await agendaRequest).postDataJSON().query.from!=='2026-11-07T22:00:00.000Z')throw Error('Query interval used the device timezone');
+  await host.waitForFunction(id=>{try{const value=JSON.parse(document.querySelector('#personal-query #office-answer pre')?.textContent||'null');return Array.isArray(value)&&value.some(r=>r.id===id);}catch{return false;}},bookingId);
+  const persisted=JSON.parse(await host.locator('#personal-query #office-answer pre').innerText()).find(r=>r.id===bookingId);
+  if(Date.parse(persisted.starts_at)!==Date.parse(sent.inputs.starts_at))throw Error('Core agenda did not preserve the submitted booking instant');
   await page.getByRole('button',{name:'Consultar respuesta',exact:true}).click();
   await page.waitForFunction(()=>document.querySelector('#reception-reply').textContent.includes('confirmó que está listo'));
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Kiosk viewport overflow');
@@ -65,8 +75,11 @@ try{
    await page.waitForFunction(()=>document.querySelector('#terminal-status').textContent.includes('nueva jornada activa'),null,{timeout:15000});
    await page.locator('#reception-start').waitFor({state:'visible'});
    if(await host.getByRole('button',{name:'Estoy listo',exact:true}).count())throw Error('Old-run message survived active replay');
+   await operator.locator('[data-entity="D1"]').click();await operator.locator('#office-actions select[aria-label="Capacidad autorizada"]').selectOption({label:'Crear reserva'});
+   await operator.locator('#office-actions [name=booking_id]').fill('pending-user-input');
    await call(root+'/simulation/control',{action:'play',speed:60});
    await host.waitForFunction(()=>document.querySelector('#personal-scene').contentWindow.officeProjectionDiagnostics()?.clock>'2026-11-07T13:00:00+00:00',null,{timeout:15000});
+   if(await operator.locator('#office-actions [name=booking_id]').inputValue()!=='pending-user-input')throw Error('Live Core updates erased the pending action form');
    await call(root+'/simulation/control',{action:'pause'});const frozen=await call(root+'/world');
    await new Promise(resolve=>setTimeout(resolve,400));if((await call(root+'/world')).clock!==frozen.clock)throw Error('Paused replay clock advanced');
    await operator.locator('#office-modes button').filter({hasText:'Memoria'}).click();
@@ -76,7 +89,7 @@ try{
    await operator.locator('#office-event-list button').first().click();await operator.waitForFunction(()=>window.officeCoreDiagnostics().world.historical===true);
    if((await operator.locator('#office-event-detail').innerText()).includes('PERSON-CARLOS'))throw Error('Operator event reconstruction leaked another organization');
    await operator.screenshot({path:'docs/evidence/phase09/memory-390.png',fullPage:true});
-   report.checks.push({assigned_operator_follows_active_run_via_sse:true,temporal_entity_zone_type_filters:true,filtered_event_reconstructs_history:true,active_run_shared_between_kiosk_and_personal:true,previous_run_messages_hidden:true,server_owned_play_pause:true,replay_history_preserved:true});
+   report.checks.push({pending_form_preserved_across_live_core_ticks:true,assigned_operator_follows_active_run_via_sse:true,temporal_entity_zone_type_filters:true,filtered_event_reconstructs_history:true,active_run_shared_between_kiosk_and_personal:true,previous_run_messages_hidden:true,server_owned_play_pause:true,replay_history_preserved:true});
   }
   let release,entered;const gate=new Promise(resolve=>{release=resolve;}),held=new Promise(resolve=>{entered=resolve;});
   await host.route(api+'/v1/sites/**/runs/**/world',async route=>{const response=await route.fetch();entered();await gate;await route.fulfill({response}).catch(()=>{});});
@@ -85,7 +98,7 @@ try{
   await host.waitForFunction(()=>document.querySelector('#status').textContent.includes('revocada en Core'));
   release();await host.waitForTimeout(300);
   await host.waitForFunction(()=>document.querySelector('#personal-scene').contentWindow.officeProjectionDiagnostics().clock===null);
-  report.checks.push({width,server_session_revoked:true,stale_world_response_after_logout_discarded:true,verified_invitation:true,private_host_reply:true,scoped_mobile_booking:true,original_viewer_receives_scoped_world:true,shared_scoped_query_verified:true,private_cameras_in_projection:projection.camera_ids.length,kiosk_reflects_core:true,token_in_local_storage:await page.evaluate(()=>Object.keys(localStorage).some(k=>/token|password/i.test(k))),page_errors:errors,voice_screen_controls:true,voice_microphone_executed:false});
+  report.checks.push({width,server_session_revoked:true,stale_world_response_after_logout_discarded:true,verified_invitation:true,private_host_reply:true,scoped_mobile_booking:true,booking_site_timezone_independent_of_browser:true,query_site_timezone_and_persisted_agenda_verified:true,browser_timezone:width<600?'Asia/Tokyo':'UTC',original_viewer_receives_scoped_world:true,shared_scoped_query_verified:true,private_cameras_in_projection:projection.camera_ids.length,kiosk_reflects_core:true,token_in_local_storage:await page.evaluate(()=>Object.keys(localStorage).some(k=>/token|password/i.test(k))),page_errors:errors,voice_screen_controls:true,voice_microphone_executed:false});
   await context.close();
  }
  report.status='passed';

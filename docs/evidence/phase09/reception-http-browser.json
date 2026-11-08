@@ -10,6 +10,9 @@
       "verified_invitation": true,
       "private_host_reply": true,
       "scoped_mobile_booking": true,
+      "booking_site_timezone_independent_of_browser": true,
+      "query_site_timezone_and_persisted_agenda_verified": true,
+      "browser_timezone": "UTC",
       "original_viewer_receives_scoped_world": true,
       "shared_scoped_query_verified": true,
       "private_cameras_in_projection": 0,
@@ -20,6 +23,7 @@
       "voice_microphone_executed": false
     },
     {
+      "pending_form_preserved_across_live_core_ticks": true,
       "assigned_operator_follows_active_run_via_sse": true,
       "temporal_entity_zone_type_filters": true,
       "filtered_event_reconstructs_history": true,
@@ -35,6 +39,9 @@
       "verified_invitation": true,
       "private_host_reply": true,
       "scoped_mobile_booking": true,
+      "booking_site_timezone_independent_of_browser": true,
+      "query_site_timezone_and_persisted_agenda_verified": true,
+      "browser_timezone": "Asia/Tokyo",
       "original_viewer_receives_scoped_world": true,
       "shared_scoped_query_verified": true,
       "private_cameras_in_projection": 0,

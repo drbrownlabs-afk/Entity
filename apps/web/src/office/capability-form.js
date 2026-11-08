@@ -1,3 +1,4 @@
+import {siteDateTimeToUtc} from './site-time.js';
 // One client for declared Núcleo contracts; all business policy remains in Core.
 export const actionNames={
  'booking.create':'Crear reserva','booking.cancel':'Cancelar reserva','booking.extend':'Extender reserva','booking.reassign':'Reasignar reserva','booking.checkin':'Check-in de reserva','booking.no_show':'Registrar no-show',
@@ -7,9 +8,13 @@ export const actionNames={
  'zone.close':'Cerrar zona','zone.open':'Abrir zona','zone.assumeOccupancy':'Suponer ocupación (what-if)','clock.advance':'Avanzar reloj','entity.upsert':'Gestionar recurso','relation.add':'Añadir relación','account.create':'Crear cuenta',
  'intercom.reply':'Responder al visitante','intercom.timeout':'Registrar falta de respuesta','resource.getObject':'Consultar recurso','booking.getAvailability':'Consultar disponibilidad'
 };
-const fieldNames={booking_id:'Referencia de reserva',person_id:'Persona',resource_id:'Recurso',starts_at:'Inicio (hora de este dispositivo)',ends_at:'Fin (hora de este dispositivo)',party_size:'Participantes',meeting_id:'Referencia de reunión (opcional)',expected_guests:'Invitaciones previstas (avanzado)',response:'Respuesta',minutes:'Minutos',description:'Descripción',resolution:'Resolución',status:'Estado'};
+const fieldNames={booking_id:'Referencia de reserva',person_id:'Persona',resource_id:'Recurso',starts_at:'Inicio (hora de la sede)',ends_at:'Fin (hora de la sede)',party_size:'Participantes',meeting_id:'Referencia de reunión (opcional)',expected_guests:'Invitaciones previstas (avanzado)',response:'Respuesta',minutes:'Minutos',description:'Descripción',resolution:'Resolución',status:'Estado'};
 export function mountCapabilities(container,{descriptors,entity,getWorld,actor,send,onComplete,onError,disabled=false}){
  const available=descriptors.filter(c=>c.resource_id===entity.id&&actionNames[c.canonical_id]&&!(entity.reservable===false&&c.canonical_id==='booking.create'));
+ const current=getWorld(),signature=JSON.stringify([current.site_id,current.run_id,current.branch,current.historical?current.clock:null,actor?.actor,actor?.role,actor?.person_id,entity.id,available.map(c=>[c.capability_id,c.input_schema])]);
+ container.officeCapabilityDisabled=disabled;
+ if(container.officeCapabilitySignature===signature&&container.querySelector('form')){container.querySelector('form button').disabled=disabled||container.officeCapabilityBusy;return;}
+ container.officeCapabilitySignature=signature;container.officeCapabilityBusy=false;
  container.replaceChildren();if(!available.length){container.textContent='No hay acciones autorizadas para este recurso.';return;}
  const select=document.createElement('select');select.setAttribute('aria-label','Capacidad autorizada');
  for(const descriptor of available){const option=document.createElement('option');option.value=descriptor.capability_id;option.textContent=actionNames[descriptor.canonical_id];select.append(option);}
@@ -33,22 +38,22 @@ export function mountCapabilities(container,{descriptors,entity,getWorld,actor,s
    }
    input.name=key;input.dataset.schema=JSON.stringify(schema);input.required=descriptor.input_schema.required?.includes(key)||false;
    if(schema.minimum!==undefined)input.min=schema.minimum;if(schema.maximum!==undefined)input.max=schema.maximum;
-   label.append(input);fields.append(label);
+   if(schema.format==='date-time')label.append(document.createTextNode(' · '+getWorld().timezone));label.append(input);fields.append(label);
   }
  }
  select.onchange=build;build();
  form.onsubmit=async event=>{
-  event.preventDefault();button.disabled=true;
+  event.preventDefault();if(container.officeCapabilityDisabled||container.officeCapabilityBusy)return;container.officeCapabilityBusy=true;button.disabled=true;
   try{
    const descriptor=available.find(c=>c.capability_id===select.value),inputs={};
    for(const input of fields.querySelectorAll('[name]')){
     const schema=JSON.parse(input.dataset.schema);
     if(input.type==='checkbox')inputs[input.name]=input.checked;
-    else if(input.value!=='')inputs[input.name]=schema.type==='object'||schema.type==='array'?JSON.parse(input.value):schema.format==='date-time'?new Date(input.value).toISOString():input.type==='number'?Number(input.value):input.value;
+    else if(input.value!=='')inputs[input.name]=schema.type==='object'||schema.type==='array'?JSON.parse(input.value):schema.format==='date-time'?siteDateTimeToUtc(input.value,getWorld().timezone):input.type==='number'?Number(input.value):input.value;
    }
    const world=getWorld();const result=await send({id:crypto.randomUUID(),operation:descriptor.canonical_id,target:entity.id,inputs,branch:world.branch,expected_revision:world.revision});
-   await onComplete(result);
-  }catch(error){onError(error);}
-  finally{button.disabled=disabled;}
+   if(container.officeCapabilitySignature===signature)await onComplete(result);
+  }catch(error){if(container.officeCapabilitySignature===signature)onError(error);}
+  finally{if(container.officeCapabilitySignature===signature){container.officeCapabilityBusy=false;button.disabled=container.officeCapabilityDisabled;}}
  };
 }

@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "source_commit": "c3879e39b2c9efa9983cea79e4ab360964c9a744",
+  "manifest": {
+    "schema_version": "1.0",
+    "source_commit": "c3879e39b2c9efa9983cea79e4ab360964c9a744",
+    "source_tree": "493265312a895d4bfc04af3c3352d8e883d6c814",
+    "runtime": {
+      "python": "3.12",
+      "node": "24",
+      "docker": "optional for protocol/container checks"
+    },
+    "files": {
+      "entity-source.tar.gz": {
+        "bytes": 20504151,
+        "sha256": "722709992ac9cc76fac1027a29281c9e36c3ddd634f19a487deddf9a836194b9"
+      },
+      "entity-experience.zip": {
+        "bytes": 10187790,
+        "sha256": "d18e3f007e89b0aa7b6efd7f5ed21df9836812d49b86c4c1697daff30872d8d0"
+      }
+    },
+    "limitations": [
+      "No physical hardware or remote LLM verified",
+      "Source requires dependency download; archive is not an offline installer",
+      "Static zip requires a web host; source Core is local development only",
+      "Office streams the original remote SSOG/voxels; it is not an offline scene package",
+      "Office, personal and kiosk operations require the same authenticated Core API; static hosting alone supplies no operational world"
+    ]
+  },
+  "installed_from": "actual committed tar.gz extracted into a different empty directory; fresh Python venv and npm ci",
+  "commands": [
+    "python3 -m venv .venv",
+    ".venv/bin/python -m pip install -r services/entity-api/requirements.lock",
+    ".venv/bin/python -m pip check",
+    "bash scripts/setup-experience.sh",
+    "CHROMIUM_PATH=/usr/bin/chromium .venv/bin/python scripts/phase09/demo-reception-http.py"
+  ],
+  "dependency_check": "No broken requirements found",
+  "browser": {
+    "tested_commit": null,
+    "run_url": null,
+    "source": "Actual local Core HTTP and built kiosk/personal clients; original site inventory; no substituted 3D scene",
+    "checks": [
+      {
+        "width": 1280,
+        "server_session_revoked": true,
+        "stale_world_response_after_logout_discarded": true,
+        "verified_invitation": true,
+        "private_host_reply": true,
+        "scoped_mobile_booking": true,
+        "original_viewer_receives_scoped_world": true,
+        "shared_scoped_query_verified": true,
+        "private_cameras_in_projection": 0,
+        "kiosk_reflects_core": true,
+        "token_in_local_storage": false,
+        "page_errors": [],
+        "voice_screen_controls": true,
+        "voice_microphone_executed": false
+      },
+      {
+        "assigned_operator_follows_active_run_via_sse": true,
+        "temporal_entity_zone_type_filters": true,
+        "filtered_event_reconstructs_history": true,
+        "active_run_shared_between_kiosk_and_personal": true,
+        "previous_run_messages_hidden": true,
+        "server_owned_play_pause": true,
+        "replay_history_preserved": true
+      },
+      {
+        "width": 390,
+        "server_session_revoked": true,
+        "stale_world_response_after_logout_discarded": true,
+        "verified_invitation": true,
+        "private_host_reply": true,
+        "scoped_mobile_booking": true,
+        "original_viewer_receives_scoped_world": true,
+        "shared_scoped_query_verified": true,
+        "private_cameras_in_projection": 0,
+        "kiosk_reflects_core": true,
+        "token_in_local_storage": false,
+        "page_errors": [],
+        "voice_screen_controls": true,
+        "voice_microphone_executed": false
+      }
+    ],
+    "status": "passed"
+  },
+  "process": {
+    "transport": "actual HTTP; separate uvicorn process, production Vite preview",
+    "checks": [
+      {
+        "actual_process_restart": "passed",
+        "events_preserved": 19,
+        "entity_count": 110
+      },
+      {
+        "sqlite_online_backup_integrity": "passed"
+      }
+    ],
+    "status": "passed"
+  },
+  "original_scene_validation": "Separate Actions original-integration/spatial-core reports; this local test does not certify SSOG access through its proxy",
+  "secrets_in_package": false
+}
