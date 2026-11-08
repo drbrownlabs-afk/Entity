@@ -1,0 +1,19 @@
+name: Research licensed Phase09 mannequin assets
+on:
+  push:
+    branches: [codex/phase-09-autonomous-plan]
+    paths: ['scripts/phase09/research-characters.mjs', '.github/workflows/phase09-characters.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  research:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: node scripts/phase09/research-characters.mjs
+      - run: python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/character-research.json'
