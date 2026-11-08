@@ -20,10 +20,11 @@ jobs:
       - run: cd apps/web && npx playwright install --with-deps chromium
       - run: node scripts/phase09/calibrate-floor.mjs
       - run: node scripts/phase09/measure-office-navigation.mjs
+      - run: OFFICE_NATIVE_CAPSULE=1 node scripts/phase09/measure-office-navigation.mjs
       - run: |
           npm --prefix apps/web run preview -- --port 4175 > /tmp/office-survey.log 2>&1 &
           node scripts/phase09/survey-office.mjs
       - name: Preserve actual scene survey
         if: always()
         run: |
-          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/survey/*.json' 'docs/evidence/phase09/survey/*.jpg' 'docs/evidence/phase09/voxel-ground.json' 'docs/evidence/phase09/office-navigation.json'
+          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/survey/*.json' 'docs/evidence/phase09/survey/*.jpg' 'docs/evidence/phase09/voxel-ground.json' 'docs/evidence/phase09/office-navigation*.json'

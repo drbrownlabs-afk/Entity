@@ -443,3 +443,8 @@ Siguiente incremento: medir la redde suelo transitable delarchivoORIGINAL conelc
 
 ### 2026-11-08 — Codex, calibración de jornada completa en curso
 Survey42471424771 midió3612muestras transitables, aproximaciones a docepuestosC/D, espera/descanso ysuelo bajo cada silla. A/B/reunión/recepción no encontraron ruta aceptada: no se adoptan como libres. Se corrige resolución de muestreo a dosvoxels y se filtran aristas medidas antes deA*; antes se descartaba una ruta elegida sin permitir queelalgoritmo buscase alternativa tras una arista inválida. La geometría yla cápsula1.8/.2 no se reducen para ocultar obstáculos. Fuenteoriginal/condiciónmétrica no certificada registradas. Se continúa midiendo, no cierre de fase.
+
+
+### 2026-11-08 — Codex, red física ampliada y diagnóstico de recepción
+42471807543:14395muestras; A/B ymesa de reunión ya tienen rutas aceptadas, además de docepuestos/espera/descanso, con cuerpo1.8unidades sinreducirlo. Recepciónsigue sinaproximaciónconectada≤3unidades: no seadopta una ruta falsa. Inspección delSDKfijado revela CAPSULE_HEIGHT1.5/CAPSULE_RADIUS.2; 1.8 era un tamaño adicional conservador, NO altura métrica certificada. Se mide TAMBIÉN elcuerpooriginal1.5 en informe separado, sin sustituirniocultarlos resultados1.8. Solo podrá usarse para personajes normalizados aesa misma altura y tras revisión original.
+E2E de arrastre móvil69a2a69 fallóporque elpuntodelensayo caía enlaetiquetaD, no enelcanvas; desktop/selecciónGPU/feed/datosPASS. Eltesteligeporhit-testunpuntorealdelcanvasantesdegesto; no semodificaelmotor parafalsearelresultado. Se continúacon09.1–09.9.
