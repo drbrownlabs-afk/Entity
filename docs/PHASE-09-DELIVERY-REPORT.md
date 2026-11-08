@@ -12,7 +12,7 @@ Recepción por pantalla utiliza invitación y código autorizado, registra la vi
 
 Office, personal y kiosco siguen la misma jornada activa. El reloj pertenece al servidor, permite pausa/velocidad y se recupera pausado tras reinicio. El replay conserva la ejecución anterior. Las fechas se interpretan en la zona horaria de la sede, incluso con un navegador en Tokio. Los formularios conservan el trabajo del usuario durante los eventos del reloj. Los permisos se aplican en servidor por sede, rol y recurso; cerrar sesión revoca la sesión y descarta respuestas tardías.
 
-El original de Synthetic Office se transmite desde SuperSplat mediante su SDK y voxels oficiales. Hay vista interior, superior y cámaras virtuales del mismo PlayCanvas. La evidencia espacial confirma a Luis en cinco instantes sobre un tramo físico de pasillo, observado por dos cámaras; las observaciones anónimas e historial se guardan en Core. La identidad solo se añade mediante una verificación sintética separada. La memoria permite filtrar por entidad/zona/tipo/intervalo; conserva el orden de cambios que comparten hora. La reconstrucción por hora muestra el cierre del instante y no ofrece vídeo grabado.
+El original de Synthetic Office se transmite desde SuperSplat mediante su SDK y voxels oficiales. Hay vista interior, superior y cámaras virtuales del mismo PlayCanvas. La evidencia espacial confirma a Luis en cinco instantes sobre un tramo físico de pasillo, observado por dos cámaras; las observaciones anónimas e historial se guardan en Core. La identidad solo se añade mediante una verificación sintética separada. Las poses y las colisiones se verifican en unidades del archivo original; la escala métrica del edificio no está certificada. La memoria permite filtrar por entidad/zona/tipo/intervalo; conserva el orden de cambios que comparten hora. La reconstrucción por hora muestra el cierre del instante y no ofrece vídeo grabado.
 
 ## Cómo ejecutar y reproducir
 
@@ -20,7 +20,7 @@ El original de Synthetic Office se transmite desde SuperSplat mediante su SDK y 
 bash scripts/start-office.sh
 ```
 
-Requisitos y cuentas: [runbook](PHASE-09-RUNBOOK.md). El arranque construye Docker, provisiona sin borrar datos y sirve la web compilada. API en8010, web en4175; no requiere un Python instalado en el anfitrión. Las contraseñas generadas permanecen en el archivo local privado indicado por el script y no se incluyen en Git ni en el paquete.
+Requisitos y cuentas: [runbook](PHASE-09-RUNBOOK.md). El arranque construye Docker, provisiona sin borrar datos y sirve la web compilada. API en 8010, web en 4175; no requiere un Python instalado en el anfitrión. Las contraseñas generadas permanecen en el archivo local privado indicado por el script y no se incluyen en Git ni en el paquete.
 
 La instancia persistente de esta sesión tiene la jornada `demo-phase09-20261108`, pausada en09:15:05 de Guayaquil. Luis tiene una pose del corredor calibrado y una reservaD3; esa reserva no se convierte en ocupación del puesto. Son 116 entidades y 21 eventos, conservados exactamente tras reiniciar Docker. Ver [live-demo.json](evidence/phase09/live-demo.json). Desde Memoria se puede reconstruir el tramo09:15:00–09:15:10; desde el reloj se pueden ejecutar los hitos posteriores del guion existente. Fuera del tramo calibrado no se inventa una posición humana.
 
@@ -30,9 +30,9 @@ Visor público: https://drbrownlabs-afk.github.io/Entity/office.html. **Pages al
 
 | Comprobación | Resultado y alcance |
 |---|---|
-| Regresión backend |84 pruebas locales aprobadas; corrección posterior de orden temporal2dirigidasPASS yCI general/PR e72a782Success. `backend-regression.txt`, `memory-regression.txt` |
-| JavaScript/build |11 pruebas aprobadas y compilaciónVitePASS. No acreditan por sí solas geometría ni hardware |
-| Interfaces HTTP reales |Chromium1280/390PASS: invitación, respuesta deCarlos, reservaA, consulta/agenda, UTC/Tokio, José/Carlos/kiosco sincronizados, formulario durante ticks, filtros históricos y privacidad tras logout. `reception-http-browser.json` |
+| Regresión backend |84 pruebas locales aprobadas; la corrección temporal posterior pasó dos pruebas dirigidas y el CI general/PR, confirmado también en el lote actual c0afef6. `backend-regression.txt`, `memory-regression.txt` |
+| JavaScript/build |11 pruebas aprobadas y compilación Vite aprobada. No acreditan por sí solas geometría ni hardware |
+| Interfaces HTTP reales |Chromium en 1280/390 px: aprobado: invitación, respuesta deCarlos, reservaA, consulta/agenda, UTC/Tokio, José/Carlos/kiosco sincronizados, formulario durante ticks, filtros históricos y privacidad tras logout. `reception-http-browser.json` |
 | Proceso y backup |Reinicio deuvicorn conserva 110 entidades y 19 eventos; backup SQLite integrity_checkPASS. `reception-http-process.json` |
 | Docker |Imagen comparada por SHA256 de cada archivoPython, estado/eventos conservados y parada/rearranque durante reproducción: reloj guardado exacto y pausa sin tiempo offline. `docker-office.json` |
 | Paquete limpio |Fuente c3879e3 extraída en carpeta nueva, venv/npmci nuevos, dependencias coherentes, build y E2E HTTP/reinicio/backupPASS; hashes y ausencia de secretos verificados. El informe vincula eseSHA, no un paquete posterior. `clean-package.json` |
