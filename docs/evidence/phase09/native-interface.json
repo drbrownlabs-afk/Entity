@@ -1,6 +1,6 @@
 {
-  "tested_commit": "67fef48fc75a49399cc480774b6dfe54348d0158",
-  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42450609510",
+  "tested_commit": "1cb670156d8ca347a0223ae8ba4b7f7af9f161ad",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42450920193",
   "source": "Native ENTITY spatial interface, ORIGINAL published SSOG, actual Core-generated trace and normalized synthetic session actions",
   "public_url": "http://127.0.0.1:4175",
   "checks": [
@@ -34,36 +34,10 @@
       "shared_clock_pause": true,
       "session_booking": true,
       "errors": []
-    },
-    {
-      "width": 390,
-      "original_loaded": true,
-      "native_renderer_ui": false,
-      "visible_people": [
-        {
-          "id": "PERSON-CARLOS",
-          "position": [
-            -3.4262733459472656,
-            -1.774999976158142,
-            -16.712793350219727
-          ]
-        },
-        {
-          "id": "PERSON-LUIS",
-          "position": [
-            -3.4262733459472656,
-            -1.715000033378601,
-            -13.466780662536621
-          ]
-        }
-      ],
-      "core_connected": false,
-      "mode": "synthetic-replay",
-      "person_graph": true
     }
   ],
   "status": "failed",
-  "error": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#world-markers [data-entity=\"CAM-ROUTE-1\"]')\n    - locator resolved to <button data-entity=\"CAM-ROUTE-1\" class=\"spatial-marker camera\">…</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button data-entity=\"PERSON-LUIS\" class=\"spatial-marker person\">…</button> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <button data-entity=\"PERSON-LUIS\" class=\"spatial-marker person\">…</button> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    56 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <button data-entity=\"PERSON-LUIS\" class=\"spatial-marker person\">…</button> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n",
+  "error": "Error: Original/Core entity is not visible: D",
   "last_state": {
     "status": "Fuentes y personajes SIMULADOS · Lugar original",
     "app": {
@@ -84,8 +58,6 @@
         "CAM-04",
         "CAM-ROUTE-1",
         "CAM-ROUTE-2",
-        "D",
-        "MEETING-AREA-01",
         "PERSON-CARLOS",
         "PERSON-LUIS"
       ],
@@ -123,9 +95,9 @@
       },
       "nativeUi": false,
       "cameraPosition": [
-        -22,
-        18,
-        9
+        24,
+        26,
+        -6
       ]
     }
   }
