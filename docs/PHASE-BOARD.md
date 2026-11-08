@@ -34,3 +34,11 @@ Nota: el tablero anterior puede estar desactualizado frente a ramas de Codex aú
 Fases00–08 revisadas mediante código y sondas adversas nuevas. Se conservan estados históricos y no se aprueba ninguna fase. Fase08 permanece EN VALIDACIÓN; la auditoría encuentra bloqueos de preparación para piloto y discrepancias no cubiertas por los recorridos anteriores. Ver docs/audits/MVP-INDEPENDENT-2026-11-07.md (A01–A10 abiertos; F01–F04 corregidos en rama de auditoría). Un CI verde comprueba regresiones y no acredita coherencia/seguridad de todos los componentes.
 
 Auditoría publicada en codex/mvp-independent-audit (51d9ab6/9f35abb), CI42377822190 Success. 33Core/7Edge/6Node/3navegador y entrega limpia verificados; A01–A10 abiertos y F01–F04 corregidos. Las discrepancias de autorización, IDs, tiempo, cola, contexto y Core/Experience impiden declarar listo un piloto integrado. Revisión humana pendiente; sin cambio automático de aprobaciones históricas.
+
+
+## Próxima fase — decisión de alcance 2026-11-07
+| Fase | Nombre | Estado | Dependencia y salida |
+|---|---|---|---|
+| 10 | Camera Gateway, registro espacial y continuidad multicámara visual + contextual | NO INICIADA / PLANIFICADA | Solo después de cerrar y validar Fase 09. Integrar fuentes LAN/ONVIF/RTSP/NVR/API/USB/simuladas; calibrar cámaras contra SSOG; mantener identidad global CAM-01→CAM-02→CAM-05 mediante ReID + restricciones físicas/temporales del modelo del mundo; probar imposibles, incertidumbre, persistencia, permisos y visualización. Plan detallado en PLANS.md y diseño previo en docs/POST-PHASE-09-SPATIAL-INFERENCE-REGISTRATION.md. |
+
+No ejecutar Fase 10 en paralelo ni cambiar estado de 09 por la incorporación de este plan. OpenClaw/multiagentes quedan fuera de esta fase.
