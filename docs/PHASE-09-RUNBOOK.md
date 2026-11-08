@@ -26,7 +26,7 @@ Si la ejecución antigua ya pasó de08:00 y no tiene guion, utilizar el replay; 
 - Memoria: filtrar entidad/zona/tipo/intervalo, recorrer eventos y reconstruir el estado. La relación espacial del filtro se evalúa en el instante del evento. Se muestran hasta1000resultados por página y se permite continuar por cursor. El fondo es el escaneo original, no vídeo histórico.
 - Cámaras: vistas virtuales del mismo PlayCanvas; las personas aparecen solo si Core tiene una pose calibrada y vigente. Las observaciones del guion son fuentes sintéticas lógicas y no equivalen a detecciones desde el renderer. El botón de administrador registra una captura virtual anónima con procedencia. Pausar antes de capturar evita mezclar instantes durante la lectura del GPU.
 
-El tramo físico calibrado de Luis es09:15:00–09:15:10, sobre los voxels originales. Fuera de los intervalos con una ruta verificada no se inventa su posición. Seleccionar esas horas y reconstruir permite reproducir la evidencia acotada. No se presenta ese tramo como una jornada entera de desplazamientos.
+La instancia de esta sesión tiene activa demo-phase09-20261108, pausada a09:15:05Guayaquil, con reservaD3 y pose deLuis en el pasillo; live-demo.json verifica persistencia tras reinicio real. El tramo físico calibrado de Luis es09:15:00–09:15:10, sobre los voxels originales. Fuera de los intervalos con una ruta verificada no se inventa su posición. Seleccionar esas horas y reconstruir permite reproducir la evidencia acotada. No se presenta ese tramo como una jornada entera de desplazamientos.
 
 ## Verificación técnica
 
