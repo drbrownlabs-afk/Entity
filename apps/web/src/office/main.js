@@ -107,7 +107,7 @@ for(const button of document.querySelectorAll('[data-move]')){
 window.officeDiagnostics=()=>({
   sceneUrl:contentUrl,collisionUrl,loaded:viewer?.state.loaded||false,
   walkAllowed:viewer?.state.walkAllowed||false,annotations:viewer?.annotations||[],
-  overview:clippedOverview,camera:viewer?(()=>{const c=viewer.app.root.findComponents('camera')[0];return {position:c.entity.getPosition().toArray(),forward:c.entity.forward.toArray(),near_clip:c.nearClip};})():null,mode:viewer?.state.cameraMode,source:'original-public-SSOG',substitute:false
+  overview:clippedOverview,camera:viewer?(()=>{const c=viewer.app.root.findComponents('camera')[0];return {position:c.entity.getPosition().toArray(),forward:c.entity.forward.toArray(),up:c.entity.up.toArray(),fov:c.fov,horizontal_fov:c.horizontalFov,near_clip:c.nearClip};})():null,mode:viewer?.state.cameraMode,source:'original-public-SSOG',substitute:false
 });
 
 window.addEventListener('office-select-annotation',event=>{if(viewer?.state.loaded)viewer.selectAnnotation(event.detail);});

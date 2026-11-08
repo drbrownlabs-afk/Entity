@@ -13,7 +13,7 @@ try{
   const initial=await page.evaluate(()=>window.officeDiagnostics());
   if(initial.substitute||!initial.sceneUrl.includes('a972d838')||initial.annotations.length!==expectedAnnotations)throw Error('Wrong scene or original/verified semantic annotations missing');
   await page.locator('#frame').click();
-  await page.waitForFunction(()=>{const s=window.officeDiagnostics();return s.overview&&s.camera.position[1]>17.8&&s.camera.forward[1]<-.99&&s.camera.near_clip>17;},undefined,{timeout:90000});
+  await page.waitForFunction(width=>{const s=window.officeDiagnostics();return s.overview&&Math.abs(s.camera.position[1]-18.15)<.03&&s.camera.forward[1]<-.99&&s.camera.near_clip>17&&Math.abs(s.camera.up[width>600?0:2])>.99;},width,{timeout:90000});
   const dollhouse=await page.evaluate(()=>window.officeDiagnostics().camera);
   await page.screenshot({path:'docs/evidence/phase09/original-dollhouse-'+width+'.png',timeout:120000});
   await page.locator('#reset').click();await page.waitForTimeout(1000);
