@@ -20,3 +20,13 @@
 - `git push -u origin HEAD:codex/spatial-simulation` terminó con código 0 y publicó `a037bb8..90ea770` en la rama autorizada. Sin merge ni PR nuevo. No se afirma ejecución de CI remoto.
 - Comprobación previa al commit: 45 archivos añadidos exclusivamente bajo rutas autorizadas, ninguno supera 5 MB; `git diff --cached --check` PASS. Árbol limpio tras publicar.
 - Este apunte documental se guarda después de confirmar la publicación; no cambia el maestro, hashes, resultados ni aprobación pendiente.
+
+## 2026-11-08 — Codex / corrección solicitada de cafetería y L
+
+- Base: `96a2d0a`, misma rama `codex/spatial-simulation`, sin merge.
+- Instrucción del operador: incorporar la L en el extremo de los pods, cafetería al fondo y sustituir pods por mesas normales; referencias 1212/1211 ahora suministradas.
+- Implementado: `build-cafe.py`, `check-cafe.py`, `cafe-layout.json`, maestro separado `office-cafe-L.blend` e inventario. Ala posterior estimada, continuidad del suelo elevado, dos mesas/ocho sillas, barra/cuatro taburetes, máquina de café, almacenamiento, frigorífico, vitrina, estantes, plantas y luz cálida. 225 objetos nuevos catalogados; pods reconstruidos ausentes en el nuevo maestro. Maestro Phase01 y 578 archivos originales intactos.
+- Evidencias: `docs/spatial-simulation/evidence/cafe-correction/`; reapertura y verificaciones estructurales ejecutadas en Blender separado; renders Cycles reales de planta, general e interior. Resultados concretos y revisión en CAFE-L-CORRECTION.md/checks.json/renders.json.
+- Archivos: nuevos scripts, parámetros, maestro/inventario, dos referencias provistas por operador con hashes, renders/logs, informe y actualizaciones en documentación específica del escenario. Backend, frontend previo y Gaussian sin cambios.
+- Limitaciones: extensión dimensionada como diseño, no levantamiento medido; lenguaje visual inspirado en referencias, sin prometer equivalencia fotográfica. Iluminación todavía de referencia; mamparas, puertas, Sala E, cuatro TVs y navegación pertenecen a gates posteriores. No se acepta automáticamente Fase01/Gate02 ni se prueban dispositivos físicos o runtime.
+- Próximo paso: revisar la planta corregida y continuar el incremento de cerramientos funcionales pendiente, conservando la nueva topología.

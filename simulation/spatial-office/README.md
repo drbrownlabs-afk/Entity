@@ -1,5 +1,7 @@
 # Synthetic Office — reconstrucción editable, Fase 01
 
+**Versión actual tras la corrección del operador:** [office-cafe-L.blend](output/office-cafe-L.blend), con cafetería y brazo posterior en L. [Informe actualizado](../../docs/spatial-simulation/CAFE-L-CORRECTION.md). El maestro Phase01 indicado a continuación queda como evidencia histórica.
+
 Maestro: [output/office-phase01.blend](output/office-phase01.blend).
 Inventario: [output/object-inventory.json](output/object-inventory.json).
 Resultados y límites: [informe del gate](../../docs/spatial-simulation/PHASE-01-REPORT.md).
@@ -37,3 +39,7 @@ Esta entrega reconstruye el escenario original con aproximaciones documentadas e
 No hay archivo Gaussian segmentado: se usan el OBJ parcial, las anclas, los hashes de voxels y las capturas existentes. La geometría editable se construye con primitivas/modificadores de Blender, no con un motor nuevo ni segmentación inventada. Las piezas no segmentadas requieren aproximaciones visuales explícitas. No se distribuyen fotografías nuevas ni texturas externas.
 
 La aceptación humana de fase queda pendiente. Las fases 02–06 y su aplicación PlayCanvas se ejecutan después de esa revisión, conforme a `AGENTS.md`.
+
+## Revisión posterior: L y cafetería
+
+El operador corrigió la topología y suministró las dos referencias visuales. El maestro de trabajo actualizado es **`output/office-cafe-L.blend`**; el maestro Phase01 se conserva como evidencia histórica. Ver [corrección L/cafetería](../../docs/spatial-simulation/CAFE-L-CORRECTION.md) para parámetros, renders y comandos. Este incremento reemplaza pods por mesas normales en el diseño nuevo y añade el brazo posterior en L; no acredita por sí mismo el Gate 02 completo.

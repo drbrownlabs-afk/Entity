@@ -1,0 +1,17 @@
+[
+  {
+    "view": "cafe-dollhouse",
+    "sha256": "763bc61b407fcec7cf389962879c9dc551cd1da8a2e5a8bdd95d0bffe5eb355a",
+    "master_sha256": "6619937ce4f9e8aa0e36cd812df0713e9eea811e0b73cbddf4ca61e1f03604ca"
+  },
+  {
+    "view": "cafe-plan",
+    "sha256": "045970fa64dd0265d6547ff27f8c9a1404f23c74f0a6abe26995b1a262d01874",
+    "master_sha256": "6619937ce4f9e8aa0e36cd812df0713e9eea811e0b73cbddf4ca61e1f03604ca"
+  },
+  {
+    "view": "cafe-interior",
+    "sha256": "0eb8e7d92e82b5434ef409de7856efbb44dab07af5be0088b7ec61bb544824bf",
+    "master_sha256": "6619937ce4f9e8aa0e36cd812df0713e9eea811e0b73cbddf4ca61e1f03604ca"
+  }
+]

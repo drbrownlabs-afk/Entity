@@ -1,0 +1,192 @@
+{
+  "checks": [
+    {
+      "name": "reopens",
+      "passed": true
+    },
+    {
+      "name": "master-hash",
+      "passed": true
+    },
+    {
+      "name": "phase01-master-intact",
+      "passed": true
+    },
+    {
+      "name": "578-original-files-intact",
+      "passed": true
+    },
+    {
+      "name": "unique-ids",
+      "passed": true
+    },
+    {
+      "name": "no-reconstructed-pods",
+      "passed": true
+    },
+    {
+      "name": "two-normal-cafe-tables",
+      "passed": true
+    },
+    {
+      "name": "eight-cafe-chairs",
+      "passed": true
+    },
+    {
+      "name": "exists:bar-cabinet",
+      "passed": true
+    },
+    {
+      "name": "exists:bar-counter",
+      "passed": true
+    },
+    {
+      "name": "exists:espresso-machine",
+      "passed": true
+    },
+    {
+      "name": "exists:back-storage",
+      "passed": true
+    },
+    {
+      "name": "exists:fridge",
+      "passed": true
+    },
+    {
+      "name": "exists:floor-wing",
+      "passed": true
+    },
+    {
+      "name": "exists:floor-join",
+      "passed": true
+    },
+    {
+      "name": "exists:floor-cafe-rear-fill",
+      "passed": true
+    },
+    {
+      "name": "L-wing-beyond-old-shell",
+      "passed": true
+    },
+    {
+      "name": "wing-only-at-rear",
+      "passed": true
+    },
+    {
+      "name": "floor-cafe-level",
+      "passed": true
+    },
+    {
+      "name": "bar-working-clearance",
+      "passed": true
+    },
+    {
+      "name": "anchor:annotation-0",
+      "passed": true
+    },
+    {
+      "name": "anchor:A",
+      "passed": true
+    },
+    {
+      "name": "anchor:annotation-1",
+      "passed": true
+    },
+    {
+      "name": "anchor:MEETING-AREA-01",
+      "passed": true
+    },
+    {
+      "name": "anchor:annotation-2",
+      "passed": true
+    },
+    {
+      "name": "anchor:B",
+      "passed": true
+    },
+    {
+      "name": "anchor:annotation-3",
+      "passed": true
+    },
+    {
+      "name": "anchor:C",
+      "passed": true
+    },
+    {
+      "name": "anchor:ZONE-C",
+      "passed": true
+    },
+    {
+      "name": "anchor:C1",
+      "passed": true
+    },
+    {
+      "name": "anchor:C2",
+      "passed": true
+    },
+    {
+      "name": "anchor:C3",
+      "passed": true
+    },
+    {
+      "name": "anchor:C4",
+      "passed": true
+    },
+    {
+      "name": "anchor:C5",
+      "passed": true
+    },
+    {
+      "name": "anchor:C6",
+      "passed": true
+    },
+    {
+      "name": "anchor:D",
+      "passed": true
+    },
+    {
+      "name": "anchor:ZONE-D",
+      "passed": true
+    },
+    {
+      "name": "anchor:D1",
+      "passed": true
+    },
+    {
+      "name": "anchor:D2",
+      "passed": true
+    },
+    {
+      "name": "anchor:D3",
+      "passed": true
+    },
+    {
+      "name": "anchor:D4",
+      "passed": true
+    },
+    {
+      "name": "anchor:D5",
+      "passed": true
+    },
+    {
+      "name": "anchor:D6",
+      "passed": true
+    },
+    {
+      "name": "anchor:WAITING-AREA",
+      "passed": true
+    },
+    {
+      "name": "anchor:REST-AREA",
+      "passed": true
+    },
+    {
+      "name": "anchor:RECEPTION",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "master_sha256": "6619937ce4f9e8aa0e36cd812df0713e9eea811e0b73cbddf4ca61e1f03604ca",
+  "human_approval": false,
+  "full_phase02_complete": false
+}

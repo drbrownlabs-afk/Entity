@@ -1,0 +1,20 @@
+{
+  "status": "technical-checks-passed; visual review pending operator acceptance",
+  "checks_passed": 46,
+  "renders_reviewed_by": "Codex",
+  "renders": 3,
+  "master_sha256": "6619937ce4f9e8aa0e36cd812df0713e9eea811e0b73cbddf4ca61e1f03604ca",
+  "protected_files_unchanged": 578,
+  "source_phase01_master_unchanged": true,
+  "full_phase02_accepted": false,
+  "observations": [
+    "L silhouette visible in plan and dollhouse; extension follows source pod sector without mirroring anchors.",
+    "Two normal round tables replace pods. Bar, appliances, warm wood, lighting and open thin black shelving visible.",
+    "Initial broad shelf/stool supports replaced with thin individual members after image inspection."
+  ],
+  "limitations": [
+    "Wing dimensions remain estimated design parameters.",
+    "Low-poly vegetation, reference lighting and noisy CPU samples; no photographic equivalence claimed.",
+    "Full partitions, operable devices and runtime not completed by this cafe correction."
+  ]
+}

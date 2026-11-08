@@ -1,0 +1,8870 @@
+{
+  "layout": {
+    "revision": "operator-cafe-L-2026-11-08",
+    "source_frame": "supersplat-original +Y up",
+    "units": "relative; not certified meters",
+    "meaning": "User confirms an L at the rear pod sector, with cafe and normal tables. Extension dimensions remain design estimates, not recovered measurements.",
+    "wing_bounds_xz": [
+      -12.0,
+      -6.5,
+      -26.5,
+      -18.2
+    ],
+    "cafe_environment_id": "sim:CAFE-01",
+    "floor_y": -1.55,
+    "bar_center": [
+      -9.7,
+      -1.0,
+      -22.3
+    ],
+    "table_centers_xz": [
+      [
+        -4.3,
+        -20.5
+      ],
+      [
+        -4.3,
+        -24.0
+      ]
+    ],
+    "orientation_note": "The extension follows the source REST-AREA/pods side (negative source X). 'Rear right' is a view-relative operator description, not a reason to mirror or rotate source anchors. Review the labeled plan for this interpretation.",
+    "references": [
+      "docs/spatial-simulation/references/1212-cafeteria.jpg",
+      "docs/spatial-simulation/references/1211-mamparas.jpg"
+    ],
+    "reference_use": "1212: wood bar, warm integrated light, black shelving, plants and regular tables. 1211: thin black full-height glazing family retained for the later enclosure increment; full partitions not claimed here."
+  },
+  "source_master_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+  "master_sha256": "6619937ce4f9e8aa0e36cd812df0713e9eea811e0b73cbddf4ca61e1f03604ca",
+  "removed_reconstruction_ids": [
+    "sim:p1:panel-seam:2:0",
+    "sim:p1:panel-seam:2:1",
+    "sim:p1:panel-seam:2:2",
+    "sim:p1:panel-seam:2:3",
+    "sim:p1:panel-seam:2:4",
+    "sim:p1:panel-seam:2:5",
+    "sim:p1:panel-seam:2:6",
+    "sim:p1:panel-seam:2:7",
+    "sim:p1:panel-west:2",
+    "sim:p1:pod:0:fabric-back",
+    "sim:p1:pod:0:oak-slat:0",
+    "sim:p1:pod:0:oak-slat:1",
+    "sim:p1:pod:0:oak-slat:10",
+    "sim:p1:pod:0:oak-slat:11",
+    "sim:p1:pod:0:oak-slat:12",
+    "sim:p1:pod:0:oak-slat:13",
+    "sim:p1:pod:0:oak-slat:14",
+    "sim:p1:pod:0:oak-slat:2",
+    "sim:p1:pod:0:oak-slat:3",
+    "sim:p1:pod:0:oak-slat:4",
+    "sim:p1:pod:0:oak-slat:5",
+    "sim:p1:pod:0:oak-slat:6",
+    "sim:p1:pod:0:oak-slat:7",
+    "sim:p1:pod:0:oak-slat:8",
+    "sim:p1:pod:0:oak-slat:9",
+    "sim:p1:pod:0:seat",
+    "sim:p1:pod:0:table",
+    "sim:p1:pod:0:table-base",
+    "sim:p1:pod:1:fabric-back",
+    "sim:p1:pod:1:oak-slat:0",
+    "sim:p1:pod:1:oak-slat:1",
+    "sim:p1:pod:1:oak-slat:10",
+    "sim:p1:pod:1:oak-slat:11",
+    "sim:p1:pod:1:oak-slat:12",
+    "sim:p1:pod:1:oak-slat:13",
+    "sim:p1:pod:1:oak-slat:14",
+    "sim:p1:pod:1:oak-slat:2",
+    "sim:p1:pod:1:oak-slat:3",
+    "sim:p1:pod:1:oak-slat:4",
+    "sim:p1:pod:1:oak-slat:5",
+    "sim:p1:pod:1:oak-slat:6",
+    "sim:p1:pod:1:oak-slat:7",
+    "sim:p1:pod:1:oak-slat:8",
+    "sim:p1:pod:1:oak-slat:9",
+    "sim:p1:pod:1:seat",
+    "sim:p1:pod:1:table",
+    "sim:p1:pod:1:table-base",
+    "sim:p1:wall-west"
+  ],
+  "objects": [
+    {
+      "id": "sim:cafe:floor-wing",
+      "type": "Floor",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.25,
+        -1.6399999856948853,
+        -22.350000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.350000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.6399999856948853
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Terrazzo warm - procedural reference"
+      ]
+    },
+    {
+      "id": "sim:cafe:floor-join",
+      "type": "Floor",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -6.474999904632568,
+        -1.6399999856948853,
+        -22.350000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6.474999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.350000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.6399999856948853
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Terrazzo warm - procedural reference"
+      ]
+    },
+    {
+      "id": "sim:cafe:floor-cafe-rear-fill",
+      "type": "Floor",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.675000190734863,
+        -1.6399999856948853,
+        -25.075000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.675000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.075000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.6399999856948853
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Terrazzo warm - procedural reference"
+      ]
+    },
+    {
+      "id": "sim:cafe:west-front-wall",
+      "type": "Wall",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -6.550000190734863,
+        0.05000000074505806,
+        -7.775000095367432
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6.550000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          7.775000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:wing-return-wall",
+      "type": "Wall",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.25,
+        0.05000000074505806,
+        -18.200000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          18.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:wing-outer-wall",
+      "type": "Wall",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -12.050000190734863,
+        0.05000000074505806,
+        -22.350000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -12.050000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.350000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:rear-glass-wing",
+      "type": "Window",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.25,
+        0.05000000074505806,
+        -26.200000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          26.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Window glazing reference"
+      ]
+    },
+    {
+      "id": "sim:cafe:rear-frame:0",
+      "type": "WindowFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.899999618530273,
+        0.05000000074505806,
+        -26.149999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.899999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          26.149999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:rear-frame:1",
+      "type": "WindowFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.100000381469727,
+        0.05000000074505806,
+        -26.149999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.100000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          26.149999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:rear-frame:2",
+      "type": "WindowFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.300000190734863,
+        0.05000000074505806,
+        -26.149999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          26.149999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:rear-frame:3",
+      "type": "WindowFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -6.550000190734863,
+        0.05000000074505806,
+        -26.149999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6.550000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          26.149999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.05000000074505806
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:wing-ceiling",
+      "type": "Ceiling",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.25,
+        1.7200000286102295,
+        -22.350000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.25
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.350000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.7200000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-cabinet",
+      "type": "Bar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.699999809265137,
+        -1.0199999809265137,
+        -22.299999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.699999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-counter",
+      "type": "Counter",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.699999809265137,
+        -0.46000000834465027,
+        -22.299999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.699999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.46000000834465027
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:0",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -24.950000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:1",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -24.829999923706055
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.829999923706055
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:2",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -24.709999084472656
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.709999084472656
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:3",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -24.59000015258789
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.59000015258789
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:4",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -24.469999313354492
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.469999313354492
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:5",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -24.350000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.350000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:6",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -24.229999542236328
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.229999542236328
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:7",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -24.110000610351562
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.110000610351562
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:8",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -23.989999771118164
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.989999771118164
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:9",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -23.8700008392334
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.8700008392334
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:10",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -23.75
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.75
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:11",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -23.6299991607666
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.6299991607666
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:12",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -23.510000228881836
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.510000228881836
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:13",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -23.389999389648438
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.389999389648438
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:14",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -23.270000457763672
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.270000457763672
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:15",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -23.149999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.149999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:16",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -23.030000686645508
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.030000686645508
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:17",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -22.90999984741211
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.90999984741211
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:18",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -22.790000915527344
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.790000915527344
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:19",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -22.670000076293945
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.670000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:20",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -22.549999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.549999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:21",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -22.43000030517578
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.43000030517578
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:22",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -22.309999465942383
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.309999465942383
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:23",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -22.190000534057617
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.190000534057617
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:24",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -22.06999969482422
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.06999969482422
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:25",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -21.950000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:26",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -21.829999923706055
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.829999923706055
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:27",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -21.709999084472656
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.709999084472656
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:28",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -21.59000015258789
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.59000015258789
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:29",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -21.469999313354492
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.469999313354492
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:30",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -21.350000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.350000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:31",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -21.229999542236328
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.229999542236328
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:32",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -21.110000610351562
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.110000610351562
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:33",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -20.989999771118164
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.989999771118164
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:34",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -20.8700008392334
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.8700008392334
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:35",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -20.75
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.75
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:36",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -20.6299991607666
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.6299991607666
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:37",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -20.510000228881836
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.510000228881836
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:38",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -20.389999389648438
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.389999389648438
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:39",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -20.270000457763672
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.270000457763672
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:40",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -20.149999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.149999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:41",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -20.030000686645508
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.030000686645508
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:42",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -19.90999984741211
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.90999984741211
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:43",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -19.790000915527344
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.790000915527344
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-slat:44",
+      "type": "Cladding",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.260000228881836,
+        -1.0199999809265137,
+        -19.670000076293945
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.260000228881836
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.670000076293945
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-light",
+      "type": "ReferenceLight",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.234999656677246,
+        -0.5299999713897705,
+        -22.299999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.234999656677246
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.5299999713897705
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm integrated lighting"
+      ]
+    },
+    {
+      "id": "sim:cafe:bar-plinth-light",
+      "type": "ReferenceLight",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.239999771118164,
+        -1.4800000190734863,
+        -22.299999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.239999771118164
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.4800000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm integrated lighting"
+      ]
+    },
+    {
+      "id": "sim:cafe:back-storage",
+      "type": "Storage",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.5,
+        -1.0199999809265137,
+        -22.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:back-worktop",
+      "type": "Counter",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.5,
+        -0.46000000834465027,
+        -22.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.46000000834465027
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:back-shelf:0",
+      "type": "Shelf",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.5,
+        0.44999998807907104,
+        -24.299999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.44999998807907104
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:back-shelf-light:0",
+      "type": "ReferenceLight",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.449999809265137,
+        0.4000000059604645,
+        -24.299999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.449999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.4000000059604645
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm integrated lighting"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:0:0",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -24.799999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.799999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:0:1",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -24.479999542236328
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.479999542236328
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:0:2",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -24.15999984741211
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.15999984741211
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:0:3",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -23.84000015258789
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.84000015258789
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:back-shelf:1",
+      "type": "Shelf",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.5,
+        0.44999998807907104,
+        -22.700000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.44999998807907104
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:back-shelf-light:1",
+      "type": "ReferenceLight",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.449999809265137,
+        0.4000000059604645,
+        -22.700000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.449999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.4000000059604645
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm integrated lighting"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:1:0",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -23.200000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:1:1",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -22.8799991607666
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.8799991607666
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:1:2",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -22.559999465942383
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.559999465942383
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:1:3",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -22.239999771118164
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.239999771118164
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:back-shelf:2",
+      "type": "Shelf",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.5,
+        0.44999998807907104,
+        -21.100000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.44999998807907104
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:back-shelf-light:2",
+      "type": "ReferenceLight",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.449999809265137,
+        0.4000000059604645,
+        -21.100000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.449999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.4000000059604645
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm integrated lighting"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:2:0",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -21.600000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:2:1",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -21.280000686645508
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.280000686645508
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:2:2",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -20.959999084472656
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.959999084472656
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:jar:2:3",
+      "type": "Jar",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.420000076293945,
+        0.6100000143051147,
+        -20.639999389648438
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.420000076293945
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.639999389648438
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:fridge",
+      "type": "Refrigerator",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.5,
+        -0.25,
+        -19.200000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe appliance stainless steel"
+      ]
+    },
+    {
+      "id": "sim:cafe:fridge-seam",
+      "type": "Detail",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -11.109999656677246,
+        -0.6800000071525574,
+        -19.200000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.109999656677246
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.200000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.6800000071525574
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:espresso-machine",
+      "type": "CoffeeMachine",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.699999809265137,
+        -0.10000000149011612,
+        -23.700000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.699999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.10000000149011612
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe appliance stainless steel"
+      ]
+    },
+    {
+      "id": "sim:cafe:espresso-face",
+      "type": "Detail",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.369999885559082,
+        -0.11999999731779099,
+        -23.700000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.369999885559082
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.11999999731779099
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:espresso-cup:0",
+      "type": "Cup",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.300000190734863,
+        -0.3400000035762787,
+        -23.899999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.899999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.3400000035762787
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:espresso-cup:1",
+      "type": "Cup",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.300000190734863,
+        -0.3400000035762787,
+        -23.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.3400000035762787
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:display-base",
+      "type": "DisplayCase",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.699999809265137,
+        -0.25,
+        -20.299999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.699999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:display-glazing",
+      "type": "DisplayGlazing",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.699999809265137,
+        0.019999999552965164,
+        -20.299999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.699999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Window glazing reference"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:0:seat",
+      "type": "Stool",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.600000381469727,
+        -0.6000000238418579,
+        -24.299999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.6000000238418579
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:0:leg:-1:-1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.770000457763672,
+        -1.0800000429153442,
+        -24.440000534057617
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.770000457763672
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.440000534057617
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:0:leg:-1:1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.770000457763672,
+        -1.0800000429153442,
+        -24.15999984741211
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.770000457763672
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.15999984741211
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:0:leg:1:-1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.430000305175781,
+        -1.0800000429153442,
+        -24.440000534057617
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.430000305175781
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.440000534057617
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:0:leg:1:1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.430000305175781,
+        -1.0800000429153442,
+        -24.15999984741211
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.430000305175781
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.15999984741211
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:1:seat",
+      "type": "Stool",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.600000381469727,
+        -0.6000000238418579,
+        -23.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.6000000238418579
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:1:leg:-1:-1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.770000457763672,
+        -1.0800000429153442,
+        -23.139999389648438
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.770000457763672
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.139999389648438
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:1:leg:-1:1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.770000457763672,
+        -1.0800000429153442,
+        -22.860000610351562
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.770000457763672
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.860000610351562
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:1:leg:1:-1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.430000305175781,
+        -1.0800000429153442,
+        -23.139999389648438
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.430000305175781
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.139999389648438
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:1:leg:1:1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.430000305175781,
+        -1.0800000429153442,
+        -22.860000610351562
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.430000305175781
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.860000610351562
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:2:seat",
+      "type": "Stool",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.600000381469727,
+        -0.6000000238418579,
+        -21.700000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.6000000238418579
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:2:leg:-1:-1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.770000457763672,
+        -1.0800000429153442,
+        -21.84000015258789
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.770000457763672
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.84000015258789
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:2:leg:-1:1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.770000457763672,
+        -1.0800000429153442,
+        -21.559999465942383
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.770000457763672
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.559999465942383
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:2:leg:1:-1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.430000305175781,
+        -1.0800000429153442,
+        -21.84000015258789
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.430000305175781
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.84000015258789
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:2:leg:1:1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.430000305175781,
+        -1.0800000429153442,
+        -21.559999465942383
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.430000305175781
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.559999465942383
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:3:seat",
+      "type": "Stool",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.600000381469727,
+        -0.6000000238418579,
+        -20.399999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.6000000238418579
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:3:leg:-1:-1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.770000457763672,
+        -1.0800000429153442,
+        -20.540000915527344
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.770000457763672
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.540000915527344
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:3:leg:-1:1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.770000457763672,
+        -1.0800000429153442,
+        -20.260000228881836
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.770000457763672
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.260000228881836
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:3:leg:1:-1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.430000305175781,
+        -1.0800000429153442,
+        -20.540000915527344
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.430000305175781
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.540000915527344
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:stool:3:leg:1:1",
+      "type": "StoolFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -8.430000305175781,
+        -1.0800000429153442,
+        -20.260000228881836
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.430000305175781
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.260000228881836
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:top",
+      "type": "CafeTable",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -0.7300000190734863,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:stem",
+      "type": "TableLeg",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -1.159999966621399,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.159999966621399
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:base",
+      "type": "TableLeg",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -1.5099999904632568,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.5099999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:0:seat",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -3.200000047683716,
+        -1.0199999809265137,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -3.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:0:back",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -2.9800000190734863,
+        -0.7400000095367432,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          -4.371138828673793e-08,
+          -1.0,
+          0.0,
+          -2.9800000190734863
+        ],
+        [
+          1.0,
+          -4.371138828673793e-08,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:0:legs:-1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -3.380000114440918,
+        -1.2999999523162842,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -3.380000114440918
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:0:legs:1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -3.0199999809265137,
+        -1.2999999523162842,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -3.0199999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:1:seat",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -1.0199999809265137,
+        -19.399999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:1:back",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -0.7400000095367432,
+        -19.18000030517578
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.18000030517578
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:1:legs:-1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.480000019073486,
+        -1.2999999523162842,
+        -19.399999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.480000019073486
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:1:legs:1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.119999885559082,
+        -1.2999999523162842,
+        -19.399999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.119999885559082
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          19.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:2:seat",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -5.400000095367432,
+        -1.0199999809265137,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.400000095367432
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:2:back",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -5.619999885559082,
+        -0.7400000095367432,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          -4.371138828673793e-08,
+          1.0,
+          0.0,
+          -5.619999885559082
+        ],
+        [
+          -1.0,
+          -4.371138828673793e-08,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:2:legs:-1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -5.579999923706055,
+        -1.2999999523162842,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.579999923706055
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:2:legs:1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -5.21999979019165,
+        -1.2999999523162842,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.21999979019165
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:3:seat",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -1.0199999809265137,
+        -21.600000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:3:back",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -0.7400000095367432,
+        -21.81999969482422
+      ],
+      "matrix_blender": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          8.742277657347586e-08,
+          -1.0,
+          0.0,
+          21.81999969482422
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:3:legs:-1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.480000019073486,
+        -1.2999999523162842,
+        -21.600000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.480000019073486
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:chair:3:legs:1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.119999885559082,
+        -1.2999999523162842,
+        -21.600000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.119999885559082
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:0:plant-pot",
+      "type": "Planter",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -0.5899999737739563,
+        -20.5
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.5899999737739563
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:top",
+      "type": "CafeTable",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -0.7300000190734863,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:stem",
+      "type": "TableLeg",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -1.159999966621399,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.159999966621399
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:base",
+      "type": "TableLeg",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -1.5099999904632568,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.5099999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:0:seat",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -3.200000047683716,
+        -1.0199999809265137,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -3.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:0:back",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -2.9800000190734863,
+        -0.7400000095367432,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          -4.371138828673793e-08,
+          -1.0,
+          0.0,
+          -2.9800000190734863
+        ],
+        [
+          1.0,
+          -4.371138828673793e-08,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:0:legs:-1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -3.380000114440918,
+        -1.2999999523162842,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -3.380000114440918
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:0:legs:1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -3.0199999809265137,
+        -1.2999999523162842,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -3.0199999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:1:seat",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -1.0199999809265137,
+        -22.899999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.899999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:1:back",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -0.7400000095367432,
+        -22.68000030517578
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.68000030517578
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:1:legs:-1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.480000019073486,
+        -1.2999999523162842,
+        -22.899999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.480000019073486
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.899999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:1:legs:1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.119999885559082,
+        -1.2999999523162842,
+        -22.899999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.119999885559082
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.899999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:2:seat",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -5.400000095367432,
+        -1.0199999809265137,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.400000095367432
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:2:back",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -5.619999885559082,
+        -0.7400000095367432,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          -4.371138828673793e-08,
+          1.0,
+          0.0,
+          -5.619999885559082
+        ],
+        [
+          -1.0,
+          -4.371138828673793e-08,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:2:legs:-1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -5.579999923706055,
+        -1.2999999523162842,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.579999923706055
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:2:legs:1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -5.21999979019165,
+        -1.2999999523162842,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.21999979019165
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:3:seat",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -1.0199999809265137,
+        -25.100000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.0199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:3:back",
+      "type": "Chair",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -0.7400000095367432,
+        -25.31999969482422
+      ],
+      "matrix_blender": [
+        [
+          -1.0,
+          -8.742277657347586e-08,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          8.742277657347586e-08,
+          -1.0,
+          0.0,
+          25.31999969482422
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.7400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Sand upholstery"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:3:legs:-1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.480000019073486,
+        -1.2999999523162842,
+        -25.100000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.480000019073486
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:chair:3:legs:1",
+      "type": "ChairFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.119999885559082,
+        -1.2999999523162842,
+        -25.100000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.119999885559082
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.2999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:table:1:plant-pot",
+      "type": "Planter",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -4.300000190734863,
+        -0.5899999737739563,
+        -24.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.5899999737739563
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Warm white plaster"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-shelf:0",
+      "type": "Shelf",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.600000381469727,
+        0.6499999761581421,
+        -23.700000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6499999761581421
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-frame:0:-1:-1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.130000114440918,
+        1.1100000143051147,
+        -24.600000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.130000114440918
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.1100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-frame:0:-1:1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.130000114440918,
+        1.1100000143051147,
+        -22.799999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.130000114440918
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.799999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.1100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-top:0:-1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.130000114440918,
+        1.5800000429153442,
+        -23.700000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.130000114440918
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-frame:0:1:-1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.069999694824219,
+        1.1100000143051147,
+        -24.600000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.069999694824219
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.1100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-frame:0:1:1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.069999694824219,
+        1.1100000143051147,
+        -22.799999237060547
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.069999694824219
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.799999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.1100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-top:0:1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.069999694824219,
+        1.5800000429153442,
+        -23.700000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.069999694824219
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-light:0",
+      "type": "ReferenceLight",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.600000381469727,
+        0.6000000238418579,
+        -23.700000762939453
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6000000238418579
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm integrated lighting"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:0",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.600000381469727,
+        0.8199999928474426,
+        -22.899999618530273
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.600000381469727
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          22.899999618530273
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.8199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:1",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.26226806640625,
+        0.7200000286102295,
+        -24.289915084838867
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.26226806640625
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          24.289915084838867
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.7200000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:2",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.098082542419434,
+        0.6200000047683716,
+        -23.630001068115234
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.098082542419434
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.630001068115234
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:3",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.203166007995605,
+        0.5199999809265137,
+        -23.213319778442383
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.203166007995605
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.213319778442383
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.5199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:4",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.687163352966309,
+        0.41999998688697815,
+        -24.487751007080078
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.687163352966309
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          24.487751007080078
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.41999998688697815
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:5",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.8682861328125,
+        0.3199999928474426,
+        -23.024917602539062
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.8682861328125
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.024917602539062
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.3199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:6",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.117171287536621,
+        0.8199999928474426,
+        -23.907854080200195
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.117171287536621
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.907854080200195
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.8199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:7",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.043783187866211,
+        0.7200000286102295,
+        -24.06854248046875
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.043783187866211
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          24.06854248046875
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.7200000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:8",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.428342819213867,
+        0.6200000047683716,
+        -22.948623657226562
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.428342819213867
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          22.948623657226562
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:9",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.409375190734863,
+        0.5199999809265137,
+        -24.439577102661133
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.409375190734863
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          24.439577102661133
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.5199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:10",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.052788734436035,
+        0.41999998688697815,
+        -23.36065673828125
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.052788734436035
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.36065673828125
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.41999998688697815
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:11",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.122857093811035,
+        0.3199999928474426,
+        -23.46088218688965
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.122857093811035
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.46088218688965
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.3199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:12",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.850894927978516,
+        0.8199999928474426,
+        -24.391992568969727
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.850894927978516
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          24.391992568969727
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.8199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:13",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.70712661743164,
+        0.7200000286102295,
+        -22.918577194213867
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.70712661743164
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          22.918577194213867
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.7200000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:14",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.191117286682129,
+        0.6200000047683716,
+        -24.16044044494629
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.191117286682129
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          24.16044044494629
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:15",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.0958890914917,
+        0.5199999809265137,
+        -23.802370071411133
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.0958890914917
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.802370071411133
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.5199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:16",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.277551651000977,
+        0.41999998688697815,
+        -23.088584899902344
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.277551651000977
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.088584899902344
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.41999998688697815
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:17",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.5796537399292,
+        0.3199999928474426,
+        -24.499338150024414
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.5796537399292
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          24.499338150024414
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.3199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:18",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.952455520629883,
+        0.8199999928474426,
+        -23.1325626373291
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.952455520629883
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.1325626373291
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.8199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:19",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.100549697875977,
+        0.7200000286102295,
+        -23.737510681152344
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.100549697875977
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.737510681152344
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.7200000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:20",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.984127044677734,
+        0.6200000047683716,
+        -24.212116241455078
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.984127044677734
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          24.212116241455078
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:21",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.532943725585938,
+        0.5199999809265137,
+        -22.9072265625
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.532943725585938
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          22.9072265625
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.5199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:22",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.314765930175781,
+        0.41999998688697815,
+        -24.3570556640625
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.314765930175781
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          24.3570556640625
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.41999998688697815
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:23",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.087715148925781,
+        0.3199999928474426,
+        -23.523754119873047
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.087715148925781
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.523754119873047
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.3199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:24",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.1659574508667,
+        0.8199999928474426,
+        -23.302867889404297
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.1659574508667
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.302867889404297
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.8199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:25",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.752405166625977,
+        0.7200000286102295,
+        -24.461931228637695
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.752405166625977
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          24.461931228637695
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.7200000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:26",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.809277534484863,
+        0.6200000047683716,
+        -22.973445892333984
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.809277534484863
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          22.973445892333984
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:27",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.138955116271973,
+        0.5199999809265137,
+        -24.009580612182617
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.138955116271973
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          24.009580612182617
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.5199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:28",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.07066535949707,
+        0.41999998688697815,
+        -23.969985961914062
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.07066535949707
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          23.969985961914062
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.41999998688697815
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:0:29",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.366912841796875,
+        0.3199999928474426,
+        -22.992246627807617
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.366912841796875
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          22.992246627807617
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.3199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-shelf:1",
+      "type": "Shelf",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.600000381469727,
+        0.6499999761581421,
+        -21.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6499999761581421
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm oak"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-frame:1:-1:-1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.130000114440918,
+        1.1100000143051147,
+        -21.899999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.130000114440918
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.899999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.1100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-frame:1:-1:1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.130000114440918,
+        1.1100000143051147,
+        -20.100000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.130000114440918
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.1100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-top:1:-1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.130000114440918,
+        1.5800000429153442,
+        -21.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.130000114440918
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-frame:1:1:-1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.069999694824219,
+        1.1100000143051147,
+        -21.899999618530273
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.069999694824219
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.899999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.1100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-frame:1:1:1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.069999694824219,
+        1.1100000143051147,
+        -20.100000381469727
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.069999694824219
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.1100000143051147
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-top:1:1",
+      "type": "ShelfFrame",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.069999694824219,
+        1.5800000429153442,
+        -21.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.069999694824219
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5800000429153442
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Graphite powder coat"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-light:1",
+      "type": "ReferenceLight",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.600000381469727,
+        0.6000000238418579,
+        -21.0
+      ],
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.6000000238418579
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Cafe warm integrated lighting"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:0",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.600000381469727,
+        0.8199999928474426,
+        -20.200000762939453
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.600000381469727
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.200000762939453
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.8199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:1",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.26226806640625,
+        0.7200000286102295,
+        -21.589914321899414
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.26226806640625
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.589914321899414
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.7200000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:2",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.098082542419434,
+        0.6200000047683716,
+        -20.93000030517578
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.098082542419434
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.93000030517578
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:3",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.203166007995605,
+        0.5199999809265137,
+        -20.51331901550293
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.203166007995605
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.51331901550293
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.5199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:4",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.687163352966309,
+        0.41999998688697815,
+        -21.787750244140625
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.687163352966309
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.787750244140625
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.41999998688697815
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:5",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.8682861328125,
+        0.3199999928474426,
+        -20.32491683959961
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.8682861328125
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.32491683959961
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.3199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:6",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.117171287536621,
+        0.8199999928474426,
+        -21.207853317260742
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.117171287536621
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.207853317260742
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.8199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:7",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.043783187866211,
+        0.7200000286102295,
+        -21.36854362487793
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.043783187866211
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.36854362487793
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.7200000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:8",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.428342819213867,
+        0.6200000047683716,
+        -20.24862289428711
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.428342819213867
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.24862289428711
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:9",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.409375190734863,
+        0.5199999809265137,
+        -21.739578247070312
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.409375190734863
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.739578247070312
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.5199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:10",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.052788734436035,
+        0.41999998688697815,
+        -20.660655975341797
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.052788734436035
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.660655975341797
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.41999998688697815
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:11",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.122857093811035,
+        0.3199999928474426,
+        -20.760881423950195
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.122857093811035
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.760881423950195
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.3199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:12",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.850894927978516,
+        0.8199999928474426,
+        -21.691991806030273
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.850894927978516
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.691991806030273
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.8199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:13",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.70712661743164,
+        0.7200000286102295,
+        -20.218576431274414
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.70712661743164
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.218576431274414
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.7200000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:14",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.191117286682129,
+        0.6200000047683716,
+        -21.460439682006836
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.191117286682129
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.460439682006836
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:15",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.0958890914917,
+        0.5199999809265137,
+        -21.102371215820312
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.0958890914917
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.102371215820312
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.5199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:16",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.277551651000977,
+        0.41999998688697815,
+        -20.38858413696289
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.277551651000977
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.38858413696289
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.41999998688697815
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:17",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.5796537399292,
+        0.3199999928474426,
+        -21.79933738708496
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.5796537399292
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.79933738708496
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.3199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:18",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.952455520629883,
+        0.8199999928474426,
+        -20.43256378173828
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.952455520629883
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.43256378173828
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.8199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:19",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.100549697875977,
+        0.7200000286102295,
+        -21.037511825561523
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.100549697875977
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.037511825561523
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.7200000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:20",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.984127044677734,
+        0.6200000047683716,
+        -21.512115478515625
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.984127044677734
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.512115478515625
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:21",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.532943725585938,
+        0.5199999809265137,
+        -20.20722770690918
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.532943725585938
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.20722770690918
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.5199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:22",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.314765930175781,
+        0.41999998688697815,
+        -21.65705680847168
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.314765930175781
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.65705680847168
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.41999998688697815
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:23",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.087715148925781,
+        0.3199999928474426,
+        -20.823755264282227
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.087715148925781
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.823755264282227
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.3199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:24",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.1659574508667,
+        0.8199999928474426,
+        -20.602867126464844
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.1659574508667
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.602867126464844
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.8199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:25",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.752405166625977,
+        0.7200000286102295,
+        -21.761930465698242
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.752405166625977
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.761930465698242
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.7200000286102295
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:26",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.809277534484863,
+        0.6200000047683716,
+        -20.273447036743164
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.809277534484863
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.273447036743164
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:27",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.138955116271973,
+        0.5199999809265137,
+        -21.309581756591797
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.138955116271973
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.309581756591797
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.5199999809265137
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:28",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -10.07066535949707,
+        0.41999998688697815,
+        -21.269987106323242
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -10.07066535949707
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          21.269987106323242
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.41999998688697815
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    },
+    {
+      "id": "sim:cafe:hanging-plant:1:29",
+      "type": "Vegetation",
+      "environment_id": "sim:CAFE-01",
+      "source_position": [
+        -9.366912841796875,
+        0.3199999928474426,
+        -20.292245864868164
+      ],
+      "matrix_blender": [
+        [
+          -0.10716532170772552,
+          -0.06827589869499207,
+          -0.035927340388298035,
+          -9.366912841796875
+        ],
+        [
+          -0.10222411900758743,
+          0.03858673945069313,
+          0.04052304849028587,
+          20.292245864868164
+        ],
+        [
+          -0.015664776787161827,
+          0.2152799814939499,
+          -0.01865767315030098,
+          0.3199999928474426
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "material": [
+        "Leaf light green"
+      ]
+    }
+  ],
+  "reference_sha256": {
+    "docs/spatial-simulation/references/1212-cafeteria.jpg": "ef6f527c6e15b6b74c163b9b7b3658d7a2e08674768f7db1ed9eda671f3b66b7",
+    "docs/spatial-simulation/references/1211-mamparas.jpg": "e83c9ac58cfda2afef6f97a57b8ba3c87e4294570c024afbe9e20050b2db7d10"
+  }
+}

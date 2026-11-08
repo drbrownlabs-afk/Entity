@@ -1,0 +1,14 @@
+{
+  "revision": "operator-cafe-L-2026-11-08",
+  "source_frame": "supersplat-original +Y up",
+  "units": "relative; not certified meters",
+  "meaning": "User confirms an L at the rear pod sector, with cafe and normal tables. Extension dimensions remain design estimates, not recovered measurements.",
+  "wing_bounds_xz": [-12.0, -6.5, -26.5, -18.2],
+  "cafe_environment_id": "sim:CAFE-01",
+  "floor_y": -1.55,
+  "bar_center": [-9.7, -1.0, -22.3],
+  "table_centers_xz": [[-4.3, -20.5], [-4.3, -24.0]],
+  "orientation_note": "The extension follows the source REST-AREA/pods side (negative source X). 'Rear right' is a view-relative operator description, not a reason to mirror or rotate source anchors. Review the labeled plan for this interpretation.",
+  "references": ["docs/spatial-simulation/references/1212-cafeteria.jpg", "docs/spatial-simulation/references/1211-mamparas.jpg"],
+  "reference_use": "1212: wood bar, warm integrated light, black shelving, plants and regular tables. 1211: thin black full-height glazing family retained for the later enclosure increment; full partitions not claimed here."
+}

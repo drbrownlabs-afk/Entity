@@ -14,3 +14,7 @@ Se mantiene bajo la carpeta autorizada para conservar intactos los documentos y 
 | 06 — integración y aceptación | NO INICIADA | Sin adaptador Core nuevo ni aceptación integral. |
 
 `AGENTS.md`, sección «Phase-driven execution (authoritative)», exige “present evidence and stop for human review before advancing” y “never self-approve a phase”. La excepción explícita para 09.1–09.9 no se aplica automáticamente a las seis fases del nuevo plan. La presente entrega no aprueba fases ni modifica la autorización histórica de Core.
+
+## Corrección del operador posterior a la entrega inicial
+
+La planta rectangular queda sustituida por una reconstrucción en L en el maestro `office-cafe-L.blend`. Revisión de Fase 01 reabierta por topología; cafetería de Fase 02 implementada como incremento expresamente solicitado (mesas normales, barra, equipamiento y retirada de pods solo en el diseño nuevo). El resto de Fase 02 permanece pendiente. Referencias visuales recibidas: 1212/1211. Ver [CAFE-L-CORRECTION.md](CAFE-L-CORRECTION.md); no se concede aprobación humana automática.

@@ -11,3 +11,7 @@ Integridad: todos los archivos versionados de la base tienen snapshot SHA256; la
 Entorno reutilizable: no hicieron falta instalaciones ni credenciales para el flujo Blender. Lectura de borrador falló dos veces con `INVALID_ARGUMENT`; guardado de `start_skill` no confirmado por el servicio. Las instrucciones sí están en `simulation/spatial-office/README.md`; no se afirma publicación del entorno ni validación en una instancia nueva.
 
 Pendiente: aceptación de Fase 01 y las fases 02–06 completas. No se declara que el plan esté terminado. La fuente original no tiene malla segmentada; los contornos, dimensiones, caras ocultas y el número de pods desconocidos no se convierten en datos medidos. Las referencias adicionales de mamparas/cafetería mencionadas por el plan no están adjuntas en esta sesión; no se afirma coincidencia exacta con ellas.
+
+## Corrección posterior del operador — cafetería y L
+
+Se reabre la revisión de topología: el rectángulo de la primera entrega era incompleto. El maestro actualizado es `simulation/spatial-office/output/office-cafe-L.blend`, con brazo posterior en el sector de pods y cafetería con mesas normales. Dimensiones del brazo estimadas; forma y destino indicados por el operador. Las referencias 1212/1211 ya se recibieron y se registraron con hashes; la mención anterior a referencias ausentes es histórica. Ver [corrección y pruebas](CAFE-L-CORRECTION.md). Fase 02 tiene únicamente este incremento autorizado en curso de validación; no se aprueba el gate integral ni se presume aceptación de Fase 01.

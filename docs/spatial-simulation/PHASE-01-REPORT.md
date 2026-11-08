@@ -69,3 +69,7 @@ Las dos referencias adicionales de mamparas/cafetería mencionadas en el plan no
 Entorno actual: Blender/Cycles y Python comprobados, sin instalaciones necesarias. El servicio de configuración devolvió `INVALID_ARGUMENT` en dos lecturas y un intento de guardar `start_skill`; **persistencia no confirmada**, sin publicación ni prueba en instancia nueva. [Registro](evidence/phase01/configuration-status.json). Las instrucciones reutilizables sí se conservan en el README del escenario.
 
 Próximo paso tras aceptación de Fase 01: mamparas, accesos y Sala E en namespace de simulación; reemplazo de booths solo en el diseño nuevo; recepción/espera, cafetería y cuatro TVs; comprobar circulación e intersecciones antes de Gate 02.
+
+## Corrección posterior del operador
+
+El operador indicó que falta el brazo en L y la cafetería del sector de pods, y entregó las referencias 1212/1211. La reconstrucción rectangular de este informe queda como evidencia histórica; el maestro de trabajo actualizado es `office-cafe-L.blend`. Véase [corrección, planta y pruebas](CAFE-L-CORRECTION.md). No se considera aceptada la topología anterior por conservar sus pruebas históricas.

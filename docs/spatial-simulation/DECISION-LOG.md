@@ -10,3 +10,7 @@
 - Se entrega Fase 01 para revisión antes de iniciar Fase 02, por el control humano requerido en `AGENTS.md`. No se extiende la excepción histórica 09.x a otro plan ni se marca aprobación humana.
 - Estrategia de binarios: maestro `.blend` comprimido pequeño y renders de evidencia versionados en la rama; scripts permiten regenerarlos. Sin chunks Gaussian descargados ni binarios masivos/LFS requeridos para esta entrega.
 - La compilación disponible no tiene OpenImageDenoise. Se conserva el fallo inicial y se usa Cycles CPU sin denoising, 48 muestras/cuatro hilos. Es una limitación visual de los renders de referencia, no un cambio en las fuentes.
+
+## 2026-11-08 — Corrección posterior: cafetería en brazo de la L
+
+El operador rechaza la simplificación a un rectángulo: confirma un brazo posterior en L en el sector de los pods, destinado a cafetería con mesas normales, y entrega las referencias 1212 (cafetería) y 1211 (mamparas). Se crea un maestro derivado separado; se conservan Gaussian, evidencia, anclas y maestro anterior. La localización se vincula al sector REST-AREA, sin reflejar el sistema de coordenadas para adaptar una palabra direccional dependiente del punto de vista. Los límites del ala nueva siguen siendo parámetros de diseño estimados. La corrección de cafetería queda autorizada por esta solicitud; no implica aprobar el resto de gates ni declarar terminadas las mamparas de todas las salas.
