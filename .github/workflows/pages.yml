@@ -75,7 +75,7 @@ jobs:
       - name: Publish factual public Office verification report
         if: always()
         run: |
-          if test -f docs/evidence/phase09/native-interface.json; then
+          if node --input-type=module -e 'import fs from "node:fs";const p="docs/evidence/phase09/native-interface.json";if(!fs.existsSync(p))process.exit(1);const r=JSON.parse(fs.readFileSync(p));if(!r.run_url?.endsWith("/"+process.env.GITHUB_RUN_ID)||r.tested_commit!==process.env.GITHUB_SHA||r.public_url!=="https://drbrownlabs-afk.github.io/Entity")process.exit(1)'; then
             cp docs/evidence/phase09/native-interface.json docs/evidence/phase09/native-pages-interface.json
             python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/native-pages-interface.json'
           fi

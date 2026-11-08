@@ -5,8 +5,8 @@ const report={tested_commit:process.env.GITHUB_SHA||null,run_url:process.env.GIT
 const output=stateOnly?'.runtime/phase09/native-interface-state.json':'docs/evidence/phase09/native-interface.json';
 const browser=await chromium.launch({executablePath:process.env.CHROMIUM_PATH||undefined,args:['--no-sandbox','--use-angle=swiftshader','--enable-unsafe-swiftshader']});let lastPage;
 try{
- for(const width of [1440,390]){
-  const context=await browser.newContext({viewport:{width,height:1000},hasTouch:width<700,isMobile:width<700});const page=await context.newPage();lastPage=page;const errors=[];page.on('pageerror',e=>errors.push(e.message));
+ for(const [width,height] of [[1440,1000],[1280,720],[390,844]]){
+  const context=await browser.newContext({viewport:{width,height},hasTouch:width<700,isMobile:width<700});const page=await context.newPage();lastPage=page;const errors=[];page.on('pageerror',e=>errors.push(e.message));
   await page.goto(web+'/office.html',{waitUntil:'domcontentloaded'});
   await page.waitForFunction(()=>window.officeSpatialApp,undefined,{timeout:30000});
   if(!stateOnly)await page.waitForFunction(()=>window.officeSpatialApp.diagnostics().loaded,undefined,{timeout:180000});
@@ -15,9 +15,10 @@ try{
   if(initial.nativeUi||initial.view!=='dollhouse'||initial.mode!=='synthetic-replay'||initial.coreConnected)throw Error('Wrong product mode or exposed renderer UI');
   if(await page.locator('#office-login:visible,.sse-ui:visible,#annotations:visible').count())throw Error('Technical/renderer UI is visible in public product');
   for(const id of stateOnly?[]:['A','B','C','D','PERSON-CARLOS','PERSON-LUIS'])if(!initial.markers.includes(id))throw Error('Original/Core entity is not visible: '+id);
-  const check={width,original_loaded:initial.loaded,native_renderer_ui:false,visible_people:initial.visual.avatarsPlaced,core_connected:false,mode:initial.mode};report.checks.push(check);
+  const check={width,height,original_loaded:initial.loaded,native_renderer_ui:false,visible_people:initial.visual.avatarsPlaced,core_connected:false,mode:initial.mode};report.checks.push(check);
   await page.screenshot({path:stateOnly?'.runtime/phase09/native-state-'+width+'.png':'docs/evidence/phase09/native-dollhouse-'+width+'.png',timeout:120000});
   const select=async id=>stateOnly?page.evaluate(id=>window.officeSpatialApp.select(id),id):(width<700?page.locator('#world-markers [data-entity="'+id+'"]').tap():page.locator('#world-markers [data-entity="'+id+'"]').click());
+  if(!stateOnly){const picked=await page.evaluate(async()=>{const p=window.officeSpatialApp.projectEntity('PERSON-CARLOS');return window.officeSpatialApp.pick(p.x,p.y);});if(picked!=='PERSON-CARLOS')throw Error('GPU picking did not resolve visible person mesh: '+picked);check.gpu_person_pick=true;}
   await select('PERSON-CARLOS');
   await page.waitForFunction(()=>document.querySelector('#context-body h1')?.textContent==='Carlos');
   await page.locator('[data-tab="Relaciones"]').click();await page.waitForFunction(()=>document.querySelector('#context-body').textContent.includes('belongsTo'));

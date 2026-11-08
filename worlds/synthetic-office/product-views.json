@@ -54,5 +54,33 @@
       "view_only": true,
       "coordinate_claim": "camera viewpoint only; not a resource position"
     }
+  },
+  {
+    "title": "Dollhouse m\u00f3vil con ficha",
+    "text": "Vista orbital del lugar original",
+    "position": [
+      0,
+      -1.2,
+      -12
+    ],
+    "camera": {
+      "initial": {
+        "position": [
+          24,
+          26,
+          -6
+        ],
+        "target": [
+          -1,
+          -1.2,
+          -12
+        ],
+        "fov": 58
+      }
+    },
+    "extras": {
+      "view_only": true,
+      "coordinate_claim": "camera viewpoint only; not a resource position"
+    }
   }
 ]

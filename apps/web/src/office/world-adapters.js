@@ -42,6 +42,7 @@ export class ReplayWorld {
   const validate=ajv.compile(descriptor.input_schema);if(!validate(body.inputs))throw Error('Datos de capacidad inválidos: '+ajv.errorsText(validate.errors));
   const inputs=body.inputs,changes={};
   if(body.operation==='booking.create'){
+   if(body.inputs.meeting_id||body.inputs.expected_guests?.length)throw Error('Las reuniones con invitaciones requieren la conexión al Core.');
    const person=state.entities[inputs.person_id],start=date(inputs.starts_at),end=date(inputs.ends_at),party=inputs.party_size??1;
    if(!resource.reservable||resource.closed||state.entities[resource.zone_id]?.closed)throw Error('El recurso no está disponible para reservas.');
    if(!person||person.membership_status!=='active'||date(person.membership_until)<date(state.clock))throw Error('La membresía no está activa.');
