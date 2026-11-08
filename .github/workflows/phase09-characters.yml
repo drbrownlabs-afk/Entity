@@ -16,4 +16,4 @@ jobs:
         with:
           node-version: '24'
       - run: node scripts/phase09/research-characters.mjs
-      - run: python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/character-research.json'
+      - run: python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/character-research.json' 'docs/evidence/phase09/source-voxels/*'
