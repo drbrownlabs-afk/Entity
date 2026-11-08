@@ -134,7 +134,7 @@ export function installVisuals(viewer,original){
  // Warm secondary camera resident sets without unbounded rendering on a paused world.
  let warmUntil=0;window.addEventListener('office-mode-changed',()=>{warmUntil=performance.now()+10000;});
  setInterval(()=>{if(security&&performance.now()<warmUntil&&!document.hidden)app.renderNextFrame=true;},500);
- window.officeFocusCamera=(id,expanded=true)=>{if(!cameras.has(id))throw Error('La cámara no tiene pose calibrada');selectedCamera=id;expandedCamera=expanded?id:null;security=true;panel.hidden=false;layout();};
+ window.officeFocusCamera=(id,expanded=true)=>{if(!cameras.has(id))throw Error('La cámara no tiene pose calibrada');selectedCamera=id;expandedCamera=expanded?id:null;security=true;warmUntil=performance.now()+10000;panel.hidden=false;layout();};
  window.officeCloseCameras=()=>{security=false;expandedCamera=null;panel.hidden=true;layout();};
  window.officeLoadAvatar=loadAvatar;window.officeCaptureCamera=capture;
  window.officeVisualDiagnostics=()=>({cameraRenderState:[...cameras].filter(([,c])=>c.entity.enabled).map(([id,c])=>({id,layers:c.entity.camera.layers,managers:[...(app.renderer.gsplatDirector?.camerasMap.get(c.entity.camera.camera)?.layersMap.values()||[])].map(m=>({splats:m.gsplatManager?.world.currentState?.totalActiveSplats??null,pending:m.gsplatManager?.hasPendingSort}))})),cameraViews:cameras.size,activeCameras:[...cameras.values()].filter(c=>c.entity.enabled).length,visibleCameraIds:visibleIds,worldClock:world?.clock||null,

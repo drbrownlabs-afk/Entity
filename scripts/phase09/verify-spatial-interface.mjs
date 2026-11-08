@@ -26,6 +26,7 @@ try{
   await page.screenshot({path:stateOnly?'.runtime/phase09/native-state-person-'+width+'.png':'docs/evidence/phase09/native-person-'+width+'.png',timeout:120000});
   await page.locator('#close-context').click();await select('CAM-ROUTE-1');if(stateOnly)await page.locator('#context-actions button').filter({hasText:'Abrir feed'}).click();
   await page.waitForFunction(()=>window.officeSpatialApp.diagnostics().feed);
+  if(!stateOnly)await page.waitForFunction(()=>window.officeSpatialApp.diagnostics().visual.cameraRenderState.some(c=>c.managers.some(m=>m.splats>0&&!m.pending)),undefined,{timeout:90000});
   if(!(await page.locator('#context-body').innerText()).includes('SIMULADA'))throw Error('Virtual camera not labelled simulated');
   if(await page.evaluate(()=>window.officeSpatialApp.diagnostics().visual.activeCameras)!==1)throw Error('Selected feed not rendered in the same application');
   check.camera_feed=true;

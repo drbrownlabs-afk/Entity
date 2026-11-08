@@ -71,3 +71,11 @@ jobs:
             docs/evidence/phase09/native-interface.json
             docs/evidence/phase09/native-*.png
             docs/evidence/phase09/original-dollhouse-*.png
+
+      - name: Publish factual public Office verification report
+        if: always()
+        run: |
+          if test -f docs/evidence/phase09/native-interface.json; then
+            cp docs/evidence/phase09/native-interface.json docs/evidence/phase09/native-pages-interface.json
+            python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/native-pages-interface.json'
+          fi

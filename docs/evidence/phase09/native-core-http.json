@@ -1,0 +1,23 @@
+{
+  "scene_validation": false,
+  "reason": "Local proxy denies original asset; HTTP/model/UI verification only",
+  "checks": [
+    {
+      "width": 1440,
+      "real_authenticated_core": true,
+      "run_id": "demo-phase09-20261108",
+      "clock": "2026-11-07T14:15:05+00:00",
+      "calibrated_C1": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "real_authenticated_core": true,
+      "run_id": "demo-phase09-20261108",
+      "clock": "2026-11-07T14:15:05+00:00",
+      "calibrated_C1": true,
+      "errors": []
+    }
+  ],
+  "status": "passed"
+}

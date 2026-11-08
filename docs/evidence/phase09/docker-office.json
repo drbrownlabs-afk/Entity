@@ -4,12 +4,12 @@
   "legacy_core_health": "passed on8000, service preserved",
   "container_restart_state_equal": true,
   "event_log_equal": true,
-  "entity_count": 102,
-  "events": 19,
-  "world_sha256": "1976b416e22a35df393c0daf48ab1fd901a8f8ba5e3ec3ec4197b88046180895",
+  "entity_count": 112,
+  "events": 24,
+  "world_sha256": "676ad5640166c16bb2b41a54b4104a2e43cbd2e678264ed246bcef51291343d7",
   "credentials_logged": false,
   "running_clock_restart_paused_without_offline_time": true,
-  "clock_run": "technical-clock-cf12396b-2c4c-4f3b-af7a-efbbcff5a2f2",
+  "clock_run": "technical-clock-6546dddd-d7bc-4dfb-9053-99b4d5b5e94c",
   "persisted_clock": "2026-11-07T13:00:00.500000+00:00",
   "source_files_sha256": {
     "app/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
@@ -34,14 +34,14 @@
     "app/office/occupancy.py": "39c1f4c9c1d516feee01cb584542f0cdb245eaedf05d6f83818cd76fc2e2e519",
     "app/office/personal_app.py": "ee03cae768e2d05b21c1c4ec18ce9bb1d79a38b410f8575734953cae00ad22be",
     "app/office/playback.py": "6ca7f61a8d202441432ca447930ce3e977a322a732b55ea1c14c72960d1c81d1",
-    "app/office/provision.py": "9a18b6ab81af0c37ef2c114b91f0571ed4f263dbb460768e3fb7924dcf693dcd",
+    "app/office/provision.py": "e69edffaaf8065e638d0038192e940e160ac2a0a44263ab9e95745e5eea116b5",
     "app/office/queries.py": "dc97e1a9c3b6500a35164a888a31c42fa22ccf30737b4d4526307158159d3840",
-    "app/office/service.py": "c032168eda95f96913f2957c9c5b17e22b7222274fc30241399b3c6b79b3d533",
-    "app/office/simulation.py": "1bd45bd86fa5aa0ac9cb0ee6888e5060758429180823211312293b8c3dd7f087",
-    "app/office/spatial.py": "21730b8e8fb031439296badc960565a86a3d7c0dab0904f6b5875d46753f2517",
+    "app/office/service.py": "5215c420f01e7aa6bfe87ecc047c78644e42225cdeda6adb392ac3750c652bc6",
+    "app/office/simulation.py": "3f104e770075fda1dfd24234718cebcb07f0e1bedd8386c848d547ec5dff6e43",
+    "app/office/spatial.py": "85e66f1b7cb8f9af16eb2e8cf9042b18d24a72b6e5f51027a41d9fe79972d969",
     "app/office/storage.py": "76169b717393d4b959f162c721b9a7232727ef345ced61cb44832e937c11217f",
     "app/output.py": "43b70d926a2d3611912ec23ca7f58d5c6cedcba6203cbcc29f267363f0d5696d",
     "app/schemas.py": "680d547108361adb68e6530cad576df7c58b82f25200997eaeea1808985d3de7"
   },
-  "running_image_id": "sha256:2495dcd8412c638f78d98e048fc562a25fd16e6cdcb76e07846c48f766946f17"
+  "running_image_id": "sha256:05c5b86d388c16fba58dd55396cd5b7006a763b8e2a958d2e7cc0e52c5f3d6bc"
 }
