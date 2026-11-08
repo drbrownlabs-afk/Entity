@@ -31,7 +31,7 @@ Maestro actualizado: [office-phase02.blend](../../simulation/spatial-office/outp
 | Seguridad cerrada/abierta | Cerrada bloquea el recorrido hacia el fondo con las otras puertas abiertas; abierta libera el corredor. No es certificación de acceso real |
 | Cafetería sin pods y E adicional | Dos mesas de cafetería separadas de la agrupación E de seis puestos; comprobado por IDs/tipos |
 | Cuatro TVs independientes | Cuatro cuerpos/pantallas, estados de prueba y materiales distintos, imágenes empaquetadas y UV válidos |
-| Conservación | 577 archivos originales intactos y revisión exacta del plan remoto 8490e1a preservada; maestro de cafetería preservado por SHA256; anclas y mesas/asientos A–D comprobados |
+| Conservación | 577 archivos originales intactos y revisión exacta del plan remoto d51e2b9 preservada; maestro de cafetería preservado por SHA256; anclas y mesas/asientos A–D comprobados |
 
 Las rutas cubren recepción, espera, zona social de cafetería, barra, reuniones y A–E. Su cálculo es una herramienta de QA del modelo reconstruido, no un nuevo motor de simulación o navegación del producto. No certifica escala métrica, accesibilidad normativa ni evacuación. La interacción en navegador y física de PlayCanvas corresponden a la Fase 05.
 

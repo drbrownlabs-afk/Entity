@@ -14,8 +14,8 @@
   "exact_upstream_plan_revision": {
     "docs/spatial-simulation/IMPLEMENTATION-PLAN.md": {
       "base_sha256": "765cf1488331759c1b4f91335301383ebe5e3a9ed5bdc89bb9399b54225a42ba",
-      "sha256": "d22110ab3f0e0ccea1315e1803ca2cabde6751b5e67d7202b163833c340cd909",
-      "commit": "8490e1aea1ef79fdc7dc84570c25b62abe44b73e",
+      "sha256": "85c15c40169332eaf514819bae16c094cfd8080fa6c7f3d86c3f2e7b50038c42",
+      "commit": "d51e2b9b1b80b22ea168bc8762ea117042c16aea",
       "reason": "Upstream operator plan edits preserved by rebase; exact revision only, no blanket file exclusion"
     }
   },

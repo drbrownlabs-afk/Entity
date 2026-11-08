@@ -1,6 +1,6 @@
 # Fase 04 — revisión de Blender, materiales, luz y tiempo
 
-Fecha: 2026-11-08. Rama `codex/spatial-simulation`. **EN VALIDACIÓN para aprobación del operador.** Las fases 02–04 se verificaron internamente conforme al plan actualizado `8490e1a`. No se inicia PlayCanvas (05), personajes Mixamo (06) ni exportación definitiva del edificio.
+Fecha: 2026-11-08. Rama `codex/spatial-simulation`. **EN VALIDACIÓN para aprobación del operador.** Las fases 02–04 se verificaron internamente conforme al plan actualizado `8490e1a`, preservado junto con la revisión posterior `d51e2b9` (solo instrucciones de acceso para la futura Fase06). No se inicia PlayCanvas (05), personajes Mixamo (06) ni exportación definitiva del edificio.
 
 ## Qué se entrega
 
@@ -61,7 +61,7 @@ El servicio de borrador del entorno devolvió `INVALID_ARGUMENT` al leer y guard
 
 Dimensiones y distribución añadidas son estimaciones de diseño, sin escala métrica certificada. La vegetación/mobiliario siguen siendo representaciones simplificadas; no se afirma coincidencia fotográfica con las referencias. Las páginas externas de tipologías no fueron accesibles por el proxy y no se descargaron assets; las cinco imágenes adicionales mencionadas por el plan no están presentes. No se inventaron para completar evidencia.
 
-No se modifican backend, frontend, Gaussian, handoff o evidencias originales. De los 578 archivos del snapshot histórico, 577 son idénticos; el plan restante fue actualizado externamente por el operador y se conserva exactamente en el commit `8490e1a`, verificado por hash. No se ejecutó CI remoto ni se atribuyen pruebas históricas de otros servicios a este lote.
+No se modifican backend, frontend, Gaussian, handoff o evidencias originales. De los 578 archivos del snapshot histórico, 577 son idénticos; el plan restante fue actualizado externamente por el operador y se conserva exactamente en el commit `d51e2b9`, verificado por hash. No se ejecutó CI remoto ni se atribuyen pruebas históricas de otros servicios a este lote.
 
 La transferencia a PlayCanvas es una **propuesta**: áreas de luz requieren equivalentes puntuales comprobados y comparación con estos renders; sol/cielo/exposición comparten parámetros y reloj; cualquier probe/lightmap excluye contribuciones artificiales conmutables. La equivalencia visual de runtime y la exportación definitiva quedan pendientes de autorización.
 
