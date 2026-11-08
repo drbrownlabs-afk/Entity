@@ -68,3 +68,5 @@
 ### Cierre de entrega 2026-11-08 — Git y conservación
 
 Se conservó por rebase la actualización externa d51e2b9 (únicamente instrucciones futuras de login Mixamo; sin iniciar Fase06), junto con las revisiones anteriores del plan. Checkpoint de implementación posterior al rebase: 27d7dce. El guard comprueba 577 archivos originales idénticos y la revisión exacta del plan d51e2b9 por SHA256/Git, sin exclusiones amplias. Gate consolidado: 295/644/486 comprobaciones, renders vinculados al maestro por hash, configuración local repetida correctamente. Entrega en rama codex/spatial-simulation, sin merge a main; publicar y comprobar SHA remoto forman el último paso. Fase04 EN VALIDACIÓN; requiere aprobación humana antes de Fase05. El servicio de borrador del entorno devolvió INVALID_ARGUMENT: pasos locales guardados/probados, persistencia cloud no confirmada.
+
+Publicación comprobada: commit `d6c740ba1d08aa5899b286d01c1c2649eb6e3f33` disponible en `origin/codex/spatial-simulation`; `git ls-remote` coincide con HEAD y árbol limpio antes de este cierre documental. No fusionado a main. Gate final PASS y aceptación humana pendiente.

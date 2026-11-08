@@ -1,0 +1,10 @@
+{
+  "branch": "codex/spatial-simulation",
+  "implementation_published_commit": "d6c740ba1d08aa5899b286d01c1c2649eb6e3f33",
+  "remote_verified_equal": true,
+  "merged_to_main": false,
+  "working_tree_clean_before_delivery_record": true,
+  "phase04": "EN_VALIDACION",
+  "operator_approval": false,
+  "next": "Operator review before Phase05; no PlayCanvas or Mixamo implementation started"
+}
