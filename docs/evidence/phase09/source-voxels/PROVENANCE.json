@@ -1,0 +1,21 @@
+{
+  "scene": "https://superspl.at/scene/a972d838",
+  "author": "argenzio",
+  "license": "CC BY-NC 4.0; original publicly published scene, development/noncommercial prototype",
+  "files": [
+    {
+      "url": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json",
+      "path": "scene.voxel.json",
+      "bytes": 652,
+      "sha256": "35693fafcc6ea41367f78193a800640a8be2c49010263dab0110f251392fd70d"
+    },
+    {
+      "url": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.bin",
+      "path": "scene.voxel.bin",
+      "bytes": 617220,
+      "sha256": "bdd74616236bdefe326fa46c3f60fa21e9aae3a206a24d0262f97c754abf827d"
+    }
+  ],
+  "unmodified": true,
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42474773621"
+}
