@@ -12,11 +12,12 @@ from app.office.service import site_create,upsert_resource,create_run
 from app.office.auth import create_account
 main.initialize()
 original=json.loads(Path(args.settings).read_text())
-from app.office.provision import provision,apply_semantics
+from app.office.provision import provision,apply_semantics,apply_observed_inventory
 credentials={}
 with main.database(write=True) as db:
     changed=provision(db,site,original,args.day+'T08:00:00-05:00')
     apply_semantics(db,site,json.loads((root/'worlds/synthetic-office/semantic-annotations.json').read_text()))
+    apply_observed_inventory(db,site,json.loads((root/'worlds/synthetic-office/observed-inventory.json').read_text()))
     # Calibrated site data, reused by daily runs; Core has no scene/vendor import.
     from app.office.spatial import DailyProfile
     from app.office.storage import emit

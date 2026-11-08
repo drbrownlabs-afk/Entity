@@ -128,3 +128,23 @@ def apply_semantics(db,site,annotations):
     config['semantic_revision']=digest
     db.execute('UPDATE office_sites SET config=? WHERE id=?',(encode(config),site))
     return True
+
+
+def apply_observed_inventory(db,site,inventory):
+    """Persist reviewed, unmapped furniture as evidence, never as additional saleable desks."""
+    import hashlib
+    digest=hashlib.sha256(encode(inventory).encode()).hexdigest()
+    config=json.loads(db.execute('SELECT config FROM office_sites WHERE id=?',(site,)).fetchone()[0])
+    if config.get('observed_inventory_revision')==digest:return False
+    changes={}
+    for item in inventory:
+        attrs=item['attributes'];key=item['id']
+        if item['kind']!='InventoryItem' or attrs.get('reservable') is not False or attrs.get('commercial') is not False or attrs.get('position') is not None:
+            raise ValueError('Unmapped visual inventory must remain noncommercial and without asserted coordinates')
+        old=db.execute('SELECT attributes FROM office_resources WHERE site=? AND id=?',(site,key)).fetchone()
+        changes[key]=upsert_resource(db,site,key,item['kind'],{**(json.loads(old[0]) if old else {}),**attrs})
+    for run in db.execute('SELECT id,clock FROM office_runs WHERE site=?',(site,)).fetchall():
+        emit(db,site,run['id'],'main',run['clock'],'inventory.visual_observation_added','authorized-scene-survey',changes,{'source':'reviewed-original-SSOG','inventory_revision':digest,'commercial_capacity_changed':False})
+    config['observed_inventory_revision']=digest
+    db.execute('UPDATE office_sites SET config=? WHERE id=?',(encode(config),site))
+    return True
