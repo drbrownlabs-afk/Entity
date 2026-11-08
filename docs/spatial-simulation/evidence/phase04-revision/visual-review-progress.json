@@ -5,14 +5,16 @@
     "garden-detail",
     "glass-detail",
     "office",
-    "lounge"
+    "lounge",
+    "computer-detail"
   ],
   "findings": {
     "vertical-garden": "Full fine-leaf surface coverage inspected at1440x960; actual ceiling/furniture reflections visible in solid clear glazing, garden remains visible through it. Alpha-card artifacts absent. Reference Gaussian front-return.jpg inspected separately.",
     "garden-detail": "Inspected final1440x960 capture: continuous dense small-leaf geometry, visible veins, varied greens/depth, no pale alpha cards or bare background patches. Gaussian reference density retained as target.",
     "glass-detail": "Inspected final1440x960 render: oblique glass reflects warm fixtures/furniture while preserving view into meeting/work rooms; thin black frames and dense vertical garden visible. No opaque-alpha substitute for glass.",
     "office": "Inspected final1440x960: thirty-workstation family represented by roomA, thin display enclosures/supports and real key geometry visible; warm hanging diffusers, dense garden and actual glazing reflections. Desktop styling remains an authored reconstruction, not a certified replica of the reference product.",
-    "lounge": "Inspected final1440x960: continuous warm concealed ceiling coves and corner reveal, professional sofas/chair/pouf and layered furniture, plants, rug and separate TV present. Furniture choice/finish is a reconstruction; exact visual parity with the supplied premium reference remains for operator acceptance."
+    "lounge": "Inspected final1440x960: continuous warm concealed ceiling coves and corner reveal, professional sofas/chair/pouf and layered furniture, plants, rug and separate TV present. Furniture choice/finish is a reconstruction; exact visual parity with the supplied premium reference remains for operator acceptance.",
+    "computer-detail": "Inspected final1440x960 close view: radiused thin enclosure, curved support, base, camera/microphone and modeled labeled keys are visible. Source desktop graphic is generic; exact product/model fidelity is not claimed. Actual glazing reflection and continuous garden appear behind it."
   },
   "human_approval": false,
   "remaining": "All other final captures and same-camera light-state comparisons pending"

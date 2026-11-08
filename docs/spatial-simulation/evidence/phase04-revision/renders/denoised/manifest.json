@@ -110,6 +110,28 @@
       },
       "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
       "raw_mean_srgb": 0.589860200881958
+    },
+    {
+      "name": "computer-detail",
+      "raw": "computer-detail.png",
+      "raw_sha256": "6a2e5f8afce23277430e4e316da260d6638f5709613a70b38cce26cec46a34ae",
+      "filtered": "denoised/computer-detail.png",
+      "filtered_sha256": "d58aacdd8d75eee0b5e356382fa40167b34209bce85e131a49f0ec64ffb13f80",
+      "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "guides": {
+        "albedo": {
+          "path": ".runtime/revision-guides/review/computer-detail-Albedo.pfm",
+          "sha256": "ebc46123bd92bb3820091781941efe143acdb9c2e50cf65d5d771ea210417e96",
+          "source_exr_sha256": "97f8a45c92268ca94be5794acb2e013e390021277d0a70665ccd3be350b70fa5"
+        },
+        "normal": {
+          "path": ".runtime/revision-guides/review/computer-detail-Normal.pfm",
+          "sha256": "5ecc537375e2e0e310bdf7403c6dce713627350ea354427bdc37b2ef383c8d49",
+          "source_exr_sha256": "3cd057a09803afc80f415623115a4fe505625134f32d4a3e7fe8bdf3d02a48d3"
+        }
+      },
+      "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
+      "raw_mean_srgb": 0.3703458905220032
     }
   ],
   "no_reference_photo_edits": true,

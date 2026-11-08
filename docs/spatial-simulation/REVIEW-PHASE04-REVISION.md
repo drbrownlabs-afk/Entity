@@ -34,6 +34,12 @@ Las imágenes siguientes son renders reales de este maestro, con filtrado OIDN y
 
 [Original Cycles sin filtrar](evidence/phase04-revision/renders/office.png) · hora 12:00 · [1440, 960] · hasta 96 muestras.
 
+## Equipos a escala cercana
+
+![Equipos a escala cercana](evidence/phase04-revision/renders/denoised/computer-detail.png)
+
+[Original Cycles sin filtrar](evidence/phase04-revision/renders/computer-detail.png) · hora 12:00 · [1440, 960] · hasta 96 muestras.
+
 ## Mamparas: reflexión a ángulo oblicuo
 
 ![Mamparas: reflexión a ángulo oblicuo](evidence/phase04-revision/renders/denoised/glass-detail.png)
