@@ -1,0 +1,14 @@
+{
+  "source": "https://github.com/RenderKit/oidn/releases/download/v2.3.3/oidn-2.3.3.x86_64.linux.tar.gz",
+  "version": "2.3.3",
+  "sha256": "3c385230d9e6f63527ba72f2229594dbac5051674219d72e0044b5d0b841796f",
+  "transport": "verified HTTPS official RenderKit release; no TLS bypass",
+  "upstream_digest_API": "403 proxy; no upstream digest claimed",
+  "headers": {
+    "Content-Length": "64809031",
+    "Content-MD5": null,
+    "Digest": null
+  },
+  "bytes": 64809031,
+  "use": "colour denoising only; raw render evidence retained"
+}

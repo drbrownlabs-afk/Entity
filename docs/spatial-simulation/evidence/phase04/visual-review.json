@@ -1,0 +1,28 @@
+{
+  "reviewer": "Codex",
+  "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+  "filtered_count": 10,
+  "raw_count": 10,
+  "human_approval": false,
+  "status": "internally verified; explicit operator approval required before PlayCanvas",
+  "brightness_mean_srgb_raw": {
+    "all_on": 0.4902026355266571,
+    "one_on": 0.23044633865356445,
+    "all_off": 0.004741411190479994
+  },
+  "observations": [
+    "C layout preserved with E behind D and both wings, white-chair reception and black-chair replacement waiting",
+    "Four distinct reference hours, sky/sun/exposure and automatic circuit response",
+    "Room A control renders have same camera and sky: on > individual > off brightness, no fixed artificial-light bake",
+    "Lounge, two call booths, opaque WC access and adjacent lockers/print shown",
+    "Filtered images remove sample noise; raw files and provenance remain available"
+  ],
+  "limits": [
+    "No certified dimensions/geographic building position",
+    "Artistic solar fallback until observer supplied; real Astral observer option tested with synthetic fixture only",
+    "No complete architectural GLB export or PlayCanvas started; only five-swatch isolated PBR roundtrip",
+    "No physical hardware, people/cameras in WC or Mixamo assets obtained",
+    "Colour-only filtering softens fine details; not photometric validation"
+  ],
+  "visual_review_scope": "All ten filtered images directly viewed; raw counterparts verified by hashes and metrics, with selected raw frames inspected"
+}

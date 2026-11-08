@@ -1,0 +1,8 @@
+{
+  "schema_version":"1.0",
+  "times":[8,12,16,20],
+  "clock":{"initial_hour":12,"initial_speed":60,"playing":false,"speeds":[-360,-60,-10,-1,1,10,60,360]},
+  "solar":{"latitude":null,"longitude":null,"date":"2026-11-08","timezone":"UTC","north_rotation_degrees":0,"mode":"design-reference-until-location-supplied","note":"No geographic location or true north is asserted for the building. Optional observer coordinates enable Astral; otherwise this explicit artistic trajectory is used."},
+  "artistic_sun":[[0,-40,-140],[8,18,-55],[12,65,0],[16,22,65],[20,-18,110],[24,-40,220]],
+  "transfer":{"status":"proposal pending operator approval after Phase04; no final GLB or PlayCanvas implementation","solar":"Same hour/observer/orientation parameters; interpolate sky, exposure and sun; no sensor events from clock","lights":"Area lights in Blender require tested punctual-light equivalents in PlayCanvas; individual mutable emitters remain separate. Compare against approved references before accepting any visual loss.","baking":"Never bake mutable artificial illumination into an immutable room lightmap. Any environment/probe variants must exclude switchable light contribution."}
+}

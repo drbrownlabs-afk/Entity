@@ -1,0 +1,27 @@
+ERROR Draco mesh compression is not available because library could not be found at /usr/bin/4.3/python/lib/python3.13/site-packages/libextern_draco.so
+16:16:45 | INFO: Starting glTF 2.0 export
+16:16:45 | INFO: Extracting primitive: Cube.002
+16:16:45 | INFO: Primitives created: 1
+16:16:45 | INFO: Extracting primitive: Cube.003
+16:16:45 | INFO: Primitives created: 1
+16:16:45 | INFO: Extracting primitive: Cube.004
+16:16:45 | INFO: Primitives created: 1
+16:16:45 | INFO: Extracting primitive: Cube.005
+16:16:45 | INFO: Primitives created: 1
+16:16:45 | INFO: Extracting primitive: Cube.006
+16:16:45 | INFO: Primitives created: 1
+16:16:45 | INFO: Finished glTF 2.0 export in 0.05838155746459961 s
+
+Extensions: writing cache failed ([Errno 30] Read-only file system: '/home/agent/.config/blender/4.3/extensions').
+16:16:46 | INFO: Data are loaded, start creating Blender stuff
+16:16:46 | INFO: Blender create Mesh node Cube.002
+16:16:46 | INFO: Blender create Mesh node Cube.003
+16:16:46 | INFO: Blender create Mesh node Cube.004
+16:16:46 | INFO: Blender create Mesh node Cube.005
+16:16:46 | INFO: Blender create Mesh node Cube.006
+16:16:46 | INFO: glTF import finished in 0.01s
+MATERIAL_PROBE_PASS 5
+Blender 4.3.2
+Read blend: "/workspace/Entity/simulation/spatial-office/output/office-phase04.blend"
+
+Blender quit

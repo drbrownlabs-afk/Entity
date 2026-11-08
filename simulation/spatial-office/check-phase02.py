@@ -22,7 +22,9 @@ def bvh(o):
  dg=bpy.context.evaluated_depsgraph_get();eo=o.evaluated_get(dg);mesh=eo.to_mesh();v=[eo.matrix_world@p.co for p in mesh.vertices];f=[list(p.vertices) for p in mesh.polygons];tree=BVHTree.FromPolygons(v,f);eo.to_mesh_clear();return tree
 check('reopens',scene.get('phase','').startswith('02'))
 check('source-masters-intact',sha256(ROOT/manifest['source_master'])==manifest['source_master_sha256'])
-check('578-source-files-intact',not protected_changes())
+check('577-original-files-and-upstream-plan-intact',not protected_changes())
+check('white-chairs-reception',all(o.get('environment_id')=='RECEPTION' for o in bpy.data.objects if o.name.startswith('sim:p1:waiting:chair:')))
+check('black-chairs-replaced-by-sofa',not any(o.name.startswith('sim:p1:reception:chair:') for o in bpy.data.objects))
 check('build-inputs-current',all(sha256(ROOT/p)==h for p,h in manifest['input_hashes'].items()))
 check('config-current',cfg==read(HERE/'phase02-layout.json'))
 ids=[o['stable_id'] for o in bpy.data.objects if 'stable_id' in o]
@@ -141,5 +143,5 @@ goal=tuple(round(v/step) for v in targets['sim:ROOM-E'])
 check('security-closed-blocks-rear-route',goal not in reached,{'reachable_with_security_closed':len(reached)})
 pivot.rotation_euler.z=pivot['open_angle'];bpy.context.view_layer.update();opened=bounds(security)
 check('security-open-clears-corridor',not opened[0][0]-radius<-2.2<opened[1][0]+radius)
-write(E/'summary.json',{'passed':True,'checks':len(checks),'routes':list(routes),'master_sha256':sha256(master),'human_approval':False,'runtime_tested':False,'protected_files_unchanged':578})
+write(E/'summary.json',{'passed':True,'checks':len(checks),'routes':list(routes),'master_sha256':sha256(master),'human_approval':False,'runtime_tested':False,'protected_files_unchanged':577,'upstream_plan_revision':'8490e1a'})
 print('PHASE02_CHECKS_PASS',len(checks),'ROUTES',len(routes))

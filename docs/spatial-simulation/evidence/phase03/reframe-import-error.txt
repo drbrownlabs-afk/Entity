@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "/workspace/Entity/simulation/spatial-office/render-phase03.py", line 6, in <module>
+    from common import to_blender,to_source
+ModuleNotFoundError: No module named 'common'
+
+Error: script failed, file: 'simulation/spatial-office/render-phase03.py', exiting.
+Blender 4.3.2
+
+Blender quit

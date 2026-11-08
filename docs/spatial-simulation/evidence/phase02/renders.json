@@ -4,8 +4,8 @@
     "frame": 31,
     "doors": "open",
     "path": "phase02-plan.png",
-    "sha256": "41d5188e29cbeff9c580d1d7a9ec3070c7a9fc796591d2e42a9e42ba63a2e221",
-    "master_sha256": "1386de40f7fb77fa6e6d92f0566f0abe5d2f5dc1223fe5d70cde962269b3368a",
+    "sha256": "0c13b92c0a6c1687fa45ae2992b20c51ba86d6932b50b80b9220b85180e7ad7a",
+    "master_sha256": "b54dad57321f009ff8d92840dbe7d85691b4ebf898fb096f8fa3ffc91771ad9a",
     "engine": "Cycles CPU",
     "samples": 24
   },
@@ -14,8 +14,8 @@
     "frame": 31,
     "doors": "open",
     "path": "phase02-general.png",
-    "sha256": "30195600b2aed68354d3b4a4dc784fb9cd90403ea41fdab7ac63ae74b4ba1a56",
-    "master_sha256": "1386de40f7fb77fa6e6d92f0566f0abe5d2f5dc1223fe5d70cde962269b3368a",
+    "sha256": "ffa77b15d8796c865b99b00cc5aa2b61be764f052614df392c6ede394f8e7ca8",
+    "master_sha256": "b54dad57321f009ff8d92840dbe7d85691b4ebf898fb096f8fa3ffc91771ad9a",
     "engine": "Cycles CPU",
     "samples": 24
   },
@@ -24,8 +24,8 @@
     "frame": 31,
     "doors": "open",
     "path": "phase02-interior.png",
-    "sha256": "f913d95af0f866ddf558fe7bfa24a749ba177083ef10c72f2645aa79d1183e9e",
-    "master_sha256": "1386de40f7fb77fa6e6d92f0566f0abe5d2f5dc1223fe5d70cde962269b3368a",
+    "sha256": "78c671a5fb7b3c9f9fa7953e8b55094bc8907bdf33c6020581e94a0bc8eaa736",
+    "master_sha256": "b54dad57321f009ff8d92840dbe7d85691b4ebf898fb096f8fa3ffc91771ad9a",
     "engine": "Cycles CPU",
     "samples": 24
   },
@@ -34,8 +34,8 @@
     "frame": 31,
     "doors": "open",
     "path": "phase02-E.png",
-    "sha256": "249aa77cfa6cceea19a13ac6481ab50ffb8bb0d914d675697802aa727948e521",
-    "master_sha256": "1386de40f7fb77fa6e6d92f0566f0abe5d2f5dc1223fe5d70cde962269b3368a",
+    "sha256": "eccab1e8944d1eafa4718e31c036f81c4e61d0c061433e54dde61c0ea5061272",
+    "master_sha256": "b54dad57321f009ff8d92840dbe7d85691b4ebf898fb096f8fa3ffc91771ad9a",
     "engine": "Cycles CPU",
     "samples": 24
   }

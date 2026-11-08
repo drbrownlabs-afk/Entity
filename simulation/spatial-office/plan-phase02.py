@@ -28,7 +28,7 @@ svg+=text(-9.2,-24.8,'CAFETERÍA',17)+text(-9.2,-24.2,'Barra + equipamiento',11)
 svg+=rect([-10.225,-9.175,-25.125,-19.475],'#a86e37')
 for x,z in [[-4.3,-20.5],[-4.3,-24]]:
  a,b=pt(x,z);svg+=f'<circle cx="{a}" cy="{b}" r="25" fill="#b48e68"/>'
-svg+=text(-4.7,-9.0,'RECEPCIÓN',12)+text(-4.7,-16.1,'ESPERA',12)+text(-3.25,-18.8,'Rampa',11)
+svg+=text(-4.7,-16.0,'RECEPCIÓN',12)+text(-4.7,-9.0,'ESPERA',12)+text(-3.25,-18.8,'Rampa',11)
 for i,t in enumerate(m['televisions'],1):
  rec=next(r for r in m['objects'] if r['id']==t['id']);x,_,z=rec['position_source'];a,b=pt(x,z)
  svg+=f'<circle cx="{a}" cy="{b}" r="11" fill="#264970"/>'+text(x,z+.1,'TV'+str(i),8,'white')

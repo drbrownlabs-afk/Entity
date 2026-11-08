@@ -1,0 +1,17 @@
+[
+  {
+    "url": "https://www.coalesse.com/inspiration/gallery/",
+    "failure": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "used_assets": false
+  },
+  {
+    "url": "https://en.ofinto.ch/focus-call/",
+    "failure": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "used_assets": false
+  },
+  {
+    "url": "https://www.sophiaspeerdesigns.net/coworking-space",
+    "failure": "<urlopen error Tunnel connection failed: 403 Forbidden>",
+    "used_assets": false
+  }
+]

@@ -1,4 +1,4 @@
-FULL_INVENTORY 1987
+FULL_INVENTORY 1957
 Blender 4.3.2
 Read blend: "/workspace/Entity/simulation/spatial-office/output/office-phase02.blend"
 

@@ -1,0 +1,104 @@
+{
+  "phase": "03",
+  "form": "C: longitudinal body, rear cafe wing, new front social/services wing",
+  "new_wing_bounds": [
+    -12,
+    -6.5,
+    -5.8,
+    2.65
+  ],
+  "floor_y": -1.55,
+  "rooms": [
+    {
+      "id": "sim:LOUNGE",
+      "position": [
+        -10,
+        -3.1
+      ],
+      "occupancy": null
+    },
+    {
+      "id": "sim:CALL-01",
+      "bounds": [
+        -11.8,
+        -10.3,
+        -0.1,
+        2.2
+      ],
+      "target": [
+        -11.0,
+        0.35
+      ]
+    },
+    {
+      "id": "sim:CALL-02",
+      "bounds": [
+        -9.8,
+        -8.3,
+        -0.1,
+        2.2
+      ],
+      "target": [
+        -9.0,
+        0.35
+      ]
+    },
+    {
+      "id": "sim:WC",
+      "bounds": [
+        -7.9,
+        -5.2,
+        0.3,
+        2.5
+      ],
+      "target": [
+        -6.8,
+        0.0
+      ],
+      "privacy": "No cameras or characters inside. Occupancy unknown unless future simulated door/sensor evidence; never direct visual surveillance."
+    }
+  ],
+  "lockers": {
+    "adjacent_to": "sim:WC",
+    "columns": 4,
+    "rows": 2,
+    "position": [
+      -4.9,
+      1.8
+    ],
+    "occupancy": "unassigned; simulated, no Core assignment"
+  },
+  "targets": {
+    "lounge": [
+      -10,
+      -2.1
+    ],
+    "call-01": [
+      -11,
+      0.35
+    ],
+    "call-02": [
+      -9,
+      0.35
+    ],
+    "WC-access": [
+      -6.8,
+      0.0
+    ],
+    "lockers": [
+      -4.2,
+      1.0
+    ],
+    "print": [
+      -4.2,
+      -1.0
+    ]
+  },
+  "reference_urls": [
+    "https://www.coalesse.com/inspiration/gallery/",
+    "https://en.ofinto.ch/focus-call/",
+    "https://www.sophiaspeerdesigns.net/coworking-space"
+  ],
+  "dimensions_status": "Estimated design. No geographic, metric, acoustic isolation or regulatory certification.",
+  "reference_notes": "Project 1211/1212 keep continuity. External URLs are typology references only; no third-party geometry/assets redistributed. Additional five captures mentioned upstream are not present in this workspace."
+}

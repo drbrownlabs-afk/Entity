@@ -132,11 +132,11 @@
   "target_points": {
     "reception": [
       -4.7,
-      -9.0
+      -16
     ],
     "waiting": [
       -4.8,
-      -16.0
+      -9
     ],
     "cafe-social": [
       -4.3,
@@ -150,5 +150,25 @@
   "references": [
     "docs/spatial-simulation/references/1211-mamparas.jpg",
     "docs/spatial-simulation/references/1212-cafeteria.jpg"
-  ]
+  ],
+  "semantic_overrides": {
+    "RECEPTION": {
+      "historical_reference": "WAITING-AREA",
+      "sector": "white chairs",
+      "position_source": [
+        -4.7514763308,
+        -0.63474085,
+        -16.0021275877
+      ]
+    },
+    "WAITING-AREA": {
+      "historical_reference": "RECEPTION",
+      "sector": "black chairs replaced by sofas",
+      "position_source": [
+        -5.7888763933,
+        -1.0731165959,
+        -8.8948815761
+      ]
+    }
+  }
 }

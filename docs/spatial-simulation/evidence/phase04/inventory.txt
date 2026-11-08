@@ -1,0 +1,5 @@
+FULL_INVENTORY 2250
+Blender 4.3.2
+Read blend: "/workspace/Entity/simulation/spatial-office/output/office-phase04.blend"
+
+Blender quit

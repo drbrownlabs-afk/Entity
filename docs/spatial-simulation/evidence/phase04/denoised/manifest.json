@@ -1,0 +1,119 @@
+{
+  "official_release_archive_sha256": "3c385230d9e6f63527ba72f2229594dbac5051674219d72e0044b5d0b841796f",
+  "executable_sha256": "84eb33133f22284a9448e8d7e91d84cda30be30a2840bec61ca72a33bc567341",
+  "Pillow": "13.0.0",
+  "numpy": "2.3.5",
+  "images": [
+    {
+      "name": "time-08",
+      "raw": "time-08.png",
+      "raw_sha256": "b4a1b8a5e7b42b9dcad24dabd8fbe3c8a0d32fb3d1711ebb464159751e234905",
+      "filtered": "denoised/time-08.png",
+      "filtered_sha256": "53f4d52cb0e3c1de82e12b481cf8fd5e0962c760765838e3dfb76fa5c88382fd",
+      "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+      "algorithm": "OIDN 2.3.3 RT LDR sRGB colour-only, high quality; no geometric changes",
+      "raw_mean_srgb": 0.3006118834018707,
+      "filtered_mean_srgb": 0.3031768202781677
+    },
+    {
+      "name": "time-12",
+      "raw": "time-12.png",
+      "raw_sha256": "49d290a67fc4d454316d9f946c4108a12813593724abe00660bbb6bd90634a9e",
+      "filtered": "denoised/time-12.png",
+      "filtered_sha256": "36e626f5d1afc1cba1181e74a9df23e6fe99071502586cba7cf5267136f95fca",
+      "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+      "algorithm": "OIDN 2.3.3 RT LDR sRGB colour-only, high quality; no geometric changes",
+      "raw_mean_srgb": 0.542046308517456,
+      "filtered_mean_srgb": 0.54301917552948
+    },
+    {
+      "name": "time-16",
+      "raw": "time-16.png",
+      "raw_sha256": "f1f58e205ffa2aed64b8836f5bf2d3a0d035440c6312703c214287d4199bfa85",
+      "filtered": "denoised/time-16.png",
+      "filtered_sha256": "e1c06a70a961ba13eaafa27ec0185efb164ee07f3083693a03a5d89321542bc8",
+      "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+      "algorithm": "OIDN 2.3.3 RT LDR sRGB colour-only, high quality; no geometric changes",
+      "raw_mean_srgb": 0.3373222351074219,
+      "filtered_mean_srgb": 0.33943793177604675
+    },
+    {
+      "name": "time-20",
+      "raw": "time-20.png",
+      "raw_sha256": "750fa4ba3ee9704dc63a5e57c9aa60beac39c10aac5a028f7776d89532fd8b59",
+      "filtered": "denoised/time-20.png",
+      "filtered_sha256": "192dd2b5a52a3c315d58e23a193b75af684929f72dd8056537b5cddebe7e2aa9",
+      "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+      "algorithm": "OIDN 2.3.3 RT LDR sRGB colour-only, high quality; no geometric changes",
+      "raw_mean_srgb": 0.11337543278932571,
+      "filtered_mean_srgb": 0.11649543046951294
+    },
+    {
+      "name": "room-A-all-on-20",
+      "raw": "room-A-all-on-20.png",
+      "raw_sha256": "4e994cbb654e8fdba092898d64eb2dc34ac351b68185ce63cc36bd71f8b9585e",
+      "filtered": "denoised/room-A-all-on-20.png",
+      "filtered_sha256": "1124c9f155477208f35ff5715fc6f56de5c82ee534acc18e41c323746e864add",
+      "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+      "algorithm": "OIDN 2.3.3 RT LDR sRGB colour-only, high quality; no geometric changes",
+      "raw_mean_srgb": 0.4902026355266571,
+      "filtered_mean_srgb": 0.50881028175354
+    },
+    {
+      "name": "room-A-all-off-20",
+      "raw": "room-A-all-off-20.png",
+      "raw_sha256": "f9fe513ddb6e8307c72abd5e83328dd5719cf7b10bd4ba7d71f46cbdb18aa47c",
+      "filtered": "denoised/room-A-all-off-20.png",
+      "filtered_sha256": "7bc8263ccd28f138a15a7d6d4e403333d733f4cb4e642f26b5134316ee1a334b",
+      "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+      "algorithm": "OIDN 2.3.3 RT LDR sRGB colour-only, high quality; no geometric changes",
+      "raw_mean_srgb": 0.004741411190479994,
+      "filtered_mean_srgb": 0.004857491236180067
+    },
+    {
+      "name": "room-A-one-on-20",
+      "raw": "room-A-one-on-20.png",
+      "raw_sha256": "2465aa5beac332ed738bff130ab8f85e63bebbc51da9cbfdb97daf48f2bae878",
+      "filtered": "denoised/room-A-one-on-20.png",
+      "filtered_sha256": "de08b990e61ad22f1491da3262777fd59465d71a5ef85ffc84eb803546f7008b",
+      "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+      "algorithm": "OIDN 2.3.3 RT LDR sRGB colour-only, high quality; no geometric changes",
+      "raw_mean_srgb": 0.23044633865356445,
+      "filtered_mean_srgb": 0.24175967276096344
+    },
+    {
+      "name": "lounge-12",
+      "raw": "lounge-12.png",
+      "raw_sha256": "d65ced49c96bcab7e9487eb63dd6743642a00c9fca83749ffe3616b64935e47b",
+      "filtered": "denoised/lounge-12.png",
+      "filtered_sha256": "338408180f80bdfbfc989a86ea8aa89bcbf5af048765b93e0b3da1f634c7e18f",
+      "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+      "algorithm": "OIDN 2.3.3 RT LDR sRGB colour-only, high quality; no geometric changes",
+      "raw_mean_srgb": 0.5542547702789307,
+      "filtered_mean_srgb": 0.5620908141136169
+    },
+    {
+      "name": "booths-12",
+      "raw": "booths-12.png",
+      "raw_sha256": "7aed010d3d346c75a437a672acded3282399a92bfe9599ef0466c9c0f3e08dca",
+      "filtered": "denoised/booths-12.png",
+      "filtered_sha256": "03e475ed94a4f3b63f099c178e7e0af88171563d58a2449c67471cf03a77dc31",
+      "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+      "algorithm": "OIDN 2.3.3 RT LDR sRGB colour-only, high quality; no geometric changes",
+      "raw_mean_srgb": 0.4661865234375,
+      "filtered_mean_srgb": 0.47973117232322693
+    },
+    {
+      "name": "services-12",
+      "raw": "services-12.png",
+      "raw_sha256": "9d3c4db584bef376bd20f0cd41a779714bf74d8b392d79a7ee630a837f3e36a8",
+      "filtered": "denoised/services-12.png",
+      "filtered_sha256": "c7fda6d5f54a6cd8eb7de3f7a289f680eb79865ffc778161c5c2cba4b28dafed",
+      "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+      "algorithm": "OIDN 2.3.3 RT LDR sRGB colour-only, high quality; no geometric changes",
+      "raw_mean_srgb": 0.43174460530281067,
+      "filtered_mean_srgb": 0.4457019567489624
+    }
+  ],
+  "note": "Raw and filtered images retained. Filtering improves sample noise; it does not certify geometry, material transfer or physical photometry."
+}

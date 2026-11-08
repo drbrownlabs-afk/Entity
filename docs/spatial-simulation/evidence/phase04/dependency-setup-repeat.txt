@@ -1,0 +1,5 @@
+Using CPython 3.12.14 interpreter at: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python
+Checked 1 package in 2ms
+Using CPython 3.12.14 interpreter at: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python
+Checked 2 packages in 4ms
+Verified Astral/Pillow/NumPy lockfiles and pinned official OIDN 2.3.3 archive; workspace-only setup complete

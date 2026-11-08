@@ -19,3 +19,13 @@ Se reabre la revisión de topología: el rectángulo de la primera entrega era i
 ## Fase 02 autorizada e implementada — 2026-11-08
 
 La orden posterior «continúa con la fase dos» autoriza el incremento completo de arquitectura funcional. Maestro actual: `office-phase02.blend`; [informe](PHASE-02-REPORT.md). A–E y reuniones cerrados con vidrio/perfiles negros y puertas; E nueva detrás de D con seis posiciones, cafetería en L preservada, recepción/espera ampliadas, rampa, cuatro TVs y siete puertas con pivote/hoja/colisionador sincronizados. Ampliación posterior propuesta para E declarada como estimación. 293 comprobaciones PASS y diez rutas geométricas comprobadas; capturas y revisión visual se registran en evidencia phase02. Estado EN VALIDACIÓN, no aceptación humana ni inicio de Fase03. La mención previa a E «pendiente de modelar» queda sustituida por esta implementación.
+
+## Estado vigente tras sincronizar el plan del operador — 2026-11-08
+
+La actualización remota 8490e1a corrige recepción/espera, añade la tercera ala en C y autoriza avanzar 02→03→04 sin pedir aprobación intermedia. d51e2b9 añade únicamente el acceso interactivo futuro a Mixamo y mantiene el bloqueo tras Fase04; no se inicia login ni descarga. Se conserva el plan, sin merge ni sobrescritura.
+
+Maestro actual **office-phase04.blend**. Fase02: 295 comprobaciones y diez rutas; Fase03: 644 comprobaciones y dieciséis rutas; Fase04: 486 comprobaciones, 54 luminarias/17 circuitos, 19 puertas, ocho lockers y cinco pantallas. Cinco swatches PBR exportados/reimportados de forma aislada; ningún GLB arquitectónico definitivo ni PlayCanvas nuevo. Diez renders de aprobación y diez copias OIDN, con originales/hashes preservados. [Revisión completa](REVIEW-PHASE04.md).
+
+Fase04 **EN VALIDACIÓN DEL OPERADOR**. Fases05/06 bloqueadas hasta sus autorizaciones. Recepción vigente en sillas blancas y espera con sofá en sector de negras; los IDs del handoff conservan su procedencia histórica. L inicial queda como etapa intermedia, sustituida por la C del maestro actual.
+
+577 archivos originales intactos; el único archivo del snapshot inicial actualizado externamente es el plan del operador, validado por revisión y SHA exactos en evidence/upstream-revisions.json. Backend/frontend/Gaussian/handoff y evidencias originales sin cambios. Borrador de entorno no confirmado (`INVALID_ARGUMENT`); setup reproducible sí está en Git, sin afirmar publicación de snapshot ni instancia nueva probada.

@@ -1,0 +1,3341 @@
+{
+  "checks": [
+    {
+      "name": "reopens",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-masters-intact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "577-original-files-and-upstream-plan-intact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "white-chairs-reception",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "black-chairs-replaced-by-sofa",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "build-inputs-current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "config-current",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "ids-unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "six-enclosures",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "four-base-TVs-plus-lounge",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-screen:sim:p2:TV:1:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-UV:sim:p2:TV:1:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-image:sim:p2:TV:1:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-screen:sim:p2:TV:2:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-UV:sim:p2:TV:2:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-image:sim:p2:TV:2:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-screen:sim:p2:TV:3:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-UV:sim:p2:TV:3:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-image:sim:p2:TV:3:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-screen:sim:p2:TV:4:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-UV:sim:p2:TV:4:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-image:sim:p2:TV:4:body",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-screen:sim:p3:lounge:TV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-UV:sim:p3:lounge:TV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "TV-image:sim:p3:lounge:TV",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-pods",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cafe-retained",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "E-additional-desk",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "E-behind-D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "reception-counter",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "waiting-sofa-armchair-tables",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:annotation-0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:annotation-1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:MEETING-AREA-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:annotation-2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:annotation-3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:ZONE-C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:C1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:C2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:C3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:C4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:C5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:C6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:ZONE-D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:D1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:D2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:D3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:D4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:D5",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:D6",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:WAITING-AREA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:REST-AREA",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "source-anchor:RECEPTION",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:A:desktop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:A:chair:1:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:A:chair:2:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:A:chair:3:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:A:chair:4:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:A:chair:5:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:A:chair:6:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:B:desktop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:B:chair:1:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:B:chair:2:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:B:chair:3:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:B:chair:4:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:B:chair:5:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:B:chair:6:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:C:desktop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:C:chair:1:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:C:chair:2:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:C:chair:3:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:C:chair:4:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:C:chair:5:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:C:chair:6:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:D:desktop",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:D:chair:1:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:D:chair:2:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:D:chair:3:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:D:chair:4:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:D:chair:5:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "retain:sim:p1:D:chair:6:seat",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-duplicate-glass-panels",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "E-rear-closed-shared-front-once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "partitions-clear-furniture-columns",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "hinge-independent:sim:p2:door:MEETING-AREA-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p2:door:MEETING-AREA-01:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:MEETING-AREA-01:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:MEETING-AREA-01:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:MEETING-AREA-01:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:MEETING-AREA-01:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:MEETING-AREA-01:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:MEETING-AREA-01:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:MEETING-AREA-01:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:MEETING-AREA-01:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:MEETING-AREA-01:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:MEETING-AREA-01:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:MEETING-AREA-01:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p2:door:MEETING-AREA-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p2:door:MEETING-AREA-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p2:door:MEETING-AREA-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p2:door:MEETING-AREA-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p2:door:MEETING-AREA-01",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p2:door:A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p2:door:A:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:A:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:A:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:A:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:A:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:A:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:A:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:A:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:A:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:A:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:A:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:A:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p2:door:A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p2:door:A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p2:door:A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p2:door:A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p2:door:A",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p2:door:B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p2:door:B:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:B:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:B:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:B:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:B:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:B:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:B:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:B:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:B:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:B:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:B:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:B:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p2:door:B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p2:door:B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p2:door:B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p2:door:B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p2:door:B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p2:door:C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p2:door:C:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:C:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:C:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:C:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:C:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:C:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:C:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:C:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:C:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:C:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:C:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:C:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p2:door:C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p2:door:C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p2:door:C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p2:door:C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p2:door:C",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p2:door:D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p2:door:D:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:D:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:D:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:D:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:D:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:D:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:D:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:D:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:D:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:D:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:D:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:D:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p2:door:D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p2:door:D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p2:door:D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p2:door:D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p2:door:D",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p2:door:sim:ROOM-E",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p2:door:sim:ROOM-E:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:sim:ROOM-E:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:sim:ROOM-E:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:sim:ROOM-E:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:sim:ROOM-E:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:sim:ROOM-E:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:sim:ROOM-E:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:sim:ROOM-E:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:sim:ROOM-E:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:sim:ROOM-E:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:sim:ROOM-E:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:sim:ROOM-E:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p2:door:sim:ROOM-E",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p2:door:sim:ROOM-E",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p2:door:sim:ROOM-E",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p2:door:sim:ROOM-E",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p2:door:sim:ROOM-E",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p2:door:security",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p2:door:security:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:security:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:security:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:security:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:security:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:security:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:security:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:security:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:security:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:security:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p2:door:security:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p2:door:security:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p2:door:security",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p2:door:security",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p2:door:security",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p2:door:security",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p2:door:security",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:security:raised",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:security:raised:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:security:raised:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:security:raised:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:security:raised:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:security:raised:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:security:raised:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:security:raised:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:security:raised:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:security:raised:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:security:raised:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:security:raised:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:security:raised:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:security:raised",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:security:raised",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:security:raised",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:security:raised",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:security:raised",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:sim:CALL-01:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-01:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-01:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-01:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-01:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-01:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-01:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-01:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-01:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-01:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-01:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-01:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-01:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:sim:CALL-01:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:sim:CALL-01:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:sim:CALL-01:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:sim:CALL-01:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:sim:CALL-01:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:sim:CALL-02:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-02:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-02:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-02:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-02:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-02:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-02:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-02:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-02:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-02:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-02:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:sim:CALL-02:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:sim:CALL-02:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:sim:CALL-02:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:sim:CALL-02:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:sim:CALL-02:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:sim:CALL-02:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:sim:CALL-02:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:WC:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:WC:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:WC:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:WC:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:WC:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:WC:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:WC:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:WC:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:WC:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:WC:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:WC:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:WC:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:WC:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:WC:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:WC:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:WC:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:WC:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:WC:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:locker:0:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:0:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:0:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:0:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:0:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:0:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:0:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:0:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:0:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:0:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:0:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:0:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:0:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:locker:0:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:locker:0:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:locker:0:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:locker:0:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:locker:0:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:locker:0:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:1:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:1:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:1:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:1:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:1:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:1:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:1:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:1:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:1:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:1:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:1:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:1:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:locker:0:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:locker:0:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:locker:0:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:locker:0:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:locker:0:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:locker:0:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:2:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:2:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:2:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:2:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:2:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:2:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:2:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:2:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:2:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:2:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:2:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:2:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:locker:0:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:locker:0:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:locker:0:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:locker:0:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:locker:0:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:locker:0:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:3:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:3:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:3:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:3:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:3:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:3:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:3:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:3:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:3:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:3:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:0:3:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:0:3:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:locker:0:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:locker:0:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:locker:0:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:locker:0:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:locker:0:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:locker:1:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:0:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:0:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:0:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:0:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:0:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:0:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:0:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:0:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:0:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:0:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:0:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:0:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:locker:1:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:locker:1:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:locker:1:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:locker:1:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:locker:1:0:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:locker:1:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:1:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:1:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:1:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:1:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:1:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:1:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:1:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:1:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:1:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:1:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:1:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:1:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:locker:1:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:locker:1:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:locker:1:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:locker:1:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:locker:1:1:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:locker:1:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:2:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:2:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:2:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:2:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:2:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:2:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:2:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:2:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:2:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:2:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:2:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:2:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:locker:1:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:locker:1:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:locker:1:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:locker:1:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:locker:1:2:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "hinge-independent:sim:p3:locker:1:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:3:door:1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:1",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:3:door:4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:4",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:3:door:7",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:7",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:3:door:10",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:10",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:3:door:13",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:13",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:3:door:16",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:16",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:3:door:19",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:19",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:3:door:22",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:22",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:3:door:25",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:25",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:3:door:28",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:28",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "collider-sync:sim:p3:locker:1:3:door:31",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "door-sweep-clear:sim:p3:locker:1:3:door:31",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "closed:sim:p3:locker:1:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "locked-open-denied:sim:p3:locker:1:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "lock-stops-queued-animation:sim:p3:locker:1:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "open-query:sim:p3:locker:1:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "independent-command:sim:p3:locker:1:3:door",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "corridor-start-free",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "route:reception",
+      "passed": true,
+      "detail": {
+        "target": [
+          -4.7,
+          -16
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:waiting",
+      "passed": true,
+      "detail": {
+        "target": [
+          -4.8,
+          -9
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:cafe-social",
+      "passed": true,
+      "detail": {
+        "target": [
+          -4.3,
+          -22.2
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:cafe-bar",
+      "passed": true,
+      "detail": {
+        "target": [
+          -8.0,
+          -22.3
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:lounge",
+      "passed": true,
+      "detail": {
+        "target": [
+          -10,
+          -2.1
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:call-01",
+      "passed": true,
+      "detail": {
+        "target": [
+          -11,
+          0.35
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:call-02",
+      "passed": true,
+      "detail": {
+        "target": [
+          -9,
+          0.35
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:WC-access",
+      "passed": true,
+      "detail": {
+        "target": [
+          -6.8,
+          0.0
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:lockers",
+      "passed": true,
+      "detail": {
+        "target": [
+          -4.2,
+          1.0
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:print",
+      "passed": true,
+      "detail": {
+        "target": [
+          -4.2,
+          -1.0
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:MEETING-AREA-01",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -1.45
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:A",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -6.6000000000000005
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:B",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -10.95
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:C",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -17.5
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:D",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -21.95
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "route:sim:ROOM-E",
+      "passed": true,
+      "detail": {
+        "target": [
+          -0.9,
+          -27.4
+        ],
+        "free": true,
+        "reachable_nodes": 21585
+      }
+    },
+    {
+      "name": "security-closed-crosses-corridor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "security-closed-blocks-rear-route",
+      "passed": true,
+      "detail": {
+        "reachable_with_security_closed": 10581
+      }
+    },
+    {
+      "name": "security-open-clears-corridor",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "eight-lockers-adjacent-WC",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "two-acoustic-booths",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no-camera-inside-WC",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "C-wing-distinct",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "passed": true,
+  "master_sha256": "1efefd4bba1dd04e3eef75a7cf53fc6a8975cfd891cd886fbfc3d2260bbb4e41",
+  "human_approval": false
+}

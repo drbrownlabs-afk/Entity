@@ -1,7 +1,7 @@
 # Fase 02 — distribución funcional, agrupación E y accesos
 
 Fecha: 2026-11-08. Rama `codex/spatial-simulation`, base `cd95f96`.
-Autorización del operador: «continúa con la fase dos». Estado: **EN VALIDACIÓN**, sin aprobación humana automática ni inicio de Fase 03.
+Autorización del operador: «continúa con la fase dos». Estado: **VERIFICADA INTERNAMENTE**, sin aprobación humana automática. El plan actualizado autoriza el avance interno por Fases 03 y 04.
 
 ## Resultado implementado
 
@@ -10,7 +10,7 @@ Maestro actualizado: [office-phase02.blend](../../simulation/spatial-office/outp
 
 - A/B/C/D y reuniones tienen mamparas transparentes hasta techo, perfiles negros delgados y puerta hacia el pasillo. Se conservan sus mesas y asientos. La mesa negra sigue siendo reuniones, junto al muro vegetal; no se usa como espera.
 - **E es la agrupación adicional al fondo, detrás de D**, con mesa de la misma familia, seis posiciones y mamparas. Usa `sim:ROOM-E` y objetos `sim:p2:E:*`; no crea disponibilidad comercial ni entidades Core. Para encajar E sin mover las superficies calibradas D, se amplía el borde posterior estimado de −26,5 a −28,6 en una franja de X−2,85..4,35. Es diseño propuesto en unidades relativas, no una medición nueva del edificio. La L y cafetería del operador se conservan.
-- Se añade mostrador y kiosco en RECEPTION, manteniendo las dos sillas negras. WAITING-AREA conserva su ancla, recibe sofá, butaca y mesa auxiliar; sus tres sillas estimadas se redistribuyen para crear un pasillo entre asientos. Solo se ajusta también un almacenamiento estimado de A para liberar su mampara; mesas/asientos A–D permanecen en sus posiciones.
+- Según la corrección del operador importada en el plan 8490e1a, recepción ocupa el sector de sillas blancas y espera el sector de sillas negras. Se añade mostrador/kiosco junto a las blancas; las negras se sustituyen por sofá, butaca y mesa auxiliar. Las anclas RECEPTION/WAITING-AREA del handoff no se reescriben: son referencias históricas, con correspondencia operativa explícita en phase02-layout.json. Solo se ajusta también un almacenamiento estimado de A para liberar su mampara; mesas/asientos A–D permanecen en sus posiciones.
 - La cafetería continúa sin pods: dos mesas normales, ocho sillas, barra, cuatro taburetes, equipamiento, madera, vegetación y luz cálida de referencia.
 - **Cuatro televisores independientes**: recepción, espera/zona común, cafetería y circulación. Cada uno tiene pantalla, ID, material e imagen de prueba propios, UV y textura empaquetada en el `.blend`, aptos para exportación/contenido posterior.
 - **Siete puertas independientes**: A/B/C/D/E, reuniones y seguridad del pasillo. Cada una tiene pivote, hoja, marco, manilla y proxy de colisión hijo del mismo pivote. Animación demostrativa: frame 1 cerradas, 31 abiertas, 61 cerradas. El cierre/bloqueo es simulado; no controla accesos físicos.
@@ -18,7 +18,7 @@ Maestro actualizado: [office-phase02.blend](../../simulation/spatial-office/outp
 
 ## Pruebas ejecutadas
 
-**293 comprobaciones PASS y diez recorridos geométricos válidos**, en [summary.json](evidence/phase02/summary.json) y [checks.json](evidence/phase02/checks.json).
+**295 comprobaciones PASS y diez recorridos geométricos válidos**, en [summary.json](evidence/phase02/summary.json) y [checks.json](evidence/phase02/checks.json).
 
 | Gate 02 | Evidencia ejecutada |
 |---|---|
@@ -31,13 +31,13 @@ Maestro actualizado: [office-phase02.blend](../../simulation/spatial-office/outp
 | Seguridad cerrada/abierta | Cerrada bloquea el recorrido hacia el fondo con las otras puertas abiertas; abierta libera el corredor. No es certificación de acceso real |
 | Cafetería sin pods y E adicional | Dos mesas de cafetería separadas de la agrupación E de seis puestos; comprobado por IDs/tipos |
 | Cuatro TVs independientes | Cuatro cuerpos/pantallas, estados de prueba y materiales distintos, imágenes empaquetadas y UV válidos |
-| Conservación | 578 archivos de la base protegida intactos; maestro de cafetería preservado por SHA256; anclas y mesas/asientos A–D comprobados |
+| Conservación | 577 archivos originales intactos y revisión exacta del plan remoto 8490e1a preservada; maestro de cafetería preservado por SHA256; anclas y mesas/asientos A–D comprobados |
 
-Las rutas cubren recepción, espera, zona social de cafetería, barra, reuniones y A–E. Su cálculo es una herramienta de QA del modelo reconstruido, no un nuevo motor de simulación o navegación del producto. No certifica escala métrica, accesibilidad normativa ni evacuación. La interacción en navegador y física de PlayCanvas corresponden a la Fase 04.
+Las rutas cubren recepción, espera, zona social de cafetería, barra, reuniones y A–E. Su cálculo es una herramienta de QA del modelo reconstruido, no un nuevo motor de simulación o navegación del producto. No certifica escala métrica, accesibilidad normativa ni evacuación. La interacción en navegador y física de PlayCanvas corresponden a la Fase 05.
 
 ## Inspección visual
 
-Los renders finales y la revisión del agente se registran en `evidence/phase02/renders.json` y `visual-review.json`. El plano SVG muestra IDs, puertas, rampa, TVs y los recorridos. Las capturas Cycles muestran la distribución, perfiles, E al fondo y una vista interior. No se presenta el render de referencia como acabado premium definitivo: materiales, iluminación por circuitos y optimización se trabajan en Fase 03.
+Los renders finales y la revisión del agente se registran en `evidence/phase02/renders.json` y `visual-review.json`. El plano SVG muestra IDs, puertas, rampa, TVs y los recorridos. Las capturas Cycles muestran la distribución, perfiles, E al fondo y una vista interior. No se presenta el render de referencia como acabado premium definitivo: materiales, iluminación por circuitos y optimización se trabajan en Fase 04.
 
 ## Fallos detectados y resueltos
 
@@ -73,6 +73,10 @@ La consulta deriva el estado del ángulo actual: no finge que una transición pe
 
 ## Límites y siguiente fase
 
-No hay integración Core, control de acceso real, personajes ni nueva aplicación PlayCanvas en esta fase. No se ejecutaron suites de backend/frontend o CI remoto: el código original permanece intacto. Los shaders/render CPU de referencia tienen ruido y las plantas son simplificadas. No se declara aceptada por humano ni se inicia Fase 03 automáticamente.
+No hay integración Core, control de acceso real, personajes ni nueva aplicación PlayCanvas en esta fase. No se ejecutaron suites de backend/frontend o CI remoto: el código original permanece intacto. Los shaders/render CPU de referencia tienen ruido y las plantas son simplificadas. No se declara aceptada por humano. La actualización remota del plan autoriza continuar internamente por Fases 03 y 04, con aprobación obligatoria antes de PlayCanvas (05).
 
-Siguiente entrega tras revisión: materiales de referencia con mejor acabado, cada luminaria/circuito por ambiente, contratos y manifest de dispositivos, con estados y efectos visuales comprobados en PlayCanvas según Gate 03.
+Secuencia vigente: completar la C en Fase03, iluminación/materiales/tiempo y dispositivos en Fase04, y detenerse para revisión humana antes de la Fase05 de PlayCanvas. La numeración antigua de materiales/visor queda sustituida por el plan remoto 8490e1a.
+
+## Actualización remota conservada
+
+Se detectaron e incorporaron por rebase los commits c4ae146..8490e1a del operador, sin merge ni sobrescritura de su plan. La única diferencia respecto del snapshot inicial de 578 archivos originales es ese plan actualizado externamente; su SHA256 exacto y commit se verifican mediante evidence/upstream-revisions.json. Backend, frontend, Gaussian y handoff permanecen byte-idénticos. El Gate02 final tiene 295 comprobaciones y diez rutas; los registros anteriores de 293 pertenecen a la ejecución previa a esta corrección.

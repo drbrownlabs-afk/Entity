@@ -1,0 +1,22 @@
+{
+  "stage03_source_sha256": "1efefd4bba1dd04e3eef75a7cf53fc6a8975cfd891cd886fbfc3d2260bbb4e41",
+  "stage04_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+  "missing_architectural_objects": [],
+  "moved_architectural_objects": [],
+  "replaced_reference_lights": [
+    "cafe:warm:0",
+    "cafe:warm:1",
+    "cafe:warm:2",
+    "reference:ceiling:0",
+    "reference:ceiling:1",
+    "reference:ceiling:2",
+    "reference:ceiling:3",
+    "reference:ceiling:4",
+    "reference:daylight:0",
+    "reference:daylight:1",
+    "reference:daylight:2",
+    "reference:daylight:3",
+    "reference:daylight:4"
+  ],
+  "notes": "Only old unidentifiable reference lamps replaced; prepared luminaires and all architectural transforms preserved. Foliage shading and albedo updated."
+}

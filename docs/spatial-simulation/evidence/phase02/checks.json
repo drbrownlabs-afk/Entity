@@ -11,7 +11,17 @@
       "detail": null
     },
     {
-      "name": "578-source-files-intact",
+      "name": "577-original-files-and-upstream-plan-intact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "white-chairs-reception",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "black-chairs-replaced-by-sofa",
       "passed": true,
       "detail": null
     },
@@ -1406,10 +1416,10 @@
       "detail": {
         "target": [
           -4.7,
-          -9.0
+          -16
         ],
         "free": true,
-        "reachable_nodes": 19400
+        "reachable_nodes": 19577
       }
     },
     {
@@ -1418,10 +1428,10 @@
       "detail": {
         "target": [
           -4.8,
-          -16.0
+          -9
         ],
         "free": true,
-        "reachable_nodes": 19400
+        "reachable_nodes": 19577
       }
     },
     {
@@ -1433,7 +1443,7 @@
           -22.2
         ],
         "free": true,
-        "reachable_nodes": 19400
+        "reachable_nodes": 19577
       }
     },
     {
@@ -1445,7 +1455,7 @@
           -22.3
         ],
         "free": true,
-        "reachable_nodes": 19400
+        "reachable_nodes": 19577
       }
     },
     {
@@ -1457,7 +1467,7 @@
           -1.45
         ],
         "free": true,
-        "reachable_nodes": 19400
+        "reachable_nodes": 19577
       }
     },
     {
@@ -1469,7 +1479,7 @@
           -6.6000000000000005
         ],
         "free": true,
-        "reachable_nodes": 19400
+        "reachable_nodes": 19577
       }
     },
     {
@@ -1481,7 +1491,7 @@
           -10.95
         ],
         "free": true,
-        "reachable_nodes": 19400
+        "reachable_nodes": 19577
       }
     },
     {
@@ -1493,7 +1503,7 @@
           -17.5
         ],
         "free": true,
-        "reachable_nodes": 19400
+        "reachable_nodes": 19577
       }
     },
     {
@@ -1505,7 +1515,7 @@
           -21.95
         ],
         "free": true,
-        "reachable_nodes": 19400
+        "reachable_nodes": 19577
       }
     },
     {
@@ -1517,7 +1527,7 @@
           -27.4
         ],
         "free": true,
-        "reachable_nodes": 19400
+        "reachable_nodes": 19577
       }
     },
     {
@@ -1539,6 +1549,6 @@
     }
   ],
   "passed": true,
-  "master_sha256": "1386de40f7fb77fa6e6d92f0566f0abe5d2f5dc1223fe5d70cde962269b3368a",
+  "master_sha256": "b54dad57321f009ff8d92840dbe7d85691b4ebf898fb096f8fa3ffc91771ad9a",
   "human_approval": false
 }

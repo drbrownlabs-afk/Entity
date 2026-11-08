@@ -1,0 +1,62 @@
+[
+  {
+    "view": "phase03-general",
+    "camera_source_position": [
+      21.0,
+      30.0,
+      10.0
+    ],
+    "frame": 31,
+    "doors": "open; WC closed for privacy",
+    "path": "phase03-general.png",
+    "sha256": "7a2e0af392db3960d7dd1a1801d8cb3e9a817eb6407e99967571fe73ba5ba8d0",
+    "master_sha256": "1efefd4bba1dd04e3eef75a7cf53fc6a8975cfd891cd886fbfc3d2260bbb4e41",
+    "engine": "Cycles CPU",
+    "samples": 24
+  },
+  {
+    "view": "phase03-lounge",
+    "camera_source_position": [
+      -7.0,
+      0.15000000596046448,
+      -0.8999999761581421
+    ],
+    "frame": 31,
+    "doors": "open; WC closed for privacy",
+    "path": "phase03-lounge.png",
+    "sha256": "e36499b9b3dede18323df0f3a6141b0e95bd7ed2106c1bcdabbbd1952682348b",
+    "master_sha256": "1efefd4bba1dd04e3eef75a7cf53fc6a8975cfd891cd886fbfc3d2260bbb4e41",
+    "engine": "Cycles CPU",
+    "samples": 24
+  },
+  {
+    "view": "phase03-booths",
+    "camera_source_position": [
+      -10.0,
+      0.10000000149011612,
+      -2.0
+    ],
+    "frame": 31,
+    "doors": "open; WC closed for privacy",
+    "path": "phase03-booths.png",
+    "sha256": "e57db4bf0b86a5cf21e5bfc2981d58a8855b00a1f72b69912d35f61d964ddf8d",
+    "master_sha256": "1efefd4bba1dd04e3eef75a7cf53fc6a8975cfd891cd886fbfc3d2260bbb4e41",
+    "engine": "Cycles CPU",
+    "samples": 24
+  },
+  {
+    "view": "phase03-services",
+    "camera_source_position": [
+      -4.800000190734863,
+      0.10000000149011612,
+      -3.299999952316284
+    ],
+    "frame": 31,
+    "doors": "open; WC closed for privacy",
+    "path": "phase03-services.png",
+    "sha256": "acfe6717b38d7b1f8a4c1448a11c3a81c14cb254498a13aca3bcff46761713d9",
+    "master_sha256": "1efefd4bba1dd04e3eef75a7cf53fc6a8975cfd891cd886fbfc3d2260bbb4e41",
+    "engine": "Cycles CPU",
+    "samples": 24
+  }
+]

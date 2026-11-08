@@ -133,11 +133,11 @@
     "target_points": {
       "reception": [
         -4.7,
-        -9.0
+        -16
       ],
       "waiting": [
         -4.8,
-        -16.0
+        -9
       ],
       "cafe-social": [
         -4.3,
@@ -151,9 +151,29 @@
     "references": [
       "docs/spatial-simulation/references/1211-mamparas.jpg",
       "docs/spatial-simulation/references/1212-cafeteria.jpg"
-    ]
+    ],
+    "semantic_overrides": {
+      "RECEPTION": {
+        "historical_reference": "WAITING-AREA",
+        "sector": "white chairs",
+        "position_source": [
+          -4.7514763308,
+          -0.63474085,
+          -16.0021275877
+        ]
+      },
+      "WAITING-AREA": {
+        "historical_reference": "RECEPTION",
+        "sector": "black chairs replaced by sofas",
+        "position_source": [
+          -5.7888763933,
+          -1.0731165959,
+          -8.8948815761
+        ]
+      }
+    }
   },
-  "master_sha256": "1386de40f7fb77fa6e6d92f0566f0abe5d2f5dc1223fe5d70cde962269b3368a",
+  "master_sha256": "b54dad57321f009ff8d92840dbe7d85691b4ebf898fb096f8fa3ffc91771ad9a",
   "source_master_sha256": "6619937ce4f9e8aa0e36cd812df0713e9eea811e0b73cbddf4ca61e1f03604ca",
   "source_master": "simulation/spatial-office/output/office-cafe-L.blend",
   "objects": [
@@ -22412,7 +22432,7 @@
       "position_source": [
         -3.6500000953674316,
         -1.0499999523162842,
-        -9.100000381469727
+        -16.100000381469727
       ],
       "matrix_world": [
         [
@@ -22425,7 +22445,7 @@
           0.0,
           1.0,
           0.0,
-          9.100000381469727
+          16.100000381469727
         ],
         [
           0.0,
@@ -22448,7 +22468,7 @@
       "position_source": [
         -3.6500000953674316,
         -0.5099999904632568,
-        -9.100000381469727
+        -16.100000381469727
       ],
       "matrix_world": [
         [
@@ -22461,7 +22481,7 @@
           0.0,
           1.0,
           0.0,
-          9.100000381469727
+          16.100000381469727
         ],
         [
           0.0,
@@ -22484,7 +22504,7 @@
       "position_source": [
         -3.6500000953674316,
         -0.18000000715255737,
-        -9.100000381469727
+        -16.100000381469727
       ],
       "matrix_world": [
         [
@@ -22497,7 +22517,7 @@
           0.0,
           1.0,
           0.0,
-          9.100000381469727
+          16.100000381469727
         ],
         [
           0.0,
@@ -22518,22 +22538,22 @@
       "type": "Sofa",
       "environment_id": "WAITING-AREA",
       "position_source": [
-        -3.9000000953674316,
+        -5.650000095367432,
         -1.2000000476837158,
-        -16.200000762939453
+        -9.199999809265137
       ],
       "matrix_world": [
         [
           1.0,
           0.0,
           0.0,
-          -3.9000000953674316
+          -5.650000095367432
         ],
         [
           0.0,
           1.0,
           0.0,
-          16.200000762939453
+          9.199999809265137
         ],
         [
           0.0,
@@ -22554,22 +22574,22 @@
       "type": "Sofa",
       "environment_id": "WAITING-AREA",
       "position_source": [
-        -3.549999952316284,
+        -6.0,
         -0.8299999833106995,
-        -16.200000762939453
+        -9.199999809265137
       ],
       "matrix_world": [
         [
           1.0,
           0.0,
           0.0,
-          -3.549999952316284
+          -6.0
         ],
         [
           0.0,
           1.0,
           0.0,
-          16.200000762939453
+          9.199999809265137
         ],
         [
           0.0,
@@ -22592,7 +22612,7 @@
       "position_source": [
         -3.9000000953674316,
         -1.149999976158142,
-        -14.5
+        -8.300000190734863
       ],
       "matrix_world": [
         [
@@ -22605,7 +22625,7 @@
           0.0,
           1.0,
           0.0,
-          14.5
+          8.300000190734863
         ],
         [
           0.0,
@@ -22628,7 +22648,7 @@
       "position_source": [
         -3.549999952316284,
         -0.8399999737739563,
-        -14.5
+        -8.300000190734863
       ],
       "matrix_world": [
         [
@@ -22641,7 +22661,7 @@
           0.0,
           1.0,
           0.0,
-          14.5
+          8.300000190734863
         ],
         [
           0.0,
@@ -22664,7 +22684,7 @@
       "position_source": [
         -4.800000190734863,
         -0.9300000071525574,
-        -17.600000381469727
+        -10.100000381469727
       ],
       "matrix_world": [
         [
@@ -22677,7 +22697,7 @@
           0.0,
           1.0,
           0.0,
-          17.600000381469727
+          10.100000381469727
         ],
         [
           0.0,
@@ -22700,7 +22720,7 @@
       "position_source": [
         -4.800000190734863,
         -1.25,
-        -17.600000381469727
+        -10.100000381469727
       ],
       "matrix_world": [
         [
@@ -22713,7 +22733,7 @@
           0.0,
           1.0,
           0.0,
-          17.600000381469727
+          10.100000381469727
         ],
         [
           0.0,
@@ -22736,7 +22756,7 @@
       "position_source": [
         -6.300000190734863,
         0.10000000149011612,
-        -9.199999809265137
+        -15.800000190734863
       ],
       "matrix_world": [
         [
@@ -22749,7 +22769,7 @@
           0.0,
           1.0,
           0.0,
-          9.199999809265137
+          15.800000190734863
         ],
         [
           0.0,
@@ -22772,7 +22792,7 @@
       "position_source": [
         -6.239999771118164,
         0.10000000149011612,
-        -9.199999809265137
+        -15.800000190734863
       ],
       "matrix_world": [
         [
@@ -22785,7 +22805,7 @@
           0.0,
           1.0,
           0.0,
-          9.199999809265137
+          15.800000190734863
         ],
         [
           0.0,
@@ -22808,7 +22828,7 @@
       "position_source": [
         -6.300000190734863,
         0.10000000149011612,
-        -15.800000190734863
+        -9.199999809265137
       ],
       "matrix_world": [
         [
@@ -22821,7 +22841,7 @@
           0.0,
           1.0,
           0.0,
-          15.800000190734863
+          9.199999809265137
         ],
         [
           0.0,
@@ -22844,7 +22864,7 @@
       "position_source": [
         -6.239999771118164,
         0.10000000149011612,
-        -15.800000190734863
+        -9.199999809265137
       ],
       "matrix_world": [
         [
@@ -22857,7 +22877,7 @@
           0.0,
           1.0,
           0.0,
-          15.800000190734863
+          9.199999809265137
         ],
         [
           0.0,
@@ -23468,6 +23488,36 @@
     }
   ],
   "removed_estimated_objects": [
+    "sim:p1:reception:chair:1:arm:-1",
+    "sim:p1:reception:chair:1:arm:1",
+    "sim:p1:reception:chair:1:back",
+    "sim:p1:reception:chair:1:foot:0",
+    "sim:p1:reception:chair:1:foot:1",
+    "sim:p1:reception:chair:1:foot:2",
+    "sim:p1:reception:chair:1:foot:3",
+    "sim:p1:reception:chair:1:foot:4",
+    "sim:p1:reception:chair:1:seat",
+    "sim:p1:reception:chair:1:stem",
+    "sim:p1:reception:chair:1:wheel:0",
+    "sim:p1:reception:chair:1:wheel:1",
+    "sim:p1:reception:chair:1:wheel:2",
+    "sim:p1:reception:chair:1:wheel:3",
+    "sim:p1:reception:chair:1:wheel:4",
+    "sim:p1:reception:chair:2:arm:-1",
+    "sim:p1:reception:chair:2:arm:1",
+    "sim:p1:reception:chair:2:back",
+    "sim:p1:reception:chair:2:foot:0",
+    "sim:p1:reception:chair:2:foot:1",
+    "sim:p1:reception:chair:2:foot:2",
+    "sim:p1:reception:chair:2:foot:3",
+    "sim:p1:reception:chair:2:foot:4",
+    "sim:p1:reception:chair:2:seat",
+    "sim:p1:reception:chair:2:stem",
+    "sim:p1:reception:chair:2:wheel:0",
+    "sim:p1:reception:chair:2:wheel:1",
+    "sim:p1:reception:chair:2:wheel:2",
+    "sim:p1:reception:chair:2:wheel:3",
+    "sim:p1:reception:chair:2:wheel:4",
     "sim:p1:floor-reception-raised",
     "sim:p1:step-riser",
     "sim:p1:end-window:0",
@@ -23475,8 +23525,8 @@
   ],
   "business_entities_created": false,
   "input_hashes": {
-    "simulation/spatial-office/build-phase02.py": "f26cf1a9d848ed89706311dac1e97f71b921b6c5e801d9a648de2a6f1dddf971",
+    "simulation/spatial-office/build-phase02.py": "8bcd9f73cddb298c7fcd72e4902a487b37d5871e12dd8304605e72d33d23a77c",
     "simulation/spatial-office/doors.py": "32ac9943858e6f173c97233c9f863b0790cef3191120c8f5dfbf86801adbc87d",
-    "simulation/spatial-office/phase02-layout.json": "80ce300543e012d56a65372cc3133ddb74adce8f4235af665a937582d100129a"
+    "simulation/spatial-office/phase02-layout.json": "2c6efd5f6cf193340594b74bad30c5208dac2a3ed9af959f581fc52a6d21f619"
   }
 }

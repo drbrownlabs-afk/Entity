@@ -31,3 +31,16 @@ El operador recuerda que solicitó una mesa/agrupación de trabajo adicional al 
 | 03 | NO INICIADA | Materiales/circuitos y control de luces con verificación PlayCanvas, tras revisión de Fase02. |
 
 Esta entrada sustituye los estados anteriores «Fase02 pendiente» y «solo cafetería». Conserva el historial y no atribuye aprobación humana a ninguna verificación automática.
+
+## Tablero vigente — plan actualizado del operador
+
+| Fase espacial | Estado actual | Evidencia |
+|---|---|---|
+| 02 — arquitectura funcional | VERIFICADA INTERNAMENTE | 295 comprobaciones, diez rutas, A–E/reuniones, puertas, TVs y semántica recepción blanca/espera negra corregida |
+| 03 — tercera ala / C | VERIFICADA INTERNAMENTE | 644 comprobaciones, dieciséis rutas, lounge, dos cabinas, baños, ocho lockers, impresión; 19 puertas en total |
+| 04 — material/luz/tiempo | EN VALIDACIÓN DEL OPERADOR | 486 comprobaciones; 54 luminarias/17 circuitos; 08/12/16/20; luces ON/OFF/individual; cinco swatches PBR y diez pares de renders. [Revisión](REVIEW-PHASE04.md) |
+| 05 — PlayCanvas | BLOQUEADA POR APROBACIÓN PREVIA | No iniciar implementación ni exportación arquitectónica definitiva hasta aprobación explícita tras Fase04 |
+| 06 — humanos Mixamo / NPCs | NO AUTORIZADA TODAVÍA | Acceso interactivo futuro registrado en el plan; no se inició sesión ni se descargaron modelos |
+| 07 — integración/aceptación | PENDIENTE | Según plan vigente |
+
+Esta secuencia sustituye la numeración antigua de seis fases y la pausa que antes se aplicaba entre 02–04. No equivale a aprobación humana. La excepción de autonomía se toma del plan actualizado por el operador, preservado en la rama; no se extiende a modificar Core/frontend/Gaussian o fusionar ramas.

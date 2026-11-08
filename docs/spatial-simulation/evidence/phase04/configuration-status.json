@@ -1,0 +1,12 @@
+{
+  "draft_read": "INVALID_ARGUMENT",
+  "attempted_fields": [
+    "install_script",
+    "start_skill"
+  ],
+  "draft_save": "INVALID_ARGUMENT: saving could not be confirmed",
+  "persistence_confirmed": false,
+  "fallback": "simulation/spatial-office/setup-lighting.py and PHASE-04-REPORT.md",
+  "environment_published": false,
+  "new_instance_validated": false
+}

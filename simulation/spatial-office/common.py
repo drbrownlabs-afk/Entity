@@ -36,5 +36,14 @@ def sha256(path):
 
 def protected_changes():
     snapshot = read(EVIDENCE / 'protected-files.json')
+    supplement = HANDOFF / 'evidence/upstream-revisions.json'
+    if supplement.exists():
+        import subprocess
+        for path, revision in read(supplement).items():
+            assert path == 'docs/spatial-simulation/IMPLEMENTATION-PLAN.md'
+            assert snapshot['sha256'][path] == revision['base_sha256']
+            data = subprocess.check_output(['git', 'show', revision['commit'] + ':' + path], cwd=ROOT)
+            assert hashlib.sha256(data).hexdigest() == revision['sha256']
+            snapshot['sha256'][path] = revision['sha256']
     return [p for p, digest in snapshot['sha256'].items()
             if not (ROOT / p).is_file() or sha256(ROOT / p) != digest]

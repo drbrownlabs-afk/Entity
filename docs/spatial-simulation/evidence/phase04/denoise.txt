@@ -1,0 +1,10 @@
+DENOISED time-08
+DENOISED time-12
+DENOISED time-16
+DENOISED time-20
+DENOISED room-A-all-on-20
+DENOISED room-A-all-off-20
+DENOISED room-A-one-on-20
+DENOISED lounge-12
+DENOISED booths-12
+DENOISED services-12

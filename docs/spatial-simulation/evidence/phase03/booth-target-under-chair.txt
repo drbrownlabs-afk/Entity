@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "/workspace/Entity/simulation/spatial-office/check-phase03.py", line 126, in <module>
+    goal=(round(p[0]/step),round(p[1]/step));check('route:'+name,goal in parents,{'target':p,'free':goal in nodes,'reachable_nodes':len(parents)})
+                                             ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Entity/simulation/spatial-office/check-phase03.py", line 16, in check
+    assert ok,(name,detail)
+           ^^
+AssertionError: ('route:call-01', {'target': [-11, 0.6], 'free': False, 'reachable_nodes': 21700})
+
+Error: script failed, file: 'simulation/spatial-office/check-phase03.py', exiting.
+Blender 4.3.2
+Read blend: "/workspace/Entity/simulation/spatial-office/output/office-phase03.blend"
+Read blend: "/workspace/Entity/simulation/spatial-office/output/office-phase03.blend"
+
+Blender quit

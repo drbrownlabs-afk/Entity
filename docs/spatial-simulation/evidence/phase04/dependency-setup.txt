@@ -1,0 +1,13 @@
+Using CPython 3.12.14 interpreter at: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python
+Checked 1 package in 7ms
+Using CPython 3.12.14 interpreter at: /opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python
+Resolved 2 packages in 7ms
+Downloading numpy (15.8MiB)
+Downloading pillow (6.8MiB)
+ Downloaded pillow
+ Downloaded numpy
+Prepared 2 packages in 905ms
+Installed 2 packages in 95ms
+ + numpy==2.3.5
+ + pillow==13.0.0
+Verified Astral/Pillow/NumPy lockfiles and pinned official OIDN 2.3.3 archive; workspace-only setup complete

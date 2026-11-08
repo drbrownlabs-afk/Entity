@@ -58,6 +58,10 @@ for i,z in enumerate([-15.1,-16.0,-16.9]):
  delta=Vector((-1.22,0,0))
  for o in bpy.data.objects:
   if o.name.startswith(f'sim:p1:waiting:chair:{i+1}:'):o.location+=delta
+# Current plan: white chairs are reception; black-chair sector becomes sofa waiting.
+for o in list(bpy.data.objects):
+ if o.name.startswith('sim:p1:reception:chair:'):remove(o.name)
+ elif o.name.startswith('sim:p1:waiting:chair:'):o['environment_id']='RECEPTION'
 # True ramp slot in the raised floor, not a slab pasted over a step.
 remove('sim:p1:floor-reception-raised');remove('sim:p1:step-riser')
 box('raised-west',(-5.0,-1.70,-11.4),(2.9,.30,24.5),stone,'Floor','CIRCULATION-01')
@@ -131,16 +135,16 @@ for r in cfg['rooms']:
 # Security gate uses same independent pivot/collider, and stays within corridor when open.
 door('door:security','CIRCULATION-01',(-2.85,-1.85,-12.95),1.35,'X')
 # Reception counter/kiosk and expanded waiting face a clear aisle.
-box('reception-counter',(-3.65,-1.05,-9.1),(.65,1,2.1),wood,'ReceptionCounter','RECEPTION')
-box('reception-top',(-3.65,-.51,-9.1),(.75,.08,2.2),black,'Counter','RECEPTION')
-box('reception-kiosk',(-3.65,-.18,-9.1),(.18,.60,.65),black,'Kiosk','RECEPTION')
-box('waiting-sofa-base',(-3.9,-1.20,-16.2),(.75,.7,1.8),fabric,'Sofa','WAITING-AREA',.08)
-box('waiting-sofa-back',(-3.55,-.83,-16.2),(.14,.7,1.8),fabric,'Sofa','WAITING-AREA',.06)
-box('waiting-armchair-seat',(-3.9,-1.15,-14.5),(.65,.25,.65),fabric,'Armchair','WAITING-AREA',.06)
-box('waiting-armchair-back',(-3.55,-.84,-14.5),(.12,.65,.65),fabric,'Armchair','WAITING-AREA',.04)
-cyl('waiting-side-table',(-4.8,-.93,-17.6),.28,.07,wood,'SideTable','WAITING-AREA')
-cyl('waiting-side-table-leg',(-4.8,-1.25,-17.6),.035,.60,black,'TableLeg','WAITING-AREA')
-for i,(env,p,axis) in enumerate([('RECEPTION',(-6.30,.10,-9.2),'X'),('WAITING-AREA',(-6.30,.10,-15.8),'X'),('sim:CAFE-01',(-9.0,.10,-18.32),'Z'),('CIRCULATION-01',(-4.79,.10,-12.5),'X')],1):
+box('reception-counter',(-3.65,-1.05,-16.1),(.65,1,2.1),wood,'ReceptionCounter','RECEPTION')
+box('reception-top',(-3.65,-.51,-16.1),(.75,.08,2.2),black,'Counter','RECEPTION')
+box('reception-kiosk',(-3.65,-.18,-16.1),(.18,.60,.65),black,'Kiosk','RECEPTION')
+box('waiting-sofa-base',(-5.65,-1.20,-9.2),(.75,.7,1.8),fabric,'Sofa','WAITING-AREA',.08)
+box('waiting-sofa-back',(-6.0,-.83,-9.2),(.14,.7,1.8),fabric,'Sofa','WAITING-AREA',.06)
+box('waiting-armchair-seat',(-3.9,-1.15,-8.3),(.65,.25,.65),fabric,'Armchair','WAITING-AREA',.06)
+box('waiting-armchair-back',(-3.55,-.84,-8.3),(.12,.65,.65),fabric,'Armchair','WAITING-AREA',.04)
+cyl('waiting-side-table',(-4.8,-.93,-10.1),.28,.07,wood,'SideTable','WAITING-AREA')
+cyl('waiting-side-table-leg',(-4.8,-1.25,-10.1),.035,.60,black,'TableLeg','WAITING-AREA')
+for i,(env,p,axis) in enumerate([('RECEPTION',(-6.30,.10,-15.8),'X'),('WAITING-AREA',(-6.30,.10,-9.2),'X'),('sim:CAFE-01',(-9.0,.10,-18.32),'Z'),('CIRCULATION-01',(-4.79,.10,-12.5),'X')],1):
  mat=bpy.data.materials.new(f'TV{i} independent content');mat.use_nodes=True;n=mat.node_tree.nodes.get('Principled BSDF');n.inputs['Base Color'].default_value=(.02,.12*i,.22,1);n.inputs['Emission Color'].default_value=(.02,.12*i,.22,1);n.inputs['Emission Strength'].default_value=.5
  body=box(f'TV:{i}:body',p,(.10,.85,1.5) if axis=='X' else (1.5,.85,.10),black,'TV',''+env)
  pos=(p[0]+.06,p[1],p[2]) if axis=='X' else (p[0],p[1],p[2]-.06)

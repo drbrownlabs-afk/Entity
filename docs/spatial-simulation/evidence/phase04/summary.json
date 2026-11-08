@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checks": 486,
+  "luminaires": 54,
+  "circuits": 17,
+  "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+  "physical_devices_tested": false,
+  "PlayCanvas_started": false,
+  "human_approval": false,
+  "building_location_known": false,
+  "dependency": "Astral 3.2, hash-verified pure Python"
+}

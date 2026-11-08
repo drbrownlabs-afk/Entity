@@ -1,5 +1,5 @@
 {
-  "master_sha256": "1386de40f7fb77fa6e6d92f0566f0abe5d2f5dc1223fe5d70cde962269b3368a",
+  "master_sha256": "b54dad57321f009ff8d92840dbe7d85691b4ebf898fb096f8fa3ffc91771ad9a",
   "frame": 1,
   "records": [
     {
@@ -59103,1450 +59103,10 @@
       "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
     },
     {
-      "id": "sim:p1:reception:chair:1:arm:-1",
-      "blender_name": "sim:p1:reception:chair:1:arm:-1",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.730000019073486,
-        -0.7799999713897705,
-        -8.9399995803833
-      ],
-      "current_source_position": [
-        -5.730000019073486,
-        -0.7799999713897705,
-        -8.9399995803833
-      ],
-      "world_matrix_blender": [
-        [
-          -4.371138828673793e-08,
-          1.0,
-          0.0,
-          -5.730000019073486
-        ],
-        [
-          -1.0,
-          -4.371138828673793e-08,
-          0.0,
-          8.9399995803833
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -0.7799999713897705
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:arm:1",
-      "blender_name": "sim:p1:reception:chair:1:arm:1",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.730000019073486,
-        -0.7799999713897705,
-        -8.359999656677246
-      ],
-      "current_source_position": [
-        -5.730000019073486,
-        -0.7799999713897705,
-        -8.359999656677246
-      ],
-      "world_matrix_blender": [
-        [
-          -4.371138828673793e-08,
-          1.0,
-          0.0,
-          -5.730000019073486
-        ],
-        [
-          -1.0,
-          -4.371138828673793e-08,
-          0.0,
-          8.359999656677246
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -0.7799999713897705
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:back",
-      "blender_name": "sim:p1:reception:chair:1:back",
-      "type": "Chair",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.949999809265137,
-        -0.6600000262260437,
-        -8.649999618530273
-      ],
-      "current_source_position": [
-        -5.949999809265137,
-        -0.6600000262260437,
-        -8.649999618530273
-      ],
-      "world_matrix_blender": [
-        [
-          -4.371138828673793e-08,
-          1.0,
-          0.0,
-          -5.949999809265137
-        ],
-        [
-          -1.0,
-          -4.371138828673793e-08,
-          0.0,
-          8.649999618530273
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -0.6600000262260437
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:foot:0",
-      "blender_name": "sim:p1:reception:chair:1:foot:0",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.590000152587891,
-        -1.4700000286102295,
-        -8.649999618530273
-      ],
-      "current_source_position": [
-        -5.590000152587891,
-        -1.4700000286102295,
-        -8.649999618530273
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.590000152587891
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          8.649999618530273
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.4700000286102295
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:foot:1",
-      "blender_name": "sim:p1:reception:chair:1:foot:1",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.686737537384033,
-        -1.4700000286102295,
-        -8.516852378845215
-      ],
-      "current_source_position": [
-        -5.686737537384033,
-        -1.4700000286102295,
-        -8.516852378845215
-      ],
-      "world_matrix_blender": [
-        [
-          0.30901697278022766,
-          0.9510565400123596,
-          0.0,
-          -5.686737537384033
-        ],
-        [
-          -0.9510565400123596,
-          0.30901697278022766,
-          0.0,
-          8.516852378845215
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.4700000286102295
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:foot:2",
-      "blender_name": "sim:p1:reception:chair:1:foot:2",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.843262195587158,
-        -1.4700000286102295,
-        -8.567709922790527
-      ],
-      "current_source_position": [
-        -5.843262195587158,
-        -1.4700000286102295,
-        -8.567709922790527
-      ],
-      "world_matrix_blender": [
-        [
-          -0.8090170621871948,
-          0.5877851843833923,
-          0.0,
-          -5.843262195587158
-        ],
-        [
-          -0.5877851843833923,
-          -0.8090170621871948,
-          0.0,
-          8.567709922790527
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.4700000286102295
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:foot:3",
-      "blender_name": "sim:p1:reception:chair:1:foot:3",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.843262195587158,
-        -1.4700000286102295,
-        -8.732290267944336
-      ],
-      "current_source_position": [
-        -5.843262195587158,
-        -1.4700000286102295,
-        -8.732290267944336
-      ],
-      "world_matrix_blender": [
-        [
-          -0.8090169429779053,
-          -0.5877853631973267,
-          0.0,
-          -5.843262195587158
-        ],
-        [
-          0.5877853631973267,
-          -0.8090169429779053,
-          0.0,
-          8.732290267944336
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.4700000286102295
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:foot:4",
-      "blender_name": "sim:p1:reception:chair:1:foot:4",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.686737537384033,
-        -1.4700000286102295,
-        -8.783147811889648
-      ],
-      "current_source_position": [
-        -5.686737537384033,
-        -1.4700000286102295,
-        -8.783147811889648
-      ],
-      "world_matrix_blender": [
-        [
-          0.3090171217918396,
-          -0.9510564804077148,
-          0.0,
-          -5.686737537384033
-        ],
-        [
-          0.9510564804077148,
-          0.3090171217918396,
-          0.0,
-          8.783147811889648
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.4700000286102295
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:seat",
-      "blender_name": "sim:p1:reception:chair:1:seat",
-      "type": "Chair",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.730000019073486,
-        -1.0049999952316284,
-        -8.649999618530273
-      ],
-      "current_source_position": [
-        -5.730000019073486,
-        -1.0049999952316284,
-        -8.649999618530273
-      ],
-      "world_matrix_blender": [
-        [
-          -4.371138828673793e-08,
-          1.0,
-          0.0,
-          -5.730000019073486
-        ],
-        [
-          -1.0,
-          -4.371138828673793e-08,
-          0.0,
-          8.649999618530273
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.0049999952316284
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:stem",
-      "blender_name": "sim:p1:reception:chair:1:stem",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.730000019073486,
-        -1.2450000047683716,
-        -8.649999618530273
-      ],
-      "current_source_position": [
-        -5.730000019073486,
-        -1.2450000047683716,
-        -8.649999618530273
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.730000019073486
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          8.649999618530273
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.2450000047683716
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:wheel:0",
-      "blender_name": "sim:p1:reception:chair:1:wheel:0",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.449999809265137,
-        -1.5149999856948853,
-        -8.649999618530273
-      ],
-      "current_source_position": [
-        -5.449999809265137,
-        -1.5149999856948853,
-        -8.649999618530273
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.449999809265137
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          8.649999618530273
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.5149999856948853
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:wheel:1",
-      "blender_name": "sim:p1:reception:chair:1:wheel:1",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.64347505569458,
-        -1.5149999856948853,
-        -8.38370418548584
-      ],
-      "current_source_position": [
-        -5.64347505569458,
-        -1.5149999856948853,
-        -8.38370418548584
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.64347505569458
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          8.38370418548584
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.5149999856948853
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:wheel:2",
-      "blender_name": "sim:p1:reception:chair:1:wheel:2",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.956524848937988,
-        -1.5149999856948853,
-        -8.485420227050781
-      ],
-      "current_source_position": [
-        -5.956524848937988,
-        -1.5149999856948853,
-        -8.485420227050781
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.956524848937988
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          8.485420227050781
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.5149999856948853
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:wheel:3",
-      "blender_name": "sim:p1:reception:chair:1:wheel:3",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.956524848937988,
-        -1.5149999856948853,
-        -8.814579963684082
-      ],
-      "current_source_position": [
-        -5.956524848937988,
-        -1.5149999856948853,
-        -8.814579963684082
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.956524848937988
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          8.814579963684082
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.5149999856948853
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:1:wheel:4",
-      "blender_name": "sim:p1:reception:chair:1:wheel:4",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.64347505569458,
-        -1.5149999856948853,
-        -8.916296005249023
-      ],
-      "current_source_position": [
-        -5.64347505569458,
-        -1.5149999856948853,
-        -8.916296005249023
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.64347505569458
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          8.916296005249023
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.5149999856948853
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:arm:-1",
-      "blender_name": "sim:p1:reception:chair:2:arm:-1",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.730000019073486,
-        -0.7799999713897705,
-        -9.9399995803833
-      ],
-      "current_source_position": [
-        -5.730000019073486,
-        -0.7799999713897705,
-        -9.9399995803833
-      ],
-      "world_matrix_blender": [
-        [
-          -4.371138828673793e-08,
-          1.0,
-          0.0,
-          -5.730000019073486
-        ],
-        [
-          -1.0,
-          -4.371138828673793e-08,
-          0.0,
-          9.9399995803833
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -0.7799999713897705
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:arm:1",
-      "blender_name": "sim:p1:reception:chair:2:arm:1",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.730000019073486,
-        -0.7799999713897705,
-        -9.359999656677246
-      ],
-      "current_source_position": [
-        -5.730000019073486,
-        -0.7799999713897705,
-        -9.359999656677246
-      ],
-      "world_matrix_blender": [
-        [
-          -4.371138828673793e-08,
-          1.0,
-          0.0,
-          -5.730000019073486
-        ],
-        [
-          -1.0,
-          -4.371138828673793e-08,
-          0.0,
-          9.359999656677246
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -0.7799999713897705
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:back",
-      "blender_name": "sim:p1:reception:chair:2:back",
-      "type": "Chair",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.949999809265137,
-        -0.6600000262260437,
-        -9.649999618530273
-      ],
-      "current_source_position": [
-        -5.949999809265137,
-        -0.6600000262260437,
-        -9.649999618530273
-      ],
-      "world_matrix_blender": [
-        [
-          -4.371138828673793e-08,
-          1.0,
-          0.0,
-          -5.949999809265137
-        ],
-        [
-          -1.0,
-          -4.371138828673793e-08,
-          0.0,
-          9.649999618530273
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -0.6600000262260437
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:foot:0",
-      "blender_name": "sim:p1:reception:chair:2:foot:0",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.590000152587891,
-        -1.4700000286102295,
-        -9.649999618530273
-      ],
-      "current_source_position": [
-        -5.590000152587891,
-        -1.4700000286102295,
-        -9.649999618530273
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.590000152587891
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          9.649999618530273
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.4700000286102295
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:foot:1",
-      "blender_name": "sim:p1:reception:chair:2:foot:1",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.686737537384033,
-        -1.4700000286102295,
-        -9.516852378845215
-      ],
-      "current_source_position": [
-        -5.686737537384033,
-        -1.4700000286102295,
-        -9.516852378845215
-      ],
-      "world_matrix_blender": [
-        [
-          0.30901697278022766,
-          0.9510565400123596,
-          0.0,
-          -5.686737537384033
-        ],
-        [
-          -0.9510565400123596,
-          0.30901697278022766,
-          0.0,
-          9.516852378845215
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.4700000286102295
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:foot:2",
-      "blender_name": "sim:p1:reception:chair:2:foot:2",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.843262195587158,
-        -1.4700000286102295,
-        -9.567709922790527
-      ],
-      "current_source_position": [
-        -5.843262195587158,
-        -1.4700000286102295,
-        -9.567709922790527
-      ],
-      "world_matrix_blender": [
-        [
-          -0.8090170621871948,
-          0.5877851843833923,
-          0.0,
-          -5.843262195587158
-        ],
-        [
-          -0.5877851843833923,
-          -0.8090170621871948,
-          0.0,
-          9.567709922790527
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.4700000286102295
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:foot:3",
-      "blender_name": "sim:p1:reception:chair:2:foot:3",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.843262195587158,
-        -1.4700000286102295,
-        -9.732290267944336
-      ],
-      "current_source_position": [
-        -5.843262195587158,
-        -1.4700000286102295,
-        -9.732290267944336
-      ],
-      "world_matrix_blender": [
-        [
-          -0.8090169429779053,
-          -0.5877853631973267,
-          0.0,
-          -5.843262195587158
-        ],
-        [
-          0.5877853631973267,
-          -0.8090169429779053,
-          0.0,
-          9.732290267944336
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.4700000286102295
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:foot:4",
-      "blender_name": "sim:p1:reception:chair:2:foot:4",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.686737537384033,
-        -1.4700000286102295,
-        -9.783147811889648
-      ],
-      "current_source_position": [
-        -5.686737537384033,
-        -1.4700000286102295,
-        -9.783147811889648
-      ],
-      "world_matrix_blender": [
-        [
-          0.3090171217918396,
-          -0.9510564804077148,
-          0.0,
-          -5.686737537384033
-        ],
-        [
-          0.9510564804077148,
-          0.3090171217918396,
-          0.0,
-          9.783147811889648
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.4700000286102295
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:seat",
-      "blender_name": "sim:p1:reception:chair:2:seat",
-      "type": "Chair",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.730000019073486,
-        -1.0049999952316284,
-        -9.649999618530273
-      ],
-      "current_source_position": [
-        -5.730000019073486,
-        -1.0049999952316284,
-        -9.649999618530273
-      ],
-      "world_matrix_blender": [
-        [
-          -4.371138828673793e-08,
-          1.0,
-          0.0,
-          -5.730000019073486
-        ],
-        [
-          -1.0,
-          -4.371138828673793e-08,
-          0.0,
-          9.649999618530273
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.0049999952316284
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:stem",
-      "blender_name": "sim:p1:reception:chair:2:stem",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.730000019073486,
-        -1.2450000047683716,
-        -9.649999618530273
-      ],
-      "current_source_position": [
-        -5.730000019073486,
-        -1.2450000047683716,
-        -9.649999618530273
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.730000019073486
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          9.649999618530273
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.2450000047683716
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Chair brushed aluminum"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:wheel:0",
-      "blender_name": "sim:p1:reception:chair:2:wheel:0",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.449999809265137,
-        -1.5149999856948853,
-        -9.649999618530273
-      ],
-      "current_source_position": [
-        -5.449999809265137,
-        -1.5149999856948853,
-        -9.649999618530273
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.449999809265137
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          9.649999618530273
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.5149999856948853
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:wheel:1",
-      "blender_name": "sim:p1:reception:chair:2:wheel:1",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.64347505569458,
-        -1.5149999856948853,
-        -9.38370418548584
-      ],
-      "current_source_position": [
-        -5.64347505569458,
-        -1.5149999856948853,
-        -9.38370418548584
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.64347505569458
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          9.38370418548584
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.5149999856948853
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:wheel:2",
-      "blender_name": "sim:p1:reception:chair:2:wheel:2",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.956524848937988,
-        -1.5149999856948853,
-        -9.485420227050781
-      ],
-      "current_source_position": [
-        -5.956524848937988,
-        -1.5149999856948853,
-        -9.485420227050781
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.956524848937988
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          9.485420227050781
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.5149999856948853
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:wheel:3",
-      "blender_name": "sim:p1:reception:chair:2:wheel:3",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.956524848937988,
-        -1.5149999856948853,
-        -9.814579963684082
-      ],
-      "current_source_position": [
-        -5.956524848937988,
-        -1.5149999856948853,
-        -9.814579963684082
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.956524848937988
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          9.814579963684082
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.5149999856948853
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
-      "id": "sim:p1:reception:chair:2:wheel:4",
-      "blender_name": "sim:p1:reception:chair:2:wheel:4",
-      "type": "ChairFrame",
-      "environment_id": "RECEPTION",
-      "parent_id": null,
-      "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
-      "source_provenance_position": [
-        -5.64347505569458,
-        -1.5149999856948853,
-        -9.916296005249023
-      ],
-      "current_source_position": [
-        -5.64347505569458,
-        -1.5149999856948853,
-        -9.916296005249023
-      ],
-      "world_matrix_blender": [
-        [
-          1.0,
-          0.0,
-          0.0,
-          -5.64347505569458
-        ],
-        [
-          0.0,
-          1.0,
-          0.0,
-          9.916296005249023
-        ],
-        [
-          0.0,
-          0.0,
-          1.0,
-          -1.5149999856948853
-        ],
-        [
-          0.0,
-          0.0,
-          0.0,
-          1.0
-        ]
-      ],
-      "materials": [
-        "Graphite powder coat"
-      ],
-      "coordinate_note": "original metadata preserved as provenance; current pose is the world matrix at frame1 (doors closed)"
-    },
-    {
       "id": "sim:p1:waiting:chair:1:arm:-1",
       "blender_name": "sim:p1:waiting:chair:1:arm:-1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -60594,7 +59154,7 @@
       "id": "sim:p1:waiting:chair:1:arm:1",
       "blender_name": "sim:p1:waiting:chair:1:arm:1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -60642,7 +59202,7 @@
       "id": "sim:p1:waiting:chair:1:back",
       "blender_name": "sim:p1:waiting:chair:1:back",
       "type": "Chair",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -60690,7 +59250,7 @@
       "id": "sim:p1:waiting:chair:1:foot:0",
       "blender_name": "sim:p1:waiting:chair:1:foot:0",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -60738,7 +59298,7 @@
       "id": "sim:p1:waiting:chair:1:foot:1",
       "blender_name": "sim:p1:waiting:chair:1:foot:1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -60786,7 +59346,7 @@
       "id": "sim:p1:waiting:chair:1:foot:2",
       "blender_name": "sim:p1:waiting:chair:1:foot:2",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -60834,7 +59394,7 @@
       "id": "sim:p1:waiting:chair:1:foot:3",
       "blender_name": "sim:p1:waiting:chair:1:foot:3",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -60882,7 +59442,7 @@
       "id": "sim:p1:waiting:chair:1:foot:4",
       "blender_name": "sim:p1:waiting:chair:1:foot:4",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -60930,7 +59490,7 @@
       "id": "sim:p1:waiting:chair:1:seat",
       "blender_name": "sim:p1:waiting:chair:1:seat",
       "type": "Chair",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -60978,7 +59538,7 @@
       "id": "sim:p1:waiting:chair:1:stem",
       "blender_name": "sim:p1:waiting:chair:1:stem",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61026,7 +59586,7 @@
       "id": "sim:p1:waiting:chair:1:wheel:0",
       "blender_name": "sim:p1:waiting:chair:1:wheel:0",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61074,7 +59634,7 @@
       "id": "sim:p1:waiting:chair:1:wheel:1",
       "blender_name": "sim:p1:waiting:chair:1:wheel:1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61122,7 +59682,7 @@
       "id": "sim:p1:waiting:chair:1:wheel:2",
       "blender_name": "sim:p1:waiting:chair:1:wheel:2",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61170,7 +59730,7 @@
       "id": "sim:p1:waiting:chair:1:wheel:3",
       "blender_name": "sim:p1:waiting:chair:1:wheel:3",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61218,7 +59778,7 @@
       "id": "sim:p1:waiting:chair:1:wheel:4",
       "blender_name": "sim:p1:waiting:chair:1:wheel:4",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61266,7 +59826,7 @@
       "id": "sim:p1:waiting:chair:2:arm:-1",
       "blender_name": "sim:p1:waiting:chair:2:arm:-1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61314,7 +59874,7 @@
       "id": "sim:p1:waiting:chair:2:arm:1",
       "blender_name": "sim:p1:waiting:chair:2:arm:1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61362,7 +59922,7 @@
       "id": "sim:p1:waiting:chair:2:back",
       "blender_name": "sim:p1:waiting:chair:2:back",
       "type": "Chair",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61410,7 +59970,7 @@
       "id": "sim:p1:waiting:chair:2:foot:0",
       "blender_name": "sim:p1:waiting:chair:2:foot:0",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61458,7 +60018,7 @@
       "id": "sim:p1:waiting:chair:2:foot:1",
       "blender_name": "sim:p1:waiting:chair:2:foot:1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61506,7 +60066,7 @@
       "id": "sim:p1:waiting:chair:2:foot:2",
       "blender_name": "sim:p1:waiting:chair:2:foot:2",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61554,7 +60114,7 @@
       "id": "sim:p1:waiting:chair:2:foot:3",
       "blender_name": "sim:p1:waiting:chair:2:foot:3",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61602,7 +60162,7 @@
       "id": "sim:p1:waiting:chair:2:foot:4",
       "blender_name": "sim:p1:waiting:chair:2:foot:4",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61650,7 +60210,7 @@
       "id": "sim:p1:waiting:chair:2:seat",
       "blender_name": "sim:p1:waiting:chair:2:seat",
       "type": "Chair",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61698,7 +60258,7 @@
       "id": "sim:p1:waiting:chair:2:stem",
       "blender_name": "sim:p1:waiting:chair:2:stem",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61746,7 +60306,7 @@
       "id": "sim:p1:waiting:chair:2:wheel:0",
       "blender_name": "sim:p1:waiting:chair:2:wheel:0",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61794,7 +60354,7 @@
       "id": "sim:p1:waiting:chair:2:wheel:1",
       "blender_name": "sim:p1:waiting:chair:2:wheel:1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61842,7 +60402,7 @@
       "id": "sim:p1:waiting:chair:2:wheel:2",
       "blender_name": "sim:p1:waiting:chair:2:wheel:2",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61890,7 +60450,7 @@
       "id": "sim:p1:waiting:chair:2:wheel:3",
       "blender_name": "sim:p1:waiting:chair:2:wheel:3",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61938,7 +60498,7 @@
       "id": "sim:p1:waiting:chair:2:wheel:4",
       "blender_name": "sim:p1:waiting:chair:2:wheel:4",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -61986,7 +60546,7 @@
       "id": "sim:p1:waiting:chair:3:arm:-1",
       "blender_name": "sim:p1:waiting:chair:3:arm:-1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62034,7 +60594,7 @@
       "id": "sim:p1:waiting:chair:3:arm:1",
       "blender_name": "sim:p1:waiting:chair:3:arm:1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62082,7 +60642,7 @@
       "id": "sim:p1:waiting:chair:3:back",
       "blender_name": "sim:p1:waiting:chair:3:back",
       "type": "Chair",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62130,7 +60690,7 @@
       "id": "sim:p1:waiting:chair:3:foot:0",
       "blender_name": "sim:p1:waiting:chair:3:foot:0",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62178,7 +60738,7 @@
       "id": "sim:p1:waiting:chair:3:foot:1",
       "blender_name": "sim:p1:waiting:chair:3:foot:1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62226,7 +60786,7 @@
       "id": "sim:p1:waiting:chair:3:foot:2",
       "blender_name": "sim:p1:waiting:chair:3:foot:2",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62274,7 +60834,7 @@
       "id": "sim:p1:waiting:chair:3:foot:3",
       "blender_name": "sim:p1:waiting:chair:3:foot:3",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62322,7 +60882,7 @@
       "id": "sim:p1:waiting:chair:3:foot:4",
       "blender_name": "sim:p1:waiting:chair:3:foot:4",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62370,7 +60930,7 @@
       "id": "sim:p1:waiting:chair:3:seat",
       "blender_name": "sim:p1:waiting:chair:3:seat",
       "type": "Chair",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62418,7 +60978,7 @@
       "id": "sim:p1:waiting:chair:3:stem",
       "blender_name": "sim:p1:waiting:chair:3:stem",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62466,7 +61026,7 @@
       "id": "sim:p1:waiting:chair:3:wheel:0",
       "blender_name": "sim:p1:waiting:chair:3:wheel:0",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62514,7 +61074,7 @@
       "id": "sim:p1:waiting:chair:3:wheel:1",
       "blender_name": "sim:p1:waiting:chair:3:wheel:1",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62562,7 +61122,7 @@
       "id": "sim:p1:waiting:chair:3:wheel:2",
       "blender_name": "sim:p1:waiting:chair:3:wheel:2",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62610,7 +61170,7 @@
       "id": "sim:p1:waiting:chair:3:wheel:3",
       "blender_name": "sim:p1:waiting:chair:3:wheel:3",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -62658,7 +61218,7 @@
       "id": "sim:p1:waiting:chair:3:wheel:4",
       "blender_name": "sim:p1:waiting:chair:3:wheel:4",
       "type": "ChairFrame",
-      "environment_id": "WAITING-AREA",
+      "environment_id": "RECEPTION",
       "parent_id": null,
       "geometry_origin": "visual-estimate; simulation/spatial-office/layout.json; not a certified measurement",
       "source_provenance_position": [
@@ -90430,12 +88990,12 @@
       "source_provenance_position": [
         -3.6500000953674316,
         -1.0499999523162842,
-        -9.100000381469727
+        -16.100000381469727
       ],
       "current_source_position": [
         -3.6500000953674316,
         -1.0499999523162842,
-        -9.100000381469727
+        -16.100000381469727
       ],
       "world_matrix_blender": [
         [
@@ -90448,7 +89008,7 @@
           0.0,
           1.0,
           0.0,
-          9.100000381469727
+          16.100000381469727
         ],
         [
           0.0,
@@ -90478,12 +89038,12 @@
       "source_provenance_position": [
         -3.6500000953674316,
         -0.18000000715255737,
-        -9.100000381469727
+        -16.100000381469727
       ],
       "current_source_position": [
         -3.6500000953674316,
         -0.18000000715255737,
-        -9.100000381469727
+        -16.100000381469727
       ],
       "world_matrix_blender": [
         [
@@ -90496,7 +89056,7 @@
           0.0,
           1.0,
           0.0,
-          9.100000381469727
+          16.100000381469727
         ],
         [
           0.0,
@@ -90526,12 +89086,12 @@
       "source_provenance_position": [
         -3.6500000953674316,
         -0.5099999904632568,
-        -9.100000381469727
+        -16.100000381469727
       ],
       "current_source_position": [
         -3.6500000953674316,
         -0.5099999904632568,
-        -9.100000381469727
+        -16.100000381469727
       ],
       "world_matrix_blender": [
         [
@@ -90544,7 +89104,7 @@
           0.0,
           1.0,
           0.0,
-          9.100000381469727
+          16.100000381469727
         ],
         [
           0.0,
@@ -93550,12 +92110,12 @@
       "source_provenance_position": [
         -6.300000190734863,
         0.10000000149011612,
-        -9.199999809265137
+        -15.800000190734863
       ],
       "current_source_position": [
         -6.300000190734863,
         0.10000000149011612,
-        -9.199999809265137
+        -15.800000190734863
       ],
       "world_matrix_blender": [
         [
@@ -93568,7 +92128,7 @@
           0.0,
           1.0,
           0.0,
-          9.199999809265137
+          15.800000190734863
         ],
         [
           0.0,
@@ -93598,12 +92158,12 @@
       "source_provenance_position": [
         -6.239999771118164,
         0.10000000149011612,
-        -9.199999809265137
+        -15.800000190734863
       ],
       "current_source_position": [
         -6.239999771118164,
         0.10000000149011612,
-        -9.199999809265137
+        -15.800000190734863
       ],
       "world_matrix_blender": [
         [
@@ -93616,7 +92176,7 @@
           0.0,
           1.0,
           0.0,
-          9.199999809265137
+          15.800000190734863
         ],
         [
           0.0,
@@ -93646,12 +92206,12 @@
       "source_provenance_position": [
         -6.300000190734863,
         0.10000000149011612,
-        -15.800000190734863
+        -9.199999809265137
       ],
       "current_source_position": [
         -6.300000190734863,
         0.10000000149011612,
-        -15.800000190734863
+        -9.199999809265137
       ],
       "world_matrix_blender": [
         [
@@ -93664,7 +92224,7 @@
           0.0,
           1.0,
           0.0,
-          15.800000190734863
+          9.199999809265137
         ],
         [
           0.0,
@@ -93694,12 +92254,12 @@
       "source_provenance_position": [
         -6.239999771118164,
         0.10000000149011612,
-        -15.800000190734863
+        -9.199999809265137
       ],
       "current_source_position": [
         -6.239999771118164,
         0.10000000149011612,
-        -15.800000190734863
+        -9.199999809265137
       ],
       "world_matrix_blender": [
         [
@@ -93712,7 +92272,7 @@
           0.0,
           1.0,
           0.0,
-          15.800000190734863
+          9.199999809265137
         ],
         [
           0.0,
@@ -93934,12 +92494,12 @@
       "source_provenance_position": [
         -3.549999952316284,
         -0.8399999737739563,
-        -14.5
+        -8.300000190734863
       ],
       "current_source_position": [
         -3.549999952316284,
         -0.8399999737739563,
-        -14.5
+        -8.300000190734863
       ],
       "world_matrix_blender": [
         [
@@ -93952,7 +92512,7 @@
           0.0,
           1.0,
           0.0,
-          14.5
+          8.300000190734863
         ],
         [
           0.0,
@@ -93982,12 +92542,12 @@
       "source_provenance_position": [
         -3.9000000953674316,
         -1.149999976158142,
-        -14.5
+        -8.300000190734863
       ],
       "current_source_position": [
         -3.9000000953674316,
         -1.149999976158142,
-        -14.5
+        -8.300000190734863
       ],
       "world_matrix_blender": [
         [
@@ -94000,7 +92560,7 @@
           0.0,
           1.0,
           0.0,
-          14.5
+          8.300000190734863
         ],
         [
           0.0,
@@ -94030,12 +92590,12 @@
       "source_provenance_position": [
         -4.800000190734863,
         -0.9300000071525574,
-        -17.600000381469727
+        -10.100000381469727
       ],
       "current_source_position": [
         -4.800000190734863,
         -0.9300000071525574,
-        -17.600000381469727
+        -10.100000381469727
       ],
       "world_matrix_blender": [
         [
@@ -94048,7 +92608,7 @@
           0.0,
           1.0,
           0.0,
-          17.600000381469727
+          10.100000381469727
         ],
         [
           0.0,
@@ -94078,12 +92638,12 @@
       "source_provenance_position": [
         -4.800000190734863,
         -1.25,
-        -17.600000381469727
+        -10.100000381469727
       ],
       "current_source_position": [
         -4.800000190734863,
         -1.25,
-        -17.600000381469727
+        -10.100000381469727
       ],
       "world_matrix_blender": [
         [
@@ -94096,7 +92656,7 @@
           0.0,
           1.0,
           0.0,
-          17.600000381469727
+          10.100000381469727
         ],
         [
           0.0,
@@ -94124,27 +92684,27 @@
       "parent_id": null,
       "geometry_origin": "Phase02 new design estimate; phase02-layout.json",
       "source_provenance_position": [
-        -3.549999952316284,
+        -6.0,
         -0.8299999833106995,
-        -16.200000762939453
+        -9.199999809265137
       ],
       "current_source_position": [
-        -3.549999952316284,
+        -6.0,
         -0.8299999833106995,
-        -16.200000762939453
+        -9.199999809265137
       ],
       "world_matrix_blender": [
         [
           1.0,
           0.0,
           0.0,
-          -3.549999952316284
+          -6.0
         ],
         [
           0.0,
           1.0,
           0.0,
-          16.200000762939453
+          9.199999809265137
         ],
         [
           0.0,
@@ -94172,27 +92732,27 @@
       "parent_id": null,
       "geometry_origin": "Phase02 new design estimate; phase02-layout.json",
       "source_provenance_position": [
-        -3.9000000953674316,
+        -5.650000095367432,
         -1.2000000476837158,
-        -16.200000762939453
+        -9.199999809265137
       ],
       "current_source_position": [
-        -3.9000000953674316,
+        -5.650000095367432,
         -1.2000000476837158,
-        -16.200000762939453
+        -9.199999809265137
       ],
       "world_matrix_blender": [
         [
           1.0,
           0.0,
           0.0,
-          -3.9000000953674316
+          -5.650000095367432
         ],
         [
           0.0,
           1.0,
           0.0,
-          16.200000762939453
+          9.199999809265137
         ],
         [
           0.0,

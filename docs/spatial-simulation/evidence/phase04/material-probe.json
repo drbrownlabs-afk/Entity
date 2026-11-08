@@ -1,0 +1,143 @@
+{
+  "scope": "five isolated swatches; no architectural scene export or browser",
+  "master_unchanged": true,
+  "master_sha256": "3aae64882507f89f0843a7b6481b125599c14def836ad74266799a6bb18eb905",
+  "probe_sha256": "70d66517428861d7bdc79fb021b458c9cc398b7764c4bc98739d210a9ea2c4b7",
+  "results": [
+    {
+      "name": "Terrazzo warm - procedural reference",
+      "source": {
+        "base_color": [
+          0.6299999952316284,
+          0.5699999928474426,
+          0.46000000834465027,
+          1.0
+        ],
+        "roughness": 0.5699999928474426,
+        "metallic": 0.0,
+        "transmission": 0.0,
+        "image_texture": true
+      },
+      "reimported": {
+        "roughness": 0.5699999928474426,
+        "metallic": 0.0,
+        "transmission": 0.0,
+        "image_texture": true
+      },
+      "passed": true
+    },
+    {
+      "name": "Phase02 clear partitions",
+      "source": {
+        "base_color": [
+          0.949999988079071,
+          0.9800000190734863,
+          1.0,
+          1.0
+        ],
+        "roughness": 0.02500000037252903,
+        "metallic": 0.0,
+        "transmission": 1.0,
+        "image_texture": false
+      },
+      "reimported": {
+        "roughness": 0.02500000037252903,
+        "metallic": 0.0,
+        "transmission": 1.0,
+        "image_texture": false
+      },
+      "passed": true,
+      "base_color_factor_verified": [
+        0.949999988079071,
+        0.9800000190734863,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "Cafe warm oak",
+      "source": {
+        "base_color": [
+          0.3499999940395355,
+          0.1599999964237213,
+          0.054999999701976776,
+          1.0
+        ],
+        "roughness": 0.44999998807907104,
+        "metallic": 0.0,
+        "transmission": 0.0,
+        "image_texture": false
+      },
+      "reimported": {
+        "roughness": 0.44999998807907104,
+        "metallic": 0.0,
+        "transmission": 0.0,
+        "image_texture": false
+      },
+      "passed": true,
+      "base_color_factor_verified": [
+        0.3499999940395355,
+        0.1599999964237213,
+        0.054999999701976776,
+        1
+      ]
+    },
+    {
+      "name": "Sand upholstery",
+      "source": {
+        "base_color": [
+          0.46000000834465027,
+          0.3499999940395355,
+          0.23999999463558197,
+          1.0
+        ],
+        "roughness": 0.800000011920929,
+        "metallic": 0.0,
+        "transmission": 0.0,
+        "image_texture": false
+      },
+      "reimported": {
+        "roughness": 0.800000011920929,
+        "metallic": 0.0,
+        "transmission": 0.0,
+        "image_texture": false
+      },
+      "passed": true,
+      "base_color_factor_verified": [
+        0.46000000834465027,
+        0.3499999940395355,
+        0.23999999463558197,
+        1
+      ]
+    },
+    {
+      "name": "Graphite powder coat",
+      "source": {
+        "base_color": [
+          0.03500000014901161,
+          0.03999999910593033,
+          0.03999999910593033,
+          1.0
+        ],
+        "roughness": 0.30000001192092896,
+        "metallic": 0.550000011920929,
+        "transmission": 0.0,
+        "image_texture": false
+      },
+      "reimported": {
+        "roughness": 0.30000001192092896,
+        "metallic": 0.550000011920929,
+        "transmission": 0.0,
+        "image_texture": false
+      },
+      "passed": true,
+      "base_color_factor_verified": [
+        0.03500000014901161,
+        0.03999999910593033,
+        0.03999999910593033,
+        1
+      ]
+    }
+  ],
+  "limitations": "Probe verifies material fields and packed texture presence, not PlayCanvas visual equivalence or full-scene export. Final export explicitly waits for operator approval."
+}

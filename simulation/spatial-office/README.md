@@ -1,5 +1,8 @@
 # Synthetic Office — reconstrucción editable, Fase 01
 
+**Versión vigente para revisión: [office-phase04.blend](output/office-phase04.blend)**, planta C completa, E al fondo, controles de luz/tiempo locales. [Galería y pasos para el operador](../../docs/spatial-simulation/REVIEW-PHASE04.md). El plan actualizado requiere aprobación antes de PlayCanvas; los maestros de fases anteriores son históricos.
+
+
 **Versión actual tras la corrección del operador:** [office-cafe-L.blend](output/office-cafe-L.blend), con cafetería y brazo posterior en L. [Informe actualizado](../../docs/spatial-simulation/CAFE-L-CORRECTION.md). El maestro Phase01 indicado a continuación queda como evidencia histórica.
 
 Maestro: [output/office-phase01.blend](output/office-phase01.blend).
@@ -47,3 +50,7 @@ El operador corrigió la topología y suministró las dos referencias visuales. 
 ## Fase 02 — versión actual
 
 **Maestro de trabajo: [output/office-phase02.blend](output/office-phase02.blend)**. Incluye A–E/reuniones con mamparas y puertas, E al fondo, cafetería en L, recepción/espera, rampa, cuatro TVs y siete puertas con controles locales simulados. [Informe y comandos](../../docs/spatial-simulation/PHASE-02-REPORT.md), [plano con IDs](../../docs/spatial-simulation/evidence/phase02/layout-with-ids.svg). Los maestros anteriores se conservan como evidencia histórica. La interacción web y los circuitos luminosos no se atribuyen a esta entrega.
+
+## Fases 03 y 04 vigentes
+
+Ver [Fase03 / C](../../docs/spatial-simulation/PHASE-03-REPORT.md) y [Fase04 / luz-tiempo](../../docs/spatial-simulation/PHASE-04-REPORT.md). Setup: `python3 simulation/spatial-office/setup-lighting.py`, con paquetes locales y hashes obligatorios. Ejecutar los constructores/checkers/renders en orden según los informes. No ejecutar el extractor de handoff en el checkout, no iniciar PlayCanvas ni exportar la escena definitiva sin aprobación.
