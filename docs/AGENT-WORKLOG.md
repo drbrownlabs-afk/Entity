@@ -448,3 +448,7 @@ Survey42471424771 midió3612muestras transitables, aproximaciones a docepuestosC
 ### 2026-11-08 — Codex, red física ampliada y diagnóstico de recepción
 42471807543:14395muestras; A/B ymesa de reunión ya tienen rutas aceptadas, además de docepuestos/espera/descanso, con cuerpo1.8unidades sinreducirlo. Recepciónsigue sinaproximaciónconectada≤3unidades: no seadopta una ruta falsa. Inspección delSDKfijado revela CAPSULE_HEIGHT1.5/CAPSULE_RADIUS.2; 1.8 era un tamaño adicional conservador, NO altura métrica certificada. Se mide TAMBIÉN elcuerpooriginal1.5 en informe separado, sin sustituirniocultarlos resultados1.8. Solo podrá usarse para personajes normalizados aesa misma altura y tras revisión original.
 E2E de arrastre móvil69a2a69 fallóporque elpuntodelensayo caía enlaetiquetaD, no enelcanvas; desktop/selecciónGPU/feed/datosPASS. Eltesteligeporhit-testunpuntorealdelcanvasantesdegesto; no semodificaelmotor parafalsearelresultado. Se continúacon09.1–09.9.
+
+
+### 2026-11-08 — Codex, causa medida del falso bloqueo de recepción
+42472614691 demuestra rayos originales con suelo de recepcióny=-1.55 y cápsula1.8libre en x=-5..-3,z=-9. La banda inicial de detección terminaba en-1.60 yexcluía la plataforma elevada visible en lasfotografías; no era un bloqueo ni necesidad de reducirpersonajes. Se usa elnuevo suelo MEDIDO (rayos originales/cápsula libre, por debajo de losasientos) como referencia adicional, sininventarpuntos ni relajarparedes. Elinforme1.5se conserva como diagnóstico yno se usa paraencogeravatares. Se mide otra vez laconectividad.
