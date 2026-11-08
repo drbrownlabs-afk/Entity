@@ -1,0 +1,5 @@
+Info: Saved "office-phase01.blend"
+PHASE01_BUILT {"objects": 1139, "cameras": 14, "guide_vertices": 16709, "guide_triangles": 29526, "blend_bytes": 1116102}
+Blender 4.3.2
+
+Blender quit

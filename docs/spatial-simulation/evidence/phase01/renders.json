@@ -1,0 +1,92 @@
+[
+  {
+    "view": "dollhouse",
+    "path": "dollhouse.png",
+    "sha256": "796b33cb56a7f70f1c26ad82e80e731bb7df2d9eebf519a941bc6477883f4f5c",
+    "engine": "CYCLES",
+    "samples": 48,
+    "source_blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+    "ceiling_cutaway": true
+  },
+  {
+    "view": "plan",
+    "path": "plan.png",
+    "sha256": "4bedd8c4af5fb30c3df585f33340085dfd17f470934669cd877e26b30dd815c5",
+    "engine": "CYCLES",
+    "samples": 48,
+    "source_blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+    "ceiling_cutaway": true
+  },
+  {
+    "view": "annotation:0",
+    "path": "annotation-0.png",
+    "sha256": "22f8397d843b92eef91af7c64ff9c29828011609bf33ada52db14de33537dab0",
+    "engine": "CYCLES",
+    "samples": 48,
+    "source_blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+    "ceiling_cutaway": false
+  },
+  {
+    "view": "annotation:1",
+    "path": "annotation-1.png",
+    "sha256": "d2ddd454bb8abf327fdeeed70991b47cf3f9a9c74505ae43edc016e21be0da57",
+    "engine": "CYCLES",
+    "samples": 48,
+    "source_blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+    "ceiling_cutaway": false
+  },
+  {
+    "view": "annotation:2",
+    "path": "annotation-2.png",
+    "sha256": "9bed7717a688c001cdaccaf6d4ce2e34f00414c22ad4ab0f01e29efd5a3f3105",
+    "engine": "CYCLES",
+    "samples": 48,
+    "source_blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+    "ceiling_cutaway": false
+  },
+  {
+    "view": "wall-from-a",
+    "path": "wall-from-a.png",
+    "sha256": "305ae5572f50315a7d0f4917692b4851c730ffd5de4b8643dd59348a1c1b7116",
+    "engine": "CYCLES",
+    "samples": 48,
+    "source_blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+    "ceiling_cutaway": false
+  },
+  {
+    "view": "wall-from-b",
+    "path": "wall-from-b.png",
+    "sha256": "4234d89fd21e8ef360b91600de0e2f81f7aadfb4515b24ca31b1c61cf2e1d31c",
+    "engine": "CYCLES",
+    "samples": 48,
+    "source_blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+    "ceiling_cutaway": false
+  },
+  {
+    "view": "table-c-seats",
+    "path": "table-c-seats.png",
+    "sha256": "a0bacf36edd8ac77774068b6644054c57fe2b57e2fb406c64e79200e7b64b8f6",
+    "engine": "CYCLES",
+    "samples": 48,
+    "source_blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+    "ceiling_cutaway": true
+  },
+  {
+    "view": "table-d-seats",
+    "path": "table-d-seats.png",
+    "sha256": "855069b4955d47a122ef902471f4142f80a4b9ff88a4ba191978febea18076e5",
+    "engine": "CYCLES",
+    "samples": 48,
+    "source_blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+    "ceiling_cutaway": true
+  },
+  {
+    "view": "original-plan-near-clipped",
+    "path": "original-plan-near-clipped.png",
+    "sha256": "9ac2053936e624a3e7ea0f5878aca882b39f6093165f8092be206e78d91626ad",
+    "engine": "CYCLES",
+    "samples": 48,
+    "source_blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+    "ceiling_cutaway": true
+  }
+]

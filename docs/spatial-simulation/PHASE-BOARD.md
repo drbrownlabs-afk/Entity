@@ -1,0 +1,16 @@
+# Tablero del laboratorio espacial
+
+Base: `a037bb8fcf9e90e510e364edf00452611a8faed8`, rama `codex/spatial-simulation`.
+Este tablero pertenece al plan espacial de seis fases, no a las fases históricas de Core.
+Se mantiene bajo la carpeta autorizada para conservar intactos los documentos y artefactos de la base.
+
+| Fase | Estado | Gate y evidencia |
+|---|---|---|
+| 01 — arquitectura y mobiliario original | EN VALIDACIÓN | Cinco pruebas offline y 99 comprobaciones de reapertura PASS; diez renders Cycles inspeccionados y vinculados al hash final. Gate técnico verificado con limitaciones explícitas; aceptación humana pendiente. [Informe](PHASE-01-REPORT.md), [gate](evidence/phase01/gate.json). |
+| 02 — arquitectura funcional, accesos y equipamiento | NO INICIADA | Requiere aceptación de Fase 01. Mamparas, Sala E, cafetería, puertas y cuatro TVs pendientes. |
+| 03 — materiales, luces y dispositivos | NO INICIADA | Render de referencia de Fase 01 no acredita luminarias/circuitos operables. |
+| 04 — PlayCanvas, navegación e interacción | NO INICIADA | Sin aplicación runtime nueva ni prueba de navegador de esa aplicación. |
+| 05 — personajes y posesión | NO INICIADA | Sin rig, personajes ni controlador nuevos. |
+| 06 — integración y aceptación | NO INICIADA | Sin adaptador Core nuevo ni aceptación integral. |
+
+`AGENTS.md`, sección «Phase-driven execution (authoritative)», exige “present evidence and stop for human review before advancing” y “never self-approve a phase”. La excepción explícita para 09.1–09.9 no se aplica automáticamente a las seis fases del nuevo plan. La presente entrega no aprueba fases ni modifica la autorización histórica de Core.

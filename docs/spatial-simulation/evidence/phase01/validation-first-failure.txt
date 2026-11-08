@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/workspace/Entity/simulation/spatial-office/validate.py", line 68, in <module>
+    check('camera-direction:'+c['id'],close(direction,actual),list(actual))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Entity/simulation/spatial-office/validate.py", line 18, in check
+    raise AssertionError(name + ': ' + str(detail))
+AssertionError: camera-direction:view:plan: [-9.757072753913132e-12, -9.094585402635857e-05, -1.0]
+Blender 4.3.2
+Read blend: "/workspace/Entity/simulation/spatial-office/output/office-phase01.blend"
+
+Blender quit

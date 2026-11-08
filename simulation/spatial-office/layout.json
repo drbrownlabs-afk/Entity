@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "phase": "01",
+  "units": "relative; meters not certified",
+  "frame": "supersplat-original +Y up",
+  "classification": "visual reconstruction estimates, not measured architecture",
+  "floor_y": -1.85,
+  "raised_floor_y": -1.55,
+  "ceiling_y": 1.65,
+  "shell": {"x_min": -6.5, "x_max": 4.35, "z_min": -26.5, "z_max": 2.65},
+  "shell_note": "Design envelope inferred from existing views/picks; NOT global scene/voxel bounds. Hidden faces and ceiling height estimated.",
+  "workgroups": [
+    {"id": "A", "center": [1.15, -0.95, -5.35], "long_axis": "X", "length": 3.75, "depth": 1.55, "evidence": "docs/evidence/phase09/survey/private-A.jpg", "note": "Original annotation is retained separately; offset to tabletop center is a visual estimate; six chair placements are estimates, not recovered internal Core positions."},
+    {"id": "B", "center": [1.85, -0.95, -10.55], "long_axis": "Z", "length": 3.75, "depth": 1.55, "evidence": "docs/evidence/phase09/survey/private-B.jpg", "note": "Longitudinal layout inferred from interior photo; annotation is not interpreted as table center."},
+    {"id": "C", "center": [1.20, -0.635, -15.755], "long_axis": "X", "length": 3.65, "depth": 1.55, "evidence": "docs/evidence/phase09/survey/table-c-seats.jpg", "note": "Six chair surfaces use exact C1..C6 anchors. Top surface Y=-0.60 follows calibrated group surface; thickness and dimensions remain estimates."},
+    {"id": "D", "center": [2.025, -0.785, -21.94], "long_axis": "Z", "length": 3.75, "depth": 1.55, "evidence": "docs/evidence/phase09/survey/table-d-seats.jpg", "note": "Six chair surfaces use exact D1..D6 anchors; tabletop Y=-0.75 follows calibrated surface. Table center inferred between chair rows, not copied from noncentral D annotation."}
+  ],
+  "columns": [[-1.10, -2.45], [3.80, -2.45], [-1.10, -8.05], [3.80, -8.05], [-1.10, -13.00], [3.80, -13.00], [-1.10, -18.65], [3.80, -18.65], [-1.10, -24.75], [3.80, -24.75]],
+  "columns_note": "Cylindrical family and repetition visible in plan/private-B; individual centers/radii are estimates, no automatic voxel segmentation claimed.",
+  "meeting": {"center": [1.05, -0.95, -0.10], "size": [3.85, 1.35], "evidence": "docs/evidence/phase09/survey/original-plan-near-clipped.jpg", "chair_count": 8, "note": "Black table by green wall; eight reconstructed chairs follow authored title, not a new verified count."},
+  "pods": {"centers": [[-4.1, -20.2], [-4.1, -24.0]], "note": "Two representative curved booth assemblies shown as a reconstruction assumption; original number, contours and individual positions remain unknown. Phase 02 removes these only in new design.", "evidence": "docs/evidence/phase09/survey/walk-2.jpg"},
+  "references": [
+    "docs/evidence/phase09/survey/original-plan-near-clipped.jpg",
+    "docs/evidence/phase09/survey/original-plan-far.jpg",
+    "docs/evidence/phase09/survey/wall-from-a.jpg",
+    "docs/evidence/phase09/survey/wall-from-b.jpg",
+    "docs/evidence/phase09/survey/private-A.jpg",
+    "docs/evidence/phase09/survey/private-B.jpg",
+    "docs/evidence/phase09/survey/table-c-seats.jpg",
+    "docs/evidence/phase09/survey/table-d-seats.jpg",
+    "docs/evidence/phase09/survey/walk-2.jpg",
+    "docs/evidence/phase09/survey/front-down.jpg"
+  ]
+}

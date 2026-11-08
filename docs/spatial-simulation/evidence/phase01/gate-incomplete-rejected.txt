@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/workspace/Entity/simulation/spatial-office/gate.py", line 52, in <module>
+    main()
+  File "/workspace/Entity/simulation/spatial-office/gate.py", line 22, in main
+    assert len(renders)==len(expected) and {r['view'] for r in renders}==expected,'Missing or duplicate renders'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Missing or duplicate renders

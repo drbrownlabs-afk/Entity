@@ -1,0 +1,10 @@
+test_coordinate_handedness_and_roundtrip (test_sources.SourceTests.test_coordinate_handedness_and_roundtrip) ... ok
+test_estimates_are_explicit (test_sources.SourceTests.test_estimates_are_explicit) ... ok
+test_extractor_reproduces_handoff_in_temporary_copy (test_sources.SourceTests.test_extractor_reproduces_handoff_in_temporary_copy) ... ok
+test_originals_byte_identical (test_sources.SourceTests.test_originals_byte_identical) ... ok
+test_required_source_hashes (test_sources.SourceTests.test_required_source_hashes) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.333s
+
+OK

@@ -1,0 +1,11 @@
+{
+  "current_instance": "Blender 4.3.2 / Cycles CPU and Python 3.12.14 available; no packages installed",
+  "draft_read_attempts": 2,
+  "draft_read_result": "INVALID_ARGUMENT: The current environment draft could not be verified",
+  "draft_write_field": "start_skill",
+  "draft_write_result": "INVALID_ARGUMENT: Setup could not be completed; saving the draft could not be confirmed",
+  "draft_persistence_confirmed": false,
+  "publication_performed": false,
+  "new_instance_validated": false,
+  "fallback_instructions": "simulation/spatial-office/README.md"
+}

@@ -1,0 +1,38 @@
+{
+  "reviewer": "Codex",
+  "human_acceptance": false,
+  "date_local": "2026-11-08 America/Guayaquil",
+  "blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+  "reviewed_images": [
+    "dollhouse.png",
+    "plan.png",
+    "annotation-0.png",
+    "annotation-1.png",
+    "annotation-2.png",
+    "wall-from-a.png",
+    "wall-from-b.png",
+    "table-c-seats.png",
+    "table-d-seats.png",
+    "original-plan-near-clipped.png"
+  ],
+  "method": "Viewed each final PNG directly; compared to existing source survey images and annotation poses. No pixel-exact or metric claim.",
+  "result": "recognizable-approximation-with-documented-limitations",
+  "observed": [
+    "Dollhouse and full plan include meeting table at green-wall end, four workgroups, west raised strip, reception/waiting, representative booths, cylinders and window facade.",
+    "A storage/table intersection corrected; the final A image exposes the desk instead of a cabinet through it.",
+    "B preserves longitudinal workgroup family and original inspection pose; columns, glazing and hanging plants are visible.",
+    "Wall-from-A and wall-from-B show the two black reception chairs, separate light waiting chairs and a visible step.",
+    "Top C/D show six independent chair surfaces per group at the exact calibrated coordinates and calibrated tabletop heights.",
+    "Original-plan-near-clipped reproduces source pose/FOV/near clip. Cut column tops are a near-clip/cutaway effect, not missing columns."
+  ],
+  "limitations": [
+    "Architecture envelope, ceiling, columns, dimensions, orientation and hidden faces remain explicit visual estimates; not a certified architectural survey.",
+    "A/B chair coordinates are simulation-only estimates; no measured Core internal-seat positions are invented.",
+    "Original booth count remains unknown; two representative assemblies are a modeling assumption.",
+    "Reference materials, lighting, low-poly sparse vegetation and monitor placeholders do not achieve or certify the premium finish planned for Phase 03.",
+    "48-sample Cycles images retain noise because this Blender build lacks OpenImageDenoise.",
+    "Interior render aspect 1200x780 is narrower than source panoramic screenshots; C/D and comparable plan retain source aspect. No pixel-exact image match.",
+    "No interactive Blender GUI session, new PlayCanvas runtime, new GLB, device controls, rigged characters, physical hardware or Core integration validated in Phase 01.",
+    "Final phase acceptance is human; phases 02-06 have not started."
+  ]
+}

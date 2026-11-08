@@ -1,0 +1,771 @@
+{
+  "blend_sha256": "0760d515e9b44043453e654fff468896776de602a7e353664c39e615e9c8ef7f",
+  "checks": [
+    {
+      "name": "blend-reopens",
+      "passed": true,
+      "detail": "4.3.2"
+    },
+    {
+      "name": "original-files-unchanged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "stable-ids-unique",
+      "passed": true,
+      "detail": 1139
+    },
+    {
+      "name": "manifest-matches-blend",
+      "passed": true,
+      "detail": 1139
+    },
+    {
+      "name": "metadata-complete",
+      "passed": true,
+      "detail": [
+        "stable_id",
+        "semantic_type",
+        "environment_id",
+        "geometry_origin",
+        "source_position",
+        "source_frame",
+        "meters_verified"
+      ]
+    },
+    {
+      "name": "dimensions-positive",
+      "passed": true,
+      "detail": 1139
+    },
+    {
+      "name": "relative-units-only",
+      "passed": true,
+      "detail": "No certified meters"
+    },
+    {
+      "name": "exact-anchor:annotation-0",
+      "passed": true,
+      "detail": [
+        -0.4324827194213867,
+        5.352859973907471,
+        -1.1356616020202637
+      ]
+    },
+    {
+      "name": "exact-anchor:A",
+      "passed": true,
+      "detail": [
+        -0.4324827194213867,
+        5.352859973907471,
+        -1.1356616020202637
+      ]
+    },
+    {
+      "name": "exact-anchor:annotation-1",
+      "passed": true,
+      "detail": [
+        1.1870577335357666,
+        -0.06964437663555145,
+        -1.214047908782959
+      ]
+    },
+    {
+      "name": "exact-anchor:MEETING-AREA-01",
+      "passed": true,
+      "detail": [
+        1.1870577335357666,
+        -0.06964437663555145,
+        -1.214047908782959
+      ]
+    },
+    {
+      "name": "exact-anchor:annotation-2",
+      "passed": true,
+      "detail": [
+        1.9970835447311401,
+        10.693077087402344,
+        -0.8033600449562073
+      ]
+    },
+    {
+      "name": "exact-anchor:B",
+      "passed": true,
+      "detail": [
+        1.9970835447311401,
+        10.693077087402344,
+        -0.8033600449562073
+      ]
+    },
+    {
+      "name": "exact-anchor:annotation-3",
+      "passed": true,
+      "detail": [
+        0.09792180359363556,
+        -2.586294174194336,
+        -0.17678631842136383
+      ]
+    },
+    {
+      "name": "exact-anchor:C",
+      "passed": true,
+      "detail": [
+        1.2176624536514282,
+        15.730862617492676,
+        -0.6000000238418579
+      ]
+    },
+    {
+      "name": "exact-anchor:ZONE-C",
+      "passed": true,
+      "detail": [
+        1.2176624536514282,
+        15.730862617492676,
+        -0.6000000238418579
+      ]
+    },
+    {
+      "name": "exact-anchor:C1",
+      "passed": true,
+      "detail": [
+        -0.01209495309740305,
+        16.846622467041016,
+        -1.100000023841858
+      ]
+    },
+    {
+      "name": "exact-anchor:C2",
+      "passed": true,
+      "detail": [
+        1.2017837762832642,
+        16.846622467041016,
+        -1.100000023841858
+      ]
+    },
+    {
+      "name": "exact-anchor:C3",
+      "passed": true,
+      "detail": [
+        2.2482309341430664,
+        16.846622467041016,
+        -1.100000023841858
+      ]
+    },
+    {
+      "name": "exact-anchor:C4",
+      "passed": true,
+      "detail": [
+        0.11348579078912735,
+        14.664887428283691,
+        -1.100000023841858
+      ]
+    },
+    {
+      "name": "exact-anchor:C5",
+      "passed": true,
+      "detail": [
+        1.201786756515503,
+        14.664887428283691,
+        -1.100000023841858
+      ]
+    },
+    {
+      "name": "exact-anchor:C6",
+      "passed": true,
+      "detail": [
+        2.3319454193115234,
+        14.664887428283691,
+        -1.100000023841858
+      ]
+    },
+    {
+      "name": "exact-anchor:D",
+      "passed": true,
+      "detail": [
+        1.9970835447311401,
+        22.751556396484375,
+        -0.75
+      ]
+    },
+    {
+      "name": "exact-anchor:ZONE-D",
+      "passed": true,
+      "detail": [
+        1.9970835447311401,
+        22.751556396484375,
+        -0.75
+      ]
+    },
+    {
+      "name": "exact-anchor:D1",
+      "passed": true,
+      "detail": [
+        0.908778965473175,
+        23.18096351623535,
+        -1.100000023841858
+      ]
+    },
+    {
+      "name": "exact-anchor:D2",
+      "passed": true,
+      "detail": [
+        0.9087813496589661,
+        21.905487060546875,
+        -1.100000023841858
+      ]
+    },
+    {
+      "name": "exact-anchor:D3",
+      "passed": true,
+      "detail": [
+        0.9087836146354675,
+        20.697145462036133,
+        -1.100000023841858
+      ]
+    },
+    {
+      "name": "exact-anchor:D4",
+      "passed": true,
+      "detail": [
+        3.143988847732544,
+        23.046703338623047,
+        -1.100000023841858
+      ]
+    },
+    {
+      "name": "exact-anchor:D5",
+      "passed": true,
+      "detail": [
+        3.1360769271850586,
+        21.916828155517578,
+        -1.0499999523162842
+      ]
+    },
+    {
+      "name": "exact-anchor:D6",
+      "passed": true,
+      "detail": [
+        3.143984317779541,
+        20.697145462036133,
+        -1.100000023841858
+      ]
+    },
+    {
+      "name": "exact-anchor:WAITING-AREA",
+      "passed": true,
+      "detail": [
+        -4.751476287841797,
+        16.002126693725586,
+        -0.6347408294677734
+      ]
+    },
+    {
+      "name": "exact-anchor:REST-AREA",
+      "passed": true,
+      "detail": [
+        -3.426234722137451,
+        19.590139389038086,
+        -0.9248632788658142
+      ]
+    },
+    {
+      "name": "exact-anchor:RECEPTION",
+      "passed": true,
+      "detail": [
+        -5.788876533508301,
+        8.894881248474121,
+        -1.0731165409088135
+      ]
+    },
+    {
+      "name": "floor-topology",
+      "passed": true,
+      "detail": "16709 vertices; 29526 triangles"
+    },
+    {
+      "name": "floor-every-vertex-converted-once",
+      "passed": true,
+      "detail": 16709
+    },
+    {
+      "name": "floor-triangle-indices",
+      "passed": true,
+      "detail": 29526
+    },
+    {
+      "name": "floor-guide-hidden-not-filled",
+      "passed": true,
+      "detail": "Measured guide separate from estimated design slab"
+    },
+    {
+      "name": "chair-surface:C1",
+      "passed": true,
+      "detail": [
+        -0.01209495309740305,
+        -1.0999999713897706,
+        -16.846622467041016
+      ]
+    },
+    {
+      "name": "chair-surface:C2",
+      "passed": true,
+      "detail": [
+        1.2017837762832642,
+        -1.0999999713897706,
+        -16.846622467041016
+      ]
+    },
+    {
+      "name": "chair-surface:C3",
+      "passed": true,
+      "detail": [
+        2.2482309341430664,
+        -1.0999999713897706,
+        -16.846622467041016
+      ]
+    },
+    {
+      "name": "chair-surface:C4",
+      "passed": true,
+      "detail": [
+        0.11348579078912735,
+        -1.0999999713897706,
+        -14.664887428283691
+      ]
+    },
+    {
+      "name": "chair-surface:C5",
+      "passed": true,
+      "detail": [
+        1.201786756515503,
+        -1.0999999713897706,
+        -14.664887428283691
+      ]
+    },
+    {
+      "name": "chair-surface:C6",
+      "passed": true,
+      "detail": [
+        2.3319454193115234,
+        -1.0999999713897706,
+        -14.664887428283691
+      ]
+    },
+    {
+      "name": "chair-surface:D1",
+      "passed": true,
+      "detail": [
+        0.908778965473175,
+        -1.0999999713897706,
+        -23.18096351623535
+      ]
+    },
+    {
+      "name": "chair-surface:D2",
+      "passed": true,
+      "detail": [
+        0.9087813496589661,
+        -1.0999999713897706,
+        -21.905487060546875
+      ]
+    },
+    {
+      "name": "chair-surface:D3",
+      "passed": true,
+      "detail": [
+        0.9087836146354675,
+        -1.0999999713897706,
+        -20.697145462036133
+      ]
+    },
+    {
+      "name": "chair-surface:D4",
+      "passed": true,
+      "detail": [
+        3.143988847732544,
+        -1.0999999713897706,
+        -23.046703338623047
+      ]
+    },
+    {
+      "name": "chair-surface:D5",
+      "passed": true,
+      "detail": [
+        3.1360769271850586,
+        -1.0500000190734864,
+        -21.916828155517578
+      ]
+    },
+    {
+      "name": "chair-surface:D6",
+      "passed": true,
+      "detail": [
+        3.143984317779541,
+        -1.0999999713897706,
+        -20.697145462036133
+      ]
+    },
+    {
+      "name": "levels-preserved",
+      "passed": true,
+      "detail": "0.30 relative unit step, no flattening"
+    },
+    {
+      "name": "measured-table-surface:C",
+      "passed": true,
+      "detail": "Top surface follows calibrated C/D group anchor"
+    },
+    {
+      "name": "measured-table-surface:D",
+      "passed": true,
+      "detail": "Top surface follows calibrated C/D group anchor"
+    },
+    {
+      "name": "table-legs-reach-floor:A",
+      "passed": true,
+      "detail": "No floating table legs"
+    },
+    {
+      "name": "table-legs-reach-floor:B",
+      "passed": true,
+      "detail": "No floating table legs"
+    },
+    {
+      "name": "table-legs-reach-floor:C",
+      "passed": true,
+      "detail": "No floating table legs"
+    },
+    {
+      "name": "table-legs-reach-floor:D",
+      "passed": true,
+      "detail": "No floating table legs"
+    },
+    {
+      "name": "camera-position:view:annotation:0",
+      "passed": true,
+      "detail": [
+        -2.2909014225006104,
+        -0.6327518224716187,
+        -6.878935813903809
+      ]
+    },
+    {
+      "name": "camera-fov:view:annotation:0",
+      "passed": true,
+      "detail": 85
+    },
+    {
+      "name": "camera-direction:view:annotation:0",
+      "passed": true,
+      "detail": [
+        0.8290036916732788,
+        -0.5505027770996094,
+        -0.09848680347204208
+      ]
+    },
+    {
+      "name": "camera-position:view:annotation:1",
+      "passed": true,
+      "detail": [
+        -2.698869466781616,
+        -0.7564377784729004,
+        -2.1411778926849365
+      ]
+    },
+    {
+      "name": "camera-fov:view:annotation:1",
+      "passed": true,
+      "detail": 85
+    },
+    {
+      "name": "camera-direction:view:annotation:1",
+      "passed": true,
+      "detail": [
+        0.7648571729660034,
+        -0.642358660697937,
+        -0.04867155849933624
+      ]
+    },
+    {
+      "name": "camera-position:view:annotation:2",
+      "passed": true,
+      "detail": [
+        1.8311508893966675,
+        -0.5394223928451538,
+        -6.283419609069824
+      ]
+    },
+    {
+      "name": "camera-fov:view:annotation:2",
+      "passed": true,
+      "detail": 85
+    },
+    {
+      "name": "camera-direction:view:annotation:2",
+      "passed": true,
+      "detail": [
+        0.019467899575829506,
+        0.9998047947883606,
+        -0.0033923983573913574
+      ]
+    },
+    {
+      "name": "camera-position:view:annotation:3",
+      "passed": true,
+      "detail": [
+        -2.5200188159942627,
+        -0.7118004560470581,
+        -2.3654165267944336
+      ]
+    },
+    {
+      "name": "camera-fov:view:annotation:3",
+      "passed": true,
+      "detail": 85
+    },
+    {
+      "name": "camera-direction:view:annotation:3",
+      "passed": true,
+      "detail": [
+        0.5100225210189819,
+        -0.8601502180099487,
+        -0.0043240562081336975
+      ]
+    },
+    {
+      "name": "camera-position:view:annotation:4",
+      "passed": true,
+      "detail": [
+        -3.4262733459472656,
+        -0.37242391705513,
+        -12.386368751525879
+      ]
+    },
+    {
+      "name": "camera-fov:view:annotation:4",
+      "passed": true,
+      "detail": 85
+    },
+    {
+      "name": "camera-direction:view:annotation:4",
+      "passed": true,
+      "detail": [
+        0.0,
+        0.9999999403953552,
+        3.5762786865234375e-07
+      ]
+    },
+    {
+      "name": "camera-position:view:annotation:5",
+      "passed": true,
+      "detail": [
+        -3.4262733459472656,
+        -0.37242391705513,
+        -12.386368751525879
+      ]
+    },
+    {
+      "name": "camera-fov:view:annotation:5",
+      "passed": true,
+      "detail": 85
+    },
+    {
+      "name": "camera-direction:view:annotation:5",
+      "passed": true,
+      "detail": [
+        0.0,
+        0.9999999403953552,
+        3.5762786865234375e-07
+      ]
+    },
+    {
+      "name": "camera-position:view:annotation:6",
+      "passed": true,
+      "detail": [
+        -0.4324827194213867,
+        0.06433844566345215,
+        -5.352859973907471
+      ]
+    },
+    {
+      "name": "camera-fov:view:annotation:6",
+      "passed": true,
+      "detail": 100
+    },
+    {
+      "name": "camera-direction:view:annotation:6",
+      "passed": true,
+      "detail": [
+        -0.9354664087295532,
+        0.3385659456253052,
+        -0.10137036442756653
+      ]
+    },
+    {
+      "name": "camera-position:view:wall-from-a",
+      "passed": true,
+      "detail": [
+        -0.4324827194213867,
+        0.06433844566345215,
+        -5.352859973907471
+      ]
+    },
+    {
+      "name": "camera-fov:view:wall-from-a",
+      "passed": true,
+      "detail": 100
+    },
+    {
+      "name": "camera-position:view:wall-from-b",
+      "passed": true,
+      "detail": [
+        1.9970835447311401,
+        0.39663994312286377,
+        -10.693077087402344
+      ]
+    },
+    {
+      "name": "camera-fov:view:wall-from-b",
+      "passed": true,
+      "detail": 100
+    },
+    {
+      "name": "camera-position:view:table-c-seats",
+      "passed": true,
+      "detail": [
+        1.9970835447311401,
+        6.150000095367432,
+        -16.980792999267578
+      ]
+    },
+    {
+      "name": "camera-fov:view:table-c-seats",
+      "passed": true,
+      "detail": 60
+    },
+    {
+      "name": "camera-position:view:table-d-seats",
+      "passed": true,
+      "detail": [
+        1.9970835447311401,
+        6.150000095367432,
+        -23.550090789794922
+      ]
+    },
+    {
+      "name": "camera-fov:view:table-d-seats",
+      "passed": true,
+      "detail": 60
+    },
+    {
+      "name": "camera-position:view:original-plan-near-clipped",
+      "passed": true,
+      "detail": [
+        1.9970835447311401,
+        18.149999618530273,
+        -10.481852531433105
+      ]
+    },
+    {
+      "name": "camera-fov:view:original-plan-near-clipped",
+      "passed": true,
+      "detail": 90
+    },
+    {
+      "name": "camera-position:view:dollhouse",
+      "passed": true,
+      "detail": [
+        17,
+        20,
+        4
+      ]
+    },
+    {
+      "name": "camera-fov:view:dollhouse",
+      "passed": true,
+      "detail": 55
+    },
+    {
+      "name": "camera-direction:view:dollhouse",
+      "passed": true,
+      "detail": [
+        -0.5668089389801025,
+        0.5038301348686218,
+        -0.6518303155899048
+      ]
+    },
+    {
+      "name": "camera-position:view:plan",
+      "passed": true,
+      "detail": [
+        -1,
+        31,
+        -12
+      ]
+    },
+    {
+      "name": "camera-fov:view:plan",
+      "passed": true,
+      "detail": 58
+    },
+    {
+      "name": "independent-editable-object",
+      "passed": true,
+      "detail": "sim:p1:C:desktop"
+    },
+    {
+      "name": "new-architecture-not-started",
+      "passed": true,
+      "detail": "No E, partitions or cafe replacement before Phase 02"
+    },
+    {
+      "name": "storage-does-not-intersect-table:A",
+      "passed": true,
+      "detail": "Desktop/storage world-space bounds"
+    },
+    {
+      "name": "storage-does-not-intersect-table:B",
+      "passed": true,
+      "detail": "Desktop/storage world-space bounds"
+    },
+    {
+      "name": "storage-does-not-intersect-table:D",
+      "passed": true,
+      "detail": "Desktop/storage world-space bounds"
+    },
+    {
+      "name": "plan-shows-entire-floor",
+      "passed": true,
+      "detail": [
+        [
+          0.3930248022079468,
+          0.8981537222862244,
+          32.849998474121094
+        ],
+        [
+          0.3930248022079468,
+          0.09772758930921555,
+          32.849998474121094
+        ],
+        [
+          0.6040576696395874,
+          0.8981537222862244,
+          32.849998474121094
+        ],
+        [
+          0.6040576696395874,
+          0.09772758930921555,
+          32.849998474121094
+        ]
+      ]
+    },
+    {
+      "name": "render-ready",
+      "passed": true,
+      "detail": "Cycles CPU reference lighting; operational circuits deferred"
+    }
+  ],
+  "passed": true,
+  "human_approval": false
+}
