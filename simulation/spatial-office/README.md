@@ -56,3 +56,22 @@ El operador corrigió la topología y suministró las dos referencias visuales. 
 ## Fases 03 y 04 vigentes
 
 Ver [Fase03 / C](../../docs/spatial-simulation/PHASE-03-REPORT.md) y [Fase04 / luz-tiempo](../../docs/spatial-simulation/PHASE-04-REPORT.md). Setup: `python3 simulation/spatial-office/setup-lighting.py`, con paquetes locales y hashes obligatorios. Ejecutar los constructores/checkers/renders en orden según los informes. No ejecutar el extractor de handoff en el checkout, no iniciar PlayCanvas ni exportar la escena definitiva sin aprobación.
+
+## Revisión arquitectónica R1 — flujo reproducible
+
+Se deriva del `output/office-phase04.blend` versionado, que no se sobrescribe. Modelos profesionales/atribución en `assets/archviz/`; fuentes y hashes verificados por el builder. Las referencias JPG son objetivos de calidad, no capturas de ejecución.
+
+```sh
+python3 simulation/spatial-office/setup-lighting.py
+python3 simulation/spatial-office/create-revision-assets.py
+blender -b --factory-startup -t 4 --python-exit-code 1 --python simulation/spatial-office/build-revision.py
+blender -b --factory-startup -t 4 --python-exit-code 1 --python simulation/spatial-office/check-revision.py
+python3 simulation/spatial-office/plan-revision.py
+blender -b --factory-startup -t 4 --python-exit-code 1 --python simulation/spatial-office/render-revision.py -- vertical-garden garden-detail glass-detail office lounge computer-detail comedor waiting reception WC booths cafe lighting-corner services corridor general-12 general-08 general-16 general-20 meeting lounge-lights-on-20 lounge-lights-one-20 lounge-lights-off-20
+python3 simulation/spatial-office/denoise-revision.py
+python3 simulation/spatial-office/review-revision.py
+```
+
+`render-revision.py -- --draft <vistas>` produce pruebas pequeñas; las capturas de revisión conservan originales y guías de albedo/normales. El script fija el hash del maestro al cargar y rechaza cambios durante la captura. `denoise-revision.py` verifica fuentes y reutiliza únicamente copias filtradas cuyo hash coincide.
+
+Abrir `output/office-phase04-revision.blend`; ejecutar su texto **START ENTITY visual controls** para el panel local de hora, puertas y luces. Los scripts deben acompañar a la carpeta `output`; las texturas están empaquetadas. El gate consolidado exige revisar realmente todas las imágenes y registrar `visual-review.json` antes de ejecutar `gate-revision.py`. Esa verificación nunca concede aceptación humana ni autoriza PlayCanvas.

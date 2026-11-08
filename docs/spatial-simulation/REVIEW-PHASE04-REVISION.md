@@ -10,6 +10,12 @@ Las imágenes siguientes son renders reales de este maestro, con filtrado OIDN y
 
 **Galería en actualización: se añaden las capturas conforme terminan. La entrega visual completa sigue en proceso.**
 
+## Lounge: mobiliario y luz indirecta
+
+![Lounge: mobiliario y luz indirecta](evidence/phase04-revision/renders/denoised/lounge.png)
+
+[Original Cycles sin filtrar](evidence/phase04-revision/renders/lounge.png) · hora 12:00 · [1440, 960] · hasta 96 muestras.
+
 ## Jardín vertical: cobertura completa
 
 ![Jardín vertical: cobertura completa](evidence/phase04-revision/renders/denoised/vertical-garden.png)

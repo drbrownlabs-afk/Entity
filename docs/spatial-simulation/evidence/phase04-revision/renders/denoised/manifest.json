@@ -88,6 +88,28 @@
       },
       "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
       "raw_mean_srgb": 0.3626788556575775
+    },
+    {
+      "name": "lounge",
+      "raw": "lounge.png",
+      "raw_sha256": "3ae73d52dcb01249a44e486790ed6b679cfbddcab2d7e69f5658e94da3cea539",
+      "filtered": "denoised/lounge.png",
+      "filtered_sha256": "b3a4bb88ea8b8d89b5fe035be3a1fffa77c05d721b936a38deb7e75f3b21154b",
+      "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "guides": {
+        "albedo": {
+          "path": ".runtime/revision-guides/review/lounge-Albedo.pfm",
+          "sha256": "99aeffbddbb08c15393959fb7209f0797fc72becf27b5c5e4a4248f041e96116",
+          "source_exr_sha256": "fdb4880609ed605d5abd64801efa94c44407c4a603c92ea746dec08fc3237516"
+        },
+        "normal": {
+          "path": ".runtime/revision-guides/review/lounge-Normal.pfm",
+          "sha256": "dab632e6a3935c786dd288e407f850ecd16a1c11a7127b7672c4da85fa753584",
+          "source_exr_sha256": "dd3c99dec0b1dbc440072392563c02e41eae02fc035dfc40fdecd160b0b65426"
+        }
+      },
+      "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
+      "raw_mean_srgb": 0.589860200881958
     }
   ],
   "no_reference_photo_edits": true,
