@@ -30,14 +30,14 @@ export function installVisuals(viewer,original){
  function layout(){
   const allowed=[...cameras.keys()].filter(id=>!world||world.entities[id]);
   const preferred=world?allowed.filter(id=>world.entities[id]?.capture_simulated_people):[];
-  const ordered=[...(selectedCamera?[selectedCamera]:[]),...preferred,...allowed].filter((id,i,a)=>a.indexOf(id)===i);
+  const ordered=[...(selectedCamera&&allowed.includes(selectedCamera)?[selectedCamera]:[]),...preferred,...allowed].filter((id,i,a)=>a.indexOf(id)===i);
   if(expandedCamera&&!allowed.includes(expandedCamera))expandedCamera=null;
   visibleIds=expandedCamera?[expandedCamera]:ordered.slice(0,innerWidth<650?2:4);
   record.hidden=!observerEnabled||!world||world.historical||world.branch!=='main'||!world.entities[selectedCamera||visibleIds[0]]?.capture_simulated_people;
   caption.textContent=world?(world.historical?'Reconstrucción · sin vídeo grabado · ':'CCTV virtual · ')+world.clock:'Vistas del escaneo original · Core desconectado';
   for(const [id,{entity,button}]of cameras){
    const slot=visibleIds.indexOf(id),state=world?.entities[id],column=slot%2,row=Math.floor(slot/2);
-   entity.enabled=security&&slot>=0&&state?.connectivity!=='disconnected';
+   entity.enabled=security&&slot>=0&&(!world||!!state)&&state?.connectivity!=='disconnected';
    const dimensions=app.graphicsDevice.clientRect;
    const height=.20*dimensions.width/(16/9)/dimensions.height;
    const bottom=.94-height-row*(height+.025);

@@ -67,7 +67,7 @@ export class ReplayWorld {
 }
 export class CoreWorld {
  constructor(api,token,site,run){this.api=api.replace(/\/$/,'');this.token=token;this.site=site;this.run=run;this.connected=true;this.mode='core';}
- async request(path,body){const r=await fetch(this.api+path,{method:body?'POST':'GET',headers:{Authorization:'Bearer '+this.token,'Content-Type':'application/json'},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(10000)});const value=await r.json();if(!r.ok)throw Error('Core '+r.status+': '+JSON.stringify(value.detail));return value;}
+ async request(path,body){const r=await fetch(this.api+path,{method:body?'POST':'GET',headers:{Authorization:'Bearer '+this.token,'Content-Type':'application/json'},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(10000)});const value=await r.json();if(!r.ok)throw Object.assign(Error('Core '+r.status+': '+JSON.stringify(value.detail)),{status:r.status});return value;}
  prefix(){return '/v1/sites/'+encodeURIComponent(this.site)+'/runs/'+encodeURIComponent(this.run);}
  async refresh(){this.state=await this.request(this.prefix()+'/world');return this.state;}
  read(){return this.state;}

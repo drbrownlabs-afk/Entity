@@ -17,6 +17,13 @@ try{
   for(const id of stateOnly?[]:['A','B','C','D','PERSON-CARLOS','PERSON-LUIS'])if(!initial.markers.includes(id))throw Error('Original/Core entity is not visible: '+id);
   const check={width,height,original_loaded:initial.loaded,native_renderer_ui:false,visible_people:initial.visual.avatarsPlaced,core_connected:false,mode:initial.mode};report.checks.push(check);
   await page.screenshot({path:stateOnly?'.runtime/phase09/native-state-'+width+'.png':'docs/evidence/phase09/native-dollhouse-'+width+'.png',timeout:120000});
+  if(!stateOnly){
+   const before=await page.evaluate(()=>window.officeSpatialApp.diagnostics().cameraPosition),bounds=await page.locator('#scene').boundingBox(),x=bounds.x+bounds.width*.8,y=bounds.y+bounds.height*.2;
+   if(width<700){const cdp=await context.newCDPSession(page);await cdp.send('Input.dispatchTouchEvent',{type:'touchStart',touchPoints:[{x,y,id:1}]});for(let i=1;i<=6;i++)await cdp.send('Input.dispatchTouchEvent',{type:'touchMove',touchPoints:[{x:x-i*10,y:y+i*3,id:1}]});await cdp.send('Input.dispatchTouchEvent',{type:'touchEnd',touchPoints:[]});await cdp.detach();}
+   else{await page.mouse.move(x,y);await page.mouse.down();await page.mouse.move(x-70,y+20,{steps:7});await page.mouse.up();}
+   await page.waitForFunction(p=>window.officeSpatialApp.diagnostics().cameraPosition.some((v,i)=>Math.abs(v-p[i])>.1),before,{timeout:10000});
+   await page.locator('.view-controls [data-view="dollhouse"]').click();await page.waitForFunction(p=>window.officeSpatialApp.diagnostics().cameraPosition.every((v,i)=>Math.abs(v-p[i])<.05),before,{timeout:15000});check[width<700?'touch_orbit_and_reset':'mouse_orbit_and_reset']=true;
+  }
   const select=async id=>stateOnly?page.evaluate(id=>window.officeSpatialApp.select(id),id):(width<700?page.locator('#world-markers [data-entity="'+id+'"]').tap():page.locator('#world-markers [data-entity="'+id+'"]').click());
   if(!stateOnly){const picked=await page.evaluate(async()=>{const p=window.officeSpatialApp.projectEntity('PERSON-CARLOS');return window.officeSpatialApp.pick(p.x,p.y);});if(picked!=='PERSON-CARLOS')throw Error('GPU picking did not resolve visible person mesh: '+picked);check.gpu_person_pick=true;}
   await select('PERSON-CARLOS');
@@ -39,7 +46,7 @@ try{
   if(!stateOnly)await page.locator('.view-controls [data-view="interior"]').click();if(!stateOnly)await page.waitForFunction(()=>window.officeSpatialApp.diagnostics().view==='interior');
   await page.locator('.view-controls [data-view="dollhouse"]').click();if(await page.evaluate(()=>window.officeSpatialApp.getSelected())!==selectBefore)throw Error('Navigation lost entity selection');
   check.view_roundtrip_keeps_selection=true;
-  await page.locator('#close-context').click();await select('C');await page.waitForFunction(()=>document.querySelectorAll('.desk-grid button').length===6);
+  await page.locator('#close-context').click();await select('D');await page.waitForFunction(()=>document.querySelectorAll('.desk-grid button').length===6);for(let n=1;n<=6;n++)if(!await page.locator('.desk-grid [data-open="D'+n+'"]').count())throw Error('Missing original individual desk D'+n);check.six_D_desks=true;await page.locator('#close-context').click();await select('C');await page.waitForFunction(()=>document.querySelectorAll('.desk-grid button').length===6);
   await page.locator('.desk-grid [data-open="C1"]').click();await page.waitForFunction(()=>document.querySelector('#context-body h1')?.textContent==='Puesto C1');
   const originalTime=await page.evaluate(()=>window.officeSpatialApp.getWorld().clock);
   await page.locator('#clock-play').click();await page.waitForTimeout(1200);await page.locator('#clock-play').click();

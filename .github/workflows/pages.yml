@@ -55,7 +55,7 @@ jobs:
           SITE_URL: https://drbrownlabs-afk.github.io/Entity/
           SOURCE_SHA: ${{ github.sha }}
         run: node scripts/check-public.mjs "$SITE_URL" "$SOURCE_SHA"
-      - name: Verify original Synthetic Office at its public Pages URL
+      - name: Verify native Dollhouse, GPU selection and touch navigation at the public URL
         env:
           OFFICE_WEB: https://drbrownlabs-afk.github.io/Entity
         run: node scripts/phase09/verify-original-office.mjs

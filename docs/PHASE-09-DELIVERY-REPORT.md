@@ -1,74 +1,53 @@
-# Fase 09 — entrega técnica y límites reales
+# Fase 09 — interfaz espacial y resultados comprobados
 
-Fecha: 2026-11-08. Rama `codex/phase-09-autonomous-plan`, [PR#2](https://github.com/drbrownlabs-afk/Entity/pull/2), sin fusionar. Estado integral **EN CURSO**, sin aprobación humana. Este informe no declara terminadas las rutas ni la correspondencia física C/D/E.
+Actualizado: 2026-11-08. Rama `codex/phase-09-autonomous-plan`, [PR #2](https://github.com/drbrownlabs-afk/Entity/pull/2), sin fusionar. Fase integral **EN CURSO**, sin aprobación automática ni avance a 10/11. Este informe sustituye sus versiones anteriores; la bitácora conserva la historia de ejecución.
 
-## Qué funciona
+## Cómo verla
 
-Core conserva organizaciones Entity/Inmerso/Cowork, personas ficticias, relaciones tipadas, reservas, visitas, permisos, dispositivos, eventos e historial en SQLite. Núcleo normaliza capacidades y adaptadores sin sustituir Core. Las APIs realizan comprobaciones y cambios persistentes; no son respuestas visuales predefinidas.
+**Aplicación pública:** https://drbrownlabs-afk.github.io/Entity/office.html
 
-Las oficinas A/B se reservan completas y tienen sus anclas originales. C es interno, no comercial. Hay exactamente 12 puestos públicos D1–D6/E1–E6. La ocupación observada no se deduce de tener una reserva. Reservas concurrentes, check-in/no-show, conflictos, reasignación y permisos están cubiertos. El fallo sintético HVAC-D produce impacto/ticket acotados y resolución auditable. Las ramas hipotéticas conservan el mundo oficial y revalidan la aplicación de propuestas.
+Abre directamente el lugar ORIGINAL, con interfaz ENTITY: Dollhouse, entidades, cámaras, ficha contextual, relaciones, eventos/memoria y timeline. En móvil la ficha ocupa la parte inferior y la navegación queda abajo. Se utilizan las referencias visuales del operador como guía de organización; no se sustituyó el lugar por una imagen o un edificio inventado.
 
-Recepción por pantalla utiliza invitación y código autorizado, registra la visita y contacta a Carlos mediante el mismo grafo/Núcleo. La app personal responde y el kiosco consulta esa respuesta. No se supone reconocimiento facial ni presencia física por responder un mensaje. Voz depende de las APIs del navegador; el micrófono real no está acreditado.
+El modo predeterminado se identifica como **Simulación autónoma / Sin Core conectado**. Reproduce la jornada, observaciones y rutas exportadas por el Core existente mediante `scripts/phase09/export-public-world.py`. Las reservas y capturas añadidas en este modo son **cambios de sesión**, no escrituras en un servidor. Recargar la página elimina esos cambios locales. Las reuniones con invitaciones requieren Core; no se finge haberlas creado localmente.
 
-Office, personal y kiosco siguen la misma jornada activa. El reloj pertenece al servidor, permite pausa/velocidad y se recupera pausado tras reinicio. El replay conserva la ejecución anterior. Las fechas se interpretan en la zona horaria de la sede, incluso con un navegador en Tokio. Los formularios conservan el trabajo del usuario durante los eventos del reloj. Los permisos se aplican en servidor por sede, rol y recurso; cerrar sesión revoca la sesión y descarta respuestas tardías.
+Para demostrarlo: selecciona Carlos y abre Relaciones; selecciona una cámara y abre el feed SIMULADO; registra evidencia de sesión; regresa a Dollhouse; abre C y selecciona un puesto; prueba una reserva y consulta Memoria. Reproduce/pausa el tramo calibrado con el mismo reloj. Los otros hitos permiten consultar estados operativos del guion, sin inventar poses humanas fuera de las rutas verificadas.
 
-El original de Synthetic Office se transmite desde SuperSplat mediante su SDK y voxels oficiales. Hay vista interior, superior y cámaras virtuales del mismo PlayCanvas. La evidencia espacial confirma a Luis en cinco instantes sobre un tramo físico de pasillo, observado por dos cámaras; las observaciones anónimas e historial se guardan en Core. La identidad solo se añade mediante una verificación sintética separada. Las poses y las colisiones se verifican en unidades del archivo original; la escala métrica del edificio no está certificada. La memoria permite filtrar por entidad/zona/tipo/intervalo; conserva el orden de cambios que comparten hora. La reconstrucción por hora muestra el cierre del instante y no ofrece vídeo grabado.
+## Integración y datos reales del software
 
-## Cómo ejecutar y reproducir
+Se conserva el SDK oficial SuperSplat/PlayCanvas como motor interno, sin su interfaz pública. El techo se recorta por cámara, sin alterar el SSOG: vistas interiores/CCTV conservan la captura completa. Avatares GLB, cámaras, selección GPU y overlays usan el mismo mundo y AppBase. Los líderes de las etiquetas apuntan al ancla original; mover una etiqueta de pantalla no mueve una entidad.
 
-```bash
-bash scripts/start-office.sh
-```
+La causa de la demo anterior sin personas era concreta: `operations.js` solo entregaba mundo tras un login y Pages no tenía Core HTTPS. Además, CCTV dependía de activar el modo Seguridad. La nueva entrada nativa monta datos explícitos de reproducción y conserva la conexión Core real opcional. Las herramientas anteriores siguen disponibles bajo `?diagnostic=1`.
 
-Requisitos y cuentas: [runbook](PHASE-09-RUNBOOK.md). El arranque construye Docker, provisiona sin borrar datos y sirve la web compilada. API en 8010, web en 4175; no requiere un Python instalado en el anfitrión. Las contraseñas generadas permanecen en el archivo local privado indicado por el script y no se incluyen en Git ni en el paquete.
+**Inventario vigente:** A/B son oficinas privadas de seis posiciones, reservables completas. C/D son grupos de seis puestos individuales cada uno: C1–C6 y D1–D6. No hay E ni C de staff. Doce anclas de sillas y las dos mesas C/D se verificaron con fotografías y rayos del collider ORIGINAL en [survey-cd-seats.json](evidence/phase09/survey/survey-cd-seats.json). Son referencias geométricas, no pruebas de ocupación ni rutas para sentarse. La migración v5 conserva IDs, reservas e historial antiguos; los recursos obsoletos se retiran de las jornadas nuevas sin reasignar reservas silenciosamente.
 
-La instancia persistente de esta sesión tiene la jornada `demo-phase09-20261108`, pausada en09:15:05 de Guayaquil. Luis tiene una pose del corredor calibrado y una reservaD3; esa reserva no se convierte en ocupación del puesto. Son 116 entidades y 21 eventos, conservados exactamente tras reiniciar Docker. Ver [live-demo.json](evidence/phase09/live-demo.json). Desde Memoria se puede reconstruir el tramo09:15:00–09:15:10; desde el reloj se pueden ejecutar los hitos posteriores del guion existente. Fuera del tramo calibrado no se inventa una posición humana.
+Core persiste organizaciones Entity/Inmerso/Cowork, personas ficticias, relaciones tipadas, estados, reservas, visitas, permisos, dispositivos, tareas y eventos en SQLite. Núcleo mantiene los adaptadores/capacidades separados del Core. La recepción, cuenta personal y terminales conservan su integración existente, con verificación autorizada y privacidad. No hay reconocimiento facial inventado. Una afiliación organizacional no se presenta como ubicación física observada.
 
-Visor público: https://drbrownlabs-afk.github.io/Entity/office.html. **Pages aloja el frontend y el archivo original remoto; las operaciones requieren configurar el mismo Core autenticado.** No existe un Core públicoHTTPS acreditado. El modo autónomo del centro comercial de la Fase07 se conserva y utiliza su fixture compartido; no se sustituye con él el coworking.
+Desde el engranaje puede conectarse la interfaz a una API Core autenticada configurable. La conexión real fue probada contra Docker8010, incluida creación de reserva desde la interfaz, lectura independiente de la API y cancelación con historial. La memoria utiliza los filtros y la reconstrucción histórica de Core; consultar el pasado no rebobina el servidor y desactiva las acciones de escritura.
 
-## Pruebas y evidencias
+## Evidencias y comprobaciones
 
-| Comprobación | Resultado y alcance |
+| Prueba | Resultado y referencia |
 |---|---|
-| Regresión backend |84 pruebas locales aprobadas; la corrección temporal posterior pasó dos pruebas dirigidas y el CI general/PR, confirmado también en el lote actual c0afef6. `backend-regression.txt`, `memory-regression.txt` |
-| JavaScript/build |11 pruebas aprobadas y compilación Vite aprobada. No acreditan por sí solas geometría ni hardware |
-| Interfaces HTTP reales |Chromium en 1280/390 px: aprobado: invitación, respuesta deCarlos, reservaA, consulta/agenda, UTC/Tokio, José/Carlos/kiosco sincronizados, formulario durante ticks, filtros históricos y privacidad tras logout. `reception-http-browser.json` |
-| Proceso y backup |Reinicio deuvicorn conserva 110 entidades y 19 eventos; backup SQLite integrity_checkPASS. `reception-http-process.json` |
-| Docker |Imagen comparada por SHA256 de cada archivoPython, estado/eventos conservados y parada/rearranque durante reproducción: reloj guardado exacto y pausa sin tiempo offline. `docker-office.json` |
-| Paquete limpio |Fuente c3879e3 extraída en carpeta nueva, venv/npmci nuevos, dependencias coherentes, build y E2E HTTP/reinicio/backupPASS; hashes y ausencia de secretos verificados. El informe vincula eseSHA, no un paquete posterior. `clean-package.json` |
-| Original y física |SSOG/voxels originales y navegación1440/390;22muestras del corredor libres,5poses Core/GLB y2CCTV; última prueba espacial e72a782/42443600314PASS. Archivos `original-integration.json`, `spatial-core.json`, `voxel-ground.json` y archivos históricos porrun |
+| Backend completo |86 pruebas PASS, 65.474s: `PYTHONPATH=services/entity-api .venv/bin/python -m unittest discover -s services/entity-api/tests`. Incluye conservación de reservas E antiguas, doce puestos nuevos y correspondencia exacta con rayos originales |
+| Frontend / build |15 pruebas Node PASS y compilación Vite PASS. Se comparan poses fraccionales de reproducción con salidas reales de Core; reservas de sesión, privacidad de oficina, idempotencia y relaciones/eventos |
+| Interfaz nativa con original |Fuente685dc5a, [run42451479996](https://github.com/drbrownlabs-afk/Entity/actions/runs/42451479996):1440×1000,1280×720,390×844 PASS. Carga SSOG/GLB, selección GPU, relaciones, feed con splats residentes, observación anónima normalizada, interior/Dollhouse, reloj, doce puestos y reserva de sesión. `native-interface.json` conserva SHA/run; capturas `native-*.png` |
+| URL pública real |Misma fuente685dc5a, [Pages42451479952](https://github.com/drbrownlabs-afk/Entity/actions/runs/42451479952) PASS con Chromium contra URL pública. [Informe](evidence/phase09/native-pages-interface.json), no deducción a partir del build |
+| CI general |Fuente685dc5a, [CI42451479977](https://github.com/drbrownlabs-afk/Entity/actions/runs/42451479977) Success: regresiones, paquete estático y extracción/instalación de fuente en carpeta limpia |
+| Core real en interfaz nativa |`CHROMIUM_PATH=/usr/bin/chromium node scripts/phase09/verify-native-core-http.mjs`,1440/390 PASS. [native-core-http.json](evidence/phase09/native-core-http.json); no se presenta como comprobación local del SSOG |
+| Recepción y aplicación personal |HTTP real/Chromium1280/390 PASS: tres clientes, invitación, respuesta de anfitrión, reservas, agenda en UTC/Tokio, permisos, revocación, borradores bajo ticks, filtros y privacidad. Reinicio conserva103entidades/19eventos; backupSQLite íntegro. `reception-http-browser.json` y `reception-http-process.json` |
+| Docker actualizado |`ENTITY_BUILD_CA_FILE=/etc/ssl/certs/ca-certificates.crt bash scripts/start-office.sh --api-only` y `PYTHONPATH=services/entity-api .venv/bin/python scripts/phase09/smoke-office-docker.py` PASS.112entidades/24eventos de la jornada de prueba conservados; reinicio durante reproducción conserva reloj guardado y recupera pausa. Hashes de fuentes dentro de imagen iguales. Core anterior8000 preservado. [docker-office.json](evidence/phase09/docker-office.json) |
+| ZIP extraído sin backend |Paquete685dc5a, comprobación1440/1280/390 PASS de estado/interacción sobre servidor estático4188, sin Python de aplicación/Core. [native-static-state.json](evidence/phase09/native-static-state.json). El proxy local403 impidió comprobar allí el SSOG; esa parte sí tiene pruebas remotas separadas |
 
-Comandos exactos y fallos previos están en [progreso](PHASE-09-PROGRESS.md) y [bitácora](AGENT-WORKLOG.md). Los informes incluyen SHA y enlace deActions cuando la prueba se ejecuta allí. Un informe parcial/interrumpido no se interpreta comoPASS; las evidencias anteriores se conservan porrun.
+Las ampliaciones posteriores de navegación por arrastre táctil/ratón y memoria Core se registran en bitácora/progreso y necesitan su propia ejecución remota; no se les atribuye retrospectivamente el PASS de685dc5a. Cada informe declara su fuente y alcance.
 
-## Defectos corregidos en esta continuación
+Fallos corregidos: login como prerequisito público; inventario Cstaff/D–E obsoleto; etiquetas que interceptaban toques; cámara móvil que recortaba D; feed fotografiado sin residencia de splats; timestamps/etiquetas de timeline no proporcionales; memoria Core sin filtro de entidad; borradores durante ticks y filtros temporales de memoria anteriores. Se conservan los informes fallidos por run. El primer comando local de unittest falló por `PYTHONPATH` omitido; corregido, no presentado como PASS.
 
-- Relojes/jornadas que podían divergir entre interfaces y mensajes que podían pertenecer a otra ejecución.
-- Pérdida del borrador de una acción cuando llegaban actualizaciones del mundo.
-- Uso inconsistente de la zona horaria del dispositivo en reservas/consultas.
-- Filtros de zona que podían trasladar al pasado una ubicación posterior con el mismo timestamp.
-- Arranque que requería venv local, permisos restrictivos del código copiado a Docker y caché npm fuera del workspace.
-- Encuadre superior que utilizaba límites exteriores del escaneo, transición fotografiada antes de terminar y yaw normalizado por el SDK. Se reutiliza la cámara oficial, sin modificar el edificio.
+## Límites que impiden cerrar la fase integral
 
-CI también detectó una edición con concurrency duplicado, corregida en51178c9. La comprobación móvil de orientación se ajustó al aspecto real del canvas. Son fallos de configuración/ensayo registrados, no supuestos fallos de autenticación del recurso original.
+- La captura ORIGINAL contiene artefactos y zonas borrosas fuera del interior. No equivale al acabado de un modelo CAD o de las imágenes de referencia. No se sustituyó por otro edificio para ocultarlo.
+- La demo pública muestra **dos personas** en **un minuto** de rutas verificadas. El guion operativo completo existe, pero no están calibrados los movimientos de todo el equipo durante toda la jornada, las poses sentadas ni todos los recorridos de recepción/descanso. No se inventan esas ubicaciones. La escala métrica real no está certificada.
+- No hay un Core persistente HTTPS público acreditado. Pages funciona autónomamente; sus acciones locales no son persistencia compartida. El Core Docker/API sí conserva estado y eventos.
+- Kiosco/cuenta personal/recepción requieren Core autenticado; voz, WebPush y Android físico no tienen validación integral. Las consultas estructuradas usan el grafo real, pero no se acredita un LLM remoto ejecutado.
+- Cámaras, puertas, sensores y actuadores del piloto son simulados/adaptadores de prueba. No se declara validado hardware del coworking ni sistema listo para producción.
 
-## Qué falta y qué impide cerrar toda la fase
-
-1. **Correspondencia geométrica C/D/E y sus puestos.** Se han localizado cuatro conjuntos de trabajo en las vistas revisadas; A/B están confirmadas y los otros dos constan como mobiliario observado sin correspondencia comercial. Todavía no hay evidencia suficiente para vincular los tres ambientes restantes ni localizar una quinta agrupación. Eso no demuestra su inexistencia. No se inventan mesas, sillas, coordenadas ni ambientes adicionales.
-2. **Jornada visual completa.** El servicio ejecuta la jornada y sus operaciones, pero solo hay un tramo humano físicamente calibrado de diez segundos. No se acredita que todos los empleados caminen, se sienten y descansen durante todo el día ni el recorrido visual integral Luis→D3→HVAC→E3. Las coordenadas pendientes no se rellenan con posiciones aproximadas.
-3. **Acceso compartido fuera del equipo de ejecución.** Falta desplegar y verificar un Core persistenteHTTPS accesible para clientes remotos; WebPush tampoco está integrado. Polling y una página estática no equivalen a notificaciones del sistema móvil.
-4. **IA de proveedor y voz en dispositivos reales.** Consultas guiadas usan datos/evidencias Core; el SDK tiene pruebas controladas. No se ha ejecutado un LLM remoto ni una sesión de voz/micrófono/Android físico. OpenClaw y las fases10/11 planificadas no se activan aquí.
-5. **Piloto físico.** Cámaras, control de acceso, sensores y actuadores de esta jornada son sintéticos o adaptadores de prueba. Los ensayos previos RTSP/MQTT locales se conservan, pero no certifican cámaras/puertas/HVAC de un coworking real. Ese hardware no se inventa ni constituye una prueba ya realizada.
-
-Los dos primeros puntos impiden declarar cerrado el flujo espacial integral. Los demás delimitan el uso actual y la preparación de un piloto; el hardware diferido no se convierte en un requisito nuevo de aprobación de la simulación. No se solicita aprobación de fase mientras queden esos gates sin demostrar.
-
-## Última verificación remota
-
-Fuente verificada: [c0afef6](https://github.com/drbrownlabs-afk/Entity/commit/c0afef6). Los cinco workflows terminaron **Success**:
-
-- [CI general y paquete limpio](https://github.com/drbrownlabs-afk/Entity/actions/runs/42444521584).
-- [CI del PR](https://github.com/drbrownlabs-afk/Entity/actions/runs/42444524894).
-- [Original, colisiones y vistas1440/390](https://github.com/drbrownlabs-afk/Entity/actions/runs/42444521616).
-- [Personaje, dos cámaras, observación e historia](https://github.com/drbrownlabs-afk/Entity/actions/runs/42444521608).
-- [Pages y navegador sobre la URL pública](https://github.com/drbrownlabs-afk/Entity/actions/runs/42444521644).
-
-El artefacto **entity-delivery** está listado en el CI general e incluye fuente/web/manifiesto y pruebas de la extracción limpia del lote actual. El manifiesto publicado en gh-pages señala exactamente el SHA anterior. La URL pública se verificó con navegador autorizado de Actions; el proxy local no se utiliza como prueba de disponibilidad pública. Ver [ci-verification.json](evidence/phase09/ci-verification.json). Los fallos anteriores permanecen en el historial, sin presentarlos como resultados del último árbol.
+No se solicita aprobación de la Fase09 como si estos pendientes estuvieran terminados. Los detalles de ejecución y checkpoints continúan en [progreso](PHASE-09-PROGRESS.md) y [bitácora](AGENT-WORKLOG.md).
