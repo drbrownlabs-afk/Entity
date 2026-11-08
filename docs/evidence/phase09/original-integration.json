@@ -1,10 +1,23 @@
 {
-  "tested_commit": "85fb5ebad088f6a338e8ef25b7627f3e5dfcbd3b",
-  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42442567593",
+  "tested_commit": "7fe5a1119285da90f29bab62c7c0815a4f5226ed",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42442646758",
   "source": "Original published Synthetic Office SSOG through official SuperSplat viewer package",
   "checks": [
     {
       "width": 1440,
+      "dollhouse_camera_verified": {
+        "position": [
+          1.9745224714279175,
+          18.06407356262207,
+          -10.439971923828125
+        ],
+        "forward": [
+          2.776814368458641e-11,
+          -0.9999999999054328,
+          -0.000013752622179317798
+        ],
+        "near_clip": 17.564073564283056
+      },
       "loaded": true,
       "walkAllowed": true,
       "mode": "walk",
@@ -161,6 +174,19 @@
     },
     {
       "width": 390,
+      "dollhouse_camera_verified": {
+        "position": [
+          1.9312899112701416,
+          17.8994197845459,
+          -10.363268852233887
+        ],
+        "forward": [
+          5.7714554500915923e-8,
+          -0.9999998736508311,
+          -0.0005026910767389229
+        ],
+        "near_clip": 17.399421982948404
+      },
       "loaded": true,
       "walkAllowed": true,
       "mode": "walk",
