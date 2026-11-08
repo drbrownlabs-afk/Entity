@@ -1,0 +1,71 @@
+{
+  "models": [
+    {
+      "name": "GlamVelvetSofa",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/8f492390ddc7a2ae221a1369ef560589cf8c70fb/Models/GlamVelvetSofa/glTF-Binary/GlamVelvetSofa.glb",
+      "file": "simulation/spatial-office/assets/archviz/GlamVelvetSofa.glb",
+      "sha256": "67202c74a1a33377771f162dc7fad612a6c9bd51ee15124c488e9851d9ac5266",
+      "bytes": 3149844,
+      "license_readme_sha256": "3c96b73fb52169fc1b79873dd70b4b783c3b04204f3033fe949247077fd59652",
+      "upstream_commit": "8f492390ddc7a2ae221a1369ef560589cf8c70fb"
+    },
+    {
+      "name": "SheenWoodLeatherSofa",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/8f492390ddc7a2ae221a1369ef560589cf8c70fb/Models/SheenWoodLeatherSofa/glTF-Binary/SheenWoodLeatherSofa.glb",
+      "file": "simulation/spatial-office/assets/archviz/SheenWoodLeatherSofa.glb",
+      "sha256": "5349e042ad41e695e89f1110230c4ee0c75b2bc62ef830c7016be6ecf665bfb6",
+      "bytes": 10107912,
+      "license_readme_sha256": "9b935a1afd709a187df9ab2ee4556d252ff58df324538fa23e4166439f9d529d",
+      "upstream_commit": "8f492390ddc7a2ae221a1369ef560589cf8c70fb"
+    },
+    {
+      "name": "SheenChair",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/8f492390ddc7a2ae221a1369ef560589cf8c70fb/Models/SheenChair/glTF-Binary/SheenChair.glb",
+      "file": "simulation/spatial-office/assets/archviz/SheenChair.glb",
+      "sha256": "f0af2a2b102d28d540236306ae19f8fb36842df76bd38cf76f063f9bd2853399",
+      "bytes": 4125648,
+      "license_readme_sha256": "7bbb705e0532711b80a512161da64ab0f2a719412121daf24b8177bdbdbaca7a",
+      "upstream_commit": "8f492390ddc7a2ae221a1369ef560589cf8c70fb"
+    },
+    {
+      "name": "DiffuseTransmissionPlant",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/8f492390ddc7a2ae221a1369ef560589cf8c70fb/Models/DiffuseTransmissionPlant/glTF-Binary/DiffuseTransmissionPlant.glb",
+      "file": "simulation/spatial-office/assets/archviz/DiffuseTransmissionPlant.glb",
+      "sha256": "1748be8847e24bdd5cb6c5ac2bfd0afe8f11efc4f85091148550555e47c7ee83",
+      "bytes": 5759100,
+      "license_readme_sha256": "3108a77ae8ca657843f8adea6c5dac8e380b18eb535ec9bfa596f29eb9a2639b",
+      "upstream_commit": "8f492390ddc7a2ae221a1369ef560589cf8c70fb"
+    },
+    {
+      "name": "GlassVaseFlowers",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/8f492390ddc7a2ae221a1369ef560589cf8c70fb/Models/GlassVaseFlowers/glTF-Binary/GlassVaseFlowers.glb",
+      "file": "simulation/spatial-office/assets/archviz/GlassVaseFlowers.glb",
+      "sha256": "faa2e19329961652b585cc62132ef50b1d95dca8a6a2fd63409158e680563761",
+      "bytes": 1819824,
+      "license_readme_sha256": "fc5962a2796263c4ccf18beb515e1b49cf23f830fbd942e8fc172e2497874b81",
+      "upstream_commit": "8f492390ddc7a2ae221a1369ef560589cf8c70fb"
+    },
+    {
+      "name": "SpecularSilkPouf",
+      "url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/8f492390ddc7a2ae221a1369ef560589cf8c70fb/Models/SpecularSilkPouf/glTF-Binary/SpecularSilkPouf.glb",
+      "file": "simulation/spatial-office/assets/archviz/SpecularSilkPouf.glb",
+      "sha256": "a028bc6a7ac8981044fba414c1de633ac775b53602ad386f8ece74aec81d1006",
+      "bytes": 4632512,
+      "license_readme_sha256": "363595a7e09ec439719dcdbbfa02186050a06d5277fd9048bc23c1e35d2a088f",
+      "upstream_commit": "8f492390ddc7a2ae221a1369ef560589cf8c70fb"
+    }
+  ],
+  "note": "Official Khronos redistribution; attribution in accompanying README per asset. Professional source assets; dimensions/placements adapted for this reconstruction.",
+  "environments": [
+    {
+      "name": "potsdamer_platz_1k",
+      "file": "simulation/spatial-office/assets/archviz/potsdamer_platz_1k.hdr",
+      "url": "https://raw.githubusercontent.com/pmndrs/drei-assets/456060a26bbeb8fdf79326f224b6d99b8bcce736/hdri/potsdamer_platz_1k.hdr",
+      "sha256": "7afe4c2f9700ee78c7477c53fa355463d7dda1fdede401432d6b5f9ff0a95696",
+      "upstream_commit": "456060a26bbeb8fdf79326f224b6d99b8bcce736",
+      "license": "CC0, HDRI Haven / Poly Haven",
+      "attribution": "HDRI Haven, redistributed by pmndrs/drei-assets; original attribution retained",
+      "role": "Generic photographic reflection/daylight context, not the actual site or measured geography"
+    }
+  ]
+}
