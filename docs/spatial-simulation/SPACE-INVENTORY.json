@@ -1,0 +1,1571 @@
+{
+  "schema_version": "1.0",
+  "scene_id": "a972d838",
+  "source_commit": "40850d120a82a431b3e6ccc824e7bc734c379e5f",
+  "coordinate_system": {
+    "handedness": "right",
+    "up": "+Y",
+    "horizontal": [
+      "X",
+      "Z"
+    ],
+    "meters_verified": false,
+    "blender_conversion": "(x,y,z) -> (x,-z,y); rotation +90 degrees about X; determinant+1; scale1 preserves relative units"
+  },
+  "bounds": {
+    "collision_grid": {
+      "min": [
+        -9.600000000000001,
+        -3.5999999999999996,
+        -29.4
+      ],
+      "max": [
+        5.6,
+        7.200000000000001,
+        2.400000000000002
+      ]
+    },
+    "scene": {
+      "min": [
+        -17.09414995151384,
+        -14.098316714250554,
+        -32.24982657916315
+      ],
+      "max": [
+        12.786369347054853,
+        10.849161365599818,
+        7.83042857621987
+      ]
+    },
+    "note": "global data bounds, NOT measured room/wall bounds"
+  },
+  "voxel_resolution_relative_units": 0.05,
+  "inventory": [
+    {
+      "id": "annotation-0",
+      "name": "6-Person Office Bench System",
+      "kind": "Zone",
+      "position": [
+        -0.4324827070899584,
+        -1.1356615558262035,
+        -5.352859958159687
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "authored-original-anchor",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "referenceFor",
+          "target": "A"
+        }
+      ],
+      "semantic_note": "Annotation is a point, not the boundary or size of a room"
+    },
+    {
+      "id": "A",
+      "name": "Oficina privada A",
+      "kind": "Office",
+      "position": [
+        -0.4324827070899584,
+        -1.1356615558262035,
+        -5.352859958159687
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "authored-original-anchor; operator-confirmed-role",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "locatedIn",
+          "target": "annotation-0"
+        }
+      ],
+      "capacity": 6,
+      "capacity_note": "Private group six; meeting title says8 but complete chair count not independently measured",
+      "reservable_unit": "whole-environment"
+    },
+    {
+      "id": "A-INTERNAL-1",
+      "name": "A posición interna 1",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "A"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "A-INTERNAL-2",
+      "name": "A posición interna 2",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "A"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "A-INTERNAL-3",
+      "name": "A posición interna 3",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "A"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "A-INTERNAL-4",
+      "name": "A posición interna 4",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "A"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "A-INTERNAL-5",
+      "name": "A posición interna 5",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "A"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "A-INTERNAL-6",
+      "name": "A posición interna 6",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "A"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "CAM-01",
+      "name": "Vista virtual original 1",
+      "kind": "Camera",
+      "position": [
+        -2.2909014225006104,
+        -0.6327518224716187,
+        -6.878935813903809
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "authored-original-camera",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "target": [
+        -1.063821250294442,
+        -0.7785310259698787,
+        -6.064088128799655
+      ],
+      "fov_degrees": 85,
+      "physical_mount_verified": false,
+      "relations": [
+        {
+          "type": "covers",
+          "target": "annotation-0"
+        }
+      ]
+    },
+    {
+      "id": "annotation-1",
+      "name": "8-Person Conference Table",
+      "kind": "Zone",
+      "position": [
+        1.1870577758066334,
+        -1.2140478639523282,
+        0.06964437653360278
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "authored-original-anchor",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "referenceFor",
+          "target": "MEETING-AREA-01"
+        }
+      ],
+      "semantic_note": "Annotation is a point, not the boundary or size of a room"
+    },
+    {
+      "id": "MEETING-AREA-01",
+      "name": "Mesa negra de reuniones",
+      "kind": "EventSpace",
+      "position": [
+        1.1870577758066334,
+        -1.2140478639523282,
+        0.06964437653360278
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "authored-original-anchor; operator-confirmed-role",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "locatedIn",
+          "target": "annotation-1"
+        }
+      ],
+      "capacity": null,
+      "capacity_note": "Private group six; meeting title says8 but complete chair count not independently measured",
+      "reservable_unit": "whole-environment"
+    },
+    {
+      "id": "CAM-02",
+      "name": "Vista virtual original 2",
+      "kind": "Camera",
+      "position": [
+        -2.698869466781616,
+        -0.7564377784729004,
+        -2.1411778926849365
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "authored-original-camera",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "target": [
+        -1.5667378200804414,
+        -0.82848103010642,
+        -1.1903667760348111
+      ],
+      "fov_degrees": 85,
+      "physical_mount_verified": false,
+      "relations": [
+        {
+          "type": "covers",
+          "target": "annotation-1"
+        }
+      ]
+    },
+    {
+      "id": "annotation-2",
+      "name": "6-Person Office Bench System",
+      "kind": "Zone",
+      "position": [
+        1.9970835412267196,
+        -0.8033600527595,
+        -10.693077551494174
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "authored-original-anchor",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "referenceFor",
+          "target": "B"
+        }
+      ],
+      "semantic_note": "Annotation is a point, not the boundary or size of a room"
+    },
+    {
+      "id": "B",
+      "name": "Oficina privada B",
+      "kind": "Office",
+      "position": [
+        1.9970835412267196,
+        -0.8033600527595,
+        -10.693077551494174
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "authored-original-anchor; operator-confirmed-role",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "locatedIn",
+          "target": "annotation-2"
+        }
+      ],
+      "capacity": 6,
+      "capacity_note": "Private group six; meeting title says8 but complete chair count not independently measured",
+      "reservable_unit": "whole-environment"
+    },
+    {
+      "id": "B-INTERNAL-1",
+      "name": "B posición interna 1",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "B"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "B-INTERNAL-2",
+      "name": "B posición interna 2",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "B"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "B-INTERNAL-3",
+      "name": "B posición interna 3",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "B"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "B-INTERNAL-4",
+      "name": "B posición interna 4",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "B"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "B-INTERNAL-5",
+      "name": "B posición interna 5",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "B"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "B-INTERNAL-6",
+      "name": "B posición interna 6",
+      "kind": "Desk",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "B"
+        }
+      ],
+      "note": "Existing logical ID; individual chair location unmeasured; do not place at group anchor"
+    },
+    {
+      "id": "CAM-03",
+      "name": "Vista virtual original 3",
+      "kind": "Camera",
+      "position": [
+        1.8311508893966675,
+        -0.5394223928451538,
+        -6.283419609069824
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "authored-original-camera",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "target": [
+        1.887405199081167,
+        -0.5492254865430951,
+        -9.172446737881645
+      ],
+      "fov_degrees": 85,
+      "physical_mount_verified": false,
+      "relations": [
+        {
+          "type": "covers",
+          "target": "annotation-2"
+        }
+      ]
+    },
+    {
+      "id": "annotation-3",
+      "name": "Fito Wall",
+      "kind": "Zone",
+      "position": [
+        0.09792180086598856,
+        -0.17678632222835267,
+        2.586294204317113
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "authored-original-anchor",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "relations": [],
+      "semantic_note": "Annotation is a point, not the boundary or size of a room"
+    },
+    {
+      "id": "CAM-04",
+      "name": "Vista virtual original 4",
+      "kind": "Camera",
+      "position": [
+        -2.5200188159942627,
+        -0.7118004560470581,
+        -2.3654165267944336
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "authored-original-camera",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/original-viewer-settings.json"
+      ],
+      "target": [
+        -1.0462618929210763,
+        -0.7242954121367714,
+        0.12006608542043518
+      ],
+      "fov_degrees": 85,
+      "physical_mount_verified": false,
+      "relations": [
+        {
+          "type": "covers",
+          "target": "annotation-3"
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Grupo C",
+      "kind": "Office",
+      "position": [
+        1.2176624745523115,
+        -0.6000000000000001,
+        -15.730862450113671
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "group table surface",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+        "view": "table-c-seats",
+        "screen": [
+          0.4,
+          0.7
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [],
+      "reservable_unit": null,
+      "chair_anchor_envelope": {
+        "min": [
+          -0.012094953384002904,
+          -1.1000000000000019,
+          -16.846622482376628
+        ],
+        "max": [
+          2.3319453681264473,
+          -1.0999999999999979,
+          -14.664887640069987
+        ],
+        "extent": [
+          2.34404032151045,
+          3.9968028886505635e-15,
+          2.181734842306641
+        ],
+        "meaning": "Spread of six sampled chair surface anchors, NOT table dimensions or room boundaries"
+      }
+    },
+    {
+      "id": "ZONE-C",
+      "name": "ZONE-C",
+      "kind": "Zone",
+      "position": [
+        1.2176624745523115,
+        -0.6000000000000001,
+        -15.730862450113671
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "group reference",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+        "view": "table-c-seats",
+        "screen": [
+          0.4,
+          0.7
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [],
+      "reservable_unit": null
+    },
+    {
+      "id": "C1",
+      "name": "C1",
+      "kind": "Desk",
+      "position": [
+        -0.012094953384002904,
+        -1.1000000000000019,
+        -16.846622482376624
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+        "view": "table-c-seats",
+        "screen": [
+          0.26,
+          0.52
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "C"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "C2",
+      "name": "C2",
+      "kind": "Desk",
+      "position": [
+        1.201783722560563,
+        -1.1,
+        -16.846622482376624
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+        "view": "table-c-seats",
+        "screen": [
+          0.405,
+          0.52
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "C"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "C3",
+      "name": "C3",
+      "kind": "Desk",
+      "position": [
+        2.2482308569955327,
+        -1.0999999999999979,
+        -16.846622482376628
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+        "view": "table-c-seats",
+        "screen": [
+          0.53,
+          0.52
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "C"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "C4",
+      "name": "C4",
+      "kind": "Desk",
+      "position": [
+        0.11348578813253829,
+        -1.0999999999999979,
+        -14.664887640069987
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+        "view": "table-c-seats",
+        "screen": [
+          0.275,
+          0.845
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "C"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "C5",
+      "name": "C5",
+      "kind": "Desk",
+      "position": [
+        1.201786714167286,
+        -1.1000000000000003,
+        -14.664887640069987
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+        "view": "table-c-seats",
+        "screen": [
+          0.405,
+          0.845
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "C"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "C6",
+      "name": "C6",
+      "kind": "Desk",
+      "position": [
+        2.3319453681264473,
+        -1.1000000000000005,
+        -14.664887640069987
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-c-seats.jpg",
+        "view": "table-c-seats",
+        "screen": [
+          0.54,
+          0.845
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "C"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "D",
+      "name": "Grupo D",
+      "kind": "Office",
+      "position": [
+        1.9970835447311401,
+        -0.7499999999999987,
+        -22.751555700764428
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "group table surface",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+        "view": "table-d-seats",
+        "screen": [
+          0.5,
+          0.625
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [],
+      "reservable_unit": null,
+      "chair_anchor_envelope": {
+        "min": [
+          0.9087789657886103,
+          -1.1000000000000003,
+          -23.180963424327686
+        ],
+        "max": [
+          3.1439888739722046,
+          -1.0500000000000005,
+          -20.697145525282888
+        ],
+        "extent": [
+          2.2352099081835943,
+          0.04999999999999982,
+          2.483817899044798
+        ],
+        "meaning": "Spread of six sampled chair surface anchors, NOT table dimensions or room boundaries"
+      }
+    },
+    {
+      "id": "ZONE-D",
+      "name": "ZONE-D",
+      "kind": "Zone",
+      "position": [
+        1.9970835447311401,
+        -0.7499999999999987,
+        -22.751555700764428
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "group reference",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+        "view": "table-d-seats",
+        "screen": [
+          0.5,
+          0.625
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [],
+      "reservable_unit": null
+    },
+    {
+      "id": "D1",
+      "name": "D1",
+      "kind": "Desk",
+      "position": [
+        0.9087789657886103,
+        -1.0999999999999988,
+        -23.180963424327686
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+        "view": "table-d-seats",
+        "screen": [
+          0.37,
+          0.555
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "D"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "D2",
+      "name": "D2",
+      "kind": "Desk",
+      "position": [
+        0.9087813590757892,
+        -1.0999999999999994,
+        -21.905486710796293
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+        "view": "table-d-seats",
+        "screen": [
+          0.37,
+          0.745
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "D"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "D3",
+      "name": "D3",
+      "kind": "Desk",
+      "position": [
+        0.9087836263907754,
+        -1.0999999999999992,
+        -20.697145525282888
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+        "view": "table-d-seats",
+        "screen": [
+          0.37,
+          0.925
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "D"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "D4",
+      "name": "D4",
+      "kind": "Desk",
+      "position": [
+        3.1439888739722046,
+        -1.1000000000000003,
+        -23.04670245346654
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+        "view": "table-d-seats",
+        "screen": [
+          0.637,
+          0.575
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "D"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "D5",
+      "name": "D5",
+      "kind": "Desk",
+      "position": [
+        3.136076941047852,
+        -1.0500000000000005,
+        -21.916828807743638
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+        "view": "table-d-seats",
+        "screen": [
+          0.637,
+          0.745
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "D"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "D6",
+      "name": "D6",
+      "kind": "Desk",
+      "position": [
+        3.1439842279052175,
+        -1.0999999999999996,
+        -20.697145525282888
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "original-voxel-ray-and-visual-verified",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/calibrated-resources.json"
+      ],
+      "anchor_kind": "chair surface; not a seated-person pose",
+      "provenance": {
+        "source": "original SSOG + official original collider",
+        "evidence": "docs/evidence/phase09/survey/survey-cd-seats.json",
+        "image": "docs/evidence/phase09/survey/table-d-seats.jpg",
+        "view": "table-d-seats",
+        "screen": [
+          0.637,
+          0.925
+        ],
+        "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42448696140",
+        "metric_scale_verified": false
+      },
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "D"
+        }
+      ],
+      "reservable_unit": "individual"
+    },
+    {
+      "id": "WAITING-AREA",
+      "name": "Espera de visitantes",
+      "kind": "WaitingArea",
+      "position": [
+        -4.751476330788986,
+        -0.63474085001273,
+        -16.002127587705036
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "reviewed-original-splat-depth-anchor",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/semantic-annotations.json"
+      ],
+      "provenance": {
+        "entity_id": "WAITING-AREA",
+        "kind": "WaitingArea",
+        "source": "native-splat-depth-pick",
+        "evidence": "docs/evidence/phase09/survey/rear-hall.jpg",
+        "screen": [
+          0.3,
+          0.6
+        ],
+        "confidence": "visual-group-verified",
+        "reservable": false,
+        "seating_capacity": 3,
+        "capacity_source": "visual-count; docs/evidence/phase09/survey/wall-from-a.jpg and wall-from-b.jpg"
+      },
+      "capacity": 3,
+      "note": "Grupo de sillas claras visible a la izquierda del recorrido. Ancla de grupo, no posición individual de asiento."
+    },
+    {
+      "id": "REST-AREA",
+      "name": "Booths de descanso",
+      "kind": "Zone",
+      "position": [
+        -3.426234714858262,
+        -0.9248632498038959,
+        -19.5901388836479
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "reviewed-original-splat-depth-anchor",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/semantic-annotations.json"
+      ],
+      "provenance": {
+        "entity_id": "REST-AREA",
+        "kind": "Zone",
+        "source": "native-splat-depth-pick",
+        "evidence": "docs/evidence/phase09/survey/walk-2.jpg",
+        "screen": [
+          0.5,
+          0.85
+        ],
+        "confidence": "visual-group-verified",
+        "reservable": false,
+        "individual_count_verified": false
+      },
+      "capacity": null,
+      "note": "Grupo de booths curvos de madera y verde. No reservables; cantidad individual pendiente de inventario completo."
+    },
+    {
+      "id": "RECEPTION",
+      "name": "Recepción inteligente · dos sillas negras",
+      "kind": "Reception",
+      "position": [
+        -5.788876393261972,
+        -1.0731165959404187,
+        -8.894881576083774
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "reviewed-original-splat-depth-anchor",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/semantic-annotations.json"
+      ],
+      "provenance": {
+        "entity_id": "RECEPTION",
+        "kind": "Reception",
+        "source": "two-view-original-splat-depth-picks",
+        "evidence": "docs/evidence/phase09/survey/survey-seat-picks.json; reception-a-picks.jpg and reception-b-picks.jpg",
+        "confidence": "sector-verified; exact-kiosk-mount-not-measured",
+        "screen": [
+          0.6,
+          0.6
+        ],
+        "seating_capacity": 2,
+        "capacity_source": "visual-count; two original black chairs",
+        "reservable": false,
+        "human_receptionist": false
+      },
+      "capacity": 2,
+      "note": "Sector de las dos sillas negras, comprobado en dos vistas del archivo original. Ancla de referencia del sector; no afirma posición exacta de una pantalla física."
+    },
+    {
+      "id": "CIRCULATION-01",
+      "name": "Pasillo calibrado",
+      "kind": "Zone",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "measured-floor-samples; boundary unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "docs/evidence/phase09/office-navigation.json"
+      ],
+      "geometry": "WALKABLE-FLOOR.obj",
+      "note": "Navigation floor coverage only, not an architectural polygon"
+    },
+    {
+      "id": "ACCESS-01",
+      "name": "Acceso autorizado de ensayo",
+      "kind": "AccessPoint",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "services/entity-api/app/office/provision.py"
+      ],
+      "note": "Logical access policy object; physical doorway and pose not calibrated"
+    },
+    {
+      "id": "OBSERVED-WORKGROUP-01",
+      "name": "Inventario observado · grupo C",
+      "kind": "InventoryItem",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "visual-verified-group-reference",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/observed-inventory.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "C"
+        }
+      ],
+      "note": "Alias/evidence of C/D; not another table",
+      "provenance": {
+        "name": "Inventario observado · grupo C",
+        "description": "Seis sillas verificadas en el grupo C del archivo original; correspondencia confirmada por el operador.",
+        "parent_resource": "C",
+        "capacity_observed": 6,
+        "reservable": false,
+        "commercial": false,
+        "not_additional_capacity": true,
+        "position": null,
+        "resource_mapping": "C",
+        "spatial_mapping": "operator-confirmed A/B/C/D; original chair anchors calibrated separately",
+        "source": "visual-inspection-original-SSOG",
+        "confidence": "group-role-confirmed; six visible seats",
+        "evidence": [
+          "docs/evidence/phase09/survey/original-plan-near-clipped.jpg",
+          "docs/evidence/phase09/survey/original-plan-far.jpg"
+        ],
+        "location_in_reference_image": "Tercer conjunto de trabajo contando desde la mesa negra de reuniones hacia los booths; mesa horizontal en el centro de original-plan-near-clipped.jpg."
+      }
+    },
+    {
+      "id": "OBSERVED-WORKGROUP-02",
+      "name": "Inventario observado · grupo D",
+      "kind": "InventoryItem",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "visual-verified-group-reference",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "worlds/synthetic-office/observed-inventory.json"
+      ],
+      "relations": [
+        {
+          "type": "partOf",
+          "target": "D"
+        }
+      ],
+      "note": "Alias/evidence of C/D; not another table",
+      "provenance": {
+        "name": "Inventario observado · grupo D",
+        "description": "Seis sillas verificadas en el grupo D del archivo original; correspondencia confirmada por el operador.",
+        "parent_resource": "D",
+        "capacity_observed": 6,
+        "reservable": false,
+        "commercial": false,
+        "not_additional_capacity": true,
+        "position": null,
+        "resource_mapping": "D",
+        "spatial_mapping": "operator-confirmed A/B/C/D; original chair anchors calibrated separately",
+        "source": "visual-inspection-original-SSOG",
+        "confidence": "group-role-confirmed; six visible seats",
+        "evidence": [
+          "docs/evidence/phase09/survey/original-plan-near-clipped.jpg",
+          "docs/evidence/phase09/survey/original-plan-far.jpg"
+        ],
+        "location_in_reference_image": "Cuarto conjunto de trabajo contando desde reuniones; mesa más cercana a los booths, centrada en original-plan-far.jpg."
+      }
+    },
+    {
+      "id": "CAM-ROUTE-1",
+      "name": "Vista de pasillo 1",
+      "kind": "Camera",
+      "position": [
+        -3.4262733459472656,
+        -0.3476232886314392,
+        -12.386368751525879
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "derived-existing-virtual-camera",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "scripts/bootstrap-office.py"
+      ],
+      "target": [
+        -3.4262733459472656,
+        -0.355322927236557,
+        -17.43784523010254
+      ],
+      "fov_degrees": 85,
+      "physical_mount_verified": false
+    },
+    {
+      "id": "CAM-ROUTE-2",
+      "name": "Vista de pasillo 2",
+      "kind": "Camera",
+      "position": [
+        -3.4262733459472656,
+        -0.355322927236557,
+        -17.43784523010254
+      ],
+      "coordinate_frame": "supersplat-original",
+      "classification": "derived-existing-virtual-camera",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "scripts/bootstrap-office.py"
+      ],
+      "target": [
+        -3.4262733459472656,
+        -0.3476232886314392,
+        -12.386368751525879
+      ],
+      "fov_degrees": 85,
+      "physical_mount_verified": false
+    },
+    {
+      "id": "handoff:unmapped:walls",
+      "name": "Paredes",
+      "kind": "UnsegmentedGeometry",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "docs/evidence/phase09/source-voxels/scene.voxel.json"
+      ],
+      "id_scope": "handoff-only; not a Core entity ID",
+      "note": "No individual verified dimensions/orientation/positions in existing structured evidence; consult original captures and collider; do not fabricate geometry"
+    },
+    {
+      "id": "handoff:unmapped:ceiling",
+      "name": "Techo",
+      "kind": "UnsegmentedGeometry",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "docs/evidence/phase09/source-voxels/scene.voxel.json"
+      ],
+      "id_scope": "handoff-only; not a Core entity ID",
+      "note": "No individual verified dimensions/orientation/positions in existing structured evidence; consult original captures and collider; do not fabricate geometry"
+    },
+    {
+      "id": "handoff:unmapped:columns",
+      "name": "Columnas",
+      "kind": "UnsegmentedGeometry",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "docs/evidence/phase09/source-voxels/scene.voxel.json"
+      ],
+      "id_scope": "handoff-only; not a Core entity ID",
+      "note": "No individual verified dimensions/orientation/positions in existing structured evidence; consult original captures and collider; do not fabricate geometry"
+    },
+    {
+      "id": "handoff:unmapped:windows",
+      "name": "Ventanales",
+      "kind": "UnsegmentedGeometry",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "docs/evidence/phase09/source-voxels/scene.voxel.json"
+      ],
+      "id_scope": "handoff-only; not a Core entity ID",
+      "note": "No individual verified dimensions/orientation/positions in existing structured evidence; consult original captures and collider; do not fabricate geometry"
+    },
+    {
+      "id": "handoff:unmapped:recreation",
+      "name": "Zona recreativa distinta de booths",
+      "kind": "UnsegmentedGeometry",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "docs/evidence/phase09/source-voxels/scene.voxel.json"
+      ],
+      "id_scope": "handoff-only; not a Core entity ID",
+      "note": "No individual verified dimensions/orientation/positions in existing structured evidence; consult original captures and collider; do not fabricate geometry"
+    },
+    {
+      "id": "handoff:unmapped:doors",
+      "name": "Puertas/accesos físicos",
+      "kind": "UnsegmentedGeometry",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "docs/evidence/phase09/source-voxels/scene.voxel.json"
+      ],
+      "id_scope": "handoff-only; not a Core entity ID",
+      "note": "No individual verified dimensions/orientation/positions in existing structured evidence; consult original captures and collider; do not fabricate geometry"
+    },
+    {
+      "id": "handoff:unmapped:individual-pods",
+      "name": "Pods individuales",
+      "kind": "UnsegmentedGeometry",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "docs/evidence/phase09/source-voxels/scene.voxel.json"
+      ],
+      "id_scope": "handoff-only; not a Core entity ID",
+      "note": "No individual verified dimensions/orientation/positions in existing structured evidence; consult original captures and collider; do not fabricate geometry"
+    },
+    {
+      "id": "handoff:unmapped:black-chairs",
+      "name": "Dos sillas negras individuales",
+      "kind": "UnsegmentedGeometry",
+      "position": null,
+      "coordinate_frame": "supersplat-original",
+      "classification": "unknown",
+      "dimensions": null,
+      "orientation": null,
+      "sources": [
+        "docs/evidence/phase09/source-voxels/scene.voxel.json"
+      ],
+      "id_scope": "handoff-only; not a Core entity ID",
+      "note": "No individual verified dimensions/orientation/positions in existing structured evidence; consult original captures and collider; do not fabricate geometry"
+    }
+  ],
+  "export": {
+    "file": "WALKABLE-FLOOR.obj",
+    "vertices": 16709,
+    "triangles": 29526,
+    "source": "docs/evidence/phase09/office-navigation.json",
+    "complete_floor": false
+  },
+  "source_hashes": {
+    "worlds/synthetic-office/original-viewer-settings.json": "e35ddd6e38c199bad17066ebad890c07f175b07563a0beb43a271cf754e6adaa",
+    "worlds/synthetic-office/calibrated-resources.json": "1a085450fe8cb657f79429b81bee520582f892328cd166cf3e31a550f27cb872",
+    "worlds/synthetic-office/semantic-annotations.json": "cb3876e12c3a309c9392ddc582bde0afe7672288011da5d5426d2a4ecdede700",
+    "docs/evidence/phase09/office-navigation.json": "a4ecacdb09643713ecd42d57b4e29a29f82b2cf434484212c50fe55f37fd2d7a",
+    "docs/evidence/phase09/source-voxels/scene.voxel.json": "35693fafcc6ea41367f78193a800640a8be2c49010263dab0110f251392fd70d",
+    "docs/evidence/phase09/source-voxels/scene.voxel.bin": "bdd74616236bdefe326fa46c3f60fa21e9aae3a206a24d0262f97c754abf827d"
+  }
+}
