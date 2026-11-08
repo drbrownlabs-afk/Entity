@@ -1,13 +1,14 @@
 {
-  "tested_commit": "fc1c50abf8a3f5bf71727c1e1fa2afb439772330",
-  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42471807543",
+  "tested_commit": "2aa92ded24d6e8041e26fd12bd979629105784a7",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42472306576",
   "source": "Original official voxel floor rays and human capsule queries; PathFinding.js A* over measured free samples",
   "collision_url": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json",
   "metric_scale_verified": false,
   "spacing": 0.1,
   "body": {
     "height": 1.8,
-    "radius": 0.2
+    "radius": 0.2,
+    "source": "additional conservative body; scene units are not certified meters"
   },
   "sampling_envelope": {
     "minX": -7.800000000000001,
