@@ -1,0 +1,55 @@
+{
+  "tested_commit": "eb9191576821b5c2862716d058686a3ce43384e8",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42474237805",
+  "pages": [
+    {
+      "url": "https://quaternius.com/packs/universalbasecharacters.html",
+      "status": 200,
+      "title": "Quaternius • Universal Base Characters",
+      "license_evidence": [
+        " (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-99971748-1', 'auto'); ga('send', 'pageview'); $(document).ready(function(){ $('#search').keyup(function(){ // Search text var text = $(this).val(); // Hide all content class element $('.pack').hide(); // Search $('.pack:contains(\"'+text+'\")').closest('.pack').show(); //If the search bar gets emptied, show all packs if(text == ''){ $('.pack').show(); } }); }); //Case insensitive $.expr[\":\"].contains = $.expr.createPseudo(function(arg) { return function( elem ) { return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0; }; }); function responsiveHamburger() { var x = document.getElementById(\"navButtons-id\"); if (x.className === \"navButtons\") { x.className += \" responsive\"; } else { x.className = \"navButtons\"; } } function setValue(tag) { var text = document.getElementById(\"search\").value; $('.pack').hide(); $('.pack:contains(\"'+tag+'\")').closest('.pack').show(); } function showAll(){ $('.pack').show(); } function openTutorial(number) { console.log(number); var x = document.getElementById(number); if (x.style.display === \"none\") { x.style.",
+        "Mix and match 20 hairstyles, the Source version includes shaders to customize eye and skin colors allowing hundreds of unique combinations.\"> Models 26 Animated Textured Formats FBX OBJ Blend glTF License CC0 Consider supporting me ! These assets are possible thanks to lovely people like you that support me through Patreon.",
+        "(CC0 License) .FBX and .glTF formats , compatible with all engines."
+      ],
+      "links": [
+        "/assets/svg/license.svg",
+        "/assets/svg/download-solid.svg",
+        "/assets/svg/download-dark.svg",
+        "/assets/svg/download.svg",
+        "https://static.itch.io/api.js"
+      ]
+    },
+    {
+      "url": "https://quaternius.com/packs/universalanimationlibrary.html",
+      "status": 200,
+      "title": "Quaternius • Universal Animation Library",
+      "license_evidence": [
+        " (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); ga('create', 'UA-99971748-1', 'auto'); ga('send', 'pageview'); $(document).ready(function(){ $('#search').keyup(function(){ // Search text var text = $(this).val(); // Hide all content class element $('.pack').hide(); // Search $('.pack:contains(\"'+text+'\")').closest('.pack').show(); //If the search bar gets emptied, show all packs if(text == ''){ $('.pack').show(); } }); }); //Case insensitive $.expr[\":\"].contains = $.expr.createPseudo(function(arg) { return function( elem ) { return $(elem).text().toUpperCase().indexOf(arg.toUpperCase()) >= 0; }; }); function responsiveHamburger() { var x = document.getElementById(\"navButtons-id\"); if (x.className === \"navButtons\") { x.className += \" responsive\"; } else { x.className = \"navButtons\"; } } function setValue(tag) { var text = document.getElementById(\"search\").value; $('.pack').hide(); $('.pack:contains(\"'+tag+'\")').closest('.pack').show(); } function showAll(){ $('.pack').show(); } function openTutorial(number) { console.log(number); var x = document.getElementById(number); if (x.style.display === \"none\") { x.style.",
+        "The animations cover a wide range of actions, all the locomotion movements in different directions, combat and gun, emotes and much more.\"> Models 1 Animated Textured Formats FBX GLB Blend License CC0 Consider supporting me ! These assets are possible thanks to lovely people like you that support me through Patreon.",
+        "(CC0 License) • 60-70% of my pack is completely free ."
+      ],
+      "links": [
+        "/assets/svg/license.svg",
+        "/assets/svg/download-solid.svg",
+        "/assets/svg/download-dark.svg",
+        "/assets/svg/download.svg",
+        "https://static.itch.io/api.js"
+      ]
+    },
+    {
+      "url": "https://quaternius.itch.io/universal-base-characters",
+      "status": 429,
+      "title": "429 Too Many Requests",
+      "license_evidence": [],
+      "links": []
+    },
+    {
+      "url": "https://raw.githubusercontent.com/playcanvas/engine/v2.23.3/LICENSE",
+      "status": 200,
+      "license_evidence": [
+        "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software."
+      ],
+      "links": []
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "tested_commit": "c98f8a591fb5659796b917ae12fb8765795c6e02",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42443532214",
+  "scene": "https://superspl.at/scene/a972d838",
+  "source": "Original SSOG + Core routes measured from original floor + Rocketbox + PlayCanvas picker; simulated people, no physical camera or facial identity claim",
+  "checks": [
+    {
+      "second": 0,
+      "camera": "CAM-ROUTE-1",
+      "visible": 0,
+      "core_position": [
+        -3.4262733459472656,
+        -1.7000000000000004,
+        -12.386368751525879
+      ],
+      "rendered_position": [
+        -3.4262733459472656,
+        -1.7000000476837158,
+        -12.386368751525879
+      ],
+      "identity_from_image": false
+    }
+  ],
+  "physical_ground": {
+    "source": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json",
+    "floor_clearance": 0.05,
+    "clear_capsule_samples": 22,
+    "metric_scale_verified": false
+  },
+  "status": "running",
+  "pose_check": {
+    "second": 0,
+    "expected": [
+      -3.4262733459472656,
+      -1.7000000000000004,
+      -12.386368751525879
+    ],
+    "observed": {
+      "id": "PERSON-LUIS",
+      "position": [
+        -3.4262733459472656,
+        -1.7000000476837158,
+        -12.386368751525879
+      ]
+    },
+    "world_clock": "2026-11-07T14:15:00+00:00",
+    "renderer_clock": "2026-11-07T14:15:00+00:00"
+  },
+  "stage": "capture at 0 seconds",
+  "visual": {
+    "cameraRenderState": [
+      {
+        "id": "CAM-01",
+        "layers": [
+          0,
+          1,
+          2,
+          4,
+          3
+        ],
+        "managers": [
+          {
+            "splats": 624025,
+            "pending": false
+          }
+        ]
+      },
+      {
+        "id": "CAM-02",
+        "layers": [
+          0,
+          1,
+          2,
+          4,
+          3
+        ],
+        "managers": [
+          {
+            "splats": 624025,
+            "pending": false
+          }
+        ]
+      },
+      {
+        "id": "CAM-ROUTE-1",
+        "layers": [
+          0,
+          1,
+          2,
+          4,
+          3
+        ],
+        "managers": [
+          {
+            "splats": 624025,
+            "pending": false
+          }
+        ]
+      },
+      {
+        "id": "CAM-ROUTE-2",
+        "layers": [
+          0,
+          1,
+          2,
+          4,
+          3
+        ],
+        "managers": [
+          {
+            "splats": 624025,
+            "pending": false
+          }
+        ]
+      }
+    ],
+    "cameraViews": 6,
+    "activeCameras": 4,
+    "visibleCameraIds": [
+      "CAM-ROUTE-1",
+      "CAM-ROUTE-2",
+      "CAM-01",
+      "CAM-02"
+    ],
+    "worldClock": "2026-11-07T14:15:00+00:00",
+    "avatarsLoaded": 1,
+    "avatarsPlaced": [
+      {
+        "id": "PERSON-LUIS",
+        "position": [
+          -3.4262733459472656,
+          -1.7000000476837158,
+          -12.386368751525879
+        ]
+      }
+    ],
+    "singleApplication": true,
+    "errors": [],
+    "source": "original SSOG and authorized Core projection"
+  }
+}

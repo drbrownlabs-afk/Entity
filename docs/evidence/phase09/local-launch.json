@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "command": "ENTITY_BUILD_CA_FILE=/etc/ssl/certs/ca-certificates.crt bash scripts/start-office.sh",
+  "checks": {
+    "office.html": 200,
+    "personal.html": 200,
+    "kiosk.html": 200,
+    "health": 200,
+    "ready": 200,
+    "explicit_cors_preview": true
+  },
+  "scope": "actual Docker API and built frontend; original remote SSOG validated separately in Actions",
+  "secrets_in_report": false
+}

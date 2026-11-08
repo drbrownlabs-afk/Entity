@@ -1,0 +1,89 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "connector_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Connector Id",
+      "type": "string"
+    },
+    "version": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Version",
+      "type": "string"
+    },
+    "protocols": {
+      "items": {
+        "enum": [
+          "rest",
+          "simulation"
+        ],
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Protocols",
+      "type": "array"
+    },
+    "discovery_mode": {
+      "const": "manual",
+      "default": "manual",
+      "title": "Discovery Mode",
+      "type": "string"
+    },
+    "config_schema": {
+      "additionalProperties": true,
+      "title": "Config Schema",
+      "type": "object"
+    },
+    "credential_refs": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Credential Refs",
+      "type": "array"
+    },
+    "input_event_types": {
+      "items": {
+        "maxLength": 512,
+        "minLength": 1,
+        "type": "string"
+      },
+      "minItems": 1,
+      "title": "Input Event Types",
+      "type": "array"
+    },
+    "capability_schemas": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Capability Schemas",
+      "type": "array"
+    },
+    "health_check": {
+      "const": "registry",
+      "default": "registry",
+      "title": "Health Check",
+      "type": "string"
+    },
+    "enabled": {
+      "default": true,
+      "title": "Enabled",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "connector_id",
+    "version",
+    "protocols",
+    "input_event_types"
+  ],
+  "title": "Manifest",
+  "type": "object"
+}

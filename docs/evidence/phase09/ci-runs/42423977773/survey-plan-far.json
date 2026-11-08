@@ -1,0 +1,118 @@
+{
+  "tested_commit": "390f14d6e20627a253021fcf79908c61e84a0974",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42423977773",
+  "scene": "https://superspl.at/scene/a972d838",
+  "source": "Original SSOG, elevated/oblique inspection viewpoints derived from authored and measured cameras. Camera transforms are NOT semantic resource coordinates or verified walking routes",
+  "views": [
+    {
+      "id": "original-plan-far",
+      "camera": {
+        "position": [
+          1.9970835447311401,
+          10.149999618530273,
+          -23.549999237060547
+        ],
+        "rotation": [
+          -0.7071038349021218,
+          0,
+          0,
+          0.7071097274586969
+        ],
+        "fov": 90,
+        "near_clip": 9.649999618865342,
+        "far_clip": 61.76151877310604
+      },
+      "picks": [
+        {
+          "screen": [
+            0.35,
+            0.35
+          ],
+          "position": [
+            -1.6355054066156882,
+            -1.9586060973271875,
+            -26.474445364294443
+          ],
+          "ray": {
+            "origin": [
+              -0.7050189364633623,
+              1.1430094043845624,
+              -25.71685458698753
+            ],
+            "direction": [
+              -0.28001063087215106,
+              -0.9333668984335941,
+              -0.22454460471592877
+            ],
+            "length": 52.11151915424071
+          },
+          "original_voxel_surface": [
+            -1.602923557823392,
+            -1.8499999999999974,
+            -26.43689738553381
+          ]
+        },
+        {
+          "screen": [
+            0.5,
+            0.5
+          ],
+          "position": [
+            1.997083525236089,
+            -0.80803590151587,
+            -23.550087612851243
+          ],
+          "ray": {
+            "origin": [
+              1.9970835447311401,
+              0.5,
+              -23.55007965372493
+            ],
+            "direction": [
+              0,
+              -0.9999999999652777,
+              -0.00000833333342574664
+            ],
+            "length": 52.11151915424071
+          },
+          "original_voxel_surface": [
+            1.9970835447311401,
+            -0.8000000000000003,
+            -23.550090487058384
+          ]
+        },
+        {
+          "screen": [
+            0.65,
+            0.65
+          ],
+          "position": [
+            5.695988688694698,
+            -2.17970919248449,
+            -20.595627876041966
+          ],
+          "ray": {
+            "origin": [
+              4.699186025925641,
+              1.1429732913793043,
+              -21.383294003939742
+            ],
+            "direction": [
+              0.2800106308721511,
+              -0.9333706407140799,
+              0.22452904856959646
+            ],
+            "length": 52.111519154240696
+          },
+          "original_voxel_surface": [
+            5.249999999999999,
+            -0.6930769696223551,
+            -20.941618853419396
+          ]
+        }
+      ],
+      "image": "original-plan-far.jpg"
+    }
+  ],
+  "status": "captured-awaiting-semantic-review"
+}

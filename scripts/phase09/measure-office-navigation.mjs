@@ -1,0 +1,51 @@
+// Site calibration only. Geometry queries are the unchanged official SuperSplat collider;
+// A* is qiao/PathFinding.js 0.4.18 (MIT), not a new navigation/physics engine.
+import fs from 'node:fs';
+import PF from '../../apps/web/node_modules/pathfinding/index.js';
+const {loadVoxelCollision}=await import('../../apps/web/node_modules/@playcanvas/supersplat-viewer/dist/calibration-runtime.mjs');
+const original=JSON.parse(fs.readFileSync('worlds/synthetic-office/original-viewer-settings.json'));
+const measured=JSON.parse(fs.readFileSync('docs/evidence/phase09/voxel-ground.json'));
+const calibration=JSON.parse(fs.readFileSync('worlds/synthetic-office/calibrated-resources.json'));
+const semantic=JSON.parse(fs.readFileSync('worlds/synthetic-office/semantic-annotations.json'));
+const collision=await loadVoxelCollision(original.collisionUrl),resolution=collision.voxelResolution;
+const official=fs.readFileSync('apps/web/node_modules/@playcanvas/supersplat-viewer/dist/viewer.js','utf8'),sdkHeight=Number(/const CAPSULE_HEIGHT = ([0-9.]+);/.exec(official)?.[1]),sdkRadius=Number(/const CAPSULE_RADIUS = ([0-9.]+);/.exec(official)?.[1]);if(!sdkHeight||!sdkRadius)throw Error('Inspect pinned SDK body dimensions');
+const bodyHeight=process.env.OFFICE_NATIVE_CAPSULE==='1'?sdkHeight:1.8,radius=sdkRadius,output=process.env.OFFICE_NATIVE_CAPSULE==='1'?'docs/evidence/phase09/office-navigation-native.json':'docs/evidence/phase09/office-navigation.json';
+const anchors=Object.fromEntries(calibration.resources.filter(r=>r.kind==='Desk').map(r=>[r.id,r.attributes.position]));
+Object.assign(anchors,{A:original.settings.annotations[0].position,B:original.settings.annotations[2].position,'MEETING-AREA-01':original.settings.annotations[1].position});
+for(const s of semantic)anchors[s.extras.entity_id]=s.position;
+const seed=measured.route_candidate[0].position,spacing=resolution*2;
+const xs=Object.values(anchors).map(p=>p[0]),zs=Object.values(anchors).map(p=>p[2]);
+// Search envelope only: candidates are never adopted without actual floor/capsule queries.
+const minX=Math.floor((Math.min(...xs,seed[0])-2)/spacing)*spacing,minZ=Math.floor((Math.min(...zs)-6)/spacing)*spacing;
+const width=Math.ceil((Math.max(...xs)+2-minX)/spacing)+1,height=Math.ceil((Math.max(...zs)+2-minZ)/spacing)+1;
+const previous=JSON.parse(fs.readFileSync('docs/evidence/phase09/office-navigation.json')),chairLimit=Math.min(...calibration.resources.filter(r=>r.kind==='Desk').map(r=>r.attributes.position[1]))-resolution*5;
+const additionalFloor=(previous.reception_probes||[]).filter(p=>p.above_ray&&!p.blocked_above&&p.above_ray.y<chairLimit).map(p=>p.above_ray.y);
+const floors=measured.points.map(p=>p.ground.y),low=Math.min(...floors)-resolution*5,high=Math.max(...floors,...additionalFloor)+1e-6;
+function sample(x,z){const hit=collision.queryRay(x,high+resolution,z,0,-1,0,4);if(!hit||hit.y<low||hit.y>high)return null;const foot=[hit.x,hit.y+resolution,hit.z],push={x:0,y:0,z:0};if(collision.queryCapsule(foot[0],foot[1]+bodyHeight/2,foot[2],bodyHeight/2-radius,radius,push))return null;return foot;}
+const nodes=new Map(),matrix=Array.from({length:height},()=>Array(width).fill(1));
+for(let z=0;z<height;z++)for(let x=0;x<width;x++){const foot=sample(minX+x*spacing,minZ+z*spacing);if(foot){nodes.set(x+','+z,foot);matrix[z][x]=0;}}
+const nearest=(p)=>[...nodes].map(([key,position])=>({key,position,distance:Math.hypot(position[0]-p[0],position[2]-p[2])})).sort((a,b)=>a.distance-b.distance);
+const blockedEdges=[],blockedSet=new Set();
+for(const [key,a]of nodes){const [x,z]=key.split(',').map(Number);for(const other of [[x+1,z],[x,z+1]]){const b=nodes.get(other.join(','));if(!b)continue;const p=a.map((v,k)=>(v+b[k])/2),floor=sample(p[0],p[2]);if(!floor||Math.abs(floor[1]-p[1])>resolution*2){blockedEdges.push([key,other.join(',')]);blockedSet.add(key+'|'+other.join(','));blockedSet.add(other.join(',')+'|'+key);}}}
+function makeGrid(){const grid=new PF.Grid(matrix),neighbors=grid.getNeighbors.bind(grid);grid.getNeighbors=(node,mode)=>neighbors(node,mode).filter(n=>!blockedSet.has(node.x+','+node.y+'|'+n.x+','+n.y));return grid;}
+const start=nearest(seed)[0],finder=new PF.AStarFinder({diagonalMovement:PF.DiagonalMovement.Never});
+const report={tested_commit:process.env.GITHUB_SHA||null,run_url:'https://github.com/'+process.env.GITHUB_REPOSITORY+'/actions/runs/'+process.env.GITHUB_RUN_ID,source:'Original official voxel floor rays and human capsule queries; PathFinding.js A* over measured free samples',collision_url:original.collisionUrl,metric_scale_verified:false,spacing,body:{height:bodyHeight,radius,source:bodyHeight===sdkHeight?'official viewer capsule; adopt only with avatars fitted to the same declared height':'additional conservative body; scene units are not certified meters'},floor_reference:{baseline:'docs/evidence/phase09/voxel-ground.json',additional_floor_source:previous.run_url,additional_floor_rays:additionalFloor,high,low},sampling_envelope:{minX,minZ,width,height},walkable_samples:nodes.size,seed:start,resources:{},routes:{}};
+const save=()=>fs.writeFileSync(output,JSON.stringify(report,null,2));
+for(const [id,anchor]of Object.entries(anchors)){
+ let found;
+ for(const candidate of nearest(anchor).slice(0,180)){
+  if(candidate.distance>3)break;
+  const route=finder.findPath(...start.key.split(',').map(Number),...candidate.key.split(',').map(Number),makeGrid());if(!route.length)continue;
+  const points=route.map(([x,z])=>nodes.get(x+','+z));let valid=true,samples=0;
+  for(let i=1;i<points.length;i++){const a=points[i-1],b=points[i];for(const t of [0,.5,1]){const p=a.map((v,k)=>v+(b[k]-v)*t),floor=sample(p[0],p[2]);samples++;if(!floor||Math.abs(floor[1]-p[1])>resolution*2){valid=false;break;}}if(!valid)break;}
+  if(!valid)continue;found={anchor,approach:candidate.position,distance_to_anchor:candidate.distance,approach_kind:'measured accessible floor beside the resource; not a seat or physical device mount',clearance_samples:samples,points};break;
+ }
+ report.resources[id]=found?{...found,points:undefined}:{anchor,status:'no connected capsule-clear approach found'};
+ if(found)report.routes[id]=found.points;save();
+}
+// Actual floor beneath each measured chair is distinct from its top surface.
+report.seat_floor={};for(const [id,anchor]of Object.entries(anchors).filter(([id])=>/^[CD][1-6]$/.test(id))){const ground=collision.queryRay(anchor[0],low+resolution*7,anchor[2],0,-1,0,4);report.seat_floor[id]=ground&&ground.y>=low&&ground.y<=high?[ground.x,ground.y+resolution,ground.z]:null;}
+report.grid={origin:[minX,minZ],spacing,width,height,walkable:[...nodes].map(([key,position])=>({node:key.split(',').map(Number),position})),blocked_edges:blockedEdges};
+report.reception_probes=[];
+for(const x of [-6,-5.5,-5,-4.5,-4,-3.5,-3])for(const z of [-11,-10,-9,-8,-7,-6]){const hit=collision.queryRay(x,original.settings.annotations[0].camera.initial.position[1],z,0,-1,0,10),lower=collision.queryRay(x,high+resolution,z,0,-1,0,4),push={x:0,y:0,z:0};report.reception_probes.push({x,z,above_ray:hit?{x:hit.x,y:hit.y,z:hit.z}:null,below_ray:lower?{x:lower.x,y:lower.y,z:lower.z}:null,blocked_above:hit?collision.queryCapsule(hit.x,hit.y+resolution+bodyHeight/2,hit.z,bodyHeight/2-radius,radius,push):null,push});}
+report.status=Object.values(report.resources).every(r=>r.approach)?'measured; original visual route review required':'partial; inaccessible approaches retained explicitly';save();console.log(JSON.stringify({status:report.status,walkable_samples:nodes.size,resources:Object.fromEntries(Object.entries(report.resources).map(([id,r])=>[id,r.approach||r.status]))}));

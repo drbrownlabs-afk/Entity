@@ -1,0 +1,9 @@
+{
+  "transport": "Chromium + actual temporary HTTP Core + controlled provider + virtual display",
+  "actual_core_scene": "audit-verified-scene",
+  "rendered_scene": "welcome",
+  "mode": "core",
+  "scene_matches_core": false,
+  "all_cameras_same_local_revision": true,
+  "meaning": "Audit probe completion does not mean the synchronization requirement passed"
+}

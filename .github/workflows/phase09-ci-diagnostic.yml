@@ -1,0 +1,23 @@
+name: Inspect failed Phase09 CI
+on:
+  push:
+    branches: [codex/phase-09-autonomous-plan]
+    paths: ['scripts/phase09/inspect-ci.mjs','.github/workflows/phase09-ci-diagnostic.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Inspect exact failed jobs through authorized REST
+        env:
+          GH_TOKEN: ${{ github.token }}
+          INSPECT_RUN: '42421775240'
+        run: node scripts/phase09/inspect-ci.mjs
+      - run: python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/ci-diagnostic.json'

@@ -11,6 +11,11 @@ services:
       - "host.docker.internal:host-gateway"
     volumes:
       - entity-data:/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3)"]
+      interval: 2s
+      timeout: 5s
+      retries: 20
     restart: unless-stopped
 volumes:
   entity-data:

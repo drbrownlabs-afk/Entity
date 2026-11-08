@@ -1,0 +1,8 @@
+{
+  "viewer_export_contract": "passed",
+  "core_projection": "passed",
+  "output_rule": "verified",
+  "deduplication": "passed",
+  "simulated": true,
+  "tracks": 4
+}

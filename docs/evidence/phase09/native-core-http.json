@@ -1,0 +1,30 @@
+{
+  "tested_commit": null,
+  "scene_validation": false,
+  "reason": "HTTP/model/UI integration only; this script does not validate the original scene",
+  "checks": [
+    {
+      "width": 1440,
+      "real_authenticated_core": true,
+      "run_id": "demo-phase09-20261108",
+      "clock": "2026-11-07T14:15:05+00:00",
+      "calibrated_C1": true,
+      "server_verified_reserved_then_cancelled": true,
+      "core_history_survives_poll_and_returns_live": true,
+      "server_revoked_session_clears_native_world": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "real_authenticated_core": true,
+      "run_id": "demo-phase09-20261108",
+      "clock": "2026-11-07T14:15:05+00:00",
+      "calibrated_C1": true,
+      "server_verified_reserved_then_cancelled": false,
+      "core_history_survives_poll_and_returns_live": false,
+      "server_revoked_session_clears_native_world": true,
+      "errors": []
+    }
+  ],
+  "status": "passed"
+}

@@ -1,0 +1,10 @@
+# Optional public CA mount for managed build proxies; TLS verification stays enabled.
+services:
+  entity-office:
+    build:
+      secrets:
+        - source: proxy_ca
+          target: proxy_ca
+secrets:
+  proxy_ca:
+    file: ${ENTITY_BUILD_CA_FILE:?Set the path of the public build CA bundle}

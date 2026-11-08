@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-11-08T04:01:27.787097+00:00",
+  "source_commit": "c0afef671f0e8940f086a9e91290478fad95595f",
+  "status": "passed",
+  "method": "Actual public GitHub Actions run conclusions, gh-pages deployment.json and the Pages job browser checks against the public root and original Office URL",
+  "runs": [
+    {
+      "workflow": "/actions/workflows/ci.yml",
+      "url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42444524894",
+      "status": "Success",
+      "title": "Fase 09: plan integral Synthetic Office y ejecuci\u00f3n aut\u00f3noma 09.1\u201309.9 \u00b7 drbrownlabs-afk/Entity@c0afef6 \u00b7 GitHub"
+    },
+    {
+      "workflow": "/actions/workflows/ci.yml",
+      "url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42444521584",
+      "status": "Success",
+      "title": "Keep action drafts stable under the Core clock and apply site civil t\u2026 \u00b7 drbrownlabs-afk/Entity@c0afef6 \u00b7 GitHub"
+    },
+    {
+      "workflow": "/actions/workflows/phase09-spatial.yml",
+      "url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42444521608",
+      "status": "Success",
+      "title": "Keep action drafts stable under the Core clock and apply site civil t\u2026 \u00b7 drbrownlabs-afk/Entity@c0afef6 \u00b7 GitHub"
+    },
+    {
+      "workflow": "/actions/workflows/pages.yml",
+      "url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42444521644",
+      "status": "Success",
+      "title": "Keep action drafts stable under the Core clock and apply site civil t\u2026 \u00b7 drbrownlabs-afk/Entity@c0afef6 \u00b7 GitHub"
+    },
+    {
+      "workflow": "/actions/workflows/phase09-original.yml",
+      "url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42444521616",
+      "status": "Success",
+      "title": "Keep action drafts stable under the Core clock and apply site civil t\u2026 \u00b7 drbrownlabs-afk/Entity@c0afef6 \u00b7 GitHub"
+    }
+  ],
+  "pages_url": "https://drbrownlabs-afk.github.io/Entity/office.html",
+  "gh_pages_source_commit": "c0afef671f0e8940f086a9e91290478fad95595f",
+  "delivery_artifact_listed": true,
+  "delivery_artifact_name": "entity-delivery",
+  "delivery_run": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42444521584",
+  "local_public_url_proxy_access_claimed": false
+}

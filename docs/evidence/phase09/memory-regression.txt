@@ -1,0 +1,9 @@
+/workspace/Entity/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_event_zone_filter_preserves_past_location_and_pagination (test_office_memory.MemoryTests.test_event_zone_filter_preserves_past_location_and_pagination) ... ok
+test_filters_never_grant_other_site_or_private_resource_access (test_office_memory.MemoryTests.test_filters_never_grant_other_site_or_private_resource_access) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 1.785s
+
+OK

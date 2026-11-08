@@ -1,0 +1,75 @@
+{
+  "tested_commit": "d7e75e50ec01e6414a97c756baec810e947ad667",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42451176257",
+  "source": "Native ENTITY spatial interface, ORIGINAL published SSOG, actual Core-generated trace and normalized synthetic session actions",
+  "public_url": "https://drbrownlabs-afk.github.io/Entity",
+  "checks": [
+    {
+      "width": 1440,
+      "original_loaded": true,
+      "native_renderer_ui": false,
+      "visible_people": [
+        {
+          "id": "PERSON-CARLOS",
+          "position": [
+            -3.4262733459472656,
+            -1.774999976158142,
+            -16.712793350219727
+          ]
+        },
+        {
+          "id": "PERSON-LUIS",
+          "position": [
+            -3.4262733459472656,
+            -1.715000033378601,
+            -13.466780662536621
+          ]
+        }
+      ],
+      "core_connected": false,
+      "mode": "synthetic-replay",
+      "person_graph": true,
+      "camera_feed": true,
+      "resident_original_feed": true,
+      "rendered_normalized_session_observation": true,
+      "view_roundtrip_keeps_selection": true,
+      "shared_clock_pause": true,
+      "session_booking": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "original_loaded": true,
+      "native_renderer_ui": false,
+      "visible_people": [
+        {
+          "id": "PERSON-LUIS",
+          "position": [
+            -3.4262733459472656,
+            -1.715000033378601,
+            -13.466780662536621
+          ]
+        },
+        {
+          "id": "PERSON-CARLOS",
+          "position": [
+            -3.4262733459472656,
+            -1.774999976158142,
+            -16.712793350219727
+          ]
+        }
+      ],
+      "core_connected": false,
+      "mode": "synthetic-replay",
+      "person_graph": true,
+      "camera_feed": true,
+      "resident_original_feed": true,
+      "rendered_normalized_session_observation": true,
+      "view_roundtrip_keeps_selection": true,
+      "shared_clock_pause": true,
+      "session_booking": true,
+      "errors": []
+    }
+  ],
+  "status": "passed"
+}

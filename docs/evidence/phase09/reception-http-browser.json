@@ -1,0 +1,56 @@
+{
+  "tested_commit": null,
+  "run_url": null,
+  "source": "Actual local Core HTTP and built kiosk/personal clients; original site inventory; no substituted 3D scene",
+  "checks": [
+    {
+      "width": 1280,
+      "server_session_revoked": true,
+      "stale_world_response_after_logout_discarded": true,
+      "verified_invitation": true,
+      "private_host_reply": true,
+      "scoped_mobile_booking": true,
+      "booking_site_timezone_independent_of_browser": true,
+      "query_site_timezone_and_persisted_agenda_verified": true,
+      "browser_timezone": "UTC",
+      "original_viewer_receives_scoped_world": true,
+      "shared_scoped_query_verified": true,
+      "private_cameras_in_projection": 0,
+      "kiosk_reflects_core": true,
+      "token_in_local_storage": false,
+      "page_errors": [],
+      "voice_screen_controls": true,
+      "voice_microphone_executed": false
+    },
+    {
+      "pending_form_preserved_across_live_core_ticks": true,
+      "assigned_operator_follows_active_run_via_sse": true,
+      "temporal_entity_zone_type_filters": true,
+      "filtered_event_reconstructs_history": true,
+      "active_run_shared_between_kiosk_and_personal": true,
+      "previous_run_messages_hidden": true,
+      "server_owned_play_pause": true,
+      "replay_history_preserved": true
+    },
+    {
+      "width": 390,
+      "server_session_revoked": true,
+      "stale_world_response_after_logout_discarded": true,
+      "verified_invitation": true,
+      "private_host_reply": true,
+      "scoped_mobile_booking": true,
+      "booking_site_timezone_independent_of_browser": true,
+      "query_site_timezone_and_persisted_agenda_verified": true,
+      "browser_timezone": "Asia/Tokyo",
+      "original_viewer_receives_scoped_world": true,
+      "shared_scoped_query_verified": true,
+      "private_cameras_in_projection": 0,
+      "kiosk_reflects_core": true,
+      "token_in_local_storage": false,
+      "page_errors": [],
+      "voice_screen_controls": true,
+      "voice_microphone_executed": false
+    }
+  ],
+  "status": "passed"
+}

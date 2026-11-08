@@ -1,0 +1,16 @@
+file:///workspace/Entity/scripts/phase09/verify-reception.mjs:82
+   if(await operator.locator('#office-actions [name=booking_id]').inputValue()!=='pending-user-input')throw Error('Live Core updates erased the pending action form');
+                                                                                                            ^
+
+Error: Live Core updates erased the pending action form
+    at file:///workspace/Entity/scripts/phase09/verify-reception.mjs:82:109
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processImmediate (node:internal/timers:541:9)
+
+Node.js v24.22.1
+Traceback (most recent call last):
+  File "/workspace/Entity/scripts/phase09/demo-reception-http.py", line 50, in <module>
+    subprocess.run(['node','scripts/phase09/verify-reception.mjs'],cwd=ROOT,env=browser_env,check=True)
+  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['node', 'scripts/phase09/verify-reception.mjs']' returned non-zero exit status 1.

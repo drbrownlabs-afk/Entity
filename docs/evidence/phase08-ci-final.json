@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42333312084",
+  "commits": [
+    "3978a9f02b9db4972738af6481c26ee8b498da03"
+  ],
+  "status": "Success",
+  "summary": "Summary\nVerify delivered static ZIP with offline desktop and touch actions\nVerify delivered static ZIP with offline desktop and touch actions\n#19\nUh oh!\nThere was an error while loading.\nPlease reload this page\n.\nTriggered via push\nNovember 7, 2026 03:17\ndrbrownlabs-afk\npushed\n3978a9f\ncodex/phase-08-delivery\nStatus\nSuccess\nTotal duration\n2m 49s\nArtifacts\n3\nci.yml\non: push\napi-tests\n49s\napi-tests\nedge-tests\n1m 44s\nedge-tests\nexperience-tests\n1m 7s\nexperience-tests\ndelivery\n57s\ndelivery\nOh hello! Nice to see you.\nMade with ❤️ by\nhumans.txt\nFit to window\nZoom out\nZoom in\nArtifacts\nProduced during runtime\nName\nSize\nDigest\nedge-report\n3.57 KB\nsha256:ef2fa553a0e30d8948dcbdf866cf2a5a7b2785370795b5d8a301b5e608911520\nentity-delivery\n951 KB\nsha256:8ab38742bdd0a39615ae9c44fc18ca41dcb9e6eb1fb05d236ef8b719dc755a92\nexperience-evidence\n826 KB\nsha256:4d52340b705cd7f08bb2d2b1388f7ea8323d2af8bf5522b30771f11b076e79af\nYou can’t perform that action at this time.",
+  "observed_at_utc": "2026-11-07T13:23:30.741457+00:00",
+  "verification_method": "Public GitHub Actions run page, refreshed after environment recovery; no rerun inferred"
+}

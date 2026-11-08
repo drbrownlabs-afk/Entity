@@ -1,0 +1,18 @@
+{
+  "provider": "controlled-fixture",
+  "query": "passed",
+  "action": "verified",
+  "trace": "passed",
+  "idempotency": "passed",
+  "answer": "Estado registrado: {\"edge.presence\": {\"frame_index\": null, \"media_time_seconds\": null, \"tracks\": [{\"local_track_id\": \"9b4fa371-e068-49a6-8380-cfc2adc746ac:1\", \"zone_id\": \"left\", \"position\": [0.2, 0.7]}], \"transitions\": [{\"type\": \"zone.entered\", \"local_track_id\": \"9b4fa371-e068-49a6-8380-cfc2adc746ac:1\", \"zone_id\": \"left\"}], \"source_status\": \"connected\", \"observed_at\": \"2026-11-07T01:54:34.096434+00:00\", \"counts\": {\"left\": 1}, \"simulated\": true}}",
+  "references": {
+    "entity_id": "lab-camera-f589f646-e907-446a-abb3-547fcfd11ccb",
+    "event_ids": [
+      "b865fbfc-e4b1-4c71-9e77-f97e45bbef6a",
+      "bf9e12f8-65c5-476b-a0f7-1f3e620b2259",
+      "29cce10d-b3ab-4a51-ac24-d9100dd1503c"
+    ],
+    "memory_ids": []
+  },
+  "simulated": true
+}

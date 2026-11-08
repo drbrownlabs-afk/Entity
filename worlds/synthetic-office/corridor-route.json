@@ -1,0 +1,36 @@
+{
+  "id": "original-corridor-v2",
+  "scene_url": "https://superspl.at/scene/a972d838",
+  "coordinate_frame": "supersplat-original",
+  "metric_scale_verified": false,
+  "calibration_evidence": "docs/evidence/phase09/voxel-ground.json; original official collider, 22 clear human-capsule samples",
+  "floor_points": [
+    {
+      "position": [
+        -3.4262733459472656,
+        -1.7000000000000004,
+        -12.386368751525879
+      ],
+      "evidence": "docs/evidence/phase09/voxel-ground.json; original-voxel-ray-0"
+    },
+    {
+      "position": [
+        -3.4262733459472656,
+        -1.7500000000000004,
+        -15.987741470336914
+      ],
+      "evidence": "docs/evidence/phase09/voxel-ground.json; original-voxel-ray-1"
+    },
+    {
+      "position": [
+        -3.4262733459472656,
+        -1.8000000000000003,
+        -17.43784523010254
+      ],
+      "evidence": "docs/evidence/phase09/voxel-ground.json; original-voxel-ray-2"
+    }
+  ],
+  "floor_source": "original-official-voxel-ray",
+  "floor_clearance": 0.05,
+  "supersedes": "original-corridor-v1; vertical splat picks were below physical ground"
+}

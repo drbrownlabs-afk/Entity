@@ -1,0 +1,36 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "1.0",
+      "default": "1.0",
+      "title": "Schema Version",
+      "type": "string"
+    },
+    "request_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Request Id",
+      "type": "string"
+    },
+    "capability_id": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Capability Id",
+      "type": "string"
+    },
+    "scene": {
+      "maxLength": 512,
+      "minLength": 1,
+      "title": "Scene",
+      "type": "string"
+    }
+  },
+  "required": [
+    "request_id",
+    "capability_id",
+    "scene"
+  ],
+  "title": "Command",
+  "type": "object"
+}

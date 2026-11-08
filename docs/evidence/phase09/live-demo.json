@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "api": "http://127.0.0.1:8010",
+  "web": "http://127.0.0.1:4175/office.html",
+  "active_run": "demo-phase09-20261108",
+  "clock": "2026-11-07T14:15:05+00:00",
+  "timezone": "America/Guayaquil",
+  "paused": true,
+  "person": {
+    "id": "PERSON-LUIS",
+    "name": "Luis",
+    "fictitious": true,
+    "presence": "confirmed",
+    "freshness": "fresh",
+    "zone_id": "CIRCULATION-01",
+    "spatial_pose": {
+      "position": [
+        -3.4262733459472656,
+        -1.7500000000000004,
+        -15.987741470336914
+      ],
+      "yaw": 180.0,
+      "animation": "walk",
+      "animation_time": 5.0,
+      "coordinate_frame": "supersplat-original",
+      "validated": true,
+      "pose_kind": "simulated-route-reconstruction",
+      "physical_identity_claimed": false,
+      "zone_id": "CIRCULATION-01",
+      "route_id": "original-corridor-v2",
+      "evidence": [
+        "docs/evidence/phase09/voxel-ground.json; original-voxel-ray-0",
+        "docs/evidence/phase09/voxel-ground.json; original-voxel-ray-1"
+      ],
+      "calibration_evidence": "docs/evidence/phase09/voxel-ground.json; original official collider, 22 clear human-capsule samples"
+    }
+  },
+  "booking": {
+    "id": "B-LUIS-demo-phase09-20261108",
+    "resource_id": "D3",
+    "status": "reserved",
+    "starts_at": "2026-11-07T14:15:00+00:00",
+    "ends_at": "2026-11-07T23:00:00+00:00"
+  },
+  "entity_count": 116,
+  "event_count": 21,
+  "source": "Existing deterministic daily simulation installed on actual persistent Docker Core; original scene is streamed separately by the same application",
+  "limitations": [
+    "Only the calibrated corridor motion is spatially verified; D3 exact seat is unresolved",
+    "No local SSOG browser capture is claimed by this API check"
+  ],
+  "credentials_logged": false,
+  "actual_restart_world_equal": true,
+  "actual_restart_events_equal": true,
+  "simulation_clock_after_restart": "2026-11-07T14:15:05+00:00",
+  "spatial_pose_after_restart": {
+    "position": [
+      -3.4262733459472656,
+      -1.7500000000000004,
+      -15.987741470336914
+    ],
+    "yaw": 180.0,
+    "animation": "walk",
+    "animation_time": 5.0,
+    "coordinate_frame": "supersplat-original",
+    "validated": true,
+    "pose_kind": "simulated-route-reconstruction",
+    "physical_identity_claimed": false,
+    "zone_id": "CIRCULATION-01",
+    "route_id": "original-corridor-v2",
+    "evidence": [
+      "docs/evidence/phase09/voxel-ground.json; original-voxel-ray-0",
+      "docs/evidence/phase09/voxel-ground.json; original-voxel-ray-1"
+    ],
+    "calibration_evidence": "docs/evidence/phase09/voxel-ground.json; original official collider, 22 clear human-capsule samples"
+  }
+}

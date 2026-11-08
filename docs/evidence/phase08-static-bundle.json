@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "source_commit": "3978a9f02b9db4972738af6481c26ee8b498da03",
+  "package": "entity-experience.zip",
+  "checks": [
+    {
+      "width": 1280,
+      "cameras": 5,
+      "mode": "local",
+      "offline_actions": "passed",
+      "core_requests": 0,
+      "browser_errors": []
+    },
+    {
+      "width": 390,
+      "cameras": 5,
+      "mode": "local",
+      "offline_actions": "passed",
+      "core_requests": 0,
+      "browser_errors": []
+    }
+  ],
+  "scope": "Chromium software render desktop/touch; offline after initial load, no offline reload guarantee"
+}

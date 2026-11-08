@@ -34,3 +34,51 @@ No implementar ahora inferencia geométrica profunda, relaciones latentes/geodé
 
 ## Regla de continuidad
 Antes de cada desarrollo o cambio de ENTITY OS, revisar este documento, docs/EDGE-INTEGRATION-SPEC.md, docs/implementation-plan.md y AGENTS.md. Registrar decisiones nuevas y cambios de alcance en docs/DECISION-LOG.md, y cambios técnicos en Git con commits verificables. No borrar decisiones previas: anotar sustituciones y motivos.
+
+
+## Incremento Fase 01 — 2026-11-06 Ecuador / 2026-11-07 UTC
+Core local 0.2.0 añade migraciones SQLite atómicas, contratos v1/registro 1.0, memorias explícitas con fuente, eventos con procedencia y capacidades declaradas persistentes. SQLite se mantiene para el demostrador local: no hay aún necesidad espacial o distribuida que justifique PostgreSQL/PostGIS en esta entrega; no cambia la arquitectura objetivo. Una declaración registra operación, metadatos y permiso requerido; no ejecuta ni autoriza acciones. Fuente declarada no equivale a identidad autenticada. Conectores e invocación quedan en Fase 02. Scorpio sigue externo y sin proyección implementada. Evidencia y límites: docs/phases/PHASE-01.md. Estado EN VALIDACIÓN, revisión humana pendiente.
+
+
+## Fase 02 — 2026-11-06 Ecuador / 2026-11-07 UTC
+Perfil local v1 de Manifest/Observation/Capability/Invocation, registry manual persistente y entrada REST para fuentes reales/simuladas. Simulador set_state verifica por lectura SQLite; no hardware. Autorización Bearer por permisos server-side solo para integraciones; Core antiguo sigue local sin autenticación. Migración aditiva 003, deduplicación e idempotencia durables; no MQTT ni Edge. Contratos y límites en docs/phases/PHASE-02.md. EN VALIDACIÓN; Fase 03 no iniciada.
+
+
+## Fase 03 — 2026-11-06 Ecuador / 2026-11-07 UTC
+Fase 02 aceptada explícitamente por operador; merge main 1e6b29f/cabd969 conservando fases anteriores. Selección práctica OpenCV HOG/SVM preentrenado y captura + Norfair (asociación/Kalman); alternativas revisadas documentalmente YOLO y Frigate, no comparadas en precisión. Adaptadores delgados Edge, fixture determinista, zonas normalizadas y Outbox SQLite hacia Observation v1. Proyección Core genérica edge.presence crea PersonTrack/Zone y estado por cámara sin vendor API. Sesiones no son identidad; snapshots tardíos no rebobinan estado. Hardware Orbbec diferido no bloqueante; no prueba física. Evidencia, licencias y restricciones: docs/phases/PHASE-03.md. Fase 03 EN VALIDACIÓN, Fase 04 no iniciada.
+
+
+## Fase 04 — 2026-11-06 Ecuador / 2026-11-07 UTC
+Autorizada tras revisión de Fase 03; main 5ce2519 integrado. Output virtual con pantalla HTML/browser, FastAPI, SQLite y asyncio, sin renderer/protocolo físico nuevos. Regla presencia→capacidad declarada display.set_scene→ejecución y readback; modos manual/automático, idempotencia, auditoría y errores simulados. Migración aditiva 004. Hardware eléctrico/TV/proyector diferido; EN VALIDACIÓN, Fase 05 no iniciada. CI histórico comprobado Success por web: bloqueo api.github.com en CONNECT no demuestra token inválido. Ver docs/phases/PHASE-04.md y docs/audits/GITHUB-ACTIONS-RECOVERY.md.
+
+
+## Fase 05 — 2026-11-06 Ecuador / 2026-11-07 UTC
+IA situada como adaptador del SDK oficial OpenAI 2.8.1/function tools + sustituto controlado reproducible. Sin nuevo framework/MCP/modelo. Scope de entidad explícito y envelope de acción exacto, permisos server-side y capacidades declaradas; respuesta factual derivada de evidencia Core, no prosa libre del modelo. Trazas/idempotencia persistentes en migración 005, salida virtual por Output. Proveedor real no validado por ausencia de clave; SDK real validado con transporte controlado. Decisión compatible con sustituto permitido por PLANS.md; límites y evidencia en docs/phases/PHASE-05.md. EN VALIDACIÓN, no Fase 06.
+
+
+## Fase 06 — 2026-11-06 Ecuador / 2026-11-07 UTC
+Autorizada integración de instalaciones mediante adaptadores existentes. MediaMTX/FFmpeg/OpenCV para RTSP TCP local real y Eclipse Mosquitto/Paho para MQTT; HTTPX para reservas fixture. Perfiles Edge normalizan a Observation v1 con deduplicación/cola existente, sin cambiar código/schema/endpoints Core. Sensores/reservas persisten como eventos con procedencia, no estado materializado. ONVIF, Frigate y NVR/VMS físicos solo evaluación documental/matriz; no acceso ajeno ni hardware supuesto. Docker fijado por digest, licencias y límites en docs/phases/PHASE-06.md. EN VALIDACIÓN; Fase 07 no iniciada.
+
+
+## Fase 07 — 2026-11-07 UTC
+Experience autorizada: PlayCanvas 2.23.3 + Vite estático, siete tiendas, cuatro CCTV y vista principal desde el mismo estado/revisión. Se extrae sin alterar el fixture Edge a JSON compartido; desfases de la misma trayectoria para visitantes anónimos, sin otro motor de simulación. Geometrías primitivas de PlayCanvas; tres acciones locales con readback, consultas deterministas y export Observation v1. Adaptador opcional Core con API real y modos separados, token solo memoria, errores sin fallback; CORS explícito por variable de entorno, desactivado por defecto. Publicación Pages por gh-pages y Actions, con prueba de SHA y navegación real sobre URL. Hardware, calibración y despliegue Core público no acreditados. EN VALIDACIÓN; no Fase 08. Evidencia y límites en docs/phases/PHASE-07.md.
+
+
+## Fase 08 — 2026-11-07 UTC
+Continuación autorizada por operador. Entrega compone frameworks existentes (unittest/HTTPX/Playwright/SQLite/GitHub Actions) con el fixture del visor y Outbox vigente: escenario HTTP aislado, memoria/contexto, acción virtual, permisos, interrupción, reinicio y backup/restore. Sin nuevos servicios genéricos ni cambio de contratos/schema Core. Paquetes de fuente comprometida y web estática con manifiesto/checksums, instalados desde extracción limpia en CI. No incluye dependencias offline ni DB/secretos. Runbook del operador y backlog por prioridad/dependencias/esfuerzo; EN VALIDACIÓN hasta aceptación humana, hardware/LLM remoto/producción siguen sin acreditar. Ver docs/phases/PHASE-08.md.
+
+
+## Auditoría integral MVP — 2026-11-07 UTC
+Auditoría independiente de recorridos felices sobre701da12. Probes nuevos HTTP real, Outbox y Chromium detectan autenticación Core incompleta, falta de ámbitos por fuente, colisión de IDs cámara/track, congelación temporal por timestamp futuro, cola bloqueada por422 permanente, sensores solo como eventos, respuesta de agente fija y escena Core/Experience divergente. Informe docs/audits/MVP-INDEPENDENT-2026-11-07.md. Se corrigen únicamente números JSON no finitos, Bearer no ASCII y validación/procedencia de exportación del visor; sin nueva arquitectura, migración ni funcionalidades. La auditoría sustituye interpretaciones de «plataforma plenamente integrada» basadas solo en demos verdes. Fases no autoaprobadas, Fase08 EN VALIDACIÓN; piloto/producción sin validar.
+
+
+## Checkpoint Fase09: implementación parcial (2026-11-07)
+Office usa Core persistente y Núcleo modular para normalización de capacidades/adaptadores, según el addendum vigente. Se conservan entidades/eventos/observaciones y separación entre identidad confirmada y track anónimo; nuevas APIs requieren ámbito de sede/rol. Tablas Office son aditivas y versionadas. Simulación y REST de servicio de prueba se rotulan como tales. SSOG y voxels originales de Synthetic Office se presentan con visor oficial; no se inventan salas ni ubicaciones físicas de equipos. Ver progreso de gates en docs/PHASE-09-PROGRESS.md; este checkpoint parcial no declara validada la fase ni un piloto real.
+
+
+## 2026-11-08 — Reloj y jornada activa de Fase09
+Core es el único productor del reloj persistente de simulación; clientes observan y controlan con permiso simulate. Reiniciar pausa sin aplicar tiempo offline. El replay crea un run independiente y cambia active_run_id en configuración de sede de forma transaccional, con eventos en ambas ejecuciones; nunca borra la anterior. Interfaces siguen esa ejecución por defecto y permiten seleccionar otras explícitamente. Mensajes vinculados se filtran por run; kiosco puede leer únicamente ID/reloj de ejecución activa. Hora presentada se interpreta en timezone de sede, manteniendo UTC en almacenamiento. Es configuración del simulador existente, no un segundo motor ni un asistente nuevo. No modifica aprobación de fase.
+
+
+### Aplicación del contrato espacial — 2026-11-08
+Prevalece PHASE-09-SPATIAL-INTERFACE-CONTRACT.md: cuatro grupos A/B oficinas completas, C/D puestos individuales. ENTITY usa Dollhouse como superficie principal. El modo público autónomo es una traza generada por Core con cambios de sesión etiquetados; la sesión Core real continúa por API autenticada configurable. No sustituye la persistencia ni la autorización de Core. Integración en pruebas, no aceptación de fase.

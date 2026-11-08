@@ -1,0 +1,1 @@
+CREATE TABLE agent_runs (id TEXT PRIMARY KEY, actor TEXT NOT NULL, body TEXT NOT NULL, result TEXT NOT NULL);

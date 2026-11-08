@@ -32,3 +32,7 @@ GitHub es la fuente compartida de documentos, código, commits, PR y CI. Memoria
 
 ## Responsabilidad de publicación autónoma (decisión del operador, 2026-11-06)
 Codex se encarga de principio a fin de la tarea autorizada: desarrollo, depuración, pruebas, commits, publicación en GitHub y actualización de memoria compartida. El operador no debe crear PR, hacer push, fusionar ramas ni gestionar Git manualmente. Cuando el flujo requiera PR, Codex lo crea y proporciona su URL; solo fusiona si cuenta con autorización y cumple las protecciones de la rama. Si no dispone de permisos de publicación, informa del bloqueo concreto y solicita autorización, sin trasladar operaciones Git al operador. No declarar trabajo visible en el repositorio mientras solo exista en workspace local. El cierre de una tarea incluye evidencia publicada (SHA, rama, estado de PR/merge, resultados de pruebas). La aprobación de fase sigue siendo humana.
+
+
+## Excepción operativa autorizada: Fase 09 (2026-11-07)
+Para la tarea integral Fase 09, la instrucción general «detenerse al final de la fase/tarea» se aplica **solo al final de 09.9**, no al final de 09.1–09.8. Codex debe ejecutar los gates y correcciones de cada subfase, registrar evidencias y avanzar sin solicitar revisión humana intermedia. Leer docs/phases/PHASE-09.md y docs/PHASE-09-PROGRESS.md. Esta excepción no modifica las autorizaciones de fases anteriores ni habilita fusiones que requieran permisos adicionales.

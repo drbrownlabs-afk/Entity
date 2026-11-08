@@ -1,0 +1,114 @@
+{
+  "tested_commit": "685dc5a06b84f47c090489a0f9cb037ea199b7fb",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42451479996",
+  "source": "Native ENTITY spatial interface, ORIGINAL published SSOG, actual Core-generated trace and normalized synthetic session actions",
+  "public_url": "http://127.0.0.1:4175",
+  "checks": [
+    {
+      "width": 1440,
+      "height": 1000,
+      "original_loaded": true,
+      "native_renderer_ui": false,
+      "visible_people": [
+        {
+          "id": "PERSON-CARLOS",
+          "position": [
+            -3.4262733459472656,
+            -1.774999976158142,
+            -16.712793350219727
+          ]
+        },
+        {
+          "id": "PERSON-LUIS",
+          "position": [
+            -3.4262733459472656,
+            -1.715000033378601,
+            -13.466780662536621
+          ]
+        }
+      ],
+      "core_connected": false,
+      "mode": "synthetic-replay",
+      "gpu_person_pick": true,
+      "person_graph": true,
+      "camera_feed": true,
+      "resident_original_feed": true,
+      "rendered_normalized_session_observation": true,
+      "view_roundtrip_keeps_selection": true,
+      "shared_clock_pause": true,
+      "session_booking": true,
+      "errors": []
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "original_loaded": true,
+      "native_renderer_ui": false,
+      "visible_people": [
+        {
+          "id": "PERSON-CARLOS",
+          "position": [
+            -3.4262733459472656,
+            -1.774999976158142,
+            -16.712793350219727
+          ]
+        },
+        {
+          "id": "PERSON-LUIS",
+          "position": [
+            -3.4262733459472656,
+            -1.715000033378601,
+            -13.466780662536621
+          ]
+        }
+      ],
+      "core_connected": false,
+      "mode": "synthetic-replay",
+      "gpu_person_pick": true,
+      "person_graph": true,
+      "camera_feed": true,
+      "resident_original_feed": true,
+      "rendered_normalized_session_observation": true,
+      "view_roundtrip_keeps_selection": true,
+      "shared_clock_pause": true,
+      "session_booking": true,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "original_loaded": true,
+      "native_renderer_ui": false,
+      "visible_people": [
+        {
+          "id": "PERSON-LUIS",
+          "position": [
+            -3.4262733459472656,
+            -1.715000033378601,
+            -13.466780662536621
+          ]
+        },
+        {
+          "id": "PERSON-CARLOS",
+          "position": [
+            -3.4262733459472656,
+            -1.774999976158142,
+            -16.712793350219727
+          ]
+        }
+      ],
+      "core_connected": false,
+      "mode": "synthetic-replay",
+      "gpu_person_pick": true,
+      "person_graph": true,
+      "camera_feed": true,
+      "resident_original_feed": true,
+      "rendered_normalized_session_observation": true,
+      "view_roundtrip_keeps_selection": true,
+      "shared_clock_pause": true,
+      "session_booking": true,
+      "errors": []
+    }
+  ],
+  "status": "passed"
+}

@@ -74,3 +74,14 @@ Salida: aceptación humana explícita, fallos documentados y backlog financiable
 - Mantener docs/PROJECT-STATUS.md, docs/AGENT-WORKLOG.md y docs/PHASE-BOARD.md; decisiones nuevas en docs/DECISION-LOG.md.
 - Una fase 'APROBADA' requiere demostración funcional y aprobación humana; pruebas no ejecutadas => EN VALIDACIÓN o BLOQUEADA.
 - Priorizar pequeño ciclo end-to-end verificable sobre arquitectura ornamental.
+
+
+## Fase 09 — ENTITY Spatial Intelligence / Synthetic Office (autorización especial 2026-11-07)
+Nueva tarea integral de simulación de centro de trabajo, continuación de ENTITY Experience. Plan funcional, subfases 09.1–09.9, gates, evidencia y protocolo de continuidad: [docs/phases/PHASE-09.md](docs/phases/PHASE-09.md). **Excepción explícita a la regla general de aprobación por fase:** el operador autorizó completar consecutivamente todas las subfases 09.1–09.9 con autorrevisión, corrección y avance automático sin pausas humanas intermedias. Cada gate puede quedar VERIFICADO AUTOMÁTICAMENTE; solo la Fase 09 integral espera revisión humana al final. No altera las autorizaciones históricas de 00–08 ni supone que 07/08 están fusionadas. Evidencia en docs/PHASE-09-PROGRESS.md.
+
+
+## Fase 10 — Agente ENTITY con OpenClaw (PLANIFICADA; NO INICIADA)
+**Prioridad siguiente, únicamente tras cierre y validación integral de Fase 09.** Integrar un único agente OpenClaw `entity` como consumidor de las capacidades que ya expone ENTITY Core mediante API y adaptador delgado MCP/plugin según versión oficial. No construir un segundo Core, modelo del mundo, memoria operativa ni framework de agentes. Modelo del mundo = entidad computable persistente; coworking = entidad de dominio, no raíz ontológica del modelo. Preservar estado, eventos, relaciones, permisos, historial y comandos en Core. Validar con Synthetic Office: José/Carlos, consultas de mundo, capacidades declaradas, reservas autorizadas, cambios reflejados en UI y reinicios. No ejecutar ahora. **Plan vinculante y gates 10.1–10.8:** [docs/phases/PHASE-10.md](docs/phases/PHASE-10.md).
+
+## Fase 11 — Camera Gateway, registro espacial y continuidad multicámara (PLANIFICADA; DIFERIDA)
+Se traslada íntegra la anterior Fase 10 a [docs/phases/PHASE-11.md](docs/phases/PHASE-11.md), con subfases 11.1–11.9: fuentes ONVIF/RTSP/NVR/USB, calibración contra gemelo, ReID visual, restricciones espaciales, TrackGlobal, evidencias, persistencia y pruebas adversas. **No es requisito para la Fase 10.** Solo iniciar después de validar 09 y 10, con hardware/acceso apropiado o fixtures etiquetados, sin atribuir validación física a simulaciones.

@@ -1,0 +1,10 @@
+/workspace/Entity/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_all_clients_share_play_pause_and_restart_does_not_apply_offline_time (test_office_playback.PlaybackTests.test_all_clients_share_play_pause_and_restart_does_not_apply_offline_time) ... ok
+test_provider_failure_rolls_back_tick_and_pauses_instead_of_repeating_actions (test_office_playback.PlaybackTests.test_provider_failure_rolls_back_tick_and_pauses_instead_of_repeating_actions) ... ok
+test_replay_is_atomic_shared_scoped_and_preserves_previous_history (test_office_playback.PlaybackTests.test_replay_is_atomic_shared_scoped_and_preserves_previous_history) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 5.074s
+
+OK

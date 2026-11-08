@@ -1,0 +1,40 @@
+name: Verify original Synthetic Office integration
+on:
+  push:
+    branches: [codex/phase-09-autonomous-plan]
+    paths: ['apps/web/src/office/**', 'worlds/synthetic-office/**', 'apps/web/public/office/**', 'scripts/phase09/verify-spatial-interface.mjs', 'apps/web/office.html', 'scripts/phase09/verify-original-office.mjs', '.github/workflows/phase09-original.yml']
+  workflow_dispatch:
+concurrency:
+  group: phase09-original-${{ github.ref }}
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  original:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npm --prefix apps/web ci
+      - run: npm --prefix apps/web run build
+      - run: cd apps/web && npx playwright install --with-deps chromium
+      - name: Verify the original asset and native voxel collision integration
+        run: |
+          npm --prefix apps/web run preview -- --port 4175 > /tmp/office-preview.log 2>&1 &
+          node scripts/phase09/verify-original-office.mjs
+      - name: Retain original scene evidence independently of branch publication
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: original-office-evidence
+          path: |
+            docs/evidence/phase09/native-interface.json
+            docs/evidence/phase09/native-*.png
+            docs/evidence/phase09/original-dollhouse-*.png
+      - name: Persist observed evidence
+        if: always()
+        run: |
+          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/native-interface.json' 'docs/evidence/phase09/native-*.png' 'docs/evidence/phase09/original-dollhouse-*.png'

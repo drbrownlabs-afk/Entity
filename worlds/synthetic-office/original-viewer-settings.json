@@ -1,0 +1,221 @@
+{
+  "settings": {
+    "version": 2,
+    "tonemapping": "neutral",
+    "highPrecisionRendering": true,
+    "background": {
+      "color": [
+        1,
+        1,
+        1
+      ]
+    },
+    "postEffectSettings": {
+      "sharpness": {
+        "enabled": false,
+        "amount": 0.5
+      },
+      "bloom": {
+        "enabled": true,
+        "intensity": 0.1,
+        "blurLevel": 1
+      },
+      "grading": {
+        "enabled": true,
+        "brightness": 1,
+        "contrast": 1,
+        "saturation": 1.1,
+        "tint": [
+          1,
+          1,
+          1
+        ]
+      },
+      "vignette": {
+        "enabled": true,
+        "intensity": 0.5,
+        "inner": 0.3,
+        "outer": 1.88,
+        "curvature": 1
+      },
+      "fringing": {
+        "enabled": false,
+        "intensity": 4
+      }
+    },
+    "animTracks": [
+      {
+        "name": "animTrack",
+        "duration": 6,
+        "frameRate": 30,
+        "loopMode": "pingpong",
+        "interpolation": "spline",
+        "smoothness": 1,
+        "keyframes": {
+          "times": [
+            0,
+            90,
+            180
+          ],
+          "values": {
+            "position": [
+              -2.7365071773529053,
+              -0.570602297782898,
+              -1.8901045322418213,
+              -4.54594087600708,
+              -0.38141191005706787,
+              -6.841612815856934,
+              -3.4262733459472656,
+              -0.37242391705513,
+              -12.386368751525879
+            ],
+            "target": [
+              -2.285997320264056,
+              -0.574066659743855,
+              -3.300063103420414,
+              -3.066252593463437,
+              -0.41258478445815966,
+              -6.86410480968325,
+              -2.638698754248028,
+              -0.3352852352437239,
+              -11.133651895837664
+            ],
+            "fov": [
+              85,
+              85,
+              85
+            ]
+          }
+        }
+      }
+    ],
+    "cameras": [
+      {
+        "initial": {
+          "position": [
+            -2.8490238189697266,
+            -0.30681493878364563,
+            -1.8820308446884155
+          ],
+          "target": [
+            -2.3203034883382,
+            -0.2879806676207069,
+            -3.264439668922533
+          ],
+          "fov": 85
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "position": [
+          -0.4324827070899584,
+          -1.1356615558262035,
+          -5.352859958159687
+        ],
+        "title": "6-Person Office Bench System",
+        "text": "",
+        "extras": {},
+        "camera": {
+          "initial": {
+            "position": [
+              -2.2909014225006104,
+              -0.6327518224716187,
+              -6.878935813903809
+            ],
+            "target": [
+              -1.063821250294442,
+              -0.7785310259698787,
+              -6.064088128799655
+            ],
+            "fov": 85
+          }
+        }
+      },
+      {
+        "position": [
+          1.1870577758066334,
+          -1.2140478639523282,
+          0.06964437653360278
+        ],
+        "title": "8-Person Conference Table",
+        "text": "",
+        "extras": {},
+        "camera": {
+          "initial": {
+            "position": [
+              -2.698869466781616,
+              -0.7564377784729004,
+              -2.1411778926849365
+            ],
+            "target": [
+              -1.5667378200804414,
+              -0.82848103010642,
+              -1.1903667760348111
+            ],
+            "fov": 85
+          }
+        }
+      },
+      {
+        "position": [
+          1.9970835412267196,
+          -0.8033600527595,
+          -10.693077551494174
+        ],
+        "title": "6-Person Office Bench System",
+        "text": "",
+        "extras": {},
+        "camera": {
+          "initial": {
+            "position": [
+              1.8311508893966675,
+              -0.5394223928451538,
+              -6.283419609069824
+            ],
+            "target": [
+              1.887405199081167,
+              -0.5492254865430951,
+              -9.172446737881645
+            ],
+            "fov": 85
+          }
+        }
+      },
+      {
+        "position": [
+          0.09792180086598856,
+          -0.17678632222835267,
+          2.586294204317113
+        ],
+        "title": "Fito Wall",
+        "text": "",
+        "extras": {},
+        "camera": {
+          "initial": {
+            "position": [
+              -2.5200188159942627,
+              -0.7118004560470581,
+              -2.3654165267944336
+            ],
+            "target": [
+              -1.0462618929210763,
+              -0.7242954121367714,
+              0.12006608542043518
+            ],
+            "fov": 85
+          }
+        }
+      }
+    ],
+    "startMode": "animTrack"
+  },
+  "contentUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/lod-meta.json",
+  "telemetry": {
+    "splatHash": "a972d838",
+    "viewerSessionId": "65fc5a9e-7804-43d6-85a0-55d8838e5936"
+  },
+  "posterUrl": "https://s3-eu-west-1.amazonaws.com/images.playcanvas.com/splat/a972d838/v1/xl.webp",
+  "skyboxUrl": "/s/skybox?id=a972d838",
+  "collisionUrl": "https://d28zzqy0iyovbz.cloudfront.net/a972d838/v1/scene.voxel.json"
+}

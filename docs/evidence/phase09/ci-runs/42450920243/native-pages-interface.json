@@ -1,0 +1,104 @@
+{
+  "tested_commit": "1cb670156d8ca347a0223ae8ba4b7f7af9f161ad",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42450920243",
+  "source": "Native ENTITY spatial interface, ORIGINAL published SSOG, actual Core-generated trace and normalized synthetic session actions",
+  "public_url": "https://drbrownlabs-afk.github.io/Entity",
+  "checks": [
+    {
+      "width": 1440,
+      "original_loaded": true,
+      "native_renderer_ui": false,
+      "visible_people": [
+        {
+          "id": "PERSON-LUIS",
+          "position": [
+            -3.4262733459472656,
+            -1.715000033378601,
+            -13.466780662536621
+          ]
+        },
+        {
+          "id": "PERSON-CARLOS",
+          "position": [
+            -3.4262733459472656,
+            -1.774999976158142,
+            -16.712793350219727
+          ]
+        }
+      ],
+      "core_connected": false,
+      "mode": "synthetic-replay",
+      "person_graph": true,
+      "camera_feed": true,
+      "view_roundtrip_keeps_selection": true,
+      "shared_clock_pause": true,
+      "session_booking": true,
+      "errors": []
+    }
+  ],
+  "status": "failed",
+  "error": "Error: Original/Core entity is not visible: D",
+  "last_state": {
+    "status": "Fuentes y personajes SIMULADOS · Lugar original",
+    "app": {
+      "loaded": true,
+      "view": "dollhouse",
+      "feed": false,
+      "selected": null,
+      "mode": "synthetic-replay",
+      "coreConnected": false,
+      "clock": "2026-11-07T14:15:03.000Z",
+      "markers": [
+        "A",
+        "B",
+        "C",
+        "CAM-01",
+        "CAM-02",
+        "CAM-03",
+        "CAM-04",
+        "CAM-ROUTE-1",
+        "CAM-ROUTE-2",
+        "PERSON-CARLOS",
+        "PERSON-LUIS"
+      ],
+      "visual": {
+        "cameraRenderState": [],
+        "cameraViews": 6,
+        "activeCameras": 0,
+        "visibleCameraIds": [
+          "CAM-ROUTE-1",
+          "CAM-ROUTE-2"
+        ],
+        "worldClock": "2026-11-07T14:15:03.000Z",
+        "avatarsLoaded": 2,
+        "avatarsPlaced": [
+          {
+            "id": "PERSON-LUIS",
+            "position": [
+              -3.4262733459472656,
+              -1.715000033378601,
+              -13.466780662536621
+            ]
+          },
+          {
+            "id": "PERSON-CARLOS",
+            "position": [
+              -3.4262733459472656,
+              -1.774999976158142,
+              -16.712793350219727
+            ]
+          }
+        ],
+        "singleApplication": true,
+        "errors": [],
+        "source": "original SSOG and authorized Core projection"
+      },
+      "nativeUi": false,
+      "cameraPosition": [
+        24,
+        26,
+        -6
+      ]
+    }
+  }
+}
