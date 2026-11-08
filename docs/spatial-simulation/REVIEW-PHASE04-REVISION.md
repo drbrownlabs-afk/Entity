@@ -22,6 +22,12 @@ Las imágenes siguientes son renders reales de este maestro, con filtrado OIDN y
 
 [Original Cycles sin filtrar](evidence/phase04-revision/renders/garden-detail.png) · hora 12:00 · [1440, 960] · hasta 96 muestras.
 
+## Puestos: vidrio, equipos y jardineras
+
+![Puestos: vidrio, equipos y jardineras](evidence/phase04-revision/renders/denoised/office.png)
+
+[Original Cycles sin filtrar](evidence/phase04-revision/renders/office.png) · hora 12:00 · [1440, 960] · hasta 96 muestras.
+
 ## Mamparas: reflexión a ángulo oblicuo
 
 ![Mamparas: reflexión a ángulo oblicuo](evidence/phase04-revision/renders/denoised/glass-detail.png)
@@ -35,5 +41,7 @@ Las imágenes siguientes son renders reales de este maestro, con filtrado OIDN y
 | ![Objetivo lounge](references/1290-lounge-target.jpg) | ![Objetivo puestos](references/1288-office-target.jpg) | ![Objetivo recepción](references/1286-reception-target.jpg) |
 
 Revisar textura, diseño de luz cálida, reflejos del vidrio y detalle a escala humana. Son referencias de calidad, no evidencia de la escena ejecutada.
+
+Modelos y texturas profesionales: [atribución, licencias y modificaciones](../../simulation/spatial-office/assets/archviz/ASSETS-NOTICE.md).
 
 Para abrir los controles locales, ejecutar el texto **START ENTITY visual controls** dentro del maestro en el checkout. La integración PlayCanvas y la exportación arquitectónica definitiva siguen pendientes de autorización tras esta revisión.

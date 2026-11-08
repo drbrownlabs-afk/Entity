@@ -66,6 +66,28 @@
       },
       "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
       "raw_mean_srgb": 0.40211787819862366
+    },
+    {
+      "name": "office",
+      "raw": "office.png",
+      "raw_sha256": "359a7207fe0d08bd89ab00e7d77dd3172911e1905cb6c1023f87834f31366ff0",
+      "filtered": "denoised/office.png",
+      "filtered_sha256": "fa4146b4977020a1beb61f37a03fcc12b6ae329c17324ec365359da11d57a43f",
+      "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "guides": {
+        "albedo": {
+          "path": ".runtime/revision-guides/review/office-Albedo.pfm",
+          "sha256": "757e0038be18c6f27673dd709c207080598022cda2d336b0a4ed904f04efff8f",
+          "source_exr_sha256": "9b2694e0c1f1de9695666423ff420bac2fc8c1b5dbdf41ab42e6c341a6e8609e"
+        },
+        "normal": {
+          "path": ".runtime/revision-guides/review/office-Normal.pfm",
+          "sha256": "f949e8cb5a09a7a841b325707cf5cff1c5e999595091b9a6375a724eb41d9c7a",
+          "source_exr_sha256": "2c392d295c888748493b623e4154c00d072e68a823356c98f320359141ac44d7"
+        }
+      },
+      "algorithm": "Official OIDN 2.3.3 RT LDR, sRGB color with linear Cycles albedo and normal guides when available",
+      "raw_mean_srgb": 0.3626788556575775
     }
   ],
   "no_reference_photo_edits": true,

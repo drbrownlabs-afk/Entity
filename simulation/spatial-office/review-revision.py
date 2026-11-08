@@ -27,6 +27,7 @@ lines += ['', '## Objetivos visuales proporcionados por el operador', '',
  '| Lounge | Puestos | Recepción |','|---|---|---|',
  '| ![Objetivo lounge](references/1290-lounge-target.jpg) | ![Objetivo puestos](references/1288-office-target.jpg) | ![Objetivo recepción](references/1286-reception-target.jpg) |','',
  'Revisar textura, diseño de luz cálida, reflejos del vidrio y detalle a escala humana. Son referencias de calidad, no evidencia de la escena ejecutada.', '',
+ 'Modelos y texturas profesionales: [atribución, licencias y modificaciones](../../simulation/spatial-office/assets/archviz/ASSETS-NOTICE.md).', '',
  'Para abrir los controles locales, ejecutar el texto **START ENTITY visual controls** dentro del maestro en el checkout. La integración PlayCanvas y la exportación arquitectónica definitiva siguen pendientes de autorización tras esta revisión.']
 (HANDOFF/'REVIEW-PHASE04-REVISION.md').write_text('\n'.join(lines)+'\n')
 print('VERIFIED_GALLERY',len(set(raw)&set(filtered)),'images','DRAFT' if draft else 'REVIEW',h)
