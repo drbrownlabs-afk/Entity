@@ -90,11 +90,20 @@ Materiales PBR realistas: terrazzo, vidrio, aluminio/metal negro, madera, tapice
 - Puertas con ID, ambiente, estado abierta/cerrada, bloqueada/desbloqueada cuando proceda, transiciones, animación y colisiones sincronizadas; controles independientes por dispositivo.
 - Definir `device-manifest.json` y contratos locales de comandos/eventos para luces, circuitos y puertas, adaptables después a las interfaces Core existentes. No modificar Core para implementarlo.
 
+**Sistema temporal y ambiental obligatorio (preparación en Blender, fase 04):**
+- Definir un reloj simulado único de 24 horas con tiempo continuo, ajuste directo de hora, pausa, reproducción hacia adelante y hacia atrás y velocidades configurables (por ejemplo ±1×, ±10×, ±60×, ±360×). No confundir este reloj con el tiempo real ni con eventos de sensores.
+- Diseñar y documentar iluminación para mañana (08:00), tarde (17:00), noche (20:00) y transiciones intermedias; configurar trayectoria solar, orientación, temperatura/color, intensidad, sombras, luz de cielo y exposición de manera coherente. La trayectoria solar debe parametrizarse con ubicación, fecha y orientación configurables; no inventar coordenadas geográficas del edificio.
+- Preparar en Blender la escena visual de alta calidad, luminarias con IDs y control por circuitos, materiales y reflejos; entregar renders de referencia de los tres horarios y de estados de luces. Separar contribuciones estáticas de las luminarias conmutables: evitar que un horneado fijo contradiga el estado OFF.
+- Preparar especificación de transferencia a PlayCanvas: parámetros de cielo/sol, entorno, sombras, exposición, materiales, lightmaps y luces dinámicas o variantes de iluminación cuando corresponda. Priorizar continuidad visual con los renders aprobados, sin aceptar degradaciones injustificadas como premisa.
+- La aprobación humana al terminar la fase 04 incluye los renders de 08:00, 17:00 y 20:00 y la propuesta de transición temporal. **No iniciar PlayCanvas antes de esa aprobación.**
+
 **Gate 04:** renders Blender y, solo si ya existe un entorno técnico aislado, pruebas técnicas preliminares sin iniciar la implementación de la fase 05 en PlayCanvas de la misma sala con todas las luces encendidas/apagadas y luz individual conmutada; comprobación de puertas y manifest de dispositivos. Materiales exportados sin pérdidas graves.
 
 ## Fase 05 — PlayCanvas, navegación e interacción (requiere aprobación previa)
 
 **Meta:** escena arquitectónica completa (incluida la planta en C) navegable en navegador. Exportar GLB con IDs y jerarquía; vistas general e interior, navegación ratón/teclado/táctil, colisiones, selección de ambientes/objetos, ficha contextual. Reutilizar por importación/adaptador los componentes del frontend anterior **sin editar su código**. Implementar controles funcionales de puertas, luminarias individuales/circuitos y cuatro televisores con contenido de prueba. Selección de entidad muestra ID, tipo, ambiente y estado. No duplicar el Core.
+
+**Reloj ambiental en PlayCanvas (solo después de autorización de fase 05):** implementar control horario 00:00–24:00, scrub directo, pausa, avance y retroceso acelerados, interpolación continua de sol/cielo/sombras/exposición y respuesta de luminarias según políticas configurables. Permitir anular manualmente el encendido automático por ambiente; separar tiempo simulado y datos reales. Verificar cambios visuales a 08:00, 17:00 y 20:00, así como reproducción inversa y transiciones sin saltos visibles.
 
 **Gate 05 (solo después de aprobación humana de la fase 04):** ejecución real en navegador, recorrido completo de la planta en C, incluyendo lounge, cabinas, baños y lockers, puertas con colisiones, luces con cambios visibles, TVs y selección con IDs correctos; capturas y logs.
 
