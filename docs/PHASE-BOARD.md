@@ -42,3 +42,13 @@ Auditoría publicada en codex/mvp-independent-audit (51d9ab6/9f35abb), CI4237782
 | 10 | Camera Gateway, registro espacial y continuidad multicámara visual + contextual | NO INICIADA / PLANIFICADA | Solo después de cerrar y validar Fase 09. Integrar fuentes LAN/ONVIF/RTSP/NVR/API/USB/simuladas; calibrar cámaras contra SSOG; mantener identidad global CAM-01→CAM-02→CAM-05 mediante ReID + restricciones físicas/temporales del modelo del mundo; probar imposibles, incertidumbre, persistencia, permisos y visualización. Plan detallado en PLANS.md y diseño previo en docs/POST-PHASE-09-SPATIAL-INFERENCE-REGISTRATION.md. |
 
 No ejecutar Fase 10 en paralelo ni cambiar estado de 09 por la incorporación de este plan. OpenClaw/multiagentes quedan fuera de esta fase.
+
+
+## Reordenación vinculante — 2026-11-08 (sustituye el bloque «Próxima fase» anterior)
+| Fase | Nombre | Estado | Activación |
+|---|---|---|---|
+| 09 | Synthetic Office | EN CURSO | Completar y validar implementación pendiente, sin interrupciones |
+| 10 | Agente ENTITY mediante OpenClaw, operación de capacidades de ENTITY Core | NO INICIADA / PLANIFICADA | Solo tras validación integral de 09; especificación docs/phases/PHASE-10.md; no desarrollar ahora |
+| 11 | Camera Gateway, registro espacial y continuidad multicámara | NO INICIADA / DIFERIDA | Después de 09 y 10; especificación preservada docs/phases/PHASE-11.md; hardware no disponible no bloquea 10 |
+
+La fila antigua que denominaba Fase 10 a cámaras y el texto que excluía OpenClaw de esa fase quedan **sustituidos** por esta decisión. La antigua Fase 11 de IA conversacional genérica se reemplaza por la integración OpenClaw de Fase 10; conservar trazabilidad en el historial Git. Esta actualización es exclusivamente documental, sin gates ejecutados.
