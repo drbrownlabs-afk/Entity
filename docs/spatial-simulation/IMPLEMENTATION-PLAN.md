@@ -90,13 +90,13 @@ Materiales PBR realistas: terrazzo, vidrio, aluminio/metal negro, madera, tapice
 - Puertas con ID, ambiente, estado abierta/cerrada, bloqueada/desbloqueada cuando proceda, transiciones, animación y colisiones sincronizadas; controles independientes por dispositivo.
 - Definir `device-manifest.json` y contratos locales de comandos/eventos para luces, circuitos y puertas, adaptables después a las interfaces Core existentes. No modificar Core para implementarlo.
 
-**Gate 04:** renders Blender y pruebas técnicas preliminares en PlayCanvas de la misma sala con todas las luces encendidas/apagadas y luz individual conmutada; comprobación de puertas y manifest de dispositivos. Materiales exportados sin pérdidas graves.
+**Gate 04:** renders Blender y, solo si ya existe un entorno técnico aislado, pruebas técnicas preliminares sin iniciar la implementación de la fase 05 en PlayCanvas de la misma sala con todas las luces encendidas/apagadas y luz individual conmutada; comprobación de puertas y manifest de dispositivos. Materiales exportados sin pérdidas graves.
 
-## Fase 05 — PlayCanvas, navegación e interacción
+## Fase 05 — PlayCanvas, navegación e interacción (requiere aprobación previa)
 
 **Meta:** escena arquitectónica completa (incluida la planta en C) navegable en navegador. Exportar GLB con IDs y jerarquía; vistas general e interior, navegación ratón/teclado/táctil, colisiones, selección de ambientes/objetos, ficha contextual. Reutilizar por importación/adaptador los componentes del frontend anterior **sin editar su código**. Implementar controles funcionales de puertas, luminarias individuales/circuitos y cuatro televisores con contenido de prueba. Selección de entidad muestra ID, tipo, ambiente y estado. No duplicar el Core.
 
-**Gate 05:** ejecución real en navegador, recorrido completo de la planta en C, incluyendo lounge, cabinas, baños y lockers, puertas con colisiones, luces con cambios visibles, TVs y selección con IDs correctos; capturas y logs.
+**Gate 05 (solo después de aprobación humana de la fase 04):** ejecución real en navegador, recorrido completo de la planta en C, incluyendo lounge, cabinas, baños y lockers, puertas con colisiones, luces con cambios visibles, TVs y selección con IDs correctos; capturas y logs.
 
 ## Fase 07 — Integración y aceptación
 
@@ -106,7 +106,7 @@ Materiales PBR realistas: terrazzo, vidrio, aluminio/metal negro, madera, tapice
 
 ## Política de autonomía y punto de revisión
 
-El agente puede avanzar de manera autónoma desde la fase actual (fase 02) hasta **terminar la fase 05**, siguiendo el nuevo orden: ampliación arquitectónica (03), materiales e iluminación (04), visor PlayCanvas (05), sin solicitar autorización humana entre fases. Ejecutar y registrar todos los gates internamente, reparar fallos y conservar evidencia. **Detenerse antes de comenzar la fase 06 de personajes**, presentando archivo Blender, vista PlayCanvas, plano en C, capturas, puertas, luces y problemas pendientes para una única revisión del operador. No confundir esta autorización con permiso para modificar backend/frontend/Gaussian o fusionar ramas. Si existe un bloqueo real que requiere decisión externa, solicitarla con detalle concreto.
+El agente puede avanzar de manera autónoma desde la fase actual (fase 02) únicamente hasta **terminar la fase 04**, siguiendo el orden: ampliación arquitectónica (03), materiales, iluminación y preparación de dispositivos (04). **La fase 05 de PlayCanvas está bloqueada hasta recibir aprobación explícita del operador después de revisar Blender, renders, distribución, materiales, luces, puertas y dispositivos.** No solicitar autorización entre fases 02–04. Ejecutar y registrar todos los gates internamente, reparar fallos y conservar evidencia. **Detenerse obligatoriamente al terminar la fase 04, antes de comenzar cualquier tarea de la fase 05 (exportación definitiva, implementación o integración en PlayCanvas)**. Presentar archivo Blender, plano en C, renders y capturas de todas las áreas, materiales, inventario/IDs, diseño de puertas y luces, pruebas disponibles y problemas pendientes para revisión y aprobación del operador. No iniciar la fase 05 ni la fase 06 sin autorización posterior. No confundir esta autorización con permiso para modificar backend/frontend/Gaussian o fusionar ramas. Si existe un bloqueo real que requiere decisión externa, solicitarla con detalle concreto.
 
 ## Entregables
 
