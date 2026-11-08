@@ -43,3 +43,7 @@ La aceptación humana de fase queda pendiente. Las fases 02–06 y su aplicació
 ## Revisión posterior: L y cafetería
 
 El operador corrigió la topología y suministró las dos referencias visuales. El maestro de trabajo actualizado es **`output/office-cafe-L.blend`**; el maestro Phase01 se conserva como evidencia histórica. Ver [corrección L/cafetería](../../docs/spatial-simulation/CAFE-L-CORRECTION.md) para parámetros, renders y comandos. Este incremento reemplaza pods por mesas normales en el diseño nuevo y añade el brazo posterior en L; no acredita por sí mismo el Gate 02 completo.
+
+## Fase 02 — versión actual
+
+**Maestro de trabajo: [output/office-phase02.blend](output/office-phase02.blend)**. Incluye A–E/reuniones con mamparas y puertas, E al fondo, cafetería en L, recepción/espera, rampa, cuatro TVs y siete puertas con controles locales simulados. [Informe y comandos](../../docs/spatial-simulation/PHASE-02-REPORT.md), [plano con IDs](../../docs/spatial-simulation/evidence/phase02/layout-with-ids.svg). Los maestros anteriores se conservan como evidencia histórica. La interacción web y los circuitos luminosos no se atribuyen a esta entrega.

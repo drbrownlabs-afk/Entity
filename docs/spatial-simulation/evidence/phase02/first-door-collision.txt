@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/workspace/Entity/simulation/spatial-office/check-phase02.py", line 70, in <module>
+    check(f'door-sweep-clear:{id}:{frame}',not hit,hit[:10])
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Entity/simulation/spatial-office/check-phase02.py", line 16, in check
+    assert ok,(name,detail)
+           ^^
+AssertionError: ('door-sweep-clear:sim:p2:door:MEETING-AREA-01:22', ['sim:p1:meeting:chair:1:arm:1', 'sim:p1:meeting:chair:1:back'])
+
+Error: script failed, file: 'simulation/spatial-office/check-phase02.py', exiting.
+Blender 4.3.2
+Read blend: "/workspace/Entity/simulation/spatial-office/output/office-phase02.blend"
+
+Blender quit

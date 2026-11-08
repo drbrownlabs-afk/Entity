@@ -22,3 +22,12 @@ La planta rectangular queda sustituida por una reconstrucción en L en el maestr
 ## Precisión del operador — mesa adicional al fondo
 
 El operador recuerda que solicitó una mesa/agrupación de trabajo adicional al fondo. Corresponde a **Sala E, Fase 02**, ya prevista en IMPLEMENTATION-PLAN.md: nueva agrupación de mesas con mamparas de la misma familia y circulación viable. La ubicación al fondo queda como restricción explícita del operador para ese incremento; registrar posición estimada y comprobar acceso/separación de cafetería, mobiliario y columnas antes de validar el gate. Las dos mesas redondas de la cafetería **no sustituyen** esta agrupación adicional. Inspección del inventario actual: A–D conservadas; Sala E todavía no modelada. Esta revisión documental no acredita implementación ni pruebas geométricas de E.
+
+## Fase 02 — ejecución autorizada posteriormente
+
+| Fase | Estado actual | Evidencia |
+|---|---|---|
+| 02 | EN VALIDACIÓN | Orden explícita del operador para continuar. A–E/reuniones con mamparas y acceso, agrupación E nueva al fondo, recepción/espera, cafetería sin pods, rampa, siete puertas simuladas y cuatro TVs. 293 comprobaciones PASS, diez rutas. [Informe](PHASE-02-REPORT.md). Revisión visual/aceptación humana final, sin autoaprobar. |
+| 03 | NO INICIADA | Materiales/circuitos y control de luces con verificación PlayCanvas, tras revisión de Fase02. |
+
+Esta entrada sustituye los estados anteriores «Fase02 pendiente» y «solo cafetería». Conserva el historial y no atribuye aprobación humana a ninguna verificación automática.

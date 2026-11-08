@@ -1,0 +1,154 @@
+{
+  "phase": "02",
+  "frame": "supersplat-original +Y up",
+  "units": "relative; meters unverified",
+  "provenance": "New architectural design over approximate reconstruction; not recovered building measurements",
+  "rooms": [
+    {
+      "id": "MEETING-AREA-01",
+      "bounds": [
+        -1.5,
+        4.1,
+        -2.1,
+        2.43
+      ],
+      "hinge_z": -2.0,
+      "door_width": 1.1,
+      "floor_y": -1.85,
+      "reuse_green_back": true
+    },
+    {
+      "id": "A",
+      "bounds": [
+        -1.5,
+        4.1,
+        -7.35,
+        -2.8
+      ],
+      "hinge_z": -7.15,
+      "door_width": 1.1,
+      "floor_y": -1.85
+    },
+    {
+      "id": "B",
+      "bounds": [
+        -1.5,
+        4.1,
+        -12.7,
+        -8.45
+      ],
+      "hinge_z": -11.5,
+      "door_width": 1.1,
+      "floor_y": -1.85
+    },
+    {
+      "id": "C",
+      "bounds": [
+        -1.5,
+        4.1,
+        -18.25,
+        -13.4
+      ],
+      "hinge_z": -18.05,
+      "door_width": 1.1,
+      "floor_y": -1.85
+    },
+    {
+      "id": "D",
+      "bounds": [
+        -1.5,
+        4.1,
+        -24.3,
+        -19.05
+      ],
+      "hinge_z": -22.5,
+      "door_width": 1.1,
+      "floor_y": -1.85
+    },
+    {
+      "id": "sim:ROOM-E",
+      "bounds": [
+        -1.5,
+        4.1,
+        -28.2,
+        -24.3
+      ],
+      "hinge_z": -27.95,
+      "door_width": 1.1,
+      "floor_y": -1.85,
+      "reuse_front_partition": "D"
+    }
+  ],
+  "rear_extension": {
+    "bounds": [
+      -2.85,
+      4.35,
+      -28.6,
+      -26.5
+    ],
+    "note": "E is behind D, distinct from cafe. Original estimated rear envelope extended 2.1 relative units to fit six positions and circulation without moving calibrated D chairs. This is a design proposal, not a new measurement."
+  },
+  "E_table": {
+    "center": [
+      1.3,
+      -0.87,
+      -26.25
+    ],
+    "dimensions": [
+      3.3,
+      0.08,
+      1.2
+    ],
+    "seats": 6,
+    "source_scope": "simulation only; no Core resources created"
+  },
+  "corridor": {
+    "x_range": [
+      -2.85,
+      -1.5
+    ],
+    "radius_qa": 0.18,
+    "grid_step": 0.1
+  },
+  "ramp": {
+    "x_range": [
+      -3.55,
+      -2.35
+    ],
+    "z_range": [
+      -19.35,
+      -18.05
+    ],
+    "levels": [
+      -1.55,
+      -1.85
+    ],
+    "note": "Replace raised-slab corner/riser within this slot; do not cover an uncut vertical step with a ramp."
+  },
+  "moves": [
+    "A estimated storage moved from z=-3.0 to -3.3 to clear its front partition",
+    "Three estimated waiting chairs rearranged inside WAITING-AREA to face the new sofa across a clear aisle; original group anchor unchanged"
+  ],
+  "target_points": {
+    "reception": [
+      -4.7,
+      -9.0
+    ],
+    "waiting": [
+      -4.8,
+      -16.0
+    ],
+    "cafe-social": [
+      -4.3,
+      -22.2
+    ],
+    "cafe-bar": [
+      -8.0,
+      -22.3
+    ]
+  },
+  "references": [
+    "docs/spatial-simulation/references/1211-mamparas.jpg",
+    "docs/spatial-simulation/references/1212-cafeteria.jpg"
+  ]
+}

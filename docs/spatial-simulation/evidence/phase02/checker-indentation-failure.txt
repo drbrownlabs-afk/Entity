@@ -1,0 +1,8 @@
+  File "/workspace/Entity/simulation/spatial-office/check-phase02.py", line 131
+    reached={start};queue=collections.deque([start])
+IndentationError: unexpected indent
+
+Error: script failed, file: 'simulation/spatial-office/check-phase02.py', exiting.
+Blender 4.3.2
+
+Blender quit

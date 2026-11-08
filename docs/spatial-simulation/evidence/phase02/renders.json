@@ -1,0 +1,42 @@
+[
+  {
+    "view": "phase02-plan",
+    "frame": 31,
+    "doors": "open",
+    "path": "phase02-plan.png",
+    "sha256": "41d5188e29cbeff9c580d1d7a9ec3070c7a9fc796591d2e42a9e42ba63a2e221",
+    "master_sha256": "1386de40f7fb77fa6e6d92f0566f0abe5d2f5dc1223fe5d70cde962269b3368a",
+    "engine": "Cycles CPU",
+    "samples": 24
+  },
+  {
+    "view": "phase02-general",
+    "frame": 31,
+    "doors": "open",
+    "path": "phase02-general.png",
+    "sha256": "30195600b2aed68354d3b4a4dc784fb9cd90403ea41fdab7ac63ae74b4ba1a56",
+    "master_sha256": "1386de40f7fb77fa6e6d92f0566f0abe5d2f5dc1223fe5d70cde962269b3368a",
+    "engine": "Cycles CPU",
+    "samples": 24
+  },
+  {
+    "view": "phase02-interior",
+    "frame": 31,
+    "doors": "open",
+    "path": "phase02-interior.png",
+    "sha256": "f913d95af0f866ddf558fe7bfa24a749ba177083ef10c72f2645aa79d1183e9e",
+    "master_sha256": "1386de40f7fb77fa6e6d92f0566f0abe5d2f5dc1223fe5d70cde962269b3368a",
+    "engine": "Cycles CPU",
+    "samples": 24
+  },
+  {
+    "view": "phase02-E",
+    "frame": 31,
+    "doors": "open",
+    "path": "phase02-E.png",
+    "sha256": "249aa77cfa6cceea19a13ac6481ab50ffb8bb0d914d675697802aa727948e521",
+    "master_sha256": "1386de40f7fb77fa6e6d92f0566f0abe5d2f5dc1223fe5d70cde962269b3368a",
+    "engine": "Cycles CPU",
+    "samples": 24
+  }
+]
