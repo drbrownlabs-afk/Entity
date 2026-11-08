@@ -125,3 +125,6 @@ Nueva tarea integral de simulación de centro de trabajo, continuación de ENTIT
 **Fuera de Fase 10:** OpenClaw, orquestación multiagente, campos latentes/geodésicos avanzados, efecto mariposa, 4DGS live, biometría como requisito, recrear el gemelo digital o agregar funciones comerciales no relacionadas. IA situada existente puede consultar evidencia del Core sin introducir nuevo framework de agentes.
 
 **Referencias:** docs/POST-PHASE-09-SPATIAL-INFERENCE-REGISTRATION.md; docs/phases/PHASE-03.md; docs/phases/PHASE-06.md; docs/phases/PHASE-09.md; docs/PHASE-09-PROGRESS.md. Esta sección es planificación, NO acredita implementación ni pruebas.
+
+
+**Especificación ejecutable vinculante de Fase 10:** [docs/phases/PHASE-10.md](docs/phases/PHASE-10.md). Sus subfases 10.1–10.9, gates, bucle implementar→probar→corregir→registrar→continuar y escenario E2E prevalecen sobre el resumen temático anterior. No iniciar hasta validar Fase 09.
