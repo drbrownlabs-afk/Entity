@@ -1,0 +1,286 @@
+{
+  "tested_commit": "85fb5ebad088f6a338e8ef25b7627f3e5dfcbd3b",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42442567593",
+  "source": "Original published Synthetic Office SSOG through official SuperSplat viewer package",
+  "checks": [
+    {
+      "width": 1440,
+      "loaded": true,
+      "walkAllowed": true,
+      "mode": "walk",
+      "annotations": [
+        {
+          "title": "6-Person Office Bench System",
+          "position": [
+            -0.4324827070899584,
+            -1.1356615558262035,
+            -5.352859958159687
+          ]
+        },
+        {
+          "title": "8-Person Conference Table",
+          "position": [
+            1.1870577758066334,
+            -1.2140478639523282,
+            0.06964437653360278
+          ]
+        },
+        {
+          "title": "6-Person Office Bench System",
+          "position": [
+            1.9970835412267196,
+            -0.8033600527595,
+            -10.693077551494174
+          ]
+        },
+        {
+          "title": "Fito Wall",
+          "position": [
+            0.09792180086598856,
+            -0.17678632222835267,
+            2.586294204317113
+          ]
+        },
+        {
+          "title": "Espera de visitantes",
+          "position": [
+            -4.751476330788986,
+            -0.63474085001273,
+            -16.002127587705036
+          ]
+        },
+        {
+          "title": "Booths de descanso",
+          "position": [
+            -3.426234714858262,
+            -0.9248632498038959,
+            -19.5901388836479
+          ]
+        },
+        {
+          "title": "Recepción inteligente · dos sillas negras",
+          "position": [
+            -5.788876393261972,
+            -1.0731165959404187,
+            -8.894881576083774
+          ]
+        },
+        {
+          "title": "Vista superior del archivo original",
+          "position": [
+            1.9970835447311401,
+            -1.85,
+            -10.48
+          ]
+        }
+      ],
+      "errors": [],
+      "substitute": false,
+      "cctv": {
+        "cameraRenderState": [
+          {
+            "id": "CAM-01",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 624025,
+                "pending": false
+              }
+            ]
+          },
+          {
+            "id": "CAM-02",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 624025,
+                "pending": false
+              }
+            ]
+          },
+          {
+            "id": "CAM-03",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 624025,
+                "pending": false
+              }
+            ]
+          },
+          {
+            "id": "CAM-04",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 624025,
+                "pending": false
+              }
+            ]
+          }
+        ],
+        "cameraViews": 4,
+        "activeCameras": 4,
+        "visibleCameraIds": [
+          "CAM-01",
+          "CAM-02",
+          "CAM-03",
+          "CAM-04"
+        ],
+        "worldClock": null,
+        "avatarsLoaded": 0,
+        "avatarsPlaced": [],
+        "singleApplication": true,
+        "errors": [],
+        "source": "original SSOG authored viewpoints; Core disconnected"
+      }
+    },
+    {
+      "width": 390,
+      "loaded": true,
+      "walkAllowed": true,
+      "mode": "walk",
+      "annotations": [
+        {
+          "title": "6-Person Office Bench System",
+          "position": [
+            -0.4324827070899584,
+            -1.1356615558262035,
+            -5.352859958159687
+          ]
+        },
+        {
+          "title": "8-Person Conference Table",
+          "position": [
+            1.1870577758066334,
+            -1.2140478639523282,
+            0.06964437653360278
+          ]
+        },
+        {
+          "title": "6-Person Office Bench System",
+          "position": [
+            1.9970835412267196,
+            -0.8033600527595,
+            -10.693077551494174
+          ]
+        },
+        {
+          "title": "Fito Wall",
+          "position": [
+            0.09792180086598856,
+            -0.17678632222835267,
+            2.586294204317113
+          ]
+        },
+        {
+          "title": "Espera de visitantes",
+          "position": [
+            -4.751476330788986,
+            -0.63474085001273,
+            -16.002127587705036
+          ]
+        },
+        {
+          "title": "Booths de descanso",
+          "position": [
+            -3.426234714858262,
+            -0.9248632498038959,
+            -19.5901388836479
+          ]
+        },
+        {
+          "title": "Recepción inteligente · dos sillas negras",
+          "position": [
+            -5.788876393261972,
+            -1.0731165959404187,
+            -8.894881576083774
+          ]
+        },
+        {
+          "title": "Vista superior del archivo original",
+          "position": [
+            1.9970835447311401,
+            -1.85,
+            -10.48
+          ]
+        }
+      ],
+      "errors": [],
+      "substitute": false,
+      "cctv": {
+        "cameraRenderState": [
+          {
+            "id": "CAM-01",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 624025,
+                "pending": false
+              }
+            ]
+          },
+          {
+            "id": "CAM-02",
+            "layers": [
+              0,
+              1,
+              2,
+              4,
+              3
+            ],
+            "managers": [
+              {
+                "splats": 624025,
+                "pending": false
+              }
+            ]
+          }
+        ],
+        "cameraViews": 4,
+        "activeCameras": 2,
+        "visibleCameraIds": [
+          "CAM-01",
+          "CAM-02"
+        ],
+        "worldClock": null,
+        "avatarsLoaded": 0,
+        "avatarsPlaced": [],
+        "singleApplication": true,
+        "errors": [],
+        "source": "original SSOG authored viewpoints; Core disconnected"
+      }
+    }
+  ],
+  "status": "passed"
+}
