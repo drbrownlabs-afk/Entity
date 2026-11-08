@@ -1,6 +1,6 @@
 {
-  "tested_commit": "685dc5a06b84f47c090489a0f9cb037ea199b7fb",
-  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42451479996",
+  "tested_commit": "69a2a69d9e5dd60032c74d2a3fa086f3638cd68c",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42471424721",
   "source": "Native ENTITY spatial interface, ORIGINAL published SSOG, actual Core-generated trace and normalized synthetic session actions",
   "public_url": "http://127.0.0.1:4175",
   "checks": [
@@ -29,12 +29,14 @@
       ],
       "core_connected": false,
       "mode": "synthetic-replay",
+      "mouse_orbit_and_reset": true,
       "gpu_person_pick": true,
       "person_graph": true,
       "camera_feed": true,
       "resident_original_feed": true,
       "rendered_normalized_session_observation": true,
       "view_roundtrip_keeps_selection": true,
+      "six_D_desks": true,
       "shared_clock_pause": true,
       "session_booking": true,
       "errors": []
@@ -64,12 +66,14 @@
       ],
       "core_connected": false,
       "mode": "synthetic-replay",
+      "mouse_orbit_and_reset": true,
       "gpu_person_pick": true,
       "person_graph": true,
       "camera_feed": true,
       "resident_original_feed": true,
       "rendered_normalized_session_observation": true,
       "view_roundtrip_keeps_selection": true,
+      "six_D_desks": true,
       "shared_clock_pause": true,
       "session_booking": true,
       "errors": []
@@ -81,34 +85,91 @@
       "native_renderer_ui": false,
       "visible_people": [
         {
-          "id": "PERSON-LUIS",
-          "position": [
-            -3.4262733459472656,
-            -1.715000033378601,
-            -13.466780662536621
-          ]
-        },
-        {
           "id": "PERSON-CARLOS",
           "position": [
             -3.4262733459472656,
             -1.774999976158142,
             -16.712793350219727
           ]
+        },
+        {
+          "id": "PERSON-LUIS",
+          "position": [
+            -3.4262733459472656,
+            -1.715000033378601,
+            -13.466780662536621
+          ]
         }
       ],
       "core_connected": false,
-      "mode": "synthetic-replay",
-      "gpu_person_pick": true,
-      "person_graph": true,
-      "camera_feed": true,
-      "resident_original_feed": true,
-      "rendered_normalized_session_observation": true,
-      "view_roundtrip_keeps_selection": true,
-      "shared_clock_pause": true,
-      "session_booking": true,
-      "errors": []
+      "mode": "synthetic-replay"
     }
   ],
-  "status": "passed"
+  "status": "failed",
+  "error": "TimeoutError: page.waitForFunction: Timeout 10000ms exceeded.",
+  "last_state": {
+    "status": "Fuentes y personajes SIMULADOS · Lugar original",
+    "app": {
+      "loaded": true,
+      "view": "dollhouse",
+      "feed": false,
+      "selected": null,
+      "mode": "synthetic-replay",
+      "coreConnected": false,
+      "clock": "2026-11-07T14:15:03.000Z",
+      "markers": [
+        "A",
+        "B",
+        "C",
+        "CAM-01",
+        "CAM-02",
+        "CAM-03",
+        "CAM-04",
+        "CAM-ROUTE-1",
+        "CAM-ROUTE-2",
+        "D",
+        "MEETING-AREA-01",
+        "PERSON-CARLOS",
+        "PERSON-LUIS"
+      ],
+      "visual": {
+        "cameraRenderState": [],
+        "cameraViews": 6,
+        "activeCameras": 0,
+        "visibleCameraIds": [
+          "CAM-ROUTE-1",
+          "CAM-ROUTE-2"
+        ],
+        "worldClock": "2026-11-07T14:15:03.000Z",
+        "avatarsLoaded": 2,
+        "avatarsPlaced": [
+          {
+            "id": "PERSON-CARLOS",
+            "position": [
+              -3.4262733459472656,
+              -1.774999976158142,
+              -16.712793350219727
+            ]
+          },
+          {
+            "id": "PERSON-LUIS",
+            "position": [
+              -3.4262733459472656,
+              -1.715000033378601,
+              -13.466780662536621
+            ]
+          }
+        ],
+        "singleApplication": true,
+        "errors": [],
+        "source": "original SSOG and authorized Core projection"
+      },
+      "nativeUi": false,
+      "cameraPosition": [
+        8,
+        30,
+        11
+      ]
+    }
+  }
 }
