@@ -77,3 +77,7 @@ Se sustituye «recepción digital sin ubicación física» por kiosco inteligent
 
 ## Intercomunicación contextual — 2026-11-07
 Se aprueba intercomunicación inteligente bidireccional en la simulación: ENTITY puede contactar proactivamente a empleados/anfitriones por dispositivo de ambiente o canal personal según contexto, recibir respuesta y actuar. Caso Daniel–Carlos–reunión 16:00. Compartir Núcleo, grafo, reloj, estado y eventos; respetar privacidad.
+
+
+## 2026-11-08 — Reloj y jornada activa de Fase09
+Core es el único productor del reloj persistente de simulación; clientes observan y controlan con permiso simulate. Reiniciar pausa sin aplicar tiempo offline. El replay crea un run independiente y cambia active_run_id en configuración de sede de forma transaccional, con eventos en ambas ejecuciones; nunca borra la anterior. Interfaces siguen esa ejecución por defecto y permiten seleccionar otras explícitamente. Mensajes vinculados se filtran por run; kiosco puede leer únicamente ID/reloj de ejecución activa. Hora presentada se interpreta en timezone de sede, manteniendo UTC en almacenamiento. Es configuración del simulador existente, no un segundo motor ni un asistente nuevo. No modifica aprobación de fase.

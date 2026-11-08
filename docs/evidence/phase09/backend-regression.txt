@@ -34,12 +34,14 @@ test_anonymous_and_identity_expiry (test_office.OfficeTests.test_anonymous_and_i
 test_booking_concurrency_and_ownership (test_office.OfficeTests.test_booking_concurrency_and_ownership) ... ok
 test_cancelled_meeting_and_duplicate_visit_checkin (test_office.OfficeTests.test_cancelled_meeting_and_duplicate_visit_checkin) ... ok
 test_connector_scope_and_schema_validation (test_office.OfficeTests.test_connector_scope_and_schema_validation) ... ok
+test_declared_read_capabilities_return_core_evidence_without_fabricating_measurements (test_office.OfficeTests.test_declared_read_capabilities_return_core_evidence_without_fabricating_measurements) ... ok
 test_future_late_and_camera_disconnect (test_office.OfficeTests.test_future_late_and_camera_disconnect) ... ok
 test_hvac_task_and_history (test_office.OfficeTests.test_hvac_task_and_history) ... ok
 test_idempotency_and_conflict (test_office.OfficeTests.test_idempotency_and_conflict) ... ok
 test_logout_revokes_only_current_session_and_survives_restart (test_office.OfficeTests.test_logout_revokes_only_current_session_and_survives_restart) ... ok
 test_no_show_and_extension_conflicts (test_office.OfficeTests.test_no_show_and_extension_conflicts) ... ok
 test_normalized_adapters_and_timeout (test_office.OfficeTests.test_normalized_adapters_and_timeout) ... ok
+test_read_only_camera_grant_does_not_require_write_or_enable_actions (test_office.OfficeTests.test_read_only_camera_grant_does_not_require_write_or_enable_actions) ... ok
 test_scenario_isolation_and_apply_revalidation (test_office.OfficeTests.test_scenario_isolation_and_apply_revalidation) ... ok
 test_sensor_projection_and_duplicate (test_office.OfficeTests.test_sensor_projection_and_duplicate) ... ok
 test_site_and_legacy_access_fail_closed (test_office.OfficeTests.test_site_and_legacy_access_fail_closed) ... ok
@@ -55,12 +57,17 @@ test_intercom_timeout_and_cancelled_meeting (test_office_delivery.DeliveryTests.
 test_intercom_wait_and_no_presence_fallback (test_office_delivery.DeliveryTests.test_intercom_wait_and_no_presence_fallback) ... ok
 test_kiosk_ready_and_host_authority (test_office_delivery.DeliveryTests.test_kiosk_ready_and_host_authority) ... ok
 test_personal_reply_changes_the_same_reception_world (test_office_delivery.DeliveryTests.test_personal_reply_changes_the_same_reception_world) ... ok
+test_ready_visitors_still_consume_waiting_capacity_until_escorted (test_office_delivery.DeliveryTests.test_ready_visitors_still_consume_waiting_capacity_until_escorted) ... ok
 test_remote_reply_does_not_establish_physical_presence (test_office_delivery.DeliveryTests.test_remote_reply_does_not_establish_physical_presence) ... ok
 test_reservations_change_availability_without_inventing_occupancy (test_office_delivery.DeliveryTests.test_reservations_change_availability_without_inventing_occupancy) ... ok
 test_other_camera_empty_or_disconnected_does_not_erase_observed_person (test_office_occupancy.CameraOccupancyTests.test_other_camera_empty_or_disconnected_does_not_erase_observed_person) ... ok
+test_all_clients_share_play_pause_and_restart_does_not_apply_offline_time (test_office_playback.PlaybackTests.test_all_clients_share_play_pause_and_restart_does_not_apply_offline_time) ... ok
+test_provider_failure_rolls_back_tick_and_pauses_instead_of_repeating_actions (test_office_playback.PlaybackTests.test_provider_failure_rolls_back_tick_and_pauses_instead_of_repeating_actions) ... ok
+test_replay_is_atomic_shared_scoped_and_preserves_previous_history (test_office_playback.PlaybackTests.test_replay_is_atomic_shared_scoped_and_preserves_previous_history) ... ok
 test_assigned_operator_cannot_escape_via_queries_actions_or_capabilities (test_office_scopes.ResourceScopeTests.test_assigned_operator_cannot_escape_via_queries_actions_or_capabilities) ... ok
 test_operator_without_resource_assignment_has_no_implicit_camera_access (test_office_scopes.ResourceScopeTests.test_operator_without_resource_assignment_has_no_implicit_camera_access) ... ok
 test_authenticated_personal_reply_supersedes_scripted_character (test_office_simulation.DailySimulationTests.test_authenticated_personal_reply_supersedes_scripted_character) ... ok
+test_calibrated_profile_is_reused_by_real_daily_runs_without_a_second_clock (test_office_simulation.DailySimulationTests.test_calibrated_profile_is_reused_by_real_daily_runs_without_a_second_clock) ... ok
 test_full_day_pause_resume_replay_and_memory (test_office_simulation.DailySimulationTests.test_full_day_pause_resume_replay_and_memory) ... ok
 test_hvac_impact_follows_zone_links_and_resolution_is_audited (test_office_simulation.DailySimulationTests.test_hvac_impact_follows_zone_links_and_resolution_is_audited) ... ok
 test_meeting_co2_is_not_misattributed_to_public_desks (test_office_simulation.DailySimulationTests.test_meeting_co2_is_not_misattributed_to_public_desks) ... ok
@@ -76,6 +83,6 @@ test_storage_isolation_and_reply (test_personal_app.PersonalStorageTests.test_st
 test_persistence_after_process_restart (test_restart.RestartTests.test_persistence_after_process_restart) ... ok
 
 ----------------------------------------------------------------------
-Ran 74 tests in 50.075s
+Ran 81 tests in 59.139s
 
 OK

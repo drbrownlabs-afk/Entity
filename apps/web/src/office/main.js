@@ -127,7 +127,7 @@ else{
  window.addEventListener('office-capture-request',async event=>{try{const snapshot=await window.officeCaptureCamera(event.detail);window.parent.postMessage({type:'entity-camera-snapshot',snapshot},location.origin);}catch(error){document.querySelector('#status').textContent=error.message;window.dispatchEvent(new CustomEvent('office-capture-completed'));}});
  window.addEventListener('office-annotation-selected',event=>window.parent.postMessage({type:'entity-annotation-selection',index:event.detail},location.origin));
  window.addEventListener('office-select-entity',event=>window.parent.postMessage({type:'entity-resource-selection',id:event.detail},location.origin));
- window.officeProjectionDiagnostics=()=>({clock:projectedWorld?.clock||null,entity_ids:Object.keys(projectedWorld?.entities||{}),camera_ids:Object.values(projectedWorld?.entities||{}).filter(e=>e.kind==='Camera').map(e=>e.id)});
+ window.officeProjectionDiagnostics=()=>({run_id:projectedWorld?.run_id||null,clock:projectedWorld?.clock||null,entity_ids:Object.keys(projectedWorld?.entities||{}),camera_ids:Object.values(projectedWorld?.entities||{}).filter(e=>e.kind==='Camera').map(e=>e.id)});
  window.parent.postMessage({type:'entity-projection-ready'},location.origin);
 }
 

@@ -5,6 +5,7 @@ PostgreSQL/PostGIS and Scorpio adapters are separate planned integrations.
 """
 from __future__ import annotations
 
+import asyncio
 import json
 import os
 import sqlite3
@@ -33,7 +34,11 @@ DB_PATH = Path(os.getenv("ENTITY_SQLITE_PATH", "entity-dev.sqlite3"))
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     initialize()
-    yield
+    from app.office.playback import recover,worker
+    recover();stop=asyncio.Event();task=asyncio.create_task(worker(stop))
+    try:yield
+    finally:
+        stop.set();await task
 
 
 app = FastAPI(title="ENTITY OS", version="0.2.0", lifespan=lifespan)

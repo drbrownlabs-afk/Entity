@@ -40,13 +40,15 @@ def my_app(actor=Depends(principal)):
     return {"actor":actor["actor"],"person_id":actor["person"],"site_id":actor["site"],"role":actor["role"]}
 
 @router.get("/inbox")
-def inbox(actor=Depends(principal)):
+def inbox(run:str|None=None,actor=Depends(principal)):
     from app.main import database
     with database() as db:
         setup(db)
-        rows=db.execute("""SELECT * FROM office_personal_messages
-            WHERE site=? AND recipient=? ORDER BY created_at DESC LIMIT 100""",
-            (actor["site"],actor["actor"])).fetchall()
+        rows=db.execute("""SELECT m.*,l.run AS run_id FROM office_personal_messages m
+            LEFT JOIN office_personal_links l ON l.message_id=m.id AND l.site=m.site
+            WHERE m.site=? AND m.recipient=? AND (? IS NULL OR l.run=?)
+            ORDER BY m.created_at DESC LIMIT 100""",
+            (actor["site"],actor["actor"],run,run)).fetchall()
         return [dict(row) for row in rows]
 
 @router.post("/sites/{site}/demo-arrival", status_code=201)

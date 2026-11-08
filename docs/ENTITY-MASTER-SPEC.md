@@ -74,3 +74,7 @@ Auditoría independiente de recorridos felices sobre701da12. Probes nuevos HTTP 
 
 ## Checkpoint Fase09: implementación parcial (2026-11-07)
 Office usa Core persistente y Núcleo modular para normalización de capacidades/adaptadores, según el addendum vigente. Se conservan entidades/eventos/observaciones y separación entre identidad confirmada y track anónimo; nuevas APIs requieren ámbito de sede/rol. Tablas Office son aditivas y versionadas. Simulación y REST de servicio de prueba se rotulan como tales. SSOG y voxels originales de Synthetic Office se presentan con visor oficial; no se inventan salas ni ubicaciones físicas de equipos. Ver progreso de gates en docs/PHASE-09-PROGRESS.md; este checkpoint parcial no declara validada la fase ni un piloto real.
+
+
+## 2026-11-08 — Reloj y jornada activa de Fase09
+Core es el único productor del reloj persistente de simulación; clientes observan y controlan con permiso simulate. Reiniciar pausa sin aplicar tiempo offline. El replay crea un run independiente y cambia active_run_id en configuración de sede de forma transaccional, con eventos en ambas ejecuciones; nunca borra la anterior. Interfaces siguen esa ejecución por defecto y permiten seleccionar otras explícitamente. Mensajes vinculados se filtran por run; kiosco puede leer únicamente ID/reloj de ejecución activa. Hora presentada se interpreta en timezone de sede, manteniendo UTC en almacenamiento. Es configuración del simulador existente, no un segundo motor ni un asistente nuevo. No modifica aprobación de fase.

@@ -20,6 +20,12 @@
       "voice_microphone_executed": false
     },
     {
+      "active_run_shared_between_kiosk_and_personal": true,
+      "previous_run_messages_hidden": true,
+      "server_owned_play_pause": true,
+      "replay_history_preserved": true
+    },
+    {
       "width": 390,
       "server_session_revoked": true,
       "stale_world_response_after_logout_discarded": true,

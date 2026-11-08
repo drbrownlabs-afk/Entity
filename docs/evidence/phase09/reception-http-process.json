@@ -3,7 +3,7 @@
   "checks": [
     {
       "actual_process_restart": "passed",
-      "events_preserved": 18,
+      "events_preserved": 19,
       "entity_count": 108
     },
     {

@@ -14,7 +14,7 @@ def setup(db):
       site TEXT NOT NULL,run TEXT NOT NULL,id TEXT NOT NULL,at TEXT NOT NULL,action TEXT NOT NULL,payload TEXT NOT NULL,
       status TEXT NOT NULL DEFAULT 'pending',result TEXT,PRIMARY KEY(site,run,id))""")
     db.execute("""CREATE TABLE IF NOT EXISTS office_simulation(
-      site TEXT NOT NULL,run TEXT NOT NULL,paused INTEGER NOT NULL DEFAULT 1,PRIMARY KEY(site,run))""")
+      site TEXT NOT NULL,run TEXT NOT NULL,paused INTEGER NOT NULL DEFAULT 1,speed REAL NOT NULL DEFAULT 1,controller TEXT,last_tick REAL NOT NULL DEFAULT 0,PRIMARY KEY(site,run))""")
 
 def install_day(db,site,run,actor):
     scoped(site,actor,'simulate');setup(db)
@@ -120,7 +120,7 @@ def install_day(db,site,run,actor):
     for camera in ['CAM-05','CAM-06','CAM-RECEPTION']:observe('18:30:00','empty-'+camera,camera,[])
     for person in ['PERSON-LUIS','PERSON-CARLOS']:cmd('18:30:00','departure-'+person,'presence.checkout',person)
     for group in ['D','E']:cmd('18:30:00','power-off-'+group,'device.setPower','HVAC-'+group,on=False)
-    db.execute('INSERT INTO office_simulation VALUES(?,?,1)',(site,run))
+    db.execute('INSERT INTO office_simulation(site,run,paused) VALUES(?,?,1)',(site,run))
     return {'installed':True,'milestones':db.execute('SELECT COUNT(*) FROM office_schedule WHERE site=? AND run=?',(site,run)).fetchone()[0],'script':'coworking-v2','geometry_validated':False}
 
 def advance(db,site,run,actor,to):

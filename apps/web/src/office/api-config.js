@@ -1,7 +1,7 @@
 // The public API URL is shared between clients. Credentials stay in memory only.
 export function rememberApi(value){
  const url=new URL(value.trim());
- if(!['http:','https:'].includes(url.protocol)||url.username||url.password)throw Error('Introduce una URL HTTP/HTTPS de API sin credenciales.');
+ if(!['http:','https:'].includes(url.protocol)||url.username||url.password||url.search||url.hash)throw Error('Introduce una URL HTTP/HTTPS de API sin credenciales.');
  const base=url.href.replace(/\/$/,'');localStorage.setItem('entity-office-api',base);return base;
 }
 export function configuredApi(){

@@ -85,7 +85,7 @@ try{
  await page.waitForTimeout(1000);
  const paused=await page.evaluate(()=>window.officeVisualDiagnostics().avatarsPlaced);
  if(JSON.stringify(report.pause)!==JSON.stringify(paused))throw Error('Paused Core clock still moved people');
- await page.locator('#office-time').fill('2026-11-07T14:15:00');await page.locator('#office-reconstruct').click();
+ await page.locator('#office-time').fill('2026-11-07T09:15:00');await page.locator('#office-reconstruct').click();
  await page.waitForFunction(()=>window.officeCoreDiagnostics().world.historical);
  const replay=await page.evaluate(()=>window.officeVisualDiagnostics().avatarsPlaced[0].position);
  if(initial.entities['PERSON-LUIS'].spatial_pose.position.some((v,i)=>Math.abs(v-replay[i])>.0001))throw Error('Historical pose reconstruction diverged');

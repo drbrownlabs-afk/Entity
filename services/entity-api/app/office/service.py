@@ -44,6 +44,10 @@ def create_run(db,site,run,clock,seed=1):
     for row in db.execute('SELECT * FROM office_resources WHERE site=?',(site,)):
         if row['kind'] in {'Booking','Meeting','Invitation','Visit','Notification','Task','Incident','CheckIn','Alert','Track','Conversation'}:continue
         changes[row['id']]={'id':row['id'],'core_id':row['core_id'],'kind':row['kind'],**json.loads(row['attributes'])}
+    config=json.loads(db.execute('SELECT config FROM office_sites WHERE id=?',(site,)).fetchone()[0])
+    if not config.get('active_run_id'):
+        config['active_run_id']=run
+        db.execute('UPDATE office_sites SET config=? WHERE id=?',(encode(config),site))
     emit(db,site,run,'main',clock,'run.created','system',changes,{'seed':seed})
     return world(db,site,run)
 

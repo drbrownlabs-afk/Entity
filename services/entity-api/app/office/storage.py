@@ -87,7 +87,13 @@ def world(db,site,run,branch='main',at=None):
             item['identity_status']='association_expired'
     from .occupancy import project as project_occupancy
     project_occupancy(items,clock)
-    return {'timezone':db.execute('SELECT timezone FROM office_sites WHERE id=?',(site,)).fetchone()[0],'site_id':site,'run_id':run,'branch':branch,'clock':clock,'revision':latest,'entities':items,'historical':at is not None}
+    playback=None
+    if at is None and branch=='main' and db.execute("SELECT 1 FROM sqlite_master WHERE type='table' AND name='office_simulation'").fetchone():
+        columns={r[1] for r in db.execute('PRAGMA table_info(office_simulation)')}
+        if 'speed' in columns:
+            playback_row=db.execute('SELECT paused,speed FROM office_simulation WHERE site=? AND run=?',(site,run)).fetchone()
+            if playback_row:playback={'paused':bool(playback_row['paused']),'speed':playback_row['speed']}
+    return {'playback':playback,'timezone':db.execute('SELECT timezone FROM office_sites WHERE id=?',(site,)).fetchone()[0],'site_id':site,'run_id':run,'branch':branch,'clock':clock,'revision':latest,'entities':items,'historical':at is not None}
 
 
 def emit(db,site,run,branch,at,kind,actor,changes,details=None,evidence=None,command_id=None):

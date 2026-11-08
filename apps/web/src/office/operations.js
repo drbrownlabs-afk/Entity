@@ -1,3 +1,4 @@
+import {siteWallTime,siteDateTimeToUtc,atSiteHour} from './site-time.js';
 import {configuredApi,rememberApi} from './api-config.js';
 import {saveRenderedObservation} from './camera-observations.js';
 import {mountQuery} from './query-form.js';
@@ -16,20 +17,20 @@ const status=message=>{host.querySelector('#office-core-status').textContent=mes
 const esc=value=>String(value??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 async function request(path,body,bearer=token){const epoch=sessionEpoch;const base=host.querySelector('[name=api]').value.replace(/\/$/,'');const response=await fetch(base+path,{method:body?'POST':'GET',headers:{'Content-Type':'application/json',...(bearer?{Authorization:'Bearer '+bearer}:{})},body:body?JSON.stringify(body):undefined,signal:AbortSignal.timeout(10000)});const value=await response.json();if(epoch!==sessionEpoch)throw Error('Respuesta descartada: la sesión cambió.');if(!response.ok)throw Error('Core HTTP '+response.status+': '+JSON.stringify(value.detail));return value;}
 const prefix=()=>'/v1/sites/'+encodeURIComponent(site)+'/runs/'+encodeURIComponent(run);
-async function refresh(){const context=JSON.stringify([site,run,branch,at]);const params=new URLSearchParams({branch});if(at)params.set('at',at);const incoming=await request(prefix()+'/world?'+params);if(context!==JSON.stringify([site,run,branch,at]))return;world=incoming;window.dispatchEvent(new CustomEvent('office-world-changed',{detail:world}));render();}
+async function refresh(){if(host.querySelector('#office-run').value==='__active__'){const active=await request('/v1/sites/'+encodeURIComponent(site)+'/active-run');if(run!==active.id){run=active.id;branch='main';at=null;selected='site';selectedEventDetails=null;host.querySelector('#office-actions').replaceChildren();}}const context=JSON.stringify([site,run,branch,at]);const params=new URLSearchParams({branch});if(at)params.set('at',at);const incoming=await request(prefix()+'/world?'+params);if(context!==JSON.stringify([site,run,branch,at]))return;world=incoming;window.dispatchEvent(new CustomEvent('office-world-changed',{detail:world}));render();}
 host.querySelector('#office-login').onsubmit=async event=>{
  event.preventDefault();const epoch=++sessionEpoch;streamController?.abort();token=null;world=null;currentActor=null;at=null;host.querySelector('#office-workspace').hidden=true;window.dispatchEvent(new CustomEvent('office-world-cleared'));
- try{host.querySelector('[name=api]').value=rememberApi(host.querySelector('[name=api]').value);const answer=await request('/v1/office/auth/login',{username:host.querySelector('[name=username]').value,password:host.querySelector('[name=password]').value});currentActor=answer;token=answer.token;site=answer.site_id;host.querySelector('[name=password]').value='';const runs=await request('/v1/sites/'+encodeURIComponent(site)+'/runs');host.querySelector('#office-run').innerHTML=runs.map(r=>'<option value="'+esc(r.id)+'">'+esc(r.id)+'</option>').join('');run=host.querySelector('#office-run').value;branch='main';capabilities=await request('/v1/sites/'+encodeURIComponent(site)+'/capabilities');host.querySelector('#office-workspace').hidden=false;await refresh();window.dispatchEvent(new CustomEvent('office-observer-enabled',{detail:answer.role==='admin'}));subscribe();status('Conectado: '+answer.actor+' · '+answer.role+' · '+site+'. Estado y operaciones persistentes en Core.');}
+ try{host.querySelector('[name=api]').value=rememberApi(host.querySelector('[name=api]').value);const answer=await request('/v1/office/auth/login',{username:host.querySelector('[name=username]').value,password:host.querySelector('[name=password]').value});currentActor=answer;token=answer.token;site=answer.site_id;host.querySelector('[name=password]').value='';const runs=await request('/v1/sites/'+encodeURIComponent(site)+'/runs');host.querySelector('#office-run').innerHTML='<option value="__active__">Jornada activa · sincronizada</option>'+runs.map(r=>'<option value="'+esc(r.id)+'">'+esc(r.id)+'</option>').join('');run=(await request('/v1/sites/'+encodeURIComponent(site)+'/active-run')).id;branch='main';capabilities=await request('/v1/sites/'+encodeURIComponent(site)+'/capabilities');host.querySelector('#office-workspace').hidden=false;await refresh();window.dispatchEvent(new CustomEvent('office-observer-enabled',{detail:answer.role==='admin'}));subscribe();status('Conectado: '+answer.actor+' · '+answer.role+' · '+site+'. Estado y operaciones persistentes en Core.');}
  catch(error){if(epoch!==sessionEpoch)return;token=null;world=null;host.querySelector('#office-workspace').hidden=true;window.dispatchEvent(new CustomEvent('office-world-cleared'));status(error.message);}
 };
-host.querySelector('#office-run').onchange=async event=>{run=event.target.value;await refresh().catch(e=>status(e.message));subscribe();};
+host.querySelector('#office-run').onchange=async event=>{if(event.target.value!=='__active__')run=event.target.value;branch='main';at=null;selected='site';await refresh().catch(e=>status(e.message));subscribe();};
 host.querySelector('#office-disconnect').onclick=async()=>{
  const previous=token,epoch=++sessionEpoch;streamController?.abort();token=null;world=null;currentActor=null;host.querySelector('#office-workspace').hidden=true;window.dispatchEvent(new CustomEvent('office-world-cleared'));
  let revoked=false;try{await request('/v1/office/auth/logout',{},previous);revoked=true;}catch{}
  if(epoch===sessionEpoch)status(revoked?'Sesión revocada en Core.':'Sesión local cerrada; Core no confirmó la revocación.');
 };
 host.querySelector('#office-refresh').onclick=()=>refresh().catch(e=>status(e.message));
-host.querySelector('#office-reconstruct').onclick=()=>{const value=host.querySelector('#office-time').value;if(value){at=new Date(value).toISOString();refresh().catch(e=>status(e.message));}};
+host.querySelector('#office-reconstruct').onclick=()=>{const value=host.querySelector('#office-time').value;if(value){at=siteDateTimeToUtc(value,world.timezone);refresh().catch(e=>status(e.message));}};
 host.querySelector('#office-present').onclick=()=>{at=null;refresh().catch(e=>status(e.message));};
 window.addEventListener('office-capture-request',async event=>{
  try{if(!world||world.historical||branch!=='main')throw Error('Solo se registran observaciones en el mundo oficial presente.');
@@ -60,7 +61,7 @@ async function subscribe(){
     while((end=buffer.indexOf(String.fromCharCode(10,10)))>=0){
      const event=buffer.slice(0,end);buffer=buffer.slice(end+2);
      if(event.includes('event: auth-expired')){token=null;controller.abort();status('Sesión expirada. Vuelve a conectar.');break;}
-     if(event.includes('event: world-change')&&branch==='main'&&!at)await refresh();
+     if(event.includes('event: world-change')&&branch==='main'&&!at){const previousRun=run;await refresh();if(previousRun!==run){subscribe();return;}}
     }
    }
   }catch(error){
@@ -74,14 +75,22 @@ async function subscribe(){
 
 function render(){
  if(!world)return;
- host.querySelector('#office-world-status').textContent=world.clock+' · revisión '+world.revision+' · '+(world.historical?'reconstrucción, acciones deshabilitadas':'presente');
+ host.querySelector('#office-world-status').textContent=siteWallTime(world.clock,world.timezone)+' · '+world.timezone+' · revisión '+world.revision+' · '+(world.historical?'reconstrucción, acciones deshabilitadas':'presente');
  let daily=host.querySelector('#office-day-controls');
  if(!daily){
-  daily=document.createElement('section');daily.id='office-day-controls';daily.innerHTML='<h3>Reloj compartido · jornada reproducible</h3><button id="office-install-day">Preparar jornada08:00–18:30</button><label>Avanzar a (hora de Ecuador)<input id="office-advance-time" type="time" value="09:16"></label><button id="office-advance-day">Ejecutar hitos hasta esa hora</button><p>Sin reproducción automática: el mundo permanece pausado entre avances. El historial nunca se rebobina.</p>';
+  daily=document.createElement('section');daily.id='office-day-controls';daily.innerHTML='<h3>Reloj compartido · jornada reproducible</h3><button id="office-install-day">Preparar jornada08:00–18:30</button><button id="office-new-day">Nueva jornada / replay</button><label>Ritmo<select id="office-clock-speed"><option value="1">1×</option><option value="10">10×</option><option value="60">60×</option></select></label><button id="office-clock-toggle">Reproducir reloj</button><label>Avanzar a (hora de la sede)<input id="office-advance-time" type="time" step="0.25" value="09:16"></label><button id="office-advance-day">Ejecutar hitos hasta esa hora</button><p>El reloj y la pausa pertenecen al Core. El replay crea otra jornada sin borrar la anterior.</p>';
   host.querySelector('#office-workspace').prepend(daily);
+  daily.querySelector('#office-clock-toggle').onclick=async()=>{try{await request(prefix()+'/simulation/control',{action:world.playback?.paused===false?'pause':'play',speed:Number(daily.querySelector('#office-clock-speed').value)});await refresh();}catch(e){status(e.message);}};
+  daily.querySelector('#office-new-day').onclick=async()=>{try{
+   const id='jornada-'+crypto.randomUUID().slice(0,8),clock=atSiteHour(world.clock,'08:00:00',world.timezone);
+   await request(prefix()+'/simulation/replay',{id,clock,seed:1});streamController?.abort();run=id;branch='main';at=null;selected='site';selectedEventDetails=null;
+   const option=document.createElement('option');option.value=id;option.textContent=id;host.querySelector('#office-run').append(option);host.querySelector('#office-run').value='__active__';
+   await refresh();subscribe();status('Nueva jornada persistente preparada; la anterior se conserva.');
+  }catch(e){status(e.message);}};
   daily.querySelector('#office-install-day').onclick=async()=>{try{const result=await request(prefix()+'/simulation/install',{});await refresh();status('Jornada: '+JSON.stringify(result));}catch(e){status(e.message);}};
-  daily.querySelector('#office-advance-day').onclick=async()=>{try{const clock=new Date(new Date(world.clock).getTime()-5*3600000).toISOString().slice(0,10);const to=clock+'T'+daily.querySelector('input').value+':00-05:00';const result=await request(prefix()+'/simulation/advance',{to});await refresh();status('Core ejecutó '+result.steps.length+' hitos; quedan '+result.pending+'.');}catch(e){status(e.message);}};
+  daily.querySelector('#office-advance-day').onclick=async()=>{try{const to=atSiteHour(world.clock,daily.querySelector('input').value,world.timezone);const result=await request(prefix()+'/simulation/advance',{to});await refresh();status('Core ejecutó '+result.steps.length+' hitos; quedan '+result.pending+'.');}catch(e){status(e.message);}};
  }
+ daily.hidden=currentActor?.role!=='admin';for(const button of daily.querySelectorAll('button'))button.disabled=world.historical||branch!=='main';daily.querySelector('#office-new-day').disabled||=host.querySelector('#office-run').value!=='__active__';daily.querySelector('#office-clock-toggle').textContent=world.playback?.paused===false?'Pausar reloj':'Reproducir reloj';daily.querySelector('#office-clock-toggle').disabled=world.historical||branch!=='main';
  const items=Object.values(world.entities).filter(item=>!filters[mode].length||filters[mode].includes(item.kind));
  host.querySelector('#office-entities').innerHTML=items.map(item=>'<button data-entity="'+esc(item.id)+'"><b>'+esc(item.name||item.id)+'</b><small>'+esc(item.kind)+' · '+esc(item.status||item.freshness||'registrado')+'</small></button>').join('');
  for(const button of host.querySelectorAll('[data-entity]'))button.onclick=()=>choose(button.dataset.entity);

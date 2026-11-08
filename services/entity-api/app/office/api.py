@@ -75,6 +75,13 @@ def runs(site:str,actor=Depends(principal)):
     scoped(site,actor,'read')
     with database() as db:return [dict(r) for r in db.execute('SELECT * FROM office_runs WHERE site=? ORDER BY id',(site,))]
 
+@router.get('/sites/{site}/active-run')
+def current_run(site:str,actor=Depends(principal)):
+    from app.main import database
+    from .playback import active_run
+    scoped(site,actor,'kiosk' if actor['role']=='kiosk' else 'read')
+    with database() as db:return active_run(db,site)
+
 @router.post('/sites/{site}/runs',status_code=201)
 def run_create(site:str,body:RunCreate,actor=Depends(principal)):
     from app.main import database
@@ -245,6 +252,24 @@ def advance_simulation(site:str,run:str,body:SimulationAdvance,actor=Depends(pri
     from app.main import database
     from .simulation import advance
     with database(write=True) as db:return advance(db,site,run,actor,body.to)
+
+class PlaybackControl(CoreRecord):
+    action:str=Field(pattern='^(play|pause)$')
+    speed:float|None=Field(default=None,gt=0,le=240)
+
+@router.post('/sites/{site}/runs/{run}/simulation/control')
+def control_simulation(site:str,run:str,body:PlaybackControl,actor=Depends(principal)):
+    from app.main import database
+    from .playback import control
+    with database(write=True) as db:return control(db,site,run,actor,body.action,body.speed)
+
+@router.post('/sites/{site}/runs/{run}/simulation/replay',status_code=201)
+def replay_simulation(site:str,run:str,body:RunCreate,actor=Depends(principal)):
+    from app.main import database
+    from .playback import replay
+    try:
+        with database(write=True) as db:return replay(db,site,run,actor,body.id,body.clock,body.seed)
+    except sqlite3.IntegrityError:raise HTTPException(409,'Replay run already exists')
 
 class InvitationCredential(CoreRecord):
     invitation_id:NonBlank
