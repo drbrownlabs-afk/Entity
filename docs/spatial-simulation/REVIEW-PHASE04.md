@@ -1,3 +1,5 @@
+> **Revisión actual del operador:** [Galería R1: jardín continuo, luz cálida y vidrio](REVIEW-PHASE04-REVISION.md) · [Maestro actualizado](../../simulation/spatial-office/output/office-phase04-revision.blend). Esta página conserva la entrega anterior para trazabilidad.
+
 # Revisión del operador — Blender hasta Fase 04
 
 **Maestro actual:** [office-phase04.blend](../../simulation/spatial-office/output/office-phase04.blend).

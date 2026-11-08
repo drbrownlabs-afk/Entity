@@ -1,3 +1,5 @@
+> **Revisión actual del operador:** [Galería R1: jardín continuo, luz cálida y vidrio](REVIEW-PHASE04-REVISION.md) · [Maestro actualizado](../../simulation/spatial-office/output/office-phase04-revision.blend). Esta página conserva la entrega anterior para trazabilidad.
+
 # Fase 04 — revisión de Blender, materiales, luz y tiempo
 
 Fecha: 2026-11-08. Rama `codex/spatial-simulation`. **EN VALIDACIÓN para aprobación del operador.** Las fases 02–04 se verificaron internamente conforme al plan actualizado `8490e1a`, preservado junto con la revisión posterior `d51e2b9` (solo instrucciones de acceso para la futura Fase06). No se inicia PlayCanvas (05), personajes Mixamo (06) ni exportación definitiva del edificio.
