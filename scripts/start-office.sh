@@ -21,7 +21,6 @@ fi
 printf 'ENTITY Core: http://127.0.0.1:%s/docs\nCredenciales privadas: .runtime/office/access.json (no compartir)\n' "${ENTITY_OFFICE_PORT:-8010}"
 if [[ "${1:-}" == '--api-only' ]]; then exit 0; fi
 node -e "if(Number(process.versions.node.split('.')[0])<24)throw Error('Esta entrega requiere Node 24 o superior')"
-npm --prefix apps/web ci
-npm --prefix apps/web run build
+bash scripts/setup-experience.sh
 printf 'ENTITY Office: http://127.0.0.1:4175/office.html\nRecepción: /kiosk.html · Cuenta personal: /personal.html\n'
-exec npm --prefix apps/web run preview -- --port 4175 --strictPort
+exec npm --prefix apps/web --cache "$PWD/.runtime/npm-cache" run preview -- --port 4175 --strictPort

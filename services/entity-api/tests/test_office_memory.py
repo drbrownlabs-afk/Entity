@@ -21,6 +21,10 @@ class MemoryTests(unittest.TestCase):
         self.assertEqual(len(new),1);self.assertGreater(new[0]['seq'],old.json()[0]['seq'])
         later=self.client.get(endpoint,headers=self.headers,params={'after':old.json()[0]['seq'],'entity_id':'luis','event_type':'entity.upsert','limit':1}).json()
         self.assertEqual(later,new)
+        # Two location changes can share a simulation timestamp; event order still matters.
+        self.cmd('entity.upsert',inputs={'id':'luis','kind':'Person','attributes':{'zone_id':'zone'}})
+        same_instant=self.client.get(endpoint,headers=self.headers,params={**params,'zone_id':'other-zone'}).json()
+        self.assertEqual(same_instant,new,'Later same-timestamp state must not rewrite the previous event zone')
         self.assertEqual(self.client.get(endpoint,headers=self.headers,params={'start':'2026-11-07T16:00:00-05:00','end':'2026-11-07T15:00:00-05:00'}).status_code,422)
     def test_filters_never_grant_other_site_or_private_resource_access(self):
         endpoint=self.root+'/events'

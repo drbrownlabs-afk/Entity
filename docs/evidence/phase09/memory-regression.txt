@@ -4,6 +4,6 @@ test_event_zone_filter_preserves_past_location_and_pagination (test_office_memor
 test_filters_never_grant_other_site_or_private_resource_access (test_office_memory.MemoryTests.test_filters_never_grant_other_site_or_private_resource_access) ... ok
 
 ----------------------------------------------------------------------
-Ran 2 tests in 1.703s
+Ran 2 tests in 1.785s
 
 OK
