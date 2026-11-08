@@ -12,7 +12,9 @@ try{
   await page.waitForFunction(()=>window.officeDiagnostics?.().loaded,undefined,{timeout:180000});
   const initial=await page.evaluate(()=>window.officeDiagnostics());
   if(initial.substitute||!initial.sceneUrl.includes('a972d838')||initial.annotations.length!==expectedAnnotations)throw Error('Wrong scene or original/verified semantic annotations missing');
-  await page.locator('#frame').click();await page.waitForTimeout(1800);
+  await page.locator('#frame').click();
+  await page.waitForFunction(()=>{const s=window.officeDiagnostics();return s.overview&&s.camera.position[1]>17.8&&s.camera.forward[1]<-.99&&s.camera.near_clip>17;},undefined,{timeout:90000});
+  const dollhouse=await page.evaluate(()=>window.officeDiagnostics().camera);
   await page.screenshot({path:'docs/evidence/phase09/original-dollhouse-'+width+'.png',timeout:120000});
   await page.locator('#reset').click();await page.waitForTimeout(1000);
   await page.locator('#annotations button').nth(1).click();
@@ -23,7 +25,7 @@ try{
   const current=await page.evaluate(()=>window.officeDiagnostics());
   if(!current.walkAllowed)throw Error('Original voxel collisions unavailable');
   if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth))throw Error('Viewport overflow');
-  report.checks.push({width,loaded:current.loaded,walkAllowed:current.walkAllowed,mode:current.mode,annotations:current.annotations.map(a=>({title:a.title,position:a.position})),errors:failures,substitute:current.substitute});
+  report.checks.push({width,dollhouse_camera_verified:dollhouse,loaded:current.loaded,walkAllowed:current.walkAllowed,mode:current.mode,annotations:current.annotations.map(a=>({title:a.title,position:a.position})),errors:failures,substitute:current.substitute});
   await page.screenshot({path:'docs/evidence/phase09/integrated-original-'+width+'.png',fullPage:true,timeout:120000});
   await page.waitForFunction(()=>window.officeVisualDiagnostics?.().cameraViews===4,undefined,{timeout:30000});
   await page.evaluate(()=>window.dispatchEvent(new CustomEvent('office-mode-changed',{detail:'Seguridad'})));

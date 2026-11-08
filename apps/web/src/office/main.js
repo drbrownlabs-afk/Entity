@@ -83,7 +83,7 @@ try{
   viewer.events.on('selectedAnnotation:changed',index=>{if(index!==null)inspect(index);});
   viewer.events.on('error:changed',error=>{if(error)output.textContent='Error al cargar recurso original: '+String(error);});
 }catch(error){output.textContent='No se pudo cargar el recurso original: '+error.message;}
-document.querySelector('#frame').onclick=()=>{if(viewer?.state.loaded){clippedOverview=true;viewer.selectAnnotation(overviewIndex);output.textContent='Vista superior del SSOG original · recorte de cámara; navega con órbita y zoom';}};
+document.querySelector('#frame').onclick=()=>{if(viewer?.state.loaded){clippedOverview=true;viewer.selectAnnotation(overviewIndex);viewer.events.fire('inputEvent','cancel');output.textContent='Vista superior del SSOG original · recorte de cámara; navega con órbita y zoom';}};
 document.querySelector('#reset').onclick=()=>{if(viewer?.state.loaded){clippedOverview=false;viewer.resetCamera();}};
 document.querySelector('#walk').onclick=()=>{
   if(viewer?.state.loaded){
@@ -106,7 +106,7 @@ for(const button of document.querySelectorAll('[data-move]')){
 window.officeDiagnostics=()=>({
   sceneUrl:contentUrl,collisionUrl,loaded:viewer?.state.loaded||false,
   walkAllowed:viewer?.state.walkAllowed||false,annotations:viewer?.annotations||[],
-  mode:viewer?.state.cameraMode,source:'original-public-SSOG',substitute:false
+  overview:clippedOverview,camera:viewer?(()=>{const c=viewer.app.root.findComponents('camera')[0];return {position:c.entity.getPosition().toArray(),forward:c.entity.forward.toArray(),near_clip:c.nearClip};})():null,mode:viewer?.state.cameraMode,source:'original-public-SSOG',substitute:false
 });
 
 window.addEventListener('office-select-annotation',event=>{if(viewer?.state.loaded)viewer.selectAnnotation(event.detail);});
