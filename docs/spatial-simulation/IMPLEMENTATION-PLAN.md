@@ -51,32 +51,9 @@ IDs existentes del handoff: A, B, C, D, MEETING-AREA-01, RECEPTION, WAITING-AREA
 
 **Gate 02:** plano de distribución con IDs y capturas; todos los recintos con acceso viable, sin intersecciones, cafetería sin pods, cuatro TVs, puertas individualizadas.
 
-## Fase 03 — Materiales, iluminación y automatización por ambiente
+## Fase 03 — Ampliación arquitectónica: tercera ala y planta en C
 
-**Meta:** acabado premium **y** arquitectura de control individual de luminarias y puertas, diseñada antes de exportar.
-
-Materiales PBR realistas: terrazzo, vidrio, aluminio/metal negro, madera, tapicería, vegetación, carpintería y reflejos; biseles y sombras creíbles. Iluminación natural desde ventanales y luminarias arquitectónicas. Cycles para renders de referencia; exportación PBR y esquema de luces apto para PlayCanvas.
-
-**Iluminación operativa obligatoria:**
-- Cada sala A, B, C, D, E, reuniones, recepción, espera, cafetería, recreación y pasillos tiene **su propio circuito/zona**.
-- Cada luminaria tiene ID único, transform, ambiente, tipo, intensidad nominal, color/temperatura si procede, estado on/off y nivel regulable cuando sea compatible.
-- Un circuito puede operar todas las luminarias del ambiente, **sin perder control individual**.
-- En PlayCanvas deben poder encenderse/apagarse luces individuales y grupos, con respuesta visual observable y estado consultable; incluir estado inicial y recuperación.
-- El sistema de render no debe dejar iluminación horneada inmutable que siga iluminando una habitación cuando se apagan sus luces. Separar luz ambiental/solar de luz artificial conmutable. Para rendimiento, usar iluminación mixta o aproximaciones dinámicas comprobadas; documentar compromisos visuales.
-- Puertas con ID, ambiente, estado abierta/cerrada, bloqueada/desbloqueada cuando proceda, transiciones, animación y colisiones sincronizadas; controles independientes por dispositivo.
-- Definir `device-manifest.json` y contratos locales de comandos/eventos para luces, circuitos y puertas, adaptables después a las interfaces Core existentes. No modificar Core para implementarlo.
-
-**Gate 03:** renders Blender y capturas PlayCanvas de la misma sala con todas las luces encendidas/apagadas y luz individual conmutada; comprobación de puertas y manifest de dispositivos. Materiales exportados sin pérdidas graves.
-
-## Fase 04 — PlayCanvas, navegación e interacción
-
-**Meta:** escena nueva navegable en navegador. Exportar GLB con IDs y jerarquía; vistas general e interior, navegación ratón/teclado/táctil, colisiones, selección de ambientes/objetos, ficha contextual. Reutilizar por importación/adaptador los componentes del frontend anterior **sin editar su código**. Implementar controles funcionales de puertas, luminarias individuales/circuitos y cuatro televisores con contenido de prueba. Selección de entidad muestra ID, tipo, ambiente y estado. No duplicar el Core.
-
-**Gate 04:** ejecución real en navegador, recorrido completo, puertas con colisiones, luces con cambios visibles, TVs y selección con IDs correctos; capturas y logs.
-
-## Fase 05 — Ampliación arquitectónica: tercera ala y planta en C
-
-**Meta:** completar una **planta en C**, no una L: cuerpo longitudinal principal + ala de cafetería ya iniciada + **nueva ala social y de servicios**. No rehacer ni desplazar indiscriminadamente el trabajo aprobado en las fases anteriores. Continuar desde el archivo maestro y las transformaciones actuales, adaptando el diseño a su geometría real. El esquema previo en L deja de ser la configuración final.
+**Meta:** completar una **planta en C**, no una L: cuerpo longitudinal principal + ala de cafetería ya iniciada + **nueva ala social y de servicios**. No rehacer ni desplazar indiscriminadamente el trabajo aprobado en las fases 01 y 02. Esta ampliación debe terminarse antes del acabado definitivo y la exportación al visor. Continuar desde el archivo maestro y las transformaciones actuales, adaptando el diseño a su geometría real. El esquema previo en L deja de ser la configuración final.
 
 **Programa espacial de la nueva ala:**
 - **Sala social / lounge:** zona diferenciada de la cafetería; sofás modulares y sillones, mesas bajas, vegetación, pantalla, iluminación cálida por luminaria y circuito propio. No convertirla en segunda cafetería. Zona operativa con ID propio, capacidad/ocupación y recorridos accesibles.
@@ -86,7 +63,7 @@ Materiales PBR realistas: terrazzo, vidrio, aluminio/metal negro, madera, tapice
 - **Impresión / servicios:** una pequeña estación de impresora y almacenamiento junto a los lockers, si cabe sin comprometer circulación; prioridad menor que baños y lockers.
 - **Circulación y accesos:** conexión física clara desde el cuerpo principal a ambas alas, corredores sin intersecciones con muebles, entradas funcionales, rutas de evacuación plausibles y geometría coherente en planta en C. Añadir puertas individuales y sus colisionadores.
 - **Corrección pendiente del cuerpo principal:** en el sector de **sillas negras** colocar **sofás de espera**; el sector de **sillas blancas** es **recepción**. La mesa negra grande junto al muro vegetal sigue siendo la **sala de reuniones**.
-- **Dispositivos y semántica:** extender `device-manifest.json` e inventario de simulación con zonas nuevas, puertas, lockers si son operables, iluminación por luminaria y circuito, pantalla del lounge. No crear entidades directamente en Core; IDs estables bajo namespace de simulación.
+- **Dispositivos y semántica:** definir y ampliar el inventario de simulación y los IDs de dispositivos; preparar la extensión de `device-manifest.json` en fase 04 con zonas nuevas, puertas, lockers si son operables, iluminación por luminaria y circuito, pantalla del lounge. No crear entidades directamente en Core; IDs estables bajo namespace de simulación.
 - **Calidad:** mantener el estilo de las imágenes recientes del proyecto (madera cálida, vidrio, perfilería negra, mobiliario contemporáneo); suficiente realismo operacional, sin perseguir fotorrealismo. Evitar duplicar innecesariamente assets o afectar rendimiento web.
 
 **Referencias visuales de consulta, una por tipología (no implican reutilización automática de activos ni licencias):**
@@ -96,13 +73,30 @@ Materiales PBR realistas: terrazzo, vidrio, aluminio/metal negro, madera, tapice
 4. **Baños:** modelar acceso, puertas, tabiques y volumen de servicios de forma sobria; no hace falta recrear detalles íntimos.
 5. **Referencia principal del propio proyecto:** las cinco capturas recientes suministradas por el usuario; mantener continuidad de materiales y escala.
 
-**Gate 05:** plano general actualizado demuestra **C completa** con nueva ala; imágenes interior/exterior de lounge, dos cabinas, baños y lockers juntos; acceso desde corredor, puertas con colisión, luces conmutables individualmente, inventario/IDs y escena Blender/PlayCanvas actualizadas. Inspección visual y prueba funcional del recorrido. **No iniciar personajes antes de terminar y validar internamente esta fase.**
+**Gate 03:** plano general actualizado demuestra **C completa** con nueva ala; imágenes interior/exterior de lounge, dos cabinas, baños y lockers juntos; acceso desde corredor, puertas con colisión, luminarias identificadas y preparadas para control individual, inventario/IDs y escena Blender actualizada; las pruebas funcionales de luces y puertas en PlayCanvas se realizan en fases 04 y 05. Inspección visual y prueba funcional del recorrido. **No iniciar personajes antes de terminar y validar internamente esta fase.**
 
-## Fase 06 — Personajes riggeados y posesión
+## Fase 04 — Materiales, iluminación y automatización por ambiente
 
-**Meta:** personajes dummy/maniquí con variaciones de complexión, altura y color; rig compatible, idle, caminar, girar, sentarse si hay animación adecuada. Incluir José, Carlos, Visitante y variantes. Todos seleccionables y controlables; clic -> ficha -> asumir control -> mover -> liberar -> elegir otro, conservando identidad y posición. Mantener controlador desacoplado para sustitución futura por otro origen de movimientos. Sin segunda base de datos.
+**Meta:** acabado premium **y** arquitectura de control individual de luminarias y puertas, diseñada antes de exportar.
 
-**Gate 06:** demostración real de cambio de control entre al menos tres personajes, colisiones, rig y animaciones, sin IDs duplicados.
+Materiales PBR realistas: terrazzo, vidrio, aluminio/metal negro, madera, tapicería, vegetación, carpintería y reflejos; biseles y sombras creíbles. Iluminación natural desde ventanales y luminarias arquitectónicas. Cycles para renders de referencia; exportación PBR y esquema de luces apto para PlayCanvas.
+
+**Iluminación operativa obligatoria:**
+- Cada sala A, B, C, D, E, reuniones, recepción, espera, cafetería, recreación, lounge, cabinas acústicas, servicios y pasillos tiene **su propio circuito/zona**.
+- Cada luminaria tiene ID único, transform, ambiente, tipo, intensidad nominal, color/temperatura si procede, estado on/off y nivel regulable cuando sea compatible.
+- Un circuito puede operar todas las luminarias del ambiente, **sin perder control individual**.
+- En PlayCanvas deben poder encenderse/apagarse luces individuales y grupos, con respuesta visual observable y estado consultable; incluir estado inicial y recuperación.
+- El sistema de render no debe dejar iluminación horneada inmutable que siga iluminando una habitación cuando se apagan sus luces. Separar luz ambiental/solar de luz artificial conmutable. Para rendimiento, usar iluminación mixta o aproximaciones dinámicas comprobadas; documentar compromisos visuales.
+- Puertas con ID, ambiente, estado abierta/cerrada, bloqueada/desbloqueada cuando proceda, transiciones, animación y colisiones sincronizadas; controles independientes por dispositivo.
+- Definir `device-manifest.json` y contratos locales de comandos/eventos para luces, circuitos y puertas, adaptables después a las interfaces Core existentes. No modificar Core para implementarlo.
+
+**Gate 04:** renders Blender y pruebas técnicas preliminares en PlayCanvas de la misma sala con todas las luces encendidas/apagadas y luz individual conmutada; comprobación de puertas y manifest de dispositivos. Materiales exportados sin pérdidas graves.
+
+## Fase 05 — PlayCanvas, navegación e interacción
+
+**Meta:** escena arquitectónica completa (incluida la planta en C) navegable en navegador. Exportar GLB con IDs y jerarquía; vistas general e interior, navegación ratón/teclado/táctil, colisiones, selección de ambientes/objetos, ficha contextual. Reutilizar por importación/adaptador los componentes del frontend anterior **sin editar su código**. Implementar controles funcionales de puertas, luminarias individuales/circuitos y cuatro televisores con contenido de prueba. Selección de entidad muestra ID, tipo, ambiente y estado. No duplicar el Core.
+
+**Gate 05:** ejecución real en navegador, recorrido completo de la planta en C, incluyendo lounge, cabinas, baños y lockers, puertas con colisiones, luces con cambios visibles, TVs y selección con IDs correctos; capturas y logs.
 
 ## Fase 07 — Integración y aceptación
 
@@ -112,7 +106,7 @@ Materiales PBR realistas: terrazzo, vidrio, aluminio/metal negro, madera, tapice
 
 ## Política de autonomía y punto de revisión
 
-El agente puede avanzar de manera autónoma desde la fase actual (fase 02) hasta **terminar la fase 05**, incluidas las fases 03 y 04, sin solicitar autorización humana entre fases. Ejecutar y registrar todos los gates internamente, reparar fallos y conservar evidencia. **Detenerse antes de comenzar la fase 06 de personajes**, presentando archivo Blender, vista PlayCanvas, plano en C, capturas, puertas, luces y problemas pendientes para una única revisión del operador. No confundir esta autorización con permiso para modificar backend/frontend/Gaussian o fusionar ramas. Si existe un bloqueo real que requiere decisión externa, solicitarla con detalle concreto.
+El agente puede avanzar de manera autónoma desde la fase actual (fase 02) hasta **terminar la fase 05**, siguiendo el nuevo orden: ampliación arquitectónica (03), materiales e iluminación (04), visor PlayCanvas (05), sin solicitar autorización humana entre fases. Ejecutar y registrar todos los gates internamente, reparar fallos y conservar evidencia. **Detenerse antes de comenzar la fase 06 de personajes**, presentando archivo Blender, vista PlayCanvas, plano en C, capturas, puertas, luces y problemas pendientes para una única revisión del operador. No confundir esta autorización con permiso para modificar backend/frontend/Gaussian o fusionar ramas. Si existe un bloqueo real que requiere decisión externa, solicitarla con detalle concreto.
 
 ## Entregables
 
