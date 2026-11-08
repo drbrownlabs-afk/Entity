@@ -4,6 +4,9 @@ on:
     branches: [codex/phase-09-autonomous-plan]
     paths: ['apps/web/src/office/**', 'worlds/synthetic-office/view-bookmarks.json', 'apps/web/office.html', 'scripts/phase09/verify-original-office.mjs', '.github/workflows/phase09-original.yml']
   workflow_dispatch:
+concurrency:
+  group: phase09-original-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:

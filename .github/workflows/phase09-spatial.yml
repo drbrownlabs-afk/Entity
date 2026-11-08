@@ -1,43 +1,43 @@
-name: Verify original office Core and animated camera geometry
+name: Verify original Synthetic Office integration
 on:
   push:
     branches: [codex/phase-09-autonomous-plan]
-    paths: ['scripts/phase09/demo-spatial-core.py','scripts/phase09/verify-spatial-core.mjs','.github/workflows/phase09-spatial.yml','worlds/synthetic-office/corridor-route.json','apps/web/src/office/avatars.js','apps/web/src/office/visuals.js']
+    paths: ['apps/web/src/office/**', 'worlds/synthetic-office/view-bookmarks.json', 'apps/web/office.html', 'scripts/phase09/verify-original-office.mjs', '.github/workflows/phase09-original.yml']
   workflow_dispatch:
+concurrency:
+  group: phase09-original-${{ github.ref }}
+  cancel-in-progress: true
+concurrency:
+  group: phase09-spatial-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
-  spatial:
+  original:
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v6
         with:
           node-version: '24'
-      - uses: actions/setup-python@v6
-        with:
-          python-version: '3.12'
-      - run: |
-          python -m venv .venv
-          .venv/bin/python -m pip install -r services/entity-api/requirements.lock
-          npm --prefix apps/web ci
-          npm --prefix apps/web run build
-          cd apps/web && npx playwright install --with-deps chromium
-      - run: node scripts/phase09/calibrate-floor.mjs
-      - name: Exercise original geometry and real Core without substituted scene
-        run: timeout 480s .venv/bin/python scripts/phase09/demo-spatial-core.py
-      - name: Retain full evidence independently of branch publication
+      - run: npm --prefix apps/web ci
+      - run: npm --prefix apps/web run build
+      - run: cd apps/web && npx playwright install --with-deps chromium
+      - name: Verify the original asset and native voxel collision integration
+        run: |
+          npm --prefix apps/web run preview -- --port 4175 > /tmp/office-preview.log 2>&1 &
+          node scripts/phase09/verify-original-office.mjs
+      - name: Retain original scene evidence independently of branch publication
         if: always()
         uses: actions/upload-artifact@v6
         with:
-          name: original-spatial-evidence
+          name: original-office-evidence
           path: |
-            docs/evidence/phase09/spatial-core*
-            docs/evidence/phase09/spatial-person-floor.png
-            docs/evidence/phase09/voxel-ground.json
-            docs/evidence/phase09/spatial-runs
-      - name: Preserve actual geometric integration evidence
+            docs/evidence/phase09/original-integration.json
+            docs/evidence/phase09/integrated-*.png
+            docs/evidence/phase09/original-dollhouse-*.png
+      - name: Persist observed evidence
         if: always()
         run: |
-          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/spatial-core*' 'docs/evidence/phase09/spatial-runs/*.json' 'docs/evidence/phase09/voxel-ground.json' 'docs/evidence/phase09/spatial-person-floor.png'
+          python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/original-integration.json' 'docs/evidence/phase09/integrated-*.png' 'docs/evidence/phase09/original-dollhouse-*.png'

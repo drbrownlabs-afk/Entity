@@ -70,3 +70,4 @@ jobs:
             .runtime/pages-verification.json
             docs/evidence/phase09/original-integration.json
             docs/evidence/phase09/integrated-*.png
+            docs/evidence/phase09/original-dollhouse-*.png
