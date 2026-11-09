@@ -71,8 +71,8 @@ jobs:
         run: gh api --method POST repos/${{ github.repository }}/pages/builds
       - name: Verify public route
         run: |
-          for i in $(seq 1 18); do
-            if curl -fsSL https://drbrownlabs-afk.github.io/Entity/deployment.json -o /tmp/deployment.json && SOURCE_SHA='${{ github.sha }}' node -e 'let d=require("/tmp/deployment.json");if(d.source_commit!==process.env.SOURCE_SHA||d.mode!=="coworking-only")process.exit(1)'; then curl -fsSL https://drbrownlabs-afk.github.io/Entity/spatial-simulation/ -o /tmp/coworking.html; ! grep -Eiq 'Mall Lab|ENTITY Experience|shopping-mall' /tmp/coworking.html; exit $?; fi
+          for i in $(seq 1 72); do
+            if curl --connect-timeout 10 --max-time 25 -fsSL "https://drbrownlabs-afk.github.io/Entity/deployment.json?source=${{ github.sha }}" -o /tmp/deployment.json && SOURCE_SHA='${{ github.sha }}' node -e 'let d=require("/tmp/deployment.json");if(d.source_commit!==process.env.SOURCE_SHA||d.mode!=="coworking-only")process.exit(1)'; then curl --connect-timeout 10 --max-time 25 -fsSL "https://drbrownlabs-afk.github.io/Entity/spatial-simulation/?source=${{ github.sha }}" -o /tmp/coworking.html; ! grep -Eiq 'Mall Lab|ENTITY Experience|shopping-mall' /tmp/coworking.html; exit $?; fi
             sleep 10
           done
           exit 1

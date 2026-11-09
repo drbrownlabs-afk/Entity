@@ -1,0 +1,25 @@
+{
+  "source_branch": "codex/spatial-simulation",
+  "source_commit": "d1414ab20266d8d9f231ae8633fe4aefeb0da339",
+  "artifact_commit": "b8380d1b84c51ad82f26a63e2c5147555d860d01",
+  "manifest": {
+    "source_commit": "d1414ab20266d8d9f231ae8633fe4aefeb0da339",
+    "mode": "coworking-only",
+    "active_route": "/Entity/spatial-simulation/"
+  },
+  "six_recordings_match_source": true,
+  "verified_files": [
+    "spatial-simulation/perception/cameras.json",
+    "spatial-simulation/perception/recordings/CAMERA-PLANNED-01.mp4",
+    "spatial-simulation/perception/recordings/CAMERA-PLANNED-02.mp4",
+    "spatial-simulation/perception/recordings/CAMERA-PLANNED-03.mp4",
+    "spatial-simulation/perception/recordings/CAMERA-PLANNED-04.mp4",
+    "spatial-simulation/perception/recordings/CAMERA-PLANNED-05.mp4",
+    "spatial-simulation/perception/recordings/CAMERA-PLANNED-06.mp4"
+  ],
+  "only_coworking_operational_demo": true,
+  "no_secrets_or_database_published": true,
+  "direct_pages_access_from_this_environment": "proxy403; public HTTP must be verified by publication runner",
+  "public_review_url": "https://drbrownlabs-afk.github.io/Entity/spatial-simulation/?perception=1",
+  "core_https_public": false
+}

@@ -72,6 +72,13 @@ def project(db, observation):
             entity(zid,'Zone',{'camera_id':camera,'label':track.zone_id,'coordinate_frame':'normalized-image'})
             db.execute('INSERT INTO relations VALUES(?,?,?,?,?)',(str(uuid4()),pid,zid,'observedIn',stamp))
             counts[track.zone_id]=counts.get(track.zone_id,0)+1
-    state(camera,'edge.presence',{**snapshot.model_dump(),'observed_at':stamp,'counts':counts,'simulated':simulated})
+    # Keep legacy payload shape when the additive image-evidence fields are absent.
+    projected=snapshot.model_dump()
+    for key in ('frame_sha256','frame_index','media_time_seconds'):
+        if projected[key] is None: projected.pop(key)
+    for track in projected['tracks']:
+        for key in ('image_bbox','detection_confidence'):
+            if track[key] is None: track.pop(key)
+    state(camera,'edge.presence',{**projected,'observed_at':stamp,'counts':counts,'simulated':simulated})
 
     return True

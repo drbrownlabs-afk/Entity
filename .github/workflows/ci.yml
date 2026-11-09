@@ -5,6 +5,7 @@ on:
       - "services/entity-api/**"
       - "services/entity-edge/**"
       - "apps/web/**"
+      - "apps/spatial-simulation/**"
       - "worlds/shopping-mall/**"
       - "worlds/synthetic-office/**"
       - "scripts/**"
@@ -18,6 +19,7 @@ on:
       - "services/entity-api/**"
       - "services/entity-edge/**"
       - "apps/web/**"
+      - "apps/spatial-simulation/**"
       - "worlds/shopping-mall/**"
       - "worlds/synthetic-office/**"
       - "scripts/**"
@@ -126,8 +128,12 @@ jobs:
         run: |
           python -m venv .venv
           .venv/bin/python -m pip install -r services/entity-api/requirements.lock
-      - name: Install and build autonomous experience
-        run: bash scripts/setup-experience.sh
+      - name: Build retained P1 clients and active coworking
+        run: |
+          bash scripts/setup-experience.sh
+          npm --prefix apps/spatial-simulation ci
+          npm --prefix apps/spatial-simulation test
+          npm --prefix apps/spatial-simulation run build -- --base=/Entity/spatial-simulation/
       - name: Test shared world and action readback
         working-directory: apps/web
         run: npm test
@@ -170,20 +176,16 @@ jobs:
           python-version: "3.12"
       - name: Install locked web build tools
         run: npm --prefix apps/web ci
-      - name: Create audited source and autonomous web packages
-        run: python scripts/package-release.py
-      - name: Confirm package checksums are reproducible
+      - name: Package active coworking and exact committed source
         run: |
-          cp .runtime/delivery/manifest.json "${RUNNER_TEMP}/first-manifest.json"
-          python scripts/package-release.py
-          cmp "${RUNNER_TEMP}/first-manifest.json" .runtime/delivery/manifest.json
-      - name: Install browser for delivered static package
-        working-directory: apps/web
-        run: npx playwright install --with-deps chromium
-      - name: Verify ZIP on desktop and touch without Core
-        run: |
-          python -m zipfile -e .runtime/delivery/entity-experience.zip "${RUNNER_TEMP}/entity-static"
-          node apps/web/scripts/check-bundle.mjs "${RUNNER_TEMP}/entity-static" .runtime/delivery/static-verification.json
+          npm --prefix apps/spatial-simulation ci
+          npm --prefix apps/spatial-simulation test
+          npm --prefix apps/spatial-simulation run build -- --base=/Entity/spatial-simulation/
+          mkdir -p .runtime/delivery
+          git archive --format=tar.gz --prefix=Entity/ HEAD > .runtime/delivery/entity-source.tar.gz
+          cp -r apps/spatial-simulation/dist .runtime/delivery/coworking
+          git rev-parse HEAD > .runtime/delivery/source-commit.txt
+          (cd .runtime/delivery && sha256sum entity-source.tar.gz > checksums.txt)
       - name: Test source package from a different clean directory
         run: |
           mkdir -p "${RUNNER_TEMP}/entity-unpacked"
