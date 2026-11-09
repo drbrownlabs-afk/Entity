@@ -19,21 +19,21 @@
   },
   "docs/DECISION-LOG.md": {
     "base_sha256": "0e2be0656ca78f79588636b24d95897e78a573d450b10fd19bd8dfaa89bab7b3",
-    "sha256": "891d49b6765ed0f59c392f09401e6c1834c5fbabd06bfaa6f06f17dc918e231d",
-    "commit": "d2334ec6fed6fde8b58aeeb5a8cb34570df01a8a",
-    "reason": "Exact authorized final P2-09 process-memory/Edge frame-contract dependency revision. No canon change, no wildcard exemption."
+    "sha256": "4c65c8b3a20811332219147528afc088274c8ba26b3dc88d6956038e6f65214c",
+    "commit": "ded5418cb04f39b8f2b46343c6a18f999c788ea5",
+    "reason": "Exact authorized P2-09 delivery evidence and compatibility-memory update; no canon changes."
   },
   "docs/PROJECT-STATUS.md": {
     "base_sha256": "fcdf1c9f85815c3128069503f7cd2b573db5f79518cfb1134cccf79bdd304809",
-    "sha256": "6ce2d8a6275e1041a2467186fc6c9a9ab78692b6317ad16583ae37af8844cc4e",
-    "commit": "d2334ec6fed6fde8b58aeeb5a8cb34570df01a8a",
-    "reason": "Exact authorized final P2-09 process-memory/Edge frame-contract dependency revision. No canon change, no wildcard exemption."
+    "sha256": "33536e79fa4ba29cc2d826399a688e8af8e3ea25fa8264cae3eaf2f164e27f54",
+    "commit": "ded5418cb04f39b8f2b46343c6a18f999c788ea5",
+    "reason": "Exact authorized P2-09 delivery evidence and compatibility-memory update; no canon changes."
   },
   "docs/AGENT-WORKLOG.md": {
     "base_sha256": "2897408b0cb1cb10db6529294402ebafa47b84acdbd2fa95cc66565e635dac05",
-    "sha256": "964f0df5dc83fafe4c71c19328a87c6ee106652d2dc7ac368ab6d3c8267c13b3",
-    "commit": "d2334ec6fed6fde8b58aeeb5a8cb34570df01a8a",
-    "reason": "Exact authorized final P2-09 process-memory/Edge frame-contract dependency revision. No canon change, no wildcard exemption."
+    "sha256": "431204a2f2b7123b06f6108deadf6f8a4bdd0248cd5691a259bed00c1fb0f248",
+    "commit": "ded5418cb04f39b8f2b46343c6a18f999c788ea5",
+    "reason": "Exact authorized P2-09 delivery evidence and compatibility-memory update; no canon changes."
   },
   ".github/workflows/pages.yml": {
     "base_sha256": "ebe34d397a085d10ae208ae620d4812f53a7f6d7c411705952bdd83acbf100e2",
