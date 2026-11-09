@@ -1,0 +1,324 @@
+{
+  "schema_version": "1.0",
+  "entities": [
+    {
+      "id": "entity-self:spaces40",
+      "type": "ProductHistorical",
+      "attributes": {
+        "name": "Espacios 4.0",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:entityspaces",
+      "type": "HistoricalBrand",
+      "attributes": {
+        "name": "Entity Spaces / Entity Espacios 4.0",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:casaviva",
+      "type": "CommercialConcept",
+      "attributes": {
+        "name": "Casa Viva inteligente",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:casarivera",
+      "type": "PilotProspect",
+      "attributes": {
+        "name": "Casa Rivera Cuenca",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:studio",
+      "type": "HistoricalProductConcept",
+      "attributes": {
+        "name": "Entity OS Studio",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:epic",
+      "type": "HistoricalPitch",
+      "attributes": {
+        "name": "Propuesta Epic Casa Viva",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:singapore",
+      "type": "HistoricalFundingProposal",
+      "attributes": {
+        "name": "Singapur centro comercial IMDA",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:opensource",
+      "type": "HistoricalBusinessModel",
+      "attributes": {
+        "name": "Core open source / Cloud propietario",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:universe",
+      "type": "OntologyConcept",
+      "attributes": {
+        "name": "Universe World Entity Agent",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:framework",
+      "type": "HistoricalArchitecture",
+      "attributes": {
+        "name": "Entity Framework",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:openclaw",
+      "type": "ExternalRuntime",
+      "attributes": {
+        "name": "OpenClaw",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:opencloud",
+      "type": "HistoricalTerm",
+      "attributes": {
+        "name": "OpenCloud",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:ntt",
+      "type": "HistoricalWorld",
+      "attributes": {
+        "name": "NTT World",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:nexo",
+      "type": "HistoricalAgent",
+      "attributes": {
+        "name": "Nexo",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:entityagent",
+      "type": "HistoricalAgent",
+      "attributes": {
+        "name": "Entity main",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:marea",
+      "type": "HistoricalAgent",
+      "attributes": {
+        "name": "Marea",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:kiaga",
+      "type": "HistoricalAgent",
+      "attributes": {
+        "name": "Kiaga",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:bruno",
+      "type": "HistoricalAgent",
+      "attributes": {
+        "name": "Bruno",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:agentmemory",
+      "type": "Concept",
+      "attributes": {
+        "name": "Memoria y handoff de agentes",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:unreal",
+      "type": "Technology",
+      "attributes": {
+        "name": "Unreal y Pixel Streaming",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:gaussian",
+      "type": "Technology",
+      "attributes": {
+        "name": "Gaussian Splatting",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:casa",
+      "type": "ProductEvolution",
+      "attributes": {
+        "name": "Digital Twin a Agentic World",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:spatialfx",
+      "type": "ResearchLine",
+      "attributes": {
+        "name": "Spatial FX VFX Niagara",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:onboarding",
+      "type": "ResearchLine",
+      "attributes": {
+        "name": "Onboarding institucional",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:marketplace",
+      "type": "HistoricalBusinessModel",
+      "attributes": {
+        "name": "Marketplace de capacidades",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:sensors",
+      "type": "TechnologyFamily",
+      "attributes": {
+        "name": "Sensores IoT y percepción",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:gaming",
+      "type": "HistoricalResearch",
+      "attributes": {
+        "name": "Gaming Runtime",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:human",
+      "type": "HistoricalResearch",
+      "attributes": {
+        "name": "Digital Human Twin",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    },
+    {
+      "id": "entity-self:fundingops",
+      "type": "HistoricalResearch",
+      "attributes": {
+        "name": "Funding Operations",
+        "status": "historical-or-conceptual",
+        "domain": "ENTITY-SELF",
+        "source": "conversation-retrieval:2026-07-to-2026-11",
+        "description": "Ver ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md para vigencia y relaciones"
+      }
+    }
+  ]
+}
