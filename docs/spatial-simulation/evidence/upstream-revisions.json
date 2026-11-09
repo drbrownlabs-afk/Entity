@@ -25,14 +25,14 @@
   },
   "docs/PROJECT-STATUS.md": {
     "base_sha256": "fcdf1c9f85815c3128069503f7cd2b573db5f79518cfb1134cccf79bdd304809",
-    "sha256": "6fe01214fa5161e2cc631dd01c2248ffb4ca1b95a6914c4d254698758f9b047d",
-    "commit": "0d660fa",
-    "reason": "Exact upstream operator canonical-memory revision, fast-forwarded on the same branch; no original application code exempted."
+    "sha256": "b38cbda039c9827412cc8d1e8550a8a7c4e88a380580a9d99aef8b82d0214796",
+    "commit": "598d86f8247733e26b23410428e6feadf054c1ac",
+    "reason": "P2-only factual execution/status entry required by current AGENTS.md; original P1 code and canonical definitions unchanged."
   },
   "docs/AGENT-WORKLOG.md": {
     "base_sha256": "2897408b0cb1cb10db6529294402ebafa47b84acdbd2fa95cc66565e635dac05",
-    "sha256": "3a063e0a416dd0d5e9f4679cd720f7bf97efa0a6575226b4a6228425dadc586b",
-    "commit": "0d660fa",
-    "reason": "Exact upstream operator canonical-memory revision, fast-forwarded on the same branch; no original application code exempted."
+    "sha256": "f9dc85ce19644dd1d9a04ff62ed382ace3daf485588c51c8e3ee4ad1dadab7b6",
+    "commit": "598d86f8247733e26b23410428e6feadf054c1ac",
+    "reason": "P2-only factual execution/status entry required by current AGENTS.md; original P1 code and canonical definitions unchanged."
   }
 }
