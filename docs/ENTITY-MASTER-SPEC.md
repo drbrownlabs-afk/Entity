@@ -31,6 +31,19 @@ Este canon es estable, **no inmutable**. Solo una solicitud explícita de cambio
 ## Inventario y veracidad
 Disponibles: cámaras Orbbec. Las ocho cámaras analógicas/DVR fueron una propuesta, no equipo adquirido. No afirmar integraciones, pruebas, despliegues o aprobación de gates sin evidencia reproducible.
 
+## Ampliación canónica aprobada — 2026-11-08: tecnologías propietarias y simulación
+**Distinción obligatoria:** **Núcleo NO es ENTITY Core**. Núcleo es un motor propietario de interoperabilidad universal: descubre sistemas externos, interpreta y normaliza APIs/SDK/protocolos, cataloga capacidades y adaptadores, valida contratos y ejecuta operaciones autorizadas. Puede existir como tecnología reutilizable independiente. ENTITY Core mantiene el modelo computable compartido (entidades, identidad, estado, relaciones, eventos, memoria, capacidades autorizadas y procedencia). Core determina contexto, políticas y efectos; Núcleo permite acceder y actuar sobre sistemas heterogéneos sin convertirlos en un segundo Core.
+
+**Entidadizador automático:** tecnología propietaria distinta de Núcleo y Core. Identifica datos de fuentes heterogéneas, determina qué representan, los asocia a entidades existentes o crea nuevas conforme a reglas, normaliza atributos/estados/relaciones y registra origen, incertidumbre y cambios. No debe confundirse la normalización de interfaces/capacidades (Núcleo) con la entidadización de información (Entidadizador).
+
+**Constructor/generador de gemelos digitales:** tecnología propietaria para facilitar la creación de representaciones espaciales tridimensionales a partir de geometría, planos, modelos y fuentes compatibles; puede producir estructuras editables y vinculables a entidades. Es distinto del modelo computable de Core y no se presupone reconstrucción automática universal ni precisión no validada.
+
+**ENTITY Spatial Simulation / laboratorio de simulaciones:** capacidad y proceso de experimentación, no una simple demo ni un Core alternativo. Construye escenarios sintéticos controlados (personas, espacios, dispositivos comerciales simulados, cámaras, accesos, reservas, fallos, flujos) para evaluar integraciones, contratos, relaciones, estados, eventos y acciones **antes** de desplegar en un entorno real. Las simulaciones usan el mismo contrato/modelo de mundo de ENTITY, con separación inequívoca de datos sintéticos, observaciones, inferencias, ground truth y resultados de producción. El laboratorio y ENTITY Spatial Intelligence son ámbitos de desarrollo distintos; no mezclar ramas, fases ni criterios de aceptación. Un escenario simulado no acredita por sí solo la integración con un servicio real.
+
+**Mapa conceptual:** Núcleo = qué capacidades externas existen y cómo invocarlas; Entidadizador = qué significan los datos y a qué entidades corresponden; ENTITY Core = qué existe, qué sucede y cómo se relaciona; Constructor espacial = cómo representar y preparar el espacio; Spatial Simulation = cómo experimentar y validar comportamientos antes de la implementación.
+
+**Estado de madurez:** definiciones y objetivos arquitectónicos aprobados, no declaración de que estos motores estén implementados, separados en servicios o probados. Las decisiones de empaquetado, límites de API y roadmap se resolverán por proceso y evidencia. La simulación complementa P2 como laboratorio propio, sin convertirse en un cuarto proceso global automáticamente.
+
 ---
 ## Archivo histórico de especificaciones
 **ATENCIÓN:** a partir de aquí se conserva el documento anterior como referencia histórica. Sus fases, prioridades e instrucciones operativas solo aplican cuando no contradicen el canon anterior ni las decisiones vigentes. No interpretar sus títulos de «vigente», «obligatorio» o «fase siguiente» como autoridad superior.

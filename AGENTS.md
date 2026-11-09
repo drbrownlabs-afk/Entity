@@ -17,6 +17,9 @@
 ## Estado de procesos y reasignación
 P1: software original hasta Fase 09, sin continuación automática. P2: gemelo operativo integral activo, las fases 01–07 solo describen escena 3D; cámaras/ReID (antigua PHASE-11) pertenecen aquí, junto a integraciones reales de operaciones. P3: IA situada/multiagentes posterior; OpenClaw (antigua PHASE-10) pertenece aquí. Roadmap global 08–15 revocado.
 
+## Distinción canónica adicional — 2026-11-08 (ADR-2026-11-08-002)
+**Nunca equiparar Núcleo con ENTITY Core.** Núcleo descubre, normaliza, cataloga, valida e invoca capacidades de sistemas externos; ENTITY Core conserva el modelo del mundo y las políticas. El Entidadizador transforma datos en entidades/relaciones con procedencia; el Constructor de gemelos digitales genera representaciones espaciales; Spatial Simulation ensaya escenarios sintéticos antes de despliegue. No fingir integraciones reales con mocks ni filtrar ground truth al motor de percepción. Estas definiciones son arquitectura aprobada, no pruebas de implementación. Consultar canon y ADR-002 antes de asignar módulos, fases o servicios.
+
 ---
 ## Instrucciones históricas preservadas
 **Las instrucciones antiguas de este archivo no prevalecen sobre el bloque vigente anterior ni el canon.** Conservar como evidencia; no seguir secuencias de fases antiguas ni autorizaciones caducadas.

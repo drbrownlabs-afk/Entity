@@ -16,6 +16,15 @@
 ## Reglas de actualización de procesos
 Cada actualización debe incluir proceso, fecha, estado, evidencia/commit, bloqueos, próxima acción y responsable cuando exista. Una tarea terminada actualiza este archivo y AGENT-WORKLOG; una decisión específica se agrega a DECISION-LOG; ninguna de ellas modifica automáticamente el canon. Si hay conflicto con notas antiguas, prevalecen el canon y ADR-2026-11-08-001.
 
+## Actualización transversal — 2026-11-08: cartera tecnológica y simulaciones
+**Estado:** decisiones de arquitectura registradas; no certifican módulos construidos.
+- **Núcleo:** motor propietario universal de interoperabilidad; distinto de ENTITY Core. Estado de implementación independiente: pendiente de auditoría de código/evidencias.
+- **Entidadizador automático:** identificación y transformación semántica de información externa en entidades/estados/relaciones. Estado: pendiente de auditoría.
+- **Constructor de gemelos digitales:** generación simplificada de representaciones 3D y vínculos espaciales. Estado: investigación/diseño; validar capacidades reales.
+- **Spatial Simulation:** laboratorio para experimentar con escenarios, personas, cámaras/dispositivos, operaciones y fallos antes del despliegue. Relacionado con P2, pero con desarrollo, ramas y aceptación separados de la vertical operativa; simulación ≠ integración real.
+- **ENTITY Core:** sigue siendo la única fuente del modelo computable y memoria operacional.
+**Próxima acción:** cuando se planifique cada componente, especificar contratos, criterios de prueba y qué está realmente implementado. No iniciar código por esta actualización documental.
+
 ---
 ## Historial operativo previo
 Los reportes siguientes son evidencia cronológica y pueden describir prioridades ya sustituidas; no deben ejecutarse como órdenes actuales.

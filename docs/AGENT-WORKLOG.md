@@ -9,6 +9,12 @@
 - Implementación: exclusivamente documentación; ninguna prueba de software ni despliegue.
 - Resultado: esquema jerárquico consolidado en archivos existentes.
 
+## 2026-11-08 — ChatGPT / recuperación conceptual de tecnologías propietarias
+- Ámbito: canon transversal y laboratorio de simulación.
+- Decisión registrada: ADR-2026-11-08-002. Núcleo separado de ENTITY Core; Entidadizador automático, Constructor de gemelos digitales y ENTITY Spatial Simulation definidos con responsabilidades distintas.
+- Evidencia: solicitud explícita del operador y definiciones recuperadas en la conversación; no pruebas técnicas ni software nuevo.
+- Archivos actualizados: los cinco documentos canónicos existentes. No se crean archivos maestros paralelos.
+
 ---
 ## Bitácora histórica preservada
 

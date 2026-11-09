@@ -11,6 +11,16 @@
 - **Alternativas descartadas:** nuevos archivos MEMORY.md, documentos maestros paralelos y sobrescritura destructiva de decisiones.
 - **Impacto:** cambio documental de coordinación; sin modificación de producto ni aprobación de pruebas.
 
+## ADR-2026-11-08-002 — Núcleo independiente y cartera de tecnologías propietarias (ACEPTADA)
+- **Aprobación:** operador solicita incorporar las definiciones recuperadas de la conversación del 2026-11-08 al canon.
+- **Corrección crítica:** Núcleo es motor de interoperabilidad universal **independiente de ENTITY Core**, no un nombre alternativo de Core ni un conjunto informal de conectores.
+- **Núcleo:** descubrimiento, interpretación y normalización de APIs/SDK/protocolos, catálogo semántico de capacidades, adaptadores, invocación y validación de contratos.
+- **Entidadizador automático:** interpretación de datos heterogéneos, correspondencia de identidades, creación/asociación de entidades y normalización semántica con procedencia.
+- **ENTITY Core:** modelo del mundo compartido, entidades, estados, relaciones, eventos, memoria y autorización.
+- **Constructor de gemelos digitales:** generación/edición de representaciones 3D vinculables al modelo; no equivalente a Core.
+- **Spatial Simulation:** laboratorio de escenarios sintéticos para probar comportamientos y contratos antes de implementación; separado de producción y con ground truth aislado de observación/inferencia.
+- **Consecuencia:** mantener distinción conceptual y de responsabilidades; no declarar implementación o independencia de despliegue sin evidencia. Complementa ADR-2026-11-08-001 sin sustituir los tres procesos globales.
+
 ---
 ## Historial previo (conservado, puede contener decisiones sustituidas)
 Las entradas siguientes documentan su momento histórico; para saber cuál es vigente aplicar ADR-2026-11-08-001 y el canon.
