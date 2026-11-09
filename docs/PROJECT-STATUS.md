@@ -10,6 +10,9 @@
 **Evidencia disponible:** auditoría backend y handoff geométrico están documentados más abajo; su existencia no certifica escena final ni integraciones.
 **Próxima prioridad:** evaluar entregas y gates reales del laboratorio Blender/PlayCanvas y de Core; resolver defectos de transporte Edge, integridad referencial y contratos de percepción antes de presentar integración operativa como validada.
 
+## Hoja de ruta específica de P2 — 2026-11-08
+Referencia: `docs/P2-ROADMAP.md`. Fases 01–07 para escena 3D: **05 gemelo construido según operador; 06 personajes Mixamo/NPCs siguiente; 07 integración y validación**. Fases 08–15 planificadas para modelo espacial, cámaras, percepción/ReID, seguridad, reservas, CRM/facturación, infraestructura y aceptación integral. No reactivar fases antiguas de P1 ni iniciar las nuevas automáticamente.
+
 ## P3 — IA situada y multiagentes
 **Estado:** posterior, no iniciado ni autorizado para implementación. OpenClaw es opción de runtime; agentes de seguridad, reservas, facturación, CRM, red y mantenimiento actuarán a través de capacidades de Core con permisos y auditoría. No sustituir Core ni crear memoria operativa paralela.
 
