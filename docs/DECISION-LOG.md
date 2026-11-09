@@ -21,6 +21,15 @@
 - **Spatial Simulation:** laboratorio de escenarios sintéticos para probar comportamientos y contratos antes de implementación; separado de producción y con ground truth aislado de observación/inferencia.
 - **Consecuencia:** mantener distinción conceptual y de responsabilidades; no declarar implementación o independencia de despliegue sin evidencia. Complementa ADR-2026-11-08-001 sin sustituir los tres procesos globales.
 
+## ADR-2026-11-08-003 — Propiedad exclusiva de P1/P2/P3 y adaptación del software (ACEPTADA)
+- **Aprobación:** instrucción explícita del operador, 2026-11-08: conservar esta separación como regla permanente y crear snapshot.
+- **P1 = plataforma de software:** backend y frontend de plataforma; ENTITY Core, Núcleo, Entidadizador, APIs, conectores, contratos, interfaces y **todos los cambios/adaptaciones necesarios en ese software**. P1 es el único lugar de desarrollo y mantenimiento de esos componentes compartidos. La anterior detención de fases de P1 no prohíbe mantenimiento o ampliaciones requeridas por P2/P3: no equivale a reabrir la numeración histórica.
+- **P2 = caso de uso/demostración del workspace/coworking:** gemelo digital, escena Blender/PlayCanvas, personajes, cámaras, simulación, flujos operativos y validación de integración con sistemas externos. P2 **consume** P1 y desarrolla sus componentes propios de experiencia/simulación; cuando descubre una necesidad de cambio en backend, frontend de plataforma, conectores o entidadización, el cambio se implementa **en P1**, luego se consume y verifica en P2. No crear Core ni backend paralelo en P2.
+- **P3 = IA situada:** razonamiento situado, agentes y orquestación contextual sobre el modelo compartido; consume P1 y puede usar P2 como laboratorio. Cambios necesarios en plataforma/contratos se implementan en P1. P3 no se implementa automáticamente por esta decisión.
+- **Dependencias:** P2-06 personajes → P2-07 integración de escena → P2-08 conectar/entidadizar mediante P1 → P2-09 sistemas externos → P2-10 sincronización → P2-11 validación. Las integraciones se demuestran en P2; el código compartido vive en P1.
+- **Impacto:** precisión de responsabilidades y continuidad, sin reescritura de código ni certificación de funcionalidad por este registro. Complementa ADR-001 y ADR-002; sustituye interpretaciones anteriores que ubicaban desarrollo de Core/frontend de plataforma dentro de P2.
+- **Alternativa descartada:** duplicar backend, frontend de plataforma o Entityizer por cada demo o vertical.
+
 ---
 ## Historial previo (conservado, puede contener decisiones sustituidas)
 Las entradas siguientes documentan su momento histórico; para saber cuál es vigente aplicar ADR-2026-11-08-001 y el canon.

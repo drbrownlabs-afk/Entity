@@ -20,6 +20,9 @@
 | 14 | Evaluación de inteligencia espacial y capacidades situadas | Consultas y análisis contextual basados en el modelo del mundo, escenarios complejos, predicciones experimentales y evaluación de utilidad; **no implementar P3 multiagentes/OpenClaw sin autorización separada**. |
 | 15 | Validación integral de P2 y piloto | Escenarios completos, regresión, seguridad, fallos, persistencia, rendimiento desktop/móvil, procedencia, límites de simulación y aceptación explícita del operador. |
 
+## Propiedad de código y dependencias con P1/P3 (ADR-2026-11-08-003)
+**P2 implementa la demostración y su integración, no el backend/frontend de plataforma.** Para fases 08–15, si falta una API, contrato, capacidad, adaptador, entidadización o interfaz compartida, registrar la necesidad y realizar el cambio en **P1**; P2 solo configura, consume y verifica la integración en el workspace. P3 contiene IA situada y agentes; no mezclar su implementación con las fases de P2. Los sistemas externos conservan sus aplicaciones y autoridad de datos.
+
 ## Orden y aceptación
 - **Estado inmediato:** 01–05 preservar; 05 construida según operador; 06 personajes Mixamo/NPCs; 07 integración y validación visual de la escena.
 - **Dependencia arquitectónica:** 08 conecta gemelo + personajes al **backend funcional existente de P1** y entidadiza el mundo 3D; 09 integra y entidadiza sistemas externos; 10 sincroniza la operación; 11 valida esa interoperabilidad. **No avanzar a percepción avanzada, automatizaciones ni otras capas sin completar este bloque.**

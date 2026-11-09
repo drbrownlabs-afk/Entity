@@ -1,4 +1,10 @@
 # ENTITY — Bitácora de ejecución y evidencias
+
+## 2026-11-08 — P1/P2/P3: delimitación y snapshot explícito
+- Orden del operador: asignar todo backend/frontend de plataforma y adaptaciones a P1; demo workspace a P2; IA situada a P3; crear snapshot transversal de esta decisión.
+- ADR-2026-11-08-003; canon, estado P1/P2/P3 y roadmap P2 actualizados.
+- Alcance: documentación y memoria versionada exclusivamente; no código, pruebas, despliegues ni integraciones nuevas.
+- Referencia: `docs/snapshots/transversal/2026-11-08-propiedad-p1-p2-p3.md`.
 **Autoridad:** registro histórico, no fuente de decisiones arquitectónicas. Cada entrada debe identificar proceso (P1/P2/P3), fecha, objetivo, rama/commit, cambios, pruebas reales, bloqueos y resultado. No confundir planes con implementaciones.
 
 ## 2026-11-08 — ChatGPT / reestructuración de memoria canónica

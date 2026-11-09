@@ -28,6 +28,12 @@ Este canon es estable, **no inmutable**. Solo una solicitud explícita de cambio
 
 **Reasignaciones vigentes:** antigua PHASE-11 (cámaras, ONVIF/RTSP, ReID) → P2; antigua PHASE-10 (OpenClaw) → P3. La secuencia global 08–15 está revocada. Conservar especificaciones históricas sin ejecutarlas como roadmap.
 
+## Propiedad de componentes por proceso — ADR-2026-11-08-003
+- **P1:** único propietario del desarrollo y mantenimiento del **backend y frontend de plataforma**, Core, Núcleo, Entidadizador, APIs, contratos, conectores y sus adaptaciones. Una fase histórica de P1 detenida no bloquea cambios nuevos de software compartido solicitados desde P2/P3; esos cambios se implementan en P1.
+- **P2:** propietario del **caso de uso demostrativo del workspace/coworking**: gemelo, personajes, simulación, cámaras y experiencia e integración operativa. Consume P1 y valida conexiones con sistemas externos; no duplica ni mantiene versiones propias de backend/Core/frontend de plataforma.
+- **P3:** propietario de **IA situada** y agentes. Consume P1 y puede experimentar con P2; no reemplaza Core ni altera la propiedad de software compartido.
+- **Regla de enrutamiento:** ante una necesidad detectada en P2 o P3, clasificar el cambio: plataforma/contrato/adaptador/frontend compartido → P1; escena/demostración/configuración específica del workspace → P2; razonamiento/agentes situados → P3. Mantener trazabilidad de dependencia y pruebas cruzadas.
+
 ## Inventario y veracidad
 Disponibles: cámaras Orbbec. Las ocho cámaras analógicas/DVR fueron una propuesta, no equipo adquirido. No afirmar integraciones, pruebas, despliegues o aprobación de gates sin evidencia reproducible.
 

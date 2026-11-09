@@ -2,9 +2,11 @@
 **Autoridad:** estado y planificación de procesos, subordinados al canon de ENTITY-MASTER-SPEC.md. Actualizar después de cambios comprobados; no declarar éxito sin evidencia.
 
 ## P1 — Software ENTITY
+**Propiedad permanente:** backend y frontend de plataforma, Core, Núcleo, Entidadizador, APIs, conectores y cualquier modificación/adaptación de software compartido requerida por P2 o P3. La detención de la secuencia histórica hasta fase 09 no impide desarrollar adaptaciones de plataforma en P1.
 **Estado de alcance:** línea original detenida en Fase 09. **Estado de aceptación:** no inferir cierre técnico global de la numeración; consultar gates, CI y entregas. **Próximo criterio:** verificar lo que falta antes de dar por aprobada la línea. No iniciar «Fase 10/11» como continuación de P1.
 
 ## P2 — Gemelo digital operativo del coworking
+**Propiedad permanente:** demo/caso de uso del workspace; escena, personajes, cámaras, simulación y experiencia. Consume e integra software P1. Las adaptaciones de backend/frontend de plataforma/conectores/Entidadizador se implementan en P1, no en P2.
 **Estado:** activo. **Subproyecto escena 3D:** fases internas 01–07, no equivalentes a la totalidad de P2.
 **Alcance:** escena Blender/PlayCanvas; humanos Mixamo (~12), animaciones y rutas; cámaras comerciales, cobertura, calibración, percepción, tracking y ReID; seguridad, accesos, biometría; reservas, calendario, CRM, membresías, contratos, facturación, Drive/documentos, redes/IT, mantenimiento y operaciones. Todo usa un único Core/modelo del mundo. Integrar sistemas empresariales reales mediante APIs, sin clones ni proveedores supuestos. Separar simulación/real/replay y ground truth/observación/inferencia.
 **Evidencia disponible:** auditoría backend y handoff geométrico están documentados más abajo; su existencia no certifica escena final ni integraciones.
@@ -14,6 +16,7 @@
 Referencia vigente: `docs/P2-ROADMAP.md`. 01–05 escenario construido según operador; **06 personajes**, **07 integración/validación de escena**. **08 conexión del gemelo y personajes al backend P1 + entidadización del entorno**; **09 integración y entidadización de cámaras, CRM, Drive, reservas, accesos y demás sistemas externos**; **10 sincronización operativa integral**; **11 pruebas de interoperabilidad y aceptación**. Solo después: 12 percepción avanzada, 13 operación/automatizaciones, 14 evaluación contextual (sin invadir P3), 15 piloto y validación. Núcleo ≠ Core ≠ Entidadizador. No reconstruir el backend funcional ni duplicar aplicaciones externas. Estados posteriores: PLANIFICADOS, no implementados por esta edición. La numeración es interna de P2 y no reactiva las fases globales antiguas.
 
 ## P3 — IA situada y multiagentes
+**Propiedad permanente:** IA situada, agentes y orquestación contextual; usa Core de P1 y puede utilizar P2 como laboratorio. Las adaptaciones de plataforma se hacen en P1.
 **Estado:** posterior, no iniciado ni autorizado para implementación. OpenClaw es opción de runtime; agentes de seguridad, reservas, facturación, CRM, red y mantenimiento actuarán a través de capacidades de Core con permisos y auditoría. No sustituir Core ni crear memoria operativa paralela.
 
 ## Reglas de actualización de procesos
