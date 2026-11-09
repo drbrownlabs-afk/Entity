@@ -150,3 +150,10 @@ Archivo maestro `.blend`, scripts de construcción, inventario completo de objet
 ## Método del agente
 
 Trabajar por metas y gates, con paralelismo interno cuando no haya dependencias. Corregir fallos de gate antes de aprobar fase. No alterar componentes fuera de alcance. No inventar dimensiones, IDs Core, cámaras físicas ni evidencia de ejecución. Reportar obstáculos concretos y resultados comprobables.
+## Decisión operativa posterior — priorizar funcionalidad hasta Fase 07 (2026-11-08)
+
+**Autorización del operador:** aplazar el perfeccionamiento visual de Fase 04.5 y avanzar con los personajes de Fase 06 y la integración de Fase 07. Esta decisión reemplaza para el trabajo actual las restricciones históricas de detenerse tras Fase 04 y solicitar nueva autorización antes de iniciar Fase 06. La Fase 05 existente se conserva y se verifican sus funcionalidades necesarias; no se exige cerrar el gate visual de 04.5 para continuar.
+
+**Orden de ejecución:** (1) conservar y registrar la línea base Blender/GLB/PlayCanvas actual, sin nuevos renders largos para perseguir equivalencia estética; (2) completar funciones imprescindibles de Fase 05 que requieran los personajes; (3) ejecutar Fase 06 según sus requisitos de Mixamo, identidad, animaciones, rutas, colisiones y control; (4) ejecutar Fase 07 con pruebas integrales y evidencias; (5) detenerse para revisión del operador. La autorización permite avanzar entre 06 y 07 sin aprobación intermedia, pero no declarar gates aprobados sin evidencia.
+
+**Límites:** solo rama `codex/spatial-simulation`; no modificar ni fusionar `main`. No modificar Core ni otros productos. No iniciar una optimización móvil ni un ciclo de renders de calidad hasta nueva indicación. Respetar la norma de cero vigilia en `AGENTS.md`. Si Mixamo exige autenticación, solicitar intervención del operador únicamente para iniciar sesión; no almacenar credenciales ni sustituir personajes arbitrariamente. La Fase 04.5 queda **aplazada**, no cancelada, y se retomará tras completar la funcionalidad.
