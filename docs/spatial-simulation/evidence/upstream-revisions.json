@@ -19,21 +19,21 @@
   },
   "docs/DECISION-LOG.md": {
     "base_sha256": "0e2be0656ca78f79588636b24d95897e78a573d450b10fd19bd8dfaa89bab7b3",
-    "sha256": "53713b171e1f806ce9756d9ff88456cad308c89ec66ef92fe12d48f7a1155e6a",
-    "commit": "6b13446b4b42440c8bdae6380fb5130edbf1cac6",
-    "reason": "Required factual P2 process-memory update for addendum8.3; canonical definitions preserved."
+    "sha256": "87256dc67fb235d84b76e49edd98636e9707ef0ea39b5bf57bb33703b27834db",
+    "commit": "097241f1be6a90b3e825654219d54241bcf46c71",
+    "reason": "Exact operator-authorized P2-08 addendum8.4 declarative P1 extension/process-memory revision; same Core, canonical definitions and scene preserved."
   },
   "docs/PROJECT-STATUS.md": {
     "base_sha256": "fcdf1c9f85815c3128069503f7cd2b573db5f79518cfb1134cccf79bdd304809",
-    "sha256": "7d73fdc2847a439acc0854e8b737322ea70bbf6b1c3f140e95d56aab2ba5de3f",
-    "commit": "6b13446b4b42440c8bdae6380fb5130edbf1cac6",
-    "reason": "Required factual P2 process-memory update for addendum8.3; canonical definitions preserved."
+    "sha256": "5aa3f62ca2c8091f3d7ac78d5119a3d886ac9af7cd770b84665b2428de75a5f0",
+    "commit": "097241f1be6a90b3e825654219d54241bcf46c71",
+    "reason": "Exact operator-authorized P2-08 addendum8.4 declarative P1 extension/process-memory revision; same Core, canonical definitions and scene preserved."
   },
   "docs/AGENT-WORKLOG.md": {
     "base_sha256": "2897408b0cb1cb10db6529294402ebafa47b84acdbd2fa95cc66565e635dac05",
-    "sha256": "7e3b028baae0f9e0267fe37a4b163d22e1347e5439eef8ccaf19d824f96c4f0f",
-    "commit": "6b13446b4b42440c8bdae6380fb5130edbf1cac6",
-    "reason": "Required factual P2 process-memory update for addendum8.3; canonical definitions preserved."
+    "sha256": "bacfdf6a802adc2b6508a6ab130f4af646e3e0c409297f2e721dd1ba505d77cd",
+    "commit": "097241f1be6a90b3e825654219d54241bcf46c71",
+    "reason": "Exact operator-authorized P2-08 addendum8.4 declarative P1 extension/process-memory revision; same Core, canonical definitions and scene preserved."
   },
   ".github/workflows/pages.yml": {
     "base_sha256": "ebe34d397a085d10ae208ae620d4812f53a7f6d7c411705952bdd83acbf100e2",
@@ -55,9 +55,9 @@
   },
   "services/entity-api/app/office/catalog.py": {
     "base_sha256": "6b8f570085219cbcc1eff29f51ae7faed5ebc926bbc720537bfc9ade4ced26d4",
-    "sha256": "82b3cf92d33cd1ca2c1576dcaa770bb0fd1207c6fd33f7c0c20dc691a5b03b11",
-    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
-    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
+    "sha256": "9dbb577f693dc5b0e133705bf22da2ece5852b27f0ceaed6856bebdc78eee8bb",
+    "commit": "097241f1be6a90b3e825654219d54241bcf46c71",
+    "reason": "Exact operator-authorized P2-08 addendum8.4 declarative P1 extension/process-memory revision; same Core, canonical definitions and scene preserved."
   },
   "services/entity-api/app/office/inputs.py": {
     "base_sha256": "56a57f5511e69e8cfbaaf41632214e5afca898da8f51b8f8f50becf5d4ae4ad4",
@@ -73,9 +73,9 @@
   },
   "services/entity-api/app/office/service.py": {
     "base_sha256": "5215c420f01e7aa6bfe87ecc047c78644e42225cdeda6adb392ac3750c652bc6",
-    "sha256": "d7f1b47f5ccca4205cbe0d11828ce3c1835824c1efb528ee45f89f17d28ed223",
-    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
-    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
+    "sha256": "640f2acc221d6dff3fae6eb7cbc90a29d701858d4d44fbd38f69a61980df1e3a",
+    "commit": "097241f1be6a90b3e825654219d54241bcf46c71",
+    "reason": "Exact operator-authorized P2-08 addendum8.4 declarative P1 extension/process-memory revision; same Core, canonical definitions and scene preserved."
   },
   "services/entity-api/app/office/storage.py": {
     "base_sha256": "76169b717393d4b959f162c721b9a7232727ef345ced61cb44832e937c11217f",
@@ -91,8 +91,8 @@
   },
   "services/entity-api/app/office/graph.py": {
     "base_sha256": "352291875cca9e2ad5ae2e3b5a43a38b5a8d1fd651e934aa6052444781192e1a",
-    "sha256": "798cf81588bdede7c3ad082bc47cf32a37fefa73aacf0b96f5486e3f3ab7fd8b",
-    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
-    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
+    "sha256": "2d755e4a8ff4a1a29c1c4c4969f41bfc7a0dbf1bc34f798571652bb1f379ede6",
+    "commit": "097241f1be6a90b3e825654219d54241bcf46c71",
+    "reason": "Exact operator-authorized P2-08 addendum8.4 declarative P1 extension/process-memory revision; same Core, canonical definitions and scene preserved."
   }
 }

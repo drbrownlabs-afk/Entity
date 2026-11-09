@@ -1,0 +1,10 @@
+test_catalogue_unknown_cardinality_and_business_is_not_executed (test_p2_infrastructure.InfrastructureTests.test_catalogue_unknown_cardinality_and_business_is_not_executed) ... ok
+test_distinct_scene_assets_and_correct_D3_not_C3 (test_p2_infrastructure.InfrastructureTests.test_distinct_scene_assets_and_correct_D3_not_C3) ... ok
+test_eight_planned_cameras_have_no_feeds_or_coverage (test_p2_infrastructure.InfrastructureTests.test_eight_planned_cameras_have_no_feeds_or_coverage) ... ok
+test_persistence_and_additive_multisite_scaling_without_schema_changes (test_p2_infrastructure.InfrastructureTests.test_persistence_and_additive_multisite_scaling_without_schema_changes) ... ok
+test_referential_integrity_no_duplicate_physical_groups_and_optional_spatial (test_p2_infrastructure.InfrastructureTests.test_referential_integrity_no_duplicate_physical_groups_and_optional_spatial) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 11.118s
+
+OK
