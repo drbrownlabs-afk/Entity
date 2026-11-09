@@ -19,21 +19,21 @@
   },
   "docs/DECISION-LOG.md": {
     "base_sha256": "0e2be0656ca78f79588636b24d95897e78a573d450b10fd19bd8dfaa89bab7b3",
-    "sha256": "b01319fc7ea3ae2ea5b132ea737e14b1dc91ef8b026c80742d2257473a0c6829",
-    "commit": "bc7effe",
-    "reason": "Current AGENTS requires factual shared process memory; P2-08 execution and explicit Mall retirement, no canonical definition changes."
+    "sha256": "da327560b0b1929e02515c822009bf68a9117586b1f023ef0b8df93176b6fe5c",
+    "commit": "9d8ba00",
+    "reason": "Required factual process memory for explicit P2-08 addendum8.1/8.2/8.2.1; canonical definitions preserved."
   },
   "docs/PROJECT-STATUS.md": {
     "base_sha256": "fcdf1c9f85815c3128069503f7cd2b573db5f79518cfb1134cccf79bdd304809",
-    "sha256": "d6cfe8612384431c1e764bf7ed1319279df6dcc1f48ff4892b9a7a3ae8ca88ab",
-    "commit": "bc7effe",
-    "reason": "Current AGENTS requires factual shared process memory; P2-08 execution and explicit Mall retirement, no canonical definition changes."
+    "sha256": "41da7e1c657a75fee21bb4a372c2172c3fcae4a8f1670195a26ab482e3df6aeb",
+    "commit": "9d8ba00",
+    "reason": "Required factual process memory for explicit P2-08 addendum8.1/8.2/8.2.1; canonical definitions preserved."
   },
   "docs/AGENT-WORKLOG.md": {
     "base_sha256": "2897408b0cb1cb10db6529294402ebafa47b84acdbd2fa95cc66565e635dac05",
-    "sha256": "dba96ac064ddea60d21ef110c25bdbbfcda619ebe3e0553ebcbb1e06814be0d5",
-    "commit": "bc7effe",
-    "reason": "Current AGENTS requires factual shared process memory; P2-08 execution and explicit Mall retirement, no canonical definition changes."
+    "sha256": "5ba28838285405b288a484ca6d2a795aca87c2d4f368df50c5813bf0be10d9a5",
+    "commit": "9d8ba00",
+    "reason": "Required factual process memory for explicit P2-08 addendum8.1/8.2/8.2.1; canonical definitions preserved."
   },
   ".github/workflows/pages.yml": {
     "base_sha256": "ebe34d397a085d10ae208ae620d4812f53a7f6d7c411705952bdd83acbf100e2",
