@@ -141,3 +141,10 @@ Por instrucción posterior del operador se suspende desarrollo frontend Gaussian
 
 ## 2026-11-08 — Codex: entrega geométrica sin reconstrucción
 Rama codex/synthetic-office-geometry-handoff. Generados docs/spatial-simulation/GEOMETRY-HANDOFF.md, SPACE-INVENTORY.json, ANNOTATIONS-MAP.json y WALKABLE-FLOOR.obj desde evidencia versionada40850d1. Extractor offline reproducible:56entradas/7anotaciones/16709vértices/29526triángulos, IDs únicos y referencias internas válidas. Fuentes originales/voxels conservadas, escala métrica no verificada, componentes sin segmentación explícitos como desconocidos. No backend/UI/escena modificados, no Blender ni nueva validación física.
+
+## Estado de coordinación — 2026-11-08
+- **Proceso 1:** decisión de alcance: Fase 09 como última fase de la línea original. Esto no certifica que todas las pruebas y despliegues de cada rama estén aprobados; usar informes/CI para verificación.
+- **Proceso 2:** ACTIVO. Fases 01–07 corresponden solo al entorno 3D, no al gemelo integral. Continuar con cámaras/percepción y posteriormente integraciones operativas completas (seguridad, accesos, reservas, CRM, facturación, documentos, redes, mantenimiento) sobre un mundo compartido. Estados concretos de fases/gates requieren inspección de commits y pruebas.
+- **Proceso 3:** posterior; no se autoriza implementación de agentes todavía.
+- **Decisiones:** ver `docs/ENTITY-MASTER-SPEC.md` y `docs/DECISION-LOG.md` (consolidación 2026-11-08). El roadmap global 08–15 está revocado como secuencia ejecutable; antiguas fases 10/11 reasignadas.
+- **Operación documental:** dos archivos redundantes creados por error fueron eliminados en `2a723211`; se conserva el sistema original de memoria compartida. Esta actualización es **solo documentación**: no se modificó software ni se ejecutaron tests.

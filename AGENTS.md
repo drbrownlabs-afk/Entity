@@ -86,3 +86,10 @@ Prioridad absoluta: completar y validar Fase 09 antes de iniciar otra fase. Al t
 7. **Aplicación transversal:** rige también para subagentes y tareas de otros planes/fases, sin alterar la rama autorizada ni la política de aprobación. Las instrucciones de fases que soliciten “supervisión”, “progreso” o “esperar hasta terminar” deben interpretarse conforme a esta norma: notificación por evento o checkpoint, no vigilia de IA.
 
 **Criterio de cumplimiento:** ningún ciclo de inferencia cuya única información nueva sea “el proceso sigue ejecutándose”. Un render de 30 minutos debe consumir cuota de agente por preparación, decisiones y análisis de resultados, no por 30 minutos de espera.
+
+## Actualización de memoria canónica — 2026-11-08
+**OBLIGATORIO:** antes de planificar o modificar ENTITY, leer `docs/ENTITY-MASTER-SPEC.md`, `docs/DECISION-LOG.md`, `docs/PROJECT-STATUS.md` y las entradas recientes de `docs/AGENT-WORKLOG.md`. Al cerrar, actualizar **esos mismos archivos**, sin crear un `MEMORY.md` paralelo ni otro master spec.
+
+Decisiones rectoras: **tres procesos independientes**: software original hasta Fase 09; gemelo digital **integral y operativo** del coworking (activo, mucho más que las fases 01–07 de 3D); inteligencia situada/multiagentes posterior. Antigua PHASE-11 cámaras → Proceso 2; antigua PHASE-10 agentes/OpenClaw → Proceso 3. El roadmap global 08–15 no es plan vigente. **Un solo modelo del mundo** computable, persistente y compartido: Core no se duplica, el 3D es interfaz. Proceso 2 incluye cámaras/percepción, seguridad, accesos, biometría, reservas, CRM, facturación, Drive, redes y mantenimiento, con integraciones empresariales reales por API; no inventar stack de Impacto. Personajes objetivo: ~12 humanos Mixamo; dummies descartados. SaaS nube, Edge limitado. Ver detalles y estados en el master spec y decision log.
+
+Al resolver contradicciones, privilegiar la decisión vigente fechada y evidencias reales sobre roadmaps históricos. No convertir un plan en estado implementado ni ejecutar el Proceso 3 sin autorización.

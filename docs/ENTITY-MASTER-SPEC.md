@@ -1,5 +1,5 @@
 # ENTITY OS — Documento maestro de producto y arquitectura
-Actualizado: 2026-11-06. Fuente de verdad para las decisiones de ENTITY OS; mantenerlo actualizado cuando cambien alcance, hardware, arquitectura o estrategia.
+Actualizado: 2026-11-08. Fuente de verdad para las decisiones de ENTITY OS; mantenerlo actualizado cuando cambien alcance, hardware, arquitectura o estrategia.
 
 ## Visión
 ENTITY OS es una plataforma de inteligencia espacial e IA situada. Convierte espacios físicos y sistemas fragmentados en un modelo del mundo computable y persistente sobre el que agentes y aplicaciones pueden consultar, comprender y ejecutar capacidades autorizadas. No es un chatbot con cámaras ni solamente un gemelo digital.
@@ -82,3 +82,19 @@ Core es el único productor del reloj persistente de simulación; clientes obser
 
 ### Aplicación del contrato espacial — 2026-11-08
 Prevalece PHASE-09-SPATIAL-INTERFACE-CONTRACT.md: cuatro grupos A/B oficinas completas, C/D puestos individuales. ENTITY usa Dollhouse como superficie principal. El modo público autónomo es una traza generada por Core con cambios de sesión etiquetados; la sesión Core real continúa por API autenticada configurable. No sustituye la persistencia ni la autorización de Core. Integración en pruebas, no aceptación de fase.
+
+## Consolidación arquitectónica — 2026-11-08 (decisiones vigentes)
+La marca general es **ENTITY** y la vertical aquí desarrollada es **ENTITY Spatial Intelligence**. El modelo del mundo es **una representación computable, compartida, coherente y persistente de la totalidad del espacio y su operación**, no un módulo independiente ni solamente el gemelo 3D. ENTITY Core materializa entidades/identidad, estados, relaciones, eventos, memoria, capacidades, autorización, API y procedencia; las fuentes externas conservan su autoridad. La escena 3D es interfaz/simulación de ese mundo, no reemplaza el núcleo.
+
+**Tres procesos independientes, sin fases globales consecutivas:**
+1. **Software ENTITY:** proceso de construcción original detenido al concluir Fase 09 según decisión del operador; comprobar gates técnicos por separado. Las antiguas Fases 10 y 11 no son próximas fases de este proceso.
+2. **Gemelo digital operativo del coworking:** proceso activo e integral. Las fases internas 01–07 corresponden a la escena 3D y **no terminan el proceso**. Comprende geometría, personas, cámaras, percepción, seguridad, accesos, biometría, reservas, calendarios, CRM, membresías, contratos, facturación/pagos, Google Drive/documentos, redes/IT, mantenimiento y operaciones. Todo se entidadiza y sincroniza en el **mismo modelo del mundo**. Se conectan **aplicaciones empresariales reales por sus APIs oficiales**; no se fabrican clones de CRM, Drive o facturación. Los dispositivos físicos ausentes pueden representarse con gemelos fieles de productos comerciales, identificando explícitamente simulado/real/replay. Investigar qué plataformas usa realmente Impacto antes de elegir conectores; no inventar proveedores.
+3. **Inteligencia situada y multiagentes:** posterior al gemelo operativo. Agentes especializados (seguridad, reservas, facturación, CRM, red, mantenimiento) utilizan el mismo Core/mundo con permisos, herramientas y auditoría. OpenClaw es candidato a runtime, **no** un Core alternativo.
+
+**Reasignación:** `docs/phases/PHASE-11.md` (Camera Gateway, ONVIF/RTSP, tracking/ReID, TrackGlobal) pasa como referencia técnica al **Proceso 2**; `docs/phases/PHASE-10.md` (OpenClaw/agente) pasa al **Proceso 3**. El roadmap global 08–15 de la simulación queda revocado como secuencia ejecutable; conservarlo solo como histórico.
+
+**Escena y percepción:** el usuario descartó dummies geométricos para visión y seleccionó ~12 personajes humanos realistas de Mixamo, con animaciones, rutas y oclusiones. Los detectores no reciben los IDs internos de simulación; separar ground truth, observación e inferencia. Tras la escena 3D, priorizar cámaras comerciales identificables con fabricante, modelo, óptica/FOV, resolución, FPS, codecs, pose/calibración y cobertura. Simular sus imágenes desde la misma escena; conectar cámaras reales por interfaces compatibles. No equiparar video RTSP con analítica ni seguimiento monocámara con ReID multicámara.
+
+**Despliegue:** SaaS centralizado en nube; Edge exclusivamente captura/procesamiento local indispensable. No instalar el software completo ENTITY en las instalaciones del cliente. No declarar integraciones, hardware, credenciales, pruebas o gates como completados sin evidencia. El usuario dispone de cámaras Orbbec; el conjunto de ocho cámaras analógicas/DVR era una propuesta, **no equipo disponible**.
+
+**Continuidad:** la memoria del proyecto reside en los archivos existentes `docs/ENTITY-MASTER-SPEC.md`, `docs/DECISION-LOG.md`, `docs/PROJECT-STATUS.md`, `docs/AGENT-WORKLOG.md` y `AGENTS.md`. No crear `MEMORY.md` ni nuevos documentos maestros paralelos. Al iniciar, leer decisiones vigentes y bitácora; al terminar, actualizar las fuentes existentes. Los documentos históricos se interpretan bajo estas decisiones, sin eliminar evidencias.

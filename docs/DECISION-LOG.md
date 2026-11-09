@@ -93,3 +93,12 @@ El trabajo actual de Fase 09 Synthetic Office no está suficientemente terminado
 
 ## 2026-11-08 — Decisión posterior del operador: laboratorio nativo, auditoría previa
 Se suspende el desarrollo del frontend basado en Gaussian Splatting, conservando código e historial. El siguiente laboratorio será editable en Blender y ejecutado en PlayCanvas, con ENTITY Core como fuente de verdad. Esta orden sustituye la prioridad de continuar personajes/NPCs sobreSSOG. La tarea actual es exclusivamente auditoría/diagnóstico/plan de correcciones; no construir el laboratorio ni comenzar10/11. Informe y evidencia: docs/audits/ENTITY-BACKEND-READINESS.md, rama codex/backend-readiness-audit.
+
+## 2026-11-08 — Consolidación de procesos, gemelo integral y continuidad
+- **VIGENTE:** ENTITY (marca general) / ENTITY Spatial Intelligence (vertical). Modelo del mundo único, computable y persistente; Core no se duplica; gemelo 3D es interfaz, no inteligencia.
+- **VIGENTE:** tres procesos independientes: (1) software original hasta Fase 09, (2) gemelo digital operativo integral de coworking, activo y más allá de las fases 01–07 de escena, (3) inteligencia situada y multiagentes, posterior.
+- **REASIGNADO:** antigua PHASE-11 (cámaras/ReID) al Proceso 2; antigua PHASE-10 (OpenClaw/agente) al Proceso 3. **REVOCADO:** roadmap 08–15 como numeración global.
+- **VIGENTE:** el gemelo del coworking integra cámaras y percepción, seguridad, biometría, accesos, reservas, calendarios, CRM, membresías, facturación, Drive/documentos, redes y mantenimiento, en el mismo mundo. Integrar servicios empresariales reales por API; hardware ausente puede simularse con modelos comerciales documentados. No inventar stack de Impacto.
+- **DESCARTADO:** dummies geométricos como personajes objetivo de visión. **SELECCIONADO:** ~12 humanos realistas Mixamo, animados, con ground truth aislado de la percepción.
+- **VIGENTE:** SaaS centralizado; Edge solo tareas locales indispensables. Orbbec disponible; ocho analógicas/DVR no disponibles, fueron hipotéticas.
+- **VIGENTE:** memoria documental compartida ya existente (master spec, decision log, project status, agent worklog, AGENTS). **DESCARTADO:** archivo adicional MEMORY.md y segundo documento maestro creado por error; ambos eliminados en commit `2a723211`. No duplicar fuentes de verdad.

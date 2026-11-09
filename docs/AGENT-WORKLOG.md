@@ -466,3 +466,14 @@ Por instrucción posterior del operador se suspende desarrollo frontend Gaussian
 
 ## 2026-11-08 — Codex: entrega geométrica sin reconstrucción
 Rama codex/synthetic-office-geometry-handoff. Generados docs/spatial-simulation/GEOMETRY-HANDOFF.md, SPACE-INVENTORY.json, ANNOTATIONS-MAP.json y WALKABLE-FLOOR.obj desde evidencia versionada40850d1. Extractor offline reproducible:56entradas/7anotaciones/16709vértices/29526triángulos, IDs únicos y referencias internas válidas. Fuentes originales/voxels conservadas, escala métrica no verificada, componentes sin segmentación explícitos como desconocidos. No backend/UI/escena modificados, no Blender ni nueva validación física.
+
+## 2026-11-08 — ChatGPT / consolidación en memoria compartida existente
+- Objetivo: registrar las decisiones recientes sobre los tres procesos de ENTITY y evitar pérdida de continuidad o creación de memorias paralelas.
+- Rama / commit: `codex/spatial-simulation`; eliminación previa de dos archivos redundantes: `2a723211`.
+- Archivos modificados: `docs/ENTITY-MASTER-SPEC.md`, `docs/DECISION-LOG.md`, `docs/PROJECT-STATUS.md`, `docs/AGENT-WORKLOG.md`, `AGENTS.md`.
+- Implementación real: actualización documental de arquitectura, alcance, prioridades y reglas de continuidad; **sin cambios de código**.
+- Pruebas ejecutadas: no aplica a código; verificar commit de GitHub para confirmar persistencia.
+- Decisiones: Proceso 1 hasta Fase 09; Proceso 2 coworking integral activo, no limitado al 3D ni a cámaras; Proceso 3 agentes posterior. PHASE-11 reasignada a 2; PHASE-10 a 3. Modelo del mundo único; integraciones reales, Mixamo realista y SaaS cloud. Ver entrada 2026-11-08 en DECISION-LOG.
+- Limitaciones: estados técnicos, credenciales y proveedores reales de Impacto pendientes de comprobación; no se infiere aceptación de gates.
+- Estado final: documentación consolidada.
+- Próxima acción: antes de cualquier implementación, revisar memoria existente, código y evidencias; evitar repetir decisiones descartadas.
