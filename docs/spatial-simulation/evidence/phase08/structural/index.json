@@ -1,5 +1,5 @@
 {
-  "scope": "latest P2-08 addendum ce7b98f: structural only",
+  "scope": "P2-08 addendum structural stage including8.1; no new operational flows",
   "entities": [
     {
       "id": "A",
@@ -7,6 +7,7 @@
       "type": "Office",
       "name": "A",
       "parent": "site",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -32,8 +33,10 @@
         "scene_environment_id": "A",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": true,
         "public": false,
@@ -48,6 +51,7 @@
       "type": "AccessPoint",
       "name": "ACCESS-A",
       "parent": "A",
+      "registry": null,
       "spatial": {
         "bounds": null,
         "coordinate_frame": "p2-playcanvas-source-y-up",
@@ -68,8 +72,10 @@
         "scene_environment_id": "A",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -78,6 +84,7 @@
       "type": "AccessPoint",
       "name": "ACCESS-B",
       "parent": "B",
+      "registry": null,
       "spatial": {
         "bounds": null,
         "coordinate_frame": "p2-playcanvas-source-y-up",
@@ -98,8 +105,10 @@
         "scene_environment_id": "B",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -108,6 +117,7 @@
       "type": "AccessPoint",
       "name": "ACCESS-C",
       "parent": "C",
+      "registry": null,
       "spatial": {
         "bounds": null,
         "coordinate_frame": "p2-playcanvas-source-y-up",
@@ -128,8 +138,10 @@
         "scene_environment_id": "C",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -138,6 +150,7 @@
       "type": "AccessPoint",
       "name": "ACCESS-D",
       "parent": "D",
+      "registry": null,
       "spatial": {
         "bounds": null,
         "coordinate_frame": "p2-playcanvas-source-y-up",
@@ -158,8 +171,10 @@
         "scene_environment_id": "D",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -168,6 +183,7 @@
       "type": "AccessPoint",
       "name": "ACCESS-E",
       "parent": "E",
+      "registry": null,
       "spatial": {
         "bounds": null,
         "coordinate_frame": "p2-playcanvas-source-y-up",
@@ -188,8 +204,10 @@
         "scene_environment_id": "sim:ROOM-E",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -198,6 +216,7 @@
       "type": "AccessPoint",
       "name": "ACCESS-MEETING-AREA-01",
       "parent": "MEETING-AREA-01",
+      "registry": null,
       "spatial": {
         "bounds": null,
         "coordinate_frame": "p2-playcanvas-source-y-up",
@@ -218,8 +237,10 @@
         "scene_environment_id": "MEETING-AREA-01",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -228,6 +249,7 @@
       "type": "Office",
       "name": "B",
       "parent": "site",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -253,8 +275,10 @@
         "scene_environment_id": "B",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": true,
         "public": false,
@@ -269,6 +293,7 @@
       "type": "Office",
       "name": "C",
       "parent": "site",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -294,8 +319,10 @@
         "scene_environment_id": "C",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": false,
@@ -310,6 +337,7 @@
       "type": "Zone",
       "name": "CAFE",
       "parent": "site",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -338,8 +366,10 @@
         "scene_environment_id": "sim:CAFE-01",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -348,6 +378,7 @@
       "type": "InventoryItem",
       "name": "CAFE-COFFEE",
       "parent": "CAFE",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -375,8 +406,10 @@
         "scene_environment_id": "sim:CAFE-01",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -385,6 +418,7 @@
       "type": "Zone",
       "name": "CIRCULATION-01",
       "parent": "site",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -417,8 +451,10 @@
         "scene_environment_id": "CIRCULATION-01",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -427,6 +463,7 @@
       "type": "Office",
       "name": "D",
       "parent": "site",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -452,8 +489,10 @@
         "scene_environment_id": "D",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": true,
@@ -468,6 +507,7 @@
       "type": "Desk",
       "name": "D1",
       "parent": "D",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -509,8 +549,10 @@
         "scene_environment_id": "D",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": true,
@@ -523,6 +565,7 @@
       "type": "Desk",
       "name": "D2",
       "parent": "D",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -564,8 +607,10 @@
         "scene_environment_id": "D",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": true,
@@ -578,6 +623,7 @@
       "type": "Desk",
       "name": "D3",
       "parent": "D",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -619,8 +665,10 @@
         "scene_environment_id": "D",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": true,
@@ -633,6 +681,7 @@
       "type": "Desk",
       "name": "D4",
       "parent": "D",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -674,8 +723,10 @@
         "scene_environment_id": "D",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": true,
@@ -688,6 +739,7 @@
       "type": "Desk",
       "name": "D5",
       "parent": "D",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -729,8 +781,10 @@
         "scene_environment_id": "D",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": true,
@@ -743,6 +797,7 @@
       "type": "Desk",
       "name": "D6",
       "parent": "D",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -784,8 +839,10 @@
         "scene_environment_id": "D",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": true,
@@ -798,6 +855,7 @@
       "type": "Office",
       "name": "E",
       "parent": "site",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -823,8 +881,10 @@
         "scene_environment_id": "sim:ROOM-E",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": true,
@@ -844,6 +904,7 @@
       "type": "Desk",
       "name": "E1",
       "parent": "E",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -878,8 +939,10 @@
         "scene_environment_id": "sim:ROOM-E",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": true,
@@ -892,6 +955,7 @@
       "type": "Desk",
       "name": "E5",
       "parent": "E",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -926,8 +990,10 @@
         "scene_environment_id": "sim:ROOM-E",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": true,
@@ -940,6 +1006,7 @@
       "type": "Desk",
       "name": "E6",
       "parent": "E",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -974,8 +1041,10 @@
         "scene_environment_id": "sim:ROOM-E",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "private": false,
         "public": true,
@@ -988,6 +1057,7 @@
       "type": "Kiosk",
       "name": "KIOSK-01",
       "parent": "RECEPTION",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -1015,8 +1085,10 @@
         "scene_environment_id": "RECEPTION",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -1025,6 +1097,7 @@
       "type": "Zone",
       "name": "LOUNGE",
       "parent": "site",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -1061,8 +1134,10 @@
         "scene_environment_id": "sim:LOUNGE",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -1071,6 +1146,7 @@
       "type": "InventoryItem",
       "name": "LOUNGE-SEATING",
       "parent": "LOUNGE",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -1107,8 +1183,10 @@
         "scene_environment_id": "sim:LOUNGE",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -1117,6 +1195,7 @@
       "type": "Room",
       "name": "MEETING-AREA-01",
       "parent": "site",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -1145,8 +1224,10 @@
         "scene_environment_id": "MEETING-AREA-01",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {
         "reservable": true,
         "booking_mode": "whole-environment"
@@ -1157,12 +1238,15 @@
       "core_id": "08f0d317-845d-5745-88a9-4c41b65ea09c",
       "type": "Person",
       "name": "Persona l\u00f3gica sin identificar 1",
-      "parent": "site",
+      "parent": null,
+      "registry": "site",
       "spatial": null,
+      "whole_scene_reference": null,
       "role": [
         "visitor"
       ],
       "identity_status": "unverified-placeholder",
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -1170,12 +1254,15 @@
       "core_id": "0841916f-c485-59dc-bdb0-29bca9f2b7af",
       "type": "Person",
       "name": "Persona l\u00f3gica sin identificar 2",
-      "parent": "site",
+      "parent": null,
+      "registry": "site",
       "spatial": null,
+      "whole_scene_reference": null,
       "role": [
         "member"
       ],
       "identity_status": "unverified-placeholder",
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -1183,12 +1270,15 @@
       "core_id": "fc2c6da6-91c6-5af4-9f1e-df672da899b3",
       "type": "Person",
       "name": "Persona l\u00f3gica sin identificar 3",
-      "parent": "site",
+      "parent": null,
+      "registry": "site",
       "spatial": null,
+      "whole_scene_reference": null,
       "role": [
         "staff"
       ],
       "identity_status": "unverified-placeholder",
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -1196,12 +1286,15 @@
       "core_id": "346c292c-4def-5e3d-881e-d89485aa70f7",
       "type": "Person",
       "name": "Persona l\u00f3gica sin identificar 4",
-      "parent": "site",
+      "parent": null,
+      "registry": "site",
       "spatial": null,
+      "whole_scene_reference": null,
       "role": [
         "host"
       ],
       "identity_status": "unverified-placeholder",
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -1210,6 +1303,7 @@
       "type": "Reception",
       "name": "RECEPTION",
       "parent": "site",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -1238,8 +1332,10 @@
         "scene_environment_id": "RECEPTION",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -1248,6 +1344,7 @@
       "type": "InventoryItem",
       "name": "TABLE-D",
       "parent": "D",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -1275,8 +1372,10 @@
         "scene_environment_id": "D",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
@@ -1285,6 +1384,7 @@
       "type": "InventoryItem",
       "name": "TABLE-E",
       "parent": "E",
+      "registry": null,
       "spatial": {
         "bounds": [
           [
@@ -1312,19 +1412,29 @@
         "scene_environment_id": "sim:ROOM-E",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
+      "space_root": null,
       "catalogue": {}
     },
     {
       "id": "site",
       "core_id": "9e43c185-46cf-5fc8-b066-945f8589ae2d",
       "type": "Site",
-      "name": "ENTITY coworking \u2014 P2 laboratory, not live operations",
+      "name": "ENTITY coworking \u2014 entidad madre del espacio P2",
       "parent": null,
+      "registry": null,
       "spatial": null,
+      "whole_scene_reference": {
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57",
+        "scope": "existing coworking scene as a whole; no unique mesh required"
+      },
       "role": null,
       "identity_status": null,
+      "space_root": true,
       "catalogue": {}
     }
   ],
@@ -2259,45 +2369,9 @@
       "provenance": "explicit-domain-field"
     },
     {
-      "id": "938ffef1-c086-5d5e-aec4-930b87c2fbfe",
-      "type": "partOf",
-      "source": "PERSON-LOGICAL-01",
-      "target": "site",
-      "valid_from": "2026-11-09T12:00:00+00:00",
-      "valid_to": null,
-      "provenance": "explicit-domain-field"
-    },
-    {
-      "id": "6367b6e1-dc90-516b-b820-d4f00c87e22f",
-      "type": "partOf",
-      "source": "PERSON-LOGICAL-02",
-      "target": "site",
-      "valid_from": "2026-11-09T12:00:00+00:00",
-      "valid_to": null,
-      "provenance": "explicit-domain-field"
-    },
-    {
       "id": "254f9655-8d73-5823-a7b3-e07ea2223daa",
       "type": "partOf",
       "source": "RECEPTION",
-      "target": "site",
-      "valid_from": "2026-11-09T12:00:00+00:00",
-      "valid_to": null,
-      "provenance": "explicit-domain-field"
-    },
-    {
-      "id": "a2bebd05-88f5-5727-bd3b-648ad4a70ad1",
-      "type": "partOf",
-      "source": "PERSON-LOGICAL-03",
-      "target": "site",
-      "valid_from": "2026-11-09T12:00:00+00:00",
-      "valid_to": null,
-      "provenance": "explicit-domain-field"
-    },
-    {
-      "id": "4c7bf51a-f9de-54bd-9e0d-8589f28e5a24",
-      "type": "partOf",
-      "source": "PERSON-LOGICAL-04",
       "target": "site",
       "valid_from": "2026-11-09T12:00:00+00:00",
       "valid_to": null,
@@ -2320,16 +2394,56 @@
       "valid_from": "2026-11-09T12:00:00+00:00",
       "valid_to": null,
       "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "331a762f-5c2b-5183-a10d-20cb2c5a019f",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-01",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "48aaed71-4e61-5ea0-95a4-74a3b127ecb1",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-02",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "eacfb9ef-0b1c-5ecf-b435-1cd12dddef81",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-03",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "08b38f2e-b913-5a89-b43c-f7949e53e072",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-04",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
     }
   ],
+  "root_memory_records": 1,
+  "root_state": "unknown; own state, no occupancy aggregate inferred",
+  "closed_old_person_containment_links_retained_as_history": 4,
   "vocabulary": {
     "CONTIENE": "inverse of existing partOf; stored once, traversable in either direction",
     "PERTENECE_A": "partOf",
     "UBICADO_EN": "locatedIn",
     "ADYACENTE_A": "adjacentTo",
-    "CONECTADO_CON": "connectedTo"
+    "CONECTADO_CON": "connectedTo",
+    "PERSONA_REGISTRADA": "registeredIn (registry membership, never permanent physical containment)"
   },
-  "unknown": "No other adjacency, current door transit, live access rights, person location or operational facts asserted",
+  "unknown": "No other adjacency, current door transit, individual access rights, person location or operational facts asserted",
   "geometry_modified": false,
   "logical_people_without_mesh": 4
 }

@@ -22,7 +22,7 @@ for key,env,kind in [('RECEPTION','RECEPTION','Reception'),('CAFE','sim:CAFE-01'
  ids=[r['id']for r in records if r['environment_id']==env and r['type']in ['ReceptionCounter','Counter','Sofa']];assert ids;put(key,kind,env,ids)
 # Logical registration slots are explicitly unverified, never evidence that real people exist or are present.
 for n in [1,2,3,4]:
- resources.append({'id':f'PERSON-LOGICAL-{n:02}','kind':'Person','attributes':{'name':f'Persona lógica sin identificar {n}','roles':[['visitor'],['member'],['staff'],['host']][n-1],'identity_status':'unverified-placeholder','operational_state':'unknown','real_person_verified':False,'position':None,'avatar_id':None,'parent_resource':'site','registration_source':'P2-08 logical placeholder; no real identity or presence asserted'}})
+ resources.append({'id':f'PERSON-LOGICAL-{n:02}','kind':'Person','attributes':{'name':f'Persona lógica sin identificar {n}','roles':[['visitor'],['member'],['staff'],['host']][n-1],'identity_status':'unverified-placeholder','operational_state':'unknown','real_person_verified':False,'position':None,'avatar_id':None,'parent_resource':None,'registry_id':'site','registration_source':'P2-08 logical placeholder; no real identity or presence asserted'}})
 # Additional existing structures and furnishings only; never generate geometry.
 for key,env,kind,types,parent in [
  ('MEETING-AREA-01','MEETING-AREA-01','Room',['Table','TV'],'site'),
@@ -57,5 +57,6 @@ for door in scene['devices']['doors']:
 rooms={r['id']:r for r in scene['room_bounds']};d,e=rooms['D']['bounds'],rooms['sim:ROOM-E']['bounds']
 if abs(d[2]-e[3])<1e-6 and min(d[1],e[1])>max(d[0],e[0]):
  for source_id,target in [('D','E'),('E','D')]:relations.append({'source':source_id,'target':target,'type':'adjacentTo','evidence':{'source':'existing room bounds and E reuse_front_partition D','shared_boundary_z':d[2],'transit_implied':False}})
+resources.insert(0,{'id':'site','kind':'Site','attributes':{'name':'ENTITY coworking — entidad madre del espacio P2','space_type':'Coworking','space_root':True,'world_model_root':False,'operational_state':'unknown','state_provenance':'not observed; no aggregate occupancy inferred','whole_scene_reference':{'coordinate_frame':'p2-playcanvas-source-y-up','scene_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'master_sha256':scene['master_sha256'],'scope':'existing coworking scene as a whole; no unique mesh required'},'registration_source':'operator P2-08 addendum section8.1'}})
 config={'id':'coworking-p2','name':'ENTITY coworking — P2 laboratory, not live operations','timezone':'UTC','clock':a.clock,'resources':resources,'structural_relations':relations,'accounts':[{'username':'admin','role':'admin'},{'username':'viewer','role':'viewer','grants':[{'resource':'site','permission':'read'}]}]}
 Path(a.output).parent.mkdir(parents=True,exist_ok=True);Path(a.output).write_text(json.dumps(config,indent=2)+'\n');print('Prepared',len(resources),'resources; no geometry modified')

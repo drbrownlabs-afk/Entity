@@ -18,7 +18,7 @@ class StructuralTests(unittest.TestCase):
   from app.office.storage import world
   with main.database()as db:return world(db,'p2','structure')
  def test_identity_hierarchy_and_catalog_policies(self):
-  items=self.read()['entities'];self.assertEqual(len(items),35);self.assertEqual(len({e['core_id']for e in items.values()}),35)
+  items=self.read()['entities'];self.assertEqual(len(items),35);self.assertEqual(items['site']['space_type'],'Coworking');self.assertEqual(items['site']['operational_state'],'unknown');self.assertTrue(items['site']['space_root']);self.assertFalse(items['site']['world_model_root']);self.assertEqual(len({e['core_id']for e in items.values()}),35)
   for k in ['A','B']:self.assertTrue(items[k]['private']);self.assertTrue(items[k]['reservable']);self.assertEqual(items[k]['booking_mode'],'whole-environment')
   self.assertFalse(items['C']['public']);self.assertFalse(items['C']['reservable']);self.assertEqual(items['C']['functional_use'],'staff')
   self.assertEqual(items['E']['planned_unindexed_catalog_ids'],['E2','E3','E4'])
@@ -33,7 +33,7 @@ class StructuralTests(unittest.TestCase):
   for e in explicit:self.assertTrue(e['id']);self.assertTrue(e['provenance']);self.assertTrue(e['valid_from']);self.assertIsNone(e['valid_to'])
   people=[e for e in items.values()if e['kind']=='Person'];self.assertEqual(len(people),4)
   self.assertEqual({e['roles'][0]for e in people},{'visitor','member','staff','host'})
-  for e in people:self.assertIsNone(e['position']);self.assertIsNone(e['avatar_id']);self.assertNotIn('presence',e);self.assertFalse(e['real_person_verified'])
+  for e in people:self.assertIsNone(e['position']);self.assertIsNone(e['avatar_id']);self.assertNotIn('presence',e);self.assertFalse(e['real_person_verified']);self.assertTrue(any(r['type']=='registeredIn'and r['target']=='site'for r in e['relations']));self.assertFalse(any(r['type']=='partOf'and not r.get('valid_to')for r in e['relations']))
  def test_persistence_and_no_operational_facts(self):
   before=self.read();main.initialize();self.assertEqual(before,self.read())
   with main.database()as db:
@@ -53,3 +53,8 @@ class StructuralTests(unittest.TestCase):
    for resource in self.cfg['resources']:
     command(db,'p2','structure',self.actor,{'id':__import__('uuid').uuid4().hex,'operation':'entity.upsert','target':'site','inputs':resource})
   after=self.read()['entities']['E2'];self.assertEqual(original,after);self.assertTrue(after['reservable']);self.assertNotIn('deprecated',after)
+
+ def test_person_registration_is_not_permanent_physical_containment(self):
+  from app.office.graph import derive,active
+  item={'id':'test-person','parent_resource':None,'registry_id':'site','relations':[{'type':'partOf','field':'parent_resource','target':'site','valid_from':'2026-11-08T00:00:00+00:00','valid_to':None}]}
+  links=derive(item,'2026-11-09T12:00:00+00:00');self.assertFalse(any(r['type']=='partOf'and active(r,'2026-11-09T12:00:00+00:00')for r in links));self.assertTrue(any(r['type']=='registeredIn'and active(r,'2026-11-09T12:00:00+00:00')for r in links))

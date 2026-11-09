@@ -14,10 +14,16 @@ with httpx.Client(base_url=a.api,timeout=20)as c:
  for resource in cfg['resources']:
   key=resource['id'];old=items.get(key,{});attrs=dict(resource['attributes'])
   if old.get('kind')and old['kind']!=resource['kind']:raise RuntimeError('Immutable kind mismatch: '+key)
-  if old:attrs.pop('operational_state',None)
+  if 'operational_state'in old:attrs.pop('operational_state',None)
   if old and all(old.get(k)==v for k,v in attrs.items()):continue
   command('entity.upsert',{'id':key,'kind':resource['kind'],'attributes':attrs},{k:old.get(k)for k in attrs});items=world()
+ # Preserve earlier logical test identities while correcting registry membership semantics.
+ for key,old in list(items.items()):
+  if old.get('kind')=='Person'and old.get('real_person_verified')is False and old.get('position')is None and old.get('parent_resource')=='site':
+   command('entity.upsert',{'id':key,'kind':'Person','attributes':{'parent_resource':None,'registry_id':'site'}},'8.1 nonphysical registration');items=world()
  for edge in cfg.get('structural_relations',[]):
   if any(r['type']==edge['type']and r['target']==edge['target']and not r.get('valid_to')for r in items[edge['source']].get('relations',[])):continue
   command('relation.add',edge,'structural-scene-evidence');items=world()
+ if not items['site'].get('last_memory_id'):
+  command('entity.remember',{'content':'Registro estructural de la entidad madre Coworking: identidad estable, estado propio desconocido y referencia al conjunto espacial. No es la raíz de todo el modelo ENTITY; no se infiere ocupación.','source':'P2:structural-registration'},'coworking-root-8.1');items=world()
  c.post('/v1/office/auth/logout');print(json.dumps({'structural_commands_applied':changes,'entities_preserved':len(items),'deleted':0,'operational_flows_executed':False}))
