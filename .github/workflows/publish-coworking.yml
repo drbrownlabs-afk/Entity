@@ -38,8 +38,13 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh api --method PUT repos/${{ github.repository }}/actions/workflows/pages.yml/disable
-          gh api --method PUT repos/${{ github.repository }}/actions/workflows/spatial-pages.yml/disable
+          gh api --paginate repos/${{ github.repository }}/actions/workflows --jq '.workflows[] | select(.path == ".github/workflows/pages.yml" or .path == ".github/workflows/spatial-pages.yml") | .id' > /tmp/retired-workflows
+          while read -r workflow_id; do
+            workflow_state=$(gh api repos/${{ github.repository }}/actions/workflows/$workflow_id --jq .state)
+            if [ "$workflow_state" = active ]; then
+              gh api --method PUT repos/${{ github.repository }}/actions/workflows/$workflow_id/disable
+            fi
+          done < /tmp/retired-workflows
       - name: Publish coworking only, retiring old compiled demonstrations
         working-directory: published
         run: |
