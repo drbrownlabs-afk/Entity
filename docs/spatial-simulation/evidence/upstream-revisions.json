@@ -19,21 +19,21 @@
   },
   "docs/DECISION-LOG.md": {
     "base_sha256": "0e2be0656ca78f79588636b24d95897e78a573d450b10fd19bd8dfaa89bab7b3",
-    "sha256": "0723093680448dcf314168b65b9b89241edcaa78fdd27826c9d6742eb7e61a73",
-    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
-    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
+    "sha256": "891d49b6765ed0f59c392f09401e6c1834c5fbabd06bfaa6f06f17dc918e231d",
+    "commit": "d2334ec6fed6fde8b58aeeb5a8cb34570df01a8a",
+    "reason": "Exact authorized final P2-09 process-memory/Edge frame-contract dependency revision. No canon change, no wildcard exemption."
   },
   "docs/PROJECT-STATUS.md": {
     "base_sha256": "fcdf1c9f85815c3128069503f7cd2b573db5f79518cfb1134cccf79bdd304809",
-    "sha256": "5526a569bb80eaecffe850e39d174a3811acde2a22f3c09199ef2d73373ed207",
-    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
-    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
+    "sha256": "6ce2d8a6275e1041a2467186fc6c9a9ab78692b6317ad16583ae37af8844cc4e",
+    "commit": "d2334ec6fed6fde8b58aeeb5a8cb34570df01a8a",
+    "reason": "Exact authorized final P2-09 process-memory/Edge frame-contract dependency revision. No canon change, no wildcard exemption."
   },
   "docs/AGENT-WORKLOG.md": {
     "base_sha256": "2897408b0cb1cb10db6529294402ebafa47b84acdbd2fa95cc66565e635dac05",
-    "sha256": "e1095147046efd9ad6adcdbf45f17328846a6da7121bb64d84fa46a44b11c102",
-    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
-    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
+    "sha256": "964f0df5dc83fafe4c71c19328a87c6ee106652d2dc7ac368ab6d3c8267c13b3",
+    "commit": "d2334ec6fed6fde8b58aeeb5a8cb34570df01a8a",
+    "reason": "Exact authorized final P2-09 process-memory/Edge frame-contract dependency revision. No canon change, no wildcard exemption."
   },
   ".github/workflows/pages.yml": {
     "base_sha256": "ebe34d397a085d10ae208ae620d4812f53a7f6d7c411705952bdd83acbf100e2",
@@ -118,5 +118,11 @@
     "sha256": "518a9bd6ccaf7e1d2e180bfe72855f6061ac1b17e913bc3330601ed2a561a55f",
     "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
     "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
+  },
+  "services/entity-edge/requirements.lock": {
+    "base_sha256": "a2cf30f35634f80ad019c3dede7cc54e6b77e84ca0d4540f17358cdd95119760",
+    "sha256": "a8136183f293683b8657d6a95cdaeaa20762f89f62f3afd225831df82c3310c4",
+    "commit": "d2334ec6fed6fde8b58aeeb5a8cb34570df01a8a",
+    "reason": "Exact authorized final P2-09 process-memory/Edge frame-contract dependency revision. No canon change, no wildcard exemption."
   }
 }
