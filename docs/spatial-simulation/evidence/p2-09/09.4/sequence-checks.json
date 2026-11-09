@@ -6,46 +6,42 @@
   "frames_per_camera": 41,
   "nominal_media_fps": 2,
   "timestamp_skew_seconds": 0,
-  "real_wall_capture_ms_median": 67.5,
+  "real_wall_capture_ms_median": 83.5,
   "manifest_schema_passed": true,
   "sample_views": [
     {
       "camera": "CAMERA-PLANNED-01",
       "visible_delta_frames": 38,
-      "largest_delta_pixels": 11205
+      "largest_delta_pixels": 6873
     },
     {
       "camera": "CAMERA-PLANNED-02",
-      "visible_delta_frames": 18,
-      "largest_delta_pixels": 16005
+      "visible_delta_frames": 17,
+      "largest_delta_pixels": 12050
     },
     {
       "camera": "CAMERA-PLANNED-03",
-      "visible_delta_frames": 29,
-      "largest_delta_pixels": 20693
+      "visible_delta_frames": 28,
+      "largest_delta_pixels": 14764
     },
     {
       "camera": "CAMERA-PLANNED-04",
       "visible_delta_frames": 39,
-      "largest_delta_pixels": 9921
+      "largest_delta_pixels": 6962
     },
     {
       "camera": "CAMERA-PLANNED-05",
       "visible_delta_frames": 4,
-      "largest_delta_pixels": 23757
+      "largest_delta_pixels": 17658
     },
     {
       "camera": "CAMERA-PLANNED-06",
       "visible_delta_frames": 39,
-      "largest_delta_pixels": 1114
+      "largest_delta_pixels": 973
     }
   ],
   "ground_truth_evaluator_only": true,
   "profile": "Native PBR color/depth cache, no CameraFrame SSAO/bloom or dynamic shadows. Original viewer unchanged outside opt-in capture. Static architecture and depth occlusion retained.",
   "route_collision_check": "all source route points checked against existing CollisionWorld after explicitly opening only existing security doors in the controlled visual scenario; no Core access/door action executed",
-  "visual_inspection": {
-    "artifact": "dummy-views.jpg",
-    "performed": true,
-    "result": "Upright moving humanoid visible in all six sources; original architecture preserved. Counter occludes lower body at kiosk. Camera05 often crops the actor at the edge;06 is distant and low detail. No photorealistic-character or physical-camera claim."
-  }
+  "visual_inspection": "Full246-frame human Rocketbox fixture revalidated; upright scaled body, all six sources; camera05 crop and06 low detail remain documented."
 }

@@ -10,8 +10,8 @@
       "observed_at": "2026-11-09T12:00:00.000Z",
       "media_time_seconds": 0,
       "file": "CAMERA-PLANNED-01-0000.png",
-      "sha256": "693897957bee0994c5f990aafa807494aff6dab0a2a6f38fb092592a11212f06",
-      "capture_duration_ms": 51
+      "sha256": "578af0123bd492f299395761777f5033b77f40a950172547e1ac47ce3d8d25d4",
+      "capture_duration_ms": 573
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -19,8 +19,8 @@
       "observed_at": "2026-11-09T12:00:00.000Z",
       "media_time_seconds": 0,
       "file": "CAMERA-PLANNED-02-0000.png",
-      "sha256": "44b86456418b62dac79783b9abfb11efc1097dfd530603fa75499d3fa7926e93",
-      "capture_duration_ms": 315
+      "sha256": "4bc362be590b4d3380820dfd72be058712d011d0936e2bce4c888b1e21ff433a",
+      "capture_duration_ms": 85
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -28,8 +28,8 @@
       "observed_at": "2026-11-09T12:00:00.000Z",
       "media_time_seconds": 0,
       "file": "CAMERA-PLANNED-03-0000.png",
-      "sha256": "d96daf32a7ab8f0b792a4ba7f980682d94ef7b01a299e35fcbfc48236779030d",
-      "capture_duration_ms": 73
+      "sha256": "46ccb0dc5a3fc2d8227eefb6ec5f500bffa019b7ff1312e10586e6c8e47acf49",
+      "capture_duration_ms": 92
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -37,8 +37,8 @@
       "observed_at": "2026-11-09T12:00:00.000Z",
       "media_time_seconds": 0,
       "file": "CAMERA-PLANNED-04-0000.png",
-      "sha256": "e4d344bf37b0e5f3f331b17dcebc6da718f320e1adc5da679525740319e74031",
-      "capture_duration_ms": 76
+      "sha256": "953d14b41a8dee4531c9ae463ac8333b4023cd11c270c665aba588074ee6183a",
+      "capture_duration_ms": 100
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -47,7 +47,7 @@
       "media_time_seconds": 0,
       "file": "CAMERA-PLANNED-05-0000.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 58
+      "capture_duration_ms": 62
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -55,8 +55,8 @@
       "observed_at": "2026-11-09T12:00:00.000Z",
       "media_time_seconds": 0,
       "file": "CAMERA-PLANNED-06-0000.png",
-      "sha256": "8f43d2731bc5adaabbe0adb15da7524396204d33a501e8ed216b3ea6be9f980c",
-      "capture_duration_ms": 63
+      "sha256": "0808fb553a6d9cf664aa73d54147ef263417ddce2d6d3523ee0288d2a753a519",
+      "capture_duration_ms": 59
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -64,8 +64,8 @@
       "observed_at": "2026-11-09T12:00:00.500Z",
       "media_time_seconds": 0.5,
       "file": "CAMERA-PLANNED-01-0001.png",
-      "sha256": "98271ad1703ed7cb697fee96105debc95978ddd3d647f7f43dfd41339977efac",
-      "capture_duration_ms": 87
+      "sha256": "7f823498a9bf7bd9176d5bbf6c80b177ae9191b19adff60bf836122de5d2f5b0",
+      "capture_duration_ms": 150
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -73,8 +73,8 @@
       "observed_at": "2026-11-09T12:00:00.500Z",
       "media_time_seconds": 0.5,
       "file": "CAMERA-PLANNED-02-0001.png",
-      "sha256": "c273022552eb3e2aad50dc1305c99f71c2d8e3d04bc9d5feb29d4418f697675f",
-      "capture_duration_ms": 65
+      "sha256": "e889c8de94fb97eb7cbba9b3863cbbc1a7a1b322f69b4cf071d4bbcda2b4d81c",
+      "capture_duration_ms": 82
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -82,8 +82,8 @@
       "observed_at": "2026-11-09T12:00:00.500Z",
       "media_time_seconds": 0.5,
       "file": "CAMERA-PLANNED-03-0001.png",
-      "sha256": "2a044ee86f5cb4d140ed627a22cce175a3da6deed8eec8958d3c51e4cb939b21",
-      "capture_duration_ms": 58
+      "sha256": "9c8330906c42b848f4081653c524c3b63f3b57ef2b86c5e753729c3e1afbcdd1",
+      "capture_duration_ms": 73
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -91,8 +91,8 @@
       "observed_at": "2026-11-09T12:00:00.500Z",
       "media_time_seconds": 0.5,
       "file": "CAMERA-PLANNED-04-0001.png",
-      "sha256": "4bd52bd8fe6f9e951b62af4f8ba41f1feecfaf6c095c2d61ced5bd30b72296e3",
-      "capture_duration_ms": 68
+      "sha256": "3f06a8f748aeadb817c934a6d10d0479bef3effa4ee530aeb269846d7a640c83",
+      "capture_duration_ms": 82
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -101,7 +101,7 @@
       "media_time_seconds": 0.5,
       "file": "CAMERA-PLANNED-05-0001.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 54
+      "capture_duration_ms": 76
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -109,8 +109,8 @@
       "observed_at": "2026-11-09T12:00:00.500Z",
       "media_time_seconds": 0.5,
       "file": "CAMERA-PLANNED-06-0001.png",
-      "sha256": "367306944b069d3e1a96c5cd2a4ca49b46ef395031cba7a58fe259245c50b78c",
-      "capture_duration_ms": 51
+      "sha256": "b2ca1d8109db6b6372e5c09a0d6367a9dfc1cf3973f6777ef6af325693177533",
+      "capture_duration_ms": 61
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -118,8 +118,8 @@
       "observed_at": "2026-11-09T12:00:01.000Z",
       "media_time_seconds": 1,
       "file": "CAMERA-PLANNED-01-0002.png",
-      "sha256": "b7cc8ce43b2837cd915e98bde82c6b32b9d434010118f4bd59dc02b717b211de",
-      "capture_duration_ms": 156
+      "sha256": "b569174b50f7a7ebf6df7bd392f0da15b0fa393c0dfa2b8da847a3ef2cbc9cd7",
+      "capture_duration_ms": 262
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -127,8 +127,8 @@
       "observed_at": "2026-11-09T12:00:01.000Z",
       "media_time_seconds": 1,
       "file": "CAMERA-PLANNED-02-0002.png",
-      "sha256": "a150fb550a926c741c993c99431cffcf20bdf5d96e096ba14b206cb656bf7c15",
-      "capture_duration_ms": 93
+      "sha256": "9b477612c74739d975a02ae92df7cc8b6ea4558ea6c1201bcddd982e67033c99",
+      "capture_duration_ms": 110
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -136,8 +136,8 @@
       "observed_at": "2026-11-09T12:00:01.000Z",
       "media_time_seconds": 1,
       "file": "CAMERA-PLANNED-03-0002.png",
-      "sha256": "019c2e1257eca9f372ff96b7c7a79af9c133e66093cbd68e1aa72f11d7e2ac97",
-      "capture_duration_ms": 59
+      "sha256": "f879aec7cc6acdddb8e8591c58fbe20ef9de03f8d06466f3b23ef014229ef37a",
+      "capture_duration_ms": 78
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -145,8 +145,8 @@
       "observed_at": "2026-11-09T12:00:01.000Z",
       "media_time_seconds": 1,
       "file": "CAMERA-PLANNED-04-0002.png",
-      "sha256": "9a779e0b09441b9da47c37b320757448ea52d9d64327f76ebe31b849afe33802",
-      "capture_duration_ms": 69
+      "sha256": "0c4f0927578e73e545b66003e054be110fd2e0663eab5ebaa2ffe99c66ed4c2a",
+      "capture_duration_ms": 94
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -155,7 +155,7 @@
       "media_time_seconds": 1,
       "file": "CAMERA-PLANNED-05-0002.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 63
+      "capture_duration_ms": 72
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -163,8 +163,8 @@
       "observed_at": "2026-11-09T12:00:01.000Z",
       "media_time_seconds": 1,
       "file": "CAMERA-PLANNED-06-0002.png",
-      "sha256": "bb252c9c2b4e0d8506da2d8782d6260fcb291ce8729523ea49ca9e0b047b9b23",
-      "capture_duration_ms": 63
+      "sha256": "3f9f3e6546eb600b5a98bf9f58850b7f804a50fde016aefae9a4e8f0d7b6a37a",
+      "capture_duration_ms": 70
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -172,8 +172,8 @@
       "observed_at": "2026-11-09T12:00:01.500Z",
       "media_time_seconds": 1.5,
       "file": "CAMERA-PLANNED-01-0003.png",
-      "sha256": "a6d77bae707f73bd7bf976fe7aa7ee95b098447fd3c3e10630adc3a14068be4f",
-      "capture_duration_ms": 160
+      "sha256": "89ddd2b8f96a3f7044ce39a992ca8aa58c81569d0fda907b0f03b516fdc26701",
+      "capture_duration_ms": 317
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -181,8 +181,8 @@
       "observed_at": "2026-11-09T12:00:01.500Z",
       "media_time_seconds": 1.5,
       "file": "CAMERA-PLANNED-02-0003.png",
-      "sha256": "48d67c3210fec209c26a4775e79a8dc8a0b618ac6a02b148c3f1ad8f32da13ea",
-      "capture_duration_ms": 71
+      "sha256": "33172647bbd838ded5bc796ca7a59fa9960d591c802b2cd29a5d49678ad6c319",
+      "capture_duration_ms": 100
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -190,8 +190,8 @@
       "observed_at": "2026-11-09T12:00:01.500Z",
       "media_time_seconds": 1.5,
       "file": "CAMERA-PLANNED-03-0003.png",
-      "sha256": "7cfdced77b0074d19871e01b32995bc9b1e353eebf4a7b7c9553821bef90e67b",
-      "capture_duration_ms": 60
+      "sha256": "8fe5c529f55cf7c8e231a3c8bf6f68b65b2d70ec291bbb748edef02cb7e76dfd",
+      "capture_duration_ms": 79
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -199,8 +199,8 @@
       "observed_at": "2026-11-09T12:00:01.500Z",
       "media_time_seconds": 1.5,
       "file": "CAMERA-PLANNED-04-0003.png",
-      "sha256": "27922516e0860bbc3f3359fa61dd872b46e2da69ec23ec877ce1f7aebe0f7815",
-      "capture_duration_ms": 67
+      "sha256": "27885195b4840ec47b59921cba8678c96641683814579b95e7ca770e1e49720b",
+      "capture_duration_ms": 86
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -209,7 +209,7 @@
       "media_time_seconds": 1.5,
       "file": "CAMERA-PLANNED-05-0003.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 54
+      "capture_duration_ms": 83
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -217,8 +217,8 @@
       "observed_at": "2026-11-09T12:00:01.500Z",
       "media_time_seconds": 1.5,
       "file": "CAMERA-PLANNED-06-0003.png",
-      "sha256": "0679b2bfead38cca44034af8149f629a1d8c99ee5b1a711902177c4791d22d45",
-      "capture_duration_ms": 56
+      "sha256": "8b3fee9d23a6064170fcc157003a8b0463e0d76b57f96da04d802d37fa95e083",
+      "capture_duration_ms": 87
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -226,8 +226,8 @@
       "observed_at": "2026-11-09T12:00:02.000Z",
       "media_time_seconds": 2,
       "file": "CAMERA-PLANNED-01-0004.png",
-      "sha256": "84f098e6d45f8ae9a65565981b968e0519424ad4aa549cacc4205bb2d8c98a9b",
-      "capture_duration_ms": 162
+      "sha256": "adc80fe8a1a8c718a56ab0300dca7e59f469533c63b949a54c4dc85a46edb796",
+      "capture_duration_ms": 364
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -235,8 +235,8 @@
       "observed_at": "2026-11-09T12:00:02.000Z",
       "media_time_seconds": 2,
       "file": "CAMERA-PLANNED-02-0004.png",
-      "sha256": "de577bae7952124b613eec809f949636f8831a8b9bac21c19c49b52f79ac80d3",
-      "capture_duration_ms": 78
+      "sha256": "40390fa6471a13b23c3e3f4e9a8f2ad25885ca8ae11e452e40d7ea441bab1f7a",
+      "capture_duration_ms": 118
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -244,8 +244,8 @@
       "observed_at": "2026-11-09T12:00:02.000Z",
       "media_time_seconds": 2,
       "file": "CAMERA-PLANNED-03-0004.png",
-      "sha256": "f134da48a6ad2c59d573973388b6a08575f46b316ab0132cad58c5917214885d",
-      "capture_duration_ms": 67
+      "sha256": "9cbcca8b3c3ea88cebd442853a64d33e4db13d1709a1b5f6caa732c407662086",
+      "capture_duration_ms": 88
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -253,8 +253,8 @@
       "observed_at": "2026-11-09T12:00:02.000Z",
       "media_time_seconds": 2,
       "file": "CAMERA-PLANNED-04-0004.png",
-      "sha256": "fd1340fffa918a4a5bc4ad98221a8bb572e038ed3345f748637b8a8d976e4a22",
-      "capture_duration_ms": 78
+      "sha256": "c4a540788123b5d1a95aead11c8073238485c74777f2cae475dd5327ecbc404d",
+      "capture_duration_ms": 93
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -263,7 +263,7 @@
       "media_time_seconds": 2,
       "file": "CAMERA-PLANNED-05-0004.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 82
+      "capture_duration_ms": 65
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -271,8 +271,8 @@
       "observed_at": "2026-11-09T12:00:02.000Z",
       "media_time_seconds": 2,
       "file": "CAMERA-PLANNED-06-0004.png",
-      "sha256": "e58a11f9953e0fab34282e31237c2d802d452387a6f6f8986c4df3899a2b0d69",
-      "capture_duration_ms": 69
+      "sha256": "05829d89f321c17c833531a876b0bd4b8100f8734c4ca1bef340c64aefbd00e0",
+      "capture_duration_ms": 68
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -280,8 +280,8 @@
       "observed_at": "2026-11-09T12:00:02.500Z",
       "media_time_seconds": 2.5,
       "file": "CAMERA-PLANNED-01-0005.png",
-      "sha256": "081f6993004bfb5819932996c6133e07ececc90922f529a8658f173220bc074d",
-      "capture_duration_ms": 165
+      "sha256": "c590c3aded2724ee50c7ba8295ac83320cf94a8030f0c1cd0bbaf1433057d197",
+      "capture_duration_ms": 298
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -289,8 +289,8 @@
       "observed_at": "2026-11-09T12:00:02.500Z",
       "media_time_seconds": 2.5,
       "file": "CAMERA-PLANNED-02-0005.png",
-      "sha256": "aaab6129438f1cffef05dedede3f886c857559b737b89608609c9ad8f9ad8c07",
-      "capture_duration_ms": 79
+      "sha256": "481f6d54d39e9481879563ac62f06c66226a81e6610ae0650c49c289f62d6a4c",
+      "capture_duration_ms": 115
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -298,8 +298,8 @@
       "observed_at": "2026-11-09T12:00:02.500Z",
       "media_time_seconds": 2.5,
       "file": "CAMERA-PLANNED-03-0005.png",
-      "sha256": "fb1efec742ab209b7c8a8d729fc84812f9860bcfd17d29875c40b62301863176",
-      "capture_duration_ms": 63
+      "sha256": "e8c927c73c4847a75c3fcc60c2a5dbad178cca85feb6df92f957c1cd57397c3c",
+      "capture_duration_ms": 86
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -307,8 +307,8 @@
       "observed_at": "2026-11-09T12:00:02.500Z",
       "media_time_seconds": 2.5,
       "file": "CAMERA-PLANNED-04-0005.png",
-      "sha256": "b81333a6c265d0b1baf5a67e94bbf4bc7d9d753bc1ae1f61db5b1dc2accddb64",
-      "capture_duration_ms": 73
+      "sha256": "002f43f04b6ecd59a78c338f4046ebc30ced294da0b8e41e3f6f826a0cd81d5f",
+      "capture_duration_ms": 110
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -317,7 +317,7 @@
       "media_time_seconds": 2.5,
       "file": "CAMERA-PLANNED-05-0005.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 65
+      "capture_duration_ms": 76
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -325,8 +325,8 @@
       "observed_at": "2026-11-09T12:00:02.500Z",
       "media_time_seconds": 2.5,
       "file": "CAMERA-PLANNED-06-0005.png",
-      "sha256": "14b93b13d7dc6a6b98016b6fd3751c47285079f13a1b354916103ce8ff979547",
-      "capture_duration_ms": 85
+      "sha256": "cc2f092ff397fd3c40140b5bfa09de5baadcb6c34958aae2c84c202a743bc013",
+      "capture_duration_ms": 64
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -334,8 +334,8 @@
       "observed_at": "2026-11-09T12:00:03.000Z",
       "media_time_seconds": 3,
       "file": "CAMERA-PLANNED-01-0006.png",
-      "sha256": "b9ed56cdd22b46f83f4d8482266387fd2b17fdcbbca81d0349ed3807e46082ba",
-      "capture_duration_ms": 150
+      "sha256": "5ced754631254662196fd10382563b6e2c12dcae9a8558f5d61233bd40c49a8f",
+      "capture_duration_ms": 225
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -343,8 +343,8 @@
       "observed_at": "2026-11-09T12:00:03.000Z",
       "media_time_seconds": 3,
       "file": "CAMERA-PLANNED-02-0006.png",
-      "sha256": "7f3e43207daa2140427989435ccb44e84e9091255a01dc3f57f3707c222795ca",
-      "capture_duration_ms": 88
+      "sha256": "c8f6222e95f6098d8cf10b0c4acf6e327a40b49133f740ead5e5a0986ceff7f8",
+      "capture_duration_ms": 127
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -352,8 +352,8 @@
       "observed_at": "2026-11-09T12:00:03.000Z",
       "media_time_seconds": 3,
       "file": "CAMERA-PLANNED-03-0006.png",
-      "sha256": "12f395a91ab559ab5fc1dc4d7b0cd8fc8c6b7f07de24f7a10115b46db5c71b56",
-      "capture_duration_ms": 65
+      "sha256": "181c7f4f3cee22d63cb5dc8da7edd8a64c5b8d1174977bf1f7f70e52c2e040c8",
+      "capture_duration_ms": 83
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -361,8 +361,8 @@
       "observed_at": "2026-11-09T12:00:03.000Z",
       "media_time_seconds": 3,
       "file": "CAMERA-PLANNED-04-0006.png",
-      "sha256": "9109a3ab3a1f6da59dee2b08da5cebc2464ec4b5e3dd1e8f2a95a3f6021b902f",
-      "capture_duration_ms": 72
+      "sha256": "09e4662532c756ec66fbd8e9808a9925d69309ce16d379c643c4276a0dbf9a98",
+      "capture_duration_ms": 86
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -371,7 +371,7 @@
       "media_time_seconds": 3,
       "file": "CAMERA-PLANNED-05-0006.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 67
+      "capture_duration_ms": 64
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -379,8 +379,8 @@
       "observed_at": "2026-11-09T12:00:03.000Z",
       "media_time_seconds": 3,
       "file": "CAMERA-PLANNED-06-0006.png",
-      "sha256": "3d9ddbb479cb68ca568ab143bf73f0ed75ff835ba8ba3e1e2e26783e9dd036aa",
-      "capture_duration_ms": 60
+      "sha256": "68233b2727fe5f9628b7ce7b5b271babd58ff39683a807fe3ac5b78bf56ad164",
+      "capture_duration_ms": 61
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -388,8 +388,8 @@
       "observed_at": "2026-11-09T12:00:03.500Z",
       "media_time_seconds": 3.5,
       "file": "CAMERA-PLANNED-01-0007.png",
-      "sha256": "b7644d3c44e9c476bb54efaa3e77ca1e6bf91bc61a91b3bb480e2ab7631cd809",
-      "capture_duration_ms": 151
+      "sha256": "f0c7c5a88f4636d0cc7762791eabbe42f5c01b084c68f7e7f674c829eea35d5c",
+      "capture_duration_ms": 212
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -397,8 +397,8 @@
       "observed_at": "2026-11-09T12:00:03.500Z",
       "media_time_seconds": 3.5,
       "file": "CAMERA-PLANNED-02-0007.png",
-      "sha256": "c1651539fb650439e4c3352b860099531a9aca204a40756d6ce13595c4a72250",
-      "capture_duration_ms": 91
+      "sha256": "fa83d98f25ca1122418a4180e0c4e02107f0ba8ba0d328b30d2bd16d5a737d8d",
+      "capture_duration_ms": 163
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -406,8 +406,8 @@
       "observed_at": "2026-11-09T12:00:03.500Z",
       "media_time_seconds": 3.5,
       "file": "CAMERA-PLANNED-03-0007.png",
-      "sha256": "7b51fad8e4528aaf0e1e3fa381ca7044dd1470c06a88568e4bee5c33ebb535ac",
-      "capture_duration_ms": 74
+      "sha256": "a53488060501f9f8937dcecd9a8c72b8268ef5bd179e4a0b3d4f7756fe0038f0",
+      "capture_duration_ms": 82
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -415,8 +415,8 @@
       "observed_at": "2026-11-09T12:00:03.500Z",
       "media_time_seconds": 3.5,
       "file": "CAMERA-PLANNED-04-0007.png",
-      "sha256": "fe40ca1e1ec2c02d26f078e36a40a37387f9ef1830596e11e5d9cee4784ccd79",
-      "capture_duration_ms": 78
+      "sha256": "1e5b4d821e9a7bdd528cccacb3d4fd765af22ac2cf14700196e566ef6d3a0729",
+      "capture_duration_ms": 88
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -425,7 +425,7 @@
       "media_time_seconds": 3.5,
       "file": "CAMERA-PLANNED-05-0007.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 78
+      "capture_duration_ms": 69
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -433,8 +433,8 @@
       "observed_at": "2026-11-09T12:00:03.500Z",
       "media_time_seconds": 3.5,
       "file": "CAMERA-PLANNED-06-0007.png",
-      "sha256": "518882e4f6c86b482c6fce4bd862c1efb6a91987f5520a4ae43e5f8ee9a67d6f",
-      "capture_duration_ms": 60
+      "sha256": "fcd94087909d3f1fccf76765e3399e21ef56f63d0eaa20ce84bc6768439e2a03",
+      "capture_duration_ms": 61
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -442,8 +442,8 @@
       "observed_at": "2026-11-09T12:00:04.000Z",
       "media_time_seconds": 4,
       "file": "CAMERA-PLANNED-01-0008.png",
-      "sha256": "aea5fb36a73adda6487349ed13715e78acd7a9c560cc39bf34f7a2fb241aeb54",
-      "capture_duration_ms": 118
+      "sha256": "620a68ca896b0fc4bac01688cad4dbb8fd44304e522a107fd4d94c670d9847ee",
+      "capture_duration_ms": 192
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -451,8 +451,8 @@
       "observed_at": "2026-11-09T12:00:04.000Z",
       "media_time_seconds": 4,
       "file": "CAMERA-PLANNED-02-0008.png",
-      "sha256": "0d3fd5f5d3f3678ee048c1c58b2549c58c9ad646f05bc1844271fc4b91532725",
-      "capture_duration_ms": 102
+      "sha256": "8912355c113e50ac3468222abe2ac9651b64455dddc00957bb32e6f324862f65",
+      "capture_duration_ms": 155
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -460,8 +460,8 @@
       "observed_at": "2026-11-09T12:00:04.000Z",
       "media_time_seconds": 4,
       "file": "CAMERA-PLANNED-03-0008.png",
-      "sha256": "772c1ac4195e76c78e1b7798f44ec20061e97a9a36610099daaf005c37162d73",
-      "capture_duration_ms": 68
+      "sha256": "6f4904be3a0196c495230f7767b62a0d2920381a4f576bedc9f1669fdd398a5c",
+      "capture_duration_ms": 86
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -469,8 +469,8 @@
       "observed_at": "2026-11-09T12:00:04.000Z",
       "media_time_seconds": 4,
       "file": "CAMERA-PLANNED-04-0008.png",
-      "sha256": "d53d929213975be3abdc524eb799c8c931e1f68d61d64c4e3441f7782024c2ff",
-      "capture_duration_ms": 73
+      "sha256": "2424fcde25bfc7cc8c3c937b38f75ec9df39a207cb5c51406ba5c35b81f6fa26",
+      "capture_duration_ms": 99
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -479,7 +479,7 @@
       "media_time_seconds": 4,
       "file": "CAMERA-PLANNED-05-0008.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 67
+      "capture_duration_ms": 56
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -487,8 +487,8 @@
       "observed_at": "2026-11-09T12:00:04.000Z",
       "media_time_seconds": 4,
       "file": "CAMERA-PLANNED-06-0008.png",
-      "sha256": "44e8e9fdcf9127bf3dcd39527cc01e681fee096338d2d177c8ad4044333f5c71",
-      "capture_duration_ms": 54
+      "sha256": "7cae770361c3f7e596b5caf931d57b05d198dc177e640010c1321894c57ae0cd",
+      "capture_duration_ms": 59
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -496,8 +496,8 @@
       "observed_at": "2026-11-09T12:00:04.500Z",
       "media_time_seconds": 4.5,
       "file": "CAMERA-PLANNED-01-0009.png",
-      "sha256": "b74e1ccf2beb850bd4e4d8daedec39eb79c462d951e44081e95a69d6b96c74af",
-      "capture_duration_ms": 98
+      "sha256": "368c352f63c4e1195d77b61843b816933e758560e6bf85ee8979257687960ce1",
+      "capture_duration_ms": 157
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -505,8 +505,8 @@
       "observed_at": "2026-11-09T12:00:04.500Z",
       "media_time_seconds": 4.5,
       "file": "CAMERA-PLANNED-02-0009.png",
-      "sha256": "2c9463cde20af65e4d570391c4b6b36a12402f28daa539cbd11d96619a40dfcd",
-      "capture_duration_ms": 107
+      "sha256": "62120402c8669c1ab82933e4cbb3abcb991f23b4d7b4963c6481cf3517811e42",
+      "capture_duration_ms": 194
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -514,8 +514,8 @@
       "observed_at": "2026-11-09T12:00:04.500Z",
       "media_time_seconds": 4.5,
       "file": "CAMERA-PLANNED-03-0009.png",
-      "sha256": "a5338db5f4d447fd11fb51dbf7913e118e0624e1a07c53766ad755213f6e6cb9",
-      "capture_duration_ms": 76
+      "sha256": "6ab1c60e5a57e9c6d2e330e4d09091f59d2c8b96658f3ef5161cb16d1e119acc",
+      "capture_duration_ms": 92
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -523,8 +523,8 @@
       "observed_at": "2026-11-09T12:00:04.500Z",
       "media_time_seconds": 4.5,
       "file": "CAMERA-PLANNED-04-0009.png",
-      "sha256": "8ce2ed3947682f3b4db1f163619311988c5c90ad5ec8fc96bbb054f3420b87a2",
-      "capture_duration_ms": 82
+      "sha256": "8fb8b2b26a9e42e7570035a45b6f351a24eece131fbdcf448faa579bc6ee672c",
+      "capture_duration_ms": 91
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -533,7 +533,7 @@
       "media_time_seconds": 4.5,
       "file": "CAMERA-PLANNED-05-0009.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 72
+      "capture_duration_ms": 69
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -541,8 +541,8 @@
       "observed_at": "2026-11-09T12:00:04.500Z",
       "media_time_seconds": 4.5,
       "file": "CAMERA-PLANNED-06-0009.png",
-      "sha256": "677d4e9fac761ca7661c40d03e888703cd7a7c7389a3c8491625ad444752b06a",
-      "capture_duration_ms": 60
+      "sha256": "93529ef55a7d60b62feab61ab4f1b2fb45597b15a39c1113ad36e3518f03ff10",
+      "capture_duration_ms": 59
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -550,8 +550,8 @@
       "observed_at": "2026-11-09T12:00:05.000Z",
       "media_time_seconds": 5,
       "file": "CAMERA-PLANNED-01-0010.png",
-      "sha256": "a54c1de43bfa175130891af9387df5ab1ae1346c14a59d0510aa99235a260329",
-      "capture_duration_ms": 109
+      "sha256": "3f6562fe77b9a79fa1c0e0ac6acac481d4faef6c48d593bf857061403a6b6ae4",
+      "capture_duration_ms": 176
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -559,8 +559,8 @@
       "observed_at": "2026-11-09T12:00:05.000Z",
       "media_time_seconds": 5,
       "file": "CAMERA-PLANNED-02-0010.png",
-      "sha256": "56f3f0b247a615835c90e230855f1e467a9f3d7b4ecd847d096591eda67fad4b",
-      "capture_duration_ms": 111
+      "sha256": "200b9a703578a17eac16b42690080b6f721d3b66f58eb24b9405f6e673cfc9bc",
+      "capture_duration_ms": 175
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -568,8 +568,8 @@
       "observed_at": "2026-11-09T12:00:05.000Z",
       "media_time_seconds": 5,
       "file": "CAMERA-PLANNED-03-0010.png",
-      "sha256": "789c0aae1c080d5283cf9dcd680caed55a242039fd53da504f64f1bd179c23b7",
-      "capture_duration_ms": 67
+      "sha256": "bc59e1d5c381a8fc6c21cec715cb21220751c41f68271a29001517545127168a",
+      "capture_duration_ms": 86
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -577,8 +577,8 @@
       "observed_at": "2026-11-09T12:00:05.000Z",
       "media_time_seconds": 5,
       "file": "CAMERA-PLANNED-04-0010.png",
-      "sha256": "42a96c7a4683cafc8d692e91c2951691aa208c6ab37e9d6e331fce7af5a0e305",
-      "capture_duration_ms": 77
+      "sha256": "87038a393483df4011233f5d6db9d3f0a3570c3f0073857f24d4a6be92ad0c03",
+      "capture_duration_ms": 89
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -587,7 +587,7 @@
       "media_time_seconds": 5,
       "file": "CAMERA-PLANNED-05-0010.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 66
+      "capture_duration_ms": 58
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -595,8 +595,8 @@
       "observed_at": "2026-11-09T12:00:05.000Z",
       "media_time_seconds": 5,
       "file": "CAMERA-PLANNED-06-0010.png",
-      "sha256": "d4ce4bc08be685e03096f6bcf8b59a28939d3a8cc71c7c3cbedb663c5630d031",
-      "capture_duration_ms": 55
+      "sha256": "82bbf807daba90dd3f924fe4763beb64793f68e3bf6c0b6ee888957ded84dea0",
+      "capture_duration_ms": 59
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -604,8 +604,8 @@
       "observed_at": "2026-11-09T12:00:05.500Z",
       "media_time_seconds": 5.5,
       "file": "CAMERA-PLANNED-01-0011.png",
-      "sha256": "66b8290739cf598aeaee499c9f3f2e5b5d63b5596cfb8ea804bde6df0bbd6732",
-      "capture_duration_ms": 101
+      "sha256": "c3a333a8831c513f23186d4813f474531cb492d79b5adb6e931168bc5b5fd274",
+      "capture_duration_ms": 139
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -613,8 +613,8 @@
       "observed_at": "2026-11-09T12:00:05.500Z",
       "media_time_seconds": 5.5,
       "file": "CAMERA-PLANNED-02-0011.png",
-      "sha256": "dccca446253734536eb92026c40d4897a9a44146109a7895ee85b85b50afbb6e",
-      "capture_duration_ms": 104
+      "sha256": "b50b00e270f5ec8458f05590ce99398dc9de22f17690eba486a4e74f61997711",
+      "capture_duration_ms": 195
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -622,8 +622,8 @@
       "observed_at": "2026-11-09T12:00:05.500Z",
       "media_time_seconds": 5.5,
       "file": "CAMERA-PLANNED-03-0011.png",
-      "sha256": "7e5671d93bb23e2343de600beae1c996b512f441d96436061f3339f942c713c0",
-      "capture_duration_ms": 66
+      "sha256": "3dd5de01390a434a54a1192f8d5b43bb910136b8fb18357162eb70609e1b08a0",
+      "capture_duration_ms": 90
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -631,8 +631,8 @@
       "observed_at": "2026-11-09T12:00:05.500Z",
       "media_time_seconds": 5.5,
       "file": "CAMERA-PLANNED-04-0011.png",
-      "sha256": "6097a6ce0f7276887b3dd535a37eb6a7af6628451fe3bee2ee9d26be0df6baeb",
-      "capture_duration_ms": 73
+      "sha256": "32c8c1ad9056bbe24f1444c575e8f4aa832bb4819215c1a88c6787d4cbed1083",
+      "capture_duration_ms": 88
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -641,7 +641,7 @@
       "media_time_seconds": 5.5,
       "file": "CAMERA-PLANNED-05-0011.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 74
+      "capture_duration_ms": 63
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -649,8 +649,8 @@
       "observed_at": "2026-11-09T12:00:05.500Z",
       "media_time_seconds": 5.5,
       "file": "CAMERA-PLANNED-06-0011.png",
-      "sha256": "ee45dc82ad23a76f8b4009469dc24e18d4b4710af317c330784bdc0aa0ba173c",
-      "capture_duration_ms": 54
+      "sha256": "2997a8f80512b02600fed40cb12bc03ab16eb25b7a7e6aeb4fea127053e2ff22",
+      "capture_duration_ms": 67
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -659,7 +659,7 @@
       "media_time_seconds": 6,
       "file": "CAMERA-PLANNED-01-0012.png",
       "sha256": "693897957bee0994c5f990aafa807494aff6dab0a2a6f38fb092592a11212f06",
-      "capture_duration_ms": 51
+      "capture_duration_ms": 53
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -668,7 +668,7 @@
       "media_time_seconds": 6,
       "file": "CAMERA-PLANNED-02-0012.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 46
+      "capture_duration_ms": 52
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -677,7 +677,7 @@
       "media_time_seconds": 6,
       "file": "CAMERA-PLANNED-03-0012.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 45
+      "capture_duration_ms": 54
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -686,7 +686,7 @@
       "media_time_seconds": 6,
       "file": "CAMERA-PLANNED-04-0012.png",
       "sha256": "787a472e898f7925c3d6cbb2f4cd68606d9231b46263fca580af3a8add420f54",
-      "capture_duration_ms": 61
+      "capture_duration_ms": 64
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -695,7 +695,7 @@
       "media_time_seconds": 6,
       "file": "CAMERA-PLANNED-05-0012.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 63
+      "capture_duration_ms": 57
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -704,7 +704,7 @@
       "media_time_seconds": 6,
       "file": "CAMERA-PLANNED-06-0012.png",
       "sha256": "7c39f360203c761603582761f044fb8010f888a05ff04cbe5f90d5abc9dab3d1",
-      "capture_duration_ms": 57
+      "capture_duration_ms": 48
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -722,7 +722,7 @@
       "media_time_seconds": 6.5,
       "file": "CAMERA-PLANNED-02-0013.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 51
+      "capture_duration_ms": 50
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -731,7 +731,7 @@
       "media_time_seconds": 6.5,
       "file": "CAMERA-PLANNED-03-0013.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 44
+      "capture_duration_ms": 48
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -740,7 +740,7 @@
       "media_time_seconds": 6.5,
       "file": "CAMERA-PLANNED-04-0013.png",
       "sha256": "787a472e898f7925c3d6cbb2f4cd68606d9231b46263fca580af3a8add420f54",
-      "capture_duration_ms": 62
+      "capture_duration_ms": 68
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -749,7 +749,7 @@
       "media_time_seconds": 6.5,
       "file": "CAMERA-PLANNED-05-0013.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 57
+      "capture_duration_ms": 68
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -758,7 +758,7 @@
       "media_time_seconds": 6.5,
       "file": "CAMERA-PLANNED-06-0013.png",
       "sha256": "7c39f360203c761603582761f044fb8010f888a05ff04cbe5f90d5abc9dab3d1",
-      "capture_duration_ms": 48
+      "capture_duration_ms": 54
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -766,8 +766,8 @@
       "observed_at": "2026-11-09T12:00:07.000Z",
       "media_time_seconds": 7,
       "file": "CAMERA-PLANNED-01-0014.png",
-      "sha256": "b410f1f6acc8043919554b53c3c99c3c697d422a35b7cbda12bc781de1e613a8",
-      "capture_duration_ms": 83
+      "sha256": "6f62fd932dd7acfe1cecae3ed9e8d33da0008f23fce46c17f77ec9216b633379",
+      "capture_duration_ms": 145
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -775,8 +775,8 @@
       "observed_at": "2026-11-09T12:00:07.000Z",
       "media_time_seconds": 7,
       "file": "CAMERA-PLANNED-02-0014.png",
-      "sha256": "c75a80952d6b9f859a00fa61cf0c07509072fb047aa865c9f83e8d0500808122",
-      "capture_duration_ms": 169
+      "sha256": "dbee00220257d991e7c7060fbbbf8873d37b8451b10249575b6581fe177be99c",
+      "capture_duration_ms": 294
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -784,8 +784,8 @@
       "observed_at": "2026-11-09T12:00:07.000Z",
       "media_time_seconds": 7,
       "file": "CAMERA-PLANNED-03-0014.png",
-      "sha256": "660d53a004855e4145400998c769d57bd6f1e9d57998ef9565422efe82bd16ed",
-      "capture_duration_ms": 70
+      "sha256": "4a74eb4b4ce9e590e9167875de98ce2415415b94f1c197b38a0ad50e78693450",
+      "capture_duration_ms": 114
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -793,8 +793,8 @@
       "observed_at": "2026-11-09T12:00:07.000Z",
       "media_time_seconds": 7,
       "file": "CAMERA-PLANNED-04-0014.png",
-      "sha256": "ee4a594cbe10907e093f327ce547ffb1f3d16db82e7d6959f52d8b410dec2728",
-      "capture_duration_ms": 97
+      "sha256": "5aa910cd1b4545a61af92e2be61ddb8b44a0cbd10f5ba55e5e1089c69370912a",
+      "capture_duration_ms": 117
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -803,7 +803,7 @@
       "media_time_seconds": 7,
       "file": "CAMERA-PLANNED-05-0014.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 61
+      "capture_duration_ms": 60
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -811,8 +811,8 @@
       "observed_at": "2026-11-09T12:00:07.000Z",
       "media_time_seconds": 7,
       "file": "CAMERA-PLANNED-06-0014.png",
-      "sha256": "ebd96ac005812c6f392e0e386d52790ff907f9d1fc97f250a8a785a8ec5d2f91",
-      "capture_duration_ms": 56
+      "sha256": "c6f4c828df8c0af384f473bbec71731601a17d38a171d0fa046fcf6ebfbc0705",
+      "capture_duration_ms": 69
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -820,8 +820,8 @@
       "observed_at": "2026-11-09T12:00:07.500Z",
       "media_time_seconds": 7.5,
       "file": "CAMERA-PLANNED-01-0015.png",
-      "sha256": "fa46e9efeb04851983fa94ada0404d38353e68044cd94f31a1778b1dc312e9b8",
-      "capture_duration_ms": 83
+      "sha256": "f352972d11ec9898959c8d1fd4dfed683cace8be2676ceb0d631c2f68dbb1c18",
+      "capture_duration_ms": 126
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -829,8 +829,8 @@
       "observed_at": "2026-11-09T12:00:07.500Z",
       "media_time_seconds": 7.5,
       "file": "CAMERA-PLANNED-02-0015.png",
-      "sha256": "c3345a43342d904505bb06f7750a3b8ac6997f1e9bb22cb651e1a9f831652b6b",
-      "capture_duration_ms": 153
+      "sha256": "f06a755433a64992ed0b299b9ee8e9a677d88b36d139fd8c4046399e5c0b8010",
+      "capture_duration_ms": 288
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -838,8 +838,8 @@
       "observed_at": "2026-11-09T12:00:07.500Z",
       "media_time_seconds": 7.5,
       "file": "CAMERA-PLANNED-03-0015.png",
-      "sha256": "038f56e1c82c3ea5c96f60653436f0b3d1a6e8277ab79b2109e25bd6814b1546",
-      "capture_duration_ms": 81
+      "sha256": "9e3cea5638309b2b2d748620cd07f24e3035e0ae5286aae54dc0e15e0f512ddc",
+      "capture_duration_ms": 114
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -847,8 +847,8 @@
       "observed_at": "2026-11-09T12:00:07.500Z",
       "media_time_seconds": 7.5,
       "file": "CAMERA-PLANNED-04-0015.png",
-      "sha256": "fd85ba032fa5bbd4034e65f95153105b42d453117fd21b800e678e2f9307138f",
-      "capture_duration_ms": 77
+      "sha256": "ee609c847e06e173d932809c2fb35e091eb90f3dbad3552fa92423e2d640a69d",
+      "capture_duration_ms": 106
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -857,7 +857,7 @@
       "media_time_seconds": 7.5,
       "file": "CAMERA-PLANNED-05-0015.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 55
+      "capture_duration_ms": 59
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -865,8 +865,8 @@
       "observed_at": "2026-11-09T12:00:07.500Z",
       "media_time_seconds": 7.5,
       "file": "CAMERA-PLANNED-06-0015.png",
-      "sha256": "cd694223287809c550adde3ed62b8905e5a2e4192d2d3234f27e7492f6886ecf",
-      "capture_duration_ms": 61
+      "sha256": "3fdc7778d3719605c3a4d21ec893d0fd6ced8bdec3c24a85add0796890f72cf4",
+      "capture_duration_ms": 74
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -874,8 +874,8 @@
       "observed_at": "2026-11-09T12:00:08.000Z",
       "media_time_seconds": 8,
       "file": "CAMERA-PLANNED-01-0016.png",
-      "sha256": "6569e61a922642c44e8629dbbdeb8d71e60e23527c89bf427e29d9c4701d12cf",
-      "capture_duration_ms": 91
+      "sha256": "eef704d362bf921a77bf05a1e40092da2d8bd6eeab558453cf53def24bf089c2",
+      "capture_duration_ms": 127
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -883,8 +883,8 @@
       "observed_at": "2026-11-09T12:00:08.000Z",
       "media_time_seconds": 8,
       "file": "CAMERA-PLANNED-02-0016.png",
-      "sha256": "8d43c41c22647f3f511cf2bfb9fddfa03bcaa102189c4244ca74ca70f1db695c",
-      "capture_duration_ms": 201
+      "sha256": "0cd1f52a0621985a7c6f4af399c90b5e82124e21576efe3e718d0306e771935d",
+      "capture_duration_ms": 334
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -892,8 +892,8 @@
       "observed_at": "2026-11-09T12:00:08.000Z",
       "media_time_seconds": 8,
       "file": "CAMERA-PLANNED-03-0016.png",
-      "sha256": "a0af9b1127ea3e784cd4bac66e4071ef6e41c8fb4a6f8a92cf975156012780e6",
-      "capture_duration_ms": 89
+      "sha256": "2a0b706410442a4c710e38364d2f74d8d2c2c9b1706fc4837e1707f70d92512c",
+      "capture_duration_ms": 116
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -901,8 +901,8 @@
       "observed_at": "2026-11-09T12:00:08.000Z",
       "media_time_seconds": 8,
       "file": "CAMERA-PLANNED-04-0016.png",
-      "sha256": "e560750e26ffec32fbe3557a8743765398c183c29a216b3a226cdb68e3f1a04a",
-      "capture_duration_ms": 81
+      "sha256": "0faf5f87493d2765c39c4dfbd61a14df2b338130971296e8d081386bc05c2ce1",
+      "capture_duration_ms": 104
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -911,7 +911,7 @@
       "media_time_seconds": 8,
       "file": "CAMERA-PLANNED-05-0016.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 89
+      "capture_duration_ms": 59
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -919,8 +919,8 @@
       "observed_at": "2026-11-09T12:00:08.000Z",
       "media_time_seconds": 8,
       "file": "CAMERA-PLANNED-06-0016.png",
-      "sha256": "8ee0bd9b4fc1c6dffd2b422b47c2e3f92fc3f1c32e4d4b6966677f7247dc8eb7",
-      "capture_duration_ms": 66
+      "sha256": "c8122c4f042e73efff79bcb5a233afe6c07b2ecf003e3ca2a49075e414e6227a",
+      "capture_duration_ms": 74
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -928,8 +928,8 @@
       "observed_at": "2026-11-09T12:00:08.500Z",
       "media_time_seconds": 8.5,
       "file": "CAMERA-PLANNED-01-0017.png",
-      "sha256": "6d7e179797a259fd832df32b48c0764696eadcd27797222c6354b0a34d61a45a",
-      "capture_duration_ms": 87
+      "sha256": "ba853499935d88f83ed4df746b35566c5fd8138d69c1eba1c79bcd7a69e5f5c5",
+      "capture_duration_ms": 124
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -937,8 +937,8 @@
       "observed_at": "2026-11-09T12:00:08.500Z",
       "media_time_seconds": 8.5,
       "file": "CAMERA-PLANNED-02-0017.png",
-      "sha256": "8c570d8f875daacd6f3b4c5125cf767f4e7dd54717554e9ae2a66d84d85ac76d",
-      "capture_duration_ms": 196
+      "sha256": "bcd493689bf595b2f73121a089b859514bc522f9064870dacd5579fbcfac1528",
+      "capture_duration_ms": 367
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -946,8 +946,8 @@
       "observed_at": "2026-11-09T12:00:08.500Z",
       "media_time_seconds": 8.5,
       "file": "CAMERA-PLANNED-03-0017.png",
-      "sha256": "3e79919f559f276129eb148bf41e4f0cadc5c1d54db5d726ef3c8a6c0add59ba",
-      "capture_duration_ms": 80
+      "sha256": "8bd09d3d237774db53f1d49366d41350bafb7580647266dd22a63adeabe12609",
+      "capture_duration_ms": 126
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -955,8 +955,8 @@
       "observed_at": "2026-11-09T12:00:08.500Z",
       "media_time_seconds": 8.5,
       "file": "CAMERA-PLANNED-04-0017.png",
-      "sha256": "7fae95cb98d1243900ba812fcda5bf5a48200d5415033e1eb6340711a184b856",
-      "capture_duration_ms": 78
+      "sha256": "2b3143642b1189e266966cbf1a4b18446969ff761e00eed5583d9af06fec0b42",
+      "capture_duration_ms": 98
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -973,8 +973,8 @@
       "observed_at": "2026-11-09T12:00:08.500Z",
       "media_time_seconds": 8.5,
       "file": "CAMERA-PLANNED-06-0017.png",
-      "sha256": "c1d7f56513a5b2556bfcb537162c36a8c0f4292f0e81995e19d4bd5bb658ee8b",
-      "capture_duration_ms": 62
+      "sha256": "392dd7a221f7e9b87ff1b68d0ee6aac1fd32cb162a0d03f528d63dc74b68ba3c",
+      "capture_duration_ms": 73
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -982,8 +982,8 @@
       "observed_at": "2026-11-09T12:00:09.000Z",
       "media_time_seconds": 9,
       "file": "CAMERA-PLANNED-01-0018.png",
-      "sha256": "d75235cbffd539b7af3101377c1324747500e0f329b89e3a2c13e6bb1a9fb22d",
-      "capture_duration_ms": 100
+      "sha256": "b434cf4115b739b31a801447fe14bc96c464053340ec3f58c40021f1c808bd4e",
+      "capture_duration_ms": 111
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -991,8 +991,8 @@
       "observed_at": "2026-11-09T12:00:09.000Z",
       "media_time_seconds": 9,
       "file": "CAMERA-PLANNED-02-0018.png",
-      "sha256": "6ea538caf496f53edf6ad87f361657ef51aba4aa1231857a41f9930287c243a1",
-      "capture_duration_ms": 218
+      "sha256": "ecbf43f16eb3d4f14b54c08a9180edf1855a5c0d80f4eb0e4c71d2b4779a8ec6",
+      "capture_duration_ms": 277
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1000,8 +1000,8 @@
       "observed_at": "2026-11-09T12:00:09.000Z",
       "media_time_seconds": 9,
       "file": "CAMERA-PLANNED-03-0018.png",
-      "sha256": "fcdaf2c24024733615b3350b75dec7bc2ef22a7e7f084122dea627c4b0f3c323",
-      "capture_duration_ms": 87
+      "sha256": "1b00a4ba89439586bb3d0d8135b06412afb42a82fea7c51f511fc59789e0eaab",
+      "capture_duration_ms": 135
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1009,8 +1009,8 @@
       "observed_at": "2026-11-09T12:00:09.000Z",
       "media_time_seconds": 9,
       "file": "CAMERA-PLANNED-04-0018.png",
-      "sha256": "cf341fd6dddc048da6936d2eebdec438d5ffcb3d81dce2ee8077a26a799357ae",
-      "capture_duration_ms": 88
+      "sha256": "243004f03a3a619e7816bed0f78ffc98112030def1130bbe57a9d9b46da0c574",
+      "capture_duration_ms": 110
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1019,7 +1019,7 @@
       "media_time_seconds": 9,
       "file": "CAMERA-PLANNED-05-0018.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 62
+      "capture_duration_ms": 71
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1027,8 +1027,8 @@
       "observed_at": "2026-11-09T12:00:09.000Z",
       "media_time_seconds": 9,
       "file": "CAMERA-PLANNED-06-0018.png",
-      "sha256": "50baf3e6a64a53152ed379e09641eb80e5a51988743f439db77401a29854de38",
-      "capture_duration_ms": 62
+      "sha256": "2d65481c636203aa19e5fa4f6d3a6661f5049fc9f4a3c4c3d72865946ff62f78",
+      "capture_duration_ms": 79
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1036,8 +1036,8 @@
       "observed_at": "2026-11-09T12:00:09.500Z",
       "media_time_seconds": 9.5,
       "file": "CAMERA-PLANNED-01-0019.png",
-      "sha256": "c9bd2fd146caf9c90a7d55554e7d134c9b601eee8dc2fb6edb68f96f7230c61b",
-      "capture_duration_ms": 76
+      "sha256": "0733150baceaec0c8a921ea7d933e1695e27f2f580414ff7d32cff6cbf9a3dca",
+      "capture_duration_ms": 125
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1045,8 +1045,8 @@
       "observed_at": "2026-11-09T12:00:09.500Z",
       "media_time_seconds": 9.5,
       "file": "CAMERA-PLANNED-02-0019.png",
-      "sha256": "06f8a5d407bb08f01fdf36bc027c286bd558e5eca872769500e40e93e7f99232",
-      "capture_duration_ms": 90
+      "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "capture_duration_ms": 69
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1054,8 +1054,8 @@
       "observed_at": "2026-11-09T12:00:09.500Z",
       "media_time_seconds": 9.5,
       "file": "CAMERA-PLANNED-03-0019.png",
-      "sha256": "d26243cefc2f6857712ddbbad7943634b5cd9736759be77235ba05d6da0eaad1",
-      "capture_duration_ms": 149
+      "sha256": "b6824e0539f2c4cb00c233bbac58d1e1f827043d5e53a7103c023885b1e4a163",
+      "capture_duration_ms": 138
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1063,8 +1063,8 @@
       "observed_at": "2026-11-09T12:00:09.500Z",
       "media_time_seconds": 9.5,
       "file": "CAMERA-PLANNED-04-0019.png",
-      "sha256": "68c5988270778da994b95eacfb0da4c6270b346f54ba4fe54d52aacb9907d3da",
-      "capture_duration_ms": 91
+      "sha256": "84584a81f48b0259a63c93c42304c3bf5f8dce5ac14b5879700ed7635d02e359",
+      "capture_duration_ms": 110
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1073,7 +1073,7 @@
       "media_time_seconds": 9.5,
       "file": "CAMERA-PLANNED-05-0019.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 65
+      "capture_duration_ms": 63
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1081,8 +1081,8 @@
       "observed_at": "2026-11-09T12:00:09.500Z",
       "media_time_seconds": 9.5,
       "file": "CAMERA-PLANNED-06-0019.png",
-      "sha256": "87f50cd3db6b2820bc38abfa6d54e3c4472da998ab30c486c720521b4bbf841f",
-      "capture_duration_ms": 58
+      "sha256": "7bf4960582a5f56baf0e80e5ee8af7c6eaee61c90d01d6f61f7245d31eb7075d",
+      "capture_duration_ms": 70
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1090,8 +1090,8 @@
       "observed_at": "2026-11-09T12:00:10.000Z",
       "media_time_seconds": 10,
       "file": "CAMERA-PLANNED-01-0020.png",
-      "sha256": "b749114fe8182376467b51a6cd7c4b322a0237903ab922efaedd339b66289d63",
-      "capture_duration_ms": 102
+      "sha256": "ee97e02507e83d7ce3569c5003b9141494f3b213a4dfd80180f1bf5c5f9304a5",
+      "capture_duration_ms": 103
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1100,7 +1100,7 @@
       "media_time_seconds": 10,
       "file": "CAMERA-PLANNED-02-0020.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 63
+      "capture_duration_ms": 58
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1108,8 +1108,8 @@
       "observed_at": "2026-11-09T12:00:10.000Z",
       "media_time_seconds": 10,
       "file": "CAMERA-PLANNED-03-0020.png",
-      "sha256": "a28af60e3e2d1b57476a8c521c73977a95c3f9c154f88163920d8a241485f3a4",
-      "capture_duration_ms": 121
+      "sha256": "edf2bdddcb259eced45db07c159a570e73237e20f782c10e0b8f3001f6d98218",
+      "capture_duration_ms": 143
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1117,8 +1117,8 @@
       "observed_at": "2026-11-09T12:00:10.000Z",
       "media_time_seconds": 10,
       "file": "CAMERA-PLANNED-04-0020.png",
-      "sha256": "6e95665054644add8e48f05d57ec107a48ce8e1b3cf0d7379fa1639106ab7cef",
-      "capture_duration_ms": 98
+      "sha256": "6facf0cdd87de6591b34931c6ded953b71a9f3218bbc4329fef05c46ea926a37",
+      "capture_duration_ms": 112
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1127,7 +1127,7 @@
       "media_time_seconds": 10,
       "file": "CAMERA-PLANNED-05-0020.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 60
+      "capture_duration_ms": 61
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1135,8 +1135,8 @@
       "observed_at": "2026-11-09T12:00:10.000Z",
       "media_time_seconds": 10,
       "file": "CAMERA-PLANNED-06-0020.png",
-      "sha256": "92e01228ead924568de209333741bc46f05a873c2ac62d8f2a82b0ae8580a4fd",
-      "capture_duration_ms": 57
+      "sha256": "c49c7b11c1ff9f867e17422b5e341cd1cc81b9e6f795bffcc5a1440e0e19ca00",
+      "capture_duration_ms": 72
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1144,8 +1144,8 @@
       "observed_at": "2026-11-09T12:00:10.500Z",
       "media_time_seconds": 10.5,
       "file": "CAMERA-PLANNED-01-0021.png",
-      "sha256": "96d412749f10ea41366fcfab088127e3e2384f3c3fd8454eddc1a49639141b38",
-      "capture_duration_ms": 74
+      "sha256": "32720f03773180e4a9853b341e5fa5da067a67eafe80e872297f6cab2c41a847",
+      "capture_duration_ms": 90
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1154,7 +1154,7 @@
       "media_time_seconds": 10.5,
       "file": "CAMERA-PLANNED-02-0021.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 52
+      "capture_duration_ms": 57
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1162,8 +1162,8 @@
       "observed_at": "2026-11-09T12:00:10.500Z",
       "media_time_seconds": 10.5,
       "file": "CAMERA-PLANNED-03-0021.png",
-      "sha256": "8b874697c4c0746b86be08bbac7f47b9ca6e53379f503c516df1817d3ced64b3",
-      "capture_duration_ms": 106
+      "sha256": "1511f7590fb8337b9f0e708a6d0fabc066c593d608ad7a21ed4704cb2c4ec3af",
+      "capture_duration_ms": 145
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1171,8 +1171,8 @@
       "observed_at": "2026-11-09T12:00:10.500Z",
       "media_time_seconds": 10.5,
       "file": "CAMERA-PLANNED-04-0021.png",
-      "sha256": "eae05078d058fe3631c15c9c71548d0acb756be7da06cb8538e85bd144e365cc",
-      "capture_duration_ms": 86
+      "sha256": "014c31dfa589134df02d8a44b6c9558a8f2d556977c445646aa6480df1006c6a",
+      "capture_duration_ms": 116
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1181,7 +1181,7 @@
       "media_time_seconds": 10.5,
       "file": "CAMERA-PLANNED-05-0021.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 77
+      "capture_duration_ms": 63
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1189,8 +1189,8 @@
       "observed_at": "2026-11-09T12:00:10.500Z",
       "media_time_seconds": 10.5,
       "file": "CAMERA-PLANNED-06-0021.png",
-      "sha256": "0e7bf471e23b8ef3d46b0e1cd3ba224d7a6a33c8a1df410ab94f812f9f55660c",
-      "capture_duration_ms": 76
+      "sha256": "0c0619cdeefc243aa524c1596aa4c5ceaafd9594cf6cf5ad0aad31013c01096d",
+      "capture_duration_ms": 74
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1198,8 +1198,8 @@
       "observed_at": "2026-11-09T12:00:11.000Z",
       "media_time_seconds": 11,
       "file": "CAMERA-PLANNED-01-0022.png",
-      "sha256": "fb792ad96a4868f2efbdba2933142e832a55c1e7953b6c2ff05bca7b652aad3c",
-      "capture_duration_ms": 89
+      "sha256": "7801fa31f4ecf272f09abb063e460cbd2c99b95ebabeaf43b8acd68695097ec0",
+      "capture_duration_ms": 98
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1208,7 +1208,7 @@
       "media_time_seconds": 11,
       "file": "CAMERA-PLANNED-02-0022.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 69
+      "capture_duration_ms": 55
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1216,8 +1216,8 @@
       "observed_at": "2026-11-09T12:00:11.000Z",
       "media_time_seconds": 11,
       "file": "CAMERA-PLANNED-03-0022.png",
-      "sha256": "ae277c97a440b5f216ef63723881040aada33790c4ea807f8aab0564d7d9f872",
-      "capture_duration_ms": 140
+      "sha256": "e69b9a7d014997c1b2c725ff7b0884141da59ed1b09fe597947b7103da96caca",
+      "capture_duration_ms": 189
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1225,8 +1225,8 @@
       "observed_at": "2026-11-09T12:00:11.000Z",
       "media_time_seconds": 11,
       "file": "CAMERA-PLANNED-04-0022.png",
-      "sha256": "38fe28884d77d2ee9baa1bcd50c9aef61d2baf33d4c1d90a64d2a3fda63e981e",
-      "capture_duration_ms": 89
+      "sha256": "4102ca90cebbdd4df99f4939857a0562db639e259ac92bb5f5a79f038f51810f",
+      "capture_duration_ms": 119
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1235,7 +1235,7 @@
       "media_time_seconds": 11,
       "file": "CAMERA-PLANNED-05-0022.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 60
+      "capture_duration_ms": 62
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1243,8 +1243,8 @@
       "observed_at": "2026-11-09T12:00:11.000Z",
       "media_time_seconds": 11,
       "file": "CAMERA-PLANNED-06-0022.png",
-      "sha256": "69badb3a419ebf5004ea90deeea42022af4456a73cf45715a60361c5641b5179",
-      "capture_duration_ms": 61
+      "sha256": "6dac09519c773874096a88eebb5942eb4b5a5271c40f4f3c5a6d0630868ebae8",
+      "capture_duration_ms": 72
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1252,8 +1252,8 @@
       "observed_at": "2026-11-09T12:00:11.500Z",
       "media_time_seconds": 11.5,
       "file": "CAMERA-PLANNED-01-0023.png",
-      "sha256": "13a9bbde25701d2748b32ca550a81d2f1f5d246b80c53038e9d7f1647266f94c",
-      "capture_duration_ms": 90
+      "sha256": "9d8041412bae5652b1cb2ddfbdb5508f9a331362d99d53dd99445b1fca760a51",
+      "capture_duration_ms": 91
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1262,7 +1262,7 @@
       "media_time_seconds": 11.5,
       "file": "CAMERA-PLANNED-02-0023.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 62
+      "capture_duration_ms": 57
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1270,8 +1270,8 @@
       "observed_at": "2026-11-09T12:00:11.500Z",
       "media_time_seconds": 11.5,
       "file": "CAMERA-PLANNED-03-0023.png",
-      "sha256": "dcbbb2765575b69b3e08b306a7aa9737231122ccc8861287a267951419fc6bb9",
-      "capture_duration_ms": 145
+      "sha256": "cedf2687071e188f8430eee8522330138a760b2f6d5667bd8f0edb3dd67fc277",
+      "capture_duration_ms": 226
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1279,8 +1279,8 @@
       "observed_at": "2026-11-09T12:00:11.500Z",
       "media_time_seconds": 11.5,
       "file": "CAMERA-PLANNED-04-0023.png",
-      "sha256": "112e91b3320406d46e684552f0c1e8179f5e47351fe3329443e5f0560a694795",
-      "capture_duration_ms": 100
+      "sha256": "e9a391e04e8a67cbc60c6fedc8ca04d2a2f5b534dd6f09323f8a404e1aa61e3e",
+      "capture_duration_ms": 118
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1289,7 +1289,7 @@
       "media_time_seconds": 11.5,
       "file": "CAMERA-PLANNED-05-0023.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 81
+      "capture_duration_ms": 60
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1297,8 +1297,8 @@
       "observed_at": "2026-11-09T12:00:11.500Z",
       "media_time_seconds": 11.5,
       "file": "CAMERA-PLANNED-06-0023.png",
-      "sha256": "0c8a650b24ad8b2a8ba72b8ff8d6e2ad1723d7eaf37bdac6aa91a54540354b70",
-      "capture_duration_ms": 72
+      "sha256": "e3d89af8da763e391e89368149de425325272346cd25cafdcebcdfcada50b2e6",
+      "capture_duration_ms": 76
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1306,8 +1306,8 @@
       "observed_at": "2026-11-09T12:00:12.000Z",
       "media_time_seconds": 12,
       "file": "CAMERA-PLANNED-01-0024.png",
-      "sha256": "6221aab0e89ecbbf35443e7079f1a9f847554a034e8ff9d9b6e621054adaafa0",
-      "capture_duration_ms": 93
+      "sha256": "b06a705876f877d8b7872a8e1cd6c1d058ec2946ae55ae2945338bac5cccd5a8",
+      "capture_duration_ms": 86
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1316,7 +1316,7 @@
       "media_time_seconds": 12,
       "file": "CAMERA-PLANNED-02-0024.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 65
+      "capture_duration_ms": 55
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1324,8 +1324,8 @@
       "observed_at": "2026-11-09T12:00:12.000Z",
       "media_time_seconds": 12,
       "file": "CAMERA-PLANNED-03-0024.png",
-      "sha256": "97bcc64e4162159d7e77d896f8fb7914f268c5246b74714a8eb6a94262fe4333",
-      "capture_duration_ms": 161
+      "sha256": "ea201243987b87755d8253a475295310577696296fb3dcf7fb74c0990fd8407e",
+      "capture_duration_ms": 232
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1333,8 +1333,8 @@
       "observed_at": "2026-11-09T12:00:12.000Z",
       "media_time_seconds": 12,
       "file": "CAMERA-PLANNED-04-0024.png",
-      "sha256": "1e6be7120f34e125d1501c3122461ba8a1cf75ae3349adf8f28c2733741203d3",
-      "capture_duration_ms": 101
+      "sha256": "de68431582aa14092d6e24a0d225cd76a5b4848332750237991d62675e6f3803",
+      "capture_duration_ms": 124
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1343,7 +1343,7 @@
       "media_time_seconds": 12,
       "file": "CAMERA-PLANNED-05-0024.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 63
+      "capture_duration_ms": 61
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1351,8 +1351,8 @@
       "observed_at": "2026-11-09T12:00:12.000Z",
       "media_time_seconds": 12,
       "file": "CAMERA-PLANNED-06-0024.png",
-      "sha256": "8b05e910294bfc539556ceb39e48202401e4c3aa96a1ea58a6c5976413160b89",
-      "capture_duration_ms": 58
+      "sha256": "104b10301d4aad7ad3977283a33469ae401b93b48f86d066a2c924931b740cb0",
+      "capture_duration_ms": 76
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1360,8 +1360,8 @@
       "observed_at": "2026-11-09T12:00:12.500Z",
       "media_time_seconds": 12.5,
       "file": "CAMERA-PLANNED-01-0025.png",
-      "sha256": "77b93920248b95143eb82ec8db2d0e39a6cae2d879850e3429327b97c42824b1",
-      "capture_duration_ms": 66
+      "sha256": "9a9dd713c392e227b4ce8e3d94e76d1778793125ed07177187514a5fcc5b6cbf",
+      "capture_duration_ms": 103
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1370,7 +1370,7 @@
       "media_time_seconds": 12.5,
       "file": "CAMERA-PLANNED-02-0025.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 52
+      "capture_duration_ms": 55
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1378,8 +1378,8 @@
       "observed_at": "2026-11-09T12:00:12.500Z",
       "media_time_seconds": 12.5,
       "file": "CAMERA-PLANNED-03-0025.png",
-      "sha256": "85f7b6e0717b08d0f867d0ef02d25dcf2ceda3d450d47f46afd5c090d47c1eb9",
-      "capture_duration_ms": 165
+      "sha256": "8bfce441162a4eb28fded7baff5fa7d7b9a610fd541884a9d05225dc25dd1fd2",
+      "capture_duration_ms": 294
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1387,8 +1387,8 @@
       "observed_at": "2026-11-09T12:00:12.500Z",
       "media_time_seconds": 12.5,
       "file": "CAMERA-PLANNED-04-0025.png",
-      "sha256": "93dead0646af46ea2a050f4c7116c9bd71d01967eedad49acaac575b1ad2234d",
-      "capture_duration_ms": 106
+      "sha256": "f1cfb3a946c1da38acd05c33aa4cb30dcd1ad121a4532bfc6ce5572e20933d86",
+      "capture_duration_ms": 135
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1397,7 +1397,7 @@
       "media_time_seconds": 12.5,
       "file": "CAMERA-PLANNED-05-0025.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 62
+      "capture_duration_ms": 66
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1405,8 +1405,8 @@
       "observed_at": "2026-11-09T12:00:12.500Z",
       "media_time_seconds": 12.5,
       "file": "CAMERA-PLANNED-06-0025.png",
-      "sha256": "bf2cb1659c3b540ee99243fe91b7059e08f7d8bd1c5284f5a88d612c17161ea1",
-      "capture_duration_ms": 62
+      "sha256": "e8c8a001ed213a750114e7f4f18d26f4d131e506391daa04440d44dffdc7645a",
+      "capture_duration_ms": 75
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1414,8 +1414,8 @@
       "observed_at": "2026-11-09T12:00:13.000Z",
       "media_time_seconds": 13,
       "file": "CAMERA-PLANNED-01-0026.png",
-      "sha256": "5234630b28f4320057626f2b727b19bed573b8369eee1615f5acb1d7747dde3f",
-      "capture_duration_ms": 86
+      "sha256": "477a2080df10a583540ec6f7ca75554906db6b9285fb1dc621dfb63e63bb87f8",
+      "capture_duration_ms": 94
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1424,7 +1424,7 @@
       "media_time_seconds": 13,
       "file": "CAMERA-PLANNED-02-0026.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 53
+      "capture_duration_ms": 61
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1432,8 +1432,8 @@
       "observed_at": "2026-11-09T12:00:13.000Z",
       "media_time_seconds": 13,
       "file": "CAMERA-PLANNED-03-0026.png",
-      "sha256": "896b3b5068308c44a62c311174f72f5670e4052e5c15e58ece7bc3606bbc56fd",
-      "capture_duration_ms": 168
+      "sha256": "ce81569b680f078b2e3e30cd38a02e3648ac4f1a0b070b2ef63ec80443f3627d",
+      "capture_duration_ms": 367
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1441,8 +1441,8 @@
       "observed_at": "2026-11-09T12:00:13.000Z",
       "media_time_seconds": 13,
       "file": "CAMERA-PLANNED-04-0026.png",
-      "sha256": "6f3927b399044e7130b3061f355efb5e27afa4665c01a845d78eae403f010e40",
-      "capture_duration_ms": 95
+      "sha256": "98a03ddb99607a38e21593a8ba15e7e68f5c1dcc8e95dcdd864a47b4984ee86c",
+      "capture_duration_ms": 146
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1451,7 +1451,7 @@
       "media_time_seconds": 13,
       "file": "CAMERA-PLANNED-05-0026.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 67
+      "capture_duration_ms": 93
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1459,8 +1459,8 @@
       "observed_at": "2026-11-09T12:00:13.000Z",
       "media_time_seconds": 13,
       "file": "CAMERA-PLANNED-06-0026.png",
-      "sha256": "b7ffb3c485704002959c77a84b95ce98cd8a6b1a285733266064bdf872770b44",
-      "capture_duration_ms": 57
+      "sha256": "48b0f20864a807b6e4726b93f47529081fa2c9c7d6b55488f545d347d40ca0b6",
+      "capture_duration_ms": 90
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1468,8 +1468,8 @@
       "observed_at": "2026-11-09T12:00:13.500Z",
       "media_time_seconds": 13.5,
       "file": "CAMERA-PLANNED-01-0027.png",
-      "sha256": "190721ee7cdabbaa35ab3c921b645715380c40f444e57ee9ac312ed9f8e316d3",
-      "capture_duration_ms": 64
+      "sha256": "67d7b453e9e1d5ba12b69f92560c5e18c3313d8ed27ab3f0c52b355388c3585c",
+      "capture_duration_ms": 84
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1478,7 +1478,7 @@
       "media_time_seconds": 13.5,
       "file": "CAMERA-PLANNED-02-0027.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 48
+      "capture_duration_ms": 71
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1486,8 +1486,8 @@
       "observed_at": "2026-11-09T12:00:13.500Z",
       "media_time_seconds": 13.5,
       "file": "CAMERA-PLANNED-03-0027.png",
-      "sha256": "7c7f49647ba6250d1b36b85d6ff62ab7b50bf0ec663c2afd4e91e17c195d222b",
-      "capture_duration_ms": 211
+      "sha256": "bb1bc8fd5a64455b086edf4803c3f7e57a3fa190a2dc63cf270f767723158822",
+      "capture_duration_ms": 349
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1495,8 +1495,8 @@
       "observed_at": "2026-11-09T12:00:13.500Z",
       "media_time_seconds": 13.5,
       "file": "CAMERA-PLANNED-04-0027.png",
-      "sha256": "d1f6ca9bd4aa66078def53abab1e090dcb5201d24556e5376ef763f223d10848",
-      "capture_duration_ms": 114
+      "sha256": "8d009394e8fc46f77f5e89bf57c6f4379d042ba9892e7ef9eed92ab4f2620099",
+      "capture_duration_ms": 138
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1505,7 +1505,7 @@
       "media_time_seconds": 13.5,
       "file": "CAMERA-PLANNED-05-0027.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 57
+      "capture_duration_ms": 61
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1513,8 +1513,8 @@
       "observed_at": "2026-11-09T12:00:13.500Z",
       "media_time_seconds": 13.5,
       "file": "CAMERA-PLANNED-06-0027.png",
-      "sha256": "eee190f84f2d2cedd256250d55c89c05c25eaceeacc5b45ce745f47a0c107a17",
-      "capture_duration_ms": 59
+      "sha256": "5645f870e26b9e56ce3db6d0a134c41738671ddae4b03f7f9d3e70cb285f604a",
+      "capture_duration_ms": 73
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1522,8 +1522,8 @@
       "observed_at": "2026-11-09T12:00:14.000Z",
       "media_time_seconds": 14,
       "file": "CAMERA-PLANNED-01-0028.png",
-      "sha256": "12efe5af3e035d23e014116268d86b5c5a164d8493c460a26942c4ccf3a17f5a",
-      "capture_duration_ms": 64
+      "sha256": "3948a0652eca119ddd6327996b07a4e0f8ff797fd9aebd2b67936bdada340b18",
+      "capture_duration_ms": 88
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1532,7 +1532,7 @@
       "media_time_seconds": 14,
       "file": "CAMERA-PLANNED-02-0028.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 49
+      "capture_duration_ms": 52
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1540,8 +1540,8 @@
       "observed_at": "2026-11-09T12:00:14.000Z",
       "media_time_seconds": 14,
       "file": "CAMERA-PLANNED-03-0028.png",
-      "sha256": "cfa0cf1f65012042ad93f2c51952e2b14dfdf0a0a12b9f301c7b5b5936418e35",
-      "capture_duration_ms": 249
+      "sha256": "c9f881aba00a07a6b3a45e522fcdb6ec9feea73d02919374d006c7fbf3e6cfdf",
+      "capture_duration_ms": 466
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1549,8 +1549,8 @@
       "observed_at": "2026-11-09T12:00:14.000Z",
       "media_time_seconds": 14,
       "file": "CAMERA-PLANNED-04-0028.png",
-      "sha256": "96183fe2fb584941029e95bf2d103f170128c7d1b86b524b5d6246ae32d7ee0b",
-      "capture_duration_ms": 91
+      "sha256": "a1fccf106734102c44a405c6e50957a882cfdc3522dc799cf475dff776a682fe",
+      "capture_duration_ms": 134
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1559,7 +1559,7 @@
       "media_time_seconds": 14,
       "file": "CAMERA-PLANNED-05-0028.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 65
+      "capture_duration_ms": 68
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1567,8 +1567,8 @@
       "observed_at": "2026-11-09T12:00:14.000Z",
       "media_time_seconds": 14,
       "file": "CAMERA-PLANNED-06-0028.png",
-      "sha256": "c94d9a5cfc38c720b2f4761bac19c6fab4e62dfe10c7110d5573c8373accacf4",
-      "capture_duration_ms": 67
+      "sha256": "8e24082d1ef0f1d8d192360a2ae72d7a72a0656e81d14e0f4b463d5cca2e1d62",
+      "capture_duration_ms": 216
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1576,8 +1576,8 @@
       "observed_at": "2026-11-09T12:00:14.500Z",
       "media_time_seconds": 14.5,
       "file": "CAMERA-PLANNED-01-0029.png",
-      "sha256": "842390e09556b34503ea6af73dfbe9ba09d618e9215ec67945dc21b9b02ee43e",
-      "capture_duration_ms": 65
+      "sha256": "1dc0f5b7e0c339bb2a17d3a1cec0f83a63e6cd1fbfbcff1c0c245a337ac4e7cc",
+      "capture_duration_ms": 82
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1586,7 +1586,7 @@
       "media_time_seconds": 14.5,
       "file": "CAMERA-PLANNED-02-0029.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 50
+      "capture_duration_ms": 56
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1594,8 +1594,8 @@
       "observed_at": "2026-11-09T12:00:14.500Z",
       "media_time_seconds": 14.5,
       "file": "CAMERA-PLANNED-03-0029.png",
-      "sha256": "6904f92ec92f4e73833b10d63f6d1b32681933ef986504f86d9591b0856db883",
-      "capture_duration_ms": 191
+      "sha256": "1c0cceaaf7b29a7c4e28f5e359f9c0ecb39f741d10edfacd81280b8a069616fc",
+      "capture_duration_ms": 289
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1603,8 +1603,8 @@
       "observed_at": "2026-11-09T12:00:14.500Z",
       "media_time_seconds": 14.5,
       "file": "CAMERA-PLANNED-04-0029.png",
-      "sha256": "fe1f475a365bdd20b476a9025a727cbf4bf83d9e066ea5f80e6cc5fa1888a722",
-      "capture_duration_ms": 95
+      "sha256": "f18b16da538c8b4076e0313c8076169049e6cdd73309904598b97f023c89978c",
+      "capture_duration_ms": 134
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1613,7 +1613,7 @@
       "media_time_seconds": 14.5,
       "file": "CAMERA-PLANNED-05-0029.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 57
+      "capture_duration_ms": 71
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1621,8 +1621,8 @@
       "observed_at": "2026-11-09T12:00:14.500Z",
       "media_time_seconds": 14.5,
       "file": "CAMERA-PLANNED-06-0029.png",
-      "sha256": "e4442bc0302f72ae115de9b83b90179cb207368ea4b1251f584905e5dc59c610",
-      "capture_duration_ms": 61
+      "sha256": "3f18b3fd2475dbfeb5229330bb3dbdd377ae2100f3323a8f35d58551df7e7e2f",
+      "capture_duration_ms": 74
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1630,8 +1630,8 @@
       "observed_at": "2026-11-09T12:00:15.000Z",
       "media_time_seconds": 15,
       "file": "CAMERA-PLANNED-01-0030.png",
-      "sha256": "469203189c5aa75148adb05817d6cfc5d4fea259503b91dc12ce64efa534cd51",
-      "capture_duration_ms": 60
+      "sha256": "bd8feba85fdb7148e5f9ddc7e6dc9876ad0021a31a96b1e9d44834c58b59c7b4",
+      "capture_duration_ms": 73
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1648,7 +1648,7 @@
       "observed_at": "2026-11-09T12:00:15.000Z",
       "media_time_seconds": 15,
       "file": "CAMERA-PLANNED-03-0030.png",
-      "sha256": "b5c78852b726ab8521375dfa2d328d8c2502a6d091755783750ce5439f060d64",
+      "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
       "capture_duration_ms": 51
     },
     {
@@ -1657,8 +1657,8 @@
       "observed_at": "2026-11-09T12:00:15.000Z",
       "media_time_seconds": 15,
       "file": "CAMERA-PLANNED-04-0030.png",
-      "sha256": "31708d5fa476c65a7b8398ddff7c979c9e93e09ad1fa9b2854f90131e7c96066",
-      "capture_duration_ms": 100
+      "sha256": "f0784b0702d38ef8a38a6f0975fe0214eb0511c434107c37afb8498c66180535",
+      "capture_duration_ms": 154
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1667,7 +1667,7 @@
       "media_time_seconds": 15,
       "file": "CAMERA-PLANNED-05-0030.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 63
+      "capture_duration_ms": 73
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1675,8 +1675,8 @@
       "observed_at": "2026-11-09T12:00:15.000Z",
       "media_time_seconds": 15,
       "file": "CAMERA-PLANNED-06-0030.png",
-      "sha256": "ccad62cb1434e19353d2eae8bacb7a071a7f9b2367097408877e7d6a0706f772",
-      "capture_duration_ms": 62
+      "sha256": "6afec9a20c1f16e9117968f2d4d991ff4bc8ba116f5fd327e8abc21b2e75dcff",
+      "capture_duration_ms": 90
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1684,8 +1684,8 @@
       "observed_at": "2026-11-09T12:00:15.500Z",
       "media_time_seconds": 15.5,
       "file": "CAMERA-PLANNED-01-0031.png",
-      "sha256": "de1d9140a215d7781feb98be3bbfee2806d3fe19e53c68d71060a17a0411565f",
-      "capture_duration_ms": 58
+      "sha256": "dcbcc5a65cf7df7bc69e30a8bd063bbf4d85e34934f5613f9bd231de4957abaa",
+      "capture_duration_ms": 85
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1694,7 +1694,7 @@
       "media_time_seconds": 15.5,
       "file": "CAMERA-PLANNED-02-0031.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 46
+      "capture_duration_ms": 70
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1703,7 +1703,7 @@
       "media_time_seconds": 15.5,
       "file": "CAMERA-PLANNED-03-0031.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 48
+      "capture_duration_ms": 70
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1711,8 +1711,8 @@
       "observed_at": "2026-11-09T12:00:15.500Z",
       "media_time_seconds": 15.5,
       "file": "CAMERA-PLANNED-04-0031.png",
-      "sha256": "774e287164a5d6d080a9c87c32fd266307914b8f6efea62142b54d80314bb159",
-      "capture_duration_ms": 112
+      "sha256": "cd552b239e357f6ede201c8a91c3cb57936e2f4e2c3b76bd1aef20fbc9f4a3f6",
+      "capture_duration_ms": 189
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1721,7 +1721,7 @@
       "media_time_seconds": 15.5,
       "file": "CAMERA-PLANNED-05-0031.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 58
+      "capture_duration_ms": 70
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1729,8 +1729,8 @@
       "observed_at": "2026-11-09T12:00:15.500Z",
       "media_time_seconds": 15.5,
       "file": "CAMERA-PLANNED-06-0031.png",
-      "sha256": "dde7ebfb9737a9891ee7125dd412b0fc6c8eaa5f99dfbb2a437a070a96eb83dc",
-      "capture_duration_ms": 66
+      "sha256": "44e3aef6a9ca36069030028b3b45e87e86e7cfcfa2f70fc21ebe81992de64c86",
+      "capture_duration_ms": 76
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1738,8 +1738,8 @@
       "observed_at": "2026-11-09T12:00:16.000Z",
       "media_time_seconds": 16,
       "file": "CAMERA-PLANNED-01-0032.png",
-      "sha256": "f320d1c488ef882cb4d4ce4e47a0f1d1762d4b8f8ae20c3aacdf422a280f0c9d",
-      "capture_duration_ms": 62
+      "sha256": "49213419b93f559d73cd8982560323c08993d441a5fbfbbe5f2e180e414d8a0f",
+      "capture_duration_ms": 85
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1757,7 +1757,7 @@
       "media_time_seconds": 16,
       "file": "CAMERA-PLANNED-03-0032.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 49
+      "capture_duration_ms": 71
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1765,8 +1765,8 @@
       "observed_at": "2026-11-09T12:00:16.000Z",
       "media_time_seconds": 16,
       "file": "CAMERA-PLANNED-04-0032.png",
-      "sha256": "f6be5b12d3b3c4b225ac0e65d45aa4ece0f120868c59d0b330b58455d2b0ae74",
-      "capture_duration_ms": 116
+      "sha256": "420c108feb73aff729f9aa7fc222119b405da2cae120d49c87ef3d1766d7b4e6",
+      "capture_duration_ms": 178
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1775,7 +1775,7 @@
       "media_time_seconds": 16,
       "file": "CAMERA-PLANNED-05-0032.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 58
+      "capture_duration_ms": 67
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1783,8 +1783,8 @@
       "observed_at": "2026-11-09T12:00:16.000Z",
       "media_time_seconds": 16,
       "file": "CAMERA-PLANNED-06-0032.png",
-      "sha256": "f91a87721536d8b9dbde7de13b436d85803513052d3896d35a6e3540fe4d656f",
-      "capture_duration_ms": 60
+      "sha256": "b5f498437da4078f04b3eaa31883c774ebfd53fca6ade47d726491c86c22bf74",
+      "capture_duration_ms": 82
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1792,8 +1792,8 @@
       "observed_at": "2026-11-09T12:00:16.500Z",
       "media_time_seconds": 16.5,
       "file": "CAMERA-PLANNED-01-0033.png",
-      "sha256": "5f7fa9903d4417fc1f4364f99333759f67cbf0080aced55f91f02c34e6e3c5e1",
-      "capture_duration_ms": 87
+      "sha256": "578b6bfeefca92cf7e34aae8dbb83042f7876e9a1a63722a9e37ef949196029e",
+      "capture_duration_ms": 84
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1802,7 +1802,7 @@
       "media_time_seconds": 16.5,
       "file": "CAMERA-PLANNED-02-0033.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 66
+      "capture_duration_ms": 62
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1811,7 +1811,7 @@
       "media_time_seconds": 16.5,
       "file": "CAMERA-PLANNED-03-0033.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 48
+      "capture_duration_ms": 51
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1819,8 +1819,8 @@
       "observed_at": "2026-11-09T12:00:16.500Z",
       "media_time_seconds": 16.5,
       "file": "CAMERA-PLANNED-04-0033.png",
-      "sha256": "927e0916658cd48be2b28b703d3fb7da37b7c54152ed654704e9fa2102e55730",
-      "capture_duration_ms": 107
+      "sha256": "28d8920961ba57d2a8ce0a2579ca716c5eaa8b2e9a4662e2f224a85667a1ca04",
+      "capture_duration_ms": 162
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1829,7 +1829,7 @@
       "media_time_seconds": 16.5,
       "file": "CAMERA-PLANNED-05-0033.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 67
+      "capture_duration_ms": 70
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1837,8 +1837,8 @@
       "observed_at": "2026-11-09T12:00:16.500Z",
       "media_time_seconds": 16.5,
       "file": "CAMERA-PLANNED-06-0033.png",
-      "sha256": "8bf9f192d84224902e131819a7f26274f43fc4d97dcd9b331495fbb22d73b55f",
-      "capture_duration_ms": 63
+      "sha256": "df1e16ac7c4467a527b6f51e0d727132dfcce8c0449979dd09ce23b5ebaf574e",
+      "capture_duration_ms": 85
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1846,8 +1846,8 @@
       "observed_at": "2026-11-09T12:00:17.000Z",
       "media_time_seconds": 17,
       "file": "CAMERA-PLANNED-01-0034.png",
-      "sha256": "1e90f3e8aee52100ac3075a6689d8c3c11cabf1c53d95a88f7ab3f6fbd0a4961",
-      "capture_duration_ms": 59
+      "sha256": "9cfa82b6917e373c6771b73c9e47e6be39d55c4633d7a6c664e6949382b9feaf",
+      "capture_duration_ms": 137
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1856,7 +1856,7 @@
       "media_time_seconds": 17,
       "file": "CAMERA-PLANNED-02-0034.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 53
+      "capture_duration_ms": 69
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1865,7 +1865,7 @@
       "media_time_seconds": 17,
       "file": "CAMERA-PLANNED-03-0034.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 47
+      "capture_duration_ms": 60
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1873,8 +1873,8 @@
       "observed_at": "2026-11-09T12:00:17.000Z",
       "media_time_seconds": 17,
       "file": "CAMERA-PLANNED-04-0034.png",
-      "sha256": "9ea9b96da99433e054b54ff8ef403af1f1cb87fd3c9b4b738d0588f1e34ddef9",
-      "capture_duration_ms": 123
+      "sha256": "c48d75a25dd8d2ea574aedb8e01e92ccc2099d544222eb81417064b47ce94bd7",
+      "capture_duration_ms": 158
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1883,7 +1883,7 @@
       "media_time_seconds": 17,
       "file": "CAMERA-PLANNED-05-0034.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 97
+      "capture_duration_ms": 64
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1891,8 +1891,8 @@
       "observed_at": "2026-11-09T12:00:17.000Z",
       "media_time_seconds": 17,
       "file": "CAMERA-PLANNED-06-0034.png",
-      "sha256": "c8d4f9cc15d0b7195e27bb6928beeb95e466e220e9a2836ccd813b5c700882e4",
-      "capture_duration_ms": 90
+      "sha256": "f440026ec931db993eaec345195153596c9de36bba7d7afaa77c637cc859252e",
+      "capture_duration_ms": 72
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -1900,8 +1900,8 @@
       "observed_at": "2026-11-09T12:00:17.500Z",
       "media_time_seconds": 17.5,
       "file": "CAMERA-PLANNED-01-0035.png",
-      "sha256": "a8dd49f4f71a317361e3786e62d16d0d5147fb387e3308951ad6d88100148e21",
-      "capture_duration_ms": 71
+      "sha256": "1cffad7cf99d353eee504a58cc30eae87ccd008b7951949bd98551063353c348",
+      "capture_duration_ms": 68
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -1910,7 +1910,7 @@
       "media_time_seconds": 17.5,
       "file": "CAMERA-PLANNED-02-0035.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 51
+      "capture_duration_ms": 55
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1919,7 +1919,7 @@
       "media_time_seconds": 17.5,
       "file": "CAMERA-PLANNED-03-0035.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 48
+      "capture_duration_ms": 68
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1927,8 +1927,8 @@
       "observed_at": "2026-11-09T12:00:17.500Z",
       "media_time_seconds": 17.5,
       "file": "CAMERA-PLANNED-04-0035.png",
-      "sha256": "a8b85c79d12a1a55b602d50c0e5633705c9503655c84162fb993c4046446db2b",
-      "capture_duration_ms": 115
+      "sha256": "fdb7101fd024271890314a0de36ea2f9576ef306587c98720765a9c8f17bba7e",
+      "capture_duration_ms": 192
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1937,7 +1937,7 @@
       "media_time_seconds": 17.5,
       "file": "CAMERA-PLANNED-05-0035.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 68
+      "capture_duration_ms": 66
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1945,7 +1945,7 @@
       "observed_at": "2026-11-09T12:00:17.500Z",
       "media_time_seconds": 17.5,
       "file": "CAMERA-PLANNED-06-0035.png",
-      "sha256": "68f357cc7a730c42536ff76deeac069be5a11494aebb451ed3534a5b97473838",
+      "sha256": "9286324bf1e2ccfbd977b1167a35e34ceea7fa6f6bc0e1959ffb0585faebaece",
       "capture_duration_ms": 72
     },
     {
@@ -1954,7 +1954,7 @@
       "observed_at": "2026-11-09T12:00:18.000Z",
       "media_time_seconds": 18,
       "file": "CAMERA-PLANNED-01-0036.png",
-      "sha256": "57ba12feb9b7069de6ca7fded6dc51a7a519b084a4d9324f58206279b50680f9",
+      "sha256": "784f1931aabe13e67630ccd4278e22c60618c0bd2683086ba4cd937dcc2e6e36",
       "capture_duration_ms": 69
     },
     {
@@ -1964,7 +1964,7 @@
       "media_time_seconds": 18,
       "file": "CAMERA-PLANNED-02-0036.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 52
+      "capture_duration_ms": 55
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -1973,7 +1973,7 @@
       "media_time_seconds": 18,
       "file": "CAMERA-PLANNED-03-0036.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 52
+      "capture_duration_ms": 53
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -1981,8 +1981,8 @@
       "observed_at": "2026-11-09T12:00:18.000Z",
       "media_time_seconds": 18,
       "file": "CAMERA-PLANNED-04-0036.png",
-      "sha256": "8ba5aee402b8b4940ecfbb0ec2bc8f1c116b0bc2800f424be44a8b1de7765e90",
-      "capture_duration_ms": 105
+      "sha256": "bdbb90132fd6321d59b7f77c8ecb8738846d3fb529c981fd23356c9056732348",
+      "capture_duration_ms": 169
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -1991,7 +1991,7 @@
       "media_time_seconds": 18,
       "file": "CAMERA-PLANNED-05-0036.png",
       "sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
-      "capture_duration_ms": 56
+      "capture_duration_ms": 67
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -1999,8 +1999,8 @@
       "observed_at": "2026-11-09T12:00:18.000Z",
       "media_time_seconds": 18,
       "file": "CAMERA-PLANNED-06-0036.png",
-      "sha256": "8e5f54f7695978f905e5df79f1e62cc65926b5237f538beff9d2d0a39104bc41",
-      "capture_duration_ms": 67
+      "sha256": "c0309f10e2a74121ab148d6432aeecd54d14632412c9cc3edb214865dfa5dfd4",
+      "capture_duration_ms": 80
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -2008,8 +2008,8 @@
       "observed_at": "2026-11-09T12:00:18.500Z",
       "media_time_seconds": 18.5,
       "file": "CAMERA-PLANNED-01-0037.png",
-      "sha256": "424538de9c54c6910bdfa23d501317fd244a1c19bc844c91393fd22067bcc525",
-      "capture_duration_ms": 62
+      "sha256": "2d6bb799fc768b6136ae173131862a8cede46e3b5c76736d0d79c245f286e151",
+      "capture_duration_ms": 68
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -2018,7 +2018,7 @@
       "media_time_seconds": 18.5,
       "file": "CAMERA-PLANNED-02-0037.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 68
+      "capture_duration_ms": 58
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -2027,7 +2027,7 @@
       "media_time_seconds": 18.5,
       "file": "CAMERA-PLANNED-03-0037.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 50
+      "capture_duration_ms": 55
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -2035,8 +2035,8 @@
       "observed_at": "2026-11-09T12:00:18.500Z",
       "media_time_seconds": 18.5,
       "file": "CAMERA-PLANNED-04-0037.png",
-      "sha256": "e292961d08c7fec5802240f59cce696f95f73752ef84269f64c6c6a7a1df3562",
-      "capture_duration_ms": 126
+      "sha256": "279c6d0743f537c9d9a4500ee817ea40e7851b36e7a827543fb6cfce36ac5195",
+      "capture_duration_ms": 184
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -2044,8 +2044,8 @@
       "observed_at": "2026-11-09T12:00:18.500Z",
       "media_time_seconds": 18.5,
       "file": "CAMERA-PLANNED-05-0037.png",
-      "sha256": "4e5723a9e13770e4a4c4af4991a4a7ef201b20f549a641848bdc8fde4e6d06ca",
-      "capture_duration_ms": 74
+      "sha256": "6492b7c4d1f1efecfbf0704479c15cde0afafd455a99eae5bd3d352d6215307b",
+      "capture_duration_ms": 208
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -2053,8 +2053,8 @@
       "observed_at": "2026-11-09T12:00:18.500Z",
       "media_time_seconds": 18.5,
       "file": "CAMERA-PLANNED-06-0037.png",
-      "sha256": "a2652c783e2c557d1c40ca115eb1d1199399d6ee0b840e49df75dbc2e7acc01d",
-      "capture_duration_ms": 74
+      "sha256": "820a882e6aac55fd9ec703661c71886eba99ce1bc31fc0b4eb435fb22752fb15",
+      "capture_duration_ms": 87
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -2062,8 +2062,8 @@
       "observed_at": "2026-11-09T12:00:19.000Z",
       "media_time_seconds": 19,
       "file": "CAMERA-PLANNED-01-0038.png",
-      "sha256": "ee011a7415cb8a82e54ac863dac1a3e4c4f088ac31b3127303258c104a257aaa",
-      "capture_duration_ms": 61
+      "sha256": "23de18c1e26a59a7f0181444a4cb58a5a5c0cc7faedee9c7e9b7771ebf942aa8",
+      "capture_duration_ms": 74
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -2072,7 +2072,7 @@
       "media_time_seconds": 19,
       "file": "CAMERA-PLANNED-02-0038.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 55
+      "capture_duration_ms": 69
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -2081,7 +2081,7 @@
       "media_time_seconds": 19,
       "file": "CAMERA-PLANNED-03-0038.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 47
+      "capture_duration_ms": 61
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -2089,8 +2089,8 @@
       "observed_at": "2026-11-09T12:00:19.000Z",
       "media_time_seconds": 19,
       "file": "CAMERA-PLANNED-04-0038.png",
-      "sha256": "8d28c5ccb38c21ddf247d5df9277d75f3d3022774fe6edd0042185b3639cb5af",
-      "capture_duration_ms": 132
+      "sha256": "eb494f35f62ffc7971447923c402a12fa0e40af29a6b10601e83b7150075beb7",
+      "capture_duration_ms": 208
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -2098,8 +2098,8 @@
       "observed_at": "2026-11-09T12:00:19.000Z",
       "media_time_seconds": 19,
       "file": "CAMERA-PLANNED-05-0038.png",
-      "sha256": "05395de6d0cf29ed088a2a1ffa15ade434e4ec2be0c1b2e2cd7dee5bf2d7ed1b",
-      "capture_duration_ms": 231
+      "sha256": "ed00fd37020342a885012bac9bfe5e400ef57bda13df85f0bab960dc67ae6a33",
+      "capture_duration_ms": 414
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -2107,8 +2107,8 @@
       "observed_at": "2026-11-09T12:00:19.000Z",
       "media_time_seconds": 19,
       "file": "CAMERA-PLANNED-06-0038.png",
-      "sha256": "653b5deb92d8c7755a857b4183c9aec8c2d35e6ae1846d3a574e07aa30764212",
-      "capture_duration_ms": 60
+      "sha256": "4eb841fcc4497d6ca27366c7af984bdf37bc6a5af35be681d701ef42be586eae",
+      "capture_duration_ms": 93
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -2116,8 +2116,8 @@
       "observed_at": "2026-11-09T12:00:19.500Z",
       "media_time_seconds": 19.5,
       "file": "CAMERA-PLANNED-01-0039.png",
-      "sha256": "159341a9a5cc9608a7c1a07cd2d59f7ae36cf93c12a0fdd65b23991f07825d54",
-      "capture_duration_ms": 58
+      "sha256": "e3830a33541de4b13898dc1c75a6e227132b067984162d250b6bbbddce098f9e",
+      "capture_duration_ms": 76
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -2126,7 +2126,7 @@
       "media_time_seconds": 19.5,
       "file": "CAMERA-PLANNED-02-0039.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 55
+      "capture_duration_ms": 67
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -2135,7 +2135,7 @@
       "media_time_seconds": 19.5,
       "file": "CAMERA-PLANNED-03-0039.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 47
+      "capture_duration_ms": 64
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -2143,8 +2143,8 @@
       "observed_at": "2026-11-09T12:00:19.500Z",
       "media_time_seconds": 19.5,
       "file": "CAMERA-PLANNED-04-0039.png",
-      "sha256": "efe86a4f11b5d723dcb0c541ad0cb69a2310aaa666bdb91fa98b0992b75f66c1",
-      "capture_duration_ms": 133
+      "sha256": "c6159a133d7fcf692c2d41026adb055baed4705db9d1f6996e16c1f2850b95d4",
+      "capture_duration_ms": 249
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -2152,8 +2152,8 @@
       "observed_at": "2026-11-09T12:00:19.500Z",
       "media_time_seconds": 19.5,
       "file": "CAMERA-PLANNED-05-0039.png",
-      "sha256": "9f4d863cc91e9884733ce99a3b26eabcd1630588f9d115f9b601f9efb4f91a8e",
-      "capture_duration_ms": 207
+      "sha256": "699c46ffaff1fd183594507c441bbb4c5231b40260091f89ad08910131db2496",
+      "capture_duration_ms": 427
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -2161,8 +2161,8 @@
       "observed_at": "2026-11-09T12:00:19.500Z",
       "media_time_seconds": 19.5,
       "file": "CAMERA-PLANNED-06-0039.png",
-      "sha256": "58a5b4845a0d7413221aa806e3fed6c9e38002ec469c79dcc0da0e0925c08807",
-      "capture_duration_ms": 66
+      "sha256": "97164e07596ea62e0d9345ea19e0231d0879174ff3746a36f92e332878304ab5",
+      "capture_duration_ms": 87
     },
     {
       "camera_id": "CAMERA-PLANNED-01",
@@ -2170,8 +2170,8 @@
       "observed_at": "2026-11-09T12:00:20.000Z",
       "media_time_seconds": 20,
       "file": "CAMERA-PLANNED-01-0040.png",
-      "sha256": "e1d40e5c0d48a9899a9a1c2ae274c1c7cde00e648b705c4695ed127a17049a34",
-      "capture_duration_ms": 60
+      "sha256": "d62045843742755265ddcba171aa83f903b95f3df5ad215f39222cb3a073a3fe",
+      "capture_duration_ms": 87
     },
     {
       "camera_id": "CAMERA-PLANNED-02",
@@ -2180,7 +2180,7 @@
       "media_time_seconds": 20,
       "file": "CAMERA-PLANNED-02-0040.png",
       "sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
-      "capture_duration_ms": 51
+      "capture_duration_ms": 68
     },
     {
       "camera_id": "CAMERA-PLANNED-03",
@@ -2189,7 +2189,7 @@
       "media_time_seconds": 20,
       "file": "CAMERA-PLANNED-03-0040.png",
       "sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
-      "capture_duration_ms": 48
+      "capture_duration_ms": 82
     },
     {
       "camera_id": "CAMERA-PLANNED-04",
@@ -2197,8 +2197,8 @@
       "observed_at": "2026-11-09T12:00:20.000Z",
       "media_time_seconds": 20,
       "file": "CAMERA-PLANNED-04-0040.png",
-      "sha256": "9ad20ae7b07103638cbb042d6f4770108cc521c7ad3ff2d78d8b554b3a542176",
-      "capture_duration_ms": 154
+      "sha256": "5770dab96350c4a9c6f838608f960b3bdfb733db1c60efc45b53bc67e831e50d",
+      "capture_duration_ms": 212
     },
     {
       "camera_id": "CAMERA-PLANNED-05",
@@ -2206,8 +2206,8 @@
       "observed_at": "2026-11-09T12:00:20.000Z",
       "media_time_seconds": 20,
       "file": "CAMERA-PLANNED-05-0040.png",
-      "sha256": "8124466aeb94929e71e84f9aea34d9e8fc47ccb22ce97838ccd424dc75067bf8",
-      "capture_duration_ms": 190
+      "sha256": "a2dac3f4f8c9716b35ba2e622aa1c0453e30005e3231b4f64c094a627e6535f5",
+      "capture_duration_ms": 351
     },
     {
       "camera_id": "CAMERA-PLANNED-06",
@@ -2215,8 +2215,8 @@
       "observed_at": "2026-11-09T12:00:20.000Z",
       "media_time_seconds": 20,
       "file": "CAMERA-PLANNED-06-0040.png",
-      "sha256": "15ea57e955f7fd18284a7f7e1d6a3da64a9b129592fbfa6cc81c822e92d34c54",
-      "capture_duration_ms": 63
+      "sha256": "bfc02d8078575f87f8ddb6979257dd483c904e7ece45457aa00057f2ad73655f",
+      "capture_duration_ms": 84
     }
   ]
 }

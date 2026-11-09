@@ -452,13 +452,14 @@
       }
     },
     "dummy": {
-      "source": "CesiumMan; Cesium2017, CC-BY4.0",
-      "native_height": 1.5065499544143677,
+      "source": "Microsoft Rocketbox Male_Adult_01; existing P1 asset, MIT; temporary validation only",
+      "native_height": 1.9763119797866149,
       "scaled_height_native": 1.65,
       "animation": "bind pose translated; no final characters"
     },
     "profile": "Native PBR color/depth cache, no CameraFrame SSAO/bloom or dynamic shadows. Original viewer unchanged outside opt-in capture. Static architecture and depth occlusion retained."
   },
   "truth_separate_from_perception": true,
-  "short_smoke": false
+  "short_smoke": false,
+  "visual_inspection": "Full246-frame human Rocketbox fixture revalidated; upright scaled body, all six sources; camera05 crop and06 low detail remain documented."
 }
