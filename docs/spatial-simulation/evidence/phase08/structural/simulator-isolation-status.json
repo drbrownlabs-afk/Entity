@@ -1,0 +1,15 @@
+{
+  "stage": "8.3 simulator behavior preparation only",
+  "script": "simulation/spatial-office/simulator-behaviors.json",
+  "avatars_bound": false,
+  "actions_executed": false,
+  "observations_emitted": false,
+  "Core_ground_truth_bridge": false,
+  "MOT_MTMC_ReID_implemented": false,
+  "actual_runtime_ground_truth_isolation_validated": false,
+  "source_ids_in_core_configuration": false,
+  "planned_scene_sources_verified": true,
+  "population_unchanged": 12,
+  "named_visitor": "existing PERSON-LOGICAL-12 renamed Daniel from operator scenario, no new identity",
+  "meeting_reference": "16:00 local time; physical timezone unverified; no arrival recorded"
+}

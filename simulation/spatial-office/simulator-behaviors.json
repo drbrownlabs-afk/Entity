@@ -1,0 +1,143 @@
+{
+  "id": "simulator-behavior-meeting-1600",
+  "status": "declarative-script-only; no avatars bound or executed",
+  "reference": "operator addendum8.3",
+  "actors": [
+    {
+      "id": "simActor:visitor-meeting",
+      "internal_label": "Daniel",
+      "avatar_binding": null
+    },
+    {
+      "id": "simActor:host",
+      "internal_label": "Carlos",
+      "avatar_binding": null
+    },
+    {
+      "id": "simActor:others",
+      "internal_label": "other synthetic actors",
+      "avatar_binding": null
+    }
+  ],
+  "presentation": {
+    "render_name_tags": false,
+    "render_identity_color_codes": false
+  },
+  "triggers": [
+    {
+      "source": "simulator-local-clock",
+      "local_time": "15:50",
+      "sequence": "visitor-arrival"
+    },
+    {
+      "source": "manual-simulator-only",
+      "event": "release-from-waiting",
+      "sequence": "visitor-meeting"
+    }
+  ],
+  "sequences": {
+    "visitor-arrival": [
+      {
+        "action": "require-avatar-binding",
+        "actor": "simActor:visitor-meeting"
+      },
+      {
+        "action": "navigate",
+        "actor": "simActor:visitor-meeting",
+        "destination": {
+          "scene_route_start": "reception"
+        },
+        "planner": "existing WalkNavigator, live collisions and doors; no teleport"
+      },
+      {
+        "action": "navigate",
+        "actor": "simActor:visitor-meeting",
+        "destination": {
+          "scene_object": "sim:p2:reception-kiosk"
+        }
+      },
+      {
+        "action": "idle",
+        "actor": "simActor:visitor-meeting",
+        "meaning": "visual wait only; no ENTITY interaction"
+      },
+      {
+        "action": "navigate",
+        "actor": "simActor:visitor-meeting",
+        "destination": {
+          "scene_environment": "WAITING-AREA"
+        }
+      },
+      {
+        "action": "wait-local-trigger",
+        "actor": "simActor:visitor-meeting",
+        "trigger": "release-from-waiting"
+      }
+    ],
+    "visitor-meeting": [
+      {
+        "action": "navigate",
+        "actor": "simActor:visitor-meeting",
+        "destination": {
+          "scene_environment": "MEETING-AREA-01"
+        },
+        "reason": "OfficeA individual access not defined; use existing meeting room"
+      },
+      {
+        "action": "idle",
+        "actor": "simActor:visitor-meeting",
+        "meaning": "visual meeting scene only; no Core meeting.start or arrival event"
+      }
+    ],
+    "other-actors": [
+      {
+        "action": "require-avatar-binding",
+        "actor": "simActor:others"
+      },
+      {
+        "action": "navigate",
+        "actor": "simActor:others",
+        "destination": {
+          "scene_environment": "D"
+        }
+      },
+      {
+        "action": "idle",
+        "actor": "simActor:others"
+      },
+      {
+        "action": "navigate",
+        "actor": "simActor:others",
+        "destination": {
+          "scene_environment": "sim:LOUNGE"
+        }
+      }
+    ]
+  },
+  "output_channels": [],
+  "core_bridge": {
+    "implemented": false,
+    "allowed": false,
+    "reason": "Only future perception or legitimate kiosk/app interfaces may produce ENTITY observations; scripts never do"
+  },
+  "ground_truth": {
+    "generated": false,
+    "required_storage": "isolated simulator evaluator, not backend or public scene bundle",
+    "isolation_enforcement": "not instantiated or validated; requires separate runtime/storage when actors/perception are implemented"
+  },
+  "perception": {
+    "implemented": false,
+    "next_stage_only": [
+      "virtual camera image capture",
+      "per-camera MOT",
+      "cross-camera MTMC/ReID",
+      "identity confirmation via legitimate evidence"
+    ],
+    "metrics_planned": [
+      "ID switches",
+      "duplicates",
+      "track loss",
+      "cross-camera recovery"
+    ]
+  }
+}

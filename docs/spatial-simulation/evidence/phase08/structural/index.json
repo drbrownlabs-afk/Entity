@@ -1626,7 +1626,7 @@
       "space_root": null,
       "declaration": {
         "population_group": "visitors",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": null
       },
       "catalogue": {}
@@ -1647,7 +1647,7 @@
       "space_root": null,
       "declaration": {
         "population_group": "regulars",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": null
       },
       "catalogue": {}
@@ -1669,7 +1669,7 @@
       "space_root": null,
       "declaration": {
         "population_group": "staff",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": null
       },
       "catalogue": {}
@@ -1691,7 +1691,7 @@
       "space_root": null,
       "declaration": {
         "population_group": "entity",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": "ORG-ENTITY"
       },
       "catalogue": {}
@@ -1713,7 +1713,7 @@
       "space_root": null,
       "declaration": {
         "population_group": "staff",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": null
       },
       "catalogue": {}
@@ -1735,7 +1735,7 @@
       "space_root": null,
       "declaration": {
         "population_group": "staff",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": null
       },
       "catalogue": {}
@@ -1756,7 +1756,7 @@
       "space_root": null,
       "declaration": {
         "population_group": "entity",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": "ORG-ENTITY"
       },
       "catalogue": {}
@@ -1777,7 +1777,7 @@
       "space_root": null,
       "declaration": {
         "population_group": "inmerso",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": "ORG-INMERSO"
       },
       "catalogue": {}
@@ -1798,7 +1798,7 @@
       "space_root": null,
       "declaration": {
         "population_group": "inmerso",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": "ORG-INMERSO"
       },
       "catalogue": {}
@@ -1819,7 +1819,7 @@
       "space_root": null,
       "declaration": {
         "population_group": "regulars",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": null
       },
       "catalogue": {}
@@ -1840,7 +1840,7 @@
       "space_root": null,
       "declaration": {
         "population_group": "regulars",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": null
       },
       "catalogue": {}
@@ -1849,7 +1849,7 @@
       "id": "PERSON-LOGICAL-12",
       "core_id": "92a0ad1d-c254-5b06-b631-8232716568a2",
       "type": "Person",
-      "name": "Visitante de reuni\u00f3n sint\u00e9tico",
+      "name": "Daniel",
       "parent": null,
       "registry": "site",
       "spatial": null,
@@ -1857,11 +1857,11 @@
       "role": [
         "visitor"
       ],
-      "identity_status": "synthetic-provisional",
+      "identity_status": "operator-named-logical-person",
       "space_root": null,
       "declaration": {
         "population_group": "visitors",
-        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "registration_source": "operator addendum8.2/8.3; logical identities, not observed people",
         "organization_id": null
       },
       "catalogue": {}

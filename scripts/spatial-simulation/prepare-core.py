@@ -70,9 +70,9 @@ people=[
  (9,'Integrante Inmerso provisional2','inmerso',['member'],'ORG-INMERSO'),
  (10,'Habitual mensual sintético','regulars',['member'],None),
  (11,'Habitual por horas sintético','regulars',['member'],None),
- (12,'Visitante de reunión sintético','visitors',['visitor'],None)]
+ (12,'Daniel','visitors',['visitor'],None)]
 for number,name,group,roles,organization in people:
- key=f'PERSON-LOGICAL-{number:02}';attrs={'name':name,'population_group':group,'roles':roles,'organization_id':organization,'identity_status':'operator-named-logical-person'if name in ['Carlos','Santiago']else'synthetic-provisional','real_person_verified':False,'operational_state':'unknown','position':None,'avatar_id':None,'parent_resource':None,'registry_id':'site','demo_population':True,'registration_source':'operator addendum8.2; logical identities, not observed people'}
+ key=f'PERSON-LOGICAL-{number:02}';attrs={'name':name,'population_group':group,'roles':roles,'organization_id':organization,'identity_status':'operator-named-logical-person'if name in ['Carlos','Santiago','Daniel']else'synthetic-provisional','real_person_verified':False,'operational_state':'unknown','position':None,'avatar_id':None,'parent_resource':None,'registry_id':'site','demo_population':True,'registration_source':'operator addendum8.2/8.3; logical identities, not observed people'}
  previous=next((r for r in resources if r['id']==key),None)
  if previous:previous['attributes']=attrs
  else:resources.append({'id':key,'kind':'Person','attributes':attrs})
@@ -97,7 +97,7 @@ logical('INVOICE-MONTHLY','Invoice',person_id='PERSON-LOGICAL-10',payment_id='PA
 logical('MEMBERSHIP-MONTHLY-RENEWAL-PLAN','Membership',person_id='PERSON-LOGICAL-10',plan_id='PLAN-MONTHLY',renewal_id='RENEWAL-MONTHLY',declared_state='planned-after-confirmed-payment',valid_from=None,valid_until=None,active=False)
 logical('VISIT-COMMERCIAL-PLAN','VisitPlan',person_id='PERSON-LOGICAL-01',service_id='RECEPTION',purpose='evaluate coworking membership',declared_state='planned-no-arrival',arrival_event=None,membership_created=False)
 logical('OPPORTUNITY-COMMERCIAL','SalesOpportunity',person_id='PERSON-LOGICAL-01',visit_plan_id='VISIT-COMMERCIAL-PLAN',declared_state='synthetic-prospect; not converted')
-logical('MEETING-VISITOR-PLAN','MeetingPlan',person_id='PERSON-LOGICAL-12',host_id='PERSON-LOGICAL-04',organization_id='ORG-ENTITY',resource_id='MEETING-AREA-01',declared_state='planned; not booked',office_A_authorization_defined=False,arrival_event=None,starts_at=None,ends_at=None)
+logical('MEETING-VISITOR-PLAN','MeetingPlan',person_id='PERSON-LOGICAL-12',host_id='PERSON-LOGICAL-04',organization_id='ORG-ENTITY',resource_id='MEETING-AREA-01',declared_state='planned; not booked',office_A_authorization_defined=False,arrival_event=None,starts_at=None,ends_at=None,planned_local_time='16:00',time_source='operator scenario8.3; physical timezone not established')
 logical('INVITATION-VISITOR-PLAN','InvitationPlan',person_id='PERSON-LOGICAL-12',meeting_plan_id='MEETING-VISITOR-PLAN',host_id='PERSON-LOGICAL-04',declared_state='planned-not-delivered',arrival_event=None)
 logical('VISIT-MEETING-PLAN','VisitPlan',person_id='PERSON-LOGICAL-12',meeting_plan_id='MEETING-VISITOR-PLAN',service_id='RECEPTION',declared_state='planned-no-arrival',arrival_event=None)
 logical('SCENARIO-RENEWAL-MONTHLY','Scenario',person_id='PERSON-LOGICAL-10',renewal_id='RENEWAL-MONTHLY',declared_state='future-test-definition',expected_sequence=['membership.expired','renewal.requested','charge.created','payment.confirmed','invoice.simulated-issued','membership.renewed'],invariant='No paid renewal, issued invoice or active renewal before payment confirmation; no flow executed here')

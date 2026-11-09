@@ -69,3 +69,14 @@ class StructuralTests(unittest.TestCase):
   self.assertFalse(items['PAYMENT-MONTHLY']['confirmed']);self.assertFalse(items['RENEWAL-MONTHLY']['paid']);self.assertFalse(items['INVOICE-MONTHLY']['issued']);self.assertFalse(items['INVOICE-MONTHLY']['sri_submitted'])
   self.assertIsNone(items['MEMBERSHIP-MONTHLY-RENEWAL-PLAN']['valid_from']);self.assertEqual(items['HOUR-PASS-01']['consumed_hours'],0)
   self.assertEqual(items['MEETING-VISITOR-PLAN']['resource_id'],'MEETING-AREA-01');self.assertIsNone(items['VISIT-MEETING-PLAN']['arrival_event']);self.assertFalse(items['VISIT-COMMERCIAL-PLAN']['membership_created'])
+
+ def test_simulator_script_is_unbound_and_not_an_ENTITY_input(self):
+  script=json.loads((ROOT/'simulation/spatial-office/simulator-behaviors.json').read_text());self.assertFalse(script['core_bridge']['implemented']);self.assertFalse(script['core_bridge']['allowed']);self.assertEqual(script['output_channels'],[]);self.assertFalse(script['ground_truth']['generated']);self.assertFalse(script['perception']['implemented'])
+  for actor in script['actors']:self.assertIsNone(actor['avatar_binding']);self.assertNotIn(actor['id'],json.dumps(self.cfg))
+  scene=json.loads((ROOT/'apps/spatial-simulation/public/model/scene.json').read_text());ids={r['id']for r in scene['records']};envs={r['environment_id']for r in scene['records']}
+  for actions in script['sequences'].values():
+   for action in actions:
+    d=action.get('destination',{})
+    if 'scene_object'in d:self.assertIn(d['scene_object'],ids)
+    if 'scene_environment'in d:self.assertIn(d['scene_environment'],envs)
+  items=self.read()['entities'];self.assertEqual(items['PERSON-LOGICAL-12']['name'],'Daniel');self.assertEqual(items['MEETING-VISITOR-PLAN']['planned_local_time'],'16:00');self.assertIsNone(items['VISIT-MEETING-PLAN']['arrival_event'])

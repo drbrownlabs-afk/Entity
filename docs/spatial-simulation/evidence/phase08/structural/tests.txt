@@ -3,10 +3,11 @@ test_metadata_reconciliation_preserves_prior_fields_and_identity (test_p2_struct
 test_persistence_and_no_operational_facts (test_p2_structural.StructuralTests.test_persistence_and_no_operational_facts) ... ok
 test_person_registration_is_not_permanent_physical_containment (test_p2_structural.StructuralTests.test_person_registration_is_not_permanent_physical_containment) ... ok
 test_preexisting_unindexed_catalog_entry_is_not_withdrawn (test_p2_structural.StructuralTests.test_preexisting_unindexed_catalog_entry_is_not_withdrawn) ... ok
+test_simulator_script_is_unbound_and_not_an_ENTITY_input (test_p2_structural.StructuralTests.test_simulator_script_is_unbound_and_not_an_ENTITY_input) ... ok
 test_spatial_integrity_and_verified_connections_only (test_p2_structural.StructuralTests.test_spatial_integrity_and_verified_connections_only) ... ok
 test_twelve_person_population_organizations_and_declared_scenarios (test_p2_structural.StructuralTests.test_twelve_person_population_organizations_and_declared_scenarios) ... ok
 
 ----------------------------------------------------------------------
-Ran 7 tests in 2.589s
+Ran 8 tests in 3.040s
 
 OK
