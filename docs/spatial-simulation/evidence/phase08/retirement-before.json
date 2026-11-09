@@ -1,0 +1,27 @@
+{
+  "published_branch_commit": "0b818bf46277b8bc8b8fb65d00e5174152b937d5",
+  "root_is_mall": true,
+  "root_files": [
+    ".nojekyll",
+    "assets",
+    "avatars",
+    "deployment.json",
+    "index.html",
+    "kiosk.html",
+    "office.html",
+    "office",
+    "personal.html",
+    "spatial-simulation"
+  ],
+  "old_publishers": [
+    ".github/workflows/pages.yml",
+    ".github/workflows/spatial-pages.yml"
+  ],
+  "retained_shared_sources": [
+    "services/entity-api",
+    "apps/web/src/office",
+    "apps/web/src/office/capability-form.js",
+    "apps/web/src/office/api-config.js",
+    "worlds/shopping-mall (historical fixtures, not deployed)"
+  ]
+}

@@ -6,8 +6,10 @@ on:
   workflow_dispatch:
 permissions:
   contents: write
+  pages: write
+  actions: write
 concurrency:
-  group: entity-coworking-pages
+  group: entity-pages
   cancel-in-progress: true
 jobs:
   publish:
@@ -32,25 +34,40 @@ jobs:
           npm ci
           npm test
           npm run build -- --base=/Entity/spatial-simulation/
-      - name: Publish subdirectory without replacing existing website
+      - name: Disable retired publishers at repository level
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method PUT repos/${{ github.repository }}/actions/workflows/pages.yml/disable
+          gh api --method PUT repos/${{ github.repository }}/actions/workflows/spatial-pages.yml/disable
+      - name: Publish coworking only, retiring old compiled demonstrations
         working-directory: published
         run: |
+          git rm -r --ignore-unmatch .
           mkdir -p spatial-simulation
           rsync -a --delete ../source/apps/spatial-simulation/dist/ spatial-simulation/
           touch .nojekyll
           test -s spatial-simulation/index.html
           git config user.name "ENTITY Pages"
           git config user.email "deployment@users.noreply.github.com"
-          git add spatial-simulation .nojekyll
+          cp ../source/apps/web/index.html index.html
+          cp index.html 404.html
+          SOURCE_SHA="${{ github.sha }}" node --input-type=module -e 'import fs from "node:fs";fs.writeFileSync("deployment.json",JSON.stringify({source_commit:process.env.SOURCE_SHA,mode:"coworking-only",active_route:"/Entity/spatial-simulation/"})+"\n")'
+          cp deployment.json spatial-simulation/deployment.json
+          git add --all
           if ! git diff --cached --quiet; then
             git commit -m "Publish coworking"
             git pull --rebase origin gh-pages
             git push origin HEAD:gh-pages
           fi
+      - name: Request Pages build
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST repos/${{ github.repository }}/pages/builds
       - name: Verify public route
         run: |
           for i in $(seq 1 18); do
-            if curl -fsSL https://drbrownlabs-afk.github.io/Entity/spatial-simulation/ -o /tmp/coworking.html && grep -q ENTITY /tmp/coworking.html; then exit 0; fi
+            if curl -fsSL https://drbrownlabs-afk.github.io/Entity/deployment.json -o /tmp/deployment.json && SOURCE_SHA='${{ github.sha }}' node -e 'let d=require("/tmp/deployment.json");if(d.source_commit!==process.env.SOURCE_SHA||d.mode!=="coworking-only")process.exit(1)'; then curl -fsSL https://drbrownlabs-afk.github.io/Entity/spatial-simulation/ -o /tmp/coworking.html; ! grep -Eiq 'Mall Lab|ENTITY Experience|shopping-mall' /tmp/coworking.html; exit $?; fi
             sleep 10
           done
           exit 1

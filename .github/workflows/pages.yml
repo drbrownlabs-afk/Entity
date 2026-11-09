@@ -1,81 +1,10 @@
-name: Publish ENTITY Experience
+name: Retired publisher — coworking publication is centralized
 on:
-  push:
-    branches: [main, codex/phase-07-experience, codex/phase-09-autonomous-plan]
-    paths: ["apps/web/**", "worlds/shopping-mall/**", "worlds/synthetic-office/**", ".github/workflows/pages.yml"]
   workflow_dispatch:
 permissions:
   contents: read
-concurrency:
-  group: entity-pages
-  cancel-in-progress: true
 jobs:
-  publish:
+  retired:
     runs-on: ubuntu-24.04
-    permissions:
-      contents: write
-      pages: write
     steps:
-      - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
-      - uses: actions/setup-node@v6
-        with:
-          node-version: "24"
-          cache: npm
-          cache-dependency-path: apps/web/package-lock.json
-      - run: npm --prefix apps/web ci
-      - run: npm --prefix apps/web test
-      - run: npm --prefix apps/web run build
-      - name: Publish only static build to gh-pages
-        env:
-          SOURCE_SHA: ${{ github.sha }}
-        run: |
-          touch apps/web/dist/.nojekyll
-          printf '{"source_commit":"%s","mode":"standalone-static"}\n' "$SOURCE_SHA" > apps/web/dist/deployment.json
-          git fetch origin gh-pages:refs/remotes/origin/gh-pages
-          export GIT_INDEX_FILE="${RUNNER_TEMP}/pages-index"
-          git --work-tree="$PWD/apps/web/dist" add --all
-          tree=$(git write-tree)
-          parent=$(git rev-parse refs/remotes/origin/gh-pages)
-          commit=$(git -c user.name="ENTITY Pages" -c user.email="deployment@users.noreply.github.com" commit-tree "$tree" -p "$parent" -m "Publish ENTITY Experience $SOURCE_SHA")
-          git push origin "$commit:refs/heads/gh-pages"
-      - name: Request existing Pages build through authorized runner API
-        env:
-          GH_TOKEN: ${{ github.token }}
-          REPOSITORY: ${{ github.repository }}
-        run: |
-          gh api --method POST "repos/$REPOSITORY/pages/builds" || echo "::notice::Explicit Pages build request unavailable; public verification will require the actual deployed commit."
-      - name: Install browser for actual public URL verification
-        working-directory: apps/web
-        run: npx playwright install --with-deps chromium
-      - name: Verify public site without Python or Core
-        working-directory: apps/web
-        env:
-          SITE_URL: https://drbrownlabs-afk.github.io/Entity/
-          SOURCE_SHA: ${{ github.sha }}
-        run: node scripts/check-public.mjs "$SITE_URL" "$SOURCE_SHA"
-      - name: Verify native Dollhouse, GPU selection and touch navigation at the public URL
-        env:
-          OFFICE_WEB: https://drbrownlabs-afk.github.io/Entity
-        run: node scripts/phase09/verify-original-office.mjs
-      - name: Persist public verification evidence
-        if: always()
-        uses: actions/upload-artifact@v6
-        with:
-          name: pages-verification
-          include-hidden-files: true
-          path: |
-            .runtime/pages-*.png
-            .runtime/pages-verification.json
-            docs/evidence/phase09/native-interface.json
-            docs/evidence/phase09/native-*.png
-            docs/evidence/phase09/original-dollhouse-*.png
-
-      - name: Publish factual public Office verification report
-        if: always()
-        run: |
-          if node --input-type=module -e 'import fs from "node:fs";const p="docs/evidence/phase09/native-interface.json";if(!fs.existsSync(p))process.exit(1);const r=JSON.parse(fs.readFileSync(p));if(!r.run_url?.endsWith("/"+process.env.GITHUB_RUN_ID)||r.tested_commit!==process.env.GITHUB_SHA||r.public_url!=="https://drbrownlabs-afk.github.io/Entity")process.exit(1)'; then
-            cp docs/evidence/phase09/native-interface.json docs/evidence/phase09/native-pages-interface.json
-            python scripts/phase09/publish-evidence.py 'docs/evidence/phase09/native-pages-interface.json'
-          fi
+      - run: echo "Retired. Only publish-coworking.yml may deploy the P2 demonstration."
