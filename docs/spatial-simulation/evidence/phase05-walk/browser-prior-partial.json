@@ -1,0 +1,113 @@
+{
+  "url": "http://127.0.0.1:5181/Entity/spatial-simulation/",
+  "started_at": "2026-11-09T03:15:28.535Z",
+  "checks": [
+    {
+      "name": "desktop-all-source-records-loaded",
+      "passed": true
+    },
+    {
+      "name": "desktop-floor-input-starts-route",
+      "passed": true,
+      "detail": {
+        "x": 497.97875372117227,
+        "y": 365.3482793929642,
+        "goal": [
+          -2.5,
+          -1.85,
+          -2
+        ]
+      }
+    },
+    {
+      "name": "desktop-arrival-with-valid-floor-and-clearance",
+      "passed": true,
+      "detail": {
+        "before": [
+          -2.2,
+          -1.85,
+          0.8
+        ],
+        "p": [
+          -2.4996984907989073,
+          -1.85,
+          -1.9971866094052955
+        ],
+        "allSafe": true
+      }
+    },
+    {
+      "name": "desktop-drag-looks-without-destination",
+      "passed": true
+    },
+    {
+      "name": "desktop-no-joystick-or-arrow-controls",
+      "passed": true
+    },
+    {
+      "name": "desktop-TV-interaction-preserved",
+      "passed": true
+    },
+    {
+      "name": "desktop-door-control-preserved",
+      "passed": true
+    },
+    {
+      "name": "desktop-individual-light-off-preserved",
+      "passed": true
+    },
+    {
+      "name": "desktop-general-view-preserved",
+      "passed": true
+    },
+    {
+      "name": "touch-emulation-all-source-records-loaded",
+      "passed": true
+    },
+    {
+      "name": "touch-emulation-floor-input-starts-route",
+      "passed": true,
+      "detail": {
+        "x": 137.22903640922289,
+        "y": 405.7288786942918,
+        "goal": [
+          -2.5,
+          -1.85,
+          -2
+        ]
+      }
+    },
+    {
+      "name": "touch-emulation-arrival-with-valid-floor-and-clearance",
+      "passed": true,
+      "detail": {
+        "before": [
+          -2.2,
+          -1.85,
+          0.8
+        ],
+        "p": [
+          -2.4996985270633947,
+          -1.85,
+          -1.997186449124477
+        ],
+        "allSafe": true
+      }
+    },
+    {
+      "name": "touch-emulation-drag-looks-without-destination",
+      "passed": true
+    },
+    {
+      "name": "touch-emulation-no-joystick-or-arrow-controls",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "physical_mobile_tested": false,
+  "animation_loop_disabled_for_functional_test": true,
+  "visual_quality_validated": false,
+  "functional_passed": false,
+  "failure": "page.waitForFunction: Timeout 5000ms exceeded.\n    at /workspace/Entity/apps/spatial-simulation/tests/walk-browser.mjs:34:153",
+  "finished_at": "2026-11-09T03:15:54.296Z"
+}

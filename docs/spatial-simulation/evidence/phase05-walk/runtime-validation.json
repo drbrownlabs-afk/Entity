@@ -1,0 +1,28 @@
+{
+  "unit_tests": {
+    "passed": 11,
+    "failed": 0,
+    "approved_routes": 21,
+    "command": "npm --prefix apps/spatial-simulation test"
+  },
+  "build": {
+    "passed": true,
+    "base": "/Entity/spatial-simulation/",
+    "unchanged_model": true
+  },
+  "protected_files_unchanged": true,
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "operator_approved": false,
+  "phase06_started": false,
+  "browser_quality_evidence": false,
+  "publication_verified": false,
+  "browser": {
+    "passed": true,
+    "checks": 21,
+    "desktop": true,
+    "native_touch_emulation": true,
+    "physical_mobile": false,
+    "animation_loop_disabled_for_functional_test": true,
+    "visual_quality_validated": false
+  }
+}

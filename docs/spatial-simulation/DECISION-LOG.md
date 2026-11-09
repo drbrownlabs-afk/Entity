@@ -30,3 +30,7 @@ El snapshot histórico original no se reescribe: una revisión complementaria ad
 ## 2026-11-08 — acabado arquitectónico y corrección de asientos
 
 La orden explícita actual retira las sillas blancas de visita, aunque el plan histórico las etiquetaba recepción: nuevas instancias de sofá WAITING-AREA, mostrador/kiosco conservados, anclas históricas intactas. Se autoriza refinamiento visual dentro de la arquitectura/distribución actual; archivo derivado independiente para conservar la Fase04 anterior. Reutilización de seis modelos oficiales Khronos (CC0/CC BY4) en lugar de muebles sociales simplificados; fuentes/atribución fijadas. Se separan referencias JPG de renders reales y HDRI genérico de geografía del edificio. No hay nueva decisión de Core ni autorización PlayCanvas; la aceptación visual premium corresponde al operador.
+
+## 2026-11-09 — Walk Mode y revisión web antes de Fase06
+
+La orden más reciente del operador cancela pendientes 04.5 y exige aprobación personal de 05 en navegador antes de 06. Se reutiliza PathFinding.js A* como adaptador al suelo y colisiones ya exportados, manteniendo IDs y controladores; no se crea otro visor ni un motor de navegación genérico nuevo. Publicación mediante artefacto Pages desde la rama exclusiva, incorporando una copia de los recursos web publicados para preservar el producto anterior. La protección del entorno existente se respeta: no se cambia de rama/entorno para eludirla. Pruebas funcionales SW y evidencia visual se distinguen; no se interpreta emulación como rendimiento móvil real.

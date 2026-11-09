@@ -64,3 +64,11 @@ Maestro R1 actual: e1dc0225fd957c55d38c06ca785667b70d50e544744d68d0477796aac0058
 ### Candidato con jardín vertical completo
 
 Última petición: cobertura vegetal continua como el Gaussian. Vista original front-return.jpg inspeccionada; fuente intacta. Maestro R1 ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f, 678 PASS / 21 rutas, 2170 grupos vegetales pequeños instanciados, 71 luminarias/17 circuitos y 135 piezas de vidrio. [Galería](REVIEW-PHASE04-REVISION.md) y [plano](evidence/phase04-revision/layout-with-ids.svg). Borradores actuales disponibles; renders de revisión en ejecución. No aceptación humana ni inicio de PlayCanvas.
+
+## Orden vigente del operador — 2026-11-09
+
+Fase04.5: trabajos pendientes cancelados por prioridad funcional; no aprobada. Fase05: Walk Mode de clic/toque implementado, pruebas Node PASS y navegador en validación. Publicación desde codex/spatial-simulation bloqueada por política del entorno GitHub Pages (run42554503726); no afirmar URL pública funcional. Fase06 BLOQUEADA hasta revisión y aprobación personal de Fase05 en navegador; esta orden posterior sustituye la autorización previa 06→07 para esta tarea.
+
+### Resultado funcional final — 2026-11-09
+
+Once pruebas Node PASS, incluidas 21 rutas aprobadas y activación táctil sin duplicados/scroll/teclado/inputs. Build Vite PASS. Chromium: **21 comprobaciones PASS**, ratón y toque nativo en viewport móvil; rutas, mirada libre, TV, puertas, luces y vista general; sin errores de navegador ni recursos fallidos. Render desactivado solamente en el harness funcional, sin acreditar calidad visual o FPS móvil físico. Evidencias en `evidence/phase05-walk/`. GitHub Pages permanece BLOQUEADO por protección del entorno, sin URL nueva verificada. Requiere permitir `codex/spatial-simulation` en `github-pages`; no se modificó main/gh-pages. Fase05 EN REVISIÓN, no aprobada; Fase06 bloqueada.

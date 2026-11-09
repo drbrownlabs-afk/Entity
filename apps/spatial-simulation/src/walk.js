@@ -50,3 +50,14 @@ export class ClickGesture {
  up(e){const d=this.drag;this.pointers.delete(e.pointerId);if(!d||d.id!==e.pointerId)return false;this.drag=null;return !d.moved&&!d.cancelled&&d.button===0&&Math.hypot(e.clientX-d.x,e.clientY-d.y)<=7;}
  cancel(e){this.pointers.delete(e.pointerId);if(this.drag)this.drag.cancelled=true;if(this.drag?.id===e.pointerId)this.drag=null;}
 }
+// Explicit touch activation avoids relying on delayed compatibility mouse clicks inside
+// scrollable fichas. Preserve native keyboard/mouse clicks and suppress only the duplicate
+// trusted touch click after an already handled pointer tap. Scrolling/multitouch cancels taps.
+export function installTouchButtons(root=document){
+ const gesture=new ClickGesture();let start=null,lastTouch=-Infinity;
+ root.addEventListener('pointerdown',e=>{if(e.pointerType!=='touch')return;gesture.down(e);start=e.target.closest?.('button')||null;},true);
+ root.addEventListener('pointermove',e=>{if(e.pointerType==='touch')gesture.move(e);},true);
+ root.addEventListener('pointercancel',e=>{if(e.pointerType==='touch')gesture.cancel(e);},true);
+ root.addEventListener('pointerup',e=>{if(e.pointerType!=='touch')return;const tap=gesture.up(e),button=e.target.closest?.('button');if(tap&&button&&button===start&&!button.disabled){e.preventDefault();lastTouch=performance.now();button.click();}start=null;},true);
+ root.addEventListener('click',e=>{if(e.isTrusted&&e.pointerType==='touch'&&e.target.closest?.('button')&&performance.now()-lastTouch<700){e.preventDefault();e.stopImmediatePropagation();}},true);
+}

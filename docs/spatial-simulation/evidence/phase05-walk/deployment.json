@@ -1,0 +1,14 @@
+{
+  "source_commit": "2e0b6ffc5632b85596edbc246768ee70a3eba377",
+  "source_branch": "codex/spatial-simulation",
+  "run_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42554503726",
+  "run_result": "failure",
+  "deployment_status": "BLOCKED_BY_EXISTING_ENVIRONMENT_PROTECTION",
+  "error": "Branch \"codex/spatial-simulation\" is not allowed to deploy to github-pages due to environment protection rules.",
+  "public_url_requested": "https://drbrownlabs-afk.github.io/Entity/spatial-simulation/",
+  "public_verified": false,
+  "direct_network_check": "Cloud proxy denies github.io and api.github.com with HTTP 403; github.com run HTML was read successfully.",
+  "main_modified": false,
+  "publication_branch_modified": false,
+  "phase06_started": false
+}

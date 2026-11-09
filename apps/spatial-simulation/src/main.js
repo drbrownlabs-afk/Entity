@@ -1,14 +1,15 @@
 import './style.css';
 import * as pc from 'playcanvas';
 import {VisualState,CollisionWorld} from './simulation.js';
-import {WalkNavigator,ClickGesture} from './walk.js';
+import {WalkNavigator,ClickGesture,installTouchButtons} from './walk.js';
 import {installQuality} from './quality.js';
 import {createRenderer} from './renderer.js';
 import {civilNow,mountPowerForm} from './frontend-adapter.js';
 const $=s=>document.querySelector(s),canvas=$('#scene'),feedback=$('#feedback');
+installTouchButtons();
 const labels={general:'General',lounge:'Lounge',office:'Oficinas',comedor:'Comedor',cafe:'Cafetería',waiting:'Espera',meeting:'Reuniones',booths:'Cabinas',services:'Servicios',WC:'Baño',reception:'Recepción','vertical-garden':'Jardín'};
 const typeLabels={DoorPivot:'Puerta',LuminaireLight:'Luminaria',TV:'Televisor',Environment:'Ambiente',Sofa:'Sofá',Vegetation:'Vegetación',CafeTable:'Mesa de comedor',Chair:'Silla',Table:'Mesa',Monitor:'Monitor',Storage:'Mueble',SanitaryFixture:'Sanitario'};
-function message(text){feedback.textContent=text;}
+function message(text){feedback.textContent=text;$('#navigation-status').textContent=text;}
 try{
  const data=await fetch(import.meta.env.BASE_URL+'model/scene.json').then(r=>{if(!r.ok)throw Error('No se ha exportado el modelo');return r.json();}),state=new VisualState(data),collision=new CollisionWorld(data,state);
  const renderer=await createRenderer(canvas,data,state),{app,camera}=renderer;

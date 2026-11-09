@@ -12,12 +12,9 @@ concurrency:
   group: spatial-simulation-pages
   cancel-in-progress: true
 jobs:
-  publish:
+  build:
     if: github.ref == 'refs/heads/codex/spatial-simulation'
     runs-on: ubuntu-24.04
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v5
       - uses: actions/setup-node@v6
@@ -39,12 +36,40 @@ jobs:
           cp -a apps/spatial-simulation/dist/. .runtime/pages-site/spatial-simulation/
           node --input-type=module -e 'import fs from "node:fs";fs.writeFileSync(".runtime/pages-site/spatial-simulation/deployment.json",JSON.stringify({source_commit:process.env.SOURCE_SHA,source_branch:"codex/spatial-simulation",phase:"05",human_approved:false})+"\n")'
           touch .runtime/pages-site/.nojekyll
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
       - uses: actions/upload-pages-artifact@v4
         with:
           path: .runtime/pages-site
+      - name: Install browser for local functional checks
+        working-directory: apps/spatial-simulation
+        run: npx playwright install --with-deps chromium
+      - name: Exercise desktop and touch from deployed subpath
+        working-directory: apps/spatial-simulation
+        run: |
+          ./node_modules/.bin/vite preview --host 127.0.0.1 --port 5181 --base=/Entity/spatial-simulation/ > /tmp/spatial-preview.log 2>&1 &
+          preview_pid=$!
+          trap 'kill "$preview_pid"' EXIT
+          node --input-type=module -e 'for(let n=0;n<50;n++){try{let r=await fetch("http://127.0.0.1:5181/Entity/spatial-simulation/");if(r.ok)process.exit(0)}catch{}await new Promise(r=>setTimeout(r,100))}process.exit(1)'
+          SPATIAL_TEST_URL=http://127.0.0.1:5181/Entity/spatial-simulation/ node tests/walk-browser.mjs
+      - uses: actions/upload-artifact@v6
+        if: always()
+        with:
+          name: spatial-walk-local-evidence
+          path: docs/spatial-simulation/evidence/phase05-walk/
+  publish:
+    needs: build
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - run: npm --prefix apps/spatial-simulation ci
       - name: Deploy source-branch artifact without modifying main or gh-pages
         id: deployment
         uses: actions/deploy-pages@v4

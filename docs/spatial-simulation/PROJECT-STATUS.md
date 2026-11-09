@@ -45,3 +45,15 @@ Maestro R1 actual: e1dc0225fd957c55d38c06ca785667b70d50e544744d68d0477796aac0058
 ### Candidato con jardín vertical completo
 
 Última petición: cobertura vegetal continua como el Gaussian. Vista original front-return.jpg inspeccionada; fuente intacta. Maestro R1 ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f, 678 PASS / 21 rutas, 2170 grupos vegetales pequeños instanciados, 71 luminarias/17 circuitos y 135 piezas de vidrio. [Galería](REVIEW-PHASE04-REVISION.md) y [plano](evidence/phase04-revision/layout-with-ids.svg). Borradores actuales disponibles; renders de revisión en ejecución. No aceptación humana ni inicio de PlayCanvas.
+
+## Estado vigente — Fase04.5, revisión individual Blender (2026-11-09)
+
+Fase04-R1 fue aprobada posteriormente por el operador; la Fase05 existente está cuestionada por pérdida visual al transferir a PlayCanvas. La Fase04.5 permanece abierta. La orden vigente exige una sola imagen Blender de calidad para revisión humana antes de renderizar otros ambientes o continuar calibración PlayCanvas. El render individual está en ejecución; no se declara entregado ni aceptado. Perfil máximo preservado, sin optimización móvil. Maestro R1 y recursos originales intactos. [Progreso vigente](PHASE-04-5-PROGRESS.md).
+
+## Prioridad vigente — Fase05 funcional (2026-11-09)
+
+Cancelados los trabajos pendientes de 04.5 por orden del operador. Walk Mode clic/toque integrado en el visor existente (A*, colisiones, puertas dinámicas, mirada libre y selección independiente), sin joystick/flechas. Diez pruebas Node y build PASS; evidencia de navegador en validación. Publicación intentada exclusivamente desde la rama de trabajo; GitHub la rechaza porque `github-pages` no admite codex/spatial-simulation. Sin modificaciones a main ni a gh-pages. Fase06 no iniciada y bloqueada hasta revisión personal de Fase05. Ver [informe](PHASE-05-WALK.md).
+
+### Resultado funcional final — 2026-11-09
+
+Once pruebas Node PASS, incluidas 21 rutas aprobadas y activación táctil sin duplicados/scroll/teclado/inputs. Build Vite PASS. Chromium: **21 comprobaciones PASS**, ratón y toque nativo en viewport móvil; rutas, mirada libre, TV, puertas, luces y vista general; sin errores de navegador ni recursos fallidos. Render desactivado solamente en el harness funcional, sin acreditar calidad visual o FPS móvil físico. Evidencias en `evidence/phase05-walk/`. GitHub Pages permanece BLOQUEADO por protección del entorno, sin URL nueva verificada. Requiere permitir `codex/spatial-simulation` en `github-pages`; no se modificó main/gh-pages. Fase05 EN REVISIÓN, no aprobada; Fase06 bloqueada.

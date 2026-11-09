@@ -1,0 +1,31 @@
+{
+  "attempts": [
+    {
+      "scope": "local-server",
+      "failure": "Initial Vite preview was launched from repository root; corrected working directory and subpath."
+    },
+    {
+      "scope": "camera-floor-target",
+      "failure": "Initial projected floor candidates were below usable viewport; selected visible points further along the entrance corridor."
+    },
+    {
+      "scope": "software-render-harness",
+      "failure": "Playwright locator stability waiting competed with software-rendered full-scene frames. Harness pauses app animation via cancelAnimationFrame after real resource load, advances the actual walk controller deterministically, and dispatches native coordinate input."
+    },
+    {
+      "scope": "touch-button-state",
+      "failure": "Initial immediate TV assertion failed after touch dispatch; capture/interception diagnosis and eventual state assertion added. Not declared passed until rerun."
+    },
+    {
+      "scope": "native-touch-UI-button",
+      "failure": "Walk and look gestures passed in Chromium mobile emulation; immediate touch on the scrolled TV button did not change screen content. The test now uses Playwright native tap actionability and scroll settling before asserting eventual state. Remaining failure is preserved in browser-prior-partial.json."
+    },
+    {
+      "scope": "touch-event-diagnosis",
+      "evidence": "Pointerdown/touchstart/pointerup/touchend arrived on the TV button with no compatibility mouse/click event. Scroll settling alone did not fix it.",
+      "implemented_fix": "Explicit classified pointer tap activation for buttons, preserving keyboard/mouse and suppressing duplicate trusted touch clicks. Inputs and links are excluded from suppression.",
+      "validation": "Final smoke includes native touch TV content change and single off-toggle."
+    }
+  ],
+  "physical_mobile_tested": false
+}

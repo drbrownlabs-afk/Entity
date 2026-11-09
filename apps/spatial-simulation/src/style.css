@@ -3,3 +3,7 @@
 aside:has(#panel-content[hidden]){bottom:auto;width:auto}#views{max-width:calc(100vw - 190px)}@media(max-width:750px){#views{max-width:calc(100vw - 24px)}.view-controls{flex-wrap:wrap}.view-controls button,.view-controls select{font-size:11px;padding:6px}}
 
 a{color:#c6bc9e}#real-time{margin:0}footer>.muted{margin:5px 0 0 55px}
+
+#navigation-status{position:absolute;bottom:160px;left:50%;transform:translateX(-50%);max-width:calc(100vw - 24px);padding:8px 14px;background:#142019e8;border-radius:8px;pointer-events:none;text-align:center}#navigation-status:empty{display:none}@media(max-width:750px){#navigation-status{bottom:175px;width:max-content;font-size:12px;max-width:calc(100vw - 24px)}}
+
+button{touch-action:manipulation}
