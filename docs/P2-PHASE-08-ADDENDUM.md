@@ -82,3 +82,27 @@ Estas cinco personas **ya están incluidas** en las doce de 8.2; no crear identi
 **Tipos y relaciones adicionales:** `MEMBRESIA`, `PLAN_MEMBRESIA`, `PASE_HORAS`, `SESION_USO`, `RENOVACION`, `ORDEN_COBRO`, `PAGO`, `FACTURA`, `VISITA`, `REUNION`, `INVITACION` y `OPORTUNIDAD_COMERCIAL` según contratos P1 existentes. Vincular mediante `TITULAR_DE`, `CORRESPONDE_A_PLAN`, `RENUEVA`, `PAGA`, `FACTURA_PAGO`, `ASISTE_A`, `ANFITRION_DE`, `PROGRAMADA_EN` y `REGISTRA_LLEGADA`, adaptando nomenclatura a la semántica del Core sin crear modelos paralelos.
 
 Mantener identidad estable, procedencia, vigencia, historial de cambios y distinción entre hechos planificados, simulados y observados. Estos son escenarios de dominio para el modelo y futuras pruebas operativas; no ordenar revertir funcionalidades existentes ni crear integraciones de pagos o facturación reales por esta adición.
+
+## 8.3 — Límite entre simulador, percepción y ENTITY (decisión de implementación)
+
+**Objetivo del laboratorio:** el entorno y los personajes son sintéticos, pero el software ENTITY Core, entidadización, percepción y lógica operativa son funcionales. ENTITY no debe saber que está en una simulación. Esta decisión prevalece sobre cualquier sugerencia anterior de inyectar directamente a Core eventos de llegada, identidades, posiciones o estados internos del motor 3D.
+
+### Trabajo permitido ahora: comportamientos del simulador
+- Preparar secuencias de acciones de avatares cuando estén disponibles: Daniel llega, cruza accesos, se acerca a recepción, espera y va a la reunión con Carlos; otros personajes trabajan, se desplazan, entran y salen, se reúnen o usan puestos.
+- Las secuencias son **estímulos visuales** del entorno. No constituyen detección, reconocimiento, consulta, check-in, notificación ni actualización de Core.
+- Si aún no hay personajes 3D, preparar los guiones de acciones y sus disparadores **solo dentro del simulador**, sin inventar que ya existen animaciones o avatares implementados. No desbloquear automáticamente las fases 06/07 ni interrumpir su estado.
+- Conservar las entidades, organizaciones, relaciones, membresías y reuniones documentadas en 8.1/8.2 como modelo de dominio; no revertir trabajo existente.
+
+### Siguiente etapa: percepción multicámara real sobre imágenes sintéticas
+- Las cámaras **virtuales** dentro de la escena producen fotogramas o vídeo desde sus puntos de vista, con cobertura y solapamiento verificables.
+- El pipeline funcional debe incluir **detección y tracking por cámara (MOT)** y **asociación/reidentificación multicámara (MTMC/Re-ID)** para que el mismo avatar conserve **una identidad de seguimiento global** al pasar de cámara 1 a 2 y 3, incluso ante oclusiones y huecos de cobertura.
+- La identidad visual provisional no equivale a identidad civil: el sistema puede conocer que es el mismo individuo sin saber aún que es Daniel. La identidad nominal se vincula solo mediante evidencia de identificación o interacción verificable.
+- ENTITY recibe exclusivamente observaciones y eventos derivados del pipeline de percepción y otras interfaces legítimas (kiosco/app/agenda), nunca IDs internos de avatar, coordenadas privilegiadas, trayectorias verdaderas, scripts o etiquetas del simulador.
+- El simulador sí conserva *ground truth* de avatares y trayectorias para **evaluación aislada**, inaccesible a ENTITY; medir continuidad, ID switches, duplicaciones, pérdidas y recuperación entre cámaras.
+- La sustitución futura de cámaras virtuales por fuentes externas debe conservar el contrato de entrada de percepción, sin reescribir el Core.
+
+### Escenario de referencia, aún NO conectado
+Daniel tiene reunión con Carlos a las 16:00. En el simulador se puede preparar su llegada y recorrido. Solo cuando la percepción multicámara esté implementada y conectada, ENTITY podrá detectar su presencia, interactuar en recepción, verificar la reunión en el modelo del mundo, notificar a Carlos mediante la app y actualizar estados y memoria conforme a hechos realmente percibidos/confirmados. **No simular esas capacidades dentro de Core antes de conectarlas ni representar una animación como prueba de inteligencia espacial.**
+
+### Restricciones de ejecución
+No crear ahora interacciones ficticias ENTITY↔personajes, falsos eventos de cámara inyectados a Core, consultas o check-ins provocados directamente por el motor 3D. No cancelar ni deshacer funcionalidades previas por esta aclaración. Registrar por separado qué existe realmente, qué está solo documentado y qué queda pendiente. Esta adición documenta la arquitectura y el orden de trabajo; no afirma que el pipeline multicámara esté implementado.
