@@ -1,9 +1,9 @@
 {
   "docs/spatial-simulation/IMPLEMENTATION-PLAN.md": {
     "base_sha256": "765cf1488331759c1b4f91335301383ebe5e3a9ed5bdc89bb9399b54225a42ba",
-    "sha256": "cf1e181287812606795f6dba65082987a4d00c5b4e3573ce2afdee3ff84f578f",
-    "commit": "019b4a4",
-    "reason": "Exact operator revision prioritizing functional work, same-branch fast-forward; latest chat pauses before Phase06."
+    "sha256": "8b590474c988995bf0f2a92d7e8a5ae0976c239214fd9f17fe6c9d9908d39b69",
+    "commit": "d3b66ed",
+    "reason": "Exact concurrent operator roadmap link, preserved by same-branch rebase; latest chat still blocks Phase06."
   },
   "AGENTS.md": {
     "base_sha256": "d13fbfde849d4fbf3d98ed3a70329dd615b5e96eeb066f1c1993ab96315a9e1e",

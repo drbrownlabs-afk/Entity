@@ -124,3 +124,5 @@ Primer push 2e0b6ff publicado en codex/spatial-simulation. Intento real de despl
 ### Resultado funcional final — 2026-11-09
 
 Once pruebas Node PASS, incluidas 21 rutas aprobadas y activación táctil sin duplicados/scroll/teclado/inputs. Build Vite PASS. Chromium: **21 comprobaciones PASS**, ratón y toque nativo en viewport móvil; rutas, mirada libre, TV, puertas, luces y vista general; sin errores de navegador ni recursos fallidos. Render desactivado solamente en el harness funcional, sin acreditar calidad visual o FPS móvil físico. Evidencias en `evidence/phase05-walk/`. GitHub Pages permanece BLOQUEADO por protección del entorno, sin URL nueva verificada. Requiere permitir `codex/spatial-simulation` en `github-pages`; no se modificó main/gh-pages. Fase05 EN REVISIÓN, no aprobada; Fase06 bloqueada.
+
+Publicación final: primer push de cierre rechazado por avance concurrente del operador (10c30ee/d3b66ed, roadmap08–15 y enlace del plan). Cambios preservados mediante rebase sobre esta misma rama, sin merge ni main. Snapshot autorizado del plan actualizado a revisión exacta d3b66ed; código probado sin cambios. No se inicia Fase06 pese al roadmap futuro.
