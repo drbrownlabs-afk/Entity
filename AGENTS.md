@@ -1,6 +1,22 @@
 # ENTITY — Instrucciones vigentes para agentes
 **Este bloque tiene prioridad sobre instrucciones históricas posteriores de este mismo archivo.** No crear archivos de memoria alternativos.
 
+## PROCEDIMIENTO DE SNAPSHOTS — exclusivamente bajo solicitud explícita del operador (2026-11-08)
+**Regla absoluta:** NUNCA generar snapshots de manera automática, periódica, al cerrar fases ni por iniciativa del agente. Tampoco crear un snapshot cuando el operador solo pide explicar, diseñar o documentar este procedimiento. Solo ejecutar cuando el operador solicite explícitamente **crear un snapshot** (por ejemplo: «entra en el repositorio y crea un snapshot»). No activar automations, cron ni workflows de snapshots sin orden independiente.
+
+**Punto de entrada:** el agente que reciba esa orden abre el repositorio, lee este `AGENTS.md` y sigue el procedimiento aquí definido; el operador no necesita recordar nombres de archivos ni sintaxis.
+
+**Procedimiento de creación bajo demanda:**
+1. Leer el canon, ADR, estado de procesos y bitácora según el protocolo de recuperación anterior. Identificar proceso/subproyecto/alcance solicitado. Si falta el alcance y existen varias opciones plausibles, mostrar P1/P2/P3 y pedir una selección breve; no adivinar.
+2. Consultar el estado **actual y verificable** de GitHub: rama, HEAD SHA, commits, archivos y artefactos relevantes, estado de pruebas y decisiones. Distinguir evidencia comprobada de afirmaciones documentales y de pendientes. No afirmar acceso a servicios, datos, equipos, entorno local o simulaciones sin haberlos inspeccionado.
+3. Elaborar un manifiesto de snapshot con ID único legible, fecha UTC, proceso/subproyecto, objetivo, repositorio, rama, commit SHA de código, SHA de canon, ADR aplicables, versión/ubicación de artefactos, estado implementado/probado/pendiente/bloqueado, dependencias necesarias, últimos cambios, riesgos, siguiente acción y pasos de restauración. Señalar expresamente componentes externos **no capturados**. Nunca guardar secretos, credenciales ni datos personales innecesarios.
+4. Guardar el manifiesto como **nuevo registro versionado** en `docs/snapshots/<proceso>/<YYYY-MM-DD>-<slug>.md` (o extensión estructurada equivalente cuando convenga), sin reescribir snapshots previos ni crear un nuevo master de memoria. Si se requiere snapshot técnico reproducible, fijar commit y checksums/versiones de los artefactos accesibles; para estado dinámico (DB, simulación) solo incluir checkpoint/export real cuando se haya creado y verificado.
+5. Fijar la referencia del snapshot a un commit SHA preciso; crear tag específico si la herramienta y permisos lo permiten y comprobar que no colisiona ni se mueve un tag anterior. Un tag común puede cambiarse; no prometer inmutabilidad reforzada sin protección de tags o release inmutable habilitado. No cambiar `main` ni fusionar ramas sin instrucción.
+6. Verificar que el manifiesto quedó guardado, releerlo desde GitHub y entregar al operador enlace, ID, rama, commit, alcance, evidencia incluida y exclusiones. Si alguna operación falla, informar exactamente qué quedó hecho y qué no.
+7. Para **recuperar** un snapshot: buscar registros en `docs/snapshots/`, ofrecer selección si hay varios y cargar su manifiesto y commit/artefactos asociados. No confundir recuperar contexto con restaurar código o sobrescribir estado actual: restauración destructiva requiere autorización separada.
+
+**Diferencias:** memoria canónica = definiciones y decisiones duraderas; estado de procesos = situación mutable; snapshot = captura puntual bajo demanda, fechada y trazable. Un commit de Git no contiene por sí solo estados de bases de datos, máquinas o servicios externos.
+
 ## PROTOCOLO DE RECUPERACIÓN DESDE GITHUB — punto de entrada único (2026-11-08)
 Este archivo es el **índice operativo de la memoria del proyecto**, no una memoria paralela. Se activa cuando el operador pide «entra en la memoria de GitHub», «lee la memoria del repositorio», «recupera el contexto del proyecto» o una petición equivalente. **No exigir que el operador recuerde palabras clave, ramas, nombres de archivos ni definiciones.**
 
