@@ -51,9 +51,9 @@ class HogPeople:
 
 class TemporalTracker:
     """Norfair association/Kalman filter; positions normalized to camera image."""
-    def __init__(self):
+    def __init__(self, hit_counter_max=3):
         self.tracker = Tracker(distance_function='euclidean', distance_threshold=.15,
-                               initialization_delay=0, hit_counter_max=3)
+                               initialization_delay=0, hit_counter_max=hit_counter_max)
 
     def update(self, points):
         detections = [Detection(np.array([[x,y]])) for x,y in points]

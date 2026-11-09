@@ -1,0 +1,9 @@
+test_durable_outbox_failure_recovery_same_body (test_pipeline.EdgeTests.test_durable_outbox_failure_recovery_same_body) ... ok
+test_invalid_source_and_zone (test_pipeline.EdgeTests.test_invalid_source_and_zone) ... ok
+test_stream_disconnect_reopens_via_capture_adapter (test_pipeline.EdgeTests.test_stream_disconnect_reopens_via_capture_adapter) ... ok
+test_tracking_zone_crossing_loss_and_new_session (test_pipeline.EdgeTests.test_tracking_zone_crossing_loss_and_new_session) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.098s
+
+OK

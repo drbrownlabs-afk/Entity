@@ -1,0 +1,4348 @@
+{
+  "tracker": "Existing Norfair2.3.0 TemporalTracker; Euclidean normalized bottom-centre, threshold.15, hit_counter_max6 (3s at2FPS, existing default remains3)",
+  "input": "actual YOLOX-S pixel detections only",
+  "predictions_reported_as_observations": false,
+  "processing_seconds": 0.016739589999815507,
+  "peak_rss_kib": 111024,
+  "per_camera": {
+    "CAMERA-PLANNED-01": {
+      "observed_frames": 13,
+      "local_ids": [
+        "CAMERA-PLANNED-01:norfair:1",
+        "CAMERA-PLANNED-01:norfair:2"
+      ],
+      "missed_frames": 28,
+      "recoveries": 1
+    },
+    "CAMERA-PLANNED-02": {
+      "observed_frames": 17,
+      "local_ids": [
+        "CAMERA-PLANNED-02:norfair:1"
+      ],
+      "missed_frames": 24,
+      "recoveries": 1
+    },
+    "CAMERA-PLANNED-03": {
+      "observed_frames": 26,
+      "local_ids": [
+        "CAMERA-PLANNED-03:norfair:1"
+      ],
+      "missed_frames": 15,
+      "recoveries": 1
+    },
+    "CAMERA-PLANNED-04": {
+      "observed_frames": 28,
+      "local_ids": [
+        "CAMERA-PLANNED-04:norfair:1",
+        "CAMERA-PLANNED-04:norfair:2"
+      ],
+      "missed_frames": 13,
+      "recoveries": 0
+    },
+    "CAMERA-PLANNED-05": {
+      "observed_frames": 4,
+      "local_ids": [
+        "CAMERA-PLANNED-05:norfair:1"
+      ],
+      "missed_frames": 37,
+      "recoveries": 0
+    },
+    "CAMERA-PLANNED-06": {
+      "observed_frames": 1,
+      "local_ids": [
+        "CAMERA-PLANNED-06:norfair:1"
+      ],
+      "missed_frames": 40,
+      "recoveries": 0
+    }
+  },
+  "frames": [
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 0,
+      "observed_at": "2026-11-09T12:00:00.000Z",
+      "media_time_seconds": 0,
+      "frame_sha256": "578af0123bd492f299395761777f5033b77f40a950172547e1ac47ce3d8d25d4",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 0,
+      "observed_at": "2026-11-09T12:00:00.000Z",
+      "media_time_seconds": 0,
+      "frame_sha256": "4bc362be590b4d3380820dfd72be058712d011d0936e2bce4c888b1e21ff433a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.4846336311764187,
+            0.5411613841115692
+          ],
+          "bbox": [
+            526.8689575195312,
+            276.823486328125,
+            589.7269287109375,
+            350.6725769042969
+          ],
+          "confidence": 0.8431824445724487
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 0,
+      "observed_at": "2026-11-09T12:00:00.000Z",
+      "media_time_seconds": 0,
+      "frame_sha256": "46ccb0dc5a3fc2d8227eefb6ec5f500bffa019b7ff1312e10586e6c8e47acf49",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.407523062494066,
+            0.393900011792595
+          ],
+          "bbox": [
+            457.0509033203125,
+            201.0637969970703,
+            481.8822326660156,
+            255.24720764160156
+          ],
+          "confidence": 0.8084883689880371
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 0,
+      "observed_at": "2026-11-09T12:00:00.000Z",
+      "media_time_seconds": 0,
+      "frame_sha256": "953d14b41a8dee4531c9ae463ac8333b4023cd11c270c665aba588074ee6183a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:1",
+          "position": [
+            0.30136634243859184,
+            0.22922873791353202
+          ],
+          "bbox": [
+            335.1939392089844,
+            101.32673645019531,
+            359.15411376953125,
+            148.54022216796875
+          ],
+          "confidence": 0.5846689939498901
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 0,
+      "observed_at": "2026-11-09T12:00:00.000Z",
+      "media_time_seconds": 0,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 0,
+      "observed_at": "2026-11-09T12:00:00.000Z",
+      "media_time_seconds": 0,
+      "frame_sha256": "0808fb553a6d9cf664aa73d54147ef263417ddce2d6d3523ee0288d2a753a519",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 1,
+      "observed_at": "2026-11-09T12:00:00.500Z",
+      "media_time_seconds": 0.5,
+      "frame_sha256": "7f823498a9bf7bd9176d5bbf6c80b177ae9191b19adff60bf836122de5d2f5b0",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 1,
+      "observed_at": "2026-11-09T12:00:00.500Z",
+      "media_time_seconds": 0.5,
+      "frame_sha256": "e889c8de94fb97eb7cbba9b3863cbbc1a7a1b322f69b4cf071d4bbcda2b4d81c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.4930877708353656,
+            0.546986119003115
+          ],
+          "bbox": [
+            542.5436401367188,
+            279.9399108886719,
+            600.5498046875,
+            355.8071594238281
+          ],
+          "confidence": 0.8712873458862305
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 1,
+      "observed_at": "2026-11-09T12:00:00.500Z",
+      "media_time_seconds": 0.5,
+      "frame_sha256": "9c8330906c42b848f4081653c524c3b63f3b57ef2b86c5e753729c3e1afbcdd1",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.4143650120369558,
+            0.39696596875602813
+          ],
+          "bbox": [
+            461.3334655761719,
+            203.12010192871094,
+            499.044189453125,
+            257.94989013671875
+          ],
+          "confidence": 0.703766942024231
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 1,
+      "observed_at": "2026-11-09T12:00:00.500Z",
+      "media_time_seconds": 0.5,
+      "frame_sha256": "3f06a8f748aeadb817c934a6d10d0479bef3effa4ee530aeb269846d7a640c83",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:1",
+          "position": [
+            0.3077811508866423,
+            0.2281993956102314
+          ],
+          "bbox": [
+            343.30242919921875,
+            102.90272521972656,
+            371.1513671875,
+            147.63284301757812
+          ],
+          "confidence": 0.3933367133140564
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 1,
+      "observed_at": "2026-11-09T12:00:00.500Z",
+      "media_time_seconds": 0.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 1,
+      "observed_at": "2026-11-09T12:00:00.500Z",
+      "media_time_seconds": 0.5,
+      "frame_sha256": "b2ca1d8109db6b6372e5c09a0d6367a9dfc1cf3973f6777ef6af325693177533",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 2,
+      "observed_at": "2026-11-09T12:00:01.000Z",
+      "media_time_seconds": 1,
+      "frame_sha256": "b569174b50f7a7ebf6df7bd392f0da15b0fa393c0dfa2b8da847a3ef2cbc9cd7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:1",
+          "position": [
+            0.4914437664879693,
+            0.9979297025704089
+          ],
+          "bbox": [
+            461.29022216796875,
+            503.4146728515625,
+            670.9962158203125,
+            646.658447265625
+          ],
+          "confidence": 0.9360781908035278
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 2,
+      "observed_at": "2026-11-09T12:00:01.000Z",
+      "media_time_seconds": 1,
+      "frame_sha256": "9b477612c74739d975a02ae92df7cc8b6ea4558ea6c1201bcddd982e67033c99",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.49647873596017583,
+            0.555081576694358
+          ],
+          "bbox": [
+            540.2964477539062,
+            287.704833984375,
+            608.8538208007812,
+            363.9551086425781
+          ],
+          "confidence": 0.8238359093666077
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 2,
+      "observed_at": "2026-11-09T12:00:01.000Z",
+      "media_time_seconds": 1,
+      "frame_sha256": "f879aec7cc6acdddb8e8591c58fbe20ef9de03f8d06466f3b23ef014229ef37a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.4153679853247108,
+            0.40178051031412293
+          ],
+          "bbox": [
+            462.0001220703125,
+            206.88369750976562,
+            495.78155517578125,
+            262.9088134765625
+          ],
+          "confidence": 0.6978352069854736
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 2,
+      "observed_at": "2026-11-09T12:00:01.000Z",
+      "media_time_seconds": 1,
+      "frame_sha256": "0c4f0927578e73e545b66003e054be110fd2e0663eab5ebaa2ffe99c66ed4c2a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:1",
+          "position": [
+            0.3098681776916387,
+            0.2309654241987717
+          ],
+          "bbox": [
+            344.1717529296875,
+            104.015380859375,
+            372.785400390625,
+            151.27505493164062
+          ],
+          "confidence": 0.6552911996841431
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 2,
+      "observed_at": "2026-11-09T12:00:01.000Z",
+      "media_time_seconds": 1,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 2,
+      "observed_at": "2026-11-09T12:00:01.000Z",
+      "media_time_seconds": 1,
+      "frame_sha256": "3f9f3e6546eb600b5a98bf9f58850b7f804a50fde016aefae9a4e8f0d7b6a37a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 3,
+      "observed_at": "2026-11-09T12:00:01.500Z",
+      "media_time_seconds": 1.5,
+      "frame_sha256": "89ddd2b8f96a3f7044ce39a992ca8aa58c81569d0fda907b0f03b516fdc26701",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:1",
+          "position": [
+            0.494415877495205,
+            0.9977538353891368
+          ],
+          "bbox": [
+            467.6242370605469,
+            461.408203125,
+            673.9776000976562,
+            646.50341796875
+          ],
+          "confidence": 0.9311644434928894
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 3,
+      "observed_at": "2026-11-09T12:00:01.500Z",
+      "media_time_seconds": 1.5,
+      "frame_sha256": "33172647bbd838ded5bc796ca7a59fa9960d591c802b2cd29a5d49678ad6c319",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.4980841429507611,
+            0.5668381300080038
+          ],
+          "bbox": [
+            544.540283203125,
+            292.06146240234375,
+            603.2601318359375,
+            372.6871643066406
+          ],
+          "confidence": 0.7840771079063416
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 3,
+      "observed_at": "2026-11-09T12:00:01.500Z",
+      "media_time_seconds": 1.5,
+      "frame_sha256": "8fe5c529f55cf7c8e231a3c8bf6f68b65b2d70ec291bbb748edef02cb7e76dfd",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.41725210365913606,
+            0.40767421400721554
+          ],
+          "bbox": [
+            467.4931945800781,
+            209.68386840820312,
+            496.2904968261719,
+            266.736328125
+          ],
+          "confidence": 0.7486287951469421
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 3,
+      "observed_at": "2026-11-09T12:00:01.500Z",
+      "media_time_seconds": 1.5,
+      "frame_sha256": "27885195b4840ec47b59921cba8678c96641683814579b95e7ca770e1e49720b",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:1",
+          "position": [
+            0.31168221548220804,
+            0.2340096967809995
+          ],
+          "bbox": [
+            346.8067626953125,
+            106.37650299072266,
+            373.0121154785156,
+            153.01571655273438
+          ],
+          "confidence": 0.6797910928726196
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 3,
+      "observed_at": "2026-11-09T12:00:01.500Z",
+      "media_time_seconds": 1.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 3,
+      "observed_at": "2026-11-09T12:00:01.500Z",
+      "media_time_seconds": 1.5,
+      "frame_sha256": "8b3fee9d23a6064170fcc157003a8b0463e0d76b57f96da04d802d37fa95e083",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 4,
+      "observed_at": "2026-11-09T12:00:02.000Z",
+      "media_time_seconds": 2,
+      "frame_sha256": "adc80fe8a1a8c718a56ab0300dca7e59f469533c63b949a54c4dc85a46edb796",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:1",
+          "position": [
+            0.4981703058284818,
+            0.9989483889049838
+          ],
+          "bbox": [
+            490.8027038574219,
+            422.63262939453125,
+            663.9611206054688,
+            648.0
+          ],
+          "confidence": 0.9341785311698914
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 4,
+      "observed_at": "2026-11-09T12:00:02.000Z",
+      "media_time_seconds": 2,
+      "frame_sha256": "40390fa6471a13b23c3e3f4e9a8f2ad25885ca8ae11e452e40d7ea441bab1f7a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.499586283205903,
+            0.5842487301205335
+          ],
+          "bbox": [
+            537.2034301757812,
+            295.75146484375,
+            613.7660522460938,
+            385.3728332519531
+          ],
+          "confidence": 0.8965246081352234
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 4,
+      "observed_at": "2026-11-09T12:00:02.000Z",
+      "media_time_seconds": 2,
+      "frame_sha256": "9cbcca8b3c3ea88cebd442853a64d33e4db13d1709a1b5f6caa732c407662086",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.41983634596887504,
+            0.41390232196243343
+          ],
+          "bbox": [
+            472.63720703125,
+            211.0305938720703,
+            497.6943664550781,
+            270.0555725097656
+          ],
+          "confidence": 0.7429580092430115
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 4,
+      "observed_at": "2026-11-09T12:00:02.000Z",
+      "media_time_seconds": 2,
+      "frame_sha256": "c4a540788123b5d1a95aead11c8073238485c74777f2cae475dd5327ecbc404d",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:1",
+          "position": [
+            0.3127509880543306,
+            0.23727664765494505
+          ],
+          "bbox": [
+            345.5538635253906,
+            108.09391784667969,
+            374.5660400390625,
+            154.77288818359375
+          ],
+          "confidence": 0.7246571183204651
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 4,
+      "observed_at": "2026-11-09T12:00:02.000Z",
+      "media_time_seconds": 2,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 4,
+      "observed_at": "2026-11-09T12:00:02.000Z",
+      "media_time_seconds": 2,
+      "frame_sha256": "05829d89f321c17c833531a876b0bd4b8100f8734c4ca1bef340c64aefbd00e0",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 5,
+      "observed_at": "2026-11-09T12:00:02.500Z",
+      "media_time_seconds": 2.5,
+      "frame_sha256": "c590c3aded2724ee50c7ba8295ac83320cf94a8030f0c1cd0bbaf1433057d197",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:1",
+          "position": [
+            0.5018840750171134,
+            0.9587828553240887
+          ],
+          "bbox": [
+            506.0185241699219,
+            392.06494140625,
+            655.4970703125,
+            597.3603515625
+          ],
+          "confidence": 0.9182707071304321
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 5,
+      "observed_at": "2026-11-09T12:00:02.500Z",
+      "media_time_seconds": 2.5,
+      "frame_sha256": "481f6d54d39e9481879563ac62f06c66226a81e6610ae0650c49c289f62d6a4c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.4992614477530163,
+            0.6044339725035331
+          ],
+          "bbox": [
+            532.1484985351562,
+            304.7300720214844,
+            614.0925903320312,
+            398.1020812988281
+          ],
+          "confidence": 0.8552821278572083
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 5,
+      "observed_at": "2026-11-09T12:00:02.500Z",
+      "media_time_seconds": 2.5,
+      "frame_sha256": "e8c927c73c4847a75c3fcc60c2a5dbad178cca85feb6df92f957c1cd57397c3c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.42005615950939684,
+            0.42176104014472793
+          ],
+          "bbox": [
+            463.9319763183594,
+            213.44815063476562,
+            500.8042297363281,
+            275.5915832519531
+          ],
+          "confidence": 0.7602531313896179
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 5,
+      "observed_at": "2026-11-09T12:00:02.500Z",
+      "media_time_seconds": 2.5,
+      "frame_sha256": "002f43f04b6ecd59a78c338f4046ebc30ced294da0b8e41e3f6f826a0cd81d5f",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:1",
+          "position": [
+            0.31295801449359256,
+            0.24224259058615472
+          ],
+          "bbox": [
+            341.5329895019531,
+            109.62769317626953,
+            377.31488037109375,
+            158.7285919189453
+          ],
+          "confidence": 0.6613110899925232
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 5,
+      "observed_at": "2026-11-09T12:00:02.500Z",
+      "media_time_seconds": 2.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 5,
+      "observed_at": "2026-11-09T12:00:02.500Z",
+      "media_time_seconds": 2.5,
+      "frame_sha256": "cc2f092ff397fd3c40140b5bfa09de5baadcb6c34958aae2c84c202a743bc013",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 6,
+      "observed_at": "2026-11-09T12:00:03.000Z",
+      "media_time_seconds": 3,
+      "frame_sha256": "5ced754631254662196fd10382563b6e2c12dcae9a8558f5d61233bd40c49a8f",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:1",
+          "position": [
+            0.5051926274079706,
+            0.8951825824846039
+          ],
+          "bbox": [
+            515.80859375,
+            369.5161437988281,
+            650.6417846679688,
+            550.916748046875
+          ],
+          "confidence": 0.8947736620903015
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 6,
+      "observed_at": "2026-11-09T12:00:03.000Z",
+      "media_time_seconds": 3,
+      "frame_sha256": "c8f6222e95f6098d8cf10b0c4acf6e327a40b49133f740ead5e5a0986ceff7f8",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.5001521582775137,
+            0.6274006914369286
+          ],
+          "bbox": [
+            533.3292236328125,
+            315.79534912109375,
+            618.8695678710938,
+            413.1938171386719
+          ],
+          "confidence": 0.8268803358078003
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 6,
+      "observed_at": "2026-11-09T12:00:03.000Z",
+      "media_time_seconds": 3,
+      "frame_sha256": "181c7f4f3cee22d63cb5dc8da7edd8a64c5b8d1174977bf1f7f70e52c2e040c8",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.41880677179742604,
+            0.43181709198990004
+          ],
+          "bbox": [
+            456.8522644042969,
+            219.88812255859375,
+            502.318115234375,
+            282.98394775390625
+          ],
+          "confidence": 0.6263275146484375
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 6,
+      "observed_at": "2026-11-09T12:00:03.000Z",
+      "media_time_seconds": 3,
+      "frame_sha256": "09e4662532c756ec66fbd8e9808a9925d69309ce16d379c643c4276a0dbf9a98",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:1",
+          "position": [
+            0.31420001520034496,
+            0.2475227745517198
+          ],
+          "bbox": [
+            347.5782470703125,
+            110.52922058105469,
+            377.1386413574219,
+            161.9114990234375
+          ],
+          "confidence": 0.7684162855148315
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 6,
+      "observed_at": "2026-11-09T12:00:03.000Z",
+      "media_time_seconds": 3,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 6,
+      "observed_at": "2026-11-09T12:00:03.000Z",
+      "media_time_seconds": 3,
+      "frame_sha256": "68233b2727fe5f9628b7ce7b5b271babd58ff39683a807fe3ac5b78bf56ad164",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 7,
+      "observed_at": "2026-11-09T12:00:03.500Z",
+      "media_time_seconds": 3.5,
+      "frame_sha256": "f0c7c5a88f4636d0cc7762791eabbe42f5c01b084c68f7e7f674c829eea35d5c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:1",
+          "position": [
+            0.507747099312622,
+            0.8288189751368276
+          ],
+          "bbox": [
+            524.6173706054688,
+            350.89923095703125,
+            645.3102416992188,
+            515.0743408203125
+          ],
+          "confidence": 0.8730983138084412
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 7,
+      "observed_at": "2026-11-09T12:00:03.500Z",
+      "media_time_seconds": 3.5,
+      "frame_sha256": "fa83d98f25ca1122418a4180e0c4e02107f0ba8ba0d328b30d2bd16d5a737d8d",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.5002325942074607,
+            0.6524614614442354
+          ],
+          "bbox": [
+            527.5595703125,
+            327.13140869140625,
+            622.8052978515625,
+            429.372314453125
+          ],
+          "confidence": 0.8590585589408875
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 7,
+      "observed_at": "2026-11-09T12:00:03.500Z",
+      "media_time_seconds": 3.5,
+      "frame_sha256": "a53488060501f9f8937dcecd9a8c72b8268ef5bd179e4a0b3d4f7756fe0038f0",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.4209319643144329,
+            0.44237525939433814
+          ],
+          "bbox": [
+            458.0469055175781,
+            224.34945678710938,
+            515.9264526367188,
+            289.4422912597656
+          ],
+          "confidence": 0.7208678126335144
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 7,
+      "observed_at": "2026-11-09T12:00:03.500Z",
+      "media_time_seconds": 3.5,
+      "frame_sha256": "1e5b4d821e9a7bdd528cccacb3d4fd765af22ac2cf14700196e566ef6d3a0729",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:1",
+          "position": [
+            0.3150354375311872,
+            0.2537660053361425
+          ],
+          "bbox": [
+            347.28057861328125,
+            113.2516098022461,
+            378.1427307128906,
+            166.288818359375
+          ],
+          "confidence": 0.722209095954895
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 7,
+      "observed_at": "2026-11-09T12:00:03.500Z",
+      "media_time_seconds": 3.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 7,
+      "observed_at": "2026-11-09T12:00:03.500Z",
+      "media_time_seconds": 3.5,
+      "frame_sha256": "fcd94087909d3f1fccf76765e3399e21ef56f63d0eaa20ce84bc6768439e2a03",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 8,
+      "observed_at": "2026-11-09T12:00:04.000Z",
+      "media_time_seconds": 4,
+      "frame_sha256": "620a68ca896b0fc4bac01688cad4dbb8fd44304e522a107fd4d94c670d9847ee",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:1",
+          "position": [
+            0.5096709044114012,
+            0.7684129889113169
+          ],
+          "bbox": [
+            531.3840942382812,
+            333.686279296875,
+            641.4662475585938,
+            485.49688720703125
+          ],
+          "confidence": 0.8819302320480347
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 8,
+      "observed_at": "2026-11-09T12:00:04.000Z",
+      "media_time_seconds": 4,
+      "frame_sha256": "8912355c113e50ac3468222abe2ac9651b64455dddc00957bb32e6f324862f65",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.5010905836450252,
+            0.6806526671427462
+          ],
+          "bbox": [
+            525.4635009765625,
+            337.7480163574219,
+            629.4651489257812,
+            448.4660949707031
+          ],
+          "confidence": 0.8900303244590759
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 8,
+      "observed_at": "2026-11-09T12:00:04.000Z",
+      "media_time_seconds": 4,
+      "frame_sha256": "6f4904be3a0196c495230f7767b62a0d2920381a4f576bedc9f1669fdd398a5c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.42339427225782095,
+            0.45396811756110306
+          ],
+          "bbox": [
+            464.8387756347656,
+            224.79200744628906,
+            514.7450561523438,
+            297.08563232421875
+          ],
+          "confidence": 0.6628464460372925
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 8,
+      "observed_at": "2026-11-09T12:00:04.000Z",
+      "media_time_seconds": 4,
+      "frame_sha256": "2424fcde25bfc7cc8c3c937b38f75ec9df39a207cb5c51406ba5c35b81f6fa26",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:1",
+          "position": [
+            0.3149791182917498,
+            0.25918978252169544
+          ],
+          "bbox": [
+            341.8665466308594,
+            115.13823699951172,
+            381.1371154785156,
+            168.75613403320312
+          ],
+          "confidence": 0.5840152502059937
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 8,
+      "observed_at": "2026-11-09T12:00:04.000Z",
+      "media_time_seconds": 4,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 8,
+      "observed_at": "2026-11-09T12:00:04.000Z",
+      "media_time_seconds": 4,
+      "frame_sha256": "7cae770361c3f7e596b5caf931d57b05d198dc177e640010c1321894c57ae0cd",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 9,
+      "observed_at": "2026-11-09T12:00:04.500Z",
+      "media_time_seconds": 4.5,
+      "frame_sha256": "368c352f63c4e1195d77b61843b816933e758560e6bf85ee8979257687960ce1",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:1",
+          "position": [
+            0.5109664035751657,
+            0.7156609085425162
+          ],
+          "bbox": [
+            536.7709350585938,
+            323.111572265625,
+            637.8060913085938,
+            459.68426513671875
+          ],
+          "confidence": 0.8698019981384277
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 9,
+      "observed_at": "2026-11-09T12:00:04.500Z",
+      "media_time_seconds": 4.5,
+      "frame_sha256": "62120402c8669c1ab82933e4cbb3abcb991f23b4d7b4963c6481cf3517811e42",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.5015917844710706,
+            0.7154408507740113
+          ],
+          "bbox": [
+            521.20361328125,
+            352.7972717285156,
+            633.7900390625,
+            474.38031005859375
+          ],
+          "confidence": 0.907573401927948
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 9,
+      "observed_at": "2026-11-09T12:00:04.500Z",
+      "media_time_seconds": 4.5,
+      "frame_sha256": "6ab1c60e5a57e9c6d2e330e4d09091f59d2c8b96658f3ef5161cb16d1e119acc",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.4253764604113165,
+            0.465190696111099
+          ],
+          "bbox": [
+            471.3125,
+            228.43212890625,
+            510.5262451171875,
+            303.36956787109375
+          ],
+          "confidence": 0.4173232614994049
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 9,
+      "observed_at": "2026-11-09T12:00:04.500Z",
+      "media_time_seconds": 4.5,
+      "frame_sha256": "8fb8b2b26a9e42e7570035a45b6f351a24eece131fbdcf448faa579bc6ee672c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:1",
+          "position": [
+            0.3158386742077012,
+            0.2654473923147526
+          ],
+          "bbox": [
+            344.507080078125,
+            116.09475708007812,
+            383.6680908203125,
+            173.26950073242188
+          ],
+          "confidence": 0.6299375891685486
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 9,
+      "observed_at": "2026-11-09T12:00:04.500Z",
+      "media_time_seconds": 4.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 9,
+      "observed_at": "2026-11-09T12:00:04.500Z",
+      "media_time_seconds": 4.5,
+      "frame_sha256": "93529ef55a7d60b62feab61ab4f1b2fb45597b15a39c1113ad36e3518f03ff10",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 10,
+      "observed_at": "2026-11-09T12:00:05.000Z",
+      "media_time_seconds": 5,
+      "frame_sha256": "3f6562fe77b9a79fa1c0e0ac6acac481d4faef6c48d593bf857061403a6b6ae4",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:1",
+          "position": [
+            0.5018923077447242,
+            0.673182045481228
+          ],
+          "bbox": [
+            514.3214721679688,
+            309.6964111328125,
+            612.214599609375,
+            440.83905029296875
+          ],
+          "confidence": 0.8351746201515198
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 10,
+      "observed_at": "2026-11-09T12:00:05.000Z",
+      "media_time_seconds": 5,
+      "frame_sha256": "200b9a703578a17eac16b42690080b6f721d3b66f58eb24b9405f6e673cfc9bc",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.512666408890327,
+            0.7379162978981966
+          ],
+          "bbox": [
+            549.8062744140625,
+            349.1032409667969,
+            660.8245239257812,
+            476.45281982421875
+          ],
+          "confidence": 0.894010066986084
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 10,
+      "observed_at": "2026-11-09T12:00:05.000Z",
+      "media_time_seconds": 5,
+      "frame_sha256": "bc59e1d5c381a8fc6c21cec715cb21220751c41f68271a29001517545127168a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.429343025703276,
+            0.4697473417805716
+          ],
+          "bbox": [
+            473.93707275390625,
+            223.23892211914062,
+            522.2213745117188,
+            300.5318603515625
+          ],
+          "confidence": 0.5366246700286865
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 10,
+      "observed_at": "2026-11-09T12:00:05.000Z",
+      "media_time_seconds": 5,
+      "frame_sha256": "87038a393483df4011233f5d6db9d3f0a3570c3f0073857f24d4a6be92ad0c03",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:1",
+          "position": [
+            0.3207741931359638,
+            0.26711684977847205
+          ],
+          "bbox": [
+            360.7510070800781,
+            111.47636413574219,
+            390.2222595214844,
+            170.38221740722656
+          ],
+          "confidence": 0.7331849932670593
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 10,
+      "observed_at": "2026-11-09T12:00:05.000Z",
+      "media_time_seconds": 5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 10,
+      "observed_at": "2026-11-09T12:00:05.000Z",
+      "media_time_seconds": 5,
+      "frame_sha256": "82bbf807daba90dd3f924fe4763beb64793f68e3bf6c0b6ee888957ded84dea0",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 11,
+      "observed_at": "2026-11-09T12:00:05.500Z",
+      "media_time_seconds": 5.5,
+      "frame_sha256": "c3a333a8831c513f23186d4813f474531cb492d79b5adb6e931168bc5b5fd274",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:1",
+          "position": [
+            0.4791544610929215,
+            0.6432277241716765
+          ],
+          "bbox": [
+            481.93353271484375,
+            297.14971923828125,
+            561.4597778320312,
+            430.0943298339844
+          ],
+          "confidence": 0.730932891368866
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 11,
+      "observed_at": "2026-11-09T12:00:05.500Z",
+      "media_time_seconds": 5.5,
+      "frame_sha256": "b50b00e270f5ec8458f05590ce99398dc9de22f17690eba486a4e74f61997711",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.5404518837413999,
+            0.740610785495784
+          ],
+          "bbox": [
+            600.5799560546875,
+            336.04913330078125,
+            714.3690795898438,
+            462.7103271484375
+          ],
+          "confidence": 0.8922825455665588
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 11,
+      "observed_at": "2026-11-09T12:00:05.500Z",
+      "media_time_seconds": 5.5,
+      "frame_sha256": "3dd5de01390a434a54a1192f8d5b43bb910136b8fb18357162eb70609e1b08a0",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 11,
+      "observed_at": "2026-11-09T12:00:05.500Z",
+      "media_time_seconds": 5.5,
+      "frame_sha256": "32c8c1ad9056bbe24f1444c575e8f4aa832bb4819215c1a88c6787d4cbed1083",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 11,
+      "observed_at": "2026-11-09T12:00:05.500Z",
+      "media_time_seconds": 5.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 11,
+      "observed_at": "2026-11-09T12:00:05.500Z",
+      "media_time_seconds": 5.5,
+      "frame_sha256": "2997a8f80512b02600fed40cb12bc03ab16eb25b7a7e6aeb4fea127053e2ff22",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 12,
+      "observed_at": "2026-11-09T12:00:06.000Z",
+      "media_time_seconds": 6,
+      "frame_sha256": "693897957bee0994c5f990aafa807494aff6dab0a2a6f38fb092592a11212f06",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 12,
+      "observed_at": "2026-11-09T12:00:06.000Z",
+      "media_time_seconds": 6,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 12,
+      "observed_at": "2026-11-09T12:00:06.000Z",
+      "media_time_seconds": 6,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 12,
+      "observed_at": "2026-11-09T12:00:06.000Z",
+      "media_time_seconds": 6,
+      "frame_sha256": "787a472e898f7925c3d6cbb2f4cd68606d9231b46263fca580af3a8add420f54",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 12,
+      "observed_at": "2026-11-09T12:00:06.000Z",
+      "media_time_seconds": 6,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 12,
+      "observed_at": "2026-11-09T12:00:06.000Z",
+      "media_time_seconds": 6,
+      "frame_sha256": "7c39f360203c761603582761f044fb8010f888a05ff04cbe5f90d5abc9dab3d1",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 13,
+      "observed_at": "2026-11-09T12:00:06.500Z",
+      "media_time_seconds": 6.5,
+      "frame_sha256": "693897957bee0994c5f990aafa807494aff6dab0a2a6f38fb092592a11212f06",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 13,
+      "observed_at": "2026-11-09T12:00:06.500Z",
+      "media_time_seconds": 6.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 13,
+      "observed_at": "2026-11-09T12:00:06.500Z",
+      "media_time_seconds": 6.5,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 13,
+      "observed_at": "2026-11-09T12:00:06.500Z",
+      "media_time_seconds": 6.5,
+      "frame_sha256": "787a472e898f7925c3d6cbb2f4cd68606d9231b46263fca580af3a8add420f54",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 13,
+      "observed_at": "2026-11-09T12:00:06.500Z",
+      "media_time_seconds": 6.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 13,
+      "observed_at": "2026-11-09T12:00:06.500Z",
+      "media_time_seconds": 6.5,
+      "frame_sha256": "7c39f360203c761603582761f044fb8010f888a05ff04cbe5f90d5abc9dab3d1",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 14,
+      "observed_at": "2026-11-09T12:00:07.000Z",
+      "media_time_seconds": 7,
+      "frame_sha256": "6f62fd932dd7acfe1cecae3ed9e8d33da0008f23fce46c17f77ec9216b633379",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 14,
+      "observed_at": "2026-11-09T12:00:07.000Z",
+      "media_time_seconds": 7,
+      "frame_sha256": "dbee00220257d991e7c7060fbbbf8873d37b8451b10249575b6581fe177be99c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.5972375252823147,
+            0.8090177355904985
+          ],
+          "bbox": [
+            651.46240234375,
+            377.4588623046875,
+            802.7725219726562,
+            534.900146484375
+          ],
+          "confidence": 0.9183672070503235
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 14,
+      "observed_at": "2026-11-09T12:00:07.000Z",
+      "media_time_seconds": 7,
+      "frame_sha256": "4a74eb4b4ce9e590e9167875de98ce2415415b94f1c197b38a0ad50e78693450",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.4601595006702104,
+            0.4891814813881253
+          ],
+          "bbox": [
+            531.6358032226562,
+            222.77328491210938,
+            592.0596923828125,
+            306.4642028808594
+          ],
+          "confidence": 0.8569413423538208
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 14,
+      "observed_at": "2026-11-09T12:00:07.000Z",
+      "media_time_seconds": 7,
+      "frame_sha256": "5aa910cd1b4545a61af92e2be61ddb8b44a0cbd10f5ba55e5e1089c69370912a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 14,
+      "observed_at": "2026-11-09T12:00:07.000Z",
+      "media_time_seconds": 7,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 14,
+      "observed_at": "2026-11-09T12:00:07.000Z",
+      "media_time_seconds": 7,
+      "frame_sha256": "c6f4c828df8c0af384f473bbec71731601a17d38a171d0fa046fcf6ebfbc0705",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 15,
+      "observed_at": "2026-11-09T12:00:07.500Z",
+      "media_time_seconds": 7.5,
+      "frame_sha256": "f352972d11ec9898959c8d1fd4dfed683cace8be2676ceb0d631c2f68dbb1c18",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 15,
+      "observed_at": "2026-11-09T12:00:07.500Z",
+      "media_time_seconds": 7.5,
+      "frame_sha256": "f06a755433a64992ed0b299b9ee8e9a677d88b36d139fd8c4046399e5c0b8010",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.6087045673298728,
+            0.8402704469884176
+          ],
+          "bbox": [
+            611.6861572265625,
+            390.5274353027344,
+            774.6307373046875,
+            552.0729370117188
+          ],
+          "confidence": 0.9081201553344727
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 15,
+      "observed_at": "2026-11-09T12:00:07.500Z",
+      "media_time_seconds": 7.5,
+      "frame_sha256": "9e3cea5638309b2b2d748620cd07f24e3035e0ae5286aae54dc0e15e0f512ddc",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.4729518168642094,
+            0.48768287334662
+          ],
+          "bbox": [
+            525.4243774414062,
+            225.4471893310547,
+            577.9713745117188,
+            311.02838134765625
+          ],
+          "confidence": 0.724692702293396
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 15,
+      "observed_at": "2026-11-09T12:00:07.500Z",
+      "media_time_seconds": 7.5,
+      "frame_sha256": "ee609c847e06e173d932809c2fb35e091eb90f3dbad3552fa92423e2d640a69d",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 15,
+      "observed_at": "2026-11-09T12:00:07.500Z",
+      "media_time_seconds": 7.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 15,
+      "observed_at": "2026-11-09T12:00:07.500Z",
+      "media_time_seconds": 7.5,
+      "frame_sha256": "3fdc7778d3719605c3a4d21ec893d0fd6ced8bdec3c24a85add0796890f72cf4",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 16,
+      "observed_at": "2026-11-09T12:00:08.000Z",
+      "media_time_seconds": 8,
+      "frame_sha256": "eef704d362bf921a77bf05a1e40092da2d8bd6eeab558453cf53def24bf089c2",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:1",
+          "position": [
+            0.4547396294598972,
+            0.4933545793490805
+          ],
+          "bbox": [
+            503.1768798828125,
+            270.1034851074219,
+            569.9334716796875,
+            369.4991455078125
+          ],
+          "confidence": 0.4415358304977417
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 16,
+      "observed_at": "2026-11-09T12:00:08.000Z",
+      "media_time_seconds": 8,
+      "frame_sha256": "0cd1f52a0621985a7c6f4af399c90b5e82124e21576efe3e718d0306e771935d",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.6222661670918106,
+            0.895735228226802
+          ],
+          "bbox": [
+            619.3267211914062,
+            427.46978759765625,
+            808.5488891601562,
+            605.6339111328125
+          ],
+          "confidence": 0.9267460703849792
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 16,
+      "observed_at": "2026-11-09T12:00:08.000Z",
+      "media_time_seconds": 8,
+      "frame_sha256": "2a0b706410442a4c710e38364d2f74d8d2c2c9b1706fc4837e1707f70d92512c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.4801440121876665,
+            0.4927459597624741
+          ],
+          "bbox": [
+            512.936279296875,
+            234.86117553710938,
+            587.2791748046875,
+            320.9421691894531
+          ],
+          "confidence": 0.8389073014259338
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 16,
+      "observed_at": "2026-11-09T12:00:08.000Z",
+      "media_time_seconds": 8,
+      "frame_sha256": "0faf5f87493d2765c39c4dfbd61a14df2b338130971296e8d081386bc05c2ce1",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 16,
+      "observed_at": "2026-11-09T12:00:08.000Z",
+      "media_time_seconds": 8,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 16,
+      "observed_at": "2026-11-09T12:00:08.000Z",
+      "media_time_seconds": 8,
+      "frame_sha256": "c8122c4f042e73efff79bcb5a233afe6c07b2ecf003e3ca2a49075e414e6227a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 17,
+      "observed_at": "2026-11-09T12:00:08.500Z",
+      "media_time_seconds": 8.5,
+      "frame_sha256": "ba853499935d88f83ed4df746b35566c5fd8138d69c1eba1c79bcd7a69e5f5c5",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 17,
+      "observed_at": "2026-11-09T12:00:08.500Z",
+      "media_time_seconds": 8.5,
+      "frame_sha256": "bcd493689bf595b2f73121a089b859514bc522f9064870dacd5579fbcfac1528",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.6406835597571909,
+            0.9601886815631391
+          ],
+          "bbox": [
+            630.673828125,
+            480.9828796386719,
+            855.1777954101562,
+            648.0
+          ],
+          "confidence": 0.9288485646247864
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 17,
+      "observed_at": "2026-11-09T12:00:08.500Z",
+      "media_time_seconds": 8.5,
+      "frame_sha256": "8bd09d3d237774db53f1d49366d41350bafb7580647266dd22a63adeabe12609",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.485110770610183,
+            0.5023293586446848
+          ],
+          "bbox": [
+            510.27947998046875,
+            241.27439880371094,
+            596.5642700195312,
+            330.38134765625
+          ],
+          "confidence": 0.8061937689781189
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 17,
+      "observed_at": "2026-11-09T12:00:08.500Z",
+      "media_time_seconds": 8.5,
+      "frame_sha256": "2b3143642b1189e266966cbf1a4b18446969ff761e00eed5583d9af06fec0b42",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 17,
+      "observed_at": "2026-11-09T12:00:08.500Z",
+      "media_time_seconds": 8.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 17,
+      "observed_at": "2026-11-09T12:00:08.500Z",
+      "media_time_seconds": 8.5,
+      "frame_sha256": "392dd7a221f7e9b87ff1b68d0ee6aac1fd32cb162a0d03f528d63dc74b68ba3c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 18,
+      "observed_at": "2026-11-09T12:00:09.000Z",
+      "media_time_seconds": 9,
+      "frame_sha256": "b434cf4115b739b31a801447fe14bc96c464053340ec3f58c40021f1c808bd4e",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 18,
+      "observed_at": "2026-11-09T12:00:09.000Z",
+      "media_time_seconds": 9,
+      "frame_sha256": "ecbf43f16eb3d4f14b54c08a9180edf1855a5c0d80f4eb0e4c71d2b4779a8ec6",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-02:norfair:1",
+          "position": [
+            0.6765080136139372,
+            1.0007040774272258
+          ],
+          "bbox": [
+            741.5369262695312,
+            565.6950073242188,
+            874.4488525390625,
+            648.0
+          ],
+          "confidence": 0.3882470726966858
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 18,
+      "observed_at": "2026-11-09T12:00:09.000Z",
+      "media_time_seconds": 9,
+      "frame_sha256": "1b00a4ba89439586bb3d0d8135b06412afb42a82fea7c51f511fc59789e0eaab",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.4896828187425447,
+            0.5190490017822712
+          ],
+          "bbox": [
+            512.3233032226562,
+            241.38165283203125,
+            606.79638671875,
+            345.7080078125
+          ],
+          "confidence": 0.8703749179840088
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 18,
+      "observed_at": "2026-11-09T12:00:09.000Z",
+      "media_time_seconds": 9,
+      "frame_sha256": "243004f03a3a619e7816bed0f78ffc98112030def1130bbe57a9d9b46da0c574",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 18,
+      "observed_at": "2026-11-09T12:00:09.000Z",
+      "media_time_seconds": 9,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 18,
+      "observed_at": "2026-11-09T12:00:09.000Z",
+      "media_time_seconds": 9,
+      "frame_sha256": "2d65481c636203aa19e5fa4f6d3a6661f5049fc9f4a3c4c3d72865946ff62f78",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 19,
+      "observed_at": "2026-11-09T12:00:09.500Z",
+      "media_time_seconds": 9.5,
+      "frame_sha256": "0733150baceaec0c8a921ea7d933e1695e27f2f580414ff7d32cff6cbf9a3dca",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 19,
+      "observed_at": "2026-11-09T12:00:09.500Z",
+      "media_time_seconds": 9.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 19,
+      "observed_at": "2026-11-09T12:00:09.500Z",
+      "media_time_seconds": 9.5,
+      "frame_sha256": "b6824e0539f2c4cb00c233bbac58d1e1f827043d5e53a7103c023885b1e4a163",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.4984579281994759,
+            0.5402785234793603
+          ],
+          "bbox": [
+            535.1211547851562,
+            254.54014587402344,
+            618.7493896484375,
+            360.635009765625
+          ],
+          "confidence": 0.8353018164634705
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 19,
+      "observed_at": "2026-11-09T12:00:09.500Z",
+      "media_time_seconds": 9.5,
+      "frame_sha256": "84584a81f48b0259a63c93c42304c3bf5f8dce5ac14b5879700ed7635d02e359",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 19,
+      "observed_at": "2026-11-09T12:00:09.500Z",
+      "media_time_seconds": 9.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 19,
+      "observed_at": "2026-11-09T12:00:09.500Z",
+      "media_time_seconds": 9.5,
+      "frame_sha256": "7bf4960582a5f56baf0e80e5ee8af7c6eaee61c90d01d6f61f7245d31eb7075d",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 20,
+      "observed_at": "2026-11-09T12:00:10.000Z",
+      "media_time_seconds": 10,
+      "frame_sha256": "ee97e02507e83d7ce3569c5003b9141494f3b213a4dfd80180f1bf5c5f9304a5",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 20,
+      "observed_at": "2026-11-09T12:00:10.000Z",
+      "media_time_seconds": 10,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 20,
+      "observed_at": "2026-11-09T12:00:10.000Z",
+      "media_time_seconds": 10,
+      "frame_sha256": "edf2bdddcb259eced45db07c159a570e73237e20f782c10e0b8f3001f6d98218",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.5048709410144886,
+            0.5660288978592047
+          ],
+          "bbox": [
+            529.9755249023438,
+            264.90936279296875,
+            630.4224243164062,
+            378.190185546875
+          ],
+          "confidence": 0.8635613918304443
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 20,
+      "observed_at": "2026-11-09T12:00:10.000Z",
+      "media_time_seconds": 10,
+      "frame_sha256": "6facf0cdd87de6591b34931c6ded953b71a9f3218bbc4329fef05c46ea926a37",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 20,
+      "observed_at": "2026-11-09T12:00:10.000Z",
+      "media_time_seconds": 10,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 20,
+      "observed_at": "2026-11-09T12:00:10.000Z",
+      "media_time_seconds": 10,
+      "frame_sha256": "c49c7b11c1ff9f867e17422b5e341cd1cc81b9e6f795bffcc5a1440e0e19ca00",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 21,
+      "observed_at": "2026-11-09T12:00:10.500Z",
+      "media_time_seconds": 10.5,
+      "frame_sha256": "32720f03773180e4a9853b341e5fa5da067a67eafe80e872297f6cab2c41a847",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 21,
+      "observed_at": "2026-11-09T12:00:10.500Z",
+      "media_time_seconds": 10.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 21,
+      "observed_at": "2026-11-09T12:00:10.500Z",
+      "media_time_seconds": 10.5,
+      "frame_sha256": "1511f7590fb8337b9f0e708a6d0fabc066c593d608ad7a21ed4704cb2c4ec3af",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.5125096413512058,
+            0.5965031356216951
+          ],
+          "bbox": [
+            535.552978515625,
+            276.0135192871094,
+            646.7273559570312,
+            398.74102783203125
+          ],
+          "confidence": 0.8751955628395081
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 21,
+      "observed_at": "2026-11-09T12:00:10.500Z",
+      "media_time_seconds": 10.5,
+      "frame_sha256": "014c31dfa589134df02d8a44b6c9558a8f2d556977c445646aa6480df1006c6a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 21,
+      "observed_at": "2026-11-09T12:00:10.500Z",
+      "media_time_seconds": 10.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 21,
+      "observed_at": "2026-11-09T12:00:10.500Z",
+      "media_time_seconds": 10.5,
+      "frame_sha256": "0c0619cdeefc243aa524c1596aa4c5ceaafd9594cf6cf5ad0aad31013c01096d",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 22,
+      "observed_at": "2026-11-09T12:00:11.000Z",
+      "media_time_seconds": 11,
+      "frame_sha256": "7801fa31f4ecf272f09abb063e460cbd2c99b95ebabeaf43b8acd68695097ec0",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 22,
+      "observed_at": "2026-11-09T12:00:11.000Z",
+      "media_time_seconds": 11,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 22,
+      "observed_at": "2026-11-09T12:00:11.000Z",
+      "media_time_seconds": 11,
+      "frame_sha256": "e69b9a7d014997c1b2c725ff7b0884141da59ed1b09fe597947b7103da96caca",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.5227198916503527,
+            0.6305727610750039
+          ],
+          "bbox": [
+            544.241943359375,
+            291.7329406738281,
+            668.589111328125,
+            420.49395751953125
+          ],
+          "confidence": 0.8777523040771484
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 22,
+      "observed_at": "2026-11-09T12:00:11.000Z",
+      "media_time_seconds": 11,
+      "frame_sha256": "4102ca90cebbdd4df99f4939857a0562db639e259ac92bb5f5a79f038f51810f",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 22,
+      "observed_at": "2026-11-09T12:00:11.000Z",
+      "media_time_seconds": 11,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 22,
+      "observed_at": "2026-11-09T12:00:11.000Z",
+      "media_time_seconds": 11,
+      "frame_sha256": "6dac09519c773874096a88eebb5942eb4b5a5271c40f4f3c5a6d0630868ebae8",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 23,
+      "observed_at": "2026-11-09T12:00:11.500Z",
+      "media_time_seconds": 11.5,
+      "frame_sha256": "9d8041412bae5652b1cb2ddfbdb5508f9a331362d99d53dd99445b1fca760a51",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 23,
+      "observed_at": "2026-11-09T12:00:11.500Z",
+      "media_time_seconds": 11.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 23,
+      "observed_at": "2026-11-09T12:00:11.500Z",
+      "media_time_seconds": 11.5,
+      "frame_sha256": "cedf2687071e188f8430eee8522330138a760b2f6d5667bd8f0edb3dd67fc277",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.536328019423131,
+            0.6680570989671528
+          ],
+          "bbox": [
+            561.9942016601562,
+            305.21527099609375,
+            689.734375,
+            444.3993225097656
+          ],
+          "confidence": 0.9211677312850952
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 23,
+      "observed_at": "2026-11-09T12:00:11.500Z",
+      "media_time_seconds": 11.5,
+      "frame_sha256": "e9a391e04e8a67cbc60c6fedc8ca04d2a2f5b534dd6f09323f8a404e1aa61e3e",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 23,
+      "observed_at": "2026-11-09T12:00:11.500Z",
+      "media_time_seconds": 11.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 23,
+      "observed_at": "2026-11-09T12:00:11.500Z",
+      "media_time_seconds": 11.5,
+      "frame_sha256": "e3d89af8da763e391e89368149de425325272346cd25cafdcebcdfcada50b2e6",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 24,
+      "observed_at": "2026-11-09T12:00:12.000Z",
+      "media_time_seconds": 12,
+      "frame_sha256": "b06a705876f877d8b7872a8e1cd6c1d058ec2946ae55ae2945338bac5cccd5a8",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 24,
+      "observed_at": "2026-11-09T12:00:12.000Z",
+      "media_time_seconds": 12,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 24,
+      "observed_at": "2026-11-09T12:00:12.000Z",
+      "media_time_seconds": 12,
+      "frame_sha256": "ea201243987b87755d8253a475295310577696296fb3dcf7fb74c0990fd8407e",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.5613522817489195,
+            0.6956987975637758
+          ],
+          "bbox": [
+            606.22705078125,
+            310.8359375,
+            731.8167724609375,
+            451.2790222167969
+          ],
+          "confidence": 0.9097292423248291
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 24,
+      "observed_at": "2026-11-09T12:00:12.000Z",
+      "media_time_seconds": 12,
+      "frame_sha256": "de68431582aa14092d6e24a0d225cd76a5b4848332750237991d62675e6f3803",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.39719318019019234,
+            0.3283537640983676
+          ],
+          "bbox": [
+            427.5654602050781,
+            128.3565673828125,
+            487.567626953125,
+            212.7732391357422
+          ],
+          "confidence": 0.26555272936820984
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 24,
+      "observed_at": "2026-11-09T12:00:12.000Z",
+      "media_time_seconds": 12,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 24,
+      "observed_at": "2026-11-09T12:00:12.000Z",
+      "media_time_seconds": 12,
+      "frame_sha256": "104b10301d4aad7ad3977283a33469ae401b93b48f86d066a2c924931b740cb0",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 25,
+      "observed_at": "2026-11-09T12:00:12.500Z",
+      "media_time_seconds": 12.5,
+      "frame_sha256": "9a9dd713c392e227b4ce8e3d94e76d1778793125ed07177187514a5fcc5b6cbf",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 25,
+      "observed_at": "2026-11-09T12:00:12.500Z",
+      "media_time_seconds": 12.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 25,
+      "observed_at": "2026-11-09T12:00:12.500Z",
+      "media_time_seconds": 12.5,
+      "frame_sha256": "8bfce441162a4eb28fded7baff5fa7d7b9a610fd541884a9d05225dc25dd1fd2",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.5872165295450282,
+            0.7353193464645649
+          ],
+          "bbox": [
+            622.4869384765625,
+            333.9620666503906,
+            765.7108154296875,
+            486.5426025390625
+          ],
+          "confidence": 0.9242405295372009
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 25,
+      "observed_at": "2026-11-09T12:00:12.500Z",
+      "media_time_seconds": 12.5,
+      "frame_sha256": "f1cfb3a946c1da38acd05c33aa4cb30dcd1ad121a4532bfc6ce5572e20933d86",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.40144040507372025,
+            0.3377543496107024
+          ],
+          "bbox": [
+            436.7439270019531,
+            135.7637176513672,
+            491.70111083984375,
+            221.0599822998047
+          ],
+          "confidence": 0.7617164850234985
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 25,
+      "observed_at": "2026-11-09T12:00:12.500Z",
+      "media_time_seconds": 12.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 25,
+      "observed_at": "2026-11-09T12:00:12.500Z",
+      "media_time_seconds": 12.5,
+      "frame_sha256": "e8c8a001ed213a750114e7f4f18d26f4d131e506391daa04440d44dffdc7645a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 26,
+      "observed_at": "2026-11-09T12:00:13.000Z",
+      "media_time_seconds": 13,
+      "frame_sha256": "477a2080df10a583540ec6f7ca75554906db6b9285fb1dc621dfb63e63bb87f8",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 26,
+      "observed_at": "2026-11-09T12:00:13.000Z",
+      "media_time_seconds": 13,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 26,
+      "observed_at": "2026-11-09T12:00:13.000Z",
+      "media_time_seconds": 13,
+      "frame_sha256": "ce81569b680f078b2e3e30cd38a02e3648ac4f1a0b070b2ef63ec80443f3627d",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.6150254482063856,
+            0.7894500503768167
+          ],
+          "bbox": [
+            644.3084106445312,
+            364.4410705566406,
+            804.212890625,
+            530.716552734375
+          ],
+          "confidence": 0.9086378812789917
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 26,
+      "observed_at": "2026-11-09T12:00:13.000Z",
+      "media_time_seconds": 13,
+      "frame_sha256": "98a03ddb99607a38e21593a8ba15e7e68f5c1dcc8e95dcdd864a47b4984ee86c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.405064960761219,
+            0.34718701097497334
+          ],
+          "bbox": [
+            440.91650390625,
+            138.43771362304688,
+            498.8426818847656,
+            229.81089782714844
+          ],
+          "confidence": 0.7767057418823242
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 26,
+      "observed_at": "2026-11-09T12:00:13.000Z",
+      "media_time_seconds": 13,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 26,
+      "observed_at": "2026-11-09T12:00:13.000Z",
+      "media_time_seconds": 13,
+      "frame_sha256": "48b0f20864a807b6e4726b93f47529081fa2c9c7d6b55488f545d347d40ca0b6",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 27,
+      "observed_at": "2026-11-09T12:00:13.500Z",
+      "media_time_seconds": 13.5,
+      "frame_sha256": "67d7b453e9e1d5ba12b69f92560c5e18c3313d8ed27ab3f0c52b355388c3585c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 27,
+      "observed_at": "2026-11-09T12:00:13.500Z",
+      "media_time_seconds": 13.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 27,
+      "observed_at": "2026-11-09T12:00:13.500Z",
+      "media_time_seconds": 13.5,
+      "frame_sha256": "bb1bc8fd5a64455b086edf4803c3f7e57a3fa190a2dc63cf270f767723158822",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.6493475626147096,
+            0.8610999028216959
+          ],
+          "bbox": [
+            676.3568725585938,
+            409.7543029785156,
+            861.6604614257812,
+            586.2685546875
+          ],
+          "confidence": 0.9173716902732849
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 27,
+      "observed_at": "2026-11-09T12:00:13.500Z",
+      "media_time_seconds": 13.5,
+      "frame_sha256": "8d009394e8fc46f77f5e89bf57c6f4379d042ba9892e7ef9eed92ab4f2620099",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.41002511763345745,
+            0.35990957903663057
+          ],
+          "bbox": [
+            440.9495849609375,
+            144.9938507080078,
+            511.44580078125,
+            238.80877685546875
+          ],
+          "confidence": 0.7495371103286743
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 27,
+      "observed_at": "2026-11-09T12:00:13.500Z",
+      "media_time_seconds": 13.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 27,
+      "observed_at": "2026-11-09T12:00:13.500Z",
+      "media_time_seconds": 13.5,
+      "frame_sha256": "5645f870e26b9e56ce3db6d0a134c41738671ddae4b03f7f9d3e70cb285f604a",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 28,
+      "observed_at": "2026-11-09T12:00:14.000Z",
+      "media_time_seconds": 14,
+      "frame_sha256": "3948a0652eca119ddd6327996b07a4e0f8ff797fd9aebd2b67936bdada340b18",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 28,
+      "observed_at": "2026-11-09T12:00:14.000Z",
+      "media_time_seconds": 14,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 28,
+      "observed_at": "2026-11-09T12:00:14.000Z",
+      "media_time_seconds": 14,
+      "frame_sha256": "c9f881aba00a07a6b3a45e522fcdb6ec9feea73d02919374d006c7fbf3e6cfdf",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-03:norfair:1",
+          "position": [
+            0.6956076916946479,
+            0.9483826172598239
+          ],
+          "bbox": [
+            720.8355712890625,
+            475.0237121582031,
+            947.0584716796875,
+            648.0
+          ],
+          "confidence": 0.9377027153968811
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 28,
+      "observed_at": "2026-11-09T12:00:14.000Z",
+      "media_time_seconds": 14,
+      "frame_sha256": "a1fccf106734102c44a405c6e50957a882cfdc3522dc799cf475dff776a682fe",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.41569738218759905,
+            0.37594625718011015
+          ],
+          "bbox": [
+            443.681640625,
+            151.54446411132812,
+            520.5274658203125,
+            249.15576171875
+          ],
+          "confidence": 0.7944363951683044
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 28,
+      "observed_at": "2026-11-09T12:00:14.000Z",
+      "media_time_seconds": 14,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 28,
+      "observed_at": "2026-11-09T12:00:14.000Z",
+      "media_time_seconds": 14,
+      "frame_sha256": "8e24082d1ef0f1d8d192360a2ae72d7a72a0656e81d14e0f4b463d5cca2e1d62",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 29,
+      "observed_at": "2026-11-09T12:00:14.500Z",
+      "media_time_seconds": 14.5,
+      "frame_sha256": "1dc0f5b7e0c339bb2a17d3a1cec0f83a63e6cd1fbfbcff1c0c245a337ac4e7cc",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 29,
+      "observed_at": "2026-11-09T12:00:14.500Z",
+      "media_time_seconds": 14.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 29,
+      "observed_at": "2026-11-09T12:00:14.500Z",
+      "media_time_seconds": 14.5,
+      "frame_sha256": "1c0cceaaf7b29a7c4e28f5e359f9c0ecb39f741d10edfacd81280b8a069616fc",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 29,
+      "observed_at": "2026-11-09T12:00:14.500Z",
+      "media_time_seconds": 14.5,
+      "frame_sha256": "f18b16da538c8b4076e0313c8076169049e6cdd73309904598b97f023c89978c",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.42214622900999904,
+            0.3945152954491798
+          ],
+          "bbox": [
+            446.3496398925781,
+            157.4481964111328,
+            532.4610595703125,
+            261.0644226074219
+          ],
+          "confidence": 0.8425413966178894
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 29,
+      "observed_at": "2026-11-09T12:00:14.500Z",
+      "media_time_seconds": 14.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 29,
+      "observed_at": "2026-11-09T12:00:14.500Z",
+      "media_time_seconds": 14.5,
+      "frame_sha256": "3f18b3fd2475dbfeb5229330bb3dbdd377ae2100f3323a8f35d58551df7e7e2f",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 30,
+      "observed_at": "2026-11-09T12:00:15.000Z",
+      "media_time_seconds": 15,
+      "frame_sha256": "bd8feba85fdb7148e5f9ddc7e6dc9876ad0021a31a96b1e9d44834c58b59c7b4",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 30,
+      "observed_at": "2026-11-09T12:00:15.000Z",
+      "media_time_seconds": 15,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 30,
+      "observed_at": "2026-11-09T12:00:15.000Z",
+      "media_time_seconds": 15,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 30,
+      "observed_at": "2026-11-09T12:00:15.000Z",
+      "media_time_seconds": 15,
+      "frame_sha256": "f0784b0702d38ef8a38a6f0975fe0214eb0511c434107c37afb8498c66180535",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.4298818250718987,
+            0.4145459321194708
+          ],
+          "bbox": [
+            452.4347839355469,
+            167.40396118164062,
+            545.66162109375,
+            273.63421630859375
+          ],
+          "confidence": 0.8721121549606323
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 30,
+      "observed_at": "2026-11-09T12:00:15.000Z",
+      "media_time_seconds": 15,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 30,
+      "observed_at": "2026-11-09T12:00:15.000Z",
+      "media_time_seconds": 15,
+      "frame_sha256": "6afec9a20c1f16e9117968f2d4d991ff4bc8ba116f5fd327e8abc21b2e75dcff",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 31,
+      "observed_at": "2026-11-09T12:00:15.500Z",
+      "media_time_seconds": 15.5,
+      "frame_sha256": "dcbcc5a65cf7df7bc69e30a8bd063bbf4d85e34934f5613f9bd231de4957abaa",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 31,
+      "observed_at": "2026-11-09T12:00:15.500Z",
+      "media_time_seconds": 15.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 31,
+      "observed_at": "2026-11-09T12:00:15.500Z",
+      "media_time_seconds": 15.5,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 31,
+      "observed_at": "2026-11-09T12:00:15.500Z",
+      "media_time_seconds": 15.5,
+      "frame_sha256": "cd552b239e357f6ede201c8a91c3cb57936e2f4e2c3b76bd1aef20fbc9f4a3f6",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.43947464191403673,
+            0.43700524555257053
+          ],
+          "bbox": [
+            463.6886901855469,
+            173.26524353027344,
+            559.4282836914062,
+            288.74725341796875
+          ],
+          "confidence": 0.8614789247512817
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 31,
+      "observed_at": "2026-11-09T12:00:15.500Z",
+      "media_time_seconds": 15.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 31,
+      "observed_at": "2026-11-09T12:00:15.500Z",
+      "media_time_seconds": 15.5,
+      "frame_sha256": "44e3aef6a9ca36069030028b3b45e87e86e7cfcfa2f70fc21ebe81992de64c86",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 32,
+      "observed_at": "2026-11-09T12:00:16.000Z",
+      "media_time_seconds": 16,
+      "frame_sha256": "49213419b93f559d73cd8982560323c08993d441a5fbfbbe5f2e180e414d8a0f",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 32,
+      "observed_at": "2026-11-09T12:00:16.000Z",
+      "media_time_seconds": 16,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 32,
+      "observed_at": "2026-11-09T12:00:16.000Z",
+      "media_time_seconds": 16,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 32,
+      "observed_at": "2026-11-09T12:00:16.000Z",
+      "media_time_seconds": 16,
+      "frame_sha256": "420c108feb73aff729f9aa7fc222119b405da2cae120d49c87ef3d1766d7b4e6",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.450520673614955,
+            0.4612945348438177
+          ],
+          "bbox": [
+            475.2459716796875,
+            183.72349548339844,
+            574.75146484375,
+            304.56842041015625
+          ],
+          "confidence": 0.899577796459198
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 32,
+      "observed_at": "2026-11-09T12:00:16.000Z",
+      "media_time_seconds": 16,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 32,
+      "observed_at": "2026-11-09T12:00:16.000Z",
+      "media_time_seconds": 16,
+      "frame_sha256": "b5f498437da4078f04b3eaa31883c774ebfd53fca6ade47d726491c86c22bf74",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 33,
+      "observed_at": "2026-11-09T12:00:16.500Z",
+      "media_time_seconds": 16.5,
+      "frame_sha256": "578b6bfeefca92cf7e34aae8dbb83042f7876e9a1a63722a9e37ef949196029e",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 33,
+      "observed_at": "2026-11-09T12:00:16.500Z",
+      "media_time_seconds": 16.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 33,
+      "observed_at": "2026-11-09T12:00:16.500Z",
+      "media_time_seconds": 16.5,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 33,
+      "observed_at": "2026-11-09T12:00:16.500Z",
+      "media_time_seconds": 16.5,
+      "frame_sha256": "28d8920961ba57d2a8ce0a2579ca716c5eaa8b2e9a4662e2f224a85667a1ca04",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.47241555545487485,
+            0.475517520760525
+          ],
+          "bbox": [
+            516.3468017578125,
+            182.4321746826172,
+            611.3186645507812,
+            304.5738525390625
+          ],
+          "confidence": 0.8985973000526428
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 33,
+      "observed_at": "2026-11-09T12:00:16.500Z",
+      "media_time_seconds": 16.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 33,
+      "observed_at": "2026-11-09T12:00:16.500Z",
+      "media_time_seconds": 16.5,
+      "frame_sha256": "df1e16ac7c4467a527b6f51e0d727132dfcce8c0449979dd09ce23b5ebaf574e",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 34,
+      "observed_at": "2026-11-09T12:00:17.000Z",
+      "media_time_seconds": 17,
+      "frame_sha256": "9cfa82b6917e373c6771b73c9e47e6be39d55c4633d7a6c664e6949382b9feaf",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 34,
+      "observed_at": "2026-11-09T12:00:17.000Z",
+      "media_time_seconds": 17,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 34,
+      "observed_at": "2026-11-09T12:00:17.000Z",
+      "media_time_seconds": 17,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 34,
+      "observed_at": "2026-11-09T12:00:17.000Z",
+      "media_time_seconds": 17,
+      "frame_sha256": "c48d75a25dd8d2ea574aedb8e01e92ccc2099d544222eb81417064b47ce94bd7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.5017811190922937,
+            0.4779987841534447
+          ],
+          "bbox": [
+            557.5797119140625,
+            176.421630859375,
+            649.1475830078125,
+            297.7127380371094
+          ],
+          "confidence": 0.8717247247695923
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 34,
+      "observed_at": "2026-11-09T12:00:17.000Z",
+      "media_time_seconds": 17,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 34,
+      "observed_at": "2026-11-09T12:00:17.000Z",
+      "media_time_seconds": 17,
+      "frame_sha256": "f440026ec931db993eaec345195153596c9de36bba7d7afaa77c637cc859252e",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 35,
+      "observed_at": "2026-11-09T12:00:17.500Z",
+      "media_time_seconds": 17.5,
+      "frame_sha256": "1cffad7cf99d353eee504a58cc30eae87ccd008b7951949bd98551063353c348",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 35,
+      "observed_at": "2026-11-09T12:00:17.500Z",
+      "media_time_seconds": 17.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 35,
+      "observed_at": "2026-11-09T12:00:17.500Z",
+      "media_time_seconds": 17.5,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 35,
+      "observed_at": "2026-11-09T12:00:17.500Z",
+      "media_time_seconds": 17.5,
+      "frame_sha256": "fdb7101fd024271890314a0de36ea2f9576ef306587c98720765a9c8f17bba7e",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.5283362399223025,
+            0.4893419924527328
+          ],
+          "bbox": [
+            575.162109375,
+            189.65350341796875,
+            671.7330932617188,
+            315.2810363769531
+          ],
+          "confidence": 0.8963380455970764
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 35,
+      "observed_at": "2026-11-09T12:00:17.500Z",
+      "media_time_seconds": 17.5,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 35,
+      "observed_at": "2026-11-09T12:00:17.500Z",
+      "media_time_seconds": 17.5,
+      "frame_sha256": "9286324bf1e2ccfbd977b1167a35e34ceea7fa6f6bc0e1959ffb0585faebaece",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-06:norfair:1",
+          "position": [
+            0.5731927553812662,
+            0.5208014970944251
+          ],
+          "bbox": [
+            637.1729125976562,
+            271.1660461425781,
+            683.4631958007812,
+            337.4793701171875
+          ],
+          "confidence": 0.3106088638305664
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 36,
+      "observed_at": "2026-11-09T12:00:18.000Z",
+      "media_time_seconds": 18,
+      "frame_sha256": "784f1931aabe13e67630ccd4278e22c60618c0bd2683086ba4cd937dcc2e6e36",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 36,
+      "observed_at": "2026-11-09T12:00:18.000Z",
+      "media_time_seconds": 18,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 36,
+      "observed_at": "2026-11-09T12:00:18.000Z",
+      "media_time_seconds": 18,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 36,
+      "observed_at": "2026-11-09T12:00:18.000Z",
+      "media_time_seconds": 18,
+      "frame_sha256": "bdbb90132fd6321d59b7f77c8ecb8738846d3fb529c981fd23356c9056732348",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.5553188404651251,
+            0.5064626614301663
+          ],
+          "bbox": [
+            595.519287109375,
+            203.21426391601562,
+            707.044921875,
+            331.52215576171875
+          ],
+          "confidence": 0.8751688599586487
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 36,
+      "observed_at": "2026-11-09T12:00:18.000Z",
+      "media_time_seconds": 18,
+      "frame_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 36,
+      "observed_at": "2026-11-09T12:00:18.000Z",
+      "media_time_seconds": 18,
+      "frame_sha256": "c0309f10e2a74121ab148d6432aeecd54d14632412c9cc3edb214865dfa5dfd4",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 37,
+      "observed_at": "2026-11-09T12:00:18.500Z",
+      "media_time_seconds": 18.5,
+      "frame_sha256": "2d6bb799fc768b6136ae173131862a8cede46e3b5c76736d0d79c245f286e151",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:2",
+          "position": [
+            0.4615914556715224,
+            0.43088710455246915
+          ],
+          "bbox": [
+            517.578369140625,
+            224.7671661376953,
+            545.9283447265625,
+            279.21484375
+          ],
+          "confidence": 0.3658399283885956
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 37,
+      "observed_at": "2026-11-09T12:00:18.500Z",
+      "media_time_seconds": 18.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 37,
+      "observed_at": "2026-11-09T12:00:18.500Z",
+      "media_time_seconds": 18.5,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 37,
+      "observed_at": "2026-11-09T12:00:18.500Z",
+      "media_time_seconds": 18.5,
+      "frame_sha256": "279c6d0743f537c9d9a4500ee817ea40e7851b36e7a827543fb6cfce36ac5195",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.5806231293190401,
+            0.5241835077106296
+          ],
+          "bbox": [
+            619.7466430664062,
+            210.62344360351562,
+            730.1891479492188,
+            342.6123046875
+          ],
+          "confidence": 0.8429984450340271
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 37,
+      "observed_at": "2026-11-09T12:00:18.500Z",
+      "media_time_seconds": 18.5,
+      "frame_sha256": "6492b7c4d1f1efecfbf0704479c15cde0afafd455a99eae5bd3d352d6215307b",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-05:norfair:1",
+          "position": [
+            0.05305930640962389,
+            1.0
+          ],
+          "bbox": [
+            0.0,
+            567.207275390625,
+            122.24864196777344,
+            648.0
+          ],
+          "confidence": 0.5851032137870789
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 37,
+      "observed_at": "2026-11-09T12:00:18.500Z",
+      "media_time_seconds": 18.5,
+      "frame_sha256": "820a882e6aac55fd9ec703661c71886eba99ce1bc31fc0b4eb435fb22752fb15",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 38,
+      "observed_at": "2026-11-09T12:00:19.000Z",
+      "media_time_seconds": 19,
+      "frame_sha256": "23de18c1e26a59a7f0181444a4cb58a5a5c0cc7faedee9c7e9b7771ebf942aa8",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-01:norfair:2",
+          "position": [
+            0.46334991111222046,
+            0.4270488725602505
+          ],
+          "bbox": [
+            520.9854736328125,
+            225.34007263183594,
+            548.03271484375,
+            275.8313903808594
+          ],
+          "confidence": 0.4416446387767792
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 38,
+      "observed_at": "2026-11-09T12:00:19.000Z",
+      "media_time_seconds": 19,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 38,
+      "observed_at": "2026-11-09T12:00:19.000Z",
+      "media_time_seconds": 19,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 38,
+      "observed_at": "2026-11-09T12:00:19.000Z",
+      "media_time_seconds": 19,
+      "frame_sha256": "eb494f35f62ffc7971447923c402a12fa0e40af29a6b10601e83b7150075beb7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.6116467497862518,
+            0.579290154695253
+          ],
+          "bbox": [
+            663.0921630859375,
+            230.82528686523438,
+            771.5798950195312,
+            407.8487548828125
+          ],
+          "confidence": 0.679829478263855
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 38,
+      "observed_at": "2026-11-09T12:00:19.000Z",
+      "media_time_seconds": 19,
+      "frame_sha256": "ed00fd37020342a885012bac9bfe5e400ef57bda13df85f0bab960dc67ae6a33",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-05:norfair:1",
+          "position": [
+            0.10374934038228195,
+            1.0
+          ],
+          "bbox": [
+            4.50152587890625,
+            473.9562683105469,
+            276.6233825683594,
+            648.0
+          ],
+          "confidence": 0.914842426776886
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 38,
+      "observed_at": "2026-11-09T12:00:19.000Z",
+      "media_time_seconds": 19,
+      "frame_sha256": "4eb841fcc4497d6ca27366c7af984bdf37bc6a5af35be681d701ef42be586eae",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 39,
+      "observed_at": "2026-11-09T12:00:19.500Z",
+      "media_time_seconds": 19.5,
+      "frame_sha256": "e3830a33541de4b13898dc1c75a6e227132b067984162d250b6bbbddce098f9e",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 39,
+      "observed_at": "2026-11-09T12:00:19.500Z",
+      "media_time_seconds": 19.5,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 39,
+      "observed_at": "2026-11-09T12:00:19.500Z",
+      "media_time_seconds": 19.5,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 39,
+      "observed_at": "2026-11-09T12:00:19.500Z",
+      "media_time_seconds": 19.5,
+      "frame_sha256": "c6159a133d7fcf692c2d41026adb055baed4705db9d1f6996e16c1f2850b95d4",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.6470519073809674,
+            0.6176769872329788
+          ],
+          "bbox": [
+            695.611328125,
+            252.73602294921875,
+            826.5131225585938,
+            410.55279541015625
+          ],
+          "confidence": 0.6893512010574341
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 39,
+      "observed_at": "2026-11-09T12:00:19.500Z",
+      "media_time_seconds": 19.5,
+      "frame_sha256": "699c46ffaff1fd183594507c441bbb4c5231b40260091f89ad08910131db2496",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-05:norfair:1",
+          "position": [
+            0.1450810986986464,
+            0.9990768056204957
+          ],
+          "bbox": [
+            88.53687286376953,
+            414.24420166015625,
+            319.324462890625,
+            646.8820190429688
+          ],
+          "confidence": 0.9012595415115356
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 39,
+      "observed_at": "2026-11-09T12:00:19.500Z",
+      "media_time_seconds": 19.5,
+      "frame_sha256": "97164e07596ea62e0d9345ea19e0231d0879174ff3746a36f92e332878304ab5",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 40,
+      "observed_at": "2026-11-09T12:00:20.000Z",
+      "media_time_seconds": 20,
+      "frame_sha256": "d62045843742755265ddcba171aa83f903b95f3df5ad215f39222cb3a073a3fe",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 40,
+      "observed_at": "2026-11-09T12:00:20.000Z",
+      "media_time_seconds": 20,
+      "frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 40,
+      "observed_at": "2026-11-09T12:00:20.000Z",
+      "media_time_seconds": 20,
+      "frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 40,
+      "observed_at": "2026-11-09T12:00:20.000Z",
+      "media_time_seconds": 20,
+      "frame_sha256": "5770dab96350c4a9c6f838608f960b3bdfb733db1c60efc45b53bc67e831e50d",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-04:norfair:2",
+          "position": [
+            0.6827223029127202,
+            0.6534112537333141
+          ],
+          "bbox": [
+            729.6520385742188,
+            275.1043701171875,
+            867.1083984375,
+            428.8245849609375
+          ],
+          "confidence": 0.8231250047683716
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 40,
+      "observed_at": "2026-11-09T12:00:20.000Z",
+      "media_time_seconds": 20,
+      "frame_sha256": "a2dac3f4f8c9716b35ba2e622aa1c0453e30005e3231b4f64c094a627e6535f5",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": [
+        {
+          "local_track_id": "CAMERA-PLANNED-05:norfair:1",
+          "position": [
+            0.1888766529329411,
+            0.9969768000956315
+          ],
+          "bbox": [
+            151.53204345703125,
+            379.493896484375,
+            344.28240966796875,
+            644.9537353515625
+          ],
+          "confidence": 0.8824670314788818
+        }
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 40,
+      "observed_at": "2026-11-09T12:00:20.000Z",
+      "media_time_seconds": 20,
+      "frame_sha256": "bfc02d8078575f87f8ddb6979257dd483c904e7ece45457aa00057f2ad73655f",
+      "image_size": [
+        1152,
+        648
+      ],
+      "tracks": []
+    }
+  ]
+}
