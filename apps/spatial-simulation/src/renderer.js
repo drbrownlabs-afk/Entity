@@ -1,3 +1,4 @@
+import goldenSource from '../../../simulation/spatial-office/lighting-reference-17.json';
 import * as pc from 'playcanvas';
 import {createIrradiance} from './irradiance.js';
 import {installReflections} from './reflections.js';
@@ -82,5 +83,5 @@ export async function createRenderer(canvas,data,state){
  }
  function view(name){reflections.view(name);const v=data.views[name];if(!v)throw Error('Vista no declarada');camera.setPosition(...v.position);camera.lookAt(...v.target);camera.camera.fov=v.fov;roof(name!=='general');}
  roof(false);view('general');environmentUpdate(true);app.start();window.addEventListener('resize',()=>app.resizeCanvas());
- return {app,camera,entities,model,view,roof,environmentUpdate,instanceRoots,lights,emitters,glass,frame,sun,reflections,irradiance,stats:()=>({engine:pc.version,sourceMeshInstances:originals,gpuInstanceGroups,gpuInstances,batches:app.batcher.getBatches(group.id).length,glassMaterials:glass.size,reflections:reflections.stats(),irradiance:irradiance.statistics(),drawCalls:app.stats.drawCalls.total,frameMs:app.stats.frame.ms})};
+ return {applyReferenceCondition(){if(goldenSource.master_sha256!==data.master_sha256)throw Error('La condición Golden Hour pertenece a otro maestro');state.playing=false;state.setHour(goldenSource.hour);for(const l of goldenSource.lights)state.light(l.id,{...l.state});data.palette.exposure=goldenSource.exposure_EV;environmentUpdate(true);return {source_consumed:true,transport_equivalence_verified:false};},app,camera,entities,model,view,roof,environmentUpdate,instanceRoots,lights,emitters,glass,frame,sun,reflections,irradiance,stats:()=>({engine:pc.version,sourceMeshInstances:originals,gpuInstanceGroups,gpuInstances,batches:app.batcher.getBatches(group.id).length,glassMaterials:glass.size,reflections:reflections.stats(),irradiance:irradiance.statistics(),drawCalls:app.stats.drawCalls.total,frameMs:app.stats.frame.ms})};
 }

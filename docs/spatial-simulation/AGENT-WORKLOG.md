@@ -100,3 +100,7 @@ Se detienen nuevas capturas y ajustes de materiales por instrucción del operado
 ## 2026-11-09 · Inicio de Fase04.5 autorizada
 
 Leídos plan y PHASE-04-5-QUALITY-REFERENCE.md desde actualización remota 45af25a. Avance directo de la misma rama, sin merge de ramas ni main. Implementado perfil máximo reversible y scripts Golden Hour; render Cycles y captura PlayCanvas iniciados. Compilación y pruebas unitarias ejecutadas. Alcance completo aún pendiente según PHASE-04-5-PROGRESS.md; no aprobación visual ni equivalencia declarada.
+
+## 2026-11-09 · Addendum transferible Fase04.5
+
+Incorporado literalmente como requisitos normativos en PHASE-04-5-QUALITY-REFERENCE.md. Exportados parámetros reales Golden Hour con Blender sin guardar maestro, y conectada la condición al perfil de referencia existente. La condición compartida no acredita transporte equivalente: conversión de potencia y bases HDR Golden Hour permanecen pendientes. Capturas iniciadas previamente etiquetadas diagnóstico. No aprobación ni optimización móvil.

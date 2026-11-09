@@ -1,0 +1,3786 @@
+{
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "hour": 17,
+  "clock": {
+    "hour": 17.0,
+    "speed": 60,
+    "playing": false
+  },
+  "exposure_EV": 0.30000001192092896,
+  "exposure_linear": 1.2311444235178113,
+  "view_transform": "AgX",
+  "look": "None",
+  "lights": [
+    {
+      "id": "sim:p3:lamp:0:light",
+      "environment": "sim:LOUNGE",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.800000011920929,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          3.200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.4600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -10.600000381469727,
+        1.4600000381469727,
+        -3.200000047683716
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 140,
+      "effective_power_W": 113.13140869140625,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p3:lamp:1:light",
+      "environment": "sim:LOUNGE",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.800000011920929,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          2.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.4600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -8.0,
+        1.4600000381469727,
+        -2.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 140,
+      "effective_power_W": 113.13140869140625,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p3:lamp:2:light",
+      "environment": "sim:LOCKERS",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.800000011920929,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -0.699999988079071
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.4600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -4.300000190734863,
+        1.4600000381469727,
+        0.699999988079071
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 140,
+      "effective_power_W": 113.13140869140625,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p3:sim:CALL-01:lamp:light",
+      "environment": "sim:CALL-01",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.800000011920929,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.050000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.2000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.059999942779541
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -11.050000190734863,
+        1.059999942779541,
+        1.2000000476837158
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 75,
+      "effective_power_W": 60.60611343383789,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p3:sim:CALL-02:lamp:light",
+      "environment": "sim:CALL-02",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.800000011920929,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.050000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.2000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.059999942779541
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -9.050000190734863,
+        1.059999942779541,
+        1.2000000476837158
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 75,
+      "effective_power_W": 60.60611343383789,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p3:WC:lamp:light",
+      "environment": "sim:WC",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.800000011920929,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -6.550000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.4600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -6.550000190734863,
+        1.4600000381469727,
+        1.5
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 80,
+      "effective_power_W": 64.64652252197266,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:accent:0",
+      "environment": "sim:CAFE-01",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.699999988079071,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.449999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.3850000202655792
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -11.449999809265137,
+        0.3850000202655792,
+        -24.299999237060547
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 50,
+      "effective_power_W": 45.52190017700195,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:accent:1",
+      "environment": "sim:CAFE-01",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.699999988079071,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.449999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.3850000202655792
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -11.449999809265137,
+        0.3850000202655792,
+        -22.700000762939453
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 50,
+      "effective_power_W": 45.52190017700195,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:accent:2",
+      "environment": "sim:CAFE-01",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.699999988079071,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.449999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.3850000202655792
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -11.449999809265137,
+        0.3850000202655792,
+        -21.100000381469727
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 50,
+      "effective_power_W": 45.52190017700195,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:accent:3",
+      "environment": "sim:CAFE-01",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.699999988079071,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.234999656677246
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.5449999570846558
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -9.234999656677246,
+        -0.5449999570846558,
+        -22.299999237060547
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 50,
+      "effective_power_W": 45.52190017700195,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:accent:4",
+      "environment": "sim:CAFE-01",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.699999988079071,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.239999771118164
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          22.299999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -1.4950000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -9.239999771118164,
+        -1.4950000047683716,
+        -22.299999237060547
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 50,
+      "effective_power_W": 45.52190017700195,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:accent:5",
+      "environment": "sim:CAFE-01",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.699999988079071,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.700000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5850000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -9.600000381469727,
+        0.5850000381469727,
+        -23.700000762939453
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 50,
+      "effective_power_W": 45.52190017700195,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:accent:6",
+      "environment": "sim:CAFE-01",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.699999988079071,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.600000381469727
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          21.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5850000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -9.600000381469727,
+        0.5850000381469727,
+        -21.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 50,
+      "effective_power_W": 45.52190017700195,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:A:0",
+      "environment": "A",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        -4.099999904632568
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:A:1",
+      "environment": "A",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.099999904632568
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        -4.099999904632568
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:A:2",
+      "environment": "A",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        -6.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:A:3",
+      "environment": "A",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          6.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        -6.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:B:0",
+      "environment": "B",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          9.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        -9.5
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:B:1",
+      "environment": "B",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          9.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        -9.5
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:B:2",
+      "environment": "B",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          11.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        -11.600000381469727
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:B:3",
+      "environment": "B",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          11.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        -11.600000381469727
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:C:0",
+      "environment": "C",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          14.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        -14.600000381469727
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:C:1",
+      "environment": "C",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          14.600000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        -14.600000381469727
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:C:2",
+      "environment": "C",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          17.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        -17.100000381469727
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:C:3",
+      "environment": "C",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          17.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        -17.100000381469727
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:0",
+      "environment": "CIRCULATION-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -2.200000047683716,
+        1.5,
+        -0.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:1",
+      "environment": "CIRCULATION-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -2.200000047683716,
+        1.5,
+        -5.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:2",
+      "environment": "CIRCULATION-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -2.200000047683716,
+        1.5,
+        -10.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:3",
+      "environment": "CIRCULATION-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -2.200000047683716,
+        1.5,
+        -15.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:4",
+      "environment": "CIRCULATION-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -2.200000047683716,
+        1.5,
+        -20.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:CIRCULATION-01:5",
+      "environment": "CIRCULATION-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -2.200000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -2.200000047683716,
+        1.5,
+        -25.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:D:0",
+      "environment": "D",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        -20.5
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:D:1",
+      "environment": "D",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        -20.5
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:D:2",
+      "environment": "D",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        -23.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:D:3",
+      "environment": "D",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          23.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        -23.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:MEETING-AREA-01:0",
+      "environment": "MEETING-AREA-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.800000011920929
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        -0.800000011920929
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:MEETING-AREA-01:1",
+      "environment": "MEETING-AREA-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.800000011920929
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        -0.800000011920929
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:MEETING-AREA-01:2",
+      "environment": "MEETING-AREA-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        1.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:MEETING-AREA-01:3",
+      "environment": "MEETING-AREA-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        1.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:RECEPTION:0",
+      "environment": "RECEPTION",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.599999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          15.100000381469727
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -4.599999904632568,
+        1.5,
+        -15.100000381469727
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:RECEPTION:1",
+      "environment": "RECEPTION",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.599999904632568
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          16.799999237060547
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -4.599999904632568,
+        1.5,
+        -16.799999237060547
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:sim:CAFE-01:0",
+      "environment": "sim:CAFE-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -10.399999618530273,
+        1.5,
+        -20.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:sim:CAFE-01:1",
+      "environment": "sim:CAFE-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.399999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -10.399999618530273,
+        1.5,
+        -24.5
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:sim:LOUNGE:0",
+      "environment": "sim:LOUNGE",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.400000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -10.5,
+        1.5,
+        -4.400000095367432
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:sim:LOUNGE:1",
+      "environment": "sim:LOUNGE",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -10.5
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.2000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -10.5,
+        1.5,
+        -1.2000000476837158
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:sim:PRINT:0",
+      "environment": "sim:PRINT",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.199999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.7999999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -4.199999809265137,
+        1.5,
+        -1.7999999523162842
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:sim:RECREATION:0",
+      "environment": "sim:RECREATION",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          20.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -4.300000190734863,
+        1.5,
+        -20.5
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:sim:RECREATION:1",
+      "environment": "sim:RECREATION",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.300000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          24.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -4.300000190734863,
+        1.5,
+        -24.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:sim:ROOM-E:0",
+      "environment": "sim:ROOM-E",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        -25.399999618530273
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:sim:ROOM-E:1",
+      "environment": "sim:ROOM-E",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          25.399999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        -25.399999618530273
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:sim:ROOM-E:2",
+      "environment": "sim:ROOM-E",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.10000000149011612
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          27.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.10000000149011612,
+        1.5,
+        -27.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:sim:ROOM-E:3",
+      "environment": "sim:ROOM-E",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.700000047683716
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          27.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.700000047683716,
+        1.5,
+        -27.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 88.88896942138672,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:WAITING-AREA:0",
+      "environment": "WAITING-AREA",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.800000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.300000190734863
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -4.800000190734863,
+        1.5,
+        -8.300000190734863
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:p4:light:WAITING-AREA:1",
+      "environment": "WAITING-AREA",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.7200000286102295,
+      "size_y": 0.1599999964237213,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -4.800000190734863
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          10.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -4.800000190734863,
+        1.5,
+        -10.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.699999988079071,
+        0.46000000834465027
+      ],
+      "nominal_power_W": 90,
+      "effective_power_W": 72.72733306884766,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:dining:cove:light",
+      "environment": "sim:RECREATION",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 6.300000190734863,
+      "size_y": 0.07999999821186066,
+      "matrix_blender": [
+        [
+          -4.371138828673793e-08,
+          1.0,
+          -8.742277657347586e-08,
+          -6.199999809265137
+        ],
+        [
+          1.0,
+          4.371138828673793e-08,
+          -3.821371353845884e-15,
+          22.450000762939453
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -6.199999809265137,
+        1.5499999523162842,
+        -22.450000762939453
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 100.14818572998047,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:lounge:cove:back:light",
+      "environment": "sim:LOUNGE",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 5.349999904632568,
+      "size_y": 0.07999999821186066,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -9.225000381469727
+        ],
+        [
+          0.0,
+          -1.0,
+          8.742277657347586e-08,
+          5.650000095367432
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -9.225000381469727,
+        1.5499999523162842,
+        -5.650000095367432
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 100.14818572998047,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:lounge:cove:side:light",
+      "environment": "sim:LOUNGE",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 5.21999979019165,
+      "size_y": 0.07999999821186066,
+      "matrix_blender": [
+        [
+          -4.371138828673793e-08,
+          1.0,
+          -8.742277657347586e-08,
+          -11.890000343322754
+        ],
+        [
+          1.0,
+          4.371138828673793e-08,
+          -3.821371353845884e-15,
+          2.950000047683716
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -11.890000343322754,
+        1.5499999523162842,
+        -2.950000047683716
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 100.14818572998047,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:lounge:floorlamp:light",
+      "environment": "sim:LOUNGE",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.25,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -11.520000457763672
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          4.150000095367432
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.07000000029802322
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -11.520000457763672,
+        -0.07000000029802322,
+        -4.150000095367432
+      ],
+      "rgb_linear": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "nominal_power_W": 65,
+      "effective_power_W": 56.68353271484375,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:lounge:tablelamp:light",
+      "environment": "sim:LOUNGE",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.25,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -7.699999809265137
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.130000114440918
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.6200000047683716
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -7.699999809265137,
+        -0.6200000047683716,
+        -5.130000114440918
+      ],
+      "rgb_linear": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "nominal_power_W": 25,
+      "effective_power_W": 21.801359176635742,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:lounge:uplight:light",
+      "environment": "sim:LOUNGE",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.25,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -8.25
+        ],
+        [
+          0.0,
+          -1.0,
+          8.742277657347586e-08,
+          5.46999979019165
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          -1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -8.25,
+        -1.5499999523162842,
+        -5.46999979019165
+      ],
+      "rgb_linear": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "nominal_power_W": 50,
+      "effective_power_W": 43.602718353271484,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:lounge:vertical:light",
+      "environment": "sim:LOUNGE",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 2.859999895095825,
+      "size_y": 0.04500000178813934,
+      "matrix_blender": [
+        [
+          -4.371138828673793e-08,
+          0.0,
+          -1.0,
+          -11.899999618530273
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          5.46999979019165
+        ],
+        [
+          1.0,
+          0.0,
+          -4.371138828673793e-08,
+          0.019999999552965164
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -11.899999618530273,
+        0.019999999552965164,
+        -5.46999979019165
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 60,
+      "effective_power_W": 54.62628173828125,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:meeting:greenwall:cove:light",
+      "environment": "MEETING-AREA-01",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 7.900000095367432,
+      "size_y": 0.07999999821186066,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -0.05000000074505806
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -2.1600000858306885
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -0.05000000074505806,
+        1.5499999523162842,
+        2.1600000858306885
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 100.14818572998047,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:reception:toe-light:light",
+      "environment": "RECEPTION",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 1.899999976158142,
+      "size_y": 0.07999999821186066,
+      "matrix_blender": [
+        [
+          -4.371138828673793e-08,
+          1.0,
+          -8.742277657347586e-08,
+          -3.319999933242798
+        ],
+        [
+          1.0,
+          4.371138828673793e-08,
+          -3.821371353845884e-15,
+          16.100000381469727
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          -1.4199999570846558
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -3.319999933242798,
+        -1.4199999570846558,
+        -16.100000381469727
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 100.14818572998047,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:waiting:cove:light",
+      "environment": "WAITING-AREA",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 4.0,
+      "size_y": 0.07999999821186066,
+      "matrix_blender": [
+        [
+          -4.371138828673793e-08,
+          1.0,
+          -8.742277657347586e-08,
+          -6.369999885559082
+        ],
+        [
+          1.0,
+          4.371138828673793e-08,
+          -3.821371353845884e-15,
+          16.0
+        ],
+        [
+          0.0,
+          -8.742277657347586e-08,
+          -1.0,
+          1.5499999523162842
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -6.369999885559082,
+        1.5499999523162842,
+        -16.0
+      ],
+      "rgb_linear": [
+        1.0,
+        0.47999998927116394,
+        0.18000000715255737
+      ],
+      "nominal_power_W": 110,
+      "effective_power_W": 100.14818572998047,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:waiting:lamp:light",
+      "environment": "WAITING-AREA",
+      "type": "AREA",
+      "shape": "SQUARE",
+      "size": 0.25,
+      "size_y": 0.25,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          -5.900000095367432
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          16.149999618530273
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -0.11999999731779099
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        -5.900000095367432,
+        -0.11999999731779099,
+        -16.149999618530273
+      ],
+      "rgb_linear": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "nominal_power_W": 40,
+      "effective_power_W": 34.88217544555664,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:work:planter-glow:A:0:light",
+      "environment": "A",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.5600000023841858,
+      "size_y": 0.4699999988079071,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.3499999940395355
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          3.3500001430511475
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.3499999940395355,
+        0.5799999833106995,
+        -3.3500001430511475
+      ],
+      "rgb_linear": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "nominal_power_W": 45,
+      "effective_power_W": 39.24244689941406,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:work:planter-glow:A:1:light",
+      "environment": "A",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.5600000023841858,
+      "size_y": 0.4699999988079071,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.850000023841858
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          3.3500001430511475
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        1.850000023841858,
+        0.5799999833106995,
+        -3.3500001430511475
+      ],
+      "rgb_linear": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "nominal_power_W": 45,
+      "effective_power_W": 39.24244689941406,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:work:planter-glow:B:0:light",
+      "environment": "B",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.5600000023841858,
+      "size_y": 0.4699999988079071,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.0499999523162842
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        1.0499999523162842,
+        0.5799999833106995,
+        -8.950000762939453
+      ],
+      "rgb_linear": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "nominal_power_W": 45,
+      "effective_power_W": 39.24244689941406,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:work:planter-glow:B:1:light",
+      "environment": "B",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.5600000023841858,
+      "size_y": 0.4699999988079071,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          2.549999952316284
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          8.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        2.549999952316284,
+        0.5799999833106995,
+        -8.950000762939453
+      ],
+      "rgb_linear": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "nominal_power_W": 45,
+      "effective_power_W": 39.24244689941406,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:work:planter-glow:C:0:light",
+      "environment": "C",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.5600000023841858,
+      "size_y": 0.4699999988079071,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.4000000059604645
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          13.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        0.4000000059604645,
+        0.5799999833106995,
+        -13.950000762939453
+      ],
+      "rgb_linear": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "nominal_power_W": 45,
+      "effective_power_W": 39.24244689941406,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    },
+    {
+      "id": "sim:r1:work:planter-glow:C:1:light",
+      "environment": "C",
+      "type": "AREA",
+      "shape": "RECTANGLE",
+      "size": 0.5600000023841858,
+      "size_y": 0.4699999988079071,
+      "matrix_blender": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.899999976158142
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          13.950000762939453
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.5799999833106995
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "position": [
+        1.899999976158142,
+        0.5799999833106995,
+        -13.950000762939453
+      ],
+      "rgb_linear": [
+        1.0,
+        0.550000011920929,
+        0.25
+      ],
+      "nominal_power_W": 45,
+      "effective_power_W": 39.24244689941406,
+      "state": {
+        "on": true,
+        "level": 1.0,
+        "mode": "auto"
+      },
+      "conversion_status": "radiometric source; not equivalent to PlayCanvas intensity without calibration or a source-separated baked basis"
+    }
+  ],
+  "sun": {
+    "matrix_blender": [
+      [
+        -0.23768576979637146,
+        -0.2019534707069397,
+        0.9501159191131592,
+        0.0
+      ],
+      [
+        0.9713420867919922,
+        -0.04941762983798981,
+        0.23249177634716034,
+        0.0
+      ],
+      [
+        -4.213212889681017e-08,
+        0.978147566318512,
+        0.20791177451610565,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "energy": 0.5197792053222656,
+    "rgb_linear": [
+      1.0,
+      0.742373526096344,
+      0.5343514084815979
+    ]
+  },
+  "world_background_strengths": {
+    "Background": 0.030107636004686356,
+    "Archviz context": 0.1881205290555954
+  },
+  "camera": {
+    "id": "view:revision-lounge",
+    "position": [
+      -7.050000190734863,
+      -0.05000000074505806,
+      -0.800000011920929
+    ],
+    "matrix_blender": [
+      [
+        0.7474092841148376,
+        -0.07826882600784302,
+        0.6597373485565186,
+        -7.050000190734863
+      ],
+      [
+        0.6643638610839844,
+        0.08805238455533981,
+        -0.7422044277191162,
+        0.800000011920929
+      ],
+      [
+        2.4885059346502203e-08,
+        0.993036150932312,
+        0.11781015247106552,
+        -0.05000000074505806
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "vertical_fov_degrees": 67.99999733881295
+  },
+  "runtime_equivalence_verified": false,
+  "forbidden_assumptions": [
+    "Blender watts equal PlayCanvas intensity",
+    "Noon irradiance equals Golden Hour irradiance",
+    "Circuit average proves individual spatial response"
+  ]
+}

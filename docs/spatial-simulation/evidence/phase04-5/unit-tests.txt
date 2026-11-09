@@ -2,11 +2,11 @@
 > entity-spatial-simulation@0.5.0 test
 > node --test tests/*.test.js
 
-✔ one environmental clock, continuous wrap, configured reverse speeds and daylight policies (75.938502ms)
-✔ all 71 lights and 17 circuits: manual override, OFF zeros output, dimming and auto response (13.737823ms)
-✔ doors lock only when closed; leaves animate reversibly and independently; six screens (17.061453ms)
-✔ all 21 approved routes remain walkable through same live collision adapter with doors open (570.709603ms)
-✔ closed/open room doorway, anti-tunneling, no standing outside model (85.327743ms)
+✔ one environmental clock, continuous wrap, configured reverse speeds and daylight policies (63.33019ms)
+✔ all 71 lights and 17 circuits: manual override, OFF zeros output, dimming and auto response (31.830514ms)
+✔ doors lock only when closed; leaves animate reversibly and independently; six screens (29.998017ms)
+✔ all 21 approved routes remain walkable through same live collision adapter with doors open (952.476273ms)
+✔ closed/open room doorway, anti-tunneling, no standing outside model (86.273275ms)
 ℹ tests 5
 ℹ suites 0
 ℹ pass 5
@@ -14,7 +14,7 @@
 ℹ cancelled 0
 ℹ skipped 0
 ℹ todo 0
-ℹ duration_ms 1036.455956
+ℹ duration_ms 1470.954679
 npm notice
 npm notice New major version of npm available! 11.9.0 -> 12.2.2
 npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2

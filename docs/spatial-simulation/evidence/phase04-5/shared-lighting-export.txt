@@ -1,0 +1,5 @@
+GOLDEN_SOURCE_EXPORTED 71 lights; master unchanged
+Blender 4.3.2
+Read blend: "/workspace/Entity/simulation/spatial-office/output/office-phase04-revision.blend"
+
+Blender quit

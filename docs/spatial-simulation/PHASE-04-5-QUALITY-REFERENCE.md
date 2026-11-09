@@ -54,3 +54,19 @@ La fase termina cuando existe una referencia PlayCanvas de máxima calidad repro
 ## Relación con las fases
 
 Esta es una **fase correctiva entre la 04 y la 05**, ejecutada sobre los resultados ya existentes de ambas. No obliga a rehacer Blender ni supone que la 04 haya fallado. El trabajo de la Fase 05 puede conservarse; la fase 04.5 establece la referencia de calidad contra la cual se evaluarán posteriores optimizaciones.
+
+## Addendum vinculante — iluminación transferible (operador, 2026-11-09)
+
+La referencia debe diseñarse desde Blender para ejecutarse también en PlayCanvas. No se acepta una imagen Cycles cuya solución de iluminación no tenga representación definida en el runtime.
+
+Antes de calibrar o producir capturas de aceptación, exportar una condición compartida 17:00: fuente, unidades, geometría emisora, transformaciones, RGB lineal, estados, exposición y cámara. Documentar la equivalencia y los límites de sol, ambiente, directa, indirecta, sombras, reflejos y PBR. Golden Hour es una condición artística del proyecto; no implica ubicación solar geográfica certificada.
+
+- Sol: misma dirección y color; la energía radiométrica de Blender no se identifica directamente con intensidad/lux de PlayCanvas. Resolver transferencia mediante contribución precalculada o calibración documentada sobre superficies de control.
+- Ambiente: exportar por separado las contribuciones difusa y especular del mundo de Blender. Un HDR urbano global no sustituye silenciosamente un cielo Nishita ni sus reglas de rayos.
+- Directa: preservar geometría y orientación de emisores. Luces de área LTC son una representación disponible, pero el factor anterior W/120 no es una equivalencia acreditada y queda excluido del criterio de aceptación.
+- Indirecta: generar datos Golden Hour desde el mismo estado compartido. Las bases de mediodía no acreditan equivalencia a las 17:00. Para conmutación, conservar contribuciones separables y validar respuesta de cada fuente; un promedio por circuito no acredita respuesta espacial individual.
+- Sombras: registrar qué oclusión está precalculada y cuál es dinámica. Puertas/dispositivos móviles no deben dejar sombras fijas incompatibles con su estado.
+- Reflejos: probes HDR locales con box projection y actualización coherente con estados; distinguir aproximación de transporte especular de equivalencia demostrada.
+- PBR/color: conservar albedo y mapas lineales, UV, tangentes, parámetros físicos y transformación de salida común; no corregir una diferencia de transporte alterando arbitrariamente el material.
+
+Criterios adicionales del gate: configuración compartida exportada y consumida por ambos motores; inventario explícito de componentes; demostración visual A/B con cámara, hora, estados y exposición idénticos; discrepancias corregidas desde su origen o documentadas con evidencia. Las primeras capturas iniciadas antes de este addendum son diagnósticos, no aceptación. Mantener perfil máximo y dejar optimización móvil para después. Aprobación visual exclusiva del operador.
