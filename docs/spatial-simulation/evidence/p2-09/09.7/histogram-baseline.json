@@ -1,0 +1,664 @@
+{
+  "algorithm": "OpenCV HSV appearance baseline + simultaneous calibrated floor-ray consistency + scipy connected components",
+  "learned_reid": false,
+  "biometric_identification": false,
+  "input": "real camera crops, observed MOT tracks and legitimate camera calibration; no GT",
+  "floor_geometry": "main native floor y=-1.85; raised floor and occluded feet introduce bias.2.5-native-unit gate is an approximation, not metres/certified uncertainty",
+  "processing_seconds": 1.23987492499964,
+  "local_tracklets": 8,
+  "groups": [
+    {
+      "id": "visual-869d04ac44167972debc",
+      "local_tracks": [
+        "CAMERA-PLANNED-01:norfair:1"
+      ],
+      "civil_person_id": null,
+      "identity_verified": false,
+      "association": "provisional appearance/time/geometry; uncalibrated score",
+      "cameras": [
+        "CAMERA-PLANNED-01"
+      ]
+    },
+    {
+      "id": "visual-128f4a2e3dfbaa136118",
+      "local_tracks": [
+        "CAMERA-PLANNED-01:norfair:2"
+      ],
+      "civil_person_id": null,
+      "identity_verified": false,
+      "association": "provisional appearance/time/geometry; uncalibrated score",
+      "cameras": [
+        "CAMERA-PLANNED-01"
+      ]
+    },
+    {
+      "id": "visual-65d5674e7e35479d699f",
+      "local_tracks": [
+        "CAMERA-PLANNED-02:norfair:1",
+        "CAMERA-PLANNED-03:norfair:1",
+        "CAMERA-PLANNED-04:norfair:1"
+      ],
+      "civil_person_id": null,
+      "identity_verified": false,
+      "association": "provisional appearance/time/geometry; uncalibrated score",
+      "cameras": [
+        "CAMERA-PLANNED-02",
+        "CAMERA-PLANNED-03",
+        "CAMERA-PLANNED-04"
+      ]
+    },
+    {
+      "id": "visual-2dd120689f1a1e3bd5ce",
+      "local_tracks": [
+        "CAMERA-PLANNED-04:norfair:2"
+      ],
+      "civil_person_id": null,
+      "identity_verified": false,
+      "association": "provisional appearance/time/geometry; uncalibrated score",
+      "cameras": [
+        "CAMERA-PLANNED-04"
+      ]
+    },
+    {
+      "id": "visual-054e5e7b249271366f8a",
+      "local_tracks": [
+        "CAMERA-PLANNED-05:norfair:1"
+      ],
+      "civil_person_id": null,
+      "identity_verified": false,
+      "association": "provisional appearance/time/geometry; uncalibrated score",
+      "cameras": [
+        "CAMERA-PLANNED-05"
+      ]
+    },
+    {
+      "id": "visual-6a2560d69647e830faaa",
+      "local_tracks": [
+        "CAMERA-PLANNED-06:norfair:1"
+      ],
+      "civil_person_id": null,
+      "identity_verified": false,
+      "association": "provisional appearance/time/geometry; uncalibrated score",
+      "cameras": [
+        "CAMERA-PLANNED-06"
+      ]
+    }
+  ],
+  "associations": [
+    {
+      "a": "CAMERA-PLANNED-01:norfair:1",
+      "b": "CAMERA-PLANNED-02:norfair:1",
+      "source_camera": "CAMERA-PLANNED-01",
+      "target_camera": "CAMERA-PLANNED-02",
+      "simultaneous_samples": 11,
+      "appearance_similarity": 0.43602053685621844,
+      "floor_distance_native": 0.2899972220098723,
+      "score": 0.5928137378751599,
+      "probability_calibrated": false,
+      "accepted": false,
+      "relation_semantics": "provisional visual association, not civil identity",
+      "evidence_frames": [
+        {
+          "index": 2,
+          "a_sha256": "b569174b50f7a7ebf6df7bd392f0da15b0fa393c0dfa2b8da847a3ef2cbc9cd7",
+          "b_sha256": "9b477612c74739d975a02ae92df7cc8b6ea4558ea6c1201bcddd982e67033c99"
+        },
+        {
+          "index": 3,
+          "a_sha256": "89ddd2b8f96a3f7044ce39a992ca8aa58c81569d0fda907b0f03b516fdc26701",
+          "b_sha256": "33172647bbd838ded5bc796ca7a59fa9960d591c802b2cd29a5d49678ad6c319"
+        },
+        {
+          "index": 4,
+          "a_sha256": "adc80fe8a1a8c718a56ab0300dca7e59f469533c63b949a54c4dc85a46edb796",
+          "b_sha256": "40390fa6471a13b23c3e3f4e9a8f2ad25885ca8ae11e452e40d7ea441bab1f7a"
+        },
+        {
+          "index": 5,
+          "a_sha256": "c590c3aded2724ee50c7ba8295ac83320cf94a8030f0c1cd0bbaf1433057d197",
+          "b_sha256": "481f6d54d39e9481879563ac62f06c66226a81e6610ae0650c49c289f62d6a4c"
+        },
+        {
+          "index": 6,
+          "a_sha256": "5ced754631254662196fd10382563b6e2c12dcae9a8558f5d61233bd40c49a8f",
+          "b_sha256": "c8f6222e95f6098d8cf10b0c4acf6e327a40b49133f740ead5e5a0986ceff7f8"
+        },
+        {
+          "index": 7,
+          "a_sha256": "f0c7c5a88f4636d0cc7762791eabbe42f5c01b084c68f7e7f674c829eea35d5c",
+          "b_sha256": "fa83d98f25ca1122418a4180e0c4e02107f0ba8ba0d328b30d2bd16d5a737d8d"
+        },
+        {
+          "index": 8,
+          "a_sha256": "620a68ca896b0fc4bac01688cad4dbb8fd44304e522a107fd4d94c670d9847ee",
+          "b_sha256": "8912355c113e50ac3468222abe2ac9651b64455dddc00957bb32e6f324862f65"
+        },
+        {
+          "index": 9,
+          "a_sha256": "368c352f63c4e1195d77b61843b816933e758560e6bf85ee8979257687960ce1",
+          "b_sha256": "62120402c8669c1ab82933e4cbb3abcb991f23b4d7b4963c6481cf3517811e42"
+        },
+        {
+          "index": 10,
+          "a_sha256": "3f6562fe77b9a79fa1c0e0ac6acac481d4faef6c48d593bf857061403a6b6ae4",
+          "b_sha256": "200b9a703578a17eac16b42690080b6f721d3b66f58eb24b9405f6e673cfc9bc"
+        },
+        {
+          "index": 11,
+          "a_sha256": "c3a333a8831c513f23186d4813f474531cb492d79b5adb6e931168bc5b5fd274",
+          "b_sha256": "b50b00e270f5ec8458f05590ce99398dc9de22f17690eba486a4e74f61997711"
+        },
+        {
+          "index": 16,
+          "a_sha256": "eef704d362bf921a77bf05a1e40092da2d8bd6eeab558453cf53def24bf089c2",
+          "b_sha256": "0cd1f52a0621985a7c6f4af399c90b5e82124e21576efe3e718d0306e771935d"
+        }
+      ]
+    },
+    {
+      "a": "CAMERA-PLANNED-01:norfair:1",
+      "b": "CAMERA-PLANNED-03:norfair:1",
+      "source_camera": "CAMERA-PLANNED-01",
+      "target_camera": "CAMERA-PLANNED-03",
+      "simultaneous_samples": 10,
+      "appearance_similarity": 0.30971724713405313,
+      "floor_distance_native": 0.5395528779219756,
+      "score": 0.4757788077280579,
+      "probability_calibrated": false,
+      "accepted": false,
+      "relation_semantics": "provisional visual association, not civil identity",
+      "evidence_frames": [
+        {
+          "index": 2,
+          "a_sha256": "b569174b50f7a7ebf6df7bd392f0da15b0fa393c0dfa2b8da847a3ef2cbc9cd7",
+          "b_sha256": "f879aec7cc6acdddb8e8591c58fbe20ef9de03f8d06466f3b23ef014229ef37a"
+        },
+        {
+          "index": 3,
+          "a_sha256": "89ddd2b8f96a3f7044ce39a992ca8aa58c81569d0fda907b0f03b516fdc26701",
+          "b_sha256": "8fe5c529f55cf7c8e231a3c8bf6f68b65b2d70ec291bbb748edef02cb7e76dfd"
+        },
+        {
+          "index": 4,
+          "a_sha256": "adc80fe8a1a8c718a56ab0300dca7e59f469533c63b949a54c4dc85a46edb796",
+          "b_sha256": "9cbcca8b3c3ea88cebd442853a64d33e4db13d1709a1b5f6caa732c407662086"
+        },
+        {
+          "index": 5,
+          "a_sha256": "c590c3aded2724ee50c7ba8295ac83320cf94a8030f0c1cd0bbaf1433057d197",
+          "b_sha256": "e8c927c73c4847a75c3fcc60c2a5dbad178cca85feb6df92f957c1cd57397c3c"
+        },
+        {
+          "index": 6,
+          "a_sha256": "5ced754631254662196fd10382563b6e2c12dcae9a8558f5d61233bd40c49a8f",
+          "b_sha256": "181c7f4f3cee22d63cb5dc8da7edd8a64c5b8d1174977bf1f7f70e52c2e040c8"
+        },
+        {
+          "index": 7,
+          "a_sha256": "f0c7c5a88f4636d0cc7762791eabbe42f5c01b084c68f7e7f674c829eea35d5c",
+          "b_sha256": "a53488060501f9f8937dcecd9a8c72b8268ef5bd179e4a0b3d4f7756fe0038f0"
+        },
+        {
+          "index": 8,
+          "a_sha256": "620a68ca896b0fc4bac01688cad4dbb8fd44304e522a107fd4d94c670d9847ee",
+          "b_sha256": "6f4904be3a0196c495230f7767b62a0d2920381a4f576bedc9f1669fdd398a5c"
+        },
+        {
+          "index": 9,
+          "a_sha256": "368c352f63c4e1195d77b61843b816933e758560e6bf85ee8979257687960ce1",
+          "b_sha256": "6ab1c60e5a57e9c6d2e330e4d09091f59d2c8b96658f3ef5161cb16d1e119acc"
+        },
+        {
+          "index": 10,
+          "a_sha256": "3f6562fe77b9a79fa1c0e0ac6acac481d4faef6c48d593bf857061403a6b6ae4",
+          "b_sha256": "bc59e1d5c381a8fc6c21cec715cb21220751c41f68271a29001517545127168a"
+        },
+        {
+          "index": 16,
+          "a_sha256": "eef704d362bf921a77bf05a1e40092da2d8bd6eeab558453cf53def24bf089c2",
+          "b_sha256": "2a0b706410442a4c710e38364d2f74d8d2c2c9b1706fc4837e1707f70d92512c"
+        }
+      ]
+    },
+    {
+      "a": "CAMERA-PLANNED-01:norfair:1",
+      "b": "CAMERA-PLANNED-04:norfair:1",
+      "source_camera": "CAMERA-PLANNED-01",
+      "target_camera": "CAMERA-PLANNED-04",
+      "simultaneous_samples": 9,
+      "appearance_similarity": 0.2511750064496071,
+      "floor_distance_native": 0.7541570177957744,
+      "score": 0.4076817717008362,
+      "probability_calibrated": false,
+      "accepted": false,
+      "relation_semantics": "provisional visual association, not civil identity",
+      "evidence_frames": [
+        {
+          "index": 2,
+          "a_sha256": "b569174b50f7a7ebf6df7bd392f0da15b0fa393c0dfa2b8da847a3ef2cbc9cd7",
+          "b_sha256": "0c4f0927578e73e545b66003e054be110fd2e0663eab5ebaa2ffe99c66ed4c2a"
+        },
+        {
+          "index": 3,
+          "a_sha256": "89ddd2b8f96a3f7044ce39a992ca8aa58c81569d0fda907b0f03b516fdc26701",
+          "b_sha256": "27885195b4840ec47b59921cba8678c96641683814579b95e7ca770e1e49720b"
+        },
+        {
+          "index": 4,
+          "a_sha256": "adc80fe8a1a8c718a56ab0300dca7e59f469533c63b949a54c4dc85a46edb796",
+          "b_sha256": "c4a540788123b5d1a95aead11c8073238485c74777f2cae475dd5327ecbc404d"
+        },
+        {
+          "index": 5,
+          "a_sha256": "c590c3aded2724ee50c7ba8295ac83320cf94a8030f0c1cd0bbaf1433057d197",
+          "b_sha256": "002f43f04b6ecd59a78c338f4046ebc30ced294da0b8e41e3f6f826a0cd81d5f"
+        },
+        {
+          "index": 6,
+          "a_sha256": "5ced754631254662196fd10382563b6e2c12dcae9a8558f5d61233bd40c49a8f",
+          "b_sha256": "09e4662532c756ec66fbd8e9808a9925d69309ce16d379c643c4276a0dbf9a98"
+        },
+        {
+          "index": 7,
+          "a_sha256": "f0c7c5a88f4636d0cc7762791eabbe42f5c01b084c68f7e7f674c829eea35d5c",
+          "b_sha256": "1e5b4d821e9a7bdd528cccacb3d4fd765af22ac2cf14700196e566ef6d3a0729"
+        },
+        {
+          "index": 8,
+          "a_sha256": "620a68ca896b0fc4bac01688cad4dbb8fd44304e522a107fd4d94c670d9847ee",
+          "b_sha256": "2424fcde25bfc7cc8c3c937b38f75ec9df39a207cb5c51406ba5c35b81f6fa26"
+        },
+        {
+          "index": 9,
+          "a_sha256": "368c352f63c4e1195d77b61843b816933e758560e6bf85ee8979257687960ce1",
+          "b_sha256": "8fb8b2b26a9e42e7570035a45b6f351a24eece131fbdcf448faa579bc6ee672c"
+        },
+        {
+          "index": 10,
+          "a_sha256": "3f6562fe77b9a79fa1c0e0ac6acac481d4faef6c48d593bf857061403a6b6ae4",
+          "b_sha256": "87038a393483df4011233f5d6db9d3f0a3570c3f0073857f24d4a6be92ad0c03"
+        }
+      ]
+    },
+    {
+      "a": "CAMERA-PLANNED-01:norfair:2",
+      "b": "CAMERA-PLANNED-04:norfair:2",
+      "source_camera": "CAMERA-PLANNED-01",
+      "target_camera": "CAMERA-PLANNED-04",
+      "simultaneous_samples": 2,
+      "appearance_similarity": 0.3327421172391593,
+      "floor_distance_native": 1.3731823312458098,
+      "score": 0.37403684983104024,
+      "probability_calibrated": false,
+      "accepted": false,
+      "relation_semantics": "provisional visual association, not civil identity",
+      "evidence_frames": [
+        {
+          "index": 37,
+          "a_sha256": "2d6bb799fc768b6136ae173131862a8cede46e3b5c76736d0d79c245f286e151",
+          "b_sha256": "279c6d0743f537c9d9a4500ee817ea40e7851b36e7a827543fb6cfce36ac5195"
+        },
+        {
+          "index": 38,
+          "a_sha256": "23de18c1e26a59a7f0181444a4cb58a5a5c0cc7faedee9c7e9b7771ebf942aa8",
+          "b_sha256": "eb494f35f62ffc7971447923c402a12fa0e40af29a6b10601e83b7150075beb7"
+        }
+      ]
+    },
+    {
+      "a": "CAMERA-PLANNED-01:norfair:2",
+      "b": "CAMERA-PLANNED-05:norfair:1",
+      "source_camera": "CAMERA-PLANNED-01",
+      "target_camera": "CAMERA-PLANNED-05",
+      "simultaneous_samples": 2,
+      "appearance_similarity": 0.27639386952349365,
+      "floor_distance_native": 1.145129450955443,
+      "score": 0.36933789205650885,
+      "probability_calibrated": false,
+      "accepted": false,
+      "relation_semantics": "provisional visual association, not civil identity",
+      "evidence_frames": [
+        {
+          "index": 37,
+          "a_sha256": "2d6bb799fc768b6136ae173131862a8cede46e3b5c76736d0d79c245f286e151",
+          "b_sha256": "6492b7c4d1f1efecfbf0704479c15cde0afafd455a99eae5bd3d352d6215307b"
+        },
+        {
+          "index": 38,
+          "a_sha256": "23de18c1e26a59a7f0181444a4cb58a5a5c0cc7faedee9c7e9b7771ebf942aa8",
+          "b_sha256": "ed00fd37020342a885012bac9bfe5e400ef57bda13df85f0bab960dc67ae6a33"
+        }
+      ]
+    },
+    {
+      "a": "CAMERA-PLANNED-02:norfair:1",
+      "b": "CAMERA-PLANNED-03:norfair:1",
+      "source_camera": "CAMERA-PLANNED-02",
+      "target_camera": "CAMERA-PLANNED-03",
+      "simultaneous_samples": 16,
+      "appearance_similarity": 0.68167303791571,
+      "floor_distance_native": 0.2829442641001008,
+      "score": 0.7534752776711974,
+      "probability_calibrated": false,
+      "accepted": true,
+      "relation_semantics": "provisional visual association, not civil identity",
+      "evidence_frames": [
+        {
+          "index": 0,
+          "a_sha256": "4bc362be590b4d3380820dfd72be058712d011d0936e2bce4c888b1e21ff433a",
+          "b_sha256": "46ccb0dc5a3fc2d8227eefb6ec5f500bffa019b7ff1312e10586e6c8e47acf49"
+        },
+        {
+          "index": 1,
+          "a_sha256": "e889c8de94fb97eb7cbba9b3863cbbc1a7a1b322f69b4cf071d4bbcda2b4d81c",
+          "b_sha256": "9c8330906c42b848f4081653c524c3b63f3b57ef2b86c5e753729c3e1afbcdd1"
+        },
+        {
+          "index": 2,
+          "a_sha256": "9b477612c74739d975a02ae92df7cc8b6ea4558ea6c1201bcddd982e67033c99",
+          "b_sha256": "f879aec7cc6acdddb8e8591c58fbe20ef9de03f8d06466f3b23ef014229ef37a"
+        },
+        {
+          "index": 3,
+          "a_sha256": "33172647bbd838ded5bc796ca7a59fa9960d591c802b2cd29a5d49678ad6c319",
+          "b_sha256": "8fe5c529f55cf7c8e231a3c8bf6f68b65b2d70ec291bbb748edef02cb7e76dfd"
+        },
+        {
+          "index": 4,
+          "a_sha256": "40390fa6471a13b23c3e3f4e9a8f2ad25885ca8ae11e452e40d7ea441bab1f7a",
+          "b_sha256": "9cbcca8b3c3ea88cebd442853a64d33e4db13d1709a1b5f6caa732c407662086"
+        },
+        {
+          "index": 5,
+          "a_sha256": "481f6d54d39e9481879563ac62f06c66226a81e6610ae0650c49c289f62d6a4c",
+          "b_sha256": "e8c927c73c4847a75c3fcc60c2a5dbad178cca85feb6df92f957c1cd57397c3c"
+        },
+        {
+          "index": 6,
+          "a_sha256": "c8f6222e95f6098d8cf10b0c4acf6e327a40b49133f740ead5e5a0986ceff7f8",
+          "b_sha256": "181c7f4f3cee22d63cb5dc8da7edd8a64c5b8d1174977bf1f7f70e52c2e040c8"
+        },
+        {
+          "index": 7,
+          "a_sha256": "fa83d98f25ca1122418a4180e0c4e02107f0ba8ba0d328b30d2bd16d5a737d8d",
+          "b_sha256": "a53488060501f9f8937dcecd9a8c72b8268ef5bd179e4a0b3d4f7756fe0038f0"
+        },
+        {
+          "index": 8,
+          "a_sha256": "8912355c113e50ac3468222abe2ac9651b64455dddc00957bb32e6f324862f65",
+          "b_sha256": "6f4904be3a0196c495230f7767b62a0d2920381a4f576bedc9f1669fdd398a5c"
+        },
+        {
+          "index": 9,
+          "a_sha256": "62120402c8669c1ab82933e4cbb3abcb991f23b4d7b4963c6481cf3517811e42",
+          "b_sha256": "6ab1c60e5a57e9c6d2e330e4d09091f59d2c8b96658f3ef5161cb16d1e119acc"
+        },
+        {
+          "index": 10,
+          "a_sha256": "200b9a703578a17eac16b42690080b6f721d3b66f58eb24b9405f6e673cfc9bc",
+          "b_sha256": "bc59e1d5c381a8fc6c21cec715cb21220751c41f68271a29001517545127168a"
+        },
+        {
+          "index": 14,
+          "a_sha256": "dbee00220257d991e7c7060fbbbf8873d37b8451b10249575b6581fe177be99c",
+          "b_sha256": "4a74eb4b4ce9e590e9167875de98ce2415415b94f1c197b38a0ad50e78693450"
+        },
+        {
+          "index": 15,
+          "a_sha256": "f06a755433a64992ed0b299b9ee8e9a677d88b36d139fd8c4046399e5c0b8010",
+          "b_sha256": "9e3cea5638309b2b2d748620cd07f24e3035e0ae5286aae54dc0e15e0f512ddc"
+        },
+        {
+          "index": 16,
+          "a_sha256": "0cd1f52a0621985a7c6f4af399c90b5e82124e21576efe3e718d0306e771935d",
+          "b_sha256": "2a0b706410442a4c710e38364d2f74d8d2c2c9b1706fc4837e1707f70d92512c"
+        },
+        {
+          "index": 17,
+          "a_sha256": "bcd493689bf595b2f73121a089b859514bc522f9064870dacd5579fbcfac1528",
+          "b_sha256": "8bd09d3d237774db53f1d49366d41350bafb7580647266dd22a63adeabe12609"
+        },
+        {
+          "index": 18,
+          "a_sha256": "ecbf43f16eb3d4f14b54c08a9180edf1855a5c0d80f4eb0e4c71d2b4779a8ec6",
+          "b_sha256": "1b00a4ba89439586bb3d0d8135b06412afb42a82fea7c51f511fc59789e0eaab"
+        }
+      ]
+    },
+    {
+      "a": "CAMERA-PLANNED-02:norfair:1",
+      "b": "CAMERA-PLANNED-04:norfair:1",
+      "source_camera": "CAMERA-PLANNED-02",
+      "target_camera": "CAMERA-PLANNED-04",
+      "simultaneous_samples": 11,
+      "appearance_similarity": 0.6288350644968383,
+      "floor_distance_native": 0.49635284612704705,
+      "score": 0.6892533934651583,
+      "probability_calibrated": false,
+      "accepted": false,
+      "relation_semantics": "provisional visual association, not civil identity",
+      "evidence_frames": [
+        {
+          "index": 0,
+          "a_sha256": "4bc362be590b4d3380820dfd72be058712d011d0936e2bce4c888b1e21ff433a",
+          "b_sha256": "953d14b41a8dee4531c9ae463ac8333b4023cd11c270c665aba588074ee6183a"
+        },
+        {
+          "index": 1,
+          "a_sha256": "e889c8de94fb97eb7cbba9b3863cbbc1a7a1b322f69b4cf071d4bbcda2b4d81c",
+          "b_sha256": "3f06a8f748aeadb817c934a6d10d0479bef3effa4ee530aeb269846d7a640c83"
+        },
+        {
+          "index": 2,
+          "a_sha256": "9b477612c74739d975a02ae92df7cc8b6ea4558ea6c1201bcddd982e67033c99",
+          "b_sha256": "0c4f0927578e73e545b66003e054be110fd2e0663eab5ebaa2ffe99c66ed4c2a"
+        },
+        {
+          "index": 3,
+          "a_sha256": "33172647bbd838ded5bc796ca7a59fa9960d591c802b2cd29a5d49678ad6c319",
+          "b_sha256": "27885195b4840ec47b59921cba8678c96641683814579b95e7ca770e1e49720b"
+        },
+        {
+          "index": 4,
+          "a_sha256": "40390fa6471a13b23c3e3f4e9a8f2ad25885ca8ae11e452e40d7ea441bab1f7a",
+          "b_sha256": "c4a540788123b5d1a95aead11c8073238485c74777f2cae475dd5327ecbc404d"
+        },
+        {
+          "index": 5,
+          "a_sha256": "481f6d54d39e9481879563ac62f06c66226a81e6610ae0650c49c289f62d6a4c",
+          "b_sha256": "002f43f04b6ecd59a78c338f4046ebc30ced294da0b8e41e3f6f826a0cd81d5f"
+        },
+        {
+          "index": 6,
+          "a_sha256": "c8f6222e95f6098d8cf10b0c4acf6e327a40b49133f740ead5e5a0986ceff7f8",
+          "b_sha256": "09e4662532c756ec66fbd8e9808a9925d69309ce16d379c643c4276a0dbf9a98"
+        },
+        {
+          "index": 7,
+          "a_sha256": "fa83d98f25ca1122418a4180e0c4e02107f0ba8ba0d328b30d2bd16d5a737d8d",
+          "b_sha256": "1e5b4d821e9a7bdd528cccacb3d4fd765af22ac2cf14700196e566ef6d3a0729"
+        },
+        {
+          "index": 8,
+          "a_sha256": "8912355c113e50ac3468222abe2ac9651b64455dddc00957bb32e6f324862f65",
+          "b_sha256": "2424fcde25bfc7cc8c3c937b38f75ec9df39a207cb5c51406ba5c35b81f6fa26"
+        },
+        {
+          "index": 9,
+          "a_sha256": "62120402c8669c1ab82933e4cbb3abcb991f23b4d7b4963c6481cf3517811e42",
+          "b_sha256": "8fb8b2b26a9e42e7570035a45b6f351a24eece131fbdcf448faa579bc6ee672c"
+        },
+        {
+          "index": 10,
+          "a_sha256": "200b9a703578a17eac16b42690080b6f721d3b66f58eb24b9405f6e673cfc9bc",
+          "b_sha256": "87038a393483df4011233f5d6db9d3f0a3570c3f0073857f24d4a6be92ad0c03"
+        }
+      ]
+    },
+    {
+      "a": "CAMERA-PLANNED-03:norfair:1",
+      "b": "CAMERA-PLANNED-04:norfair:1",
+      "source_camera": "CAMERA-PLANNED-03",
+      "target_camera": "CAMERA-PLANNED-04",
+      "simultaneous_samples": 11,
+      "appearance_similarity": 0.6905684837574115,
+      "floor_distance_native": 0.3168690587967928,
+      "score": 0.7545078462107665,
+      "probability_calibrated": false,
+      "accepted": true,
+      "relation_semantics": "provisional visual association, not civil identity",
+      "evidence_frames": [
+        {
+          "index": 0,
+          "a_sha256": "46ccb0dc5a3fc2d8227eefb6ec5f500bffa019b7ff1312e10586e6c8e47acf49",
+          "b_sha256": "953d14b41a8dee4531c9ae463ac8333b4023cd11c270c665aba588074ee6183a"
+        },
+        {
+          "index": 1,
+          "a_sha256": "9c8330906c42b848f4081653c524c3b63f3b57ef2b86c5e753729c3e1afbcdd1",
+          "b_sha256": "3f06a8f748aeadb817c934a6d10d0479bef3effa4ee530aeb269846d7a640c83"
+        },
+        {
+          "index": 2,
+          "a_sha256": "f879aec7cc6acdddb8e8591c58fbe20ef9de03f8d06466f3b23ef014229ef37a",
+          "b_sha256": "0c4f0927578e73e545b66003e054be110fd2e0663eab5ebaa2ffe99c66ed4c2a"
+        },
+        {
+          "index": 3,
+          "a_sha256": "8fe5c529f55cf7c8e231a3c8bf6f68b65b2d70ec291bbb748edef02cb7e76dfd",
+          "b_sha256": "27885195b4840ec47b59921cba8678c96641683814579b95e7ca770e1e49720b"
+        },
+        {
+          "index": 4,
+          "a_sha256": "9cbcca8b3c3ea88cebd442853a64d33e4db13d1709a1b5f6caa732c407662086",
+          "b_sha256": "c4a540788123b5d1a95aead11c8073238485c74777f2cae475dd5327ecbc404d"
+        },
+        {
+          "index": 5,
+          "a_sha256": "e8c927c73c4847a75c3fcc60c2a5dbad178cca85feb6df92f957c1cd57397c3c",
+          "b_sha256": "002f43f04b6ecd59a78c338f4046ebc30ced294da0b8e41e3f6f826a0cd81d5f"
+        },
+        {
+          "index": 6,
+          "a_sha256": "181c7f4f3cee22d63cb5dc8da7edd8a64c5b8d1174977bf1f7f70e52c2e040c8",
+          "b_sha256": "09e4662532c756ec66fbd8e9808a9925d69309ce16d379c643c4276a0dbf9a98"
+        },
+        {
+          "index": 7,
+          "a_sha256": "a53488060501f9f8937dcecd9a8c72b8268ef5bd179e4a0b3d4f7756fe0038f0",
+          "b_sha256": "1e5b4d821e9a7bdd528cccacb3d4fd765af22ac2cf14700196e566ef6d3a0729"
+        },
+        {
+          "index": 8,
+          "a_sha256": "6f4904be3a0196c495230f7767b62a0d2920381a4f576bedc9f1669fdd398a5c",
+          "b_sha256": "2424fcde25bfc7cc8c3c937b38f75ec9df39a207cb5c51406ba5c35b81f6fa26"
+        },
+        {
+          "index": 9,
+          "a_sha256": "6ab1c60e5a57e9c6d2e330e4d09091f59d2c8b96658f3ef5161cb16d1e119acc",
+          "b_sha256": "8fb8b2b26a9e42e7570035a45b6f351a24eece131fbdcf448faa579bc6ee672c"
+        },
+        {
+          "index": 10,
+          "a_sha256": "bc59e1d5c381a8fc6c21cec715cb21220751c41f68271a29001517545127168a",
+          "b_sha256": "87038a393483df4011233f5d6db9d3f0a3570c3f0073857f24d4a6be92ad0c03"
+        }
+      ]
+    },
+    {
+      "a": "CAMERA-PLANNED-03:norfair:1",
+      "b": "CAMERA-PLANNED-04:norfair:2",
+      "source_camera": "CAMERA-PLANNED-03",
+      "target_camera": "CAMERA-PLANNED-04",
+      "simultaneous_samples": 5,
+      "appearance_similarity": 0.6955694410377407,
+      "floor_distance_native": 0.8641379293855806,
+      "score": 0.6811408265605501,
+      "probability_calibrated": false,
+      "accepted": false,
+      "relation_semantics": "provisional visual association, not civil identity",
+      "evidence_frames": [
+        {
+          "index": 24,
+          "a_sha256": "ea201243987b87755d8253a475295310577696296fb3dcf7fb74c0990fd8407e",
+          "b_sha256": "de68431582aa14092d6e24a0d225cd76a5b4848332750237991d62675e6f3803"
+        },
+        {
+          "index": 25,
+          "a_sha256": "8bfce441162a4eb28fded7baff5fa7d7b9a610fd541884a9d05225dc25dd1fd2",
+          "b_sha256": "f1cfb3a946c1da38acd05c33aa4cb30dcd1ad121a4532bfc6ce5572e20933d86"
+        },
+        {
+          "index": 26,
+          "a_sha256": "ce81569b680f078b2e3e30cd38a02e3648ac4f1a0b070b2ef63ec80443f3627d",
+          "b_sha256": "98a03ddb99607a38e21593a8ba15e7e68f5c1dcc8e95dcdd864a47b4984ee86c"
+        },
+        {
+          "index": 27,
+          "a_sha256": "bb1bc8fd5a64455b086edf4803c3f7e57a3fa190a2dc63cf270f767723158822",
+          "b_sha256": "8d009394e8fc46f77f5e89bf57c6f4379d042ba9892e7ef9eed92ab4f2620099"
+        },
+        {
+          "index": 28,
+          "a_sha256": "c9f881aba00a07a6b3a45e522fcdb6ec9feea73d02919374d006c7fbf3e6cfdf",
+          "b_sha256": "a1fccf106734102c44a405c6e50957a882cfdc3522dc799cf475dff776a682fe"
+        }
+      ]
+    },
+    {
+      "a": "CAMERA-PLANNED-04:norfair:2",
+      "b": "CAMERA-PLANNED-05:norfair:1",
+      "source_camera": "CAMERA-PLANNED-04",
+      "target_camera": "CAMERA-PLANNED-05",
+      "simultaneous_samples": 4,
+      "appearance_similarity": 0.4276233255414461,
+      "floor_distance_native": 1.0870600386309908,
+      "score": 0.47576675619360126,
+      "probability_calibrated": false,
+      "accepted": false,
+      "relation_semantics": "provisional visual association, not civil identity",
+      "evidence_frames": [
+        {
+          "index": 37,
+          "a_sha256": "279c6d0743f537c9d9a4500ee817ea40e7851b36e7a827543fb6cfce36ac5195",
+          "b_sha256": "6492b7c4d1f1efecfbf0704479c15cde0afafd455a99eae5bd3d352d6215307b"
+        },
+        {
+          "index": 38,
+          "a_sha256": "eb494f35f62ffc7971447923c402a12fa0e40af29a6b10601e83b7150075beb7",
+          "b_sha256": "ed00fd37020342a885012bac9bfe5e400ef57bda13df85f0bab960dc67ae6a33"
+        },
+        {
+          "index": 39,
+          "a_sha256": "c6159a133d7fcf692c2d41026adb055baed4705db9d1f6996e16c1f2850b95d4",
+          "b_sha256": "699c46ffaff1fd183594507c441bbb4c5231b40260091f89ad08910131db2496"
+        },
+        {
+          "index": 40,
+          "a_sha256": "5770dab96350c4a9c6f838608f960b3bdfb733db1c60efc45b53bc67e831e50d",
+          "b_sha256": "a2dac3f4f8c9716b35ba2e622aa1c0453e30005e3231b4f64c094a627e6535f5"
+        }
+      ]
+    },
+    {
+      "a": "CAMERA-PLANNED-04:norfair:2",
+      "b": "CAMERA-PLANNED-06:norfair:1",
+      "source_camera": "CAMERA-PLANNED-04",
+      "target_camera": "CAMERA-PLANNED-06",
+      "simultaneous_samples": 1,
+      "appearance_similarity": 0.6471559222311344,
+      "floor_distance_native": 0.22489012297324062,
+      "score": 0.7391667322339837,
+      "probability_calibrated": false,
+      "accepted": false,
+      "relation_semantics": "provisional visual association, not civil identity",
+      "evidence_frames": [
+        {
+          "index": 35,
+          "a_sha256": "fdb7101fd024271890314a0de36ea2f9576ef306587c98720765a9c8f17bba7e",
+          "b_sha256": "9286324bf1e2ccfbd977b1167a35e34ceea7fa6f6bc0e1959ffb0585faebaece"
+        }
+      ]
+    }
+  ]
+}

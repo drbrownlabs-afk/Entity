@@ -1,0 +1,23 @@
+{
+  "gate": "P2-09.7",
+  "passed": true,
+  "reused_learned_model": "OSNet-AIN pretrained512D; ONNX CPU",
+  "compared": "OpenCV HSV baseline vs OSNet strict policy vs explicit provisional cross-view policy",
+  "local_tracklets": 8,
+  "accepted_cross_view_associations": 5,
+  "visual_hypotheses": 4,
+  "largest_hypothesis_cameras": 4,
+  "evaluated_actual_actors": 1,
+  "evaluation": "Independent89 detections all match the sole rendered actor atIoU.50, so accepted pairs are correct in this controlled case; no legitimate multiperson FPR estimate",
+  "false_splits_vs_evaluator": 3,
+  "false_merges_in_this_single_actor_case": 0,
+  "processing_seconds": 3.543960271999822,
+  "limitations": [
+    "3 extra visual hypotheses remain; not perfect identity continuity",
+    "camera05 crop and06 scarce samples remain uncertain",
+    "histogram baseline insufficient; learned model improves links, still view/domain differences",
+    "score is heuristic, not calibrated probability",
+    "floor ray uses main native plane; raised floors/occluded feet cause bias",
+    "no face/civil identity, multiperson accuracy, physical calibration or live-stream performance certified"
+  ]
+}
