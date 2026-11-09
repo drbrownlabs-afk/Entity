@@ -146,3 +146,7 @@ El operador autoriza adelantar P2-08 con06/07 pendientes y retirar la demostraci
 ## 2026-11-09 — P2-08 addendum8.1/8.2/8.2.1 (decisión de proceso)
 
 Se formaliza Coworking como entidad madre del espacioSite, no raíz del modelo mundial completo ni Core paralelo. Contención inversa partOf sin aristas redundantes; personas registeredIn (registro lógico no ubicación física). Población inicial12 y dos organizaciones según definición del operador; condiciones comerciales solo sintéticas/declarativas, no se ejecutan flujos nuevos. P1 amplía tipos/relaciones de su contrato de registro, P2 consume y verifica. Se preservan funciones ya realizadas; planes de visitas/reuniones/pagos no equivalen a llegadas, reservas, confirmaciones o emisión fiscal. Sin P2-09 ni canon nuevo.
+
+## 2026-11-09 — Límite simulador/percepción de addendum8.3 (procesoP2)
+
+Guiones visuales/ground truth pertenecen al simulador/evaluador y no producen hechos Core por sí mismos. Core consume futura percepción funcional o interfaces legítimas; no se inyectan IDs de avatar, poses privilegiadas, trayectorias o llegadas falsas. Se preservan datos sintéticos declarados8.2 con su procedencia; neutralidad de contratos no equivale a presentarlos como observados. Sin cámaras ni pipeline MOT/MTMC-ReID implementados; aislamiento efectivo de runtimeGT pendiente. No cambia canon ni inicia09.

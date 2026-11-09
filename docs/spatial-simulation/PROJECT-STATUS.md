@@ -69,3 +69,7 @@ El operador dice «Fase 6»: autorización explícita para iniciar personajes; s
 ## Estado vigente — addendum8.1/8.2/8.2.1
 
 P2-08 EN VALIDACIÓN:66 entidades/146 relaciones en P1 local; raíz Coworking con identidad/estado/memoria;12 personas lógicas, organizaciones, catálogo y planes sintéticos.30 referencias a escena existente.7 pruebas estructurales,5 compatibilidad de identidad, reinicio HTTP y reimportación0 cambios PASS. Funcionalidad previa conservada; no nuevos flujos operativos ni pagos/check-ins/confirmaciones, reservas o cámaras. CoreHTTPS público pendiente; sin aceptación humana.06/07 pendientes hasta mañana;09 NO iniciada. Evidencia vigente: phase08/structural.
+
+### Precisión8.3 — estado final de esta entrega
+
+66 entidades/146 relaciones activas;12 personas de demo, Daniel reutiliza visitante12.8 tests estructurales PASS. Guion preparado exclusivamente dentro del simulador, no ejecutado: sin avatares, outputsCore, cámaras, detecciones, MOT/MTMC-ReID ni check-ins. Escenarios8.2 declarativos futuros, memoria/IDs/grafo persistentes reales P1 local. Funciones anteriores conservadas, sin operaciones nuevas ni09.06/07 pendientes hasta mañana. P2-08 EN VALIDACIÓN, no aprobada.
