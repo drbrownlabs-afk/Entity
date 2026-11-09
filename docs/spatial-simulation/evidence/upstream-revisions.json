@@ -19,21 +19,21 @@
   },
   "docs/DECISION-LOG.md": {
     "base_sha256": "0e2be0656ca78f79588636b24d95897e78a573d450b10fd19bd8dfaa89bab7b3",
-    "sha256": "da327560b0b1929e02515c822009bf68a9117586b1f023ef0b8df93176b6fe5c",
-    "commit": "9d8ba00",
-    "reason": "Required factual process memory for explicit P2-08 addendum8.1/8.2/8.2.1; canonical definitions preserved."
+    "sha256": "53713b171e1f806ce9756d9ff88456cad308c89ec66ef92fe12d48f7a1155e6a",
+    "commit": "6b13446b4b42440c8bdae6380fb5130edbf1cac6",
+    "reason": "Required factual P2 process-memory update for addendum8.3; canonical definitions preserved."
   },
   "docs/PROJECT-STATUS.md": {
     "base_sha256": "fcdf1c9f85815c3128069503f7cd2b573db5f79518cfb1134cccf79bdd304809",
-    "sha256": "41da7e1c657a75fee21bb4a372c2172c3fcae4a8f1670195a26ab482e3df6aeb",
-    "commit": "9d8ba00",
-    "reason": "Required factual process memory for explicit P2-08 addendum8.1/8.2/8.2.1; canonical definitions preserved."
+    "sha256": "7d73fdc2847a439acc0854e8b737322ea70bbf6b1c3f140e95d56aab2ba5de3f",
+    "commit": "6b13446b4b42440c8bdae6380fb5130edbf1cac6",
+    "reason": "Required factual P2 process-memory update for addendum8.3; canonical definitions preserved."
   },
   "docs/AGENT-WORKLOG.md": {
     "base_sha256": "2897408b0cb1cb10db6529294402ebafa47b84acdbd2fa95cc66565e635dac05",
-    "sha256": "5ba28838285405b288a484ca6d2a795aca87c2d4f368df50c5813bf0be10d9a5",
-    "commit": "9d8ba00",
-    "reason": "Required factual process memory for explicit P2-08 addendum8.1/8.2/8.2.1; canonical definitions preserved."
+    "sha256": "7e3b028baae0f9e0267fe37a4b163d22e1347e5439eef8ccaf19d824f96c4f0f",
+    "commit": "6b13446b4b42440c8bdae6380fb5130edbf1cac6",
+    "reason": "Required factual P2 process-memory update for addendum8.3; canonical definitions preserved."
   },
   ".github/workflows/pages.yml": {
     "base_sha256": "ebe34d397a085d10ae208ae620d4812f53a7f6d7c411705952bdd83acbf100e2",

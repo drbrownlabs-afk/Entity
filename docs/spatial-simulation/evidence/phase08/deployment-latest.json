@@ -1,0 +1,16 @@
+{
+  "source_commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
+  "mode": "coworking-only",
+  "active_route": "/Entity/spatial-simulation/",
+  "workflow_url": "https://github.com/drbrownlabs-afk/Entity/actions/runs/42567325208",
+  "workflow_conclusion": "success",
+  "public_verification": "Runner verified deployment manifest SHA/mode and coworking HTML",
+  "retired_demo_active": false,
+  "published_root_entries": [
+    ".nojekyll",
+    "404.html",
+    "deployment.json",
+    "index.html",
+    "spatial-simulation"
+  ]
+}
