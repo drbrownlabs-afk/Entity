@@ -57,3 +57,7 @@ Cancelados los trabajos pendientes de 04.5 por orden del operador. Walk Mode cli
 ### Resultado funcional final — 2026-11-09
 
 Once pruebas Node PASS, incluidas 21 rutas aprobadas y activación táctil sin duplicados/scroll/teclado/inputs. Build Vite PASS. Chromium: **21 comprobaciones PASS**, ratón y toque nativo en viewport móvil; rutas, mirada libre, TV, puertas, luces y vista general; sin errores de navegador ni recursos fallidos. Render desactivado solamente en el harness funcional, sin acreditar calidad visual o FPS móvil físico. Evidencias en `evidence/phase05-walk/`. GitHub Pages permanece BLOQUEADO por protección del entorno, sin URL nueva verificada. Requiere permitir `codex/spatial-simulation` en `github-pages`; no se modificó main/gh-pages. Fase05 EN REVISIÓN, no aprobada; Fase06 bloqueada.
+
+## Orden más reciente — P2-06 (2026-11-09)
+
+El operador dice «Fase 6»: autorización explícita para iniciar personajes; sustituye la prohibición anterior de comenzar 06, sin inferir aprobación de calidad ni despliegue 05. Inventario de 12 personajes/roles de animación preparado; sin recursos Mixamo descargados. Bloqueo de acceso interactivo documentado en evidence/phase06/access.json; no afirmar navegador abierto ni autenticación. Gate06 ABIERTO, Fase07 no iniciada. No dummies, sustituciones o duplicación de Core.

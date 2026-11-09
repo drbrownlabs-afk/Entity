@@ -503,3 +503,11 @@ Rama codex/synthetic-office-geometry-handoff. Generados docs/spatial-simulation/
 - Limitaciones: estados técnicos, credenciales y proveedores reales de Impacto pendientes de comprobación; no se infiere aceptación de gates.
 - Estado final: documentación consolidada.
 - Próxima acción: antes de cualquier implementación, revisar memoria existente, código y evidencias; evitar repetir decisiones descartadas.
+
+## 2026-11-09 · P2-06 autorizada por el operador: preparación y bloqueo de acceso
+
+La orden «Fase 6» autoriza comenzar personajes, sin afirmar aprobación visual de 05 ni publicación Pages. Rama exclusiva codex/spatial-simulation. Incorporados commits documentales del operador hasta 0d660fa mediante avance directo de la misma rama, sin fusionar ramas ni tocar main. Leído canon/ADR/estado/roadmap P2; no se modifica canon ni P1/P3.
+
+Preparados inventario de los doce personajes solicitados y roles de animación en simulation/spatial-office/characters-required.json; evidencia de acceso en docs/spatial-simulation/evidence/phase06/access.json. Sin FBX/GLB solicitados en assets actuales. Rocketbox de P1 no sustituye Mixamo. El escritorio del entorno está enabled:true/state:unknown, pero no se exponen cua_repl.js ni open_in_codex; DISPLAY ausente y sin sockets X11. No se abrió Mixamo, no hay login ni descargas verificadas. Se necesita sesión remota visible/controlable para login personal del operador, o recursos entregados por vía autorizada. No pedir ni registrar credenciales.
+
+Verificación ejecutada: JSON de 12 IDs únicos, ausencia explícita de recursos descargados y comprobación de archivos originales protegidos PASS (con revisiones documentales exactas del operador). No pruebas de NPC, animación, retargeting ni multicámara porque aún no hay assets. Fase06 ABIERTA/BLOQUEADA POR ACCESO; gate no aprobado. No avanzar a 07 por este registro. Código de preparación accba79; publicación final en esta misma rama.
