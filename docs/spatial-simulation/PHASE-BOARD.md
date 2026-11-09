@@ -76,3 +76,7 @@ Once pruebas Node PASS, incluidas 21 rutas aprobadas y activación táctil sin d
 ## Orden más reciente — P2-06 (2026-11-09)
 
 El operador dice «Fase 6»: autorización explícita para iniciar personajes; sustituye la prohibición anterior de comenzar 06, sin inferir aprobación de calidad ni despliegue 05. Inventario de 12 personajes/roles de animación preparado; sin recursos Mixamo descargados. Bloqueo de acceso interactivo documentado en evidence/phase06/access.json; no afirmar navegador abierto ni autenticación. Gate06 ABIERTO, Fase07 no iniciada. No dummies, sustituciones o duplicación de Core.
+
+## 2026-11-09 — Orden vigente: P2-08 y retirada Mall
+
+06/07 pendientes hasta mañana; no Mixamo/avatares/animaciones. P2-08 implementada y probada con P1 local real (memoria, eventos, estados, relaciones, mapa espacial, frontend y reinicio). 17 ubicaciones + dos personas lógicas placeholders sin identidad/presencia real. Mall retirado del sitio público: workflow42563938970 SUCCESS, historial/fuentes conservados. Core público HTTPS no desplegado/configurado; el estático exige conexión explícita a API autorizada. P2-08 EN VALIDACIÓN, no autoaprobada. Evidencias: phase08.

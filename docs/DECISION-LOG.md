@@ -138,3 +138,7 @@ Se suspende el desarrollo del frontend basado en Gaussian Splatting, conservando
 - **DESCARTADO:** dummies geométricos como personajes objetivo de visión. **SELECCIONADO:** ~12 humanos realistas Mixamo, animados, con ground truth aislado de la percepción.
 - **VIGENTE:** SaaS centralizado; Edge solo tareas locales indispensables. Orbbec disponible; ocho analógicas/DVR no disponibles, fueron hipotéticas.
 - **VIGENTE:** memoria documental compartida ya existente (master spec, decision log, project status, agent worklog, AGENTS). **DESCARTADO:** archivo adicional MEMORY.md y segundo documento maestro creado por error; ambos eliminados en commit `2a723211`. No duplicar fuentes de verdad.
+
+## 2026-11-09 — Ejecución P2-08 y retirada del demo Mall (decisión de proceso, sin cambio de canon)
+
+El operador autoriza adelantar P2-08 con06/07 pendientes y retirar la demostración Mall de aplicación/despliegue. Se preservan fuentes reutilizables P1 y datos históricos. Adaptaciones compartidas viven en P1: memoria declarada mediante Núcleo/API Office, cliente autenticado común; P2 solo vincula escena y consume. Sede P2 explícita en el mismo Core evita reescribir topología histórica incompatible. Identidades lógicas sin verificar no afirman personas reales ni presencia. Publicador único de coworking; no reapertura de P3 ni de fases pospuestas.

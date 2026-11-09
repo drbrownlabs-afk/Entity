@@ -30,3 +30,9 @@ Origen activo anterior: `apps/web/index.html` → `src/main.js` → scene/model/
 Único publicador activo: publish-coworking.yml. Reemplaza el árbol de artefactos publicados por coworking en `/Entity/spatial-simulation/`, una raíz/404 de entrada y manifiesto SHA. Retira los HTML/assets antiguos del despliegue, conservados en Git. Deshabilita pages.yml y spatial-pages.yml mediante la API autorizada del runner para que versiones anteriores en otras ramas no vuelvan a publicar. Sus archivos de la rama actual solo anuncian su retirada. Concurrencia compartida entity-pages.
 
 No se atribuye éxito remoto por escribir el workflow: los resultados reales se registran en evidencia. Sin tareas de Mixamo, avatares, animaciones, vídeo, cámaras ni nuevos pisos. P2-06/07 pendientes por orden del operador.
+
+## Resultados ejecutados
+
+5 pruebas de integración/actualización/atomicidad P1 PASS; 11 contratos Core PASS; 49 Office PASS; 15 frontend P1 PASS; 11 lógica P2 PASS. Chromium/P1 HTTP real: 11 checks PASS y21 navegación/regresión PASS (desktop y emulación táctil). Reinicio completo Uvicorn: entidades/relaciones/estado/memorias idénticos. No benchmark físico móvil ni garantía de calidad visual por estas pruebas. Registro inicial de memoria usa referencia compacta al mapa, no una copia completa de todos los objetos, para respetar el contrato de4000 caracteres.
+
+Retirada pública: workflow42563938970 SUCCESS; rama de artefactos solo contiene coworking y entrada/404/manifest. El navegador remoto de pruebas real P2 llama P1 local por HTTP/CORS; no hay backend HTTPS de producción configurado en Pages. No fingir conexión pública ni desplegar credenciales en estático.
