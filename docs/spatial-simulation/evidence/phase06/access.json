@@ -1,0 +1,24 @@
+{
+  "authorization": "Latest operator message: Fase 6",
+  "branch": "codex/spatial-simulation",
+  "base_commit": "0d660fa",
+  "environment_id": "ccarenv_b64_Y2NhcmVudl81YzNiNzVlMjUzYWM4MTkxYjJmZjJjNmZkZGE4OTdlMQ",
+  "remote_desktop": {
+    "enabled": true,
+    "state": "unknown"
+  },
+  "available_desktop_controls": [],
+  "missing_tools": [
+    "cua_repl.js",
+    "open_in_codex"
+  ],
+  "display_environment_variable": null,
+  "x11_sockets": [],
+  "requested_mixamo_files_found": false,
+  "existing_human_assets": "P1 Rocketbox evidence exists; not substituted for the explicitly requested Mixamo characters",
+  "mixamo_opened": false,
+  "mixamo_authenticated": false,
+  "downloads_performed": false,
+  "phase06_gate_passed": false,
+  "next_required_input": "Visible controllable remote browser with operator Adobe login, or authorized source asset delivery. Never request credentials in chat."
+}

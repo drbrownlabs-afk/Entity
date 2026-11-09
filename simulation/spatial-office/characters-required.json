@@ -1,0 +1,144 @@
+{
+  "phase": "P2-06",
+  "source": "https://www.mixamo.com/",
+  "acquisition_status": "BLOCKED_INTERACTIVE_LOGIN_UNAVAILABLE",
+  "availability_verified": false,
+  "minimum_characters": 10,
+  "target_characters": 12,
+  "characters": [
+    {
+      "id": "sim:person:megan",
+      "requested_name": "Megan",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    },
+    {
+      "id": "sim:person:kate",
+      "requested_name": "Kate",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    },
+    {
+      "id": "sim:person:louise",
+      "requested_name": "Louise",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    },
+    {
+      "id": "sim:person:suzie",
+      "requested_name": "Suzie",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    },
+    {
+      "id": "sim:person:elizabeth",
+      "requested_name": "Elizabeth",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    },
+    {
+      "id": "sim:person:sophie",
+      "requested_name": "Sophie",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    },
+    {
+      "id": "sim:person:josh",
+      "requested_name": "Josh",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    },
+    {
+      "id": "sim:person:brian",
+      "requested_name": "Brian",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    },
+    {
+      "id": "sim:person:david",
+      "requested_name": "David",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    },
+    {
+      "id": "sim:person:adam",
+      "requested_name": "Adam",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    },
+    {
+      "id": "sim:person:james",
+      "requested_name": "James",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    },
+    {
+      "id": "sim:person:roth",
+      "requested_name": "Roth",
+      "availability": "unverified",
+      "source_file": null,
+      "sha256": null,
+      "rig_verified": false,
+      "runtime_asset": null
+    }
+  ],
+  "required_animation_roles": [
+    "idle",
+    "walk_in_place",
+    "turn",
+    "sit_down",
+    "sitting_idle",
+    "stand_up",
+    "talk_gesture"
+  ],
+  "optional_animation_roles": [
+    "backward_walk_in_place"
+  ],
+  "clip_names_verified": false,
+  "acquisition_settings": {
+    "character": "FBX Binary with skin; confirm actual available export options in authenticated Mixamo session",
+    "animation": "Compatible character rig, FBX; walking In Place when runtime controls translation",
+    "credentials": "Operator signs in personally; no credentials in manifest, logs or git",
+    "source_directory": "simulation/spatial-office/.runtime/mixamo-source (ignored)",
+    "redistribution": "Do not commit original Mixamo files to public repository until permission is verified"
+  },
+  "acceptance": {
+    "functional_characters": false,
+    "navigation_and_collisions_verified": false,
+    "three_character_control_switch_verified": false,
+    "operator_approved": false
+  }
+}
