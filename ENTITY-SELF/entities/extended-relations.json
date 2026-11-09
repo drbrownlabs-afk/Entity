@@ -1,0 +1,325 @@
+{
+  "schema_version": "1.0",
+  "relations": [
+    {
+      "id": "entity-self:extended-relation:001",
+      "source_id": "entity-self:product.entity",
+      "target_id": "entity-self:spaces40",
+      "type": "FUNDAMENTA",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:002",
+      "source_id": "entity-self:spaces40",
+      "target_id": "entity-self:entityspaces",
+      "type": "USO_NOMBRE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:003",
+      "source_id": "entity-self:spaces40",
+      "target_id": "entity-self:casaviva",
+      "type": "SE_COMERCIALIZABA_COMO",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:004",
+      "source_id": "entity-self:spaces40",
+      "target_id": "entity-self:casarivera",
+      "type": "PROPUSO_PILOTO_EN",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:005",
+      "source_id": "entity-self:spaces40",
+      "target_id": "entity-self:product.spatial",
+      "type": "ANTECEDENTE_COMERCIAL_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:006",
+      "source_id": "entity-self:spaces40",
+      "target_id": "entity-self:studio",
+      "type": "EVOLUCION_NARRATIVA_HACIA",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:007",
+      "source_id": "entity-self:studio",
+      "target_id": "entity-self:epic",
+      "type": "PROPUESTO_EN",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:008",
+      "source_id": "entity-self:casaviva",
+      "target_id": "entity-self:epic",
+      "type": "PROPUESTO_EN",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:009",
+      "source_id": "entity-self:spaces40",
+      "target_id": "entity-self:singapore",
+      "type": "PROPUESTA_HISTORICA",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:010",
+      "source_id": "entity-self:singapore",
+      "target_id": "entity-self:opensource",
+      "type": "MODELO_PROPUESTO",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:011",
+      "source_id": "entity-self:spaces40",
+      "target_id": "entity-self:casa",
+      "type": "EVOLUCION_DE_GEMELO_A",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:012",
+      "source_id": "entity-self:gaming",
+      "target_id": "entity-self:spaces40",
+      "type": "ANTECEDENTE_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:013",
+      "source_id": "entity-self:tech.runtime",
+      "target_id": "entity-self:openclaw",
+      "type": "SE_DISEÑO_INDEPENDIENTE_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:014",
+      "source_id": "entity-self:openclaw",
+      "target_id": "entity-self:concept.agents",
+      "type": "RUNTIME_OPCIONAL_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:015",
+      "source_id": "entity-self:opencloud",
+      "target_id": "entity-self:openclaw",
+      "type": "TERMINO_HISTORICO_RELACIONADO",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:016",
+      "source_id": "entity-self:ntt",
+      "target_id": "entity-self:product.entity",
+      "type": "MUNDO_HISTORICO_RELACIONADO",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:017",
+      "source_id": "entity-self:nexo",
+      "target_id": "entity-self:entityagent",
+      "type": "DESARROLLABA",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:018",
+      "source_id": "entity-self:nexo",
+      "target_id": "entity-self:openclaw",
+      "type": "TRABAJABA_CON",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:019",
+      "source_id": "entity-self:entityagent",
+      "target_id": "entity-self:ntt",
+      "type": "FUE_AGENT_MAIN_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:020",
+      "source_id": "entity-self:marea",
+      "target_id": "entity-self:ntt",
+      "type": "AGENTE_ESPECIALIZADO_HISTORICO_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:021",
+      "source_id": "entity-self:kiaga",
+      "target_id": "entity-self:ntt",
+      "type": "AGENTE_ESPECIALIZADO_HISTORICO_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:022",
+      "source_id": "entity-self:bruno",
+      "target_id": "entity-self:ntt",
+      "type": "AGENTE_ESPECIALIZADO_HISTORICO_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:023",
+      "source_id": "entity-self:agentmemory",
+      "target_id": "entity-self:concept.worldmemory",
+      "type": "ANTECEDENTE_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:024",
+      "source_id": "entity-self:openclaw",
+      "target_id": "entity-self:agentmemory",
+      "type": "CONSERVA",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:025",
+      "source_id": "entity-self:unreal",
+      "target_id": "entity-self:concept.world",
+      "type": "REPRESENTA",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:026",
+      "source_id": "entity-self:gaussian",
+      "target_id": "entity-self:concept.world",
+      "type": "REPRESENTA",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:027",
+      "source_id": "entity-self:spatialfx",
+      "target_id": "entity-self:product.entity",
+      "type": "LINEA_DE_INVESTIGACION_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:028",
+      "source_id": "entity-self:onboarding",
+      "target_id": "entity-self:tech.entityizer",
+      "type": "RELACIONADO_CON",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:029",
+      "source_id": "entity-self:marketplace",
+      "target_id": "entity-self:product.entity",
+      "type": "MODELO_HISTORICO_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:030",
+      "source_id": "entity-self:sensors",
+      "target_id": "entity-self:tech.edge",
+      "type": "ALIMENTA",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:031",
+      "source_id": "entity-self:human",
+      "target_id": "entity-self:product.entity",
+      "type": "APLICACION_HISTORICA_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:032",
+      "source_id": "entity-self:fundingops",
+      "target_id": "entity-self:product.entity",
+      "type": "APLICACION_HISTORICA_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:033",
+      "source_id": "entity-self:universe",
+      "target_id": "entity-self:concept.world",
+      "type": "ANTECEDENTE_ONTOLOGICO_DE",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:034",
+      "source_id": "entity-self:tech.nucleo",
+      "target_id": "entity-self:openclaw",
+      "type": "INTEROPERA_CON",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:035",
+      "source_id": "entity-self:spaces40",
+      "target_id": "entity-self:sensors",
+      "type": "UTILIZA",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:036",
+      "source_id": "entity-self:spaces40",
+      "target_id": "entity-self:gaussian",
+      "type": "UTILIZA",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:037",
+      "source_id": "entity-self:spaces40",
+      "target_id": "entity-self:unreal",
+      "type": "UTILIZA",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:038",
+      "source_id": "entity-self:spaces40",
+      "target_id": "entity-self:product.entity",
+      "type": "COMPARTE_CORE_CON",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:039",
+      "source_id": "entity-self:demo.airport",
+      "target_id": "entity-self:spaces40",
+      "type": "NARRATIVA_POSTERIOR_A",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    },
+    {
+      "id": "entity-self:extended-relation:040",
+      "source_id": "entity-self:pilot.cowork",
+      "target_id": "entity-self:casarivera",
+      "type": "PILOTO_POSTERIOR_A",
+      "provenance": "ENTITY-SELF/corpus/GENEALOGIA-ESPACIOS40-NUCLEO-AGENTES.md",
+      "status": "historical-synthesis"
+    }
+  ]
+}
