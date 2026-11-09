@@ -142,3 +142,7 @@ Se suspende el desarrollo del frontend basado en Gaussian Splatting, conservando
 ## 2026-11-09 — Ejecución P2-08 y retirada del demo Mall (decisión de proceso, sin cambio de canon)
 
 El operador autoriza adelantar P2-08 con06/07 pendientes y retirar la demostración Mall de aplicación/despliegue. Se preservan fuentes reutilizables P1 y datos históricos. Adaptaciones compartidas viven en P1: memoria declarada mediante Núcleo/API Office, cliente autenticado común; P2 solo vincula escena y consume. Sede P2 explícita en el mismo Core evita reescribir topología histórica incompatible. Identidades lógicas sin verificar no afirman personas reales ni presencia. Publicador único de coworking; no reapertura de P3 ni de fases pospuestas.
+
+## 2026-11-09 — P2-08 addendum8.1/8.2/8.2.1 (decisión de proceso)
+
+Se formaliza Coworking como entidad madre del espacioSite, no raíz del modelo mundial completo ni Core paralelo. Contención inversa partOf sin aristas redundantes; personas registeredIn (registro lógico no ubicación física). Población inicial12 y dos organizaciones según definición del operador; condiciones comerciales solo sintéticas/declarativas, no se ejecutan flujos nuevos. P1 amplía tipos/relaciones de su contrato de registro, P2 consume y verifica. Se preservan funciones ya realizadas; planes de visitas/reuniones/pagos no equivalen a llegadas, reservas, confirmaciones o emisión fiscal. Sin P2-09 ni canon nuevo.

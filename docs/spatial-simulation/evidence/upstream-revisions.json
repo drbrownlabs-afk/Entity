@@ -38,49 +38,61 @@
   ".github/workflows/pages.yml": {
     "base_sha256": "ebe34d397a085d10ae208ae620d4812f53a7f6d7c411705952bdd83acbf100e2",
     "sha256": "6dc48d938502d166228a39941f9f43b0d86d5da00b1d6973201cffe6e083173f",
-    "commit": "9fc36dc",
-    "reason": "Explicit operator authorization: P1 adaptations for P2-08 and public Mall retirement; exact reviewed source revision, no blanket exemption."
+    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
+    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
   },
   "apps/web/index.html": {
     "base_sha256": "0f44353fba6c043e526532237700a35fd5c15717c40afff7b332728533c12e85",
     "sha256": "91911b2d46198f0c3bdd35ee4c8511629e385fca73147aa9f51ff732dfb0bbd4",
-    "commit": "9fc36dc",
-    "reason": "Explicit operator authorization: P1 adaptations for P2-08 and public Mall retirement; exact reviewed source revision, no blanket exemption."
+    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
+    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
   },
   "services/entity-api/app/office/api.py": {
     "base_sha256": "fbbcb7a3853bf9f9b8d40b1a92f59df60173c21ebb1998395ddc60711bcb48a2",
     "sha256": "988ee183fcab823844d8dd2f74dd85c289d80897a103c3de3bf1f8b73ef3703f",
-    "commit": "9fc36dc",
-    "reason": "Explicit operator authorization: P1 adaptations for P2-08 and public Mall retirement; exact reviewed source revision, no blanket exemption."
+    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
+    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
   },
   "services/entity-api/app/office/catalog.py": {
     "base_sha256": "6b8f570085219cbcc1eff29f51ae7faed5ebc926bbc720537bfc9ade4ced26d4",
     "sha256": "82b3cf92d33cd1ca2c1576dcaa770bb0fd1207c6fd33f7c0c20dc691a5b03b11",
-    "commit": "9fc36dc",
-    "reason": "Explicit operator authorization: P1 adaptations for P2-08 and public Mall retirement; exact reviewed source revision, no blanket exemption."
+    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
+    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
   },
   "services/entity-api/app/office/inputs.py": {
     "base_sha256": "56a57f5511e69e8cfbaaf41632214e5afca898da8f51b8f8f50becf5d4ae4ad4",
-    "sha256": "be268a817d440cf05c77476289ef77c535d36b429b926fd754dad1e1aaf26557",
-    "commit": "9fc36dc",
-    "reason": "Explicit operator authorization: P1 adaptations for P2-08 and public Mall retirement; exact reviewed source revision, no blanket exemption."
+    "sha256": "2134c817fcfea26d8c4db861e8ddb855fa19c48ff297037b54930206ac91f241",
+    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
+    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
   },
   "services/entity-api/app/office/queries.py": {
     "base_sha256": "dc97e1a9c3b6500a35164a888a31c42fa22ccf30737b4d4526307158159d3840",
     "sha256": "b1824cd70c1f728ff3d80e315665c57e8c792d022061dd3232cfe2ce24690397",
-    "commit": "9fc36dc",
-    "reason": "Explicit operator authorization: P1 adaptations for P2-08 and public Mall retirement; exact reviewed source revision, no blanket exemption."
+    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
+    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
   },
   "services/entity-api/app/office/service.py": {
     "base_sha256": "5215c420f01e7aa6bfe87ecc047c78644e42225cdeda6adb392ac3750c652bc6",
-    "sha256": "cad8c27acd00e930022f277957f43765e8ce3b43fe4f3d9dedc22a54dbe42757",
-    "commit": "9fc36dc",
-    "reason": "Explicit operator authorization: P1 adaptations for P2-08 and public Mall retirement; exact reviewed source revision, no blanket exemption."
+    "sha256": "d7f1b47f5ccca4205cbe0d11828ce3c1835824c1efb528ee45f89f17d28ed223",
+    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
+    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
   },
   "services/entity-api/app/office/storage.py": {
     "base_sha256": "76169b717393d4b959f162c721b9a7232727ef345ced61cb44832e937c11217f",
     "sha256": "91e98e8c30875b341f4701f3f7b17ec6ff13e3baa7772d28a24d40d7e5cc4b02",
-    "commit": "9fc36dc",
-    "reason": "Explicit operator authorization: P1 adaptations for P2-08 and public Mall retirement; exact reviewed source revision, no blanket exemption."
+    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
+    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
+  },
+  "scripts/provision-office-site.py": {
+    "base_sha256": "88231af6bec753aec789fa75ff6c5d2b98287d773669938ff4089bb71496b1b8",
+    "sha256": "65441d0a2a1e9bd4935dfc5d91edeceb4fa95ed202f1b8af98cf9bf34b9d7605",
+    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
+    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
+  },
+  "services/entity-api/app/office/graph.py": {
+    "base_sha256": "352291875cca9e2ad5ae2e3b5a43a38b5a8d1fd651e934aa6052444781192e1a",
+    "sha256": "798cf81588bdede7c3ad082bc47cf32a37fefa73aacf0b96f5486e3f3ab7fd8b",
+    "commit": "bd1d98633ec5f1280cd65aebb86ed67b29d860ad",
+    "reason": "Exact authorized P1 extension/retirement revision under P2-08 addendum; code reused, no parallel Core."
   }
 }

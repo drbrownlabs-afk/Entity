@@ -80,3 +80,7 @@ El operador dice «Fase 6»: autorización explícita para iniciar personajes; s
 ## 2026-11-09 — Orden vigente: P2-08 y retirada Mall
 
 06/07 pendientes hasta mañana; no Mixamo/avatares/animaciones. P2-08 implementada y probada con P1 local real (memoria, eventos, estados, relaciones, mapa espacial, frontend y reinicio). 17 ubicaciones + dos personas lógicas placeholders sin identidad/presencia real. Mall retirado del sitio público: workflow42563938970 SUCCESS, historial/fuentes conservados. Core público HTTPS no desplegado/configurado; el estático exige conexión explícita a API autorizada. P2-08 EN VALIDACIÓN, no autoaprobada. Evidencias: phase08.
+
+## Estado vigente — addendum8.1/8.2/8.2.1
+
+P2-08 EN VALIDACIÓN:66 entidades/146 relaciones en P1 local; raíz Coworking con identidad/estado/memoria;12 personas lógicas, organizaciones, catálogo y planes sintéticos.30 referencias a escena existente.7 pruebas estructurales,5 compatibilidad de identidad, reinicio HTTP y reimportación0 cambios PASS. Funcionalidad previa conservada; no nuevos flujos operativos ni pagos/check-ins/confirmaciones, reservas o cámaras. CoreHTTPS público pendiente; sin aceptación humana.06/07 pendientes hasta mañana;09 NO iniciada. Evidencia vigente: phase08/structural.
