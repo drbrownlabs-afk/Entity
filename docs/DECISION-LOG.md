@@ -30,6 +30,14 @@
 - **Impacto:** precisión de responsabilidades y continuidad, sin reescritura de código ni certificación de funcionalidad por este registro. Complementa ADR-001 y ADR-002; sustituye interpretaciones anteriores que ubicaban desarrollo de Core/frontend de plataforma dentro de P2.
 - **Alternativa descartada:** duplicar backend, frontend de plataforma o Entityizer por cada demo o vertical.
 
+## ADR-2026-11-09-P2-09-SENSORS — Cámaras como sensores, continuidad topológica y gate humano (ACEPTADA)
+- **Aprobación:** instrucción expresa del operador, 2026-11-09. Snapshot comparativo: `docs/spatial-simulation/snapshots/P2-09-2026-11-09-SENSOR-CONTINUITY.md` respecto a `P2-09-2026-11-09-BASELINE.md`.
+- **Decisión:** las cámaras virtuales son sensores espaciales calibrados por sus transforms/proyección PlayCanvas; continuidad de identidad mediante ReID/MTMC más topología de cámaras, geometría, tiempo, dirección, velocidad, rutas plausibles y evidencias positivas/negativas con incertidumbre. Mantener identidad provisional durante huecos, sin inferir observaciones inexistentes ni identidad civil.
+- **Orden vinculante:** primero el operador visualiza y coloca manualmente cámaras en visor; el sistema guarda posiciones y recalcula registro espacial/grafo. **No autoaprobar posiciones**. Solo después de aprobación humana evaluar percepción, fusión multicámara y stack ya investigado (incluida línea NVIDIA), sin sustituirlo por defecto.
+- **Sustitución parcial:** precisa P2-09.2/09.3 y limita autorización general de avance autónomo exclusivamente en gate de ubicación/cobertura. Conserva pruebas automáticas y alcance P2.
+- **Evidencia:** snapshot documental, no pruebas nuevas ni cambio de código.
+
+
 ---
 ## Historial previo (conservado, puede contener decisiones sustituidas)
 Las entradas siguientes documentan su momento histórico; para saber cuál es vigente aplicar ADR-2026-11-08-001 y el canon.
