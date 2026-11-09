@@ -99,6 +99,16 @@ Materiales PBR realistas: terrazzo, vidrio, aluminio/metal negro, madera, tapice
 
 **Gate 04:** renders Blender y, solo si ya existe un entorno técnico aislado, pruebas técnicas preliminares sin iniciar la implementación de la fase 05 en PlayCanvas de la misma sala con todas las luces encendidas/apagadas y luz individual conmutada; comprobación de puertas y manifest de dispositivos. Materiales exportados sin pérdidas graves.
 
+## Fase 04.5 — Referencia de máxima calidad antes de optimización móvil (correctiva)
+
+**Especificación operativa obligatoria:** [PHASE-04-5-QUALITY-REFERENCE.md](PHASE-04-5-QUALITY-REFERENCE.md).
+
+Esta fase se incorpora retrospectivamente al flujo actual, donde ya existen exportación GLB y visor PlayCanvas de Fase 05. Su objetivo es obtener y verificar una referencia visual de **máxima calidad sin restricciones móviles**, auditando en conjunto la transferencia PBR, iluminación, reflejos, lightmaps y ajustes del renderizador. **No se limita a iluminación.**
+
+Trabajar exclusivamente en `codex/spatial-simulation`. Conservar el maestro Blender, el visor y las funcionalidades existentes; crear un perfil de calidad reversible. Ajustar **en Blender y PlayCanvas** una sola condición Golden Hour (aproximadamente 17:00), con cámaras y exposición equivalentes. Verificar materiales en origen, GLB y runtime; realizar pruebas A/B por categoría y capturas comparativas. No imponer FPS, memoria ni reducción de calidad móvil hasta obtener la referencia y revisión visual del operador. Mantener optimizaciones que no degradan calidad.
+
+**Gate 04.5:** capturas comparables, inventario de pérdidas de PBR, iluminación y reflejos, correcciones documentadas, perfil de máxima calidad reproducible, interacciones intactas y aprobación visual del operador. Esta inserción **no revoca autorizaciones de Fase 05 ya dadas**, ni exige retroceder a rehacer fases completas. Hasta aprobar 04.5, la optimización móvil queda aplazada.
+
 ## Fase 05 — PlayCanvas, navegación e interacción (requiere aprobación previa)
 
 **Meta:** escena arquitectónica completa (incluida la planta en C) navegable en navegador. Exportar GLB con IDs y jerarquía; vistas general e interior, navegación ratón/teclado/táctil, colisiones, selección de ambientes/objetos, ficha contextual. Reutilizar por importación/adaptador los componentes del frontend anterior **sin editar su código**. Implementar controles funcionales de puertas, luminarias individuales/circuitos y cuatro televisores con contenido de prueba. Selección de entidad muestra ID, tipo, ambiente y estado. No duplicar el Core.
