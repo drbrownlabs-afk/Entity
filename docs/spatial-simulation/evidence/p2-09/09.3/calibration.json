@@ -1,0 +1,1852 @@
+{
+  "gate": "P2-09.3",
+  "passed": true,
+  "camera_count": 6,
+  "max_reprojection_error_px": 1.7742537311742466e-06,
+  "native_camera_matrices": true,
+  "scale_metres_verified": false,
+  "route_probes": 41,
+  "solid_los_coverage_fraction": 1.0,
+  "frustum_coverage_fraction": 1.0,
+  "multi_view_probe_fraction": 1.0,
+  "overlapping_pairs": [
+    {
+      "a": "CAMERA-PLANNED-02",
+      "b": "CAMERA-PLANNED-03",
+      "probes": 18
+    },
+    {
+      "a": "CAMERA-PLANNED-02",
+      "b": "CAMERA-PLANNED-04",
+      "probes": 18
+    },
+    {
+      "a": "CAMERA-PLANNED-03",
+      "b": "CAMERA-PLANNED-04",
+      "probes": 29
+    },
+    {
+      "a": "CAMERA-PLANNED-01",
+      "b": "CAMERA-PLANNED-02",
+      "probes": 15
+    },
+    {
+      "a": "CAMERA-PLANNED-01",
+      "b": "CAMERA-PLANNED-03",
+      "probes": 26
+    },
+    {
+      "a": "CAMERA-PLANNED-01",
+      "b": "CAMERA-PLANNED-04",
+      "probes": 38
+    },
+    {
+      "a": "CAMERA-PLANNED-01",
+      "b": "CAMERA-PLANNED-06",
+      "probes": 24
+    },
+    {
+      "a": "CAMERA-PLANNED-02",
+      "b": "CAMERA-PLANNED-06",
+      "probes": 1
+    },
+    {
+      "a": "CAMERA-PLANNED-03",
+      "b": "CAMERA-PLANNED-06",
+      "probes": 12
+    },
+    {
+      "a": "CAMERA-PLANNED-04",
+      "b": "CAMERA-PLANNED-06",
+      "probes": 24
+    },
+    {
+      "a": "CAMERA-PLANNED-01",
+      "b": "CAMERA-PLANNED-05",
+      "probes": 3
+    },
+    {
+      "a": "CAMERA-PLANNED-04",
+      "b": "CAMERA-PLANNED-05",
+      "probes": 3
+    },
+    {
+      "a": "CAMERA-PLANNED-05",
+      "b": "CAMERA-PLANNED-06",
+      "probes": 3
+    }
+  ],
+  "coverage": [
+    {
+      "probe": [
+        -2.2,
+        -1.85,
+        0.8
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 86.14214761188487
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 62.51247591935734
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 53.62048327110675
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -2.5,
+        -1.85,
+        0.6
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 87.83255582667175
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 63.062390991215835
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 53.78777462561203
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -2.5,
+        -1.85,
+        0.1
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 92.48424711940413
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 65.22724498744145
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 55.05047013390437
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -2.5,
+        -1.85,
+        -0.4
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 235.0490143346301
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 97.65268640091415
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 67.54521878366253
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 56.37348985855266
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -2.5,
+        -1.85,
+        -0.9
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 208.33992195404107
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 103.42820640005306
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 70.03304272724841
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 57.76122715413263
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -2.5,
+        -1.85,
+        -1.4
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 186.76646200685963
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 109.92320735238383
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 72.70995517013438
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 59.21850812934768
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -2.5,
+        -1.85,
+        -1.9
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 169.0852310425327
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 117.27919590370891
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 75.59818521528825
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 60.750645538132105
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -2.5,
+        -1.85,
+        -2.4
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 154.37731216688803
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 125.6766140556607
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 78.72354962826756
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 62.36350077737083
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -2.5,
+        -1.85,
+        -2.9
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 141.97395939574227
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 135.3487659169137
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 82.11619597020905
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 64.06355541201022
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -2.5,
+        -1.85,
+        -3.4
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 131.38510540708563
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 146.60181893999464
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 85.81153435714026
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 65.85799392848641
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -2.8,
+        -1.7375,
+        -3.6
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 128.5549148582225
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 153.38694082556384
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 87.6143388038104
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 66.68623523913224
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.3,
+        -1.6125,
+        -3.6
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 129.48087151149997
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 155.29332367460955
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 87.56394268551676
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 66.4963998731122
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.6,
+        -1.55,
+        -3.8
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 126.15048860935167
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 161.98460120690277
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 89.08305968419631
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 67.07593283084836
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.6,
+        -1.55,
+        -4.3
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 117.66848232091405
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 178.35174111251644
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 93.45476078933558
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 69.04947780879714
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.6,
+        -1.55,
+        -4.8
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 110.24835020182206
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 198.28909693436214
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 98.27370384765683
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 71.14176893404384
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.3,
+        -1.55,
+        -5
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 107.7519840564579
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 207.76530617504488
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 101.0596810062049
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 72.60196434655911
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.3,
+        -1.55,
+        -5.5
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 101.49048283300237
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 234.95420778691187
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 106.70946035662135
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 74.9167612312306
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.3,
+        -1.55,
+        -6
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 95.91363902611533
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "projected_person_height_px": 269.6620575245591
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 113.01981823039586
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 77.38258772138467
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 40.86107162382129
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-02",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.3,
+        -1.55,
+        -6.5
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 90.91547461610241
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 120.11147705527011
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 80.0145300907833
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 41.874110927760825
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.3,
+        -1.55,
+        -7
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 86.41070987772434
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 128.1355483565829
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 82.8297166114857
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 42.938636333325434
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.3,
+        -1.55,
+        -7.5
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 82.32997003698131
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 137.28320747274373
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 85.84766600113478
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 44.05867333194516
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.3,
+        -1.55,
+        -8
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 78.61625814451332
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 147.79890193689806
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 89.09070680068831
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 45.2386780689296
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.3,
+        -1.55,
+        -8.5
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 75.22232254515302
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 159.99824792822216
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 92.5844839258052
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 46.4835964818179
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.4,
+        -1.55,
+        -8.9
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 72.67747109285273
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 170.56950192378844
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 95.24098785561938
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 47.526283821546286
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p2:door:security:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.7,
+        -1.55,
+        -9.1
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 71.38831035777798
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 174.60215883956448
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 95.76554469141885
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 48.05599277835296
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.7,
+        -1.55,
+        -9.6
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 68.57742853834074
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 191.58100450082412
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 99.80396428136629
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 49.46311621202398
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.7,
+        -1.55,
+        -10.1
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 65.97912592294131
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 211.878124353638
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 104.19032267474114
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 50.95507663332768
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.7,
+        -1.55,
+        -10.6
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 63.57020923350785
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 236.28209693608534
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 108.97003940696774
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 52.53977939823636
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.7,
+        -1.55,
+        -11.1
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 61.33073459205613
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "projected_person_height_px": 265.39016759294447
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 114.19632936026517
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 54.226142744815206
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-03",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.7,
+        -1.55,
+        -11.6
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 59.24345879023761
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 119.93175501693466
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 56.024265232490336
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.7,
+        -1.55,
+        -12.1
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 57.29339790933349
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 126.2500535918904
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 57.94562749714618
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.7,
+        -1.55,
+        -12.6
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 55.46746961141139
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 133.23820692836952
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 60.003336807226844
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        }
+      ]
+    },
+    {
+      "probe": [
+        -3.7,
+        -1.55,
+        -13.1
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 53.75420119706055
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 140.99859982012444
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 62.21242538825629
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": "sim:p3:security:raised:leaf"
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": null
+        }
+      ]
+    },
+    {
+      "probe": [
+        -4.1,
+        -1.55,
+        -13.2
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 53.352497383073285
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 139.7647077379297
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 62.64842532360126
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": null
+        }
+      ]
+    },
+    {
+      "probe": [
+        -4.6,
+        -1.55,
+        -13.2
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 53.26319382047163
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 136.30480962901342
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 62.61662603340983
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": null
+        }
+      ]
+    },
+    {
+      "probe": [
+        -4.6,
+        -1.55,
+        -13.7
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 51.68131025197275
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 144.41361281825397
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 65.02598039613747
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": null
+        }
+      ]
+    },
+    {
+      "probe": [
+        -4.6,
+        -1.55,
+        -14.2
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 50.19058862342925
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 153.46815414164845
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 67.62794759867518
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": null
+        }
+      ]
+    },
+    {
+      "probe": [
+        -4.7,
+        -1.55,
+        -14.6
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 49.04335224045889
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 160.5699641379644
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 69.85630507226938
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": null
+        }
+      ]
+    },
+    {
+      "probe": [
+        -4.7,
+        -1.55,
+        -15.1
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 47.69881952253306
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 171.58280543229773
+        },
+        {
+          "camera": "CAMERA-PLANNED-05",
+          "projected_person_height_px": 295.18754875510484
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 72.86759461503522
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-05",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": null
+        }
+      ]
+    },
+    {
+      "probe": [
+        -4.7,
+        -1.55,
+        -15.6
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 46.42598143654624
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 183.94150979025457
+        },
+        {
+          "camera": "CAMERA-PLANNED-05",
+          "projected_person_height_px": 258.2714990765711
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 76.14979012956093
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-05",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": null
+        }
+      ]
+    },
+    {
+      "probe": [
+        -4.7,
+        -1.55,
+        -16
+      ],
+      "views": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "projected_person_height_px": 45.4555612062382
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "projected_person_height_px": 194.86627451270795
+        },
+        {
+          "camera": "CAMERA-PLANNED-05",
+          "projected_person_height_px": 233.65918825826066
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "projected_person_height_px": 78.99603784879616
+        }
+      ],
+      "conservative_solid_los": [
+        {
+          "camera": "CAMERA-PLANNED-01",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-04",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-05",
+          "solid_blocker": null
+        },
+        {
+          "camera": "CAMERA-PLANNED-06",
+          "solid_blocker": null
+        }
+      ]
+    }
+  ],
+  "landmarks": [
+    {
+      "name": "upper-ramp",
+      "world_native": [
+        -3.1,
+        -1.55,
+        -3.6
+      ],
+      "pixels": {
+        "CAMERA-PLANNED-01": [
+          539.856163796047,
+          424.23027800086675
+        ],
+        "CAMERA-PLANNED-02": [
+          637.3981775277443,
+          473.9564274036816
+        ]
+      }
+    },
+    {
+      "name": "upper-return",
+      "world_native": [
+        -3.3,
+        -1.55,
+        -8
+      ],
+      "pixels": {
+        "CAMERA-PLANNED-01": [
+          556.6549681778297,
+          327.9739264430532
+        ],
+        "CAMERA-PLANNED-03": [
+          592.7588461117798,
+          413.18268750315144
+        ]
+      }
+    },
+    {
+      "name": "kiosk",
+      "world_native": [
+        -3.65,
+        -0.18,
+        -16.1
+      ],
+      "pixels": {
+        "CAMERA-PLANNED-04": [
+          691.8590264243305,
+          337.69355016294764
+        ],
+        "CAMERA-PLANNED-05": [
+          426.2872312676492,
+          412.76073413871734
+        ]
+      }
+    },
+    {
+      "name": "rear-transition",
+      "world_native": [
+        -2.5,
+        -0.85,
+        -19.3
+      ],
+      "pixels": {
+        "CAMERA-PLANNED-05": [
+          562.9105047007666,
+          332.80745487371166
+        ],
+        "CAMERA-PLANNED-06": [
+          583.9909604325366,
+          374.69428090476015
+        ]
+      }
+    }
+  ],
+  "occlusion_caveat": "Frustum/pixel-density probes do not prove visibility through furniture or closed doors. Rendered images inspected with all geometry present; moving-body occlusion is tested next. Security doors are retained. No depth/actor IDs passed to perception.",
+  "timestamp_contract": {
+    "origin": "scenario-relative fixed UTC clock; not capture wall-clock",
+    "start": "2026-11-09T12:00:00Z",
+    "capture_step_seconds": 0.5,
+    "processing_step_seconds": 0.5,
+    "frame_order": "monotonic per source",
+    "inter_camera_media_skew_seconds": 0,
+    "real_hardware_sync_tested": false
+  },
+  "physical_lens_distortion_known": false,
+  "visual_inspection": {
+    "artifact": "overlap-landmarks.jpg",
+    "performed": true,
+    "confirmed_pairs": [
+      "01/02 ramp",
+      "01/03 upper return",
+      "04/05 kiosk",
+      "05/06 rear transition"
+    ],
+    "limits": "Walls/columns/closed DoorLeaf tested conservatively by source AABBs. Rendered landmarks agree. Furniture/partial-body occlusion and temporal captures still require09.4; no claim of visibility behind opaque doors."
+  }
+}
