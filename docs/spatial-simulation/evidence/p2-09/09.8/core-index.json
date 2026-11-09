@@ -1,0 +1,1012 @@
+{
+  "gate": "P2-09.8",
+  "read_only": true,
+  "passed": true,
+  "run": "p2-09-vision",
+  "entities_total": 470,
+  "observations_persisted": 251,
+  "anonymous_tracks": [
+    {
+      "active": false,
+      "camera_id": "CAMERA-PLANNED-06",
+      "coordinate_frame": "normalized-image",
+      "core_id": "219b611e-125c-5224-9b09-80e971679269",
+      "detection_confidence": 0.3106088638305664,
+      "frame_sha256": "9286324bf1e2ccfbd977b1167a35e34ceea7fa6f6bc0e1959ffb0585faebaece",
+      "id": "track-0bafa9a4-c50c-5ebc-a3ed-ff4a7f63d044",
+      "image_bbox": [
+        0.55310148662991,
+        0.41846612059039834,
+        0.5932840241326226,
+        0.5208014970944251
+      ],
+      "image_position": [
+        0.5731927553812662,
+        0.5208014970944251
+      ],
+      "kind": "Track",
+      "last_memory_id": "8274f478-4aa6-5e66-ae23-b51663ed746f",
+      "last_seen_at": "2026-11-09T12:00:17.500000+00:00",
+      "local_track_id": "p2-09-vision:CAMERA-PLANNED-06:norfair:1",
+      "observation_id": "9ebbaedf-7222-5955-a1a3-ce4713dfaced",
+      "observed_at": "2026-11-09T12:00:17.500000+00:00",
+      "provenance": {
+        "connector_id": "video-test",
+        "model_version": "YOLOX-S:c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063;Norfair2.3.0;pixel-source-simulated",
+        "schema_version": "1.0",
+        "simulated": true
+      },
+      "relations": [
+        {
+          "field": "camera_id",
+          "provenance": "explicit-domain-field",
+          "target": "CAMERA-PLANNED-06",
+          "type": "observedBy",
+          "valid_from": "2026-11-09T12:00:17.500000+00:00",
+          "valid_to": null
+        }
+      ],
+      "ttl_seconds": 30,
+      "zone_id": null
+    },
+    {
+      "active": false,
+      "camera_id": "CAMERA-PLANNED-01",
+      "coordinate_frame": "normalized-image",
+      "core_id": "67992492-3b01-5cd4-b9a1-a20eac961f73",
+      "detection_confidence": 0.4416446387767792,
+      "frame_sha256": "23de18c1e26a59a7f0181444a4cb58a5a5c0cc7faedee9c7e9b7771ebf942aa8",
+      "freshness": "fresh",
+      "id": "track-0f8b7bc3-22a3-5eeb-b9a6-b9e36f077b8f",
+      "image_bbox": [
+        0.4522443347507053,
+        0.34774702566641347,
+        0.47572284274631077,
+        0.4256657258963879
+      ],
+      "image_position": [
+        0.46398358874850804,
+        0.4256657258963879
+      ],
+      "kind": "Track",
+      "last_memory_id": "270f797e-7c70-58d6-bd25-fbb302ba3ecb",
+      "last_seen_at": "2026-11-09T12:00:19+00:00",
+      "local_track_id": "p2-09-vision:CAMERA-PLANNED-01:norfair:2",
+      "observation_id": "cbe459e3-856e-57bb-81cc-1d0ded9b78aa",
+      "observed_at": "2026-11-09T12:00:19+00:00",
+      "provenance": {
+        "connector_id": "video-test",
+        "model_version": "YOLOX-S:c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063;Norfair2.3.0;pixel-source-simulated",
+        "schema_version": "1.0",
+        "simulated": true
+      },
+      "relations": [
+        {
+          "field": "camera_id",
+          "provenance": "explicit-domain-field",
+          "target": "CAMERA-PLANNED-01",
+          "type": "observedBy",
+          "valid_from": "2026-11-09T12:00:18.500000+00:00",
+          "valid_to": null
+        }
+      ],
+      "ttl_seconds": 30,
+      "zone_id": null
+    },
+    {
+      "active": false,
+      "camera_id": "CAMERA-PLANNED-03",
+      "coordinate_frame": "normalized-image",
+      "core_id": "add4f45c-672d-5ed0-afe0-5058afc22707",
+      "detection_confidence": 0.9377027153968811,
+      "frame_sha256": "c9f881aba00a07a6b3a45e522fcdb6ec9feea73d02919374d006c7fbf3e6cfdf",
+      "freshness": "fresh",
+      "id": "track-4aa18da8-c477-517e-a001-107a71a2bfc6",
+      "image_bbox": [
+        0.6257253222995334,
+        0.7330612841947579,
+        0.8220993677775065,
+        1.0
+      ],
+      "image_position": [
+        0.72391234503852,
+        1.0
+      ],
+      "kind": "Track",
+      "last_memory_id": "a36a5885-409c-5d52-944f-06b51f86e384",
+      "last_seen_at": "2026-11-09T12:00:14+00:00",
+      "local_track_id": "p2-09-vision:CAMERA-PLANNED-03:norfair:1",
+      "observation_id": "d7257f06-65d8-5cc0-be08-544b8d98b559",
+      "observed_at": "2026-11-09T12:00:14+00:00",
+      "provenance": {
+        "connector_id": "video-test",
+        "model_version": "YOLOX-S:c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063;Norfair2.3.0;pixel-source-simulated",
+        "schema_version": "1.0",
+        "simulated": true
+      },
+      "relations": [
+        {
+          "field": "camera_id",
+          "provenance": "explicit-domain-field",
+          "target": "CAMERA-PLANNED-03",
+          "type": "observedBy",
+          "valid_from": "2026-11-09T12:00:00+00:00",
+          "valid_to": null
+        },
+        {
+          "id": "7a07acb3-7848-5340-a693-16dcaf20466d",
+          "provenance": {
+            "appearance_similarity": 0.9343422055244446,
+            "evidence_observation_ids": [
+              "65845c10-ff78-50bd-a6c4-d6cfdb855c1e",
+              "36d66bfe-6045-5415-968c-4ad6b2f5e512",
+              "b614c623-98d3-5aeb-aa9f-0bf342286aaf",
+              "5882ba2f-ae4d-5f7a-9be5-20c6cbe1b18d",
+              "802199dd-203a-5318-ab84-8fe93752d4e2",
+              "9e255737-b725-5c2d-95d1-9333a7a57eea",
+              "bd51763a-3484-5e28-a35c-bb510fa96e7c",
+              "420db85a-f4d9-5909-ac7d-8bbffa298355",
+              "bcdfddc3-0872-57de-bd4b-a94aac3a2021",
+              "4fc16c03-ca64-5982-a970-5b65751f86d7",
+              "b74d5486-a12c-56e2-93f3-7996c3fe462b",
+              "be0a888c-f8b5-5855-8a4b-b7fd0bfd6aee",
+              "a4d04aad-6a8c-58c4-899c-f56ca63b76be",
+              "7f0c48c2-3451-54b5-86c7-99f3c28ea7d1",
+              "41b7b4d2-d01c-54d7-8d70-b490cb9e9fcb",
+              "ac1cf0b1-7629-5c2d-abc7-48766483c7e3",
+              "dbe8dc0a-64a2-58b8-abad-71ca5756621b",
+              "a1994696-9bcd-53cf-9136-d50f46c86e77",
+              "e6343167-7088-552a-bf22-38107b8004ac",
+              "83281dd3-ee40-5411-b11d-69e134abbb38",
+              "41e456ca-8b3d-5454-a363-8395ab8f5c53",
+              "ea32bda5-a7a9-5701-90e8-79f0eb959c1b"
+            ],
+            "method": "osnet-ain-appearance-time-calibration",
+            "model_sha256": "3bf3e7d9734317443e2ace2a2a7185a653e03a26bb069412a923feef4620a0ab",
+            "observation_id": "18c3a909-11a5-5754-b96b-a99109b85eb4",
+            "probability_calibrated": false,
+            "provisional": true,
+            "score": 0.912960765359338,
+            "simultaneous_samples": 11,
+            "source": "pixel-perception MTMC",
+            "spatial_distance_native": 0.3168690587967928,
+            "track_a": "track-4aa18da8-c477-517e-a001-107a71a2bfc6",
+            "track_b": "track-aa5fcaa3-f55a-5074-96a1-7007ffd750fc"
+          },
+          "target": "track-aa5fcaa3-f55a-5074-96a1-7007ffd750fc",
+          "type": "provisionallySameVisualSubject",
+          "valid_from": "2026-11-09T12:00:20+00:00",
+          "valid_to": null
+        },
+        {
+          "id": "67a0723b-6406-5b0a-ad9e-5ae6b08de198",
+          "provenance": {
+            "appearance_similarity": 0.7727457284927368,
+            "evidence_observation_ids": [
+              "1e03a38f-4ba9-594d-9479-63df33004a34",
+              "cdd384c4-92bb-562a-acfa-f9c497396aea",
+              "8e996c15-17d2-5e51-a937-9877d5001017",
+              "4d0d855d-874d-50c9-9e86-44997551d0fb",
+              "efa6f84a-0ba1-5623-858e-d627fafe110d",
+              "f5c8906f-c9ce-52b5-be20-64c6730f7ad8",
+              "d38f0a9a-136a-5e85-a506-732634a55d82",
+              "d2ba931d-1f56-54f5-9634-98a851813dc5",
+              "d7257f06-65d8-5cc0-be08-544b8d98b559",
+              "a824113d-f0d4-5c6f-b611-24bd73624475"
+            ],
+            "method": "osnet-ain-appearance-time-calibration",
+            "model_sha256": "3bf3e7d9734317443e2ace2a2a7185a653e03a26bb069412a923feef4620a0ab",
+            "observation_id": "7e839197-f6bb-56be-a1a8-7cbcf84b0613",
+            "probability_calibrated": false,
+            "provisional": true,
+            "score": 0.7313054134062977,
+            "simultaneous_samples": 5,
+            "source": "pixel-perception MTMC",
+            "spatial_distance_native": 0.8641379293855806,
+            "track_a": "track-4aa18da8-c477-517e-a001-107a71a2bfc6",
+            "track_b": "track-de76c1d6-9303-5d6a-bc8e-9d698eaf10d7"
+          },
+          "target": "track-de76c1d6-9303-5d6a-bc8e-9d698eaf10d7",
+          "type": "provisionallySameVisualSubject",
+          "valid_from": "2026-11-09T12:00:20+00:00",
+          "valid_to": null
+        }
+      ],
+      "ttl_seconds": 30,
+      "visual_identity_status": "provisional, not civil identity",
+      "zone_id": null
+    },
+    {
+      "active": false,
+      "camera_id": "CAMERA-PLANNED-04",
+      "coordinate_frame": "normalized-image",
+      "core_id": "4b5d15a5-b1cd-5d13-84af-b6e2489448ec",
+      "detection_confidence": 0.7331849932670593,
+      "frame_sha256": "87038a393483df4011233f5d6db9d3f0a3570c3f0073857f24d4a6be92ad0c03",
+      "freshness": "fresh",
+      "id": "track-aa5fcaa3-f55a-5074-96a1-7007ffd750fc",
+      "image_bbox": [
+        0.31315191586812335,
+        0.17203142613540462,
+        0.3387346002790663,
+        0.26293552069016446
+      ],
+      "image_position": [
+        0.3259432580735948,
+        0.26293552069016446
+      ],
+      "kind": "Track",
+      "last_memory_id": "efd7853d-632e-5e08-b952-373f9100e5f9",
+      "last_seen_at": "2026-11-09T12:00:05+00:00",
+      "local_track_id": "p2-09-vision:CAMERA-PLANNED-04:norfair:1",
+      "observation_id": "ea32bda5-a7a9-5701-90e8-79f0eb959c1b",
+      "observed_at": "2026-11-09T12:00:05+00:00",
+      "provenance": {
+        "connector_id": "video-test",
+        "model_version": "YOLOX-S:c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063;Norfair2.3.0;pixel-source-simulated",
+        "schema_version": "1.0",
+        "simulated": true
+      },
+      "relations": [
+        {
+          "field": "camera_id",
+          "provenance": "explicit-domain-field",
+          "target": "CAMERA-PLANNED-04",
+          "type": "observedBy",
+          "valid_from": "2026-11-09T12:00:00+00:00",
+          "valid_to": null
+        }
+      ],
+      "ttl_seconds": 30,
+      "visual_identity_status": "provisional, not civil identity",
+      "zone_id": null
+    },
+    {
+      "active": false,
+      "camera_id": "CAMERA-PLANNED-01",
+      "coordinate_frame": "normalized-image",
+      "core_id": "118403ea-bb5b-5f25-9208-1a8aabff3250",
+      "detection_confidence": 0.4415358304977417,
+      "frame_sha256": "eef704d362bf921a77bf05a1e40092da2d8bd6eeab558453cf53def24bf089c2",
+      "freshness": "fresh",
+      "id": "track-bdb0686e-421a-50cc-9eca-ab0b49ffc8ea",
+      "image_bbox": [
+        0.4367854860093858,
+        0.41682636590651523,
+        0.49473391638861763,
+        0.5702147307219328
+      ],
+      "image_position": [
+        0.46575970119900173,
+        0.5702147307219328
+      ],
+      "kind": "Track",
+      "last_memory_id": "838f1e23-08d1-5e7a-9c44-dc0538d37382",
+      "last_seen_at": "2026-11-09T12:00:08+00:00",
+      "local_track_id": "p2-09-vision:CAMERA-PLANNED-01:norfair:1",
+      "observation_id": "803019bc-9432-5d1d-8f46-92ca0b6f6db8",
+      "observed_at": "2026-11-09T12:00:08+00:00",
+      "provenance": {
+        "connector_id": "video-test",
+        "model_version": "YOLOX-S:c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063;Norfair2.3.0;pixel-source-simulated",
+        "schema_version": "1.0",
+        "simulated": true
+      },
+      "relations": [
+        {
+          "field": "camera_id",
+          "provenance": "explicit-domain-field",
+          "target": "CAMERA-PLANNED-01",
+          "type": "observedBy",
+          "valid_from": "2026-11-09T12:00:01+00:00",
+          "valid_to": null
+        },
+        {
+          "id": "0eed252a-5259-544a-9971-e399a840727d",
+          "provenance": {
+            "appearance_similarity": 0.6338610649108887,
+            "evidence_observation_ids": [
+              "26a5cda5-ec98-5cfe-91bf-ba251a58a92a",
+              "0cb8ad0f-0b74-5139-b4ae-88b4dcf809e3",
+              "05249365-bab3-5991-b99b-a875388891ee",
+              "4077a0d3-2645-586f-8cec-cfeadf2c1716",
+              "65b7f20d-1cb1-5e4d-b9a7-e0ba01601098",
+              "b47b7a67-22b7-5c7a-919a-c2a8bcf2efb1",
+              "5df8880c-406d-54b4-a840-61fe400b9a4c",
+              "7696c9e9-7d90-5f50-8397-37a9d0edc5c9",
+              "93b81f1f-fe0c-5aae-8a32-d7c2631b8f5c",
+              "71d51b30-7225-5c48-a07f-76a2f42ae813",
+              "3955a310-4bcf-5b03-adaa-245711f51f4e",
+              "83d679e2-a186-5738-a1dc-7197d50b8e91",
+              "b9238171-52d6-5fd2-b771-38ff02635e07",
+              "f99ab311-980f-597d-9afb-ef66ee348168",
+              "fe8bc0d3-7150-5dc2-8ccc-de4a12e72d29",
+              "37aef170-d1f5-59e3-af58-b06a126329c5",
+              "95411c4b-137c-5bad-a059-8ecca5d21a74",
+              "21a723b4-aead-5a9c-a0c0-49f9ea61b65d",
+              "8cedf3d3-6a84-5427-8918-9c35363e3add",
+              "119e805f-4325-591b-be7e-42c93d207557",
+              "803019bc-9432-5d1d-8f46-92ca0b6f6db8",
+              "7ef5af47-32db-5b58-b856-4fefc0c1a871"
+            ],
+            "method": "osnet-ain-appearance-time-calibration",
+            "model_sha256": "3bf3e7d9734317443e2ace2a2a7185a653e03a26bb069412a923feef4620a0ab",
+            "observation_id": "52446630-8cc7-5d62-8682-290fc6fa7421",
+            "probability_calibrated": false,
+            "provisional": true,
+            "score": 0.7214100811106956,
+            "simultaneous_samples": 11,
+            "source": "pixel-perception MTMC",
+            "spatial_distance_native": 0.2899972220098723,
+            "track_a": "track-bdb0686e-421a-50cc-9eca-ab0b49ffc8ea",
+            "track_b": "track-cb2f82ca-e0f4-5689-b34e-796267c57c00"
+          },
+          "target": "track-cb2f82ca-e0f4-5689-b34e-796267c57c00",
+          "type": "provisionallySameVisualSubject",
+          "valid_from": "2026-11-09T12:00:20+00:00",
+          "valid_to": null
+        }
+      ],
+      "ttl_seconds": 30,
+      "visual_identity_status": "provisional, not civil identity",
+      "zone_id": null
+    },
+    {
+      "active": true,
+      "camera_id": "CAMERA-PLANNED-05",
+      "coordinate_frame": "normalized-image",
+      "core_id": "66d1d32b-9a12-5206-bc1d-c55507363ba9",
+      "detection_confidence": 0.8824670314788818,
+      "frame_sha256": "a2dac3f4f8c9716b35ba2e622aa1c0453e30005e3231b4f64c094a627e6535f5",
+      "freshness": "fresh",
+      "id": "track-c1732bfe-fc14-57fe-9856-1c07f100c113",
+      "image_bbox": [
+        0.13153823216756186,
+        0.585638729142554,
+        0.298856258392334,
+        0.9952989743079668
+      ],
+      "image_position": [
+        0.2151972452799479,
+        0.9952989743079668
+      ],
+      "kind": "Track",
+      "last_memory_id": "1b6229e6-cdf9-5c70-856a-b29a70da4d06",
+      "local_track_id": "p2-09-vision:CAMERA-PLANNED-05:norfair:1",
+      "observation_id": "18d05350-e63e-5ac5-b8a8-270d351b869c",
+      "observed_at": "2026-11-09T12:00:20+00:00",
+      "provenance": {
+        "connector_id": "video-test",
+        "model_version": "YOLOX-S:c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063;Norfair2.3.0;pixel-source-simulated",
+        "schema_version": "1.0",
+        "simulated": true
+      },
+      "relations": [
+        {
+          "field": "camera_id",
+          "provenance": "explicit-domain-field",
+          "target": "CAMERA-PLANNED-05",
+          "type": "observedBy",
+          "valid_from": "2026-11-09T12:00:18.500000+00:00",
+          "valid_to": null
+        }
+      ],
+      "ttl_seconds": 30,
+      "zone_id": null
+    },
+    {
+      "active": false,
+      "camera_id": "CAMERA-PLANNED-02",
+      "coordinate_frame": "normalized-image",
+      "core_id": "9a5a0c69-4fab-54da-91a4-54715e91bf59",
+      "detection_confidence": 0.3882470726966858,
+      "frame_sha256": "ecbf43f16eb3d4f14b54c08a9180edf1855a5c0d80f4eb0e4c71d2b4779a8ec6",
+      "freshness": "fresh",
+      "id": "track-cb2f82ca-e0f4-5689-b34e-796267c57c00",
+      "image_bbox": [
+        0.643695248497857,
+        0.8729861224139178,
+        0.759070184495714,
+        1.0
+      ],
+      "image_position": [
+        0.7013827164967855,
+        1.0
+      ],
+      "kind": "Track",
+      "last_memory_id": "208c87fa-d04e-5858-b7d9-e204ad9a646d",
+      "last_seen_at": "2026-11-09T12:00:09+00:00",
+      "local_track_id": "p2-09-vision:CAMERA-PLANNED-02:norfair:1",
+      "observation_id": "7c4965c4-3f0e-56be-88f7-e3530a9066a8",
+      "observed_at": "2026-11-09T12:00:09+00:00",
+      "provenance": {
+        "connector_id": "video-test",
+        "model_version": "YOLOX-S:c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063;Norfair2.3.0;pixel-source-simulated",
+        "schema_version": "1.0",
+        "simulated": true
+      },
+      "relations": [
+        {
+          "field": "camera_id",
+          "provenance": "explicit-domain-field",
+          "target": "CAMERA-PLANNED-02",
+          "type": "observedBy",
+          "valid_from": "2026-11-09T12:00:00+00:00",
+          "valid_to": null
+        },
+        {
+          "id": "5a4fd221-52bf-5c27-8e14-66ddc27f7327",
+          "provenance": {
+            "appearance_similarity": 0.8577207028865814,
+            "evidence_observation_ids": [
+              "3d528364-dcc8-5b1c-b11c-511c9bd49e4b",
+              "65845c10-ff78-50bd-a6c4-d6cfdb855c1e",
+              "53249dd7-6e69-5dfc-a778-01186a22e745",
+              "b614c623-98d3-5aeb-aa9f-0bf342286aaf",
+              "0cb8ad0f-0b74-5139-b4ae-88b4dcf809e3",
+              "802199dd-203a-5318-ab84-8fe93752d4e2",
+              "4077a0d3-2645-586f-8cec-cfeadf2c1716",
+              "bd51763a-3484-5e28-a35c-bb510fa96e7c",
+              "b47b7a67-22b7-5c7a-919a-c2a8bcf2efb1",
+              "bcdfddc3-0872-57de-bd4b-a94aac3a2021",
+              "7696c9e9-7d90-5f50-8397-37a9d0edc5c9",
+              "b74d5486-a12c-56e2-93f3-7996c3fe462b",
+              "71d51b30-7225-5c48-a07f-76a2f42ae813",
+              "a4d04aad-6a8c-58c4-899c-f56ca63b76be",
+              "83d679e2-a186-5738-a1dc-7197d50b8e91",
+              "41b7b4d2-d01c-54d7-8d70-b490cb9e9fcb",
+              "f99ab311-980f-597d-9afb-ef66ee348168",
+              "dbe8dc0a-64a2-58b8-abad-71ca5756621b",
+              "37aef170-d1f5-59e3-af58-b06a126329c5",
+              "e6343167-7088-552a-bf22-38107b8004ac",
+              "21a723b4-aead-5a9c-a0c0-49f9ea61b65d",
+              "41e456ca-8b3d-5454-a363-8395ab8f5c53",
+              "01013355-28ca-5147-b600-8f5d29ccef2d",
+              "097d362f-4980-5c8a-8dff-7d9d0f916885",
+              "210381e9-519c-59a4-a52c-c8b804edac31",
+              "1509f426-38bd-54e6-8f20-535bebe3fca3",
+              "7ef5af47-32db-5b58-b856-4fefc0c1a871",
+              "8d97e301-c431-559a-979c-07a2603ec6e6",
+              "f4d51adb-4201-5fe4-83e5-f0ac47f561e1",
+              "09cc772f-b380-55ed-8cee-861792e88d8f",
+              "7c4965c4-3f0e-56be-88f7-e3530a9066a8",
+              "de716cdc-ce94-5cae-9aa9-2d2981228af7"
+            ],
+            "method": "osnet-ain-appearance-time-calibration",
+            "model_sha256": "3bf3e7d9734317443e2ace2a2a7185a653e03a26bb069412a923feef4620a0ab",
+            "observation_id": "e78b50b2-d2ac-58b1-9695-61641ab64a71",
+            "probability_calibrated": false,
+            "provisional": true,
+            "score": 0.8679062599022638,
+            "simultaneous_samples": 16,
+            "source": "pixel-perception MTMC",
+            "spatial_distance_native": 0.2829442641001008,
+            "track_a": "track-cb2f82ca-e0f4-5689-b34e-796267c57c00",
+            "track_b": "track-4aa18da8-c477-517e-a001-107a71a2bfc6"
+          },
+          "target": "track-4aa18da8-c477-517e-a001-107a71a2bfc6",
+          "type": "provisionallySameVisualSubject",
+          "valid_from": "2026-11-09T12:00:20+00:00",
+          "valid_to": null
+        },
+        {
+          "id": "0e43f6b4-4be4-5732-9c8f-d36ed0558a4f",
+          "provenance": {
+            "appearance_similarity": 0.874466061592102,
+            "evidence_observation_ids": [
+              "3d528364-dcc8-5b1c-b11c-511c9bd49e4b",
+              "36d66bfe-6045-5415-968c-4ad6b2f5e512",
+              "53249dd7-6e69-5dfc-a778-01186a22e745",
+              "5882ba2f-ae4d-5f7a-9be5-20c6cbe1b18d",
+              "0cb8ad0f-0b74-5139-b4ae-88b4dcf809e3",
+              "9e255737-b725-5c2d-95d1-9333a7a57eea",
+              "4077a0d3-2645-586f-8cec-cfeadf2c1716",
+              "420db85a-f4d9-5909-ac7d-8bbffa298355",
+              "b47b7a67-22b7-5c7a-919a-c2a8bcf2efb1",
+              "4fc16c03-ca64-5982-a970-5b65751f86d7",
+              "7696c9e9-7d90-5f50-8397-37a9d0edc5c9",
+              "be0a888c-f8b5-5855-8a4b-b7fd0bfd6aee",
+              "71d51b30-7225-5c48-a07f-76a2f42ae813",
+              "7f0c48c2-3451-54b5-86c7-99f3c28ea7d1",
+              "83d679e2-a186-5738-a1dc-7197d50b8e91",
+              "ac1cf0b1-7629-5c2d-abc7-48766483c7e3",
+              "f99ab311-980f-597d-9afb-ef66ee348168",
+              "a1994696-9bcd-53cf-9136-d50f46c86e77",
+              "37aef170-d1f5-59e3-af58-b06a126329c5",
+              "83281dd3-ee40-5411-b11d-69e134abbb38",
+              "21a723b4-aead-5a9c-a0c0-49f9ea61b65d",
+              "ea32bda5-a7a9-5701-90e8-79f0eb959c1b"
+            ],
+            "method": "osnet-ain-appearance-time-calibration",
+            "model_sha256": "3bf3e7d9734317443e2ace2a2a7185a653e03a26bb069412a923feef4620a0ab",
+            "observation_id": "7b0f129e-ec5a-5a6e-aea7-47b129380bd3",
+            "probability_calibrated": false,
+            "provisional": true,
+            "score": 0.8489135415770797,
+            "simultaneous_samples": 11,
+            "source": "pixel-perception MTMC",
+            "spatial_distance_native": 0.49635284612704705,
+            "track_a": "track-cb2f82ca-e0f4-5689-b34e-796267c57c00",
+            "track_b": "track-aa5fcaa3-f55a-5074-96a1-7007ffd750fc"
+          },
+          "target": "track-aa5fcaa3-f55a-5074-96a1-7007ffd750fc",
+          "type": "provisionallySameVisualSubject",
+          "valid_from": "2026-11-09T12:00:20+00:00",
+          "valid_to": null
+        }
+      ],
+      "ttl_seconds": 30,
+      "visual_identity_status": "provisional, not civil identity",
+      "zone_id": null
+    },
+    {
+      "active": true,
+      "camera_id": "CAMERA-PLANNED-04",
+      "coordinate_frame": "normalized-image",
+      "core_id": "1d989b86-ebc5-5857-9bbc-b0921be09726",
+      "detection_confidence": 0.8231250047683716,
+      "frame_sha256": "5770dab96350c4a9c6f838608f960b3bdfb733db1c60efc45b53bc67e831e50d",
+      "freshness": "fresh",
+      "id": "track-de76c1d6-9303-5d6a-bc8e-9d698eaf10d7",
+      "image_bbox": [
+        0.6333785057067871,
+        0.4245437810450424,
+        0.7526982625325521,
+        0.6617663348162616
+      ],
+      "image_position": [
+        0.6930383841196696,
+        0.6617663348162616
+      ],
+      "kind": "Track",
+      "last_memory_id": "6211c0b0-9dc5-5571-a5ec-598bd0ba54f8",
+      "local_track_id": "p2-09-vision:CAMERA-PLANNED-04:norfair:2",
+      "observation_id": "f07ebdc5-457f-5908-9ddf-15aa17f4adbb",
+      "observed_at": "2026-11-09T12:00:20+00:00",
+      "provenance": {
+        "connector_id": "video-test",
+        "model_version": "YOLOX-S:c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063;Norfair2.3.0;pixel-source-simulated",
+        "schema_version": "1.0",
+        "simulated": true
+      },
+      "relations": [
+        {
+          "field": "camera_id",
+          "provenance": "explicit-domain-field",
+          "target": "CAMERA-PLANNED-04",
+          "type": "observedBy",
+          "valid_from": "2026-11-09T12:00:12+00:00",
+          "valid_to": null
+        }
+      ],
+      "ttl_seconds": 30,
+      "visual_identity_status": "provisional, not civil identity",
+      "zone_id": null
+    }
+  ],
+  "camera_sources": [
+    {
+      "id": "CAMERA-PLANNED-01",
+      "core_id": "116c5237-fadc-5efc-b891-bbb435f67279",
+      "model_status": "existente_verificado",
+      "integration_status": "recorded_virtual_source_enrolled",
+      "verification_scope": "virtual calibrated source and recorded pixels; not physical installation",
+      "last_frame_sha256": "d62045843742755265ddcba171aa83f903b95f3df5ad215f39222cb3a073a3fe",
+      "frame_index": 40,
+      "media_time_seconds": 20.0,
+      "connectivity": "connected",
+      "spatial": {
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [],
+        "position": [
+          -2.35,
+          1.25,
+          1.9
+        ],
+        "source": "native virtual camera capture pose, not physical installation"
+      },
+      "live_stream_implemented": false
+    },
+    {
+      "id": "CAMERA-PLANNED-02",
+      "core_id": "d0cce359-c9fe-5eae-922b-59a7abba790e",
+      "model_status": "existente_verificado",
+      "integration_status": "recorded_virtual_source_enrolled",
+      "verification_scope": "virtual calibrated source and recorded pixels; not physical installation",
+      "last_frame_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7",
+      "frame_index": 40,
+      "media_time_seconds": 20.0,
+      "connectivity": "connected",
+      "spatial": {
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [],
+        "position": [
+          -2.4,
+          1.25,
+          -8
+        ],
+        "source": "native virtual camera capture pose, not physical installation"
+      },
+      "live_stream_implemented": false
+    },
+    {
+      "id": "CAMERA-PLANNED-03",
+      "core_id": "668ed3fd-1e40-5da6-ad9e-8b654c9820de",
+      "model_status": "existente_verificado",
+      "integration_status": "recorded_virtual_source_enrolled",
+      "verification_scope": "virtual calibrated source and recorded pixels; not physical installation",
+      "last_frame_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075",
+      "frame_index": 40,
+      "media_time_seconds": 20.0,
+      "connectivity": "connected",
+      "spatial": {
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [],
+        "position": [
+          -2.1,
+          1.25,
+          -12.5
+        ],
+        "source": "native virtual camera capture pose, not physical installation"
+      },
+      "live_stream_implemented": false
+    },
+    {
+      "id": "CAMERA-PLANNED-04",
+      "core_id": "62fe18d6-32a6-502c-9f7a-401aa7768bbe",
+      "model_status": "existente_verificado",
+      "integration_status": "recorded_virtual_source_enrolled",
+      "verification_scope": "virtual calibrated source and recorded pixels; not physical installation",
+      "last_frame_sha256": "5770dab96350c4a9c6f838608f960b3bdfb733db1c60efc45b53bc67e831e50d",
+      "frame_index": 40,
+      "media_time_seconds": 20.0,
+      "connectivity": "connected",
+      "spatial": {
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [],
+        "position": [
+          -2.1,
+          1.25,
+          -18
+        ],
+        "source": "native virtual camera capture pose, not physical installation"
+      },
+      "live_stream_implemented": false
+    },
+    {
+      "id": "CAMERA-PLANNED-05",
+      "core_id": "9a7c9d3f-6e61-5ba0-94e8-c1aec6c2d47f",
+      "model_status": "existente_verificado",
+      "integration_status": "recorded_virtual_source_enrolled",
+      "verification_scope": "virtual calibrated source and recorded pixels; not physical installation",
+      "last_frame_sha256": "a2dac3f4f8c9716b35ba2e622aa1c0453e30005e3231b4f64c094a627e6535f5",
+      "frame_index": 40,
+      "media_time_seconds": 20.0,
+      "connectivity": "connected",
+      "spatial": {
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [],
+        "position": [
+          -3.1,
+          1.25,
+          -13.4
+        ],
+        "source": "native virtual camera capture pose, not physical installation"
+      },
+      "live_stream_implemented": false
+    },
+    {
+      "id": "CAMERA-PLANNED-06",
+      "core_id": "c0ae518f-f53a-5346-9cb9-68fdc44e66b4",
+      "model_status": "existente_verificado",
+      "integration_status": "recorded_virtual_source_enrolled",
+      "verification_scope": "virtual calibrated source and recorded pixels; not physical installation",
+      "last_frame_sha256": "bfc02d8078575f87f8ddb6979257dd483c904e7ece45457aa00057f2ad73655f",
+      "frame_index": 40,
+      "media_time_seconds": 20.0,
+      "connectivity": "connected",
+      "spatial": {
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [],
+        "position": [
+          -2.3,
+          1.25,
+          -25.8
+        ],
+        "source": "native virtual camera capture pose, not physical installation"
+      },
+      "live_stream_implemented": false
+    },
+    {
+      "id": "CAMERA-PLANNED-07",
+      "core_id": "cdb15ae7-12fd-513e-a4b2-b415757e8c0f",
+      "model_status": "previsto",
+      "integration_status": "not_connected",
+      "verification_scope": null,
+      "last_frame_sha256": null,
+      "frame_index": null,
+      "media_time_seconds": null,
+      "connectivity": null,
+      "spatial": null,
+      "live_stream_implemented": null
+    },
+    {
+      "id": "CAMERA-PLANNED-08",
+      "core_id": "7b33ce45-f314-5be7-9ad1-cd2a8bfd0591",
+      "model_status": "previsto",
+      "integration_status": "not_connected",
+      "verification_scope": null,
+      "last_frame_sha256": null,
+      "frame_index": null,
+      "media_time_seconds": null,
+      "connectivity": null,
+      "spatial": null,
+      "live_stream_implemented": null
+    }
+  ],
+  "provisional_relations": [
+    {
+      "source": "track-4aa18da8-c477-517e-a001-107a71a2bfc6",
+      "id": "7a07acb3-7848-5340-a693-16dcaf20466d",
+      "provenance": {
+        "appearance_similarity": 0.9343422055244446,
+        "evidence_observation_ids": [
+          "65845c10-ff78-50bd-a6c4-d6cfdb855c1e",
+          "36d66bfe-6045-5415-968c-4ad6b2f5e512",
+          "b614c623-98d3-5aeb-aa9f-0bf342286aaf",
+          "5882ba2f-ae4d-5f7a-9be5-20c6cbe1b18d",
+          "802199dd-203a-5318-ab84-8fe93752d4e2",
+          "9e255737-b725-5c2d-95d1-9333a7a57eea",
+          "bd51763a-3484-5e28-a35c-bb510fa96e7c",
+          "420db85a-f4d9-5909-ac7d-8bbffa298355",
+          "bcdfddc3-0872-57de-bd4b-a94aac3a2021",
+          "4fc16c03-ca64-5982-a970-5b65751f86d7",
+          "b74d5486-a12c-56e2-93f3-7996c3fe462b",
+          "be0a888c-f8b5-5855-8a4b-b7fd0bfd6aee",
+          "a4d04aad-6a8c-58c4-899c-f56ca63b76be",
+          "7f0c48c2-3451-54b5-86c7-99f3c28ea7d1",
+          "41b7b4d2-d01c-54d7-8d70-b490cb9e9fcb",
+          "ac1cf0b1-7629-5c2d-abc7-48766483c7e3",
+          "dbe8dc0a-64a2-58b8-abad-71ca5756621b",
+          "a1994696-9bcd-53cf-9136-d50f46c86e77",
+          "e6343167-7088-552a-bf22-38107b8004ac",
+          "83281dd3-ee40-5411-b11d-69e134abbb38",
+          "41e456ca-8b3d-5454-a363-8395ab8f5c53",
+          "ea32bda5-a7a9-5701-90e8-79f0eb959c1b"
+        ],
+        "method": "osnet-ain-appearance-time-calibration",
+        "model_sha256": "3bf3e7d9734317443e2ace2a2a7185a653e03a26bb069412a923feef4620a0ab",
+        "observation_id": "18c3a909-11a5-5754-b96b-a99109b85eb4",
+        "probability_calibrated": false,
+        "provisional": true,
+        "score": 0.912960765359338,
+        "simultaneous_samples": 11,
+        "source": "pixel-perception MTMC",
+        "spatial_distance_native": 0.3168690587967928,
+        "track_a": "track-4aa18da8-c477-517e-a001-107a71a2bfc6",
+        "track_b": "track-aa5fcaa3-f55a-5074-96a1-7007ffd750fc"
+      },
+      "target": "track-aa5fcaa3-f55a-5074-96a1-7007ffd750fc",
+      "type": "provisionallySameVisualSubject",
+      "valid_from": "2026-11-09T12:00:20+00:00",
+      "valid_to": null
+    },
+    {
+      "source": "track-4aa18da8-c477-517e-a001-107a71a2bfc6",
+      "id": "67a0723b-6406-5b0a-ad9e-5ae6b08de198",
+      "provenance": {
+        "appearance_similarity": 0.7727457284927368,
+        "evidence_observation_ids": [
+          "1e03a38f-4ba9-594d-9479-63df33004a34",
+          "cdd384c4-92bb-562a-acfa-f9c497396aea",
+          "8e996c15-17d2-5e51-a937-9877d5001017",
+          "4d0d855d-874d-50c9-9e86-44997551d0fb",
+          "efa6f84a-0ba1-5623-858e-d627fafe110d",
+          "f5c8906f-c9ce-52b5-be20-64c6730f7ad8",
+          "d38f0a9a-136a-5e85-a506-732634a55d82",
+          "d2ba931d-1f56-54f5-9634-98a851813dc5",
+          "d7257f06-65d8-5cc0-be08-544b8d98b559",
+          "a824113d-f0d4-5c6f-b611-24bd73624475"
+        ],
+        "method": "osnet-ain-appearance-time-calibration",
+        "model_sha256": "3bf3e7d9734317443e2ace2a2a7185a653e03a26bb069412a923feef4620a0ab",
+        "observation_id": "7e839197-f6bb-56be-a1a8-7cbcf84b0613",
+        "probability_calibrated": false,
+        "provisional": true,
+        "score": 0.7313054134062977,
+        "simultaneous_samples": 5,
+        "source": "pixel-perception MTMC",
+        "spatial_distance_native": 0.8641379293855806,
+        "track_a": "track-4aa18da8-c477-517e-a001-107a71a2bfc6",
+        "track_b": "track-de76c1d6-9303-5d6a-bc8e-9d698eaf10d7"
+      },
+      "target": "track-de76c1d6-9303-5d6a-bc8e-9d698eaf10d7",
+      "type": "provisionallySameVisualSubject",
+      "valid_from": "2026-11-09T12:00:20+00:00",
+      "valid_to": null
+    },
+    {
+      "source": "track-bdb0686e-421a-50cc-9eca-ab0b49ffc8ea",
+      "id": "0eed252a-5259-544a-9971-e399a840727d",
+      "provenance": {
+        "appearance_similarity": 0.6338610649108887,
+        "evidence_observation_ids": [
+          "26a5cda5-ec98-5cfe-91bf-ba251a58a92a",
+          "0cb8ad0f-0b74-5139-b4ae-88b4dcf809e3",
+          "05249365-bab3-5991-b99b-a875388891ee",
+          "4077a0d3-2645-586f-8cec-cfeadf2c1716",
+          "65b7f20d-1cb1-5e4d-b9a7-e0ba01601098",
+          "b47b7a67-22b7-5c7a-919a-c2a8bcf2efb1",
+          "5df8880c-406d-54b4-a840-61fe400b9a4c",
+          "7696c9e9-7d90-5f50-8397-37a9d0edc5c9",
+          "93b81f1f-fe0c-5aae-8a32-d7c2631b8f5c",
+          "71d51b30-7225-5c48-a07f-76a2f42ae813",
+          "3955a310-4bcf-5b03-adaa-245711f51f4e",
+          "83d679e2-a186-5738-a1dc-7197d50b8e91",
+          "b9238171-52d6-5fd2-b771-38ff02635e07",
+          "f99ab311-980f-597d-9afb-ef66ee348168",
+          "fe8bc0d3-7150-5dc2-8ccc-de4a12e72d29",
+          "37aef170-d1f5-59e3-af58-b06a126329c5",
+          "95411c4b-137c-5bad-a059-8ecca5d21a74",
+          "21a723b4-aead-5a9c-a0c0-49f9ea61b65d",
+          "8cedf3d3-6a84-5427-8918-9c35363e3add",
+          "119e805f-4325-591b-be7e-42c93d207557",
+          "803019bc-9432-5d1d-8f46-92ca0b6f6db8",
+          "7ef5af47-32db-5b58-b856-4fefc0c1a871"
+        ],
+        "method": "osnet-ain-appearance-time-calibration",
+        "model_sha256": "3bf3e7d9734317443e2ace2a2a7185a653e03a26bb069412a923feef4620a0ab",
+        "observation_id": "52446630-8cc7-5d62-8682-290fc6fa7421",
+        "probability_calibrated": false,
+        "provisional": true,
+        "score": 0.7214100811106956,
+        "simultaneous_samples": 11,
+        "source": "pixel-perception MTMC",
+        "spatial_distance_native": 0.2899972220098723,
+        "track_a": "track-bdb0686e-421a-50cc-9eca-ab0b49ffc8ea",
+        "track_b": "track-cb2f82ca-e0f4-5689-b34e-796267c57c00"
+      },
+      "target": "track-cb2f82ca-e0f4-5689-b34e-796267c57c00",
+      "type": "provisionallySameVisualSubject",
+      "valid_from": "2026-11-09T12:00:20+00:00",
+      "valid_to": null
+    },
+    {
+      "source": "track-cb2f82ca-e0f4-5689-b34e-796267c57c00",
+      "id": "5a4fd221-52bf-5c27-8e14-66ddc27f7327",
+      "provenance": {
+        "appearance_similarity": 0.8577207028865814,
+        "evidence_observation_ids": [
+          "3d528364-dcc8-5b1c-b11c-511c9bd49e4b",
+          "65845c10-ff78-50bd-a6c4-d6cfdb855c1e",
+          "53249dd7-6e69-5dfc-a778-01186a22e745",
+          "b614c623-98d3-5aeb-aa9f-0bf342286aaf",
+          "0cb8ad0f-0b74-5139-b4ae-88b4dcf809e3",
+          "802199dd-203a-5318-ab84-8fe93752d4e2",
+          "4077a0d3-2645-586f-8cec-cfeadf2c1716",
+          "bd51763a-3484-5e28-a35c-bb510fa96e7c",
+          "b47b7a67-22b7-5c7a-919a-c2a8bcf2efb1",
+          "bcdfddc3-0872-57de-bd4b-a94aac3a2021",
+          "7696c9e9-7d90-5f50-8397-37a9d0edc5c9",
+          "b74d5486-a12c-56e2-93f3-7996c3fe462b",
+          "71d51b30-7225-5c48-a07f-76a2f42ae813",
+          "a4d04aad-6a8c-58c4-899c-f56ca63b76be",
+          "83d679e2-a186-5738-a1dc-7197d50b8e91",
+          "41b7b4d2-d01c-54d7-8d70-b490cb9e9fcb",
+          "f99ab311-980f-597d-9afb-ef66ee348168",
+          "dbe8dc0a-64a2-58b8-abad-71ca5756621b",
+          "37aef170-d1f5-59e3-af58-b06a126329c5",
+          "e6343167-7088-552a-bf22-38107b8004ac",
+          "21a723b4-aead-5a9c-a0c0-49f9ea61b65d",
+          "41e456ca-8b3d-5454-a363-8395ab8f5c53",
+          "01013355-28ca-5147-b600-8f5d29ccef2d",
+          "097d362f-4980-5c8a-8dff-7d9d0f916885",
+          "210381e9-519c-59a4-a52c-c8b804edac31",
+          "1509f426-38bd-54e6-8f20-535bebe3fca3",
+          "7ef5af47-32db-5b58-b856-4fefc0c1a871",
+          "8d97e301-c431-559a-979c-07a2603ec6e6",
+          "f4d51adb-4201-5fe4-83e5-f0ac47f561e1",
+          "09cc772f-b380-55ed-8cee-861792e88d8f",
+          "7c4965c4-3f0e-56be-88f7-e3530a9066a8",
+          "de716cdc-ce94-5cae-9aa9-2d2981228af7"
+        ],
+        "method": "osnet-ain-appearance-time-calibration",
+        "model_sha256": "3bf3e7d9734317443e2ace2a2a7185a653e03a26bb069412a923feef4620a0ab",
+        "observation_id": "e78b50b2-d2ac-58b1-9695-61641ab64a71",
+        "probability_calibrated": false,
+        "provisional": true,
+        "score": 0.8679062599022638,
+        "simultaneous_samples": 16,
+        "source": "pixel-perception MTMC",
+        "spatial_distance_native": 0.2829442641001008,
+        "track_a": "track-cb2f82ca-e0f4-5689-b34e-796267c57c00",
+        "track_b": "track-4aa18da8-c477-517e-a001-107a71a2bfc6"
+      },
+      "target": "track-4aa18da8-c477-517e-a001-107a71a2bfc6",
+      "type": "provisionallySameVisualSubject",
+      "valid_from": "2026-11-09T12:00:20+00:00",
+      "valid_to": null
+    },
+    {
+      "source": "track-cb2f82ca-e0f4-5689-b34e-796267c57c00",
+      "id": "0e43f6b4-4be4-5732-9c8f-d36ed0558a4f",
+      "provenance": {
+        "appearance_similarity": 0.874466061592102,
+        "evidence_observation_ids": [
+          "3d528364-dcc8-5b1c-b11c-511c9bd49e4b",
+          "36d66bfe-6045-5415-968c-4ad6b2f5e512",
+          "53249dd7-6e69-5dfc-a778-01186a22e745",
+          "5882ba2f-ae4d-5f7a-9be5-20c6cbe1b18d",
+          "0cb8ad0f-0b74-5139-b4ae-88b4dcf809e3",
+          "9e255737-b725-5c2d-95d1-9333a7a57eea",
+          "4077a0d3-2645-586f-8cec-cfeadf2c1716",
+          "420db85a-f4d9-5909-ac7d-8bbffa298355",
+          "b47b7a67-22b7-5c7a-919a-c2a8bcf2efb1",
+          "4fc16c03-ca64-5982-a970-5b65751f86d7",
+          "7696c9e9-7d90-5f50-8397-37a9d0edc5c9",
+          "be0a888c-f8b5-5855-8a4b-b7fd0bfd6aee",
+          "71d51b30-7225-5c48-a07f-76a2f42ae813",
+          "7f0c48c2-3451-54b5-86c7-99f3c28ea7d1",
+          "83d679e2-a186-5738-a1dc-7197d50b8e91",
+          "ac1cf0b1-7629-5c2d-abc7-48766483c7e3",
+          "f99ab311-980f-597d-9afb-ef66ee348168",
+          "a1994696-9bcd-53cf-9136-d50f46c86e77",
+          "37aef170-d1f5-59e3-af58-b06a126329c5",
+          "83281dd3-ee40-5411-b11d-69e134abbb38",
+          "21a723b4-aead-5a9c-a0c0-49f9ea61b65d",
+          "ea32bda5-a7a9-5701-90e8-79f0eb959c1b"
+        ],
+        "method": "osnet-ain-appearance-time-calibration",
+        "model_sha256": "3bf3e7d9734317443e2ace2a2a7185a653e03a26bb069412a923feef4620a0ab",
+        "observation_id": "7b0f129e-ec5a-5a6e-aea7-47b129380bd3",
+        "probability_calibrated": false,
+        "provisional": true,
+        "score": 0.8489135415770797,
+        "simultaneous_samples": 11,
+        "source": "pixel-perception MTMC",
+        "spatial_distance_native": 0.49635284612704705,
+        "track_a": "track-cb2f82ca-e0f4-5689-b34e-796267c57c00",
+        "track_b": "track-aa5fcaa3-f55a-5074-96a1-7007ffd750fc"
+      },
+      "target": "track-aa5fcaa3-f55a-5074-96a1-7007ffd750fc",
+      "type": "provisionallySameVisualSubject",
+      "valid_from": "2026-11-09T12:00:20+00:00",
+      "valid_to": null
+    }
+  ],
+  "events_by_type": {
+    "clock.advance": 41,
+    "entity.remember": 7,
+    "entity.upsert": 13,
+    "observation.received": 251,
+    "run.created": 1
+  },
+  "memory_records": {
+    "track-0bafa9a4-c50c-5ebc-a3ed-ff4a7f63d044": 1,
+    "track-0f8b7bc3-22a3-5eeb-b9a6-b9e36f077b8f": 1,
+    "track-4aa18da8-c477-517e-a001-107a71a2bfc6": 4,
+    "track-aa5fcaa3-f55a-5074-96a1-7007ffd750fc": 3,
+    "track-bdb0686e-421a-50cc-9eca-ab0b49ffc8ea": 2,
+    "track-c1732bfe-fc14-57fe-9856-1c07f100c113": 1,
+    "track-cb2f82ca-e0f4-5689-b34e-796267c57c00": 4,
+    "track-de76c1d6-9303-5d6a-bc8e-9d698eaf10d7": 2,
+    "CAMERA-PLANNED-01": 1,
+    "CAMERA-PLANNED-02": 1,
+    "CAMERA-PLANNED-03": 1,
+    "CAMERA-PLANNED-04": 1,
+    "CAMERA-PLANNED-05": 1,
+    "CAMERA-PLANNED-06": 1,
+    "CAMERA-PLANNED-07": 0,
+    "CAMERA-PLANNED-08": 0,
+    "site": 2
+  },
+  "new_person_identities": 0,
+  "civil_identity_verified": false,
+  "no_occupancy_or_business_facts_inferred": true
+}

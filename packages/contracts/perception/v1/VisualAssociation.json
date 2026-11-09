@@ -1,0 +1,83 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "track_a": {
+      "maxLength": 128,
+      "minLength": 1,
+      "title": "Track A",
+      "type": "string"
+    },
+    "track_b": {
+      "maxLength": 128,
+      "minLength": 1,
+      "title": "Track B",
+      "type": "string"
+    },
+    "score": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Score",
+      "type": "number"
+    },
+    "appearance_similarity": {
+      "maximum": 1,
+      "minimum": 0,
+      "title": "Appearance Similarity",
+      "type": "number"
+    },
+    "spatial_distance_native": {
+      "minimum": 0,
+      "title": "Spatial Distance Native",
+      "type": "number"
+    },
+    "simultaneous_samples": {
+      "minimum": 1,
+      "title": "Simultaneous Samples",
+      "type": "integer"
+    },
+    "evidence_observation_ids": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 1000,
+      "minItems": 2,
+      "title": "Evidence Observation Ids",
+      "type": "array"
+    },
+    "model_sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "title": "Model Sha256",
+      "type": "string"
+    },
+    "method": {
+      "const": "osnet-ain-appearance-time-calibration",
+      "title": "Method",
+      "type": "string"
+    },
+    "provisional": {
+      "const": true,
+      "default": true,
+      "title": "Provisional",
+      "type": "boolean"
+    },
+    "probability_calibrated": {
+      "const": false,
+      "default": false,
+      "title": "Probability Calibrated",
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "track_a",
+    "track_b",
+    "score",
+    "appearance_similarity",
+    "spatial_distance_native",
+    "simultaneous_samples",
+    "evidence_observation_ids",
+    "model_sha256",
+    "method"
+  ],
+  "title": "Association",
+  "type": "object"
+}

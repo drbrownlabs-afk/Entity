@@ -77,7 +77,7 @@ def command(db,site,run,actor,body):
     if body.get('capability_version','1.0')!=descriptor.version:raise HTTPException(409,'Capability version mismatch')
     binding=db.execute('SELECT * FROM office_bindings WHERE site=? AND source=?',(site,target)).fetchone()
     adapter=SimulatedAdapter()
-    if binding and descriptor.modality!='read':
+    if binding and descriptor.modality!='read' and op not in {'entity.remember','entity.upsert','relation.add'}:
         if binding['version']!='1.0':raise HTTPException(409,'Adapter version mismatch')
         config=json.loads(binding['config'])
         if config.get('available') is False:raise HTTPException(503,'Adapter unavailable')

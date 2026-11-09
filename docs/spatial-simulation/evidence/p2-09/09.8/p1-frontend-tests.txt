@@ -1,0 +1,32 @@
+
+> entity-experience@0.7.0 test
+> node --test tests/*.test.js
+
+✔ public replay fractional poses agree with the actual Core exporter (22.650604ms)
+✔ replay is explicitly disconnected and is reversible without erasing history (16.344532ms)
+✔ a local simulated booking is auditable, idempotent and never labelled Core persisted (16.386456ms)
+✔ demo adapter respects private ownership and does not execute arbitrary Core actions (14.356775ms)
+✔ Ecuador date does not roll forward with UTC midnight (24.652513ms)
+✔ a second site uses its declared timezone (2.69355ms)
+✔ a nonexistent spring civil time is not silently moved (1.445483ms)
+✔ an ambiguous fall civil time requires an unambiguous instant (1.091762ms)
+✔ an invalid calendar date is rejected rather than normalized (0.257488ms)
+✔ shared fixture repeatability and occupancy/zone history (31.742103ms)
+✔ actions readback and invalid operations (0.489976ms)
+✔ Observation v1 exports current positions, source and provenance (10.720058ms)
+✔ local queries carry evidence and remote snapshots block simulated writes (1.090971ms)
+✔ audit: malformed or duplicate Core tracks are rejected atomically (0.67191ms)
+✔ audit: recorded Core data cannot be relabelled as synthetic export (0.541004ms)
+ℹ tests 15
+ℹ suites 0
+ℹ pass 15
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 315.631879
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.2
+npm notice To update run: npm install -g npm@12.2.2
+npm notice

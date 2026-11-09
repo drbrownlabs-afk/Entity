@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "run": "p2-09-vision",
+  "scope": "structural technical inspection only",
+  "real_http": true,
+  "full_p1_process_restart": true,
+  "stable_ids_types_relations_spatial_mappings": true,
+  "world_entities_including_preserved_prior_test_records": 470,
+  "configured_structural_entities": 460,
+  "operational_commands_run": 0,
+  "functional_queries_run": 0
+}

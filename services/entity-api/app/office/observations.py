@@ -40,13 +40,21 @@ def ingest(db,site,run,actor,message:Observation):
         if any(track.zone_id and track.zone_id not in allowed for track in snapshot.tracks):raise HTTPException(422,'Zone outside declared camera coverage')
         if not late:
             changes[message.source_id]={'observed_at':at,'connectivity':snapshot.source_status,'last_observation_id':oid,'ttl_seconds':30,'tracks':[]}
+            if snapshot.frame_sha256:changes[message.source_id].update(last_frame_sha256=snapshot.frame_sha256,frame_index=snapshot.frame_index,media_time_seconds=snapshot.media_time_seconds)
             active=set()
             for track in snapshot.tracks:
                 key='track-'+identity(site,message.source_id,track.local_track_id)
                 active.add(key)
                 old=items.get(key,{})
-                if not old:old=upsert_resource(db,site,key,'Track',{'camera_id':message.source_id,'local_track_id':track.local_track_id})
+                if not old:
+                    old=upsert_resource(db,site,key,'Track',{'camera_id':message.source_id,'local_track_id':track.local_track_id})
+                    if snapshot.frame_sha256:
+                        from .perception import remember_first_frame
+                        old['last_memory_id']=remember_first_frame(db,site,run,old,message,at)
                 patch={**old,'active':True,'zone_id':track.zone_id,'image_position':list(track.position),'coordinate_frame':'normalized-image','observed_at':at,'ttl_seconds':30,'observation_id':oid,'provenance':message.provenance.model_dump()}
+                if track.image_bbox is not None:patch['image_bbox']=list(track.image_bbox)
+                if track.detection_confidence is not None:patch['detection_confidence']=track.detection_confidence
+                if snapshot.frame_sha256:patch['frame_sha256']=snapshot.frame_sha256
                 changes[key]=patch;changes[message.source_id]['tracks'].append(key)
                 if old.get('person_id') and at<=old.get('association_until',''):
                     changes[old['person_id']]={'presence':'confirmed','zone_id':track.zone_id,'observed_at':at,'ttl_seconds':30,'last_observation_id':oid,'track_id':key}
@@ -57,6 +65,9 @@ def ingest(db,site,run,actor,message:Observation):
                 resource(db,site,zone)
                 count=sum(track.zone_id==zone for track in snapshot.tracks)
                 changes[zone]={'occupancy':count,'observed_at':at,'ttl_seconds':30,'occupancy_source':message.source_id,'last_observation_id':oid}
+    elif message.type=='edge.track_association':
+        from .perception import associate
+        changes=associate(db,site,run,items,actor,message,at)
     elif message.type=='sensor.measurement':
         if source['kind'] not in ['Sensor','HVAC','Equipment']:raise HTTPException(422,'Sensor source required')
         data=normalize_sensor(message.payload)

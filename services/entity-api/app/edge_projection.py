@@ -2,7 +2,7 @@
 import json
 from datetime import datetime, timezone
 from uuid import uuid5, NAMESPACE_URL, uuid4
-from pydantic import BaseModel, ConfigDict, Field, ValidationError
+from pydantic import BaseModel, ConfigDict, Field, ValidationError, model_validator
 from typing import Annotated, Literal
 from fastapi import HTTPException
 
@@ -14,10 +14,17 @@ class Track(BaseModel):
     local_track_id: str=Field(min_length=1,max_length=128)
     zone_id: str | None=Field(default=None,max_length=128)
     position: tuple[Coordinate,Coordinate]
+    image_bbox: tuple[Coordinate,Coordinate,Coordinate,Coordinate] | None = None
+    detection_confidence: Annotated[float,Field(ge=0,le=1,allow_inf_nan=False)] | None = None
+    @model_validator(mode='after')
+    def ordered_box(self):
+        if self.image_bbox and (self.image_bbox[0]>=self.image_bbox[2] or self.image_bbox[1]>=self.image_bbox[3]):raise ValueError('Image box must be ordered')
+        return self
 
 
 class Snapshot(BaseModel):
     model_config=ConfigDict(extra='forbid')
+    frame_sha256: str | None = Field(default=None,pattern='^[a-f0-9]{64}$')
     frame_index: int | None = Field(default=None,ge=0)
     media_time_seconds: float | None = Field(default=None,ge=0,allow_inf_nan=False)
     tracks: list[Track]=Field(max_length=1000)
