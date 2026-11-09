@@ -1,0 +1,49 @@
+{
+  "source_commit": "6bb1ea10e22e03d0796793369ff6a3c1c0bbefa6",
+  "jobs": {
+    "129252462392": {
+      "error_context": [],
+      "log_lines": 0
+    },
+    "129252461537": {
+      "error_context": [],
+      "log_lines": 0
+    },
+    "129252462220": {
+      "error_context": [],
+      "log_lines": 0
+    }
+  },
+  "pages": {
+    "status": "built",
+    "html_url": "https://drbrownlabs-afk.github.io/Entity/",
+    "public": true,
+    "build_type": "legacy",
+    "https_enforced": true,
+    "source": {
+      "branch": "gh-pages",
+      "path": "/"
+    },
+    "cname": null
+  },
+  "public_http": {
+    "manifest": {
+      "status": "200",
+      "exit_code": 0,
+      "bytes": 130,
+      "manifest": {
+        "source_commit": "d1414ab20266d8d9f231ae8633fe4aefeb0da339",
+        "mode": "coworking-only",
+        "active_route": "/Entity/spatial-simulation/"
+      }
+    },
+    "coworking": {
+      "status": "200",
+      "exit_code": 0,
+      "bytes": 3447,
+      "html_title": [
+        "ENTITY \u00b7 Coworking"
+      ]
+    }
+  }
+}
