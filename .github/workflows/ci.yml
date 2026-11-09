@@ -186,6 +186,9 @@ jobs:
           cp -r apps/spatial-simulation/dist .runtime/delivery/coworking
           git rev-parse HEAD > .runtime/delivery/source-commit.txt
           (cd .runtime/delivery && sha256sum entity-source.tar.gz > checksums.txt)
+      - name: Install browser for retained P1 HTTP and source-package regression
+        working-directory: apps/web
+        run: npx playwright install --with-deps chromium
       - name: Test source package from a different clean directory
         run: |
           mkdir -p "${RUNNER_TEMP}/entity-unpacked"
