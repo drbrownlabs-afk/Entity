@@ -20,5 +20,16 @@
   "mixamo_authenticated": false,
   "downloads_performed": false,
   "phase06_gate_passed": false,
-  "next_required_input": "Visible controllable remote browser with operator Adobe login, or authorized source asset delivery. Never request credentials in chat."
+  "next_required_input": "Environment network access to www.mixamo.com; authentication requirements cannot yet be inspected.",
+  "operator_override": "Operator explicitly waives plan requirement to personally sign in; attempt direct acquisition autonomously.",
+  "direct_access_probes": [
+    {
+      "url": "https://www.mixamo.com/",
+      "result": "HTTP CONNECT tunnel denied: 403 Forbidden (environment proxy, before Adobe authentication)"
+    },
+    {
+      "url": "https://www.mixamo.com/api/v1/characters",
+      "result": "HTTP CONNECT tunnel denied: 403 Forbidden (environment proxy, before Adobe authentication)"
+    }
+  ]
 }
