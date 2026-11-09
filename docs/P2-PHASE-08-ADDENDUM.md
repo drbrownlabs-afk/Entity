@@ -68,3 +68,17 @@ Asignar identidad sintética explícitamente identificada como tal a las persona
 - Diferenciar `ASIGNADO_A`, `RESERVADO_POR`, `PRESENTE_EN` y `OCUPADO_POR`. Asignación permanente de una sala a una empresa **no** demuestra presencia física actual. Si se crea ocupación de demostración, etiquetarla como dato simulado con tiempo y procedencia; no atribuirla a cámaras ni sensores.
 
 **Integridad:** IDs estables, tipos, fuente, temporalidad y persistencia para personas, organizaciones, espacios, membresías y relaciones. No duplicar personas por avatar, visita o reserva; no inventar vínculos personales por compartir trabajo. Usar P1 Core/Entidadizador, con P2 como consumidor. No exigir personajes 3D ni deshacer funcionalidades ya realizadas. Documentar implementación y pruebas reales en bitácora; no avanzar fases automáticamente.
+
+### 8.2.1 — Escenarios concretos para tres habituales y dos visitantes
+
+Estas cinco personas **ya están incluidas** en las doce de 8.2; no crear identidades adicionales. Todos los hechos del escenario son **datos sintéticos de demostración**, no datos observados ni operaciones fiscales reales.
+
+1. **Habitual con membresía anual:** membresía vigente, relación con plan anual y derecho de acceso según condiciones del plan; asignación o uso de puesto individual sujeto a disponibilidad y reglas.
+2. **Habitual con membresía mensual vencida:** conservar la persona y el historial de su membresía anterior; representar vencimiento, solicitud de renovación, orden/cobro, pago confirmado, factura y nueva vigencia. La renovación no debe marcarse pagada antes de confirmarse el pago. La factura es una entidad documental con identificador, emisor, receptor, conceptos, importes, estado y vínculo al pago; **solo factura simulada**, sin numeración fiscal real ni emisión al SRI.
+3. **Habitual por horas:** pase o paquete de horas, saldo/consumo, registro de sesiones y vencimiento si aplica. No confundir saldo contratado con tiempo efectivamente utilizado.
+4. **Visitante comercial:** llega a conocer el coworking y evaluar una futura membresía. Relacionar visitante, motivo de visita, recepción, eventual recorrido y oportunidad comercial; no convertirlo automáticamente en miembro.
+5. **Visitante de reunión:** llega para una reunión programada con una persona de Entity, en la oficina A **solo si el anfitrión y el permiso de acceso a esa oficina están definidos en el escenario**; de lo contrario, usar un espacio de reunión habilitado. Relacionar visitante, anfitrión, organización, evento de agenda, lugar, invitación y llegada. No asumir presencia física hasta registrar un evento simulado de llegada.
+
+**Tipos y relaciones adicionales:** `MEMBRESIA`, `PLAN_MEMBRESIA`, `PASE_HORAS`, `SESION_USO`, `RENOVACION`, `ORDEN_COBRO`, `PAGO`, `FACTURA`, `VISITA`, `REUNION`, `INVITACION` y `OPORTUNIDAD_COMERCIAL` según contratos P1 existentes. Vincular mediante `TITULAR_DE`, `CORRESPONDE_A_PLAN`, `RENUEVA`, `PAGA`, `FACTURA_PAGO`, `ASISTE_A`, `ANFITRION_DE`, `PROGRAMADA_EN` y `REGISTRA_LLEGADA`, adaptando nomenclatura a la semántica del Core sin crear modelos paralelos.
+
+Mantener identidad estable, procedencia, vigencia, historial de cambios y distinción entre hechos planificados, simulados y observados. Estos son escenarios de dominio para el modelo y futuras pruebas operativas; no ordenar revertir funcionalidades existentes ni crear integraciones de pagos o facturación reales por esta adición.
