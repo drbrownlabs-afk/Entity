@@ -84,3 +84,11 @@ El operador pide concentrar acabado en LED cálido oculto, esquina, plantas, det
 ### Candidato con jardín vertical completo
 
 Última petición: cobertura vegetal continua como el Gaussian. Vista original front-return.jpg inspeccionada; fuente intacta. Maestro R1 ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f, 678 PASS / 21 rutas, 2170 grupos vegetales pequeños instanciados, 71 luminarias/17 circuitos y 135 piezas de vidrio. [Galería](REVIEW-PHASE04-REVISION.md) y [plano](evidence/phase04-revision/layout-with-ids.svg). Borradores actuales disponibles; renders de revisión en ejecución. No aceptación humana ni inicio de PlayCanvas.
+
+## 2026-11-08 · autorización explícita de Fase05
+
+Operador aprueba Fase04-R1 y ordena continuar Fase05. Se conserva maestro aprobado y seis renders finales publicados. Batch opcional Cycles detenido al renderizar comedor; captura parcial excluida, no se declara galería de 23 terminada. Se inicia exportación derivada y aplicación separada en apps/spatial-simulation; fuentes protegidas intactas.
+
+## 2026-11-09 · Fase05, revisión visual todavía abierta
+
+Operador rechaza transferencia inicial y exige comparación iterativa con Cycles. Se investigó SDK real: omisión de techos escondidos para overview, recolor RGBToBW no exportable, límites de instancias reiniciados por RenderComponent, conversión lineal/sRGB incorrecta en luces/emisores y sobrescritura de parámetros de vidrio. Corregidos en pipeline existente. Bakes HDR ambientales y base indirecta artificial separada, UV1 explícita; ganancia por circuito llega a cero en OFF. La respuesta indirecta individual es aproximada por circuito. Capturas anteriores rechazadas conservadas. Captura corregida y comparación en curso; NO se declara fidelidad aprobada, 30 FPS móvil físico ni gate05 completo. Backend/frontend/Gaussian y maestro aprobado preservados.

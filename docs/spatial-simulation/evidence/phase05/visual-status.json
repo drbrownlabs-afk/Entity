@@ -1,0 +1,13 @@
+{
+  "status": "REJECTED_BY_OPERATOR",
+  "instruction": "Optimizar sin sacrificar calidad; comparación Blender/PlayCanvas parece juguete",
+  "recorded_at": "2026-11-08T22:30:37.807926+00:00",
+  "diagnosis": [
+    "Export incorrectly omitted four ceilings and hidden-for-overview ceiling details.",
+    "Cycles RGBToBW/ColorRamp planter recolor was not preserved.",
+    "Global outdoor IBL and punctual approximations do not reproduce interior indirect lighting/reflections.",
+    "ACES and AgX color management differ."
+  ],
+  "next_gate": "Matched-camera comparison against approved Cycles; visual fidelity must pass before mobile optimization acceptance.",
+  "functional_checks_do_not_approve_visual_quality": true
+}

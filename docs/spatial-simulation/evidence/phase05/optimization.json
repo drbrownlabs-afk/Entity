@@ -1,0 +1,859 @@
+{
+  "passed": true,
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "source_bytes": 137626100,
+  "optimized_bytes": 65650848,
+  "reduction_percent": 52.29767609486864,
+  "source_sha256": "01db0def28ad2bbb0c0d7ebe30cc196aa426c90dccb32047b725b04f5637b9f8",
+  "optimized_sha256": "502d1d9eafdc0d23e2968aa7806859deef4ca2c10519d01ac8bd97549193b45f",
+  "original_ids": 4514,
+  "retained_ids": 4514,
+  "missing_ids": [],
+  "meshes": 446,
+  "textures": [
+    {
+      "name": "Warm white plaster-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 973978,
+      "ktx2_bytes": 658338,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "terrazzo-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 2048,
+      "height": 2048,
+      "source_bytes": 3909178,
+      "ktx2_bytes": 3297226,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "static-floor-contact",
+      "slots": [
+        "occlusionTexture"
+      ],
+      "width": 1024,
+      "height": 2048,
+      "source_bytes": 1090260,
+      "ktx2_bytes": 1164720,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "terrazzo-basecolor",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 2048,
+      "height": 2048,
+      "source_bytes": 2741702,
+      "ktx2_bytes": 3022382,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "terrazzo-roughness",
+      "slots": [
+        "metallicRoughnessTexture"
+      ],
+      "width": 2048,
+      "height": 2048,
+      "source_bytes": 3866041,
+      "ktx2_bytes": 3581136,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "screen-4",
+      "slots": [
+        "baseColorTexture",
+        "emissiveTexture"
+      ],
+      "width": 960,
+      "height": 540,
+      "source_bytes": 12951,
+      "ktx2_bytes": 24649,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_1-Image_4",
+      "slots": [
+        "occlusionTexture",
+        "metallicRoughnessTexture"
+      ],
+      "width": 512,
+      "height": 512,
+      "source_bytes": 395032,
+      "ktx2_bytes": 310390,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "Image_3",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 512,
+      "height": 512,
+      "source_bytes": 181170,
+      "ktx2_bytes": 304835,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "R1 ergonomic woven mesh-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1798337,
+      "ktx2_bytes": 1060047,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "R1 ergonomic woven mesh-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1212243,
+      "ktx2_bytes": 903626,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "R1 desk pad leather-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1798341,
+      "ktx2_bytes": 1060051,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "R1 desk pad leather-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 976339,
+      "ktx2_bytes": 786437,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "keyboard-legends",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 320,
+      "source_bytes": 16493,
+      "ktx2_bytes": 26274,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "workstation-screen",
+      "slots": [
+        "baseColorTexture",
+        "emissiveTexture"
+      ],
+      "width": 1024,
+      "height": 576,
+      "source_bytes": 45454,
+      "ktx2_bytes": 82018,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_1",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 288543,
+      "ktx2_bytes": 1279764,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "Image_0",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1292460,
+      "ktx2_bytes": 1025912,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "R1 living wall organic substrate-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 2263679,
+      "ktx2_bytes": 1303191,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "R1 living wall organic substrate-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1136539,
+      "ktx2_bytes": 952443,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "R1 oiled walnut micrograin-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 390844,
+      "ktx2_bytes": 533451,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "R1 oiled walnut micrograin-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 575125,
+      "ktx2_bytes": 731579,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "meeting-screen",
+      "slots": [
+        "baseColorTexture",
+        "emissiveTexture"
+      ],
+      "width": 1280,
+      "height": 720,
+      "source_bytes": 23988,
+      "ktx2_bytes": 46281,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "screen-3",
+      "slots": [
+        "baseColorTexture",
+        "emissiveTexture"
+      ],
+      "width": 960,
+      "height": 540,
+      "source_bytes": 12574,
+      "ktx2_bytes": 25337,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_0",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1744462,
+      "ktx2_bytes": 1251321,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "Image_1",
+      "slots": [
+        "occlusionTexture"
+      ],
+      "width": 512,
+      "height": 512,
+      "source_bytes": 109972,
+      "ktx2_bytes": 248139,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "Image_2",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 512,
+      "height": 512,
+      "source_bytes": 133702,
+      "ktx2_bytes": 272158,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_5",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 512,
+      "source_bytes": 567793,
+      "ktx2_bytes": 600027,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "R1 natural oak micrograin-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 649771,
+      "ktx2_bytes": 830977,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "screen-1",
+      "slots": [
+        "baseColorTexture",
+        "emissiveTexture"
+      ],
+      "width": 960,
+      "height": 540,
+      "source_bytes": 11102,
+      "ktx2_bytes": 22995,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_4",
+      "slots": [
+        "emissiveTexture"
+      ],
+      "width": 512,
+      "height": 512,
+      "source_bytes": 1992,
+      "ktx2_bytes": 2454,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_3",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 840918,
+      "ktx2_bytes": 1302100,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "Image_6",
+      "slots": [
+        "occlusionTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 513213,
+      "ktx2_bytes": 914267,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "Image_2",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 555674,
+      "ktx2_bytes": 1279167,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "concrete-planter-UV-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 732951,
+      "ktx2_bytes": 748432,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "R1 honed stone-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1798340,
+      "ktx2_bytes": 1060049,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "R1 honed stone-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1189921,
+      "ktx2_bytes": 899298,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "screen-2",
+      "slots": [
+        "baseColorTexture",
+        "emissiveTexture"
+      ],
+      "width": 960,
+      "height": 540,
+      "source_bytes": 12450,
+      "ktx2_bytes": 26430,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_1",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 512,
+      "height": 512,
+      "source_bytes": 127894,
+      "ktx2_bytes": 292637,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "Image_2",
+      "slots": [
+        "occlusionTexture",
+        "metallicRoughnessTexture"
+      ],
+      "width": 512,
+      "height": 512,
+      "source_bytes": 13818,
+      "ktx2_bytes": 167409,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "Image_0",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 512,
+      "height": 512,
+      "source_bytes": 35826,
+      "ktx2_bytes": 291976,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_11",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 2048,
+      "height": 2048,
+      "source_bytes": 1806934,
+      "ktx2_bytes": 3311664,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "Image_12",
+      "slots": [
+        "occlusionTexture",
+        "metallicRoughnessTexture"
+      ],
+      "width": 512,
+      "height": 512,
+      "source_bytes": 17024,
+      "ktx2_bytes": 285058,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "Image_10",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 2048,
+      "height": 2048,
+      "source_bytes": 179030,
+      "ktx2_bytes": 2933919,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_8",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 256,
+      "height": 128,
+      "source_bytes": 16420,
+      "ktx2_bytes": 37678,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "Image_9",
+      "slots": [
+        "occlusionTexture"
+      ],
+      "width": 128,
+      "height": 128,
+      "source_bytes": 3166,
+      "ktx2_bytes": 17845,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "Image_7",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 512,
+      "height": 256,
+      "source_bytes": 102468,
+      "ktx2_bytes": 161180,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_4",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 760918,
+      "ktx2_bytes": 1311463,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "Image_3",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 463824,
+      "ktx2_bytes": 1366226,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_6",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 256,
+      "height": 256,
+      "source_bytes": 14144,
+      "ktx2_bytes": 68950,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "Image_5",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 256,
+      "height": 256,
+      "source_bytes": 19890,
+      "ktx2_bytes": 82902,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "screen-5",
+      "slots": [
+        "baseColorTexture",
+        "emissiveTexture"
+      ],
+      "width": 960,
+      "height": 540,
+      "source_bytes": 11969,
+      "ktx2_bytes": 23723,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "lounge-art",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 640,
+      "height": 440,
+      "source_bytes": 5332,
+      "ktx2_bytes": 24245,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "R1 terracotta textile-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1798338,
+      "ktx2_bytes": 1060048,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "R1 terracotta textile-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1207068,
+      "ktx2_bytes": 892021,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_0",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 503515,
+      "ktx2_bytes": 1057396,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "Image_1",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 939409,
+      "ktx2_bytes": 982507,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_2",
+      "slots": [
+        "metallicRoughnessTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 190747,
+      "ktx2_bytes": 462567,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "Image_3",
+      "slots": [
+        "thicknessTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 3575,
+      "ktx2_bytes": 8383,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "Image_1",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 2126796,
+      "ktx2_bytes": 736159,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "Image_0",
+      "slots": [
+        "occlusionTexture"
+      ],
+      "width": 512,
+      "height": 512,
+      "source_bytes": 189550,
+      "ktx2_bytes": 244125,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "rug-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 2048,
+      "height": 2048,
+      "source_bytes": 25414,
+      "ktx2_bytes": 32961,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "rug-basecolor",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 2048,
+      "height": 2048,
+      "source_bytes": 6973413,
+      "ktx2_bytes": 4419335,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "sofa-linen-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1004697,
+      "ktx2_bytes": 419785,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "Image_0",
+      "slots": [
+        "occlusionTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 530651,
+      "ktx2_bytes": 809868,
+      "normal": false,
+      "srgb": false
+    },
+    {
+      "name": "R1 sage textile-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1798337,
+      "ktx2_bytes": 1060048,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "R1 sage textile-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1210044,
+      "ktx2_bytes": 899719,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "R1 limestone bathroom-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1798339,
+      "ktx2_bytes": 1060048,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "R1 limestone bathroom-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1274815,
+      "ktx2_bytes": 959920,
+      "normal": false,
+      "srgb": true
+    },
+    {
+      "name": "R1 woven linen sand-normal",
+      "slots": [
+        "normalTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1798338,
+      "ktx2_bytes": 1060048,
+      "normal": true,
+      "srgb": false
+    },
+    {
+      "name": "R1 woven linen sand-albedo",
+      "slots": [
+        "baseColorTexture"
+      ],
+      "width": 1024,
+      "height": 1024,
+      "source_bytes": 1270734,
+      "ktx2_bytes": 915014,
+      "normal": false,
+      "srgb": true
+    }
+  ],
+  "elapsed_seconds": 3.9297193029999997,
+  "notes": [
+    "No architectural mesh removed or simplified. No source texture downscaled.",
+    "Environmental HDR and a separate artificial indirect HDR basis are generated by Blender. Runtime circuit gains multiply artificial indirect; OFF is zero. Direct lamps remain independent.",
+    "High-quality master unchanged. GPU instancing constructed at runtime to retain selection IDs."
+  ]
+}

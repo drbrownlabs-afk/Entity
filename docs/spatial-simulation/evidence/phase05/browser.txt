@@ -1,0 +1,18 @@
+CAPTURE desktop-general
+PASS correct-approved-master
+PASS all-ids-imported-and-real-gpu-instances
+PASS instance-culling-preserves-all-member-bounds
+PASS door-lock-collision-open-and-visible-pivot
+PASS full-C-live-runtime-walkthrough-21-routes
+CAPTURE desktop-lounge
+CAPTURE desktop-office
+CAPTURE desktop-comedor
+CAPTURE desktop-vertical-garden
+CAPTURE desktop-services
+CAPTURE desktop-booths
+PASS mouse-look-responds
+page.evaluate: Target page, context or browser has been closed
+    at frame (/workspace/Entity/apps/spatial-simulation/tests/browser.mjs:6:39)
+    at /workspace/Entity/apps/spatial-simulation/tests/browser.mjs:19:54 {
+  log: []
+}

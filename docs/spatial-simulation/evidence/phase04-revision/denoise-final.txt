@@ -1,0 +1,6 @@
+VERIFIED_CACHED vertical-garden
+VERIFIED_CACHED garden-detail
+VERIFIED_CACHED glass-detail
+VERIFIED_CACHED office
+VERIFIED_CACHED lounge
+FILTERED computer-detail

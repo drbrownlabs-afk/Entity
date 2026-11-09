@@ -1,3 +1,5 @@
+**Estado vigente:** Fase04-R1 APROBADA por el operador («Fase 4 aprobada, continúa fase 5»). Maestro SHA256 `ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f`. Fase05 EN CURSO: exportación y visor PlayCanvas aislado. Fase06 pendiente de autorización posterior.
+
 **Estado actual R1:** maestro `office-phase04-revision.blend`; 678 comprobaciones y 21 rutas verificadas. Jardín vertical continuo, luz cálida y vidrio reflectivo. Renders de revisión en ejecución; aceptación humana pendiente. [Galería](REVIEW-PHASE04-REVISION.md).
 
 # Tablero del laboratorio espacial

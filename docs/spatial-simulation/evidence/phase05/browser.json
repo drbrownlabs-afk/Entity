@@ -1,0 +1,704 @@
+{
+  "started_at": "2026-11-08T22:24:34.771Z",
+  "url": "http://127.0.0.1:5176",
+  "physical_mobile_tested": false,
+  "software_renderer": true,
+  "checks": [
+    {
+      "name": "correct-approved-master",
+      "passed": true
+    },
+    {
+      "name": "all-ids-imported-and-real-gpu-instances",
+      "passed": true,
+      "detail": {
+        "ids": 4490,
+        "missing": [],
+        "instances": 3751,
+        "badInstanceBounds": []
+      }
+    },
+    {
+      "name": "instance-culling-preserves-all-member-bounds",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "door-lock-collision-open-and-visible-pivot",
+      "passed": true,
+      "detail": {
+        "closed": [
+          -1.7199999999999998,
+          -1.85,
+          -1.45
+        ],
+        "open": [
+          -0.7199999999999989,
+          -1.85,
+          -1.45
+        ],
+        "denied": true,
+        "id": "sim:p2:door:MEETING-AREA-01",
+        "rotation": [
+          0,
+          90,
+          0
+        ]
+      }
+    },
+    {
+      "name": "full-C-live-runtime-walkthrough-21-routes",
+      "passed": true,
+      "detail": [
+        {
+          "id": "reception",
+          "waypoints": 200,
+          "end": [
+            -4.7,
+            -1.55,
+            -15.999999999999998
+          ],
+          "target": [
+            -4.7,
+            -1.55,
+            -16
+          ],
+          "error": 1.7763568394002505e-15
+        },
+        {
+          "id": "waiting",
+          "waypoints": 125,
+          "end": [
+            -4.8,
+            -1.55,
+            -9.000000000000002
+          ],
+          "target": [
+            -4.8,
+            -1.55,
+            -9
+          ],
+          "error": 1.7763568394002505e-15
+        },
+        {
+          "id": "cafe-social",
+          "waypoints": 249,
+          "end": [
+            -3.2000000000000006,
+            -1.55,
+            -22.600000000000005
+          ],
+          "target": [
+            -3.2,
+            -1.55,
+            -22.6
+          ],
+          "error": 3.580361673049448e-15
+        },
+        {
+          "id": "cafe-bar",
+          "waypoints": 290,
+          "end": [
+            -7.999999999999999,
+            -1.55,
+            -22.3
+          ],
+          "target": [
+            -8,
+            -1.55,
+            -22.3
+          ],
+          "error": 8.881784197001252e-16
+        },
+        {
+          "id": "lounge",
+          "waypoints": 162,
+          "end": [
+            -9.999999999999998,
+            -1.55,
+            -2.0999999999999996
+          ],
+          "target": [
+            -10,
+            -1.55,
+            -2.1
+          ],
+          "error": 1.831026719408895e-15
+        },
+        {
+          "id": "call-01",
+          "waypoints": 176,
+          "end": [
+            -11,
+            -1.55,
+            0.3
+          ],
+          "target": [
+            -11,
+            -1.55,
+            0.3
+          ],
+          "error": 0
+        },
+        {
+          "id": "call-02",
+          "waypoints": 156,
+          "end": [
+            -9.000000000000002,
+            -1.55,
+            0.3
+          ],
+          "target": [
+            -9,
+            -1.55,
+            0.3
+          ],
+          "error": 1.7763568394002505e-15
+        },
+        {
+          "id": "WC-access",
+          "waypoints": 127,
+          "end": [
+            -6.800000000000001,
+            -1.55,
+            1.3877787807814457e-17
+          ],
+          "target": [
+            -6.8,
+            -1.55,
+            0
+          ],
+          "error": 8.882868333007365e-16
+        },
+        {
+          "id": "lockers",
+          "waypoints": 23,
+          "end": [
+            -4.199999999999999,
+            -1.85,
+            1
+          ],
+          "target": [
+            -4.2,
+            -1.85,
+            1
+          ],
+          "error": 8.881784197001252e-16
+        },
+        {
+          "id": "print",
+          "waypoints": 91,
+          "end": [
+            -4.199999999999999,
+            -1.55,
+            -1.0000000000000002
+          ],
+          "target": [
+            -4.2,
+            -1.55,
+            -1
+          ],
+          "error": 9.155133597044475e-16
+        },
+        {
+          "id": "white-sector-sofas",
+          "waypoints": 193,
+          "end": [
+            -4.8,
+            -1.55,
+            -15.200000000000001
+          ],
+          "target": [
+            -4.8,
+            -1.55,
+            -15.2
+          ],
+          "error": 1.7763568394002505e-15
+        },
+        {
+          "id": "bistro-access",
+          "waypoints": 255,
+          "end": [
+            -7.999999999999999,
+            -1.55,
+            -18.799999999999997
+          ],
+          "target": [
+            -8,
+            -1.55,
+            -18.8
+          ],
+          "error": 3.66205343881779e-15
+        },
+        {
+          "id": "dining-1",
+          "waypoints": 225,
+          "end": [
+            -3.2000000000000006,
+            -1.55,
+            -20.200000000000003
+          ],
+          "target": [
+            -3.2,
+            -1.55,
+            -20.2
+          ],
+          "error": 3.580361673049448e-15
+        },
+        {
+          "id": "dining-2",
+          "waypoints": 249,
+          "end": [
+            -3.2000000000000006,
+            -1.55,
+            -22.600000000000005
+          ],
+          "target": [
+            -3.2,
+            -1.55,
+            -22.6
+          ],
+          "error": 3.580361673049448e-15
+        },
+        {
+          "id": "dining-3",
+          "waypoints": 274,
+          "end": [
+            -3.2000000000000006,
+            -1.55,
+            -25.1
+          ],
+          "target": [
+            -3.2,
+            -1.55,
+            -25.1
+          ],
+          "error": 4.440892098500626e-16
+        },
+        {
+          "id": "MEETING-AREA-01",
+          "waypoints": 36,
+          "end": [
+            -0.9,
+            -1.85,
+            -1.3999999999999997
+          ],
+          "target": [
+            -0.9,
+            -1.85,
+            -1.4
+          ],
+          "error": 2.220446049250313e-16
+        },
+        {
+          "id": "A",
+          "waypoints": 88,
+          "end": [
+            -0.9,
+            -1.85,
+            -6.599999999999999
+          ],
+          "target": [
+            -0.9,
+            -1.85,
+            -6.6
+          ],
+          "error": 8.881784197001252e-16
+        },
+        {
+          "id": "B",
+          "waypoints": 131,
+          "end": [
+            -0.9,
+            -1.85,
+            -10.9
+          ],
+          "target": [
+            -0.9,
+            -1.85,
+            -10.9
+          ],
+          "error": 0
+        },
+        {
+          "id": "C",
+          "waypoints": 197,
+          "end": [
+            -0.9,
+            -1.85,
+            -17.499999999999996
+          ],
+          "target": [
+            -0.9,
+            -1.85,
+            -17.5
+          ],
+          "error": 3.552713678800501e-15
+        },
+        {
+          "id": "D",
+          "waypoints": 241,
+          "end": [
+            -0.9,
+            -1.85,
+            -21.900000000000002
+          ],
+          "target": [
+            -0.9,
+            -1.85,
+            -21.9
+          ],
+          "error": 3.552713678800501e-15
+        },
+        {
+          "id": "sim:ROOM-E",
+          "waypoints": 296,
+          "end": [
+            -0.9,
+            -1.85,
+            -27.4
+          ],
+          "target": [
+            -0.9,
+            -1.85,
+            -27.4
+          ],
+          "error": 0
+        }
+      ]
+    },
+    {
+      "name": "mouse-look-responds",
+      "passed": true,
+      "detail": {
+        "before": [
+          -7.050000190734863,
+          -0.05000000074505806,
+          -0.800000011920929
+        ]
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "desktop-general",
+      "sha256": "bc0fdf341fc749df4e5919efb342af4ad432d7e729520078f332a227316eda69",
+      "pose": {
+        "mode": "general",
+        "feet": [
+          -2.2,
+          -1.85,
+          0.8
+        ],
+        "camera": [
+          19,
+          25,
+          9
+        ],
+        "yaw": 0,
+        "pitch": 0
+      },
+      "clock": 12,
+      "source": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "bundle": "ec331d82c926b4b11a75b636cb284ea8a2a91b44f7b31736925ce3b9fbd25a9d",
+      "quality": {
+        "tier": "high",
+        "automatic": false,
+        "renderScale": 1,
+        "frameSamples": 7,
+        "medianFrameMs": 46.400000005960464,
+        "p95FrameMs": 12783.5,
+        "approximateFps": 21.551724135162537,
+        "jsHeapBytes": 247564103,
+        "gpuTextureBytes": 157976372,
+        "gpuVertexBytes": 64515516,
+        "gpuIndexBytes": 10497228
+      },
+      "renderer": {
+        "engine": "2.23.3",
+        "sourceMeshInstances": 4471,
+        "gpuInstanceGroups": 210,
+        "gpuInstances": 3751,
+        "batches": 95,
+        "glassMaterials": 2,
+        "drawCalls": 0,
+        "frameMs": 20649.2
+      }
+    },
+    {
+      "name": "desktop-lounge",
+      "sha256": "65991cb2010263d904a58a70eb04ad8d33a1140a82b676cf85504f582b3845e4",
+      "pose": {
+        "mode": "inspection",
+        "feet": [
+          -0.9,
+          -1.85,
+          -27.4
+        ],
+        "camera": [
+          -7.050000190734863,
+          -0.05000000074505806,
+          -0.800000011920929
+        ],
+        "yaw": 0,
+        "pitch": 0
+      },
+      "clock": 12,
+      "source": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "bundle": "ec331d82c926b4b11a75b636cb284ea8a2a91b44f7b31736925ce3b9fbd25a9d",
+      "quality": {
+        "tier": "high",
+        "automatic": false,
+        "renderScale": 1,
+        "frameSamples": 17,
+        "medianFrameMs": 30.799999997019768,
+        "p95FrameMs": 18226.59999999404,
+        "approximateFps": 32.46753247067405,
+        "jsHeapBytes": 243536666,
+        "gpuTextureBytes": 160162580,
+        "gpuVertexBytes": 64515516,
+        "gpuIndexBytes": 10497228
+      },
+      "renderer": {
+        "engine": "2.23.3",
+        "sourceMeshInstances": 4471,
+        "gpuInstanceGroups": 210,
+        "gpuInstances": 3751,
+        "batches": 95,
+        "glassMaterials": 2,
+        "drawCalls": 0,
+        "frameMs": 16.69999999999709
+      }
+    },
+    {
+      "name": "desktop-office",
+      "sha256": "e3558e99d9b0715710186d8802d7aaf2a4e876857c0019b917f7159e68dff360",
+      "pose": {
+        "mode": "inspection",
+        "feet": [
+          -0.9,
+          -1.85,
+          -27.4
+        ],
+        "camera": [
+          -0.6000000238418579,
+          -0.15000000596046448,
+          -6.849999904632568
+        ],
+        "yaw": 0,
+        "pitch": 0
+      },
+      "clock": 12,
+      "source": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "bundle": "ec331d82c926b4b11a75b636cb284ea8a2a91b44f7b31736925ce3b9fbd25a9d",
+      "quality": {
+        "tier": "high",
+        "automatic": false,
+        "renderScale": 1,
+        "frameSamples": 21,
+        "medianFrameMs": 20.599999994039536,
+        "p95FrameMs": 18226.59999999404,
+        "approximateFps": 48.54368933443412,
+        "jsHeapBytes": 244308600,
+        "gpuTextureBytes": 160162580,
+        "gpuVertexBytes": 64515516,
+        "gpuIndexBytes": 10497228
+      },
+      "renderer": {
+        "engine": "2.23.3",
+        "sourceMeshInstances": 4471,
+        "gpuInstanceGroups": 210,
+        "gpuInstances": 3751,
+        "batches": 95,
+        "glassMaterials": 2,
+        "drawCalls": 0,
+        "frameMs": 33.30000000000291
+      }
+    },
+    {
+      "name": "desktop-comedor",
+      "sha256": "89b8b2015a891b51e78ed87bba86c24f8b17fa7e8f92f0fdf55894aa1c7e5578",
+      "pose": {
+        "mode": "inspection",
+        "feet": [
+          -0.9,
+          -1.85,
+          -27.4
+        ],
+        "camera": [
+          -6.650000095367432,
+          -0.05000000074505806,
+          -18.549999237060547
+        ],
+        "yaw": 0,
+        "pitch": 0
+      },
+      "clock": 12,
+      "source": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "bundle": "ec331d82c926b4b11a75b636cb284ea8a2a91b44f7b31736925ce3b9fbd25a9d",
+      "quality": {
+        "tier": "high",
+        "automatic": false,
+        "renderScale": 1,
+        "frameSamples": 27,
+        "medianFrameMs": 17.099999994039536,
+        "p95FrameMs": 12903.19999999553,
+        "approximateFps": 58.47953218412662,
+        "jsHeapBytes": 246186798,
+        "gpuTextureBytes": 160162580,
+        "gpuVertexBytes": 64515516,
+        "gpuIndexBytes": 10497228
+      },
+      "renderer": {
+        "engine": "2.23.3",
+        "sourceMeshInstances": 4471,
+        "gpuInstanceGroups": 210,
+        "gpuInstances": 3751,
+        "batches": 95,
+        "glassMaterials": 2,
+        "drawCalls": 0,
+        "frameMs": 16.69999999999709
+      }
+    },
+    {
+      "name": "desktop-vertical-garden",
+      "sha256": "979ab86a19a4adfeb9a01c34f9477011033fd391e83b6c2bffc627f09eb77ce3",
+      "pose": {
+        "mode": "inspection",
+        "feet": [
+          -0.9,
+          -1.85,
+          -27.4
+        ],
+        "camera": [
+          -0.05000000074505806,
+          0.20000000298023224,
+          -2.799999952316284
+        ],
+        "yaw": 0,
+        "pitch": 0
+      },
+      "clock": 12,
+      "source": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "bundle": "ec331d82c926b4b11a75b636cb284ea8a2a91b44f7b31736925ce3b9fbd25a9d",
+      "quality": {
+        "tier": "high",
+        "automatic": false,
+        "renderScale": 1,
+        "frameSamples": 32,
+        "medianFrameMs": 17,
+        "p95FrameMs": 12903.19999999553,
+        "approximateFps": 58.8235294117647,
+        "jsHeapBytes": 245833640,
+        "gpuTextureBytes": 160162580,
+        "gpuVertexBytes": 64515516,
+        "gpuIndexBytes": 10497228
+      },
+      "renderer": {
+        "engine": "2.23.3",
+        "sourceMeshInstances": 4471,
+        "gpuInstanceGroups": 210,
+        "gpuInstances": 3751,
+        "batches": 95,
+        "glassMaterials": 2,
+        "drawCalls": 0,
+        "frameMs": 16.60000000000582
+      }
+    },
+    {
+      "name": "desktop-services",
+      "sha256": "3a71886b19ca3ad8025e03f1809b4af9ee1083fd81718af8a38d176c0c5d7dbb",
+      "pose": {
+        "mode": "inspection",
+        "feet": [
+          -0.9,
+          -1.85,
+          -27.4
+        ],
+        "camera": [
+          -6.599999904632568,
+          0.05000000074505806,
+          -2.5999999046325684
+        ],
+        "yaw": 0,
+        "pitch": 0
+      },
+      "clock": 12,
+      "source": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "bundle": "ec331d82c926b4b11a75b636cb284ea8a2a91b44f7b31736925ce3b9fbd25a9d",
+      "quality": {
+        "tier": "high",
+        "automatic": false,
+        "renderScale": 1,
+        "frameSamples": 37,
+        "medianFrameMs": 17,
+        "p95FrameMs": 12903.19999999553,
+        "approximateFps": 58.8235294117647,
+        "jsHeapBytes": 247861326,
+        "gpuTextureBytes": 160162580,
+        "gpuVertexBytes": 64515516,
+        "gpuIndexBytes": 10497228
+      },
+      "renderer": {
+        "engine": "2.23.3",
+        "sourceMeshInstances": 4471,
+        "gpuInstanceGroups": 210,
+        "gpuInstances": 3751,
+        "batches": 95,
+        "glassMaterials": 2,
+        "drawCalls": 0,
+        "frameMs": 49.89999999999418
+      }
+    },
+    {
+      "name": "desktop-booths",
+      "sha256": "163d9e8116a5b0fe755cde4c8b983b509e667123d9f66df27aaf1b4a645ec9dc",
+      "pose": {
+        "mode": "inspection",
+        "feet": [
+          -0.9,
+          -1.85,
+          -27.4
+        ],
+        "camera": [
+          -10.149999618530273,
+          0.05000000074505806,
+          -2.25
+        ],
+        "yaw": 0,
+        "pitch": 0
+      },
+      "clock": 12,
+      "source": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+      "bundle": "ec331d82c926b4b11a75b636cb284ea8a2a91b44f7b31736925ce3b9fbd25a9d",
+      "quality": {
+        "tier": "high",
+        "automatic": false,
+        "renderScale": 1,
+        "frameSamples": 43,
+        "medianFrameMs": 16.700000002980232,
+        "p95FrameMs": 12783.5,
+        "approximateFps": 59.880239510272034,
+        "jsHeapBytes": 248735500,
+        "gpuTextureBytes": 160162580,
+        "gpuVertexBytes": 64515516,
+        "gpuIndexBytes": 10497228
+      },
+      "renderer": {
+        "engine": "2.23.3",
+        "sourceMeshInstances": 4471,
+        "gpuInstanceGroups": 210,
+        "gpuInstances": 3751,
+        "batches": 95,
+        "glassMaterials": 2,
+        "drawCalls": 0,
+        "frameMs": 16.69999999999709
+      }
+    }
+  ],
+  "errors": [],
+  "desktop": null,
+  "mobile_emulation": null,
+  "failure": "page.evaluate: Target page, context or browser has been closed\n    at frame (/workspace/Entity/apps/spatial-simulation/tests/browser.mjs:6:39)\n    at /workspace/Entity/apps/spatial-simulation/tests/browser.mjs:19:54",
+  "functional_passed": false
+}

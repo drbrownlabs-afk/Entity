@@ -1,0 +1,11 @@
+{
+  "phase": "04-revision",
+  "status": "approved-by-operator",
+  "operator_instruction": "Fase 4 aprobada, continúa fase 5",
+  "recorded_at": "2026-11-08T21:53:03.765672+00:00",
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "automated_checks": 678,
+  "routes": 21,
+  "published_final_renders": 6,
+  "note": "Approval is explicit. The optional remaining Cycles gallery batch was cancelled to prioritize authorized Phase05; no claim that 23 final frames completed. Partial comedor capture is excluded from the verified gallery."
+}

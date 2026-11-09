@@ -1,0 +1,4747 @@
+{
+  "uri": "office.glb",
+  "mimeType": "model/gltf-binary",
+  "validatorVersion": "2.0.0-dev.3.10",
+  "validatedAt": "2026-11-09T01:35:56.184Z",
+  "issues": {
+    "numErrors": 0,
+    "numWarnings": 138,
+    "numInfos": 586,
+    "numHints": 0,
+    "messages": [
+      {
+        "code": "UNSUPPORTED_EXTENSION",
+        "message": "Cannot validate an extension as it is not supported by the validator: 'KHR_draco_mesh_compression'.",
+        "severity": 2,
+        "pointer": "/extensionsUsed/1"
+      },
+      {
+        "code": "UNSUPPORTED_EXTENSION",
+        "message": "Cannot validate an extension as it is not supported by the validator: 'KHR_texture_basisu'.",
+        "severity": 2,
+        "pointer": "/extensionsUsed/9"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/0/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/0/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/1/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/1/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/2/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/2/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/3/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/3/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/4/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/4/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/5/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/5/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/6/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/6/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/7/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/7/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/8/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/8/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/9/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/9/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/10/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/10/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/11/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/11/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/12/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/12/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/13/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/13/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/14/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/14/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/15/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/15/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/16/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/16/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/17/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/17/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/18/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/18/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/19/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/19/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/20/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/20/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/21/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/21/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/22/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/22/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/23/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/23/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/24/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/24/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/25/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/25/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/26/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/26/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/27/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/27/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/28/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/28/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/29/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/29/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/30/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/30/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/31/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/31/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/32/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/32/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/33/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/33/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/34/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/34/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/35/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/35/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/36/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/36/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/37/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/37/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/38/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/38/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/39/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/39/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/40/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/40/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/41/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/41/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/42/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/42/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/43/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/43/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/44/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/44/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/45/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/45/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/46/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/46/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/47/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/47/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/48/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/48/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/49/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/49/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/50/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/50/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/51/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/51/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/52/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/52/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/53/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/53/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/54/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/54/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/55/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/55/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/56/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/56/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/57/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/57/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/58/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/58/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/59/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/59/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/60/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/60/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/61/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/61/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/62/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/62/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/63/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/63/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/64/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/64/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/65/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/65/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/66/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/66/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/67/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/67/uri"
+      },
+      {
+        "code": "VALUE_NOT_IN_LIST",
+        "message": "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+        "severity": 1,
+        "pointer": "/images/68/mimeType"
+      },
+      {
+        "code": "URI_GLB",
+        "message": "URI is used in GLB container.",
+        "severity": 2,
+        "pointer": "/images/68/uri"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/0"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/1"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/2"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/3"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/4"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/5"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/6"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/7"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/8"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/9"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/10"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/11"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/12"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/13"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/14"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/15"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/16"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/17"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/18"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/19"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/20"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/21"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/22"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/23"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/24"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/25"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/26"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/27"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/28"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/29"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/30"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/31"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/32"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/33"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/34"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/35"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/36"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/37"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/38"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/39"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/40"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/41"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/42"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/43"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/44"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/45"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/46"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/47"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/48"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/49"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/50"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/51"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/52"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/53"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/54"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/55"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/56"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/57"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/58"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/59"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/60"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/61"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/62"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/63"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/64"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/65"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/66"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/67"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/68"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/69"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/70"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/71"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/72"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/73"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/74"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/75"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/76"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/77"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/78"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/79"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/80"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/81"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/82"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/83"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/84"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/85"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/86"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/87"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/88"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/89"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/90"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/91"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/92"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/93"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/94"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/95"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/96"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/97"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/98"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/99"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/100"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/101"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/102"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/103"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/104"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/105"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/106"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/107"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/108"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/109"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/110"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/111"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/112"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/113"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/114"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/115"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/116"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/117"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/118"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/119"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/120"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/121"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/122"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/123"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/124"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/125"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/126"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/127"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/128"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/129"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/130"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/131"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/132"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/133"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/134"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/135"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/136"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/137"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/138"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/139"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/140"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/141"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/142"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/143"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/144"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/145"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/146"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/147"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/148"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/149"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/150"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/151"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/152"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/153"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/154"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/155"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/156"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/157"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/158"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/159"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/160"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/161"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/162"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/163"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/164"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/165"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/166"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/167"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/168"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/169"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/170"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/171"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/172"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/173"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/174"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/175"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/176"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/177"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/178"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/179"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/180"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/181"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/182"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/183"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/184"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/185"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/186"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/187"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/188"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/189"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/190"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/191"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/192"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/193"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/194"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/195"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/196"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/197"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/198"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/199"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/200"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/201"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/202"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/203"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/204"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/205"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/206"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/207"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/208"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/209"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/210"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/211"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/212"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/213"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/214"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/215"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/216"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/217"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/218"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/219"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/220"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/221"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/222"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/223"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/224"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/225"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/226"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/227"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/228"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/229"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/230"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/231"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/232"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/233"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/234"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/235"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/236"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/237"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/238"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/239"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/240"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/241"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/242"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/243"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/244"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/245"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/246"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/247"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/248"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/249"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/250"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/251"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/252"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/253"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/254"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/255"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/256"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/257"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/258"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/259"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/260"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/261"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/262"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/263"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/264"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/265"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/266"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/267"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/268"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/269"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/270"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/271"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/272"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/273"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/274"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/275"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/276"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/277"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/278"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/279"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/280"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/281"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/282"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/283"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/284"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/285"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/286"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/287"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/288"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/289"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/290"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/291"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/292"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/293"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/294"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/295"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/296"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/297"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/298"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/299"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/300"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/301"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/302"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/303"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/304"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/305"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/306"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/307"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/308"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/309"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/310"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/311"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/312"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/313"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/314"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/315"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/316"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/317"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/318"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/319"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/320"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/321"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/322"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/323"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/324"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/325"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/326"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/327"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/328"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/329"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/330"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/331"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/332"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/333"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/334"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/335"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/336"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/337"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/338"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/339"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/340"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/341"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/342"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/343"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/344"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/345"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/346"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/347"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/348"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/349"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/350"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/351"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/352"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/353"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/354"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/355"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/356"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/357"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/358"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/359"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/360"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/361"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/362"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/363"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/364"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/365"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/366"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/367"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/368"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/369"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/370"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/371"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/372"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/373"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/374"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/375"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/376"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/377"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/378"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/379"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/380"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/381"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/382"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/383"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/384"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/385"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/386"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/387"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/388"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/389"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/390"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/391"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/392"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/393"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/394"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/395"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/396"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/397"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/398"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/399"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/400"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/401"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/402"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/403"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/404"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/405"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/406"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/407"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/408"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/409"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/410"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/411"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/412"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/413"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/414"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/415"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/416"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/417"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/418"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/419"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/420"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/421"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/422"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/423"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/424"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/425"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/426"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/427"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/428"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/429"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/430"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/431"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/432"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/433"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/434"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/435"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/436"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/437"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/438"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/439"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/440"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/441"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/442"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/443"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/444"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/bufferViews/445"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/0"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/1"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/2"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/3"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/4"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/5"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/6"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/7"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/8"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/9"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/10"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/11"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/12"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/13"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/14"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/15"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/16"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/17"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/18"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/19"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/20"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/21"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/22"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/23"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/24"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/25"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/26"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/27"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/28"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/29"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/30"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/31"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/32"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/33"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/34"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/35"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/36"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/37"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/38"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/39"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/40"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/41"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/42"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/43"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/44"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/45"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/46"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/47"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/48"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/49"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/50"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/51"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/52"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/53"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/54"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/55"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/56"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/57"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/58"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/59"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/60"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/61"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/62"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/63"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/64"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/65"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/66"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/67"
+      },
+      {
+        "code": "UNUSED_OBJECT",
+        "message": "This object may be unused.",
+        "severity": 2,
+        "pointer": "/images/68"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/0"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/1"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/2"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/3"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/4"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/5"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/6"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/7"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/8"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/9"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/10"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/11"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/12"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/13"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/14"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/15"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/16"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/17"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/18"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/19"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/20"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/21"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/22"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/23"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/24"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/25"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/26"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/27"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/28"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/29"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/30"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/31"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/32"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/33"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/34"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/35"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/36"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/37"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/38"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/39"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/40"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/41"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/42"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/43"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/44"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/45"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/46"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/47"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/48"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/49"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/50"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/51"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/52"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/53"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/54"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/55"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/56"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/57"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/58"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/59"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/60"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/61"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/62"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/63"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/64"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/65"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/66"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/67"
+      },
+      {
+        "code": "IMAGE_UNRECOGNIZED_FORMAT",
+        "message": "Image format not recognized.",
+        "severity": 1,
+        "pointer": "/images/68"
+      }
+    ],
+    "truncated": false
+  },
+  "info": {
+    "version": "2.0",
+    "generator": "glTF-Transform v4.3.0",
+    "extensionsUsed": [
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression",
+      "KHR_materials_clearcoat",
+      "KHR_materials_emissive_strength",
+      "KHR_materials_ior",
+      "KHR_materials_sheen",
+      "KHR_materials_specular",
+      "KHR_materials_transmission",
+      "KHR_materials_volume",
+      "KHR_texture_basisu",
+      "KHR_texture_transform"
+    ],
+    "extensionsRequired": [
+      "EXT_texture_webp",
+      "KHR_draco_mesh_compression",
+      "KHR_texture_basisu",
+      "KHR_texture_transform"
+    ],
+    "resources": [
+      {
+        "pointer": "/buffers/0",
+        "mimeType": "application/gltf-buffer",
+        "storage": "glb",
+        "byteLength": 3263696
+      },
+      {
+        "pointer": "/images/0",
+        "storage": "external",
+        "uri": "textures/015157f3ec547c7d36aebeb265edb960a165ed806aa8bfdb2d5a90dbe19b33fa.ktx2"
+      },
+      {
+        "pointer": "/images/1",
+        "storage": "external",
+        "uri": "textures/df3bd8eb5455e8ccf5b74dace917db8c27779fa34f4f5c670d36ef8236fd4fb1.ktx2"
+      },
+      {
+        "pointer": "/images/2",
+        "storage": "external",
+        "uri": "textures/308138277e4e40d4e5cfae9c5d7a1e024c01d6f1300ebe5ec5033897e13025ba.ktx2"
+      },
+      {
+        "pointer": "/images/3",
+        "storage": "external",
+        "uri": "textures/553b2056e4279a4310c574788d7cb5eb76c34ce8a64781e75a65368fc028cf7d.ktx2"
+      },
+      {
+        "pointer": "/images/4",
+        "storage": "external",
+        "uri": "textures/89abc77953d1900385ee160aae33958e7c834f41ae69ad14bdbb076b642850b1.ktx2"
+      },
+      {
+        "pointer": "/images/5",
+        "storage": "external",
+        "uri": "textures/19c858514ef78c2bb698850d41e6c367c97565d655773ae3a2ea6347c7888b14.ktx2"
+      },
+      {
+        "pointer": "/images/6",
+        "storage": "external",
+        "uri": "textures/bafd8c32eb00887fdf4451c4404abc295409ba5d7c6e9123e8002c6131721c7e.ktx2"
+      },
+      {
+        "pointer": "/images/7",
+        "storage": "external",
+        "uri": "textures/79a8b467dbe815edf89a92529e75b265db9ad8405e937593d7bee0e9b4f1efea.ktx2"
+      },
+      {
+        "pointer": "/images/8",
+        "storage": "external",
+        "uri": "textures/48d9128545d3351dc7d4088c8458083bdd39eb4d10657947ac572bb743a704c3.ktx2"
+      },
+      {
+        "pointer": "/images/9",
+        "storage": "external",
+        "uri": "textures/11afd551467bfd0f4bef1afd45e8e6122d99a7772d5d37dbddd63e89d59b6f34.ktx2"
+      },
+      {
+        "pointer": "/images/10",
+        "storage": "external",
+        "uri": "textures/389f1abe1415e4fe0360335501494e26cca6389d7a964d18f5bc323887c6bfba.ktx2"
+      },
+      {
+        "pointer": "/images/11",
+        "storage": "external",
+        "uri": "textures/81e9d779bc216959d8cf9a9dca068cb106c65cdf396f5f74c4bf1642d22aedb1.ktx2"
+      },
+      {
+        "pointer": "/images/12",
+        "storage": "external",
+        "uri": "textures/9760d377bebff1956438988e10e4d3b145446b2e3301110426a1c2b2bd6dd010.ktx2"
+      },
+      {
+        "pointer": "/images/13",
+        "storage": "external",
+        "uri": "textures/c76819973a05bff3008eeb3afdc01d643cc432e2a48fe876e08e8b55c2975548.ktx2"
+      },
+      {
+        "pointer": "/images/14",
+        "storage": "external",
+        "uri": "textures/5ee479fd630d0f47e0d0f07e0c688fbca824c717c7d1598ef9770057093382de.ktx2"
+      },
+      {
+        "pointer": "/images/15",
+        "storage": "external",
+        "uri": "textures/fcdaa05be687d3934d17dfe35de7567a05c071d327bdb1726c98d1867a1b3afd.ktx2"
+      },
+      {
+        "pointer": "/images/16",
+        "storage": "external",
+        "uri": "textures/a4af0e5e998384f6448c2c4e9e4436c82594eab9e0d615b9c770f081f4691207.ktx2"
+      },
+      {
+        "pointer": "/images/17",
+        "storage": "external",
+        "uri": "textures/e4e3d9ad623a22917c8a2f3121b310dc5d3c7d5c9ea7dd4bf29c83846beacd35.ktx2"
+      },
+      {
+        "pointer": "/images/18",
+        "storage": "external",
+        "uri": "textures/becbbfb2ec5e87ddeb85dd836155887b9e9d1f5298f9cfe6bbd03009b179f08b.ktx2"
+      },
+      {
+        "pointer": "/images/19",
+        "storage": "external",
+        "uri": "textures/7648207581f98082dada28b71e6e220ba424662fc67aa55e46e72a835da6c087.ktx2"
+      },
+      {
+        "pointer": "/images/20",
+        "storage": "external",
+        "uri": "textures/e945ff8118ca3e86551284f99413449cc42120ce7b7bc95f6ba3de6622ace908.ktx2"
+      },
+      {
+        "pointer": "/images/21",
+        "storage": "external",
+        "uri": "textures/6f8b2e4d98d504e71e82203554bad859c933cc05dd26156cbd10fa02c5c7e5c8.ktx2"
+      },
+      {
+        "pointer": "/images/22",
+        "storage": "external",
+        "uri": "textures/d84efab97df3f9eaaba325e85d6710f953cecc08854ca25cd513a85e25eb2c19.ktx2"
+      },
+      {
+        "pointer": "/images/23",
+        "storage": "external",
+        "uri": "textures/221a66b9d37166d9e9cf7dd28e094cd8a29bb06a0f547ce7a465aa2309129626.ktx2"
+      },
+      {
+        "pointer": "/images/24",
+        "storage": "external",
+        "uri": "textures/23133f2a6e609328ca1caebd613fdfffd2c8236757aa46a96da6353c77e856c5.ktx2"
+      },
+      {
+        "pointer": "/images/25",
+        "storage": "external",
+        "uri": "textures/7b55d731e4afc0cbcc0fa675c1cc380cb4766218e24a8c131059fa8b6c0c2b48.ktx2"
+      },
+      {
+        "pointer": "/images/26",
+        "storage": "external",
+        "uri": "textures/9d781ca809fc0718d241a7d99c1f2d141b92072c0b048c9301a8428ff60ca4c6.ktx2"
+      },
+      {
+        "pointer": "/images/27",
+        "storage": "external",
+        "uri": "textures/4139401b27400577ac283450de99182d6532572bab73e954379886cdec7371ae.ktx2"
+      },
+      {
+        "pointer": "/images/28",
+        "storage": "external",
+        "uri": "textures/91759dbe2810c8b1903457d64c9954eb21e594f73396305abd4e9fc670ae6bc4.ktx2"
+      },
+      {
+        "pointer": "/images/29",
+        "storage": "external",
+        "uri": "textures/b946fb92b31438691fc1422cdb920e6837b3dba37ce7fc8ecd515f27df247789.ktx2"
+      },
+      {
+        "pointer": "/images/30",
+        "storage": "external",
+        "uri": "textures/fc3a37ce7c6b752077edbd6ae54ae874e2f3ae272cd9fb1c04c51bcaeb51c374.ktx2"
+      },
+      {
+        "pointer": "/images/31",
+        "storage": "external",
+        "uri": "textures/093b53ec883b92c615dfba429c1b9c62398746840a306152a220d37c61e2165a.ktx2"
+      },
+      {
+        "pointer": "/images/32",
+        "storage": "external",
+        "uri": "textures/6ec1d17ebbe1ca17aa8325b41d705abb35e013f16194ac55fd37ad3870c6ee5b.ktx2"
+      },
+      {
+        "pointer": "/images/33",
+        "storage": "external",
+        "uri": "textures/56adbeeeed25f51210004ea3f72b00912926ac770586386ae2e9d8b96623ef1f.ktx2"
+      },
+      {
+        "pointer": "/images/34",
+        "storage": "external",
+        "uri": "textures/c7eb3f89ef78ef2b92752a1f5917f2602520f65cb124b9bdd67df9147b5c6a23.ktx2"
+      },
+      {
+        "pointer": "/images/35",
+        "storage": "external",
+        "uri": "textures/6476d9b0d175068d94cfda7d8c3bbd630e54bb6e606bd38ac6cfbc487fcb8dcd.ktx2"
+      },
+      {
+        "pointer": "/images/36",
+        "storage": "external",
+        "uri": "textures/a6c4ef27543399d94e60946a45153287185a16d4969b00706325050d002aedd7.ktx2"
+      },
+      {
+        "pointer": "/images/37",
+        "storage": "external",
+        "uri": "textures/cd0932b55f15ffc462dae6415cefde013cb0294f6f085a9cf1d9d0826f8649b9.ktx2"
+      },
+      {
+        "pointer": "/images/38",
+        "storage": "external",
+        "uri": "textures/b5c6e6d262a26fcee9080b8356a5e3ace291f5d66fd3aacbd88a4c433a2c5d6a.ktx2"
+      },
+      {
+        "pointer": "/images/39",
+        "storage": "external",
+        "uri": "textures/a37f8485c69e3001291f4593e238c9b4b47ad42017ad073f540ded4c180bca1d.ktx2"
+      },
+      {
+        "pointer": "/images/40",
+        "storage": "external",
+        "uri": "textures/68878e65aec163772c1727508cb47a4062d6da96bcae41ceb4a25acb00f9347a.ktx2"
+      },
+      {
+        "pointer": "/images/41",
+        "storage": "external",
+        "uri": "textures/c199b5824cdb521251b875d5723aaa9a62ce59b07ebf4ad64dfcbfffda7c5620.ktx2"
+      },
+      {
+        "pointer": "/images/42",
+        "storage": "external",
+        "uri": "textures/db7aada78c58f1554f345898395bf5c3f5a0024f0c1ffcad4e3f12b2e085a46e.ktx2"
+      },
+      {
+        "pointer": "/images/43",
+        "storage": "external",
+        "uri": "textures/c4b56ecc313a42ba0c910928e5454bba1e7cae6020e6ac1da840eb1415ff62b2.ktx2"
+      },
+      {
+        "pointer": "/images/44",
+        "storage": "external",
+        "uri": "textures/68f116c8bf685963814160dd2495a20ec4e57eb761a766a847f3f8bc35cc3648.ktx2"
+      },
+      {
+        "pointer": "/images/45",
+        "storage": "external",
+        "uri": "textures/9c720855dfdfbc94646b850716da84e6db26d8c81113c92818227ec5f9af8a79.ktx2"
+      },
+      {
+        "pointer": "/images/46",
+        "storage": "external",
+        "uri": "textures/2510a4b1d0058502c210a5a798fddc3b8f09dc437a47cbebeedca39bf82aeb68.ktx2"
+      },
+      {
+        "pointer": "/images/47",
+        "storage": "external",
+        "uri": "textures/fb9b732672b0bbff198521c8bf9c6e3a5b7210a0f85380814cc5af07a50585bb.ktx2"
+      },
+      {
+        "pointer": "/images/48",
+        "storage": "external",
+        "uri": "textures/638084e28f539d30f984c65f821cbaf68c550fe9c370aedebb8ece95f876c187.ktx2"
+      },
+      {
+        "pointer": "/images/49",
+        "storage": "external",
+        "uri": "textures/6923726aa31e0c9f5cfda833af8d43ba47ca0a09da42fa85e9d6e69722c6ea56.ktx2"
+      },
+      {
+        "pointer": "/images/50",
+        "storage": "external",
+        "uri": "textures/b1317dd8243ae0ae6700a5ca8aabc9487a7370582ac541fabe4b95066ad7b3ca.ktx2"
+      },
+      {
+        "pointer": "/images/51",
+        "storage": "external",
+        "uri": "textures/511aafe12d72f0aab5110035e628bac19c304eb1280d1e54e7a364562ece97bc.ktx2"
+      },
+      {
+        "pointer": "/images/52",
+        "storage": "external",
+        "uri": "textures/7e62d5cc797c88312546ecd7243f3b3bcac080daecc2cb6387c8183d29bfa44c.ktx2"
+      },
+      {
+        "pointer": "/images/53",
+        "storage": "external",
+        "uri": "textures/99314a72a9478fc7961df8ecb17bd06577b05a1323af0f98c9e24ae909a26e29.ktx2"
+      },
+      {
+        "pointer": "/images/54",
+        "storage": "external",
+        "uri": "textures/1626862e80017b53a7a03e0d7ec148142e1f9e5f7e1b22699c2bdb5d6f40b93c.ktx2"
+      },
+      {
+        "pointer": "/images/55",
+        "storage": "external",
+        "uri": "textures/25a864d0a51843befad8c923fcaa735b7392758f24582e09c11f3c06122710d1.ktx2"
+      },
+      {
+        "pointer": "/images/56",
+        "storage": "external",
+        "uri": "textures/f253471d53b65a8d35e1ebcd28797751a5aa2fc07379c3b00cf6b0101fcd1bd6.ktx2"
+      },
+      {
+        "pointer": "/images/57",
+        "storage": "external",
+        "uri": "textures/4f56adc49de1dc6942948fa526f887fc2fa4d093ee3c0187195a3df0f32e2d51.ktx2"
+      },
+      {
+        "pointer": "/images/58",
+        "storage": "external",
+        "uri": "textures/174cb639e93024e16e85641caa2547156a03241d048d6e5284da16e0a8966ad3.ktx2"
+      },
+      {
+        "pointer": "/images/59",
+        "storage": "external",
+        "uri": "textures/44eaa9a1d5bac4b6006a973ebad441ac15d9b0c157ca46c03a52eea545c6d067.ktx2"
+      },
+      {
+        "pointer": "/images/60",
+        "storage": "external",
+        "uri": "textures/4320404fbea0cd1a8951afaa2cbba2a006a373fd2e9c4c283ebaa2afc2403ad0.ktx2"
+      },
+      {
+        "pointer": "/images/61",
+        "storage": "external",
+        "uri": "textures/e1aed4cef75107cb0258df65bbe875983e48fcab0296af4b7d9f7b882c35d8e6.ktx2"
+      },
+      {
+        "pointer": "/images/62",
+        "storage": "external",
+        "uri": "textures/6e148f65c518eca895e1101f8891f05950e67614a9e2d92cc6e7f9177cc46f12.ktx2"
+      },
+      {
+        "pointer": "/images/63",
+        "storage": "external",
+        "uri": "textures/061d4f3626033ca1b6c2a181be01cfd4c4a6d4bb18b8b08d5b0c029e08427d60.ktx2"
+      },
+      {
+        "pointer": "/images/64",
+        "storage": "external",
+        "uri": "textures/2047da21c16c237a91d786b200220a984550c8b8c7afd219a8ccf175516ea098.ktx2"
+      },
+      {
+        "pointer": "/images/65",
+        "storage": "external",
+        "uri": "textures/4053eda5192aedac6f49ee0a6f4d22806a503e2482a0b00cbe6bdcc2fde82529.ktx2"
+      },
+      {
+        "pointer": "/images/66",
+        "storage": "external",
+        "uri": "textures/208629c7b40befada37988b501808a4cf6dbdbfa58afaa31c44b8edebcaca384.ktx2"
+      },
+      {
+        "pointer": "/images/67",
+        "storage": "external",
+        "uri": "textures/511aafe12d72f0aab5110035e628bac19c304eb1280d1e54e7a364562ece97bc.ktx2"
+      },
+      {
+        "pointer": "/images/68",
+        "storage": "external",
+        "uri": "textures/5e64e492880f05dfcdb07a78daea1648a8a38c50fef10f11330cf1e73fff79f2.ktx2"
+      }
+    ],
+    "animationCount": 0,
+    "materialCount": 68,
+    "hasMorphTargets": false,
+    "hasSkins": false,
+    "hasTextures": true,
+    "hasDefaultScene": true,
+    "drawCallCount": 446,
+    "totalVertexCount": 456393,
+    "totalTriangleCount": 440859,
+    "maxUVs": 2,
+    "maxInfluences": 0,
+    "maxAttributes": 6
+  }
+}

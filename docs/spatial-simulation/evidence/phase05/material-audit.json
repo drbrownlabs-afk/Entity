@@ -1,0 +1,227 @@
+{
+  "normal_mapped": 96,
+  "missing_tangents": [],
+  "leaf_materials": [
+    {
+      "name": "leaves",
+      "alpha": "MASK",
+      "cutoff": 0.4,
+      "doubleSided": true,
+      "base": {
+        "baseColorFactor": [
+          0.3499999940395355,
+          0.949999988079071,
+          0.3499999940395355,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 14
+        }
+      },
+      "normal": true
+    },
+    {
+      "name": "R1 living wall green 0",
+      "alpha": "MASK",
+      "cutoff": 0.4,
+      "doubleSided": true,
+      "base": {
+        "baseColorFactor": [
+          0.20000000298023224,
+          0.6499999761581421,
+          0.18000000715255737,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 14
+        }
+      },
+      "normal": true
+    },
+    {
+      "name": "R1 living wall green 2",
+      "alpha": "MASK",
+      "cutoff": 0.4,
+      "doubleSided": true,
+      "base": {
+        "baseColorFactor": [
+          0.23999999463558197,
+          0.7799999713897705,
+          0.4000000059604645,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 14
+        }
+      },
+      "normal": true
+    },
+    {
+      "name": "R1 living wall green 1",
+      "alpha": "MASK",
+      "cutoff": 0.4,
+      "doubleSided": true,
+      "base": {
+        "baseColorFactor": [
+          0.4000000059604645,
+          1,
+          0.30000001192092896,
+          1
+        ],
+        "roughnessFactor": 0.5,
+        "metallicFactor": 0,
+        "baseColorTexture": {
+          "index": 14
+        }
+      },
+      "normal": true
+    }
+  ],
+  "glass": [
+    {
+      "name": "Window glazing reference",
+      "extensions": {
+        "KHR_materials_clearcoat": {
+          "clearcoatFactor": 0.10000000149011612,
+          "clearcoatRoughnessFactor": 0.009999999776482582
+        },
+        "KHR_materials_ior": {
+          "ior": 1.5199999809265137
+        },
+        "KHR_materials_specular": {
+          "specularColorFactor": [
+            1.100000023841858,
+            1.100000023841858,
+            1.100000023841858
+          ]
+        },
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1
+        }
+      }
+    },
+    {
+      "name": "GlassTransmission",
+      "extensions": {
+        "KHR_materials_transmission": {
+          "transmissionFactor": 1
+        },
+        "KHR_materials_volume": {
+          "thicknessFactor": 0.07500000298023224,
+          "thicknessTexture": {
+            "index": 68
+          }
+        }
+      }
+    }
+  ],
+  "nodes": 4531,
+  "mesh_count": 446,
+  "texture_count": 69,
+  "ids": 4514,
+  "doors": [
+    {
+      "id": "sim:p2:door:MEETING-AREA-01",
+      "leaf_id": "sim:p2:door:MEETING-AREA-01:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p2:door:A",
+      "leaf_id": "sim:p2:door:A:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p2:door:B",
+      "leaf_id": "sim:p2:door:B:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p2:door:C",
+      "leaf_id": "sim:p2:door:C:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p2:door:D",
+      "leaf_id": "sim:p2:door:D:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p2:door:sim:ROOM-E",
+      "leaf_id": "sim:p2:door:sim:ROOM-E:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p2:door:security",
+      "leaf_id": "sim:p2:door:security:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:security:raised",
+      "leaf_id": "sim:p3:security:raised:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:sim:CALL-01:door",
+      "leaf_id": "sim:p3:sim:CALL-01:door:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:sim:CALL-02:door",
+      "leaf_id": "sim:p3:sim:CALL-02:door:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:WC:door",
+      "leaf_id": "sim:p3:WC:door:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:locker:0:0:door",
+      "leaf_id": "sim:p3:locker:0:0:door:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:locker:0:1:door",
+      "leaf_id": "sim:p3:locker:0:1:door:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:locker:0:2:door",
+      "leaf_id": "sim:p3:locker:0:2:door:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:locker:0:3:door",
+      "leaf_id": "sim:p3:locker:0:3:door:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:locker:1:0:door",
+      "leaf_id": "sim:p3:locker:1:0:door:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:locker:1:1:door",
+      "leaf_id": "sim:p3:locker:1:1:door:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:locker:1:2:door",
+      "leaf_id": "sim:p3:locker:1:2:door:leaf",
+      "hierarchy_preserved": true
+    },
+    {
+      "id": "sim:p3:locker:1:3:door",
+      "leaf_id": "sim:p3:locker:1:3:door:leaf",
+      "hierarchy_preserved": true
+    }
+  ],
+  "missing_semantic_ids": [],
+  "passed": true
+}

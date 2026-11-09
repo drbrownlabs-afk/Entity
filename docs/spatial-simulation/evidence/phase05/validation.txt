@@ -1,0 +1,38 @@
+GLTF_VALIDATION 0 errors 138 warnings [
+  {
+    code: 'UNSUPPORTED_EXTENSION',
+    message: "Cannot validate an extension as it is not supported by the validator: 'KHR_draco_mesh_compression'.",
+    severity: 2,
+    pointer: '/extensionsUsed/1'
+  },
+  {
+    code: 'UNSUPPORTED_EXTENSION',
+    message: "Cannot validate an extension as it is not supported by the validator: 'KHR_texture_basisu'.",
+    severity: 2,
+    pointer: '/extensionsUsed/9'
+  },
+  {
+    code: 'VALUE_NOT_IN_LIST',
+    message: "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+    severity: 1,
+    pointer: '/images/0/mimeType'
+  },
+  {
+    code: 'URI_GLB',
+    message: 'URI is used in GLB container.',
+    severity: 2,
+    pointer: '/images/0/uri'
+  },
+  {
+    code: 'VALUE_NOT_IN_LIST',
+    message: "Invalid value 'image/ktx2'. Valid values are ('image/jpeg', 'image/png', 'image/webp').",
+    severity: 1,
+    pointer: '/images/1/mimeType'
+  },
+  {
+    code: 'URI_GLB',
+    message: 'URI is used in GLB container.',
+    severity: 2,
+    pointer: '/images/1/uri'
+  }
+]
