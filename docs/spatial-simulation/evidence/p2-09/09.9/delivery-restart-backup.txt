@@ -1,0 +1,21 @@
+OK · fresh_schema_5
+OK · health
+OK · viewer_to_observation_to_state
+OK · presence_to_verified_output
+OK · tracks_and_zones_entityized
+OK · typed_zone_relationship
+OK · query_with_state_memory_and_context
+OK · read_only_actor_cannot_act
+OK · authorized_action_verified
+OK · trace_recorded
+OK · core_disconnection_retains_outbox
+OK · edge_restart_retains_outbox
+OK · persistent_state_events_memory_relations_capabilities
+OK · agent_action_idempotent_after_restart
+OK · outbox_recovery_no_duplicate_events
+OK · source_disconnection_visible
+OK · source_reconnection_restores_presence
+OK · restored_database_integrity
+OK · backup_restore_preserves_world_and_history
+OK · backup_restore_preserves_agent_trace
+Informe: .runtime/release-demo/run-0cidxkp3/report.json

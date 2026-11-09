@@ -191,3 +191,8 @@ Rama codex/synthetic-office-geometry-handoff. Generados docs/spatial-simulation/
 - **Proceso 3:** posterior; no se autoriza implementación de agentes todavía.
 - **Decisiones:** ver `docs/ENTITY-MASTER-SPEC.md` y `docs/DECISION-LOG.md` (consolidación 2026-11-08). El roadmap global 08–15 está revocado como secuencia ejecutable; antiguas fases 10/11 reasignadas.
 - **Operación documental:** dos archivos redundantes creados por error fueron eliminados en `2a723211`; se conserva el sistema original de memoria compartida. Esta actualización es **solo documentación**: no se modificó software ni se ejecutaron tests.
+
+
+### P2-09 — Verificación de entrega 2026-11-09
+
+Reparadas incompatibilidad wire Edge aditiva y pruebas antiguas que esperaban Mall. Regresión local110API+1nueva/15frontendP1/11P2 y navegador2desktop/táctil PASS; reinicio/backup real PASS. HTTP público200 coworking-only verificado desde GitHub runner; CoreHTTPS público continúa sin configurar. Evidencias de publicación, fallos iniciales y correcciones en p2-09/09.9. Fuente de reparación e4e42fd, rama codex/spatial-simulation; resultados definitivos CI/publicación se registran al observar su conclusión. P2-09 EN VALIDACIÓN; sin aprobación humana ni fase10.

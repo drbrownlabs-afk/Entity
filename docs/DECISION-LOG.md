@@ -166,3 +166,8 @@ La orden actual autoriza ejecución autónoma de09.1–09.9 según docs/P2-09.1-
 ## 2026-11-09 — P2-09: cierre técnico del primer circuito de percepción
 
 ProcesoP2, no numeraciónhistóricaP1. Reusar seisCameraID delinventario08, cámaras07/08 continúan previstas. Captura por el mismoPlayCanvas y un dummytemporal reutilizado/MIT sin personajesdefinitivos. Percepción consume soloPNG/metadatos/cámaracalibrada en sandboxPID/red/FS; groundtruth exclusivamenteevaluador. Reutilizar YOLOX-S/Norfair/OSNet-AINCPU; P1 integra observacionesconbbox/confianza/hash y relaciones provisionallySameVisualSubject, con permisos y referencias temporales verificadas. El scoresignifica hipótesis, no probabilidad/identidadcivil/autorizacióndeacceso ni conteo depersonas. Registro de memoriaCore es local y no se envía aladaptadordedispositivo. P2 permite elegirrun sin cambiaractivo global; consultaúnicoCore existente, no crea otrovisor/grafo. P2-09 ENVALIDACIÓN con limitaciones de recall/fragmentación/CPU; no producciónreal ni CoreHTTPS desplegado. 10/RTSP/ONVIF/VMS/reconstrucción3D/P3 no iniciados por esta entrega. Canon sin modificaciones.
+
+
+## 2026-11-09 — Entrega P2-09 conserva compatibilidad P1 y retirada Mall
+
+La evidencia de imagen es aditiva: omitir campos nuevos nulos al proyectar Edge legado conserva su contrato wire; no omitir campos de imagen realmente enviados. Tests históricos/fuentes compartidas de P1 se preservan; pruebas y paquete público activos verifican coworking. Workflow temporal con token nativo de runner permitió recuperar diagnóstico real sin exponer credenciales; eliminado tras uso. La verificación Pages debe comprobar fuente publicada tras propagación/CDN, no solo push exitoso. No cambia canon, alcance ni aceptación de fases.

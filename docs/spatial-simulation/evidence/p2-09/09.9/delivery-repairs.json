@@ -1,0 +1,32 @@
+{
+  "recorded_at": "2026-11-09T15:38:00.006926+00:00",
+  "regression": {
+    "existing_api_suite": {
+      "passed": 110,
+      "seconds": 150.417
+    },
+    "new_wire_compatibility": {
+      "passed": 1,
+      "checks": [
+        "legacy tracks exact shape",
+        "image bbox/confidence/frame hash preserved"
+      ]
+    },
+    "p1_frontend_tests": 15,
+    "p2_tests": 11,
+    "active_browser_tests": {
+      "passed": 2,
+      "desktop_seconds": 18.8,
+      "touch_emulation_seconds": 39.7,
+      "physical_mobile": false
+    },
+    "real_http_restart_backup": "PASS; original P1 fixture only, not active Mall application"
+  },
+  "repairs": [
+    "Preserve legacy Edge payload shape when optional image evidence is absent",
+    "Replace active Mall UI expectations with actual coworking redirect, loaded original scene and desktop/touch checks; historical tests retained",
+    "Package coworking only for delivery; preserve committed P1 source and HTTP tests",
+    "Extend Pages propagation deadline and use source-specific manifest request to avoid stale cached deploy verification"
+  ],
+  "remote_final_status": "pending observation; do not infer success from local results"
+}
