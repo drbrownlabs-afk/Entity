@@ -1,10 +1,14 @@
 {
-  "source_commit": "bb6a3568b5fc8abb65c2bfed0b6955a247e796c6",
+  "source_commit": "37cd727c5c237e48c6d0b2cc2cf6fdb7909cb39b",
   "jobs": {
     "129252462392": {
-      "error_context": [],
-      "log_lines": 0,
-      "download_error": "the response contains terminal escape sequences; pass --allow-escape-sequences to output it anyway\n",
+      "error_context": [
+        "2026-11-09T15:23:12.0600785Z (node:2386) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.",
+        "2026-11-09T15:23:22.6575325Z \u2139 fail 0",
+        "2026-11-09T15:26:32.2295073Z ##[error]Process completed with exit code 1."
+      ],
+      "log_lines": 484,
+      "download_error": "",
       "steps": [
         {
           "name": "Set up job",
@@ -87,9 +91,17 @@
       ]
     },
     "129252461537": {
-      "error_context": [],
-      "log_lines": 0,
-      "download_error": "the response contains terminal escape sequences; pass --allow-escape-sequences to output it anyway\n",
+      "error_context": [
+        "2026-11-09T15:23:42.6636650Z test_rest_http_error_and_atomic_validation (test_integrations.IntegrationTests.test_rest_http_error_and_atomic_validation) ... ok",
+        "2026-11-09T15:23:42.7413583Z test_durable_outbox_failure_recovery_same_body (test_pipeline.EdgeTests.test_durable_outbox_failure_recovery_same_body) ... ok",
+        "2026-11-09T15:23:57.9950365Z {\"presence_to_welcome\": \"passed\", \"absence_to_idle\": \"passed\", \"manual_override\": \"passed\", \"declared_capability\": \"3a7c7e03-cb52-46ed-8640-543d55f510b9\", \"restart_idempotency\": \"passed\", \"simulated\": true, \"faults\": {\"fail\": \"failed\", \"timeout\": \"timed_out\", \"mismatch\": \"verification_failed\"}, \"output_events\": 7}",
+        "2026-11-09T15:24:00.3537936Z Traceback (most recent call last):",
+        "2026-11-09T15:24:00.3550635Z     raise AssertionError(name)",
+        "2026-11-09T15:24:00.3551106Z AssertionError: viewer_to_observation_to_state",
+        "2026-11-09T15:24:00.4271502Z ##[error]Process completed with exit code 1."
+      ],
+      "log_lines": 485,
+      "download_error": "",
       "steps": [
         {
           "name": "Set up job",
@@ -202,9 +214,29 @@
       ]
     },
     "129252462220": {
-      "error_context": [],
-      "log_lines": 0,
-      "download_error": "the response contains terminal escape sequences; pass --allow-escape-sequences to output it anyway\n",
+      "error_context": [
+        "2026-11-09T15:23:11.6067328Z npm cache is not found",
+        "2026-11-09T15:23:27.7518717Z \u2139 fail 0",
+        "2026-11-09T15:26:10.6612618Z     Test timeout of 45000ms exceeded.",
+        "2026-11-09T15:26:10.6613606Z     Error: page.waitForFunction: Test timeout of 45000ms exceeded.",
+        "2026-11-09T15:26:10.6627586Z     > 2 | test('real renderer, shared camera state, navigation and actions',async({page})=>{const apiCalls=[];page.on('request',r=>{if(r.url().includes('/v1/'))apiCalls.push(r.url());});const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/?paused');await page.waitForFunction(()=>window.entityDiagnostics?.().rendered);await expect(page.locator('[data-store]')).toHaveCount(7);expect(await page.evaluate(()=>{const c=document.querySelector('#world'),s=document.querySelector('.stage');return c.clientHeight<=s.clientHeight&&c.clientWidth<=s.clientWidth;})).toBeTruthy();await page.getByRole('button',{name:'+1 paso'}).click();let d=await page.evaluate(()=>window.entityDiagnostics());expect(d.cameras).toHaveLength(5);expect(d.cameras.every(c=>c.revision===d.world.revision)).toBeTruthy();for(const v of d.world.visitors){const actual=d.positions.find(p=>p.id===v.id);expect(actual.enabled).toBeTruthy();expect(actual.x).toBeCloseTo(v.x);expect(actual.z).toBeCloseTo(v.z);}await page.getByRole('button',{name:'Activar escena de alerta'}).click();d=await page.evaluate(()=>window.entityDiagnostics());expect(d.world.scene).toBe('alert');expect(d.signColor).toBeGreaterThan(.8);expect(d.cameras.every(c=>c.revision===d.world.revision)).toBeTruthy();await page.getByRole('button',{name:'Cambiar climatizaci\u00f3n'}).click();expect((await page.evaluate(()=>window.entityDiagnostics())).world.hvac).toBe('eco');expect((await page.evaluate(()=>window.entityDiagnostics())).hvacScale).toBeCloseTo(.45);await page.getByRole('button',{name:'Cerrar unidad seleccionada'}).click();await expect(page.locator('#open')).toHaveText('06/07');await page.getByLabel('Punto de vista').selectOption('north');const download=page.waitForEvent('download');await page.getByRole('button',{name:'Exportar Observation v1'}).click();expect((await download).suggestedFilename()).toBe('entity-observation.json');expect(errors).toEqual([]);expect(apiCalls).toEqual([]);await page.screenshot({path:'../../.runtime/experience-desktop.png',fullPage:true});});",
+        "2026-11-09T15:26:10.6654196Z       3 | test('mobile layout and measured render performance',async({page})=>{await page.setViewportSize({width:390,height:844});await page.goto('/');await page.waitForFunction(()=>window.entityDiagnostics?.().rendered);await page.waitForTimeout(2500);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();const performance=await page.evaluate(()=>window.entityPerformance);expect(performance.frames).toBeGreaterThan(5);const report={viewport:'390x844',frames:performance.frames,elapsed_ms:performance.totalMs,average_fps:performance.frames/(performance.totalMs/1000),renderer:'Chromium/SwiftShader automated test; not physical mobile hardware'};expect(report.average_fps).toBeGreaterThanOrEqual(8);await page.screenshot({path:'../../.runtime/experience-mobile.png',fullPage:true});const fs=await import('node:fs');fs.writeFileSync('../../.runtime/experience-performance.json',JSON.stringify(report,null,2));await page.getByRole('button',{name:'Pausar'}).click();const tick=await page.evaluate(()=>window.entityDiagnostics().world.tick);await page.waitForTimeout(300);expect(await page.evaluate(()=>window.entityDiagnostics().world.tick)).toBe(tick);});",
+        "2026-11-09T15:26:10.6687993Z     Error Context: test-results/experience-real-renderer-s-7c605-tate-navigation-and-actions/error-context.md",
+        "2026-11-09T15:26:10.6689930Z     Test timeout of 45000ms exceeded.",
+        "2026-11-09T15:26:10.6690348Z     Error: page.waitForFunction: Test timeout of 45000ms exceeded.",
+        "2026-11-09T15:26:10.6700298Z       2 | test('real renderer, shared camera state, navigation and actions',async({page})=>{const apiCalls=[];page.on('request',r=>{if(r.url().includes('/v1/'))apiCalls.push(r.url());});const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/?paused');await page.waitForFunction(()=>window.entityDiagnostics?.().rendered);await expect(page.locator('[data-store]')).toHaveCount(7);expect(await page.evaluate(()=>{const c=document.querySelector('#world'),s=document.querySelector('.stage');return c.clientHeight<=s.clientHeight&&c.clientWidth<=s.clientWidth;})).toBeTruthy();await page.getByRole('button',{name:'+1 paso'}).click();let d=await page.evaluate(()=>window.entityDiagnostics());expect(d.cameras).toHaveLength(5);expect(d.cameras.every(c=>c.revision===d.world.revision)).toBeTruthy();for(const v of d.world.visitors){const actual=d.positions.find(p=>p.id===v.id);expect(actual.enabled).toBeTruthy();expect(actual.x).toBeCloseTo(v.x);expect(actual.z).toBeCloseTo(v.z);}await page.getByRole('button',{name:'Activar escena de alerta'}).click();d=await page.evaluate(()=>window.entityDiagnostics());expect(d.world.scene).toBe('alert');expect(d.signColor).toBeGreaterThan(.8);expect(d.cameras.every(c=>c.revision===d.world.revision)).toBeTruthy();await page.getByRole('button',{name:'Cambiar climatizaci\u00f3n'}).click();expect((await page.evaluate(()=>window.entityDiagnostics())).world.hvac).toBe('eco');expect((await page.evaluate(()=>window.entityDiagnostics())).hvacScale).toBeCloseTo(.45);await page.getByRole('button',{name:'Cerrar unidad seleccionada'}).click();await expect(page.locator('#open')).toHaveText('06/07');await page.getByLabel('Punto de vista').selectOption('north');const download=page.waitForEvent('download');await page.getByRole('button',{name:'Exportar Observation v1'}).click();expect((await download).suggestedFilename()).toBe('entity-observation.json');expect(errors).toEqual([]);expect(apiCalls).toEqual([]);await page.screenshot({path:'../../.runtime/experience-desktop.png',fullPage:true});});",
+        "2026-11-09T15:26:10.6712302Z     > 3 | test('mobile layout and measured render performance',async({page})=>{await page.setViewportSize({width:390,height:844});await page.goto('/');await page.waitForFunction(()=>window.entityDiagnostics?.().rendered);await page.waitForTimeout(2500);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();const performance=await page.evaluate(()=>window.entityPerformance);expect(performance.frames).toBeGreaterThan(5);const report={viewport:'390x844',frames:performance.frames,elapsed_ms:performance.totalMs,average_fps:performance.frames/(performance.totalMs/1000),renderer:'Chromium/SwiftShader automated test; not physical mobile hardware'};expect(report.average_fps).toBeGreaterThanOrEqual(8);await page.screenshot({path:'../../.runtime/experience-mobile.png',fullPage:true});const fs=await import('node:fs');fs.writeFileSync('../../.runtime/experience-performance.json',JSON.stringify(report,null,2));await page.getByRole('button',{name:'Pausar'}).click();const tick=await page.evaluate(()=>window.entityDiagnostics().world.tick);await page.waitForTimeout(300);expect(await page.evaluate(()=>window.entityDiagnostics().world.tick)).toBe(tick);});",
+        "2026-11-09T15:26:10.6739274Z     Error Context: test-results/experience-mobile-layout-and-measured-render-performance/error-context.md",
+        "2026-11-09T15:26:10.6740807Z     Test timeout of 45000ms exceeded.",
+        "2026-11-09T15:26:10.6741157Z     Error: page.waitForFunction: Test ended.",
+        "2026-11-09T15:26:10.6750691Z       2 | test('real renderer, shared camera state, navigation and actions',async({page})=>{const apiCalls=[];page.on('request',r=>{if(r.url().includes('/v1/'))apiCalls.push(r.url());});const errors=[];page.on('pageerror',e=>errors.push(e.message));await page.goto('/?paused');await page.waitForFunction(()=>window.entityDiagnostics?.().rendered);await expect(page.locator('[data-store]')).toHaveCount(7);expect(await page.evaluate(()=>{const c=document.querySelector('#world'),s=document.querySelector('.stage');return c.clientHeight<=s.clientHeight&&c.clientWidth<=s.clientWidth;})).toBeTruthy();await page.getByRole('button',{name:'+1 paso'}).click();let d=await page.evaluate(()=>window.entityDiagnostics());expect(d.cameras).toHaveLength(5);expect(d.cameras.every(c=>c.revision===d.world.revision)).toBeTruthy();for(const v of d.world.visitors){const actual=d.positions.find(p=>p.id===v.id);expect(actual.enabled).toBeTruthy();expect(actual.x).toBeCloseTo(v.x);expect(actual.z).toBeCloseTo(v.z);}await page.getByRole('button',{name:'Activar escena de alerta'}).click();d=await page.evaluate(()=>window.entityDiagnostics());expect(d.world.scene).toBe('alert');expect(d.signColor).toBeGreaterThan(.8);expect(d.cameras.every(c=>c.revision===d.world.revision)).toBeTruthy();await page.getByRole('button',{name:'Cambiar climatizaci\u00f3n'}).click();expect((await page.evaluate(()=>window.entityDiagnostics())).world.hvac).toBe('eco');expect((await page.evaluate(()=>window.entityDiagnostics())).hvacScale).toBeCloseTo(.45);await page.getByRole('button',{name:'Cerrar unidad seleccionada'}).click();await expect(page.locator('#open')).toHaveText('06/07');await page.getByLabel('Punto de vista').selectOption('north');const download=page.waitForEvent('download');await page.getByRole('button',{name:'Exportar Observation v1'}).click();expect((await download).suggestedFilename()).toBe('entity-observation.json');expect(errors).toEqual([]);expect(apiCalls).toEqual([]);await page.screenshot({path:'../../.runtime/experience-desktop.png',fullPage:true});});",
+        "2026-11-09T15:26:10.6762838Z       3 | test('mobile layout and measured render performance',async({page})=>{await page.setViewportSize({width:390,height:844});await page.goto('/');await page.waitForFunction(()=>window.entityDiagnostics?.().rendered);await page.waitForTimeout(2500);expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBeTruthy();const performance=await page.evaluate(()=>window.entityPerformance);expect(performance.frames).toBeGreaterThan(5);const report={viewport:'390x844',frames:performance.frames,elapsed_ms:performance.totalMs,average_fps:performance.frames/(performance.totalMs/1000),renderer:'Chromium/SwiftShader automated test; not physical mobile hardware'};expect(report.average_fps).toBeGreaterThanOrEqual(8);await page.screenshot({path:'../../.runtime/experience-mobile.png',fullPage:true});const fs=await import('node:fs');fs.writeFileSync('../../.runtime/experience-performance.json',JSON.stringify(report,null,2));await page.getByRole('button',{name:'Pausar'}).click();const tick=await page.evaluate(()=>window.entityDiagnostics().world.tick);await page.waitForTimeout(300);expect(await page.evaluate(()=>window.entityDiagnostics().world.tick)).toBe(tick);});",
+        "2026-11-09T15:26:10.6794885Z     Error Context: test-results/experience-touch-controls--84374-onfigurable-Core-connection/error-context.md",
+        "2026-11-09T15:26:10.6795440Z   3 failed",
+        "2026-11-09T15:26:10.6866205Z ##[error]Process completed with exit code 1."
+      ],
+      "log_lines": 673,
+      "download_error": "",
       "steps": [
         {
           "name": "Set up job",
