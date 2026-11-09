@@ -1,0 +1,24 @@
+{
+  "gate": "P2-09.9",
+  "touch_emulation": true,
+  "physical_mobile_tested": false,
+  "real_http_core": true,
+  "errors": [],
+  "checks": [
+    "Existing P2 client reads eight actual anonymous tracks, 14 preserved logical/historical persons, hashes and boxes",
+    "Track details/memories/events render from P1; derived state is read-only",
+    "Virtual camera selection resolves the same Core source and latest frame",
+    "Switching runs preserves original onboarding and returns to perception evidence",
+    "Logout clears session and no browser errors"
+  ],
+  "real_http_delay_injected_ms": 3000,
+  "runtime_memory": {
+    "js_heap_bytes": 374155223,
+    "texture_allocation_bytes": 176869772,
+    "vertex_allocation_bytes": 64251300,
+    "source_records": 4514,
+    "render_loop_paused_for_ui_test": true,
+    "fps_measured": false
+  },
+  "passed": true
+}

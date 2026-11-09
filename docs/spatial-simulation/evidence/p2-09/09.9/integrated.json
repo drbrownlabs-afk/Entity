@@ -1,0 +1,117 @@
+{
+  "phase": "P2-09",
+  "status": "EN VALIDACI\u00d3N; technical gates verified, human acceptance pending",
+  "passed": true,
+  "gates": {
+    "P2-09.1": {
+      "technical_gate_passed": true,
+      "evidence": "09.1/audit.json"
+    },
+    "P2-09.2": {
+      "technical_gate_passed": true,
+      "evidence": "09.2/rendered.json"
+    },
+    "P2-09.3": {
+      "technical_gate_passed": true,
+      "evidence": "09.3/calibration.json"
+    },
+    "P2-09.4": {
+      "technical_gate_passed": true,
+      "evidence": "09.4/sequence-checks.json"
+    },
+    "P2-09.5": {
+      "technical_gate_passed": true,
+      "evidence": "09.5/detection-checks.json"
+    },
+    "P2-09.6": {
+      "technical_gate_passed": true,
+      "evidence": "09.6/mot-checks.json"
+    },
+    "P2-09.7": {
+      "technical_gate_passed": true,
+      "evidence": "09.7/mtmc-checks.json"
+    },
+    "P2-09.8": {
+      "technical_gate_passed": true,
+      "evidence": "09.8/core-index.json"
+    },
+    "P2-09.9": {
+      "technical_gate_passed": true,
+      "evidence": "09.9/integrated.json"
+    }
+  },
+  "metrics": {
+    "image_frames": 246,
+    "source_cameras": 6,
+    "source_media_fps": 2,
+    "source_media_duration_seconds": 20,
+    "aggregate_detection_frames_per_second": 4.359025660476389,
+    "aggregate_batch_pipeline_frames_per_second": 3.8198146323756013,
+    "balanced_equivalent_fps_per_camera": 0.6366357720626002,
+    "batch_pipeline_seconds": 64.40103085499959,
+    "median_detection_ms": 211.21848450047764,
+    "p95_detection_ms": 280.3311459992983,
+    "detector_peak_rss_kib": 290940,
+    "mot_peak_rss_kib": 116556,
+    "reid_peak_rss_kib": 170276,
+    "capture_median_ms": 83.5,
+    "visible_actor_instants": 39,
+    "instants_detected_in_any_view": 39,
+    "largest_provisional_component_instants": 39,
+    "per_camera_visible_opportunities": 165,
+    "verified_boxes_iou50": 89,
+    "per_camera_recall": 0.5393939393939394,
+    "provisional_visual_groups": 4,
+    "false_splits_vs_single_evaluation_actor": 3,
+    "false_merge_rate_multiperson": "not estimable from one actor",
+    "forced_loss_media_seconds": [
+      6,
+      7
+    ],
+    "cross_camera_associations": 5,
+    "real_http_observations": 251,
+    "replay_new_effects": false,
+    "browser_touch_emulation_passed": true,
+    "physical_mobile_tested": false,
+    "gpu_used_for_inference": false,
+    "graphics_capture_renderer": "Chromium ANGLE SwiftShader software; cached static color/depth",
+    "runtime_ui_memory": {
+      "js_heap_bytes": 374155223,
+      "texture_allocation_bytes": 176869772,
+      "vertex_allocation_bytes": 64251300,
+      "source_records": 4514,
+      "render_loop_paused_for_ui_test": true,
+      "fps_measured": false
+    },
+    "machine": {
+      "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+      "available_cpu_affinity": 5,
+      "python": "3.12.14"
+    }
+  },
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "original_geometry_and_onboarding_preserved": true,
+  "ground_truth_scope": "Only evaluator reads labels/truth; workers run in isolated PID/network/filesystem mounts and Core receives actual pixel outputs",
+  "limits": [
+    "Controlled single anonymous human fixture, not a real installation or multiperson validation",
+    "Per-view recall53.94%; camera05 edge cropping,06 low detail remain material limitations",
+    "Four provisional visual hypotheses for one evaluator actor; three residual splits, no civil identity",
+    "Batch CPU throughput does not sustain nominal2FPS for each of6 cameras; no live stream/mobile/GPU certification",
+    "Native cached capture profile omits CameraFrame SSAO/bloom/dynamic shadows; original maximum-quality profile preserved separately",
+    "Floor matching uses main native plane, raised floor/occluded feet introduce bias; no surveyed metres",
+    "Score is uncalibrated evidence, never an access authorization",
+    "Core HTTPS production not configured; frontend/API proven against actual localP1",
+    "RTSP/ONVIF/VMS, RGBvolumetric reconstruction, final characters06/07 andP3 remain deferred"
+  ],
+  "phase10_started": false,
+  "regression": {
+    "p1_api_tests": 110,
+    "edge_tests": 10,
+    "p1_frontend_tests": 15,
+    "p2_logic_tests": 11,
+    "real_core_browser_desktop": "PASS",
+    "real_core_browser_touch_with_3s_http_delay": "PASS",
+    "idempotent_replay_and_full_process_restart": "PASS",
+    "remote_ci": "not yet verified at local gate"
+  }
+}

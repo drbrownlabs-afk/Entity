@@ -1,0 +1,4 @@
+# Build-time only; runtime inference uses ONNX Runtime CPU, no PyTorch/GPU required.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.5.1+cpu
+onnx==1.19.1

@@ -1,3 +1,13 @@
+## Estado vigente — P2-09
+
+**P2-09.1–09.9: ejecución técnica completada, EN VALIDACIÓN (2026-11-09).** Rama exclusiva codex/spatial-simulation; autonomía autorizada por el operador, cada gate ejecutado antes de avanzar. Pipeline real de píxeles simulados→YOLOX-S CPU→Norfair→OSNet-AIN→P1 HTTP/SQLite→P2.6 cámaras convencionales calibradas (hipótesis inicial de panorámicas contrastada),246 imágenes/20s,89 detecciones IoU.50,8Tracks anónimos y5 relaciones provisionales persistidas;0 nuevasPerson/identidades civiles. Run p2-09-vision en el mismo Core/sede,470 entidades incluyendo14Person previas (12demo+2históricas); onboarding intacto. Repetición251 duplicados sin nuevos efectos; reinicioP1 y frontend real desktop/táctil con latencia pasan.110 testsAPI,10Edge,15 frontendP1 y11 lógicaP2 PASS. Maestro/4514 registros originales intactos.
+
+En este único recorrido:39/39 instantes visibles detectados en alguna vista y cubiertos por hipótesis principal que cruza4 cámaras. Límites materiales: recall porvista53.94%,3 fragmentaciones extra, cámara05 recortada/06 lejana; sin validación multipersona, identidadcivil o instalaciónfísica. Pipelinebatch CPU3.82 imágenes/s agregadas (~.64FPS/cámara equivalente), no sostiene2FPS simultáneos por cada fuente; render/UI móvil físico yGPU no certificados. Captura cacheada de ensayo sin posprocesado/sombrasdinámicas, perfil arquitectónico original preservado. CoreHTTPS público no configurado: Pages ofrece escena/grabaciones, no backend/SQLite. RTSP/ONVIF/VMS, reconstrucciónRGB3D, personajes definitivos06/07 yP3 quedan diferidos. Fase10 NO iniciada. Evidencia: docs/spatial-simulation/evidence/p2-09/09.9/integrated.json; ejecución registrada enAGENT-WORKLOG. No aceptación humana automática.
+
+---
+
+Cronología anterior conservada; los estados siguientes son históricos cuando contradigan la actualización vigente de arriba.
+
 **Estado vigente:** Fase04-R1 APROBADA por el operador («Fase 4 aprobada, continúa fase 5»). Maestro SHA256 `ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f`. Fase05 EN CURSO: exportación y visor PlayCanvas aislado. Fase06 pendiente de autorización posterior.
 
 **Estado actual R1:** maestro `office-phase04-revision.blend`; 678 comprobaciones y 21 rutas verificadas. Jardín vertical continuo, luz cálida y vidrio reflectivo. Renders de revisión en ejecución; aceptación humana pendiente. [Galería](REVIEW-PHASE04-REVISION.md).
