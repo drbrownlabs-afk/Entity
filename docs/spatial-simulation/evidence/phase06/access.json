@@ -31,5 +31,30 @@
       "url": "https://www.mixamo.com/api/v1/characters",
       "result": "HTTP CONNECT tunnel denied: 403 Forbidden (environment proxy, before Adobe authentication)"
     }
-  ]
+  ],
+  "network_repair_attempt": {
+    "operator_authorized": true,
+    "configuration_read_attempts": 2,
+    "configuration_read_result": "INVALID_ARGUMENT: current environment draft could not be verified",
+    "requested_patch": {
+      "network": {
+        "allowed_domains": [
+          "www.mixamo.com",
+          "mixamo.com"
+        ]
+      }
+    },
+    "save_result": "INVALID_ARGUMENT: Setup could not be completed; saving the draft could not be confirmed.",
+    "diagnostic_history": "not_found; no retained records",
+    "runtime_after_attempt": {
+      "custom_allowed_hosts": [],
+      "policy_state": "enforced"
+    },
+    "fresh_probes_after_attempt": {
+      "https://www.mixamo.com/": "CONNECT 403 Forbidden",
+      "https://mixamo.com/": "CONNECT 403 Forbidden"
+    },
+    "network_access_enabled": false,
+    "blocker": "Environment configuration service did not accept/save the authorized change; no runtime request_changes tool is exposed."
+  }
 }

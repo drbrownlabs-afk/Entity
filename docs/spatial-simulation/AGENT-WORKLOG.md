@@ -138,3 +138,7 @@ Verificación ejecutada: JSON de 12 IDs únicos, ausencia explícita de recursos
 ## 2026-11-09 — Operador elimina requisito de login manual del plan
 
 Se acepta continuar autónomamente sin exigir aquel procedimiento. Dos accesos HTTPS directos a www.mixamo.com (raíz y ruta de API) rechazados por proxy en CONNECT con403, antes de llegar a Adobe. No se atribuye el error a autenticación ni a credenciales. No se descargaron recursos; no hay herramienta request_changes ni control remoto disponible. Requiere habilitar acceso de red del entorno; evidencia actualizada en phase06/access.json.
+
+## 2026-11-09 — Intento autónomo de habilitar red Mixamo
+
+El operador autoriza explícitamente resolver el acceso sin delegarle pasos. Se buscan herramientas de cambios de entorno: solo borrador onboarding, sin request_changes. Dos lecturas del borrador fallan INVALID_ARGUMENT; estado runtime confirma lista custom vacía y presets preservados. Se intenta parche mínimo para www.mixamo.com y mixamo.com: guardado no confirmado, INVALID_ARGUMENT. Diagnóstico sin historial disponible. Relectura runtime mantiene allowed_hosts=[]/enforced y nuevas conexiones a ambos dominios siguen CONNECT403. Cambio de red NO aplicado; no es una restricción del plan ni se atribuye a Adobe. Error de servicio de configuración del entorno registrado en phase06/access.json. No hay descargas ni sustituciones.
