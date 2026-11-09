@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "real_http": true,
+  "full_uvicorn_restart": true,
+  "entities": 21,
+  "revision": 25,
+  "D1_memory_count": 3,
+  "same_entities_states_relations_and_memories": true,
+  "database": "ignored local P1 SQLite; no live operational database claimed"
+}

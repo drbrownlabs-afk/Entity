@@ -1,7 +1,7 @@
 // Functional browser proof; touch emulation does not claim physical-mobile performance.
 import {existsSync} from 'node:fs';
 import {chromium} from '@playwright/test';import assert from 'node:assert/strict';import {mkdir,writeFile} from 'node:fs/promises';
-const folder=new URL('../../../docs/spatial-simulation/evidence/phase05-walk/',import.meta.url);await mkdir(folder,{recursive:true});
+const folder=new URL(process.env.SPATIAL_EVIDENCE_DIR||'../../../docs/spatial-simulation/evidence/phase05-walk/',import.meta.url);await mkdir(folder,{recursive:true});
 const url=process.env.SPATIAL_TEST_URL||'http://127.0.0.1:5180/Entity/spatial-simulation/';
 let activePage;
 const report={url,started_at:new Date().toISOString(),checks:[],errors:[],physical_mobile_tested:false,animation_loop_disabled_for_functional_test:true,visual_quality_validated:false};

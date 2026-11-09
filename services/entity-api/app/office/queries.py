@@ -9,7 +9,11 @@ def query(db,site,run,body,visible_state=None):
     at=body.get('at');branch=body.get('branch','main');kind=body['kind'];key=body.get('entity_id')
     state=visible_state or world(db,site,run,branch,at);items=state['entities'];evidence=[];answer=None
     if key and key not in items:raise HTTPException(404,'Entity absent from selected time/site')
-    if kind=='graph':
+    if kind=='memories':
+        if at:raise HTTPException(422,'Historical memory query is not supported')
+        if not key:raise HTTPException(422,'Entity ID required')
+        answer=[dict(row)for row in db.execute('SELECT * FROM memories WHERE entity_id=? ORDER BY created_at,id',(items[key]['core_id'],))]
+    elif kind=='graph':
         from .graph import subgraph
         answer=subgraph(items,key,state['clock'])
     elif kind=='location':

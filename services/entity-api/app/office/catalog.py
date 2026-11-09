@@ -7,6 +7,7 @@ OPERATIONS={
  'zone.assumeOccupancy':('operate','action','simulation'),
  'device.setPower':('operate','action','device'),'presence.checkout':('receive','action','identity'),
  'reception.interact':('kiosk','action','communication'),'intercom.reply':('reply','action','communication'),'intercom.timeout':('operate','action','communication'),
+ 'entity.remember':('operate','action','resource'),
  'entity.upsert':('manage','action','resource'), 'relation.add':('manage','action','resource'),
  'membership.set':('manage','action','membership'), 'account.create':('manage','action','identity'),
  'booking.create':('book','action','booking'),'booking.cancel':('book','action','booking'),'booking.reassign':('book','action','booking'),'booking.extend':('book','action','booking'),

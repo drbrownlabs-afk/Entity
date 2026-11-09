@@ -48,6 +48,10 @@ def initialize(db):
         from .catalog import declare
         for entry in db.execute("SELECT site,id FROM office_resources WHERE kind IN ('Camera','Sensor','HVAC','Equipment')").fetchall():declare(db,entry['site'],entry['id'])
         db.execute('INSERT INTO office_schema VALUES(4)')
+    if not db.execute('SELECT 1 FROM office_schema WHERE version=5').fetchone():
+        from .catalog import declare
+        for entry in db.execute('SELECT site,id FROM office_resources').fetchall():declare(db,entry['site'],entry['id'])
+        db.execute('INSERT INTO office_schema VALUES(5)')
 
 
 def get_run(db,site,run):

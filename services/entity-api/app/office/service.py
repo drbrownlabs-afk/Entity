@@ -124,6 +124,14 @@ def command(db,site,run,actor,body):
         elif op=='presence.checkout':
             require_kind(target,{'Person'})
             changes[target]={'presence':'departed','zone_id':None,'observed_at':clock,'ttl_seconds':30}
+        elif op=='entity.remember':
+            item=get(target)
+            from app.main import append_event
+            mid=str(uuid4())
+            db.execute('INSERT INTO memories VALUES(?,?,?,?,?,?)',(mid,item['core_id'],data['content'],data['source'],now(),'1.0'))
+            append_event(db,item['core_id'],'memory.recorded',{'memory_id':mid},data['source'])
+            changes[target]={'last_memory_id':mid}
+            details['memory_id']=mid
         elif op=='entity.upsert':
             kind=data['kind'];attrs=data.get('attributes',{});key=data['id']
             if set(attrs)&{'id','kind','core_id','site_id','observed_at','freshness','presence','occupancy','access','membership_status','membership_until','status'}:raise HTTPException(403,'Derived state uses domain operations, not metadata writes')

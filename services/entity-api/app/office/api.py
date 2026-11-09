@@ -119,7 +119,7 @@ def ask(site:str,run:str,body:Query,actor=Depends(principal)):
             visible=projection(state,actor)
             require_visible(state,actor,data.get('entity_id'))
             if not operator(actor):
-                if data['kind'] not in {'entity','agenda','location','events','graph'}:raise HTTPException(403,'Query outside personal scope')
+                if data['kind'] not in {'entity','agenda','location','events','graph','memories'}:raise HTTPException(403,'Query outside personal scope')
                 if data['kind']=='agenda' and data.get('entity_id')!=actor.get('person'):raise HTTPException(403,'Personal agenda requires own person')
                 if not data.get('entity_id'):raise HTTPException(403,'Entity ID required')
             return query(db,site,run,data,None if unrestricted(actor) else visible)

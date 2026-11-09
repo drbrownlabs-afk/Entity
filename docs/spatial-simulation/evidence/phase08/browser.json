@@ -1,0 +1,210 @@
+{
+  "started_at": "2026-11-09T04:53:12.341Z",
+  "api": "http://127.0.0.1:8092",
+  "frontend": "http://127.0.0.1:5190/Entity/spatial-simulation/",
+  "mock_backend": false,
+  "checks": [
+    {
+      "name": "frontend-logs-in-to-real-Core",
+      "passed": true
+    },
+    {
+      "name": "19-requested-records-plus-site",
+      "passed": true
+    },
+    {
+      "name": "private-password-cleared",
+      "passed": true
+    },
+    {
+      "name": "17-scene-mappings-validated",
+      "passed": true
+    },
+    {
+      "name": "persisted-registration-memory-visible-in-P2",
+      "passed": true
+    },
+    {
+      "name": "P2-writes-memory-through-declared-Nucleo-capability",
+      "passed": true
+    },
+    {
+      "name": "external-P1-command-succeeds",
+      "passed": true
+    },
+    {
+      "name": "P2-syncs-external-Core-change-without-animation-loop",
+      "passed": true
+    },
+    {
+      "name": "logical-person-created-without-avatar-or-presence",
+      "passed": true
+    },
+    {
+      "name": "logout-clears-world-and-credentials",
+      "passed": true
+    },
+    {
+      "name": "no-browser-errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "spatial_mappings": [
+    {
+      "id": "A",
+      "position": [
+        1.2999999999999998,
+        -1.85,
+        -5.074999999999999
+      ],
+      "object_count": 0
+    },
+    {
+      "id": "B",
+      "position": [
+        1.2999999999999998,
+        -1.85,
+        -10.575
+      ],
+      "object_count": 0
+    },
+    {
+      "id": "C",
+      "position": [
+        1.2999999999999998,
+        -1.85,
+        -15.825
+      ],
+      "object_count": 0
+    },
+    {
+      "id": "CAFE",
+      "position": [
+        -10.505000114440918,
+        -0.4599999934434891,
+        -22.38749885559082
+      ],
+      "object_count": 2
+    },
+    {
+      "id": "D",
+      "position": [
+        1.2999999999999998,
+        -1.85,
+        -21.675
+      ],
+      "object_count": 0
+    },
+    {
+      "id": "D1",
+      "position": [
+        0.908778965473175,
+        -1.1889442205429077,
+        -23.18096351623535
+      ],
+      "object_count": 15
+    },
+    {
+      "id": "D2",
+      "position": [
+        0.9355189502239227,
+        -1.1889442205429077,
+        -21.905487060546875
+      ],
+      "object_count": 15
+    },
+    {
+      "id": "D3",
+      "position": [
+        0.9087836146354675,
+        -1.1889442205429077,
+        -20.697145462036133
+      ],
+      "object_count": 15
+    },
+    {
+      "id": "D4",
+      "position": [
+        3.143988847732544,
+        -1.1889442205429077,
+        -23.046703338623047
+      ],
+      "object_count": 15
+    },
+    {
+      "id": "D5",
+      "position": [
+        3.162814497947693,
+        -1.163944199681282,
+        -21.916829109191895
+      ],
+      "object_count": 15
+    },
+    {
+      "id": "D6",
+      "position": [
+        3.143984317779541,
+        -1.1889442205429077,
+        -20.697145462036133
+      ],
+      "object_count": 15
+    },
+    {
+      "id": "E",
+      "position": [
+        1.2999999999999998,
+        -1.85,
+        -26.25
+      ],
+      "object_count": 0
+    },
+    {
+      "id": "E1",
+      "position": [
+        0.21000001579523087,
+        -1.2113133370876312,
+        -27.316301345825195
+      ],
+      "object_count": 8
+    },
+    {
+      "id": "E5",
+      "position": [
+        1.309999942779541,
+        -1.2113133370876312,
+        -25.229999542236328
+      ],
+      "object_count": 8
+    },
+    {
+      "id": "E6",
+      "position": [
+        2.4100000858306885,
+        -1.2113133370876312,
+        -25.229999542236328
+      ],
+      "object_count": 8
+    },
+    {
+      "id": "LOUNGE",
+      "position": [
+        -9.097968816757202,
+        -1.0731804370880127,
+        -3.3721373677253723
+      ],
+      "object_count": 10
+    },
+    {
+      "id": "RECEPTION",
+      "position": [
+        -3.6500000953674316,
+        -0.9649999588727951,
+        -16.100000381469727
+      ],
+      "object_count": 2
+    }
+  ],
+  "passed": true,
+  "finished_at": "2026-11-09T04:53:22.914Z"
+}

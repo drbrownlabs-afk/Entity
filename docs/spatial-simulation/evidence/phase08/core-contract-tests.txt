@@ -1,0 +1,18 @@
+/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+  from starlette.testclient import TestClient as TestClient  # noqa
+test_capability_and_event_are_atomic (test_core.CoreTests.test_capability_and_event_are_atomic) ... ok
+test_concurrent_state_changes_keep_consistent_history (test_core.CoreTests.test_concurrent_state_changes_keep_consistent_history) ... ok
+test_declarations_memory_events_and_contracts (test_core.CoreTests.test_declarations_memory_events_and_contracts) ... ok
+test_invalid_and_missing_records_have_no_side_effects (test_core.CoreTests.test_invalid_and_missing_records_have_no_side_effects) ... ok
+test_memory_and_event_are_atomic (test_core.CoreTests.test_memory_and_event_are_atomic) ... ok
+test_readiness_detects_missing_schema (test_core.CoreTests.test_readiness_detects_missing_schema) ... ok
+test_versioned_openapi_matches_published_contract (test_core.CoreTests.test_versioned_openapi_matches_published_contract) ... ok
+test_concurrent_initialization (test_core.MigrationTests.test_concurrent_initialization) ... ok
+test_failed_migration_rolls_back (test_core.MigrationTests.test_failed_migration_rolls_back) ... ok
+test_future_schema_is_rejected_without_changes (test_core.MigrationTests.test_future_schema_is_rejected_without_changes) ... ok
+test_upgrade_legacy_preserves_all_records (test_core.MigrationTests.test_upgrade_legacy_preserves_all_records) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.568s
+
+OK
