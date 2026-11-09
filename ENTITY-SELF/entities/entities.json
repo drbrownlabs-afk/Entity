@@ -1,0 +1,827 @@
+{
+  "schema_version": "1.0",
+  "scope": "ENTITY-SELF",
+  "generated_at": "2026-11-09",
+  "note": "Síntesis de fuentes recuperadas; no implica importación en Core. Fuentes conversation son resúmenes, no transcripciones.",
+  "entities": [
+    {
+      "id": "entity-self:org.entity",
+      "type": "Organization",
+      "attributes": {
+        "name": "ENTITY organización",
+        "status": "approved",
+        "date": "2026-11-09",
+        "description": "ENTITY como organización/proyecto, distinta de plataforma y Core",
+        "source": "repo:ENTITY-SELF",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:product.entity",
+      "type": "Platform",
+      "attributes": {
+        "name": "ENTITY plataforma",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Plataforma horizontal para modelos computables persistentes y realidades computables",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:product.spatial",
+      "type": "Product",
+      "attributes": {
+        "name": "ENTITY Spatial Intelligence",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Vertical comercial espacial; incluye dimensiones organizacionales, operativas y geométricas",
+        "source": "conversation:2026-11-09",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:tech.core",
+      "type": "Technology",
+      "attributes": {
+        "name": "ENTITY Core",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Identidad, estado, relaciones, eventos, memoria, capacidades, permisos y procedencia",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:tech.nucleo",
+      "type": "Technology",
+      "attributes": {
+        "name": "Núcleo",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Motor independiente de interoperabilidad, descubrimiento y ejecución de capacidades externas",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:tech.entityizer",
+      "type": "Technology",
+      "attributes": {
+        "name": "Entidadizador",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Interpreta datos heterogéneos, resuelve identidades y crea/asocia entidades",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:tech.twinbuilder",
+      "type": "Technology",
+      "attributes": {
+        "name": "Constructor de gemelos digitales",
+        "status": "design",
+        "date": "2026-11-08",
+        "description": "Tecnología propietaria para generar/editar representación espacial vinculable",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:tech.simulation",
+      "type": "Technology",
+      "attributes": {
+        "name": "ENTITY Spatial Simulation",
+        "status": "design",
+        "date": "2026-11-08",
+        "description": "Laboratorio de escenarios sintéticos separado de producción",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:tech.edge",
+      "type": "Technology",
+      "attributes": {
+        "name": "ENTITY Edge",
+        "status": "partial",
+        "date": "2026-11-08",
+        "description": "Procesamiento local de percepción indispensable; no despliegue SaaS de Core",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:tech.runtime",
+      "type": "Concept",
+      "attributes": {
+        "name": "Entity Runtime",
+        "status": "historical",
+        "date": "2026-08-09",
+        "description": "Operaciones observe/query/create/update/relate/invoke/transform/execute/persist; concepto histórico a reconciliar",
+        "source": "document:Entity_OS_Infrastructure_for_Computable_Realities_v2.docx",
+        "domain": "ENTITY-SELF",
+        "source_kind": "document"
+      }
+    },
+    {
+      "id": "entity-self:concept.computable",
+      "type": "Concept",
+      "attributes": {
+        "name": "Realidades computables",
+        "status": "approved",
+        "date": "2026-11-09",
+        "description": "Representaciones persistentes y operables de sistemas complejos; antecedente explícito desde julio/agosto",
+        "source": "document:Entity_OS_Whitepaper_VC_v2.docx",
+        "domain": "ENTITY-SELF",
+        "source_kind": "document"
+      }
+    },
+    {
+      "id": "entity-self:concept.world",
+      "type": "Concept",
+      "attributes": {
+        "name": "Modelo del mundo compartido",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Modelo único persistente de un dominio para aplicaciones, agentes y conectores",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:concept.identity",
+      "type": "Primitive",
+      "attributes": {
+        "name": "Identidad",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Identificador estable y continuidad de una entidad",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:concept.state",
+      "type": "Primitive",
+      "attributes": {
+        "name": "Estado",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Condición actual y cambios versionables",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:concept.relations",
+      "type": "Primitive",
+      "attributes": {
+        "name": "Relaciones",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Relaciones explícitas tipadas y trazables",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:concept.events",
+      "type": "Primitive",
+      "attributes": {
+        "name": "Eventos",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Hechos temporales y transiciones",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:concept.memory",
+      "type": "Primitive",
+      "attributes": {
+        "name": "Memoria",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Persistencia histórica y continuidad contextual",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:concept.capabilities",
+      "type": "Primitive",
+      "attributes": {
+        "name": "Capacidades",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Acciones declaradas, autorizadas y auditables",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:concept.provenance",
+      "type": "Primitive",
+      "attributes": {
+        "name": "Procedencia",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Fuente, evidencia, autoridad y distinción observado/inferido/sintético",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:concept.selfworld",
+      "type": "ResearchConcept",
+      "attributes": {
+        "name": "Self Model / World Model",
+        "status": "historical",
+        "date": "2026-08-09",
+        "description": "Modelos de perspectiva y mundo presentes en arquitectura histórica; reconciliar con Core actual",
+        "source": "document:Entity_OS_Infrastructure_for_Computable_Realities_v2.docx",
+        "domain": "ENTITY-SELF",
+        "source_kind": "document"
+      }
+    },
+    {
+      "id": "entity-self:concept.ufsl",
+      "type": "ResearchConcept",
+      "attributes": {
+        "name": "UFSL / campo latente",
+        "status": "research",
+        "date": "2026-07-27",
+        "description": "Geometría/campos latentes e inferencia profunda; investigación no implementada en piloto",
+        "source": "document:ENTITY_OS_v3_2_ENTIDADES_INTELIGENTES_Y_CAMPO_GEOMETRICO.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "document"
+      }
+    },
+    {
+      "id": "entity-self:concept.agents",
+      "type": "Capability",
+      "attributes": {
+        "name": "IA situada y sistemas multiagénticos",
+        "status": "planned",
+        "date": "2026-11-08",
+        "description": "Capacidad integral de arquitectura; implementación avanzada bajo P3, no expansión conceptual",
+        "source": "repo:docs/PROJECT-STATUS.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:process.p1",
+      "type": "Process",
+      "attributes": {
+        "name": "P1 Software ENTITY",
+        "status": "active",
+        "date": "2026-11-08",
+        "description": "Propietario único backend/frontend Core, Núcleo, Entidadizador, APIs y adaptaciones",
+        "source": "repo:docs/PROJECT-STATUS.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:process.p2",
+      "type": "Process",
+      "attributes": {
+        "name": "P2 Coworking",
+        "status": "active",
+        "date": "2026-11-08",
+        "description": "Gemelo operativo, personajes, cámaras, simulación e integraciones del workspace",
+        "source": "repo:docs/PROJECT-STATUS.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:process.p3",
+      "type": "Process",
+      "attributes": {
+        "name": "P3 IA situada",
+        "status": "planned",
+        "date": "2026-11-08",
+        "description": "Agentes y orquestación contextual; no autorizado a iniciar aún",
+        "source": "repo:docs/PROJECT-STATUS.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:pilot.cowork",
+      "type": "Pilot",
+      "attributes": {
+        "name": "Piloto coworking",
+        "status": "in-progress",
+        "date": "2026-11-08",
+        "description": "MVP y validación operativa con reservas, cámaras, accesos, CRM y documentos",
+        "source": "repo:docs/PROJECT-STATUS.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:demo.airport",
+      "type": "Demo",
+      "attributes": {
+        "name": "Narrativa audiovisual aeropuerto",
+        "status": "concept",
+        "date": "2026-11-06",
+        "description": "Caso integral de inteligencia espacial para VCs; aeropuerto caricaturizado exterior e interior contemporáneo",
+        "source": "conversation:2026-11-06",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:demo.mall",
+      "type": "Demo",
+      "attributes": {
+        "name": "Demo centro comercial",
+        "status": "historical-proposal",
+        "date": "2026-11-06",
+        "description": "Experiencia visual VC con CCTV virtual y modelo compartido; no confundir con piloto coworking",
+        "source": "repo:docs/DECISION-LOG.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:asset.pitch",
+      "type": "Deliverable",
+      "attributes": {
+        "name": "Pitch inversionistas",
+        "status": "in-progress",
+        "date": "2026-11-06",
+        "description": "Tesis horizontal con caso aeropuerto y comunicación de valor",
+        "source": "conversation:2026-11-06",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:asset.video",
+      "type": "Deliverable",
+      "attributes": {
+        "name": "Video aeropuerto",
+        "status": "planned",
+        "date": "2026-11-06",
+        "description": "Guion de aproximadamente 200 segundos, arquitectura visual consistente",
+        "source": "conversation:2026-11-06",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:asset.web",
+      "type": "Deliverable",
+      "attributes": {
+        "name": "Web comercial ENTITY Spatial Intelligence",
+        "status": "planned",
+        "date": "2026-11-07",
+        "description": "Marca ENTITY con subtítulo específico Spatial Intelligence",
+        "source": "conversation:2026-11-07",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:business.saas",
+      "type": "BusinessModel",
+      "attributes": {
+        "name": "SaaS centralizado",
+        "status": "approved",
+        "date": "2026-11-08",
+        "description": "Core y aplicación en nube; edge procesa percepción local",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:business.price",
+      "type": "CommercialHypothesis",
+      "attributes": {
+        "name": "Precio SaaS inicial 350 USD/mes",
+        "status": "proposal",
+        "date": "2026-11-08",
+        "description": "Referencia comercial discutida, no contrato ni precio final aprobado",
+        "source": "conversation:2026-11-08",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:fund.preseed",
+      "type": "FundingGoal",
+      "attributes": {
+        "name": "Financiación pre-seed",
+        "status": "target",
+        "date": "2026-11-06",
+        "description": "Capital para ampliar equipo y capacidades de investigación e implementación",
+        "source": "conversation:2026-11-06",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:fund.scout",
+      "type": "Workflow",
+      "attributes": {
+        "name": "Scout global inversión ENTITY",
+        "status": "active-automation",
+        "date": "2026-11-09",
+        "description": "Búsqueda recurrente de VCs, grants y convocatorias; resultados requieren verificación",
+        "source": "conversation:2026-11-09",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:source.master",
+      "type": "Source",
+      "attributes": {
+        "name": "ENTITY-MASTER-SPEC.md",
+        "status": "canonical",
+        "date": "2026-11-08",
+        "description": "Canon aprobado; prevalece sobre documentación histórica",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:source.decisions",
+      "type": "Source",
+      "attributes": {
+        "name": "DECISION-LOG.md",
+        "status": "canonical-decisions",
+        "date": "2026-11-08",
+        "description": "ADR aprobadas y registro de sustituciones",
+        "source": "repo:docs/DECISION-LOG.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:source.status",
+      "type": "Source",
+      "attributes": {
+        "name": "PROJECT-STATUS.md",
+        "status": "current-process",
+        "date": "2026-11-09",
+        "description": "Estado P1/P2/P3, fases y evidencia; no canon",
+        "source": "repo:docs/PROJECT-STATUS.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:source.worklog",
+      "type": "Source",
+      "attributes": {
+        "name": "AGENT-WORKLOG.md",
+        "status": "execution-history",
+        "date": "2026-11-08",
+        "description": "Evidencia de ejecución, no instrucciones vigentes",
+        "source": "repo:docs/AGENT-WORKLOG.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:source.white1",
+      "type": "Whitepaper",
+      "attributes": {
+        "name": "Entity_OS_Whitepaper_VC.docx",
+        "status": "historical",
+        "date": "2026-08",
+        "description": "Making complex systems computable; infraestructura de persistencia",
+        "source": "library:Entity_OS_Whitepaper_VC.docx",
+        "domain": "ENTITY-SELF",
+        "source_kind": "library"
+      }
+    },
+    {
+      "id": "entity-self:source.white2",
+      "type": "Whitepaper",
+      "attributes": {
+        "name": "Entity_OS_Whitepaper_VC_v2.docx",
+        "status": "historical",
+        "date": "2026-08",
+        "description": "Agents are capabilities; sistema computable persistente como activo",
+        "source": "library:Entity_OS_Whitepaper_VC_v2.docx",
+        "domain": "ENTITY-SELF",
+        "source_kind": "library"
+      }
+    },
+    {
+      "id": "entity-self:source.archv2",
+      "type": "Whitepaper",
+      "attributes": {
+        "name": "Entity_OS_Infrastructure_for_Computable_Realities_v2.docx",
+        "status": "historical",
+        "date": "2026-08-09",
+        "description": "Identity/State/Relations/Capabilities, Núcleo y runtime",
+        "source": "library:Entity_OS_Infrastructure_for_Computable_Realities_v2.docx",
+        "domain": "ENTITY-SELF",
+        "source_kind": "library"
+      }
+    },
+    {
+      "id": "entity-self:source.v31",
+      "type": "HistoricalArchitecture",
+      "attributes": {
+        "name": "ENTITY OS v3.1 arquitectura recuperada",
+        "status": "superseded",
+        "date": "2026-07",
+        "description": "Arquitectura histórica reemplazada por v3.2",
+        "source": "historical:ENTITY_OS_v3_1_ARQUITECTURA_RECUPERADA.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "historical"
+      }
+    },
+    {
+      "id": "entity-self:source.v32",
+      "type": "HistoricalArchitecture",
+      "attributes": {
+        "name": "ENTITY OS v3.2 entidades inteligentes y campo geométrico",
+        "status": "historical",
+        "date": "2026-07-27",
+        "description": "Revisión de v3.1, campo geométrico y Extended Context",
+        "source": "library:ENTITY_OS_v3_2_ENTIDADES_INTELIGENTES_Y_CAMPO_GEOMETRICO.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "library"
+      }
+    },
+    {
+      "id": "entity-self:source.v33",
+      "type": "HistoricalArchitecture",
+      "attributes": {
+        "name": "ENTITY OS v3.3 arquitectura estratificada integrada",
+        "status": "historical",
+        "date": "2026-08",
+        "description": "Documento histórico por localizar/reconciliar íntegramente",
+        "source": "historical:ENTITY_OS_v3_3_ARQUITECTURA_ESTRATIFICADA_INTEGRADA.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "historical"
+      }
+    },
+    {
+      "id": "entity-self:decision.001",
+      "type": "Decision",
+      "attributes": {
+        "name": "ADR-2026-11-08-001",
+        "status": "accepted",
+        "date": "2026-11-08",
+        "description": "Memoria jerárquica y separación P1/P2/P3; revoca roadmap global 08–15",
+        "source": "repo:docs/DECISION-LOG.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:decision.002",
+      "type": "Decision",
+      "attributes": {
+        "name": "ADR-2026-11-08-002",
+        "status": "accepted",
+        "date": "2026-11-08",
+        "description": "Núcleo independiente; cartera de tecnologías propietarias",
+        "source": "repo:docs/DECISION-LOG.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:decision.003",
+      "type": "Decision",
+      "attributes": {
+        "name": "ADR-2026-11-08-003",
+        "status": "accepted",
+        "date": "2026-11-08",
+        "description": "P1 propietario único de software; P2 experiencia; P3 agentes",
+        "source": "repo:docs/DECISION-LOG.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:history.global",
+      "type": "HistoricalPlan",
+      "attributes": {
+        "name": "Roadmap global fases 08–15",
+        "status": "revoked",
+        "date": "2026-11-08",
+        "description": "Numeración global revocada; no reactivar fases 10/11 como continuación de P1",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:history.camera",
+      "type": "HistoricalPlan",
+      "attributes": {
+        "name": "PHASE-11 cámaras",
+        "status": "reassigned",
+        "date": "2026-11-08",
+        "description": "Reasignada a P2, no a fase global 11",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:history.openclaw",
+      "type": "HistoricalPlan",
+      "attributes": {
+        "name": "PHASE-10 OpenClaw",
+        "status": "reassigned",
+        "date": "2026-11-08",
+        "description": "Reasignada a P3, runtime opcional",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:history.ixos",
+      "type": "HistoricalName",
+      "attributes": {
+        "name": "IXOS",
+        "status": "retired",
+        "date": "2026-11-06",
+        "description": "Nombre antiguo, no usar como marca vigente",
+        "source": "conversation:2026-11-06",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:history.entityos",
+      "type": "HistoricalName",
+      "attributes": {
+        "name": "Entity OS",
+        "status": "historical",
+        "date": "2026-08",
+        "description": "Nombre presente en whitepapers y arquitectura; marca actual ENTITY",
+        "source": "document:Entity_OS_Whitepaper_VC_v2.docx",
+        "domain": "ENTITY-SELF",
+        "source_kind": "document"
+      }
+    },
+    {
+      "id": "entity-self:history.creative",
+      "type": "HistoricalConcept",
+      "attributes": {
+        "name": "Entity Creative Suite",
+        "status": "historical",
+        "date": "2026-08-03",
+        "description": "Línea creativa de la arquitectura histórica, no producto aprobado actual",
+        "source": "conversation:2026-08-03",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:history.market",
+      "type": "HistoricalConcept",
+      "attributes": {
+        "name": "Mercado descentralizado de capacidades",
+        "status": "exploratory",
+        "date": "2026-07-31",
+        "description": "Descubrimiento, negociación y ejecución de recursos humanos/software/cómputo",
+        "source": "conversation:2026-07-31",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:history.metodocc",
+      "type": "HistoricalConcept",
+      "attributes": {
+        "name": "METODOCC",
+        "status": "historical-unverified",
+        "date": "2026-08-20",
+        "description": "Antecedente de onboarding institucional, documentación completa pendiente",
+        "source": "conversation:2026-08-20",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:hardware.orbbec",
+      "type": "Hardware",
+      "attributes": {
+        "name": "Cámaras Orbbec",
+        "status": "available",
+        "date": "2026-11-08",
+        "description": "Hardware disponible; distinto de las cámaras analógicas propuestas",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:hardware.analog",
+      "type": "HardwareProposal",
+      "attributes": {
+        "name": "Ocho cámaras analógicas y DVR",
+        "status": "not-acquired",
+        "date": "2026-11-08",
+        "description": "Propuesta futura, no inventario adquirido",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:tech.scorpio",
+      "type": "ExternalTechnology",
+      "attributes": {
+        "name": "Scorpio NGSI-LD",
+        "status": "not-core",
+        "date": "2026-11-08",
+        "description": "Broker externo opcional, no reemplazo del Core",
+        "source": "repo:docs/ENTITY-MASTER-SPEC.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:tech.postgres",
+      "type": "ExternalTechnology",
+      "attributes": {
+        "name": "PostgreSQL/PostGIS",
+        "status": "planned",
+        "date": "2026-11-08",
+        "description": "Arquitectura objetivo, SQLite provisional documentado",
+        "source": "repo:docs/DECISION-LOG.md",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:tech.sqlite",
+      "type": "ExternalTechnology",
+      "attributes": {
+        "name": "SQLite",
+        "status": "implemented",
+        "date": "2026-11-08",
+        "description": "Persistencia local del Core actual",
+        "source": "repo:services/entity-api/app/main.py",
+        "domain": "ENTITY-SELF",
+        "source_kind": "repo"
+      }
+    },
+    {
+      "id": "entity-self:site.impacto",
+      "type": "PilotProspect",
+      "attributes": {
+        "name": "Impacto coworking",
+        "status": "prospect",
+        "date": "2026-11-06",
+        "description": "Sitio propuesto para piloto; no declarar contrato ni integración",
+        "source": "conversation:2026-11-06",
+        "domain": "ENTITY-SELF",
+        "source_kind": "conversation"
+      }
+    },
+    {
+      "id": "entity-self:concept.worldmemory",
+      "type": "ResearchConcept",
+      "attributes": {
+        "name": "World Memory y Self Memory",
+        "status": "historical",
+        "date": "2026-08",
+        "description": "Separación de memoria del mundo y memoria privada de agentes",
+        "source": "document:Entity_OS_Whitepaper_VC_v2.docx",
+        "domain": "ENTITY-SELF",
+        "source_kind": "document"
+      }
+    }
+  ]
+}
