@@ -11,7 +11,7 @@ function message(text){feedback.textContent=text;}
 try{
  const data=await fetch('/model/scene.json').then(r=>{if(!r.ok)throw Error('No se ha exportado el modelo');return r.json();}),state=new VisualState(data),collision=new CollisionWorld(data,state);
  const renderer=await createRenderer(canvas,data,state),{app,camera}=renderer;
- const quality=installQuality(renderer);$('#quality').onchange=()=>quality.set($('#quality').value);
+ const quality=installQuality(renderer);$('#quality').onchange=()=>{quality.set($('#quality').value);if($('#quality').value==='reference'){state.playing=false;state.setHour(17);renderer.environmentUpdate(true);}};
  let mode='general',selection=null,feet=[-2.2,-1.85,.8],yaw=0,pitch=0,orbitTarget=new pc.Vec3(-4,-.6,-12),drag=null,changed=false;const keys=new Set();
  const records=new Map(data.records.map(r=>[r.id,r]));const circuits=[...new Set(data.devices.luminaires.map(l=>l.environment_id))];
  for(const env of new Set(data.records.map(r=>r.environment_id)))records.set('environment:'+env,{id:'environment:'+env,type:'Environment',environment_id:env,name:env});

@@ -96,3 +96,7 @@ Operador rechaza transferencia inicial y exige comparación iterativa con Cycles
 ## 2026-11-09 · Prioridad: equivalencia de iluminación
 
 Se detienen nuevas capturas y ajustes de materiales por instrucción del operador. Auditoría directa de controladores Blender/PlayCanvas identifica fórmula automática distinta, parámetros solares distintos y exposición variable. Corregidos sin tocar geometría/maestro ni añadir luces. Cinco pruebas unitarias ejecutadas PASS. Ambiente HDR, transporte indirecto por superficie y conversión fotométrica de áreas siguen sin equivalencia acreditada; detalles en PHASE-05-LIGHTING-AUDIT.md. Gate05 abierto.
+
+## 2026-11-09 · Inicio de Fase04.5 autorizada
+
+Leídos plan y PHASE-04-5-QUALITY-REFERENCE.md desde actualización remota 45af25a. Avance directo de la misma rama, sin merge de ramas ni main. Implementado perfil máximo reversible y scripts Golden Hour; render Cycles y captura PlayCanvas iniciados. Compilación y pruebas unitarias ejecutadas. Alcance completo aún pendiente según PHASE-04-5-PROGRESS.md; no aprobación visual ni equivalencia declarada.

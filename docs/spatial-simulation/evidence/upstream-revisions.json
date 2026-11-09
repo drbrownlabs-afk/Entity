@@ -1,8 +1,8 @@
 {
   "docs/spatial-simulation/IMPLEMENTATION-PLAN.md": {
     "base_sha256": "765cf1488331759c1b4f91335301383ebe5e3a9ed5bdc89bb9399b54225a42ba",
-    "sha256": "85c15c40169332eaf514819bae16c094cfd8080fa6c7f3d86c3f2e7b50038c42",
-    "commit": "d51e2b9b1b80b22ea168bc8762ea117042c16aea",
-    "reason": "Upstream operator plan edits preserved by rebase; exact revision only, no blanket file exclusion"
+    "sha256": "84144aa89232221cff14420dc0734fbb2a0e5a2f711fbede254c54674dbf007d",
+    "commit": "45af25a",
+    "reason": "Exact operator Phase04.5 plan revision, fast-forwarded on same branch"
   }
 }
