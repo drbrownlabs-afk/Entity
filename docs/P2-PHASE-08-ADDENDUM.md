@@ -45,3 +45,26 @@ Antes de trabajar leer `AGENTS.md`, canon, ADR, estado y bitácora. Actualizar e
 - **Correspondencia espacial:** la entidad coworking representa el conjunto del lugar; sus hijos se vinculan con objetos/zonas del gemelo cuando exista una correspondencia comprobable. No exigir malla 3D para personas, servicios o relaciones lógicas.
 
 **Alcance inmediato de 8.1:** definir y persistir esta jerarquía y las relaciones estructurales verificadas en Core. No implica cancelar trabajo funcional que Codex ya haya realizado, ni ordenar revertir consultas u otras implementaciones existentes. No añadir datos ficticios ni iniciar fases posteriores por esta instrucción.
+
+## 8.2 — Personas, organizaciones y relaciones del coworking
+
+**Población inicial: 12 personas lógicas**, independientes de los avatares 3D:
+- **Staff (3):** recepción, administración y operaciones.
+- **Entity (2):** Carlos y Santiago.
+- **Inmerso (2):** dos integrantes con nombres sintéticos provisionales.
+- **Usuarios habituales (3):** miembros con planes de coworking.
+- **Visitantes (2):** usuarios ocasionales con pases temporales.
+Asignar identidad sintética explícitamente identificada como tal a las personas sin nombre confirmado; no crear personas adicionales.
+
+**Distinguir tipos de entidad:** el coworking, la sala A y la sala B son entidades **espaciales**; Entity e Inmerso son entidades **organizacionales**; Carlos, Santiago y los demás son entidades **persona**. La organización llamada Entity no es el Core tecnológico de ENTITY. Una organización puede trabajar en un espacio sin ser ella misma un espacio físico.
+
+**Relaciones iniciales:**
+- `COWORKING CONTIENE SALA_A` y `COWORKING CONTIENE SALA_B`, respetando la jerarquía espacial existente.
+- `ENTITY_ORGANIZACION TIENE_ASIGNADO_ESPACIO SALA_A`; `INMERSO_ORGANIZACION TIENE_ASIGNADO_ESPACIO SALA_B`. Registrar vigencia y fuente cuando aplique.
+- `CARLOS PERTENECE_A_ORGANIZACION ENTITY_ORGANIZACION` y `SANTIAGO PERTENECE_A_ORGANIZACION ENTITY_ORGANIZACION`. Son `COMPAÑERO_DE` en sentido laboral, relación que puede derivarse de su organización común sin duplicar datos.
+- Los dos integrantes de Inmerso pertenecen a `INMERSO_ORGANIZACION` y son compañeros laborales.
+- El staff tiene relaciones `TRABAJA_PARA` y `DESEMPEÑA_ROL` (recepción, administración, operaciones) con la organización operadora si está identificada; no inferir que el rol implica ubicación.
+- Los tres usuarios habituales tienen `MEMBRESIA` individual asociada a un `PLAN_MEMBRESIA`; los visitantes pueden tener `PASE` temporal. Membresías y planes son entidades diferentes: una persona conserva identidad al cambiar de plan. Condiciones comerciales reales requieren fuente verificada; los ejemplos sintéticos deben etiquetarse como tales.
+- Diferenciar `ASIGNADO_A`, `RESERVADO_POR`, `PRESENTE_EN` y `OCUPADO_POR`. Asignación permanente de una sala a una empresa **no** demuestra presencia física actual. Si se crea ocupación de demostración, etiquetarla como dato simulado con tiempo y procedencia; no atribuirla a cámaras ni sensores.
+
+**Integridad:** IDs estables, tipos, fuente, temporalidad y persistencia para personas, organizaciones, espacios, membresías y relaciones. No duplicar personas por avatar, visita o reserva; no inventar vínculos personales por compartir trabajo. Usar P1 Core/Entidadizador, con P2 como consumidor. No exigir personajes 3D ni deshacer funcionalidades ya realizadas. Documentar implementación y pruebas reales en bitácora; no avanzar fases automáticamente.
