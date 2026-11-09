@@ -1,0 +1,56 @@
+name: Publish P2 Coworking
+on:
+  push:
+    branches: [codex/spatial-simulation]
+    paths: ['apps/spatial-simulation/**', '.github/workflows/publish-coworking.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: entity-coworking-pages
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: source
+      - uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          path: published
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: source/apps/spatial-simulation/package-lock.json
+      - name: Build and test
+        working-directory: source/apps/spatial-simulation
+        run: |
+          npm ci
+          npm test
+          npm run build -- --base=/Entity/spatial-simulation/
+      - name: Publish subdirectory without replacing existing website
+        working-directory: published
+        run: |
+          mkdir -p spatial-simulation
+          rsync -a --delete ../source/apps/spatial-simulation/dist/ spatial-simulation/
+          touch .nojekyll
+          test -s spatial-simulation/index.html
+          git config user.name "ENTITY Pages"
+          git config user.email "deployment@users.noreply.github.com"
+          git add spatial-simulation .nojekyll
+          if ! git diff --cached --quiet; then
+            git commit -m "Publish coworking"
+            git pull --rebase origin gh-pages
+            git push origin HEAD:gh-pages
+          fi
+      - name: Verify public route
+        run: |
+          for i in $(seq 1 18); do
+            if curl -fsSL https://drbrownlabs-afk.github.io/Entity/spatial-simulation/ -o /tmp/coworking.html && grep -q ENTITY /tmp/coworking.html; then exit 0; fi
+            sleep 10
+          done
+          exit 1
