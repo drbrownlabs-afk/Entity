@@ -106,3 +106,42 @@ Daniel tiene reunión con Carlos a las 16:00. En el simulador se puede preparar 
 
 ### Restricciones de ejecución
 No crear ahora interacciones ficticias ENTITY↔personajes, falsos eventos de cámara inyectados a Core, consultas o check-ins provocados directamente por el motor 3D. No cancelar ni deshacer funcionalidades previas por esta aclaración. Registrar por separado qué existe realmente, qué está solo documentado y qué queda pendiente. Esta adición documenta la arquitectura y el orden de trabajo; no afirma que el pipeline multicámara esté implementado.
+
+## 8.4 — Modelo integral del coworking: infraestructura, empresa y relaciones
+
+**Orden del operador:** ampliar el gemelo digital como **modelo del mundo completo**, aprovechando la geometría existente y el Core P1. En esta etapa **solo modelar y persistir entidades, atributos, estados declarativos, relaciones, catálogos y correspondencias espaciales verificables**. NO crear personajes 3D, animaciones, acciones, automatizaciones, lecturas de sensores, operaciones de negocio, conexiones con proveedores, eventos de percepción, cobros, nóminas, reservas o check-ins ejecutados. No presentar elementos proyectados como equipos instalados ni estados inventados como observaciones. Conservar todo lo ya implementado y los IDs estables; no duplicar ni revertir.
+
+### 8.4.1 — Inventario físico y espacial
+La sede/coworking es entidad madre espacial. Inventariar ambientes reales identificables: entrada principal y su puerta, recepción, área de espera, lounge, cafetería y mesas, cabinas de llamadas, oficinas privadas A/B y zona privada C, puestos individuales D1–D6/E1–E6 **según inventario realmente confirmado**, sala de reuniones, pasillos y conexiones, zona de impresión, lockers, baños, servicios, almacenes, accesos, salidas, señalética y circulaciones. **Corrección expresa: el ejemplo de computadora corresponde al puesto D3, NO C3; C es privado.** No asumir geometría/ubicaciones inexistentes ni forzar los identificadores de un inventario histórico incompatible; reconciliar con el SSOG vigente.
+
+Registrar cada mesa, silla, sofá, escritorio, locker, televisión/pantalla, impresora, computadora, equipo de red, cafetera, luminaria, puerta y cerradura identificable como entidad diferenciada cuando aporte valor operacional. Asociar ubicación/contención a espacios y nodos de escena solo con evidencia; lo no localizado queda en catálogo como previsto/sin correspondencia, nunca como objeto geométrico fabricado.
+
+### 8.4.2 — Infraestructura tecnológica y seguridad prevista
+Registrar **ocho cámaras virtuales previstas** con identidad individual, posición/cobertura **pendientes de calibración**, vínculos a espacios y futuros contratos de fuente visual. No afirmar que existan ocho feeds, detecciones o tracking implementados; la percepción multicámara seguirá el aislamiento de 8.3.
+
+Modelar lector/controlador biométrico y credencial/autorización en entrada principal y accesos de oficinas privadas; puertas, cerraduras, sensores de puerta, permisos y políticas son entidades distintas. Registrar capacidades **declaradas**, no aperturas ni reconocimientos. No almacenar plantillas biométricas ni dar por autorizada la apertura por mera observación visual; registrar futura integración de control de acceso sin ejecutarla.
+
+Incluir central de vigilancia, panel de alarma, zonas de intrusión, sirenas, detectores de movimiento/apertura, humo/incendio, temperatura, humedad, CO₂, ventilación/HVAC, iluminación, energía/medición/UPS, seguridad de evacuación, routers, firewall, switches, Wi-Fi, conectividad WAN/ISP, red local, televisores, impresoras, computadoras, intercom/kiosco, lockers electrónicos y activos de mantenimiento. Distinguir equipo físico, controlador, fuente de datos, servicio y contrato; no inventar marcas, cantidades adicionales ni ubicación exacta.
+
+### 8.4.3 — Empresa y operación como entidades del mundo
+Modelar **operadora del coworking** como organización diferenciada (si no se conoce identidad real, dejarla sin identificar), organizaciones clientes, contactos, lista de clientes asociados, proveedores, prestadores de servicios, empleados/staff, roles, cargos, equipos, responsables, contratos y acuerdos. La misma entidad persona u organización puede desempeñar distintos roles sin duplicar identidad.
+
+Modelar estructuras y catálogos de:
+- **RR. HH. y asistencia:** contratos laborales, turnos, horarios, jornada, check-in/check-out previstos, ausencias, permisos, horas ordinarias/extra, períodos de nómina, salarios, deducciones y pagos de remuneración. No crear marcaciones ni pagos efectuados.
+- **Comercial y CRM:** prospectos, leads, clientes activos/inactivos, contactos, oportunidades, actividades, visitas y seguimiento.
+- **Membresías y ocupación contractual:** planes, membresías, pases por horas, asignaciones de oficinas/puestos, reservas, disponibilidad, agenda, reuniones, invitaciones y uso contratado; distinguir asignación, reserva y presencia.
+- **Cobros y contabilidad operativa:** cuentas por cobrar, órdenes de cobro, conceptos, tarifas, facturas/borradores, pagos, medios de pago, saldos, vencimientos, reembolsos, notas de crédito, cuentas por pagar, compras, facturas de proveedores, gastos recurrentes, servicios, impuestos como campos de catálogo (sin calcular obligaciones fiscales reales). No facturar ni cobrar.
+- **Documentos y sistemas:** contratos, archivos, carpetas, permisos, Drive/repositorio documental como servicio futuro, CRM, calendario, sistema de facturación, nómina, red e internet, soporte, mantenimiento, órdenes de trabajo, inventario de activos y consumibles, incidencias y servicios externos como entidades de catálogo, sin conectarlos.
+- **Atención y experiencia:** recepción, visitantes, solicitudes, tickets, notificaciones como tipos de entidad, sin ejecutarlos.
+
+### 8.4.4 — Relaciones semánticas y continuidad
+Usar los contratos existentes de P1/Entidadizador; extender tipos solo cuando falten, sin otro grafo paralelo. Relaciones de referencia (adaptar nombres al contrato): `CONTIENE/partOf`, `UBICADO_EN/locatedIn`, `CONECTA/connectedTo`, `ACCESO_A`, `PROTEGIDO_POR`, `CONTROLADO_POR`, `CUBRE_ZONA` (prevista), `CONECTADO_A_RED`, `INSTALADO_EN` (solo si confirmado), `EQUIPADO_CON`, `ASIGNADO_A`, `TRABAJA_PARA`, `TIENE_ROL`, `TIENE_TURNO`, `PERTENECE_A_ORGANIZACION`, `CLIENTE_DE`, `PROVEEDOR_DE`, `PRESTA_SERVICIO`, `TITULAR_DE`, `CONTRATADO_POR`, `FACTURA_A`, `ADEUDA_A`, `CORRESPONDE_A`, `RESERVADO_POR`, `AUTORIZADO_A`. Relaciones declaradas no prueban ejecución, ocupación, detección ni pagos.
+
+Cada entidad debe conservar ID estable, tipo, atributos, estado conocido o `unknown`, fuente/procedencia, vigencia, relaciones, eventos/memoria **si existen realmente** y referencia espacial opcional. Diferenciar `existente_verificado`, `previsto`, `pendiente_identificar` y `sin_correspondencia_espacial`. La escala de 12 personas a 50+ y de una a varias sedes debe ser aditiva: mismas clases y contratos, más instancias, sin reestructurar el Core.
+
+### 8.4.5 — Entregable y aceptación de esta ampliación
+1. Auditar inventario Core/escena antes de crear entidades; matriz **ya existe / por registrar / previsto / sin ubicación** para evitar duplicados.
+2. Persistir en **P1 Core real** solo las entidades y relaciones modelables con fuente y estatus explícitos; P2 referencia el mismo Core, sin backend paralelo.
+3. Entregar inventario tipado de espacios, mobiliario, equipos, servicios, organizaciones, proveedores, clientes, staff y estructuras administrativas; documentar cardinalidades desconocidas, sin inventarlas.
+4. Validar IDs, tipado, relaciones, ausencia de duplicados, reimportación idempotente, integridad referencial y persistencia tras reinicio; comprobar mapeos a escena únicamente cuando existan.
+5. Registrar exactamente lo implementado y lo pendiente en bitácora/estado existentes. **No iniciar conexiones, operaciones, percepción, personajes ni fases siguientes** por esta orden. Mantener P2-08 EN VALIDACIÓN hasta aceptación expresa.
