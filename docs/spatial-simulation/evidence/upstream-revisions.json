@@ -127,8 +127,8 @@
   },
   ".github/workflows/ci.yml": {
     "base_sha256": "20b9bde031daa345e9957b332de5e2b51f9f83beca253472dc657ce82df30717",
-    "sha256": "d630ce1a9151e76c4c371609bae0cc62404fe6b1587bcc7175990a17c2ff787e",
-    "commit": "9c0a98acabd48b600f1310078ca105d5f587339f",
+    "sha256": "ca74d34212ab5e33bcb9674508e812274ed74ab4668aaa1d0fe6d1fc43356d13",
+    "commit": "af18cfb4b021575ff77ba250446a3332f87c809c",
     "reason": "Exact authorized P2-09 delivery repair: retain shared P1 contracts and historical tests, validate active coworking rather than retired Mall, preserve legacy Edge wire shape."
   },
   "apps/web/playwright.config.js": {
