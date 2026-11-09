@@ -1,0 +1,26 @@
+{
+  "scope": "structural technical inspection only",
+  "operational_flows": false,
+  "checks": [
+    {
+      "name": "30 actual scene mappings to loaded PlayCanvas nodes",
+      "passed": true
+    },
+    {
+      "name": "operational Core UI disabled in this structural stage",
+      "passed": true
+    },
+    {
+      "name": "no browser errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "details": {
+    "mapped": 30,
+    "operational_ui_disabled": true,
+    "forms_absent": true,
+    "original_scene_records": 4514
+  },
+  "passed": true
+}

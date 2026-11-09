@@ -1,0 +1,2335 @@
+{
+  "scope": "latest P2-08 addendum ce7b98f: structural only",
+  "entities": [
+    {
+      "id": "A",
+      "core_id": "1b3c970e-35e7-5aea-aeb1-02accde91374",
+      "type": "Office",
+      "name": "A",
+      "parent": "site",
+      "spatial": {
+        "bounds": [
+          [
+            -1.5,
+            -1.85,
+            -7.35
+          ],
+          [
+            4.1,
+            1.72,
+            -2.8
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [],
+        "position": [
+          1.2999999999999998,
+          -1.85,
+          -5.074999999999999
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "A",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": true,
+        "public": false,
+        "reservable": true,
+        "booking_mode": "whole-environment",
+        "functional_use": "private-office"
+      }
+    },
+    {
+      "id": "ACCESS-A",
+      "core_id": "e47a645c-b05a-57ff-a405-9f6e2a98f473",
+      "type": "AccessPoint",
+      "name": "ACCESS-A",
+      "parent": "A",
+      "spatial": {
+        "bounds": null,
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:door:A",
+          "sim:p2:door:A:leaf",
+          "sim:p2:door:A:edge:-1",
+          "sim:p2:door:A:edge:1",
+          "sim:p2:door:A:handle"
+        ],
+        "position": [
+          -1.5,
+          -1.85,
+          -7.15
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "A",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "ACCESS-B",
+      "core_id": "89e075e3-1e7a-5812-ab44-1a6993e385da",
+      "type": "AccessPoint",
+      "name": "ACCESS-B",
+      "parent": "B",
+      "spatial": {
+        "bounds": null,
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:door:B",
+          "sim:p2:door:B:leaf",
+          "sim:p2:door:B:edge:-1",
+          "sim:p2:door:B:edge:1",
+          "sim:p2:door:B:handle"
+        ],
+        "position": [
+          -1.5,
+          -1.85,
+          -11.5
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "B",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "ACCESS-C",
+      "core_id": "1dea0f97-d1f5-5112-9187-91562ba28cc0",
+      "type": "AccessPoint",
+      "name": "ACCESS-C",
+      "parent": "C",
+      "spatial": {
+        "bounds": null,
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:door:C",
+          "sim:p2:door:C:leaf",
+          "sim:p2:door:C:edge:-1",
+          "sim:p2:door:C:edge:1",
+          "sim:p2:door:C:handle"
+        ],
+        "position": [
+          -1.5,
+          -1.85,
+          -18.05
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "C",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "ACCESS-D",
+      "core_id": "7dbfacaf-5c53-5be3-b881-9486c24e1519",
+      "type": "AccessPoint",
+      "name": "ACCESS-D",
+      "parent": "D",
+      "spatial": {
+        "bounds": null,
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:door:D",
+          "sim:p2:door:D:leaf",
+          "sim:p2:door:D:edge:-1",
+          "sim:p2:door:D:edge:1",
+          "sim:p2:door:D:handle"
+        ],
+        "position": [
+          -1.5,
+          -1.85,
+          -22.5
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "D",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "ACCESS-E",
+      "core_id": "1cefe503-48bd-5f03-bac7-0d30e16b53bd",
+      "type": "AccessPoint",
+      "name": "ACCESS-E",
+      "parent": "E",
+      "spatial": {
+        "bounds": null,
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:door:sim:ROOM-E",
+          "sim:p2:door:sim:ROOM-E:leaf",
+          "sim:p2:door:sim:ROOM-E:edge:-1",
+          "sim:p2:door:sim:ROOM-E:edge:1",
+          "sim:p2:door:sim:ROOM-E:handle"
+        ],
+        "position": [
+          -1.5,
+          -1.85,
+          -27.95
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "sim:ROOM-E",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "ACCESS-MEETING-AREA-01",
+      "core_id": "f723d33a-0946-5e75-9141-8919cc251dc7",
+      "type": "AccessPoint",
+      "name": "ACCESS-MEETING-AREA-01",
+      "parent": "MEETING-AREA-01",
+      "spatial": {
+        "bounds": null,
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:door:MEETING-AREA-01",
+          "sim:p2:door:MEETING-AREA-01:leaf",
+          "sim:p2:door:MEETING-AREA-01:edge:-1",
+          "sim:p2:door:MEETING-AREA-01:edge:1",
+          "sim:p2:door:MEETING-AREA-01:handle"
+        ],
+        "position": [
+          -1.5,
+          -1.85,
+          -2
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "MEETING-AREA-01",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "B",
+      "core_id": "09a47337-20b7-5024-9140-98b01007a040",
+      "type": "Office",
+      "name": "B",
+      "parent": "site",
+      "spatial": {
+        "bounds": [
+          [
+            -1.5,
+            -1.85,
+            -12.7
+          ],
+          [
+            4.1,
+            1.72,
+            -8.45
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [],
+        "position": [
+          1.2999999999999998,
+          -1.85,
+          -10.575
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "B",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": true,
+        "public": false,
+        "reservable": true,
+        "booking_mode": "whole-environment",
+        "functional_use": "private-office"
+      }
+    },
+    {
+      "id": "C",
+      "core_id": "dd2e24a6-544e-5f5b-8ac8-e06f5890290e",
+      "type": "Office",
+      "name": "C",
+      "parent": "site",
+      "spatial": {
+        "bounds": [
+          [
+            -1.5,
+            -1.85,
+            -18.25
+          ],
+          [
+            4.1,
+            1.72,
+            -13.4
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [],
+        "position": [
+          1.2999999999999998,
+          -1.85,
+          -15.825
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "C",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": false,
+        "reservable": false,
+        "booking_mode": "staff-only",
+        "functional_use": "staff"
+      }
+    },
+    {
+      "id": "CAFE",
+      "core_id": "4e2d0da4-1658-575f-8caa-c2d29203d43a",
+      "type": "Zone",
+      "name": "CAFE",
+      "parent": "site",
+      "spatial": {
+        "bounds": [
+          [
+            -11.829999923706055,
+            -0.5099999904632568,
+            -25.299999237060547
+          ],
+          [
+            -9.180000305175781,
+            -0.4099999964237213,
+            -19.474998474121094
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:cafe:bar-counter",
+          "sim:cafe:back-worktop"
+        ],
+        "position": [
+          -10.505000114440918,
+          -0.4599999934434891,
+          -22.38749885559082
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "sim:CAFE-01",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "CAFE-COFFEE",
+      "core_id": "8a7759a8-5dbc-5060-8f86-4f392fb377fa",
+      "type": "InventoryItem",
+      "name": "CAFE-COFFEE",
+      "parent": "CAFE",
+      "spatial": {
+        "bounds": [
+          [
+            -10.010000228881836,
+            -0.41999998688697815,
+            -24.100000381469727
+          ],
+          [
+            -9.389999389648438,
+            0.2199999988079071,
+            -23.30000114440918
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:cafe:espresso-machine"
+        ],
+        "position": [
+          -9.699999809265137,
+          -0.09999999403953552,
+          -23.700000762939453
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "sim:CAFE-01",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "CIRCULATION-01",
+      "core_id": "67c322d3-8670-52b2-a025-914a587eb6a7",
+      "type": "Zone",
+      "name": "CIRCULATION-01",
+      "parent": "site",
+      "spatial": {
+        "bounds": [
+          [
+            -6.525000095367432,
+            -2.0299999713897705,
+            -26.5
+          ],
+          [
+            4.350000381469727,
+            -1.5499999523162842,
+            2.6499998569488525
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p1:floor-main",
+          "sim:p2:raised-west",
+          "sim:p2:raised-east:back",
+          "sim:p3:wing-floor-join",
+          "sim:p3:raised-edge:middle",
+          "sim:p3:raised-edge:entrance"
+        ],
+        "position": [
+          -1.0874998569488525,
+          -1.7899999618530273,
+          -11.925000071525574
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "CIRCULATION-01",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "D",
+      "core_id": "7804cedd-cdc2-5d60-92d3-fb4cfe8a54b4",
+      "type": "Office",
+      "name": "D",
+      "parent": "site",
+      "spatial": {
+        "bounds": [
+          [
+            -1.5,
+            -1.85,
+            -24.3
+          ],
+          [
+            4.1,
+            1.72,
+            -19.05
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [],
+        "position": [
+          1.2999999999999998,
+          -1.85,
+          -21.675
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "D",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": true,
+        "reservable": false,
+        "booking_mode": "individual-desks",
+        "functional_use": "coworking"
+      }
+    },
+    {
+      "id": "D1",
+      "core_id": "a3b25161-86b0-5501-a868-e21ecb89f3f0",
+      "type": "Desk",
+      "name": "D1",
+      "parent": "D",
+      "spatial": {
+        "bounds": [
+          [
+            0.5482847690582275,
+            -1.840000033378601,
+            -23.54071044921875
+          ],
+          [
+            1.2692731618881226,
+            -0.5378884077072144,
+            -22.821216583251953
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p1:D:chair:1:seat",
+          "sim:p1:D:chair:1:back",
+          "sim:p1:D:chair:1:stem",
+          "sim:p1:D:chair:1:foot:0",
+          "sim:p1:D:chair:1:wheel:0",
+          "sim:p1:D:chair:1:foot:1",
+          "sim:p1:D:chair:1:wheel:1",
+          "sim:p1:D:chair:1:foot:2",
+          "sim:p1:D:chair:1:wheel:2",
+          "sim:p1:D:chair:1:foot:3",
+          "sim:p1:D:chair:1:wheel:3",
+          "sim:p1:D:chair:1:foot:4",
+          "sim:p1:D:chair:1:wheel:4",
+          "sim:p1:D:chair:1:arm:-1",
+          "sim:p1:D:chair:1:arm:1"
+        ],
+        "position": [
+          0.908778965473175,
+          -1.1889442205429077,
+          -23.18096351623535
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "D",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": true,
+        "reservable": true
+      }
+    },
+    {
+      "id": "D2",
+      "core_id": "87bdd64a-88b4-5f5c-b625-19f0f48521ce",
+      "type": "Desk",
+      "name": "D2",
+      "parent": "D",
+      "spatial": {
+        "bounds": [
+          [
+            0.6472565531730652,
+            -1.840000033378601,
+            -22.218711853027344
+          ],
+          [
+            1.2237813472747803,
+            -0.5378884077072144,
+            -21.592262268066406
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p1:D:chair:2:seat",
+          "sim:p1:D:chair:2:back",
+          "sim:p1:D:chair:2:stem",
+          "sim:p1:D:chair:2:foot:0",
+          "sim:p1:D:chair:2:wheel:0",
+          "sim:p1:D:chair:2:foot:1",
+          "sim:p1:D:chair:2:wheel:1",
+          "sim:p1:D:chair:2:foot:2",
+          "sim:p1:D:chair:2:wheel:2",
+          "sim:p1:D:chair:2:foot:3",
+          "sim:p1:D:chair:2:wheel:3",
+          "sim:p1:D:chair:2:foot:4",
+          "sim:p1:D:chair:2:wheel:4",
+          "sim:p1:D:chair:2:arm:-1",
+          "sim:p1:D:chair:2:arm:1"
+        ],
+        "position": [
+          0.9355189502239227,
+          -1.1889442205429077,
+          -21.905487060546875
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "D",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": true,
+        "reservable": true
+      }
+    },
+    {
+      "id": "D3",
+      "core_id": "fe7012fb-309a-5d84-bfd7-196102150276",
+      "type": "Desk",
+      "name": "D3",
+      "parent": "D",
+      "spatial": {
+        "bounds": [
+          [
+            0.5482985973358154,
+            -1.840000033378601,
+            -21.056873321533203
+          ],
+          [
+            1.2692686319351196,
+            -0.5378884077072144,
+            -20.337417602539062
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p1:D:chair:3:seat",
+          "sim:p1:D:chair:3:back",
+          "sim:p1:D:chair:3:stem",
+          "sim:p1:D:chair:3:foot:0",
+          "sim:p1:D:chair:3:wheel:0",
+          "sim:p1:D:chair:3:foot:1",
+          "sim:p1:D:chair:3:wheel:1",
+          "sim:p1:D:chair:3:foot:2",
+          "sim:p1:D:chair:3:wheel:2",
+          "sim:p1:D:chair:3:foot:3",
+          "sim:p1:D:chair:3:wheel:3",
+          "sim:p1:D:chair:3:foot:4",
+          "sim:p1:D:chair:3:wheel:4",
+          "sim:p1:D:chair:3:arm:-1",
+          "sim:p1:D:chair:3:arm:1"
+        ],
+        "position": [
+          0.9087836146354675,
+          -1.1889442205429077,
+          -20.697145462036133
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "D",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": true,
+        "reservable": true
+      }
+    },
+    {
+      "id": "D4",
+      "core_id": "f6d0c6a1-ce41-5967-ad94-667272188e05",
+      "type": "Desk",
+      "name": "D4",
+      "parent": "D",
+      "spatial": {
+        "bounds": [
+          [
+            2.7834088802337646,
+            -1.840000033378601,
+            -23.40736198425293
+          ],
+          [
+            3.5045688152313232,
+            -0.5378884077072144,
+            -22.686044692993164
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p1:D:chair:4:seat",
+          "sim:p1:D:chair:4:back",
+          "sim:p1:D:chair:4:stem",
+          "sim:p1:D:chair:4:foot:0",
+          "sim:p1:D:chair:4:wheel:0",
+          "sim:p1:D:chair:4:foot:1",
+          "sim:p1:D:chair:4:wheel:1",
+          "sim:p1:D:chair:4:foot:2",
+          "sim:p1:D:chair:4:wheel:2",
+          "sim:p1:D:chair:4:foot:3",
+          "sim:p1:D:chair:4:wheel:3",
+          "sim:p1:D:chair:4:foot:4",
+          "sim:p1:D:chair:4:wheel:4",
+          "sim:p1:D:chair:4:arm:-1",
+          "sim:p1:D:chair:4:arm:1"
+        ],
+        "position": [
+          3.143988847732544,
+          -1.1889442205429077,
+          -23.046703338623047
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "D",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": true,
+        "reservable": true
+      }
+    },
+    {
+      "id": "D5",
+      "core_id": "1df60832-4b0a-585b-bc27-7641012b2ed4",
+      "type": "Desk",
+      "name": "D5",
+      "parent": "D",
+      "spatial": {
+        "bounds": [
+          [
+            2.874552011489868,
+            -1.840000033378601,
+            -22.22822380065918
+          ],
+          [
+            3.4510769844055176,
+            -0.487888365983963,
+            -21.60543441772461
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p1:D:chair:5:seat",
+          "sim:p1:D:chair:5:back",
+          "sim:p1:D:chair:5:stem",
+          "sim:p1:D:chair:5:foot:0",
+          "sim:p1:D:chair:5:wheel:0",
+          "sim:p1:D:chair:5:foot:1",
+          "sim:p1:D:chair:5:wheel:1",
+          "sim:p1:D:chair:5:foot:2",
+          "sim:p1:D:chair:5:wheel:2",
+          "sim:p1:D:chair:5:foot:3",
+          "sim:p1:D:chair:5:wheel:3",
+          "sim:p1:D:chair:5:foot:4",
+          "sim:p1:D:chair:5:wheel:4",
+          "sim:p1:D:chair:5:arm:-1",
+          "sim:p1:D:chair:5:arm:1"
+        ],
+        "position": [
+          3.162814497947693,
+          -1.163944199681282,
+          -21.916829109191895
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "D",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": true,
+        "reservable": true
+      }
+    },
+    {
+      "id": "D6",
+      "core_id": "561ac19b-8f79-55b3-8be3-3b87eb2ec505",
+      "type": "Desk",
+      "name": "D6",
+      "parent": "D",
+      "spatial": {
+        "bounds": [
+          [
+            2.78348445892334,
+            -1.840000033378601,
+            -21.056903839111328
+          ],
+          [
+            3.504484176635742,
+            -0.5378884077072144,
+            -20.337387084960938
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p1:D:chair:6:seat",
+          "sim:p1:D:chair:6:back",
+          "sim:p1:D:chair:6:stem",
+          "sim:p1:D:chair:6:foot:0",
+          "sim:p1:D:chair:6:wheel:0",
+          "sim:p1:D:chair:6:foot:1",
+          "sim:p1:D:chair:6:wheel:1",
+          "sim:p1:D:chair:6:foot:2",
+          "sim:p1:D:chair:6:wheel:2",
+          "sim:p1:D:chair:6:foot:3",
+          "sim:p1:D:chair:6:wheel:3",
+          "sim:p1:D:chair:6:foot:4",
+          "sim:p1:D:chair:6:wheel:4",
+          "sim:p1:D:chair:6:arm:-1",
+          "sim:p1:D:chair:6:arm:1"
+        ],
+        "position": [
+          3.143984317779541,
+          -1.1889442205429077,
+          -20.697145462036133
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "D",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": true,
+        "reservable": true
+      }
+    },
+    {
+      "id": "E",
+      "core_id": "ab8cbcfe-9d13-5160-ba45-4aa42763b0b9",
+      "type": "Office",
+      "name": "E",
+      "parent": "site",
+      "spatial": {
+        "bounds": [
+          [
+            -1.5,
+            -1.85,
+            -28.2
+          ],
+          [
+            4.1,
+            1.72,
+            -24.3
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [],
+        "position": [
+          1.2999999999999998,
+          -1.85,
+          -26.25
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "sim:ROOM-E",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": true,
+        "reservable": false,
+        "booking_mode": "individual-desks",
+        "functional_use": "coworking",
+        "planned_unindexed_catalog_ids": [
+          "E2",
+          "E3",
+          "E4"
+        ]
+      }
+    },
+    {
+      "id": "E1",
+      "core_id": "5e357a1f-c20c-50a1-8a5f-8fedb3ad9ebf",
+      "type": "Desk",
+      "name": "E1",
+      "parent": "E",
+      "spatial": {
+        "bounds": [
+          [
+            -0.04999999701976776,
+            -1.8049999475479126,
+            -27.602602005004883
+          ],
+          [
+            0.4700000286102295,
+            -0.6176267266273499,
+            -27.030000686645508
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:E:chair:0:seat",
+          "sim:p2:E:chair:0:back",
+          "sim:p2:E:chair:0:stem",
+          "sim:p2:E:chair:0:foot:0",
+          "sim:p2:E:chair:0:foot:1",
+          "sim:p2:E:chair:0:foot:2",
+          "sim:p2:E:chair:0:foot:3",
+          "sim:p2:E:chair:0:foot:4"
+        ],
+        "position": [
+          0.21000001579523087,
+          -1.2113133370876312,
+          -27.316301345825195
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "sim:ROOM-E",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": true,
+        "reservable": true
+      }
+    },
+    {
+      "id": "E5",
+      "core_id": "b64e2c06-fca7-5a8c-96cc-d85c934fa8a2",
+      "type": "Desk",
+      "name": "E5",
+      "parent": "E",
+      "spatial": {
+        "bounds": [
+          [
+            1.0499999523162842,
+            -1.8049999475479126,
+            -25.469999313354492
+          ],
+          [
+            1.5699999332427979,
+            -0.6176267266273499,
+            -24.989999771118164
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:E:chair:4:seat",
+          "sim:p2:E:chair:4:back",
+          "sim:p2:E:chair:4:stem",
+          "sim:p2:E:chair:4:foot:0",
+          "sim:p2:E:chair:4:foot:1",
+          "sim:p2:E:chair:4:foot:2",
+          "sim:p2:E:chair:4:foot:3",
+          "sim:p2:E:chair:4:foot:4"
+        ],
+        "position": [
+          1.309999942779541,
+          -1.2113133370876312,
+          -25.229999542236328
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "sim:ROOM-E",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": true,
+        "reservable": true
+      }
+    },
+    {
+      "id": "E6",
+      "core_id": "44c813c4-c4ee-5fbe-9c6a-57adfdf63381",
+      "type": "Desk",
+      "name": "E6",
+      "parent": "E",
+      "spatial": {
+        "bounds": [
+          [
+            2.1500000953674316,
+            -1.8049999475479126,
+            -25.469999313354492
+          ],
+          [
+            2.6700000762939453,
+            -0.6176267266273499,
+            -24.989999771118164
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:E:chair:5:seat",
+          "sim:p2:E:chair:5:back",
+          "sim:p2:E:chair:5:stem",
+          "sim:p2:E:chair:5:foot:0",
+          "sim:p2:E:chair:5:foot:1",
+          "sim:p2:E:chair:5:foot:2",
+          "sim:p2:E:chair:5:foot:3",
+          "sim:p2:E:chair:5:foot:4"
+        ],
+        "position": [
+          2.4100000858306885,
+          -1.2113133370876312,
+          -25.229999542236328
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "sim:ROOM-E",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "private": false,
+        "public": true,
+        "reservable": true
+      }
+    },
+    {
+      "id": "KIOSK-01",
+      "core_id": "e573d0f1-6794-508c-b76a-5e71ec056dfe",
+      "type": "Kiosk",
+      "name": "KIOSK-01",
+      "parent": "RECEPTION",
+      "spatial": {
+        "bounds": [
+          [
+            -3.740000009536743,
+            -0.48000001907348633,
+            -16.42500114440918
+          ],
+          [
+            -3.56000018119812,
+            0.12000000476837158,
+            -15.77500057220459
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:reception-kiosk"
+        ],
+        "position": [
+          -3.6500000953674316,
+          -0.18000000715255737,
+          -16.100000858306885
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "RECEPTION",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "LOUNGE",
+      "core_id": "9e655b0a-af01-5c3d-ab79-6ce06359ed82",
+      "type": "Zone",
+      "name": "LOUNGE",
+      "parent": "site",
+      "spatial": {
+        "bounds": [
+          [
+            -11.524999618530273,
+            -1.5499999523162842,
+            -5.56927490234375
+          ],
+          [
+            -6.670938014984131,
+            -0.5963609218597412,
+            -1.1749998331069946
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:r1:lounge:sofa:main:part:0",
+          "sim:r1:lounge:sofa:main:part:1",
+          "sim:r1:lounge:sofa:main:part:2",
+          "sim:r1:lounge:sofa:side:part:0",
+          "sim:r1:lounge:sofa:side:part:1",
+          "sim:r1:lounge:sofa:side:part:2",
+          "sim:r1:lounge:chair:part:0",
+          "sim:r1:lounge:chair:part:1",
+          "sim:r1:lounge:chair:part:2",
+          "sim:r1:lounge:chair:part:3"
+        ],
+        "position": [
+          -9.097968816757202,
+          -1.0731804370880127,
+          -3.3721373677253723
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "sim:LOUNGE",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "LOUNGE-SEATING",
+      "core_id": "0779f5af-da02-5748-a900-71f76f88d1b2",
+      "type": "InventoryItem",
+      "name": "LOUNGE-SEATING",
+      "parent": "LOUNGE",
+      "spatial": {
+        "bounds": [
+          [
+            -11.524999618530273,
+            -1.5499999523162842,
+            -5.56927490234375
+          ],
+          [
+            -6.670938014984131,
+            -0.5963609218597412,
+            -1.1749998331069946
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:r1:lounge:sofa:main:part:0",
+          "sim:r1:lounge:sofa:main:part:1",
+          "sim:r1:lounge:sofa:main:part:2",
+          "sim:r1:lounge:sofa:side:part:0",
+          "sim:r1:lounge:sofa:side:part:1",
+          "sim:r1:lounge:sofa:side:part:2",
+          "sim:r1:lounge:chair:part:0",
+          "sim:r1:lounge:chair:part:1",
+          "sim:r1:lounge:chair:part:2",
+          "sim:r1:lounge:chair:part:3"
+        ],
+        "position": [
+          -9.097968816757202,
+          -1.0731804370880127,
+          -3.3721373677253723
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "sim:LOUNGE",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "MEETING-AREA-01",
+      "core_id": "ae970035-1f4a-5d72-8d5f-86041ad14bdf",
+      "type": "Room",
+      "name": "MEETING-AREA-01",
+      "parent": "site",
+      "spatial": {
+        "bounds": [
+          [
+            -0.875,
+            -1,
+            -1.1749999523162842
+          ],
+          [
+            4.03000020980835,
+            0.9100000262260437,
+            1.1749999523162842
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p1:meeting:table",
+          "sim:r1:meeting:TV:body"
+        ],
+        "position": [
+          1.5775001049041748,
+          -0.04499998688697815,
+          0.0
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "MEETING-AREA-01",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {
+        "reservable": true,
+        "booking_mode": "whole-environment"
+      }
+    },
+    {
+      "id": "PERSON-LOGICAL-01",
+      "core_id": "08f0d317-845d-5745-88a9-4c41b65ea09c",
+      "type": "Person",
+      "name": "Persona l\u00f3gica sin identificar 1",
+      "parent": "site",
+      "spatial": null,
+      "role": [
+        "visitor"
+      ],
+      "identity_status": "unverified-placeholder",
+      "catalogue": {}
+    },
+    {
+      "id": "PERSON-LOGICAL-02",
+      "core_id": "0841916f-c485-59dc-bdb0-29bca9f2b7af",
+      "type": "Person",
+      "name": "Persona l\u00f3gica sin identificar 2",
+      "parent": "site",
+      "spatial": null,
+      "role": [
+        "member"
+      ],
+      "identity_status": "unverified-placeholder",
+      "catalogue": {}
+    },
+    {
+      "id": "PERSON-LOGICAL-03",
+      "core_id": "fc2c6da6-91c6-5af4-9f1e-df672da899b3",
+      "type": "Person",
+      "name": "Persona l\u00f3gica sin identificar 3",
+      "parent": "site",
+      "spatial": null,
+      "role": [
+        "staff"
+      ],
+      "identity_status": "unverified-placeholder",
+      "catalogue": {}
+    },
+    {
+      "id": "PERSON-LOGICAL-04",
+      "core_id": "346c292c-4def-5e3d-881e-d89485aa70f7",
+      "type": "Person",
+      "name": "Persona l\u00f3gica sin identificar 4",
+      "parent": "site",
+      "spatial": null,
+      "role": [
+        "host"
+      ],
+      "identity_status": "unverified-placeholder",
+      "catalogue": {}
+    },
+    {
+      "id": "RECEPTION",
+      "core_id": "907e68e9-a045-54a6-918e-c7c4204eba13",
+      "type": "Reception",
+      "name": "RECEPTION",
+      "parent": "site",
+      "spatial": {
+        "bounds": [
+          [
+            -4.025000095367432,
+            -1.459999918937683,
+            -17.200000762939453
+          ],
+          [
+            -3.2750000953674316,
+            -0.4699999988079071,
+            -15
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:reception-counter",
+          "sim:p2:reception-top"
+        ],
+        "position": [
+          -3.6500000953674316,
+          -0.9649999588727951,
+          -16.100000381469727
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "RECEPTION",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "TABLE-D",
+      "core_id": "27a8a083-e4a9-5a60-9325-7414fc5dd203",
+      "type": "InventoryItem",
+      "name": "TABLE-D",
+      "parent": "D",
+      "spatial": {
+        "bounds": [
+          [
+            1.2500001192092896,
+            -0.8200000524520874,
+            -23.815000534057617
+          ],
+          [
+            2.8000001907348633,
+            -0.75,
+            -20.065000534057617
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p1:D:desktop"
+        ],
+        "position": [
+          2.0250001549720764,
+          -0.7850000262260437,
+          -21.940000534057617
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "D",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "TABLE-E",
+      "core_id": "fd6d9ba7-2615-58fc-92bd-881ea1da24c6",
+      "type": "InventoryItem",
+      "name": "TABLE-E",
+      "parent": "E",
+      "spatial": {
+        "bounds": [
+          [
+            -0.3500000238418579,
+            -0.9100000262260437,
+            -26.850000381469727
+          ],
+          [
+            2.9499998092651367,
+            -0.8299999833106995,
+            -25.649999618530273
+          ]
+        ],
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+        "object_ids": [
+          "sim:p2:E:desktop"
+        ],
+        "position": [
+          1.2999998927116394,
+          -0.8700000047683716,
+          -26.25
+        ],
+        "provenance": "existing-scene-index; not a physical survey",
+        "scene_environment_id": "sim:ROOM-E",
+        "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
+      },
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    },
+    {
+      "id": "site",
+      "core_id": "9e43c185-46cf-5fc8-b066-945f8589ae2d",
+      "type": "Site",
+      "name": "ENTITY coworking \u2014 P2 laboratory, not live operations",
+      "parent": null,
+      "spatial": null,
+      "role": null,
+      "identity_status": null,
+      "catalogue": {}
+    }
+  ],
+  "relations": [
+    {
+      "id": "5ab5e2f9-1bc3-5897-a3ab-f03dba0cb246",
+      "type": "locatedIn",
+      "source": "ACCESS-A",
+      "target": "A",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "c53f8808-4527-55cf-a358-dbc0bbb1f00e",
+      "type": "partOf",
+      "source": "ACCESS-A",
+      "target": "A",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "5c46d12c-b93d-5edc-8d74-63dfe0d57aea",
+      "type": "connectedTo",
+      "source": "CIRCULATION-01",
+      "target": "A",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -6.3
+            ],
+            [
+              -1.5,
+              -1.85,
+              -6.3
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -6.3
+            ],
+            [
+              -1.4,
+              -1.85,
+              -6.3
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:A",
+        "route": "A",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "276c833e-418a-5449-a969-5123fdae52f7",
+      "type": "locatedIn",
+      "source": "ACCESS-B",
+      "target": "B",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "91382351-7500-5d31-9224-7b9d3375c7c5",
+      "type": "partOf",
+      "source": "ACCESS-B",
+      "target": "B",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "230d97c9-8dd8-537a-82fb-d5ebf5d51eb8",
+      "type": "connectedTo",
+      "source": "CIRCULATION-01",
+      "target": "B",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -10.6
+            ],
+            [
+              -1.5,
+              -1.85,
+              -10.6
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -10.6
+            ],
+            [
+              -1.4,
+              -1.85,
+              -10.6
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:B",
+        "route": "B",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "ca2b3442-cd89-5878-a3d1-06299a8ddbde",
+      "type": "locatedIn",
+      "source": "ACCESS-C",
+      "target": "C",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "bf5dd180-de30-5ced-b6db-2635394380b4",
+      "type": "partOf",
+      "source": "ACCESS-C",
+      "target": "C",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "394184f7-397f-5375-af7c-3e7159c11602",
+      "type": "connectedTo",
+      "source": "CIRCULATION-01",
+      "target": "C",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -17.2
+            ],
+            [
+              -1.5,
+              -1.85,
+              -17.2
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -17.2
+            ],
+            [
+              -1.4,
+              -1.85,
+              -17.2
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:C",
+        "route": "C",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "7e7c0ed9-ebef-5ed4-9716-023f8def1e77",
+      "type": "locatedIn",
+      "source": "CAFE-COFFEE",
+      "target": "CAFE",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "6fd513eb-8976-556a-8e41-6d13202de4e5",
+      "type": "partOf",
+      "source": "CAFE-COFFEE",
+      "target": "CAFE",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "f7369934-7327-5397-af67-b42cf8202a76",
+      "type": "connectedTo",
+      "source": "MEETING-AREA-01",
+      "target": "CIRCULATION-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -1.1
+            ],
+            [
+              -1.5,
+              -1.85,
+              -1.1
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -1.1
+            ],
+            [
+              -1.4,
+              -1.85,
+              -1.1
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:MEETING-AREA-01",
+        "route": "MEETING-AREA-01",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "1c8baf20-6a5b-5de3-aaf7-ef4a06e36014",
+      "type": "connectedTo",
+      "source": "A",
+      "target": "CIRCULATION-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -6.3
+            ],
+            [
+              -1.5,
+              -1.85,
+              -6.3
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -6.3
+            ],
+            [
+              -1.4,
+              -1.85,
+              -6.3
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:A",
+        "route": "A",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "d201fd86-5bfe-5975-99a7-ae5cf854e555",
+      "type": "connectedTo",
+      "source": "B",
+      "target": "CIRCULATION-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -10.6
+            ],
+            [
+              -1.5,
+              -1.85,
+              -10.6
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -10.6
+            ],
+            [
+              -1.4,
+              -1.85,
+              -10.6
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:B",
+        "route": "B",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "c1ec142e-2069-5e88-bc64-23d441a1177f",
+      "type": "connectedTo",
+      "source": "C",
+      "target": "CIRCULATION-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -17.2
+            ],
+            [
+              -1.5,
+              -1.85,
+              -17.2
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -17.2
+            ],
+            [
+              -1.4,
+              -1.85,
+              -17.2
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:C",
+        "route": "C",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "c70cbb46-b979-5241-9fdd-a941a18a9722",
+      "type": "connectedTo",
+      "source": "D",
+      "target": "CIRCULATION-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -21.6
+            ],
+            [
+              -1.5,
+              -1.85,
+              -21.6
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -21.6
+            ],
+            [
+              -1.4,
+              -1.85,
+              -21.6
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:D",
+        "route": "D",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "b2068286-72e5-58f2-9ddd-018b53d21f84",
+      "type": "connectedTo",
+      "source": "E",
+      "target": "CIRCULATION-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -27.1
+            ],
+            [
+              -1.5,
+              -1.85,
+              -27.1
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -27.1
+            ],
+            [
+              -1.4,
+              -1.85,
+              -27.1
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:sim:ROOM-E",
+        "route": "sim:ROOM-E",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "e5c289f5-a847-5b57-b3b5-f0771d16f264",
+      "type": "partOf",
+      "source": "D1",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "07af79c8-e9a0-5c0f-be51-57432bea774e",
+      "type": "partOf",
+      "source": "D2",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "e3046510-fc37-5414-a435-67ff3d234707",
+      "type": "partOf",
+      "source": "D3",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "380846c9-84c8-5e97-8523-3efbe3bdf239",
+      "type": "partOf",
+      "source": "D4",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "094fc5a6-fb72-5ff5-8120-8a9425e26316",
+      "type": "partOf",
+      "source": "D5",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "018f0a1c-0175-57be-bf5f-b696191b8ac1",
+      "type": "partOf",
+      "source": "D6",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "d5bf4e95-9282-5d0b-b5f1-cf76319140c0",
+      "type": "locatedIn",
+      "source": "D1",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "d053a751-2e2f-5ca9-8a37-1607186d56bc",
+      "type": "locatedIn",
+      "source": "D2",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "4d220c02-70cf-578f-90bd-63e1a72e6f4f",
+      "type": "locatedIn",
+      "source": "D3",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "42583086-07ef-5c00-9d36-fff57b6066ae",
+      "type": "locatedIn",
+      "source": "D4",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "594fc1f5-782b-5fac-973f-0e389b5cfccf",
+      "type": "locatedIn",
+      "source": "D5",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "bb5b6a4e-c48c-5571-984d-b7215aa74379",
+      "type": "locatedIn",
+      "source": "D6",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "e64b3874-b1da-54e8-bd7a-e2b371a33775",
+      "type": "locatedIn",
+      "source": "TABLE-D",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "da89aaed-c15e-5118-bdfa-6e67112bf742",
+      "type": "partOf",
+      "source": "TABLE-D",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "ca66d298-bd1c-57fb-a02b-9ea635d0a2f5",
+      "type": "locatedIn",
+      "source": "ACCESS-D",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "47c78f8b-3ec3-5a2a-9d5e-32f54657b5f0",
+      "type": "partOf",
+      "source": "ACCESS-D",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "c32e45dc-bb22-5a92-b086-621e65386779",
+      "type": "connectedTo",
+      "source": "CIRCULATION-01",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -21.6
+            ],
+            [
+              -1.5,
+              -1.85,
+              -21.6
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -21.6
+            ],
+            [
+              -1.4,
+              -1.85,
+              -21.6
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:D",
+        "route": "D",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "299ff8b0-2a06-5995-b6c0-e762dfdb401f",
+      "type": "adjacentTo",
+      "source": "E",
+      "target": "D",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "shared_boundary_z": -24.3,
+        "source": "existing room bounds and E reuse_front_partition D",
+        "transit_implied": false
+      }
+    },
+    {
+      "id": "ef47d99d-8e48-5a1e-8cb5-a68530c43755",
+      "type": "partOf",
+      "source": "E1",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "298a6f7a-f9f3-5279-ad17-6e90e7815564",
+      "type": "partOf",
+      "source": "E5",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "21238e0c-73ee-5460-a82b-c5338949807a",
+      "type": "partOf",
+      "source": "E6",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "f95155d5-f67f-516e-a1cb-c8f5b21bf54e",
+      "type": "locatedIn",
+      "source": "E1",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "0502f0eb-a981-51af-8aa3-84ad2c27bd3a",
+      "type": "locatedIn",
+      "source": "E5",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "b76900c6-abb1-5efd-bf31-c950c96dc3d6",
+      "type": "locatedIn",
+      "source": "E6",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "53f22c9b-4735-582a-8bf7-96c9a3d7eec3",
+      "type": "locatedIn",
+      "source": "TABLE-E",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "e3b8daf7-cd44-5b01-9b2e-6f6dca1156f3",
+      "type": "partOf",
+      "source": "TABLE-E",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "3cd3f78c-1562-5c5a-ad0e-96b92fd03b84",
+      "type": "locatedIn",
+      "source": "ACCESS-E",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "3c30c28c-e9c8-5b77-a9ff-0926ab721b8f",
+      "type": "partOf",
+      "source": "ACCESS-E",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "83b51ee7-22c3-55e9-9ed9-02ce6d0e6f7e",
+      "type": "connectedTo",
+      "source": "CIRCULATION-01",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -27.1
+            ],
+            [
+              -1.5,
+              -1.85,
+              -27.1
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -27.1
+            ],
+            [
+              -1.4,
+              -1.85,
+              -27.1
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:sim:ROOM-E",
+        "route": "sim:ROOM-E",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "a96baeb8-463d-50f6-8978-08b6e2eed55c",
+      "type": "adjacentTo",
+      "source": "D",
+      "target": "E",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "shared_boundary_z": -24.3,
+        "source": "existing room bounds and E reuse_front_partition D",
+        "transit_implied": false
+      }
+    },
+    {
+      "id": "b549165f-42af-526d-b178-74fc3cee4c18",
+      "type": "locatedIn",
+      "source": "LOUNGE-SEATING",
+      "target": "LOUNGE",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "67df1156-5342-5a96-9be9-1ba38b0ebbd8",
+      "type": "partOf",
+      "source": "LOUNGE-SEATING",
+      "target": "LOUNGE",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "7b163028-f7b5-5336-be30-81cc71642d3a",
+      "type": "locatedIn",
+      "source": "ACCESS-MEETING-AREA-01",
+      "target": "MEETING-AREA-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "93240514-1825-53ab-abb8-9e3aa5c4159d",
+      "type": "partOf",
+      "source": "ACCESS-MEETING-AREA-01",
+      "target": "MEETING-AREA-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "0a08fa15-89cd-58fb-b4b7-259252dfc51b",
+      "type": "connectedTo",
+      "source": "CIRCULATION-01",
+      "target": "MEETING-AREA-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": {
+        "condition": "geometric connection; actual transit depends on current door state; not an access authorization",
+        "crossings": [
+          [
+            [
+              -1.6,
+              -1.85,
+              -1.1
+            ],
+            [
+              -1.5,
+              -1.85,
+              -1.1
+            ]
+          ],
+          [
+            [
+              -1.5,
+              -1.85,
+              -1.1
+            ],
+            [
+              -1.4,
+              -1.85,
+              -1.1
+            ]
+          ]
+        ],
+        "door_object": "sim:p2:door:MEETING-AREA-01",
+        "route": "MEETING-AREA-01",
+        "source": "existing approved geometric route"
+      }
+    },
+    {
+      "id": "b30602fd-9618-5319-acfc-8ba3222cd1fb",
+      "type": "locatedIn",
+      "source": "KIOSK-01",
+      "target": "RECEPTION",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "6d849e34-d4bb-5cd6-9ecb-4b9030ac801c",
+      "type": "partOf",
+      "source": "KIOSK-01",
+      "target": "RECEPTION",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "fb6e696e-2eca-5352-8930-8b360aee4c55",
+      "type": "partOf",
+      "source": "A",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "98eef878-ff13-5e35-b000-e0c2c88b36a6",
+      "type": "partOf",
+      "source": "B",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "52434e1a-150c-598b-affc-7d3f1521f0f2",
+      "type": "partOf",
+      "source": "C",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "0350b54d-cbfa-54d2-a3ab-d25deb78dc7e",
+      "type": "partOf",
+      "source": "CAFE",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "4f88a8ce-fb66-5997-807b-354091d9cbb4",
+      "type": "partOf",
+      "source": "D",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "ff612a97-3143-5b62-959a-e4df536a9e8f",
+      "type": "partOf",
+      "source": "E",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "756c3955-755d-553f-8c84-096197367d9c",
+      "type": "partOf",
+      "source": "LOUNGE",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "938ffef1-c086-5d5e-aec4-930b87c2fbfe",
+      "type": "partOf",
+      "source": "PERSON-LOGICAL-01",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "6367b6e1-dc90-516b-b820-d4f00c87e22f",
+      "type": "partOf",
+      "source": "PERSON-LOGICAL-02",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "254f9655-8d73-5823-a7b3-e07ea2223daa",
+      "type": "partOf",
+      "source": "RECEPTION",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "a2bebd05-88f5-5727-bd3b-648ad4a70ad1",
+      "type": "partOf",
+      "source": "PERSON-LOGICAL-03",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "4c7bf51a-f9de-54bd-9e0d-8589f28e5a24",
+      "type": "partOf",
+      "source": "PERSON-LOGICAL-04",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "f1c8eedb-a595-50e6-9a03-69f818286bc4",
+      "type": "partOf",
+      "source": "MEETING-AREA-01",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "4dfb65ee-ba64-5c07-8a48-310e12f4de18",
+      "type": "partOf",
+      "source": "CIRCULATION-01",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    }
+  ],
+  "vocabulary": {
+    "CONTIENE": "inverse of existing partOf; stored once, traversable in either direction",
+    "PERTENECE_A": "partOf",
+    "UBICADO_EN": "locatedIn",
+    "ADYACENTE_A": "adjacentTo",
+    "CONECTADO_CON": "connectedTo"
+  },
+  "unknown": "No other adjacency, current door transit, live access rights, person location or operational facts asserted",
+  "geometry_modified": false,
+  "logical_people_without_mesh": 4
+}

@@ -136,12 +136,14 @@ def command(db,site,run,actor,body):
             kind=data['kind'];attrs=data.get('attributes',{});key=data['id']
             if set(attrs)&{'id','kind','core_id','site_id','observed_at','freshness','presence','occupancy','access','membership_status','membership_until','status'}:raise HTTPException(403,'Derived state uses domain operations, not metadata writes')
             if kind in {'Booking','Visit','Notification','Task','Incident','CheckIn','Alert','Track'}:raise HTTPException(422,'Use domain operation for derived entity')
-            entry=upsert_resource(db,site,key,kind,attrs);changes[key]={**get(key),**entry}
+            previous=db.execute('SELECT attributes FROM office_resources WHERE site=? AND id=?',(site,key)).fetchone()
+            metadata={**(json.loads(previous[0])if previous else{}),**attrs}
+            entry=upsert_resource(db,site,key,kind,metadata);changes[key]={**entry,**get(key),**attrs,'id':key,'core_id':entry['core_id'],'kind':kind}
         elif op=='relation.add':
             from .graph import TYPES
             if data['type'] not in TYPES:raise HTTPException(422,'Unknown typed relationship')
             a=get(data['source']);get(data['target']);relations=a.get('relations',[])
-            relation={'type':data['type'],'target':data['target'],'valid_from':clock,'valid_to':data.get('valid_to')}
+            relation={'id':identity(site,data['source'],data['type'],data['target']),'type':data['type'],'target':data['target'],'valid_from':clock,'valid_to':data.get('valid_to'),'provenance':data.get('evidence')or {'source':'explicit-domain-command'}}
             if not any(r['type']==relation['type'] and r['target']==relation['target'] and r.get('valid_to') is None for r in relations):relations=relations+[relation]
             changes[data['source']]={'relations':relations}
         elif op=='account.create':

@@ -16,7 +16,7 @@ INPUTS={
  'intercom.timeout':typed('IntercomTimeout',conversation_id=(S,...)),
  'entity.remember':typed('EntityRemember',content=(S,Field(max_length=4000)),source=(S,...)),
  'entity.upsert':typed('ResourceUpsert',id=(S,...),kind=(S,...),attributes=(dict,Field(default_factory=dict))),
- 'relation.add':typed('RelationAdd',source=(S,...),target=(S,...),type=(S,...),valid_to=(T|None,None)),
+ 'relation.add':typed('RelationAdd',source=(S,...),target=(S,...),type=(S,...),valid_to=(T|None,None),evidence=(dict,Field(default_factory=dict))),
  'membership.set':typed('MembershipChange',status=(S,...),until=(T,...)),
  'account.create':typed('AccountCreate',username=(S,...),password=(str,Field(min_length=12,max_length=1024)),role=(S,...),person=(str|None,None)),
  'booking.create':typed('BookingCreate',booking_id=(S,...),person_id=(S,...),starts_at=(T,...),ends_at=(T,...),party_size=(int,Field(default=1,ge=1,le=1000)),meeting_id=(str|None,None),expected_guests=(list[dict],Field(default_factory=list))),

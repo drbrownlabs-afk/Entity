@@ -23,7 +23,9 @@ class Configuration(CoreRecord):
     clock:NonBlank
     resources:list[Resource]
     accounts:list[dict]
+    structural_relations:list[dict]=Field(default_factory=list)
 config=Configuration.model_validate(config).model_dump(exclude={'schema_version'})
+if not config['structural_relations']:config.pop('structural_relations')
 fingerprint=hashlib.sha256(encode(config).encode()).hexdigest();main.initialize()
 credentials={}
 with main.database(write=True) as db:
@@ -40,6 +42,11 @@ with main.database(write=True) as db:
         for grant in account.get('grants',[]):db.execute('INSERT INTO office_grants VALUES(?,?,?,?)',(config['id'],username,grant['resource'],grant['permission']))
         credentials[username]={'password':password,'role':account['role']}
     create_run(db,config['id'],'onboarding',config['clock'])
+    from app.office.service import command
+    from app.office.auth import ROLES
+    actor={'actor':'site-configuration','site':config['id'],'role':'admin','person':None,'permissions':ROLES['admin'],'grants':[]}
+    for edge in config.get('structural_relations',[]):
+        command(db,config['id'],'onboarding',actor,{'id':str(__import__('uuid').uuid4()),'operation':'relation.add','target':'site','inputs':edge})
 path=Path(args.database).resolve().parent/(config['id']+'-access.json')
 fd=os.open(path,os.O_WRONLY|os.O_CREAT|os.O_TRUNC,0o600)
 with os.fdopen(fd,'w') as stream:json.dump(credentials,stream,indent=2)
