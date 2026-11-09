@@ -3,20 +3,21 @@ from datetime import datetime
 from fastapi import HTTPException
 
 FIELD_LINKS={
- 'registry_id':'registeredIn',
+ 'registry_id':'registeredIn','assigned_org_id':'assignedTo','plan_id':'correspondsToPlan','pass_id':'referencesPass','renews_id':'renews','renewal_id':'concernsRenewal','order_id':'referencesOrder','payment_id':'referencesPayment','service_id':'concernsService','visit_plan_id':'concernsVisitPlan','meeting_plan_id':'concernsMeetingPlan',
  'visit_id':'registeredVisit','access_point':'atAccessPoint',
  'operator_org_id':'managedBy','organization_id':'belongsTo','team_id':'memberOf','zone_id':'locatedIn','parent_resource':'partOf',
  'resource_id':'usesResource','person_id':'concernsPerson','host_id':'hostedBy','booking_id':'scheduledBy',
  'meeting_id':'attendsMeeting','camera_id':'observedBy','track_id':'representedBy','assignee':'assignedTo',
  'environment_id':'locatedIn','waiting_area':'waitsIn','recipient':'addressedTo','conversation_id':'partOfConversation',
 }
-TYPES={'registeredIn','adjacentTo','connectedTo','registeredVisit','atAccessPoint','managedBy','belongsTo','memberOf','locatedIn','partOf','usesResource','concernsPerson','hostedBy','scheduledBy','attendsMeeting','observedBy','representedBy','assignedTo','waitsIn','addressedTo','partOfConversation','occupies','employedBy','uses','covers','streamOf','measures','serves','communicatesThrough','reservedBy','invitedTo','reportsTo','affectedBy'}
+TYPES={'referencesPass','referencesOrder','referencesPayment','correspondsToPlan','usesPass','renews','concernsRenewal','settlesOrder','documentsPayment','concernsService','concernsVisitPlan','concernsMeetingPlan','registeredIn','adjacentTo','connectedTo','registeredVisit','atAccessPoint','managedBy','belongsTo','memberOf','locatedIn','partOf','usesResource','concernsPerson','hostedBy','scheduledBy','attendsMeeting','observedBy','representedBy','assignedTo','waitsIn','addressedTo','partOfConversation','occupies','employedBy','uses','covers','streamOf','measures','serves','communicatesThrough','reservedBy','invitedTo','reportsTo','affectedBy'}
 def active(edge,at):
     return edge.get('valid_from','0000')<=at and (not edge.get('valid_to') or at<edge['valid_to'])
 def derive(item,at):
     links=list(item.get('relations',[]))
     for field,kind in FIELD_LINKS.items():
         target=item.get(field)
+        links=[{**r,'valid_to':at}if r.get('field')==field and r['type']!=kind and not r.get('valid_to')else r for r in links]
         if not isinstance(target,str) or not target:
             links=[{**r,'valid_to':at}if r['type']==kind and r.get('field')==field and not r.get('valid_to')else r for r in links]
             continue

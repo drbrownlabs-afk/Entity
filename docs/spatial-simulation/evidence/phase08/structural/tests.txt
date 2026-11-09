@@ -4,8 +4,9 @@ test_persistence_and_no_operational_facts (test_p2_structural.StructuralTests.te
 test_person_registration_is_not_permanent_physical_containment (test_p2_structural.StructuralTests.test_person_registration_is_not_permanent_physical_containment) ... ok
 test_preexisting_unindexed_catalog_entry_is_not_withdrawn (test_p2_structural.StructuralTests.test_preexisting_unindexed_catalog_entry_is_not_withdrawn) ... ok
 test_spatial_integrity_and_verified_connections_only (test_p2_structural.StructuralTests.test_spatial_integrity_and_verified_connections_only) ... ok
+test_twelve_person_population_organizations_and_declared_scenarios (test_p2_structural.StructuralTests.test_twelve_person_population_organizations_and_declared_scenarios) ... ok
 
 ----------------------------------------------------------------------
-Ran 6 tests in 2.062s
+Ran 7 tests in 2.589s
 
 OK

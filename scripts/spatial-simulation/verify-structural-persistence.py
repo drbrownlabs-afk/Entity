@@ -17,7 +17,7 @@ def read():
   r=c.post('/v1/office/auth/login',json={'username':'coworking-p2:admin','password':credentials['coworking-p2:admin']['password']});r.raise_for_status();c.headers['Authorization']='Bearer '+r.json()['token'];r=c.get('/v1/sites/coworking-p2/runs/onboarding/world');r.raise_for_status();w=r.json();c.post('/v1/office/auth/logout');return w
 try:
  process=start();before=read();process.terminate();process.wait(timeout=10);process=start();after=read();assert before==after
- report={'passed':True,'scope':'structural technical inspection only','real_http':True,'full_p1_process_restart':True,'stable_ids_types_relations_spatial_mappings':True,'world_entities_including_preserved_prior_test_records':len(after['entities']),'configured_structural_entities':35,'operational_commands_run':0,'functional_queries_run':0}
+ report={'passed':True,'scope':'structural technical inspection only','real_http':True,'full_p1_process_restart':True,'stable_ids_types_relations_spatial_mappings':True,'world_entities_including_preserved_prior_test_records':len(after['entities']),'configured_structural_entities':len(json.loads((runtime/'p2-structural.json').read_text())['resources']),'operational_commands_run':0,'functional_queries_run':0}
  (ROOT/'docs/spatial-simulation/evidence/phase08/structural/persistence.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report))
 finally:
  if process and process.poll()is None:process.terminate();process.wait(timeout=10)

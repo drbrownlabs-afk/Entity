@@ -57,6 +57,50 @@ for door in scene['devices']['doors']:
 rooms={r['id']:r for r in scene['room_bounds']};d,e=rooms['D']['bounds'],rooms['sim:ROOM-E']['bounds']
 if abs(d[2]-e[3])<1e-6 and min(d[1],e[1])>max(d[0],e[0]):
  for source_id,target in [('D','E'),('E','D')]:relations.append({'source':source_id,'target':target,'type':'adjacentTo','evidence':{'source':'existing room bounds and E reuse_front_partition D','shared_boundary_z':d[2],'transit_implied':False}})
+# Section8.2: reuse the four existing logical identities, extend the population to exactly12.
+people=[
+ (1,'Visitante comercial sintético','visitors',['visitor'],None),
+ (2,'Habitual anual sintético','regulars',['member'],None),
+ (3,'Staff de recepción sintético','staff',['staff','reception'],None),
+ (4,'Carlos','entity',['host','member'],'ORG-ENTITY'),
+ (5,'Staff de administración sintético','staff',['staff','administration'],None),
+ (6,'Staff de operaciones sintético','staff',['staff','operations'],None),
+ (7,'Santiago','entity',['member'],'ORG-ENTITY'),
+ (8,'Integrante Inmerso provisional1','inmerso',['member'],'ORG-INMERSO'),
+ (9,'Integrante Inmerso provisional2','inmerso',['member'],'ORG-INMERSO'),
+ (10,'Habitual mensual sintético','regulars',['member'],None),
+ (11,'Habitual por horas sintético','regulars',['member'],None),
+ (12,'Visitante de reunión sintético','visitors',['visitor'],None)]
+for number,name,group,roles,organization in people:
+ key=f'PERSON-LOGICAL-{number:02}';attrs={'name':name,'population_group':group,'roles':roles,'organization_id':organization,'identity_status':'operator-named-logical-person'if name in ['Carlos','Santiago']else'synthetic-provisional','real_person_verified':False,'operational_state':'unknown','position':None,'avatar_id':None,'parent_resource':None,'registry_id':'site','demo_population':True,'registration_source':'operator addendum8.2; logical identities, not observed people'}
+ previous=next((r for r in resources if r['id']==key),None)
+ if previous:previous['attributes']=attrs
+ else:resources.append({'id':key,'kind':'Person','attributes':attrs})
+def logical(key,kind,**attrs):
+ resources.append({'id':key,'kind':kind,'attributes':{'name':key,'registry_id':'site','parent_resource':None,'operational_state':'unknown','synthetic':True,'relation_semantics':'planned-reference-not-executed-effect','registration_source':'operator addendum8.2.1; declarative model for future operational tests','real_operation_verified':False,**attrs}})
+for key,name in [('ORG-ENTITY','Entity'),('ORG-INMERSO','Inmerso')]:logical(key,'Organization',name=name,organization_role='workspace-occupant; not ENTITY Core',conditions_verified=False)
+for resource in resources:
+ if resource['id']in ['A','B']:resource['attributes']['assigned_org_id']='ORG-ENTITY'if resource['id']=='A'else'ORG-INMERSO';resource['attributes']['assignment_source']='operator section8.2';resource['attributes']['assignment_dates_verified']=False
+from datetime import datetime,timedelta
+clock=datetime.fromisoformat(a.clock.replace('Z','+00:00'))
+for key,period in [('PLAN-ANNUAL','annual'),('PLAN-MONTHLY','monthly'),('PLAN-HOURLY','hourly')]:logical(key,'Plan',period=period,commercial_terms_verified=False,real_price=None)
+logical('MEMBERSHIP-ANNUAL','Membership',person_id='PERSON-LOGICAL-02',plan_id='PLAN-ANNUAL',declared_state='active',valid_from=clock.isoformat(),valid_until=(clock+timedelta(days=365)).isoformat(),access_rights='scenario-plan entitlement only; no live individual authorization materialized')
+logical('MEMBERSHIP-MONTHLY-OLD','Membership',person_id='PERSON-LOGICAL-10',plan_id='PLAN-MONTHLY',declared_state='expired',valid_from=(clock-timedelta(days=31)).isoformat(),valid_until=(clock-timedelta(days=1)).isoformat())
+logical('MEMBERSHIP-HOURLY','Membership',person_id='PERSON-LOGICAL-11',plan_id='PLAN-HOURLY',declared_state='scenario-hours-plan; no consumption inferred')
+logical('HOUR-PASS-01','HourPass',person_id='PERSON-LOGICAL-11',plan_id='PLAN-HOURLY',purchased_hours=10,consumed_hours=0,declared_state='synthetic-contract-balance',commercial_terms_verified=False)
+logical('USAGE-SESSION-PLAN','UsageSession',person_id='PERSON-LOGICAL-11',pass_id='HOUR-PASS-01',declared_state='planned-not-started',started_at=None,ended_at=None,consumed_hours=0)
+for number,person in [(1,'PERSON-LOGICAL-01'),(2,'PERSON-LOGICAL-12')]:logical('VISITOR-PASS-'+str(number),'HourPass',person_id=person,declared_state='planned-temporary-pass',valid_from=clock.isoformat(),valid_until=(clock+timedelta(days=1)).isoformat(),access_granted=False)
+logical('RENEWAL-MONTHLY','Renewal',person_id='PERSON-LOGICAL-10',renews_id='MEMBERSHIP-MONTHLY-OLD',plan_id='PLAN-MONTHLY',declared_state='awaiting-payment-confirmation',paid=False,new_valid_from=None,new_valid_until=None)
+logical('CHARGE-MONTHLY','ChargeOrder',person_id='PERSON-LOGICAL-10',renewal_id='RENEWAL-MONTHLY',amount=100,currency='USD',amount_source='synthetic-example; not actual pricing',declared_state='unpaid')
+logical('PAYMENT-MONTHLY','Payment',person_id='PERSON-LOGICAL-10',order_id='CHARGE-MONTHLY',amount=100,currency='USD',declared_state='pending-confirmation',confirmed=False,provider=None,confirmation_event=None)
+logical('INVOICE-MONTHLY','Invoice',person_id='PERSON-LOGICAL-10',payment_id='PAYMENT-MONTHLY',issuer=None,issuer_status='operator organization not identified',recipient='PERSON-LOGICAL-10',concepts=[{'description':'Synthetic monthly membership renewal','amount':100}],amount=100,currency='USD',document_id='SIM-P2-INVOICE-01',declared_state='draft-simulated-not-issued',issued=False,fiscal_document=False,sri_submitted=False)
+logical('MEMBERSHIP-MONTHLY-RENEWAL-PLAN','Membership',person_id='PERSON-LOGICAL-10',plan_id='PLAN-MONTHLY',renewal_id='RENEWAL-MONTHLY',declared_state='planned-after-confirmed-payment',valid_from=None,valid_until=None,active=False)
+logical('VISIT-COMMERCIAL-PLAN','VisitPlan',person_id='PERSON-LOGICAL-01',service_id='RECEPTION',purpose='evaluate coworking membership',declared_state='planned-no-arrival',arrival_event=None,membership_created=False)
+logical('OPPORTUNITY-COMMERCIAL','SalesOpportunity',person_id='PERSON-LOGICAL-01',visit_plan_id='VISIT-COMMERCIAL-PLAN',declared_state='synthetic-prospect; not converted')
+logical('MEETING-VISITOR-PLAN','MeetingPlan',person_id='PERSON-LOGICAL-12',host_id='PERSON-LOGICAL-04',organization_id='ORG-ENTITY',resource_id='MEETING-AREA-01',declared_state='planned; not booked',office_A_authorization_defined=False,arrival_event=None,starts_at=None,ends_at=None)
+logical('INVITATION-VISITOR-PLAN','InvitationPlan',person_id='PERSON-LOGICAL-12',meeting_plan_id='MEETING-VISITOR-PLAN',host_id='PERSON-LOGICAL-04',declared_state='planned-not-delivered',arrival_event=None)
+logical('VISIT-MEETING-PLAN','VisitPlan',person_id='PERSON-LOGICAL-12',meeting_plan_id='MEETING-VISITOR-PLAN',service_id='RECEPTION',declared_state='planned-no-arrival',arrival_event=None)
+logical('SCENARIO-RENEWAL-MONTHLY','Scenario',person_id='PERSON-LOGICAL-10',renewal_id='RENEWAL-MONTHLY',declared_state='future-test-definition',expected_sequence=['membership.expired','renewal.requested','charge.created','payment.confirmed','invoice.simulated-issued','membership.renewed'],invariant='No paid renewal, issued invoice or active renewal before payment confirmation; no flow executed here')
 resources.insert(0,{'id':'site','kind':'Site','attributes':{'name':'ENTITY coworking — entidad madre del espacio P2','space_type':'Coworking','space_root':True,'world_model_root':False,'operational_state':'unknown','state_provenance':'not observed; no aggregate occupancy inferred','whole_scene_reference':{'coordinate_frame':'p2-playcanvas-source-y-up','scene_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'master_sha256':scene['master_sha256'],'scope':'existing coworking scene as a whole; no unique mesh required'},'registration_source':'operator P2-08 addendum section8.1'}})
 config={'id':'coworking-p2','name':'ENTITY coworking — P2 laboratory, not live operations','timezone':'UTC','clock':a.clock,'resources':resources,'structural_relations':relations,'accounts':[{'username':'admin','role':'admin'},{'username':'viewer','role':'viewer','grants':[{'resource':'site','permission':'read'}]}]}
 Path(a.output).parent.mkdir(parents=True,exist_ok=True);Path(a.output).write_text(json.dumps(config,indent=2)+'\n');print('Prepared',len(resources),'resources; no geometry modified')

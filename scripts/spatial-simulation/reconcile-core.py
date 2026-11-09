@@ -11,6 +11,10 @@ with httpx.Client(base_url=a.api,timeout=20)as c:
   global changes
   cid=str(uuid.uuid5(uuid.NAMESPACE_URL,json.dumps([site,run,op,inputs,seed],sort_keys=True)));r=c.post(prefix+'/commands',json={'id':cid,'operation':op,'target':'site','inputs':inputs});r.raise_for_status();changes+=1
  items=world()
+ # Establish all stable identities before applying attributes that reference other entities.
+ for resource in cfg['resources']:
+  if resource['id']not in items:
+   command('entity.upsert',{'id':resource['id'],'kind':resource['kind'],'attributes':{'name':resource['attributes'].get('name',resource['id']),'registration_source':'P2 structural identity registration','operational_state':'unknown'}},'identity-before-links');items=world()
  for resource in cfg['resources']:
   key=resource['id'];old=items.get(key,{});attrs=dict(resource['attributes'])
   if old.get('kind')and old['kind']!=resource['kind']:raise RuntimeError('Immutable kind mismatch: '+key)
@@ -21,6 +25,9 @@ with httpx.Client(base_url=a.api,timeout=20)as c:
  for key,old in list(items.items()):
   if old.get('kind')=='Person'and old.get('real_person_verified')is False and old.get('position')is None and old.get('parent_resource')=='site':
    command('entity.upsert',{'id':key,'kind':'Person','attributes':{'parent_resource':None,'registry_id':'site'}},'8.1 nonphysical registration');items=world()
+ for key,old in list(items.items()):
+  if old.get('kind')=='Person'and key not in {r['id']for r in cfg['resources']}and old.get('real_person_verified')is False and old.get('demo_population')is not False:
+   command('entity.upsert',{'id':key,'kind':'Person','attributes':{'demo_population':False,'registry_scope':'historical-technical-test-only; retained, not part of twelve-person demo'}},'8.2 preserve historical tests outside demo population');items=world()
  for edge in cfg.get('structural_relations',[]):
   if any(r['type']==edge['type']and r['target']==edge['target']and not r.get('valid_to')for r in items[edge['source']].get('relations',[])):continue
   command('relation.add',edge,'structural-scene-evidence');items=world()

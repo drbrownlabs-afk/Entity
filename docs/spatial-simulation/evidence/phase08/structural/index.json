@@ -413,6 +413,20 @@
       "catalogue": {}
     },
     {
+      "id": "CHARGE-MONTHLY",
+      "core_id": "e43ce6c4-93c0-5e55-835e-d40fb7a5b7c0",
+      "type": "ChargeOrder",
+      "name": "CHARGE-MONTHLY",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
       "id": "CIRCULATION-01",
       "core_id": "67c322d3-8670-52b2-a025-914a587eb6a7",
       "type": "Zone",
@@ -1052,6 +1066,48 @@
       }
     },
     {
+      "id": "HOUR-PASS-01",
+      "core_id": "ef1692ea-2705-5268-8641-2f97725ff0b6",
+      "type": "HourPass",
+      "name": "HOUR-PASS-01",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "INVITATION-VISITOR-PLAN",
+      "core_id": "cd063fbb-e11a-54be-a596-991f67b19e78",
+      "type": "InvitationPlan",
+      "name": "INVITATION-VISITOR-PLAN",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "INVOICE-MONTHLY",
+      "core_id": "7d4e9147-ed48-5ba4-bef7-455f6e1a9f12",
+      "type": "Invoice",
+      "name": "INVOICE-MONTHLY",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
       "id": "KIOSK-01",
       "core_id": "e573d0f1-6794-508c-b76a-5e71ec056dfe",
       "type": "Kiosk",
@@ -1234,10 +1290,136 @@
       }
     },
     {
+      "id": "MEETING-VISITOR-PLAN",
+      "core_id": "44961ad2-8ed6-5035-84ef-3a0e132e1073",
+      "type": "MeetingPlan",
+      "name": "MEETING-VISITOR-PLAN",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "MEMBERSHIP-ANNUAL",
+      "core_id": "39b15075-b5d6-5512-8fec-edf6ded89ddc",
+      "type": "Membership",
+      "name": "MEMBERSHIP-ANNUAL",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "MEMBERSHIP-HOURLY",
+      "core_id": "4a70f487-b452-5bbb-8eae-a55cee19d6d2",
+      "type": "Membership",
+      "name": "MEMBERSHIP-HOURLY",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "MEMBERSHIP-MONTHLY-OLD",
+      "core_id": "e0a7f776-8bea-5d0c-9169-6c8605cc532e",
+      "type": "Membership",
+      "name": "MEMBERSHIP-MONTHLY-OLD",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "MEMBERSHIP-MONTHLY-RENEWAL-PLAN",
+      "core_id": "60b16be3-9b80-55e3-88ea-5afc0792a371",
+      "type": "Membership",
+      "name": "MEMBERSHIP-MONTHLY-RENEWAL-PLAN",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "OPPORTUNITY-COMMERCIAL",
+      "core_id": "d628f73a-95d4-519f-b3d4-982a5b9f0631",
+      "type": "SalesOpportunity",
+      "name": "OPPORTUNITY-COMMERCIAL",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "ORG-ENTITY",
+      "core_id": "05752561-849d-5046-90e8-c30dbd341763",
+      "type": "Organization",
+      "name": "Entity",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "ORG-INMERSO",
+      "core_id": "5823e389-55a5-56c2-bc2d-32e287b767f3",
+      "type": "Organization",
+      "name": "Inmerso",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PAYMENT-MONTHLY",
+      "core_id": "fb569d45-6030-5269-85b9-76233ed75467",
+      "type": "Payment",
+      "name": "PAYMENT-MONTHLY",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
       "id": "PERSON-LOGICAL-01",
       "core_id": "08f0d317-845d-5745-88a9-4c41b65ea09c",
       "type": "Person",
-      "name": "Persona l\u00f3gica sin identificar 1",
+      "name": "Visitante comercial sint\u00e9tico",
       "parent": null,
       "registry": "site",
       "spatial": null,
@@ -1245,7 +1427,7 @@
       "role": [
         "visitor"
       ],
-      "identity_status": "unverified-placeholder",
+      "identity_status": "synthetic-provisional",
       "space_root": null,
       "catalogue": {}
     },
@@ -1253,7 +1435,7 @@
       "id": "PERSON-LOGICAL-02",
       "core_id": "0841916f-c485-59dc-bdb0-29bca9f2b7af",
       "type": "Person",
-      "name": "Persona l\u00f3gica sin identificar 2",
+      "name": "Habitual anual sint\u00e9tico",
       "parent": null,
       "registry": "site",
       "spatial": null,
@@ -1261,7 +1443,7 @@
       "role": [
         "member"
       ],
-      "identity_status": "unverified-placeholder",
+      "identity_status": "synthetic-provisional",
       "space_root": null,
       "catalogue": {}
     },
@@ -1269,15 +1451,16 @@
       "id": "PERSON-LOGICAL-03",
       "core_id": "fc2c6da6-91c6-5af4-9f1e-df672da899b3",
       "type": "Person",
-      "name": "Persona l\u00f3gica sin identificar 3",
+      "name": "Staff de recepci\u00f3n sint\u00e9tico",
       "parent": null,
       "registry": "site",
       "spatial": null,
       "whole_scene_reference": null,
       "role": [
-        "staff"
+        "staff",
+        "reception"
       ],
-      "identity_status": "unverified-placeholder",
+      "identity_status": "synthetic-provisional",
       "space_root": null,
       "catalogue": {}
     },
@@ -1285,15 +1468,188 @@
       "id": "PERSON-LOGICAL-04",
       "core_id": "346c292c-4def-5e3d-881e-d89485aa70f7",
       "type": "Person",
-      "name": "Persona l\u00f3gica sin identificar 4",
+      "name": "Carlos",
       "parent": null,
       "registry": "site",
       "spatial": null,
       "whole_scene_reference": null,
       "role": [
-        "host"
+        "host",
+        "member"
       ],
-      "identity_status": "unverified-placeholder",
+      "identity_status": "operator-named-logical-person",
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PERSON-LOGICAL-05",
+      "core_id": "5e51ad18-893a-58e5-898e-7a5a12719c6e",
+      "type": "Person",
+      "name": "Staff de administraci\u00f3n sint\u00e9tico",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": [
+        "staff",
+        "administration"
+      ],
+      "identity_status": "synthetic-provisional",
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PERSON-LOGICAL-06",
+      "core_id": "2547691d-f633-562a-bed3-cac68b42b190",
+      "type": "Person",
+      "name": "Staff de operaciones sint\u00e9tico",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": [
+        "staff",
+        "operations"
+      ],
+      "identity_status": "synthetic-provisional",
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PERSON-LOGICAL-07",
+      "core_id": "e7fda922-2d32-5bc3-817a-d62b77564d70",
+      "type": "Person",
+      "name": "Santiago",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": [
+        "member"
+      ],
+      "identity_status": "operator-named-logical-person",
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PERSON-LOGICAL-08",
+      "core_id": "6d595448-1a2f-57f0-929f-ba525c613add",
+      "type": "Person",
+      "name": "Integrante Inmerso provisional1",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": [
+        "member"
+      ],
+      "identity_status": "synthetic-provisional",
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PERSON-LOGICAL-09",
+      "core_id": "fcd9248b-e5e3-58c7-993e-934b6c5df53c",
+      "type": "Person",
+      "name": "Integrante Inmerso provisional2",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": [
+        "member"
+      ],
+      "identity_status": "synthetic-provisional",
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PERSON-LOGICAL-10",
+      "core_id": "a5b5e77a-d4fd-591d-abbf-182572e365f7",
+      "type": "Person",
+      "name": "Habitual mensual sint\u00e9tico",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": [
+        "member"
+      ],
+      "identity_status": "synthetic-provisional",
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PERSON-LOGICAL-11",
+      "core_id": "86e275f5-a138-5950-9d50-9dd2d99b380e",
+      "type": "Person",
+      "name": "Habitual por horas sint\u00e9tico",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": [
+        "member"
+      ],
+      "identity_status": "synthetic-provisional",
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PERSON-LOGICAL-12",
+      "core_id": "92a0ad1d-c254-5b06-b631-8232716568a2",
+      "type": "Person",
+      "name": "Visitante de reuni\u00f3n sint\u00e9tico",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": [
+        "visitor"
+      ],
+      "identity_status": "synthetic-provisional",
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PLAN-ANNUAL",
+      "core_id": "32126c2e-1798-526e-a835-e9403f361773",
+      "type": "Plan",
+      "name": "PLAN-ANNUAL",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PLAN-HOURLY",
+      "core_id": "6ff2cf61-c9f5-5c94-bbf4-f1aba5ad449c",
+      "type": "Plan",
+      "name": "PLAN-HOURLY",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "PLAN-MONTHLY",
+      "core_id": "c680c0ed-d2be-5f83-8576-0624c210187d",
+      "type": "Plan",
+      "name": "PLAN-MONTHLY",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
       "space_root": null,
       "catalogue": {}
     },
@@ -1332,6 +1688,34 @@
         "scene_environment_id": "RECEPTION",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "RENEWAL-MONTHLY",
+      "core_id": "9b355874-a265-5597-8178-a6dc2c17298d",
+      "type": "Renewal",
+      "name": "RENEWAL-MONTHLY",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "SCENARIO-RENEWAL-MONTHLY",
+      "core_id": "04f7e019-9cd5-507e-ad13-ed3184e5d6a2",
+      "type": "Scenario",
+      "name": "SCENARIO-RENEWAL-MONTHLY",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
       "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
@@ -1412,6 +1796,76 @@
         "scene_environment_id": "sim:ROOM-E",
         "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57"
       },
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "USAGE-SESSION-PLAN",
+      "core_id": "4fddc246-532c-577a-b89a-3dd33a36b087",
+      "type": "UsageSession",
+      "name": "USAGE-SESSION-PLAN",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "VISIT-COMMERCIAL-PLAN",
+      "core_id": "f838020d-f9b2-5098-a4a6-57a889ba3e1f",
+      "type": "VisitPlan",
+      "name": "VISIT-COMMERCIAL-PLAN",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "VISIT-MEETING-PLAN",
+      "core_id": "642c2f17-9364-5873-a715-63c8e8c8279f",
+      "type": "VisitPlan",
+      "name": "VISIT-MEETING-PLAN",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "VISITOR-PASS-1",
+      "core_id": "c4e9384b-f37b-5ed3-b688-6250d6191117",
+      "type": "HourPass",
+      "name": "VISITOR-PASS-1",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
+      "whole_scene_reference": null,
+      "role": null,
+      "identity_status": null,
+      "space_root": null,
+      "catalogue": {}
+    },
+    {
+      "id": "VISITOR-PASS-2",
+      "core_id": "84756d41-8280-58ea-9ef5-b2500d12c285",
+      "type": "HourPass",
+      "name": "VISITOR-PASS-2",
+      "parent": null,
+      "registry": "site",
+      "spatial": null,
       "whole_scene_reference": null,
       "role": null,
       "identity_status": null,
@@ -1627,6 +2081,15 @@
       "type": "partOf",
       "source": "CAFE-COFFEE",
       "target": "CAFE",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "fd59ca17-e6b1-55c2-8b91-e9c7405e9a30",
+      "type": "referencesOrder",
+      "source": "PAYMENT-MONTHLY",
+      "target": "CHARGE-MONTHLY",
       "valid_from": "2026-11-09T12:00:00+00:00",
       "valid_to": null,
       "provenance": "explicit-domain-field"
@@ -2212,6 +2675,15 @@
       }
     },
     {
+      "id": "cf0977d2-3c91-557a-9b12-8865f929b9f5",
+      "type": "referencesPass",
+      "source": "USAGE-SESSION-PLAN",
+      "target": "HOUR-PASS-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
       "id": "b549165f-42af-526d-b178-74fc3cee4c18",
       "type": "locatedIn",
       "source": "LOUNGE-SEATING",
@@ -2288,6 +2760,357 @@
       }
     },
     {
+      "id": "49676f4b-ad04-51cc-9827-f69df0ebe6b4",
+      "type": "usesResource",
+      "source": "MEETING-VISITOR-PLAN",
+      "target": "MEETING-AREA-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "c50a3061-d618-540f-bbe9-61d3bc35ea86",
+      "type": "concernsMeetingPlan",
+      "source": "INVITATION-VISITOR-PLAN",
+      "target": "MEETING-VISITOR-PLAN",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "4b0e0997-e3c2-517a-afcb-0908b224442a",
+      "type": "concernsMeetingPlan",
+      "source": "VISIT-MEETING-PLAN",
+      "target": "MEETING-VISITOR-PLAN",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "2d7e485c-1fd1-5dfb-b81b-b1c7023598b5",
+      "type": "renews",
+      "source": "RENEWAL-MONTHLY",
+      "target": "MEMBERSHIP-MONTHLY-OLD",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "b2a4a80f-e147-50c4-a5ab-2fb06cab6bf8",
+      "type": "assignedTo",
+      "source": "A",
+      "target": "ORG-ENTITY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "a15dafbc-a465-585c-a9a9-887dd9c75706",
+      "type": "belongsTo",
+      "source": "PERSON-LOGICAL-04",
+      "target": "ORG-ENTITY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "dfa908d5-6616-5cd2-bd07-37ffb01b6063",
+      "type": "belongsTo",
+      "source": "PERSON-LOGICAL-07",
+      "target": "ORG-ENTITY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "07b7e8be-583b-5cd8-aab5-885315036007",
+      "type": "belongsTo",
+      "source": "MEETING-VISITOR-PLAN",
+      "target": "ORG-ENTITY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "66d91fc0-34e3-515c-a3e5-f8540bbc82af",
+      "type": "assignedTo",
+      "source": "B",
+      "target": "ORG-INMERSO",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "d011f652-e944-546d-a4fd-8fdeacdc4fb7",
+      "type": "belongsTo",
+      "source": "PERSON-LOGICAL-08",
+      "target": "ORG-INMERSO",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "0cfcad25-e88e-5922-ba50-92a6461b80c0",
+      "type": "belongsTo",
+      "source": "PERSON-LOGICAL-09",
+      "target": "ORG-INMERSO",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "baeb068b-4b4b-5ad2-8a1b-8743ffbb80be",
+      "type": "referencesPayment",
+      "source": "INVOICE-MONTHLY",
+      "target": "PAYMENT-MONTHLY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "4a10dd98-7f5e-52a8-8299-427014794f51",
+      "type": "concernsPerson",
+      "source": "VISITOR-PASS-1",
+      "target": "PERSON-LOGICAL-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "385d1ddf-2a74-5536-adbb-3c5e7779da00",
+      "type": "concernsPerson",
+      "source": "VISIT-COMMERCIAL-PLAN",
+      "target": "PERSON-LOGICAL-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "21a82276-ae64-530b-a640-def124580607",
+      "type": "concernsPerson",
+      "source": "OPPORTUNITY-COMMERCIAL",
+      "target": "PERSON-LOGICAL-01",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "0fce3935-e6ba-5dd9-b70b-3b77792a6da3",
+      "type": "concernsPerson",
+      "source": "MEMBERSHIP-ANNUAL",
+      "target": "PERSON-LOGICAL-02",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "2dfc2b6e-bf99-5ba5-9ac4-6021c423d4d6",
+      "type": "hostedBy",
+      "source": "MEETING-VISITOR-PLAN",
+      "target": "PERSON-LOGICAL-04",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "e2a06a8c-8c58-588a-a95f-652c47fd3d11",
+      "type": "hostedBy",
+      "source": "INVITATION-VISITOR-PLAN",
+      "target": "PERSON-LOGICAL-04",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "1d2b5c86-9c8f-5c6d-ac55-7c60523f3b1a",
+      "type": "concernsPerson",
+      "source": "MEMBERSHIP-MONTHLY-OLD",
+      "target": "PERSON-LOGICAL-10",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "a755e0ff-f2de-573a-89c9-4970cbf746ef",
+      "type": "concernsPerson",
+      "source": "RENEWAL-MONTHLY",
+      "target": "PERSON-LOGICAL-10",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "5f1c89be-1d8e-5b1a-bb00-1ce074f6e0b5",
+      "type": "concernsPerson",
+      "source": "CHARGE-MONTHLY",
+      "target": "PERSON-LOGICAL-10",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "5ec77510-8c7f-5936-b04a-1742f7f8a4a6",
+      "type": "concernsPerson",
+      "source": "PAYMENT-MONTHLY",
+      "target": "PERSON-LOGICAL-10",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "186a3c42-435d-54bc-a4eb-76b5a248261a",
+      "type": "concernsPerson",
+      "source": "INVOICE-MONTHLY",
+      "target": "PERSON-LOGICAL-10",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "3e85f8ce-40ac-5845-a5b5-49168072e5a8",
+      "type": "addressedTo",
+      "source": "INVOICE-MONTHLY",
+      "target": "PERSON-LOGICAL-10",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "6c081e4c-7fd1-52d6-81af-7377e5195d6f",
+      "type": "concernsPerson",
+      "source": "MEMBERSHIP-MONTHLY-RENEWAL-PLAN",
+      "target": "PERSON-LOGICAL-10",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "6873d22f-825e-5926-b5d7-94aa4d5a90c4",
+      "type": "concernsPerson",
+      "source": "SCENARIO-RENEWAL-MONTHLY",
+      "target": "PERSON-LOGICAL-10",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "c049f96d-90d0-5808-a3e4-fee52ee5a8fe",
+      "type": "concernsPerson",
+      "source": "MEMBERSHIP-HOURLY",
+      "target": "PERSON-LOGICAL-11",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "00d06d8b-a5ba-5f6b-99f3-cf30a864ac99",
+      "type": "concernsPerson",
+      "source": "HOUR-PASS-01",
+      "target": "PERSON-LOGICAL-11",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "f54f2058-b339-5919-a7e9-533a4fc4a535",
+      "type": "concernsPerson",
+      "source": "USAGE-SESSION-PLAN",
+      "target": "PERSON-LOGICAL-11",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "784515d9-95a4-5ecc-abe7-5a1b211533d0",
+      "type": "concernsPerson",
+      "source": "VISITOR-PASS-2",
+      "target": "PERSON-LOGICAL-12",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "2f26971f-e34c-56a1-ac6f-56771d0d6420",
+      "type": "concernsPerson",
+      "source": "MEETING-VISITOR-PLAN",
+      "target": "PERSON-LOGICAL-12",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "ebec8ccd-d9c1-5f5d-b4b3-f0d7b2f02431",
+      "type": "concernsPerson",
+      "source": "INVITATION-VISITOR-PLAN",
+      "target": "PERSON-LOGICAL-12",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "ab249b87-0b68-5163-ad8b-525070eda002",
+      "type": "concernsPerson",
+      "source": "VISIT-MEETING-PLAN",
+      "target": "PERSON-LOGICAL-12",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "a0767d5c-1805-5a6d-9ae0-47128869b5e9",
+      "type": "correspondsToPlan",
+      "source": "MEMBERSHIP-ANNUAL",
+      "target": "PLAN-ANNUAL",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "441e0afa-1661-5029-b72a-3c5eeaa76246",
+      "type": "correspondsToPlan",
+      "source": "MEMBERSHIP-HOURLY",
+      "target": "PLAN-HOURLY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "3b711c3c-ceb6-5982-a83f-1023b2dc3887",
+      "type": "correspondsToPlan",
+      "source": "HOUR-PASS-01",
+      "target": "PLAN-HOURLY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "ded74208-b95e-509a-bc9a-5497d333877f",
+      "type": "correspondsToPlan",
+      "source": "MEMBERSHIP-MONTHLY-OLD",
+      "target": "PLAN-MONTHLY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "d3c4d7c0-4f61-5c0d-9c67-331e0b82a14a",
+      "type": "correspondsToPlan",
+      "source": "RENEWAL-MONTHLY",
+      "target": "PLAN-MONTHLY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "8dc60ec7-a5db-5694-a149-c2ddb402cc94",
+      "type": "correspondsToPlan",
+      "source": "MEMBERSHIP-MONTHLY-RENEWAL-PLAN",
+      "target": "PLAN-MONTHLY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
       "id": "b30602fd-9618-5319-acfc-8ba3222cd1fb",
       "type": "locatedIn",
       "source": "KIOSK-01",
@@ -2301,6 +3124,60 @@
       "type": "partOf",
       "source": "KIOSK-01",
       "target": "RECEPTION",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "f4c2ac1a-0a13-57f4-b713-18f8a71c6a35",
+      "type": "concernsService",
+      "source": "VISIT-COMMERCIAL-PLAN",
+      "target": "RECEPTION",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "fbbdc73e-c9df-59fe-bde7-6e827e38acd0",
+      "type": "concernsService",
+      "source": "VISIT-MEETING-PLAN",
+      "target": "RECEPTION",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "4e789e7f-4a2d-5113-a21f-66e20b0f8a70",
+      "type": "concernsRenewal",
+      "source": "CHARGE-MONTHLY",
+      "target": "RENEWAL-MONTHLY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "c6585c27-476c-5f97-940d-79fb43afcaab",
+      "type": "concernsRenewal",
+      "source": "MEMBERSHIP-MONTHLY-RENEWAL-PLAN",
+      "target": "RENEWAL-MONTHLY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "2f2ed6e0-64b2-52d1-a1fb-e3826227ed2e",
+      "type": "concernsRenewal",
+      "source": "SCENARIO-RENEWAL-MONTHLY",
+      "target": "RENEWAL-MONTHLY",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "9fe5f1de-246e-583c-a1ca-4e78b40abc68",
+      "type": "concernsVisitPlan",
+      "source": "OPPORTUNITY-COMMERCIAL",
+      "target": "VISIT-COMMERCIAL-PLAN",
       "valid_from": "2026-11-09T12:00:00+00:00",
       "valid_to": null,
       "provenance": "explicit-domain-field"
@@ -2430,11 +3307,289 @@
       "valid_from": "2026-11-09T12:00:00+00:00",
       "valid_to": null,
       "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "0866c148-ffbb-5527-a5fb-a870f1537d85",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-05",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "f24ab734-b258-5095-85a5-de66a1c8f652",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-06",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "488f06e5-feb3-5d1d-bd75-0d2dd1f5f572",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-07",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "cfb0890c-e64f-5395-bb12-546623e3b1fc",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-08",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "56595dba-7baa-578b-acd3-91d6fbcbb045",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-09",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "9b8d7771-f98e-5c03-aaa0-9e51bb341825",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-10",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "3eb98ac0-dd46-5afb-af96-1692d52d4eee",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-11",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "b223e2b9-553d-5c98-a650-075fa4dda23b",
+      "type": "registeredIn",
+      "source": "PERSON-LOGICAL-12",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "eb5300ef-3c16-56e0-8564-1d4220bf42d6",
+      "type": "registeredIn",
+      "source": "ORG-ENTITY",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "5b0b2292-8616-5198-844d-c36f5c3686ac",
+      "type": "registeredIn",
+      "source": "ORG-INMERSO",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "d56ccc10-e61b-5725-ab52-dc6817654548",
+      "type": "registeredIn",
+      "source": "PLAN-ANNUAL",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "f3c6bdf3-13e4-5bd3-a5d8-4fcd9b6fcd4a",
+      "type": "registeredIn",
+      "source": "PLAN-MONTHLY",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "4617f620-ead9-5968-83fc-7095179414c5",
+      "type": "registeredIn",
+      "source": "PLAN-HOURLY",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "5be4dac4-43a3-5801-9a9e-4c76e72f7e35",
+      "type": "registeredIn",
+      "source": "MEMBERSHIP-ANNUAL",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "c3a94d88-71c9-566d-967c-92d04748f51e",
+      "type": "registeredIn",
+      "source": "MEMBERSHIP-MONTHLY-OLD",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "ec3e8c1c-e6d5-589c-a8b6-97b1e9610587",
+      "type": "registeredIn",
+      "source": "MEMBERSHIP-HOURLY",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "efb26bd1-1a86-59e9-8281-d76881654255",
+      "type": "registeredIn",
+      "source": "HOUR-PASS-01",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "608e4f59-627c-599e-85e7-14119f027e8b",
+      "type": "registeredIn",
+      "source": "USAGE-SESSION-PLAN",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "eb6741f6-9bc7-559e-b39b-6f280bc5e00f",
+      "type": "registeredIn",
+      "source": "VISITOR-PASS-1",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "4f3dab92-d131-5a68-828e-8c991d767b6f",
+      "type": "registeredIn",
+      "source": "VISITOR-PASS-2",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "16c0a7e9-2c20-5cb8-826c-667b7cd053a0",
+      "type": "registeredIn",
+      "source": "RENEWAL-MONTHLY",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "af9f1b21-8133-565a-b6d7-6851bb83610a",
+      "type": "registeredIn",
+      "source": "CHARGE-MONTHLY",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "0a821695-da76-5769-8e4f-2b2204ec56f6",
+      "type": "registeredIn",
+      "source": "PAYMENT-MONTHLY",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "a3cc71f3-6520-56e5-bce9-ae10b5be8374",
+      "type": "registeredIn",
+      "source": "INVOICE-MONTHLY",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "facb7561-f76f-5d0e-a20d-9406cc00578e",
+      "type": "registeredIn",
+      "source": "MEMBERSHIP-MONTHLY-RENEWAL-PLAN",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "8dff5759-d840-51e4-9053-217b5f0e317e",
+      "type": "registeredIn",
+      "source": "VISIT-COMMERCIAL-PLAN",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "0fd7d89f-cf29-57b9-82c1-aa2e6622ae84",
+      "type": "registeredIn",
+      "source": "OPPORTUNITY-COMMERCIAL",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "2ac3815c-a0de-509b-ab7d-6bcf4d082a61",
+      "type": "registeredIn",
+      "source": "MEETING-VISITOR-PLAN",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "12b212d6-5d6b-5606-9781-c9617b84aa93",
+      "type": "registeredIn",
+      "source": "INVITATION-VISITOR-PLAN",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "6f503f52-3396-580e-9429-101a1ade1044",
+      "type": "registeredIn",
+      "source": "VISIT-MEETING-PLAN",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
+    },
+    {
+      "id": "4c7c38dd-838a-533b-bcfa-90eb8008a921",
+      "type": "registeredIn",
+      "source": "SCENARIO-RENEWAL-MONTHLY",
+      "target": "site",
+      "valid_from": "2026-11-09T12:00:00+00:00",
+      "valid_to": null,
+      "provenance": "explicit-domain-field"
     }
   ],
   "root_memory_records": 1,
   "root_state": "unknown; own state, no occupancy aggregate inferred",
-  "closed_old_person_containment_links_retained_as_history": 4,
   "vocabulary": {
     "CONTIENE": "inverse of existing partOf; stored once, traversable in either direction",
     "PERTENECE_A": "partOf",
@@ -2445,5 +3600,6 @@
   },
   "unknown": "No other adjacency, current door transit, individual access rights, person location or operational facts asserted",
   "geometry_modified": false,
-  "logical_people_without_mesh": 4
+  "logical_people_without_mesh": 12,
+  "closed_historical_links_retained_as_history": 7
 }
