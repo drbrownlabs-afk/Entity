@@ -11,7 +11,7 @@
 | 05 | Gemelo integrado en PlayCanvas | CONSTRUIDO según confirmación del operador; no reconstruir. |
 | 06 | Personajes Mixamo y NPCs | SIGUIENTE: ~12 humanos realistas, animaciones, rutas, estados, colisiones y continuidad visual. Aceptar tras pruebas en escena existente. |
 | 07 | Integración y aceptación de escenario | Integrar escena, personajes, navegación, animaciones y rendimiento desktop/móvil; pruebas reproducibles. |
-| 08 | Modelo espacial y contratos de simulación | Zonas, geometría, rutas, poses, eventos, reloj y referencias en único ENTITY Core; separar ground truth/observación/inferencia. |
+| 08 | **Integración funcional con backend existente de P1 (ENTITY Core)** | Conectar PlayCanvas y simulación a API real del Core existente; mapear zonas, personas, objetos y cámaras a entidades/identidades; sincronizar estados, relaciones, eventos, reloj y memoria; comprobar lectura/escritura autorizada, persistencia tras reinicio, errores, reconexión, trazabilidad y separación ground truth/observación/inferencia. **No construir otro backend/Core.** Resolver o documentar bloqueos reales de P1 antes de aprobar esta fase. |
 | 09 | Cámaras y cobertura | CCTV virtual, FOV, posiciones, calibración, oclusiones, vistas sincronizadas; preparar adaptadores RTSP/ONVIF/NVR/Orbbec sin inventar acceso físico. |
 | 10 | Percepción y continuidad multicámara | Detección, tracking, ReID contextual, incertidumbre y restricciones espaciales/temporales; no usar identidad NPC como resultado del detector. |
 | 11 | Seguridad, accesos y autorización | Visitantes, personal, puertas, permisos, incidentes, alertas y auditoría; biometría solo con fundamento y controles. |
@@ -23,7 +23,7 @@
 ## Orden y aceptación
 - Fases 01–05: preservar; fase 05 construida **según el operador**, sin certificación técnica adicional en esta edición.
 - **Ahora fase 06**, sobre el gemelo existente: personajes realistas, animaciones y rutas; luego fase 07 para integración y validación del escenario completo.
-- Fases 08–15: planificación futura de P2. No ejecutarlas ni declararlas terminadas por el solo hecho de documentarlas. Cada fase requiere revisión del operador.
+- **Dependencia obligatoria:** fase 08 integra P2 con el backend de P1 ANTES de iniciar cámaras y operaciones. P2 no duplica el Core. Fases 08–15: planificación futura de P2. No ejecutarlas ni declararlas terminadas por el solo hecho de documentarlas. Cada fase requiere revisión del operador.
 - No confundir Núcleo (interoperabilidad universal), Entidadizador (semántica de datos) y ENTITY Core (único modelo computable). El gemelo 3D es una interfaz, no otro Core.
 - Simulación, replay e integración real deben estar etiquetados y ser distinguibles. Sin proveedores inventados, cámaras supuestamente instaladas ni resultados de pruebas no ejecutadas.
 - P3 IA situada/multiagentes permanece separado y posterior. OpenClaw no forma parte de estas fases P2.
