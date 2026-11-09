@@ -20,7 +20,7 @@ jobs:
           mkdir -p /tmp/p2-diagnostics
           for job in 129252462392 129252461537 129252462220; do
             gh api repos/${{ github.repository }}/actions/jobs/$job > /tmp/p2-diagnostics/$job.json
-            gh api repos/${{ github.repository }}/actions/jobs/$job/logs > /tmp/p2-diagnostics/$job.log 2> /tmp/p2-diagnostics/$job.err || true
+            gh api --allow-escape-sequences repos/${{ github.repository }}/actions/jobs/$job/logs > /tmp/p2-diagnostics/$job.log 2> /tmp/p2-diagnostics/$job.err || true
           done
           gh api repos/${{ github.repository }}/pages > /tmp/p2-diagnostics/pages.json
           python - <<'PY'
