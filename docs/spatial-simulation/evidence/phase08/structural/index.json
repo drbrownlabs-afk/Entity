@@ -37,6 +37,10 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory",
+        "assigned_org_id": "ORG-ENTITY"
+      },
       "catalogue": {
         "private": true,
         "public": false,
@@ -76,6 +80,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -109,6 +116,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -142,6 +152,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -175,6 +188,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -208,6 +224,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -241,6 +260,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -279,6 +301,10 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory",
+        "assigned_org_id": "ORG-INMERSO"
+      },
       "catalogue": {
         "private": true,
         "public": false,
@@ -323,6 +349,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": false,
@@ -370,6 +399,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -410,6 +442,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -424,6 +459,14 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "unpaid",
+        "person_id": "PERSON-LOGICAL-10",
+        "amount": 100,
+        "currency": "USD"
+      },
       "catalogue": {}
     },
     {
@@ -469,6 +512,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -507,6 +553,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": true,
@@ -567,6 +616,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": true,
@@ -625,6 +677,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": true,
@@ -683,6 +738,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": true,
@@ -741,6 +799,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": true,
@@ -799,6 +860,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": true,
@@ -857,6 +921,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": true,
@@ -899,6 +966,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": true,
@@ -957,6 +1027,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": true,
@@ -1008,6 +1081,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": true,
@@ -1059,6 +1135,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "private": false,
         "public": true,
@@ -1077,6 +1156,15 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "synthetic-contract-balance",
+        "plan_id": "PLAN-HOURLY",
+        "person_id": "PERSON-LOGICAL-11",
+        "purchased_hours": 10,
+        "consumed_hours": 0
+      },
       "catalogue": {}
     },
     {
@@ -1091,6 +1179,13 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "planned-not-delivered",
+        "person_id": "PERSON-LOGICAL-12",
+        "arrival_event": null
+      },
       "catalogue": {}
     },
     {
@@ -1105,6 +1200,26 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "draft-simulated-not-issued",
+        "person_id": "PERSON-LOGICAL-10",
+        "issued": false,
+        "fiscal_document": false,
+        "sri_submitted": false,
+        "issuer": null,
+        "recipient": "PERSON-LOGICAL-10",
+        "concepts": [
+          {
+            "amount": 100,
+            "description": "Synthetic monthly membership renewal"
+          }
+        ],
+        "amount": 100,
+        "currency": "USD",
+        "document_id": "SIM-P2-INVOICE-01"
+      },
       "catalogue": {}
     },
     {
@@ -1145,6 +1260,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -1194,6 +1312,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -1243,6 +1364,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -1284,6 +1408,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {
         "reservable": true,
         "booking_mode": "whole-environment"
@@ -1301,6 +1428,17 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "planned; not booked",
+        "person_id": "PERSON-LOGICAL-12",
+        "organization_id": "ORG-ENTITY",
+        "arrival_event": null,
+        "office_A_authorization_defined": false,
+        "starts_at": null,
+        "ends_at": null
+      },
       "catalogue": {}
     },
     {
@@ -1315,6 +1453,15 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "active",
+        "plan_id": "PLAN-ANNUAL",
+        "person_id": "PERSON-LOGICAL-02",
+        "valid_from": "2026-11-09T12:00:00+00:00",
+        "valid_until": "2027-11-09T12:00:00+00:00"
+      },
       "catalogue": {}
     },
     {
@@ -1329,6 +1476,13 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "scenario-hours-plan; no consumption inferred",
+        "plan_id": "PLAN-HOURLY",
+        "person_id": "PERSON-LOGICAL-11"
+      },
       "catalogue": {}
     },
     {
@@ -1343,6 +1497,15 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "expired",
+        "plan_id": "PLAN-MONTHLY",
+        "person_id": "PERSON-LOGICAL-10",
+        "valid_from": "2026-10-09T12:00:00+00:00",
+        "valid_until": "2026-11-08T12:00:00+00:00"
+      },
       "catalogue": {}
     },
     {
@@ -1357,6 +1520,15 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "planned-after-confirmed-payment",
+        "plan_id": "PLAN-MONTHLY",
+        "person_id": "PERSON-LOGICAL-10",
+        "valid_from": null,
+        "valid_until": null
+      },
       "catalogue": {}
     },
     {
@@ -1371,6 +1543,12 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "synthetic-prospect; not converted",
+        "person_id": "PERSON-LOGICAL-01"
+      },
       "catalogue": {}
     },
     {
@@ -1385,6 +1563,10 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests"
+      },
       "catalogue": {}
     },
     {
@@ -1399,6 +1581,10 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests"
+      },
       "catalogue": {}
     },
     {
@@ -1413,6 +1599,15 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "pending-confirmation",
+        "person_id": "PERSON-LOGICAL-10",
+        "confirmed": false,
+        "amount": 100,
+        "currency": "USD"
+      },
       "catalogue": {}
     },
     {
@@ -1429,6 +1624,11 @@
       ],
       "identity_status": "synthetic-provisional",
       "space_root": null,
+      "declaration": {
+        "population_group": "visitors",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": null
+      },
       "catalogue": {}
     },
     {
@@ -1445,6 +1645,11 @@
       ],
       "identity_status": "synthetic-provisional",
       "space_root": null,
+      "declaration": {
+        "population_group": "regulars",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": null
+      },
       "catalogue": {}
     },
     {
@@ -1462,6 +1667,11 @@
       ],
       "identity_status": "synthetic-provisional",
       "space_root": null,
+      "declaration": {
+        "population_group": "staff",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": null
+      },
       "catalogue": {}
     },
     {
@@ -1479,6 +1689,11 @@
       ],
       "identity_status": "operator-named-logical-person",
       "space_root": null,
+      "declaration": {
+        "population_group": "entity",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": "ORG-ENTITY"
+      },
       "catalogue": {}
     },
     {
@@ -1496,6 +1711,11 @@
       ],
       "identity_status": "synthetic-provisional",
       "space_root": null,
+      "declaration": {
+        "population_group": "staff",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": null
+      },
       "catalogue": {}
     },
     {
@@ -1513,6 +1733,11 @@
       ],
       "identity_status": "synthetic-provisional",
       "space_root": null,
+      "declaration": {
+        "population_group": "staff",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": null
+      },
       "catalogue": {}
     },
     {
@@ -1529,6 +1754,11 @@
       ],
       "identity_status": "operator-named-logical-person",
       "space_root": null,
+      "declaration": {
+        "population_group": "entity",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": "ORG-ENTITY"
+      },
       "catalogue": {}
     },
     {
@@ -1545,6 +1775,11 @@
       ],
       "identity_status": "synthetic-provisional",
       "space_root": null,
+      "declaration": {
+        "population_group": "inmerso",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": "ORG-INMERSO"
+      },
       "catalogue": {}
     },
     {
@@ -1561,6 +1796,11 @@
       ],
       "identity_status": "synthetic-provisional",
       "space_root": null,
+      "declaration": {
+        "population_group": "inmerso",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": "ORG-INMERSO"
+      },
       "catalogue": {}
     },
     {
@@ -1577,6 +1817,11 @@
       ],
       "identity_status": "synthetic-provisional",
       "space_root": null,
+      "declaration": {
+        "population_group": "regulars",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": null
+      },
       "catalogue": {}
     },
     {
@@ -1593,6 +1838,11 @@
       ],
       "identity_status": "synthetic-provisional",
       "space_root": null,
+      "declaration": {
+        "population_group": "regulars",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": null
+      },
       "catalogue": {}
     },
     {
@@ -1609,6 +1859,11 @@
       ],
       "identity_status": "synthetic-provisional",
       "space_root": null,
+      "declaration": {
+        "population_group": "visitors",
+        "registration_source": "operator addendum8.2; logical identities, not observed people",
+        "organization_id": null
+      },
       "catalogue": {}
     },
     {
@@ -1623,6 +1878,10 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests"
+      },
       "catalogue": {}
     },
     {
@@ -1637,6 +1896,10 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests"
+      },
       "catalogue": {}
     },
     {
@@ -1651,6 +1914,10 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests"
+      },
       "catalogue": {}
     },
     {
@@ -1692,6 +1959,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -1706,6 +1976,14 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "awaiting-payment-confirmation",
+        "plan_id": "PLAN-MONTHLY",
+        "person_id": "PERSON-LOGICAL-10",
+        "paid": false
+      },
       "catalogue": {}
     },
     {
@@ -1720,6 +1998,20 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "future-test-definition",
+        "person_id": "PERSON-LOGICAL-10",
+        "expected_sequence": [
+          "membership.expired",
+          "renewal.requested",
+          "charge.created",
+          "payment.confirmed",
+          "invoice.simulated-issued",
+          "membership.renewed"
+        ]
+      },
       "catalogue": {}
     },
     {
@@ -1760,6 +2052,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -1800,6 +2095,9 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "registration_source": "P2-08 explicit inventory"
+      },
       "catalogue": {}
     },
     {
@@ -1814,6 +2112,13 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "planned-not-started",
+        "person_id": "PERSON-LOGICAL-11",
+        "consumed_hours": 0
+      },
       "catalogue": {}
     },
     {
@@ -1828,6 +2133,14 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "planned-no-arrival",
+        "person_id": "PERSON-LOGICAL-01",
+        "arrival_event": null,
+        "membership_created": false
+      },
       "catalogue": {}
     },
     {
@@ -1842,6 +2155,13 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "planned-no-arrival",
+        "person_id": "PERSON-LOGICAL-12",
+        "arrival_event": null
+      },
       "catalogue": {}
     },
     {
@@ -1856,6 +2176,14 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "planned-temporary-pass",
+        "person_id": "PERSON-LOGICAL-01",
+        "valid_from": "2026-11-09T12:00:00+00:00",
+        "valid_until": "2026-11-10T12:00:00+00:00"
+      },
       "catalogue": {}
     },
     {
@@ -1870,6 +2198,14 @@
       "role": null,
       "identity_status": null,
       "space_root": null,
+      "declaration": {
+        "synthetic": true,
+        "registration_source": "operator addendum8.2.1; declarative model for future operational tests",
+        "declared_state": "planned-temporary-pass",
+        "person_id": "PERSON-LOGICAL-12",
+        "valid_from": "2026-11-09T12:00:00+00:00",
+        "valid_until": "2026-11-10T12:00:00+00:00"
+      },
       "catalogue": {}
     },
     {
@@ -1889,6 +2225,9 @@
       "role": null,
       "identity_status": null,
       "space_root": true,
+      "declaration": {
+        "registration_source": "operator P2-08 addendum section8.1"
+      },
       "catalogue": {}
     }
   ],
@@ -3590,6 +3929,7 @@
   ],
   "root_memory_records": 1,
   "root_state": "unknown; own state, no occupancy aggregate inferred",
+  "closed_historical_links_retained_as_history": 7,
   "vocabulary": {
     "CONTIENE": "inverse of existing partOf; stored once, traversable in either direction",
     "PERTENECE_A": "partOf",
@@ -3600,6 +3940,5 @@
   },
   "unknown": "No other adjacency, current door transit, individual access rights, person location or operational facts asserted",
   "geometry_modified": false,
-  "logical_people_without_mesh": 12,
-  "closed_historical_links_retained_as_history": 7
+  "logical_people_without_mesh": 12
 }

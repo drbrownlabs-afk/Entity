@@ -21,7 +21,7 @@ class P2CoreTests(unittest.TestCase):
  def world(self):r=self.c.get(self.root+'/world',headers=self.h);self.assertEqual(r.status_code,200);return r.json()
  def command(self,op,target,inputs,cid=None,headers=None):return self.c.post(self.root+'/commands',headers=headers or self.h,json={'id':cid or str(uuid4()),'operation':op,'target':target,'inputs':inputs})
  def test_persistent_spatial_index_relations_and_logical_people(self):
-  w=self.world();self.assertEqual(len(w['entities']),20)
+  w=self.world();self.assertEqual(len(w['entities']),len(self.config['resources']))
   scene=json.loads((ROOT/'apps/spatial-simulation/public/model/scene.json').read_text());ids={r['id']for r in scene['records']}
   for key in ['A','B','C','D','E','D1','D2','D3','D4','D5','D6','E1','E5','E6','RECEPTION','CAFE','LOUNGE']:
    e=w['entities'][key];self.assertEqual(e['operational_state'],'unknown');self.assertTrue(e['relations']);self.assertTrue(set(e['spatial']['object_ids'])<=ids);self.assertNotIn('occupancy',e)
@@ -34,7 +34,7 @@ class P2CoreTests(unittest.TestCase):
   with main.database()as db:
    self.assertEqual(db.execute('SELECT COUNT(*) FROM memories').fetchone()[0],1);self.assertGreater(db.execute('SELECT COUNT(*) FROM relations').fetchone()[0],0)
  def test_metadata_updates_and_new_logical_person_use_existing_nucleo(self):
-  r=self.command('entity.upsert','site',{'id':'TEST-PERSON','kind':'Person','attributes':{'name':'Synthetic logical identity','parent_resource':'A','position':None,'operational_state':'unknown'}});self.assertEqual(r.status_code,200,r.text);self.assertEqual(self.world()['entities']['TEST-PERSON']['relations'][0]['target'],'A')
+  r=self.command('entity.upsert','site',{'id':'TEST-PERSON','kind':'Person','attributes':{'name':'Synthetic logical identity','parent_resource':None,'registry_id':'site','position':None,'operational_state':'unknown'}});self.assertEqual(r.status_code,200,r.text);self.assertTrue(any(r['type']=='registeredIn'and r['target']=='site'for r in self.world()['entities']['TEST-PERSON']['relations']))
   self.assertEqual(self.command('entity.upsert','site',{'id':'D1','kind':'Desk','attributes':{'presence':'confirmed'}}).status_code,403)
 
  def test_catalog_upgrade_adds_memory_without_changing_world(self):
