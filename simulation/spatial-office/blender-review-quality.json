@@ -1,0 +1,11 @@
+{
+  "id": "phase04-5-blender-review-high",
+  "hour": 17,
+  "resolution": [1920, 1280],
+  "cycles": {"samples": 256, "adaptive_threshold": 0.015, "adaptive_min_samples": 64, "max_bounces": 12, "diffuse_bounces": 6, "glossy_bounces": 8, "transmission_bounces": 12, "transparent_max_bounces": 16},
+  "views": ["lounge", "office", "comedor", "cafe", "reception", "waiting", "meeting", "services", "booths", "WC", "vertical-garden", "glass-detail", "computer-detail", "lighting-corner", "general"],
+  "geometry_policy": "Preserve architecture, furniture, bevels, source object IDs and original master. No mobile simplification.",
+  "denoising": "Separate official OIDN output with real Cycles albedo/normal guides; preserve raw PNG.",
+  "review_gate": "Operator judges Blender first. No further PlayCanvas calibration or mobile optimization before that approval.",
+  "scope_note": "Rendering profile and visual review; does not certify completion of the transferable lighting/material solution. Record unresolved shader transfers explicitly."
+}

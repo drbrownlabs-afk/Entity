@@ -1,0 +1,9008 @@
+{
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "materials": [
+    {
+      "name": "base",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.75,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 1.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_4.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_2.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_3.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_6.002",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Brown",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": true
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": true
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_0",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_2",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_1",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_2",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Cafe appliance stainless steel",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.3199999928474426,
+            0.3499999940395355,
+            0.3700000047683716,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.2199999988079071,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.800000011920929,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Cafe warm oak",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.3499999940395355,
+            0.1599999964237213,
+            0.054999999701976776,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.44999998807907104,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Chair brushed aluminum",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.47999998927116394,
+            0.5,
+            0.5099999904632568,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.23999999463558197,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.8500000238418579,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p3:lamp:0:light",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p3:lamp:1:light",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p3:lamp:2:light",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p3:sim:CALL-01:lamp:light",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p3:sim:CALL-02:lamp:light",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p3:WC:lamp:light",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:accent:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:accent:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:accent:2",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:accent:3",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:accent:4",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:accent:5",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:accent:6",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:A:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:A:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:A:2",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:A:3",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:B:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:B:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:B:2",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:B:3",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:C:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:C:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:C:2",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:C:3",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:CIRCULATION-01:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:CIRCULATION-01:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:CIRCULATION-01:2",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:CIRCULATION-01:3",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:CIRCULATION-01:4",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:CIRCULATION-01:5",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:D:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:D:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:D:2",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:D:3",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:MEETING-AREA-01:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:MEETING-AREA-01:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:MEETING-AREA-01:2",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:MEETING-AREA-01:3",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:RECEPTION:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:RECEPTION:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:sim:CAFE-01:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:sim:CAFE-01:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:sim:LOUNGE:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:sim:LOUNGE:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:sim:PRINT:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:sim:RECREATION:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:sim:RECREATION:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:sim:ROOM-E:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:sim:ROOM-E:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:sim:ROOM-E:2",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:sim:ROOM-E:3",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:WAITING-AREA:0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Emitter sim:p4:light:WAITING-AREA:1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8100000023841858,
+            0.6800000071525574,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 12.929304122924805,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "fabric Mystere Mango Velvet",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.800000011920929,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_2.001",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_0.002",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_1.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "fabric Mystere Peacock Velvet",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.800000011920929,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_2.001",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_0.002",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_1.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Flowers",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": true
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": true
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_1.004",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_2.002",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_0.004",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Frame",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": true
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": true
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_10",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_12",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_11",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_12",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Frame_Fabric",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": true
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": true
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_0",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_12",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_1",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_12",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Fringe",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.800000011920929,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_7",
+          "resolution": [
+            512,
+            256
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_8",
+          "resolution": [
+            256,
+            128
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_9",
+          "resolution": [
+            128,
+            128
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "GlamVelvetSofa_fabric_black",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_1.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_0.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "GlamVelvetSofa_fabric_champagne",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.07500000298023224,
+            0.05999999865889549,
+            0.03999999910593033,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.699999988079071,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_1.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_0.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "GlamVelvetSofa_fabric_gray",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.25,
+            0.25,
+            0.22499999403953552,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_1.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_0.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "GlamVelvetSofa_fabric_navy",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.009999999776482582,
+            0.009999999776482582,
+            0.009999999776482582,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.699999988079071,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_1.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_0.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "GlamVelvetSofa_fabric_palepink",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.7599999904632568,
+            0.5299999713897705,
+            0.5400000214576721,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.75,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_1.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_0.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "GlamVelvetSofa_feet",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.800000011920929,
+            0.699999988079071,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.4000000059604645,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_0.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "GlamVelvetSofa_legs",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.019999999552965164,
+            0.019999999552965164,
+            0.019999999552965164,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.4000000059604645,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_0.001",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "GlassAlpha",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.15000000596046448,
+            0.15000000596046448,
+            0.15000000596046448,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "GlassTransmission",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_3.002",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Graphite desktop",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.11999999731779099,
+            0.12999999523162842,
+            0.11999999731779099,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.3199999928474426,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Graphite powder coat",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.03500000014901161,
+            0.03999999910593033,
+            0.03999999910593033,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.30000001192092896,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.550000011920929,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Keyboard ivory",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8100000023841858,
+            0.8199999928474426,
+            0.7799999713897705,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "label",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_5.001",
+          "resolution": [
+            1024,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_1.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Leaf green",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.06499999761581421,
+            0.17000000178813934,
+            0.02500000037252903,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.75,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Leaf light green",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.1599999964237213,
+            0.30000001192092896,
+            0.04500000178813934,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.7799999713897705,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "leaves",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_0.005",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_1.005",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [
+        "BSDF_TRANSLUCENT"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "metal",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.2800000011920929,
+            0.25999999046325684,
+            0.23000000417232513,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.30000001192092896,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_1.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Original monitor blue placeholder",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.019999999552965164,
+            0.09000000357627869,
+            0.18000000715255737,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.2800000011920929,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Paisley",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": true
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": true
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_3",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_2",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_4",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_2",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Phase02 clear partitions",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.9700000286102295,
+            0.9900000095367432,
+            0.9850000143051147,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.009999999776482582,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5199999809265137,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.10000000149011612,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 2K terrazzo PBR",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.4699999988079071,
+            0.4000000059604645,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.36000001430511475,
+          "linked": true
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "terrazzo-basecolor.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "terrazzo-roughness.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "terrazzo-normal.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 branded screen 1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.019999999552965164,
+            0.11999999731779099,
+            0.2199999988079071,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.5,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "screen-1.png",
+          "resolution": [
+            960,
+            540
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 branded screen 2",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.019999999552965164,
+            0.23999999463558197,
+            0.2199999988079071,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.5,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "screen-2.png",
+          "resolution": [
+            960,
+            540
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 branded screen 3",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.019999999552965164,
+            0.36000001430511475,
+            0.2199999988079071,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.5,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "screen-3.png",
+          "resolution": [
+            960,
+            540
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 branded screen 4",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.019999999552965164,
+            0.47999998927116394,
+            0.2199999988079071,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.5,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "screen-4.png",
+          "resolution": [
+            960,
+            540
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 branded screen 5",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.019999999552965164,
+            0.11999999731779099,
+            0.2199999988079071,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.5,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "screen-5.png",
+          "resolution": [
+            960,
+            540
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 brushed champagne metal",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.41999998688697815,
+            0.28999999165534973,
+            0.14000000059604645,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.28999999165534973,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.7799999713897705,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 ceramic offwhite",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.7200000286102295,
+            0.6800000071525574,
+            0.5899999737739563,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.23999999463558197,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 concrete planter finish",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.6399999856948853,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 1.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_4.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_2.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_3.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_6.002",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [
+        "RGBTOBW",
+        "VALTORGB"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 concrete planter finish.001",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.6399999856948853,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 1.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_4.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_2.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_3.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_6.002",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [
+        "RGBTOBW",
+        "VALTORGB"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 concrete planter finish.002",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.6399999856948853,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 1.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_4.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_2.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_3.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_6.002",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [
+        "RGBTOBW",
+        "VALTORGB"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 concrete planter finish.003",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.6399999856948853,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 1.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_4.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_2.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_3.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_6.002",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [
+        "RGBTOBW",
+        "VALTORGB"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 concrete planter finish.004",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.6399999856948853,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 1.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_4.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_2.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_3.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_6.002",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [
+        "RGBTOBW",
+        "VALTORGB"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 desk pad leather",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.041999999433755875,
+            0.04500000178813934,
+            0.04399999976158142,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.6499999761581421,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.2800000011920929,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [
+        "TEX_NOISE",
+        "VALTORGB",
+        "BUMP"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 emitter dining:cove",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.8199999928474426,
+            0.6000000238418579,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 emitter lounge:cove:back",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.8199999928474426,
+            0.6000000238418579,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 emitter lounge:cove:side",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.8199999928474426,
+            0.6000000238418579,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 emitter lounge:floorlamp",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.7900000214576721,
+            0.5400000214576721,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.4000000059604645,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 5.232326030731201,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 emitter lounge:tablelamp",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.7900000214576721,
+            0.5400000214576721,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.4000000059604645,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 5.232326030731201,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 emitter lounge:uplight",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.7900000214576721,
+            0.5400000214576721,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.4000000059604645,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 5.232326030731201,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 emitter meeting:greenwall:cove",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.8199999928474426,
+            0.6000000238418579,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 emitter reception:toe-light",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.8199999928474426,
+            0.6000000238418579,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 emitter waiting:cove",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.8199999928474426,
+            0.6000000238418579,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 emitter waiting:lamp",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.7900000214576721,
+            0.5400000214576721,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.4000000059604645,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 5.232326030731201,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 ergonomic woven mesh",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.3400000035762787,
+            0.3199999928474426,
+            0.2800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.8299999833106995,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.2800000011920929,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [
+        "TEX_NOISE",
+        "VALTORGB",
+        "BUMP"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 framed original artwork",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.699999988079071,
+            0.6000000238418579,
+            0.4000000059604645,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.699999988079071,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "lounge-art.png",
+          "resolution": [
+            640,
+            440
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 graphite polymer",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.054999999701976776,
+            0.057999998331069946,
+            0.05700000002980232,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.3499999940395355,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 hanging diffuser A0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.550000011920929,
+            0.25,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.44999998807907104,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 5.232326030731201,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 hanging diffuser A1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.550000011920929,
+            0.25,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.44999998807907104,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 5.232326030731201,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 hanging diffuser B0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.550000011920929,
+            0.25,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.44999998807907104,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 5.232326030731201,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 hanging diffuser B1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.550000011920929,
+            0.25,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.44999998807907104,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 5.232326030731201,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 hanging diffuser C0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.550000011920929,
+            0.25,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.44999998807907104,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 5.232326030731201,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 hanging diffuser C1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.550000011920929,
+            0.25,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.44999998807907104,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 5.232326030731201,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 honed stone",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.28999999165534973,
+            0.2800000011920929,
+            0.25,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.3700000047683716,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.2800000011920929,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [
+        "TEX_NOISE",
+        "VALTORGB",
+        "BUMP"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 key legends PBR",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.6399999856948853,
+            0.6299999952316284,
+            0.5799999833106995,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.3199999928474426,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "keyboard-legends.png",
+          "resolution": [
+            1024,
+            320
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 limestone bathroom",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.5099999904632568,
+            0.49000000953674316,
+            0.4300000071525574,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.4300000071525574,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.2800000011920929,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [
+        "TEX_NOISE",
+        "VALTORGB",
+        "BUMP"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 living wall green 0",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_0.005",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_1.005",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [
+        "BSDF_TRANSLUCENT"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 living wall green 1",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_0.005",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_1.005",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [
+        "BSDF_TRANSLUCENT"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 living wall green 2",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_0.005",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_1.005",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [
+        "BSDF_TRANSLUCENT"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 living wall organic substrate",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.02500000037252903,
+            0.07999999821186066,
+            0.027000000700354576,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.9399999976158142,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [
+        "TEX_NOISE",
+        "VALTORGB",
+        "BUMP"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 meeting TV screen",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.029999999329447746,
+            0.05999999865889549,
+            0.07999999821186066,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.2199999988079071,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.699999988079071,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "meeting-screen.png",
+          "resolution": [
+            1280,
+            720
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 mirror silver",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.9100000262260437,
+            0.9300000071525574,
+            0.9399999976158142,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.02500000037252903,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 natural oak micrograin",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.4699999988079071,
+            0.3100000023841858,
+            0.1599999964237213,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.4300000071525574,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [
+        "TEX_NOISE",
+        "VALTORGB",
+        "BUMP"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 oak from professional wood PBR, recolored",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": true
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": true
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_3.001",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_4.001",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_1.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 oiled walnut micrograin",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.27000001072883606,
+            0.11999999731779099,
+            0.04899999871850014,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.3499999940395355,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [
+        "TEX_NOISE",
+        "VALTORGB",
+        "BUMP"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 professional woven linen PBR",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.4000000059604645,
+            0.3499999940395355,
+            0.27000001072883606,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.8500000238418579,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.25,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_0",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_1",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "R1 linen albedo",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [
+        "RGBTOBW",
+        "VALTORGB"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 sage textile",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.1599999964237213,
+            0.25,
+            0.20000000298023224,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.8100000023841858,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.2800000011920929,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [
+        "TEX_NOISE",
+        "VALTORGB",
+        "BUMP"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 sanitary porcelain",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.8799999952316284,
+            0.8899999856948853,
+            0.8700000047683716,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.14000000059604645,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 satin anodized aluminum",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.5099999904632568,
+            0.5299999713897705,
+            0.5400000214576721,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.25999999046325684,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.7200000286102295,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 terracotta textile",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.36000001430511475,
+            0.14000000059604645,
+            0.07800000160932541,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.8199999928474426,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.2800000011920929,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [
+        "TEX_NOISE",
+        "VALTORGB",
+        "BUMP"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 vertical LED emitter",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            1.0,
+            0.47999998927116394,
+            0.18000000715255737,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 2.731314182281494,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 warm polymer",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.6399999856948853,
+            0.6299999952316284,
+            0.5799999833106995,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.3400000035762787,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 workstation display",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.03500000014901161,
+            0.05000000074505806,
+            0.06499999761581421,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.2199999988079071,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.6499999761581421,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.07999999821186066,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "workstation-screen.png",
+          "resolution": [
+            1024,
+            576
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 woven linen sand",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.4399999976158142,
+            0.36000001430511475,
+            0.25,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.8700000047683716,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.2800000011920929,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [
+        "TEX_NOISE",
+        "VALTORGB",
+        "BUMP"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "R1 woven rug mapped PBR",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.5,
+            0.46000000834465027,
+            0.4000000059604645,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.9200000166893005,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.30000001192092896,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "rug-basecolor.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "rug-normal.png",
+          "resolution": [
+            2048,
+            2048
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Sand upholstery",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.46000000834465027,
+            0.3499999940395355,
+            0.23999999463558197,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.800000011920929,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.20000000298023224,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "shot silk",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.11999999731779099,
+            0.15000000596046448,
+            0.10499999672174454,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.6499999761581421,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_1.003",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_0.003",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Striped",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": true
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": true
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_5",
+          "resolution": [
+            256,
+            256
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_2",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_6",
+          "resolution": [
+            256,
+            256
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_2",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Walnut wall panels",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.11999999731779099,
+            0.07500000298023224,
+            0.0430000014603138,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.4699999988079071,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "Warm white plaster",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.7799999713897705,
+            0.699999988079071,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [
+        "TEX_NOISE",
+        "BUMP"
+      ],
+      "transfer_verified": false
+    },
+    {
+      "name": "Window glazing reference",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.9700000286102295,
+            0.9900000095367432,
+            0.9850000143051147,
+            1.0
+          ],
+          "linked": false
+        },
+        "Roughness": {
+          "value": 0.009999999776482582,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 1.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5199999809265137,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.10000000149011612,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "wings",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": false
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": true
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_0.005",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_1.005",
+          "resolution": [
+            1024,
+            1024
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "wood Black",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": true
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": true
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_3.001",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_6.001",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_1.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    },
+    {
+      "name": "wood Brown",
+      "pbr": {
+        "Base Color": {
+          "value": [
+            0.800000011920929,
+            0.800000011920929,
+            0.800000011920929,
+            1.0
+          ],
+          "linked": true
+        },
+        "Roughness": {
+          "value": 0.5,
+          "linked": true
+        },
+        "Metallic": {
+          "value": 0.0,
+          "linked": true
+        },
+        "Normal": {
+          "value": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "linked": false
+        },
+        "Transmission Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "IOR": {
+          "value": 1.5,
+          "linked": false
+        },
+        "Coat Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Sheen Weight": {
+          "value": 0.0,
+          "linked": false
+        },
+        "Emission Strength": {
+          "value": 0.0,
+          "linked": false
+        }
+      },
+      "textures": [
+        {
+          "image": "Image_3.001",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "sRGB",
+          "packed": true
+        },
+        {
+          "image": "Image_4.001",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        },
+        {
+          "image": "Image_1.002",
+          "resolution": [
+            512,
+            512
+          ],
+          "color_space": "Non-Color",
+          "packed": true
+        }
+      ],
+      "procedural_nodes": [],
+      "transfer_verified": false
+    }
+  ],
+  "note": "Source inventory only; mapping/baking and runtime visual validation still required. No material replaced for this quality render."
+}

@@ -104,3 +104,7 @@ Leídos plan y PHASE-04-5-QUALITY-REFERENCE.md desde actualización remota 45af2
 ## 2026-11-09 · Addendum transferible Fase04.5
 
 Incorporado literalmente como requisitos normativos en PHASE-04-5-QUALITY-REFERENCE.md. Exportados parámetros reales Golden Hour con Blender sin guardar maestro, y conectada la condición al perfil de referencia existente. La condición compartida no acredita transporte equivalente: conversión de potencia y bases HDR Golden Hour permanecen pendientes. Capturas iniciadas previamente etiquetadas diagnóstico. No aprobación ni optimización móvil.
+
+## 2026-11-09 · Revisión Blender primero, calidad alta y cobertura integral
+
+El operador exige máxima calidad Blender y su aprobación visual antes de continuar PlayCanvas. Se crea perfil reproducible 1920×1280, Cycles256 adaptativo0.015/mín64, transporte12 rebotes y guías reales de denoising, con quince encuadres de toda la C. Inventario de materiales fuente generado; sin reemplazar materiales ni simplificar geometría. Cola Blender iniciada; las imágenes HQ no se declaran terminadas. Se preservan maestros, y no se realizan nuevas calibraciones PlayCanvas. Compilación Python comprobada. Referencia transferible integral sigue pendiente; este perfil no la acredita por sí solo.
