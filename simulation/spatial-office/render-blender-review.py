@@ -10,7 +10,9 @@ import archviz_environment as env
 cfg=read(HERE/'blender-review-quality.json');master=OUTPUT/'office-phase04-revision.blend';digest=sha256(master)
 assert digest=='ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f' and not protected_changes()
 folder=HANDOFF/'evidence/phase04-5/blender-review';folder.mkdir(parents=True,exist_ok=True);guides=HERE/'.runtime/blender-review-guides';guides.mkdir(parents=True,exist_ok=True)
-args=sys.argv[sys.argv.index('--')+1:]if '--' in sys.argv else[];views=args or cfg['views'];records=read(folder/'captures.json')if(folder/'captures.json').exists()else[]
+args=sys.argv[sys.argv.index('--')+1:]if '--' in sys.argv else[];views=args or cfg.get('default_views',['lounge']);
+if views!=['lounge']:raise PermissionError('Additional views require operator approval of the first image; batch disabled')
+records=read(folder/'captures.json')if(folder/'captures.json').exists()else[]
 bpy.ops.wm.open_mainfile(filepath=str(master));scene=bpy.context.scene;env.set_hour(cfg['hour']);env.pause();scene.frame_set(31)
 for k,v in cfg['cycles'].items():setattr(scene.cycles,k,v)
 scene.render.resolution_x,scene.render.resolution_y=cfg['resolution'];scene.render.resolution_percentage=100;scene.cycles.use_denoising=False;scene.view_layers[0].cycles.denoising_store_passes=True

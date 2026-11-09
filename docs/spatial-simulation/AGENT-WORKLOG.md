@@ -108,3 +108,7 @@ Incorporado literalmente como requisitos normativos en PHASE-04-5-QUALITY-REFERE
 ## 2026-11-09 · Revisión Blender primero, calidad alta y cobertura integral
 
 El operador exige máxima calidad Blender y su aprobación visual antes de continuar PlayCanvas. Se crea perfil reproducible 1920×1280, Cycles256 adaptativo0.015/mín64, transporte12 rebotes y guías reales de denoising, con quince encuadres de toda la C. Inventario de materiales fuente generado; sin reemplazar materiales ni simplificar geometría. Cola Blender iniciada; las imágenes HQ no se declaran terminadas. Se preservan maestros, y no se realizan nuevas calibraciones PlayCanvas. Compilación Python comprobada. Referencia transferible integral sigue pendiente; este perfil no la acredita por sí solo.
+
+## 2026-11-09 · Corrección del operador: una imagen primero
+
+Se cancela la cola de quince vistas y se detienen dos ejecuciones duplicadas detectadas del propio renderizador. Reinicio único explícito `-- lounge`; aún no había imagen HQ terminada. Configuración por defecto de una vista y bloqueo de lotes adicionales hasta aprobación visual. Se conservan cámaras y cobertura futura. No se ha aprobado la imagen ni la fase.
