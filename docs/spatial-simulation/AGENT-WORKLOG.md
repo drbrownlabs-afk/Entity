@@ -92,3 +92,7 @@ Operador aprueba Fase04-R1 y ordena continuar Fase05. Se conserva maestro aproba
 ## 2026-11-09 · Fase05, revisión visual todavía abierta
 
 Operador rechaza transferencia inicial y exige comparación iterativa con Cycles. Se investigó SDK real: omisión de techos escondidos para overview, recolor RGBToBW no exportable, límites de instancias reiniciados por RenderComponent, conversión lineal/sRGB incorrecta en luces/emisores y sobrescritura de parámetros de vidrio. Corregidos en pipeline existente. Bakes HDR ambientales y base indirecta artificial separada, UV1 explícita; ganancia por circuito llega a cero en OFF. La respuesta indirecta individual es aproximada por circuito. Capturas anteriores rechazadas conservadas. Captura corregida y comparación en curso; NO se declara fidelidad aprobada, 30 FPS móvil físico ni gate05 completo. Backend/frontend/Gaussian y maestro aprobado preservados.
+
+## 2026-11-09 · Prioridad: equivalencia de iluminación
+
+Se detienen nuevas capturas y ajustes de materiales por instrucción del operador. Auditoría directa de controladores Blender/PlayCanvas identifica fórmula automática distinta, parámetros solares distintos y exposición variable. Corregidos sin tocar geometría/maestro ni añadir luces. Cinco pruebas unitarias ejecutadas PASS. Ambiente HDR, transporte indirecto por superficie y conversión fotométrica de áreas siguen sin equivalencia acreditada; detalles en PHASE-05-LIGHTING-AUDIT.md. Gate05 abierto.
