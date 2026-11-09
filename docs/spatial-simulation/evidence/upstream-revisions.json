@@ -19,21 +19,21 @@
   },
   "docs/DECISION-LOG.md": {
     "base_sha256": "0e2be0656ca78f79588636b24d95897e78a573d450b10fd19bd8dfaa89bab7b3",
-    "sha256": "6dab245db779ecda1bf73d52b7394e2ee0d81fc322734262edc5ef1720ce5962",
-    "commit": "0d660fa",
-    "reason": "Exact upstream operator canonical-memory revision, fast-forwarded on the same branch; no original application code exempted."
+    "sha256": "b01319fc7ea3ae2ea5b132ea737e14b1dc91ef8b026c80742d2257473a0c6829",
+    "commit": "bc7effe",
+    "reason": "Current AGENTS requires factual shared process memory; P2-08 execution and explicit Mall retirement, no canonical definition changes."
   },
   "docs/PROJECT-STATUS.md": {
     "base_sha256": "fcdf1c9f85815c3128069503f7cd2b573db5f79518cfb1134cccf79bdd304809",
-    "sha256": "b38cbda039c9827412cc8d1e8550a8a7c4e88a380580a9d99aef8b82d0214796",
-    "commit": "598d86f8247733e26b23410428e6feadf054c1ac",
-    "reason": "P2-only factual execution/status entry required by current AGENTS.md; original P1 code and canonical definitions unchanged."
+    "sha256": "d6cfe8612384431c1e764bf7ed1319279df6dcc1f48ff4892b9a7a3ae8ca88ab",
+    "commit": "bc7effe",
+    "reason": "Current AGENTS requires factual shared process memory; P2-08 execution and explicit Mall retirement, no canonical definition changes."
   },
   "docs/AGENT-WORKLOG.md": {
     "base_sha256": "2897408b0cb1cb10db6529294402ebafa47b84acdbd2fa95cc66565e635dac05",
-    "sha256": "f9dc85ce19644dd1d9a04ff62ed382ace3daf485588c51c8e3ee4ad1dadab7b6",
-    "commit": "598d86f8247733e26b23410428e6feadf054c1ac",
-    "reason": "P2-only factual execution/status entry required by current AGENTS.md; original P1 code and canonical definitions unchanged."
+    "sha256": "dba96ac064ddea60d21ef110c25bdbbfcda619ebe3e0553ebcbb1e06814be0d5",
+    "commit": "bc7effe",
+    "reason": "Current AGENTS requires factual shared process memory; P2-08 execution and explicit Mall retirement, no canonical definition changes."
   },
   ".github/workflows/pages.yml": {
     "base_sha256": "ebe34d397a085d10ae208ae620d4812f53a7f6d7c411705952bdd83acbf100e2",
