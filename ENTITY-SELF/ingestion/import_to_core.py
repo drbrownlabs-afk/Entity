@@ -32,8 +32,12 @@ def main():
     parser.add_argument("--url", default=os.environ.get("ENTITY_CORE_URL", "http://127.0.0.1:8000"))
     parser.add_argument("--apply", action="store_true", help="Write to the existing Core; without this, validate and report only")
     args = parser.parse_args()
-    entities = json.loads(ENTITIES.read_text(encoding="utf-8"))["entities"]
-    relations = json.loads(RELATIONS.read_text(encoding="utf-8"))["relations"]
+    entities = []
+    relations = []
+    for file in sorted((ROOT / "entities").glob("*entities.json")):
+        entities.extend(json.loads(file.read_text(encoding="utf-8"))["entities"])
+    for file in sorted((ROOT / "entities").glob("*relations.json")):
+        relations.extend(json.loads(file.read_text(encoding="utf-8"))["relations"])
     ids = {x["id"] for x in entities}
     if len(ids) != len(entities):
         raise SystemExit("Duplicate entity IDs")
