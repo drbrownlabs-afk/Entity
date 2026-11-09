@@ -9,8 +9,11 @@ from common import HERE,OUTPUT,HANDOFF,read,write,sha256,protected_changes,to_so
 import archviz_environment as env
 cfg=read(HERE/'blender-review-quality.json');master=OUTPUT/'office-phase04-revision.blend';digest=sha256(master)
 assert digest=='ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f' and not protected_changes()
-folder=HANDOFF/'evidence/phase04-5/blender-review';folder.mkdir(parents=True,exist_ok=True);guides=HERE/'.runtime/blender-review-guides';guides.mkdir(parents=True,exist_ok=True)
-args=sys.argv[sys.argv.index('--')+1:]if '--' in sys.argv else[];views=args or cfg.get('default_views',['lounge']);
+preview='--preview'in sys.argv
+if preview:
+ cfg['resolution']=[1440,960];cfg['cycles'].update(samples=128,adaptive_threshold=.02,adaptive_min_samples=32);cfg['id']='phase04-5-blender-single-image-review';cfg['preview_only']=False
+folder=HANDOFF/('evidence/phase04-5/blender-preview'if preview else'evidence/phase04-5/blender-review');folder.mkdir(parents=True,exist_ok=True);guides=HERE/('.runtime/blender-preview-guides'if preview else'.runtime/blender-review-guides');guides.mkdir(parents=True,exist_ok=True)
+args=sys.argv[sys.argv.index('--')+1:]if '--' in sys.argv else[];views=[a for a in args if a!='--preview']or cfg.get('default_views',['lounge']);
 if views!=['lounge']:raise PermissionError('Additional views require operator approval of the first image; batch disabled')
 records=read(folder/'captures.json')if(folder/'captures.json').exists()else[]
 bpy.ops.wm.open_mainfile(filepath=str(master));scene=bpy.context.scene;env.set_hour(cfg['hour']);env.pause();scene.frame_set(31)
@@ -40,6 +43,6 @@ for name in views:
   file=guides/(name+'-'+channel+'-0031.exr');im=bpy.data.images.load(str(file),check_existing=False);w,h=im.size[:];a=np.empty(w*h*4,dtype=np.float32);im.pixels.foreach_get(a);a=a.reshape(h,w,4)[:,:,:3];pfm=guides/(name+'-'+channel+'.pfm')
   with pfm.open('wb')as f:f.write(f'PF\n{w} {h}\n-1.0\n'.encode());f.write(a.astype('<f4').tobytes())
   features[channel.lower()]={'path':str(pfm.relative_to(HERE)),'sha256':sha256(pfm)};bpy.data.images.remove(im)
- records=[r for r in records if r['view']!=name];records.append({'view':name,'profile':cfg,'master_sha256':digest,'sha256':sha256(dst),'camera':camera.name,'position':list(to_source(camera.location)),'vertical_fov':math.degrees(camera.data.angle_y),'state':env.state(),'exposure_EV':scene.view_settings.exposure,'view_transform':scene.view_settings.view_transform,'look':scene.view_settings.look,'guides':features,'render_seconds':time.time()-start,'human_approval':False});write(folder/'captures.json',records);subprocess.run([shutil.which('python'),str(HERE/'denoise-blender-review.py')],check=True);print('BLENDER_REVIEW_CAPTURED',name,flush=True)
+ records=[r for r in records if r['view']!=name];records.append({'view':name,'profile':cfg,'master_sha256':digest,'sha256':sha256(dst),'camera':camera.name,'position':list(to_source(camera.location)),'vertical_fov':math.degrees(camera.data.angle_y),'state':env.state(),'exposure_EV':scene.view_settings.exposure,'view_transform':scene.view_settings.view_transform,'look':scene.view_settings.look,'guides':features,'render_seconds':time.time()-start,'human_approval':False});write(folder/'captures.json',records);subprocess.run([shutil.which('python'),str(HERE/'denoise-blender-review.py')]+(['--preview']if preview else[]),check=True);print('BLENDER_REVIEW_CAPTURED',name,flush=True)
 write(folder/'queue.json',{'configuration':cfg,'master_sha256':digest,'status':'selected views complete','completed':[r['view']for r in records],'human_approval':False})
 assert not protected_changes()and sha256(master)==digest

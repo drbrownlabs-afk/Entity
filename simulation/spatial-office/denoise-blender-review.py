@@ -5,7 +5,7 @@ HERE=Path(__file__).resolve().parent;sys.path.insert(0,str(HERE/'.runtime/denois
 from PIL import Image
 import numpy as np
 from common import HANDOFF,read,write,sha256
-folder=HANDOFF/'evidence/phase04-5/blender-review';outdir=folder/'denoised';outdir.mkdir(parents=True,exist_ok=True);exe=HERE/'.runtime/oidn-2.3.3.x86_64.linux/bin/oidnDenoise';results=[]
+folder=HANDOFF/('evidence/phase04-5/blender-preview'if '--preview'in sys.argv else'evidence/phase04-5/blender-review');outdir=folder/'denoised';outdir.mkdir(parents=True,exist_ok=True);exe=HERE/'.runtime/oidn-2.3.3.x86_64.linux/bin/oidnDenoise';results=[]
 for r in read(folder/'captures.json'):
  src=folder/(r['view']+'.png');assert sha256(src)==r['sha256'];dst=outdir/src.name;p=np.asarray(Image.open(src).convert('RGB'),np.float32)/255;h,w,_=p.shape;inp=HERE/'.runtime/review-color.pfm';out=HERE/'.runtime/review-filtered.pfm'
  with inp.open('wb')as f:f.write(f'PF\n{w} {h}\n-1.0\n'.encode());f.write(np.flipud(p).astype('<f4').tobytes())

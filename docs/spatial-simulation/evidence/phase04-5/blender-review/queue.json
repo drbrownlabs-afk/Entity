@@ -35,11 +35,15 @@
     ],
     "geometry_policy": "Preserve architecture, furniture, bevels, source object IDs and original master. No mobile simplification.",
     "denoising": "Separate official OIDN output with real Cycles albedo/normal guides; preserve raw PNG.",
-    "review_gate": "Operator judges Blender first. No further PlayCanvas calibration or mobile optimization before that approval.",
-    "scope_note": "Rendering profile and visual review; does not certify completion of the transferable lighting/material solution. Record unresolved shader transfers explicitly."
+    "review_gate": "Render one lounge image first; wait for explicit operator visual approval before any other view or PlayCanvas work.",
+    "scope_note": "Rendering profile and visual review; does not certify completion of the transferable lighting/material solution. Record unresolved shader transfers explicitly.",
+    "default_views": [
+      "lounge"
+    ],
+    "remaining_views_require_operator_approval": true
   },
   "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
-  "script_sha256": "a7d0015074f9f394bff7808a5d967067d4a1d62a656cbd5bd1d40fc52ebdba17",
-  "status": "rendering",
+  "script_sha256": "e9487de578bf4b9bf5e1a2c2226b8a17f550807ebf89d10243da666009967b0a",
+  "status": "cancelled by operator: prioritize Phase05 Walk Mode",
   "human_approval": false
 }

@@ -1,0 +1,22 @@
+{
+  "algorithm": "Official OIDN 2.3.3 RT LDR sRGB with linear Cycles albedo and normal guides",
+  "images": [
+    {
+      "view": "lounge",
+      "raw_sha256": "00a68dcf76250fd17bdb235b2a416edac966d838cb52e0b4ff803b920a847eee",
+      "denoised_sha256": "51fbda72de560758daefb055ec924a6e9b56dc91c6643892e7f0be907aa152de",
+      "guides": {
+        "albedo": {
+          "path": ".runtime/blender-preview-guides/lounge-Albedo.pfm",
+          "sha256": "2ff59823b8318eac89ba46a19f378d2b91892b382348874c019f3c7c9f29479b"
+        },
+        "normal": {
+          "path": ".runtime/blender-preview-guides/lounge-Normal.pfm",
+          "sha256": "4ecc0c910f60301b3edf06cf70465b238b95c39404550ff4f8a3f89fe6bc9f78"
+        }
+      }
+    }
+  ],
+  "raw_preserved": true,
+  "human_approval": false
+}
