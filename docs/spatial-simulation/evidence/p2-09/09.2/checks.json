@@ -1,0 +1,71 @@
+{
+  "checks": [
+    {
+      "camera": "CAMERA-PLANNED-01",
+      "png_sha256": "7d4c6f8b73b186e9138122bcec0c27464ccfbc32c1380d28574e38a3dc2490f9",
+      "image_stddev": [
+        58.20011218069857,
+        49.11129911839514,
+        39.92286117146609,
+        0.0
+      ],
+      "parameters_consistent": true
+    },
+    {
+      "camera": "CAMERA-PLANNED-02",
+      "png_sha256": "3169770f42e904a4985c5ebc26f805a443c85b9908c91851ca6f27ed1591445a",
+      "image_stddev": [
+        49.78695298230567,
+        44.801849969856136,
+        40.567367095339314,
+        0.0
+      ],
+      "parameters_consistent": true
+    },
+    {
+      "camera": "CAMERA-PLANNED-03",
+      "png_sha256": "0af4327ddf95ef31af9573a03d2255655f695d7edb147514638b19f32d5f71b5",
+      "image_stddev": [
+        52.27770442272784,
+        44.232352120821226,
+        36.76235245150157,
+        0.0
+      ],
+      "parameters_consistent": true
+    },
+    {
+      "camera": "CAMERA-PLANNED-04",
+      "png_sha256": "7f4c60aa136281d8691babe733655aff76b3b41e64b5f6b00167d37a75a53788",
+      "image_stddev": [
+        61.36865374185779,
+        49.73249937421685,
+        36.004816897320204,
+        0.0
+      ],
+      "parameters_consistent": true
+    },
+    {
+      "camera": "CAMERA-PLANNED-05",
+      "png_sha256": "3e3491227546ea4871985405a0e12840b2b0d28832b366da8e6a649c0af57de2",
+      "image_stddev": [
+        57.12796657339784,
+        46.46470617099406,
+        36.02720174812038,
+        0.0
+      ],
+      "parameters_consistent": true
+    },
+    {
+      "camera": "CAMERA-PLANNED-06",
+      "png_sha256": "0435de80174f1e8ccb0874d9f112b9b738e717b87b1a01e85247649b4e0bb770",
+      "image_stddev": [
+        59.09185813639773,
+        53.58880138444142,
+        48.00946455466979,
+        0.0
+      ],
+      "parameters_consistent": true
+    }
+  ],
+  "visual_inspection_required": true
+}

@@ -1,0 +1,694 @@
+{
+  "gate": "P2-09.2",
+  "rendered": true,
+  "passed": true,
+  "note": "Technical09.2 gate passed after source/parameter/image checks and visual inspection",
+  "frames": [
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "worldToCamera": [
+        0.9985079765319824,
+        -0.014382586814463139,
+        0.05267777293920517,
+        0,
+        -1.874286698066996e-10,
+        0.9646897315979004,
+        0.2633887827396393,
+        0,
+        -0.05460591986775398,
+        -0.26299577951431274,
+        0.9632503986358643,
+        0,
+        2.450244903564453,
+        -0.7399692535400391,
+        -2.035619020462036,
+        1
+      ],
+      "projection": [
+        0.8498448133468628,
+        0,
+        0,
+        0,
+        0,
+        1.5108351707458496,
+        0,
+        0,
+        0,
+        0,
+        -1.0003889799118042,
+        -1,
+        0,
+        0,
+        -0.0700136125087738,
+        0
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "worldToCamera": [
+        -0.9998611807823181,
+        -0.004418086726218462,
+        0.016068000346422195,
+        0,
+        5.443012707218031e-11,
+        0.9642148017883301,
+        0.2651222348213196,
+        0,
+        -0.01666433736681938,
+        0.26508545875549316,
+        -0.9640809297561646,
+        0,
+        -2.5329816341400146,
+        0.904811680316925,
+        -8.005486488342285,
+        1
+      ],
+      "projection": [
+        0.8498448133468628,
+        0,
+        0,
+        0,
+        0,
+        1.5108351707458496,
+        0,
+        0,
+        0,
+        0,
+        -1.0003889799118042,
+        -1,
+        0,
+        0,
+        -0.0700136125087738,
+        0
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "worldToCamera": [
+        -0.9756097197532654,
+        -0.07762442529201508,
+        0.20532913506031036,
+        0,
+        -3.6981047113471277e-09,
+        0.9353882670402527,
+        0.3536223769187927,
+        0,
+        -0.2195122092962265,
+        0.34499743580818176,
+        -0.9125739336013794,
+        0,
+        -4.792683124542236,
+        2.9802212715148926,
+        -11.418010711669922,
+        1
+      ],
+      "projection": [
+        0.8498448133468628,
+        0,
+        0,
+        0,
+        0,
+        1.5108351707458496,
+        0,
+        0,
+        0,
+        0,
+        -1.0003889799118042,
+        -1,
+        0,
+        0,
+        -0.0700136125087738,
+        0
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "worldToCamera": [
+        -0.9153150320053101,
+        -0.19877487421035767,
+        0.3502669632434845,
+        0,
+        -2.326157044763022e-10,
+        0.8697128891944885,
+        0.49355798959732056,
+        0,
+        -0.40273863077163696,
+        0.45176103711128235,
+        -0.7960612773895264,
+        0,
+        -9.171457290649414,
+        6.627130508422852,
+        -14.210490226745605,
+        1
+      ],
+      "projection": [
+        0.8498448133468628,
+        0,
+        0,
+        0,
+        0,
+        1.5108351707458496,
+        0,
+        0,
+        0,
+        0,
+        -1.0003889799118042,
+        -1,
+        0,
+        0,
+        -0.0700136125087738,
+        0
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "worldToCamera": [
+        0.9916004538536072,
+        0.04098815843462944,
+        -0.12267269194126129,
+        0,
+        4.302020073509993e-09,
+        0.9484574198722839,
+        0.3169044852256775,
+        0,
+        0.12933915853500366,
+        -0.3142426311969757,
+        0.9404908418655396,
+        0,
+        4.807106018066406,
+        -5.269359588623047,
+        11.826160430908203,
+        1
+      ],
+      "projection": [
+        0.8498448133468628,
+        0,
+        0,
+        0,
+        0,
+        1.5108351707458496,
+        0,
+        0,
+        0,
+        0,
+        -1.0003889799118042,
+        -1,
+        0,
+        0,
+        -0.0700136125087738,
+        0
+      ]
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "worldToCamera": [
+        -0.9999061822891235,
+        -0.0028446645010262728,
+        0.01339870784431696,
+        0,
+        -4.3194947618729884e-11,
+        0.9781968593597412,
+        0.2076798677444458,
+        0,
+        -0.013697353191673756,
+        0.20766039192676544,
+        -0.9781050682067871,
+        0,
+        -2.6531758308410645,
+        4.1283488273620605,
+        -25.46389389038086,
+        1
+      ],
+      "projection": [
+        0.8498448133468628,
+        0,
+        0,
+        0,
+        0,
+        1.5108351707458496,
+        0,
+        0,
+        0,
+        0,
+        -1.0003889799118042,
+        -1,
+        0,
+        0,
+        -0.0700136125087738,
+        0
+      ]
+    }
+  ],
+  "errors": [],
+  "config": {
+    "schema_version": "1.0",
+    "simulation_only": true,
+    "source_revision": "21d772e7ee022e36a8f43c3ee75e20ca359fb832",
+    "source_sha256": "7d7b77aabd5ce1e8494455fe3c2ade288d2bf6db258a86c14bcb5359b93d4df0",
+    "source_license": "Raspberry Pi documentation Creative Commons; see official LICENSE.md",
+    "cameras": [
+      {
+        "id": "CAMERA-PLANNED-01",
+        "label": "ingress-test-anchor",
+        "position": [
+          -2.35,
+          1.25,
+          1.9
+        ],
+        "target": [
+          -2.7,
+          -0.5,
+          -4.5
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "mount": "virtual ceiling-adjacent; no physical bracket/installation asserted",
+        "manufacturer": "Raspberry Pi",
+        "model": "Camera Module 3 Wide",
+        "sensor": "Sony IMX708",
+        "projection": "rectified-pinhole",
+        "resolution": [
+          1152,
+          648
+        ],
+        "source_sensor_resolution": [
+          4608,
+          2592
+        ],
+        "source_video_mode": "2304x1296p30 HDR (documented); not claimed captured here",
+        "capture_fps": 2,
+        "ai_fps": 2,
+        "vfov_deg": 67,
+        "hfov_deg": 99.28125276597231,
+        "datasheet_hfov_deg": 102,
+        "K": [
+          [
+            489.5106027312279,
+            0,
+            576
+          ],
+          [
+            0,
+            489.5106027312279,
+            324
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "distortion": {
+          "virtual_rectified": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physical_coefficients": null
+        },
+        "exposure": "existing architectural renderer exposure; physical shutter/ISO response not emulated",
+        "compression": "lossless PNG; sensor noise/HDR merge/rolling shutter/H264 not emulated",
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "calibration_status": "virtual exact projection; physical calibration unknown",
+        "spec_source": "https://github.com/raspberrypi/documentation/blob/21d772e7ee022e36a8f43c3ee75e20ca359fb832/documentation/asciidoc/accessories/camera/hardware-specification.adoc"
+      },
+      {
+        "id": "CAMERA-PLANNED-02",
+        "label": "upper-corridor-return",
+        "position": [
+          -2.4,
+          1.25,
+          -8
+        ],
+        "target": [
+          -2.5,
+          -0.4,
+          -2
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "mount": "virtual ceiling-adjacent; no physical bracket/installation asserted",
+        "manufacturer": "Raspberry Pi",
+        "model": "Camera Module 3 Wide",
+        "sensor": "Sony IMX708",
+        "projection": "rectified-pinhole",
+        "resolution": [
+          1152,
+          648
+        ],
+        "source_sensor_resolution": [
+          4608,
+          2592
+        ],
+        "source_video_mode": "2304x1296p30 HDR (documented); not claimed captured here",
+        "capture_fps": 2,
+        "ai_fps": 2,
+        "vfov_deg": 67,
+        "hfov_deg": 99.28125276597231,
+        "datasheet_hfov_deg": 102,
+        "K": [
+          [
+            489.5106027312279,
+            0,
+            576
+          ],
+          [
+            0,
+            489.5106027312279,
+            324
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "distortion": {
+          "virtual_rectified": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physical_coefficients": null
+        },
+        "exposure": "existing architectural renderer exposure; physical shutter/ISO response not emulated",
+        "compression": "lossless PNG; sensor noise/HDR merge/rolling shutter/H264 not emulated",
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "calibration_status": "virtual exact projection; physical calibration unknown",
+        "spec_source": "https://github.com/raspberrypi/documentation/blob/21d772e7ee022e36a8f43c3ee75e20ca359fb832/documentation/asciidoc/accessories/camera/hardware-specification.adoc"
+      },
+      {
+        "id": "CAMERA-PLANNED-03",
+        "label": "before-security",
+        "position": [
+          -2.1,
+          1.25,
+          -12.5
+        ],
+        "target": [
+          -3,
+          -0.3,
+          -8.5
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "mount": "virtual ceiling-adjacent; no physical bracket/installation asserted",
+        "manufacturer": "Raspberry Pi",
+        "model": "Camera Module 3 Wide",
+        "sensor": "Sony IMX708",
+        "projection": "rectified-pinhole",
+        "resolution": [
+          1152,
+          648
+        ],
+        "source_sensor_resolution": [
+          4608,
+          2592
+        ],
+        "source_video_mode": "2304x1296p30 HDR (documented); not claimed captured here",
+        "capture_fps": 2,
+        "ai_fps": 2,
+        "vfov_deg": 67,
+        "hfov_deg": 99.28125276597231,
+        "datasheet_hfov_deg": 102,
+        "K": [
+          [
+            489.5106027312279,
+            0,
+            576
+          ],
+          [
+            0,
+            489.5106027312279,
+            324
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "distortion": {
+          "virtual_rectified": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physical_coefficients": null
+        },
+        "exposure": "existing architectural renderer exposure; physical shutter/ISO response not emulated",
+        "compression": "lossless PNG; sensor noise/HDR merge/rolling shutter/H264 not emulated",
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "calibration_status": "virtual exact projection; physical calibration unknown",
+        "spec_source": "https://github.com/raspberrypi/documentation/blob/21d772e7ee022e36a8f43c3ee75e20ca359fb832/documentation/asciidoc/accessories/camera/hardware-specification.adoc"
+      },
+      {
+        "id": "CAMERA-PLANNED-04",
+        "label": "kiosk-front",
+        "position": [
+          -2.1,
+          1.25,
+          -18
+        ],
+        "target": [
+          -3.2,
+          -0.3,
+          -15.5
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "mount": "virtual ceiling-adjacent; no physical bracket/installation asserted",
+        "manufacturer": "Raspberry Pi",
+        "model": "Camera Module 3 Wide",
+        "sensor": "Sony IMX708",
+        "projection": "rectified-pinhole",
+        "resolution": [
+          1152,
+          648
+        ],
+        "source_sensor_resolution": [
+          4608,
+          2592
+        ],
+        "source_video_mode": "2304x1296p30 HDR (documented); not claimed captured here",
+        "capture_fps": 2,
+        "ai_fps": 2,
+        "vfov_deg": 67,
+        "hfov_deg": 99.28125276597231,
+        "datasheet_hfov_deg": 102,
+        "K": [
+          [
+            489.5106027312279,
+            0,
+            576
+          ],
+          [
+            0,
+            489.5106027312279,
+            324
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "distortion": {
+          "virtual_rectified": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physical_coefficients": null
+        },
+        "exposure": "existing architectural renderer exposure; physical shutter/ISO response not emulated",
+        "compression": "lossless PNG; sensor noise/HDR merge/rolling shutter/H264 not emulated",
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "calibration_status": "virtual exact projection; physical calibration unknown",
+        "spec_source": "https://github.com/raspberrypi/documentation/blob/21d772e7ee022e36a8f43c3ee75e20ca359fb832/documentation/asciidoc/accessories/camera/hardware-specification.adoc"
+      },
+      {
+        "id": "CAMERA-PLANNED-05",
+        "label": "kiosk-return",
+        "position": [
+          -3.1,
+          1.25,
+          -13.4
+        ],
+        "target": [
+          -2.5,
+          -0.3,
+          -18
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "mount": "virtual ceiling-adjacent; no physical bracket/installation asserted",
+        "manufacturer": "Raspberry Pi",
+        "model": "Camera Module 3 Wide",
+        "sensor": "Sony IMX708",
+        "projection": "rectified-pinhole",
+        "resolution": [
+          1152,
+          648
+        ],
+        "source_sensor_resolution": [
+          4608,
+          2592
+        ],
+        "source_video_mode": "2304x1296p30 HDR (documented); not claimed captured here",
+        "capture_fps": 2,
+        "ai_fps": 2,
+        "vfov_deg": 67,
+        "hfov_deg": 99.28125276597231,
+        "datasheet_hfov_deg": 102,
+        "K": [
+          [
+            489.5106027312279,
+            0,
+            576
+          ],
+          [
+            0,
+            489.5106027312279,
+            324
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "distortion": {
+          "virtual_rectified": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physical_coefficients": null
+        },
+        "exposure": "existing architectural renderer exposure; physical shutter/ISO response not emulated",
+        "compression": "lossless PNG; sensor noise/HDR merge/rolling shutter/H264 not emulated",
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "calibration_status": "virtual exact projection; physical calibration unknown",
+        "spec_source": "https://github.com/raspberrypi/documentation/blob/21d772e7ee022e36a8f43c3ee75e20ca359fb832/documentation/asciidoc/accessories/camera/hardware-specification.adoc"
+      },
+      {
+        "id": "CAMERA-PLANNED-06",
+        "label": "rear-corridor",
+        "position": [
+          -2.3,
+          1.25,
+          -25.8
+        ],
+        "target": [
+          -2.4,
+          -0.3,
+          -18.5
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ],
+        "mount": "virtual ceiling-adjacent; no physical bracket/installation asserted",
+        "manufacturer": "Raspberry Pi",
+        "model": "Camera Module 3 Wide",
+        "sensor": "Sony IMX708",
+        "projection": "rectified-pinhole",
+        "resolution": [
+          1152,
+          648
+        ],
+        "source_sensor_resolution": [
+          4608,
+          2592
+        ],
+        "source_video_mode": "2304x1296p30 HDR (documented); not claimed captured here",
+        "capture_fps": 2,
+        "ai_fps": 2,
+        "vfov_deg": 67,
+        "hfov_deg": 99.28125276597231,
+        "datasheet_hfov_deg": 102,
+        "K": [
+          [
+            489.5106027312279,
+            0,
+            576
+          ],
+          [
+            0,
+            489.5106027312279,
+            324
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "distortion": {
+          "virtual_rectified": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "physical_coefficients": null
+        },
+        "exposure": "existing architectural renderer exposure; physical shutter/ISO response not emulated",
+        "compression": "lossless PNG; sensor noise/HDR merge/rolling shutter/H264 not emulated",
+        "coordinate_frame": "p2-playcanvas-source-y-up",
+        "calibration_status": "virtual exact projection; physical calibration unknown",
+        "spec_source": "https://github.com/raspberrypi/documentation/blob/21d772e7ee022e36a8f43c3ee75e20ca359fb832/documentation/asciidoc/accessories/camera/hardware-specification.adoc"
+      }
+    ],
+    "retained_unselected_planned_ids": [
+      "CAMERA-PLANNED-07",
+      "CAMERA-PLANNED-08"
+    ],
+    "selection": {
+      "count": 6,
+      "compared": [
+        "Camera Module 3 normal: H66/V41, 4.74mm",
+        "Camera Module 3 Wide: H102/V67, 2.75mm",
+        "HQ IMX477: optics depend on lens, cannot assert FOV without chosen lens"
+      ],
+      "initial_panorama_hypothesis": "180-degree opposed corridor pair evaluated as hypothesis, not represented as an ordinary perspective camera",
+      "decision": "Six conventional wide views selected provisionally: short overlapping baselines on both sides of the existing security partition and detailed kiosk views. Endpoint panoramas spread fixed pixels across walls/glass and cannot remove partition occlusion. Final coverage must pass rendered multi-view tests; not a claim of optimal hardware placement.",
+      "panorama_implemented": false,
+      "fov_rectification": "Datasheet raw H102/V67 differ slightly from a distortion-free 16:9 pinhole. Preserve V67 and explicitly derive rectified H from aspect; no false exact physical lens equivalence."
+    }
+  },
+  "visual_inspection": {
+    "artifact": "views.jpg",
+    "performed": true,
+    "result": "Six independent views show actual corridor, kiosk and return coverage; no blank renders. Existing dark glazing and uneven lighting remain visible; this gate validates camera capture, not architectural photorealism.",
+    "selection": "6 conventional wide views; initial 180-degree pair not imposed. Preserve detail and both sides of existing security partition. Pixel overlap/occlusion still must pass09.3."
+  }
+}

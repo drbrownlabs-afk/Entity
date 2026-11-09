@@ -1,0 +1,19 @@
+{
+  "read_only": true,
+  "purpose": "P2-09 dependency audit, not perception integration proof",
+  "same_p1_database": true,
+  "site": "coworking-p2",
+  "entities_including_two_historical_persons": 462,
+  "cameras": [
+    "CAMERA-PLANNED-01",
+    "CAMERA-PLANNED-02",
+    "CAMERA-PLANNED-03",
+    "CAMERA-PLANNED-04",
+    "CAMERA-PLANNED-05",
+    "CAMERA-PLANNED-06",
+    "CAMERA-PLANNED-07",
+    "CAMERA-PLANNED-08"
+  ],
+  "office_schema": 5,
+  "observations_received_by_this_audit": 0
+}

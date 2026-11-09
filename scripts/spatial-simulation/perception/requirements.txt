@@ -1,0 +1,5 @@
+# CPU execution; model weights remain separate and checksum-pinned in evidence.
+onnxruntime==1.23.2
+opencv-python-headless==4.11.0.86
+norfair==2.3.0
+numpy==1.26.4
