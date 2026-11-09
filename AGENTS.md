@@ -1,6 +1,19 @@
 # ENTITY — Instrucciones vigentes para agentes
 **Este bloque tiene prioridad sobre instrucciones históricas posteriores de este mismo archivo.** No crear archivos de memoria alternativos.
 
+## PROTOCOLO DE RECUPERACIÓN DESDE GITHUB — punto de entrada único (2026-11-08)
+Este archivo es el **índice operativo de la memoria del proyecto**, no una memoria paralela. Se activa cuando el operador pide «entra en la memoria de GitHub», «lee la memoria del repositorio», «recupera el contexto del proyecto» o una petición equivalente. **No exigir que el operador recuerde palabras clave, ramas, nombres de archivos ni definiciones.**
+
+1. **Ubicación:** repositorio `drbrownlabs-afk/Entity`. Abrir primero `AGENTS.md` en la rama consultada. La referencia de memoria aprobada actualmente está en `codex/spatial-simulation` hasta que exista una promoción verificada a la rama canónica. No asumir que `main` ya contiene estas decisiones. Comprobar rama/commit y, cuando haya divergencias, contrastar la versión más reciente aprobada, sin elegir automáticamente el último commit por fecha.
+2. **Cargar canon:** leer la sección canónica vigente de `docs/ENTITY-MASTER-SPEC.md`, incluyendo ADR-2026-11-08-002: Núcleo ≠ ENTITY Core; Entidadizador, Constructor espacial y Spatial Simulation son responsabilidades distintas.
+3. **Cargar decisiones:** leer las entradas vigentes de `docs/DECISION-LOG.md`, especialmente ADR-2026-11-08-001 y 002, y respetar sustituciones. Las instrucciones históricas contradichas no se ejecutan.
+4. **Seleccionar proceso:** consultar las secciones P1, P2, P3 de `docs/PROJECT-STATUS.md`. Si el usuario especifica un proceso, priorizarlo; si no, presentar selección breve de los procesos existentes y sus estados, sin inventar uno nuevo. La selección es de **contexto**, no un requisito para leer el canon.
+5. **Recuperar continuidad:** leer las entradas recientes y pertinentes de `docs/AGENT-WORKLOG.md`, más commits/PRs/artefactos del proceso elegido. Separar claramente **decidido**, **implementado**, **probado** y **pendiente**.
+6. **Respuesta al operador:** confirmar repositorio, rama/commit efectivamente consultados, resumen del canon y opciones de proceso, último estado verificable y bloqueos. Si GitHub no está conectado o la referencia no está disponible, decirlo; nunca reconstruir la memoria fingiendo haber leído GitHub.
+7. **Persistencia:** al cerrar una tarea, registrar decisiones y estado en los archivos existentes según su nivel. No crear `MEMORY.md` ni otro documento maestro; no modificar el canon sin aprobación explícita.
+
+**Importante:** este protocolo funciona cuando el agente abre este repositorio; no supone que una conversación nueva de ChatGPT haya leído automáticamente `AGENTS.md`. La solicitud genérica del operador basta para iniciar la búsqueda en GitHub y seguir este índice, sin necesidad de una frase de activación exacta.
+
 ## Secuencia obligatoria de lectura
 1. Leer **primero** el bloque canónico al inicio de `docs/ENTITY-MASTER-SPEC.md` y ADR-2026-11-08-001 al inicio de `docs/DECISION-LOG.md`.
 2. Identificar el proceso asignado **P1/P2/P3** y leer su sección vigente en `docs/PROJECT-STATUS.md`.
