@@ -1,3 +1,17 @@
+# ENTITY — Bitácora de ejecución y evidencias
+**Autoridad:** registro histórico, no fuente de decisiones arquitectónicas. Cada entrada debe identificar proceso (P1/P2/P3), fecha, objetivo, rama/commit, cambios, pruebas reales, bloqueos y resultado. No confundir planes con implementaciones.
+
+## 2026-11-08 — ChatGPT / reestructuración de memoria canónica
+- Proceso: coordinación transversal P1/P2/P3.
+- Objetivo: separar canon estable, procesos actualizables y ejecución; desactivar instrucciones históricas contradictorias sin borrar evidencias.
+- Archivos: ENTITY-MASTER-SPEC.md, DECISION-LOG.md, PROJECT-STATUS.md, AGENT-WORKLOG.md y AGENTS.md.
+- Decisión: ADR-2026-11-08-001; canon solo por aprobación explícita.
+- Implementación: exclusivamente documentación; ninguna prueba de software ni despliegue.
+- Resultado: esquema jerárquico consolidado en archivos existentes.
+
+---
+## Bitácora histórica preservada
+
 # ENTITY OS — Bitácora compartida de agentes
 
 Este archivo permite que ChatGPT, Codex y colaboradores reconstruyan trabajo sin compartir contextos privados de conversación. Los commits y PRs de GitHub son la evidencia primaria.

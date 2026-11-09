@@ -1,3 +1,26 @@
+# ENTITY — Instrucciones vigentes para agentes
+**Este bloque tiene prioridad sobre instrucciones históricas posteriores de este mismo archivo.** No crear archivos de memoria alternativos.
+
+## Secuencia obligatoria de lectura
+1. Leer **primero** el bloque canónico al inicio de `docs/ENTITY-MASTER-SPEC.md` y ADR-2026-11-08-001 al inicio de `docs/DECISION-LOG.md`.
+2. Identificar el proceso asignado **P1/P2/P3** y leer su sección vigente en `docs/PROJECT-STATUS.md`.
+3. Leer únicamente las entradas pertinentes y recientes de `docs/AGENT-WORKLOG.md`, más commits, pruebas y artefactos de ese proceso.
+4. Si un plan antiguo contradice el canon o la decisión vigente, tratarlo como **histórico**, nunca ejecutarlo silenciosamente.
+
+## Gobierno de escritura
+- Resultado de tarea: actualizar PROJECT-STATUS y AGENT-WORKLOG con evidencia.
+- Decisión de proceso: agregar entrada fechada a DECISION-LOG y actualizar estado de ese proceso.
+- Cambio de canon: **prohibido sin autorización explícita del operador**; documentar ADR, motivación, impacto, sustituciones y modificar únicamente el canon afectado.
+- Nunca declarar gate, CI, despliegue, integración o hardware completado sin prueba.
+- No crear `MEMORY.md`, otros documentos maestros o roadmaps globales alternativos.
+
+## Estado de procesos y reasignación
+P1: software original hasta Fase 09, sin continuación automática. P2: gemelo operativo integral activo, las fases 01–07 solo describen escena 3D; cámaras/ReID (antigua PHASE-11) pertenecen aquí, junto a integraciones reales de operaciones. P3: IA situada/multiagentes posterior; OpenClaw (antigua PHASE-10) pertenece aquí. Roadmap global 08–15 revocado.
+
+---
+## Instrucciones históricas preservadas
+**Las instrucciones antiguas de este archivo no prevalecen sobre el bloque vigente anterior ni el canon.** Conservar como evidencia; no seguir secuencias de fases antiguas ni autorizaciones caducadas.
+
 # Codex instructions — ENTITY OS
 
 Build the smallest end-to-end demonstrator. Preserve the proprietary ENTITY core: entities, explicit typed relationships, state, events, persistent memory and capabilities. Do not implement latent/geodesic relation discovery or complex multiagent inference in MVP. Use Scorpio as an external NGSI-LD broker, never vendor its source. Keep the PlayCanvas viewer independent of the backend and all integrations adapter-based. No real footage, credentials or secrets in commits. Work incrementally with tests and documented decisions.

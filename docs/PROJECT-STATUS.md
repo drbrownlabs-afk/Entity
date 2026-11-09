@@ -1,3 +1,25 @@
+# ENTITY — Memoria actualizable de procesos
+**Autoridad:** estado y planificación de procesos, subordinados al canon de ENTITY-MASTER-SPEC.md. Actualizar después de cambios comprobados; no declarar éxito sin evidencia.
+
+## P1 — Software ENTITY
+**Estado de alcance:** línea original detenida en Fase 09. **Estado de aceptación:** no inferir cierre técnico global de la numeración; consultar gates, CI y entregas. **Próximo criterio:** verificar lo que falta antes de dar por aprobada la línea. No iniciar «Fase 10/11» como continuación de P1.
+
+## P2 — Gemelo digital operativo del coworking
+**Estado:** activo. **Subproyecto escena 3D:** fases internas 01–07, no equivalentes a la totalidad de P2.
+**Alcance:** escena Blender/PlayCanvas; humanos Mixamo (~12), animaciones y rutas; cámaras comerciales, cobertura, calibración, percepción, tracking y ReID; seguridad, accesos, biometría; reservas, calendario, CRM, membresías, contratos, facturación, Drive/documentos, redes/IT, mantenimiento y operaciones. Todo usa un único Core/modelo del mundo. Integrar sistemas empresariales reales mediante APIs, sin clones ni proveedores supuestos. Separar simulación/real/replay y ground truth/observación/inferencia.
+**Evidencia disponible:** auditoría backend y handoff geométrico están documentados más abajo; su existencia no certifica escena final ni integraciones.
+**Próxima prioridad:** evaluar entregas y gates reales del laboratorio Blender/PlayCanvas y de Core; resolver defectos de transporte Edge, integridad referencial y contratos de percepción antes de presentar integración operativa como validada.
+
+## P3 — IA situada y multiagentes
+**Estado:** posterior, no iniciado ni autorizado para implementación. OpenClaw es opción de runtime; agentes de seguridad, reservas, facturación, CRM, red y mantenimiento actuarán a través de capacidades de Core con permisos y auditoría. No sustituir Core ni crear memoria operativa paralela.
+
+## Reglas de actualización de procesos
+Cada actualización debe incluir proceso, fecha, estado, evidencia/commit, bloqueos, próxima acción y responsable cuando exista. Una tarea terminada actualiza este archivo y AGENT-WORKLOG; una decisión específica se agrega a DECISION-LOG; ninguna de ellas modifica automáticamente el canon. Si hay conflicto con notas antiguas, prevalecen el canon y ADR-2026-11-08-001.
+
+---
+## Historial operativo previo
+Los reportes siguientes son evidencia cronológica y pueden describir prioridades ya sustituidas; no deben ejecutarse como órdenes actuales.
+
 # ENTITY OS — Estado operativo compartido
 
 Última revisión manual: 2026-11-06. Este archivo se actualiza después de cada tarea de implementación. NO reemplaza inspección de código, CI ni commits.

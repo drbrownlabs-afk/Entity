@@ -1,3 +1,20 @@
+# ENTITY — Registro de decisiones y autoridad
+**Regla:** decisiones inmutables como registros; una nueva entrada puede sustituir otra indicando ID y fecha. Nunca borrar evidencia histórica. Canon solo cambia con aprobación explícita del operador.
+
+## ADR-2026-11-08-001 — Memoria jerárquica y tres procesos (ACEPTADA)
+- **Aprobación:** instrucción explícita del operador de redefinir la memoria, 2026-11-08.
+- **Problema:** instrucciones históricas de fases y archivos redundantes producían contradicciones entre canon, procesos y ejecución.
+- **Decisión:** ENTITY-MASTER-SPEC.md contiene canon estable; PROJECT-STATUS.md mantiene P1/P2/P3 actualizables; DECISION-LOG.md conserva decisiones y sustituciones; AGENT-WORKLOG.md es evidencia; AGENTS.md solo coordina.
+- **Cambio de canon:** únicamente por decisión explícita aprobada, documentada con ID, impacto y sustituciones.
+- **Alcance:** P1 termina en Fase 09 (aceptación técnica independiente); P2 gemelo integral activo, con fases 01–07 solo para 3D; P3 agentes posterior. Antiguas PHASE-11 cámaras → P2 y PHASE-10 OpenClaw → P3; roadmap global 08–15 revocado.
+- **Regla de resolución:** una instrucción histórica que diga «vinculante» no prevalece sobre el canon y esta decisión.
+- **Alternativas descartadas:** nuevos archivos MEMORY.md, documentos maestros paralelos y sobrescritura destructiva de decisiones.
+- **Impacto:** cambio documental de coordinación; sin modificación de producto ni aprobación de pruebas.
+
+---
+## Historial previo (conservado, puede contener decisiones sustituidas)
+Las entradas siguientes documentan su momento histórico; para saber cuál es vigente aplicar ADR-2026-11-08-001 y el canon.
+
 # ENTITY OS — Registro de decisiones
 
 ## 2026-11-06

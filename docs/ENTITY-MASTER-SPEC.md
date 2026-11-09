@@ -1,3 +1,40 @@
+# ENTITY — Canon arquitectónico y contrato de memoria
+**Autoridad:** CANON | **Versión:** 1.0 | **Vigente desde:** 2026-11-08 | **Cambios:** solo con aprobación explícita del operador y registro en DECISION-LOG.
+
+## Identidad y alcance invariante
+ENTITY es la plataforma/marca general. ENTITY Spatial Intelligence es la vertical de inteligencia espacial actualmente desarrollada; no define todas las futuras verticales. ENTITY construye una representación computable, coherente, persistente y compartida de un dominio espacial y operativo, no simplemente una visualización 3D, un chatbot o un conjunto de integraciones.
+
+## Contrato del núcleo
+ENTITY Core es el sistema propietario de entidades/identidad, estado, relaciones explícitas tipadas, eventos, memoria/historial, capacidades, políticas de autorización, API y procedencia. Un único modelo del mundo es compartido por aplicaciones, interfaces, conectores y agentes. Las fuentes externas conservan su autoridad sobre sus datos. El gemelo 3D es una interfaz/representación del modelo, no un segundo Core. Los adaptadores y brokers externos (incluido Scorpio/NGSI-LD) no sustituyen Core.
+
+## Límites arquitectónicos
+Producto SaaS centralizado en la nube. Edge ejecuta únicamente captura, percepción y procesamiento local indispensable, con transmisión estructurada al servicio. Integraciones reales mediante interfaces y permisos legítimos; no se presentan simulaciones como instalaciones reales. Toda capacidad de acción exige identidad, autorización, trazabilidad y separación entre datos observados, inferidos y ground truth de simulación.
+
+## Gobierno de cambios
+Este canon es estable, **no inmutable**. Solo una solicitud explícita de cambio arquitectónico permite revisarlo. Cada cambio debe documentar: ID de decisión, motivo, impacto transversal, alternativa descartada, fecha y sustitución. Codex y agentes no pueden elevar automáticamente un resultado técnico, una hipótesis o una decisión de proceso a canon. Una decisión canónica posterior aprobada prevalece; las versiones anteriores quedan en historial Git y en DECISION-LOG.
+
+## Memoria jerárquica (sin archivos maestros paralelos)
+1. **Canon:** este bloque de ENTITY-MASTER-SPEC.md. Lectura prioritaria, edición controlada.
+2. **Procesos:** las tres secciones actuales de PROJECT-STATUS.md y decisiones específicas en DECISION-LOG.md. Estado y planificación actualizables.
+3. **Ejecución:** AGENT-WORKLOG.md, commits, pruebas y artefactos. Evidencia histórica, no instrucciones vigentes por sí misma.
+4. **Entrada del agente:** AGENTS.md dirige a los tres niveles y no redefine el canon.
+
+**Regla de precedencia:** canon aprobado > decisión vigente del proceso > estado comprobado > bitácora > planes históricos. Los textos anteriores que contradigan este bloque son referencias históricas, no mandatos activos.
+
+## Tres procesos separados
+- **P1 Software ENTITY:** línea original con límite de alcance en Fase 09; su aceptación técnica se verifica independientemente. No continúa por numeración global.
+- **P2 Gemelo digital operativo de coworking:** activo. Fases 01–07 solo describen su subproyecto de escena 3D; el alcance incluye personas, cámaras, percepción, seguridad, accesos, biometría, reservas, calendario, CRM, membresías, contratos, facturación, documentos/Drive, red/IT, mantenimiento y operaciones. Se conectan plataformas empresariales reales por APIs oficiales, sin inventar proveedores de Impacto. Aproximadamente doce humanos realistas Mixamo sustituyen los dummies geométricos como objetivo visual; se separan datos internos de percepción. Hardware ausente puede representarse con simulación etiquetada.
+- **P3 IA situada y multiagentes:** posterior, no autorizado a implementarse aún. Agentes especializados actúan mediante capacidades autorizadas de Core. OpenClaw puede ser runtime, no reemplazo del modelo del mundo.
+
+**Reasignaciones vigentes:** antigua PHASE-11 (cámaras, ONVIF/RTSP, ReID) → P2; antigua PHASE-10 (OpenClaw) → P3. La secuencia global 08–15 está revocada. Conservar especificaciones históricas sin ejecutarlas como roadmap.
+
+## Inventario y veracidad
+Disponibles: cámaras Orbbec. Las ocho cámaras analógicas/DVR fueron una propuesta, no equipo adquirido. No afirmar integraciones, pruebas, despliegues o aprobación de gates sin evidencia reproducible.
+
+---
+## Archivo histórico de especificaciones
+**ATENCIÓN:** a partir de aquí se conserva el documento anterior como referencia histórica. Sus fases, prioridades e instrucciones operativas solo aplican cuando no contradicen el canon anterior ni las decisiones vigentes. No interpretar sus títulos de «vigente», «obligatorio» o «fase siguiente» como autoridad superior.
+
 # ENTITY OS — Documento maestro de producto y arquitectura
 Actualizado: 2026-11-08. Fuente de verdad para las decisiones de ENTITY OS; mantenerlo actualizado cuando cambien alcance, hardware, arquitectura o estrategia.
 
