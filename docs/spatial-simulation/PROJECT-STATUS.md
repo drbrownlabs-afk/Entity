@@ -73,3 +73,7 @@ P2-08 EN VALIDACIÓN:66 entidades/146 relaciones en P1 local; raíz Coworking co
 ### Precisión8.3 — estado final de esta entrega
 
 66 entidades/146 relaciones activas;12 personas de demo, Daniel reutiliza visitante12.8 tests estructurales PASS. Guion preparado exclusivamente dentro del simulador, no ejecutado: sin avatares, outputsCore, cámaras, detecciones, MOT/MTMC-ReID ni check-ins. Escenarios8.2 declarativos futuros, memoria/IDs/grafo persistentes reales P1 local. Funciones anteriores conservadas, sin operaciones nuevas ni09.06/07 pendientes hasta mañana. P2-08 EN VALIDACIÓN, no aprobada.
+
+## Estado vigente — 8.4
+
+**Estado verificado P2-08 (addendum8.4, 2026-11-09):**460 entidades de alcance/1185 relaciones en P1 Core local real;12 personas de demo y dos identidades técnicas históricas adicionales preservadas. Inventario digital, ocho cámaras previstas sin feeds/calibración,101 tipos de catálogo de cardinalidad desconocida, operadora sin identificar y servicios futuros sin conexiones.290 mapeos PlayCanvas verificados;18 tests de regresión/infraestructura PASS y suite nueva5 PASS; reimportación0 cambios, reinicio HTTP PASS. Geometría/maestro intactos. Sin operaciones, proveedores, percepción, personajes ni09. Core HTTPS público pendiente.06/07 pendientes; P2-08 EN VALIDACIÓN, no aprobada. Evidencia: docs/spatial-simulation/evidence/phase08/infrastructure. Sustituye los conteos históricos de8.1–8.3, no sus evidencias.

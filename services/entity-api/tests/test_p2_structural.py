@@ -21,7 +21,7 @@ class StructuralTests(unittest.TestCase):
   items=self.read()['entities'];self.assertEqual(len(items),len(self.cfg['resources']));self.assertEqual(items['site']['space_type'],'Coworking');self.assertEqual(items['site']['operational_state'],'unknown');self.assertTrue(items['site']['space_root']);self.assertFalse(items['site']['world_model_root']);self.assertEqual(len({e['core_id']for e in items.values()}),len(self.cfg['resources']))
   for k in ['A','B']:self.assertTrue(items[k]['private']);self.assertTrue(items[k]['reservable']);self.assertEqual(items[k]['booking_mode'],'whole-environment')
   self.assertFalse(items['C']['public']);self.assertFalse(items['C']['reservable']);self.assertEqual(items['C']['functional_use'],'staff')
-  self.assertEqual(items['E']['planned_unindexed_catalog_ids'],['E2','E3','E4'])
+  self.assertEqual(items['E']['planned_unindexed_catalog_ids'],[])
   for k in ['D1','D2','D3','D4','D5','D6','E1','E5','E6']:
    self.assertTrue(items[k]['reservable']);self.assertTrue(any(e['type']=='partOf'and e['target']==k[0]for e in items[k]['relations']))
  def test_spatial_integrity_and_verified_connections_only(self):
@@ -37,7 +37,7 @@ class StructuralTests(unittest.TestCase):
  def test_persistence_and_no_operational_facts(self):
   before=self.read();main.initialize();self.assertEqual(before,self.read())
   with main.database()as db:
-   self.assertEqual(db.execute("SELECT COUNT(*) FROM office_resources WHERE kind IN ('Booking','Track','Camera','Stream','Visit')").fetchone()[0],0)
+   self.assertEqual(db.execute("SELECT COUNT(*) FROM office_resources WHERE kind IN ('Booking','Track','Stream','Visit')").fetchone()[0],0)
    self.assertEqual(db.execute("SELECT COUNT(*) FROM office_events WHERE type NOT IN ('run.created','relation.add')").fetchone()[0],0)
    self.assertGreater(db.execute('SELECT COUNT(*) FROM relations').fetchone()[0],40)
  def test_metadata_reconciliation_preserves_prior_fields_and_identity(self):
@@ -47,12 +47,12 @@ class StructuralTests(unittest.TestCase):
 
  def test_preexisting_unindexed_catalog_entry_is_not_withdrawn(self):
   with main.database(write=True)as db:
-   command(db,'p2','structure',self.actor,{'id':__import__('uuid').uuid4().hex,'operation':'entity.upsert','target':'site','inputs':{'id':'E2','kind':'Desk','attributes':{'parent_resource':'E','reservable':True,'provenance':'structural-test-existing-catalog; no position claimed'}}})
-  original=self.read()['entities']['E2']
+   command(db,'p2','structure',self.actor,{'id':__import__('uuid').uuid4().hex,'operation':'entity.upsert','target':'site','inputs':{'id':'UNINDEXED-PRIOR','kind':'Desk','attributes':{'parent_resource':'E','reservable':True,'provenance':'structural-test-existing-catalog; no position claimed'}}})
+  original=self.read()['entities']['UNINDEXED-PRIOR']
   with main.database(write=True)as db:
    for resource in self.cfg['resources']:
     command(db,'p2','structure',self.actor,{'id':__import__('uuid').uuid4().hex,'operation':'entity.upsert','target':'site','inputs':resource})
-  after=self.read()['entities']['E2'];self.assertEqual(original,after);self.assertTrue(after['reservable']);self.assertNotIn('deprecated',after)
+  after=self.read()['entities']['UNINDEXED-PRIOR'];self.assertEqual(original,after);self.assertTrue(after['reservable']);self.assertNotIn('deprecated',after)
 
  def test_person_registration_is_not_permanent_physical_containment(self):
   from app.office.graph import derive,active

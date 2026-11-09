@@ -25,7 +25,7 @@ class P2CoreTests(unittest.TestCase):
   scene=json.loads((ROOT/'apps/spatial-simulation/public/model/scene.json').read_text());ids={r['id']for r in scene['records']}
   for key in ['A','B','C','D','E','D1','D2','D3','D4','D5','D6','E1','E5','E6','RECEPTION','CAFE','LOUNGE']:
    e=w['entities'][key];self.assertEqual(e['operational_state'],'unknown');self.assertTrue(e['relations']);self.assertTrue(set(e['spatial']['object_ids'])<=ids);self.assertNotIn('occupancy',e)
-  self.assertNotIn('E2',w['entities']);self.assertIsNone(w['entities']['PERSON-LOGICAL-01']['position']);main.initialize();self.assertEqual(w,self.world())
+  self.assertTrue(w['entities']['E2']['spatial']['object_ids']);self.assertIsNone(w['entities']['PERSON-LOGICAL-01']['position']);main.initialize();self.assertEqual(w,self.world())
  def test_memory_is_atomic_idempotent_persistent_and_scoped(self):
   cid=str(uuid4());body={'content':'Explicit synthetic test note; no real operations','source':'test:P2'}
   a=self.command('entity.remember','D1',body,cid);self.assertEqual(a.status_code,200,a.text);self.assertEqual(a.json(),self.command('entity.remember','D1',body,cid).json())

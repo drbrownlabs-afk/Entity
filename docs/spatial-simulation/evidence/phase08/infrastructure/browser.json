@@ -1,0 +1,26 @@
+{
+  "scope": "structural technical inspection only",
+  "operational_flows": false,
+  "checks": [
+    {
+      "name": "290 actual scene mappings to loaded PlayCanvas nodes/native lights",
+      "passed": true
+    },
+    {
+      "name": "prior Core implementation preserved; no operational actions executed",
+      "passed": true
+    },
+    {
+      "name": "no browser errors",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "details": {
+    "mapped": 290,
+    "prior_core_ui_preserved": true,
+    "operational_actions_executed": 0,
+    "original_scene_records": 4514
+  },
+  "passed": true
+}

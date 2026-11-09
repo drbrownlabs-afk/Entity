@@ -8,7 +8,7 @@ from .storage import encode,identity,utc,now,world,emit,get_run
 from .auth import scoped,create_account
 from .catalog import declare,OPERATIONS
 
-KINDS={'HourPass','UsageSession','Renewal','ChargeOrder','Payment','Invoice','VisitPlan','MeetingPlan','InvitationPlan','SalesOpportunity','Scenario','Kiosk','Intercom','Conversation','Organization','Site','Company','Team','Membership','Contract','Plan','Building','Floor','Zone','Office','Desk','Room','Reception','WaitingArea','EventSpace','Person','Camera','Stream','AccessPoint','Sensor','HVAC','Light','Equipment','InventoryItem','Shift','Meeting','Booking','Invitation','Visit','Notification','Task','Incident','CheckIn','Alert','Track'}
+KINDS={'CatalogEntry','Service','Role','Network','InterfaceContract','HourPass','UsageSession','Renewal','ChargeOrder','Payment','Invoice','VisitPlan','MeetingPlan','InvitationPlan','SalesOpportunity','Scenario','Kiosk','Intercom','Conversation','Organization','Site','Company','Team','Membership','Contract','Plan','Building','Floor','Zone','Office','Desk','Room','Reception','WaitingArea','EventSpace','Person','Camera','Stream','AccessPoint','Sensor','HVAC','Light','Equipment','InventoryItem','Shift','Meeting','Booking','Invitation','Visit','Notification','Task','Incident','CheckIn','Alert','Track'}
 RESERVABLE={'Desk','Room','Office','EventSpace'}
 
 

@@ -2,6 +2,7 @@
 from app.nucleo.capabilities import CapabilityDescriptor,NormalizedResult
 from .storage import identity,encode
 from .inputs import INPUTS
+import json
 
 OPERATIONS={
  'zone.assumeOccupancy':('operate','action','simulation'),
@@ -28,7 +29,7 @@ OPERATIONS={
 
 
 def declare(db,site,resource):
-    kind=db.execute('SELECT kind FROM office_resources WHERE site=? AND id=?',(site,resource)).fetchone()[0]
+    row=db.execute('SELECT kind,attributes FROM office_resources WHERE site=? AND id=?',(site,resource)).fetchone();kind=row['kind'];attributes=json.loads(row['attributes'])
     kinds={
       'device.setPower':{'HVAC','Light','Equipment'},'presence.checkout':{'Person'},'reception.interact':{'Kiosk'},'intercom.reply':{'Intercom'},'intercom.timeout':{'Intercom'},
       'entity.upsert':{'Site'},'relation.add':{'Site'},'account.create':{'Site'},'clock.advance':{'Site'},'visit.register':{'Site'},'task.create':{'Site'},
@@ -46,5 +47,5 @@ def declare(db,site,resource):
         cid=identity('capability',site,resource,operation,'1.0')
         descriptor=CapabilityDescriptor(capability_id=cid,canonical_id=operation,resource_id=resource,category=category,modality=modality,
           input_schema=INPUTS[operation].model_json_schema(),output_schema=NormalizedResult.model_json_schema(),units=({'temperature':'C','co2':'ppm','power':'W'} if operation=='sensor.read' else {}),semantics='ENTITY coworking '+operation,
-          permission=permission,provenance={'source':'office-domain-catalog','simulated_provider':True})
+          permission=permission,availability='unavailable'if attributes.get('declaration_only')and operation not in ['entity.remember','resource.getObject']else'available',provenance={'source':'office-domain-catalog','simulated_provider':True})
         db.execute('INSERT INTO office_capabilities VALUES(?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET descriptor=excluded.descriptor',(cid,site,resource,operation,descriptor.model_dump_json(),'simulated'))

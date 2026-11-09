@@ -1,0 +1,137 @@
+{
+  "scope": "8.4 declarative infrastructure persisted in actual local P1; no operational flows",
+  "entities": 460,
+  "active_relations": 1185,
+  "kinds": {
+    "Office": 5,
+    "AccessPoint": 6,
+    "InventoryItem": 144,
+    "Zone": 11,
+    "Camera": 8,
+    "CatalogEntry": 101,
+    "ChargeOrder": 1,
+    "Equipment": 40,
+    "InterfaceContract": 2,
+    "Desk": 12,
+    "HourPass": 3,
+    "InvitationPlan": 1,
+    "Invoice": 1,
+    "Kiosk": 1,
+    "Light": 71,
+    "Room": 1,
+    "MeetingPlan": 1,
+    "Membership": 4,
+    "Network": 1,
+    "SalesOpportunity": 1,
+    "Organization": 3,
+    "Payment": 1,
+    "Person": 12,
+    "Plan": 3,
+    "Reception": 1,
+    "Renewal": 1,
+    "Role": 7,
+    "Scenario": 1,
+    "Service": 12,
+    "UsageSession": 1,
+    "VisitPlan": 2,
+    "Site": 1
+  },
+  "asset_classes": {
+    "Chair": 54,
+    "Stool": 4,
+    "Storage": 6,
+    "Table": 8,
+    "Sofa": 5,
+    "Shelf": 5,
+    "Signage": 8,
+    "SanitaryFixture": 6,
+    "Counter": 3,
+    "Ottoman": 1,
+    "SideTable": 4,
+    "DiningTable": 4,
+    "ReceptionCounter": 1,
+    "Armchair": 2,
+    "VentilationOutlet": 2,
+    "CoffeeMachine": 1,
+    "Computer": 30,
+    "Refrigerator": 1,
+    "Printer": 1,
+    "Door": 20,
+    "CommunicationTerminal": 2,
+    "Kiosk": 1,
+    "Luminaire": 71,
+    "Locker": 8,
+    "Television": 6,
+    "Toilet": 1
+  },
+  "pre_import_counts": {
+    "ya_existe": 66,
+    "por_registrar": 394
+  },
+  "model_status_counts": {
+    "existente_verificado": 303,
+    "pendiente_identificar": 15,
+    "previsto": 142
+  },
+  "spatial_status_counts": {
+    "whole-scene-reference": 1,
+    "mapped_existing_scene": 283,
+    "sin_correspondencia_espacial": 169,
+    "mapped_native_light": 7
+  },
+  "people_in_active_model": 12,
+  "preserved_prior_test_identities": 2,
+  "catalogue_definitions_with_unknown_cardinality": 101,
+  "installed_real_hardware_verified": false,
+  "cameras_planned": 8,
+  "camera_feeds": 0,
+  "integrations_connected": 0,
+  "initial_import": {
+    "structural_commands_applied": 976,
+    "entities_preserved": 462,
+    "deleted": 0,
+    "operational_flows_executed": false
+  },
+  "additional_access_policy_catalogue_links": {
+    "structural_commands_applied": 8,
+    "entities_preserved": 462,
+    "deleted": 0,
+    "operational_flows_executed": false
+  },
+  "second_import": {
+    "structural_commands_applied": 0,
+    "entities_preserved": 462,
+    "deleted": 0,
+    "operational_flows_executed": false
+  },
+  "tests": {
+    "regression_and_infrastructure": {
+      "passed": 18,
+      "log": "tests.log"
+    },
+    "additional_credential_policy_assertions": {
+      "passed": 1,
+      "log": "access-policy-test.log"
+    },
+    "initial_test_failure": "Test-only wrong schema table reference; corrected to existing office_schema, no database migration",
+    "infrastructure_final": {
+      "passed": 5,
+      "log": "infrastructure-tests.log"
+    }
+  },
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "pending": [
+    "Main entrance/door geometric identification",
+    "Camera pose and coverage calibration",
+    "Installed equipment, providers, legal operator and quantities unknown",
+    "Actual external integrations/perception not implemented",
+    "Public HTTPS Core service not configured"
+  ],
+  "phase_status": "EN VALIDACI\u00d3N; human acceptance required; Phase09 not started",
+  "legacy_capability_preservation": {
+    "structural_commands_applied": 4,
+    "entities_preserved": 462,
+    "deleted": 0,
+    "operational_flows_executed": false
+  }
+}
