@@ -1,0 +1,1097 @@
+{
+  "schema_version": "1.0",
+  "scope": "ENTITY-SELF",
+  "count": 109,
+  "relations": [
+    {
+      "id": "entity-self:relation:0001",
+      "source_id": "entity-self:org.entity",
+      "target_id": "entity-self:product.entity",
+      "type": "DESARROLLA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0002",
+      "source_id": "entity-self:org.entity",
+      "target_id": "entity-self:product.spatial",
+      "type": "DESARROLLA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0003",
+      "source_id": "entity-self:org.entity",
+      "target_id": "entity-self:asset.pitch",
+      "type": "DESARROLLA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0004",
+      "source_id": "entity-self:org.entity",
+      "target_id": "entity-self:asset.video",
+      "type": "DESARROLLA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0005",
+      "source_id": "entity-self:org.entity",
+      "target_id": "entity-self:asset.web",
+      "type": "DESARROLLA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0006",
+      "source_id": "entity-self:product.entity",
+      "target_id": "entity-self:tech.core",
+      "type": "IMPLEMENTA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0007",
+      "source_id": "entity-self:product.entity",
+      "target_id": "entity-self:tech.nucleo",
+      "type": "IMPLEMENTA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0008",
+      "source_id": "entity-self:product.entity",
+      "target_id": "entity-self:tech.entityizer",
+      "type": "IMPLEMENTA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0009",
+      "source_id": "entity-self:product.entity",
+      "target_id": "entity-self:tech.twinbuilder",
+      "type": "IMPLEMENTA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0010",
+      "source_id": "entity-self:product.entity",
+      "target_id": "entity-self:tech.simulation",
+      "type": "IMPLEMENTA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0011",
+      "source_id": "entity-self:product.entity",
+      "target_id": "entity-self:concept.computable",
+      "type": "REPRESENTA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0012",
+      "source_id": "entity-self:product.entity",
+      "target_id": "entity-self:concept.world",
+      "type": "REPRESENTA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0013",
+      "source_id": "entity-self:product.entity",
+      "target_id": "entity-self:product.spatial",
+      "type": "TIENE_VERTICAL",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0014",
+      "source_id": "entity-self:product.spatial",
+      "target_id": "entity-self:concept.agents",
+      "type": "INTEGRA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0015",
+      "source_id": "entity-self:product.spatial",
+      "target_id": "entity-self:concept.world",
+      "type": "INTEGRA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0016",
+      "source_id": "entity-self:product.spatial",
+      "target_id": "entity-self:tech.twinbuilder",
+      "type": "INTEGRA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0017",
+      "source_id": "entity-self:product.spatial",
+      "target_id": "entity-self:tech.simulation",
+      "type": "INTEGRA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0018",
+      "source_id": "entity-self:tech.core",
+      "target_id": "entity-self:concept.world",
+      "type": "MANTIENE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0019",
+      "source_id": "entity-self:tech.core",
+      "target_id": "entity-self:concept.identity",
+      "type": "MANTIENE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0020",
+      "source_id": "entity-self:tech.core",
+      "target_id": "entity-self:concept.state",
+      "type": "MANTIENE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0021",
+      "source_id": "entity-self:tech.core",
+      "target_id": "entity-self:concept.relations",
+      "type": "MANTIENE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0022",
+      "source_id": "entity-self:tech.core",
+      "target_id": "entity-self:concept.events",
+      "type": "MANTIENE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0023",
+      "source_id": "entity-self:tech.core",
+      "target_id": "entity-self:concept.memory",
+      "type": "MANTIENE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0024",
+      "source_id": "entity-self:tech.core",
+      "target_id": "entity-self:concept.capabilities",
+      "type": "MANTIENE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0025",
+      "source_id": "entity-self:tech.core",
+      "target_id": "entity-self:concept.provenance",
+      "type": "MANTIENE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0026",
+      "source_id": "entity-self:tech.entityizer",
+      "target_id": "entity-self:tech.core",
+      "type": "ALIMENTA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0027",
+      "source_id": "entity-self:tech.nucleo",
+      "target_id": "entity-self:tech.core",
+      "type": "PROVEE_INTEROPERABILIDAD_A",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0028",
+      "source_id": "entity-self:tech.twinbuilder",
+      "target_id": "entity-self:concept.world",
+      "type": "REPRESENTA_ESPACIALMENTE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0029",
+      "source_id": "entity-self:tech.simulation",
+      "target_id": "entity-self:concept.world",
+      "type": "VALIDA_EN_ESCENARIOS",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0030",
+      "source_id": "entity-self:tech.edge",
+      "target_id": "entity-self:tech.core",
+      "type": "TRANSMITE_OBSERVACIONES_A",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0031",
+      "source_id": "entity-self:tech.scorpio",
+      "target_id": "entity-self:tech.core",
+      "type": "NO_SUSTITUYE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0032",
+      "source_id": "entity-self:process.p1",
+      "target_id": "entity-self:tech.core",
+      "type": "ES_RESPONSABLE_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0033",
+      "source_id": "entity-self:process.p1",
+      "target_id": "entity-self:tech.nucleo",
+      "type": "ES_RESPONSABLE_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0034",
+      "source_id": "entity-self:process.p1",
+      "target_id": "entity-self:tech.entityizer",
+      "type": "ES_RESPONSABLE_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0035",
+      "source_id": "entity-self:process.p1",
+      "target_id": "entity-self:tech.edge",
+      "type": "ES_RESPONSABLE_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0036",
+      "source_id": "entity-self:process.p2",
+      "target_id": "entity-self:process.p1",
+      "type": "CONSUME",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0037",
+      "source_id": "entity-self:process.p2",
+      "target_id": "entity-self:tech.core",
+      "type": "CONSUME",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0038",
+      "source_id": "entity-self:process.p2",
+      "target_id": "entity-self:pilot.cowork",
+      "type": "DESARROLLA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0039",
+      "source_id": "entity-self:process.p3",
+      "target_id": "entity-self:process.p1",
+      "type": "CONSUME",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0040",
+      "source_id": "entity-self:process.p3",
+      "target_id": "entity-self:tech.core",
+      "type": "CONSUME",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0041",
+      "source_id": "entity-self:process.p3",
+      "target_id": "entity-self:concept.agents",
+      "type": "IMPLEMENTARA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0042",
+      "source_id": "entity-self:pilot.cowork",
+      "target_id": "entity-self:product.spatial",
+      "type": "VALIDA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0043",
+      "source_id": "entity-self:pilot.cowork",
+      "target_id": "entity-self:tech.core",
+      "type": "VALIDA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0044",
+      "source_id": "entity-self:pilot.cowork",
+      "target_id": "entity-self:site.impacto",
+      "type": "PROPUESTO_PARA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0045",
+      "source_id": "entity-self:demo.airport",
+      "target_id": "entity-self:product.spatial",
+      "type": "DEMUESTRA_CONCEPTUALMENTE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0046",
+      "source_id": "entity-self:demo.airport",
+      "target_id": "entity-self:concept.agents",
+      "type": "DEMUESTRA_CONCEPTUALMENTE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0047",
+      "source_id": "entity-self:demo.airport",
+      "target_id": "entity-self:concept.world",
+      "type": "DEMUESTRA_CONCEPTUALMENTE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0048",
+      "source_id": "entity-self:asset.video",
+      "target_id": "entity-self:demo.airport",
+      "type": "DESARROLLA_NARRATIVA_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0049",
+      "source_id": "entity-self:asset.pitch",
+      "target_id": "entity-self:demo.airport",
+      "type": "USA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0050",
+      "source_id": "entity-self:asset.pitch",
+      "target_id": "entity-self:concept.computable",
+      "type": "USA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0051",
+      "source_id": "entity-self:asset.pitch",
+      "target_id": "entity-self:source.white1",
+      "type": "USA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0052",
+      "source_id": "entity-self:asset.pitch",
+      "target_id": "entity-self:source.white2",
+      "type": "USA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0053",
+      "source_id": "entity-self:asset.web",
+      "target_id": "entity-self:product.spatial",
+      "type": "COMUNICA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0054",
+      "source_id": "entity-self:business.saas",
+      "target_id": "entity-self:product.entity",
+      "type": "MODELO_COMERCIAL_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0055",
+      "source_id": "entity-self:business.price",
+      "target_id": "entity-self:business.saas",
+      "type": "HIPOTESIS_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0056",
+      "source_id": "entity-self:fund.preseed",
+      "target_id": "entity-self:product.entity",
+      "type": "FINANCIA_DESARROLLO_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0057",
+      "source_id": "entity-self:fund.preseed",
+      "target_id": "entity-self:concept.agents",
+      "type": "FINANCIA_DESARROLLO_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0058",
+      "source_id": "entity-self:fund.preseed",
+      "target_id": "entity-self:tech.twinbuilder",
+      "type": "FINANCIA_DESARROLLO_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0059",
+      "source_id": "entity-self:fund.scout",
+      "target_id": "entity-self:fund.preseed",
+      "type": "BUSCA_OPORTUNIDADES_PARA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0060",
+      "source_id": "entity-self:source.master",
+      "target_id": "entity-self:product.entity",
+      "type": "DEFINE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0061",
+      "source_id": "entity-self:source.master",
+      "target_id": "entity-self:tech.core",
+      "type": "DEFINE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0062",
+      "source_id": "entity-self:source.master",
+      "target_id": "entity-self:tech.nucleo",
+      "type": "DEFINE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0063",
+      "source_id": "entity-self:source.master",
+      "target_id": "entity-self:tech.entityizer",
+      "type": "DEFINE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0064",
+      "source_id": "entity-self:source.master",
+      "target_id": "entity-self:process.p1",
+      "type": "DEFINE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0065",
+      "source_id": "entity-self:source.master",
+      "target_id": "entity-self:process.p2",
+      "type": "DEFINE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0066",
+      "source_id": "entity-self:source.master",
+      "target_id": "entity-self:process.p3",
+      "type": "DEFINE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0067",
+      "source_id": "entity-self:source.decisions",
+      "target_id": "entity-self:decision.001",
+      "type": "DOCUMENTA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0068",
+      "source_id": "entity-self:source.decisions",
+      "target_id": "entity-self:decision.002",
+      "type": "DOCUMENTA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0069",
+      "source_id": "entity-self:source.decisions",
+      "target_id": "entity-self:decision.003",
+      "type": "DOCUMENTA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0070",
+      "source_id": "entity-self:source.status",
+      "target_id": "entity-self:process.p1",
+      "type": "DOCUMENTA_ESTADO_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0071",
+      "source_id": "entity-self:source.status",
+      "target_id": "entity-self:process.p2",
+      "type": "DOCUMENTA_ESTADO_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0072",
+      "source_id": "entity-self:source.status",
+      "target_id": "entity-self:process.p3",
+      "type": "DOCUMENTA_ESTADO_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0073",
+      "source_id": "entity-self:source.worklog",
+      "target_id": "entity-self:process.p1",
+      "type": "REGISTRA_EVIDENCIAS_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0074",
+      "source_id": "entity-self:source.worklog",
+      "target_id": "entity-self:process.p2",
+      "type": "REGISTRA_EVIDENCIAS_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0075",
+      "source_id": "entity-self:source.white1",
+      "target_id": "entity-self:concept.computable",
+      "type": "ANTECEDENTE_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0076",
+      "source_id": "entity-self:source.white1",
+      "target_id": "entity-self:concept.world",
+      "type": "ANTECEDENTE_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0077",
+      "source_id": "entity-self:source.white2",
+      "target_id": "entity-self:concept.computable",
+      "type": "ANTECEDENTE_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0078",
+      "source_id": "entity-self:source.white2",
+      "target_id": "entity-self:concept.worldmemory",
+      "type": "ANTECEDENTE_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0079",
+      "source_id": "entity-self:source.archv2",
+      "target_id": "entity-self:tech.runtime",
+      "type": "DESCRIBE_HISTORICAMENTE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0080",
+      "source_id": "entity-self:source.archv2",
+      "target_id": "entity-self:tech.nucleo",
+      "type": "DESCRIBE_HISTORICAMENTE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0081",
+      "source_id": "entity-self:source.archv2",
+      "target_id": "entity-self:concept.selfworld",
+      "type": "DESCRIBE_HISTORICAMENTE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0082",
+      "source_id": "entity-self:source.v32",
+      "target_id": "entity-self:source.v31",
+      "type": "SUSTITUYE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0083",
+      "source_id": "entity-self:source.v32",
+      "target_id": "entity-self:concept.ufsl",
+      "type": "INVESTIGA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0084",
+      "source_id": "entity-self:source.v33",
+      "target_id": "entity-self:source.v32",
+      "type": "EVOLUCION_HISTORICA_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0085",
+      "source_id": "entity-self:decision.001",
+      "target_id": "entity-self:history.global",
+      "type": "REVOCA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0086",
+      "source_id": "entity-self:decision.001",
+      "target_id": "entity-self:history.camera",
+      "type": "REASIGNA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0087",
+      "source_id": "entity-self:decision.001",
+      "target_id": "entity-self:history.openclaw",
+      "type": "REASIGNA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0088",
+      "source_id": "entity-self:history.camera",
+      "target_id": "entity-self:process.p2",
+      "type": "REASIGNADO_A",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0089",
+      "source_id": "entity-self:history.openclaw",
+      "target_id": "entity-self:process.p3",
+      "type": "REASIGNADO_A",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0090",
+      "source_id": "entity-self:decision.002",
+      "target_id": "entity-self:tech.nucleo",
+      "type": "DISTINGUE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0091",
+      "source_id": "entity-self:decision.002",
+      "target_id": "entity-self:tech.core",
+      "type": "DISTINGUE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0092",
+      "source_id": "entity-self:decision.002",
+      "target_id": "entity-self:tech.entityizer",
+      "type": "DISTINGUE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0093",
+      "source_id": "entity-self:decision.002",
+      "target_id": "entity-self:tech.twinbuilder",
+      "type": "DISTINGUE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0094",
+      "source_id": "entity-self:decision.002",
+      "target_id": "entity-self:tech.simulation",
+      "type": "DISTINGUE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0095",
+      "source_id": "entity-self:decision.003",
+      "target_id": "entity-self:process.p1",
+      "type": "ASIGNA_SOFTWARE_A",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0096",
+      "source_id": "entity-self:decision.003",
+      "target_id": "entity-self:process.p2",
+      "type": "ASIGNA_EXPERIENCIA_A",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0097",
+      "source_id": "entity-self:decision.003",
+      "target_id": "entity-self:process.p3",
+      "type": "ASIGNA_AGENTES_A",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0098",
+      "source_id": "entity-self:history.ixos",
+      "target_id": "entity-self:product.entity",
+      "type": "NOMBRE_HISTORICO_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0099",
+      "source_id": "entity-self:history.entityos",
+      "target_id": "entity-self:product.entity",
+      "type": "NOMBRE_HISTORICO_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0100",
+      "source_id": "entity-self:history.creative",
+      "target_id": "entity-self:product.entity",
+      "type": "ANTECEDENTE_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0101",
+      "source_id": "entity-self:history.market",
+      "target_id": "entity-self:product.entity",
+      "type": "INVESTIGACION_HISTORICA_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0102",
+      "source_id": "entity-self:history.metodocc",
+      "target_id": "entity-self:tech.entityizer",
+      "type": "ANTECEDENTE_POR_VERIFICAR_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0103",
+      "source_id": "entity-self:hardware.orbbec",
+      "target_id": "entity-self:tech.edge",
+      "type": "FUENTE_POTENCIAL_PARA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0104",
+      "source_id": "entity-self:hardware.analog",
+      "target_id": "entity-self:pilot.cowork",
+      "type": "PROPUESTA_PARA",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0105",
+      "source_id": "entity-self:tech.sqlite",
+      "target_id": "entity-self:tech.core",
+      "type": "PERSISTENCIA_ACTUAL_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0106",
+      "source_id": "entity-self:tech.postgres",
+      "target_id": "entity-self:tech.core",
+      "type": "PERSISTENCIA_OBJETIVO_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0107",
+      "source_id": "entity-self:concept.worldmemory",
+      "target_id": "entity-self:concept.memory",
+      "type": "ANTECEDENTE_CONCEPTUAL_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0108",
+      "source_id": "entity-self:concept.selfworld",
+      "target_id": "entity-self:concept.world",
+      "type": "ANTECEDENTE_CONCEPTUAL_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    },
+    {
+      "id": "entity-self:relation:0109",
+      "source_id": "entity-self:concept.ufsl",
+      "target_id": "entity-self:product.entity",
+      "type": "LINEA_DE_INVESTIGACION_DE",
+      "provenance": "ENTITY-SELF/entities/entities.json",
+      "status": "synthesized",
+      "valid_from": null,
+      "valid_to": null
+    }
+  ]
+}
