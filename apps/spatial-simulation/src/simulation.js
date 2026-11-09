@@ -18,10 +18,11 @@ export class VisualState {
  tv(id,patch){if(!this.screens.has(id))throw Error('Pantalla no declarada');if(patch.content!==undefined&&!['reference','test'].includes(patch.content))throw Error('Contenido inválido');Object.assign(this.screens.get(id),patch);this.event(id,'screen',patch);}
 }
 export class CollisionWorld {
- constructor(data,state){this.data=data;this.state=state;this.radius=data.collision.radius;this.floor=new Map(data.collision.floor_nodes.map(([x,z,y])=>[`${x},${z}`,y]));this.static=data.collision.static;this.doors=data.devices.doors;}
+ constructor(data,state){this.data=data;this.state=state;this.radius=data.collision.radius;this.floor=new Map(data.collision.floor_nodes.map(([x,z,y])=>[`${x},${z}`,y]));this.static=data.collision.static;this.doors=data.devices.doors;this.staticBins=new Map();for(const o of this.static){const [lo,hi]=o.bounds;for(let x=Math.floor(lo[0]-this.radius);x<=Math.floor(hi[0]+this.radius);x++)for(let z=Math.floor(lo[2]-this.radius);z<=Math.floor(hi[2]+this.radius);z++){const key=`${x},${z}`;if(!this.staticBins.has(key))this.staticBins.set(key,[]);this.staticBins.get(key).push(o);}}}
  floorAt(x,z){return this.floor.get(`${Math.round(x/.1)},${Math.round(z/.1)}`);}
- blocked(x,y,z){const r=this.radius;for(const o of this.static){const [lo,hi]=o.bounds;if(hi[1]>y+.05&&lo[1]<y+1.65&&x>lo[0]-r&&x<hi[0]+r&&z>lo[2]-r&&z<hi[2]+r)return o.id;}
-  for(const d of this.doors){const a=d.open_angle*this.state.doors.get(d.id).fraction,c=Math.cos(a),s=Math.sin(a),dx=x-d.hinge_source[0],dz=z-d.hinge_source[2];
+ blockedStatic(x,y,z){const r=this.radius;for(const o of this.staticBins.get(`${Math.floor(x)},${Math.floor(z)}`)||[]){const [lo,hi]=o.bounds;if(hi[1]>y+.05&&lo[1]<y+1.65&&x>lo[0]-r&&x<hi[0]+r&&z>lo[2]-r&&z<hi[2]+r)return o.id;}return null;}
+ blocked(x,y,z){return this.blockedStatic(x,y,z)||this.blockedDoor(x,y,z);}
+ blockedDoor(x,y,z){const r=this.radius;for(const d of this.doors){const a=d.open_angle*this.state.doors.get(d.id).fraction,c=Math.cos(a),s=Math.sin(a),dx=x-d.hinge_source[0],dz=z-d.hinge_source[2];
    // +Y rotation: x'=cos*x+sin*z, z'=-sin*x+cos*z; inverse into leaf coordinates.
    const lx=c*dx-s*dz-d.collider_local_position[0],lz=s*dx+c*dz-d.collider_local_position[2],ly=y-d.hinge_source[1]-d.collider_local_position[1], [lo,hi]=d.collider_local_bounds;
    if(lx>lo[0]-r&&lx<hi[0]+r&&lz>lo[2]-r&&lz<hi[2]+r&&hi[1]>ly+.05&&lo[1]<ly+1.65)return d.id;

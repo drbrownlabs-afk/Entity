@@ -40,7 +40,7 @@ def protected_changes():
     if supplement.exists():
         import subprocess
         for path, revision in read(supplement).items():
-            assert path == 'docs/spatial-simulation/IMPLEMENTATION-PLAN.md'
+            assert path in {'docs/spatial-simulation/IMPLEMENTATION-PLAN.md', 'AGENTS.md'}
             assert snapshot['sha256'][path] == revision['base_sha256']
             data = subprocess.check_output(['git', 'show', revision['commit'] + ':' + path], cwd=ROOT)
             assert hashlib.sha256(data).hexdigest() == revision['sha256']

@@ -5,19 +5,19 @@ import {installReflections} from './reflections.js';
 import agx from './agx.js';
 import {sunAt} from './simulation.js';
 export async function createRenderer(canvas,data,state){
- pc.WasmModule.setConfig('DracoDecoderModule',{glueUrl:'/decoders/draco.js',wasmUrl:'/decoders/draco.wasm',numWorkers:2});
- pc.WasmModule.setConfig('BASIS',{glueUrl:'/decoders/basis.js',wasmUrl:'/decoders/basis.wasm',numWorkers:2});
+ pc.WasmModule.setConfig('DracoDecoderModule',{glueUrl:import.meta.env.BASE_URL+'decoders/draco.js',wasmUrl:import.meta.env.BASE_URL+'decoders/draco.wasm',numWorkers:2});
+ pc.WasmModule.setConfig('BASIS',{glueUrl:import.meta.env.BASE_URL+'decoders/basis.js',wasmUrl:import.meta.env.BASE_URL+'decoders/basis.wasm',numWorkers:2});
  const device=await pc.createGraphicsDevice(canvas,{deviceTypes:['webgl2'],antialias:true,alpha:false,preserveDrawingBuffer:true,powerPreference:'high-performance'});
  pc.ShaderChunks.get(device,pc.SHADERLANGUAGE_GLSL).set('tonemappingAcesPS',agx);
  const app=new pc.Application(canvas,{graphicsDevice:device});app.autoRender=false;app.renderNextFrame=true;app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);app.setCanvasResolution(pc.RESOLUTION_AUTO);device.maxPixelRatio=Math.min(devicePixelRatio,matchMedia('(pointer:coarse)').matches?2:1.5);
- const ltc=new Float32Array(await fetch('/model/area-light-luts.bin').then(r=>r.arrayBuffer()));app.setAreaLightLuts(ltc.subarray(0,16384),ltc.subarray(16384));
+ const ltc=new Float32Array(await fetch(import.meta.env.BASE_URL+'model/area-light-luts.bin').then(r=>r.arrayBuffer()));app.setAreaLightLuts(ltc.subarray(0,16384),ltc.subarray(16384));
  app.scene.clusteredLightingEnabled=true;app.scene.lighting.areaLightsEnabled=true;app.scene.lighting.cells=new pc.Vec3(12,4,24);app.scene.lighting.maxLightsPerCell=48;app.scene.lighting.shadowsEnabled=true;app.scene.lighting.shadowAtlasResolution=2048;
  const excludedLayer=new pc.Layer({name:'Architectural glass'});app.scene.layers.insert(excludedLayer,app.scene.layers.getTransparentIndex(app.scene.layers.getLayerByName('World'))+1);
  const lightLayers=[pc.LAYERID_WORLD,excludedLayer.id];
  const camera=new pc.Entity('Architectural navigation');camera.addComponent('camera',{fov:65,nearClip:.035,farClip:180,clearColor:new pc.Color(.18,.22,.24),toneMapping:pc.TONEMAP_ACES});camera.camera.layers=[...camera.camera.layers,excludedLayer.id];app.root.addChild(camera);
  const frame=new pc.CameraFrame(app,camera.camera);frame.rendering.toneMapping=pc.TONEMAP_ACES;frame.rendering.samples=2;frame.rendering.sceneColorMap=true;frame.ssao.type=pc.SSAOTYPE_LIGHTING;frame.ssao.intensity=.25;frame.ssao.power=1.5;frame.ssao.radius=.35;frame.ssao.samples=12;frame.bloom.intensity=.035;frame.bloom.threshold=1;frame.bloom.blurLevel=4;frame.update();
  function load(name,type,url){return new Promise((resolve,reject)=>{const a=new pc.Asset(name,type,{url});app.assets.add(a);a.ready(()=>resolve(a.resource));a.on('error',reject);app.assets.load(a);});}
- const [resource,hdr,dayTexture,artTexture]=await Promise.all([load('Office approved master','container','/model/office.glb'),load('CC0 reflection environment','texture','/model/environment.hdr'),data.daylight_bake?load('HDR environmental irradiance','texture','/model/environment-irradiance.hdr'):null,data.daylight_bake?load('Mutable artificial indirect HDR basis','texture','/model/artificial-indirect.hdr'):null]);
+ const [resource,hdr,dayTexture,artTexture]=await Promise.all([load('Office approved master','container',import.meta.env.BASE_URL+'model/office.glb'),load('CC0 reflection environment','texture',import.meta.env.BASE_URL+'model/environment.hdr'),data.daylight_bake?load('HDR environmental irradiance','texture',import.meta.env.BASE_URL+'model/environment-irradiance.hdr'):null,data.daylight_bake?load('Mutable artificial indirect HDR basis','texture',import.meta.env.BASE_URL+'model/artificial-indirect.hdr'):null]);
  const irradiance=createIrradiance(data,dayTexture,artTexture);
  const model=resource.instantiateRenderEntity();app.root.addChild(model);const entities=new Map();function traverse(node){entities.set(node.name,node);for(const n of node.children)traverse(n);}traverse(model);
  const environment=pc.EnvLighting.generateLightingSource(hdr,{size:128});app.scene.envAtlas=pc.EnvLighting.generateAtlas(environment,{size:512,numReflectionSamples:128,numAmbientSamples:128});app.scene.skybox=pc.EnvLighting.generateSkyboxCubemap(hdr,256);app.scene.skyboxMip=1;environment.destroy();

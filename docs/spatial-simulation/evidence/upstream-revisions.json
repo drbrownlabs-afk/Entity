@@ -1,8 +1,14 @@
 {
   "docs/spatial-simulation/IMPLEMENTATION-PLAN.md": {
     "base_sha256": "765cf1488331759c1b4f91335301383ebe5e3a9ed5bdc89bb9399b54225a42ba",
-    "sha256": "84144aa89232221cff14420dc0734fbb2a0e5a2f711fbede254c54674dbf007d",
-    "commit": "45af25a",
-    "reason": "Exact operator Phase04.5 plan revision, fast-forwarded on same branch"
+    "sha256": "cf1e181287812606795f6dba65082987a4d00c5b4e3573ce2afdee3ff84f578f",
+    "commit": "019b4a4",
+    "reason": "Exact operator revision prioritizing functional work, same-branch fast-forward; latest chat pauses before Phase06."
+  },
+  "AGENTS.md": {
+    "base_sha256": "d13fbfde849d4fbf3d98ed3a70329dd615b5e96eeb066f1c1993ab96315a9e1e",
+    "sha256": "dd4d0c1d13b1bbd5fd6b3003097c5d81d889940252024ef5472a6136f887e591",
+    "commit": "d656831",
+    "reason": "Operator policy: no active polling of long jobs; exact upstream revision on the authorized branch."
   }
 }
