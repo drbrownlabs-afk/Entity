@@ -19,21 +19,21 @@
   },
   "docs/DECISION-LOG.md": {
     "base_sha256": "0e2be0656ca78f79588636b24d95897e78a573d450b10fd19bd8dfaa89bab7b3",
-    "sha256": "87256dc67fb235d84b76e49edd98636e9707ef0ea39b5bf57bb33703b27834db",
-    "commit": "097241f1be6a90b3e825654219d54241bcf46c71",
-    "reason": "Exact operator-authorized P2-08 addendum8.4 declarative P1 extension/process-memory revision; same Core, canonical definitions and scene preserved."
+    "sha256": "0723093680448dcf314168b65b9b89241edcaa78fdd27826c9d6742eb7e61a73",
+    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
+    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
   },
   "docs/PROJECT-STATUS.md": {
     "base_sha256": "fcdf1c9f85815c3128069503f7cd2b573db5f79518cfb1134cccf79bdd304809",
-    "sha256": "5aa3f62ca2c8091f3d7ac78d5119a3d886ac9af7cd770b84665b2428de75a5f0",
-    "commit": "097241f1be6a90b3e825654219d54241bcf46c71",
-    "reason": "Exact operator-authorized P2-08 addendum8.4 declarative P1 extension/process-memory revision; same Core, canonical definitions and scene preserved."
+    "sha256": "5526a569bb80eaecffe850e39d174a3811acde2a22f3c09199ef2d73373ed207",
+    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
+    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
   },
   "docs/AGENT-WORKLOG.md": {
     "base_sha256": "2897408b0cb1cb10db6529294402ebafa47b84acdbd2fa95cc66565e635dac05",
-    "sha256": "bacfdf6a802adc2b6508a6ab130f4af646e3e0c409297f2e721dd1ba505d77cd",
-    "commit": "097241f1be6a90b3e825654219d54241bcf46c71",
-    "reason": "Exact operator-authorized P2-08 addendum8.4 declarative P1 extension/process-memory revision; same Core, canonical definitions and scene preserved."
+    "sha256": "e1095147046efd9ad6adcdbf45f17328846a6da7121bb64d84fa46a44b11c102",
+    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
+    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
   },
   ".github/workflows/pages.yml": {
     "base_sha256": "ebe34d397a085d10ae208ae620d4812f53a7f6d7c411705952bdd83acbf100e2",
@@ -73,9 +73,9 @@
   },
   "services/entity-api/app/office/service.py": {
     "base_sha256": "5215c420f01e7aa6bfe87ecc047c78644e42225cdeda6adb392ac3750c652bc6",
-    "sha256": "640f2acc221d6dff3fae6eb7cbc90a29d701858d4d44fbd38f69a61980df1e3a",
-    "commit": "097241f1be6a90b3e825654219d54241bcf46c71",
-    "reason": "Exact operator-authorized P2-08 addendum8.4 declarative P1 extension/process-memory revision; same Core, canonical definitions and scene preserved."
+    "sha256": "902fe6634f195bf49e6be1aa1f8403db82ce418308c9e0258ec1e4cab8dc76a2",
+    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
+    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
   },
   "services/entity-api/app/office/storage.py": {
     "base_sha256": "76169b717393d4b959f162c721b9a7232727ef345ced61cb44832e937c11217f",
@@ -91,8 +91,32 @@
   },
   "services/entity-api/app/office/graph.py": {
     "base_sha256": "352291875cca9e2ad5ae2e3b5a43a38b5a8d1fd651e934aa6052444781192e1a",
-    "sha256": "2d755e4a8ff4a1a29c1c4c4969f41bfc7a0dbf1bc34f798571652bb1f379ede6",
-    "commit": "097241f1be6a90b3e825654219d54241bcf46c71",
-    "reason": "Exact operator-authorized P2-08 addendum8.4 declarative P1 extension/process-memory revision; same Core, canonical definitions and scene preserved."
+    "sha256": "a208282dda37ce88f4c96172e6289586e030d02d18cca6c40eed7e2c420c5e2c",
+    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
+    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
+  },
+  "services/entity-api/app/edge_projection.py": {
+    "base_sha256": "bb6c6e73f692a546e3571bcfca9d78ed9b980cb962d560f0eb8355d12e3d5dbd",
+    "sha256": "0c6f5b95b587d77347297d4540f125363274b231593867c302607a45c05ffe46",
+    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
+    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
+  },
+  "services/entity-api/app/office/observations.py": {
+    "base_sha256": "1a6fee7c4e61434e6575187214cf5895bcfd63041914116d95d294d6f66654a9",
+    "sha256": "2519c2012e560af5d03d726ad132e72e1e0946f07a9c5247d5cbbff9c6a6c0b6",
+    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
+    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
+  },
+  "services/entity-edge/README.md": {
+    "base_sha256": "51f842aef7f7e7a77429f635aa3bd7ee332b571e61bc6c5eeea1203825bacdb4",
+    "sha256": "508dcf7418f4b8bc03a20297eb5901c3640dc05eda670d9ea3c79bb8bb9b1d0e",
+    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
+    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
+  },
+  "services/entity-edge/entity_edge/pipeline.py": {
+    "base_sha256": "bf0b1c184f056bf068261114d3e3063defd1c1af77e77e5ff7787d8bdd9431f7",
+    "sha256": "518a9bd6ccaf7e1d2e180bfe72855f6061ac1b17e913bc3330601ed2a561a55f",
+    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
+    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
   }
 }
