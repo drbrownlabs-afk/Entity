@@ -3,3 +3,4 @@ onnxruntime==1.23.2
 opencv-python-headless==4.11.0.86
 norfair==2.3.0
 numpy==1.26.4
+jsonschema==4.26.0

@@ -1,0 +1,20 @@
+{
+  "single_camera_smoke": true,
+  "passed": true,
+  "empty_image_max_difference": 0,
+  "capture_ms": [
+    423,
+    118,
+    101,
+    103
+  ],
+  "body_visual_inspection": "upright complete temporary humanoid on existing route, original GLB coordinate transform preserved by placement wrapper",
+  "cache_corrections": [
+    "snapshot current post-batch mesh list",
+    "exclude UI layer depth clear",
+    "do not re-render skybox over cached color",
+    "preserve source Z-up correction"
+  ],
+  "asset_sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9",
+  "full_sequence_gate_passed": false
+}

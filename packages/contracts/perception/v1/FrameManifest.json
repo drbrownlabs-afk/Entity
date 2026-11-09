@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pixel-only recorded camera sequence manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "simulation_only", "capture_fps", "clock_source", "frames"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "simulation_only": {"type": "boolean"},
+    "capture_fps": {"type": "number", "exclusiveMinimum": 0},
+    "clock_source": {"type": "string", "minLength": 1},
+    "frames": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false,
+        "required": ["camera_id", "frame_index", "observed_at", "media_time_seconds", "file", "sha256", "capture_duration_ms"],
+        "properties": {
+          "camera_id": {"type": "string", "minLength": 1},
+          "frame_index": {"type": "integer", "minimum": 0},
+          "observed_at": {"type": "string", "format": "date-time"},
+          "media_time_seconds": {"type": "number", "minimum": 0},
+          "file": {"type": "string", "pattern": "^[A-Za-z0-9_-]+[.]png$"},
+          "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+          "capture_duration_ms": {"type": "number", "minimum": 0}
+        }
+      }
+    }
+  },
+  "$comment": "No actor IDs, body poses, trajectories, visibility labels, identity, depth, boxes or detections. Shared camera calibration is a separate legitimate input."
+}
