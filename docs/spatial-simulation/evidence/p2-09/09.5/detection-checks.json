@@ -1,0 +1,1546 @@
+{
+  "gate": "P2-09.5",
+  "passed": true,
+  "pixel_inference": true,
+  "ground_truth_absent_from_worker": true,
+  "model": "yolox_s official Megvii COCO person class",
+  "model_sha256": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+  "head_decoding_required": true,
+  "threshold": 0.25,
+  "provider": "ONNX Runtime 1.23.2 CPUExecutionProvider",
+  "total_frames": 246,
+  "per_camera": {
+    "CAMERA-PLANNED-01": {
+      "frames": 41,
+      "gt_visible_frames": 38,
+      "detections": 13,
+      "tp_iou30": 13,
+      "tp_iou50": 13,
+      "false_positive_boxes_iou30": 0
+    },
+    "CAMERA-PLANNED-02": {
+      "frames": 41,
+      "gt_visible_frames": 17,
+      "detections": 17,
+      "tp_iou30": 17,
+      "tp_iou50": 17,
+      "false_positive_boxes_iou30": 0
+    },
+    "CAMERA-PLANNED-03": {
+      "frames": 41,
+      "gt_visible_frames": 28,
+      "detections": 26,
+      "tp_iou30": 26,
+      "tp_iou50": 26,
+      "false_positive_boxes_iou30": 0
+    },
+    "CAMERA-PLANNED-04": {
+      "frames": 41,
+      "gt_visible_frames": 39,
+      "detections": 28,
+      "tp_iou30": 28,
+      "tp_iou50": 28,
+      "false_positive_boxes_iou30": 0
+    },
+    "CAMERA-PLANNED-05": {
+      "frames": 41,
+      "gt_visible_frames": 4,
+      "detections": 4,
+      "tp_iou30": 4,
+      "tp_iou50": 4,
+      "false_positive_boxes_iou30": 0
+    },
+    "CAMERA-PLANNED-06": {
+      "frames": 41,
+      "gt_visible_frames": 39,
+      "detections": 1,
+      "tp_iou30": 1,
+      "tp_iou50": 1,
+      "false_positive_boxes_iou30": 0
+    }
+  },
+  "median_inference_ms": 199.31650550006452,
+  "p95_inference_ms": 280.15007699923444,
+  "processing_seconds": 55.1019753139999,
+  "peak_rss_kib": 293132,
+  "evaluation": "IoU0.30 and0.50 both reported; labels from independent renderer pixel deltas, never supplied to inference",
+  "records": [
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 0,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 0,
+      "best_iou": 0.930632544177646,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 0,
+      "best_iou": 0.5637780824824778,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 0,
+      "best_iou": 0.6383192947328598,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 0,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 0,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 1,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 1,
+      "best_iou": 0.9003406381924152,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 1,
+      "best_iou": 0.8544095055140509,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 1,
+      "best_iou": 0.7013999306086056,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 1,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 1,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 2,
+      "best_iou": 0.9591021088126804,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 2,
+      "best_iou": 0.9303970711521378,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 2,
+      "best_iou": 0.7299592032860419,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 2,
+      "best_iou": 0.7338954673492065,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 2,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 2,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 3,
+      "best_iou": 0.9738901328424125,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 3,
+      "best_iou": 0.8367495602217347,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 3,
+      "best_iou": 0.5903283874033874,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 3,
+      "best_iou": 0.6392056123975638,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 3,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 3,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 4,
+      "best_iou": 0.9871052153829157,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 4,
+      "best_iou": 0.9149406895515446,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 4,
+      "best_iou": 0.5030606461608098,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 4,
+      "best_iou": 0.694491552251797,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 4,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 4,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 5,
+      "best_iou": 0.9591874391811204,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 5,
+      "best_iou": 0.9276873707259444,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 5,
+      "best_iou": 0.7136304754503597,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 5,
+      "best_iou": 0.8402309901421086,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 5,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 5,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 6,
+      "best_iou": 0.9675511384503888,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 6,
+      "best_iou": 0.9622403534053635,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 6,
+      "best_iou": 0.742607931320702,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 6,
+      "best_iou": 0.6823362129950027,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 6,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 6,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 7,
+      "best_iou": 0.9789164613510151,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 7,
+      "best_iou": 0.9419847868633318,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 7,
+      "best_iou": 0.8858777908803124,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 7,
+      "best_iou": 0.6762143770146545,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 7,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 7,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 8,
+      "best_iou": 0.9412003431729628,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 8,
+      "best_iou": 0.9361813807998773,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 8,
+      "best_iou": 0.8368589890108366,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 8,
+      "best_iou": 0.8491775759393225,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 8,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 8,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 9,
+      "best_iou": 0.9516877604455475,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 9,
+      "best_iou": 0.9309936925290675,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 9,
+      "best_iou": 0.6320644020661108,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 9,
+      "best_iou": 0.8373019145946123,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 9,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 9,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 10,
+      "best_iou": 0.954590686676886,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 10,
+      "best_iou": 0.9121073806850778,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 10,
+      "best_iou": 0.7274477424350707,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 10,
+      "best_iou": 0.6258615809531024,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 10,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 10,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 11,
+      "best_iou": 0.8162248731925368,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 11,
+      "best_iou": 0.9610242009847837,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 11,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 11,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 11,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 11,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 12,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 12,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 12,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 12,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 12,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 12,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 13,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 13,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 13,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 13,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 13,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 13,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 14,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 14,
+      "best_iou": 0.9694632897824449,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 14,
+      "best_iou": 0.8951291124224897,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 14,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 14,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 14,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 15,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 15,
+      "best_iou": 0.9541169007487191,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 15,
+      "best_iou": 0.7574003604773137,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 15,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 15,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 15,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 16,
+      "best_iou": 0.8666866115659735,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 16,
+      "best_iou": 0.9558104427252185,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 16,
+      "best_iou": 0.9522352262535325,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 16,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 16,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 16,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 17,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 17,
+      "best_iou": 0.9753838816174891,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 17,
+      "best_iou": 0.844899791839158,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 17,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 17,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 17,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 18,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 18,
+      "best_iou": 0.763241635123203,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 18,
+      "best_iou": 0.8460058796603973,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 18,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 18,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 18,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 19,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 19,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 19,
+      "best_iou": 0.8466445727060117,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 19,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 19,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 19,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 20,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 20,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 20,
+      "best_iou": 0.9566471222168762,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 20,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 20,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 20,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 21,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 21,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 21,
+      "best_iou": 0.9386619122865126,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 21,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 21,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 21,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 22,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 22,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 22,
+      "best_iou": 0.9101927437610172,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 22,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 22,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 22,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 23,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 23,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 23,
+      "best_iou": 0.9452641824924605,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 23,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 23,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 23,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 24,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 24,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 24,
+      "best_iou": 0.9683963726069095,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 24,
+      "best_iou": 0.8454426936670706,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 24,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 24,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 25,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 25,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 25,
+      "best_iou": 0.9668159950315529,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 25,
+      "best_iou": 0.8125074005460253,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 25,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 25,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 26,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 26,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 26,
+      "best_iou": 0.9708833506318024,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 26,
+      "best_iou": 0.8096512826190545,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 26,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 26,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 27,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 27,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 27,
+      "best_iou": 0.9758365098263464,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 27,
+      "best_iou": 0.9256183632209081,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 27,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 27,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 28,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 28,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 28,
+      "best_iou": 0.9756665862213982,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 28,
+      "best_iou": 0.9774321135147166,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 28,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 28,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 29,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 29,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 29,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 29,
+      "best_iou": 0.925969475700319,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 29,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 29,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 30,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 30,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 30,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 30,
+      "best_iou": 0.8879895933853201,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 30,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 30,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 31,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 31,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 31,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 31,
+      "best_iou": 0.9198458214331203,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 31,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 31,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 32,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 32,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 32,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 32,
+      "best_iou": 0.9500418172539729,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 32,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 32,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 33,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 33,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 33,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 33,
+      "best_iou": 0.9391915459940928,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 33,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 33,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 34,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 34,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 34,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 34,
+      "best_iou": 0.9191123120443117,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 34,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 34,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 35,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 35,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 35,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 35,
+      "best_iou": 0.9255683848116741,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 35,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 35,
+      "best_iou": 0.816515437617023,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 36,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 36,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 36,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 36,
+      "best_iou": 0.8767107312024973,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 36,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 36,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 37,
+      "best_iou": 0.7420228837730812,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 37,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 37,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 37,
+      "best_iou": 0.8966427656559252,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 37,
+      "best_iou": 0.8162919197214545,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 37,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 38,
+      "best_iou": 0.7515152043741857,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 38,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 38,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 38,
+      "best_iou": 0.7318925455187572,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 38,
+      "best_iou": 0.9618169472259873,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 38,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 39,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 39,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 39,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 39,
+      "best_iou": 0.8317628175218372,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 39,
+      "best_iou": 0.8900212432115807,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 39,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-01",
+      "frame_index": 40,
+      "best_iou": 0,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-02",
+      "frame_index": 40,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-03",
+      "frame_index": 40,
+      "best_iou": 0,
+      "gt_visible": false
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-04",
+      "frame_index": 40,
+      "best_iou": 0.9348910916669884,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-05",
+      "frame_index": 40,
+      "best_iou": 0.8629090275278208,
+      "gt_visible": true
+    },
+    {
+      "camera_id": "CAMERA-PLANNED-06",
+      "frame_index": 40,
+      "best_iou": 0,
+      "gt_visible": true
+    }
+  ],
+  "visual_inspection": "Actual detections verified against images and evaluator-only pixel deltas.89/89 boxes matchIoU>=.50,165 visible frame opportunities: recall53.94%. Camera06 only one positive,05 four; not robust coverage or civil identity."
+}

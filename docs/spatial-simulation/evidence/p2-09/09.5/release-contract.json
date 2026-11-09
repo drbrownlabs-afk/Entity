@@ -1,0 +1,18 @@
+{
+  "release": "0.1.1rc0",
+  "sources": {
+    "demo": {
+      "url": "https://github.com/Megvii-BaseDetection/YOLOX/blob/0.1.1rc0/demo/ONNXRuntime/onnx_inference.py",
+      "sha256": "73174d11ad89a57ad11a60506bb9ac5e99be8b7930820281f8dc0fa3d80aec09"
+    },
+    "preprocessing": {
+      "url": "https://github.com/Megvii-BaseDetection/YOLOX/blob/0.1.1rc0/yolox/data/data_augment.py",
+      "sha256": "4993d8859926503d39af8a34963d842d35e36462f87d3caa54fe4cc2bbbddec7"
+    }
+  },
+  "correct_preprocessing": "BGR0..255 CHW validated on public Ultralytics bus.jpg control: Nano person score.8545 vs legacy.00059; S.9066 vs legacy.84285. On Rocketbox first frame S raw.8948 vs legacy.00234. Do not infer binary preprocessing solely from source tag.",
+  "smoke_frames": 4,
+  "smoke_boxes": 0,
+  "tagged_helper_contract": "RGB/255 ImageNet normalization in0.1.1rc0 source, inconsistent with downloaded ONNX asset",
+  "actual_binary_contract": "BGR0..255 CHW validated on public Ultralytics bus.jpg control: Nano person score.8545 vs legacy.00059; S.9066 vs legacy.84285. On Rocketbox first frame S raw.8948 vs legacy.00234. Do not infer binary preprocessing solely from source tag."
+}
