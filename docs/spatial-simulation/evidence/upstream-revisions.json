@@ -97,9 +97,9 @@
   },
   "services/entity-api/app/edge_projection.py": {
     "base_sha256": "bb6c6e73f692a546e3571bcfca9d78ed9b980cb962d560f0eb8355d12e3d5dbd",
-    "sha256": "0c6f5b95b587d77347297d4540f125363274b231593867c302607a45c05ffe46",
-    "commit": "946bb4d483cc78dd8530e858c363affbb6f413cb",
-    "reason": "Exact authorized P2-09 P1 interoperability/perception adapter or required shared-memory revision. Same Core and original scene preserved; no blanket exemption."
+    "sha256": "9c683730a8753f430ff1b93ecd5cb83c60defa36300fc884633393a816370198",
+    "commit": "9c0a98acabd48b600f1310078ca105d5f587339f",
+    "reason": "Exact authorized P2-09 delivery repair: retain shared P1 contracts and historical tests, validate active coworking rather than retired Mall, preserve legacy Edge wire shape."
   },
   "services/entity-api/app/office/observations.py": {
     "base_sha256": "1a6fee7c4e61434e6575187214cf5895bcfd63041914116d95d294d6f66654a9",
@@ -124,5 +124,17 @@
     "sha256": "a8136183f293683b8657d6a95cdaeaa20762f89f62f3afd225831df82c3310c4",
     "commit": "d2334ec6fed6fde8b58aeeb5a8cb34570df01a8a",
     "reason": "Exact authorized final P2-09 process-memory/Edge frame-contract dependency revision. No canon change, no wildcard exemption."
+  },
+  ".github/workflows/ci.yml": {
+    "base_sha256": "20b9bde031daa345e9957b332de5e2b51f9f83beca253472dc657ce82df30717",
+    "sha256": "d630ce1a9151e76c4c371609bae0cc62404fe6b1587bcc7175990a17c2ff787e",
+    "commit": "9c0a98acabd48b600f1310078ca105d5f587339f",
+    "reason": "Exact authorized P2-09 delivery repair: retain shared P1 contracts and historical tests, validate active coworking rather than retired Mall, preserve legacy Edge wire shape."
+  },
+  "apps/web/playwright.config.js": {
+    "base_sha256": "279c681a1fbe48c6d1a96bd8ea7cb86a344acf3ab3b4988e400a02c097d63af4",
+    "sha256": "bdced64f4e44e5a1dae1dd0c815e55f1296fdead582c8880239f619c103f10b9",
+    "commit": "9c0a98acabd48b600f1310078ca105d5f587339f",
+    "reason": "Exact authorized P2-09 delivery repair: retain shared P1 contracts and historical tests, validate active coworking rather than retired Mall, preserve legacy Edge wire shape."
   }
 }
