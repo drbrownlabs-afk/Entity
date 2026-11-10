@@ -179,3 +179,7 @@ ProcesoP2, no numeraciónhistóricaP1. Reusar seisCameraID delinventario08, cám
 ## 2026-11-09 — Entrega P2-09 conserva compatibilidad P1 y retirada Mall
 
 La evidencia de imagen es aditiva: omitir campos nuevos nulos al proyectar Edge legado conserva su contrato wire; no omitir campos de imagen realmente enviados. Tests históricos/fuentes compartidas de P1 se preservan; pruebas y paquete público activos verifican coworking. Workflow temporal con token nativo de runner permitió recuperar diagnóstico real sin exponer credenciales; eliminado tras uso. La verificación Pages debe comprobar fuente publicada tras propagación/CDN, no solo push exitoso. No cambia canon, alcance ni aceptación de fases.
+
+
+## ADR-2026-11-10-P2-09-CONTINUACION-LOCAL — ACEPTADA
+Decisión expresa del operador: mantener 09.1–09.9 como primer circuito implementado y EN VALIDACIÓN; ejecutar después 09.10–09.18 según addendum vigente en docs/P2-09.1-CAMERAS-VMS-SPEC.md. Transferencia a agente local/GPU 4 GB y WSL2; primero editor de cámaras y aprobación humana, **después grafo espacial 09.13, después recorrido 09.14**. Un solo actor hasta aceptación completa. Sustituye autorizaciones históricas de colocación autónoma y avance prematuro a múltiples personas. No cambia canon, P1 ni P3. Actualización documental únicamente, sin implementación ni pruebas nuevas.
