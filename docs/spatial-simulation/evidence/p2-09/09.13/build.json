@@ -1,0 +1,43 @@
+{
+  "phase": "P2-09.13",
+  "gate_passed": false,
+  "graph_sha256": "51f1f9d2961b7b23b76b36442fd758f25a26a2f8a0888c67e9ba862598f11a57",
+  "build_seconds": 15.945065803999569,
+  "inputs": "Whitelisted static building geometry and sensor metadata only; no actor/route/GT",
+  "statistics": {
+    "closed": {
+      "nodes": 5319,
+      "edges": 17231,
+      "blind_cells": 1954,
+      "visible_cells_per_sensor": {
+        "C-S1": 38,
+        "C-S2": 680,
+        "C-S3": 816,
+        "C-S4": 172,
+        "C1-S1": 1342,
+        "C2-S1": 993,
+        "C3-S1": 916,
+        "C4-S1": 807
+      },
+      "walkable_components": 26
+    },
+    "security-open": {
+      "nodes": 5309,
+      "edges": 17184,
+      "blind_cells": 1955,
+      "visible_cells_per_sensor": {
+        "C-S1": 671,
+        "C-S2": 680,
+        "C-S3": 816,
+        "C-S4": 197,
+        "C1-S1": 1532,
+        "C2-S1": 1301,
+        "C3-S1": 916,
+        "C4-S1": 807
+      },
+      "walkable_components": 25
+    }
+  },
+  "tests_pending": true,
+  "isolated_no_workspace_or_evaluator_mount": true
+}

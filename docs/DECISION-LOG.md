@@ -1,5 +1,11 @@
 # ENTITY — Registro de decisiones y autoridad
 
+## ADR-2026-11-11-P2-09-GRAFO — contexto estático e hipótesis explícitas
+- Construir09.13 desde CollisionWorld/geometría estática y calibración09.12, antes de diseñar recorrido09.14. Exportación permitida no incluye rutas/actores/frames; construcción aislada sin evaluador.
+- P1 mantiene lector/contratoEdge reutilizable; P2 genera el contexto/grafo y evidencia. No se modifica Core ni contratos históricos. Supuestos separados cerrado/seguridadabierta; nunca tratarlos como estado observado porENTITY.
+- VisibilidadAABB esprior aproximado con incertidumbre, no observación ni ground truth. Velocidades enunidadesnativas no certificadas; pausas sin máximo artificial. Candidatos durante pérdidas no crean observaciones; evidencia negativa graduada no impone pérdida de identidad.
+- Gate09.13 en graph-checks.json y16testsEdgePASS; no valida todavía recall/MOT/ReID/recorridos o aceptaciónhumana09.18. Sin cambio de canon.
+
 ## ADR-2026-11-11-P2-09-CCTV-C — selección virtual y calibración separada
 - Bajo la autonomía ya aprobada en la instrucción consolidada, seleccionar virtualmente AXIS P3747-PLVE+4P3267-LVE para cinco dispositivos/ocho sensores independientes. Comparación y fuentes en09.12/README.md; no compra ni instalación física.
 - Adaptar la disposición conceptual al edificio real. Ajustes medidos corrigen dintel/puertas, vegetación, vidrio y escala del lounge; conservar posiciones iniciales/finales y evidencia de intentos fallidos. No modificar geometría ni cámaras históricas.

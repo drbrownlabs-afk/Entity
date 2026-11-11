@@ -1,5 +1,12 @@
 # ENTITY — Bitácora de ejecución y evidencias
 
+## 2026-11-11 — Codex: P2-09.13 grafo anterior al recorrido
+- Rama `codex/spatial-simulation`, después de09.12 publicadofba74e6. P2 exportador estático reutilizaCollisionWorld, sin cargar rutas ni humanoide. P1 añade lectorEdge y contratoSensorSpatialGraph; Core/contratos históricos/maestro/baseline sin cambios.
+- 5319celdas/17231aristas cerrado y5309/17184conseguridadabierta;26/25componentes. AABB/FOV con alturas genéricas, no poses reales.1954/1955celdas ciegas aproximadas incluyen salas cerradas; no equivalen a recall ni etiquetas de personas.
+- Bubblewrap aislado de red/PID/filesystem: solo contexto estático, calibración, contrato y códigoEdge; sin workspace/evaluador/imágenes/modelos. Acceso al evaluador bloqueado. ArtefactoSHA25651f1f9d2961b7b23b76b36442fd758f25a26a2f8a0888c67e9ba862598f11a57,842484bytes; copiado únicamente tras validar.
+- Pruebas reales: paso de seguridad1.2unidades posibleabierto/imposiblecerrado;0.01s rechazado, mínimo0.857143s conincertidumbre0 yvelocidadmáxima1.4nativa/s. Fuera de geometría rechazado. Pausas sin timeout ficticio; pérdidas son hipótesis con0observaciones, ausencia de detección no fuerza pérdida de identidad.
+- 16testsEdgePASS (6nuevos) ycontrato/metadata negativa/edificioPASS. Mapa ymatrices en09.13; `graph-checks.json` esgatefinal, build.json esregistro previo apruebas. Sinnuevo recorrido todavía. Siguiente09.14capturaunactor, GTaislado;09.15–09.18pendientes, aceptaciónhumanafinalnopresumida.
+
 ## 2026-11-11 — Codex: P2-09.12 editor y calibración de ocho sensores
 - ProcesoP2, rama `codex/spatial-simulation`, continuación desde09.11 publicado36e5a2b. Autonomía de selección/calibración en el bloque consolidado; sin gate manual previo ni cambio de canon.
 - Nuevo perfil óptico C+C1–C4 separado; AXIS P3747-PLVE+4P3267-LVE tras fuentes oficiales y alternativas. Se declaran pinhole rectificado1296×972, escala no certificada, orígenes centrales coincidentes y ausencia de emulación física de ruido/WDR/codec. Baseline seis cámaras/246PNG, geometría y Core preservados.

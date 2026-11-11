@@ -1,0 +1,443 @@
+{
+  "phase": "P2-09.13",
+  "gate_passed": true,
+  "graph_sha256": "51f1f9d2961b7b23b76b36442fd758f25a26a2f8a0888c67e9ba862598f11a57",
+  "strict_contract_passed": true,
+  "privileged_metadata_rejected": true,
+  "isolated_build_passed": true,
+  "security_portal": {
+    "open": {
+      "possible": true,
+      "reason": "reachable within native speed bound",
+      "path_length_native": 1.2,
+      "minimum_travel_seconds": 0.8571428571428572,
+      "nominal_moving_time_seconds": [
+        0.8571428571428572,
+        5.999999999999999
+      ],
+      "pause_time_upper_bound": null,
+      "possible_first_leg_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_is_observed": false,
+      "probability_calibrated": false,
+      "scenario_assumption": "security-open"
+    },
+    "closed": {
+      "possible": false,
+      "reason": "disconnected by static geometry or assumed closed portals",
+      "evidence": "scenario assumption, not observed door state"
+    },
+    "too_fast": {
+      "possible": false,
+      "reason": "would exceed native speed bound",
+      "path_length_native": 1.2,
+      "minimum_travel_seconds": 0.8571428571428572,
+      "nominal_moving_time_seconds": [
+        0.8571428571428572,
+        5.999999999999999
+      ],
+      "pause_time_upper_bound": null,
+      "possible_first_leg_direction": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_is_observed": false,
+      "probability_calibrated": false,
+      "scenario_assumption": "security-open"
+    }
+  },
+  "outside_geometry_rejected": true,
+  "unbounded_pause_preserved": true,
+  "loss_hypothesis": {
+    "kind": "hypothesis only",
+    "observations_created": 0,
+    "candidate_sensors": [
+      "C-S1",
+      "C-S2",
+      "C-S3",
+      "C-S4",
+      "C1-S1",
+      "C2-S1",
+      "C3-S1",
+      "C4-S1"
+    ],
+    "reachable_cells": 3592,
+    "blind_reachable_cells": 318,
+    "probability_calibrated": false,
+    "door_state_is_assumed": true
+  },
+  "negative_evidence": {
+    "expected_by_approximate_geometry": true,
+    "uncalibrated_penalty": 0.15,
+    "identity_rejected": false,
+    "observations_created": 0,
+    "reason": "missing detection is weak evidence; never invent an observation or identity loss"
+  },
+  "sensors": [
+    "C-S1",
+    "C-S2",
+    "C-S3",
+    "C-S4",
+    "C1-S1",
+    "C2-S1",
+    "C3-S1",
+    "C4-S1"
+  ],
+  "statistics": {
+    "closed": {
+      "nodes": 5319,
+      "edges": 17231,
+      "components": 26,
+      "largest_component_cells": 1822,
+      "blind_cells": 1954,
+      "approximate_overlap_cells": [
+        [
+          38,
+          0,
+          0,
+          15,
+          17,
+          20,
+          0,
+          0
+        ],
+        [
+          0,
+          680,
+          84,
+          50,
+          8,
+          481,
+          0,
+          570
+        ],
+        [
+          0,
+          84,
+          816,
+          0,
+          2,
+          342,
+          0,
+          273
+        ],
+        [
+          15,
+          50,
+          0,
+          172,
+          12,
+          166,
+          0,
+          85
+        ],
+        [
+          17,
+          8,
+          2,
+          12,
+          1342,
+          23,
+          518,
+          8
+        ],
+        [
+          20,
+          481,
+          342,
+          166,
+          23,
+          993,
+          0,
+          639
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          518,
+          0,
+          916,
+          0
+        ],
+        [
+          0,
+          570,
+          273,
+          85,
+          8,
+          639,
+          0,
+          807
+        ]
+      ],
+      "minimum_native_path_between_sensor_regions": [
+        [
+          0.0,
+          2.6,
+          1.41421,
+          0.0,
+          0.0,
+          0.0,
+          4.36569,
+          1.0
+        ],
+        [
+          2.6,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          null,
+          0.0
+        ],
+        [
+          1.41421,
+          0.0,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          null,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.0,
+          8.96596,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.24853,
+          0.0
+        ],
+        [
+          4.36569,
+          null,
+          null,
+          8.96596,
+          0.0,
+          3.24853,
+          0.0,
+          null
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          null,
+          0.0
+        ]
+      ]
+    },
+    "security-open": {
+      "nodes": 5309,
+      "edges": 17184,
+      "components": 25,
+      "largest_component_cells": 3592,
+      "blind_cells": 1955,
+      "approximate_overlap_cells": [
+        [
+          671,
+          0,
+          0,
+          40,
+          670,
+          254,
+          165,
+          0
+        ],
+        [
+          0,
+          680,
+          84,
+          50,
+          74,
+          481,
+          0,
+          570
+        ],
+        [
+          0,
+          84,
+          816,
+          0,
+          13,
+          342,
+          0,
+          273
+        ],
+        [
+          40,
+          50,
+          0,
+          197,
+          182,
+          192,
+          0,
+          85
+        ],
+        [
+          670,
+          74,
+          13,
+          182,
+          1532,
+          526,
+          518,
+          108
+        ],
+        [
+          254,
+          481,
+          342,
+          192,
+          526,
+          1301,
+          0,
+          639
+        ],
+        [
+          165,
+          0,
+          0,
+          0,
+          518,
+          0,
+          916,
+          0
+        ],
+        [
+          0,
+          570,
+          273,
+          85,
+          108,
+          639,
+          0,
+          807
+        ]
+      ],
+      "minimum_native_path_between_sensor_regions": [
+        [
+          0.0,
+          2.6,
+          1.41421,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          2.6,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          12.2,
+          0.0
+        ],
+        [
+          1.41421,
+          0.0,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          11.02843,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.2,
+          0.0,
+          0.0,
+          0.0,
+          8.36569,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.16569,
+          0.0
+        ],
+        [
+          0.0,
+          12.2,
+          11.02843,
+          8.36569,
+          0.0,
+          3.16569,
+          0.0,
+          10.76569
+        ],
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          10.76569,
+          0.0
+        ]
+      ]
+    }
+  },
+  "limitations": [
+    "Native units and generic assumed body height1.65 are not surveyed physical measurements",
+    "Opaque AABBs are conservative; glazing/foliage and partial silhouettes remain uncertain",
+    "Visibility is an approximate static sensor prior, never a person observation",
+    "Door states are named assumptions, not live observations",
+    "Speed policy is configurable and uncalibrated; no arbitrary maximum pause duration"
+  ],
+  "actor_route_created": false,
+  "human_final_acceptance": false
+}
