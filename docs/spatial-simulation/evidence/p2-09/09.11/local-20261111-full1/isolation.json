@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "scope": "four-frame local smoke through detector, MOT and MTMC",
+  "manifest_sha256": "e95103315cfa33d0ce2ec797c70a07cb7cb580146d2a99611abd209f2ba36268",
+  "timing_and_memory_excluded_from_output_equality": true,
+  "original_evaluator_data_restored": true,
+  "changed_actor_id_same_outputs": true,
+  "disconnected_ground_truth_same_outputs": true
+}

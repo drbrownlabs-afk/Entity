@@ -1,0 +1,47 @@
+{
+  "gate": "P2-09.4",
+  "passed": true,
+  "awaiting_visual_inspection": false,
+  "total_frames": 246,
+  "frames_per_camera": 41,
+  "nominal_media_fps": 2,
+  "timestamp_skew_seconds": 0,
+  "real_wall_capture_ms_median": 76.0,
+  "manifest_schema_passed": true,
+  "sample_views": [
+    {
+      "camera": "CAMERA-PLANNED-01",
+      "visible_delta_frames": 38,
+      "largest_delta_pixels": 6873
+    },
+    {
+      "camera": "CAMERA-PLANNED-02",
+      "visible_delta_frames": 17,
+      "largest_delta_pixels": 12050
+    },
+    {
+      "camera": "CAMERA-PLANNED-03",
+      "visible_delta_frames": 28,
+      "largest_delta_pixels": 14764
+    },
+    {
+      "camera": "CAMERA-PLANNED-04",
+      "visible_delta_frames": 39,
+      "largest_delta_pixels": 6962
+    },
+    {
+      "camera": "CAMERA-PLANNED-05",
+      "visible_delta_frames": 4,
+      "largest_delta_pixels": 17658
+    },
+    {
+      "camera": "CAMERA-PLANNED-06",
+      "visible_delta_frames": 39,
+      "largest_delta_pixels": 973
+    }
+  ],
+  "ground_truth_evaluator_only": true,
+  "profile": "Native PBR color/depth cache, no CameraFrame SSAO/bloom or dynamic shadows. Original viewer unchanged outside opt-in capture. Static architecture and depth occlusion retained.",
+  "route_collision_check": "all source route points checked against existing CollisionWorld after explicitly opening only existing security doors in the controlled visual scenario; no Core access/door action executed",
+  "validation_scope": "Local reproduction; agent inspected generated montage; not operator acceptance or95percent quality"
+}

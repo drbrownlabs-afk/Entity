@@ -1,0 +1,70 @@
+{
+  "gate": "P2-09.5",
+  "passed": true,
+  "pixel_inference": true,
+  "ground_truth_absent_from_worker": true,
+  "model": "yolox_s official Megvii COCO person class",
+  "model_sha256": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+  "head_decoding_required": true,
+  "threshold": 0.25,
+  "provider": "ONNX Runtime 1.23.2 CPUExecutionProvider",
+  "total_frames": 246,
+  "per_camera": {
+    "CAMERA-PLANNED-01": {
+      "frames": 41,
+      "gt_visible_frames": 38,
+      "detections": 13,
+      "tp_iou30": 13,
+      "tp_iou50": 13,
+      "false_positive_boxes_iou30": 0
+    },
+    "CAMERA-PLANNED-02": {
+      "frames": 41,
+      "gt_visible_frames": 17,
+      "detections": 17,
+      "tp_iou30": 17,
+      "tp_iou50": 17,
+      "false_positive_boxes_iou30": 0
+    },
+    "CAMERA-PLANNED-03": {
+      "frames": 41,
+      "gt_visible_frames": 28,
+      "detections": 26,
+      "tp_iou30": 26,
+      "tp_iou50": 26,
+      "false_positive_boxes_iou30": 0
+    },
+    "CAMERA-PLANNED-04": {
+      "frames": 41,
+      "gt_visible_frames": 39,
+      "detections": 28,
+      "tp_iou30": 28,
+      "tp_iou50": 28,
+      "false_positive_boxes_iou30": 0
+    },
+    "CAMERA-PLANNED-05": {
+      "frames": 41,
+      "gt_visible_frames": 4,
+      "detections": 4,
+      "tp_iou30": 4,
+      "tp_iou50": 4,
+      "false_positive_boxes_iou30": 0
+    },
+    "CAMERA-PLANNED-06": {
+      "frames": 41,
+      "gt_visible_frames": 39,
+      "detections": 1,
+      "tp_iou30": 1,
+      "tp_iou50": 1,
+      "false_positive_boxes_iou30": 0
+    }
+  },
+  "median_inference_ms": 156.41021950000322,
+  "p95_inference_ms": 184.93269900000087,
+  "processing_seconds": 55.68022165100001,
+  "peak_rss_kib": 271936,
+  "evaluation": "IoU0.30 and0.50 both reported; labels from independent renderer pixel deltas, never supplied to inference",
+  "awaiting_visual_inspection": false,
+  "validation_scope": "Local reproduction; agent inspected generated montage; not operator acceptance or95percent quality",
+  "per_frame_evaluator_detail": "retained locally, not published or available to inference"
+}

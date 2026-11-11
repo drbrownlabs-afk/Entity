@@ -1,0 +1,65 @@
+{
+  "phase": "P2-09.11",
+  "technical_gate_passed": true,
+  "human_final_acceptance": false,
+  "new_local_capture": true,
+  "historical_pngs_required": false,
+  "exact_historical_png_hash_matches": 246,
+  "frames": 246,
+  "person_detections": 89,
+  "visible_opportunities": 165,
+  "true_positive_iou50": 89,
+  "per_view_recall": 0.5393939393939394,
+  "false_positive_boxes_iou30": 0,
+  "local_tracks": 8,
+  "provisional_global_groups": 4,
+  "accepted_cross_camera_associations": 5,
+  "cpu_gpu": {
+    "cpu": {
+      "onnxruntime": "1.23.2",
+      "processing_seconds": 56.90466655800003,
+      "frames_per_second": 4.323019795736167,
+      "median_inference_ms": 167.88843349999638,
+      "p95_inference_ms": 192.20526899999868,
+      "peak_rss_kib": 278968,
+      "gpu_global_memory_mib": null
+    },
+    "cuda": {
+      "onnxruntime": "1.23.2",
+      "processing_seconds": 20.211677934000022,
+      "frames_per_second": 12.171181472577274,
+      "median_inference_ms": 29.930555500016,
+      "p95_inference_ms": 33.39476700000432,
+      "peak_rss_kib": 1039212,
+      "gpu_global_memory_mib": {
+        "before_session": 45,
+        "after_warmup": 274,
+        "after_timed_run": 274,
+        "scope": "whole GPU snapshots, not process peak VRAM"
+      }
+    }
+  },
+  "cpu_gpu_detection_count_differences": 0,
+  "cpu_gpu_max_bbox_delta_pixels": 0.0003662109375,
+  "cpu_gpu_max_confidence_delta": 1.1324882507324219e-06,
+  "same_core_http_replay_unchanged": true,
+  "same_core_real_restart_preserved": true,
+  "core_logical_people": 12,
+  "local_history_difference": "Fresh local P1 has twelve declared people; two historical technical identities from the former machine were not transferred or fabricated.",
+  "isolation_tests": {
+    "passed": true,
+    "scope": "four-frame local smoke through detector, MOT and MTMC",
+    "manifest_sha256": "e95103315cfa33d0ce2ec797c70a07cb7cb580146d2a99611abd209f2ba36268",
+    "timing_and_memory_excluded_from_output_equality": true,
+    "original_evaluator_data_restored": true,
+    "changed_actor_id_same_outputs": true,
+    "disconnected_ground_truth_same_outputs": true
+  },
+  "limitations": [
+    "Baseline quality is reproduced, not improved: new-profile >=95% goal remains pending.",
+    "GPU global memory snapshots are not process peak VRAM.",
+    "Detector batch benchmark does not certify complete live pipeline throughput.",
+    "OSNet export has identical weights and parity but a different binary hash, documented in09.10.",
+    "Native units are not a certified physical survey; no real CCTV/VMS connected."
+  ]
+}

@@ -1,5 +1,13 @@
 # ENTITY — Bitácora de ejecución y evidencias
 
+## 2026-11-11 — Codex: P2-09.11 reproducción local verificada
+- Recaptura nueva completa:246PNG con los246hashes históricos exactos. Smoke previo4frames con fondo vacío idéntico; inspección visual del agente sobre las seis vistas y cajas, no aceptación humana. Fuente/calibración/IDs/scripts históricos intactos; nuevas rutas de evidencia. Corregidos arranque de navegador/temporales/baseURL delpreview sin cambiar assertions ni geometría.
+- YOLOX-S/Norfair/OSNet reales en Bubblewrap:89detecciones,8tracks,5asociaciones,4grupos. Evaluador posterior:89/165IoU.50,53.94%recall porvista y0FP aIoU.30. Se conservan errores05/06 y3fragmentaciones; no se declaran95%ni identidad global única.
+- CPU56.905s/4.323img/s/mediana167.888ms/p95192.205ms;CUDAFP3220.212s/12.171img/s/29.931ms/p9533.395ms. PicoRSS278968/1039212KiB; snapshots GPU global45→274MiB, no pico porproceso. TF32 produjo diferencias numéricas; corregido aFP32 y profiling retirado del tramo medido. Cantidades idénticas y diferencias máximas.000366px/.00000113confianza. No certificación de pipeline vivo.
+- CoreP1 HTTP/SQLite:246frames+5asociaciones; repetición251duplicados, revisión452intacta. Reinicio real preserva mundo468entidades y25memorias, integrity_checkok.12personas declaradas locales conservadas y0nuevas identidades; dos identidades técnicas históricas no transferidas ni fabricadas. Onboarding intacto.111regresionesCore/10Edge/11lógicaP2PASS.
+- Prueba dinámicaGT: detector/MOT/MTMC iguales en smoke al cambiarIDdel evaluador y desconectarGT; fuente/restauración y montajes mínimos comprobados. No retroalimentación de evaluación ni GTenCore. Artefactos/comandos/fallos y límites en09.11/local-20261111-full1/README.md yreproduction.json.
+- Gate09.11SUPERADO técnicamente. Próximo09.12: nuevo perfilC+C1–C4 en el mismo visor, configuración comercial y editor con calibración/cobertura medidas; no aceptación humana final niP3.
+
 ## 2026-11-11 — Codex: P2-09.10 entorno funcional y preparación de recaptura
 - Continuación después del reinicio autorizado. Ubuntu24.04 instalada desde alternativa oficial de Microsoft con validación de firma; descarga completa reutilizada tras corregir fallo del supervisor. El instalador directo falló por DNS; no se cambiaron DNS ni drivers NVIDIA. GPU accesible desde Linux.
 - Entornos privados separados CPU/GPU/exportación/Core. Python3.12.3, ONNXRuntime1.23.2; mismos pesos YOLOX/OSNet fijados. Exportación OSNet nueva: paridad máxima2.6405e-5; ONNXfb43bdb65f317341570d532275ed55cb5f2ccc956eb2f0bcffc57b3499094c62, distinto del histórico; pesos idénticos, reporte histórico conservado. Sin certificación comercial nueva.

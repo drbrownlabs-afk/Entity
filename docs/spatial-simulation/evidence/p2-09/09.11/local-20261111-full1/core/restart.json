@@ -1,0 +1,10 @@
+{
+  "real_http": true,
+  "real_process_restart": true,
+  "world_and_memory_preserved": true,
+  "world_sha256": "65debdb7bd468638236c888d7e98480e415302572affb0a1e8252cb4ce553b8e",
+  "world_revision": 452,
+  "entity_count": 468,
+  "memory_records": 25,
+  "sqlite_integrity": "ok"
+}

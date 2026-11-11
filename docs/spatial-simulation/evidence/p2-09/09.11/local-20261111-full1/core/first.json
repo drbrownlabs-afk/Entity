@@ -1,0 +1,21 @@
+{
+  "gate": "P2-09.8",
+  "real_http": true,
+  "same_p1_database_site": "coworking-p2",
+  "run": "local-20261111-full1",
+  "pixel_observations": 246,
+  "cross_camera_observations": 5,
+  "duplicate_observations": 0,
+  "metadata_or_clock_or_memory_commands_sent": 55,
+  "new_person_identities": 0,
+  "logical_people_preserved": 12,
+  "local_tracks_in_core": 8,
+  "root_manifest_sha256": "8ed329da19c7254516654aa1ace9b2e5cac50cd74b2c66df3e12c798e298ffd1",
+  "earlier_onboarding_world_unchanged": true,
+  "source_frames_simulated_neural_inference_real": true,
+  "public_https_core_configured": false,
+  "world_revision_before": 146,
+  "world_revision_after": 452,
+  "world_revision_changed": true,
+  "seconds": 42.87714288500001
+}
