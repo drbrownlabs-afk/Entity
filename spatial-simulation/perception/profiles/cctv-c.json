@@ -1,0 +1,731 @@
+{
+  "schema_version": "1.0",
+  "profile_id": "cctv-c-v1",
+  "simulation_only": true,
+  "coordinate_frame": "supersplat-original +Y up; relative units, not surveyed meters",
+  "metric_scale_verified": false,
+  "master_sha256": "ea1fe5c8b7ea1f9800e31b419516b0808436d0f5903977c27e53e52fef3b802f",
+  "scene_sha256": "bbaf7ae6ea9b9a2809d36bcee5d08f357a10f4fc5ab3b8e54bf1b0453c900b57",
+  "device_count": 5,
+  "sensor_count": 8,
+  "devices": [
+    {
+      "id": "C",
+      "sensors": [
+        "C-S1",
+        "C-S2",
+        "C-S3",
+        "C-S4"
+      ],
+      "model": "AXIS P3747-PLVE"
+    },
+    {
+      "id": "C1",
+      "sensors": [
+        "C1-S1"
+      ],
+      "model": "AXIS P3267-LVE"
+    },
+    {
+      "id": "C2",
+      "sensors": [
+        "C2-S1"
+      ],
+      "model": "AXIS P3267-LVE"
+    },
+    {
+      "id": "C3",
+      "sensors": [
+        "C3-S1"
+      ],
+      "model": "AXIS P3267-LVE"
+    },
+    {
+      "id": "C4",
+      "sensors": [
+        "C4-S1"
+      ],
+      "model": "AXIS P3267-LVE"
+    }
+  ],
+  "cameras": [
+    {
+      "id": "C-S1",
+      "sensor_id": "C-S1",
+      "device_id": "C",
+      "channel_id": 1,
+      "stream_id": "C-S1-rgb-main",
+      "label": "corredor hacia extremo de ingreso",
+      "manufacturer": "AXIS",
+      "model": "P3747-PLVE",
+      "position": [
+        -3.4,
+        1.3,
+        -14.8
+      ],
+      "target": [
+        -2.5,
+        -0.6,
+        -10.8
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "initial_position": [
+        -3.8,
+        1.15,
+        -13.4
+      ],
+      "initial_target": [
+        -2.5,
+        -0.5,
+        -9.9
+      ],
+      "projection": "rectified-pinhole",
+      "resolution": [
+        1296,
+        972
+      ],
+      "source_sensor_resolution": [
+        2592,
+        1944
+      ],
+      "source_sensor_max_fps": 20,
+      "capture_fps": 2,
+      "vfov_deg": 45,
+      "hfov_deg": 57.82240163683314,
+      "K": [
+        [
+          1173.3077913133243,
+          0,
+          648.0
+        ],
+        [
+          0,
+          1173.3077913133243,
+          486.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "distortion": {
+        "model": "virtual-rectified",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "provenance": "renderer pinhole; not measured commercial lens distortion"
+      },
+      "source": "https://www.axis.com/dam/public/51/8d/8c/datasheet-axis-p3747-plve-panoramic-camera-en-US-506195.pdf",
+      "mount": "ceiling-adjacent virtual support; native units, not certified physical metres",
+      "head_offset_model": "co-located virtual optical origins; physical aperture offsets not measured",
+      "downward_axis_degrees": 24.863696571751866,
+      "simulation_only": true,
+      "optical_limitations": "conservative rectified crop within documented FOV; no physical WDR/IR/noise/codec emulation"
+    },
+    {
+      "id": "C-S2",
+      "sensor_id": "C-S2",
+      "device_id": "C",
+      "channel_id": 2,
+      "stream_id": "C-S2-rgb-main",
+      "label": "corredor hacia cafeter\u00eda",
+      "manufacturer": "AXIS",
+      "model": "P3747-PLVE",
+      "position": [
+        -3.4,
+        1.3,
+        -14.8
+      ],
+      "target": [
+        -2.5,
+        -0.6,
+        -18.3
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "initial_position": [
+        -3.8,
+        1.15,
+        -13.4
+      ],
+      "initial_target": [
+        -2.5,
+        -0.5,
+        -16.9
+      ],
+      "projection": "rectified-pinhole",
+      "resolution": [
+        1296,
+        972
+      ],
+      "source_sensor_resolution": [
+        2592,
+        1944
+      ],
+      "source_sensor_max_fps": 20,
+      "capture_fps": 2,
+      "vfov_deg": 45,
+      "hfov_deg": 57.82240163683314,
+      "K": [
+        [
+          1173.3077913133243,
+          0,
+          648.0
+        ],
+        [
+          0,
+          1173.3077913133243,
+          486.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "distortion": {
+        "model": "virtual-rectified",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "provenance": "renderer pinhole; not measured commercial lens distortion"
+      },
+      "source": "https://www.axis.com/dam/public/51/8d/8c/datasheet-axis-p3747-plve-panoramic-camera-en-US-506195.pdf",
+      "mount": "ceiling-adjacent virtual support; native units, not certified physical metres",
+      "head_offset_model": "co-located virtual optical origins; physical aperture offsets not measured",
+      "downward_axis_degrees": 27.73329770760666,
+      "simulation_only": true,
+      "optical_limitations": "conservative rectified crop within documented FOV; no physical WDR/IR/noise/codec emulation"
+    },
+    {
+      "id": "C-S3",
+      "sensor_id": "C-S3",
+      "device_id": "C",
+      "channel_id": 3,
+      "stream_id": "C-S3-rgb-main",
+      "label": "transici\u00f3n lateral recepci\u00f3n/espera",
+      "manufacturer": "AXIS",
+      "model": "P3747-PLVE",
+      "position": [
+        -3.4,
+        1.3,
+        -14.8
+      ],
+      "target": [
+        -5.5,
+        -0.5,
+        -16.5
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "initial_position": [
+        -3.8,
+        1.15,
+        -13.4
+      ],
+      "initial_target": [
+        -7.2,
+        -0.5,
+        -14.2
+      ],
+      "projection": "rectified-pinhole",
+      "resolution": [
+        1296,
+        972
+      ],
+      "source_sensor_resolution": [
+        2592,
+        1944
+      ],
+      "source_sensor_max_fps": 20,
+      "capture_fps": 2,
+      "vfov_deg": 65,
+      "hfov_deg": 80.69094375281911,
+      "K": [
+        [
+          762.8671904791003,
+          0,
+          648.0
+        ],
+        [
+          0,
+          762.8671904791003,
+          486.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "distortion": {
+        "model": "virtual-rectified",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "provenance": "renderer pinhole; not measured commercial lens distortion"
+      },
+      "source": "https://www.axis.com/dam/public/51/8d/8c/datasheet-axis-p3747-plve-panoramic-camera-en-US-506195.pdf",
+      "mount": "ceiling-adjacent virtual support; native units, not certified physical metres",
+      "head_offset_model": "co-located virtual optical origins; physical aperture offsets not measured",
+      "downward_axis_degrees": 33.67194502902504,
+      "simulation_only": true,
+      "optical_limitations": "conservative rectified crop within documented FOV; no physical WDR/IR/noise/codec emulation"
+    },
+    {
+      "id": "C-S4",
+      "sensor_id": "C-S4",
+      "device_id": "C",
+      "channel_id": 4,
+      "stream_id": "C-S4-rgb-main",
+      "label": "transici\u00f3n cercana bajo dispositivo central",
+      "manufacturer": "AXIS",
+      "model": "P3747-PLVE",
+      "position": [
+        -3.4,
+        1.3,
+        -14.8
+      ],
+      "target": [
+        -2.5,
+        -1.6,
+        -14.8
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "initial_position": [
+        -3.8,
+        1.15,
+        -13.4
+      ],
+      "initial_target": [
+        -2.5,
+        -1.6,
+        -13.4
+      ],
+      "projection": "rectified-pinhole",
+      "resolution": [
+        1296,
+        972
+      ],
+      "source_sensor_resolution": [
+        2592,
+        1944
+      ],
+      "source_sensor_max_fps": 20,
+      "capture_fps": 2,
+      "vfov_deg": 71.5,
+      "hfov_deg": 87.65353022034522,
+      "K": [
+        [
+          675.0965870124481,
+          0,
+          648.0
+        ],
+        [
+          0,
+          675.0965870124481,
+          486.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "distortion": {
+        "model": "virtual-rectified",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "provenance": "renderer pinhole; not measured commercial lens distortion"
+      },
+      "source": "https://www.axis.com/dam/public/51/8d/8c/datasheet-axis-p3747-plve-panoramic-camera-en-US-506195.pdf",
+      "mount": "ceiling-adjacent virtual support; native units, not certified physical metres",
+      "head_offset_model": "co-located virtual optical origins; physical aperture offsets not measured",
+      "downward_axis_degrees": 72.75854060106003,
+      "simulation_only": true,
+      "optical_limitations": "conservative rectified crop within documented FOV; no physical WDR/IR/noise/codec emulation"
+    },
+    {
+      "id": "C1-S1",
+      "sensor_id": "C1-S1",
+      "device_id": "C1",
+      "channel_id": 1,
+      "stream_id": "C1-S1-rgb-main",
+      "label": "extremo de ingreso, diagonal longitudinal",
+      "manufacturer": "AXIS",
+      "model": "P3267-LVE",
+      "position": [
+        -2.3,
+        1.4,
+        1.5
+      ],
+      "target": [
+        -3.2,
+        -0.5,
+        -2.4
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "initial_position": [
+        -2.7,
+        1.1,
+        2.2
+      ],
+      "initial_target": [
+        -2.7,
+        -0.5,
+        -1.2
+      ],
+      "projection": "rectified-pinhole",
+      "resolution": [
+        1296,
+        972
+      ],
+      "source_sensor_resolution": [
+        2592,
+        1944
+      ],
+      "source_sensor_max_fps": 30,
+      "capture_fps": 2,
+      "vfov_deg": 60,
+      "hfov_deg": 75.1781789379499,
+      "K": [
+        [
+          841.7766924784744,
+          0,
+          648.0
+        ],
+        [
+          0,
+          841.7766924784744,
+          486.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "distortion": {
+        "model": "virtual-rectified",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "provenance": "renderer pinhole; not measured commercial lens distortion"
+      },
+      "source": "https://www.axis.com/dam/public/8a/0b/4c/datasheet-axis-p3267-lve-dome-camera-en-US-388254.pdf",
+      "mount": "ceiling-adjacent virtual support; native units, not certified physical metres",
+      "head_offset_model": "co-located virtual optical origins; physical aperture offsets not measured",
+      "downward_axis_degrees": 25.393851136707227,
+      "simulation_only": true,
+      "optical_limitations": "conservative rectified crop within documented FOV; no physical WDR/IR/noise/codec emulation"
+    },
+    {
+      "id": "C2-S1",
+      "sensor_id": "C2-S1",
+      "device_id": "C2",
+      "channel_id": 1,
+      "stream_id": "C2-S1-rgb-main",
+      "label": "extremo opuesto, corredor y transici\u00f3n posterior",
+      "manufacturer": "AXIS",
+      "model": "P3267-LVE",
+      "position": [
+        -2.7,
+        1.3,
+        -25.8
+      ],
+      "target": [
+        -3.2,
+        -0.5,
+        -21.6
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "initial_position": [
+        -2.7,
+        1.1,
+        -28
+      ],
+      "initial_target": [
+        -2.7,
+        -0.5,
+        -24.6
+      ],
+      "projection": "rectified-pinhole",
+      "resolution": [
+        1296,
+        972
+      ],
+      "source_sensor_resolution": [
+        2592,
+        1944
+      ],
+      "source_sensor_max_fps": 30,
+      "capture_fps": 2,
+      "vfov_deg": 60,
+      "hfov_deg": 75.1781789379499,
+      "K": [
+        [
+          841.7766924784744,
+          0,
+          648.0
+        ],
+        [
+          0,
+          841.7766924784744,
+          486.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "distortion": {
+        "model": "virtual-rectified",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "provenance": "renderer pinhole; not measured commercial lens distortion"
+      },
+      "source": "https://www.axis.com/dam/public/8a/0b/4c/datasheet-axis-p3267-lve-dome-camera-en-US-388254.pdf",
+      "mount": "ceiling-adjacent virtual support; native units, not certified physical metres",
+      "head_offset_model": "co-located virtual optical origins; physical aperture offsets not measured",
+      "downward_axis_degrees": 23.05297397476647,
+      "simulation_only": true,
+      "optical_limitations": "conservative rectified crop within documented FOV; no physical WDR/IR/noise/codec emulation"
+    },
+    {
+      "id": "C3-S1",
+      "sensor_id": "C3-S1",
+      "device_id": "C3",
+      "channel_id": 1,
+      "stream_id": "C3-S1-rgb-main",
+      "label": "ala de lounge/cabinas y conexi\u00f3n frontal",
+      "manufacturer": "AXIS",
+      "model": "P3267-LVE",
+      "position": [
+        -11.3,
+        1.35,
+        -4.9
+      ],
+      "target": [
+        -8.5,
+        -0.5,
+        -1
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "initial_position": [
+        -11.2,
+        1.1,
+        -1
+      ],
+      "initial_target": [
+        -6.5,
+        -0.5,
+        -0.4
+      ],
+      "projection": "rectified-pinhole",
+      "resolution": [
+        1296,
+        972
+      ],
+      "source_sensor_resolution": [
+        2592,
+        1944
+      ],
+      "source_sensor_max_fps": 30,
+      "capture_fps": 2,
+      "vfov_deg": 74,
+      "hfov_deg": 90.2708671388278,
+      "K": [
+        [
+          644.9437833075192,
+          0,
+          648.0
+        ],
+        [
+          0,
+          644.9437833075192,
+          486.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "distortion": {
+        "model": "virtual-rectified",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "provenance": "renderer pinhole; not measured commercial lens distortion"
+      },
+      "source": "https://www.axis.com/dam/public/8a/0b/4c/datasheet-axis-p3267-lve-dome-camera-en-US-388254.pdf",
+      "mount": "ceiling-adjacent virtual support; native units, not certified physical metres",
+      "head_offset_model": "co-located virtual optical origins; physical aperture offsets not measured",
+      "downward_axis_degrees": 21.073322896970524,
+      "simulation_only": true,
+      "optical_limitations": "conservative rectified crop within documented FOV; no physical WDR/IR/noise/codec emulation"
+    },
+    {
+      "id": "C4-S1",
+      "sensor_id": "C4-S1",
+      "device_id": "C4",
+      "channel_id": 1,
+      "stream_id": "C4-S1-rgb-main",
+      "label": "ala de cafeter\u00eda y conexi\u00f3n posterior",
+      "manufacturer": "AXIS",
+      "model": "P3267-LVE",
+      "position": [
+        -8.3,
+        1.1,
+        -23
+      ],
+      "target": [
+        -4,
+        -0.5,
+        -22
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ],
+      "initial_position": [
+        -8.3,
+        1.1,
+        -23
+      ],
+      "initial_target": [
+        -4,
+        -0.5,
+        -22
+      ],
+      "projection": "rectified-pinhole",
+      "resolution": [
+        1296,
+        972
+      ],
+      "source_sensor_resolution": [
+        2592,
+        1944
+      ],
+      "source_sensor_max_fps": 30,
+      "capture_fps": 2,
+      "vfov_deg": 65,
+      "hfov_deg": 80.69094375281911,
+      "K": [
+        [
+          762.8671904791003,
+          0,
+          648.0
+        ],
+        [
+          0,
+          762.8671904791003,
+          486.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "distortion": {
+        "model": "virtual-rectified",
+        "coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "provenance": "renderer pinhole; not measured commercial lens distortion"
+      },
+      "source": "https://www.axis.com/dam/public/8a/0b/4c/datasheet-axis-p3267-lve-dome-camera-en-US-388254.pdf",
+      "mount": "ceiling-adjacent virtual support; native units, not certified physical metres",
+      "head_offset_model": "co-located virtual optical origins; physical aperture offsets not measured",
+      "downward_axis_degrees": 19.92160985505434,
+      "simulation_only": true,
+      "optical_limitations": "conservative rectified crop within documented FOV; no physical WDR/IR/noise/codec emulation"
+    }
+  ],
+  "placement_state": "initial candidate; calibration and pixel coverage validation pending",
+  "reference": "operator conceptual C-plan adapted to elongated real corridor and lateral wings",
+  "clock_source": "scenario UTC media timestamps; wall rendering time measured separately",
+  "capture_render_profile": "native PBR without CameraFrame postprocessing or jitter; not physical WDR/noise/codec emulation",
+  "baseline_profile_modified": false,
+  "sources": [
+    "https://www.axis.com/dam/public/51/8d/8c/datasheet-axis-p3747-plve-panoramic-camera-en-US-506195.pdf",
+    "https://www.axis.com/dam/public/8a/0b/4c/datasheet-axis-p3267-lve-dome-camera-en-US-388254.pdf"
+  ],
+  "selection": "Four real optical channels centrally plus four independent detail cameras; no stitched panorama",
+  "uncertainty": [
+    "Physical scale and factory lens distortion not surveyed",
+    "Co-located optical-origin approximation must be disclosed",
+    "Coverage and useful pixel density require actual render probes, not cones"
+  ],
+  "placement_adjustments": [
+    "Raised security gate has a fixed header up to ceiling: elevation alone failed. Retreat C to view below header with explicitly open security doors; closed doors remain real occlusions.",
+    "C-S3 redirected to the indoor reception transition instead of the exterior notch.",
+    "C1 moved away from vegetation immediately in front of its lens.",
+    "C2 moved inside the rear retained glazing, without changing that glazing.",
+    "C3 retreated to the lounge corner with wider documented FOV: previous near-field pose missed lounge/cabin-01 probes."
+  ]
+}
