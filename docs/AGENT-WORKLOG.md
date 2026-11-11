@@ -1,5 +1,13 @@
 # ENTITY — Bitácora de ejecución y evidencias
 
+## 2026-11-10 America/New_York / 2026-11-11 UTC — Codex: P2-09.10 preparación local
+- Rama `codex/spatial-simulation`, fuente61e037d503999dcb28d7cc8bb7de3a899e4eb2ea; clon parcial con código/documentación y binarios grandes diferidos. Leídos íntegros los cuatro documentos solicitados, canon/AGENTS y estructura/código reales. No reinicio de09.1–09.9 ni modificación debaseline/Core/maestro.
+- Auditoría verificable MATRIX/DellXPS159510, i9-11900H8C16T, RAM16886083584B, RTX3050Ti4096MiB/driver610.60. WSL ausente; instalado2.7.14 porwinget elevado tras fallo0x80073d28 sinadmin. VirtualMachinePlatform habilitada con DISM/norestart:3010, reinicio pendiente. GPUWindows funciona, Linux/Ubuntu/aislamientoGPU no certificados; no driverNVIDIA Linux ni reinicio automático.
+- Python3.12.14 delruntime localizado; venv deauditoría privado/jsonschema4.26.0. ensurepip inicial falló, recuperado con pip --python desde runtime. npm ausente, pnpm11.25.0/npm11.6.2 local permite ci fijado y compilación. Cuatro archivos YOLOX/OSNet descargados/verificados porSHA; ONNXOSNet todavía pendiente, caches fuera deGit.
+- Nuevos scripts `audit-windows.ps1`, `audit-transfer.py` y4tests de integridad. Inventario de originales es comparación opcional: **operador corrigió que se debe repetir captura/test local, sin exigirPNG históricos**; ADRRECAPTURA-LOCAL y especificación consolidada actualizados. Imagen referencial C+C1–C4 inspeccionada; guía conceptual ajustable alespacio, sinposes/cámaras nuevas todavía.
+- Pruebas realmente ejecutadas:3contratoFrameManifestPASS,4integridadPASS,11lógicaP2PASS,buildVitePASS conaviso dechunkgrande. PrimerNode falló porpathfindingausente; resuelto condependenciasfijadas. Primer4tests falló porTEMP del sandbox; corregido atemporalesprivados delworkspace y repetidoPASS. No se presentan estaspruebas comoaislamientoefectivo de inferencia ni validaciónde cámaras.
+- Evidencia ycomandos: `docs/spatial-simulation/evidence/p2-09/09.10/README.md`, windows/transfer JSON ylogs. Estado09.10EN CURSO; dependencia de reinicioWindows antes de arrancarWSL2.09.11–09.18pendientes; no captura/inferencia/Core/benchmark nuevos, no aceptaciónhumana. Próximo: reinicio autorizado, verificarUbuntu/GPU/bwrap/dependencias y repetir captura local en nuevasrutas; despuéscontinuar gates. Publicación ySHA se informan al comprobar remoto; sinmerge/main.
+
 ## 2026-11-08 — P1/P2/P3: delimitación y snapshot explícito
 - Orden del operador: asignar todo backend/frontend de plataforma y adaptaciones a P1; demo workspace a P2; IA situada a P3; crear snapshot transversal de esta decisión.
 - ADR-2026-11-08-003; canon, estado P1/P2/P3 y roadmap P2 actualizados.

@@ -1,0 +1,73 @@
+{
+  "phase": "P2-09.10",
+  "generated_at_utc": "2026-11-11T00:18:38.0369486Z",
+  "read_only": true,
+  "phase_gate_passed": false,
+  "administrator": false,
+  "computer": {
+    "Name": "MATRIX",
+    "Manufacturer": "Dell Inc.",
+    "Model": "XPS 15 9510",
+    "TotalPhysicalMemory": 16886083584
+  },
+  "os": {
+    "Caption": "Microsoft Windows 11 Pro",
+    "Version": "10.0.26200",
+    "BuildNumber": "26200"
+  },
+  "cpu": {
+    "Name": "11th Gen Intel(R) Core(TM) i9-11900H @ 2.50GHz",
+    "NumberOfCores": 8,
+    "NumberOfLogicalProcessors": 16,
+    "VirtualizationFirmwareEnabled": true
+  },
+  "graphics": [
+    {
+      "Name": "Intel(R) UHD Graphics",
+      "AdapterRAM": 2147479552,
+      "DriverVersion": "32.0.101.7085"
+    },
+    {
+      "Name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+      "AdapterRAM": 4293918720,
+      "DriverVersion": "32.0.16.1060"
+    }
+  ],
+  "system_drive": {
+    "DeviceID": "C:",
+    "Size": 1002698698752,
+    "FreeSpace": 539542323200,
+    "DriveType": 3
+  },
+  "git": {
+    "command": "git --version",
+    "output": "git version 2.56.0.windows.4",
+    "exit_code": 0
+  },
+  "node": {
+    "command": "node --version",
+    "output": "v24.22.1",
+    "exit_code": 0
+  },
+  "nvidia": {
+    "command": "nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv",
+    "output": "name, memory.total [MiB], driver_version\r\nNVIDIA GeForce RTX 3050 Ti Laptop GPU, 4096 MiB, 610.60",
+    "exit_code": 0
+  },
+  "wsl_status": {
+    "command": "wsl.exe --status",
+    "output": "Default Version: 2\r\n\r\nWSL1 is not supported with your current machine configuration.\r\n\r\nPlease enable the \"Windows Subsystem for Linux\" optional component to use WSL1.\r\n\r\nWSL2 is unable to start since virtualization is not enabled on this machine.\r\n\r\nPlease ensure the \"Virtual Machine Platform\" optional component is enabled and virtualization is turned on in your computer's firmware settings.\r\n\r\n\r\n\r\nEnable \"Virtual Machine Platform\" by running: wsl.exe --install --no-distribution\r\n\r\n\r\n\r\nFor information please visit https://aka.ms/enablevirtualization",
+    "exit_code": 0
+  },
+  "wsl_version": {
+    "command": "wsl.exe --version",
+    "output": "WSL version: 2.7.14.0\r\n\r\nKernel version: 6.18.33.2-2\r\n\r\nWSLg version: 1.0.73.2\r\n\r\nMSRDC version: 1.2.7214\r\n\r\nDirect3D version: 1.611.1-81528511\r\n\r\nDXCore version: 10.0.26100.1-240331-1435.ge-release\r\n\r\nWindows version: 10.0.26200.9711",
+    "exit_code": 0
+  },
+  "wsl_distributions": {
+    "command": "wsl.exe --list --verbose",
+    "output": "Windows Subsystem for Linux has no installed distributions.\r\n\r\nYou can resolve this by installing a distribution with the instructions below:\r\n\r\n\r\n\r\nUse 'wsl.exe --list --online' to list available distributions\r\n\r\nand 'wsl.exe --install <Distro>' to install.",
+    "exit_code": -1
+  },
+  "boundary": "No changes to devices, drivers, Windows features, cameras, Core, geometry or baseline."
+}

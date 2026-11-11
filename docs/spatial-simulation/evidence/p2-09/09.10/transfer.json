@@ -1,0 +1,1325 @@
+{
+  "phase": "P2-09.10",
+  "generated_at_utc": "2026-11-11T00:18:40.881444+00:00",
+  "inventory_only": true,
+  "phase_gate_passed": false,
+  "gate_note": "Asset integrity alone cannot certify WSL/GPU/dependencies or 09.11 reproduction.",
+  "python": {
+    "version": "3.12.14",
+    "platform": "win32",
+    "packages": {
+      "onnxruntime": null,
+      "onnxruntime-gpu": null,
+      "opencv-python-headless": null,
+      "norfair": null,
+      "numpy": null,
+      "jsonschema": "4.26.0"
+    }
+  },
+  "reference_manifest_sha256": "fad5a836038a1b80ee9281991cd22f1196803e5a388e375d57639b997074b0d9",
+  "expected_frames": 246,
+  "execution_mode": "local_recapture",
+  "original_pngs_required": false,
+  "original_pngs_absence_blocks_local_recapture": false,
+  "expected_frames_per_camera": {
+    "CAMERA-PLANNED-01": 41,
+    "CAMERA-PLANNED-02": 41,
+    "CAMERA-PLANNED-03": 41,
+    "CAMERA-PLANNED-04": 41,
+    "CAMERA-PLANNED-05": 41,
+    "CAMERA-PLANNED-06": 41
+  },
+  "frames_directory_exists": false,
+  "models_directory_exists": true,
+  "input_manifest": {
+    "file": "manifest.json",
+    "status": "missing",
+    "expected_sha256": "fad5a836038a1b80ee9281991cd22f1196803e5a388e375d57639b997074b0d9"
+  },
+  "unexpected_input_entries": [],
+  "frame_status_counts": {
+    "missing": 246
+  },
+  "frames": [
+    {
+      "file": "CAMERA-PLANNED-01-0000.png",
+      "status": "missing",
+      "expected_sha256": "578af0123bd492f299395761777f5033b77f40a950172547e1ac47ce3d8d25d4"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0000.png",
+      "status": "missing",
+      "expected_sha256": "4bc362be590b4d3380820dfd72be058712d011d0936e2bce4c888b1e21ff433a"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0000.png",
+      "status": "missing",
+      "expected_sha256": "46ccb0dc5a3fc2d8227eefb6ec5f500bffa019b7ff1312e10586e6c8e47acf49"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0000.png",
+      "status": "missing",
+      "expected_sha256": "953d14b41a8dee4531c9ae463ac8333b4023cd11c270c665aba588074ee6183a"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0000.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0000.png",
+      "status": "missing",
+      "expected_sha256": "0808fb553a6d9cf664aa73d54147ef263417ddce2d6d3523ee0288d2a753a519"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0001.png",
+      "status": "missing",
+      "expected_sha256": "7f823498a9bf7bd9176d5bbf6c80b177ae9191b19adff60bf836122de5d2f5b0"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0001.png",
+      "status": "missing",
+      "expected_sha256": "e889c8de94fb97eb7cbba9b3863cbbc1a7a1b322f69b4cf071d4bbcda2b4d81c"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0001.png",
+      "status": "missing",
+      "expected_sha256": "9c8330906c42b848f4081653c524c3b63f3b57ef2b86c5e753729c3e1afbcdd1"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0001.png",
+      "status": "missing",
+      "expected_sha256": "3f06a8f748aeadb817c934a6d10d0479bef3effa4ee530aeb269846d7a640c83"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0001.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0001.png",
+      "status": "missing",
+      "expected_sha256": "b2ca1d8109db6b6372e5c09a0d6367a9dfc1cf3973f6777ef6af325693177533"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0002.png",
+      "status": "missing",
+      "expected_sha256": "b569174b50f7a7ebf6df7bd392f0da15b0fa393c0dfa2b8da847a3ef2cbc9cd7"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0002.png",
+      "status": "missing",
+      "expected_sha256": "9b477612c74739d975a02ae92df7cc8b6ea4558ea6c1201bcddd982e67033c99"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0002.png",
+      "status": "missing",
+      "expected_sha256": "f879aec7cc6acdddb8e8591c58fbe20ef9de03f8d06466f3b23ef014229ef37a"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0002.png",
+      "status": "missing",
+      "expected_sha256": "0c4f0927578e73e545b66003e054be110fd2e0663eab5ebaa2ffe99c66ed4c2a"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0002.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0002.png",
+      "status": "missing",
+      "expected_sha256": "3f9f3e6546eb600b5a98bf9f58850b7f804a50fde016aefae9a4e8f0d7b6a37a"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0003.png",
+      "status": "missing",
+      "expected_sha256": "89ddd2b8f96a3f7044ce39a992ca8aa58c81569d0fda907b0f03b516fdc26701"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0003.png",
+      "status": "missing",
+      "expected_sha256": "33172647bbd838ded5bc796ca7a59fa9960d591c802b2cd29a5d49678ad6c319"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0003.png",
+      "status": "missing",
+      "expected_sha256": "8fe5c529f55cf7c8e231a3c8bf6f68b65b2d70ec291bbb748edef02cb7e76dfd"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0003.png",
+      "status": "missing",
+      "expected_sha256": "27885195b4840ec47b59921cba8678c96641683814579b95e7ca770e1e49720b"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0003.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0003.png",
+      "status": "missing",
+      "expected_sha256": "8b3fee9d23a6064170fcc157003a8b0463e0d76b57f96da04d802d37fa95e083"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0004.png",
+      "status": "missing",
+      "expected_sha256": "adc80fe8a1a8c718a56ab0300dca7e59f469533c63b949a54c4dc85a46edb796"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0004.png",
+      "status": "missing",
+      "expected_sha256": "40390fa6471a13b23c3e3f4e9a8f2ad25885ca8ae11e452e40d7ea441bab1f7a"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0004.png",
+      "status": "missing",
+      "expected_sha256": "9cbcca8b3c3ea88cebd442853a64d33e4db13d1709a1b5f6caa732c407662086"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0004.png",
+      "status": "missing",
+      "expected_sha256": "c4a540788123b5d1a95aead11c8073238485c74777f2cae475dd5327ecbc404d"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0004.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0004.png",
+      "status": "missing",
+      "expected_sha256": "05829d89f321c17c833531a876b0bd4b8100f8734c4ca1bef340c64aefbd00e0"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0005.png",
+      "status": "missing",
+      "expected_sha256": "c590c3aded2724ee50c7ba8295ac83320cf94a8030f0c1cd0bbaf1433057d197"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0005.png",
+      "status": "missing",
+      "expected_sha256": "481f6d54d39e9481879563ac62f06c66226a81e6610ae0650c49c289f62d6a4c"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0005.png",
+      "status": "missing",
+      "expected_sha256": "e8c927c73c4847a75c3fcc60c2a5dbad178cca85feb6df92f957c1cd57397c3c"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0005.png",
+      "status": "missing",
+      "expected_sha256": "002f43f04b6ecd59a78c338f4046ebc30ced294da0b8e41e3f6f826a0cd81d5f"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0005.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0005.png",
+      "status": "missing",
+      "expected_sha256": "cc2f092ff397fd3c40140b5bfa09de5baadcb6c34958aae2c84c202a743bc013"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0006.png",
+      "status": "missing",
+      "expected_sha256": "5ced754631254662196fd10382563b6e2c12dcae9a8558f5d61233bd40c49a8f"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0006.png",
+      "status": "missing",
+      "expected_sha256": "c8f6222e95f6098d8cf10b0c4acf6e327a40b49133f740ead5e5a0986ceff7f8"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0006.png",
+      "status": "missing",
+      "expected_sha256": "181c7f4f3cee22d63cb5dc8da7edd8a64c5b8d1174977bf1f7f70e52c2e040c8"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0006.png",
+      "status": "missing",
+      "expected_sha256": "09e4662532c756ec66fbd8e9808a9925d69309ce16d379c643c4276a0dbf9a98"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0006.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0006.png",
+      "status": "missing",
+      "expected_sha256": "68233b2727fe5f9628b7ce7b5b271babd58ff39683a807fe3ac5b78bf56ad164"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0007.png",
+      "status": "missing",
+      "expected_sha256": "f0c7c5a88f4636d0cc7762791eabbe42f5c01b084c68f7e7f674c829eea35d5c"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0007.png",
+      "status": "missing",
+      "expected_sha256": "fa83d98f25ca1122418a4180e0c4e02107f0ba8ba0d328b30d2bd16d5a737d8d"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0007.png",
+      "status": "missing",
+      "expected_sha256": "a53488060501f9f8937dcecd9a8c72b8268ef5bd179e4a0b3d4f7756fe0038f0"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0007.png",
+      "status": "missing",
+      "expected_sha256": "1e5b4d821e9a7bdd528cccacb3d4fd765af22ac2cf14700196e566ef6d3a0729"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0007.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0007.png",
+      "status": "missing",
+      "expected_sha256": "fcd94087909d3f1fccf76765e3399e21ef56f63d0eaa20ce84bc6768439e2a03"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0008.png",
+      "status": "missing",
+      "expected_sha256": "620a68ca896b0fc4bac01688cad4dbb8fd44304e522a107fd4d94c670d9847ee"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0008.png",
+      "status": "missing",
+      "expected_sha256": "8912355c113e50ac3468222abe2ac9651b64455dddc00957bb32e6f324862f65"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0008.png",
+      "status": "missing",
+      "expected_sha256": "6f4904be3a0196c495230f7767b62a0d2920381a4f576bedc9f1669fdd398a5c"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0008.png",
+      "status": "missing",
+      "expected_sha256": "2424fcde25bfc7cc8c3c937b38f75ec9df39a207cb5c51406ba5c35b81f6fa26"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0008.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0008.png",
+      "status": "missing",
+      "expected_sha256": "7cae770361c3f7e596b5caf931d57b05d198dc177e640010c1321894c57ae0cd"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0009.png",
+      "status": "missing",
+      "expected_sha256": "368c352f63c4e1195d77b61843b816933e758560e6bf85ee8979257687960ce1"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0009.png",
+      "status": "missing",
+      "expected_sha256": "62120402c8669c1ab82933e4cbb3abcb991f23b4d7b4963c6481cf3517811e42"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0009.png",
+      "status": "missing",
+      "expected_sha256": "6ab1c60e5a57e9c6d2e330e4d09091f59d2c8b96658f3ef5161cb16d1e119acc"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0009.png",
+      "status": "missing",
+      "expected_sha256": "8fb8b2b26a9e42e7570035a45b6f351a24eece131fbdcf448faa579bc6ee672c"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0009.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0009.png",
+      "status": "missing",
+      "expected_sha256": "93529ef55a7d60b62feab61ab4f1b2fb45597b15a39c1113ad36e3518f03ff10"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0010.png",
+      "status": "missing",
+      "expected_sha256": "3f6562fe77b9a79fa1c0e0ac6acac481d4faef6c48d593bf857061403a6b6ae4"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0010.png",
+      "status": "missing",
+      "expected_sha256": "200b9a703578a17eac16b42690080b6f721d3b66f58eb24b9405f6e673cfc9bc"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0010.png",
+      "status": "missing",
+      "expected_sha256": "bc59e1d5c381a8fc6c21cec715cb21220751c41f68271a29001517545127168a"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0010.png",
+      "status": "missing",
+      "expected_sha256": "87038a393483df4011233f5d6db9d3f0a3570c3f0073857f24d4a6be92ad0c03"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0010.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0010.png",
+      "status": "missing",
+      "expected_sha256": "82bbf807daba90dd3f924fe4763beb64793f68e3bf6c0b6ee888957ded84dea0"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0011.png",
+      "status": "missing",
+      "expected_sha256": "c3a333a8831c513f23186d4813f474531cb492d79b5adb6e931168bc5b5fd274"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0011.png",
+      "status": "missing",
+      "expected_sha256": "b50b00e270f5ec8458f05590ce99398dc9de22f17690eba486a4e74f61997711"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0011.png",
+      "status": "missing",
+      "expected_sha256": "3dd5de01390a434a54a1192f8d5b43bb910136b8fb18357162eb70609e1b08a0"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0011.png",
+      "status": "missing",
+      "expected_sha256": "32c8c1ad9056bbe24f1444c575e8f4aa832bb4819215c1a88c6787d4cbed1083"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0011.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0011.png",
+      "status": "missing",
+      "expected_sha256": "2997a8f80512b02600fed40cb12bc03ab16eb25b7a7e6aeb4fea127053e2ff22"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0012.png",
+      "status": "missing",
+      "expected_sha256": "693897957bee0994c5f990aafa807494aff6dab0a2a6f38fb092592a11212f06"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0012.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0012.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0012.png",
+      "status": "missing",
+      "expected_sha256": "787a472e898f7925c3d6cbb2f4cd68606d9231b46263fca580af3a8add420f54"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0012.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0012.png",
+      "status": "missing",
+      "expected_sha256": "7c39f360203c761603582761f044fb8010f888a05ff04cbe5f90d5abc9dab3d1"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0013.png",
+      "status": "missing",
+      "expected_sha256": "693897957bee0994c5f990aafa807494aff6dab0a2a6f38fb092592a11212f06"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0013.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0013.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0013.png",
+      "status": "missing",
+      "expected_sha256": "787a472e898f7925c3d6cbb2f4cd68606d9231b46263fca580af3a8add420f54"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0013.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0013.png",
+      "status": "missing",
+      "expected_sha256": "7c39f360203c761603582761f044fb8010f888a05ff04cbe5f90d5abc9dab3d1"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0014.png",
+      "status": "missing",
+      "expected_sha256": "6f62fd932dd7acfe1cecae3ed9e8d33da0008f23fce46c17f77ec9216b633379"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0014.png",
+      "status": "missing",
+      "expected_sha256": "dbee00220257d991e7c7060fbbbf8873d37b8451b10249575b6581fe177be99c"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0014.png",
+      "status": "missing",
+      "expected_sha256": "4a74eb4b4ce9e590e9167875de98ce2415415b94f1c197b38a0ad50e78693450"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0014.png",
+      "status": "missing",
+      "expected_sha256": "5aa910cd1b4545a61af92e2be61ddb8b44a0cbd10f5ba55e5e1089c69370912a"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0014.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0014.png",
+      "status": "missing",
+      "expected_sha256": "c6f4c828df8c0af384f473bbec71731601a17d38a171d0fa046fcf6ebfbc0705"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0015.png",
+      "status": "missing",
+      "expected_sha256": "f352972d11ec9898959c8d1fd4dfed683cace8be2676ceb0d631c2f68dbb1c18"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0015.png",
+      "status": "missing",
+      "expected_sha256": "f06a755433a64992ed0b299b9ee8e9a677d88b36d139fd8c4046399e5c0b8010"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0015.png",
+      "status": "missing",
+      "expected_sha256": "9e3cea5638309b2b2d748620cd07f24e3035e0ae5286aae54dc0e15e0f512ddc"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0015.png",
+      "status": "missing",
+      "expected_sha256": "ee609c847e06e173d932809c2fb35e091eb90f3dbad3552fa92423e2d640a69d"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0015.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0015.png",
+      "status": "missing",
+      "expected_sha256": "3fdc7778d3719605c3a4d21ec893d0fd6ced8bdec3c24a85add0796890f72cf4"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0016.png",
+      "status": "missing",
+      "expected_sha256": "eef704d362bf921a77bf05a1e40092da2d8bd6eeab558453cf53def24bf089c2"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0016.png",
+      "status": "missing",
+      "expected_sha256": "0cd1f52a0621985a7c6f4af399c90b5e82124e21576efe3e718d0306e771935d"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0016.png",
+      "status": "missing",
+      "expected_sha256": "2a0b706410442a4c710e38364d2f74d8d2c2c9b1706fc4837e1707f70d92512c"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0016.png",
+      "status": "missing",
+      "expected_sha256": "0faf5f87493d2765c39c4dfbd61a14df2b338130971296e8d081386bc05c2ce1"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0016.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0016.png",
+      "status": "missing",
+      "expected_sha256": "c8122c4f042e73efff79bcb5a233afe6c07b2ecf003e3ca2a49075e414e6227a"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0017.png",
+      "status": "missing",
+      "expected_sha256": "ba853499935d88f83ed4df746b35566c5fd8138d69c1eba1c79bcd7a69e5f5c5"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0017.png",
+      "status": "missing",
+      "expected_sha256": "bcd493689bf595b2f73121a089b859514bc522f9064870dacd5579fbcfac1528"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0017.png",
+      "status": "missing",
+      "expected_sha256": "8bd09d3d237774db53f1d49366d41350bafb7580647266dd22a63adeabe12609"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0017.png",
+      "status": "missing",
+      "expected_sha256": "2b3143642b1189e266966cbf1a4b18446969ff761e00eed5583d9af06fec0b42"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0017.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0017.png",
+      "status": "missing",
+      "expected_sha256": "392dd7a221f7e9b87ff1b68d0ee6aac1fd32cb162a0d03f528d63dc74b68ba3c"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0018.png",
+      "status": "missing",
+      "expected_sha256": "b434cf4115b739b31a801447fe14bc96c464053340ec3f58c40021f1c808bd4e"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0018.png",
+      "status": "missing",
+      "expected_sha256": "ecbf43f16eb3d4f14b54c08a9180edf1855a5c0d80f4eb0e4c71d2b4779a8ec6"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0018.png",
+      "status": "missing",
+      "expected_sha256": "1b00a4ba89439586bb3d0d8135b06412afb42a82fea7c51f511fc59789e0eaab"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0018.png",
+      "status": "missing",
+      "expected_sha256": "243004f03a3a619e7816bed0f78ffc98112030def1130bbe57a9d9b46da0c574"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0018.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0018.png",
+      "status": "missing",
+      "expected_sha256": "2d65481c636203aa19e5fa4f6d3a6661f5049fc9f4a3c4c3d72865946ff62f78"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0019.png",
+      "status": "missing",
+      "expected_sha256": "0733150baceaec0c8a921ea7d933e1695e27f2f580414ff7d32cff6cbf9a3dca"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0019.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0019.png",
+      "status": "missing",
+      "expected_sha256": "b6824e0539f2c4cb00c233bbac58d1e1f827043d5e53a7103c023885b1e4a163"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0019.png",
+      "status": "missing",
+      "expected_sha256": "84584a81f48b0259a63c93c42304c3bf5f8dce5ac14b5879700ed7635d02e359"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0019.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0019.png",
+      "status": "missing",
+      "expected_sha256": "7bf4960582a5f56baf0e80e5ee8af7c6eaee61c90d01d6f61f7245d31eb7075d"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0020.png",
+      "status": "missing",
+      "expected_sha256": "ee97e02507e83d7ce3569c5003b9141494f3b213a4dfd80180f1bf5c5f9304a5"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0020.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0020.png",
+      "status": "missing",
+      "expected_sha256": "edf2bdddcb259eced45db07c159a570e73237e20f782c10e0b8f3001f6d98218"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0020.png",
+      "status": "missing",
+      "expected_sha256": "6facf0cdd87de6591b34931c6ded953b71a9f3218bbc4329fef05c46ea926a37"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0020.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0020.png",
+      "status": "missing",
+      "expected_sha256": "c49c7b11c1ff9f867e17422b5e341cd1cc81b9e6f795bffcc5a1440e0e19ca00"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0021.png",
+      "status": "missing",
+      "expected_sha256": "32720f03773180e4a9853b341e5fa5da067a67eafe80e872297f6cab2c41a847"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0021.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0021.png",
+      "status": "missing",
+      "expected_sha256": "1511f7590fb8337b9f0e708a6d0fabc066c593d608ad7a21ed4704cb2c4ec3af"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0021.png",
+      "status": "missing",
+      "expected_sha256": "014c31dfa589134df02d8a44b6c9558a8f2d556977c445646aa6480df1006c6a"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0021.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0021.png",
+      "status": "missing",
+      "expected_sha256": "0c0619cdeefc243aa524c1596aa4c5ceaafd9594cf6cf5ad0aad31013c01096d"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0022.png",
+      "status": "missing",
+      "expected_sha256": "7801fa31f4ecf272f09abb063e460cbd2c99b95ebabeaf43b8acd68695097ec0"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0022.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0022.png",
+      "status": "missing",
+      "expected_sha256": "e69b9a7d014997c1b2c725ff7b0884141da59ed1b09fe597947b7103da96caca"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0022.png",
+      "status": "missing",
+      "expected_sha256": "4102ca90cebbdd4df99f4939857a0562db639e259ac92bb5f5a79f038f51810f"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0022.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0022.png",
+      "status": "missing",
+      "expected_sha256": "6dac09519c773874096a88eebb5942eb4b5a5271c40f4f3c5a6d0630868ebae8"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0023.png",
+      "status": "missing",
+      "expected_sha256": "9d8041412bae5652b1cb2ddfbdb5508f9a331362d99d53dd99445b1fca760a51"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0023.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0023.png",
+      "status": "missing",
+      "expected_sha256": "cedf2687071e188f8430eee8522330138a760b2f6d5667bd8f0edb3dd67fc277"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0023.png",
+      "status": "missing",
+      "expected_sha256": "e9a391e04e8a67cbc60c6fedc8ca04d2a2f5b534dd6f09323f8a404e1aa61e3e"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0023.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0023.png",
+      "status": "missing",
+      "expected_sha256": "e3d89af8da763e391e89368149de425325272346cd25cafdcebcdfcada50b2e6"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0024.png",
+      "status": "missing",
+      "expected_sha256": "b06a705876f877d8b7872a8e1cd6c1d058ec2946ae55ae2945338bac5cccd5a8"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0024.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0024.png",
+      "status": "missing",
+      "expected_sha256": "ea201243987b87755d8253a475295310577696296fb3dcf7fb74c0990fd8407e"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0024.png",
+      "status": "missing",
+      "expected_sha256": "de68431582aa14092d6e24a0d225cd76a5b4848332750237991d62675e6f3803"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0024.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0024.png",
+      "status": "missing",
+      "expected_sha256": "104b10301d4aad7ad3977283a33469ae401b93b48f86d066a2c924931b740cb0"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0025.png",
+      "status": "missing",
+      "expected_sha256": "9a9dd713c392e227b4ce8e3d94e76d1778793125ed07177187514a5fcc5b6cbf"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0025.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0025.png",
+      "status": "missing",
+      "expected_sha256": "8bfce441162a4eb28fded7baff5fa7d7b9a610fd541884a9d05225dc25dd1fd2"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0025.png",
+      "status": "missing",
+      "expected_sha256": "f1cfb3a946c1da38acd05c33aa4cb30dcd1ad121a4532bfc6ce5572e20933d86"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0025.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0025.png",
+      "status": "missing",
+      "expected_sha256": "e8c8a001ed213a750114e7f4f18d26f4d131e506391daa04440d44dffdc7645a"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0026.png",
+      "status": "missing",
+      "expected_sha256": "477a2080df10a583540ec6f7ca75554906db6b9285fb1dc621dfb63e63bb87f8"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0026.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0026.png",
+      "status": "missing",
+      "expected_sha256": "ce81569b680f078b2e3e30cd38a02e3648ac4f1a0b070b2ef63ec80443f3627d"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0026.png",
+      "status": "missing",
+      "expected_sha256": "98a03ddb99607a38e21593a8ba15e7e68f5c1dcc8e95dcdd864a47b4984ee86c"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0026.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0026.png",
+      "status": "missing",
+      "expected_sha256": "48b0f20864a807b6e4726b93f47529081fa2c9c7d6b55488f545d347d40ca0b6"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0027.png",
+      "status": "missing",
+      "expected_sha256": "67d7b453e9e1d5ba12b69f92560c5e18c3313d8ed27ab3f0c52b355388c3585c"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0027.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0027.png",
+      "status": "missing",
+      "expected_sha256": "bb1bc8fd5a64455b086edf4803c3f7e57a3fa190a2dc63cf270f767723158822"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0027.png",
+      "status": "missing",
+      "expected_sha256": "8d009394e8fc46f77f5e89bf57c6f4379d042ba9892e7ef9eed92ab4f2620099"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0027.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0027.png",
+      "status": "missing",
+      "expected_sha256": "5645f870e26b9e56ce3db6d0a134c41738671ddae4b03f7f9d3e70cb285f604a"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0028.png",
+      "status": "missing",
+      "expected_sha256": "3948a0652eca119ddd6327996b07a4e0f8ff797fd9aebd2b67936bdada340b18"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0028.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0028.png",
+      "status": "missing",
+      "expected_sha256": "c9f881aba00a07a6b3a45e522fcdb6ec9feea73d02919374d006c7fbf3e6cfdf"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0028.png",
+      "status": "missing",
+      "expected_sha256": "a1fccf106734102c44a405c6e50957a882cfdc3522dc799cf475dff776a682fe"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0028.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0028.png",
+      "status": "missing",
+      "expected_sha256": "8e24082d1ef0f1d8d192360a2ae72d7a72a0656e81d14e0f4b463d5cca2e1d62"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0029.png",
+      "status": "missing",
+      "expected_sha256": "1dc0f5b7e0c339bb2a17d3a1cec0f83a63e6cd1fbfbcff1c0c245a337ac4e7cc"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0029.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0029.png",
+      "status": "missing",
+      "expected_sha256": "1c0cceaaf7b29a7c4e28f5e359f9c0ecb39f741d10edfacd81280b8a069616fc"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0029.png",
+      "status": "missing",
+      "expected_sha256": "f18b16da538c8b4076e0313c8076169049e6cdd73309904598b97f023c89978c"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0029.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0029.png",
+      "status": "missing",
+      "expected_sha256": "3f18b3fd2475dbfeb5229330bb3dbdd377ae2100f3323a8f35d58551df7e7e2f"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0030.png",
+      "status": "missing",
+      "expected_sha256": "bd8feba85fdb7148e5f9ddc7e6dc9876ad0021a31a96b1e9d44834c58b59c7b4"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0030.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0030.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0030.png",
+      "status": "missing",
+      "expected_sha256": "f0784b0702d38ef8a38a6f0975fe0214eb0511c434107c37afb8498c66180535"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0030.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0030.png",
+      "status": "missing",
+      "expected_sha256": "6afec9a20c1f16e9117968f2d4d991ff4bc8ba116f5fd327e8abc21b2e75dcff"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0031.png",
+      "status": "missing",
+      "expected_sha256": "dcbcc5a65cf7df7bc69e30a8bd063bbf4d85e34934f5613f9bd231de4957abaa"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0031.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0031.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0031.png",
+      "status": "missing",
+      "expected_sha256": "cd552b239e357f6ede201c8a91c3cb57936e2f4e2c3b76bd1aef20fbc9f4a3f6"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0031.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0031.png",
+      "status": "missing",
+      "expected_sha256": "44e3aef6a9ca36069030028b3b45e87e86e7cfcfa2f70fc21ebe81992de64c86"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0032.png",
+      "status": "missing",
+      "expected_sha256": "49213419b93f559d73cd8982560323c08993d441a5fbfbbe5f2e180e414d8a0f"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0032.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0032.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0032.png",
+      "status": "missing",
+      "expected_sha256": "420c108feb73aff729f9aa7fc222119b405da2cae120d49c87ef3d1766d7b4e6"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0032.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0032.png",
+      "status": "missing",
+      "expected_sha256": "b5f498437da4078f04b3eaa31883c774ebfd53fca6ade47d726491c86c22bf74"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0033.png",
+      "status": "missing",
+      "expected_sha256": "578b6bfeefca92cf7e34aae8dbb83042f7876e9a1a63722a9e37ef949196029e"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0033.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0033.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0033.png",
+      "status": "missing",
+      "expected_sha256": "28d8920961ba57d2a8ce0a2579ca716c5eaa8b2e9a4662e2f224a85667a1ca04"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0033.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0033.png",
+      "status": "missing",
+      "expected_sha256": "df1e16ac7c4467a527b6f51e0d727132dfcce8c0449979dd09ce23b5ebaf574e"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0034.png",
+      "status": "missing",
+      "expected_sha256": "9cfa82b6917e373c6771b73c9e47e6be39d55c4633d7a6c664e6949382b9feaf"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0034.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0034.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0034.png",
+      "status": "missing",
+      "expected_sha256": "c48d75a25dd8d2ea574aedb8e01e92ccc2099d544222eb81417064b47ce94bd7"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0034.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0034.png",
+      "status": "missing",
+      "expected_sha256": "f440026ec931db993eaec345195153596c9de36bba7d7afaa77c637cc859252e"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0035.png",
+      "status": "missing",
+      "expected_sha256": "1cffad7cf99d353eee504a58cc30eae87ccd008b7951949bd98551063353c348"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0035.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0035.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0035.png",
+      "status": "missing",
+      "expected_sha256": "fdb7101fd024271890314a0de36ea2f9576ef306587c98720765a9c8f17bba7e"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0035.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0035.png",
+      "status": "missing",
+      "expected_sha256": "9286324bf1e2ccfbd977b1167a35e34ceea7fa6f6bc0e1959ffb0585faebaece"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0036.png",
+      "status": "missing",
+      "expected_sha256": "784f1931aabe13e67630ccd4278e22c60618c0bd2683086ba4cd937dcc2e6e36"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0036.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0036.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0036.png",
+      "status": "missing",
+      "expected_sha256": "bdbb90132fd6321d59b7f77c8ecb8738846d3fb529c981fd23356c9056732348"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0036.png",
+      "status": "missing",
+      "expected_sha256": "1f646878db078c5e8acdf71697b9a0817c98db23153b1df791f75d744b863800"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0036.png",
+      "status": "missing",
+      "expected_sha256": "c0309f10e2a74121ab148d6432aeecd54d14632412c9cc3edb214865dfa5dfd4"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0037.png",
+      "status": "missing",
+      "expected_sha256": "2d6bb799fc768b6136ae173131862a8cede46e3b5c76736d0d79c245f286e151"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0037.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0037.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0037.png",
+      "status": "missing",
+      "expected_sha256": "279c6d0743f537c9d9a4500ee817ea40e7851b36e7a827543fb6cfce36ac5195"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0037.png",
+      "status": "missing",
+      "expected_sha256": "6492b7c4d1f1efecfbf0704479c15cde0afafd455a99eae5bd3d352d6215307b"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0037.png",
+      "status": "missing",
+      "expected_sha256": "820a882e6aac55fd9ec703661c71886eba99ce1bc31fc0b4eb435fb22752fb15"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0038.png",
+      "status": "missing",
+      "expected_sha256": "23de18c1e26a59a7f0181444a4cb58a5a5c0cc7faedee9c7e9b7771ebf942aa8"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0038.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0038.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0038.png",
+      "status": "missing",
+      "expected_sha256": "eb494f35f62ffc7971447923c402a12fa0e40af29a6b10601e83b7150075beb7"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0038.png",
+      "status": "missing",
+      "expected_sha256": "ed00fd37020342a885012bac9bfe5e400ef57bda13df85f0bab960dc67ae6a33"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0038.png",
+      "status": "missing",
+      "expected_sha256": "4eb841fcc4497d6ca27366c7af984bdf37bc6a5af35be681d701ef42be586eae"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0039.png",
+      "status": "missing",
+      "expected_sha256": "e3830a33541de4b13898dc1c75a6e227132b067984162d250b6bbbddce098f9e"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0039.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0039.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0039.png",
+      "status": "missing",
+      "expected_sha256": "c6159a133d7fcf692c2d41026adb055baed4705db9d1f6996e16c1f2850b95d4"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0039.png",
+      "status": "missing",
+      "expected_sha256": "699c46ffaff1fd183594507c441bbb4c5231b40260091f89ad08910131db2496"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0039.png",
+      "status": "missing",
+      "expected_sha256": "97164e07596ea62e0d9345ea19e0231d0879174ff3746a36f92e332878304ab5"
+    },
+    {
+      "file": "CAMERA-PLANNED-01-0040.png",
+      "status": "missing",
+      "expected_sha256": "d62045843742755265ddcba171aa83f903b95f3df5ad215f39222cb3a073a3fe"
+    },
+    {
+      "file": "CAMERA-PLANNED-02-0040.png",
+      "status": "missing",
+      "expected_sha256": "5ddd6ebe84c3093a549f5982afecc1dd816fa89a41611e40bd7b4812833234d7"
+    },
+    {
+      "file": "CAMERA-PLANNED-03-0040.png",
+      "status": "missing",
+      "expected_sha256": "91e7e66612cc79007eb5f2e7495799070826ff1cb161473b4cfa6feef833a075"
+    },
+    {
+      "file": "CAMERA-PLANNED-04-0040.png",
+      "status": "missing",
+      "expected_sha256": "5770dab96350c4a9c6f838608f960b3bdfb733db1c60efc45b53bc67e831e50d"
+    },
+    {
+      "file": "CAMERA-PLANNED-05-0040.png",
+      "status": "missing",
+      "expected_sha256": "a2dac3f4f8c9716b35ba2e622aa1c0453e30005e3231b4f64c094a627e6535f5"
+    },
+    {
+      "file": "CAMERA-PLANNED-06-0040.png",
+      "status": "missing",
+      "expected_sha256": "bfc02d8078575f87f8ddb6979257dd483c904e7ece45457aa00057f2ad73655f"
+    }
+  ],
+  "models": [
+    {
+      "file": "yolox_nano.onnx",
+      "status": "verified",
+      "expected_sha256": "c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d",
+      "actual_sha256": "c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d",
+      "bytes": 3659407
+    },
+    {
+      "file": "yolox_s.onnx",
+      "status": "verified",
+      "expected_sha256": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+      "actual_sha256": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+      "bytes": 35858002
+    },
+    {
+      "file": "osnet_ain.py",
+      "status": "verified",
+      "expected_sha256": "a43b495866a4b1645cd134a30c3011592e8c6826ba4781955a135588cf46cd25",
+      "actual_sha256": "a43b495866a4b1645cd134a30c3011592e8c6826ba4781955a135588cf46cd25",
+      "bytes": 17731
+    },
+    {
+      "file": "osnet_ain_ms_d_c_wtsonly.pth",
+      "status": "verified",
+      "expected_sha256": "482f09440f28ac92b7aa215a56323430f03aaf2657273269af02a670d3c8440a",
+      "actual_sha256": "482f09440f28ac92b7aa215a56323430f03aaf2657273269af02a670d3c8440a",
+      "bytes": 8957365
+    },
+    {
+      "file": "osnet_ain.onnx",
+      "status": "missing",
+      "expected_sha256": "3bf3e7d9734317443e2ace2a2a7185a653e03a26bb069412a923feef4620a0ab"
+    }
+  ],
+  "transfer_inputs_verified": false,
+  "audit_inputs_ready": false,
+  "ground_truth_opened": false,
+  "baseline_modified": false,
+  "licenses_recorded_in": [
+    "simulation/spatial-office/perception/README.md",
+    "docs/spatial-simulation/evidence/p2-09/09.7/reid-model.json"
+  ],
+  "limitations": [
+    "Operator authorized repeating capture locally; original PNGs are historical results, not a prerequisite.",
+    "Local captures must have their own manifest/evidence and be compared to the preserved baseline.",
+    "MP4 derivatives are not an equivalent pixel corpus.",
+    "OSNet export must match the recorded hash; export parity alone is insufficient.",
+    "No detector, tracker, Core or GPU benchmark is run by this command."
+  ]
+}

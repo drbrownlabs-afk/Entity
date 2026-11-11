@@ -1,0 +1,13 @@
+﻿{
+    "exit_code":  3010,
+    "before":  {
+                   "FeatureName":  "VirtualMachinePlatform",
+                   "State":  0
+               },
+    "finished_at_utc":  "2026-11-11T00:17:26.9915041Z",
+    "automatic_reboot_requested":  false,
+    "after":  {
+                  "FeatureName":  "VirtualMachinePlatform",
+                  "State":  2
+              }
+}

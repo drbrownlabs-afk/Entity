@@ -1,0 +1,8 @@
+test_legitimate_frame_metadata (test_frame_contract.FrameContractTests.test_legitimate_frame_metadata) ... ok
+test_no_actor_truth_or_precomputed_detection_fields (test_frame_contract.FrameContractTests.test_no_actor_truth_or_precomputed_detection_fields) ... ok
+test_no_paths_to_evaluator_or_other_inputs (test_frame_contract.FrameContractTests.test_no_paths_to_evaluator_or_other_inputs) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.090s
+
+OK

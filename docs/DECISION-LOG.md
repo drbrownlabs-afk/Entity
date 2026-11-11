@@ -1,4 +1,7 @@
 # ENTITY — Registro de decisiones y autoridad
+
+## ADR-2026-11-10-P2-09-RECAPTURA-LOCAL — decisión expresa del operador
+Los PNG anteriores son resultados del ensayo histórico y no se exigen para transferir/repetir el test en este equipo.09.11 repite captura y procesamiento localmente usando la configuración/protocolo existente, preserva baseline y guarda nuevos manifiestos/evidencias para comparar diferencias. Sustituye la interpretación de que la ausencia de los246PNG bloquea por sí sola la recaptura. No omite09.10 ni sus gates de entorno/aislamiento. La imagen referencial entregada `WhatsApp Image 2026-11-10 at 19.09.06.jpeg` guía C central de cuatro cabezales y C1–C4 diagonales/alas; ajustar con geometría y evidencia óptica real, sin tratarla como plano métrico. No modifica canon, CoreP1 niP3 ni afirma cámaras instaladas/calibradas. Estado de ejecución y reinicio pendiente en evidencia09.10.
 **Regla:** decisiones inmutables como registros; una nueva entrada puede sustituir otra indicando ID y fecha. Nunca borrar evidencia histórica. Canon solo cambia con aprobación explícita del operador.
 
 ## ADR-2026-11-08-001 — Memoria jerárquica y tres procesos (ACEPTADA)

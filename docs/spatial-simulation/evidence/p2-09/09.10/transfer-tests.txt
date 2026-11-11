@@ -1,0 +1,9 @@
+test_cli_refuses_overwriting_frozen_evidence (test_transfer.TransferTests.test_cli_refuses_overwriting_frozen_evidence) ... ok
+test_corrupt_and_missing_model_fail_integrity (test_transfer.TransferTests.test_corrupt_and_missing_model_fail_integrity) ... ok
+test_import_cannot_read_outside_input_folder (test_transfer.TransferTests.test_import_cannot_read_outside_input_folder) ... ok
+test_local_recapture_does_not_require_old_pngs (test_transfer.TransferTests.test_local_recapture_does_not_require_old_pngs) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.670s
+
+OK
