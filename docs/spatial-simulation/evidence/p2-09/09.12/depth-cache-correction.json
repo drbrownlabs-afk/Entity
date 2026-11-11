@@ -1,0 +1,11 @@
+{
+  "phase": "P2-09.12",
+  "invalidated_coverage_runs": [
+    "refined2-open",
+    "refined3-open",
+    "refined3-closed"
+  ],
+  "reason": "Identical visibility under open/closed opaque security doors despite different backgrounds. PlayCanvas RenderPass depth storage defaults false for transient renderbuffer targets. Native WebGL can invalidate that attachment before external copies.",
+  "correction": "Separate CCTV adapter using explicit depth textures, whose RenderPass storeDepth is true. Historical helper and baseline are unchanged.",
+  "required_retest": "Full stored-depth open/closed probes, useful pixel coverage and negative control; no gate inferred from the invalidated values."
+}

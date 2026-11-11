@@ -1,5 +1,11 @@
 # ENTITY — Registro de decisiones y autoridad
 
+## ADR-2026-11-11-P2-09-CCTV-C — selección virtual y calibración separada
+- Bajo la autonomía ya aprobada en la instrucción consolidada, seleccionar virtualmente AXIS P3747-PLVE+4P3267-LVE para cinco dispositivos/ocho sensores independientes. Comparación y fuentes en09.12/README.md; no compra ni instalación física.
+- Adaptar la disposición conceptual al edificio real. Ajustes medidos corrigen dintel/puertas, vegetación, vidrio y escala del lounge; conservar posiciones iniciales/finales y evidencia de intentos fallidos. No modificar geometría ni cámaras históricas.
+- Perfil óptico y editor separados; metadatos de procedencia inmutables, intrínsecos derivados, límites virtuales explícitos. Validar con píxeles/depth y control de puertas cerradas, no con conos únicamente. GT/amodal exclusivamente en evaluador local; publicar agregados y renders sintéticos.
+- Gate técnico09.12 documentado en `09.12/gate.json`; no equivale a recall95%, continuidad global, rendimiento en vivo o aceptación humana09.18. No cambia canon ni contratos/CoreP1. Sustituye solamente la elección provisional del SKU en la investigación09.10.
+
 ## ADR-2026-11-10-P2-09-RECAPTURA-LOCAL — decisión expresa del operador
 Los PNG anteriores son resultados del ensayo histórico y no se exigen para transferir/repetir el test en este equipo.09.11 repite captura y procesamiento localmente usando la configuración/protocolo existente, preserva baseline y guarda nuevos manifiestos/evidencias para comparar diferencias. Sustituye la interpretación de que la ausencia de los246PNG bloquea por sí sola la recaptura. No omite09.10 ni sus gates de entorno/aislamiento. La imagen referencial entregada `WhatsApp Image 2026-11-10 at 19.09.06.jpeg` guía C central de cuatro cabezales y C1–C4 diagonales/alas; ajustar con geometría y evidencia óptica real, sin tratarla como plano métrico. No modifica canon, CoreP1 niP3 ni afirma cámaras instaladas/calibradas. Estado de ejecución y reinicio pendiente en evidencia09.10.
 **Regla:** decisiones inmutables como registros; una nueva entrada puede sustituir otra indicando ID y fecha. Nunca borrar evidencia histórica. Canon solo cambia con aprobación explícita del operador.

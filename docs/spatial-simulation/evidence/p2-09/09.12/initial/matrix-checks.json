@@ -1,0 +1,119 @@
+{
+  "phase": "P2-09.12",
+  "calibration_matrix_checks_passed": true,
+  "all_nonflat_images": false,
+  "pixel_coverage_gate_passed": false,
+  "devices": 5,
+  "independent_sensors": 8,
+  "checks": [
+    {
+      "sensor_id": "C-S1",
+      "device_id": "C",
+      "samples": 188,
+      "max_reprojection_error_pixels": 1.6582598618697375e-05,
+      "pose_error_native": 6.365751854531254e-07,
+      "image_stddev": 7.850150464400125,
+      "nonflat_image_check_passed": false,
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C-S2",
+      "device_id": "C",
+      "samples": 48,
+      "max_reprojection_error_pixels": 1.2320282166911056e-05,
+      "pose_error_native": 3.3335453997196396e-07,
+      "image_stddev": 56.18063609328552,
+      "nonflat_image_check_passed": true,
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C-S3",
+      "device_id": "C",
+      "samples": 2,
+      "max_reprojection_error_pixels": 1.4918605529601336e-05,
+      "pose_error_native": 3.4204056298392516e-07,
+      "image_stddev": 48.874012646464315,
+      "nonflat_image_check_passed": true,
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C-S4",
+      "device_id": "C",
+      "samples": 53,
+      "max_reprojection_error_pixels": 2.1950393314540406e-05,
+      "pose_error_native": 5.428606772994726e-07,
+      "image_stddev": 53.15725259058712,
+      "nonflat_image_check_passed": true,
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C1-S1",
+      "device_id": "C1",
+      "samples": 285,
+      "max_reprojection_error_pixels": 2.3276126583482437e-05,
+      "pose_error_native": 7.853788286382724e-08,
+      "image_stddev": 40.00720919026219,
+      "nonflat_image_check_passed": true,
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C2-S1",
+      "device_id": "C2",
+      "samples": 321,
+      "max_reprojection_error_pixels": 2.444724714223412e-05,
+      "pose_error_native": 4.362098262600256e-07,
+      "image_stddev": 3.04336805362729,
+      "nonflat_image_check_passed": false,
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C3-S1",
+      "device_id": "C3",
+      "samples": 166,
+      "max_reprojection_error_pixels": 1.5800406643506903e-05,
+      "pose_error_native": 9.512869443284444e-07,
+      "image_stddev": 65.61206465272741,
+      "nonflat_image_check_passed": true,
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C4-S1",
+      "device_id": "C4",
+      "samples": 63,
+      "max_reprojection_error_pixels": 1.614460211385449e-05,
+      "pose_error_native": 6.555446923073305e-07,
+      "image_stddev": 49.10721644879864,
+      "nonflat_image_check_passed": true,
+      "resolution": [
+        1296,
+        972
+      ]
+    }
+  ],
+  "limits": [
+    "Virtual intrinsics, not a factory physical calibration",
+    "Pixel coverage with controlled probes still required",
+    "Co-located head aperture approximation disclosed in profile"
+  ]
+}

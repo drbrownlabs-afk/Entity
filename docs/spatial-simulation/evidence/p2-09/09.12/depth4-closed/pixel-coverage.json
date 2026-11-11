@@ -1,0 +1,186 @@
+{
+  "phase": "P2-09.12",
+  "run": "depth4-closed",
+  "simulation_only": true,
+  "static_probes": 57,
+  "manifest_sha256": "70335254b1e1c04a9f1144b6c2a26acdd55f5dea7959e8c9a01acd7b1ece2d64",
+  "profile_sha256": "f140f63cb4073991b52b0ad8c70355d68c8f4c1371978bde951ebb677a2f487f",
+  "images": 456,
+  "door_scenario": "closed default doors",
+  "thresholds": {
+    "minimum_visible_fraction_of_in_frame_amodal_mask": 0.35,
+    "minimum_visible_height_pixels": 80,
+    "minimum_visible_pixels": 120,
+    "minimum_amodal_pixels": 200
+  },
+  "covered_static_probes": 55,
+  "blind_static_probes": 2,
+  "sensors": [
+    "C-S1",
+    "C-S2",
+    "C-S3",
+    "C-S4",
+    "C1-S1",
+    "C2-S1",
+    "C3-S1",
+    "C4-S1"
+  ],
+  "useful_probes_per_sensor": {
+    "C-S1": 1,
+    "C-S2": 6,
+    "C-S3": 5,
+    "C-S4": 3,
+    "C1-S1": 32,
+    "C2-S1": 11,
+    "C3-S1": 26,
+    "C4-S1": 7
+  },
+  "simultaneous_useful_overlap_matrix": [
+    [
+      1,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      6,
+      1,
+      1,
+      0,
+      5,
+      0,
+      6
+    ],
+    [
+      0,
+      1,
+      5,
+      0,
+      0,
+      4,
+      0,
+      2
+    ],
+    [
+      0,
+      1,
+      0,
+      3,
+      0,
+      3,
+      0,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      32,
+      0,
+      16,
+      0
+    ],
+    [
+      0,
+      5,
+      4,
+      3,
+      0,
+      11,
+      0,
+      6
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      16,
+      0,
+      26,
+      0
+    ],
+    [
+      0,
+      6,
+      2,
+      1,
+      0,
+      6,
+      0,
+      7
+    ]
+  ],
+  "overlap_graph_connected": false,
+  "regions": {
+    "reception": {
+      "probes": 5,
+      "covered": 5
+    },
+    "waiting": {
+      "probes": 4,
+      "covered": 4
+    },
+    "cafe-social": {
+      "probes": 4,
+      "covered": 4
+    },
+    "cafe-bar": {
+      "probes": 4,
+      "covered": 4
+    },
+    "lounge": {
+      "probes": 4,
+      "covered": 4
+    },
+    "call-01": {
+      "probes": 4,
+      "covered": 3
+    },
+    "call-02": {
+      "probes": 4,
+      "covered": 3
+    },
+    "WC-access": {
+      "probes": 4,
+      "covered": 4
+    },
+    "lockers": {
+      "probes": 4,
+      "covered": 4
+    },
+    "print": {
+      "probes": 4,
+      "covered": 4
+    },
+    "white-sector-sofas": {
+      "probes": 4,
+      "covered": 4
+    },
+    "bistro-access": {
+      "probes": 4,
+      "covered": 4
+    },
+    "dining-1": {
+      "probes": 4,
+      "covered": 4
+    },
+    "dining-3": {
+      "probes": 4,
+      "covered": 4
+    }
+  },
+  "gate_passed": false,
+  "limitations": [
+    "Unordered static poses, no trajectory/MOT/identity validation",
+    "Visibility fraction is relative to amodal silhouette clipped by image boundaries",
+    "Private evaluation masks and simulator poses are never inference inputs",
+    "Closed room interiors and closed security doors can create physical blind zones"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "phase": "P2-09.12",
+  "technical_gate_passed": true,
+  "checks": {
+    "five_devices_eight_independent_sensors": true,
+    "canonical_measured_poses_match": true,
+    "same_static_geometry": true,
+    "explicit_depth_storage": true,
+    "actual_camera_matrices": true,
+    "eight_nonflat_views": true,
+    "editor_persistence_and_support": true,
+    "metadata_contract_guards": true,
+    "each_sensor_multiple_useful_probes": true,
+    "measured_overlap_connected": true,
+    "all_sampled_circulation_regions_covered": true,
+    "closed_door_negative_control": true,
+    "no_browser_errors": true
+  },
+  "profile_id": "cctv-c-v1",
+  "profile_file_sha256": "2c036247f9fb6b330542ede86978de088ae8ac1977178ddbadbdc9c879ac91cc",
+  "open": {
+    "static_probes": 57,
+    "covered": 55,
+    "blind": 2,
+    "useful_probes_per_sensor": {
+      "C-S1": 16,
+      "C-S2": 6,
+      "C-S3": 5,
+      "C-S4": 4,
+      "C1-S1": 34,
+      "C2-S1": 15,
+      "C3-S1": 26,
+      "C4-S1": 7
+    }
+  },
+  "closed": {
+    "static_probes": 57,
+    "covered": 55,
+    "blind": 2
+  },
+  "paired_sensor_point_cases": 456,
+  "useful_cases_lost_with_closed_doors": 23,
+  "sampled_circulation_points": 55,
+  "sampled_closed_cabin_interior_points": 2,
+  "scope": "Virtual optical/editor calibration, unordered static dummy probes; not detector/MOT/MTMC/real-time acceptance",
+  "excluded_from_circulation_requirement": "Closed call cabin interiors remain measured/disclosed; access approaches included",
+  "ground_truth": "Private evaluator only; no per-frame poses/masks published or mounted into ENTITY",
+  "next": "P2-09.13 static sensor graph only if all checks pass; otherwise correct calibration",
+  "human_final_acceptance": false
+}

@@ -1,0 +1,127 @@
+{
+  "phase": "P2-09.12",
+  "calibration_matrix_checks_passed": true,
+  "all_nonflat_images": true,
+  "pixel_coverage_gate_passed": false,
+  "devices": 5,
+  "independent_sensors": 8,
+  "checks": [
+    {
+      "sensor_id": "C-S1",
+      "device_id": "C",
+      "samples": 209,
+      "max_reprojection_error_pixels": 1.6498986155966122e-05,
+      "pose_error_native": 2.2759734896737882e-07,
+      "image_stddev": 42.65598888727699,
+      "nonflat_image_check_passed": true,
+      "source_png_sha256": "d40b5058367d94bc75e3fb2d49e43df8aa6f93146dab049f3784d60f42eb1cb7",
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C-S2",
+      "device_id": "C",
+      "samples": 39,
+      "max_reprojection_error_pixels": 1.6274844142571965e-05,
+      "pose_error_native": 5.258247952610873e-07,
+      "image_stddev": 54.17299166900961,
+      "nonflat_image_check_passed": true,
+      "source_png_sha256": "8d2f0fba70886c3f3bc10ed1e864996f36494388b4c498c7af9455c268199e02",
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C-S3",
+      "device_id": "C",
+      "samples": 19,
+      "max_reprojection_error_pixels": 1.598016820025805e-05,
+      "pose_error_native": 4.479658262113162e-07,
+      "image_stddev": 53.294876057946595,
+      "nonflat_image_check_passed": true,
+      "source_png_sha256": "88de4c6ef7a174797288e05fbe86ff89053cd1d7522f80817a5fa193107d7766",
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C-S4",
+      "device_id": "C",
+      "samples": 50,
+      "max_reprojection_error_pixels": 2.1191787809016205e-05,
+      "pose_error_native": 2.4822834188142906e-07,
+      "image_stddev": 53.57781356378884,
+      "nonflat_image_check_passed": true,
+      "source_png_sha256": "60053b6daaf62b62e6273903a5e35ec46a51f990b6df1a06ce3af252fbe55102",
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C1-S1",
+      "device_id": "C1",
+      "samples": 269,
+      "max_reprojection_error_pixels": 2.4662457676072336e-05,
+      "pose_error_native": 4.656217722498468e-08,
+      "image_stddev": 56.97557438087749,
+      "nonflat_image_check_passed": true,
+      "source_png_sha256": "641513fb74702ddf89b19cca12715b7f70eb3fb38d86608fc53227cadd97d8ab",
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C2-S1",
+      "device_id": "C2",
+      "samples": 317,
+      "max_reprojection_error_pixels": 2.1845653236596263e-05,
+      "pose_error_native": 1.7158862490873616e-06,
+      "image_stddev": 49.45302028426718,
+      "nonflat_image_check_passed": true,
+      "source_png_sha256": "e00e2e3ab9afbcd8ffa4fdb1ab8b10ff3fa05733240a6f39d6a677e34eff13df",
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C3-S1",
+      "device_id": "C3",
+      "samples": 140,
+      "max_reprojection_error_pixels": 7.670100458767592e-06,
+      "pose_error_native": 2.9016966873740557e-07,
+      "image_stddev": 64.99680816647246,
+      "nonflat_image_check_passed": true,
+      "source_png_sha256": "6f9b0c27d829caabc77bb0dd33e3e3fba93d0c0609fed4380ef2f79fe55a815b",
+      "resolution": [
+        1296,
+        972
+      ]
+    },
+    {
+      "sensor_id": "C4-S1",
+      "device_id": "C4",
+      "samples": 63,
+      "max_reprojection_error_pixels": 1.614460211385449e-05,
+      "pose_error_native": 6.555446923073305e-07,
+      "image_stddev": 49.56545090903867,
+      "nonflat_image_check_passed": true,
+      "source_png_sha256": "4705231d0f520d03e853cc13b9118f10946b6680f82e0c19fd71d0441c0cc745",
+      "resolution": [
+        1296,
+        972
+      ]
+    }
+  ],
+  "limits": [
+    "Virtual intrinsics, not a factory physical calibration",
+    "Pixel coverage with controlled probes still required",
+    "Co-located head aperture approximation disclosed in profile"
+  ]
+}
