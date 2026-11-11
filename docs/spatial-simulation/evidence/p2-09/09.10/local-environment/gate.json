@@ -1,0 +1,21 @@
+{
+  "phase": "P2-09.10",
+  "date": "2026-11-11",
+  "technical_environment_gate_passed": true,
+  "human_final_acceptance": false,
+  "ubuntu": "24.04 LTS",
+  "python": "3.12.3",
+  "onnxruntime_cpu": "1.23.2",
+  "onnxruntime_gpu": "1.23.2",
+  "windows_node": "24.22.1",
+  "linux_node": "18.19.1 (not used for browser/build; Windows Node24 is used)",
+  "cpu_dependency_check": "passed",
+  "edge_tests": {"passed": 10, "failed": 0},
+  "gpu_probe": "gpu-probe.json; synthetic input, real CUDA kernels profiled",
+  "isolation": "bubblewrap network and PID namespaces; workspace and evaluator not mounted",
+  "assets": "assets.json: GLB and 69 texture hashes verified",
+  "reid": "../local-reid/baseline-comparison.json: same pinned weights, export parity passed, different ONNX serialization hash",
+  "baseline_overwritten": false,
+  "pending": ["09.11 local recapture, CPU/GPU benchmark, Core persistence/idempotence", "09.12-09.18 remaining gates"],
+  "limitations": ["cuDNN convolution fallback warnings: performance not yet certified", "Original PNG transfer is not required; operator authorized local recapture", "GPU probe is not a detector accuracy or throughput benchmark"]
+}

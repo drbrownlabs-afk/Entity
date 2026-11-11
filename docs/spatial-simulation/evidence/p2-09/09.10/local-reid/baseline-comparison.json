@@ -1,0 +1,6 @@
+{
+  "same_weights": true,
+  "same_onnx_binary": false,
+  "export_parity_passed": true,
+  "historical_report_modified": false
+}

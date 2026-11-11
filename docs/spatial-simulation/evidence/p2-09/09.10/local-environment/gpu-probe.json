@@ -1,0 +1,28 @@
+{
+  "phase": "P2-09.10",
+  "model_sha256": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+  "input": "synthetic zero tensor",
+  "output_shapes": [
+    [
+      1,
+      8400,
+      85
+    ]
+  ],
+  "onnxruntime": "1.23.2",
+  "providers": [
+    "CUDAExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "profile_kernel_providers": {
+    "CUDAExecutionProvider": 203
+  },
+  "gpu_kernels_executed": true,
+  "workspace_and_home_unmounted": true,
+  "performance_benchmark": false,
+  "dependencies": {
+    "onnxruntime-gpu": "1.23.2",
+    "nvidia-cudnn-cu12": "9.28.1.4",
+    "nvidia-cuda-runtime-cu12": "12.9.79"
+  }
+}

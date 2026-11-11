@@ -1,0 +1,16 @@
+{
+  "model": "TorchReid OSNet-AIN x1.0 pretrained MS+D+C, supplied by DeepSORT realtime",
+  "source_code": "https://github.com/KaiyangZhou/deep-person-reid/blob/master/torchreid/models/osnet_ain.py",
+  "weights_source": "https://github.com/levan92/deep_sort_realtime/blob/master/deep_sort_realtime/embedder/weights/osnet_ain_ms_d_c_wtsonly.pth",
+  "source_sha256": "a43b495866a4b1645cd134a30c3011592e8c6826ba4781955a135588cf46cd25",
+  "weights_sha256": "482f09440f28ac92b7aa215a56323430f03aaf2657273269af02a670d3c8440a",
+  "onnx_sha256": "fb43bdb65f317341570d532275ed55cb5f2ccc956eb2f0bcffc57b3499094c62",
+  "upstream_license": "TorchReid MIT; DeepSORT realtime MIT; pretrained datasets have their own terms, no commercial-rights certification",
+  "input": "RGB resized256x128, /255, ImageNet mean/std",
+  "output_embedding_dimensions": 512,
+  "torch_version": "2.5.1+cpu",
+  "onnxruntime_version": "1.23.2",
+  "onnx_torch_max_abs_error": 2.6404857635498047e-05,
+  "random_init": false,
+  "civil_identity_model": false
+}
