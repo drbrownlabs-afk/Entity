@@ -1,34 +1,38 @@
-# P2 — Fases del gemelo digital operativo de coworking
+# P2 — Roadmap vigente del coworking (reordenado 2026-11-12)
 
-**Formalización:** 2026-11-08. Planificación específica de P2, subordinada al canon y ADR vigentes. No confundir con numeración antigua de P1. No iniciar fases automáticamente. El gemelo digital existente no se reconstruye.
+**Decisión del operador:** P2-09 es EXCLUSIVAMENTE cámaras/percepción. CRM, reservas, accesos y otros sistemas externos no pertenecen a P2-09. Se conservan los anteriores registros en el historial Git. No ejecutar fases automáticamente ni reconstruir el coworking. P1 es propietario de Core/APIs/adaptadores compartidos.
 
-| Fase P2 | Objetivo | Alcance y salida |
+| Fase | Alcance | Estado |
 |---|---|---|
-| 01 | Reconstrucción arquitectónica | Conservar trabajo previo. |
-| 02 | Distribución funcional | Conservar trabajo previo. |
-| 03 | Organización y ampliación de escena | Conservar trabajo previo. |
-| 04 | Materiales, iluminación y automatización | Conservar trabajo previo. |
-| 05 | Gemelo integrado en PlayCanvas | CONSTRUIDO según confirmación del operador; no reconstruir. |
-| 06 | Personajes Mixamo y NPCs | SIGUIENTE: ~12 humanos realistas, animaciones, rutas, estados, colisiones y continuidad visual. Aceptar tras pruebas en escena existente. |
-| 07 | Integración y aceptación de escenario | Integrar escena, personajes, navegación, animaciones y rendimiento desktop/móvil; pruebas reproducibles. |
-| 08 | **Conexión P2 ↔ backend P1 y entidadización del gemelo** | Utilizar backend y frontend funcionales existentes de P1, sin duplicarlos. Conectar PlayCanvas y personajes a las APIs/capacidades de ENTITY Core. Entidadizar salas, zonas, puertas, mobiliario, personajes, cámaras virtuales y objetos con identidad, estado, relaciones, eventos, memoria y correspondencia espacial. Núcleo resuelve interoperabilidad; Entidadizador transforma semánticamente; Core mantiene el modelo compartido. Pruebas bidireccionales, persistencia, autorización y trazabilidad. |
-| 09 | **Entidadización e integración de fuentes y sistemas** | Registrar/entidadizar cámaras y sensores (simulados o reales), CRM, reservas, calendario, Drive/documentos, accesos, seguridad, membresías, contratos, facturación, red/IT y mantenimiento. Conectores a sistemas externos mediante Núcleo y APIs oficiales; Entityizer resuelve identidad y significado; Core unifica relaciones y eventos. Integración incremental por adaptadores sin construir clones de sistemas ni exigir proveedores no disponibles. |
-| 10 | **Sincronización operacional integral** | Gemelo, backend y sistemas conectados operan sobre el mismo Core: eventos y cambios reflejados en 3D y vistas de operación, acciones autorizadas con resultado verificable, conflictos entre fuentes, errores, reconexión, deduplicación y procedencia. Diferenciar fuente externa autoritativa, simulación, replay, observación e inferencia. |
-| 11 | **Validación de entidadización e interoperabilidad** | Casos E2E de persona→espacio→reserva→acceso→cámara→CRM/documentos y cambios de estado; probar relaciones, continuidad, memoria, permisos, persistencia, trazas y recuperación. Matriz de sistemas reales/simulados/no conectados. **Gate obligatorio**: demostrar integración funcional del conjunto antes de iniciar capas avanzadas. |
-| 12 | Percepción espacial y continuidad multicámara | Con cámaras ya entidadizadas, incorporar calibración, cobertura, detección, tracking, ReID contextual y restricciones físicas/temporales. No usar IDs internos de NPC como si fueran detecciones reales; medir incertidumbre y falsos positivos. |
-| 13 | Escenarios operativos y automatización | Reglas, incidencias, reservas, seguridad, accesos, atención, mantenimiento y acciones sobre capacidades de sistemas conectados; sin reimplementar sus aplicaciones. Auditar resultados y distinguir intención de efecto comprobado. |
-| 14 | Evaluación de inteligencia espacial y capacidades situadas | Consultas y análisis contextual basados en el modelo del mundo, escenarios complejos, predicciones experimentales y evaluación de utilidad; **no implementar P3 multiagentes/OpenClaw sin autorización separada**. |
-| 15 | Validación integral de P2 y piloto | Escenarios completos, regresión, seguridad, fallos, persistencia, rendimiento desktop/móvil, procedencia, límites de simulación y aceptación explícita del operador. |
+| 01–05 | Escenario Blender/PlayCanvas y arquitectura existente | Conservar |
+| 06 | 12 personajes ya entidadizados; Mixamo, animaciones, rutas, estados, colisiones | Retomar solo tras 09.18 y nueva orden del operador |
+| 07 | Integración visual de personajes, navegación y comportamiento en el coworking | Después de 06 |
+| 08 | Entidadización del coworking y vínculo con P1 Core | 460 entidades, 1185 relaciones y 290 mapeos documentados; aceptación pendiente |
+| **09** | **Solo cámaras/percepción:** ocho sensores, calibración, detección, MOT, ReID/MTMC, grafo espacial, continuidad anónima y persistencia en el mismo Core | 09.17 gate técnico superado; 09.18 pendiente de cierre/aceptación |
+| **10** | **Integración de P2-06/07 y P2-09:** doce personas simultáneas, ocho cámaras, cruces, oclusiones, desapariciones, reapariciones, identidades similares, tracking causal continuo y persistencia Core | Después de 06, 07 y 09.18; no crear otro motor de percepción |
+| 11 | Sistemas externos: reservas, CRM, accesos, Drive, membresías, facturación, IT, mantenimiento y demás integraciones | Diferido; no implementar ahora |
+| 12 | Sincronización operacional integral | Diferido |
+| 13 | Validación de interoperabilidad E2E | Diferido |
+| 14 | Escenarios operativos y evaluación contextual sin P3 multiagentes | Diferido |
+| 15 | Validación integral del piloto | Diferido |
 
-## Propiedad de código y dependencias con P1/P3 (ADR-2026-11-08-003)
-**P2 implementa la demostración y su integración, no el backend/frontend de plataforma.** Para fases 08–15, si falta una API, contrato, capacidad, adaptador, entidadización o interfaz compartida, registrar la necesidad y realizar el cambio en **P1**; P2 solo configura, consume y verifica la integración en el workspace. P3 contiene IA situada y agentes; no mezclar su implementación con las fases de P2. Los sistemas externos conservan sus aplicaciones y autoridad de datos.
+## Identidades existentes
+Exactamente 12 personas de demo: Entity 2 (Carlos/Santiago), Inmerso 2 provisionales, staff 3, habituales 3, visitantes 2. Preservar identidades, organizaciones, relaciones, roles y asignaciones. Otras dos identidades técnicas históricas están fuera de esta población. Los modelos Mixamo finales aún no constan descargados/verificados. No duplicar personas ni mobiliario ni alterar geometría.
 
-## Orden y aceptación
-- **Estado inmediato:** 01–05 preservar; 05 construida según operador; 06 personajes Mixamo/NPCs; 07 integración y validación visual de la escena.
-- **Dependencia arquitectónica:** 08 conecta gemelo + personajes al **backend funcional existente de P1** y entidadiza el mundo 3D; 09 integra y entidadiza sistemas externos; 10 sincroniza la operación; 11 valida esa interoperabilidad. **No avanzar a percepción avanzada, automatizaciones ni otras capas sin completar este bloque.**
-- Entidadizar no significa convertir todo en geometría 3D: cada entidad puede tener identidad, estado, relaciones, eventos, memoria, capacidades y representación espacial cuando corresponda.
-- **No construir otro Core ni clones de CRM, Drive, CCTV, reservas o facturación.** Núcleo integra interfaces; Entidadizador normaliza significado; ENTITY Core mantiene el modelo del mundo; las fuentes externas conservan autoridad sobre sus datos.
-- Distinguir simulación, replay, fuente real, ground truth, observación e inferencia. Hardware no disponible no se presenta como instalado.
-- Fases 08–15 son planificación interna P2, **no** la numeración global 08–15 revocada del antiguo P1. No se ejecutan automáticamente ni se declara aceptación sin evidencia.
-- P3 IA situada/multiagentes sigue separado y requiere autorización propia.
-- Cada fase aporta commits, pruebas, pendientes, decisiones y aceptación; preservar los archivos existentes.
+## Criterios obligatorios de P2-10
+- Integrar las doce personas y sus animaciones en la escena existente; no entregar IDs internos de NPC ni ground truth al detector, ReID o Core como si fueran observaciones.
+- Ocho vistas activas con múltiples personas simultáneas, apariencias similares, cruces, oclusiones, reapariciones, zonas ciegas y transiciones. Medir detección, falsos positivos, ID switches, fragmentación, asociaciones incorrectas y continuidad por cámara/persona/escenario.
+- No fusionar identidades por número esperado; track anónimo no equivale a identidad civil. Sin evidencia, ubicación desconocida; no inventar presencia, trayectoria, salida ni ocupación.
+- **Inferencia causal continua**: usar solo datos disponibles hasta el instante de decisión, sin futuro batch; medir latencia de captura a Core, throughput por cámara/agregado, colas, estabilidad, CPU/GPU/RAM/VRAM y recuperación. Definir objetivo medible y demostrarlo antes de llamar al sistema tiempo real.
+- Persistir en el mismo P1 Core observaciones, eventos, relaciones y memoria con procedencia, idempotencia, historial, reinicio y conservación de entidades anteriores.
+- Escenarios independientes y aceptación humana; distinguir simulación, prueba funcional, tiempo real y despliegue físico.
+
+## Limitación actual que no debe ocultarse
+P2-09.17: 2008 frames, 609 observaciones, 24 tracks locales, una hipótesis global anónima; 116 tests Core PASS. 4.42 imágenes/s agregadas es tasa DERIVADA de inferencia reutilizada + nueva ingesta, no wallclock de ejecución única. No alcanza 16 imágenes/s objetivo (8 cámaras a 2 FPS); MTMC es batch con evidencia futura y NO es inferencia causal en vivo. P2-09.18 debe completar cinco recorridos independientes y aceptación humana; no se declara completado aquí.
+
+## Orden y gobierno
+1. Cerrar P2-09.18 sin alterar sus gates ni atribuir tiempo real.
+2. Esperar orden explícita del operador para P2-06; después P2-07.
+3. P2-10: validar conjuntamente personajes y cámaras en Core, sin sistemas externos.
+4. P2-11–15: solo después y con autorización.
+5. No abrir Core paralelo, no implementar P3 ni construir motores futuros. Adaptaciones compartidas pertenecen a P1.
