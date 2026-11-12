@@ -1,0 +1,11 @@
+{
+  "phase": "P2-09.14",
+  "scope": "Fresh browser recapture, same stimulus, different private actor ID",
+  "frames": 32,
+  "exact_pixel_hash_matches": 32,
+  "all_exact": true,
+  "private_actor_id_changed": true,
+  "original_manifest_sha256": "f1f38274e6a3e85a45b891f8376e865c4b0cfb5954da2a3f07442a3a40b9429f",
+  "recapture_manifest_sha256": "9e5ec483d8b51ba2cf3e4ee3cfb34255364fcbd0e53f34d0fc7d166db6c6f0f7",
+  "inference_id_invariance_tested": false
+}

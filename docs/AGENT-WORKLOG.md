@@ -1,5 +1,17 @@
 # ENTITY — Bitácora de ejecución y evidencias
 
+## 2026-11-12 — publicación solicitada de P2-09.14 para análisis
+- Entrega del capturador/planificador del simulador, validadores,5tests de máscaras, métricas agregadas,32/32hashes de reproducción y montaje de frames sintéticos reales. README distingue oportunidadesGT de detecciones, pérdida útil de desaparición y conteos de intervalos de maniobras.
+- Solo archivos09.14 seleccionados; sin cachés/poses/IDprivado/referencias amodales/etiquetas por frame y sin incluir el wrapper experimental09.15. Baseline/Core intactos. Publicación autorizada expresamente por el operador; commit/remoto se comprueban antes de informarSHA.
+
+## 2026-11-12 — Codex: P2-09.14 validado localmente;09.15 iniciado
+-09.13 publicado y releído en1918087fdfa4c609e91010420ed5f9b31a07ce90. Rechazos automáticos deDECISION-LOG/PROJECT-STATUS resueltos comprobando los blobs públicos previos y diffs exclusivamente técnicos; publicación aceptada sin otra autorización.
+- Un actor, ocho sensores,251instantes/2008imágenes,124.546723s de reloj simulado,105.546723unidades de recorrido; giros/pausas/sector ciego y retorno, diseñado después del grafo. Velocidad real máxima1.004836unidades/s.513oportunidades útiles;19instantes sin vista útil y12sin20píxeles visibles en ninguna vista. Pérdidas/reapariciones verificadas por sensor.
+- Contrato y todos los hashesPASS;32frames recapturados en navegador nuevo, conIDinterno distinto,32hashes exactos. Invariancia de inferencia todavía pendiente. Poses,ID,referencias amodales y etiquetas por frame quedan exclusivamente en evaluador privado.
+- EvaluadorOpenCV equivalente exacto en24casos reales de calibración;5tests de máscarasPASS. Validación completa458.08s. Caché ext4 de solo frames preparada/verificada para reducir coste de lectura; no incluyeGT.
+- Gate09.14 en09.14/trial-a/corpus-checks.json yreproduction.json. Cambios09.14 aún locales, pendientes de documentación final/commit/publicación; no afirmar que existen enGitHub.
+-09.15 detección inicial lanzada con el benchmarkYOLOX-S existente, CUDAFP32/TF32desactivado, umbral0.25; Bubblewrap sinworkspace/evaluador/red, frameslegítimos+calibración/grafo/modelos. Salida prevista `.runtime/cctv-trial-trial-a/output/initial-cuda/detections.json`; procesoexec93472, resultado pendiente. No declarar recall95%,MOT/ReID/Core ni aceptaciónfinal. Siguiente: revisar salida tras finalizar, evaluar contra etiquetas privadas después de inferencia, corregir y continuar gates.
+
 ## 2026-11-11 — Codex: P2-09.13 grafo anterior al recorrido
 - Rama `codex/spatial-simulation`, después de09.12 publicadofba74e6. P2 exportador estático reutilizaCollisionWorld, sin cargar rutas ni humanoide. P1 añade lectorEdge y contratoSensorSpatialGraph; Core/contratos históricos/maestro/baseline sin cambios.
 - 5319celdas/17231aristas cerrado y5309/17184conseguridadabierta;26/25componentes. AABB/FOV con alturas genéricas, no poses reales.1954/1955celdas ciegas aproximadas incluyen salas cerradas; no equivalen a recall ni etiquetas de personas.

@@ -26,4 +26,11 @@ class PixelCalibrationTest(unittest.TestCase):
  def test_background_changes_outside_reference_do_not_count_as_actor(self):
   actual=self.background.copy();actual[100:150,70:110]=255
   self.assertEqual(evaluator.measure(self.background,actual,self.full)['visible_pixels'],0)
+ def test_fast_evaluator_matches_occlusion_and_absence_results(self):
+  spec=importlib.util.spec_from_file_location('fast_pixels',Path(__file__).resolve().parents[1]/'evaluator-pixels.py')
+  fast=importlib.util.module_from_spec(spec);spec.loader.exec_module(fast)
+  occluded=self.full.copy();occluded[:,40:]=0
+  noise=self.background.copy();noise[100:150,70:110]=255
+  for actual in [self.background,self.full,occluded,noise]:
+   self.assertEqual(fast.measure(self.background,actual,self.full),evaluator.measure(self.background,actual,self.full))
 if __name__=='__main__':unittest.main()
