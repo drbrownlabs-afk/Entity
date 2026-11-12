@@ -1,0 +1,16 @@
+{
+  "phase": "P2-09.16",
+  "passed": true,
+  "frames": 96,
+  "appearance_observations": 33,
+  "states": [
+    "actual evaluator present outside worker",
+    "actual evaluator directory disconnected",
+    "private actor ID changed"
+  ],
+  "embeddings_and_associations_identical": true,
+  "original_evaluator_restored_exact_hash": true,
+  "worker_workspace_evaluator_network_not_mounted": true,
+  "comparison_excludes_walltime_only": true,
+  "processing_seconds": 18.498690683000007
+}

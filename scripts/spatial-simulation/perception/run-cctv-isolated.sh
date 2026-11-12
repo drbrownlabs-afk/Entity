@@ -19,6 +19,8 @@ case "$worker" in
   if test "$worker" = detect;then command=(/venv/bin/python /cctv-detector.py --provider "$provider" --threshold "${P2_DETECT_THRESHOLD:-0.1}" --tile-sensors "${P2_TILE_SENSORS:-}" --output /output/detections.json);else command=(/venv/bin/python /benchmark.py --provider "$provider" --output /output/detections.json);fi;;
  mot-tuned) command=(/venv/bin/python -m entity_edge.cctv_mot --input /output/detections.json --output /output/tracks-tuned.json --calibration /calibration.json);;
  mot) command=(/venv/bin/python -m entity_edge.mot --input /output/detections.json --output /output/tracks.json);;
+ reid) runtime=/opt/entity-p2/gpu-venv;command=(/venv/bin/python -m entity_edge.cctv_reid --input /output/tracks-tuned.json --frames /frames --calibration /calibration.json --model /models/osnet_ain.onnx --output /output/reid-evidence.json);;
+ mtmc) command=(/venv/bin/python -m entity_edge.cctv_mtmc --input /output/reid-evidence.json --graph /spatial-graph.json --calibration /calibration.json --output /output/global-tracks.json);;
  *) echo 'Unknown CCTV worker' >&2;exit 2;;
 esac
 exec bwrap --unshare-net --unshare-pid --die-with-parent \

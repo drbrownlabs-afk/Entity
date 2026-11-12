@@ -1,0 +1,16 @@
+{
+  "phase": "P2-09.16",
+  "technical_gate_passed": true,
+  "evaluation": "evaluation.json",
+  "ground_truth_isolation": "isolation.json",
+  "edge_tests_passed": 34,
+  "baseline_modified": false,
+  "core_modified": false,
+  "next_phase": "P2-09.17",
+  "human_final_acceptance": false,
+  "code_sha256": {
+    "services/entity-edge/entity_edge/cctv_reid.py": "6ba5d6cc6b47f50bbbc0fffe7225e71b02166a7e32ab7e052b992876c13cea3d",
+    "services/entity-edge/entity_edge/cctv_mtmc.py": "2231298a92c13fe0751981fb5e958ded197352f627a2b52f1067f0d5a418c6c0",
+    "scripts/spatial-simulation/perception/run-cctv-isolated.sh": "781a2a95d9ac3ae281ed2de84265659e0f1f917710262768238262d28c1e4320"
+  }
+}

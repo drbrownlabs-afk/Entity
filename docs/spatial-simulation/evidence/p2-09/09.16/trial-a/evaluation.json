@@ -1,0 +1,105 @@
+{
+  "phase": "P2-09.16",
+  "run": "trial-a",
+  "checks": {
+    "single_actor_global_identity": true,
+    "all_eight_sensors_share_identity": true,
+    "zero_residual_actor_fragmentation": true,
+    "no_internal_pair_contradictions": true,
+    "no_infeasible_full_sequence_segments": true,
+    "all_original_observations_preserved_exactly": true,
+    "actor_count_not_used_by_inference": true,
+    "no_civil_identity_or_fabricated_gap_observations": true
+  },
+  "technical_gate_passed": true,
+  "global_groups": 1,
+  "actor_global_id_count": 1,
+  "residual_actor_fragmentations": 0,
+  "local_tracklets": 24,
+  "original_observations": 609,
+  "matched_valid_observations": 502,
+  "valid_opportunities": 513,
+  "false_or_duplicate_observations": 4,
+  "per_sensor": {
+    "C3-S1": {
+      "matched_valid": 62,
+      "global_ids": [
+        "visual-50079c5ad7804a4f342b"
+      ]
+    },
+    "C1-S1": {
+      "matched_valid": 89,
+      "global_ids": [
+        "visual-50079c5ad7804a4f342b"
+      ]
+    },
+    "C-S1": {
+      "matched_valid": 28,
+      "global_ids": [
+        "visual-50079c5ad7804a4f342b"
+      ]
+    },
+    "C2-S1": {
+      "matched_valid": 102,
+      "global_ids": [
+        "visual-50079c5ad7804a4f342b"
+      ]
+    },
+    "C-S4": {
+      "matched_valid": 31,
+      "global_ids": [
+        "visual-50079c5ad7804a4f342b"
+      ]
+    },
+    "C-S3": {
+      "matched_valid": 58,
+      "global_ids": [
+        "visual-50079c5ad7804a4f342b"
+      ]
+    },
+    "C-S2": {
+      "matched_valid": 58,
+      "global_ids": [
+        "visual-50079c5ad7804a4f342b"
+      ]
+    },
+    "C4-S1": {
+      "matched_valid": 74,
+      "global_ids": [
+        "visual-50079c5ad7804a4f342b"
+      ]
+    }
+  },
+  "provisional_associations": 186,
+  "continuity": [
+    {
+      "checked_observed_instants": 229,
+      "unresolved_view_geometry_instants": [
+        37.5,
+        38,
+        38.5,
+        55.5
+      ],
+      "infeasible_segments": [],
+      "largest_observation_gap_seconds": 8.5,
+      "path_is_observed": false,
+      "observations_created": 0,
+      "meaning": "existence of a path through uncertain image-derived support; not recovered ground-truth trajectory"
+    }
+  ],
+  "osnet_seconds": 70.13564327900002,
+  "mtmc_seconds": 2.858416128999977,
+  "model_sha256": "fb43bdb65f317341570d532275ed55cb5f2ccc956eb2f0bcffc57b3499094c62",
+  "graph_sha256": "51f1f9d2961b7b23b76b36442fd758f25a26a2f8a0888c67e9ba862598f11a57",
+  "input_tracks_sha256": "953fbbf92ed34a89f673a470518c92a69657d58b17957849a2b7871efa8d12ab",
+  "output_sha256": "45db95e5a0a93f2e8b2ddee15945e56c0d0c0a25ef90d4d28f3a7bf6526a01cb",
+  "limitations": [
+    "One tuning corpus; five held-out trials pending09.18",
+    "Single actor cannot estimate multiperson false merge rate",
+    "Four false/localization/duplicate source observations remain associated, not hidden",
+    "Body-support projection is uncertain; generic height2.0 native is a prior, not actor pose or measured body height",
+    "Geometry-disagreeing instants remain unresolved; feasible path is not observed trajectory",
+    "Offline full-corpus association; live causal MTMC and Core persistence not validated"
+  ],
+  "human_final_acceptance": false
+}

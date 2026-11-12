@@ -1,0 +1,21 @@
+{
+  "edge_tests_passed": 34,
+  "new_mtmc_behavior_tests": 13,
+  "negative_cases": [
+    "identical appearance impossible speed",
+    "closed topology after long pause",
+    "same-sensor simultaneous IDs",
+    "transitive contradiction",
+    "ambiguous competing alternatives",
+    "unknown geometry",
+    "sensor provenance mismatch",
+    "forbidden actor field",
+    "within-track teleport",
+    "conflicting views"
+  ],
+  "positive_cases": [
+    "uncertainty region crossing nearest-cell ambiguity",
+    "retained identity through gap without new observations",
+    "stable identity when later evidence appended"
+  ]
+}
