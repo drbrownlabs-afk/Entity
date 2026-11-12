@@ -1,0 +1,149 @@
+{
+  "phase": "P2-09.19",
+  "purpose": "read-only model diagnosis; not replacement/accuracy/live-stream validation",
+  "frames": 64,
+  "io_read_and_sha": {
+    "n": 64,
+    "p50_ms": 3.1130555000800086,
+    "p95_ms": 5.678344999978435,
+    "sum_ms": 218.1946600005631
+  },
+  "png_decode": {
+    "n": 64,
+    "p50_ms": 21.409006999988378,
+    "p95_ms": 30.60680700014018,
+    "sum_ms": 1448.2122830002027
+  },
+  "yolox_network_host_run": {
+    "n": 160,
+    "p50_ms": 15.172030000030645,
+    "p95_ms": 19.234895999943546,
+    "sum_ms": 2497.794449999674
+  },
+  "detector_preprocess_run_postprocess_per_sensor": {
+    "C-S1": {
+      "n": 8,
+      "p50_ms": 18.42449699995541,
+      "p95_ms": 20.73316300015904,
+      "sum_ms": 168.61555599984968
+    },
+    "C-S2": {
+      "n": 8,
+      "p50_ms": 19.376765000060914,
+      "p95_ms": 21.08915500002695,
+      "sum_ms": 152.6481250004963
+    },
+    "C-S3": {
+      "n": 8,
+      "p50_ms": 20.857423499933248,
+      "p95_ms": 25.36679200011349,
+      "sum_ms": 170.68212300023333
+    },
+    "C-S4": {
+      "n": 8,
+      "p50_ms": 21.85866149989124,
+      "p95_ms": 24.31277300001966,
+      "sum_ms": 180.7816359998924
+    },
+    "C1-S1": {
+      "n": 8,
+      "p50_ms": 134.8913094998352,
+      "p95_ms": 152.92707300000075,
+      "sum_ms": 1152.977937999367
+    },
+    "C2-S1": {
+      "n": 8,
+      "p50_ms": 136.3922595000986,
+      "p95_ms": 160.36100599990277,
+      "sum_ms": 1143.8511240000935
+    },
+    "C3-S1": {
+      "n": 8,
+      "p50_ms": 18.501057499975104,
+      "p95_ms": 20.09712899985061,
+      "sum_ms": 154.48957099988547
+    },
+    "C4-S1": {
+      "n": 8,
+      "p50_ms": 18.157255500113934,
+      "p95_ms": 22.377243999926577,
+      "sum_ms": 154.12116000015885
+    }
+  },
+  "network_calls_per_frame": {
+    "C-S1": [
+      1
+    ],
+    "C-S2": [
+      1
+    ],
+    "C-S3": [
+      1
+    ],
+    "C-S4": [
+      1
+    ],
+    "C1-S1": [
+      7
+    ],
+    "C2-S1": [
+      7
+    ],
+    "C3-S1": [
+      1
+    ],
+    "C4-S1": [
+      1
+    ]
+  },
+  "yolox_profile_providers": {
+    "CUDAExecutionProvider": 609
+  },
+  "model_input_shapes": {
+    "yolox": [
+      1,
+      3,
+      640,
+      640
+    ],
+    "osnet": [
+      1,
+      3,
+      256,
+      128
+    ]
+  },
+  "osnet_cpu_network": {
+    "n": 32,
+    "p50_ms": 97.16723050007658,
+    "p95_ms": 104.85116600011679,
+    "sum_ms": 3110.3648340001655
+  },
+  "osnet_cuda_network": {
+    "n": 32,
+    "p50_ms": 19.054343499988136,
+    "p95_ms": 30.833332000156588,
+    "sum_ms": 595.5877049991614
+  },
+  "osnet_profile_providers": {
+    "CUDAExecutionProvider": 1188
+  },
+  "embedding_parity_sample": {
+    "samples": 32,
+    "max_normalized_abs_error": 2.905726432800293e-07,
+    "minimum_cosine": 0.9999999403953552
+  },
+  "model_sha256": {
+    "yolox": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+    "osnet": "fb43bdb65f317341570d532275ed55cb5f2ccc956eb2f0bcffc57b3499094c62"
+  },
+  "limitations": [
+    "Host Run includes transfer/synchronization; not GPU kernel occupancy or saturation",
+    "Detector probe runs same fullview/crops but excludes final global crop NMS; not complete detector benchmark",
+    "Fixed sample indices/no GT; concurrent Core workload on host",
+    "OSNet parity on32crops is not ReID quality or production approval"
+  ],
+  "opencv_threads": 2,
+  "onnx_intra_op_threads": 2,
+  "precision": "FP32, CUDA TF32 disabled"
+}

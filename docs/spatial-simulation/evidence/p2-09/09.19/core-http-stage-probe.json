@@ -1,0 +1,67 @@
+{
+  "phase": "P2-09.19",
+  "actual_http_same_core_database": true,
+  "diagnostic_run": "p2-09-diag19-d8f159a4",
+  "fresh_frame_messages": 24,
+  "http": {
+    "n": 24,
+    "p50_ms": 113.32561499999372,
+    "p95_ms": 171.52955800000314
+  },
+  "stages": {
+    "db_open_begin read": {
+      "n": 24,
+      "p50_ms": 2.72252549999763,
+      "p95_ms": 4.84766700000705
+    },
+    "db_body read": {
+      "n": 24,
+      "p50_ms": 3.8939474999963863,
+      "p95_ms": 6.4859100000091985
+    },
+    "db_commit_close read": {
+      "n": 24,
+      "p50_ms": 0.6122274999995625,
+      "p95_ms": 1.0880399999990686
+    },
+    "db_open_begin write": {
+      "n": 24,
+      "p50_ms": 3.7479965000031257,
+      "p95_ms": 4.585228999999913
+    },
+    "world": {
+      "n": 24,
+      "p50_ms": 53.24278500000901,
+      "p95_ms": 68.88761499999418
+    },
+    "emit": {
+      "n": 24,
+      "p50_ms": 22.301818000002527,
+      "p95_ms": 30.80690800000241
+    },
+    "db_body write": {
+      "n": 24,
+      "p50_ms": 83.61793499999237,
+      "p95_ms": 129.1497139999933
+    },
+    "db_commit_close write": {
+      "n": 24,
+      "p50_ms": 13.722457999996607,
+      "p95_ms": 25.264978999999244
+    },
+    "server_request": {
+      "n": 24,
+      "p50_ms": 111.20400749999959,
+      "p95_ms": 170.083627000011
+    }
+  },
+  "historical_worlds_unchanged": true,
+  "production_source_changed": false,
+  "instrumentation": "owned temporary process wrappers; trace buffered in RAM until shutdown",
+  "limitations": [
+    "24serial requests/early3instants, not sustained16images/s",
+    "Nested timings overlap; do not sum world/emit with db_body",
+    "db_commit_close includes context exit/commit/close, not fsync-only",
+    "Instrumentation/readiness overhead excluded from sample; other host activity uncontrolled"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "phase": "P2-09.19",
+  "database_read_only": true,
+  "database_copied": false,
+  "sample_run": "p2-09-accept18-v0-r2",
+  "state_entities": 493,
+  "database_mib": 174.73828125,
+  "journal_mode": "delete",
+  "connection_default_synchronous": 2,
+  "world_same_connection": {
+    "samples": 20,
+    "p50_ms": 13.824593999999912,
+    "p95_ms": 18.3381460000005
+  },
+  "read_state_json_only": {
+    "samples": 20,
+    "p50_ms": 8.174147999999715,
+    "p95_ms": 11.254204000000101
+  },
+  "latest_revision_only": {
+    "samples": 20,
+    "p50_ms": 0.9709725000002223,
+    "p95_ms": 1.4644859999997095
+  },
+  "inbox_lookup_same_connection": {
+    "samples": 20,
+    "p50_ms": 0.7554069999997637,
+    "p95_ms": 1.1648839999995886
+  },
+  "location_semantics_probe": {
+    "track_coordinate_frame": "normalized-image",
+    "query_status": "confirmed",
+    "query_zone_id": null,
+    "confirmed_status_without_world_zone": true,
+    "interpretation": "visual activity is not a confirmed world location; contract needs explicit distinction"
+  },
+  "simulator_routes_table_present": false,
+  "simulator_routes_in_sample_run": 0,
+  "world_new_connection": {
+    "samples": 12,
+    "p50_ms": 80.65934549999953,
+    "p95_ms": 97.94952600000073
+  },
+  "acceptance_core_supervisor_completed_at_probe_end": true,
+  "limitations": [
+    "Acceptance Core completed; other host activity uncontrolled",
+    "Read-only probe does not attribute write/commit/HTTP costs or GPU saturation",
+    "synchronous is connection default; production uses same connect defaults and no override found in code"
+  ]
+}

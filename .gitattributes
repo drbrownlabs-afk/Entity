@@ -1,2 +1,3 @@
 # Keep the modified isolated Linux entrypoint executable after Windows checkouts.
 scripts/spatial-simulation/perception/run-cctv-isolated.sh text eol=lf
+scripts/spatial-simulation/perception/diagnose-cctv-runtime.sh text eol=lf
