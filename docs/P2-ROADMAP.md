@@ -36,3 +36,19 @@ P2-09.17: 2008 frames, 609 observaciones, 24 tracks locales, una hipótesis glob
 3. P2-10: validar conjuntamente personajes y cámaras en Core, sin sistemas externos.
 4. P2-11–15: solo después y con autorización.
 5. No abrir Core paralelo, no implementar P3 ni construir motores futuros. Adaptaciones compartidas pertenecen a P1.
+
+## P2-09.19 — Diagnóstico arquitectónico de percepción continua (prioridad inmediata)
+
+### Problema y propósito
+P2-09 ha demostrado componentes de detección, seguimiento, asociación multicámara y persistencia en ENTITY Core, pero el circuito actual se apoya en análisis retrospectivo por lotes. Este mecanismo **no representa el funcionamiento operativo deseado**: ENTITY debe percibir y actualizar su modelo mientras los acontecimientos suceden, sin esperar al final de una secuencia. La cifra derivada de 4.42 imágenes/s no demuestra FPS de una ejecución continua; tampoco prueba por sí sola saturación GPU ni identifica el cuello de botella. No confundir mayor throughput con verdadera causalidad y latencia operativa.
+
+### Encargo al agente técnico (Sol 6.1): criterio propio, no micromanagement
+Revisar el **código real, arquitectura, dependencias, mediciones y evidencias** de P2-09 y su relación con P1 ENTITY Core. Determinar por qué el sistema todavía no ofrece percepción continua, cuál es el límite real y qué arquitectura o cambios permiten resolverlo. Investigar sin prejuzgar si el problema está en el modelo, la GPU, el render/captura, el flujo de datos, la inferencia, la asociación multicámara, HTTP, persistencia, sincronización o en el diseño general. No imponer de antemano una tecnología, un patrón de colas, una optimización o la conservación del batch. Cuestionar la arquitectura actual si las evidencias lo justifican, reutilizando componentes que sí aportan valor.
+
+El resultado deseado es **percepción causal y continua desde ocho cámaras hacia el mismo ENTITY Core**, con hipótesis de identidad actualizadas progresivamente, eventos, estados, relaciones y memoria persistentes, latencia acotada y rendimiento reproducible. Las decisiones no deben depender de fotogramas futuros ni de IDs/ground truth privados del simulador. Una pérdida de visión no autoriza a inventar posición, salida, presencia ni identidad civil. No crear otro Core ni otro motor de percepción sin justificación técnica aprobada.
+
+### Secuencia de decisión y aceptación
+**Primero entregar diagnóstico arquitectónico fundamentado y propuesta de solución**: qué conservar, qué modificar, por qué, alternativas y riesgos, métricas que permiten discriminar hipótesis y evidencia de los límites actuales. Presentarlo al operador **antes de implementar una refactorización sustancial**. Después de aprobación, implementar y demostrar el funcionamiento continuo en el escenario actual con un personaje y ocho cámaras. Objetivo inicial de prueba: **16 imágenes/s agregadas (2 por cámara)**, más latencia extremo a extremo, estabilidad, pérdida de frames, capacidad de recuperación y persistencia verificadas. Medir rendimiento en ejecución única real, no sumar tiempos batch; separar inferencia, render, comunicación y Core solo en la medida necesaria para encontrar el cuello de botella. No declarar tiempo real/profesional hasta demostrarlo.
+
+**No incorporar doce personajes, P2-06/07/10 ni CRM, reservas, accesos u otros sistemas externos.** P2-09.18 mantiene sus cinco ensayos de independencia y aceptación; P2-09.19 es el siguiente gate técnico prioritario y bloquea el avance posterior. No reescribir resultados históricos ni duplicar trabajo.
+
