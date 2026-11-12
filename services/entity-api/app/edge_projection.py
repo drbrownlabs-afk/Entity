@@ -2,7 +2,7 @@
 import json
 from datetime import datetime, timezone
 from uuid import uuid5, NAMESPACE_URL, uuid4
-from pydantic import BaseModel, ConfigDict, Field, ValidationError, model_validator
+from pydantic import AwareDatetime, BaseModel, ConfigDict, Field, ValidationError, model_validator
 from typing import Annotated, Literal
 from fastapi import HTTPException
 
@@ -16,6 +16,7 @@ class Track(BaseModel):
     position: tuple[Coordinate,Coordinate]
     image_bbox: tuple[Coordinate,Coordinate,Coordinate,Coordinate] | None = None
     detection_confidence: Annotated[float,Field(ge=0,le=1,allow_inf_nan=False)] | None = None
+    association_confirmed_at: AwareDatetime | None = None
     @model_validator(mode='after')
     def ordered_box(self):
         if self.image_bbox and (self.image_bbox[0]>=self.image_bbox[2] or self.image_bbox[1]>=self.image_bbox[3]):raise ValueError('Image box must be ordered')
@@ -73,11 +74,11 @@ def project(db, observation):
             db.execute('INSERT INTO relations VALUES(?,?,?,?,?)',(str(uuid4()),pid,zid,'observedIn',stamp))
             counts[track.zone_id]=counts.get(track.zone_id,0)+1
     # Keep legacy payload shape when the additive image-evidence fields are absent.
-    projected=snapshot.model_dump()
+    projected=snapshot.model_dump(mode='json')
     for key in ('frame_sha256','frame_index','media_time_seconds'):
         if projected[key] is None: projected.pop(key)
     for track in projected['tracks']:
-        for key in ('image_bbox','detection_confidence'):
+        for key in ('image_bbox','detection_confidence','association_confirmed_at'):
             if track[key] is None: track.pop(key)
     state(camera,'edge.presence',{**projected,'observed_at':stamp,'counts':counts,'simulated':simulated})
 

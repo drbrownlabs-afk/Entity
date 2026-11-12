@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "actual_http": true,
+  "same_existing_sqlite_database": true,
+  "full_owned_uvicorn_restart": true,
+  "world_relations_memory_identical": true,
+  "run": "p2-09-cctv-trial-a-verified2",
+  "world_sha256": "1a3eada13d400f1e85626afd13ae2991ad47b9ee9b581f650882c2a67e9ce008",
+  "memory_sha256": "a7d0d0d1f7888ded47d931351551b465e1fb0cb8d8e302a57e0c28772e7acc64",
+  "global_tracks": 1
+}

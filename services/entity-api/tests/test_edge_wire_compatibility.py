@@ -20,3 +20,8 @@ class EdgeWireCompatibilityTests(unittest.TestCase):
         self.client.post('/v1/integrations/observations',headers=self.headers,json=body).raise_for_status()
         state=self.client.get('/v1/entities/camera').json()['state']['edge.presence']
         self.assertEqual(state['tracks'],[track]);self.assertEqual(state['frame_sha256'],'a'*64)
+        track['association_confirmed_at']='2026-11-06T12:00:04Z'
+        body.update(observation_id=str(uuid4()),observed_at='2026-11-06T12:00:03Z')
+        self.client.post('/v1/integrations/observations',headers=self.headers,json=body).raise_for_status()
+        state=self.client.get('/v1/entities/camera').json()['state']['edge.presence']
+        self.assertEqual(state['tracks'][0]['association_confirmed_at'],'2026-11-06T12:00:04Z')

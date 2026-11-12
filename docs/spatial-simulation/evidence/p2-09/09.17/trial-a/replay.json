@@ -1,0 +1,56 @@
+{
+  "phase": "P2-09.17",
+  "run": "p2-09-cctv-trial-a-verified2",
+  "real_http": true,
+  "same_existing_site": "coworking-p2",
+  "replay": true,
+  "frame_observations": 2008,
+  "local_observations": 609,
+  "global_associations": 1,
+  "duplicate_observations": 2009,
+  "local_tracks_in_core": 24,
+  "global_tracks_in_core": 1,
+  "new_civil_people": 0,
+  "prior_people_unchanged": true,
+  "historical_worlds_unchanged": true,
+  "world_revision_before": 3512,
+  "world_revision_after": 3512,
+  "world_unchanged": true,
+  "world_sha256": "1a3eada13d400f1e85626afd13ae2991ad47b9ee9b581f650882c2a67e9ce008",
+  "memory_sha256": "a7d0d0d1f7888ded47d931351551b465e1fb0cb8d8e302a57e0c28772e7acc64",
+  "global_memory_count": 1,
+  "global_graphs": {
+    "p2-09-cctv-trial-a-verified2:visual-50079c5ad7804a4f342b": {
+      "nodes": 33,
+      "edges": 72
+    }
+  },
+  "global_event_count": 1,
+  "global_location_status": "unknown",
+  "historical_sources_available_before_pixels": true,
+  "global_inference_absent_before_available_at": true,
+  "core_image_position_source": "fresh associated bbox anchor; filtered MOT estimate is not clipped into an observation",
+  "experiment": "core17",
+  "manifest_sha256": "f1f38274e6a3e85a45b891f8376e865c4b0cfb5954da2a3f07442a3a40b9429f",
+  "association_output_sha256": "5b62444e39430f78dd3ec3980b51687633b145ba88e6a9f0ca58f039f4df17fc",
+  "http_latency_ms": {
+    "other": {
+      "requests": 20,
+      "p50": 133.62995950001277,
+      "p95": 348.50341499998194
+    },
+    "pixel_ingress": {
+      "requests": 2008,
+      "p50": 81.01244900001348,
+      "p95": 116.47665399999596
+    },
+    "global_ingress": {
+      "requests": 1,
+      "p50": 87.79445499999383,
+      "p95": 87.79445499999383
+    }
+  },
+  "seconds": 176.807546884,
+  "ingester_peak_rss_kib": 67304,
+  "semantics": "batch historical pixel observations and later inference; not live occupancy, civil identity or confirmed world trajectory"
+}

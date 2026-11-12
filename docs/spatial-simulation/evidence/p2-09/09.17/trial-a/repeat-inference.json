@@ -1,0 +1,12 @@
+{
+  "phase": "P2-09.17",
+  "passed": true,
+  "frames": 2008,
+  "observations": 609,
+  "sources_timestamps_frame_hashes_and_local_ids_invariant": true,
+  "confirmation_timestamps_invariant": true,
+  "bbox_tolerance_pixels": 0.001,
+  "maximum_bbox_difference_pixels": 0.0,
+  "maximum_confidence_difference": 0.0,
+  "evaluator_or_actor_truth_read": false
+}

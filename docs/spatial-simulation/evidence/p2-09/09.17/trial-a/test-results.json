@@ -1,0 +1,10 @@
+{
+  "core_tests_passed": 116,
+  "new_global_perception_tests": 5,
+  "wire_compatibility_regression_extended": true,
+  "first_full_run_failed_optional_null_serialization": true,
+  "corrected_and_full_suite_passed": true,
+  "test_scope": "P1 contracts/authorization/state/relations/memory/persistence; not vision accuracy",
+  "confirmation_initial_before_later_observation_regression": true,
+  "core_full_suite_seconds": 216.246
+}

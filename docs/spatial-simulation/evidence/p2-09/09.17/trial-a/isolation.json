@@ -1,0 +1,14 @@
+{
+  "phase": "P2-09.17",
+  "passed": true,
+  "actual_http_replay": true,
+  "states": [
+    "original evaluator outside pipeline",
+    "actual evaluator directory disconnected",
+    "private actor ID changed"
+  ],
+  "all_2009_messages_exact_duplicates_in_each_replay": true,
+  "world_relations_memory_invariant": true,
+  "original_evaluator_restored_exact_hash": true,
+  "ingress_uses_no_evaluator_paths": true
+}

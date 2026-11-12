@@ -1,0 +1,19 @@
+{
+  "phase": "P2-09.17",
+  "run": "p2-09-cctv-trial-a-verified2",
+  "technical_gate_passed": true,
+  "real_http_same_core": true,
+  "idempotent_replay": true,
+  "persistent_global_identity_relations_memory": true,
+  "prior_worlds_and_people_unchanged": true,
+  "pixel_observations": 2008,
+  "local_tracks": 24,
+  "global_tracks": 1,
+  "core_tests_passed": 116,
+  "performance_measured": true,
+  "human_final_acceptance": false,
+  "next_phase": "P2-09.18",
+  "core_ground_truth_isolation": true,
+  "repeated_pixel_inference_invariant": true,
+  "core_stage_checks_passed": true
+}

@@ -1,0 +1,53 @@
+{
+  "phase": "P2-09.17",
+  "measured_stage_sum_inference_and_first_ingress_seconds": 454.110748528,
+  "timing_basis": "cached measured inference processing times plus current measured full HTTP ingress; not single-attempt wall time",
+  "image_frames": 2008,
+  "core_first_ingress_seconds": 228.680581724,
+  "batch_pipeline_aggregate_images_per_second": 4.4218288303215285,
+  "requested_aggregate_images_per_second": 16,
+  "realtime_validated": false,
+  "detector_image_latency_ms": {
+    "p50": 19.371023999994463,
+    "p95": 151.20835300001545
+  },
+  "core_pixel_ingress_latency_ms": {
+    "requests": 2008,
+    "p50": 109.8610304999994,
+    "p95": 133.39168199999563
+  },
+  "core_replay_pixel_latency_ms": {
+    "requests": 2008,
+    "p50": 81.01244900001348,
+    "p95": 116.47665399999596
+  },
+  "detector_peak_rss_kib": 1136804,
+  "mot_peak_rss_kib": 115708,
+  "core_process_peak_rss_kib": 71528,
+  "ingester_peak_rss_kib": 67304,
+  "gpu_global_memory_sampled_mib": {
+    "samples": 730,
+    "maximum": 45.0,
+    "interval_target_seconds": 0.5,
+    "scope": "whole GPU sampled memory, includes other processes; not exclusive process VRAM or guaranteed peak",
+    "sampling_phase": "Core ingress/replay/restart; inference reused"
+  },
+  "detector_gpu_global_memory_checkpoints_mib": {
+    "before_session": 45,
+    "after_warmup": 273,
+    "after_timed_run": 273,
+    "scope": "whole GPU snapshots, not process peak VRAM"
+  },
+  "limitations": [
+    "Offline batch; no causal capture-to-world p50/p95 claimed",
+    "RSS is per-process high-water mark, not summed unique system memory",
+    "Inference and ingress sequential; not an optimized concurrent live deployment"
+  ],
+  "stage_timing_seconds": {
+    "detect": 149.24680952,
+    "mot-tuned": 0.19729334999999537,
+    "reid": 74.068779759,
+    "mtmc": 1.9172841749999918
+  },
+  "stage_timing_scope": "cached inference processing only"
+}

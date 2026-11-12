@@ -36,6 +36,12 @@ def ingest(db,site,run,actor,message:Observation):
         except ValueError:raise HTTPException(422,'Invalid camera snapshot')
         if len({x.local_track_id for x in snapshot.tracks})!=len(snapshot.tracks):raise HTTPException(422,'Duplicate track ID')
         if snapshot.source_status!='connected' and snapshot.tracks:raise HTTPException(422,'Disconnected snapshot cannot report tracks')
+        for track in snapshot.tracks:
+            if track.association_confirmed_at:
+                confirmed=utc(track.association_confirmed_at.isoformat())
+                # Initial local-track confirmation can precede later detections;
+                # retrospective detections may instead precede confirmation.
+                if confirmed>clock:raise HTTPException(422,'Local association confirmation ahead of site clock')
         allowed=current.get('covered_zones',[])
         if any(track.zone_id and track.zone_id not in allowed for track in snapshot.tracks):raise HTTPException(422,'Zone outside declared camera coverage')
         if not late:
@@ -54,6 +60,7 @@ def ingest(db,site,run,actor,message:Observation):
                 patch={**old,'active':True,'zone_id':track.zone_id,'image_position':list(track.position),'coordinate_frame':'normalized-image','observed_at':at,'ttl_seconds':30,'observation_id':oid,'provenance':message.provenance.model_dump()}
                 if track.image_bbox is not None:patch['image_bbox']=list(track.image_bbox)
                 if track.detection_confidence is not None:patch['detection_confidence']=track.detection_confidence
+                if track.association_confirmed_at:patch['association_confirmed_at']=utc(track.association_confirmed_at.isoformat())
                 if snapshot.frame_sha256:patch['frame_sha256']=snapshot.frame_sha256
                 changes[key]=patch;changes[message.source_id]['tracks'].append(key)
                 if old.get('person_id') and at<=old.get('association_until',''):
@@ -68,6 +75,9 @@ def ingest(db,site,run,actor,message:Observation):
     elif message.type=='edge.track_association':
         from .perception import associate
         changes=associate(db,site,run,items,actor,message,at)
+    elif message.type=='edge.global_track_association':
+        from .global_perception import associate_global
+        changes=associate_global(db,site,run,items,actor,message,at)
     elif message.type=='sensor.measurement':
         if source['kind'] not in ['Sensor','HVAC','Equipment']:raise HTTPException(422,'Sensor source required')
         data=normalize_sensor(message.payload)
