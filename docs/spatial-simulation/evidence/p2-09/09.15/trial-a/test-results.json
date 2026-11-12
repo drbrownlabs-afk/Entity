@@ -1,0 +1,18 @@
+{
+  "phase": "P2-09.15",
+  "edge_tests_passed": 21,
+  "new_mot_behavior_tests": 5,
+  "coverage": [
+    "confirmation keeps original observation and later evidence timestamps",
+    "no invented observations during gap",
+    "recover retained local track",
+    "expired local track gets new anonymous local ID",
+    "explicit image-centre anchor for steep view"
+  ],
+  "actual_corpus_frames_checked": 2008,
+  "isolation_states": 3,
+  "isolation_sample_frames": 32,
+  "new_dependency_installations": false,
+  "core_modified": false,
+  "baseline_modified": false
+}

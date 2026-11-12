@@ -1,0 +1,18 @@
+{
+  "phase": "P2-09.15",
+  "passed": true,
+  "sample_frames": 32,
+  "states": [
+    "actual GT present outside worker",
+    "actual evaluator directory disconnected",
+    "private actor ID changed with same pixels"
+  ],
+  "detector_observations_invariant": true,
+  "mot_observations_and_ids_invariant": true,
+  "original_evaluator_restored_exact_truth_hash": true,
+  "worker_workspace_and_evaluator_not_mounted": true,
+  "comparison_excludes_walltime_and_memory": true,
+  "maximum_bbox_tolerance_pixels": 0.001,
+  "seconds": 20.791202671000008,
+  "mtmc_validated": false
+}

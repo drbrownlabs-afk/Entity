@@ -1,5 +1,23 @@
 # ENTITY — Registro de decisiones y autoridad
 
+## ADR-2026-11-12-P2-09-PERCEPCION — evidencia visual y continuidad local con trazabilidad
+- Seleccionar YOLOX-S existente aumbral0.25 con recortes nativos solapados enC1/C2, tras medir93.18%inicial,95.32%con umbral0.10 y98.05%con recortes. Mantener pesos/baseline. Registrar8cajas falsas/de localización/duplicadas y coste11.23img/s; no declarar tiempo real.
+- Reutilizar Norfair y corregir unidades del filtro normalizado; confirmación/retención y ancla de imagen explícitas. Asociar únicamente detecciones frescas, conservar observación original y evidencia posterior de confirmación. Pérdida visual no es salida; track local no es persona civil ni posición mundial confirmada.
+-0cambios locales durante visibilidad continua,4observaciones falsas/duplicadas,21testsEdge y auditoríaGT32framesPASS. Gate técnico agregado en09.15/trial-a/gate.json; C4individual94.87% y evaluación en un corpus de ajuste son límites conocidos.
+- La continuidad de una entidad entre sensores requiere09.16 y sus evidencias; memoria/persistencia mismoCore09.17; evaluación repetida y aceptaciónhumana09.18. Compatible con las aclaraciones del operador sobre ojos integrados, contexto espacial y múltiples fuentes; no cambio de canon ni de reglas comerciales.
+
+## ADR-2026-11-12-P2-09-CONTEXTO-OPERATIVO — presencia y recursos como contexto compartido
+- Aclaración del operador: cámaras, accesos, reservas, cobros/pagos y demás fuentes contribuyen al mismo modelo operativo deENTITY Core. Ejemplo ilustrativo: presencia deJuan, ocupación de un puesto concreto y disponibilidad para otro usuario.
+- Conservar entidades estables, relaciones, estado, tiempos, procedencia e incertidumbre. Reserva/pago/presencia/ocupación/identidad civil son hechos distintos; no derivar uno automáticamente de otro sin evidencia y reglas legítimas.
+- Diferenciar grafo de sensores/calibración del modelo de conocimiento operativo deCore, manteniendo su conexión. La cámara es una fuente adicional, no ground truth ni autoridad única.
+- Orientación general persistida en sección10 del contexto; no cambia canon/gates ni amplía09.15 a integraciones comerciales, identidad civil o acciones financieras.
+
+## ADR-2026-11-12-P2-09-OJOS-CONTEXTO — aclaración expresa del operador
+- ENTITY interpreta evidencias de sensores independientes dentro de un espacio calibrado y un contexto compartido. El grafo organiza hipótesis de continuidad entre cámaras; el modelo visual aporta evidencias, sin sustituir el razonamiento espacial y temporal.
+- La asociación conserva la procedencia de cada sensor y debe sostener una entidad anónima coherente, sin crear una persona por cámara ni confundir track local/global con identidad civil. Ausencia visual no demuestra salida; una hipótesis no es una ubicación observada.
+- El dummy único es condición de evaluación, nunca una instrucción para fusionar todos los resultados. GT/ID privado/ruta permanecen fuera de inferencia. Toda asociación debe tener evidencia y admitir incertidumbre o contradicción.
+- Clarificación incorporada en sección9 de ENTITY-AGENT-CONTEXT.md; guía09.15–09.18 sin modificar canon ni gates y sin declarar capacidades pendientes como implementadas. En09.15 se explicitan origen anónimo, coordenadas de imagen y tiempos separados de observación/confirmación en el adaptadorMOT.
+
 ## ADR-2026-11-11-P2-09-GRAFO — contexto estático e hipótesis explícitas
 - Construir09.13 desde CollisionWorld/geometría estática y calibración09.12, antes de diseñar recorrido09.14. Exportación permitida no incluye rutas/actores/frames; construcción aislada sin evaluador.
 - P1 mantiene lector/contratoEdge reutilizable; P2 genera el contexto/grafo y evidencia. No se modifica Core ni contratos históricos. Supuestos separados cerrado/seguridadabierta; nunca tratarlos como estado observado porENTITY.

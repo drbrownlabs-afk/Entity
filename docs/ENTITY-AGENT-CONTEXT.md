@@ -122,3 +122,45 @@ El resultado no debe ser únicamente una secuencia de detecciones correctas.
 Debe ser **una entidad cuya presencia, estado, relaciones espaciales y continuidad temporal puedan representarse de manera coherente dentro de ENTITY**.
 
 Ese es el propósito de esta fase y su contribución al sistema completo.
+
+## 9. Aclaración del operador — cámaras integradas y continuidad espacial (2026-11-12)
+
+Las cámaras son los ojos integrados de ENTITY: fuentes independientes de evidencia sobre un mismo espacio y un mismo contexto compartido. Sincronizar cada sensor con el edificio y construir el grafo permite razonar sobre lo que puede ocurrir entre vistas. El razonamiento debe partir de ese contexto espacial y temporal; elegir o mejorar un modelo visual es una herramienta dentro de ese sistema.
+
+La expresión «la inteligencia debe estar en el espacio antes que en el modelo» significa que geometría, conectividad, sensores, tiempo y estado compartido organizan la interpretación de las evidencias. No atribuye al grafo conocimiento de la posición real de una persona: el espacio restringe hipótesis; las observaciones permitidas aportan evidencia; ENTITY mantiene las entidades, relaciones, incertidumbre y memoria resultantes.
+
+Cada sensor conserva su identidad, pose, calibración, reloj y procedencia. Asociar observaciones entre cámaras no mezcla feeds, no convierte cuatro cabezales en un panorama y no borra el origen de una observación. Una asignación al sensor equivocado o una proyección incorrecta invalida el razonamiento espacial aunque el detector encuentre una persona.
+
+Una misma persona observada por varias cámaras debe poder sostener una misma entidad de seguimiento. Los tracks locales son asociaciones temporales de cada sensor: cambiar de cámara o recuperar un track local no demuestra una nueva persona ni una identidad civil. La asociación global debe justificarse con apariencia, tiempo, movimiento y restricciones espaciales; una contradicción mantiene la asociación como incierta, en lugar de forzar una fusión.
+
+Cuando una cámara pierde visibilidad, ENTITY conserva la entidad y su última evidencia con procedencia. Puede mantener hipótesis de desplazamiento por zonas transitables y cámaras candidatas, pero no presentar una ubicación predicha como observada ni deducir una salida del edificio por ausencia visual. Cuando llega nueva evidencia, puede confirmar o revisar la continuidad y conservar memoria de esa revisión.
+
+Ejemplo conceptual: C1 observa una persona; después deja de verla. La última observación de C1 conserva su instante y origen. El grafo permite evaluar posibles reapariciones. Una observación compatible en C2 puede justificar continuidad de la entidad anónima. Un desplazamiento imposible o evidencia ambigua impide una confirmación automática. El intervalo sin visión permanece como desconocido o inferido, no como una trayectoria confirmada.
+
+La prueba con un único dummy evalúa esta capacidad. Saber, desde el evaluador, que hay una sola persona no autoriza al algoritmo a escoger siempre una detección, fusionar todos los tracks ni consumir el identificador privado del simulador. Tampoco convierte la identidad anónima de seguimiento en una identidad civil.
+
+### Consecuencias para las fases pendientes
+
+| Ámbito | Criterio operativo |
+|---|---|
+| Evidencia por sensor | Conservar sensor, reloj, calibración y procedencia hasta las asociaciones y el Core; rechazar mezclas de fuentes. |
+| Detección y MOT (09.15) | Medir aciertos y falsos tracks; emitir observaciones solo desde detecciones reales. Separar el tiempo observado del momento de evidencia que confirma después una asociación. |
+| Continuidad global (09.16) | Justificar una entidad de seguimiento coherente entre cámaras y pérdidas; rechazar transiciones imposibles y conservar asociaciones inciertas sin fusionarlas arbitrariamente. |
+| Modelo del workspace (09.17) | Actualizar el mismo Core con estado, relaciones, eventos y memoria, distinguiendo observado, inferido y desconocido; comprobar persistencia, idempotencia y trazabilidad. |
+| Aceptación (09.18) | Evaluar la coherencia integral en cinco recorridos y presentarla al operador; un recall alto por sí solo no demuestra el sistema completo. |
+
+Esta aclaración conserva la separación simulador/evaluador/ENTITY, el canon y los gates existentes. Describe el propósito y cómo razonar sobre la evidencia; no acredita como implementadas las capacidades pendientes. El estado verificable sigue registrado en PROJECT-STATUS, AGENT-WORKLOG y las evidencias de cada fase.
+
+## 10. Ejemplo operativo: presencia, puesto y disponibilidad (2026-11-12)
+
+El operador sitúa el objetivo general en una situación cotidiana: una persona llega al coworking y ocupa un puesto concreto, por ejemplo Juan en la mesaD,puesto3. Las cámaras aportan evidencias que, relacionadas con identidad legítima, geometría y recursos registrados, permiten actualizar presencia y ocupación en el modelo de entidades y relaciones de ENTITY Core. El ejemplo es ilustrativo; no declara que existan actualmente esas entidades exactas ni que esta integración esté implementada.
+
+La ocupación debe referirse al recurso estable —mesa, puesto o silla según el inventario y el modelo operativo—, conservar su procedencia y distinguir lo observado de lo inferido. Estar cerca de una silla no demuestra por sí solo que se esté ocupando. Si solo existe un track visual anónimo, puede existir evidencia de ocupación sin que se conozca aún la identidad civil de quien ocupa el recurso. No se obtiene «Juan» del identificador privado del simulador.
+
+El sistema puede utilizar ese estado para evaluar qué recursos están disponibles para otra persona, junto con reservas y las reglas autorizadas del coworking. Disponibilidad es una conclusión operativa apoyada en estado y políticas; no debe confundirse con que una silla aparezca vacía en una imagen. Una reserva puede bloquear disponibilidad sin confirmar ocupación, y una ocupación puede observarse aunque no exista una reserva.
+
+Accesos, reservas, membresías, cobros, pagos y otras integraciones aportan información al mismo contexto compartido. Un pago no demuestra presencia; una reserva no demuestra ocupación; una detección no demuestra identidad civil. Conflictos, ausencia de datos y evidencias caducadas deben conservarse como tales, con tiempos y fuentes, en lugar de resolverlos mediante asociaciones arbitrarias.
+
+El grafo espacial de sensores y el modelo de conocimiento operativo tienen funciones relacionadas y diferentes. El primero describe calibración, campos de visión, conectividad y desplazamientos posibles para interpretar evidencias. El modelo de entidades/relaciones de Core relaciona personas, recursos, presencia, ocupación, reservas y operaciones, con estado, eventos y memoria. Ambos deben contribuir a la coherencia del mismo workspace; las cámaras constituyen una fuente más, no una fuente privilegiada que sustituya las demás.
+
+P2-09 valida progresivamente el camino desde píxeles hasta continuidad espacial y actualización trazable del Core. Esta orientación general sirve para tomar decisiones de desarrollo y razonar sobre errores que podrían crear falsa ocupación, duplicar personas o liberar recursos indebidamente. No autoriza iniciar integraciones de reservas/facturación, identificar civilmente al dummy, cambiar políticas comerciales ni ejecutar acciones financieras en la fase actual.

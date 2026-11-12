@@ -1,0 +1,74 @@
+{
+  "phase": "P2-09.15",
+  "experiment": "threshold010",
+  "iou_threshold": 0.3,
+  "valid_opportunities": 513,
+  "matched": 489,
+  "recall": 0.9532163742690059,
+  "false_positive_boxes": 15,
+  "per_sensor": {
+    "C-S1": {
+      "valid": 28,
+      "matched": 28,
+      "false_positive_boxes": 9,
+      "boxes": 53,
+      "recall": 1.0
+    },
+    "C-S2": {
+      "valid": 59,
+      "matched": 58,
+      "false_positive_boxes": 0,
+      "boxes": 59,
+      "recall": 0.9830508474576272
+    },
+    "C-S3": {
+      "valid": 62,
+      "matched": 60,
+      "false_positive_boxes": 3,
+      "boxes": 64,
+      "recall": 0.967741935483871
+    },
+    "C-S4": {
+      "valid": 32,
+      "matched": 32,
+      "false_positive_boxes": 0,
+      "boxes": 32,
+      "recall": 1.0
+    },
+    "C1-S1": {
+      "valid": 89,
+      "matched": 81,
+      "false_positive_boxes": 1,
+      "boxes": 101,
+      "recall": 0.9101123595505618
+    },
+    "C2-S1": {
+      "valid": 102,
+      "matched": 91,
+      "false_positive_boxes": 1,
+      "boxes": 125,
+      "recall": 0.8921568627450981
+    },
+    "C3-S1": {
+      "valid": 63,
+      "matched": 63,
+      "false_positive_boxes": 0,
+      "boxes": 66,
+      "recall": 1.0
+    },
+    "C4-S1": {
+      "valid": 78,
+      "matched": 76,
+      "false_positive_boxes": 1,
+      "boxes": 83,
+      "recall": 0.9743589743589743
+    }
+  },
+  "detection_target_passed": true,
+  "mot_validated": false,
+  "gate_passed": false,
+  "model_sha256": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+  "threshold": 0.1,
+  "processing_seconds": 95.46907502699999,
+  "frames_per_second": 21.032988948851862
+}

@@ -1,0 +1,118 @@
+{
+  "phase": "P2-09.15",
+  "experiment": "tiles025",
+  "tracks_file": "tracks-tuned.json",
+  "per_sensor": {
+    "C-S1": {
+      "valid": 28,
+      "matched_observations": 28,
+      "false_track_observations": 1,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C-S1:norfair:1",
+        "C-S1:norfair:2",
+        "C-S1:norfair:3"
+      ],
+      "observation_recall": 1.0
+    },
+    "C-S2": {
+      "valid": 59,
+      "matched_observations": 58,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C-S2:norfair:1",
+        "C-S2:norfair:2",
+        "C-S2:norfair:3"
+      ],
+      "observation_recall": 0.9830508474576272
+    },
+    "C-S3": {
+      "valid": 62,
+      "matched_observations": 58,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C-S3:norfair:1",
+        "C-S3:norfair:2",
+        "C-S3:norfair:3"
+      ],
+      "observation_recall": 0.9354838709677419
+    },
+    "C-S4": {
+      "valid": 32,
+      "matched_observations": 31,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 1,
+      "local_ids": [
+        "C-S4:norfair:1",
+        "C-S4:norfair:2",
+        "C-S4:norfair:3",
+        "C-S4:norfair:4"
+      ],
+      "observation_recall": 0.96875
+    },
+    "C1-S1": {
+      "valid": 89,
+      "matched_observations": 89,
+      "false_track_observations": 2,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C1-S1:norfair:1",
+        "C1-S1:norfair:2",
+        "C1-S1:norfair:3"
+      ],
+      "observation_recall": 1.0
+    },
+    "C2-S1": {
+      "valid": 102,
+      "matched_observations": 102,
+      "false_track_observations": 1,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C2-S1:norfair:2",
+        "C2-S1:norfair:3",
+        "C2-S1:norfair:4"
+      ],
+      "observation_recall": 1.0
+    },
+    "C3-S1": {
+      "valid": 63,
+      "matched_observations": 62,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C3-S1:norfair:1",
+        "C3-S1:norfair:2"
+      ],
+      "observation_recall": 0.9841269841269841
+    },
+    "C4-S1": {
+      "valid": 78,
+      "matched_observations": 74,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C4-S1:norfair:1",
+        "C4-S1:norfair:2",
+        "C4-S1:norfair:3"
+      ],
+      "observation_recall": 0.9487179487179487
+    }
+  },
+  "continuous_visible_id_switches": 1,
+  "false_track_observations": 4,
+  "all_tracks_from_fresh_detections": true,
+  "predictions_reported_as_observations": false,
+  "initialization_and_loss_policy": {
+    "distance_threshold": 0.25,
+    "hit_counter_max": 12,
+    "initialization_delay_frames": 1,
+    "nominal_fps": 2,
+    "centre_anchor_sensors": [
+      "C-S4"
+    ]
+  },
+  "global_identity_validated": false,
+  "gate_passed": false
+}
