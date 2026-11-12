@@ -8,7 +8,7 @@
 | 06 | 12 personajes ya entidadizados; Mixamo, animaciones, rutas, estados, colisiones | Retomar solo tras 09.18 y nueva orden del operador |
 | 07 | Integración visual de personajes, navegación y comportamiento en el coworking | Después de 06 |
 | 08 | Entidadización del coworking y vínculo con P1 Core | 460 entidades, 1185 relaciones y 290 mapeos documentados; aceptación pendiente |
-| **09** | **Solo cámaras/percepción:** ocho sensores, calibración, detección, MOT, ReID/MTMC, grafo espacial, continuidad anónima y persistencia en el mismo Core | 09.17 gate técnico superado; 09.18 pendiente de cierre/aceptación |
+| **09** | **Solo cámaras/percepción:** ocho sensores, calibración, detección, MOT, ReID/MTMC, grafo espacial, continuidad anónima y persistencia en el mismo Core | 09.17 gate técnico superado; 09.18 ensayos independientes; **09.19 siguiente prueba prioritaria: rendimiento e inferencia causal en vivo, obligatoria antes del cierre P2-09** |
 | **10** | **Integración de P2-06/07 y P2-09:** doce personas simultáneas, ocho cámaras, cruces, oclusiones, desapariciones, reapariciones, identidades similares, tracking causal continuo y persistencia Core | Después de 06, 07 y 09.18; no crear otro motor de percepción |
 | 11 | Sistemas externos: reservas, CRM, accesos, Drive, membresías, facturación, IT, mantenimiento y demás integraciones | Diferido; no implementar ahora |
 | 12 | Sincronización operacional integral | Diferido |
@@ -31,8 +31,8 @@ Exactamente 12 personas de demo: Entity 2 (Carlos/Santiago), Inmerso 2 provision
 P2-09.17: 2008 frames, 609 observaciones, 24 tracks locales, una hipótesis global anónima; 116 tests Core PASS. 4.42 imágenes/s agregadas es tasa DERIVADA de inferencia reutilizada + nueva ingesta, no wallclock de ejecución única. No alcanza 16 imágenes/s objetivo (8 cámaras a 2 FPS); MTMC es batch con evidencia futura y NO es inferencia causal en vivo. P2-09.18 debe completar cinco recorridos independientes y aceptación humana; no se declara completado aquí.
 
 ## Orden y gobierno
-1. Cerrar P2-09.18 sin alterar sus gates ni atribuir tiempo real.
-2. Esperar orden explícita del operador para P2-06; después P2-07.
+1. Completar P2-09.18 sin alterar sus gates; a continuación ejecutar **P2-09.19: diagnóstico de captura, YOLOX, MOT, OSNet, MTMC, HTTP/Core y optimización de pipeline causal continuo**. Medir ocho cámaras simultáneas y objetivo inicial 16 imágenes/s agregadas, latencia, colas, GPU/CPU/VRAM, pérdida de frames y persistencia. No declarar P2-09 aceptado sin demostrarlo.
+2. Esperar orden explícita del operador para P2-06 **solo tras P2-09.19 y aceptación de P2-09**; después P2-07.
 3. P2-10: validar conjuntamente personajes y cámaras en Core, sin sistemas externos.
 4. P2-11–15: solo después y con autorización.
 5. No abrir Core paralelo, no implementar P3 ni construir motores futuros. Adaptaciones compartidas pertenecen a P1.
