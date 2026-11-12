@@ -1,0 +1,17 @@
+{
+  "phase": "P2-09.18",
+  "passed": true,
+  "same_existing_sqlite_database": true,
+  "full_owned_uvicorn_restart": true,
+  "world_relations_memory_identical": true,
+  "exact_duplicate_observations": 2009,
+  "vision_stage_wall_seconds": 253.07553684099997,
+  "core_first_ingress_seconds": 313.167760544,
+  "sum_worker_wall_and_first_ingress_seconds": 566.243297385,
+  "derived_aggregate_images_per_second": 3.5461788409209567,
+  "timing_scope": "sum of recorded inference processing times plus new measured Core ingress; not same-attempt walltime, excludes capture/evaluation/queue",
+  "core_peak_rss_kib": 71972,
+  "realtime_validated": false,
+  "human_final_acceptance": false,
+  "vision_stage_timing_basis": "previously measured processing times; unchanged outputs reused after correcting only enrollment"
+}

@@ -249,3 +249,10 @@ Entidad global: tipo Track existente, scope global, ID con namespace de run, est
 La prueba usa la SQLite/sede existentes y un run nuevo, conserva runs históricos y verifica replay/reinicio real. Medición batch con p50/p95 de detector e ingreso HTTP, FPS agregados, RAM por proceso y memoria GPU global muestreada; no reclamar latencia causal ni VRAM exclusiva.09.18 mantiene cinco recorridos y aceptación humana final; no iniciar múltiples personas ni P3.
 
 La evidencia de cámara que recibe Core usa el ancla de la caja realmente detectada, no una estimación filtrada que pueda salir del frame y luego recortarse artificialmente. Se conserva el filtro original en la salida privada trazada del MOT. Crear el run al inicio del medio y registrar sensores antes de sus imágenes permite reconstrucción histórica coherente; el reloj se adelanta luego para aceptar el lote retrospectivo. IDs de medición fríos nuevos y replay condicionado al hash del resultado original evitan reinterpretar silenciosamente un run existente. Los intentos fallidos se conservan. En09.17 se reutiliza inferencia idéntica al corregir únicamente el ingreso; el rendimiento combinado se declara suma de tiempos medidos de etapas, no walltime único.
+
+
+## 2026-11-12 — P2-09.18: política congelada, corpus independientes y enrolamiento de run nuevo
+
+Cinco ejecuciones nuevas del mismo estímulo con variantes de velocidad, no cinco rutas inéditas. Fijar hashes de modelos, percepción, calibración, grafo y Core antes del lote; no ajustar usando sus etiquetas. Separar caché privilegiado del evaluador y mounts de píxeles del worker. Serializar ingresos Core y conservar fallos, no seleccionar solo casos exitosos.
+
+P1: replay exacto ya validado puede devolverse antes de world(), manteniendo autorización/site/source y conflicto de ID;117testsPASS. Un run frío hereda metadatos del inventario, no observaciones: enrolar su propio manifiesto tras cold guard, no rechazarlo porque site tenga el hash anterior. Replay exige el hash del resultado original. Se reanuda solo el ingreso con outputs intactos; no se reescribe baseline/canon ni se presume aprobación humana.

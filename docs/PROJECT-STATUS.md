@@ -1,5 +1,7 @@
 # ENTITY — Memoria actualizable de procesos
 
+**2026-11-12 — P2-09.18 EN VALIDACIÓN:** cinco capturas nuevas accept18-v0..v4 completas(9288imágenes), percepción con política congelada evaluada: recall98.05–98.88%,0cambios locales deID y1identidad global del actor por ensayo,0fragmentación.117testsCorePASS; replay exacto evita reconstruir mundo sin omitir autorización/conflictos. Primera orquestación falló enCore por hash de corpus heredado en un run nuevo; corregido solo enrolamiento. Reintento Core-r2 y finalizador autónomos en marcha, usando las mismas salidas; consultar marcadores privados antes de reanudar, NO duplicar captura/inferencia. Evidencia09.18; no aceptación humana ni cierre técnico integral todavía.
+
 ## ACTUALIZACIÓN VIGENTE 2026-11-12 — Orden P2 aprobado
 **P2-09 SOLO cámaras/percepción**, sin CRM, reservas ni integraciones empresariales. P2-09.17 gate técnico superado; P2-09.18 pendiente de cinco recorridos y aceptación humana. El pipeline actual es batch/no causal en vivo y no alcanza 16 imágenes/s agregadas; 4.42 imágenes/s es tasa derivada, NO tiempo real.
 **Siguiente tras 09.18 y nueva orden del operador:** P2-06 (avatares Mixamo para las 12 personas existentes) → P2-07 (integración de personajes en escena) → P2-10 (validación multicámara de múltiples personas, inferencia causal continua y persistencia Core).

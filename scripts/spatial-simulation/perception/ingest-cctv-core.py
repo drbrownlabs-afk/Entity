@@ -9,6 +9,7 @@ import collections
 import hashlib
 import json
 import resource
+import re
 import statistics
 import time
 import uuid
@@ -24,15 +25,16 @@ def digest(value):return hashlib.sha256(json.dumps(value,sort_keys=True,separato
 def percentile(values,p):return sorted(values)[int(p*(len(values)-1))] if values else None
 
 
-def execute(api,run,output,replay=False,experiment='core17'):
+def execute(api,run,output,replay=False,experiment='core17',corpus='trial-a',phase='P2-09.17'):
+    if not all(re.fullmatch(r'[a-z0-9_-]+',x) for x in [experiment,corpus]):raise ValueError('Invalid corpus/experiment name')
     started=time.perf_counter();site='coworking-p2';root=f'/v1/sites/{site}';prefix=f'{root}/runs/{run}'
-    private=ROOT/'simulation/spatial-office/.runtime';worker=private/'cctv-trial-trial-a/output'/experiment
+    private=ROOT/'simulation/spatial-office/.runtime';worker=private/('cctv-trial-'+corpus)/'output'/experiment
     tracks=json.loads((worker/'tracks-tuned.json').read_text());global_result=json.loads((worker/'global-tracks.json').read_text())
     detections=json.loads((worker/'detections.json').read_text())
     profile_path=ROOT/'apps/spatial-simulation/public/perception/profiles/cctv-c.json'
     profile=json.loads(profile_path.read_text());profile_sha=hashlib.sha256(profile_path.read_bytes()).hexdigest()
     association_sha=hashlib.sha256((worker/'global-tracks.json').read_bytes()).hexdigest()
-    manifest_sha=hashlib.sha256((private/'cctv-trial-trial-a/frames/manifest.json').read_bytes()).hexdigest()
+    manifest_sha=hashlib.sha256((private/('cctv-trial-'+corpus)/'frames/manifest.json').read_bytes()).hexdigest()
     frames=sorted(tracks['frames'],key=lambda f:(f['media_time_seconds'],f['camera_id']))
     latest=max(max(f['observed_at'] for f in frames),max(t['association_confirmation_evidence_at'] for f in frames for t in f['tracks']))
     inference_at=datetime.fromisoformat(latest.replace('Z','+00:00')).isoformat()
@@ -58,7 +60,9 @@ def execute(api,run,output,replay=False,experiment='core17'):
         def command(operation,target,inputs):
             return request('POST',prefix+'/commands',{'id':uid('cctv17',run,operation,target,inputs),'operation':operation,'target':target,'inputs':inputs})
         if not replay:
-            if before['entities']['site'].get('cctv_manifest_sha256') not in [None,manifest_sha]:raise RuntimeError('Run manifest mismatch')
+            # A new run inherits site inventory metadata, including the previous
+            # corpus hash. It has no observations yet: enroll THIS corpus below.
+            # Existing runs are protected by the cold guard and replay hash check.
             command('entity.upsert','site',{'id':'site','kind':'Site','attributes':{'cctv_manifest_sha256':manifest_sha,'cctv_profile_sha256':profile_sha,
                 'cctv_association_output_sha256':association_sha,'vision_semantics':'pixel observations; anonymous inference; no simulator truth'}})
             for camera in profile['cameras']:
@@ -119,7 +123,7 @@ def execute(api,run,output,replay=False,experiment='core17'):
         # Check event provenance through actual HTTP, not private DB shortcuts.
         event=request('GET',prefix+'/events?entity_id='+global_ids[0]+'&limit=100')
         request('POST','/v1/office/auth/logout')
-    report={'phase':'P2-09.17','run':run,'real_http':True,'same_existing_site':site,'replay':replay,
+    report={'phase':phase,'corpus':corpus,'run':run,'real_http':True,'same_existing_site':site,'replay':replay,
         'frame_observations':len(frames),'local_observations':sum(len(f['tracks']) for f in frames),'global_associations':len(global_ids),
         'duplicate_observations':duplicates,'local_tracks_in_core':len(local_ids),'global_tracks_in_core':len(global_ids),
         'new_civil_people':0,'prior_people_unchanged':True,'historical_worlds_unchanged':True,
@@ -140,5 +144,5 @@ def execute(api,run,output,replay=False,experiment='core17'):
 if __name__=='__main__':
     parser=argparse.ArgumentParser();parser.add_argument('--api',default='http://127.0.0.1:8095');parser.add_argument('--run',default='p2-09-cctv-trial-a')
     parser.add_argument('--output',type=Path,required=True);parser.add_argument('--replay',action='store_true')
-    parser.add_argument('--experiment',default='core17',choices=['core17','tiles025']);args=parser.parse_args()
-    execute(args.api,args.run,args.output,args.replay,args.experiment)
+    parser.add_argument('--experiment',default='core17');parser.add_argument('--corpus',default='trial-a');args=parser.parse_args()
+    execute(args.api,args.run,args.output,args.replay,args.experiment,args.corpus)

@@ -1,12 +1,15 @@
 """Privileged evaluation AFTER MTMC. Never imported or mounted by inference."""
 import collections
+import argparse
 import hashlib
 import json
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[3]
-trial=ROOT/'simulation/spatial-office/.runtime/cctv-trial-trial-a'
-out=trial/'output/tiles025'
+p=argparse.ArgumentParser();p.add_argument('--run',default='trial-a');p.add_argument('--experiment',default='tiles025');p.add_argument('--phase',choices=['09.16','09.18'],default='09.16');args=p.parse_args()
+assert all(s.replace('-','').replace('_','').isalnum() for s in [args.run,args.experiment])
+trial=ROOT/f'simulation/spatial-office/.runtime/cctv-trial-{args.run}'
+out=trial/'output'/args.experiment
 tracks=json.loads((out/'tracks-tuned.json').read_text())
 result=json.loads((out/'global-tracks.json').read_text())
 reid=json.loads((out/'reid-evidence.json').read_text())
@@ -47,7 +50,7 @@ checks={'single_actor_global_identity':len(actor_groups)==1,'all_eight_sensors_s
         'no_infeasible_full_sequence_segments':infeasible==0,'all_original_observations_preserved_exactly':True,
         'actor_count_not_used_by_inference':result['expected_actor_count_used'] is False,
         'no_civil_identity_or_fabricated_gap_observations':result['no_observations_created'] and all(g['civil_person_id'] is None for g in result['groups'])}
-report={'phase':'P2-09.16','run':'trial-a','checks':checks,'technical_gate_passed':all(checks.values()),
+report={'phase':'P2-'+args.phase,'run':args.run,'checks':checks,'technical_gate_passed':all(checks.values()),
         'global_groups':len(result['groups']),'actor_global_id_count':len(actor_groups),'residual_actor_fragmentations':len(actor_groups)-1,
         'local_tracklets':len(members),'original_observations':len(assigned),'matched_valid_observations':matched,'valid_opportunities':valid,
         'false_or_duplicate_observations':false,'per_sensor':dict(sensors),
@@ -56,12 +59,12 @@ report={'phase':'P2-09.16','run':'trial-a','checks':checks,'technical_gate_passe
         'osnet_seconds':reid['processing_seconds'],'mtmc_seconds':result['processing_seconds'],
         'model_sha256':result['model_sha256'],'graph_sha256':result['graph_sha256'],
         'input_tracks_sha256':reid['tracks_sha256'],'output_sha256':hashlib.sha256((out/'global-tracks.json').read_bytes()).hexdigest(),
-        'limitations':['One tuning corpus; five held-out trials pending09.18','Single actor cannot estimate multiperson false merge rate',
-                       'Four false/localization/duplicate source observations remain associated, not hidden',
+        'limitations':['One run; consult batch summary for all five executions','Single actor cannot estimate multiperson false merge rate',
+                       'False/localization/duplicate source observations remain measured, not hidden',
                        'Body-support projection is uncertain; generic height2.0 native is a prior, not actor pose or measured body height',
                        'Geometry-disagreeing instants remain unresolved; feasible path is not observed trajectory',
                        'Offline full-corpus association; live causal MTMC and Core persistence not validated'],
         'human_final_acceptance':False}
-folder=ROOT/'docs/spatial-simulation/evidence/p2-09/09.16/trial-a';folder.mkdir(parents=True,exist_ok=True)
+folder=ROOT/f'docs/spatial-simulation/evidence/p2-09/{args.phase}/{args.run}';folder.mkdir(parents=True,exist_ok=True)
 (folder/'evaluation.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
 print(json.dumps(report))

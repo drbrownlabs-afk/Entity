@@ -14,13 +14,15 @@ def ingest(db,site,run,actor,message:Observation):
     if message.site_id!=site:raise HTTPException(403,'Observation site mismatch')
     source=resource(db,site,message.source_id)
     if actor['role']=='connector' and actor['person']!=message.source_id:raise HTTPException(403,'Connector is bound to another source')
-    state=world(db,site,run);items=state['entities'];clock=state['clock'];at=utc(message.observed_at.isoformat())
-    if datetime.fromisoformat(at)>datetime.fromisoformat(clock)+timedelta(seconds=120):raise HTTPException(422,'Observation too far ahead of site clock')
     body=message.model_dump_json();oid=str(message.observation_id)
     previous=db.execute('SELECT body,result FROM office_inbox WHERE site=? AND run=? AND id=?',(site,run,oid)).fetchone()
     if previous:
         if previous['body']!=body:raise HTTPException(409,'Observation ID conflict')
         return {**json.loads(previous['result']),'duplicate':True}
+    # Exact duplicates already passed temporal/binding validation. Authorization,
+    # site and source checks above still apply; avoid rebuilding the whole world.
+    state=world(db,site,run);items=state['entities'];clock=state['clock'];at=utc(message.observed_at.isoformat())
+    if datetime.fromisoformat(at)>datetime.fromisoformat(clock)+timedelta(seconds=120):raise HTTPException(422,'Observation too far ahead of site clock')
     binding=db.execute('SELECT * FROM office_bindings WHERE site=? AND source=?',(site,message.source_id)).fetchone()
     if not binding or binding['adapter'] not in ['simulated','rest-test','video-test','mqtt-test']:raise HTTPException(403,'Source adapter not enrolled')
     if json.loads(binding['config']).get('available') is False:raise HTTPException(503,'Source adapter unavailable')

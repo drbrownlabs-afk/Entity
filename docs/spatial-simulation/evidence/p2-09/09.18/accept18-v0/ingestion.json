@@ -1,0 +1,57 @@
+{
+  "phase": "P2-09.18",
+  "corpus": "accept18-v0",
+  "run": "p2-09-accept18-v0-r2",
+  "real_http": true,
+  "same_existing_site": "coworking-p2",
+  "replay": false,
+  "frame_observations": 2008,
+  "local_observations": 609,
+  "global_associations": 1,
+  "duplicate_observations": 0,
+  "local_tracks_in_core": 24,
+  "global_tracks_in_core": 1,
+  "new_civil_people": 0,
+  "prior_people_unchanged": true,
+  "historical_worlds_unchanged": true,
+  "world_revision_before": 3518,
+  "world_revision_after": 5537,
+  "world_unchanged": false,
+  "world_sha256": "c33c4ea739f2d19f51d0d8ea2651bfdd0ac17712b1cb93fde394f79f221c988e",
+  "memory_sha256": "0b43c1c1f9a014cc757e5820197de9ae537c30fc62ccd461e3da7aa10c77a0c3",
+  "global_memory_count": 1,
+  "global_graphs": {
+    "p2-09-accept18-v0-r2:visual-50079c5ad7804a4f342b": {
+      "nodes": 33,
+      "edges": 72
+    }
+  },
+  "global_event_count": 1,
+  "global_location_status": "unknown",
+  "historical_sources_available_before_pixels": true,
+  "global_inference_absent_before_available_at": true,
+  "core_image_position_source": "fresh associated bbox anchor; filtered MOT estimate is not clipped into an observation",
+  "experiment": "accept18",
+  "manifest_sha256": "410675047c0de0bcc5fd91a76fb17ecfcb065be97c08add2842227f9270ff48d",
+  "association_output_sha256": "82c53f08902d5c23b5d317b12c54bcfb1835010b8d57d0665f387edaa8dd85bc",
+  "http_latency_ms": {
+    "other": {
+      "requests": 51,
+      "p50": 152.08900000000014,
+      "p95": 339.790488999995
+    },
+    "pixel_ingress": {
+      "requests": 2008,
+      "p50": 150.89944850000057,
+      "p95": 196.177127999988
+    },
+    "global_ingress": {
+      "requests": 1,
+      "p50": 631.7871829999717,
+      "p95": 631.7871829999717
+    }
+  },
+  "seconds": 313.167760544,
+  "ingester_peak_rss_kib": 64532,
+  "semantics": "batch historical pixel observations and later inference; not live occupancy, civil identity or confirmed world trajectory"
+}

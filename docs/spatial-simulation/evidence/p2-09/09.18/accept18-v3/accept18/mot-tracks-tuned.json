@@ -1,0 +1,125 @@
+{
+  "phase": "P2-09.18",
+  "experiment": "accept18",
+  "tracks_file": "tracks-tuned.json",
+  "per_sensor": {
+    "C-S1": {
+      "valid": 24,
+      "matched_observations": 24,
+      "false_track_observations": 4,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C-S1:norfair:1",
+        "C-S1:norfair:2",
+        "C-S1:norfair:3"
+      ],
+      "observation_recall": 1.0
+    },
+    "C-S2": {
+      "valid": 52,
+      "matched_observations": 51,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C-S2:norfair:1",
+        "C-S2:norfair:2",
+        "C-S2:norfair:3"
+      ],
+      "observation_recall": 0.9807692307692307
+    },
+    "C-S3": {
+      "valid": 54,
+      "matched_observations": 52,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C-S3:norfair:1",
+        "C-S3:norfair:2",
+        "C-S3:norfair:3"
+      ],
+      "observation_recall": 0.9629629629629629
+    },
+    "C-S4": {
+      "valid": 28,
+      "matched_observations": 27,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C-S4:norfair:1",
+        "C-S4:norfair:2",
+        "C-S4:norfair:3"
+      ],
+      "observation_recall": 0.9642857142857143
+    },
+    "C1-S1": {
+      "valid": 78,
+      "matched_observations": 78,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C1-S1:norfair:1",
+        "C1-S1:norfair:2",
+        "C1-S1:norfair:3",
+        "C1-S1:norfair:4"
+      ],
+      "observation_recall": 1.0
+    },
+    "C2-S1": {
+      "valid": 88,
+      "matched_observations": 88,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C2-S1:norfair:2",
+        "C2-S1:norfair:3",
+        "C2-S1:norfair:4"
+      ],
+      "observation_recall": 1.0
+    },
+    "C3-S1": {
+      "valid": 56,
+      "matched_observations": 56,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C3-S1:norfair:1",
+        "C3-S1:norfair:2"
+      ],
+      "observation_recall": 1.0
+    },
+    "C4-S1": {
+      "valid": 68,
+      "matched_observations": 66,
+      "false_track_observations": 0,
+      "continuous_visible_id_switches": 0,
+      "local_ids": [
+        "C4-S1:norfair:1",
+        "C4-S1:norfair:2",
+        "C4-S1:norfair:3"
+      ],
+      "observation_recall": 0.9705882352941176
+    }
+  },
+  "continuous_visible_id_switches": 0,
+  "false_track_observations": 4,
+  "all_tracks_from_fresh_detections": true,
+  "predictions_reported_as_observations": false,
+  "initialization_and_loss_policy": {
+    "distance_threshold": 0.25,
+    "hit_counter_max": 12,
+    "initialization_delay_frames": 1,
+    "nominal_fps": 2,
+    "centre_anchor_sensors": [
+      "C-S4"
+    ],
+    "normalized_kalman": {
+      "R": 0.0001,
+      "Q": 0.001,
+      "pos_variance": 0.01,
+      "vel_variance": 0.01,
+      "probability_calibrated": false
+    }
+  },
+  "global_identity_validated": false,
+  "gate_passed": false
+}

@@ -1,0 +1,35 @@
+{
+  "phase": "P2-09.18",
+  "sha256": {
+    "apps/spatial-simulation/public/perception/profiles/cctv-c.json": "2c036247f9fb6b330542ede86978de088ae8ac1977178ddbadbdc9c879ac91cc",
+    "simulation/spatial-office/perception/cctv-c-spatial-graph.json": "51f1f9d2961b7b23b76b36442fd758f25a26a2f8a0888c67e9ba862598f11a57",
+    "services/entity-edge/entity_edge/cctv_mot.py": "01206fc2556b63bf3e016088d6c1eeb50028441825927f42a6fb7ccabf237cab",
+    "services/entity-edge/entity_edge/cctv_reid.py": "6ba5d6cc6b47f50bbbc0fffe7225e71b02166a7e32ab7e052b992876c13cea3d",
+    "services/entity-edge/entity_edge/cctv_mtmc.py": "2231298a92c13fe0751981fb5e958ded197352f627a2b52f1067f0d5a418c6c0",
+    "scripts/spatial-simulation/perception/detect-cctv.py": "dba16431fa15cceb3f25ffd2d40d33d6e73c0aa0c4aea7aeb8eba4cf2a9fb02b",
+    "services/entity-api/app/office/observations.py": "5b9e8e4ef204e2a9c2ad2465d5aded87a105dc89cde356abaffcb613c436c9fb",
+    "services/entity-api/app/office/global_perception.py": "74e5eda714903fb8812e8874af439e6bf92935e0a324ae0ebc2afbbd88bb9cad",
+    "simulation/spatial-office/.runtime/p2-vision-models/yolox_s.onnx": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+    "simulation/spatial-office/.runtime/p2-vision-models/osnet_ain.onnx": "fb43bdb65f317341570d532275ed55cb5f2ccc956eb2f0bcffc57b3499094c62"
+  },
+  "cases": [
+    "accept18-v0",
+    "accept18-v1",
+    "accept18-v2",
+    "accept18-v3",
+    "accept18-v4"
+  ],
+  "detector_threshold": 0.25,
+  "native_tile_sensors": [
+    "C1-S1",
+    "C2-S1"
+  ],
+  "source_case_fields_never_enter_worker": [
+    "variant",
+    "actor_id",
+    "feet",
+    "route",
+    "labels"
+  ],
+  "human_final_acceptance": false
+}

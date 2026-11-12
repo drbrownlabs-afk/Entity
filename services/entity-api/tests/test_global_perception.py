@@ -1,6 +1,7 @@
 """Core contracts, not claims of vision accuracy or multiperson validation."""
 import copy
 import unittest
+from unittest.mock import patch
 from uuid import uuid4
 import test_p2_perception as fixtures
 from app import main
@@ -53,6 +54,15 @@ class GlobalPerceptionTests(unittest.TestCase):
         self.assertEqual(self.post(self.message(),self.login('viewer')).status_code,403)
         self.assertEqual(self.post(self.message(),self.login('connector')).status_code,403)
         msg=self.message();msg['observed_at']='2026-11-09T12:00:01Z';self.assertEqual(self.post(msg).status_code,422)
+
+    def test_exact_replay_avoids_world_rebuild_without_bypassing_auth_or_conflict(self):
+        msg=copy.deepcopy(self.messages['cam-a']);before=self.world()
+        with patch('app.office.observations.world',side_effect=AssertionError('Duplicate rebuilt world')):
+            self.assertTrue(self.post(msg).json()['duplicate'])
+            changed=copy.deepcopy(msg);changed['payload']['frame_index']=99
+            self.assertEqual(self.post(changed).status_code,409)
+            self.assertEqual(self.post(msg,self.login('viewer')).status_code,403)
+        self.assertEqual(before,self.world())
 
     def test_confirmation_time_preserved_and_global_inference_cannot_anticipate_it(self):
         msg=copy.deepcopy(self.messages['cam-a']);msg['observation_id']=str(uuid4())
