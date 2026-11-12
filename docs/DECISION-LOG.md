@@ -1,5 +1,16 @@
 # ENTITY — Registro de decisiones y autoridad
 
+## ADR-2026-11-12-P2-REORDENAMIENTO — ALCANCE P2-09/10 (APROBADO POR OPERADOR)
+- P2-09 queda exclusivamente dedicado al sistema de cámaras/percepción y su integración con el mismo ENTITY Core: calibración, detección, tracking, ReID/MTMC, continuidad, eventos y memoria. La antigua descripción de P2-09 que mezclaba CRM, reservas y otros sistemas queda sustituida.
+- Terminar P2-09.18 y su aceptación antes de volver a P2-06. No declarar 09.18 completado por esta decisión.
+- P2-06 incorpora avatares/animaciones a las 12 personas YA entidadizadas; P2-07 integra y valida esos personajes en el coworking existente.
+- P2-10 es la validación profesional conjunta de 06/07/09: doce personas, ocho cámaras, múltiples actores, cruces, oclusiones, ReID, continuidad causal, latencia y persistencia en Core; no desarrollar un segundo detector/Core. El ground truth e IDs privados de NPC permanecen aislados.
+- P2-11 se reserva para sistemas externos (CRM, reservas, accesos, documentos y otros), DIFERIDOS por decisión expresa. P2-12 sincronización, P2-13 interoperabilidad, P2-14 escenarios/contexto, P2-15 aceptación integral.
+- Rendimiento actual NO tiempo real: P2-09.17 reporta 4.42 imágenes/s derivadas frente a 16 imágenes/s objetivo; MTMC batch usa información futura. Tiempo real requiere evidencia causal y medición reproducible en P2-10.
+- No comenzar P2-06 ni P2-10 automáticamente: el operador dará la orden tras 09.18. No cambiar canon, código ni artefactos de pruebas con esta replanificación.
+- Sustituye la asignación de fases en P2-ROADMAP 2026-11-08 y las interpretaciones de P2-09 con doble alcance; el historial queda preservado.
+
+
 ## ADR-2026-11-12-P2-09-PERCEPCION — evidencia visual y continuidad local con trazabilidad
 - Seleccionar YOLOX-S existente aumbral0.25 con recortes nativos solapados enC1/C2, tras medir93.18%inicial,95.32%con umbral0.10 y98.05%con recortes. Mantener pesos/baseline. Registrar8cajas falsas/de localización/duplicadas y coste11.23img/s; no declarar tiempo real.
 - Reutilizar Norfair y corregir unidades del filtro normalizado; confirmación/retención y ancla de imagen explícitas. Asociar únicamente detecciones frescas, conservar observación original y evidencia posterior de confirmación. Pérdida visual no es salida; track local no es persona civil ni posición mundial confirmada.
