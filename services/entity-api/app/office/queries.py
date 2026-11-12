@@ -20,7 +20,11 @@ def query(db,site,run,body,visible_state=None):
         item=items[key]
         if item.get('kind') not in ['Person','Track','Visit']:raise HTTPException(422,'Location query requires person, track or visit')
         confirmed=item.get('freshness')=='fresh' and (item.get('presence')=='confirmed' or item.get('active') is True)
+        image_only=item.get('kind')=='Track' and item.get('coordinate_frame')=='normalized-image' and not item.get('zone_id')
+        visual_confirmed=confirmed
+        if image_only:confirmed=False
         answer={'status':'confirmed' if confirmed else 'unknown','zone_id':item.get('zone_id') if confirmed else None,'last_observed_at':item.get('observed_at'),'last_known_zone':item.get('zone_id'),'reason':'observed evidence' if confirmed else 'Arrival not confirmed or observation expired'}
+        if image_only:answer.update(visual_presence='confirmed' if visual_confirmed else 'unknown',reason='Image evidence has no confirmed world zone',coordinate_frame='normalized-image')
     elif kind=='agenda':
         start,end=utc(body['from']),utc(body['to'])
         answer=[x for x in items.values() if x.get('kind') in ['Meeting','Booking'] and x.get('starts_at','9999')<end and start<x.get('ends_at','') and (not key or x.get('resource_id')==key or x.get('person_id')==key or x.get('host_id')==key)]

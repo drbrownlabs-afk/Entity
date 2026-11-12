@@ -13,6 +13,9 @@ FIELD_LINKS={
 TYPES={'provisionallySameVisualSubject','plannedNetworkConnection','referencesDoor','declaredOperator','clientOf','hasRole','offersService','plansService','supportsService','plannedFor','hasSourceContract','plannedProtection','plannedControl','plannedMonitoring','plannedComponent','referencesPass','referencesOrder','referencesPayment','correspondsToPlan','usesPass','renews','concernsRenewal','settlesOrder','documentsPayment','concernsService','concernsVisitPlan','concernsMeetingPlan','registeredIn','adjacentTo','connectedTo','registeredVisit','atAccessPoint','managedBy','belongsTo','memberOf','locatedIn','partOf','usesResource','concernsPerson','hostedBy','scheduledBy','attendsMeeting','observedBy','representedBy','assignedTo','waitsIn','addressedTo','partOfConversation','occupies','employedBy','uses','covers','streamOf','measures','serves','communicatesThrough','reservedBy','invitedTo','reportsTo','affectedBy'}
 def active(edge,at):
     return edge.get('valid_from','0000')<=at and (not edge.get('valid_to') or at<edge['valid_to'])
+
+# Explicit hypothesis aliases preserve historical nodes and their event history.
+TYPES.add('supersededBy')
 def derive(item,at):
     links=list(item.get('relations',[]))
     for field,kind in FIELD_LINKS.items():

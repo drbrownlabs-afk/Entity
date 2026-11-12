@@ -108,6 +108,15 @@ def observation(site:str,run:str,body:Observation,actor=Depends(principal)):
     from app.main import database
     with database(write=True) as db:return ingest(db,site,run,actor,body)
 
+from .causal_perception import CausalBundle,ingest_bundle
+@router.post('/sites/{site}/runs/{run}/observations/causal-bundle')
+def causal_bundle(site:str,run:str,body:CausalBundle,actor=Depends(principal)):
+    from app.main import database
+    from .storage import now
+    received_at=now()
+    with database(write=True) as db:result=ingest_bundle(db,site,run,actor,body,received_at=received_at)
+    return {**result,'received_at':received_at,'commit_ack_at':now()}
+
 @router.post('/sites/{site}/runs/{run}/queries')
 def ask(site:str,run:str,body:Query,actor=Depends(principal)):
     from app.main import database

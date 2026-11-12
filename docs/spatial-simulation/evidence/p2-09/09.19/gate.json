@@ -1,10 +1,10 @@
 {
   "phase": "P2-09.19",
-  "status": "DIAGNOSIS_AND_PROPOSAL_READY_FOR_REVIEW",
+  "status": "APPROVED_IMPLEMENTATION_IN_VALIDATION",
   "diagnosis_executed": true,
   "real_model_core_capture_probes": true,
-  "substantial_refactor_implemented": false,
-  "implementation_approval_received": false,
+  "substantial_refactor_implemented": true,
+  "implementation_approval_received": true,
   "live_causal_perception_demonstrated": false,
   "sixteen_images_per_second_continuous_demonstrated": false,
   "gpu_saturation_established": false,
@@ -12,5 +12,15 @@
   "production_perception_policy_changed": false,
   "location_query_semantics_issue_observed": true,
   "human_final_acceptance": false,
-  "proposal": "docs/P2-09.19-CAUSAL-PERCEPTION-DIAGNOSIS.md"
+  "proposal": "docs/P2-09.19-CAUSAL-PERCEPTION-DIAGNOSIS.md",
+  "causal_incremental_paced_replay_executed": true,
+  "historical_baseline_unchanged": true,
+  "new_causal_policy_under_validation": true,
+  "location_query_semantics_fixed_in_code": true,
+  "outstanding": [
+    "Five corrected quality regressions",
+    "Sustained 10-minute throughput/latency",
+    "Integrated virtual live source",
+    "Edge/Core interruption and recovery proof"
+  ]
 }

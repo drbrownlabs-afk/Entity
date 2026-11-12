@@ -1,0 +1,12 @@
+{
+  "phase": "P2-09.19",
+  "scope": "Implementation checkpoint; unit/regression tests are not the sustained perception gate",
+  "core": {"tests": 121, "exit_code": 0, "seconds": 197.086, "environment": "api-venv", "command": "PYTHONPATH=services/entity-api python -m unittest discover -s services/entity-api/tests -v"},
+  "edge": {"tests": 45, "exit_code": 0, "seconds": 0.427, "environment": "cpu-venv", "command": "PYTHONPATH=services/entity-edge python -m unittest discover -s services/entity-edge/tests -v"},
+  "simulation": {"tests": 11, "exit_code": 0, "command": "node --test tests/*.test.js", "cwd": "apps/spatial-simulation"},
+  "build": {"exit_code": 0, "command": "node node_modules/vite/bin/vite.js build --base=/Entity/spatial-simulation/", "cwd": "apps/spatial-simulation", "warning": "Existing chunk size advisory"},
+  "causal_coverage": ["Immutable emitted prefixes", "Later confirmation does not rewrite earlier candidates", "Independent capture jitter", "Fresh boxes, no predicted observations", "Session and elapsed gap separation", "Topology and contradictions", "Availability and historical reconstruction", "Atomic rejection and source authorization", "Alias projection coherence", "Duplicate replay and database initialization"],
+  "remote_ci_verified": false,
+  "sustained_gate_passed": false,
+  "human_final_acceptance": false
+}

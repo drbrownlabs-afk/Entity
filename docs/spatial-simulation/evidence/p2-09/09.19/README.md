@@ -1,5 +1,21 @@
 # P2-09.19 — Evidencia del diagnóstico, no cierre del gate causal
 
+**Actualización tras «aceptado» del operador:** propuesta autorizada; implementación causal optativa en validación. Los párrafos del diagnóstico original que indican «no se inicia refactorización» son históricos. El gate actual mantiene falsas las demostraciones de16FPS sostenidos y fuente virtual integrada; no autoriza avanzar de fase.
+
+`causal-development.json` conserva intentos intermedios, incluidos descartes, retrasos y la primera regresión con umbral incorrecto0.10. No usarla como paridad con la política congelada0.25. `raw-capture-probe.json` conserva la comparación nativa: PNG/BGR exactos en8sensores, BGR binario más lento y gruposPNG insuficientes para16FPS. La aprobación no es evidencia de funcionamiento.
+
+El worker `entity_edge.causal_pixels` recibe únicamente envelopes de píxeles porstdin; Bubblewrap no monta frames futuros, workspace/evaluador o red. El productor de replay sí conoce el manifiesto y libera imágenes progresivamente; nunca entrega ese manifiesto al worker. El evaluador `evaluate-causal-cctv.py` se ejecuta después de `status=done`, fuera de ese aislamiento. Las colas de transporte son16/16frames y la decodificación tiene2frames. El modo `--lossless` aplica contrapresión para probar calidad y registra el retraso de liberación; no cuenta como fuente real a16FPS.
+
+Reproducción del incremento, desde raíz, con los entornos ya preparados (elegir un run nuevo para conservar intentos):
+
+```powershell
+wsl -d Ubuntu-24.04 -u root -- /opt/entity-p2/api-venv/bin/python scripts/spatial-simulation/perception/replay-causal-cctv.py --run p2-09-causal19-example --corpus accept18-v0 --seconds 125 --core --lossless
+wsl -d Ubuntu-24.04 -u root -- /opt/entity-p2/api-venv/bin/python scripts/spatial-simulation/perception/evaluate-causal-cctv.py --run p2-09-causal19-example --corpus accept18-v0
+node apps/spatial-simulation/tests/diagnose-causal-capture.mjs
+```
+
+El replay inicia y cierra un proceso propio del P1 sobre la SQLite original, añade un run, verifica replay exacto y hashes de mundos previos. No es otro Core. Credenciales, frames, observaciones completas, SQLite y logs quedan privados en`.runtime`. La consulta de localización distingue imagen y mundo; contrato/tiempos/alias y límites se explican en el diagnóstico actualizado. Cambios compartidos en`services/entity-api` y`services/entity-edge` pertenecen aP1; escenas/ensayos aP2. La recuperación completa Edge y el gate sostenido todavía no están demostrados.
+
 Diagnóstico y propuesta: [documento de revisión](../../../../P2-09.19-CAUSAL-PERCEPTION-DIAGNOSIS.md).
 
 | Archivo | Medición real | Límite |

@@ -77,6 +77,16 @@ def pair_evidence(a, b, graph, policy=POLICY):
     same_sensor = a[0]['camera_id'] == b[0]['camera_id']
     bytime = {x['media_time_seconds']: x for x in b}
     common = [(x, bytime[x['media_time_seconds']]) for x in a if x['media_time_seconds'] in bytime]
+    tolerance=policy.get('sync_tolerance_seconds',0)
+    if tolerance and not same_sensor:
+        # Opt-in causal feeds have independent capture times. Match available
+        # samples one-to-one; preserve their real timestamps and elapsed travel.
+        remaining=set(range(len(b)));common=[]
+        for x in a:
+            if not remaining:break
+            j=min(remaining,key=lambda j:abs(x['media_time_seconds']-b[j]['media_time_seconds']))
+            if abs(x['media_time_seconds']-b[j]['media_time_seconds'])<=tolerance:
+                common.append((x,b[j]));remaining.remove(j)
     result = {'accepted_candidate': False, 'conflict': False, 'simultaneous_samples': len(common),
               'score_is_probability': False, 'observations_created': 0}
     def references(rows):
@@ -89,7 +99,7 @@ def pair_evidence(a, b, graph, policy=POLICY):
         if len(pairs) < policy['minimum_pair_samples']:
             return result | {'reason': 'insufficient simultaneous geometry evidence'}
         sim = float(np.median([cosine(x['embedding'],y['embedding']) for x,y in pairs]))
-        checks = [region_transition(graph,x['floor_estimate_native'],y['floor_estimate_native'],0,policy,x.get('candidate_floor_cells'),y.get('candidate_floor_cells')) for x,y in pairs]
+        checks = [region_transition(graph,x['floor_estimate_native'],y['floor_estimate_native'],abs(x['media_time_seconds']-y['media_time_seconds']),policy,x.get('candidate_floor_cells'),y.get('candidate_floor_cells')) for x,y in pairs]
         known = [c for c in checks if c['reason'] != 'outside calibrated walkable cells']
         fraction = sum(c['possible'] for c in known)/max(1,len(known))
         conflict = len(known) >= 3 and fraction < .2

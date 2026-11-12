@@ -1,0 +1,112 @@
+{
+  "phase": "P2-09.19",
+  "mode": "short native RGB transport probes; not integrated Core run",
+  "renderer": "ANGLE (Intel, Intel(R) UHD Graphics (0x00009A60) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "background_setup_ms_excluded": 39742.5,
+  "warmup_cycles_excluded": 1,
+  "independent_sensors": 8,
+  "raw_png_exact_parity": [
+    {
+      "sensor": "C-S1",
+      "differing_channels": 0,
+      "max_abs_error": 0,
+      "pixels": 1259712
+    },
+    {
+      "sensor": "C-S2",
+      "differing_channels": 0,
+      "max_abs_error": 0,
+      "pixels": 1259712
+    },
+    {
+      "sensor": "C-S3",
+      "differing_channels": 0,
+      "max_abs_error": 0,
+      "pixels": 1259712
+    },
+    {
+      "sensor": "C-S4",
+      "differing_channels": 0,
+      "max_abs_error": 0,
+      "pixels": 1259712
+    },
+    {
+      "sensor": "C1-S1",
+      "differing_channels": 0,
+      "max_abs_error": 0,
+      "pixels": 1259712
+    },
+    {
+      "sensor": "C2-S1",
+      "differing_channels": 0,
+      "max_abs_error": 0,
+      "pixels": 1259712
+    },
+    {
+      "sensor": "C3-S1",
+      "differing_channels": 0,
+      "max_abs_error": 0,
+      "pixels": 1259712
+    },
+    {
+      "sensor": "C4-S1",
+      "differing_channels": 0,
+      "max_abs_error": 0,
+      "pixels": 1259712
+    }
+  ],
+  "render_read_bgr_ms": {
+    "n": 32,
+    "p50": 14.199999995529652,
+    "p95": 17,
+    "sum": 449.69999999552965
+  },
+  "render_transfer_ms": {
+    "n": 32,
+    "p50": 167.79999999701977,
+    "p95": 189.5,
+    "sum": 5312.000000007451
+  },
+  "binary_messages_received": 40,
+  "binary_bytes_received": 151165440,
+  "png_independent_frame_rpc_group_sizes": {
+    "1": {
+      "rpc_ms": {
+        "n": 24,
+        "p50": 79.17029999999795,
+        "p95": 115.5196999999971,
+        "sum": 2028.715899999981
+      },
+      "frames": 24,
+      "aggregate_fps": 11.830143392675252,
+      "png_bytes": 26455779
+    },
+    "4": {
+      "rpc_ms": {
+        "n": 6,
+        "p50": 275.65269999999146,
+        "p95": 311.39229999999225,
+        "sum": 1736.9772999999986
+      },
+      "frames": 24,
+      "aggregate_fps": 13.817106303001207,
+      "png_bytes": 26455779
+    },
+    "8": {
+      "rpc_ms": {
+        "n": 3,
+        "p50": 612.0967999999993,
+        "p95": 612.0967999999993,
+        "sum": 1837.6958000000159
+      },
+      "frames": 24,
+      "aggregate_fps": 13.059832862435552,
+      "png_bytes": 26455779
+    }
+  },
+  "limitations": [
+    "Fixed synthetic entry stimulus, not a trajectory quality test",
+    "Short probe; not sustained 16FPS or capture-to-Core latency",
+    "Loopback Windows sink; Windows-to-WSL inference remains separately measurable"
+  ]
+}

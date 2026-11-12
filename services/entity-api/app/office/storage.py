@@ -100,32 +100,45 @@ def world(db,site,run,branch='main',at=None):
     return {'playback':playback,'timezone':db.execute('SELECT timezone FROM office_sites WHERE id=?',(site,)).fetchone()[0],'site_id':site,'run_id':run,'branch':branch,'clock':clock,'revision':latest,'entities':items,'historical':at is not None}
 
 
-def emit(db,site,run,branch,at,kind,actor,changes,details=None,evidence=None,command_id=None):
+def emit(db,site,run,branch,at,kind,actor,changes,details=None,evidence=None,command_id=None,transaction_state=None):
     at=utc(at);event_id=str(uuid4());cmd=command_id or event_id
     from .graph import derive,active
     changes={k:dict(v) for k,v in changes.items()}
+    merged_items={}
     for key,patch in changes.items():
-        old=db.execute('SELECT body FROM office_state WHERE site=? AND run=? AND branch=? AND entity=?',(site,run,branch,key)).fetchone()
-        merged={**(json.loads(old[0]) if old else {}),**patch}
+        if transaction_state is not None and key in transaction_state:prior=transaction_state[key]
+        else:
+            old=db.execute('SELECT body FROM office_state WHERE site=? AND run=? AND branch=? AND entity=?',(site,run,branch,key)).fetchone()
+            prior=json.loads(old[0]) if old else {}
+        merged={**prior,**patch}
         links=derive(merged,at)
         if links:patch['relations']=links
+        merged_items[key]={**merged,**patch}
     payload={'changes':changes,**(details or {})}
     row=db.execute('INSERT INTO office_events(id,site,run,branch,at,recorded_at,type,actor,entities,payload,evidence,command_id) VALUES(?,?,?,?,?,?,?,?,?,?,?,?)',
       (event_id,site,run,branch,at,now(),kind,actor,encode(list(changes)),encode(payload),encode(evidence or []),cmd))
     for key,patch in changes.items():
-        old=db.execute('SELECT body FROM office_state WHERE site=? AND run=? AND branch=? AND entity=?',(site,run,branch,key)).fetchone()
-        merged={**(json.loads(old[0]) if old else {}),**patch}
+        merged=merged_items[key]
         db.execute('INSERT INTO office_state VALUES(?,?,?,?,?) ON CONFLICT(site,run,branch,entity) DO UPDATE SET body=excluded.body',(site,run,branch,key,encode(merged)))
         if branch=='main':
-            resource=db.execute('SELECT core_id FROM office_resources WHERE site=? AND id=?',(site,key)).fetchone()
+            resource=(merged['core_id'],) if transaction_state is not None and merged.get('core_id') else db.execute('SELECT core_id FROM office_resources WHERE site=? AND id=?',(site,key)).fetchone()
             if resource:
+                if transaction_state is not None:
+                    current_links={(r['type'],r['target']) for r in merged.get('relations',[]) if active(r,at)}
+                    for link in merged.get('relations',[]):
+                        if (link['type'],link['target']) not in current_links:
+                            # Remove only this domain's deterministic projection;
+                            # immutable office events retain the full valid range.
+                            db.execute('DELETE FROM relations WHERE id=?',(identity(site,key,link['type'],link['target']),))
                 for link in merged.get('relations',[]):
-                    other=db.execute('SELECT core_id FROM office_resources WHERE site=? AND id=?',(site,link['target'])).fetchone()
+                    target=merged_items.get(link['target'],{}) or (transaction_state or {}).get(link['target'],{})
+                    other=(target['core_id'],) if transaction_state is not None and target.get('core_id') else db.execute('SELECT core_id FROM office_resources WHERE site=? AND id=?',(site,link['target'])).fetchone()
                     if other and active(link,at):
                         db.execute('INSERT OR IGNORE INTO relations VALUES(?,?,?,?,?)',(identity(site,key,link['type'],link['target']),resource[0],other[0],link['type'],at))
                 db.execute('INSERT INTO entity_state VALUES(?,?,?,?) ON CONFLICT(entity_id,key) DO UPDATE SET value=excluded.value,updated_at=excluded.updated_at',(resource[0],'office.run.'+run,encode(merged),at))
                 from app.main import append_event
                 append_event(db,resource[0],kind,{'office_event_id':event_id,'run_id':run,'effective_at':at,'details':details or {}},'office-domain')
+    if transaction_state is not None:transaction_state.update(merged_items)
     if row.lastrowid%25==0 and at==get_run(db,site,run)['clock']:
         state={r['entity']:json.loads(r['body']) for r in db.execute('SELECT entity,body FROM office_state WHERE site=? AND run=? AND branch=?',(site,run,branch))}
         db.execute('INSERT INTO office_snapshots VALUES(?,?,?,?,?,?)',(site,run,branch,row.lastrowid,at,encode(state)))

@@ -17,6 +17,7 @@ class Track(BaseModel):
     image_bbox: tuple[Coordinate,Coordinate,Coordinate,Coordinate] | None = None
     detection_confidence: Annotated[float,Field(ge=0,le=1,allow_inf_nan=False)] | None = None
     association_confirmed_at: AwareDatetime | None = None
+    track_status: Literal['candidate','confirmed'] | None = None
     @model_validator(mode='after')
     def ordered_box(self):
         if self.image_bbox and (self.image_bbox[0]>=self.image_bbox[2] or self.image_bbox[1]>=self.image_bbox[3]):raise ValueError('Image box must be ordered')
@@ -78,7 +79,7 @@ def project(db, observation):
     for key in ('frame_sha256','frame_index','media_time_seconds'):
         if projected[key] is None: projected.pop(key)
     for track in projected['tracks']:
-        for key in ('image_bbox','detection_confidence','association_confirmed_at'):
+        for key in ('image_bbox','detection_confidence','association_confirmed_at','track_status'):
             if track[key] is None: track.pop(key)
     state(camera,'edge.presence',{**projected,'observed_at':stamp,'counts':counts,'simulated':simulated})
 

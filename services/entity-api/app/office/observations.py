@@ -4,12 +4,13 @@ from fastapi import HTTPException
 from app.connectors import Observation
 from app.edge_projection import Snapshot
 from app.nucleo.capabilities import normalize_sensor
-from .storage import utc,world,emit,identity,encode
+from .storage import utc,world,emit,identity,encode,now
 from .service import resource,upsert_resource
 from .auth import scoped
 
 
-def ingest(db,site,run,actor,message:Observation):
+def ingest(db,site,run,actor,message:Observation,state_cache=None,received_at=None):
+    received_at=received_at or now()
     scoped(site,actor,'observe')
     if message.site_id!=site:raise HTTPException(403,'Observation site mismatch')
     source=resource(db,site,message.source_id)
@@ -21,7 +22,24 @@ def ingest(db,site,run,actor,message:Observation):
         return {**json.loads(previous['result']),'duplicate':True}
     # Exact duplicates already passed temporal/binding validation. Authorization,
     # site and source checks above still apply; avoid rebuilding the whole world.
-    state=world(db,site,run);items=state['entities'];clock=state['clock'];at=utc(message.observed_at.isoformat())
+    if message.type in {'edge.causal_presence','edge.causal_association'}:
+        from .causal_perception import relevant_state
+        state=relevant_state(db,site,run,message,state_cache)
+    elif state_cache is not None:
+        if not state_cache:state_cache.update(world(db,site,run))
+        state=state_cache
+    else:state=world(db,site,run)
+    items=state['entities'];clock=state['clock'];at=utc(message.observed_at.isoformat());event_at=at;snapshot_payload=message.payload;causal=None
+    if message.type=='edge.causal_presence':
+        from .causal_perception import prepare_snapshot
+        event_at,snapshot_payload,causal=prepare_snapshot(message,items.get(message.source_id,{}))
+    elif message.type=='edge.causal_association':
+        event_at=at
+        if message.payload.get('execution_mode')!='causal-incremental':raise HTTPException(422,'Causal association mode required')
+    if message.type in {'edge.causal_presence','edge.causal_association'}:
+        if event_at<clock:raise HTTPException(422,'Knowledge time cannot rewind the run; late captures need current availability time')
+        if event_at>clock:
+            db.execute('UPDATE office_runs SET clock=? WHERE site=? AND id=?',(event_at,site,run));clock=event_at;state['clock']=clock
     if datetime.fromisoformat(at)>datetime.fromisoformat(clock)+timedelta(seconds=120):raise HTTPException(422,'Observation too far ahead of site clock')
     binding=db.execute('SELECT * FROM office_bindings WHERE site=? AND source=?',(site,message.source_id)).fetchone()
     if not binding or binding['adapter'] not in ['simulated','rest-test','video-test','mqtt-test']:raise HTTPException(403,'Source adapter not enrolled')
@@ -31,10 +49,10 @@ def ingest(db,site,run,actor,message:Observation):
     current=items.get(message.source_id,{})
     late=at<current.get('observed_at','')
     changes={};details={'observation_id':oid,'source_id':message.source_id,'type':message.type,'provenance':message.provenance.model_dump(),'payload':message.payload,'late':late}
-    if message.type=='edge.presence':
+    if message.type in {'edge.presence','edge.causal_presence'}:
         if source['kind']!='Camera':raise HTTPException(422,'Camera observation requires Camera')
         if current.get('connectivity')=='disconnected':raise HTTPException(503,'Camera disconnected; observations unavailable')
-        try:snapshot=Snapshot.model_validate(message.payload)
+        try:snapshot=Snapshot.model_validate(snapshot_payload)
         except ValueError:raise HTTPException(422,'Invalid camera snapshot')
         if len({x.local_track_id for x in snapshot.tracks})!=len(snapshot.tracks):raise HTTPException(422,'Duplicate track ID')
         if snapshot.source_status!='connected' and snapshot.tracks:raise HTTPException(422,'Disconnected snapshot cannot report tracks')
@@ -48,10 +66,12 @@ def ingest(db,site,run,actor,message:Observation):
         if any(track.zone_id and track.zone_id not in allowed for track in snapshot.tracks):raise HTTPException(422,'Zone outside declared camera coverage')
         if not late:
             changes[message.source_id]={'observed_at':at,'connectivity':snapshot.source_status,'last_observation_id':oid,'ttl_seconds':30,'tracks':[]}
+            if causal:changes[message.source_id].update(evidence_available_at=event_at,stream_session_id=causal.stream_session_id,clock_domain=causal.clock_domain)
             if snapshot.frame_sha256:changes[message.source_id].update(last_frame_sha256=snapshot.frame_sha256,frame_index=snapshot.frame_index,media_time_seconds=snapshot.media_time_seconds)
             active=set()
             for track in snapshot.tracks:
-                key='track-'+identity(site,message.source_id,track.local_track_id)
+                parts=(site,message.source_id,causal.stream_session_id,track.local_track_id) if causal else (site,message.source_id,track.local_track_id)
+                key='track-'+identity(*parts)
                 active.add(key)
                 old=items.get(key,{})
                 if not old:
@@ -63,7 +83,9 @@ def ingest(db,site,run,actor,message:Observation):
                 if track.image_bbox is not None:patch['image_bbox']=list(track.image_bbox)
                 if track.detection_confidence is not None:patch['detection_confidence']=track.detection_confidence
                 if track.association_confirmed_at:patch['association_confirmed_at']=utc(track.association_confirmed_at.isoformat())
+                if track.track_status:patch['track_status']=track.track_status
                 if snapshot.frame_sha256:patch['frame_sha256']=snapshot.frame_sha256
+                if causal:patch.update(evidence_available_at=event_at,stream_session_id=causal.stream_session_id,identity_status='anonymous camera-local',world_location_status='unknown' if track.zone_id is None else 'observed-zone')
                 changes[key]=patch;changes[message.source_id]['tracks'].append(key)
                 if old.get('person_id') and at<=old.get('association_until',''):
                     changes[old['person_id']]={'presence':'confirmed','zone_id':track.zone_id,'observed_at':at,'ttl_seconds':30,'last_observation_id':oid,'track_id':key}
@@ -80,6 +102,9 @@ def ingest(db,site,run,actor,message:Observation):
     elif message.type=='edge.global_track_association':
         from .global_perception import associate_global
         changes=associate_global(db,site,run,items,actor,message,at)
+    elif message.type=='edge.causal_association':
+        from .causal_global import associate_incremental
+        changes=associate_incremental(db,site,run,items,actor,message,event_at)
     elif message.type=='sensor.measurement':
         if source['kind'] not in ['Sensor','HVAC','Equipment']:raise HTTPException(422,'Sensor source required')
         data=normalize_sensor(message.payload)
@@ -90,7 +115,14 @@ def ingest(db,site,run,actor,message:Observation):
                 resource(db,site,zone)
                 changes[zone]={'environment':{**items.get(zone,{}).get('environment',{}),data['name']:{'value':data['value'],'unit':data['unit'],'observed_at':at,'observation_id':oid,'source_id':message.source_id}}}
     else:raise HTTPException(422,'Unsupported observation semantics; raw video is not a detection')
-    event=emit(db,site,run,'main',at,'observation.received',actor['actor'],changes,details,[oid],oid)
+    if message.type in {'edge.causal_presence','edge.causal_association'}:details.update(source_observed_at=at,evidence_available_at=event_at,received_at=received_at,execution_mode='causal-incremental')
+    causal_type=message.type in {'edge.causal_presence','edge.causal_association'}
+    event=emit(db,site,run,'main',event_at,'observation.received',actor['actor'],changes,details,[oid],oid,
+               transaction_state=items if causal_type else None)
     result={'duplicate':False,'late':late,'event':event,'source_id':message.source_id}
     db.execute('INSERT INTO office_inbox VALUES(?,?,?,?,?)',(site,run,oid,body,encode(result)))
+    if state_cache is not None and not causal_type:
+        for key in changes:
+            row=db.execute('SELECT body FROM office_state WHERE site=? AND run=? AND branch=? AND entity=?',(site,run,'main',key)).fetchone()
+            if row:state_cache['entities'][key]=json.loads(row[0])
     return result

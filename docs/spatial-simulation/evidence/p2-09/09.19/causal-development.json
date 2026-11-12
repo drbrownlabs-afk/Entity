@@ -1,0 +1,1283 @@
+{
+  "phase": "P2-09.19",
+  "scope": "Intermediate development attempts, not sustained acceptance",
+  "implementation_approved_by_operator": true,
+  "cases": [
+    {
+      "run": "p2-09-causal19-smoke2",
+      "report": {
+        "phase": "P2-09.19",
+        "mode": "paced causal replay, not virtual live capture",
+        "run": "p2-09-causal19-smoke2",
+        "corpus": "accept18-v0",
+        "source_seconds": 8.0,
+        "elapsed_seconds": 9.939281612000002,
+        "counts": {
+          "scheduled": 128,
+          "dropped_input_full": 19,
+          "sent": 109,
+          "processed": 109,
+          "persisted": 109
+        },
+        "processed_fps": 10.966587350578832,
+        "latency_ms": {
+          "n": 109,
+          "p50": 1620.8247179999944,
+          "p95": 2369.657762999992,
+          "max": 2475.3108159999897
+        },
+        "latency_scope": "scheduled source release to actual Core HTTP commit ACK",
+        "stages_ms": {
+          "input_wait_age": {
+            "n": 109,
+            "p50": 973.0282060000093,
+            "p95": 1525.8198809999897,
+            "max": 1962.1723770000017
+          },
+          "decode": {
+            "n": 109,
+            "p50": 21.55819799997971,
+            "p95": 29.357124999989992,
+            "max": 54.96058599999287
+          },
+          "detect": {
+            "n": 109,
+            "p50": 21.702728000008165,
+            "p95": 155.97476100001018,
+            "max": 185.10338100000467
+          },
+          "mot": {
+            "n": 109,
+            "p50": 0.18896800000334224,
+            "p95": 1.019458000001805,
+            "max": 1.741863999995985
+          },
+          "appearance_graph_mtmc": {
+            "n": 109,
+            "p50": 0.10088199999813696,
+            "p95": 23.123626000000286,
+            "max": 55.38939900000628
+          }
+        },
+        "queue_capacity_frames": {
+          "input": 16,
+          "output": 16
+        },
+        "drops": [
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 7,
+            "media_time_seconds": 3.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 8,
+            "media_time_seconds": 4
+          },
+          {
+            "camera_id": "C-S3",
+            "frame_index": 10,
+            "media_time_seconds": 5
+          },
+          {
+            "camera_id": "C-S4",
+            "frame_index": 10,
+            "media_time_seconds": 5
+          },
+          {
+            "camera_id": "C1-S1",
+            "frame_index": 10,
+            "media_time_seconds": 5
+          },
+          {
+            "camera_id": "C2-S1",
+            "frame_index": 10,
+            "media_time_seconds": 5
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 10,
+            "media_time_seconds": 5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 10,
+            "media_time_seconds": 5
+          },
+          {
+            "camera_id": "C2-S1",
+            "frame_index": 11,
+            "media_time_seconds": 5.5
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 11,
+            "media_time_seconds": 5.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 11,
+            "media_time_seconds": 5.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 12,
+            "media_time_seconds": 6
+          },
+          {
+            "camera_id": "C-S4",
+            "frame_index": 13,
+            "media_time_seconds": 6.5
+          },
+          {
+            "camera_id": "C2-S1",
+            "frame_index": 13,
+            "media_time_seconds": 6.5
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 13,
+            "media_time_seconds": 6.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 13,
+            "media_time_seconds": 6.5
+          },
+          {
+            "camera_id": "C1-S1",
+            "frame_index": 15,
+            "media_time_seconds": 7.5
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 15,
+            "media_time_seconds": 7.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 15,
+            "media_time_seconds": 7.5
+          }
+        ],
+        "core_enabled": true,
+        "same_core_database": true,
+        "prior_worlds_unchanged": true,
+        "exact_replay_no_effects": true,
+        "cold_start_seconds": 4.569257969999995,
+        "future_frames_mounted_in_worker": false,
+        "ground_truth_mounted_in_worker": false,
+        "sustained_gate_passed": false,
+        "limitations": [
+          "Short development probe unless independently accepted against full ten-minute gate",
+          "Source is prerecorded PNG; this does not benchmark virtual capture",
+          "Drops remain in scheduled denominator; not a quality evaluation"
+        ]
+      },
+      "worker_ready": {
+        "type": "ready",
+        "cold_start_seconds": 4.569257969999995,
+        "models": {
+          "detector": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+          "reid": "fb43bdb65f317341570d532275ed55cb5f2ccc956eb2f0bcffc57b3499094c62"
+        },
+        "calibration_sha256": "2c036247f9fb6b330542ede86978de088ae8ac1977178ddbadbdc9c879ac91cc",
+        "graph_sha256": "51f1f9d2961b7b23b76b36442fd758f25a26a2f8a0888c67e9ba862598f11a57"
+      },
+      "effective_detector_threshold": 0.1,
+      "comparable_to_frozen_detector_policy": false,
+      "evaluation": null
+    },
+    {
+      "run": "p2-09-causal19-smoke3",
+      "report": {
+        "phase": "P2-09.19",
+        "mode": "paced causal replay, not virtual live capture",
+        "run": "p2-09-causal19-smoke3",
+        "corpus": "accept18-v0",
+        "source_seconds": 20.0,
+        "elapsed_seconds": 24.036434705999966,
+        "counts": {
+          "scheduled": 320,
+          "dropped_input_full": 28,
+          "sent": 292,
+          "processed": 292,
+          "persisted": 292
+        },
+        "processed_fps": 12.148224292478412,
+        "latency_ms": {
+          "n": 292,
+          "p50": 4429.660847999969,
+          "p95": 5214.669308999987,
+          "max": 5593.597425999974
+        },
+        "latency_scope": "scheduled source release to actual Core HTTP commit ACK",
+        "stages_ms": {
+          "input_wait_age": {
+            "n": 292,
+            "p50": 729.3858140000111,
+            "p95": 1198.7274879999745,
+            "max": 1294.9538259999827
+          },
+          "decode": {
+            "n": 292,
+            "p50": 27.6032989999635,
+            "p95": 39.038829000048736,
+            "max": 53.29693000004454
+          },
+          "decoded_queue_wait": {
+            "n": 292,
+            "p50": 129.30061899999146,
+            "p95": 374.1706090000321,
+            "max": 530.0383419999548
+          },
+          "detect": {
+            "n": 292,
+            "p50": 26.23174600000766,
+            "p95": 186.68094499997778,
+            "max": 236.39581599996973
+          },
+          "mot": {
+            "n": 292,
+            "p50": 0.21418799997263704,
+            "p95": 1.2262600000099155,
+            "max": 2.5833340000076532
+          },
+          "appearance_graph_mtmc": {
+            "n": 292,
+            "p50": 0.11110000002645393,
+            "p95": 26.548059999981888,
+            "max": 103.37640300002704
+          }
+        },
+        "queue_capacity_frames": {
+          "input": 16,
+          "output": 16
+        },
+        "drops": [
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 21,
+            "media_time_seconds": 10.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 21,
+            "media_time_seconds": 10.5
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 22,
+            "media_time_seconds": 11
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 22,
+            "media_time_seconds": 11
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 23,
+            "media_time_seconds": 11.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 24,
+            "media_time_seconds": 12
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 25,
+            "media_time_seconds": 12.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 25,
+            "media_time_seconds": 12.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 26,
+            "media_time_seconds": 13
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 27,
+            "media_time_seconds": 13.5
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 28,
+            "media_time_seconds": 14
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 28,
+            "media_time_seconds": 14
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 29,
+            "media_time_seconds": 14.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 29,
+            "media_time_seconds": 14.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 30,
+            "media_time_seconds": 15
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 31,
+            "media_time_seconds": 15.5
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 32,
+            "media_time_seconds": 16
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 32,
+            "media_time_seconds": 16
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 33,
+            "media_time_seconds": 16.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 33,
+            "media_time_seconds": 16.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 34,
+            "media_time_seconds": 17
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 35,
+            "media_time_seconds": 17.5
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 36,
+            "media_time_seconds": 18
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 36,
+            "media_time_seconds": 18
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 37,
+            "media_time_seconds": 18.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 37,
+            "media_time_seconds": 18.5
+          },
+          {
+            "camera_id": "C4-S1",
+            "frame_index": 38,
+            "media_time_seconds": 19
+          },
+          {
+            "camera_id": "C3-S1",
+            "frame_index": 39,
+            "media_time_seconds": 19.5
+          }
+        ],
+        "core_enabled": true,
+        "same_core_database": true,
+        "prior_worlds_unchanged": true,
+        "exact_replay_no_effects": true,
+        "cold_start_seconds": 4.350206517999993,
+        "future_frames_mounted_in_worker": false,
+        "ground_truth_mounted_in_worker": false,
+        "sustained_gate_passed": false,
+        "limitations": [
+          "Short development probe unless independently accepted against full ten-minute gate",
+          "Source is prerecorded PNG; this does not benchmark virtual capture",
+          "Drops remain in scheduled denominator; not a quality evaluation"
+        ]
+      },
+      "worker_ready": {
+        "type": "ready",
+        "cold_start_seconds": 4.350206517999993,
+        "models": {
+          "detector": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+          "reid": "fb43bdb65f317341570d532275ed55cb5f2ccc956eb2f0bcffc57b3499094c62"
+        },
+        "calibration_sha256": "2c036247f9fb6b330542ede86978de088ae8ac1977178ddbadbdc9c879ac91cc",
+        "graph_sha256": "51f1f9d2961b7b23b76b36442fd758f25a26a2f8a0888c67e9ba862598f11a57"
+      },
+      "effective_detector_threshold": 0.1,
+      "comparable_to_frozen_detector_policy": false,
+      "evaluation": null
+    },
+    {
+      "run": "p2-09-causal19-smoke4",
+      "report": {
+        "phase": "P2-09.19",
+        "mode": "paced causal replay, not virtual live capture",
+        "run": "p2-09-causal19-smoke4",
+        "corpus": "accept18-v0",
+        "source_seconds": 20.0,
+        "elapsed_seconds": 20.838826760000018,
+        "counts": {
+          "scheduled": 320,
+          "dropped_input_full": 0,
+          "sent": 320,
+          "processed": 320,
+          "persisted": 320
+        },
+        "processed_fps": 15.35595087407885,
+        "latency_ms": {
+          "n": 320,
+          "p50": 756.2028660000237,
+          "p95": 1422.187612000016,
+          "max": 1720.1609410000174
+        },
+        "latency_scope": "scheduled source release to actual Core HTTP commit ACK",
+        "stages_ms": {
+          "input_wait_age": {
+            "n": 320,
+            "p50": 94.96939000001703,
+            "p95": 197.1549320000463,
+            "max": 302.24755000000414
+          },
+          "decode": {
+            "n": 320,
+            "p50": 23.76514899998483,
+            "p95": 33.763222999994014,
+            "max": 52.20148300003302
+          },
+          "decoded_queue_wait": {
+            "n": 320,
+            "p50": 5.8879659999888645,
+            "p95": 264.0276930000027,
+            "max": 330.5888069999696
+          },
+          "detect": {
+            "n": 320,
+            "p50": 21.12541499997178,
+            "p95": 146.7519839999909,
+            "max": 173.37612200003605
+          },
+          "mot": {
+            "n": 320,
+            "p50": 0.1487180000481203,
+            "p95": 0.8936220000350659,
+            "max": 2.7527770000119745
+          },
+          "appearance_graph_mtmc": {
+            "n": 320,
+            "p50": 0.07904300002792297,
+            "p95": 18.825668000033602,
+            "max": 57.58675499998844
+          }
+        },
+        "queue_capacity_frames": {
+          "input": 16,
+          "output": 16
+        },
+        "drops": [],
+        "core_bundle_http_ms": {
+          "n": 59,
+          "p50": 255.81922999998596,
+          "p95": 511.18326100004197,
+          "max": 714.5427910000421
+        },
+        "bundle_message_counts": {
+          "n": 59,
+          "p50": 5,
+          "p95": 8,
+          "max": 10
+        },
+        "core_enabled": true,
+        "same_core_database": true,
+        "prior_worlds_unchanged": true,
+        "exact_replay_no_effects": true,
+        "cold_start_seconds": 4.139830278999966,
+        "future_frames_mounted_in_worker": false,
+        "ground_truth_mounted_in_worker": false,
+        "sustained_gate_passed": false,
+        "limitations": [
+          "Short development probe unless independently accepted against full ten-minute gate",
+          "Source is prerecorded PNG; this does not benchmark virtual capture",
+          "Drops remain in scheduled denominator; not a quality evaluation"
+        ]
+      },
+      "worker_ready": {
+        "type": "ready",
+        "cold_start_seconds": 4.139830278999966,
+        "models": {
+          "detector": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+          "reid": "fb43bdb65f317341570d532275ed55cb5f2ccc956eb2f0bcffc57b3499094c62"
+        },
+        "calibration_sha256": "2c036247f9fb6b330542ede86978de088ae8ac1977178ddbadbdc9c879ac91cc",
+        "graph_sha256": "51f1f9d2961b7b23b76b36442fd758f25a26a2f8a0888c67e9ba862598f11a57"
+      },
+      "effective_detector_threshold": 0.1,
+      "comparable_to_frozen_detector_policy": false,
+      "evaluation": null
+    },
+    {
+      "run": "p2-09-causal19-smoke5",
+      "report": {
+        "phase": "P2-09.19",
+        "mode": "paced causal replay, not virtual live capture",
+        "run": "p2-09-causal19-smoke5",
+        "corpus": "accept18-v0",
+        "source_seconds": 20.0,
+        "elapsed_seconds": 20.990116871000005,
+        "counts": {
+          "scheduled": 320,
+          "dropped_input_full": 0,
+          "sent": 320,
+          "processed": 320,
+          "persisted": 320
+        },
+        "processed_fps": 15.245270046214594,
+        "latency_ms": {
+          "n": 320,
+          "p50": 724.1170260000018,
+          "p95": 1205.9249050000035,
+          "max": 1363.5835540000016
+        },
+        "latency_scope": "scheduled source release to actual Core HTTP commit ACK",
+        "stages_ms": {
+          "input_wait_age": {
+            "n": 320,
+            "p50": 98.93769300000343,
+            "p95": 211.16486400000412,
+            "max": 245.3014600000003
+          },
+          "decode": {
+            "n": 320,
+            "p50": 25.432260000002316,
+            "p95": 36.239024000003894,
+            "max": 55.70595200000028
+          },
+          "decoded_queue_wait": {
+            "n": 320,
+            "p50": 0.3503760000000966,
+            "p95": 243.2829279999993,
+            "max": 291.7680099999984
+          },
+          "detect": {
+            "n": 320,
+            "p50": 20.264834999998982,
+            "p95": 141.16943699999496,
+            "max": 178.6023419999978
+          },
+          "mot": {
+            "n": 320,
+            "p50": 0.1403880000054869,
+            "p95": 0.8774329999994279,
+            "max": 1.5766739999989454
+          },
+          "appearance_graph_mtmc": {
+            "n": 320,
+            "p50": 0.07248100000367685,
+            "p95": 20.120057999996277,
+            "max": 52.79090300000178
+          }
+        },
+        "queue_capacity_frames": {
+          "input": 16,
+          "output": 16
+        },
+        "drops": [],
+        "core_bundle_http_ms": {
+          "n": 57,
+          "p50": 263.1973639999998,
+          "p95": 524.1333660000009,
+          "max": 629.0173569999951
+        },
+        "bundle_message_counts": {
+          "n": 57,
+          "p50": 6,
+          "p95": 8,
+          "max": 11
+        },
+        "core_enabled": true,
+        "same_core_database": true,
+        "prior_worlds_unchanged": true,
+        "exact_replay_no_effects": true,
+        "cold_start_seconds": 3.7326088239999997,
+        "future_frames_mounted_in_worker": false,
+        "ground_truth_mounted_in_worker": false,
+        "sustained_gate_passed": false,
+        "limitations": [
+          "Short development probe unless independently accepted against full ten-minute gate",
+          "Source is prerecorded PNG; this does not benchmark virtual capture",
+          "Drops remain in scheduled denominator; not a quality evaluation"
+        ]
+      },
+      "worker_ready": {
+        "type": "ready",
+        "cold_start_seconds": 3.7326088239999997,
+        "models": {
+          "detector": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+          "reid": "fb43bdb65f317341570d532275ed55cb5f2ccc956eb2f0bcffc57b3499094c62"
+        },
+        "calibration_sha256": "2c036247f9fb6b330542ede86978de088ae8ac1977178ddbadbdc9c879ac91cc",
+        "graph_sha256": "51f1f9d2961b7b23b76b36442fd758f25a26a2f8a0888c67e9ba862598f11a57"
+      },
+      "effective_detector_threshold": 0.1,
+      "comparable_to_frozen_detector_policy": false,
+      "evaluation": {
+        "phase": "P2-09.19",
+        "run": "p2-09-causal19-smoke5",
+        "corpus": "accept18-v0",
+        "processed_frames": 320,
+        "valid_opportunities": 59,
+        "matched_fresh_observations": 59,
+        "confirmed_local_matched_observations": 57,
+        "recall": 1.0,
+        "false_or_duplicate_tracks": 3,
+        "continuous_visible_local_id_switches": 0,
+        "final_alias_actor_hypotheses": 2,
+        "all_final_hypotheses": 5,
+        "final_uncertain_hypotheses": 0,
+        "candidate_revisions": 7,
+        "corroborated_revisions": 2,
+        "uncertainty_revisions": 0,
+        "per_sensor": {
+          "C-S1": {
+            "valid": 3,
+            "matched": 3,
+            "false_or_duplicate_tracks": 3
+          },
+          "C-S2": {
+            "valid": 0,
+            "matched": 0,
+            "false_or_duplicate_tracks": 0
+          },
+          "C-S3": {
+            "valid": 0,
+            "matched": 0,
+            "false_or_duplicate_tracks": 0
+          },
+          "C-S4": {
+            "valid": 0,
+            "matched": 0,
+            "false_or_duplicate_tracks": 0
+          },
+          "C1-S1": {
+            "valid": 18,
+            "matched": 18,
+            "false_or_duplicate_tracks": 0
+          },
+          "C2-S1": {
+            "valid": 0,
+            "matched": 0,
+            "false_or_duplicate_tracks": 0
+          },
+          "C3-S1": {
+            "valid": 38,
+            "matched": 38,
+            "false_or_duplicate_tracks": 0
+          },
+          "C4-S1": {
+            "valid": 0,
+            "matched": 0,
+            "false_or_duplicate_tracks": 0
+          }
+        },
+        "source_results_sha256": "221bdb9b6f91708eeaa68a461505d6ff8c83676aca0049aacbfed32dfa33d11a",
+        "ground_truth_used_only_after_inference": true,
+        "all_tracks_from_exact_fresh_boxes": true,
+        "phase_gate_passed": false,
+        "limitations": [
+          "Final aliases are explicitly retrospective evaluation, not evidence of one ID being known from the start",
+          "Tentative local observations count in fresh recall and are separately marked in Core",
+          "Five corpus regression and ten-minute real-time/live gates must be assessed separately"
+        ]
+      }
+    },
+    {
+      "run": "p2-09-causal19-reg-v0a",
+      "report": {
+        "phase": "P2-09.19",
+        "mode": "causal replay with producer backpressure for lossless quality regression",
+        "run": "p2-09-causal19-reg-v0a",
+        "corpus": "accept18-v0",
+        "source_seconds": 125.0,
+        "elapsed_seconds": 158.731217244,
+        "counts": {
+          "scheduled": 2008,
+          "dropped_input_full": 0,
+          "sent": 2008,
+          "processed": 2008,
+          "persisted": 2008
+        },
+        "processed_fps": 12.650315639634535,
+        "latency_ms": {
+          "n": 2008,
+          "p50": 16981.165358,
+          "p95": 32370.040746999992,
+          "max": 34402.64815399999
+        },
+        "latency_scope": "scheduled source release to actual Core HTTP commit ACK",
+        "stages_ms": {
+          "input_wait_age": {
+            "n": 2008,
+            "p50": 16215.758987000016,
+            "p95": 24943.903256999987,
+            "max": 28342.375434404745
+          },
+          "decode": {
+            "n": 2008,
+            "p50": 27.74730499999123,
+            "p95": 48.070227000010846,
+            "max": 444.5234590000098
+          },
+          "decoded_queue_wait": {
+            "n": 2008,
+            "p50": 110.09000600000718,
+            "p95": 376.7910360000144,
+            "max": 1625.7277650000078
+          },
+          "detect": {
+            "n": 2008,
+            "p50": 23.150289000000157,
+            "p95": 165.58712299999456,
+            "max": 2689.8809359999946
+          },
+          "mot": {
+            "n": 2008,
+            "p50": 0.15208300001745556,
+            "p95": 0.982112000002644,
+            "max": 2.9426809999932857
+          },
+          "appearance_graph_mtmc": {
+            "n": 2008,
+            "p50": 0.07809100000599756,
+            "p95": 68.35914600000592,
+            "max": 188.80530300000942
+          }
+        },
+        "queue_capacity_frames": {
+          "input": 16,
+          "output": 16
+        },
+        "drops": [],
+        "core_bundle_http_ms": {
+          "n": 330,
+          "p50": 334.5740530000114,
+          "p95": 985.8404849999971,
+          "max": 12981.56137699999
+        },
+        "bundle_message_counts": {
+          "n": 330,
+          "p50": 7,
+          "p95": 9,
+          "max": 10
+        },
+        "source_release_lateness_ms": {
+          "n": 2008,
+          "p50": 15067.532841999991,
+          "p95": 23343.406700000003,
+          "max": 26704.334575404744
+        },
+        "lossless_backpressure_enabled": true,
+        "core_enabled": true,
+        "same_core_database": true,
+        "prior_worlds_unchanged": true,
+        "exact_replay_no_effects": true,
+        "cold_start_seconds": 3.2691684949999953,
+        "future_frames_mounted_in_worker": false,
+        "ground_truth_mounted_in_worker": false,
+        "sustained_gate_passed": false,
+        "limitations": [
+          "Short development probe unless independently accepted against full ten-minute gate",
+          "Source is prerecorded PNG; this does not benchmark virtual capture",
+          "Drops remain in scheduled denominator; not a quality evaluation"
+        ]
+      },
+      "worker_ready": {
+        "type": "ready",
+        "cold_start_seconds": 3.2691684949999953,
+        "models": {
+          "detector": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+          "reid": "fb43bdb65f317341570d532275ed55cb5f2ccc956eb2f0bcffc57b3499094c62"
+        },
+        "calibration_sha256": "2c036247f9fb6b330542ede86978de088ae8ac1977178ddbadbdc9c879ac91cc",
+        "graph_sha256": "51f1f9d2961b7b23b76b36442fd758f25a26a2f8a0888c67e9ba862598f11a57"
+      },
+      "effective_detector_threshold": 0.1,
+      "comparable_to_frozen_detector_policy": false,
+      "evaluation": {
+        "phase": "P2-09.19",
+        "run": "p2-09-causal19-reg-v0a",
+        "corpus": "accept18-v0",
+        "processed_frames": 2008,
+        "valid_opportunities": 513,
+        "matched_fresh_observations": 508,
+        "confirmed_local_matched_observations": 488,
+        "recall": 0.9902534113060428,
+        "false_or_duplicate_tracks": 52,
+        "continuous_visible_local_id_switches": 2,
+        "final_alias_actor_hypotheses": 7,
+        "all_final_hypotheses": 24,
+        "final_uncertain_hypotheses": 2,
+        "candidate_revisions": 44,
+        "corroborated_revisions": 20,
+        "uncertainty_revisions": 2,
+        "per_sensor": {
+          "C-S1": {
+            "valid": 28,
+            "matched": 28,
+            "false_or_duplicate_tracks": 9
+          },
+          "C-S2": {
+            "valid": 59,
+            "matched": 58,
+            "false_or_duplicate_tracks": 0
+          },
+          "C-S3": {
+            "valid": 62,
+            "matched": 60,
+            "false_or_duplicate_tracks": 3
+          },
+          "C-S4": {
+            "valid": 32,
+            "matched": 32,
+            "false_or_duplicate_tracks": 0
+          },
+          "C1-S1": {
+            "valid": 89,
+            "matched": 89,
+            "false_or_duplicate_tracks": 34
+          },
+          "C2-S1": {
+            "valid": 102,
+            "matched": 102,
+            "false_or_duplicate_tracks": 5
+          },
+          "C3-S1": {
+            "valid": 63,
+            "matched": 63,
+            "false_or_duplicate_tracks": 0
+          },
+          "C4-S1": {
+            "valid": 78,
+            "matched": 76,
+            "false_or_duplicate_tracks": 1
+          }
+        },
+        "source_results_sha256": "fd69a321d5992b7c6e01d836d13e8da2363df45ef70e4bdd9e53d2c274943fb6",
+        "ground_truth_used_only_after_inference": true,
+        "all_tracks_from_exact_fresh_boxes": true,
+        "phase_gate_passed": false,
+        "limitations": [
+          "Final aliases are explicitly retrospective evaluation, not evidence of one ID being known from the start",
+          "Tentative local observations count in fresh recall and are separately marked in Core",
+          "Five corpus regression and ten-minute real-time/live gates must be assessed separately"
+        ]
+      }
+    },
+    {
+      "run": "p2-09-causal19-reg-v0b",
+      "report": {
+        "phase": "P2-09.19",
+        "mode": "causal replay with producer backpressure for lossless quality regression",
+        "run": "p2-09-causal19-reg-v0b",
+        "corpus": "accept18-v0",
+        "source_seconds": 125.0,
+        "elapsed_seconds": 140.494756175,
+        "counts": {
+          "scheduled": 2008,
+          "dropped_input_full": 0,
+          "sent": 2008,
+          "processed": 2008,
+          "persisted": 2008
+        },
+        "processed_fps": 14.292348374190132,
+        "latency_ms": {
+          "n": 2008,
+          "p50": 1366.3251029999942,
+          "p95": 9957.545632000005,
+          "max": 15964.479591000014
+        },
+        "latency_scope": "scheduled source release to actual Core HTTP commit ACK",
+        "stages_ms": {
+          "input_wait_age": {
+            "n": 2008,
+            "p50": 479.0255690000009,
+            "p95": 7277.956590999992,
+            "max": 11534.10733440475
+          },
+          "decode": {
+            "n": 2008,
+            "p50": 24.408325999999647,
+            "p95": 47.80345699998634,
+            "max": 84.50668300000075
+          },
+          "decoded_queue_wait": {
+            "n": 2008,
+            "p50": 89.20378900000969,
+            "p95": 361.955504000008,
+            "max": 557.511307999988
+          },
+          "detect": {
+            "n": 2008,
+            "p50": 22.616892999991478,
+            "p95": 156.91053999999838,
+            "max": 224.78319599997576
+          },
+          "mot": {
+            "n": 2008,
+            "p50": 0.12402199999428376,
+            "p95": 0.7198229999971772,
+            "max": 1.6501019999850541
+          },
+          "appearance_graph_mtmc": {
+            "n": 2008,
+            "p50": 0.06549100000086128,
+            "p95": 44.82066599999257,
+            "max": 125.20341900000176
+          }
+        },
+        "queue_capacity_frames": {
+          "input": 16,
+          "output": 16
+        },
+        "drops": [],
+        "core_bundle_http_ms": {
+          "n": 395,
+          "p50": 218.19018800000123,
+          "p95": 700.235185000011,
+          "max": 3421.6516779999893
+        },
+        "bundle_message_counts": {
+          "n": 395,
+          "p50": 5,
+          "p95": 8,
+          "max": 10
+        },
+        "source_release_lateness_ms": {
+          "n": 2008,
+          "p50": 11.657833000001006,
+          "p95": 5341.286638000014,
+          "max": 10045.121408404753
+        },
+        "lossless_backpressure_enabled": true,
+        "core_enabled": true,
+        "same_core_database": true,
+        "prior_worlds_unchanged": true,
+        "exact_replay_no_effects": true,
+        "cold_start_seconds": 3.0187490540000006,
+        "future_frames_mounted_in_worker": false,
+        "ground_truth_mounted_in_worker": false,
+        "sustained_gate_passed": false,
+        "limitations": [
+          "Short development probe unless independently accepted against full ten-minute gate",
+          "Source is prerecorded PNG; this does not benchmark virtual capture",
+          "Drops remain in scheduled denominator; not a quality evaluation"
+        ]
+      },
+      "worker_ready": {
+        "type": "ready",
+        "cold_start_seconds": 3.0187490540000006,
+        "models": {
+          "detector": "c5c2d13e59ae883e6af3b45daea64af4833a4951c92d116ec270d9ddbe998063",
+          "reid": "fb43bdb65f317341570d532275ed55cb5f2ccc956eb2f0bcffc57b3499094c62"
+        },
+        "calibration_sha256": "2c036247f9fb6b330542ede86978de088ae8ac1977178ddbadbdc9c879ac91cc",
+        "graph_sha256": "51f1f9d2961b7b23b76b36442fd758f25a26a2f8a0888c67e9ba862598f11a57",
+        "detector_policy": {
+          "threshold": 0.25,
+          "tile_sensors": [
+            "C1-S1",
+            "C2-S1"
+          ],
+          "global_nms_iou": 0.45
+        },
+        "source_sha256": {
+          "causal_pixels.py": "b789303b7badf55eac98970802f9af238522a5377ed126988cf18656913f9aa7",
+          "causal_mot.py": "de57bf781dd7e54205e0733c2d90a0d087d65c03e807d744d5b0c9fdb727fd68",
+          "causal_mtmc.py": "2f86fa0d0d820ba83a6f5d02f7a889493a0bb2306c261c9457b78dcbb2b27e8b"
+        }
+      },
+      "effective_detector_threshold": 0.25,
+      "comparable_to_frozen_detector_policy": true,
+      "evaluation": {
+        "phase": "P2-09.19",
+        "run": "p2-09-causal19-reg-v0b",
+        "corpus": "accept18-v0",
+        "processed_frames": 2008,
+        "valid_opportunities": 513,
+        "matched_fresh_observations": 503,
+        "confirmed_local_matched_observations": 480,
+        "recall": 0.9805068226120858,
+        "false_or_duplicate_tracks": 8,
+        "continuous_visible_local_id_switches": 1,
+        "final_alias_actor_hypotheses": 4,
+        "all_final_hypotheses": 8,
+        "final_alias_confirmed_local_actor_hypotheses": 1,
+        "final_actor_support_by_hypothesis": {
+          "p2-09-causal19-reg-v0b:visual-13e31780ef01e9cfb099": {
+            "status": "candidate",
+            "matched_frames": 2,
+            "local_tracks": [
+              {
+                "sensor": "C1-S1",
+                "local_track_id": "C1-S1:causal:4",
+                "matched_frames": 2,
+                "ever_locally_confirmed": false
+              }
+            ]
+          },
+          "p2-09-causal19-reg-v0b:visual-17bbf504b27fcc5c0d68": {
+            "status": "candidate",
+            "matched_frames": 1,
+            "local_tracks": [
+              {
+                "sensor": "C-S3",
+                "local_track_id": "C-S3:causal:1",
+                "matched_frames": 1,
+                "ever_locally_confirmed": false
+              }
+            ]
+          },
+          "p2-09-causal19-reg-v0b:visual-c39a9b36fdad9a00ae4f": {
+            "status": "candidate",
+            "matched_frames": 1,
+            "local_tracks": [
+              {
+                "sensor": "C-S1",
+                "local_track_id": "C-S1:causal:2",
+                "matched_frames": 1,
+                "ever_locally_confirmed": false
+              }
+            ]
+          },
+          "p2-09-causal19-reg-v0b:visual-de7a4dbea962ed3e4c09": {
+            "status": "corroborated",
+            "matched_frames": 605,
+            "local_tracks": [
+              {
+                "sensor": "C-S1",
+                "local_track_id": "C-S1:causal:1",
+                "matched_frames": 9,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S1",
+                "local_track_id": "C-S1:causal:3",
+                "matched_frames": 10,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S1",
+                "local_track_id": "C-S1:causal:4",
+                "matched_frames": 6,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S1",
+                "local_track_id": "C-S1:causal:5",
+                "matched_frames": 14,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S2",
+                "local_track_id": "C-S2:causal:1",
+                "matched_frames": 10,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S2",
+                "local_track_id": "C-S2:causal:2",
+                "matched_frames": 9,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S2",
+                "local_track_id": "C-S2:causal:3",
+                "matched_frames": 40,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S3",
+                "local_track_id": "C-S3:causal:2",
+                "matched_frames": 11,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S3",
+                "local_track_id": "C-S3:causal:3",
+                "matched_frames": 26,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S3",
+                "local_track_id": "C-S3:causal:5",
+                "matched_frames": 22,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S4",
+                "local_track_id": "C-S4:causal:1",
+                "matched_frames": 5,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S4",
+                "local_track_id": "C-S4:causal:2",
+                "matched_frames": 14,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C-S4",
+                "local_track_id": "C-S4:causal:3",
+                "matched_frames": 12,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C1-S1",
+                "local_track_id": "C1-S1:causal:1",
+                "matched_frames": 18,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C1-S1",
+                "local_track_id": "C1-S1:causal:2",
+                "matched_frames": 51,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C1-S1",
+                "local_track_id": "C1-S1:causal:5",
+                "matched_frames": 53,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C2-S1",
+                "local_track_id": "C2-S1:causal:1",
+                "matched_frames": 19,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C2-S1",
+                "local_track_id": "C2-S1:causal:2",
+                "matched_frames": 51,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C2-S1",
+                "local_track_id": "C2-S1:causal:3",
+                "matched_frames": 82,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C3-S1",
+                "local_track_id": "C3-S1:causal:1",
+                "matched_frames": 52,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C3-S1",
+                "local_track_id": "C3-S1:causal:2",
+                "matched_frames": 12,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C4-S1",
+                "local_track_id": "C4-S1:causal:1",
+                "matched_frames": 9,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C4-S1",
+                "local_track_id": "C4-S1:causal:2",
+                "matched_frames": 19,
+                "ever_locally_confirmed": true
+              },
+              {
+                "sensor": "C4-S1",
+                "local_track_id": "C4-S1:causal:3",
+                "matched_frames": 51,
+                "ever_locally_confirmed": true
+              }
+            ]
+          }
+        },
+        "final_uncertain_hypotheses": 0,
+        "candidate_revisions": 31,
+        "corroborated_revisions": 23,
+        "uncertainty_revisions": 0,
+        "per_sensor": {
+          "C-S1": {
+            "valid": 28,
+            "matched": 28,
+            "false_or_duplicate_tracks": 2
+          },
+          "C-S2": {
+            "valid": 59,
+            "matched": 58,
+            "false_or_duplicate_tracks": 0
+          },
+          "C-S3": {
+            "valid": 62,
+            "matched": 59,
+            "false_or_duplicate_tracks": 1
+          },
+          "C-S4": {
+            "valid": 32,
+            "matched": 31,
+            "false_or_duplicate_tracks": 0
+          },
+          "C1-S1": {
+            "valid": 89,
+            "matched": 89,
+            "false_or_duplicate_tracks": 4
+          },
+          "C2-S1": {
+            "valid": 102,
+            "matched": 102,
+            "false_or_duplicate_tracks": 1
+          },
+          "C3-S1": {
+            "valid": 63,
+            "matched": 62,
+            "false_or_duplicate_tracks": 0
+          },
+          "C4-S1": {
+            "valid": 78,
+            "matched": 74,
+            "false_or_duplicate_tracks": 0
+          }
+        },
+        "source_results_sha256": "ce27b6620de6d04aaa0316e689c6f1a65aaefc39b63855dd13bebece0cabeaa9",
+        "ground_truth_used_only_after_inference": true,
+        "all_tracks_from_exact_fresh_boxes": true,
+        "phase_gate_passed": false,
+        "limitations": [
+          "Final aliases are explicitly retrospective evaluation, not evidence of one ID being known from the start",
+          "Tentative local observations count in fresh recall and are separately marked in Core",
+          "Five corpus regression and ten-minute real-time/live gates must be assessed separately"
+        ]
+      }
+    }
+  ],
+  "phase_gate_passed": false,
+  "limitations": [
+    "Incorrect threshold .10 in early attempts, fixed to frozen .25 for reg-v0b",
+    "Host concurrent work/cold-start differs across attempts; not a controlled optimization comparison",
+    "Lossless backpressure admits late source release; zero drops does not establish real-time capacity",
+    "Five corrected corpora, ten-minute paced/live gates and Edge failure recovery remain pending"
+  ]
+}
