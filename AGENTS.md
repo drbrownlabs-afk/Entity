@@ -30,6 +30,9 @@ Este archivo es el **índice operativo de la memoria del proyecto**, no una memo
 
 **Importante:** este protocolo funciona cuando el agente abre este repositorio; no supone que una conversación nueva de ChatGPT haya leído automáticamente `AGENTS.md`. La solicitud genérica del operador basta para iniciar la búsqueda en GitHub y seguir este índice, sin necesidad de una frase de activación exacta.
 
+## Contexto conceptual para agentes — ENTITY / Spaces / Workspaces / P2-09
+Antes de trabajar en P2 Spatial Simulation, leer `docs/ENTITY-AGENT-CONTEXT.md` para comprender el producto, el workspace y el propósito de las pruebas. Es contexto explicativo, no reemplaza el canon ni cambia gates, alcance o fase autorizada.
+
 ## Secuencia obligatoria de lectura
 1. Leer **primero** el bloque canónico al inicio de `docs/ENTITY-MASTER-SPEC.md` y ADR-2026-11-08-001 al inicio de `docs/DECISION-LOG.md`.
 2. Identificar el proceso asignado **P1/P2/P3** y leer su sección vigente en `docs/PROJECT-STATUS.md`.
