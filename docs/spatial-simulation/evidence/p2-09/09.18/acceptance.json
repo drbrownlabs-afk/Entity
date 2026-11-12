@@ -1,0 +1,131 @@
+{
+  "phase": "P2-09.18",
+  "five_runs_complete": true,
+  "runs": [
+    {
+      "run": "accept18-v0",
+      "images": 2008,
+      "valid_opportunities": 513,
+      "detector_matched": 503,
+      "detector_recall": 0.9805068226120858,
+      "detector_false_boxes": 8,
+      "mot_false_observations": 4,
+      "local_id_switches": 0,
+      "global_actor_id_count": 1,
+      "global_fragmentations": 0,
+      "global_hypotheses_total": 1,
+      "additional_unmatched_or_duplicate_global_hypotheses": 0,
+      "unresolved_geometry_instants": 4,
+      "checks": {
+        "corpus_valid": true,
+        "detector_recall_95": true,
+        "zero_local_id_switches": true,
+        "global_continuity": true,
+        "core_persistence_replay": true
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "run": "accept18-v1",
+      "images": 1928,
+      "valid_opportunities": 486,
+      "detector_matched": 478,
+      "detector_recall": 0.9835390946502057,
+      "detector_false_boxes": 8,
+      "mot_false_observations": 4,
+      "local_id_switches": 0,
+      "global_actor_id_count": 1,
+      "global_fragmentations": 0,
+      "global_hypotheses_total": 1,
+      "additional_unmatched_or_duplicate_global_hypotheses": 0,
+      "unresolved_geometry_instants": 4,
+      "checks": {
+        "corpus_valid": true,
+        "detector_recall_95": true,
+        "zero_local_id_switches": true,
+        "global_continuity": true,
+        "core_persistence_replay": true
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "run": "accept18-v2",
+      "images": 1848,
+      "valid_opportunities": 469,
+      "detector_matched": 460,
+      "detector_recall": 0.9808102345415778,
+      "detector_false_boxes": 9,
+      "mot_false_observations": 5,
+      "local_id_switches": 0,
+      "global_actor_id_count": 1,
+      "global_fragmentations": 0,
+      "global_hypotheses_total": 2,
+      "additional_unmatched_or_duplicate_global_hypotheses": 1,
+      "unresolved_geometry_instants": 4,
+      "checks": {
+        "corpus_valid": true,
+        "detector_recall_95": true,
+        "zero_local_id_switches": true,
+        "global_continuity": true,
+        "core_persistence_replay": true
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "run": "accept18-v3",
+      "images": 1784,
+      "valid_opportunities": 448,
+      "detector_matched": 443,
+      "detector_recall": 0.9888392857142857,
+      "detector_false_boxes": 10,
+      "mot_false_observations": 4,
+      "local_id_switches": 0,
+      "global_actor_id_count": 1,
+      "global_fragmentations": 0,
+      "global_hypotheses_total": 2,
+      "additional_unmatched_or_duplicate_global_hypotheses": 1,
+      "unresolved_geometry_instants": 2,
+      "checks": {
+        "corpus_valid": true,
+        "detector_recall_95": true,
+        "zero_local_id_switches": true,
+        "global_continuity": true,
+        "core_persistence_replay": true
+      },
+      "technical_checks_passed": true
+    },
+    {
+      "run": "accept18-v4",
+      "images": 1720,
+      "valid_opportunities": 434,
+      "detector_matched": 426,
+      "detector_recall": 0.9815668202764977,
+      "detector_false_boxes": 12,
+      "mot_false_observations": 6,
+      "local_id_switches": 0,
+      "global_actor_id_count": 1,
+      "global_fragmentations": 0,
+      "global_hypotheses_total": 1,
+      "additional_unmatched_or_duplicate_global_hypotheses": 0,
+      "unresolved_geometry_instants": 5,
+      "checks": {
+        "corpus_valid": true,
+        "detector_recall_95": true,
+        "zero_local_id_switches": true,
+        "global_continuity": true,
+        "core_persistence_replay": true
+      },
+      "technical_checks_passed": true
+    }
+  ],
+  "all_five_technical_checks_passed": true,
+  "perception_policy_changed_during_batch": false,
+  "human_final_acceptance": false,
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "limitations": [
+    "Five fresh repetitions of same geometric route with speed variants; not five unseen buildings/routes",
+    "Variant0 repeats tuning stimulus with a fresh capture; no statistical held-out claim",
+    "Single actor; multiperson false merge rate unmeasured",
+    "Offline batch; not live/civil identity/resource occupancy"
+  ]
+}

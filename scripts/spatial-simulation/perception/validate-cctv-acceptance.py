@@ -116,6 +116,7 @@ def summarize(frozen):
              'detector_matched':d['matched'],'detector_recall':d['recall'],'detector_false_boxes':d['false_positive_boxes'],
              'mot_false_observations':m['false_track_observations'],'local_id_switches':m['continuous_visible_id_switches'],
              'global_actor_id_count':g['actor_global_id_count'],'global_fragmentations':g['residual_actor_fragmentations'],
+             'global_hypotheses_total':g['global_groups'],'additional_unmatched_or_duplicate_global_hypotheses':g['additional_unmatched_or_duplicate_global_hypotheses'],
              'unresolved_geometry_instants':sum(len(x['unresolved_view_geometry_instants']) for x in g['continuity']),
              'checks':checks,'technical_checks_passed':all(checks.values())}
         rows.append(row)

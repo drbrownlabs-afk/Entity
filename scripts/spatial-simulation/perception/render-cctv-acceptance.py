@@ -43,4 +43,17 @@ for variant in range(5):
                 draw.rectangle(box,outline=identities[actual['global_id']],width=2)
                 draw.text((max(x,box[0]),max(y+22,box[1]-12)),actual['global_id'][-6:],fill='white',stroke_width=1,stroke_fill='black')
     canvas.save(folder/'camera-evidence.jpg',quality=85)
+    if len(result['groups'])>1:
+        primary=max(result['groups'],key=lambda g:len(g['observations']))['id']
+        extras=[r for r in observations if r['global_id']!=primary]
+        panel=Image.new('RGB',(1300,550),'#111827');pd=ImageDraw.Draw(panel)
+        pd.text((12,10),case+' | Additional model hypotheses, not extra confirmed people | No GT used in this rendering',fill='white')
+        for j,row in enumerate(extras[:2]):
+            image=Image.open(source/'frames'/f'{row["camera_id"]}-{row["frame_index"]:04}.png').convert('RGB');original=image.size;image.thumbnail((640,480));x=10+j*650;y=54
+            panel.paste(image,(x,y));pd.text((x,32),row['camera_id']+' | '+f'{row["media_time_seconds"]:.1f}s',fill='white')
+            for actual in observations:
+                if (actual['camera_id'],actual['frame_index'])!=(row['camera_id'],row['frame_index']):continue
+                b=actual['bbox'];box=[x+b[0]*image.width/original[0],y+b[1]*image.height/original[1],x+b[2]*image.width/original[0],y+b[3]*image.height/original[1]]
+                pd.rectangle(box,outline=identities[actual['global_id']],width=2);pd.text((max(x,box[0]),max(y,box[1]-12)),actual['global_id'][-6:],fill='white',stroke_width=1,stroke_fill='black')
+        panel.save(folder/'extra-hypotheses.jpg',quality=85)
 print('Five model-only timelines and camera evidence sheets generated; no GT read')

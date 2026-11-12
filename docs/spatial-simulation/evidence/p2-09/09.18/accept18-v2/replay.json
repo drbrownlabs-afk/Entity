@@ -1,0 +1,61 @@
+{
+  "phase": "P2-09.18",
+  "corpus": "accept18-v2",
+  "run": "p2-09-accept18-v2-r2",
+  "real_http": true,
+  "same_existing_site": "coworking-p2",
+  "replay": true,
+  "frame_observations": 1848,
+  "local_observations": 561,
+  "global_associations": 2,
+  "duplicate_observations": 1850,
+  "local_tracks_in_core": 27,
+  "global_tracks_in_core": 2,
+  "new_civil_people": 0,
+  "prior_people_unchanged": true,
+  "historical_worlds_unchanged": true,
+  "world_revision_before": 9338,
+  "world_revision_after": 9338,
+  "world_unchanged": true,
+  "world_sha256": "e90789d1ae58513fa735b889a786f70f275da0b44e4a5346c074cd19bb32f4a0",
+  "memory_sha256": "beb774d5aef75be717967bf18082b70a08cc554222cccdf49becbd9dfb5a000c",
+  "global_memory_count": 2,
+  "global_graphs": {
+    "p2-09-accept18-v2-r2:visual-3a13b79d11d457c1e506": {
+      "nodes": 35,
+      "edges": 78
+    },
+    "p2-09-accept18-v2-r2:visual-e235fdad067d25d101ea": {
+      "nodes": 3,
+      "edges": 3
+    }
+  },
+  "global_event_count": 1,
+  "global_location_status": "unknown",
+  "historical_sources_available_before_pixels": true,
+  "global_inference_absent_before_available_at": true,
+  "core_image_position_source": "fresh associated bbox anchor; filtered MOT estimate is not clipped into an observation",
+  "experiment": "accept18",
+  "manifest_sha256": "5a373a15c3da662811ad63068379f1c4faacc351f407231f9cfb6cb810ee77a1",
+  "association_output_sha256": "0624366ccaae9e3254de541a43d2308cd83e669b74b15c4e665b9624d8eede7f",
+  "http_latency_ms": {
+    "other": {
+      "requests": 39,
+      "p50": 145.71893500010447,
+      "p95": 353.2381949999035
+    },
+    "pixel_ingress": {
+      "requests": 1848,
+      "p50": 18.557055499968556,
+      "p95": 24.5016180000448
+    },
+    "global_ingress": {
+      "requests": 2,
+      "p50": 19.727170999885857,
+      "p95": 18.37920499997381
+    }
+  },
+  "seconds": 42.72295874799988,
+  "ingester_peak_rss_kib": 71864,
+  "semantics": "batch historical pixel observations and later inference; not live occupancy, civil identity or confirmed world trajectory"
+}

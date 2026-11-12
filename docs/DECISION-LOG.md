@@ -256,3 +256,8 @@ La evidencia de cámara que recibe Core usa el ancla de la caja realmente detect
 Cinco ejecuciones nuevas del mismo estímulo con variantes de velocidad, no cinco rutas inéditas. Fijar hashes de modelos, percepción, calibración, grafo y Core antes del lote; no ajustar usando sus etiquetas. Separar caché privilegiado del evaluador y mounts de píxeles del worker. Serializar ingresos Core y conservar fallos, no seleccionar solo casos exitosos.
 
 P1: replay exacto ya validado puede devolverse antes de world(), manteniendo autorización/site/source y conflicto de ID;117testsPASS. Un run frío hereda metadatos del inventario, no observaciones: enrolar su propio manifiesto tras cold guard, no rechazarlo porque site tenga el hash anterior. Replay exige el hash del resultado original. Se reanuda solo el ingreso con outputs intactos; no se reescribe baseline/canon ni se presume aprobación humana.
+
+
+## 2026-11-12 — P2-09.18: diferenciar identidad del actor, candidatas globales y aceptación
+
+El gate de continuidad verifica una identidad del actor con evidencia pixel-supported, incluyendo vistas parciales. No convertir esa cifra en «solo una hipótesis global»:v2/v3 conservan candidatas falsas/duplicadas adicionales. Informar todos los grupos en tabla/Core, no fusionarlos o eliminarlos por conocimiento del único actor. LosFPmedidos y la incertidumbre no desaparecen al persistir; no derivar número de personas u ocupación de candidatas provisionales. Se añaden láminas de errores sinGTy auditoría posterior de observacionesSQL. Cinco controles técnicos superados≠aceptación humana ni causalidad en vivo. El roadmap del operador939b241 añade09.19 obligatorio y exige propuesta antes de refactorización sustancial; conservarlo y no abrir fases posteriores.

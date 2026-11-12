@@ -15,6 +15,11 @@
   "global_groups": 2,
   "actor_global_id_count": 1,
   "residual_actor_fragmentations": 0,
+  "additional_unmatched_or_duplicate_global_hypotheses": 1,
+  "best_supported_source_frames_per_global_group": {
+    "visual-e512288a35b7f63f79a4": 530,
+    "visual-19cb3657ae7b84e0bf5a": 0
+  },
   "local_tracklets": 26,
   "original_observations": 534,
   "matched_valid_observations": 442,

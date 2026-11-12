@@ -1,0 +1,6 @@
+{
+  "api_tests_passed": 117,
+  "edge_tests_passed": 34,
+  "human_final_acceptance": false,
+  "core_replay_fast_path_keeps_authorization_and_id_conflict_checks": true
+}

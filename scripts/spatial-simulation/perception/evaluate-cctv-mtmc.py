@@ -33,12 +33,17 @@ def iou(a,b):
     area=max(0,min(a[2],b[2])-max(a[0],b[0]))*max(0,min(a[3],b[3])-max(a[1],b[1]))
     return area/max(1e-9,(a[2]-a[0])*(a[3]-a[1])+(b[2]-b[0])*(b[3]-b[1])-area)
 
-actor_groups=set();sensors=collections.defaultdict(lambda:{'matched_valid':0,'global_ids':set()})
+actor_groups=set();best_supported=collections.Counter();sensors=collections.defaultdict(lambda:{'matched_valid':0,'global_ids':set()})
 valid=matched=false=0
 for key,label in labels.items():
     rows=byframe[key];ranked=sorted([(iou(x['bbox'],label['visible_bbox']),x['local_track_id']) for x in rows],reverse=True)
     false+=sum(score<.3 for score,_ in ranked)+max(0,sum(score>=.3 for score,_ in ranked)-1)
     valid+=label['useful']
+    # Continuity is not limited to the detector's useful-opportunity denominator.
+    # Include best-supported partial observations; duplicates in the same source
+    # frame remain counted as errors, not additional evidence of another person.
+    if ranked and ranked[0][0]>=.3 and label['visible_pixels']>=20:
+        identity=members[ranked[0][1]];actor_groups.add(identity);best_supported[identity]+=1
     if label['useful'] and ranked and ranked[0][0]>=.3:
         identity=members[ranked[0][1]];actor_groups.add(identity);matched+=1
         sensors[key[0]]['matched_valid']+=1;sensors[key[0]]['global_ids'].add(identity)
@@ -52,6 +57,8 @@ checks={'single_actor_global_identity':len(actor_groups)==1,'all_eight_sensors_s
         'no_civil_identity_or_fabricated_gap_observations':result['no_observations_created'] and all(g['civil_person_id'] is None for g in result['groups'])}
 report={'phase':'P2-'+args.phase,'run':args.run,'checks':checks,'technical_gate_passed':all(checks.values()),
         'global_groups':len(result['groups']),'actor_global_id_count':len(actor_groups),'residual_actor_fragmentations':len(actor_groups)-1,
+        'additional_unmatched_or_duplicate_global_hypotheses':sum(g['id'] not in actor_groups for g in result['groups']),
+        'best_supported_source_frames_per_global_group':{g['id']:best_supported[g['id']] for g in result['groups']},
         'local_tracklets':len(members),'original_observations':len(assigned),'matched_valid_observations':matched,'valid_opportunities':valid,
         'false_or_duplicate_observations':false,'per_sensor':dict(sensors),
         'provisional_associations':sum(e.get('decision')=='associated provisionally' for e in result['associations']),

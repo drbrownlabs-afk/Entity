@@ -1,0 +1,24 @@
+{
+  "detector_image_ms": {
+    "p50": 19.181440000011207,
+    "p95": 148.20954700002176
+  },
+  "http_pixel_ingress_ms": {
+    "requests": 1928,
+    "p50": 138.79657149999503,
+    "p95": 191.65146299997105
+  },
+  "detector_peak_rss_kib": 1120928,
+  "mot_peak_rss_kib": 114988,
+  "core_peak_rss_kib": 73548,
+  "detector_global_gpu_checkpoints_mib": {
+    "before_session": 45,
+    "after_warmup": 275,
+    "after_timed_run": 275,
+    "scope": "whole GPU snapshots, not process peak VRAM"
+  },
+  "derived_aggregate_images_per_second": 3.718361570064633,
+  "timing_scope": "sum of recorded inference processing times plus new measured Core ingress; not same-attempt walltime, excludes capture/evaluation/queue",
+  "gpu_scope": "whole GPU snapshots; not process VRAM or guaranteed peak",
+  "realtime_validated": false
+}

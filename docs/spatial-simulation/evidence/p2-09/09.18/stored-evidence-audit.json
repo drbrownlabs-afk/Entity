@@ -1,0 +1,38 @@
+{
+  "phase": "P2-09.18",
+  "passed": true,
+  "post_inference_only": true,
+  "database_read_only": true,
+  "runs": [
+    {
+      "run": "accept18-v0",
+      "stored_observations": 2009,
+      "private_actor_id_absent": true,
+      "forbidden_pose_route_label_fields_absent": true
+    },
+    {
+      "run": "accept18-v1",
+      "stored_observations": 1929,
+      "private_actor_id_absent": true,
+      "forbidden_pose_route_label_fields_absent": true
+    },
+    {
+      "run": "accept18-v2",
+      "stored_observations": 1850,
+      "private_actor_id_absent": true,
+      "forbidden_pose_route_label_fields_absent": true
+    },
+    {
+      "run": "accept18-v3",
+      "stored_observations": 1786,
+      "private_actor_id_absent": true,
+      "forbidden_pose_route_label_fields_absent": true
+    },
+    {
+      "run": "accept18-v4",
+      "stored_observations": 1721,
+      "private_actor_id_absent": true,
+      "forbidden_pose_route_label_fields_absent": true
+    }
+  ]
+}
