@@ -1,5 +1,9 @@
 # ENTITY — Bitácora de ejecución y evidencias
 
+## 2026-11-12 — Reordenamiento documental P2 solicitado por operador
+Se corrige la confusión entre el P2-09 de percepción y la antigua integración genérica de fuentes: 09 queda únicamente para cámaras; 10 para integración de 12 personajes + 8 cámaras y validación causal continua; 11 externos, 12 sincronización, 13 interoperabilidad, 14 escenarios, 15 piloto. P2-06/07 se retomarán solo tras cierre de 09.18 y orden expresa. Se preservan 460 entidades/1185 relaciones/290 correspondencias y las 12 personas ya registradas. No se ejecutan fases ni se altera código. El resultado 4.42 imágenes/s derivado y MTMC batch no es tiempo real.
+
+
 ## 2026-11-12 — P2-09.15: detección y MOT medidos, contexto incorporado
 - Continuación sin reiniciar corpus/baseline. Comparaciones reales: imagen completa0.25=478/513(93.18%),3cajas falsas/duplicadas,24.25img/s;0.10=489/513(95.32%),15cajas,21.03img/s. Elegida0.25+recortes640nativos soloC1/C2:503/513(98.05%),8cajas,11.23img/s; ambos sensores100%. Pesos/preprocesado/contratos históricos intactos.
 - Norfair reutilizado: confirmación,retención12frames,distancia0.25 y centro de caja para vista pronunciada. Se corrigieron priorsKalman de unidades predeterminadas a coordenadas normalizadas. Resultado502/513observaciones válidas,0cambios deID durante visibilidad continua,4observaciones falsas/duplicadas. No se ocultan IDs nuevos de entradas separadas ni se llaman identidades civiles.
